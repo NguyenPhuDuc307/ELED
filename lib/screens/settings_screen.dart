@@ -47,8 +47,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
       _startTime = TimeOfDay(hour: startH, minute: startM);
 
       final endH = prefs.getInt('notificationEndHour') ?? 19;
-    setState(() {
-      final endH = prefs.getInt('notificationEndHour') ?? 19;
       final endM = prefs.getInt('notificationEndMinute') ?? 0;
       _endTime = TimeOfDay(hour: endH, minute: endM);
 
@@ -82,8 +80,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
       await NotificationService().requestPermissions();
       
       List<Vocabulary> pool = [];
-      pool.addAll(await CsvService.loadSpecificPopularityVocabulary(_selectedPopularity, excludeKnown: true));
-      pool.addAll(await CsvService.loadSpecificTopicsVocabulary(_selectedTopics, excludeKnown: true));
+      if (_selectedTopics.isNotEmpty) {
+        pool.addAll(await CsvService.loadSpecificTopicsVocabulary(_selectedTopics, levelFilter: _selectedPopularity, excludeKnown: true));
+      } else {
+        pool.addAll(await CsvService.loadSpecificPopularityVocabulary(_selectedPopularity, excludeKnown: true));
+      }
 
       await NotificationService().scheduleVocabularyNotifications(
         pool: pool,

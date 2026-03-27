@@ -9,11 +9,13 @@ import '../widgets/brutalist_card.dart';
 class LearningScreen extends StatefulWidget {
   final int day;
   final List<Vocabulary> vocabularies;
+  final int initialIndex;
 
   const LearningScreen({
     super.key,
     required this.day,
     required this.vocabularies,
+    this.initialIndex = 0,
   });
 
   @override
@@ -21,14 +23,16 @@ class LearningScreen extends StatefulWidget {
 }
 
 class _LearningScreenState extends State<LearningScreen> {
-  final PageController _pageController = PageController();
-  int _currentIndex = 0;
+  late final PageController _pageController;
+  late int _currentIndex;
   Set<String> _knownWords = {};
   bool _showTranslation = true;
 
   @override
   void initState() {
     super.initState();
+    _currentIndex = widget.initialIndex;
+    _pageController = PageController(initialPage: _currentIndex);
     _loadKnownWords();
   }
 

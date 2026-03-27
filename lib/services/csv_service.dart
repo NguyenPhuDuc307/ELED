@@ -146,7 +146,11 @@ class CsvService {
     }
   }
 
-  static Future<List<Vocabulary>> loadSpecificTopicsVocabulary(List<String> selectedTopics, {bool excludeKnown = false}) async {
+  static Future<List<Vocabulary>> loadSpecificTopicsVocabulary(
+      List<String> selectedTopics, {
+      List<String>? levelFilter,
+      bool excludeKnown = false,
+  }) async {
     if (selectedTopics.isEmpty) return [];
     try {
       final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
@@ -164,6 +168,15 @@ class CsvService {
           }
         }
       }
+      
+      // INTERSECTION LOGIC: Only keep terms that map to the user's chosen Oxford levels
+      if (levelFilter != null && levelFilter.isNotEmpty) {
+        vocab = vocab.where((v) {
+          final vLevel = v.levels.toUpperCase();
+          return levelFilter.any((filter) => vLevel.contains(filter.toUpperCase()));
+        }).toList();
+      }
+      
       return vocab;
     } catch (e) {
       return [];

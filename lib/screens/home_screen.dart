@@ -416,7 +416,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 MaterialPageRoute(
                   builder: (context) => LearningScreen(
                     day: 0,
-                    vocabularies: [vocab],
+                    vocabularies: results,
+                    initialIndex: index,
                   ),
                 ),
               );
@@ -512,7 +513,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 MaterialPageRoute(
                   builder: (context) => LearningScreen(
                     day: 0,
-                    vocabularies: [vocab],
+                    vocabularies: results,
+                    initialIndex: index,
                   ),
                 ),
               );

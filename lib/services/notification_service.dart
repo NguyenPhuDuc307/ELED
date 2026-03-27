@@ -242,8 +242,11 @@ Future<void> androidAlarmCallback() async {
     final topics = prefs.getStringList('selectedTopics') ?? [];
     
     List<Vocabulary> pool = [];
-    pool.addAll(await CsvService.loadSpecificPopularityVocabulary(popularity, excludeKnown: true));
-    pool.addAll(await CsvService.loadSpecificTopicsVocabulary(topics, excludeKnown: true));
+    if (topics.isNotEmpty) {
+      pool.addAll(await CsvService.loadSpecificTopicsVocabulary(topics, levelFilter: popularity, excludeKnown: true));
+    } else {
+      pool.addAll(await CsvService.loadSpecificPopularityVocabulary(popularity, excludeKnown: true));
+    }
     
     if (pool.isEmpty) return;
     

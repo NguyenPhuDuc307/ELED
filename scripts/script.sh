@@ -1,0 +1,6 @@
+python3 scripts/scrape_topic.py "https://www.oxfordlearnersdictionaries.com/topic/category/science-and-technology" "assets/data/topic/Science_and_technology"
+python3 scripts/scrape_topic.py "https://www.oxfordlearnersdictionaries.com/topic/category/sport" "assets/data/topic/Sport"
+python3 scripts/scrape_topic.py "https://www.oxfordlearnersdictionaries.com/topic/category/the-natural-world" "assets/data/topic/The_natural_world"
+python3 scripts/scrape_topic.py "https://www.oxfordlearnersdictionaries.com/topic/category/time-and-space" "assets/data/topic/Time_and_space"
+python3 scripts/scrape_topic.py "https://www.oxfordlearnersdictionaries.com/topic/category/travel" "assets/data/topic/Travel"
+python3 scripts/scrape_topic.py "https://www.oxfordlearnersdictionaries.com/topic/category/work-and-business" "assets/data/topic/Work_and_business"

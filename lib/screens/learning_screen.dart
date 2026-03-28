@@ -39,7 +39,7 @@ class _LearningScreenState extends State<LearningScreen> {
   Future<void> _loadKnownWords() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _knownWords = (prefs.getStringList('knownWords') ?? []).toSet();
+      _knownWords = (prefs.getStringList('knownWords') ?? []).map((w) => w.toLowerCase()).toSet();
     });
   }
 
@@ -47,12 +47,13 @@ class _LearningScreenState extends State<LearningScreen> {
     final messenger = ScaffoldMessenger.of(context);
     final prefs = await SharedPreferences.getInstance();
     bool isAdded = false;
+    final lowerWord = word.toLowerCase();
     
     setState(() {
-      if (_knownWords.contains(word)) {
-        _knownWords.remove(word);
+      if (_knownWords.contains(lowerWord)) {
+        _knownWords.remove(lowerWord);
       } else {
-        _knownWords.add(word);
+        _knownWords.add(lowerWord);
         isAdded = true;
       }
     });
@@ -93,7 +94,7 @@ class _LearningScreenState extends State<LearningScreen> {
           if (widget.vocabularies.isNotEmpty)
             IconButton(
               icon: Icon(
-                _knownWords.contains(widget.vocabularies[_currentIndex].word)
+                _knownWords.contains(widget.vocabularies[_currentIndex].word.toLowerCase())
                     ? Icons.check_circle
                     : Icons.check_circle_outline,
                 color: context.bBorder,
@@ -229,6 +230,22 @@ class _LearningScreenState extends State<LearningScreen> {
                                   textAlign: TextAlign.center,
                                 ),
                               ),
+                              if (vocab.topic.isNotEmpty)
+                                Container(
+                                  padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                                  decoration: BoxDecoration(
+                                    color: BrutalistTheme.secondary,
+                                    border: Border.all(color: BrutalistTheme.black, width: 2),
+                                  ),
+                                  child: Text(
+                                    vocab.topic.toUpperCase(),
+                                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                      color: BrutalistTheme.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
                             ],
                           ),
                           const SizedBox(height: 32),

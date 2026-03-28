@@ -14,7 +14,19 @@ class CsvService {
       Set<String> knownWords = {};
       if (excludeKnown) {
         final prefs = await SharedPreferences.getInstance();
-        knownWords = (prefs.getStringList('knownWords') ?? []).toSet();
+        knownWords = (prefs.getStringList('knownWords') ?? []).map((w) => w.toLowerCase()).toSet();
+      }
+
+      String topic = '';
+      final pathParts = path.split('/');
+      if (path.contains('/topic/')) {
+        if (pathParts.length >= 5) {
+          topic = '${pathParts[3]} - ${pathParts.last.replaceAll('.csv', '')}';
+        } else {
+          topic = pathParts.last.replaceAll('.csv', '');
+        }
+      } else if (path.contains('/popularity/')) {
+        topic = '';
       }
 
       for (var i = 1; i < lines.length; i++) {
@@ -23,7 +35,7 @@ class CsvService {
         
         final parts = line.split(',');
         if (parts.length >= 7) {
-          final vocab = Vocabulary.fromCsvList(parts);
+          final vocab = Vocabulary.fromCsvList(parts, topic: topic);
           final key = vocab.word.toLowerCase();
           
           if (excludeKnown && knownWords.contains(key)) continue;
@@ -40,6 +52,13 @@ class CsvService {
             if (!newTrans.toLowerCase().contains(vocab.translation.toLowerCase())) {
               newTrans = '$newTrans; ${vocab.translation}';
             }
+
+            String newTopic = existing.topic;
+            if (newTopic.isEmpty) {
+              newTopic = topic;
+            } else if (topic.isNotEmpty && !newTopic.toLowerCase().contains(topic.toLowerCase())) {
+              newTopic = '$newTopic, $topic';
+            }
             
             mergedVocab[key] = Vocabulary(
               id: existing.id,
@@ -50,6 +69,7 @@ class CsvService {
               partOfSpeech: newPos,
               ipa: existing.ipa,
               audioLink: existing.audioLink,
+              topic: newTopic,
             );
           } else {
             mergedVocab[key] = vocab;
@@ -67,8 +87,16 @@ class CsvService {
     return loadVocabularyFromPath(assetPath, excludeKnown: excludeKnown);
   }
 
-  static Future<Map<int, List<Vocabulary>>> loadVocabularyByDayFromPath(String path, {bool excludeKnown = false}) async {
-    final vocabList = await loadVocabularyFromPath(path, excludeKnown: excludeKnown);
+  static Future<Map<int, List<Vocabulary>>> loadVocabularyByDayFromPath(String path, {bool excludeKnown = false, List<String>? levelFilter}) async {
+    var vocabList = await loadVocabularyFromPath(path, excludeKnown: excludeKnown);
+    
+    if (levelFilter != null && levelFilter.isNotEmpty) {
+      vocabList = vocabList.where((v) {
+        final vLevel = v.levels.toUpperCase();
+        return levelFilter.any((filter) => vLevel.contains(filter.toUpperCase()));
+      }).toList();
+    }
+
     final Map<int, List<Vocabulary>> grouped = {};
 
     int day = 1;

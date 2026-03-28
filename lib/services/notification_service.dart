@@ -48,6 +48,21 @@ class NotificationService {
       settings: initializationSettings,
       onDidReceiveNotificationResponse: _onNotificationTapped,
     );
+
+    HomeWidget.widgetClicked.listen(_onWidgetTapped);
+    HomeWidget.initiallyLaunchedFromHomeWidget().then(_onWidgetTapped);
+  }
+
+  static Future<void> _onWidgetTapped(Uri? uri) async {
+    if (uri != null && uri.scheme == 'eled') {
+      final payload = uri.queryParameters['payload'];
+      if (payload != null && payload.isNotEmpty) {
+        _onNotificationTapped(NotificationResponse(
+          notificationResponseType: NotificationResponseType.selectedNotification, 
+          payload: payload
+        ));
+      }
+    }
   }
 
   static Future<void> _onNotificationTapped(NotificationResponse response) async {
@@ -64,20 +79,27 @@ class NotificationService {
       }
 
       final allVocab = await CsvService.loadAllVocabulary(excludeKnown: false);
-      final matchPayload = payload.trim().toLowerCase();
-      final matchList = allVocab.where((v) => v.word.trim().toLowerCase() == matchPayload);
+      
+      final parts = payload.split('|');
+      final matchWord = parts[0].trim().toLowerCase();
+      final matchTopic = parts.length > 1 ? parts[1].trim().toLowerCase() : '';
+
+      final matchList = allVocab.where((v) => v.word.trim().toLowerCase() == matchWord);
       if (matchList.isNotEmpty) {
+        final exactMatch = matchList.where((v) => v.topic.trim().toLowerCase() == matchTopic);
+        final vocab = exactMatch.isNotEmpty ? exactMatch.first : matchList.first;
+
         globalNavigatorKey.currentState?.push(
           MaterialPageRoute(
             builder: (_) => LearningScreen(
               day: 0,
-              vocabularies: [matchList.first],
+              vocabularies: [vocab],
             ),
           ),
         );
       } else {
         if (context != null && context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('404: $payload NOT IN DB! (DB=${allVocab.length})')));
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('404: $matchWord NOT IN DB! (DB=${allVocab.length})')));
         }
       }
     }
@@ -187,6 +209,9 @@ class NotificationService {
           htmlBody += '<b>Phiên âm:</b> <i>${vocab.ipa}</i><br>';
         }
         htmlBody += '<b>Từ loại:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
+        if (vocab.topic.isNotEmpty) {
+          htmlBody += '<br><b>Chủ đề:</b> ${vocab.topic.toUpperCase()}';
+        }
 
         await flutterLocalNotificationsPlugin.zonedSchedule(
           id: i,
@@ -210,6 +235,7 @@ class NotificationService {
             ),
           ),
           androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+          payload: '${vocab.word}|${vocab.topic}',
         );
       }
     }
@@ -258,6 +284,9 @@ Future<void> androidAlarmCallback() async {
       await HomeWidget.saveWidgetData<String>('word', vocab.word);
       await HomeWidget.saveWidgetData<String>('translation', vocab.translation);
       await HomeWidget.saveWidgetData<String>('ipa', vocab.ipa);
+      await HomeWidget.saveWidgetData<String>('pos', vocab.partOfSpeech);
+      await HomeWidget.saveWidgetData<String>('levels', vocab.levels);
+      await HomeWidget.saveWidgetData<String>('topic', vocab.topic);
       await HomeWidget.updateWidget(name: 'VocabularyWidgetProvider');
     } catch (e) {
       debugPrint("HomeWidget background update failed: $e");
@@ -271,6 +300,9 @@ Future<void> androidAlarmCallback() async {
       htmlBody += '<b>Phiên âm:</b> <i>${vocab.ipa}</i><br>';
     }
     htmlBody += '<b>Từ loại:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
+    if (vocab.topic.isNotEmpty) {
+      htmlBody += '<br><b>Chủ đề:</b> ${vocab.topic.toUpperCase()}';
+    }
 
     AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
       'eled_vocab_channel',
@@ -295,14 +327,17 @@ Future<void> androidAlarmCallback() async {
       title: vocab.word.toUpperCase(),
       body: '${vocab.translation} - ${vocab.partOfSpeech}',
       notificationDetails: platformChannelSpecifics,
-      payload: vocab.word,
+      payload: '${vocab.word}|${vocab.topic}',
     );
 
     // Save to history tracking
     try {
+      final String historyEntry = '${vocab.word}|${vocab.topic}';
       final history = prefs.getStringList('notificationHistory') ?? [];
-      history.remove(vocab.word); // Always remove old instance
-      history.insert(0, vocab.word); // Add to top
+      
+      history.removeWhere((item) => item == vocab.word || item.startsWith('${vocab.word}|'));
+      history.insert(0, historyEntry);
+      
       if (history.length > 500) history.removeLast(); // Keep max 500 items
       await prefs.setStringList('notificationHistory', history);
     } catch (e) {

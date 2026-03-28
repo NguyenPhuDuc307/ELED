@@ -7,6 +7,7 @@ class Vocabulary {
   final String partOfSpeech;
   final String ipa;
   final String audioLink;
+  final String topic;
 
   Vocabulary({
     required this.id,
@@ -17,9 +18,10 @@ class Vocabulary {
     required this.partOfSpeech,
     required this.ipa,
     required this.audioLink,
+    this.topic = '',
   });
 
-  factory Vocabulary.fromCsvList(List<String> row) {
+  factory Vocabulary.fromCsvList(List<String> row, {String topic = ''}) {
     return Vocabulary(
       id: row.isNotEmpty ? row[0] : '',
       url: row.length > 1 ? row[1] : '',
@@ -29,6 +31,7 @@ class Vocabulary {
       partOfSpeech: row.length > 5 ? row[5] : '',
       ipa: row.length > 6 ? row[6] : '',
       audioLink: row.length > 7 ? row[7] : '',
+      topic: topic,
     );
   }
 }

@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = true;
   String _selectedLevel = 'A1';
   final List<String> _levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  List<String> _selectedTopicLevels = ['A1', 'A2', 'B1'];
 
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
@@ -74,11 +75,17 @@ class _HomeScreenState extends State<HomeScreen> {
     });
     final allData = await CsvService.loadAllVocabulary(); // Notice excludeKnown is natively false here, perfect for retaining the pool
     final prefs = await SharedPreferences.getInstance();
-    final knownWords = (prefs.getStringList('knownWords') ?? []).toSet();
+    final knownWords = (prefs.getStringList('knownWords') ?? []).map((w) => w.toLowerCase()).toSet();
 
     if (mounted) {
       setState(() {
-        _allVocabData = allData.where((v) => knownWords.contains(v.word)).toList();
+        final uniqueVocab = <String, Vocabulary>{};
+        for (var v in allData) {
+          if (knownWords.contains(v.word.toLowerCase())) {
+            uniqueVocab.putIfAbsent(v.word, () => v);
+          }
+        }
+        _allVocabData = uniqueVocab.values.toList();
         _isLoading = false;
       });
     }
@@ -96,10 +103,15 @@ class _HomeScreenState extends State<HomeScreen> {
     if (mounted) {
       setState(() {
         List<Vocabulary> orderedHistory = [];
-        for (var word in historyWords) {
+        for (var item in historyWords) {
+          final parts = item.split('|');
+          final word = parts[0];
+          final topic = parts.length > 1 ? parts[1] : '';
+
           final match = allData.where((v) => v.word == word);
           if (match.isNotEmpty) {
-            orderedHistory.add(match.first);
+            final exactMatch = match.where((v) => v.topic == topic);
+            orderedHistory.add(exactMatch.isNotEmpty ? exactMatch.first : match.first);
           }
         }
         _allVocabData = orderedHistory;
@@ -112,7 +124,11 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       _isLoading = true;
     });
-    final data = await CsvService.loadVocabularyByDayFromPath(path, excludeKnown: true);
+    final data = await CsvService.loadVocabularyByDayFromPath(
+      path, 
+      excludeKnown: true,
+      levelFilter: widget.mode == 'TOPIC' ? _selectedTopicLevels : null,
+    );
     if (mounted) {
       setState(() {
         _vocabData = data;
@@ -236,6 +252,74 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
+                );
+              },
+            ),
+          if (widget.mode == 'TOPIC' && !_isSearching)
+            IconButton(
+              icon: Icon(
+                Icons.filter_list,
+                color: context.bBorder,
+                size: 32,
+              ),
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (ctx) {
+                    return StatefulBuilder(
+                      builder: (context, setDialogState) {
+                        return AlertDialog(
+                          backgroundColor: context.bBg,
+                          shape: Border.all(color: context.bBorder, width: 4),
+                          title: Text(
+                            'FILTER BY LEVEL', 
+                            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w900,
+                              color: context.bBorder,
+                            )
+                          ),
+                          content: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: _levels.map((level) {
+                                return CheckboxListTile(
+                                  title: Text(level, style: TextStyle(fontWeight: FontWeight.bold, color: context.bBorder)),
+                                  value: _selectedTopicLevels.contains(level),
+                                  activeColor: BrutalistTheme.secondary,
+                                  checkColor: BrutalistTheme.black,
+                                  side: BorderSide(color: context.bBorder, width: 2),
+                                  onChanged: (bool? value) {
+                                    setDialogState(() {
+                                      if (value == true) {
+                                        _selectedTopicLevels.add(level);
+                                      } else {
+                                        _selectedTopicLevels.remove(level);
+                                      }
+                                    });
+                                  },
+                                );
+                              }).toList(),
+                            ),
+                          ),
+                          actions: [
+                            TextButton(
+                              style: TextButton.styleFrom(
+                                backgroundColor: BrutalistTheme.secondary,
+                                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                                side: BorderSide(color: context.bBorder, width: 2),
+                              ),
+                              onPressed: () {
+                                Navigator.of(ctx).pop();
+                                setState(() {});
+                                _loadDataFromPath(widget.topicPath!);
+                              },
+                              child: Text('APPLY', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                            ),
+                          ],
+                        );
+                      }
+                    );
+                  },
                 );
               },
             ),
@@ -461,6 +545,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: BrutalistTheme.black,
                         ),
                   ),
+                  if (vocab.topic.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    Text(
+                      'TOPIC: ${vocab.topic.toUpperCase()}',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: BrutalistTheme.black,
+                            fontStyle: FontStyle.italic,
+                          ),
+                    ),
+                  ],
                 ],
               ),
             ),
@@ -558,6 +653,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: BrutalistTheme.black,
                         ),
                   ),
+                  if (vocab.topic.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    Text(
+                      'TOPIC: ${vocab.topic.toUpperCase()}',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: BrutalistTheme.black,
+                            fontStyle: FontStyle.italic,
+                          ),
+                    ),
+                  ],
                 ],
               ),
             ),

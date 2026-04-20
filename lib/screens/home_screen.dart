@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -40,9 +41,11 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
   bool _isSearching = false;
+  Timer? _debounceTimer;
 
   @override
   void dispose() {
+    _debounceTimer?.cancel();
     _searchController.dispose();
     super.dispose();
   }
@@ -198,8 +201,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 controller: _searchController,
                 autofocus: true,
                 onChanged: (value) {
-                  setState(() {
-                    _searchQuery = value;
+                  _debounceTimer?.cancel();
+                  _debounceTimer = Timer(const Duration(milliseconds: 300), () {
+                    if (mounted) setState(() => _searchQuery = value);
                   });
                 },
                 decoration: InputDecoration(
@@ -568,6 +572,42 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 32),
                 child: const Icon(Icons.delete_forever, color: Colors.white, size: 40),
               ),
+              confirmDismiss: (direction) async {
+                return await showDialog<bool>(
+                  context: context,
+                  builder: (ctx) => AlertDialog(
+                    backgroundColor: context.bBg,
+                    shape: Border.all(color: context.bBorder, width: 4),
+                    title: Text(
+                      'REMOVE FROM COLLECTION?',
+                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        fontWeight: FontWeight.w900,
+                        color: context.bBorder,
+                      ),
+                    ),
+                    content: Text(
+                      'Remove "${vocab.word}" from this collection?',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: context.bBorder,
+                      ),
+                    ),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.of(ctx).pop(false),
+                        child: Text('CANCEL', style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+                      ),
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: BrutalistTheme.secondary,
+                          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                        ),
+                        onPressed: () => Navigator.of(ctx).pop(true),
+                        child: Text('REMOVE', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                      ),
+                    ],
+                  ),
+                ) ?? false;
+              },
               onDismissed: (dir) async {
                 await CollectionService.removeWord(widget.topicTitle!, vocab.word);
                 setState(() {

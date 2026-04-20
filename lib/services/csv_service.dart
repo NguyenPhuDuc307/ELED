@@ -1,3 +1,4 @@
+import 'package:csv/csv.dart';
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
@@ -6,11 +7,11 @@ class CsvService {
   static Future<List<Vocabulary>> loadVocabularyFromPath(String path, {bool excludeKnown = false}) async {
     try {
       final String csvString = await rootBundle.loadString(path);
-      final List<String> lines = csvString.split('\n');
-      if (lines.length <= 1) return [];
+      final List<List<dynamic>> rows = const CsvToListConverter().convert(csvString, eol: '\n');
+      if (rows.length <= 1) return [];
 
       Map<String, Vocabulary> mergedVocab = {};
-      
+
       Set<String> knownWords = {};
       if (excludeKnown) {
         final prefs = await SharedPreferences.getInstance();
@@ -29,25 +30,25 @@ class CsvService {
         topic = '';
       }
 
-      for (var i = 1; i < lines.length; i++) {
-        final line = lines[i].trim();
-        if (line.isEmpty) continue;
-        
-        final parts = line.split(',');
+      for (var i = 1; i < rows.length; i++) {
+        final row = rows[i];
+        if (row.isEmpty) continue;
+
+        final parts = row.map((e) => e.toString().trim()).toList();
         if (parts.length >= 7) {
           final vocab = Vocabulary.fromCsvList(parts, topic: topic);
           final key = vocab.word.toLowerCase();
-          
+
           if (excludeKnown && knownWords.contains(key)) continue;
 
           if (mergedVocab.containsKey(key)) {
             final existing = mergedVocab[key]!;
-            
+
             String newPos = existing.partOfSpeech;
             if (!newPos.toLowerCase().contains(vocab.partOfSpeech.toLowerCase())) {
               newPos = '$newPos, ${vocab.partOfSpeech}';
             }
-            
+
             String newTrans = existing.translation;
             if (!newTrans.toLowerCase().contains(vocab.translation.toLowerCase())) {
               newTrans = '$newTrans; ${vocab.translation}';
@@ -59,7 +60,7 @@ class CsvService {
             } else if (topic.isNotEmpty && !newTopic.toLowerCase().contains(topic.toLowerCase())) {
               newTopic = '$newTopic, $topic';
             }
-            
+
             mergedVocab[key] = Vocabulary(
               id: existing.id,
               url: existing.url,
@@ -89,7 +90,7 @@ class CsvService {
 
   static Future<Map<int, List<Vocabulary>>> loadVocabularyByDayFromPath(String path, {bool excludeKnown = false, List<String>? levelFilter}) async {
     var vocabList = await loadVocabularyFromPath(path, excludeKnown: excludeKnown);
-    
+
     if (levelFilter != null && levelFilter.isNotEmpty) {
       vocabList = vocabList.where((v) {
         final vLevel = v.levels.toUpperCase();
@@ -98,21 +99,13 @@ class CsvService {
     }
 
     final Map<int, List<Vocabulary>> grouped = {};
-
     int day = 1;
     for (var i = 0; i < vocabList.length; i++) {
-      if (i > 0 && i % 20 == 0) {
-        day++;
-      }
-      if (!grouped.containsKey(day)) {
-        grouped[day] = [];
-      }
+      if (i > 0 && i % 20 == 0) day++;
+      if (!grouped.containsKey(day)) grouped[day] = [];
       grouped[day]!.add(vocabList[i]);
     }
-
-    // Clean up empty days if any
     grouped.removeWhere((key, value) => value.isEmpty);
-
     return grouped;
   }
 
@@ -123,35 +116,40 @@ class CsvService {
 
   static Future<List<Vocabulary>> loadAllVocabulary({bool excludeKnown = false}) async {
     final levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
+    final popularityResults = await Future.wait(
+      levels.map((level) => loadVocabulary(level, excludeKnown: excludeKnown)),
+    );
+
     List<Vocabulary> allVocab = [];
-    
-    // Load Popularity
-    for (var level in levels) {
-      allVocab.addAll(await loadVocabulary(level, excludeKnown: excludeKnown));
+    for (final result in popularityResults) {
+      allVocab.addAll(result);
     }
-    
-    // Load Topics
+
     try {
       final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
       final topicFiles = assetManifest.listAssets()
           .where((String key) => key.startsWith('assets/data/topic/') && key.endsWith('.csv'))
           .toList();
-      for (var file in topicFiles) {
-        allVocab.addAll(await loadVocabularyFromPath(file, excludeKnown: excludeKnown));
+
+      final topicResults = await Future.wait(
+        topicFiles.map((file) => loadVocabularyFromPath(file, excludeKnown: excludeKnown)),
+      );
+      for (final result in topicResults) {
+        allVocab.addAll(result);
       }
     } catch (e) {
       // Fail silently if topic loading throws
     }
-    
+
     return allVocab;
   }
 
   static Future<List<Vocabulary>> loadSpecificPopularityVocabulary(List<String> selectedLevels, {bool excludeKnown = false}) async {
-    List<Vocabulary> vocab = [];
-    for (var level in selectedLevels) {
-      vocab.addAll(await loadVocabulary(level, excludeKnown: excludeKnown));
-    }
-    return vocab;
+    final results = await Future.wait(
+      selectedLevels.map((level) => loadVocabulary(level, excludeKnown: excludeKnown)),
+    );
+    return results.expand((r) => r).toList();
   }
 
   static Future<List<String>> getAvailableTopics() async {
@@ -165,7 +163,7 @@ class CsvService {
       for (var file in topicFiles) {
         final pathParts = file.split('/');
         if (pathParts.length >= 4) {
-          categories.add(pathParts[3]); // Category folder name
+          categories.add(pathParts[3]);
         }
       }
       return categories.toList()..sort();
@@ -184,27 +182,25 @@ class CsvService {
       final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
       final topicFiles = assetManifest.listAssets()
           .where((String key) => key.startsWith('assets/data/topic/') && key.endsWith('.csv'))
+          .where((String key) {
+            final pathParts = key.split('/');
+            return pathParts.length >= 4 && selectedTopics.contains(pathParts[3]);
+          })
           .toList();
 
-      List<Vocabulary> vocab = [];
-      for (var file in topicFiles) {
-        final pathParts = file.split('/');
-        if (pathParts.length >= 4) {
-          final category = pathParts[3];
-          if (selectedTopics.contains(category)) {
-            vocab.addAll(await loadVocabularyFromPath(file, excludeKnown: excludeKnown));
-          }
-        }
-      }
-      
-      // INTERSECTION LOGIC: Only keep terms that map to the user's chosen Oxford levels
+      final results = await Future.wait(
+        topicFiles.map((file) => loadVocabularyFromPath(file, excludeKnown: excludeKnown)),
+      );
+
+      List<Vocabulary> vocab = results.expand((r) => r).toList();
+
       if (levelFilter != null && levelFilter.isNotEmpty) {
         vocab = vocab.where((v) {
           final vLevel = v.levels.toUpperCase();
           return levelFilter.any((filter) => vLevel.contains(filter.toUpperCase()));
         }).toList();
       }
-      
+
       return vocab;
     } catch (e) {
       return [];

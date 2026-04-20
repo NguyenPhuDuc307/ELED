@@ -254,7 +254,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           FittedBox(
                             fit: BoxFit.scaleDown,
                             child: Text(
-                              _showTranslation ? vocab.translation : '???',
+                              _showTranslation ? vocab.translation : 'TAP TO REVEAL',
                               style: Theme.of(context).textTheme.displayLarge?.copyWith(
                                     fontSize: 40,
                                     color: BrutalistTheme.black,

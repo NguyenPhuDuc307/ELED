@@ -330,8 +330,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildIntervalSelector() {
     final options = {
       0: 'OFF',
-      1: 'EVERY 1 MIN (TEST)',
-      5: 'EVERY 5 MIN (TEST)',
       10: 'EVERY 10 MIN',
       15: 'EVERY 15 MIN',
       20: 'EVERY 20 MIN',

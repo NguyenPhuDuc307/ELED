@@ -294,9 +294,11 @@ Future<void> androidAlarmCallback() async {
     
     // Trigger the local notification manually
     final flnp = FlutterLocalNotificationsPlugin();
-    await flnp.initialize(const InitializationSettings(
-      android: AndroidInitializationSettings('@mipmap/launcher_icon'),
-    ));
+    await flnp.initialize(
+      settings: const InitializationSettings(
+        android: AndroidInitializationSettings('@mipmap/launcher_icon'),
+      ),
+    );
 
     String htmlBody = '<b>Nghĩa:</b> ${vocab.translation}<br>';
     if (vocab.ipa.isNotEmpty) {

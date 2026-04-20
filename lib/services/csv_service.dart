@@ -1,14 +1,39 @@
-import 'package:csv/csv.dart';
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 
 class CsvService {
+  // Parses a single CSV line, correctly handling quoted fields with commas inside.
+  static List<String> _parseCsvLine(String line) {
+    final fields = <String>[];
+    final current = StringBuffer();
+    bool inQuotes = false;
+
+    for (int i = 0; i < line.length; i++) {
+      final ch = line[i];
+      if (ch == '"') {
+        if (inQuotes && i + 1 < line.length && line[i + 1] == '"') {
+          current.write('"');
+          i++;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (ch == ',' && !inQuotes) {
+        fields.add(current.toString().trim());
+        current.clear();
+      } else {
+        current.write(ch);
+      }
+    }
+    fields.add(current.toString().trim());
+    return fields;
+  }
+
   static Future<List<Vocabulary>> loadVocabularyFromPath(String path, {bool excludeKnown = false}) async {
     try {
       final String csvString = await rootBundle.loadString(path);
-      final List<List<dynamic>> rows = const CsvToListConverter().convert(csvString, eol: '\n');
-      if (rows.length <= 1) return [];
+      final List<String> lines = csvString.split('\n');
+      if (lines.length <= 1) return [];
 
       Map<String, Vocabulary> mergedVocab = {};
 
@@ -30,11 +55,11 @@ class CsvService {
         topic = '';
       }
 
-      for (var i = 1; i < rows.length; i++) {
-        final row = rows[i];
-        if (row.isEmpty) continue;
+      for (var i = 1; i < lines.length; i++) {
+        final line = lines[i].trim();
+        if (line.isEmpty) continue;
 
-        final parts = row.map((e) => e.toString().trim()).toList();
+        final parts = _parseCsvLine(line);
         if (parts.length >= 7) {
           final vocab = Vocabulary.fromCsvList(parts, topic: topic);
           final key = vocab.word.toLowerCase();

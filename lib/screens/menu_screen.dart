@@ -18,6 +18,15 @@ class MenuScreen extends StatefulWidget {
 }
 
 class _MenuScreenState extends State<MenuScreen> {
+  bool _isNavigating = false;
+
+  Future<void> _navigate(Widget page) async {
+    if (_isNavigating) return;
+    setState(() => _isNavigating = true);
+    await Navigator.of(context).push(smoothRoute(page));
+    if (mounted) setState(() => _isNavigating = false);
+  }
+
   @override
   void initState() {
     super.initState();
@@ -124,7 +133,9 @@ class _MenuScreenState extends State<MenuScreen> {
           const SizedBox(width: 4),
         ],
       ),
-      body: SingleChildScrollView(
+      body: Stack(
+        children: [
+          SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(20, 24, 20, 32),
         child: Stack(
           clipBehavior: Clip.none,
@@ -135,7 +146,7 @@ class _MenuScreenState extends State<MenuScreen> {
               right: -20,
               child: IgnorePointer(
                 child: SizedBox(
-                  width: 210,
+                  width: 240,
                   height: 320,
                   child: Image.asset(
                     'assets/home.png',
@@ -189,9 +200,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         titleColor: const Color(0xFF2A4A28),
                         icon: Icons.trending_up_rounded,
                         extraBottomPad: 36,
-                        onTap: () => Navigator.of(context).push(
-                          smoothRoute( const HomeScreen(mode: 'POPULARITY')),
-                        ),
+                        onTap: () => _navigate(const HomeScreen(mode: 'POPULARITY')),
                       ),
                       _menuCardGrid(
                         context,
@@ -200,9 +209,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         color: const Color(0xFFF5E4CC),
                         titleColor: const Color(0xFF5A3A18),
                         icon: Icons.bookmark_rounded,
-                        onTap: () => Navigator.of(context).push(
-                          smoothRoute( const CollectionsScreen()),
-                        ),
+                        onTap: () => _navigate(const CollectionsScreen()),
                       ),
                       _menuCardGrid(
                         context,
@@ -211,9 +218,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         color: const Color(0xFFE8D4C8),
                         titleColor: const Color(0xFF5A3028),
                         icon: Icons.history_rounded,
-                        onTap: () => Navigator.of(context).push(
-                          smoothRoute( const HomeScreen(mode: 'HISTORY')),
-                        ),
+                        onTap: () => _navigate(const HomeScreen(mode: 'HISTORY')),
                       ),
                     ],
                   ),
@@ -233,9 +238,7 @@ class _MenuScreenState extends State<MenuScreen> {
                           titleColor: const Color(0xFF5A2820),
                           icon: Icons.category_rounded,
                           extraBottomPad: 36,
-                          onTap: () => Navigator.of(context).push(
-                            smoothRoute( const TopicScreen()),
-                          ),
+                          onTap: () => _navigate(const TopicScreen()),
                         ),
                         _menuCardGrid(
                           context,
@@ -244,9 +247,7 @@ class _MenuScreenState extends State<MenuScreen> {
                           color: const Color(0xFFF5C4B8),
                           titleColor: const Color(0xFF5A2818),
                           icon: Icons.check_circle_rounded,
-                          onTap: () => Navigator.of(context).push(
-                            smoothRoute( const HomeScreen(mode: 'KNOWN')),
-                          ),
+                          onTap: () => _navigate(const HomeScreen(mode: 'KNOWN')),
                         ),
                       ],
                     ),
@@ -258,6 +259,34 @@ class _MenuScreenState extends State<MenuScreen> {
         ),
           ],
         ),
+          ),
+          // Loading overlay
+          if (_isNavigating)
+            Positioned.fill(
+              child: IgnorePointer(
+                child: AnimatedOpacity(
+                  opacity: _isNavigating ? 1.0 : 0.0,
+                  duration: const Duration(milliseconds: 150),
+                  child: Container(
+                    color: Colors.black.withValues(alpha: 0.15),
+                    child: Center(
+                      child: Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: BrutalistTheme.surface,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: CircularProgressIndicator(
+                          color: BrutalistTheme.primary,
+                          strokeWidth: 3,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }

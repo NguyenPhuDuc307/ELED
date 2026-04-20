@@ -260,7 +260,7 @@ Future<void> androidAlarmCallback() async {
     final startMin = startH * 60 + startM;
     final endMin = endH * 60 + endM;
     
-    if (nowMin < startMin || nowMin > endMin) {
+    if (nowMin < startMin || nowMin >= endMin) {
       return; // Outside active window
     }
 
@@ -294,6 +294,9 @@ Future<void> androidAlarmCallback() async {
     
     // Trigger the local notification manually
     final flnp = FlutterLocalNotificationsPlugin();
+    await flnp.initialize(const InitializationSettings(
+      android: AndroidInitializationSettings('@mipmap/launcher_icon'),
+    ));
 
     String htmlBody = '<b>Nghĩa:</b> ${vocab.translation}<br>';
     if (vocab.ipa.isNotEmpty) {
@@ -348,23 +351,30 @@ Future<void> androidAlarmCallback() async {
     debugPrint("AlarmManager callback error: $e");
   } finally {
     // RECURSIVE SCHEDULING TO BYPASS ANDROID 15-MINUTE PERIODIC LIMIT
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.reload();
-    final interval = prefs.getInt('notificationIntervalMinutes') ?? 60;
-    final startH = prefs.getInt('notificationStartHour') ?? 9;
-    final startM = prefs.getInt('notificationStartMinute') ?? 0;
-    final endH = prefs.getInt('notificationEndHour') ?? 19;
-    final endM = prefs.getInt('notificationEndMinute') ?? 0;
-    
-    final nextSlot = NotificationService._calculateNextSlot(DateTime.now(), startH, startM, endH, endM, interval);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.reload();
+      final interval = prefs.getInt('notificationIntervalMinutes') ?? 0;
 
-    await AndroidAlarmManager.oneShotAt(
-      nextSlot,
-      1000, // androidAlarmId
-      androidAlarmCallback,
-      exact: true,
-      wakeup: true,
-      rescheduleOnReboot: true,
-    );
+      if (interval <= 0) return; // User disabled notifications, stop chain
+
+      final startH = prefs.getInt('notificationStartHour') ?? 9;
+      final startM = prefs.getInt('notificationStartMinute') ?? 0;
+      final endH = prefs.getInt('notificationEndHour') ?? 19;
+      final endM = prefs.getInt('notificationEndMinute') ?? 0;
+
+      final nextSlot = NotificationService._calculateNextSlot(DateTime.now(), startH, startM, endH, endM, interval);
+
+      await AndroidAlarmManager.oneShotAt(
+        nextSlot,
+        1000, // androidAlarmId
+        androidAlarmCallback,
+        exact: true,
+        wakeup: true,
+        rescheduleOnReboot: true,
+      );
+    } catch (e) {
+      debugPrint("AlarmManager reschedule error: $e");
+    }
   }
 }

@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
+import '../services/collection_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'learning_screen.dart';
@@ -12,6 +13,8 @@ class HomeScreen extends StatefulWidget {
   final String? topicPath;
   final String? topicTitle;
   final bool initSearch;
+  final List<String>? topicLevelsFilter;
+  final Function(Vocabulary)? onWordSelected;
 
   const HomeScreen({
     super.key,
@@ -19,6 +22,8 @@ class HomeScreen extends StatefulWidget {
     this.topicPath,
     this.topicTitle,
     this.initSearch = false,
+    this.topicLevelsFilter,
+    this.onWordSelected,
   });
 
   @override
@@ -31,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = true;
   String _selectedLevel = 'A1';
   final List<String> _levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
-  List<String> _selectedTopicLevels = ['A1', 'A2', 'B1'];
 
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
@@ -63,6 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
       _loadKnownWordsData();
     } else if (widget.mode == 'HISTORY') {
       _loadHistoryWordsData();
+    } else if (widget.mode == 'COLLECTION') {
+      _loadCollectionData();
     } else {
       _loadData(_selectedLevel);
       _loadAllData();
@@ -127,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final data = await CsvService.loadVocabularyByDayFromPath(
       path, 
       excludeKnown: true,
-      levelFilter: widget.mode == 'TOPIC' ? _selectedTopicLevels : null,
+      levelFilter: widget.mode == 'TOPIC' ? widget.topicLevelsFilter : null,
     );
     if (mounted) {
       setState(() {
@@ -137,8 +143,32 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  Future<void> _loadCollectionData() async {
+    setState(() {
+      _isLoading = true;
+    });
+    final allData = await CsvService.loadAllVocabulary();
+    final collections = await CollectionService.getCollections();
+    final collectionWords = collections[widget.topicTitle!] ?? [];
+
+    if (mounted) {
+      setState(() {
+        List<Vocabulary> list = [];
+        for (var w in collectionWords) {
+          final matches = allData.where((v) => v.word.toLowerCase() == w);
+          if (matches.isNotEmpty) {
+            list.add(matches.first);
+          }
+        }
+        _allVocabData = list;
+        _isLoading = false;
+      });
+    }
+  }
+
   Future<void> _loadAllData() async {
-    final allData = await CsvService.loadAllVocabulary(excludeKnown: true);
+    final bool shouldExclude = widget.mode == 'TOPIC' || widget.mode == 'POPULARITY';
+    final allData = await CsvService.loadAllVocabulary(excludeKnown: shouldExclude);
     if (mounted) {
       setState(() {
         _allVocabData = allData;
@@ -189,11 +219,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ? 'KNOWN WORDS'
                     : widget.mode == 'HISTORY'
                         ? 'HISTORY'
-                        : widget.mode == 'TOPIC' && widget.topicTitle != null 
-                            ? widget.topicTitle!.toUpperCase() 
-                            : 'ELED.',
+                        : widget.mode == 'COLLECTION' && widget.topicTitle != null
+                            ? widget.topicTitle!.toUpperCase()
+                            : widget.mode == 'TOPIC' && widget.topicTitle != null 
+                                ? widget.topicTitle!.toUpperCase() 
+                                : 'ELED.',
                 style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      fontSize: (widget.mode == 'TOPIC' || widget.mode == 'KNOWN' || widget.mode == 'HISTORY') ? 24 : 40,
+                      fontSize: (widget.mode == 'TOPIC' || widget.mode == 'KNOWN' || widget.mode == 'HISTORY' || widget.mode == 'COLLECTION') ? 24 : 40,
                       fontWeight: FontWeight.w900,
                     ),
               ),
@@ -255,75 +287,34 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               },
             ),
-          if (widget.mode == 'TOPIC' && !_isSearching)
+
+          if (widget.mode == 'COLLECTION')
             IconButton(
               icon: Icon(
-                Icons.filter_list,
+                Icons.add,
                 color: context.bBorder,
                 size: 32,
               ),
               onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (ctx) {
-                    return StatefulBuilder(
-                      builder: (context, setDialogState) {
-                        return AlertDialog(
-                          backgroundColor: context.bBg,
-                          shape: Border.all(color: context.bBorder, width: 4),
-                          title: Text(
-                            'FILTER BY LEVEL', 
-                            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                              fontWeight: FontWeight.w900,
-                              color: context.bBorder,
-                            )
-                          ),
-                          content: SingleChildScrollView(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: _levels.map((level) {
-                                return CheckboxListTile(
-                                  title: Text(level, style: TextStyle(fontWeight: FontWeight.bold, color: context.bBorder)),
-                                  value: _selectedTopicLevels.contains(level),
-                                  activeColor: BrutalistTheme.secondary,
-                                  checkColor: BrutalistTheme.black,
-                                  side: BorderSide(color: context.bBorder, width: 2),
-                                  onChanged: (bool? value) {
-                                    setDialogState(() {
-                                      if (value == true) {
-                                        _selectedTopicLevels.add(level);
-                                      } else {
-                                        _selectedTopicLevels.remove(level);
-                                      }
-                                    });
-                                  },
-                                );
-                              }).toList(),
-                            ),
-                          ),
-                          actions: [
-                            TextButton(
-                              style: TextButton.styleFrom(
-                                backgroundColor: BrutalistTheme.secondary,
-                                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                                side: BorderSide(color: context.bBorder, width: 2),
-                              ),
-                              onPressed: () {
-                                Navigator.of(ctx).pop();
-                                setState(() {});
-                                _loadDataFromPath(widget.topicPath!);
-                              },
-                              child: Text('APPLY', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
-                            ),
-                          ],
-                        );
-                      }
-                    );
-                  },
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => HomeScreen(
+                      mode: 'SEARCH',
+                      onWordSelected: (vocab) async {
+                        final added = await CollectionService.addWord(widget.topicTitle!, vocab.word);
+                        if (added && mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('ADDED COMPLETED!')));
+                          _loadCollectionData();
+                        }
+                        if (mounted) Navigator.of(context).pop(); // pop search screen
+                      },
+                    ),
+                  ),
                 );
               },
             ),
-          if (widget.mode != 'KNOWN' && widget.mode != 'HISTORY')
+
+          if (widget.mode != 'KNOWN' && widget.mode != 'HISTORY' && widget.mode != 'COLLECTION')
             IconButton(
               icon: Icon(
                 _isSearching ? Icons.close : Icons.search,
@@ -362,7 +353,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       strokeWidth: 6,
                     ),
                   )
-                : (widget.mode == 'KNOWN' || widget.mode == 'HISTORY')
+                : (widget.mode == 'KNOWN' || widget.mode == 'HISTORY' || widget.mode == 'COLLECTION')
                     ? _buildFlatList(_allVocabData)
                     : _vocabData.isEmpty && _allVocabData.isEmpty
                         ? _buildEmptyState()
@@ -473,7 +464,9 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Padding(
           padding: const EdgeInsets.all(32.0),
           child: Text(
-            'NO KNOWN WORDS YET.\nKEEP LEARNING!',
+            widget.mode == 'COLLECTION'
+                ? 'COLLECTION IS EMPTY.\nTAP + TO ADD WORDS!'
+                : 'NO KNOWN WORDS YET.\nKEEP LEARNING!',
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   color: context.bBorder,
                   fontWeight: FontWeight.w900,
@@ -491,11 +484,12 @@ class _HomeScreenState extends State<HomeScreen> {
         final vocab = results[index];
         final isEven = index % 2 == 0;
 
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 24.0),
-          child: BrutalistCard(
-            backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
-            onTap: () {
+        Widget card = BrutalistCard(
+          backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
+          onTap: () {
+            if (widget.onWordSelected != null) {
+              widget.onWordSelected!(vocab);
+            } else {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => LearningScreen(
@@ -505,10 +499,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               );
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Column(
+            }
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
@@ -559,7 +554,34 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-          ),
+        );
+
+        if (widget.mode == 'COLLECTION') {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 24.0),
+            child: Dismissible(
+              key: Key(vocab.word),
+              direction: DismissDirection.endToStart,
+              background: Container(
+                color: Colors.red,
+                alignment: Alignment.centerRight,
+                padding: const EdgeInsets.symmetric(horizontal: 32),
+                child: const Icon(Icons.delete_forever, color: Colors.white, size: 40),
+              ),
+              onDismissed: (dir) async {
+                await CollectionService.removeWord(widget.topicTitle!, vocab.word);
+                setState(() {
+                  _allVocabData.remove(vocab);
+                });
+              },
+              child: card,
+            ),
+          );
+        }
+
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 24.0),
+          child: card,
         );
       },
     );
@@ -580,6 +602,40 @@ class _HomeScreenState extends State<HomeScreen> {
       }
     }
 
+    int getPopularityRank(String levels) {
+      if (levels.isEmpty) return 99;
+      final upper = levels.toUpperCase();
+      if (upper.contains('A1')) return 1;
+      if (upper.contains('A2')) return 2;
+      if (upper.contains('B1')) return 3;
+      if (upper.contains('B2')) return 4;
+      if (upper.contains('C1')) return 5;
+      return 99;
+    }
+
+    int getMatchTier(Vocabulary vocab) {
+      final String w = vocab.word.toLowerCase();
+      if (w == query) return 0;
+      if (w.startsWith(query)) return 1;
+      if (w.contains(query)) return 2;
+      return 3;
+    }
+
+    results.sort((a, b) {
+      final tierA = getMatchTier(a);
+      final tierB = getMatchTier(b);
+      if (tierA != tierB) return tierA.compareTo(tierB);
+
+      final popA = getPopularityRank(a.levels);
+      final popB = getPopularityRank(b.levels);
+      if (popA != popB) return popA.compareTo(popB);
+
+      if (a.word.length != b.word.length) {
+         return a.word.length.compareTo(b.word.length);
+      }
+      return a.word.toLowerCase().compareTo(b.word.toLowerCase());
+    });
+
     if (results.isEmpty) {
       return Center(
         child: Text(
@@ -592,11 +648,41 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
+    Map<String, Vocabulary> collapsed = {};
+    for (var vocab in results) {
+      final key = vocab.word.toLowerCase();
+      if (collapsed.containsKey(key)) {
+        final existing = collapsed[key]!;
+        if (vocab.topic.isNotEmpty) {
+           final topicsList = existing.topic.split(', ').where((s) => s.isNotEmpty).toList();
+           if (!topicsList.contains(vocab.topic)) {
+              topicsList.add(vocab.topic);
+           }
+           final newTopic = topicsList.join(', ');
+           collapsed[key] = Vocabulary(
+              id: existing.id,
+              url: existing.url,
+              levels: existing.levels,
+              word: existing.word,
+              translation: existing.translation,
+              partOfSpeech: existing.partOfSpeech,
+              ipa: existing.ipa,
+              audioLink: existing.audioLink,
+              topic: newTopic,
+           );
+        }
+      } else {
+        collapsed[key] = vocab;
+      }
+    }
+
+    final distinctResults = collapsed.values.toList();
+
     return ListView.builder(
       padding: const EdgeInsets.all(24),
-      itemCount: results.length,
+      itemCount: distinctResults.length,
       itemBuilder: (context, index) {
-        final vocab = results[index];
+        final vocab = distinctResults[index];
         final isEven = index % 2 == 0;
 
         return Padding(
@@ -604,15 +690,19 @@ class _HomeScreenState extends State<HomeScreen> {
           child: BrutalistCard(
             backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
             onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => LearningScreen(
-                    day: 0,
-                    vocabularies: results,
-                    initialIndex: index,
+              if (widget.onWordSelected != null) {
+                widget.onWordSelected!(vocab);
+              } else {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => LearningScreen(
+                      day: 0,
+                      vocabularies: distinctResults,
+                      initialIndex: index,
+                    ),
                   ),
-                ),
-              );
+                );
+              }
             },
             child: Padding(
               padding: const EdgeInsets.all(24.0),

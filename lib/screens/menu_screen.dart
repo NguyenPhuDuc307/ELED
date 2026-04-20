@@ -3,6 +3,7 @@ import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'home_screen.dart';
 import 'topic_screen.dart';
+import 'collections_screen.dart';
 import 'settings_screen.dart';
 import 'learning_screen.dart';
 import '../services/csv_service.dart';
@@ -145,6 +146,30 @@ class _MenuScreenState extends State<MenuScreen> {
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                             fontWeight: FontWeight.w900,
                             color: BrutalistTheme.black,
+                          ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 32),
+              BrutalistCard(
+                backgroundColor: context.bBorder,
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const CollectionsScreen(),
+                    ),
+                  );
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(32.0),
+                  child: Center(
+                    child: Text(
+                      'MY COLLECTIONS',
+                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                            fontWeight: FontWeight.w900,
+                            color: context.bBg,
                           ),
                       textAlign: TextAlign.center,
                     ),

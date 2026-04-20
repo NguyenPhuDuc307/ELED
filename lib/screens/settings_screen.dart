@@ -330,44 +330,37 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildIntervalSelector() {
     final options = {
       0: 'OFF',
-      10: 'EVERY 10 MIN',
-      15: 'EVERY 15 MIN',
-      20: 'EVERY 20 MIN',
-      25: 'EVERY 25 MIN',
-      30: 'EVERY 30 MIN',
-      60: 'EVERY 60 MIN',
+      10: '10 MIN',
+      15: '15 MIN',
+      20: '20 MIN',
+      25: '25 MIN',
+      30: '30 MIN',
+      60: '60 MIN',
     };
 
-    return Column(
+    return Wrap(
+      spacing: 12.0,
+      runSpacing: 12.0,
       children: options.entries.map((entry) {
         final isSelected = _intervalMinutes == entry.key;
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 12.0),
-          child: BrutalistCard(
-            backgroundColor: isSelected ? BrutalistTheme.secondary : context.bBg,
-            onTap: () {
-              setState(() {
-                _intervalMinutes = entry.key;
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                   Icon(
-                    isSelected ? Icons.radio_button_checked : Icons.radio_button_unchecked,
+        return GestureDetector(
+          onTap: () => setState(() => _intervalMinutes = entry.key),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 120),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            decoration: BoxDecoration(
+              color: isSelected ? BrutalistTheme.secondary : context.bBg,
+              border: Border.all(color: context.bBorder, width: 3),
+              boxShadow: isSelected
+                  ? []
+                  : [BoxShadow(color: context.bBorder, offset: const Offset(4, 4))],
+            ),
+            child: Text(
+              entry.value,
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    fontWeight: FontWeight.w900,
                     color: isSelected ? BrutalistTheme.black : context.bBorder,
                   ),
-                  const SizedBox(width: 16),
-                  Text(
-                    entry.value,
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          fontWeight: isSelected ? FontWeight.w900 : FontWeight.bold,
-                          color: isSelected ? BrutalistTheme.black : context.bBorder,
-                        ),
-                  ),
-                ],
-              ),
             ),
           ),
         );

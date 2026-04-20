@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
-import '../theme/brutalist_theme.dart';
+import '../theme/brutalist_theme.dart' show BrutalistTheme, BrutalistContext, levelColor;
 import '../widgets/brutalist_card.dart';
 
 class LearningScreen extends StatefulWidget {
@@ -108,21 +108,40 @@ class _LearningScreenState extends State<LearningScreen> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+            padding: const EdgeInsets.fromLTRB(24.0, 16.0, 24.0, 8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'PROGRESS',
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  '${_currentIndex + 1} / ${widget.vocabularies.length}',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        fontWeight: FontWeight.w900,
+                      ),
                 ),
                 Text(
-                  '${_currentIndex + 1} / ${widget.vocabularies.length}',
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  '${((_currentIndex + 1) / widget.vocabularies.length * 100).round()}%',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        fontWeight: FontWeight.w900,
+                        color: BrutalistTheme.secondary,
+                      ),
                 ),
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            child: ClipRRect(
+              child: LinearProgressIndicator(
+                value: widget.vocabularies.isEmpty
+                    ? 0
+                    : (_currentIndex + 1) / widget.vocabularies.length,
+                minHeight: 8,
+                color: BrutalistTheme.primary,
+                backgroundColor: context.bBorder.withValues(alpha: 0.15),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
@@ -137,9 +156,7 @@ class _LearningScreenState extends State<LearningScreen> {
                 return Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
-                    backgroundColor: index % 2 == 0 
-                        ? BrutalistTheme.primary 
-                        : BrutalistTheme.accent,
+                    backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
                     child: Padding(
                       padding: const EdgeInsets.all(32.0),
                       child: Column(

@@ -115,20 +115,29 @@ class _MenuScreenState extends State<MenuScreen> {
                   );
                 },
                 child: Padding(
-                  padding: const EdgeInsets.all(32.0),
-                  child: Center(
-                    child: Text(
-                      'POPULARITY\n(A1 - C1)',
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                            color: BrutalistTheme.black,
-                          ),
-                      textAlign: TextAlign.center,
-                    ),
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'POPULARITY',
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w900,
+                              color: BrutalistTheme.black,
+                            ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Học từ theo cấp độ A1 → C1',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.7),
+                            ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
               BrutalistCard(
                 backgroundColor: BrutalistTheme.accent,
                 onTap: () {
@@ -139,20 +148,29 @@ class _MenuScreenState extends State<MenuScreen> {
                   );
                 },
                 child: Padding(
-                  padding: const EdgeInsets.all(32.0),
-                  child: Center(
-                    child: Text(
-                      'TOPICS\n(BY CATEGORY)',
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                            color: BrutalistTheme.black,
-                          ),
-                      textAlign: TextAlign.center,
-                    ),
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'TOPICS',
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w900,
+                              color: BrutalistTheme.black,
+                            ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Học theo chủ đề: động vật, du lịch…',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.7),
+                            ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
               BrutalistCard(
                 backgroundColor: context.bBorder,
                 onTap: () {
@@ -163,20 +181,29 @@ class _MenuScreenState extends State<MenuScreen> {
                   );
                 },
                 child: Padding(
-                  padding: const EdgeInsets.all(32.0),
-                  child: Center(
-                    child: Text(
-                      'MY COLLECTIONS',
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                            color: context.bBg,
-                          ),
-                      textAlign: TextAlign.center,
-                    ),
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'MY COLLECTIONS',
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w900,
+                              color: context.bBg,
+                            ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Danh sách từ vựng tự tạo',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: context.bBg.withValues(alpha: 0.7),
+                            ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 16),
               BrutalistCard(
                 backgroundColor: BrutalistTheme.secondary,
                 onTap: () {
@@ -187,20 +214,29 @@ class _MenuScreenState extends State<MenuScreen> {
                   );
                 },
                 child: Padding(
-                  padding: const EdgeInsets.all(32.0),
-                  child: Center(
-                    child: Text(
-                      'KNOWN WORDS',
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                            color: BrutalistTheme.black,
-                          ),
-                      textAlign: TextAlign.center,
-                    ),
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'KNOWN WORDS',
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w900,
+                              color: BrutalistTheme.black,
+                            ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Ôn lại những từ đã thuộc',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.7),
+                            ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-              const SizedBox(height: 48),
+              const SizedBox(height: 16),
               BrutalistCard(
                 backgroundColor: context.bBg,
                 onTap: () {
@@ -211,16 +247,25 @@ class _MenuScreenState extends State<MenuScreen> {
                   );
                 },
                 child: Padding(
-                  padding: const EdgeInsets.all(32.0),
-                  child: Center(
-                    child: Text(
-                      'NOTIFICATIONS\nHISTORY',
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                            color: context.bBorder,
-                          ),
-                      textAlign: TextAlign.center,
-                    ),
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'HISTORY',
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w900,
+                              color: context.bBorder,
+                            ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Từ đã nhận qua thông báo',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: context.bBorder.withValues(alpha: 0.7),
+                            ),
+                      ),
+                    ],
                   ),
                 ),
               ),

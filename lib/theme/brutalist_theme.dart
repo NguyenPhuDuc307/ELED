@@ -90,8 +90,18 @@ class BrutalistTheme {
 }
 
 extension BrutalistContext on BuildContext {
-  /// Represents the dynamic "Black" border/text color (White in dark mode)
   Color get bBorder => Theme.of(this).colorScheme.onSurface;
-  /// Represents the dynamic "White" background color (Black in dark mode)
   Color get bBg => Theme.of(this).colorScheme.surface;
+}
+
+/// Returns a card background color based on Oxford level string (e.g. "A1", "B2").
+/// Falls back to alternating primary/accent if level is unrecognized.
+Color levelColor(String levels, {int fallbackIndex = 0}) {
+  final upper = levels.toUpperCase();
+  if (upper.contains('A1')) return BrutalistTheme.primary;
+  if (upper.contains('A2')) return BrutalistTheme.accent;
+  if (upper.contains('B1')) return const Color(0xFFB8A9FF); // soft purple
+  if (upper.contains('B2')) return const Color(0xFFFFB347); // soft orange
+  if (upper.contains('C1')) return BrutalistTheme.secondary;
+  return fallbackIndex % 2 == 0 ? BrutalistTheme.primary : BrutalistTheme.accent;
 }

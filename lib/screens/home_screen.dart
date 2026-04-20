@@ -486,10 +486,9 @@ class _HomeScreenState extends State<HomeScreen> {
       itemCount: results.length,
       itemBuilder: (context, index) {
         final vocab = results[index];
-        final isEven = index % 2 == 0;
 
         Widget card = BrutalistCard(
-          backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
+          backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
           onTap: () {
             if (widget.onWordSelected != null) {
               widget.onWordSelected!(vocab);
@@ -723,12 +722,11 @@ class _HomeScreenState extends State<HomeScreen> {
       itemCount: distinctResults.length,
       itemBuilder: (context, index) {
         final vocab = distinctResults[index];
-        final isEven = index % 2 == 0;
 
         return Padding(
           padding: const EdgeInsets.only(bottom: 24.0),
           child: BrutalistCard(
-            backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
+            backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
             onTap: () {
               if (widget.onWordSelected != null) {
                 widget.onWordSelected!(vocab);

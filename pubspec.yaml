@@ -69,6 +69,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/home.png
     - assets/data/
     - assets/data/popularity/
     - assets/data/topic/

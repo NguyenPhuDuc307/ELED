@@ -108,14 +108,15 @@ class _LearningScreenState extends State<LearningScreen> {
                 Text(
                   '${_currentIndex + 1} / ${widget.vocabularies.length}',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.w900,
+                        fontWeight: FontWeight.w600,
+                        color: context.bMuted,
                       ),
                 ),
                 Text(
                   '${((_currentIndex + 1) / widget.vocabularies.length * 100).round()}%',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.w900,
-                        color: BrutalistTheme.secondary,
+                        fontWeight: FontWeight.w600,
+                        color: BrutalistTheme.primary,
                       ),
                 ),
               ],
@@ -150,6 +151,7 @@ class _LearningScreenState extends State<LearningScreen> {
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
+                    onTap: () => setState(() => _showTranslation = !_showTranslation),
                     child: Padding(
                       padding: const EdgeInsets.all(32.0),
                       child: Column(
@@ -225,10 +227,11 @@ class _LearningScreenState extends State<LearningScreen> {
                           FittedBox(
                             fit: BoxFit.scaleDown,
                             child: Text(
-                              _showTranslation ? vocab.translation : 'TAP TO REVEAL',
+                              _showTranslation ? vocab.translation : 'Tap to reveal',
                               style: Theme.of(context).textTheme.displayLarge?.copyWith(
                                     fontSize: 40,
-                                    color: BrutalistTheme.black,
+                                    color: _showTranslation ? BrutalistTheme.black : BrutalistTheme.textMuted,
+                                    fontStyle: _showTranslation ? FontStyle.normal : FontStyle.italic,
                                   ),
                               textAlign: TextAlign.center,
                             ),
@@ -328,14 +331,14 @@ class _LearningScreenState extends State<LearningScreen> {
   Widget _buildNavButton({required IconData icon, required VoidCallback? onPressed}) {
     final active = onPressed != null;
     return Material(
-      color: active ? BrutalistTheme.primary : BrutalistTheme.border,
+      color: active ? BrutalistTheme.primaryLight : BrutalistTheme.border.withValues(alpha: 0.5),
       borderRadius: BorderRadius.circular(14),
       child: InkWell(
         onTap: onPressed,
         borderRadius: BorderRadius.circular(14),
         child: Padding(
           padding: const EdgeInsets.all(16),
-          child: Icon(icon, color: active ? BrutalistTheme.white : BrutalistTheme.textMuted, size: 28),
+          child: Icon(icon, color: active ? BrutalistTheme.primary : BrutalistTheme.textMuted, size: 24),
         ),
       ),
     );

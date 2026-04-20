@@ -71,31 +71,33 @@ class _BrutalistCardState extends State<BrutalistCard>
           margin: const EdgeInsets.fromLTRB(4, 2, 4, 10),
           decoration: BoxDecoration(
             color: effectiveBg,
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
+            border: isDark
+                ? Border.all(color: const Color(0xFF334155), width: 1)
+                : Border.all(color: const Color(0xFFEDE0D8).withValues(alpha: 0.8), width: 1),
             boxShadow: isDark
                 ? [
                     BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.3),
-                      blurRadius: 12,
+                      color: Colors.black.withValues(alpha: 0.25),
+                      blurRadius: 16,
                       offset: const Offset(0, 4),
                     ),
                   ]
                 : [
                     BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.13),
-                      blurRadius: 18,
-                      spreadRadius: 1,
-                      offset: const Offset(0, 5),
+                      color: const Color(0xFF7A5C4A).withValues(alpha: 0.10),
+                      blurRadius: 20,
+                      offset: const Offset(0, 6),
                     ),
                     BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.06),
+                      color: const Color(0xFF7A5C4A).withValues(alpha: 0.05),
                       blurRadius: 6,
                       offset: const Offset(0, 2),
                     ),
                   ],
           ),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
             child: widget.child,
           ),
         ),

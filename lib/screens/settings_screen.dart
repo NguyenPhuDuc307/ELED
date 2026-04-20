@@ -147,6 +147,20 @@ class _SettingsScreenState extends State<SettingsScreen> {
           icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => Navigator.of(context).pop(),
         ),
+        actions: [
+          TextButton(
+            onPressed: _isSaving ? null : _saveSettings,
+            child: Text(
+              'Save',
+              style: TextStyle(
+                color: BrutalistTheme.primary,
+                fontWeight: FontWeight.w700,
+                fontSize: 15,
+              ),
+            ),
+          ),
+          const SizedBox(width: 4),
+        ],
       ),
       body: _isLoading || _isSaving
           ? Center(
@@ -304,23 +318,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     }).toList(),
                   ),
 
-                  const SizedBox(height: 48),
-                  BrutalistCard(
-                    backgroundColor: context.bBorder,
-                    onTap: _saveSettings,
-                    child: Padding(
-                      padding: const EdgeInsets.all(24.0),
-                      child: Center(
-                        child: Text(
-                          'SAVE SETTINGS',
-                          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                                color: context.bBg,
-                                fontWeight: FontWeight.w900,
-                              ),
-                        ),
-                      ),
-                    ),
-                  ),
+                  const SizedBox(height: 24),
                 ],
               ),
             ),

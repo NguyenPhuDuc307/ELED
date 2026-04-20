@@ -40,17 +40,17 @@ class VocabularyWidgetProvider : HomeWidgetProvider() {
                 }
                 
                 if (levels.isEmpty()) {
-                    setViewVisibility(R.id.widget_levels_border, View.GONE)
+                    setViewVisibility(R.id.widget_levels, View.GONE)
                 } else {
-                    setViewVisibility(R.id.widget_levels_border, View.VISIBLE)
+                    setViewVisibility(R.id.widget_levels, View.VISIBLE)
                     setTextViewText(R.id.widget_levels, levels.uppercase())
                 }
 
                 if (topic.isEmpty()) {
-                    setViewVisibility(R.id.widget_topic_border, View.GONE)
+                    setViewVisibility(R.id.widget_topic, View.GONE)
                 } else {
-                    setViewVisibility(R.id.widget_topic_border, View.VISIBLE)
-                    setTextViewText(R.id.widget_topic, topic.uppercase())
+                    setViewVisibility(R.id.widget_topic, View.VISIBLE)
+                    setTextViewText(R.id.widget_topic, topic)
                 }
 
                 val encodedWord = android.net.Uri.encode(word)

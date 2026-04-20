@@ -38,45 +38,43 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
       context: context,
       builder: (ctx) {
         return AlertDialog(
-          backgroundColor: context.bBg,
-          shape: Border.all(color: context.bBorder, width: 4),
+          backgroundColor: BrutalistTheme.surface,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           title: Text(
-            'NEW COLLECTION',
+            'New Collection',
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.w900,
-                  color: context.bBorder,
+                  fontWeight: FontWeight.w700,
                 ),
           ),
           content: TextField(
             controller: controller,
             autofocus: true,
-            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  color: context.bBorder,
-                ),
+            style: Theme.of(context).textTheme.bodyLarge,
             decoration: InputDecoration(
               hintText: 'e.g. TOEFL Words...',
-              hintStyle: TextStyle(color: Colors.grey.shade500),
+              hintStyle: TextStyle(color: BrutalistTheme.textMuted),
               border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.black, width: 2),
+                borderSide: BorderSide(color: BrutalistTheme.border, width: 1.5),
               ),
-              enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: context.bBorder, width: 2),
+              enabledBorder: const UnderlineInputBorder(
+                borderSide: BorderSide(color: BrutalistTheme.border, width: 1.5),
               ),
-              focusedBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: BrutalistTheme.secondary, width: 4),
+              focusedBorder: const UnderlineInputBorder(
+                borderSide: BorderSide(color: BrutalistTheme.primary, width: 2),
               ),
             ),
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(),
-              child: Text('CANCEL', style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+              child: Text('Cancel', style: TextStyle(color: BrutalistTheme.textMuted, fontWeight: FontWeight.w600)),
             ),
             TextButton(
               style: TextButton.styleFrom(
-                backgroundColor: BrutalistTheme.secondary,
-                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                side: BorderSide(color: context.bBorder, width: 2),
+                backgroundColor: BrutalistTheme.primary,
+                foregroundColor: BrutalistTheme.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
               ),
               onPressed: () async {
                 final name = controller.text.trim();
@@ -86,7 +84,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                   _loadCollections();
                 }
               },
-              child: const Text('CREATE', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+              child: const Text('Create', style: TextStyle(fontWeight: FontWeight.w600)),
             ),
           ],
         );
@@ -98,12 +96,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'COLLECTIONS',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.w900,
-              ),
-        ),
+        title: const Text('Collections'),
       ),
       body: _isLoading
           ? Center(
@@ -112,12 +105,12 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
           : Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(24.0),
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
                   child: BrutalistCard(
                     backgroundColor: context.bBorder,
                     onTap: _showCreateCollectionDialog,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20.0),
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
                       child: Center(
                         child: Text(
                           '+ CREATE NEW',
@@ -142,23 +135,22 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                           ),
                         )
                       : ListView.builder(
-                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          clipBehavior: Clip.none,
                           itemCount: _collections.keys.length,
                           itemBuilder: (context, index) {
                             final name = _collections.keys.elementAt(index);
                             final wordCount = _collections[name]!.length;
                             final isEven = index % 2 == 0;
 
-                            return Padding(
-                              padding: const EdgeInsets.only(bottom: 24.0),
-                              child: Dismissible(
+                            return Dismissible(
                                 key: Key(name),
                                 direction: DismissDirection.endToStart,
                                 background: Container(
                                   color: Colors.red,
                                   alignment: Alignment.centerRight,
                                   padding: const EdgeInsets.symmetric(horizontal: 32),
-                                  child: const Icon(Icons.delete_forever, color: Colors.white, size: 40),
+                                  child: const Icon(Icons.delete_forever_rounded, color: Colors.white, size: 40),
                                 ),
                                 confirmDismiss: (dir) async {
                                   return await showDialog(
@@ -186,7 +178,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                                   _loadCollections();
                                 },
                                 child: BrutalistCard(
-                                  backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
+                                  backgroundColor: isEven ? BrutalistTheme.primaryLight : BrutalistTheme.accentLight,
                                   onTap: () {
                                     Navigator.of(context).push(
                                       MaterialPageRoute(
@@ -198,49 +190,41 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                                     );
                                   },
                                   child: Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 24.0),
+                                    padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),
                                     child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                name.toUpperCase(),
-                                                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                                                      fontSize: 32,
+                                                name,
+                                                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                                                      fontWeight: FontWeight.w700,
                                                       color: BrutalistTheme.black,
+                                                      fontSize: 18,
                                                     ),
                                               ),
-                                              const SizedBox(height: 8),
-                                              Container(
-                                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                                decoration: BoxDecoration(
-                                                  color: BrutalistTheme.white,
-                                                  border: Border.all(color: BrutalistTheme.black, width: 2),
-                                                ),
-                                                child: Text(
-                                                  '$wordCount WORDS',
-                                                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                        fontWeight: FontWeight.bold,
-                                                        color: BrutalistTheme.black,
-                                                      ),
-                                                ),
+                                              const SizedBox(height: 2),
+                                              Text(
+                                                '$wordCount words',
+                                                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                                      color: BrutalistTheme.black.withValues(alpha: 0.55),
+                                                      fontSize: 13,
+                                                    ),
                                               ),
                                             ],
                                           ),
                                         ),
-                                        const Icon(
-                                          Icons.arrow_forward,
-                                          size: 40,
-                                          color: BrutalistTheme.black,
+                                        Icon(
+                                          Icons.arrow_forward_ios_rounded,
+                                          size: 16,
+                                          color: BrutalistTheme.black.withValues(alpha: 0.5),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
-                              ),
                             );
                           },
                         ),

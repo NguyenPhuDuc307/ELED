@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
@@ -35,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Map<int, List<Vocabulary>> _vocabData = {};
   List<Vocabulary> _allVocabData = [];
   bool _isLoading = true;
-  String _selectedLevel = 'A1';
+  List<String> _selectedLevels = ['A1'];
   final List<String> _levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
   final TextEditingController _searchController = TextEditingController();
@@ -73,9 +72,36 @@ class _HomeScreenState extends State<HomeScreen> {
     } else if (widget.mode == 'COLLECTION') {
       _loadCollectionData();
     } else {
-      _loadData(_selectedLevel);
+      _loadLevelsFromPrefs();
       _loadAllData();
     }
+  }
+
+  Future<void> _loadLevelsFromPrefs() async {
+    final prefs = await SharedPreferences.getInstance();
+    final saved = prefs.getStringList('selectedPopularity') ?? [];
+    final levels = saved.isNotEmpty ? saved : ['A1'];
+    if (mounted) setState(() => _selectedLevels = levels);
+    _loadDataForLevels(levels);
+  }
+
+  Future<void> _loadDataForLevels(List<String> levels) async {
+    setState(() => _isLoading = true);
+    if (levels.isEmpty) {
+      if (mounted) setState(() { _vocabData = {}; _isLoading = false; });
+      return;
+    }
+    const levelOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    final sorted = levelOrder.where((l) => levels.contains(l)).toList();
+    final allVocab = await CsvService.loadSpecificPopularityVocabulary(sorted, excludeKnown: true);
+    final Map<int, List<Vocabulary>> grouped = {};
+    int day = 1;
+    for (var i = 0; i < allVocab.length; i++) {
+      if (i > 0 && i % 20 == 0) day++;
+      grouped.putIfAbsent(day, () => []).add(allVocab[i]);
+    }
+    grouped.removeWhere((_, v) => v.isEmpty);
+    if (mounted) setState(() { _vocabData = grouped; _isLoading = false; });
   }
 
   Future<void> _loadKnownWordsData() async {
@@ -179,18 +205,6 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  Future<void> _loadData(String level) async {
-    setState(() {
-      _isLoading = true;
-    });
-    final data = await CsvService.loadVocabularyByDay(level, excludeKnown: true);
-    if (mounted) {
-      setState(() {
-        _vocabData = data;
-        _isLoading = false;
-      });
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -207,40 +221,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
                 decoration: InputDecoration(
-                  hintText: 'SEARCH ENTIRE DATABASE...',
-                  hintStyle: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.w900,
-                        color: Colors.grey.shade600,
+                  hintText: 'Search entire database...',
+                  hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: context.bMuted,
                       ),
                   border: InputBorder.none,
                 ),
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.w900,
-                    ),
+                style: Theme.of(context).textTheme.bodyLarge,
               )
             : Text(
                 widget.mode == 'KNOWN'
-                    ? 'KNOWN WORDS'
+                    ? 'Known Words'
                     : widget.mode == 'HISTORY'
-                        ? 'HISTORY'
+                        ? 'History'
                         : widget.mode == 'COLLECTION' && widget.topicTitle != null
-                            ? widget.topicTitle!.toUpperCase()
-                            : widget.mode == 'TOPIC' && widget.topicTitle != null 
-                                ? widget.topicTitle!.toUpperCase() 
-                                : 'ELED.',
-                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      fontSize: (widget.mode == 'TOPIC' || widget.mode == 'KNOWN' || widget.mode == 'HISTORY' || widget.mode == 'COLLECTION') ? 24 : 40,
-                      fontWeight: FontWeight.w900,
-                    ),
+                            ? widget.topicTitle!
+                            : widget.mode == 'TOPIC' && widget.topicTitle != null
+                                ? widget.topicTitle!
+                                : 'Popularity',
               ),
         actions: [
           if (widget.mode == 'HISTORY')
             IconButton(
-              icon: Icon(
-                Icons.delete,
-                color: BrutalistTheme.secondary,
-                size: 32,
-              ),
+              icon: Icon(Icons.delete_rounded, color: BrutalistTheme.secondary),
               onPressed: () {
                 showDialog(
                   context: context,
@@ -268,7 +271,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       TextButton(
                         style: TextButton.styleFrom(
                           backgroundColor: BrutalistTheme.secondary,
-                          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                         ),
                         onPressed: () async {
                           Navigator.of(ctx).pop();
@@ -294,11 +297,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           if (widget.mode == 'COLLECTION')
             IconButton(
-              icon: Icon(
-                Icons.add,
-                color: context.bBorder,
-                size: 32,
-              ),
+              icon: const Icon(Icons.add_rounded),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
@@ -307,7 +306,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onWordSelected: (vocab) async {
                         final added = await CollectionService.addWord(widget.topicTitle!, vocab.word);
                         if (added && mounted) {
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('ADDED COMPLETED!')));
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Word added to collection!')));
                           _loadCollectionData();
                         }
                         if (mounted) Navigator.of(context).pop(); // pop search screen
@@ -320,11 +319,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           if (widget.mode != 'KNOWN' && widget.mode != 'HISTORY' && widget.mode != 'COLLECTION')
             IconButton(
-              icon: Icon(
-                _isSearching ? Icons.close : Icons.search,
-                color: context.bBorder,
-                size: 32,
-              ),
+              icon: Icon(_isSearching ? Icons.close_rounded : Icons.search_rounded),
             onPressed: () {
               if (widget.mode == 'SEARCH' && _isSearching) {
                 Navigator.of(context).pop();
@@ -351,11 +346,8 @@ class _HomeScreenState extends State<HomeScreen> {
           if (!_isSearching && widget.mode == 'POPULARITY') _buildLevelSelector(),
           Expanded(
             child: _isLoading
-                ? Center(
-                    child: CircularProgressIndicator(
-                      color: context.bBorder,
-                      strokeWidth: 6,
-                    ),
+                ? _SkeletonLoader(
+                    isDayList: widget.mode == 'POPULARITY' || widget.mode == 'TOPIC',
                   )
                 : (widget.mode == 'KNOWN' || widget.mode == 'HISTORY' || widget.mode == 'COLLECTION')
                     ? _buildFlatList(_allVocabData)
@@ -390,47 +382,50 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildLevelSelector() {
     return Container(
-      height: 80,
+      height: 68,
       decoration: BoxDecoration(
         color: context.bBg,
-        border: Border(bottom: BorderSide(color: context.bBorder, width: 4)),
+        border: Border(bottom: BorderSide(color: context.bSubtle, width: 1)),
       ),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         itemCount: _levels.length,
         itemBuilder: (context, index) {
           final level = _levels[index];
-          final isSelected = level == _selectedLevel;
+          final isSelected = _selectedLevels.contains(level);
           return Padding(
-            padding: const EdgeInsets.only(right: 12),
+            padding: const EdgeInsets.only(right: 10),
             child: GestureDetector(
               onTap: () {
-                if (!isSelected) {
-                  setState(() => _selectedLevel = level);
-                  _loadData(level);
+                final updated = List<String>.from(_selectedLevels);
+                if (isSelected) {
+                  if (updated.length == 1) return;
+                  updated.remove(level);
+                } else {
+                  updated.add(level);
                 }
+                setState(() => _selectedLevels = updated);
+                _loadDataForLevels(updated);
               },
-              child: Container(
-                width: 70,
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                width: 64,
                 decoration: BoxDecoration(
-                  color: isSelected ? context.bBorder : context.bBg,
-                  border: Border.all(color: context.bBorder, width: 3),
-                  boxShadow: isSelected
-                      ? null
-                      : [
-                          BoxShadow(
-                            color: context.bBorder,
-                            offset: const Offset(4, 4),
-                          )
-                        ],
+                  color: isSelected ? BrutalistTheme.primary : Colors.transparent,
+                  borderRadius: BorderRadius.circular(24),
+                  border: Border.all(
+                    color: isSelected ? BrutalistTheme.primary : context.bSubtle,
+                    width: 1.5,
+                  ),
                 ),
                 alignment: Alignment.center,
                 child: Text(
                   level,
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        color: isSelected ? context.bBg : context.bBorder,
-                        fontWeight: FontWeight.w900,
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: isSelected ? BrutalistTheme.white : context.bMuted,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14,
                       ),
                 ),
               ),
@@ -482,7 +477,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     return ListView.builder(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       itemCount: results.length,
       itemBuilder: (context, index) {
         final vocab = results[index];
@@ -505,71 +500,53 @@ class _HomeScreenState extends State<HomeScreen> {
             }
           },
           child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    vocab.word,
-                    style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                          fontSize: 32,
-                          color: BrutalistTheme.black,
-                        ),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        vocab.word,
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w700,
+                              color: BrutalistTheme.black,
+                              fontSize: 18,
+                            ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        vocab.translation,
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.55),
+                              fontSize: 13,
+                            ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
                   ),
-                  const SizedBox(height: 8),
-                  RichText(
-                    text: TextSpan(
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: BrutalistTheme.black,
-                            fontStyle: FontStyle.italic,
-                          ),
-                      children: [
-                        TextSpan(text: '${vocab.partOfSpeech.toUpperCase()} | '),
-                        TextSpan(
-                          text: vocab.ipa,
-                          style: GoogleFonts.notoSans(),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  const Divider(color: BrutalistTheme.black, thickness: 3),
-                  const SizedBox(height: 16),
-                  Text(
-                    vocab.translation,
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: BrutalistTheme.black,
-                        ),
-                  ),
-                  if (vocab.topic.isNotEmpty) ...[
-                    const SizedBox(height: 8),
-                    Text(
-                      'TOPIC: ${vocab.topic.toUpperCase()}',
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: BrutalistTheme.black,
-                            fontStyle: FontStyle.italic,
-                          ),
-                    ),
-                  ],
-                ],
-              ),
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 16,
+                  color: BrutalistTheme.black.withValues(alpha: 0.5),
+                ),
+              ],
             ),
+          ),
         );
 
         if (widget.mode == 'COLLECTION') {
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 24.0),
-            child: Dismissible(
+          return Dismissible(
               key: Key(vocab.word),
               direction: DismissDirection.endToStart,
               background: Container(
                 color: Colors.red,
                 alignment: Alignment.centerRight,
                 padding: const EdgeInsets.symmetric(horizontal: 32),
-                child: const Icon(Icons.delete_forever, color: Colors.white, size: 40),
+                child: const Icon(Icons.delete_forever_rounded, color: Colors.white, size: 40),
               ),
               confirmDismiss: (direction) async {
                 return await showDialog<bool>(
@@ -598,7 +575,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       TextButton(
                         style: TextButton.styleFrom(
                           backgroundColor: BrutalistTheme.secondary,
-                          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                         ),
                         onPressed: () => Navigator.of(ctx).pop(true),
                         child: Text('REMOVE', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
@@ -614,14 +591,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 });
               },
               child: card,
-            ),
-          );
+            );
         }
 
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 24.0),
-          child: card,
-        );
+        return card;
       },
     );
   }
@@ -718,14 +691,12 @@ class _HomeScreenState extends State<HomeScreen> {
     final distinctResults = collapsed.values.toList();
 
     return ListView.builder(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       itemCount: distinctResults.length,
       itemBuilder: (context, index) {
         final vocab = distinctResults[index];
 
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 24.0),
-          child: BrutalistCard(
+        return BrutalistCard(
             backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
             onTap: () {
               if (widget.onWordSelected != null) {
@@ -743,59 +714,42 @@ class _HomeScreenState extends State<HomeScreen> {
               }
             },
             child: Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
+              child: Row(
                 children: [
-                  Text(
-                    vocab.word,
-                    style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                          fontSize: 32,
-                          color: BrutalistTheme.black,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  RichText(
-                    text: TextSpan(
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: BrutalistTheme.black,
-                            fontStyle: FontStyle.italic,
-                          ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        TextSpan(text: '${vocab.partOfSpeech.toUpperCase()} | '),
-                        TextSpan(
-                          text: vocab.ipa,
-                          style: GoogleFonts.notoSans(),
+                        Text(
+                          vocab.word,
+                          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                                fontWeight: FontWeight.w700,
+                                color: BrutalistTheme.black,
+                                fontSize: 18,
+                              ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          vocab.translation,
+                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                color: BrutalistTheme.black.withValues(alpha: 0.55),
+                                fontSize: 13,
+                              ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ],
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  const Divider(color: BrutalistTheme.black, thickness: 3),
-                  const SizedBox(height: 16),
-                  Text(
-                    vocab.translation,
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: BrutalistTheme.black,
-                        ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 16,
+                    color: BrutalistTheme.black.withValues(alpha: 0.5),
                   ),
-                  if (vocab.topic.isNotEmpty) ...[
-                    const SizedBox(height: 8),
-                    Text(
-                      'TOPIC: ${vocab.topic.toUpperCase()}',
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: BrutalistTheme.black,
-                            fontStyle: FontStyle.italic,
-                          ),
-                    ),
-                  ],
                 ],
               ),
             ),
-          ),
         );
       },
     );
@@ -805,15 +759,15 @@ class _HomeScreenState extends State<HomeScreen> {
     final days = _vocabData.keys.toList()..sort();
 
     return ListView.builder(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       itemCount: days.length,
       itemBuilder: (context, index) {
         final day = days[index];
         final vocabList = _vocabData[day]!;
-        final isEven = index % 2 == 0;
+        final dominantLevel = vocabList.isNotEmpty ? vocabList.first.levels : '';
 
         return BrutalistCard(
-          backgroundColor: isEven ? BrutalistTheme.primary : BrutalistTheme.accent,
+          backgroundColor: levelColor(dominantLevel, fallbackIndex: index),
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
@@ -825,49 +779,175 @@ class _HomeScreenState extends State<HomeScreen> {
             );
           },
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 24.0),
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'DAY $day',
-                        style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                              fontSize: 48,
+                        'Day $day',
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                              fontWeight: FontWeight.w700,
                               color: BrutalistTheme.black,
+                              fontSize: 18,
                             ),
                       ),
-                      const SizedBox(height: 8),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: BrutalistTheme.white,
-                          border: Border.all(color: BrutalistTheme.black, width: 2),
-                        ),
-                        child: Text(
-                          '${vocabList.length} WORDS',
-                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                fontWeight: FontWeight.bold,
-                                color: BrutalistTheme.black,
-                              ),
-                        ),
+                      const SizedBox(height: 2),
+                      Text(
+                        () {
+                          final levels = vocabList
+                              .map((v) => v.levels.toUpperCase())
+                              .where((l) => l.isNotEmpty)
+                              .toSet()
+                              .toList()
+                            ..sort();
+                          final levelStr = levels.isNotEmpty ? ' · ${levels.join(', ')}' : '';
+                          return '${vocabList.length} words$levelStr';
+                        }(),
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.55),
+                              fontSize: 13,
+                            ),
                       ),
                     ],
                   ),
                 ),
-                const Icon(
-                  Icons.arrow_forward,
-                  size: 48,
-                  color: BrutalistTheme.black,
+                Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 16,
+                  color: BrutalistTheme.black.withValues(alpha: 0.5),
                 ),
               ],
             ),
           ),
         );
       },
+    );
+  }
+}
+
+// ── Skeleton loader ──────────────────────────────────────────────────────────
+
+class _SkeletonLoader extends StatefulWidget {
+  final bool isDayList; // true = DAY X cards, false = flat vocab cards
+  const _SkeletonLoader({this.isDayList = true});
+
+  @override
+  State<_SkeletonLoader> createState() => _SkeletonLoaderState();
+}
+
+class _SkeletonLoaderState extends State<_SkeletonLoader>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl;
+  late final Animation<double> _opacity;
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..repeat(reverse: true);
+    _opacity = Tween<double>(begin: 0.35, end: 0.8).animate(
+      CurvedAnimation(parent: _ctrl, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  Widget _block(double w, double h, {double radius = 8}) {
+    return AnimatedBuilder(
+      animation: _opacity,
+      builder: (_, __) => Opacity(
+        opacity: _opacity.value,
+        child: Container(
+          width: w,
+          height: h,
+          decoration: BoxDecoration(
+            color: BrutalistTheme.border,
+            borderRadius: BorderRadius.circular(radius),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _dayCard() {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
+      decoration: BoxDecoration(
+        color: BrutalistTheme.surface,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.05),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _block(100, 36, radius: 6),
+                const SizedBox(height: 10),
+                _block(70, 22, radius: 6),
+              ],
+            ),
+          ),
+          _block(28, 28, radius: 14),
+        ],
+      ),
+    );
+  }
+
+  Widget _vocabCard() {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: BrutalistTheme.surface,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.05),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _block(140, 28, radius: 6),
+          const SizedBox(height: 10),
+          _block(90, 18, radius: 6),
+          const SizedBox(height: 16),
+          _block(double.infinity, 1, radius: 0),
+          const SizedBox(height: 16),
+          _block(180, 22, radius: 6),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      itemCount: 6,
+      itemBuilder: (_, i) =>
+          widget.isDayList ? _dayCard() : _vocabCard(),
     );
   }
 }

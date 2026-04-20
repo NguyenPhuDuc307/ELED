@@ -101,7 +101,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         _isSaving = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('SETTINGS SAVED! / ĐÃ LƯU CẤU HÌNH!')),
+        const SnackBar(content: Text('Settings saved!')),
       );
       Navigator.of(context).pop();
     }
@@ -142,14 +142,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'SETTINGS',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.w900,
-              ),
-        ),
+        title: const Text('Settings'),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: context.bBorder, size: 32),
+          icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
@@ -248,7 +243,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     children: _allPopularityLevels.map((level) {
                       final isSelected = _selectedPopularity.contains(level);
                       return FilterChip(
-                        label: Text(level, style: TextStyle(fontWeight: FontWeight.bold, color: isSelected ? BrutalistTheme.black : context.bBorder)),
+                        label: Text(level, style: TextStyle(fontWeight: FontWeight.w600, color: isSelected ? BrutalistTheme.white : context.bBorder)),
                         selected: isSelected,
                         onSelected: (selected) {
                           setState(() {
@@ -259,11 +254,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             }
                           });
                         },
-                        selectedColor: BrutalistTheme.secondary,
+                        selectedColor: BrutalistTheme.primary,
                         backgroundColor: context.bBg,
+                        showCheckmark: false,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.zero,
-                          side: BorderSide(color: context.bBorder, width: 2),
+                          borderRadius: BorderRadius.circular(20),
+                          side: BorderSide(color: isSelected ? BrutalistTheme.primary : context.bSubtle, width: 1.5),
                         ),
                       );
                     }).toList(),
@@ -283,7 +279,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     children: _availableTopics.map((topic) {
                       final isSelected = _selectedTopics.contains(topic);
                       return FilterChip(
-                        label: Text(topic, style: TextStyle(fontWeight: FontWeight.bold, color: isSelected ? BrutalistTheme.black : context.bBorder)),
+                        label: Text(
+                          topic.replaceAll('_', ' '),
+                          style: TextStyle(fontWeight: FontWeight.w600, color: isSelected ? BrutalistTheme.white : context.bBorder),
+                        ),
                         selected: isSelected,
                         onSelected: (selected) {
                           setState(() {
@@ -294,11 +293,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             }
                           });
                         },
-                        selectedColor: BrutalistTheme.accent,
+                        selectedColor: BrutalistTheme.primary,
                         backgroundColor: context.bBg,
+                        showCheckmark: false,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.zero,
-                          side: BorderSide(color: context.bBorder, width: 2),
+                          borderRadius: BorderRadius.circular(20),
+                          side: BorderSide(color: isSelected ? BrutalistTheme.primary : context.bSubtle, width: 1.5),
                         ),
                       );
                     }).toList(),
@@ -349,17 +349,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
             duration: const Duration(milliseconds: 120),
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             decoration: BoxDecoration(
-              color: isSelected ? BrutalistTheme.secondary : context.bBg,
-              border: Border.all(color: context.bBorder, width: 3),
+              color: isSelected ? BrutalistTheme.primary : context.bBg,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: isSelected ? BrutalistTheme.primary : context.bSubtle,
+                width: 1.5,
+              ),
               boxShadow: isSelected
-                  ? []
-                  : [BoxShadow(color: context.bBorder, offset: const Offset(4, 4))],
+                  ? [BoxShadow(color: BrutalistTheme.primary.withValues(alpha: 0.25), blurRadius: 8, offset: const Offset(0, 3))]
+                  : [],
             ),
             child: Text(
               entry.value,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    fontWeight: FontWeight.w900,
-                    color: isSelected ? BrutalistTheme.black : context.bBorder,
+                    fontWeight: FontWeight.w600,
+                    color: isSelected ? BrutalistTheme.white : context.bBorder,
                   ),
             ),
           ),
@@ -392,7 +396,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: Row(
                 children: [
                    Icon(
-                    isSelected ? Icons.radio_button_checked : Icons.radio_button_unchecked,
+                    isSelected ? Icons.radio_button_checked_rounded : Icons.radio_button_unchecked_rounded,
                     color: isSelected ? BrutalistTheme.black : context.bBorder,
                   ),
                   const SizedBox(width: 16),

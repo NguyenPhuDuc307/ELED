@@ -17,46 +17,88 @@ class BrutalistCard extends StatefulWidget {
   State<BrutalistCard> createState() => _BrutalistCardState();
 }
 
-class _BrutalistCardState extends State<BrutalistCard> {
-  bool _isPressed = false;
+class _BrutalistCardState extends State<BrutalistCard>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  late final Animation<double> _scale;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 80),
+      reverseDuration: const Duration(milliseconds: 150),
+      lowerBound: 0.0,
+      upperBound: 1.0,
+    );
+    _scale = Tween<double>(begin: 1.0, end: 0.97).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _onTapDown(TapDownDetails _) {
+    if (widget.onTap != null) _controller.forward();
+  }
+
+  void _onTapUp(TapUpDetails _) {
+    if (widget.onTap != null) _controller.reverse();
+  }
+
+  void _onTapCancel() {
+    if (widget.onTap != null) _controller.reverse();
+  }
 
   @override
   Widget build(BuildContext context) {
     final effectiveBg = widget.backgroundColor ?? context.bBg;
-    final isNeon = effectiveBg == BrutalistTheme.primary ||
-        effectiveBg == BrutalistTheme.secondary ||
-        effectiveBg == BrutalistTheme.accent;
-
-    Widget content = widget.child;
-    if (isNeon) {
-      content = Theme(data: BrutalistTheme.lightTheme, child: content);
-    }
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return GestureDetector(
       onTap: widget.onTap,
-      onTapDown: widget.onTap != null ? (_) => setState(() => _isPressed = true) : null,
-      onTapUp: widget.onTap != null ? (_) => setState(() => _isPressed = false) : null,
-      onTapCancel: widget.onTap != null ? () => setState(() => _isPressed = false) : null,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 80),
-        margin: _isPressed
-            ? const EdgeInsets.only(top: 4, left: 4, bottom: 8, right: 4)
-            : const EdgeInsets.only(bottom: 12, right: 8),
-        decoration: BoxDecoration(
-          color: effectiveBg,
-          border: Border.all(color: context.bBorder, width: 4),
-          boxShadow: _isPressed
-              ? []
-              : [
-                  BoxShadow(
-                    color: context.bBorder,
-                    offset: const Offset(8, 8),
-                    blurRadius: 0,
-                    spreadRadius: 0,
-                  ),
-                ],
+      onTapDown: _onTapDown,
+      onTapUp: _onTapUp,
+      onTapCancel: _onTapCancel,
+      child: ScaleTransition(
+        scale: _scale,
+        child: Container(
+          margin: const EdgeInsets.fromLTRB(4, 2, 4, 10),
+          decoration: BoxDecoration(
+            color: effectiveBg,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: isDark
+                ? [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.3),
+                      blurRadius: 12,
+                      offset: const Offset(0, 4),
+                    ),
+                  ]
+                : [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.13),
+                      blurRadius: 18,
+                      spreadRadius: 1,
+                      offset: const Offset(0, 5),
+                    ),
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.06),
+                      blurRadius: 6,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: widget.child,
+          ),
         ),
-        child: content,
       ),
     );
   }

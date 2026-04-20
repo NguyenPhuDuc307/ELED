@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
-import '../theme/brutalist_theme.dart' show BrutalistTheme, BrutalistContext, levelColor;
+import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 
 class LearningScreen extends StatefulWidget {
@@ -80,14 +80,9 @@ class _LearningScreenState extends State<LearningScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          widget.day == 0 ? 'SEARCH' : 'DAY ${widget.day}',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.w900,
-              ),
-        ),
+        title: Text(widget.day == 0 ? 'Search' : 'Day ${widget.day}'),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: context.bBorder, size: 32),
+          icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: [
@@ -95,10 +90,8 @@ class _LearningScreenState extends State<LearningScreen> {
             IconButton(
               icon: Icon(
                 _knownWords.contains(widget.vocabularies[_currentIndex].word.toLowerCase())
-                    ? Icons.check_circle
-                    : Icons.check_circle_outline,
-                color: context.bBorder,
-                size: 32,
+                    ? Icons.check_circle_rounded
+                    : Icons.check_circle_outline_rounded,
               ),
               onPressed: () => _toggleKnownWord(widget.vocabularies[_currentIndex].word),
             ),
@@ -193,16 +186,12 @@ class _LearningScreenState extends State<LearningScreen> {
                                 textAlign: TextAlign.center,
                               ),
                               if (vocab.url.isNotEmpty)
-                                Container(
-                                  width: 48,
-                                  height: 48,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(color: BrutalistTheme.black, width: 2),
-                                    color: BrutalistTheme.primary,
-                                  ),
-                                  child: IconButton(
-                                    icon: const Icon(Icons.open_in_new, color: BrutalistTheme.black),
-                                    onPressed: () async {
+                                Material(
+                                  color: BrutalistTheme.primaryLight,
+                                  borderRadius: BorderRadius.circular(24),
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.circular(24),
+                                    onTap: () async {
                                       final Uri url = Uri.parse(vocab.url);
                                       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
                                         if (context.mounted) {
@@ -210,6 +199,10 @@ class _LearningScreenState extends State<LearningScreen> {
                                         }
                                       }
                                     },
+                                    child: const Padding(
+                                      padding: EdgeInsets.all(10),
+                                      child: Icon(Icons.open_in_new_rounded, color: BrutalistTheme.primary, size: 22),
+                                    ),
                                   ),
                                 ),
                             ],
@@ -220,54 +213,15 @@ class _LearningScreenState extends State<LearningScreen> {
                             spacing: 8,
                             runSpacing: 8,
                             children: [
-                               Container(
-                                color: BrutalistTheme.black,
-                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-                                child: Text(
-                                  vocab.partOfSpeech.toUpperCase(),
-                                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    color: BrutalistTheme.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                              Container(
-                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-                                decoration: BoxDecoration(
-                                  color: BrutalistTheme.white,
-                                  border: Border.all(color: BrutalistTheme.black, width: 2),
-                                ),
-                                child: Text(
-                                  vocab.levels.toUpperCase(),
-                                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    color: BrutalistTheme.black,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
+                              _badge(context, vocab.partOfSpeech, BrutalistTheme.primary, BrutalistTheme.primaryLight),
+                              _badge(context, vocab.levels.toUpperCase(), BrutalistTheme.black, BrutalistTheme.border.withValues(alpha: 0.4)),
                               if (vocab.topic.isNotEmpty)
-                                Container(
-                                  padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-                                  decoration: BoxDecoration(
-                                    color: BrutalistTheme.secondary,
-                                    border: Border.all(color: BrutalistTheme.black, width: 2),
-                                  ),
-                                  child: Text(
-                                    vocab.topic.toUpperCase(),
-                                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                      color: BrutalistTheme.black,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
+                                _badge(context, vocab.topic, BrutalistTheme.accent, BrutalistTheme.accentLight),
                             ],
                           ),
-                          const SizedBox(height: 32),
-                          const Divider(color: BrutalistTheme.black, thickness: 4),
-                          const SizedBox(height: 32),
+                          const SizedBox(height: 28),
+                          Divider(color: context.bSubtle, thickness: 1),
+                          const SizedBox(height: 28),
                           FittedBox(
                             fit: BoxFit.scaleDown,
                             child: Text(
@@ -287,13 +241,25 @@ class _LearningScreenState extends State<LearningScreen> {
               },
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(24.0),
+          Container(
+            margin: const EdgeInsets.fromLTRB(16, 0, 16, 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            decoration: BoxDecoration(
+              color: context.bBg,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.08),
+                  blurRadius: 20,
+                  offset: const Offset(0, -2),
+                ),
+              ],
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 _buildNavButton(
-                  icon: Icons.arrow_back_ios_new,
+                  icon: Icons.arrow_back_ios_new_rounded,
                   onPressed: _currentIndex > 0
                       ? () => _pageController.previousPage(
                             duration: const Duration(milliseconds: 300),
@@ -305,29 +271,27 @@ class _LearningScreenState extends State<LearningScreen> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'MEANING',
+                      'Meaning',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: context.bBorder,
+                            fontWeight: FontWeight.w600,
+                            color: context.bMuted,
+                            fontSize: 13,
                           ),
                     ),
+                    const SizedBox(height: 2),
                     Switch(
                       value: _showTranslation,
-                      onChanged: (val) {
-                        setState(() {
-                          _showTranslation = val;
-                        });
-                      },
-                      activeThumbColor: context.bBg,
-                      activeTrackColor: context.bBorder,
-                      inactiveThumbColor: context.bBorder,
-                      inactiveTrackColor: context.bBg,
-                      trackOutlineColor: WidgetStateProperty.all(context.bBorder),
+                      onChanged: (val) => setState(() => _showTranslation = val),
+                      activeThumbColor: BrutalistTheme.white,
+                      activeTrackColor: BrutalistTheme.primary,
+                      inactiveThumbColor: BrutalistTheme.white,
+                      inactiveTrackColor: BrutalistTheme.border,
+                      trackOutlineColor: WidgetStateProperty.all(Colors.transparent),
                     ),
                   ],
                 ),
                 _buildNavButton(
-                  icon: Icons.arrow_forward_ios,
+                  icon: Icons.arrow_forward_ios_rounded,
                   onPressed: _currentIndex < widget.vocabularies.length - 1
                       ? () => _pageController.nextPage(
                             duration: const Duration(milliseconds: 300),
@@ -343,25 +307,36 @@ class _LearningScreenState extends State<LearningScreen> {
     );
   }
 
+  Widget _badge(BuildContext context, String label, Color textColor, Color bgColor) {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 12),
+      decoration: BoxDecoration(
+        color: bgColor,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Text(
+        label,
+        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+              color: textColor,
+              fontWeight: FontWeight.w600,
+              fontSize: 13,
+            ),
+      ),
+    );
+  }
+
   Widget _buildNavButton({required IconData icon, required VoidCallback? onPressed}) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: onPressed != null ? BrutalistTheme.secondary : Colors.grey.shade400,
-          border: Border.all(color: BrutalistTheme.black, width: 4),
-          boxShadow: onPressed != null
-              ? const [
-                  BoxShadow(
-                    color: BrutalistTheme.black,
-                    offset: Offset(4, 4),
-                    blurRadius: 0,
-                  )
-                ]
-              : null,
+    final active = onPressed != null;
+    return Material(
+      color: active ? BrutalistTheme.primary : BrutalistTheme.border,
+      borderRadius: BorderRadius.circular(14),
+      child: InkWell(
+        onTap: onPressed,
+        borderRadius: BorderRadius.circular(14),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Icon(icon, color: active ? BrutalistTheme.white : BrutalistTheme.textMuted, size: 28),
         ),
-        child: Icon(icon, color: BrutalistTheme.black, size: 32),
       ),
     );
   }

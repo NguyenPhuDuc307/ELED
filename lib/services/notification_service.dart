@@ -204,13 +204,13 @@ class NotificationService {
           }
         }
 
-        String htmlBody = '<b>Nghĩa:</b> ${vocab.translation}<br>';
+        String htmlBody = '<b>Meaning:</b> ${vocab.translation}<br>';
         if (vocab.ipa.isNotEmpty) {
-          htmlBody += '<b>Phiên âm:</b> <i>${vocab.ipa}</i><br>';
+          htmlBody += '<b>Pronunciation:</b> <i>${vocab.ipa}</i><br>';
         }
-        htmlBody += '<b>Từ loại:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
+        htmlBody += '<b>Part of speech:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
         if (vocab.topic.isNotEmpty) {
-          htmlBody += '<br><b>Chủ đề:</b> ${vocab.topic.toUpperCase()}';
+          htmlBody += '<br><b>Topic:</b> ${vocab.topic.toUpperCase()}';
         }
 
         await flutterLocalNotificationsPlugin.zonedSchedule(
@@ -300,13 +300,13 @@ Future<void> androidAlarmCallback() async {
       ),
     );
 
-    String htmlBody = '<b>Nghĩa:</b> ${vocab.translation}<br>';
+    String htmlBody = '<b>Meaning:</b> ${vocab.translation}<br>';
     if (vocab.ipa.isNotEmpty) {
-      htmlBody += '<b>Phiên âm:</b> <i>${vocab.ipa}</i><br>';
+      htmlBody += '<b>Pronunciation:</b> <i>${vocab.ipa}</i><br>';
     }
-    htmlBody += '<b>Từ loại:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
+    htmlBody += '<b>Part of speech:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
     if (vocab.topic.isNotEmpty) {
-      htmlBody += '<br><b>Chủ đề:</b> ${vocab.topic.toUpperCase()}';
+      htmlBody += '<br><b>Topic:</b> ${vocab.topic.toUpperCase()}';
     }
 
     AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(

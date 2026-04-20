@@ -81,19 +81,10 @@ class _TopicScreenState extends State<TopicScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'SELECT TOPIC',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.w900,
-              ),
-        ),
+        title: const Text('Topics'),
         actions: [
           IconButton(
-            icon: Icon(
-              Icons.filter_list,
-              color: context.bBorder,
-              size: 32,
-            ),
+            icon: const Icon(Icons.filter_list_rounded),
             onPressed: () {
               showDialog(
                 context: context,
@@ -101,25 +92,24 @@ class _TopicScreenState extends State<TopicScreen> {
                   return StatefulBuilder(
                     builder: (context, setDialogState) {
                       return AlertDialog(
-                        backgroundColor: context.bBg,
-                        shape: Border.all(color: context.bBorder, width: 4),
+                        backgroundColor: BrutalistTheme.surface,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                         title: Text(
-                          'FILTER BY LEVEL', 
+                          'Filter by Level',
                           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                            color: context.bBorder,
-                          )
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                         content: SingleChildScrollView(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: _levels.map((level) {
                               return CheckboxListTile(
-                                title: Text(level, style: TextStyle(fontWeight: FontWeight.bold, color: context.bBorder)),
+                                title: Text(level, style: const TextStyle(fontWeight: FontWeight.w600)),
                                 value: _selectedTopicLevels.contains(level),
-                                activeColor: BrutalistTheme.secondary,
-                                checkColor: BrutalistTheme.black,
-                                side: BorderSide(color: context.bBorder, width: 2),
+                                activeColor: BrutalistTheme.primary,
+                                checkColor: BrutalistTheme.white,
+                                side: const BorderSide(color: BrutalistTheme.border, width: 1.5),
                                 onChanged: (bool? value) {
                                   setDialogState(() {
                                     if (value == true) {
@@ -136,15 +126,16 @@ class _TopicScreenState extends State<TopicScreen> {
                         actions: [
                           TextButton(
                             style: TextButton.styleFrom(
-                              backgroundColor: BrutalistTheme.secondary,
-                              shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-                              side: BorderSide(color: context.bBorder, width: 2),
+                              backgroundColor: BrutalistTheme.primary,
+                              foregroundColor: BrutalistTheme.white,
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
                             ),
                             onPressed: () {
                               Navigator.of(ctx).pop();
                               _loadTopics();
                             },
-                            child: Text('APPLY', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                            child: const Text('Apply', style: TextStyle(fontWeight: FontWeight.w600)),
                           ),
                         ],
                       );
@@ -194,74 +185,73 @@ class _TopicScreenState extends State<TopicScreen> {
     final categories = _topics.keys.toList()..sort();
 
     return ListView.builder(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      clipBehavior: Clip.none,
       itemCount: categories.length,
       itemBuilder: (context, index) {
         final category = categories[index];
         final sublists = _topics[category]!;
         sublists.sort((a, b) => a['name']!.compareTo(b['name']!));
 
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 24.0),
-          child: BrutalistCard(
-            backgroundColor: index % 2 == 0 ? BrutalistTheme.primary : BrutalistTheme.accent,
+        return BrutalistCard(
+            backgroundColor: index % 2 == 0 ? BrutalistTheme.primaryLight : BrutalistTheme.accentLight,
             child: Theme(
               data: Theme.of(context).copyWith(
                 dividerColor: Colors.transparent,
               ),
               child: ExpansionTile(
+                shape: const Border(),
+                collapsedShape: const Border(),
                 iconColor: BrutalistTheme.black,
                 collapsedIconColor: BrutalistTheme.black,
                 title: Text(
-                  category.toUpperCase(),
+                  category.replaceAll('_', ' ').toUpperCase(),
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.w900,
+                        fontWeight: FontWeight.w700,
                         color: BrutalistTheme.black,
+                        fontSize: 18,
                       ),
                 ),
                 children: [
                   Container(
                     width: double.infinity,
-                    decoration: const BoxDecoration(
-                      border: Border(top: BorderSide(color: BrutalistTheme.black, width: 3)),
-                      color: BrutalistTheme.white,
+                    decoration: BoxDecoration(
+                      border: Border(top: BorderSide(color: BrutalistTheme.border, width: 1)),
+                      color: BrutalistTheme.surface,
                     ),
                     padding: const EdgeInsets.all(16.0),
                     child: Wrap(
-                      spacing: 12,
-                      runSpacing: 12,
+                      spacing: 8,
+                      runSpacing: 8,
                       children: sublists.map((sublist) {
-                        return GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => HomeScreen(
-                                  mode: 'TOPIC',
-                                  topicPath: sublist['path'],
-                                  topicTitle: sublist['name'],
-                                  topicLevelsFilter: _selectedTopicLevels,
-                                ),
-                              ),
-                            );
-                          },
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            decoration: BoxDecoration(
-                              color: BrutalistTheme.white,
-                              border: Border.all(color: BrutalistTheme.black, width: 2),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: BrutalistTheme.black,
-                                  offset: Offset(2, 2),
-                                )
-                              ],
-                            ),
-                            child: Text(
-                              '${sublist['name']!} (${sublist['count']!})',
-                              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    color: BrutalistTheme.black,
+                        return IntrinsicWidth(
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => HomeScreen(
+                                    mode: 'TOPIC',
+                                    topicPath: sublist['path'],
+                                    topicTitle: sublist['name'],
+                                    topicLevelsFilter: _selectedTopicLevels,
                                   ),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+                              decoration: BoxDecoration(
+                                color: BrutalistTheme.primaryLight,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Text(
+                                '${sublist['name']!.replaceAll('_', ' ')} (${sublist['count']!})',
+                                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                      fontWeight: FontWeight.w600,
+                                      color: BrutalistTheme.black,
+                                      fontSize: 13,
+                                    ),
+                              ),
                             ),
                           ),
                         );
@@ -271,7 +261,6 @@ class _TopicScreenState extends State<TopicScreen> {
                 ],
               ),
             ),
-          ),
         );
       },
     );

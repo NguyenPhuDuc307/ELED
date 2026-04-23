@@ -5,6 +5,7 @@ import 'screens/menu_screen.dart';
 import 'theme/brutalist_theme.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
+import 'services/user_data_service.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
 String? pendingNotificationPayload;
@@ -19,6 +20,7 @@ void main() async {
     Future.wait([
       NotificationService().init(),
       AuthService().initialize(),
+      UserDataService().initialize(),
     ]),
   ).wait;
 

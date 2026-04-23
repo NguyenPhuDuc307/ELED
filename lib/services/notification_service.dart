@@ -137,25 +137,44 @@ class NotificationService {
     final now      = tz.TZDateTime.now(tz.local);
     final count    = min(Platform.isAndroid ? 100 : 64, pool.length);
     final shuffled = List.of(pool)..shuffle();
-    tz.TZDateTime next = now;
 
     final startMins = startTime.hour * 60 + startTime.minute;
     final endMins   = endTime.hour * 60 + endTime.minute;
+
+    // Find first slot aligned to interval grid from midnight, after now
+    final nowMins = now.hour * 60 + now.minute;
+    int firstSlotMins = ((nowMins ~/ intervalMinutes) + 1) * intervalMinutes;
+    if (firstSlotMins < startMins) {
+      firstSlotMins = _alignedCeil(startMins, intervalMinutes);
+    }
+
+    tz.TZDateTime next;
+    if (firstSlotMins >= endMins) {
+      final slot = _alignedCeil(startMins, intervalMinutes);
+      next = tz.TZDateTime(tz.local, now.year, now.month, now.day + 1,
+          slot ~/ 60, slot % 60);
+    } else {
+      next = tz.TZDateTime(tz.local, now.year, now.month, now.day,
+          firstSlotMins ~/ 60, firstSlotMins % 60);
+    }
 
     final futures       = <Future<void>>[];
     final logEntries    = <String>[];
     final widgetEntries = <String>[];
 
     for (int i = 0; i < count; i++) {
-      next = next.add(Duration(minutes: intervalMinutes));
-
-      final curMins = next.hour * 60 + next.minute;
-      if (curMins >= endMins) {
-        next = tz.TZDateTime(tz.local, next.year, next.month, next.day + 1,
-            startTime.hour, startTime.minute);
-      } else if (curMins < startMins) {
-        next = tz.TZDateTime(tz.local, next.year, next.month, next.day,
-            startTime.hour, startTime.minute);
+      if (i > 0) {
+        next = next.add(Duration(minutes: intervalMinutes));
+        final curMins = next.hour * 60 + next.minute;
+        if (curMins >= endMins) {
+          final slot = _alignedCeil(startMins, intervalMinutes);
+          next = tz.TZDateTime(tz.local, next.year, next.month, next.day + 1,
+              slot ~/ 60, slot % 60);
+        } else if (curMins < startMins) {
+          final slot = _alignedCeil(startMins, intervalMinutes);
+          next = tz.TZDateTime(tz.local, next.year, next.month, next.day,
+              slot ~/ 60, slot % 60);
+        }
       }
 
       final v = shuffled[i];
@@ -278,6 +297,11 @@ class NotificationService {
         }
       } catch (_) {}
     }
+  }
+
+  static int _alignedCeil(int minutes, int interval) {
+    final aligned = (minutes ~/ interval) * interval;
+    return aligned >= minutes ? aligned : aligned + interval;
   }
 
   Future<void> _scheduleOne(int id, Vocabulary vocab, tz.TZDateTime at) async {

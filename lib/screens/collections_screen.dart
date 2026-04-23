@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import '../services/collection_service.dart';
-import '../services/sync_service.dart';
 import 'home_screen.dart';
 
 class CollectionsScreen extends StatefulWidget {
@@ -96,7 +95,6 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                 if (name.isNotEmpty) {
                   Navigator.of(ctx).pop();
                   await CollectionService.createCollection(name);
-                  SyncService().uploadCollection(name, []);
                   _loadCollections();
                 }
               },
@@ -191,7 +189,6 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                                 },
                                 onDismissed: (dir) async {
                                   await CollectionService.deleteCollection(name);
-                                  SyncService().deleteCloudCollection(name);
                                   _loadCollections();
                                 },
                                 child: BrutalistCard(

@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
-import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
+import 'user_data_service.dart';
 
 class CsvService {
   // ── In-memory cache ──────────────────────────────────────────────────────
@@ -259,10 +259,7 @@ class CsvService {
   // ── Helpers ──────────────────────────────────────────────────────────────
 
   static Future<List<Vocabulary>> _applyKnownFilter(List<Vocabulary> raw) async {
-    final prefs = await SharedPreferences.getInstance();
-    final known = (prefs.getStringList('knownWords') ?? [])
-        .map((w) => w.toLowerCase())
-        .toSet();
+    final known = UserDataService().knownWords;
     return raw.where((v) => !known.contains(v.word.toLowerCase())).toList();
   }
 }

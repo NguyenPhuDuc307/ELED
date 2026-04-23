@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
-import '../services/sync_service.dart';
+import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 
@@ -40,29 +39,18 @@ class _LearningScreenState extends State<LearningScreen> {
   }
 
   Future<void> _loadKnownWords() async {
-    final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _knownWords = (prefs.getStringList('knownWords') ?? []).map((w) => w.toLowerCase()).toSet();
+      _knownWords = UserDataService().knownWords;
     });
   }
 
   Future<void> _toggleKnownWord(String word) async {
     final messenger = ScaffoldMessenger.of(context);
-    final prefs = await SharedPreferences.getInstance();
-    bool isAdded = false;
-    final lowerWord = word.toLowerCase();
-    
+    final isAdded = !_knownWords.contains(word.toLowerCase());
+    await UserDataService().toggleKnownWord(word);
     setState(() {
-      if (_knownWords.contains(lowerWord)) {
-        _knownWords.remove(lowerWord);
-      } else {
-        _knownWords.add(lowerWord);
-        isAdded = true;
-      }
+      _knownWords = UserDataService().knownWords;
     });
-    await prefs.setStringList('knownWords', _knownWords.toList());
-    SyncService().uploadKnownWords();
-
     if (mounted) {
       messenger.clearSnackBars();
       messenger.showSnackBar(

@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../services/auth_service.dart';
 import '../services/notification_service.dart';
 import '../services/csv_service.dart';
-import '../services/sync_service.dart';
+import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../main.dart';
 import '../models/vocabulary.dart';
@@ -38,6 +38,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _user = AuthService().currentUser;
     AuthService().userStream.listen((u) {
       if (mounted) setState(() => _user = u);
+    });
+    UserDataService().settingsStream.listen((settings) {
+      if (!mounted) return;
+      final theme = settings['themeMode'] as String? ?? _themeModeStr;
+      final newMode = theme == 'dark' ? ThemeMode.dark : (theme == 'light' ? ThemeMode.light : ThemeMode.system);
+      EledApp.themeNotifier.value = newMode;
+      _loadSettingsAndData();
     });
     _loadSettingsAndData();
   }
@@ -103,6 +110,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     } else {
       await NotificationService().cancelAllNotifications();
     }
+
+    UserDataService().uploadSettings();
 
     if (mounted) {
       setState(() {
@@ -348,8 +357,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           try {
             final user = await AuthService().signInWithGoogle();
             if (user != null) {
-              await SyncService().downloadAndMerge();
-              messenger.showSnackBar(const SnackBar(content: Text('Signed in & synced!')));
+              messenger.showSnackBar(const SnackBar(content: Text('Signed in!')));
             }
           } catch (e) {
             messenger.showSnackBar(SnackBar(content: Text('Sign-in failed: $e')));
@@ -420,20 +428,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                IconButton(
-                  icon: const Icon(Icons.sync_rounded, color: Color(0xFF2A4A28)),
-                  tooltip: 'Sync now',
-                  onPressed: () async {
-                    setState(() => _isSaving = true);
-                    await SyncService().downloadAndMerge();
-                    if (mounted) {
-                      setState(() => _isSaving = false);
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Synced!')),
-                      );
-                    }
-                  },
-                ),
                 IconButton(
                   icon: const Icon(Icons.logout_rounded, color: Color(0xFF2A4A28)),
                   tooltip: 'Sign out',

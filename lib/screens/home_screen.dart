@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
 import '../services/collection_service.dart';
-import '../services/sync_service.dart';
+import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'learning_screen.dart';
@@ -108,13 +108,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _loadKnownWordsData() async {
-    setState(() {
-      _isLoading = true;
-    });
-    final allData = await CsvService.loadAllVocabulary(); // Notice excludeKnown is natively false here, perfect for retaining the pool
-    final prefs = await SharedPreferences.getInstance();
-    final knownWords = (prefs.getStringList('knownWords') ?? []).map((w) => w.toLowerCase()).toSet();
-
+    setState(() => _isLoading = true);
+    final allData = await CsvService.loadAllVocabulary();
+    final knownWords = UserDataService().knownWords;
     if (mounted) {
       setState(() {
         final uniqueVocab = <String, Vocabulary>{};
@@ -313,8 +309,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         if (added && mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Word added to collection!')));
                           _loadCollectionData();
-                          final words = (await CollectionService.getCollections())[widget.topicTitle!] ?? [];
-                          SyncService().uploadCollection(widget.topicTitle!, words);
                         }
                         if (mounted) Navigator.of(context).pop(); // pop search screen
                       },
@@ -594,8 +588,6 @@ class _HomeScreenState extends State<HomeScreen> {
               onDismissed: (dir) async {
                 await CollectionService.removeWord(widget.topicTitle!, vocab.word);
                 setState(() { _allVocabData.remove(vocab); });
-                final words = (await CollectionService.getCollections())[widget.topicTitle!] ?? [];
-                SyncService().uploadCollection(widget.topicTitle!, words);
               },
               child: card,
             );

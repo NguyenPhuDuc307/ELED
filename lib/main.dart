@@ -1,7 +1,9 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/menu_screen.dart';
 import 'theme/brutalist_theme.dart';
+import 'services/auth_service.dart';
 import 'services/notification_service.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
@@ -10,9 +12,14 @@ String? pendingNotificationPayload;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  await Firebase.initializeApp();
+
   final (prefs, _) = await (
     SharedPreferences.getInstance(),
-    NotificationService().init(),
+    Future.wait([
+      NotificationService().init(),
+      AuthService().initialize(),
+    ]),
   ).wait;
 
   final themeStr = prefs.getString('themeMode') ?? 'system';

@@ -1,7 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../services/auth_service.dart';
 import '../services/notification_service.dart';
 import '../services/csv_service.dart';
+import '../services/sync_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../main.dart';
 import '../models/vocabulary.dart';
@@ -25,12 +28,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _isSaving = false;
   bool _isLoading = true;
   String _themeModeStr = 'system';
+  User? _user;
 
   final List<String> _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
   @override
   void initState() {
     super.initState();
+    _user = AuthService().currentUser;
+    AuthService().userStream.listen((u) {
+      if (mounted) setState(() => _user = u);
+    });
     _loadSettingsAndData();
   }
 
@@ -174,6 +182,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  _buildAccountSection(),
+                  const SizedBox(height: 32),
+                  Divider(color: context.bBorder, thickness: 4),
+                  const SizedBox(height: 32),
+
                   Text(
                     'NOTIFICATION INTERVAL',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
@@ -322,6 +335,122 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ],
               ),
             ),
+    );
+  }
+
+  Widget _buildAccountSection() {
+    if (_user == null) {
+      return BrutalistCard(
+        backgroundColor: context.bBg,
+        onTap: () async {
+          final messenger = ScaffoldMessenger.of(context);
+          setState(() => _isSaving = true);
+          try {
+            final user = await AuthService().signInWithGoogle();
+            if (user != null) {
+              await SyncService().downloadAndMerge();
+              messenger.showSnackBar(const SnackBar(content: Text('Signed in & synced!')));
+            }
+          } catch (e) {
+            messenger.showSnackBar(SnackBar(content: Text('Sign-in failed: $e')));
+          } finally {
+            if (mounted) setState(() => _isSaving = false);
+          }
+        },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: BrutalistTheme.primaryLight,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Icon(Icons.account_circle_outlined, color: BrutalistTheme.primary, size: 22),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Sign in with Google',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600)),
+                    Text('Sync known words, collections & history',
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: context.bMuted)),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded, color: context.bMuted),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.primaryLight,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: 20,
+              backgroundImage: _user!.photoURL != null ? NetworkImage(_user!.photoURL!) : null,
+              backgroundColor: BrutalistTheme.primary,
+              child: _user!.photoURL == null
+                  ? Text(_user!.displayName?[0] ?? '?',
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700))
+                  : null,
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(_user!.displayName ?? 'Google User',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w600, color: const Color(0xFF2A4A28))),
+                  Text(_user!.email ?? '',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: const Color(0xFF2A4A28).withValues(alpha: 0.7))),
+                ],
+              ),
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.sync_rounded, color: Color(0xFF2A4A28)),
+                  tooltip: 'Sync now',
+                  onPressed: () async {
+                    setState(() => _isSaving = true);
+                    await SyncService().downloadAndMerge();
+                    if (mounted) {
+                      setState(() => _isSaving = false);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Synced!')),
+                      );
+                    }
+                  },
+                ),
+                IconButton(
+                  icon: const Icon(Icons.logout_rounded, color: Color(0xFF2A4A28)),
+                  tooltip: 'Sign out',
+                  onPressed: () async {
+                    await AuthService().signOut();
+                    if (mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Signed out.')),
+                      );
+                    }
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 

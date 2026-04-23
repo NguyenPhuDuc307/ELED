@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
 import '../services/collection_service.dart';
+import '../services/sync_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'learning_screen.dart';
@@ -312,6 +313,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         if (added && mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Word added to collection!')));
                           _loadCollectionData();
+                          final words = (await CollectionService.getCollections())[widget.topicTitle!] ?? [];
+                          SyncService().uploadCollection(widget.topicTitle!, words);
                         }
                         if (mounted) Navigator.of(context).pop(); // pop search screen
                       },
@@ -590,9 +593,9 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               onDismissed: (dir) async {
                 await CollectionService.removeWord(widget.topicTitle!, vocab.word);
-                setState(() {
-                  _allVocabData.remove(vocab);
-                });
+                setState(() { _allVocabData.remove(vocab); });
+                final words = (await CollectionService.getCollections())[widget.topicTitle!] ?? [];
+                SyncService().uploadCollection(widget.topicTitle!, words);
               },
               child: card,
             );

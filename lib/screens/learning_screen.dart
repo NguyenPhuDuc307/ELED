@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
+import '../services/sync_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 
@@ -60,6 +61,7 @@ class _LearningScreenState extends State<LearningScreen> {
       }
     });
     await prefs.setStringList('knownWords', _knownWords.toList());
+    SyncService().uploadKnownWords();
 
     if (mounted) {
       messenger.clearSnackBars();

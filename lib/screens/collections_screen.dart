@@ -15,6 +15,20 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
   Map<String, List<String>> _collections = {};
   bool _isLoading = true;
 
+  void _openCollection(BuildContext context, List<String> names, int index, {bool replace = false}) {
+    if (index >= names.length) return;
+    final name = names[index];
+    final onCompleted = index + 1 < names.length
+        ? () => _openCollection(context, names, index + 1, replace: true)
+        : null;
+    final screen = HomeScreen(mode: 'COLLECTION', topicTitle: name, onCompleted: onCompleted);
+    if (replace) {
+      Navigator.of(context).pushReplacement(smoothRoute(screen));
+    } else {
+      Navigator.of(context).push(smoothRoute(screen));
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -38,7 +52,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
       context: context,
       builder: (ctx) {
         return AlertDialog(
-          backgroundColor: BrutalistTheme.surface,
+          backgroundColor: context.bBg,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           title: Text(
             'New Collection',
@@ -52,12 +66,12 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
             style: Theme.of(context).textTheme.bodyLarge,
             decoration: InputDecoration(
               hintText: 'e.g. TOEFL Words...',
-              hintStyle: TextStyle(color: BrutalistTheme.textMuted),
-              border: const UnderlineInputBorder(
-                borderSide: BorderSide(color: BrutalistTheme.border, width: 1.5),
+              hintStyle: TextStyle(color: context.bMuted),
+              border: UnderlineInputBorder(
+                borderSide: BorderSide(color: context.bSubtle, width: 1.5),
               ),
-              enabledBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: BrutalistTheme.border, width: 1.5),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: context.bSubtle, width: 1.5),
               ),
               focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: BrutalistTheme.primary, width: 2),
@@ -67,7 +81,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(),
-              child: Text('Cancel', style: TextStyle(color: BrutalistTheme.textMuted, fontWeight: FontWeight.w600)),
+              child: Text('Cancel', style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
             ),
             TextButton(
               style: TextButton.styleFrom(
@@ -180,14 +194,8 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                                 child: BrutalistCard(
                                   backgroundColor: isEven ? BrutalistTheme.primaryLight : BrutalistTheme.accentLight,
                                   onTap: () {
-                                    Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                        builder: (_) => HomeScreen(
-                                          mode: 'COLLECTION',
-                                          topicTitle: name,
-                                        ),
-                                      ),
-                                    );
+                                    final names = _collections.keys.toList();
+                                    _openCollection(context, names, names.indexOf(name));
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),

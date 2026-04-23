@@ -10,12 +10,14 @@ class LearningScreen extends StatefulWidget {
   final int day;
   final List<Vocabulary> vocabularies;
   final int initialIndex;
+  final VoidCallback? onCompleted;
 
   const LearningScreen({
     super.key,
     required this.day,
     required this.vocabularies,
     this.initialIndex = 0,
+    this.onCompleted,
   });
 
   @override
@@ -294,13 +296,15 @@ class _LearningScreenState extends State<LearningScreen> {
                   ],
                 ),
                 _buildNavButton(
-                  icon: Icons.arrow_forward_ios_rounded,
+                  icon: _currentIndex < widget.vocabularies.length - 1
+                      ? Icons.arrow_forward_ios_rounded
+                      : Icons.skip_next_rounded,
                   onPressed: _currentIndex < widget.vocabularies.length - 1
                       ? () => _pageController.nextPage(
                             duration: const Duration(milliseconds: 300),
                             curve: Curves.easeInOut,
                           )
-                      : null,
+                      : widget.onCompleted,
                 ),
               ],
             ),

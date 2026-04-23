@@ -15,6 +15,7 @@ class HomeScreen extends StatefulWidget {
   final bool initSearch;
   final List<String>? topicLevelsFilter;
   final Function(Vocabulary)? onWordSelected;
+  final VoidCallback? onCompleted;
 
   const HomeScreen({
     super.key,
@@ -24,6 +25,7 @@ class HomeScreen extends StatefulWidget {
     this.initSearch = false,
     this.topicLevelsFilter,
     this.onWordSelected,
+    this.onCompleted,
   });
 
   @override
@@ -249,45 +251,47 @@ class _HomeScreenState extends State<HomeScreen> {
                   context: context,
                   builder: (ctx) => AlertDialog(
                     backgroundColor: context.bBg,
-                    shape: Border.all(color: context.bBorder, width: 4),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                     title: Text(
-                      'CLEAR HISTORY?', 
+                      'Clear history?',
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.w900,
-                        color: context.bBorder,
-                      )
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                     content: Text(
-                      'Are you sure you want to completely erase the notification history? This action cannot be undone.', 
+                      'This will erase all notification history. This action cannot be undone.',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: context.bBorder,
-                      )
+                        color: context.bMuted,
+                      ),
                     ),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.of(ctx).pop(),
-                        child: Text('CANCEL', style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+                        child: Text(
+                          'Cancel',
+                          style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600),
+                        ),
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
                           backgroundColor: BrutalistTheme.secondary,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                          foregroundColor: BrutalistTheme.white,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         ),
                         onPressed: () async {
                           Navigator.of(ctx).pop();
                           final messenger = ScaffoldMessenger.of(context);
                           final prefs = await SharedPreferences.getInstance();
                           await prefs.remove('notificationHistory');
-                          setState(() {
-                            _allVocabData.clear();
-                          });
+                          setState(() => _allVocabData.clear());
                           if (mounted) {
                             messenger.showSnackBar(
-                              const SnackBar(content: Text('HISTORY CLEARED!')),
+                              const SnackBar(content: Text('History cleared.')),
                             );
                           }
                         },
-                        child: Text('DELETE', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                        child: const Text('Delete', style: TextStyle(fontWeight: FontWeight.w600)),
                       ),
                     ],
                   ),
@@ -702,15 +706,12 @@ class _HomeScreenState extends State<HomeScreen> {
               if (widget.onWordSelected != null) {
                 widget.onWordSelected!(vocab);
               } else {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => LearningScreen(
-                      day: 0,
-                      vocabularies: distinctResults,
-                      initialIndex: index,
-                    ),
-                  ),
-                );
+                Navigator.of(context).push(smoothRoute(LearningScreen(
+                  day: 0,
+                  vocabularies: distinctResults,
+                  initialIndex: index,
+                  onCompleted: widget.onCompleted,
+                )));
               }
             },
             child: Padding(
@@ -755,6 +756,18 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  VoidCallback? _buildNextDayCallback(BuildContext context, List<int> days, int index) {
+    if (index + 1 >= days.length) return null;
+    return () {
+      final nextDay = days[index + 1];
+      Navigator.of(context).pushReplacement(smoothRoute(LearningScreen(
+        day: nextDay,
+        vocabularies: _vocabData[nextDay]!,
+        onCompleted: _buildNextDayCallback(context, days, index + 1),
+      )));
+    };
+  }
+
   Widget _buildList() {
     final days = _vocabData.keys.toList()..sort();
 
@@ -766,17 +779,26 @@ class _HomeScreenState extends State<HomeScreen> {
         final vocabList = _vocabData[day]!;
         final dominantLevel = vocabList.isNotEmpty ? vocabList.first.levels : '';
 
+        VoidCallback? onCompleted;
+        if (index + 1 < days.length) {
+          onCompleted = () {
+            final nextDay = days[index + 1];
+            Navigator.of(context).pushReplacement(smoothRoute(LearningScreen(
+              day: nextDay,
+              vocabularies: _vocabData[nextDay]!,
+              onCompleted: _buildNextDayCallback(context, days, index + 1),
+            )));
+          };
+        }
+
         return BrutalistCard(
           backgroundColor: levelColor(dominantLevel, fallbackIndex: index),
           onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => LearningScreen(
-                  day: day,
-                  vocabularies: vocabList,
-                ),
-              ),
-            );
+            Navigator.of(context).push(smoothRoute(LearningScreen(
+              day: day,
+              vocabularies: vocabList,
+              onCompleted: onCompleted,
+            )));
           },
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),

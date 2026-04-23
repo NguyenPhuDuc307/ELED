@@ -1,83 +1,106 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/menu_screen.dart';
-import 'dart:io';
 import 'theme/brutalist_theme.dart';
 import 'services/notification_service.dart';
-import 'services/csv_service.dart';
-import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
-import 'models/vocabulary.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
 String? pendingNotificationPayload;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  if (Platform.isAndroid) {
-    await AndroidAlarmManager.initialize();
-  }
-  
-  final prefs = await SharedPreferences.getInstance();
+
+  final (prefs, _) = await (
+    SharedPreferences.getInstance(),
+    NotificationService().init(),
+  ).wait;
+
   final themeStr = prefs.getString('themeMode') ?? 'system';
-  final initialTheme = themeStr == 'dark' ? ThemeMode.dark : (themeStr == 'light' ? ThemeMode.light : ThemeMode.system);
-  EledApp.themeNotifier.value = initialTheme;
-  
-  await NotificationService().init();
-  
-  final launchDetails = await NotificationService().flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
+  EledApp.themeNotifier.value = themeStr == 'dark'
+      ? ThemeMode.dark
+      : (themeStr == 'light' ? ThemeMode.light : ThemeMode.system);
+
+  final launchDetails = await NotificationService()
+      .flutterLocalNotificationsPlugin
+      .getNotificationAppLaunchDetails();
   if (launchDetails?.didNotificationLaunchApp ?? false) {
     pendingNotificationPayload = launchDetails!.notificationResponse?.payload;
   }
-  
-  _restockNotifications();
 
+  await NotificationService.processScheduleLog();
+  _restockNotifications();
   runApp(const EledApp());
 }
 
 Future<void> _restockNotifications() async {
-  if (Platform.isAndroid) return; // Android relies on self-rescheduling background isolates. Restocking on boot resets the timer and fires a rogue immediate intent!
-  
   try {
     final prefs = await SharedPreferences.getInstance();
-    final int intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 60;
-    
-    if (intervalMinutes > 0) {
-      final startH = prefs.getInt('notificationStartHour') ?? 9;
-      final startM = prefs.getInt('notificationStartMinute') ?? 0;
-      final endH = prefs.getInt('notificationEndHour') ?? 19;
-      final endM = prefs.getInt('notificationEndMinute') ?? 0;
+    final intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 0;
+    if (intervalMinutes <= 0) return;
 
-      final selectedPopularity = prefs.getStringList('selectedPopularity') ?? ['A1', 'A2', 'B1', 'B2', 'C1'];
-      final selectedTopics = prefs.getStringList('selectedTopics') ?? [];
+    // Only restock if running low (< 10 pending) to avoid cancelling upcoming noti
+    final pending = await NotificationService()
+        .flutterLocalNotificationsPlugin
+        .pendingNotificationRequests();
+    if (pending.length >= 10) return;
 
-      List<Vocabulary> pool = [];
-      pool.addAll(await CsvService.loadSpecificPopularityVocabulary(selectedPopularity, excludeKnown: true));
-      pool.addAll(await CsvService.loadSpecificTopicsVocabulary(selectedTopics, excludeKnown: true));
-      
-      if (pool.isNotEmpty) {
-        await NotificationService().scheduleVocabularyNotifications(
-          pool: pool,
-          intervalMinutes: intervalMinutes,
-          startTime: TimeOfDay(hour: startH, minute: startM),
-          endTime: TimeOfDay(hour: endH, minute: endM),
-        );
-      }
+    final startH = prefs.getInt('notificationStartHour') ?? 9;
+    final startM = prefs.getInt('notificationStartMinute') ?? 0;
+    final endH   = prefs.getInt('notificationEndHour') ?? 19;
+    final endM   = prefs.getInt('notificationEndMinute') ?? 0;
+
+    final popularity = prefs.getStringList('selectedPopularity') ?? ['A1', 'A2', 'B1', 'B2', 'C1'];
+    final topics     = prefs.getStringList('selectedTopics') ?? [];
+    final pool       = await NotificationService.loadPool(popularity: popularity, topics: topics);
+
+    if (pool.isNotEmpty) {
+      await NotificationService().scheduleVocabularyNotifications(
+        pool: pool,
+        intervalMinutes: intervalMinutes,
+        startTime: TimeOfDay(hour: startH, minute: startM),
+        endTime: TimeOfDay(hour: endH, minute: endM),
+      );
     }
   } catch (e) {
     debugPrint('Failed to restock notifications: $e');
   }
 }
 
-class EledApp extends StatelessWidget {
+class EledApp extends StatefulWidget {
   const EledApp({super.key});
 
-  static final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.system);
+  static final ValueNotifier<ThemeMode> themeNotifier =
+      ValueNotifier(ThemeMode.system);
+
+  @override
+  State<EledApp> createState() => _EledAppState();
+}
+
+class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      NotificationService.processScheduleLog();
+      _restockNotifications();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ThemeMode>(
-      valueListenable: themeNotifier,
+      valueListenable: EledApp.themeNotifier,
       builder: (context, ThemeMode currentMode, child) {
         return MaterialApp(
           navigatorKey: globalNavigatorKey,

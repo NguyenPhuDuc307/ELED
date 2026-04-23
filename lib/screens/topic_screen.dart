@@ -3,7 +3,7 @@ import 'package:flutter/services.dart' show rootBundle, AssetManifest;
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import '../services/csv_service.dart';
-import 'home_screen.dart';
+import 'learning_screen.dart';
 
 class TopicScreen extends StatefulWidget {
   const TopicScreen({super.key});
@@ -18,6 +18,28 @@ class _TopicScreenState extends State<TopicScreen> {
   
   final List<String> _levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
   List<String> _selectedTopicLevels = ['A1', 'A2', 'B1'];
+
+  void _openSubtopic(BuildContext context, List<Map<String, String>> sublists, int index, {bool replace = false}) {
+    if (index >= sublists.length) return;
+    final sub = sublists[index];
+    final onCompleted = index + 1 < sublists.length
+        ? () => _openSubtopic(context, sublists, index + 1, replace: true)
+        : null;
+    CsvService.loadVocabularyByDayFromPath(
+      sub['path']!,
+      excludeKnown: true,
+      levelFilter: _selectedTopicLevels,
+    ).then((data) {
+      final pool = data.values.expand((v) => v).toList();
+      if (!context.mounted || pool.isEmpty) return;
+      final screen = LearningScreen(day: 0, vocabularies: pool, onCompleted: onCompleted);
+      if (replace) {
+        Navigator.of(context).pushReplacement(smoothRoute(screen));
+      } else {
+        Navigator.of(context).push(smoothRoute(screen));
+      }
+    });
+  }
 
   @override
   void initState() {
@@ -92,7 +114,7 @@ class _TopicScreenState extends State<TopicScreen> {
                   return StatefulBuilder(
                     builder: (context, setDialogState) {
                       return AlertDialog(
-                        backgroundColor: BrutalistTheme.surface,
+                        backgroundColor: context.bBg,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                         title: Text(
                           'Filter by Level',
@@ -105,11 +127,11 @@ class _TopicScreenState extends State<TopicScreen> {
                             mainAxisSize: MainAxisSize.min,
                             children: _levels.map((level) {
                               return CheckboxListTile(
-                                title: Text(level, style: const TextStyle(fontWeight: FontWeight.w600)),
+                                title: Text(level, style: TextStyle(fontWeight: FontWeight.w600, color: context.bBorder)),
                                 value: _selectedTopicLevels.contains(level),
                                 activeColor: BrutalistTheme.primary,
                                 checkColor: BrutalistTheme.white,
-                                side: const BorderSide(color: BrutalistTheme.border, width: 1.5),
+                                side: BorderSide(color: context.bSubtle, width: 1.5),
                                 onChanged: (bool? value) {
                                   setDialogState(() {
                                     if (value == true) {
@@ -193,22 +215,25 @@ class _TopicScreenState extends State<TopicScreen> {
         final sublists = _topics[category]!;
         sublists.sort((a, b) => a['name']!.compareTo(b['name']!));
 
+        final isDark = Theme.of(context).brightness == Brightness.dark;
+        final cardBg = index % 2 == 0
+            ? (isDark ? const Color(0xFF1A3020) : BrutalistTheme.primaryLight)
+            : (isDark ? const Color(0xFF2A1810) : BrutalistTheme.accentLight);
+
         return BrutalistCard(
-            backgroundColor: index % 2 == 0 ? BrutalistTheme.primaryLight : BrutalistTheme.accentLight,
+            backgroundColor: cardBg,
             child: Theme(
-              data: Theme.of(context).copyWith(
-                dividerColor: Colors.transparent,
-              ),
+              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
               child: ExpansionTile(
                 shape: const Border(),
                 collapsedShape: const Border(),
-                iconColor: BrutalistTheme.black,
-                collapsedIconColor: BrutalistTheme.black,
+                iconColor: context.bBorder,
+                collapsedIconColor: context.bBorder,
                 title: Text(
                   category.replaceAll('_', ' ').toUpperCase(),
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w700,
-                        color: BrutalistTheme.black,
+                        color: context.bBorder,
                         fontSize: 18,
                       ),
                 ),
@@ -216,8 +241,8 @@ class _TopicScreenState extends State<TopicScreen> {
                   Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      border: Border(top: BorderSide(color: BrutalistTheme.border, width: 1)),
-                      color: BrutalistTheme.surface,
+                      border: Border(top: BorderSide(color: context.bSubtle, width: 1)),
+                      color: context.bBg,
                     ),
                     padding: const EdgeInsets.all(16.0),
                     child: Wrap(
@@ -227,28 +252,20 @@ class _TopicScreenState extends State<TopicScreen> {
                         return IntrinsicWidth(
                           child: GestureDetector(
                             onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => HomeScreen(
-                                    mode: 'TOPIC',
-                                    topicPath: sublist['path'],
-                                    topicTitle: sublist['name'],
-                                    topicLevelsFilter: _selectedTopicLevels,
-                                  ),
-                                ),
-                              );
+                              final i = sublists.indexOf(sublist);
+                              _openSubtopic(context, sublists, i);
                             },
                             child: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
                               decoration: BoxDecoration(
-                                color: BrutalistTheme.primaryLight,
+                                color: isDark ? const Color(0xFF1E3A28) : BrutalistTheme.primaryLight,
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text(
                                 '${sublist['name']!.replaceAll('_', ' ')} (${sublist['count']!})',
                                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                       fontWeight: FontWeight.w600,
-                                      color: BrutalistTheme.black,
+                                      color: context.bBorder,
                                       fontSize: 13,
                                     ),
                               ),

@@ -1,51 +1,45 @@
 import 'dart:io';
 import 'dart:math';
+import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:home_widget/home_widget.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
-import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
-import 'package:home_widget/home_widget.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
 import '../screens/learning_screen.dart';
 import '../main.dart';
 
+const kAndroidChannel = AndroidNotificationDetails(
+  'eled_vocab_channel',
+  'Vocabulary Reminders',
+  channelDescription: 'Periodic vocabulary notifications',
+  importance: Importance.max,
+  priority: Priority.high,
+);
+
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
-
-  factory NotificationService() {
-    return _instance;
-  }
-
+  factory NotificationService() => _instance;
   NotificationService._internal();
 
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
-  static const int androidAlarmId = 1000;
-
   Future<void> init() async {
     tz.initializeTimeZones();
 
-    const AndroidInitializationSettings initializationSettingsAndroid =
-        AndroidInitializationSettings('@mipmap/launcher_icon');
-
-    const DarwinInitializationSettings initializationSettingsDarwin =
-        DarwinInitializationSettings(
-      requestAlertPermission: false,
-      requestBadgePermission: false,
-      requestSoundPermission: false,
-    );
-
-    const InitializationSettings initializationSettings = InitializationSettings(
-      android: initializationSettingsAndroid,
-      iOS: initializationSettingsDarwin,
-    );
-
     await flutterLocalNotificationsPlugin.initialize(
-      settings: initializationSettings,
+      settings: const InitializationSettings(
+        android: AndroidInitializationSettings('@mipmap/launcher_icon'),
+        iOS: DarwinInitializationSettings(
+          requestAlertPermission: false,
+          requestBadgePermission: false,
+          requestSoundPermission: false,
+        ),
+      ),
       onDidReceiveNotificationResponse: _onNotificationTapped,
     );
 
@@ -58,98 +52,77 @@ class NotificationService {
       final payload = uri.queryParameters['payload'];
       if (payload != null && payload.isNotEmpty) {
         _onNotificationTapped(NotificationResponse(
-          notificationResponseType: NotificationResponseType.selectedNotification, 
-          payload: payload
+          notificationResponseType: NotificationResponseType.selectedNotification,
+          payload: payload,
         ));
       }
     }
   }
 
   static Future<void> _onNotificationTapped(NotificationResponse response) async {
-    final String? payload = response.payload;
-    if (payload != null && payload.isNotEmpty) {
-      if (globalNavigatorKey.currentState == null) {
-        pendingNotificationPayload = payload;
-        return;
-      }
-      
-      final context = globalNavigatorKey.currentState?.context;
-      if (context != null && context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('NATIVE INTENT: $payload')));
-      }
+    final payload = response.payload;
+    if (payload == null || payload.isEmpty) return;
 
-      final allVocab = await CsvService.loadAllVocabulary(excludeKnown: false);
-      
-      final parts = payload.split('|');
-      final matchWord = parts[0].trim().toLowerCase();
-      final matchTopic = parts.length > 1 ? parts[1].trim().toLowerCase() : '';
-
-      final matchList = allVocab.where((v) => v.word.trim().toLowerCase() == matchWord);
-      if (matchList.isNotEmpty) {
-        final exactMatch = matchList.where((v) => v.topic.trim().toLowerCase() == matchTopic);
-        final vocab = exactMatch.isNotEmpty ? exactMatch.first : matchList.first;
-
-        globalNavigatorKey.currentState?.push(
-          MaterialPageRoute(
-            builder: (_) => LearningScreen(
-              day: 0,
-              vocabularies: [vocab],
-            ),
-          ),
-        );
-      } else {
-        if (context != null && context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('404: $matchWord NOT IN DB! (DB=${allVocab.length})')));
-        }
-      }
+    if (globalNavigatorKey.currentState == null) {
+      pendingNotificationPayload = payload;
+      return;
     }
-  }
 
-  Future<void> requestPermissions() async {
-    await flutterLocalNotificationsPlugin
-        .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin>()
-        ?.requestNotificationsPermission();
+    final allVocab = await CsvService.loadAllVocabulary(excludeKnown: false);
+    final parts      = payload.split('|');
+    final matchWord  = parts[0].trim().toLowerCase();
+    final matchTopic = parts.length > 1 ? parts[1].trim().toLowerCase() : '';
 
-    await flutterLocalNotificationsPlugin
-        .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin>()
-        ?.requestExactAlarmsPermission();
+    final matches = allVocab.where((v) => v.word.trim().toLowerCase() == matchWord);
+    if (matches.isEmpty) return;
 
-    await flutterLocalNotificationsPlugin
-        .resolvePlatformSpecificImplementation<
-            IOSFlutterLocalNotificationsPlugin>()
-        ?.requestPermissions(
-      alert: true,
-      badge: true,
-      sound: true,
+    final exact = matches.where((v) => v.topic.trim().toLowerCase() == matchTopic);
+    final vocab = exact.isNotEmpty ? exact.first : matches.first;
+
+    // Save tapped notification to history immediately
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final history = prefs.getStringList('notificationHistory') ?? [];
+      final entry = '${vocab.word}|${vocab.topic}';
+      history.removeWhere((e) => e == vocab.word || e.startsWith('${vocab.word}|'));
+      history.insert(0, entry);
+      if (history.length > 500) history.length = 500;
+      await prefs.setStringList('notificationHistory', history);
+    } catch (_) {}
+
+    globalNavigatorKey.currentState?.push(
+      MaterialPageRoute(
+        builder: (_) => LearningScreen(day: 0, vocabularies: [vocab]),
+      ),
     );
   }
 
-  static DateTime _calculateNextSlot(DateTime now, int startH, int startM, int endH, int endM, int intervalMins) {
-    if (intervalMins <= 0) return now.add(const Duration(minutes: 60)); 
-    
-    DateTime candidate = DateTime(now.year, now.month, now.day, startH, startM);
-    // Pad by 1 minute to prevent Android Alarm early-firing infinite recursion loops
-    final safeNow = now.add(const Duration(minutes: 1));
-    
-    while (candidate.isBefore(safeNow)) {
-      candidate = candidate.add(Duration(minutes: intervalMins));
-    }
-    
-    DateTime todayEnd = DateTime(now.year, now.month, now.day, endH, endM);
-    if (candidate.isAfter(todayEnd)) {
-      candidate = DateTime(now.year, now.month, now.day + 1, startH, startM);
-    }
-    
-    return candidate;
+  Future<void> requestPermissions() async {
+    final android = flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
+    await android?.requestNotificationsPermission();
+    await android?.requestExactAlarmsPermission();
+    await flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>()
+        ?.requestPermissions(alert: true, badge: true, sound: true);
   }
 
   Future<void> cancelAllNotifications() async {
     await flutterLocalNotificationsPlugin.cancelAll();
-    if (Platform.isAndroid) {
-      await AndroidAlarmManager.cancel(androidAlarmId);
+  }
+
+  /// Loads the vocabulary pool based on user settings from SharedPreferences.
+  static Future<List<Vocabulary>> loadPool({
+    required List<String> popularity,
+    required List<String> topics,
+    bool excludeKnown = true,
+  }) async {
+    if (topics.isNotEmpty) {
+      return CsvService.loadSpecificTopicsVocabulary(
+          topics, levelFilter: popularity, excludeKnown: excludeKnown);
     }
+    return CsvService.loadSpecificPopularityVocabulary(
+        popularity, excludeKnown: excludeKnown);
   }
 
   Future<void> scheduleVocabularyNotifications({
@@ -159,224 +132,169 @@ class NotificationService {
     required TimeOfDay endTime,
   }) async {
     await cancelAllNotifications();
-
     if (pool.isEmpty || intervalMinutes <= 0) return;
 
-    if (Platform.isAndroid) {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setInt('notificationIntervalMinutes', intervalMinutes);
-      await prefs.setInt('notificationStartHour', startTime.hour);
-      await prefs.setInt('notificationStartMinute', startTime.minute);
-      await prefs.setInt('notificationEndHour', endTime.hour);
-      await prefs.setInt('notificationEndMinute', endTime.minute);
+    final now      = tz.TZDateTime.now(tz.local);
+    final count    = min(Platform.isAndroid ? 100 : 64, pool.length);
+    final shuffled = List.of(pool)..shuffle();
+    tz.TZDateTime next = now;
 
-      final nextSlot = _calculateNextSlot(DateTime.now(), startTime.hour, startTime.minute, endTime.hour, endTime.minute, intervalMinutes);
+    final startMins = startTime.hour * 60 + startTime.minute;
+    final endMins   = endTime.hour * 60 + endTime.minute;
 
-      await AndroidAlarmManager.oneShotAt(
-        nextSlot,
-        androidAlarmId,
-        androidAlarmCallback,
-        exact: true,
-        wakeup: true,
-        rescheduleOnReboot: true,
-      );
-    } else {
-      // iOS: Standard pre-scheduling algorithm (does not support home widgets synced real-time dynamically out of the box easily)
-      final now = tz.TZDateTime.now(tz.local);
-      int scheduleCount = min(50, pool.length);
-      List<Vocabulary> shuffledPool = List.from(pool)..shuffle();
+    final futures       = <Future<void>>[];
+    final logEntries    = <String>[];
+    final widgetEntries = <String>[];
 
-      tz.TZDateTime nextTime = now;
+    for (int i = 0; i < count; i++) {
+      next = next.add(Duration(minutes: intervalMinutes));
 
-      for (int i = 0; i < scheduleCount; i++) {
-        final vocab = shuffledPool[i];
-        nextTime = nextTime.add(Duration(minutes: intervalMinutes));
-        
-        int curMins = nextTime.hour * 60 + nextTime.minute;
-        int startMins = startTime.hour * 60 + startTime.minute;
-        int endMins = endTime.hour * 60 + endTime.minute;
-
-        if (curMins >= endMins || curMins < startMins) {
-          if (curMins >= endMins) {
-            nextTime = tz.TZDateTime(tz.local, nextTime.year, nextTime.month, nextTime.day + 1, startTime.hour, startTime.minute);
-          } else {
-            nextTime = tz.TZDateTime(tz.local, nextTime.year, nextTime.month, nextTime.day, startTime.hour, startTime.minute);
-          }
-        }
-
-        String htmlBody = '<b>Meaning:</b> ${vocab.translation}<br>';
-        if (vocab.ipa.isNotEmpty) {
-          htmlBody += '<b>Pronunciation:</b> <i>${vocab.ipa}</i><br>';
-        }
-        htmlBody += '<b>Part of speech:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
-        if (vocab.topic.isNotEmpty) {
-          htmlBody += '<br><b>Topic:</b> ${vocab.topic.toUpperCase()}';
-        }
-
-        await flutterLocalNotificationsPlugin.zonedSchedule(
-          id: i,
-          title: vocab.word.toUpperCase(),
-          body: '${vocab.translation} - ${vocab.partOfSpeech}',
-          scheduledDate: nextTime,
-          notificationDetails: NotificationDetails(
-            android: AndroidNotificationDetails(
-              'eled_vocab_channel',
-              'Vocabulary Reminders',
-              channelDescription: 'Periodic vocabulary notifications',
-              importance: Importance.max,
-              priority: Priority.high,
-              color: const Color(0xFFE2F040),
-              styleInformation: BigTextStyleInformation(
-                htmlBody, 
-                htmlFormatBigText: true,
-                contentTitle: '<b>${vocab.word.toUpperCase()}</b>',
-                htmlFormatContentTitle: true,
-              ),
-            ),
-          ),
-          androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-          payload: '${vocab.word}|${vocab.topic}',
-        );
+      final curMins = next.hour * 60 + next.minute;
+      if (curMins >= endMins) {
+        next = tz.TZDateTime(tz.local, next.year, next.month, next.day + 1,
+            startTime.hour, startTime.minute);
+      } else if (curMins < startMins) {
+        next = tz.TZDateTime(tz.local, next.year, next.month, next.day,
+            startTime.hour, startTime.minute);
       }
+
+      final v = shuffled[i];
+      futures.add(_scheduleOne(i, v, next));
+      logEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.topic}');
+      widgetEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.translation}|${v.ipa}|${v.partOfSpeech}|${v.levels}|${v.topic}');
+    }
+
+    await Future.wait(futures);
+
+    final prefs = await SharedPreferences.getInstance();
+
+    // Save scheduled words directly to history (prepend, deduplicated)
+    final existing = prefs.getStringList('notificationHistory') ?? [];
+    final newEntries = shuffled.take(count)
+        .map((v) => '${v.word}|${v.topic}')
+        .where((e) => !existing.contains(e))
+        .toList();
+    final merged = [...newEntries, ...existing];
+    if (merged.length > 500) merged.length = 500;
+    await prefs.setStringList('notificationHistory', merged);
+
+    // Persist schedule log for widget updates on app-open
+    await prefs.setStringList('notificationScheduleLog', logEntries);
+
+    // Save full widget schedule for native alarm receiver
+    await HomeWidget.saveWidgetData<String>(
+        'widgetScheduleEntries', widgetEntries.join(','));
+
+    // Schedule first native alarm for widget auto-update
+    if (Platform.isAndroid && widgetEntries.isNotEmpty) {
+      final firstMs = int.tryParse(widgetEntries[0].split('|')[0]);
+      if (firstMs != null) {
+        try {
+          await const MethodChannel('com.nguyenphuduc.eled/widget_alarm')
+              .invokeMethod('scheduleFirst', {'atMs': firstMs});
+        } catch (_) {}
+      }
+    }
+
+    // Update widget immediately with first upcoming word
+    if (logEntries.isNotEmpty) {
+      try {
+        await HomeWidget.saveWidgetData<String>('word', shuffled[0].word);
+        await HomeWidget.saveWidgetData<String>('translation', shuffled[0].translation);
+        await HomeWidget.saveWidgetData<String>('ipa', shuffled[0].ipa);
+        await HomeWidget.saveWidgetData<String>('pos', shuffled[0].partOfSpeech);
+        await HomeWidget.saveWidgetData<String>('levels', shuffled[0].levels);
+        await HomeWidget.saveWidgetData<String>('topic', shuffled[0].topic);
+        await HomeWidget.updateWidget(name: 'VocabularyWidgetProvider');
+      } catch (_) {}
     }
   }
 
-}
-
-@pragma('vm:entry-point')
-Future<void> androidAlarmCallback() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  try {
+  /// Called on app open — finds fired notifications in the log, updates history + widget.
+  static Future<void> processScheduleLog() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.reload(); // Force read from disk to avoid stale warm isolate cache
-    
-    final startH = prefs.getInt('notificationStartHour') ?? 9;
-    final startM = prefs.getInt('notificationStartMinute') ?? 0;
-    final endH = prefs.getInt('notificationEndHour') ?? 19;
-    final endM = prefs.getInt('notificationEndMinute') ?? 0;
-    
-    final now = TimeOfDay.now();
-    final nowMin = now.hour * 60 + now.minute;
-    final startMin = startH * 60 + startM;
-    final endMin = endH * 60 + endM;
-    
-    if (nowMin < startMin || nowMin >= endMin) {
-      return; // Outside active window
+
+    // Merge native history written by WidgetUpdateReceiver (no app needed)
+    final nativePending = prefs.getString('nativeHistoryPending') ?? '';
+    if (nativePending.isNotEmpty) {
+      final nativeEntries = nativePending.split('\n').where((e) => e.isNotEmpty).toList();
+      if (nativeEntries.isNotEmpty) {
+        final history = prefs.getStringList('notificationHistory') ?? [];
+        for (final entry in nativeEntries) {
+          final word = entry.split('|')[0];
+          history.removeWhere((e) => e == word || e.startsWith('$word|'));
+          history.insert(0, entry);
+        }
+        if (history.length > 500) history.length = 500;
+        await prefs.setStringList('notificationHistory', history);
+        await prefs.remove('nativeHistoryPending');
+      }
     }
 
-    final popularity = prefs.getStringList('selectedPopularity') ?? [];
-    final topics = prefs.getStringList('selectedTopics') ?? [];
-    
-    List<Vocabulary> pool = [];
-    if (topics.isNotEmpty) {
-      pool.addAll(await CsvService.loadSpecificTopicsVocabulary(topics, levelFilter: popularity, excludeKnown: true));
-    } else {
-      pool.addAll(await CsvService.loadSpecificPopularityVocabulary(popularity, excludeKnown: true));
-    }
-    
-    if (pool.isEmpty) return;
-    
-    final random = Random();
-    final vocab = pool[random.nextInt(pool.length)];
-    
-    // Sync strictly with Android Widget, isolated try-catch to prevent crash
-    try {
-      await HomeWidget.saveWidgetData<String>('word', vocab.word);
-      await HomeWidget.saveWidgetData<String>('translation', vocab.translation);
-      await HomeWidget.saveWidgetData<String>('ipa', vocab.ipa);
-      await HomeWidget.saveWidgetData<String>('pos', vocab.partOfSpeech);
-      await HomeWidget.saveWidgetData<String>('levels', vocab.levels);
-      await HomeWidget.saveWidgetData<String>('topic', vocab.topic);
-      await HomeWidget.updateWidget(name: 'VocabularyWidgetProvider');
-    } catch (e) {
-      debugPrint("HomeWidget background update failed: $e");
-    }
-    
-    // Trigger the local notification manually
-    final flnp = FlutterLocalNotificationsPlugin();
-    await flnp.initialize(
-      settings: const InitializationSettings(
-        android: AndroidInitializationSettings('@mipmap/launcher_icon'),
-      ),
-    );
+    final log = prefs.getStringList('notificationScheduleLog') ?? [];
+    if (log.isEmpty) return;
 
-    String htmlBody = '<b>Meaning:</b> ${vocab.translation}<br>';
-    if (vocab.ipa.isNotEmpty) {
-      htmlBody += '<b>Pronunciation:</b> <i>${vocab.ipa}</i><br>';
-    }
-    htmlBody += '<b>Part of speech:</b> ${vocab.partOfSpeech.toUpperCase()} &bull; <b>Level:</b> ${vocab.levels.toUpperCase()}';
-    if (vocab.topic.isNotEmpty) {
-      htmlBody += '<br><b>Topic:</b> ${vocab.topic.toUpperCase()}';
+    final nowMs = DateTime.now().millisecondsSinceEpoch;
+    final lastProcessed = prefs.getInt('notificationScheduleLastProcessed') ?? 0;
+
+    String? latestWord;
+    final history = prefs.getStringList('notificationHistory') ?? [];
+    bool historyChanged = false;
+
+    for (final entry in log) {
+      final parts = entry.split('|');
+      if (parts.length < 3) continue;
+      final ms = int.tryParse(parts[0]) ?? 0;
+      if (ms <= lastProcessed || ms > nowMs) continue;
+
+      final word  = parts[1];
+      final topic = parts[2];
+      history.removeWhere((e) => e == word || e.startsWith('$word|'));
+      history.insert(0, '$word|$topic');
+      historyChanged = true;
+      latestWord = word;
     }
 
-    AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-      'eled_vocab_channel',
-      'Vocabulary Reminders',
-      channelDescription: 'Periodic vocabulary notifications',
-      icon: '@mipmap/launcher_icon',
-      importance: Importance.max,
-      priority: Priority.high,
-      color: const Color(0xFFE2F040),
-      styleInformation: BigTextStyleInformation(
-        htmlBody, 
-        htmlFormatBigText: true,
-        contentTitle: '<b>${vocab.word.toUpperCase()}</b>',
-        htmlFormatContentTitle: true,
-      ),
-    );
-
-    NotificationDetails platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
-
-    await flnp.show(
-      id: 0, 
-      title: vocab.word.toUpperCase(),
-      body: '${vocab.translation} - ${vocab.partOfSpeech}',
-      notificationDetails: platformChannelSpecifics,
-      payload: '${vocab.word}|${vocab.topic}',
-    );
-
-    // Save to history tracking
-    try {
-      final String historyEntry = '${vocab.word}|${vocab.topic}';
-      final history = prefs.getStringList('notificationHistory') ?? [];
-      
-      history.removeWhere((item) => item == vocab.word || item.startsWith('${vocab.word}|'));
-      history.insert(0, historyEntry);
-      
-      if (history.length > 500) history.removeLast(); // Keep max 500 items
+    if (history.length > 500) history.length = 500;
+    if (historyChanged) {
       await prefs.setStringList('notificationHistory', history);
-    } catch (e) {
-      debugPrint("Failed to save history: $e");
+      await prefs.setInt('notificationScheduleLastProcessed', nowMs);
     }
 
-  } catch (e) {
-    debugPrint("AlarmManager callback error: $e");
-  } finally {
-    // RECURSIVE SCHEDULING TO BYPASS ANDROID 15-MINUTE PERIODIC LIMIT
+    if (latestWord != null) {
+      try {
+        final allVocab = await CsvService.loadAllVocabulary(excludeKnown: false);
+        final match = allVocab.where((v) =>
+            v.word.trim().toLowerCase() == latestWord!.trim().toLowerCase());
+        if (match.isNotEmpty) {
+          final v = match.first;
+          await HomeWidget.saveWidgetData<String>('word', v.word);
+          await HomeWidget.saveWidgetData<String>('translation', v.translation);
+          await HomeWidget.saveWidgetData<String>('ipa', v.ipa);
+          await HomeWidget.saveWidgetData<String>('pos', v.partOfSpeech);
+          await HomeWidget.saveWidgetData<String>('levels', v.levels);
+          await HomeWidget.saveWidgetData<String>('topic', v.topic);
+          await HomeWidget.updateWidget(name: 'VocabularyWidgetProvider');
+        }
+      } catch (_) {}
+    }
+  }
+
+  Future<void> _scheduleOne(int id, Vocabulary vocab, tz.TZDateTime at) async {
+    Future<void> schedule(AndroidScheduleMode mode) =>
+        flutterLocalNotificationsPlugin.zonedSchedule(
+          id: id,
+          title: vocab.word.toUpperCase(),
+          body: '${vocab.translation} - ${vocab.partOfSpeech}',
+          scheduledDate: at,
+          notificationDetails: const NotificationDetails(android: kAndroidChannel),
+          androidScheduleMode: mode,
+          payload: '${vocab.word}|${vocab.topic}',
+        );
     try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.reload();
-      final interval = prefs.getInt('notificationIntervalMinutes') ?? 0;
-
-      if (interval <= 0) return; // User disabled notifications, stop chain
-
-      final startH = prefs.getInt('notificationStartHour') ?? 9;
-      final startM = prefs.getInt('notificationStartMinute') ?? 0;
-      final endH = prefs.getInt('notificationEndHour') ?? 19;
-      final endM = prefs.getInt('notificationEndMinute') ?? 0;
-
-      final nextSlot = NotificationService._calculateNextSlot(DateTime.now(), startH, startM, endH, endM, interval);
-
-      await AndroidAlarmManager.oneShotAt(
-        nextSlot,
-        1000, // androidAlarmId
-        androidAlarmCallback,
-        exact: true,
-        wakeup: true,
-        rescheduleOnReboot: true,
-      );
-    } catch (e) {
-      debugPrint("AlarmManager reschedule error: $e");
+      await schedule(AndroidScheduleMode.exactAllowWhileIdle);
+    } catch (_) {
+      await schedule(AndroidScheduleMode.inexactAllowWhileIdle);
     }
   }
 }

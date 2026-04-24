@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:home_widget/home_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/menu_screen.dart';
 import 'theme/brutalist_theme.dart';
@@ -14,6 +15,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp();
+  await HomeWidget.setAppGroupId('group.com.nguyenphuduc.eled');
 
   final (prefs, _) = await (
     SharedPreferences.getInstance(),

@@ -46,22 +46,24 @@ class NotificationService {
       onDidReceiveNotificationResponse: _onNotificationTapped,
     );
 
-    try {
-      HomeWidget.widgetClicked.listen(_onWidgetTapped);
-      HomeWidget.initiallyLaunchedFromHomeWidget().then(_onWidgetTapped);
-    } catch (_) {}
+    HomeWidget.widgetClicked.listen(_onWidgetTapped, onError: (_) {});
+    HomeWidget.initiallyLaunchedFromHomeWidget()
+        .then(_onWidgetTapped)
+        .catchError((_) {});
   }
 
   static Future<void> _onWidgetTapped(Uri? uri) async {
-    if (uri != null && uri.scheme == 'eled') {
-      final payload = uri.queryParameters['payload'];
-      if (payload != null && payload.isNotEmpty) {
-        _onNotificationTapped(NotificationResponse(
-          notificationResponseType: NotificationResponseType.selectedNotification,
-          payload: payload,
-        ));
+    try {
+      if (uri != null && uri.scheme == 'eled') {
+        final payload = uri.queryParameters['payload'];
+        if (payload != null && payload.isNotEmpty) {
+          _onNotificationTapped(NotificationResponse(
+            notificationResponseType: NotificationResponseType.selectedNotification,
+            payload: payload,
+          ));
+        }
       }
-    }
+    } catch (_) {}
   }
 
   static Future<void> _onNotificationTapped(NotificationResponse response) async {

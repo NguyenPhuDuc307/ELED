@@ -47,9 +47,8 @@ class UserDataService {
       }
     });
 
-    if (_uid != null) {
-      _startFirestoreListeners();
-    }
+    // Don't call _startFirestoreListeners() here — auth stream fires on startup
+    // and will call it after migration completes.
   }
 
   Future<void> _loadFromPrefs() async {
@@ -67,6 +66,8 @@ class UserDataService {
     final doc = _userDoc;
     if (doc == null) return;
 
+    Map<String, dynamic>? lastSettings;
+
     _userDocSub = doc.snapshots().listen((snap) {
       if (!snap.exists) return;
       final data = snap.data() as Map<String, dynamic>;
@@ -74,7 +75,14 @@ class UserDataService {
         (data['knownWords'] as List? ?? []).map((e) => e.toString().toLowerCase()),
       );
       _knownWordsCtrl.add(_knownWords);
-      _applyRemoteSettings(data);
+
+      // Only apply settings when they actually changed
+      final remoteSettings = data['settings'] as Map<String, dynamic>?;
+      if (remoteSettings != null &&
+          remoteSettings.toString() != lastSettings?.toString()) {
+        lastSettings = remoteSettings;
+        _applyRemoteSettings(data);
+      }
     }, onError: (e) => debugPrint('Firestore knownWords error: $e'));
 
     _collectionsSub = doc.collection('collections').snapshots().listen((snap) {
@@ -148,20 +156,22 @@ class UserDataService {
     final doc = _userDoc;
     if (doc == null) return;
     try {
-      final snap = await doc.get();
       final prefs = await SharedPreferences.getInstance();
-      final localKnown = (prefs.getStringList('knownWords') ?? []).toSet();
-      final localHistory = prefs.getStringList('notificationHistory') ?? [];
-      final localCols = await _getLocalCollections();
+      final migrationKey = 'migrated_to_firestore_$_uid';
+
+      final snap = await doc.get();
 
       if (snap.exists) {
-        if (localKnown.isNotEmpty) {
-          await doc.update({'knownWords': FieldValue.arrayUnion(localKnown.toList())});
-        }
-        // Apply remote settings to local prefs
+        // Apply remote settings/data to local prefs on every login
         final remoteData = snap.data() as Map<String, dynamic>;
         await _applyRemoteSettings(remoteData);
-      } else {
+        // Don't re-merge local data — Firestore is source of truth
+      } else if (prefs.getBool(migrationKey) != true) {
+        // First time: push local data up once
+        final localKnown = (prefs.getStringList('knownWords') ?? []).toSet();
+        final localHistory = prefs.getStringList('notificationHistory') ?? [];
+        final localCols = await _getLocalCollections();
+
         final batch = _db.batch();
         batch.set(doc, {
           'knownWords': localKnown.toList(),
@@ -176,6 +186,7 @@ class UserDataService {
         }
         await batch.commit();
         await uploadSettings();
+        await prefs.setBool(migrationKey, true);
       }
     } catch (e) {
       debugPrint('Migration error: $e');

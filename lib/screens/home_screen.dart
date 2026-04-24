@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
+import '../services/auth_service.dart';
 import '../services/csv_service.dart';
 import '../services/collection_service.dart';
 import '../services/user_data_service.dart';
@@ -281,6 +283,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           final messenger = ScaffoldMessenger.of(context);
                           final prefs = await SharedPreferences.getInstance();
                           await prefs.remove('notificationHistory');
+                          // Also clear from Firestore if signed in
+                          final uid = AuthService().currentUser?.uid;
+                          if (uid != null) {
+                            FirebaseFirestore.instance
+                                .collection('users')
+                                .doc(uid)
+                                .set({'notificationHistory': []}, SetOptions(merge: true));
+                          }
                           setState(() => _allVocabData.clear());
                           if (mounted) {
                             messenger.showSnackBar(

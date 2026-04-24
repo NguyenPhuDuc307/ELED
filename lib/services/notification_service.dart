@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:home_widget/home_widget.dart';
+import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 import '../models/vocabulary.dart';
@@ -30,6 +31,8 @@ class NotificationService {
 
   Future<void> init() async {
     tz.initializeTimeZones();
+    final tzName = await FlutterTimezone.getLocalTimezone();
+    tz.setLocalLocation(tz.getLocation(tzName));
 
     await flutterLocalNotificationsPlugin.initialize(
       settings: const InitializationSettings(
@@ -43,8 +46,10 @@ class NotificationService {
       onDidReceiveNotificationResponse: _onNotificationTapped,
     );
 
-    HomeWidget.widgetClicked.listen(_onWidgetTapped);
-    HomeWidget.initiallyLaunchedFromHomeWidget().then(_onWidgetTapped);
+    try {
+      HomeWidget.widgetClicked.listen(_onWidgetTapped);
+      HomeWidget.initiallyLaunchedFromHomeWidget().then(_onWidgetTapped);
+    } catch (_) {}
   }
 
   static Future<void> _onWidgetTapped(Uri? uri) async {
@@ -186,16 +191,6 @@ class NotificationService {
     await Future.wait(futures);
 
     final prefs = await SharedPreferences.getInstance();
-
-    // Save scheduled words directly to history (prepend, deduplicated)
-    final existing = prefs.getStringList('notificationHistory') ?? [];
-    final newEntries = shuffled.take(count)
-        .map((v) => '${v.word}|${v.topic}')
-        .where((e) => !existing.contains(e))
-        .toList();
-    final merged = [...newEntries, ...existing];
-    if (merged.length > 500) merged.length = 500;
-    await prefs.setStringList('notificationHistory', merged);
 
     // Persist schedule log for widget updates on app-open
     await prefs.setStringList('notificationScheduleLog', logEntries);

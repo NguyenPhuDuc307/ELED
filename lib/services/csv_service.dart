@@ -1,21 +1,18 @@
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
 import '../models/vocabulary.dart';
 import 'user_data_service.dart';
+import 'vocabulary_sync_service.dart';
 
 class CsvService {
   // ── In-memory cache ──────────────────────────────────────────────────────
-  // Stores raw (unfiltered) merged vocabulary per asset path.
-  // excludeKnown is applied after cache lookup, so the cache never goes stale.
   static final Map<String, List<Vocabulary>> _rawCache = {};
   static List<String>? _topicFilesCache;
 
-  /// Call this after the user changes their known-words list so that
-  /// excludeKnown=true calls immediately reflect the new state.
-  /// Raw data is NOT cleared — only the known-word filter is re-applied on
-  /// the next call, which is cheap (in-memory iteration).
-  static void invalidateKnownWordsFilter() {
-    // No-op: cache stores raw data; filtering is always done live.
-    // Kept as a named hook for clarity / future use.
+  static void invalidateKnownWordsFilter() {}
+
+  static void clearCache() {
+    _rawCache.clear();
+    _topicFilesCache = null;
   }
 
   // ── CSV parser ───────────────────────────────────────────────────────────
@@ -51,7 +48,19 @@ class CsvService {
     if (_rawCache.containsKey(path)) return _rawCache[path]!;
 
     try {
-      final String csvString = await rootBundle.loadString(path);
+      // "assets/data/popularity/Oxford Word A1.csv" → "popularity/Oxford Word A1.csv"
+      final relative = path.startsWith('assets/data/')
+          ? path.substring('assets/data/'.length)
+          : null;
+
+      final String csvString;
+      if (relative != null) {
+        csvString = await VocabularySyncService.readLocalFile(relative) ??
+            await rootBundle.loadString(path);
+      } else {
+        csvString = await rootBundle.loadString(path);
+      }
+
       final List<String> lines = csvString.split('\n');
       if (lines.length <= 1) {
         _rawCache[path] = [];
@@ -93,7 +102,8 @@ class CsvService {
           String newTopic = existing.topic;
           if (newTopic.isEmpty) {
             newTopic = topic;
-          } else if (topic.isNotEmpty && !newTopic.toLowerCase().contains(topic.toLowerCase())) {
+          } else if (topic.isNotEmpty &&
+              !newTopic.toLowerCase().contains(topic.toLowerCase())) {
             newTopic = '$newTopic, $topic';
           }
 
@@ -124,6 +134,15 @@ class CsvService {
 
   static Future<List<String>> _getTopicFiles() async {
     if (_topicFilesCache != null) return _topicFilesCache!;
+
+    // Try local downloaded files first
+    final localFiles = await VocabularySyncService.listLocalTopicFiles();
+    if (localFiles.isNotEmpty) {
+      _topicFilesCache = localFiles;
+      return _topicFilesCache!;
+    }
+
+    // Fallback to bundled assets
     try {
       final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
       _topicFilesCache = manifest.listAssets()

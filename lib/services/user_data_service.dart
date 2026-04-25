@@ -76,6 +76,9 @@ class UserDataService {
       );
       _knownWordsCtrl.add(_knownWords);
 
+      // Sync words marked known via notification action while app was closed
+      _syncPendingKnownWords();
+
       // Only apply settings when they actually changed
       final remoteSettings = data['settings'] as Map<String, dynamic>?;
       if (remoteSettings != null &&
@@ -195,33 +198,43 @@ class UserDataService {
 
   // ── Known Words ──────────────────────────────────────────────────────────────
 
+  Future<void> _syncPendingKnownWords() async {
+    final prefs = await SharedPreferences.getInstance();
+    final pending = prefs.getStringList('pendingKnownWords') ?? [];
+    if (pending.isEmpty) return;
+    await prefs.remove('pendingKnownWords');
+    for (final word in pending) {
+      await addKnownWord(word);
+    }
+  }
+
   Future<void> addKnownWord(String word) async {
     final lower = word.toLowerCase();
+    // Update in-memory cache and local prefs immediately regardless of login state
+    _knownWords.add(lower);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList('knownWords', _knownWords.toList());
+    _knownWordsCtrl.add(_knownWords);
     if (_uid != null) {
       await _userDoc!.set({
         'knownWords': FieldValue.arrayUnion([lower]),
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
-    } else {
-      _knownWords.add(lower);
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setStringList('knownWords', _knownWords.toList());
-      _knownWordsCtrl.add(_knownWords);
     }
   }
 
   Future<void> removeKnownWord(String word) async {
     final lower = word.toLowerCase();
+    // Update in-memory cache and local prefs immediately regardless of login state
+    _knownWords.remove(lower);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList('knownWords', _knownWords.toList());
+    _knownWordsCtrl.add(_knownWords);
     if (_uid != null) {
       await _userDoc!.set({
         'knownWords': FieldValue.arrayRemove([lower]),
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
-    } else {
-      _knownWords.remove(lower);
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setStringList('knownWords', _knownWords.toList());
-      _knownWordsCtrl.add(_knownWords);
     }
   }
 

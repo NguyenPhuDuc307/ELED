@@ -31,25 +31,37 @@ class _MenuScreenState extends State<MenuScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
+      // Handle "Đã biết" action from notification when app was not in foreground
+      if (pendingMarkKnownWord != null) {
+        final word = pendingMarkKnownWord!;
+        pendingMarkKnownWord = null;
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('"${word.toUpperCase()}" đã lưu vào từ đã biết'),
+              duration: const Duration(seconds: 2),
+              behavior: SnackBarBehavior.floating,
+            ),
+          );
+        }
+      }
+
       if (pendingNotificationPayload != null) {
-        final word = pendingNotificationPayload!;
+        final payload = pendingNotificationPayload!;
         pendingNotificationPayload = null;
 
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('BOOT INTENT: $word')));
-        }
-
         final allVocab = await CsvService.loadAllVocabulary(excludeKnown: false);
-        final matchPayload = word.trim().toLowerCase();
-        final matchList = allVocab.where((v) => v.word.trim().toLowerCase() == matchPayload);
+        final parts = payload.split('|');
+        final matchWord = parts[0].trim().toLowerCase();
+        final matchTopic = parts.length > 1 ? parts[1].trim().toLowerCase() : '';
+        final matches = allVocab.where((v) => v.word.trim().toLowerCase() == matchWord);
 
-        if (matchList.isNotEmpty && mounted) {
+        if (matches.isNotEmpty && mounted) {
+          final exact = matches.where((v) => v.topic.trim().toLowerCase() == matchTopic);
+          final vocab = exact.isNotEmpty ? exact.first : matches.first;
           Navigator.push(
             context,
-            smoothRoute(LearningScreen(
-              day: 0,
-              vocabularies: [matchList.first],
-            )),
+            smoothRoute(LearningScreen(day: 0, vocabularies: [vocab])),
           );
         }
       }

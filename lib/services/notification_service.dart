@@ -10,6 +10,7 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
+import '../services/user_data_service.dart';
 import '../screens/learning_screen.dart';
 import '../main.dart';
 
@@ -20,6 +21,65 @@ const kAndroidChannel = AndroidNotificationDetails(
   importance: Importance.max,
   priority: Priority.high,
 );
+
+const _kAndroidChannelWithActions = AndroidNotificationDetails(
+  'eled_vocab_channel',
+  'Vocabulary Reminders',
+  channelDescription: 'Periodic vocabulary notifications',
+  importance: Importance.max,
+  priority: Priority.high,
+  actions: [
+    AndroidNotificationAction(
+      'mark_known',
+      'Đã biết',
+      showsUserInterface: false,
+      cancelNotification: true,
+    ),
+  ],
+);
+
+const _kConfirmChannel = AndroidNotificationDetails(
+  'eled_known_confirm',
+  'Xác nhận từ đã biết',
+  channelDescription: 'Hiện khi đánh dấu từ đã biết từ notification',
+  importance: Importance.low,
+  priority: Priority.low,
+  autoCancel: true,
+  timeoutAfter: 3000,
+);
+
+// Top-level handler required for background notification actions
+@pragma('vm:entry-point')
+Future<void> notificationBackgroundHandler(NotificationResponse response) async {
+  if (response.actionId != 'mark_known') return;
+  final payload = response.payload;
+  if (payload == null || payload.isEmpty) return;
+  final word = payload.split('|')[0].trim();
+  if (word.isEmpty) return;
+
+  // Save to SharedPreferences
+  final prefs = await SharedPreferences.getInstance();
+  final known = (prefs.getStringList('knownWords') ?? []).toSet();
+  known.add(word.toLowerCase());
+  await prefs.setStringList('knownWords', known.toList());
+  final pending = (prefs.getStringList('pendingKnownWords') ?? []).toSet();
+  pending.add(word.toLowerCase());
+  await prefs.setStringList('pendingKnownWords', pending.toList());
+
+  // Show brief confirmation notification (auto-dismiss after 3s, no app open)
+  final plugin = FlutterLocalNotificationsPlugin();
+  await plugin.initialize(
+    settings: const InitializationSettings(
+      android: AndroidInitializationSettings('@mipmap/launcher_icon'),
+    ),
+  );
+  await plugin.show(
+    id: 99999,
+    title: '✓ Đã biết',
+    body: '"${word.toUpperCase()}" đã lưu vào từ đã biết',
+    notificationDetails: const NotificationDetails(android: _kConfirmChannel),
+  );
+}
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
@@ -44,6 +104,7 @@ class NotificationService {
         ),
       ),
       onDidReceiveNotificationResponse: _onNotificationTapped,
+      onDidReceiveBackgroundNotificationResponse: notificationBackgroundHandler,
     );
 
     HomeWidget.widgetClicked.listen(_onWidgetTapped, onError: (_) {});
@@ -69,6 +130,38 @@ class NotificationService {
   static Future<void> _onNotificationTapped(NotificationResponse response) async {
     final payload = response.payload;
     if (payload == null || payload.isEmpty) return;
+
+    if (response.actionId == 'mark_known') {
+      final word = payload.split('|')[0].trim();
+      if (word.isEmpty) return;
+
+      // Save immediately to SharedPreferences as safety net
+      final prefs = await SharedPreferences.getInstance();
+      final known = (prefs.getStringList('knownWords') ?? []).toSet();
+      known.add(word.toLowerCase());
+      await prefs.setStringList('knownWords', known.toList());
+      final pending = (prefs.getStringList('pendingKnownWords') ?? []).toSet();
+      pending.add(word.toLowerCase());
+      await prefs.setStringList('pendingKnownWords', pending.toList());
+
+      // Try sync to UserDataService if already initialized
+      try { await UserDataService().addKnownWord(word); } catch (_) {}
+
+      // Show SnackBar — if context not ready yet, store for MenuScreen to display
+      final ctx = globalNavigatorKey.currentContext;
+      if (ctx != null && ctx.mounted) {
+        ScaffoldMessenger.of(ctx).showSnackBar(
+          SnackBar(
+            content: Text('"${word.toUpperCase()}" đã lưu vào từ đã biết'),
+            duration: const Duration(seconds: 2),
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      } else {
+        pendingMarkKnownWord = word;
+      }
+      return;
+    }
 
     if (globalNavigatorKey.currentState == null) {
       pendingNotificationPayload = payload;
@@ -308,7 +401,7 @@ class NotificationService {
           title: vocab.word.toUpperCase(),
           body: '${vocab.translation} - ${vocab.partOfSpeech}',
           scheduledDate: at,
-          notificationDetails: const NotificationDetails(android: kAndroidChannel),
+          notificationDetails: const NotificationDetails(android: _kAndroidChannelWithActions),
           androidScheduleMode: mode,
           payload: '${vocab.word}|${vocab.topic}',
         );

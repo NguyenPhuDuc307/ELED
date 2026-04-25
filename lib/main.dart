@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/menu_screen.dart';
+import 'screens/sync_screen.dart';
+import 'services/vocabulary_sync_service.dart';
 import 'theme/brutalist_theme.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
@@ -10,6 +12,7 @@ import 'services/user_data_service.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
 String? pendingNotificationPayload;
+String? pendingMarkKnownWord;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,7 +43,9 @@ void main() async {
 
   await NotificationService.processScheduleLog();
   _restockNotifications();
-  runApp(const EledApp());
+
+  final needsSync = !await VocabularySyncService.hasLocalData();
+  runApp(EledApp(needsSync: needsSync));
 }
 
 Future<void> _restockNotifications() async {
@@ -78,7 +83,9 @@ Future<void> _restockNotifications() async {
 }
 
 class EledApp extends StatefulWidget {
-  const EledApp({super.key});
+  const EledApp({super.key, this.needsSync = false});
+
+  final bool needsSync;
 
   static final ValueNotifier<ThemeMode> themeNotifier =
       ValueNotifier(ThemeMode.system);
@@ -119,7 +126,7 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
           theme: BrutalistTheme.lightTheme,
           darkTheme: BrutalistTheme.darkTheme,
           themeMode: currentMode,
-          home: const MenuScreen(),
+          home: widget.needsSync ? const SyncScreen() : const MenuScreen(),
           debugShowCheckedModeBanner: false,
         );
       },

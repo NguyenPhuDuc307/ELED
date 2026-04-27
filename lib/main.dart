@@ -75,11 +75,16 @@ Future<void> _restockNotifications() async {
     final intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 0;
     if (intervalMinutes <= 0) return;
 
-    // Only restock if running low (< 10 pending) to avoid cancelling upcoming noti
-    final pending = await NotificationService()
-        .flutterLocalNotificationsPlugin
-        .pendingNotificationRequests();
-    if (pending.length >= 10) return;
+    // On Android, notifications are scheduled natively via AlarmManager so
+    // flutterLocalNotificationsPlugin.pendingNotificationRequests() always returns 0.
+    // Count future entries in the schedule log instead.
+    final log = prefs.getStringList('notificationScheduleLog') ?? [];
+    final nowMs = DateTime.now().millisecondsSinceEpoch;
+    final futureCount = log.where((e) {
+      final ms = int.tryParse(e.split('|')[0]) ?? 0;
+      return ms > nowMs;
+    }).length;
+    if (futureCount >= 10) return;
 
     final startH = prefs.getInt('notificationStartHour') ?? 9;
     final startM = prefs.getInt('notificationStartMinute') ?? 0;

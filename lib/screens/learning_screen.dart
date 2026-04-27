@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
@@ -30,11 +32,17 @@ class _LearningScreenState extends State<LearningScreen> {
   late final PageController _pageController;
   late int _currentIndex;
   Set<String> _knownWords = {};
-  bool _showTranslation = true;
+
+  // false = show English definition (default), true = show Vietnamese translation of definition
+  bool _translateDefinition = false;
 
   // Oxford definitions per page index
   final Map<int, List<OxfordSense>> _oxfordCache = {};
   bool _loadingDef = false;
+
+  // Translated VI definitions per page index (list of translated strings, one per sense)
+  final Map<int, List<String>> _translatedDefsCache = {};
+  bool _translatingDef = false;
 
   final _audioPlayer = AudioPlayer();
   bool _playingAudio = false;
@@ -93,6 +101,50 @@ class _LearningScreenState extends State<LearningScreen> {
       await _audioPlayer.play();
     } catch (_) {}
     if (mounted) setState(() => _playingAudio = false);
+  }
+
+  Future<void> _toggleTranslation(int index) async {
+    final newVal = !_translateDefinition;
+    setState(() => _translateDefinition = newVal);
+    if (newVal) await _translateSenses(index);
+  }
+
+  Future<void> _translateSenses(int index) async {
+    if (_translatedDefsCache.containsKey(index)) return;
+    final senses = _oxfordCache[index];
+    if (senses == null || senses.isEmpty) return;
+    if (!mounted) return;
+    setState(() => _translatingDef = true);
+    final results = await Future.wait(senses.map((s) => _translateToVi(s.definition)));
+    if (!mounted) return;
+    setState(() {
+      _translatedDefsCache[index] = results;
+      _translatingDef = false;
+    });
+  }
+
+  static Future<String> _translateToVi(String text) async {
+    if (text.isEmpty) return '';
+    try {
+      final uri = Uri.parse(
+        'https://translate.googleapis.com/translate_a/single'
+        '?client=gtx&sl=en&tl=vi&dt=t&q=${Uri.encodeComponent(text)}',
+      );
+      final client = HttpClient();
+      final request = await client.getUrl(uri);
+      final response = await request.close();
+      client.close();
+      if (response.statusCode != 200) return text;
+      final body = await response.transform(utf8.decoder).join();
+      final json = jsonDecode(body) as List;
+      final segments = json[0] as List;
+      return segments
+          .where((s) => s is List && s.isNotEmpty && s[0] is String)
+          .map((s) => s[0] as String)
+          .join();
+    } catch (_) {
+      return text;
+    }
   }
 
   @override
@@ -176,7 +228,7 @@ class _LearningScreenState extends State<LearningScreen> {
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
-                    onTap: () => setState(() => _showTranslation = !_showTranslation),
+                    onTap: () => _toggleTranslation(index),
                     child: SingleChildScrollView(
                       padding: const EdgeInsets.all(32.0),
                       child: Column(
@@ -271,80 +323,83 @@ class _LearningScreenState extends State<LearningScreen> {
                           const SizedBox(height: 28),
                           Divider(color: context.bSubtle, thickness: 1),
                           const SizedBox(height: 20),
-                          if (!_showTranslation)
-                            Text(
-                              'Tap to reveal',
-                              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    color: BrutalistTheme.textMuted,
-                                    fontStyle: FontStyle.italic,
-                                  ),
-                              textAlign: TextAlign.center,
-                            )
-                          else ...[
-                            // Vietnamese translation — to and prominent
-                            Text(
-                              vocab.translation,
-                              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                                    fontWeight: FontWeight.w700,
-                                    color: BrutalistTheme.black,
-                                  ),
-                              textAlign: TextAlign.center,
-                            ),
-                            const SizedBox(height: 20),
-                            // Oxford English definitions
-                            if (_loadingDef && !_oxfordCache.containsKey(index))
-                              const Center(
-                                child: SizedBox(
-                                  height: 20,
-                                  width: 20,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2,
-                                    color: BrutalistTheme.primary,
-                                  ),
+                          // Vietnamese word translation — always visible
+                          Text(
+                            vocab.translation,
+                            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                                  fontWeight: FontWeight.w700,
+                                  color: BrutalistTheme.black,
                                 ),
-                              )
-                            else if ((_oxfordCache[index] ?? []).isNotEmpty)
-                              ..._oxfordCache[index]!.map((s) => Padding(
-                                    padding: const EdgeInsets.only(bottom: 10),
-                                    child: Column(
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 20),
+                          // Definitions: English by default, Vietnamese when _translateDefinition=true
+                          if (_loadingDef && !_oxfordCache.containsKey(index))
+                            const Center(
+                              child: SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  color: BrutalistTheme.primary,
+                                ),
+                              ),
+                            )
+                          else if ((_oxfordCache[index] ?? []).isNotEmpty)
+                            ...List.generate(_oxfordCache[index]!.length, (si) {
+                              final s = _oxfordCache[index]![si];
+                              final viDefs = _translatedDefsCache[index];
+                              final showVI = _translateDefinition && viDefs != null;
+                              final defText = showVI && si < viDefs.length
+                                  ? viDefs[si]
+                                  : s.definition;
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: 10),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Row(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '${s.number}. ',
-                                              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                    fontWeight: FontWeight.w700,
-                                                    color: BrutalistTheme.primary,
-                                                  ),
-                                            ),
-                                            Expanded(
-                                              child: Text(
-                                                s.definition,
-                                                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                      fontWeight: FontWeight.w600,
-                                                      color: BrutalistTheme.black,
-                                                    ),
+                                        Text(
+                                          '${s.number}. ',
+                                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                                fontWeight: FontWeight.w700,
+                                                color: BrutalistTheme.primary,
                                               ),
-                                            ),
-                                          ],
                                         ),
-                                        if (s.example.isNotEmpty)
-                                          Padding(
-                                            padding: const EdgeInsets.only(left: 18, top: 2),
-                                            child: Text(
-                                              '"${s.example}"',
-                                              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                                    fontStyle: FontStyle.italic,
-                                                    color: BrutalistTheme.textMuted,
-                                                  ),
-                                            ),
-                                          ),
+                                        Expanded(
+                                          child: _translatingDef && _translateDefinition && viDefs == null
+                                              ? const SizedBox(
+                                                  height: 18,
+                                                  width: 18,
+                                                  child: CircularProgressIndicator(strokeWidth: 2, color: BrutalistTheme.primary),
+                                                )
+                                              : Text(
+                                                  defText,
+                                                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                                        fontWeight: FontWeight.w600,
+                                                        color: BrutalistTheme.black,
+                                                      ),
+                                                ),
+                                        ),
                                       ],
                                     ),
-                                  )),
-                          ],
+                                    if (s.example.isNotEmpty)
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 18, top: 2),
+                                        child: Text(
+                                          '"${s.example}"',
+                                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                                fontStyle: FontStyle.italic,
+                                                color: BrutalistTheme.textMuted,
+                                              ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              );
+                            }),
                         ],
                       ),
                     ),
@@ -383,7 +438,7 @@ class _LearningScreenState extends State<LearningScreen> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Meaning',
+                      _translateDefinition ? 'VI' : 'EN',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             fontWeight: FontWeight.w600,
                             color: context.bMuted,
@@ -392,8 +447,8 @@ class _LearningScreenState extends State<LearningScreen> {
                     ),
                     const SizedBox(height: 2),
                     Switch(
-                      value: _showTranslation,
-                      onChanged: (val) => setState(() => _showTranslation = val),
+                      value: _translateDefinition,
+                      onChanged: (_) => _toggleTranslation(_currentIndex),
                       activeThumbColor: BrutalistTheme.white,
                       activeTrackColor: BrutalistTheme.primary,
                       inactiveThumbColor: BrutalistTheme.white,

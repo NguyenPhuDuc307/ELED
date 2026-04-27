@@ -7,18 +7,24 @@ import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.media.AudioAttributes
+import android.media.MediaPlayer
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import java.io.File
+import java.net.HttpURLConnection
+import java.net.URL
 
 class VocabNotificationReceiver : BroadcastReceiver() {
 
     companion object {
-        private const val CHANNEL_ID = "eled_vocab_channel"
+        private const val CHANNEL_ID = "eled_vocab_channel_v2"
+        private const val OLD_CHANNEL_ID = "eled_vocab_channel"
 
         fun schedule(
             context: Context, id: Int, word: String, translation: String,
-            pos: String, topic: String, atMs: Long
+            pos: String, topic: String, atMs: Long, audioUrl: String = ""
         ) {
             val intent = Intent(context, VocabNotificationReceiver::class.java).apply {
                 putExtra("notif_id", id)
@@ -26,6 +32,7 @@ class VocabNotificationReceiver : BroadcastReceiver() {
                 putExtra("translation", translation)
                 putExtra("pos", pos)
                 putExtra("topic", topic)
+                putExtra("audio_url", audioUrl)
             }
             val pending = PendingIntent.getBroadcast(
                 context, id, intent,
@@ -58,13 +65,26 @@ class VocabNotificationReceiver : BroadcastReceiver() {
 
         fun ensureChannel(context: Context) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                val nm = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                // Remove old channel with default sound (channels are immutable — must use new ID)
+                nm.deleteNotificationChannel(OLD_CHANNEL_ID)
                 val channel = NotificationChannel(
                     CHANNEL_ID, "Vocabulary Reminders",
                     NotificationManager.IMPORTANCE_HIGH
-                ).apply { description = "Periodic vocabulary notifications" }
-                (context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
-                    .createNotificationChannel(channel)
+                ).apply {
+                    description = "Periodic vocabulary notifications"
+                    setSound(null, null)  // No default sound — pronunciation MP3 plays manually
+                    enableVibration(true)
+                    vibrationPattern = longArrayOf(0, 250, 100, 250)
+                }
+                nm.createNotificationChannel(channel)
             }
+        }
+
+        fun audioCacheFile(context: Context, word: String): File {
+            val dir = File(context.filesDir, "audio_cache").also { it.mkdirs() }
+            val safe = word.replace(Regex("[^a-zA-Z0-9_-]"), "_")
+            return File(dir, "$safe.mp3")
         }
     }
 
@@ -76,9 +96,9 @@ class VocabNotificationReceiver : BroadcastReceiver() {
         val translation = intent.getStringExtra("translation") ?: ""
         val pos = intent.getStringExtra("pos") ?: ""
         val topic = intent.getStringExtra("topic") ?: ""
+        val audioUrl = intent.getStringExtra("audio_url") ?: ""
         val payload = "$word|$topic"
 
-        // Tap → open app and navigate to word
         val openIntent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP
             putExtra("native_notification_payload", payload)
@@ -88,7 +108,6 @@ class VocabNotificationReceiver : BroadcastReceiver() {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        // "Đã biết" action → MarkWordKnownReceiver (no app open)
         val markIntent = Intent(context, MarkWordKnownReceiver::class.java).apply {
             putExtra("word", word)
             putExtra("notif_id", id)
@@ -109,5 +128,41 @@ class VocabNotificationReceiver : BroadcastReceiver() {
             .build()
 
         NotificationManagerCompat.from(context).notify(id, notif)
+
+        if (audioUrl.isEmpty()) return
+
+        // Play pronunciation MP3 asynchronously (goAsync extends BroadcastReceiver lifetime)
+        val pendingResult = goAsync()
+        Thread {
+            try {
+                val file = audioCacheFile(context, word)
+                if (!file.exists() || file.length() == 0L) {
+                    val conn = URL(audioUrl).openConnection() as HttpURLConnection
+                    conn.connectTimeout = 8_000
+                    conn.readTimeout = 8_000
+                    try {
+                        conn.inputStream.use { it.copyTo(file.outputStream()) }
+                    } finally {
+                        conn.disconnect()
+                    }
+                }
+                if (!file.exists() || file.length() == 0L) { pendingResult.finish(); return@Thread }
+
+                val player = MediaPlayer()
+                player.setAudioAttributes(
+                    AudioAttributes.Builder()
+                        .setUsage(AudioAttributes.USAGE_NOTIFICATION)
+                        .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                        .build()
+                )
+                player.setDataSource(file.absolutePath)
+                player.setOnCompletionListener { mp -> mp.release(); pendingResult.finish() }
+                player.setOnErrorListener { mp, _, _ -> mp.release(); pendingResult.finish(); true }
+                player.prepare()
+                player.start()
+            } catch (_: Exception) {
+                pendingResult.finish()
+            }
+        }.start()
     }
 }

@@ -46,8 +46,9 @@ class MainActivity : FlutterActivity() {
                                 is Int -> v.toLong()
                                 else -> continue
                             }
+                            val audioUrl = (item["audioUrl"] as? String) ?: ""
                             VocabNotificationReceiver.schedule(
-                                applicationContext, id, word, translation, pos, topic, atMs
+                                applicationContext, id, word, translation, pos, topic, atMs, audioUrl
                             )
                         }
                         result.success(null)

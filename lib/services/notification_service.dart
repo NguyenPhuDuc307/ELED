@@ -187,6 +187,7 @@ class NotificationService {
           'pos': v.partOfSpeech,
           'topic': v.topic,
           'atMs': next.millisecondsSinceEpoch,
+          'audioUrl': v.audioLink,
         });
         logEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.topic}');
         widgetEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.translation}|${v.ipa}|${v.partOfSpeech}|${v.levels}|${v.topic}');
@@ -246,7 +247,16 @@ class NotificationService {
     final nativePayload = prefs.getString('nativeNotificationPayload');
     if (nativePayload != null && nativePayload.isNotEmpty) {
       await prefs.remove('nativeNotificationPayload');
-      pendingNotificationPayload ??= nativePayload;
+      // If navigator is ready (app already running), navigate immediately.
+      // Otherwise store for MenuScreen.initState to consume on first build.
+      if (globalNavigatorKey.currentState != null) {
+        await _onNotificationTapped(NotificationResponse(
+          notificationResponseType: NotificationResponseType.selectedNotification,
+          payload: nativePayload,
+        ));
+      } else {
+        pendingNotificationPayload ??= nativePayload;
+      }
     }
 
     // Merge native history written by WidgetUpdateReceiver (no app needed)

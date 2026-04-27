@@ -21,6 +21,9 @@ const _kIOSDetails = DarwinNotificationDetails();
 // Native Android notification scheduling channel
 const _kAndroidChannel = MethodChannel('com.nguyenphuduc.eled/notifications');
 
+// Navigation channel — Kotlin sends openPayload when user taps a notification
+const _kNavChannel = MethodChannel('com.nguyenphuduc.eled/nav');
+
 // Top-level handler — kept for iOS background actions (not used on Android)
 @pragma('vm:entry-point')
 Future<void> notificationBackgroundHandler(NotificationResponse response) async {}
@@ -55,6 +58,20 @@ class NotificationService {
     HomeWidget.initiallyLaunchedFromHomeWidget()
         .then(_onWidgetTapped)
         .catchError((_) {});
+
+    if (Platform.isAndroid) {
+      _kNavChannel.setMethodCallHandler((call) async {
+        if (call.method == 'openPayload') {
+          final payload = call.arguments as String?;
+          if (payload != null && payload.isNotEmpty) {
+            await _onNotificationTapped(NotificationResponse(
+              notificationResponseType: NotificationResponseType.selectedNotification,
+              payload: payload,
+            ));
+          }
+        }
+      });
+    }
   }
 
   static Future<void> _onWidgetTapped(Uri? uri) async {
@@ -278,6 +295,7 @@ class NotificationService {
   /// Called on app open — finds fired notifications in the log, updates history + widget.
   static Future<void> processScheduleLog() async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs.reload();
 
     // Merge native notification tap payload saved by MainActivity.saveNativePayload()
     final nativePayload = prefs.getString('nativeNotificationPayload');

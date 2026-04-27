@@ -69,13 +69,31 @@ class MainActivity : FlutterActivity() {
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        saveNativePayload(intent)
+        val payload = intent.getStringExtra("native_notification_payload") ?: return
+        intent.removeExtra("native_notification_payload")
+
+        // Engine is already running — deliver directly to Flutter via MethodChannel.
+        // This works whether the app is in the foreground or just resuming from background.
+        try {
+            flutterEngine?.let { engine ->
+                MethodChannel(engine.dartExecutor.binaryMessenger, "com.nguyenphuduc.eled/nav")
+                    .invokeMethod("openPayload", payload)
+                return
+            }
+        } catch (_: Exception) {}
+
+        // Fallback: engine not ready yet (shouldn't happen in onNewIntent, but just in case)
+        savePayloadToPrefs(payload)
     }
 
-    // Store notification tap payload so Flutter can read it on resume
+    // Used only from onCreate (app was killed — engine not ready yet)
     private fun saveNativePayload(intent: Intent?) {
         val payload = intent?.getStringExtra("native_notification_payload") ?: return
         intent.removeExtra("native_notification_payload")
+        savePayloadToPrefs(payload)
+    }
+
+    private fun savePayloadToPrefs(payload: String) {
         getSharedPreferences("FlutterSharedPreferences", MODE_PRIVATE)
             .edit()
             .putString("flutter.nativeNotificationPayload", payload)

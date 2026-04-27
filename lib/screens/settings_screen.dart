@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../services/auth_service.dart';
 import '../services/notification_service.dart';
 import '../services/csv_service.dart';
+import '../services/update_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../main.dart';
@@ -29,6 +31,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _isLoading = true;
   String _themeModeStr = 'system';
   User? _user;
+
+  // Update check state
+  String _currentVersion = '';
+  UpdateInfo? _updateInfo;
+  bool _checkingUpdate = false;
+  bool _updateChecked = false;
 
   final List<String> _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -122,6 +130,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
       );
       Navigator.of(context).pop();
     }
+  }
+
+  Future<void> _checkUpdate() async {
+    if (_checkingUpdate) return;
+    setState(() {
+      _checkingUpdate = true;
+      _updateChecked = false;
+    });
+    final version = await UpdateService.currentVersion();
+    final info = await UpdateService.checkForUpdate();
+    if (!mounted) return;
+    setState(() {
+      _currentVersion = version;
+      _updateInfo = info;
+      _checkingUpdate = false;
+      _updateChecked = true;
+    });
   }
 
   Future<void> _pickTime(bool isStart) async {
@@ -340,10 +365,140 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     }).toList(),
                   ),
 
+                  const SizedBox(height: 32),
+                  Divider(color: context.bBorder, thickness: 4),
+                  const SizedBox(height: 32),
+
+                  Text(
+                    'APP VERSION',
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                          fontWeight: FontWeight.w900,
+                        ),
+                  ),
+                  const SizedBox(height: 16),
+                  _buildUpdateSection(),
                   const SizedBox(height: 24),
                 ],
               ),
             ),
+    );
+  }
+
+  Widget _buildUpdateSection() {
+    return BrutalistCard(
+      backgroundColor: context.bBg,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: BrutalistTheme.primaryLight,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Icon(Icons.system_update_rounded, color: BrutalistTheme.primary, size: 22),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Current version',
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: context.bMuted),
+                      ),
+                      Text(
+                        'v$_currentVersion',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w700),
+                      ),
+                    ],
+                  ),
+                ),
+                // Check button
+                _checkingUpdate
+                    ? const SizedBox(
+                        width: 22, height: 22,
+                        child: CircularProgressIndicator(strokeWidth: 2, color: BrutalistTheme.primary),
+                      )
+                    : TextButton(
+                        onPressed: _checkUpdate,
+                        child: Text(
+                          'Check',
+                          style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
+                        ),
+                      ),
+              ],
+            ),
+            if (_updateChecked) ...[
+              const SizedBox(height: 12),
+              if (_updateInfo != null) ...[
+                // New version available
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: BrutalistTheme.primaryLight,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.new_releases_rounded, color: BrutalistTheme.primary, size: 20),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          'v${_updateInfo!.version} available!',
+                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                fontWeight: FontWeight.w700,
+                                color: BrutalistTheme.primary,
+                              ),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () async {
+                          final url = Uri.parse(
+                            _updateInfo!.apkUrl.isNotEmpty
+                                ? _updateInfo!.apkUrl
+                                : _updateInfo!.releaseUrl,
+                          );
+                          if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+                            if (mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(content: Text('Could not open link.')),
+                              );
+                            }
+                          }
+                        },
+                        child: const Text(
+                          'Download',
+                          style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ] else ...[
+                // Up to date
+                Row(
+                  children: [
+                    const Icon(Icons.check_circle_rounded, color: BrutalistTheme.primary, size: 20),
+                    const SizedBox(width: 8),
+                    Text(
+                      'You\'re up to date',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: BrutalistTheme.primary,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
+                  ],
+                ),
+              ],
+            ],
+          ],
+        ),
+      ),
     );
   }
 

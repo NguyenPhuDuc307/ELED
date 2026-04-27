@@ -22,15 +22,16 @@ class Vocabulary {
   });
 
   factory Vocabulary.fromCsvList(List<String> row, {String topic = ''}) {
+    final word = row.length > 3 ? row[3] : '';
     return Vocabulary(
       id: row.isNotEmpty ? row[0] : '',
       url: row.length > 1 ? row[1] : '',
       levels: row.length > 2 ? row[2] : '',
-      word: row.length > 3 ? row[3] : '',
+      word: word,
       translation: row.length > 4 ? row[4] : '',
       partOfSpeech: row.length > 5 ? row[5] : '',
       ipa: row.length > 6 ? row[6] : '',
-      audioLink: row.length > 7 ? row[7] : '',
+      audioLink: row.length > 7 ? row[7].trim() : '',
       topic: topic,
     );
   }

@@ -1,32 +1,32 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-evaluation,https://www.oxfordlearnersdictionaries.com/definition/english/evaluation,B2,evaluation,sự đánh giá,noun,/ɪˌvæljuˈeɪʃn/,
-development,https://www.oxfordlearnersdictionaries.com/definition/english/development,B1,development,phát triển,noun,/dɪˈveləpmənt/,
-analyse,https://www.oxfordlearnersdictionaries.com/definition/english/analyse,B1,analyse,phân tích,verb,/ˈænəlaɪz/,
-classify,https://www.oxfordlearnersdictionaries.com/definition/english/classify,B2,classify,phân loại,verb,/ˈklæsɪfaɪ/,
-analysis,https://www.oxfordlearnersdictionaries.com/definition/english/analysis,B1,analysis,Phân tích,noun,/əˈnæləsɪs/,
-evaluate,https://www.oxfordlearnersdictionaries.com/definition/english/evaluate,B2,evaluate,đánh giá,verb,/ɪˈvæljueɪt/,
-advancement,https://www.oxfordlearnersdictionaries.com/definition/english/advancement,C1,advancement,thăng tiến,noun,/ədˈvɑːnsmənt/,
-develop,https://www.oxfordlearnersdictionaries.com/definition/english/develop,A2,develop,phát triển,verb,/dɪˈveləp/,
-case_study,https://www.oxfordlearnersdictionaries.com/definition/english/case-study,B2,case study,nghiên cứu trường hợp,noun,/ˈkeɪs stʌdi/,
-hypothesis,https://www.oxfordlearnersdictionaries.com/definition/english/hypothesis,B2,hypothesis,giả thuyết,noun,/haɪˈpɒθəsɪs/,
-chemistry_set,https://www.oxfordlearnersdictionaries.com/definition/english/chemistry-set,B1,chemistry set,bộ hóa học,noun,/ˈkemɪstri set/,
-journal,https://www.oxfordlearnersdictionaries.com/definition/english/journal,B1,journal,tạp chí,noun,/ˈdʒɜːnl/,
-law,https://www.oxfordlearnersdictionaries.com/definition/english/law,B2,law,pháp luật,noun,/lɔː/,
-pseudoscience,https://www.oxfordlearnersdictionaries.com/definition/english/pseudoscience,C1,pseudoscience,giả khoa học,noun,/ˈsuːdəʊsaɪəns/,
-principle,https://www.oxfordlearnersdictionaries.com/definition/english/principle,B2,principle,nguyên tắc,noun,/ˈprɪnsəpl/,
-model,https://www.oxfordlearnersdictionaries.com/definition/english/model_2,B2,model,người mẫu,verb,/ˈmɒdl/,
-evidence-based,https://www.oxfordlearnersdictionaries.com/definition/english/evidence-based,B2,evidence-based,dựa trên bằng chứng,adjective,/ˈevɪdəns beɪst/,
-null_hypothesis,https://www.oxfordlearnersdictionaries.com/definition/english/null-hypothesis,C2,null hypothesis,giả thuyết vô giá trị,noun,/ˈnʌl haɪpɒθəsɪs/,
-r,https://www.oxfordlearnersdictionaries.com/definition/english/r_2,C2,R,R,noun,/ɑː(r)/,
-research,https://www.oxfordlearnersdictionaries.com/definition/english/research_1,A2,research,nghiên cứu,noun,/rɪˈsɜːtʃ/,
-r_number,https://www.oxfordlearnersdictionaries.com/definition/english/r-number,C2,R number,số R,noun,/ˈɑː nʌmbə(r)/,
-research,https://www.oxfordlearnersdictionaries.com/definition/english/research_2,A2,research,nghiên cứu,verb,/rɪˈsɜːtʃ/,
-scientist,https://www.oxfordlearnersdictionaries.com/definition/english/scientist,A1,scientist,nhà khoa học,noun,/ˈsaɪəntɪst/,
-science,https://www.oxfordlearnersdictionaries.com/definition/english/science,A1,science,khoa học,noun,/ˈsaɪəns/,
-scientific,https://www.oxfordlearnersdictionaries.com/definition/english/scientific,B1,scientific,có tính khoa học,adjective,/ˌsaɪənˈtɪfɪk/,
-study,https://www.oxfordlearnersdictionaries.com/definition/english/study_1,B1,study,học,noun,/ˈstʌdi/,
-study,https://www.oxfordlearnersdictionaries.com/definition/english/study_2,B1,study,học,verb,/ˈstʌdi/,
-survey,https://www.oxfordlearnersdictionaries.com/definition/english/survey_1,A2,survey,sự khảo sát,noun,/ˈsɜːveɪ/,
-theoretical,https://www.oxfordlearnersdictionaries.com/definition/english/theoretical,C1,theoretical,lý thuyết,adjective,/ˌθɪəˈretɪkl/,
-thesis,https://www.oxfordlearnersdictionaries.com/definition/english/thesis,C1,thesis,luận án,noun,/ˈθiːsɪs/,
-theory,https://www.oxfordlearnersdictionaries.com/definition/english/theory,B1,theory,lý thuyết,noun,/ˈθɪəri/,
+evaluation,https://www.oxfordlearnersdictionaries.com/definition/english/evaluation,B2,evaluation,sự đánh giá,noun,/ɪˌvæljuˈeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eva/evalu/evaluation__gb_1.mp3
+development,https://www.oxfordlearnersdictionaries.com/definition/english/development,B1,development,phát triển,noun,/dɪˈveləpmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dev/devel/development__gb_1.mp3
+analyse,https://www.oxfordlearnersdictionaries.com/definition/english/analyse,B1,analyse,phân tích,verb,/ˈænəlaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/analy/analyse__gb_6.mp3
+classify,https://www.oxfordlearnersdictionaries.com/definition/english/classify,B2,classify,phân loại,verb,/ˈklæsɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/class/classify__gb_2.mp3
+analysis,https://www.oxfordlearnersdictionaries.com/definition/english/analysis,B1,analysis,Phân tích,noun,/əˈnæləsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/analy/analysis__gb_4.mp3
+evaluate,https://www.oxfordlearnersdictionaries.com/definition/english/evaluate,B2,evaluate,đánh giá,verb,/ɪˈvæljueɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eva/evalu/evaluate__gb_2.mp3
+advancement,https://www.oxfordlearnersdictionaries.com/definition/english/advancement,C1,advancement,thăng tiến,noun,/ədˈvɑːnsmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adv/advan/advancement__gb_1.mp3
+develop,https://www.oxfordlearnersdictionaries.com/definition/english/develop,A2,develop,phát triển,verb,/dɪˈveləp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dev/devel/develop__gb_3.mp3
+case_study,https://www.oxfordlearnersdictionaries.com/definition/english/case-study,B2,case study,nghiên cứu trường hợp,noun,/ˈkeɪs stʌdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cas/case_/case_study_1_gb_1.mp3
+hypothesis,https://www.oxfordlearnersdictionaries.com/definition/english/hypothesis,B2,hypothesis,giả thuyết,noun,/haɪˈpɒθəsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyp/hypot/hypothesis__gb_5.mp3
+chemistry_set,https://www.oxfordlearnersdictionaries.com/definition/english/chemistry-set,B1,chemistry set,bộ hóa học,noun,/ˈkemɪstri set/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chemi/chemistry_set_1_gb_1.mp3
+journal,https://www.oxfordlearnersdictionaries.com/definition/english/journal,B1,journal,tạp chí,noun,/ˈdʒɜːnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jou/journ/journal__gb_2.mp3
+law,https://www.oxfordlearnersdictionaries.com/definition/english/law,B2,law,pháp luật,noun,/lɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/law/law__/law__gb_2.mp3
+pseudoscience,https://www.oxfordlearnersdictionaries.com/definition/english/pseudoscience,C1,pseudoscience,giả khoa học,noun,/ˈsuːdəʊsaɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pse/pseud/pseudoscience__gb_3.mp3
+principle,https://www.oxfordlearnersdictionaries.com/definition/english/principle,B2,principle,nguyên tắc,noun,/ˈprɪnsəpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/princ/principal__gb_3.mp3
+model,https://www.oxfordlearnersdictionaries.com/definition/english/model_2,B2,model,người mẫu,verb,/ˈmɒdl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mod/model/model__gb_2.mp3
+evidence-based,https://www.oxfordlearnersdictionaries.com/definition/english/evidence-based,B2,evidence-based,dựa trên bằng chứng,adjective,/ˈevɪdəns beɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/evi/evide/evidence_based_1_gb_1.mp3
+null_hypothesis,https://www.oxfordlearnersdictionaries.com/definition/english/null-hypothesis,C2,null hypothesis,giả thuyết vô giá trị,noun,/ˈnʌl haɪpɒθəsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xnu/xnull/xnull_hypothesis_1_gb_2.mp3
+r,https://www.oxfordlearnersdictionaries.com/definition/english/r_2,C2,R,R,noun,/ɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/r_s/r_s_1/r_s_1_gb_1.mp3
+research,https://www.oxfordlearnersdictionaries.com/definition/english/research_1,A2,research,nghiên cứu,noun,/rɪˈsɜːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resea/research__gb_6.mp3
+r_number,https://www.oxfordlearnersdictionaries.com/definition/english/r-number,C2,R number,số R,noun,/ˈɑː nʌmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/r_n/r_num/r_number_1_gb_1.mp3
+research,https://www.oxfordlearnersdictionaries.com/definition/english/research_2,A2,research,nghiên cứu,verb,/rɪˈsɜːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resea/research__gb_6.mp3
+scientist,https://www.oxfordlearnersdictionaries.com/definition/english/scientist,A1,scientist,nhà khoa học,noun,/ˈsaɪəntɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sci/scien/scientist__gb_2.mp3
+science,https://www.oxfordlearnersdictionaries.com/definition/english/science,A1,science,khoa học,noun,/ˈsaɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sci/scien/science__gb_2.mp3
+scientific,https://www.oxfordlearnersdictionaries.com/definition/english/scientific,B1,scientific,có tính khoa học,adjective,/ˌsaɪənˈtɪfɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sci/scien/scientific__gb_2.mp3
+study,https://www.oxfordlearnersdictionaries.com/definition/english/study_1,B1,study,học,noun,/ˈstʌdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/study/study__gb_2.mp3
+study,https://www.oxfordlearnersdictionaries.com/definition/english/study_2,B1,study,học,verb,/ˈstʌdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/study/study__gb_2.mp3
+survey,https://www.oxfordlearnersdictionaries.com/definition/english/survey_1,A2,survey,sự khảo sát,noun,/ˈsɜːveɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/surve/survey__gb_3.mp3
+theoretical,https://www.oxfordlearnersdictionaries.com/definition/english/theoretical,C1,theoretical,lý thuyết,adjective,/ˌθɪəˈretɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/theor/theoretical__gb_1.mp3
+thesis,https://www.oxfordlearnersdictionaries.com/definition/english/thesis,C1,thesis,luận án,noun,/ˈθiːsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/thesi/thesis__gb_2.mp3
+theory,https://www.oxfordlearnersdictionaries.com/definition/english/theory,B1,theory,lý thuyết,noun,/ˈθɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/theor/theory__gb_3.mp3

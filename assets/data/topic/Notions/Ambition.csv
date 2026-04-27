@@ -1,102 +1,102 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-aspiration,https://www.oxfordlearnersdictionaries.com/definition/english/aspiration,C1,aspiration,khát vọng,noun,/ˌæspəˈreɪʃn/,
-ambitious,https://www.oxfordlearnersdictionaries.com/definition/english/ambitious,B1,ambitious,tham vọng,adjective,/æmˈbɪʃəs/,
-aim,https://www.oxfordlearnersdictionaries.com/definition/english/aim_2,B1,aim,mục tiêu,noun,/eɪm/,
-ambition,https://www.oxfordlearnersdictionaries.com/definition/english/ambition_1,B1,ambition,tham vọng,noun,/æmˈbɪʃn/,
-aim,https://www.oxfordlearnersdictionaries.com/definition/english/aim_1,B1,aim,mục tiêu,verb,/eɪm/,
-aspirant,https://www.oxfordlearnersdictionaries.com/definition/english/aspirant_2,C2,aspirant,người khao khát,noun,/ˈæspərənt/,
-ambitiously,https://www.oxfordlearnersdictionaries.com/definition/english/ambitiously,B1,ambitiously,đầy tham vọng,adverb,/æmˈbɪʃəsli/,
-aggressive,https://www.oxfordlearnersdictionaries.com/definition/english/aggressive,B2,aggressive,hung dữ,adjective,/əˈɡresɪv/,
-aggressively,https://www.oxfordlearnersdictionaries.com/definition/english/aggressively,B2,aggressively,hung hãn,adverb,/əˈɡresɪvli/,
-(a_case_of)_dog_eat_dog,https://www.oxfordlearnersdictionaries.com/definition/english/dog_1,C2,(a case of) dog eat dog,(một trường hợp) chó ăn thịt chó,noun,/dɒɡ/,
-aspirational,https://www.oxfordlearnersdictionaries.com/definition/english/aspirational,C2,aspirational,đầy khát vọng,adjective,/ˌæspəˈreɪʃənl/,
-aspire,https://www.oxfordlearnersdictionaries.com/definition/english/aspire,C1,aspire,khao khát,verb,/əˈspaɪə(r)/,
-bid,https://www.oxfordlearnersdictionaries.com/definition/english/bid1_2,C1,bid,giá thầu,verb,/bɪd/,
-bid,https://www.oxfordlearnersdictionaries.com/definition/english/bid1_1,C1,bid,giá thầu,noun,/bɪd/,
-aspiring,https://www.oxfordlearnersdictionaries.com/definition/english/aspiring,C1,aspiring,đầy tham vọng,adjective,/əˈspaɪərɪŋ/,
-budding,https://www.oxfordlearnersdictionaries.com/definition/english/budding,C2,budding,vừa chớm nở,adjective,/ˈbʌdɪŋ/,
-blueprint,https://www.oxfordlearnersdictionaries.com/definition/english/blueprint,C2,blueprint,bản thiết kế,noun,/ˈbluːprɪnt/,
-can-do,https://www.oxfordlearnersdictionaries.com/definition/english/can-do,C2,can-do,có thể làm được,adjective,/ˌkæn ˈduː/,
-bust_your_ass_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/ass,C2,bust your ass (doing something/to do something),làm hỏng cái mông của bạn (làm điều gì đó/làm điều gì đó),noun,/æs/,
-bust_a_gut_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/bust_1,C2,bust a gut (doing something/to do something),quằn quại (làm gì đó/làm gì đó),verb,/bʌst/,
-compete,https://www.oxfordlearnersdictionaries.com/definition/english/compete,B1,compete,hoàn thành,verb,/kəmˈpiːt/,
+aspiration,https://www.oxfordlearnersdictionaries.com/definition/english/aspiration,C1,aspiration,khát vọng,noun,/ˌæspəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspiration__gb_1.mp3
+ambitious,https://www.oxfordlearnersdictionaries.com/definition/english/ambitious,B1,ambitious,tham vọng,adjective,/æmˈbɪʃəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amb/ambit/ambitious__gb_1.mp3
+aim,https://www.oxfordlearnersdictionaries.com/definition/english/aim_2,B1,aim,mục tiêu,noun,/eɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aim/aim__/aim__gb_2.mp3
+ambition,https://www.oxfordlearnersdictionaries.com/definition/english/ambition_1,B1,ambition,tham vọng,noun,/æmˈbɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amb/ambit/ambition__gb_1.mp3
+aim,https://www.oxfordlearnersdictionaries.com/definition/english/aim_1,B1,aim,mục tiêu,verb,/eɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aim/aim__/aim__gb_2.mp3
+aspirant,https://www.oxfordlearnersdictionaries.com/definition/english/aspirant_2,C2,aspirant,người khao khát,noun,/ˈæspərənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspirant__gb_2.mp3
+ambitiously,https://www.oxfordlearnersdictionaries.com/definition/english/ambitiously,B1,ambitiously,đầy tham vọng,adverb,/æmˈbɪʃəsli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amb/ambit/ambitiously__gb_1.mp3
+aggressive,https://www.oxfordlearnersdictionaries.com/definition/english/aggressive,B2,aggressive,hung dữ,adjective,/əˈɡresɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/agg/aggre/aggressive__gb_2.mp3
+aggressively,https://www.oxfordlearnersdictionaries.com/definition/english/aggressively,B2,aggressively,hung hãn,adverb,/əˈɡresɪvli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/agg/aggre/aggressively__gb_1.mp3
+(a_case_of)_dog_eat_dog,https://www.oxfordlearnersdictionaries.com/definition/english/dog_1,C2,(a case of) dog eat dog,(một trường hợp) chó ăn thịt chó,noun,/dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dog/dog__/dog__gb_2.mp3
+aspirational,https://www.oxfordlearnersdictionaries.com/definition/english/aspirational,C2,aspirational,đầy khát vọng,adjective,/ˌæspəˈreɪʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspirational__gb_1.mp3
+aspire,https://www.oxfordlearnersdictionaries.com/definition/english/aspire,C1,aspire,khao khát,verb,/əˈspaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspire__gb_1.mp3
+bid,https://www.oxfordlearnersdictionaries.com/definition/english/bid1_2,C1,bid,giá thầu,verb,/bɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bid/bid__/bid__gb_3.mp3
+bid,https://www.oxfordlearnersdictionaries.com/definition/english/bid1_1,C1,bid,giá thầu,noun,/bɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bid/bid__/bid__gb_3.mp3
+aspiring,https://www.oxfordlearnersdictionaries.com/definition/english/aspiring,C1,aspiring,đầy tham vọng,adjective,/əˈspaɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspiring__gb_1.mp3
+budding,https://www.oxfordlearnersdictionaries.com/definition/english/budding,C2,budding,vừa chớm nở,adjective,/ˈbʌdɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bud/buddi/budding__gb_3.mp3
+blueprint,https://www.oxfordlearnersdictionaries.com/definition/english/blueprint,C2,blueprint,bản thiết kế,noun,/ˈbluːprɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blu/bluep/blueprint__gb_1.mp3
+can-do,https://www.oxfordlearnersdictionaries.com/definition/english/can-do,C2,can-do,có thể làm được,adjective,/ˌkæn ˈduː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/can_d/can_do_1_gb_1.mp3
+bust_your_ass_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/ass,C2,bust your ass (doing something/to do something),làm hỏng cái mông của bạn (làm điều gì đó/làm điều gì đó),noun,/æs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/ass__/ass__gb_1.mp3
+bust_a_gut_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/bust_1,C2,bust a gut (doing something/to do something),quằn quại (làm gì đó/làm gì đó),verb,/bʌst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bust_/bust__gb_2.mp3
+compete,https://www.oxfordlearnersdictionaries.com/definition/english/compete,B1,compete,hoàn thành,verb,/kəmˈpiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/compe/compete__gb_2.mp3
 dial_into,https://www.oxfordlearnersdictionaries.com/definition/english/dial-into,C2,dial into,quay số vào,phrasal verb,,
-bust_your_chops/butt/hump_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/chop_2,C2,bust your chops/butt/hump (doing something/to do something),phá vỡ cái mông/mông/bướu của bạn (làm điều gì đó/làm điều gì đó),noun,/tʃɒp/,
-bust_your_butt/chops/hump_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/butt_2,C2,bust your butt/chops/hump (doing something/to do something),bẻ mông/bướu/bướu (làm gì đó/làm gì đó),noun,/bʌt/,
-diversify,https://www.oxfordlearnersdictionaries.com/definition/english/diversify,C1,diversify,đa dạng hóa,verb,/daɪˈvɜːsɪfaɪ/,
+bust_your_chops/butt/hump_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/chop_2,C2,bust your chops/butt/hump (doing something/to do something),phá vỡ cái mông/mông/bướu của bạn (làm điều gì đó/làm điều gì đó),noun,/tʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cho/chop_/chop__gb_6.mp3
+bust_your_butt/chops/hump_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/butt_2,C2,bust your butt/chops/hump (doing something/to do something),bẻ mông/bướu/bướu (làm gì đó/làm gì đó),noun,/bʌt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/but/butt_/butt__gb_7.mp3
+diversify,https://www.oxfordlearnersdictionaries.com/definition/english/diversify,C1,diversify,đa dạng hóa,verb,/daɪˈvɜːsɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/div/diver/diversify__gb_1.mp3
 dial_in,https://www.oxfordlearnersdictionaries.com/definition/english/dial-in,C2,dial in,quay số vào,phrasal verb,,
-diversification,https://www.oxfordlearnersdictionaries.com/definition/english/diversification,C2,diversification,đa dạng hóa,noun,/daɪˌvɜːsɪfɪˈkeɪʃn/,
-dream,https://www.oxfordlearnersdictionaries.com/definition/english/dream_1,A2,dream,mơ,noun,/driːm/,
-dream,https://www.oxfordlearnersdictionaries.com/definition/english/dream_2,A2,dream,mơ,verb,/driːm/,
-driven,https://www.oxfordlearnersdictionaries.com/definition/english/driven_1,C1,driven,điều khiển,adjective,/ˈdrɪvn/,
-do/try_your_level_best_(to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/level_2,C2,do/try your level best (to do something),làm/cố gắng ở mức độ tốt nhất của bạn (làm điều gì đó),adjective,/ˈlevl/,
-drive,https://www.oxfordlearnersdictionaries.com/definition/english/drive_2,C1,drive,lái xe,noun,/draɪv/,
-bust_your_hump/butt/chops_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/hump_1,C2,bust your hump/butt/chops (doing something/to do something),phá cái bướu/mông/cắt của bạn (làm cái gì đó/làm cái gì đó),noun,/hʌmp/,
-dynamic,https://www.oxfordlearnersdictionaries.com/definition/english/dynamic_1,B2,dynamic,năng động,adjective,/daɪˈnæmɪk/,
-exercise,https://www.oxfordlearnersdictionaries.com/definition/english/exercise_1,B2,exercise,bài tập,noun,/ˈeksəsaɪz/,
-exercise,https://www.oxfordlearnersdictionaries.com/definition/english/exercise_2,B2,exercise,bài tập,verb,/ˈeksəsaɪz/,
-dip_a_toe_in/into_something,https://www.oxfordlearnersdictionaries.com/definition/english/dip_1,C2,dip a toe in/into something,nhúng ngón chân vào/vào cái gì đó,verb,/dɪp/,
-fight,https://www.oxfordlearnersdictionaries.com/definition/english/fight_1,B1,fight,trận đánh,verb,/faɪt/,
-fight,https://www.oxfordlearnersdictionaries.com/definition/english/fight_2,B1,fight,trận đánh,noun,/faɪt/,
-fighting,https://www.oxfordlearnersdictionaries.com/definition/english/fighting,B1,fighting,Chiến đấu,noun,/ˈfaɪtɪŋ/,
-faustian,https://www.oxfordlearnersdictionaries.com/definition/english/faustian,C2,Faustian,Faustian,adjective,/ˈfaʊstiən/,
-dynamism,https://www.oxfordlearnersdictionaries.com/definition/english/dynamism,C2,dynamism,sự năng động,noun,/ˈdaɪnəmɪzəm/,
-go-ahead,https://www.oxfordlearnersdictionaries.com/definition/english/go-ahead_1,C2,go-ahead,tiến lên,adjective,/ˈɡəʊ əhed/,
-goal,https://www.oxfordlearnersdictionaries.com/definition/english/goal,A2,goal,mục tiêu,noun,/ɡəʊl/,
-grand,https://www.oxfordlearnersdictionaries.com/definition/english/grand_1,B2,grand,vĩ đại,adjective,/ɡrænd/,
-grasp,https://www.oxfordlearnersdictionaries.com/definition/english/grasp_2,C2,grasp,nắm bắt,noun,/ɡrɑːsp/,
-heroic,https://www.oxfordlearnersdictionaries.com/definition/english/heroic,C1,heroic,anh hùng,adjective,/həˈrəʊɪk/,
-hang_(on)_in_there,https://www.oxfordlearnersdictionaries.com/definition/english/hang_1,C2,hang (on) in there,treo (bật) ở đó,verb,/hæŋ/,
-go_to_the_ends_of_the_earth,https://www.oxfordlearnersdictionaries.com/definition/english/end_1,C2,go to the ends of the earth,đi đến tận cùng trái đất,noun,/end/,
-intended,https://www.oxfordlearnersdictionaries.com/definition/english/intended,B2,intended,dự định,adjective,/ɪnˈtendɪd/,
-hopeful,https://www.oxfordlearnersdictionaries.com/definition/english/hopeful_2,C2,hopeful,hy vọng,noun,/ˈhəʊpfl/,
+diversification,https://www.oxfordlearnersdictionaries.com/definition/english/diversification,C2,diversification,đa dạng hóa,noun,/daɪˌvɜːsɪfɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/div/diver/diversification__gb_1.mp3
+dream,https://www.oxfordlearnersdictionaries.com/definition/english/dream_1,A2,dream,mơ,noun,/driːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dre/dream/dream__gb_2.mp3
+dream,https://www.oxfordlearnersdictionaries.com/definition/english/dream_2,A2,dream,mơ,verb,/driːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dre/dream/dream__gb_2.mp3
+driven,https://www.oxfordlearnersdictionaries.com/definition/english/driven_1,C1,driven,điều khiển,adjective,/ˈdrɪvn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/driven__gb_3.mp3
+do/try_your_level_best_(to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/level_2,C2,do/try your level best (to do something),làm/cố gắng ở mức độ tốt nhất của bạn (làm điều gì đó),adjective,/ˈlevl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lev/level/level__gb_2.mp3
+drive,https://www.oxfordlearnersdictionaries.com/definition/english/drive_2,C1,drive,lái xe,noun,/draɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/drive__gb_2.mp3
+bust_your_hump/butt/chops_(doing_something/to_do_something),https://www.oxfordlearnersdictionaries.com/definition/english/hump_1,C2,bust your hump/butt/chops (doing something/to do something),phá cái bướu/mông/cắt của bạn (làm cái gì đó/làm cái gì đó),noun,/hʌmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hum/hump_/hump__gb_1.mp3
+dynamic,https://www.oxfordlearnersdictionaries.com/definition/english/dynamic_1,B2,dynamic,năng động,adjective,/daɪˈnæmɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dyn/dynam/dynamic__gb_1.mp3
+exercise,https://www.oxfordlearnersdictionaries.com/definition/english/exercise_1,B2,exercise,bài tập,noun,/ˈeksəsaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/exerc/exercise__gb_1.mp3
+exercise,https://www.oxfordlearnersdictionaries.com/definition/english/exercise_2,B2,exercise,bài tập,verb,/ˈeksəsaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/exerc/exercise__gb_1.mp3
+dip_a_toe_in/into_something,https://www.oxfordlearnersdictionaries.com/definition/english/dip_1,C2,dip a toe in/into something,nhúng ngón chân vào/vào cái gì đó,verb,/dɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dip/dip__/dip__gb_2.mp3
+fight,https://www.oxfordlearnersdictionaries.com/definition/english/fight_1,B1,fight,trận đánh,verb,/faɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fig/fight/fight__gb_1.mp3
+fight,https://www.oxfordlearnersdictionaries.com/definition/english/fight_2,B1,fight,trận đánh,noun,/faɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fig/fight/fight__gb_1.mp3
+fighting,https://www.oxfordlearnersdictionaries.com/definition/english/fighting,B1,fighting,Chiến đấu,noun,/ˈfaɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fig/fight/fighting__gb_1.mp3
+faustian,https://www.oxfordlearnersdictionaries.com/definition/english/faustian,C2,Faustian,Faustian,adjective,/ˈfaʊstiən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fau/faust/faustian__gb_1.mp3
+dynamism,https://www.oxfordlearnersdictionaries.com/definition/english/dynamism,C2,dynamism,sự năng động,noun,/ˈdaɪnəmɪzəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dyn/dynam/dynamism__gb_1.mp3
+go-ahead,https://www.oxfordlearnersdictionaries.com/definition/english/go-ahead_1,C2,go-ahead,tiến lên,adjective,/ˈɡəʊ əhed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/go_/go_ah/go_ahead_1_gb_1.mp3
+goal,https://www.oxfordlearnersdictionaries.com/definition/english/goal,A2,goal,mục tiêu,noun,/ɡəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/goa/goal_/goal__gb_3.mp3
+grand,https://www.oxfordlearnersdictionaries.com/definition/english/grand_1,B2,grand,vĩ đại,adjective,/ɡrænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grand/grand__gb_1.mp3
+grasp,https://www.oxfordlearnersdictionaries.com/definition/english/grasp_2,C2,grasp,nắm bắt,noun,/ɡrɑːsp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grasp/grasp__gb_1.mp3
+heroic,https://www.oxfordlearnersdictionaries.com/definition/english/heroic,C1,heroic,anh hùng,adjective,/həˈrəʊɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/her/heroi/heroic__gb_1.mp3
+hang_(on)_in_there,https://www.oxfordlearnersdictionaries.com/definition/english/hang_1,C2,hang (on) in there,treo (bật) ở đó,verb,/hæŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hang_/hang__gb_1.mp3
+go_to_the_ends_of_the_earth,https://www.oxfordlearnersdictionaries.com/definition/english/end_1,C2,go to the ends of the earth,đi đến tận cùng trái đất,noun,/end/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/end/end__/end__gb_1.mp3
+intended,https://www.oxfordlearnersdictionaries.com/definition/english/intended,B2,intended,dự định,adjective,/ɪnˈtendɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inten/intended__gb_1.mp3
+hopeful,https://www.oxfordlearnersdictionaries.com/definition/english/hopeful_2,C2,hopeful,hy vọng,noun,/ˈhəʊpfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hop/hopef/hopeful__gb_1.mp3
 hammer_away_at,https://www.oxfordlearnersdictionaries.com/definition/english/hammer-away-at,C2,hammer away at,đập mạnh vào,phrasal verb,,
 go_for,https://www.oxfordlearnersdictionaries.com/definition/english/go-for,C1,go for,đi tìm,phrasal verb,,
-go-getter,https://www.oxfordlearnersdictionaries.com/definition/english/go-getter,C2,go-getter,người đi trước,noun,/ˈɡəʊ ɡetə(r)/,
-invest,https://www.oxfordlearnersdictionaries.com/definition/english/invest,C1,invest,đầu tư,verb,/ɪnˈvest/,
-investment,https://www.oxfordlearnersdictionaries.com/definition/english/investment,C1,investment,sự đầu tư,noun,/ɪnˈvestmənt/,
-me-too,https://www.oxfordlearnersdictionaries.com/definition/english/me-too_2,C2,me-too,Tôi cũng vậy,adjective,/ˌmiː ˈtuː/,
-killer_instinct,https://www.oxfordlearnersdictionaries.com/definition/english/killer-instinct,C2,killer instinct,bản năng sát thủ,noun,/ˌkɪlər ˈɪnstɪŋkt/,
-objective,https://www.oxfordlearnersdictionaries.com/definition/english/objective_1,B2,objective,khách quan,noun,/əbˈdʒektɪv/,
-overachiever,https://www.oxfordlearnersdictionaries.com/definition/english/overachiever,C2,overachiever,người thành đạt quá mức,noun,/ˌəʊvərəˈtʃiːvə(r)/,
-overachieve,https://www.oxfordlearnersdictionaries.com/definition/english/overachieve,C2,overachieve,thành tích quá mức,verb,/ˌəʊvərəˈtʃiːv/,
-last-ditch,https://www.oxfordlearnersdictionaries.com/definition/english/last-ditch,C2,last-ditch,mương cuối cùng,adjective,/ˌlɑːst ˈdɪtʃ/,
-last-gasp,https://www.oxfordlearnersdictionaries.com/definition/english/last-gasp,C2,last-gasp,hơi thở cuối cùng,adjective,/ˌlɑːst ˈɡɑːsp/,
-keep_up_with_the_joneses,https://www.oxfordlearnersdictionaries.com/definition/english/joneses,C2,keep up with the Joneses,theo kịp Joneses,noun,/ˈdʒəʊnzɪz/,
-overambitious,https://www.oxfordlearnersdictionaries.com/definition/english/overambitious,C2,overambitious,quá tham vọng,adjective,/ˌəʊvəræmˈbɪʃəs/,
-perseverance,https://www.oxfordlearnersdictionaries.com/definition/english/perseverance,C1,perseverance,sự kiên trì,noun,/ˌpɜːsəˈvɪərəns/,
-jump_through_hoops,https://www.oxfordlearnersdictionaries.com/definition/english/jump_1,C2,jump through hoops,nhảy qua vòng,verb,/dʒʌmp/,
-pertinacious,https://www.oxfordlearnersdictionaries.com/definition/english/pertinacious,C2,pertinacious,ngoan cố,adjective,/ˌpɜːtɪˈneɪʃəs/,
-persevere,https://www.oxfordlearnersdictionaries.com/definition/english/persevere,C1,persevere,kiên trì,verb,/ˌpɜːsəˈvɪə(r)/,
-punch_above_your_weight,https://www.oxfordlearnersdictionaries.com/definition/english/punch_1,C2,punch above your weight,cú đấm vượt quá trọng lượng của bạn,verb,/pʌntʃ/,
-positive,https://www.oxfordlearnersdictionaries.com/definition/english/positive_1,B1,positive,tích cực,adjective,/ˈpɒzətɪv/,
-race,https://www.oxfordlearnersdictionaries.com/definition/english/race_1,B2,race,loài,noun,/reɪs/,
-put/set/turn_your_mind_to_something,https://www.oxfordlearnersdictionaries.com/definition/english/mind_1,C2,put/set/turn your mind to something,đặt/đặt/chuyển tâm trí của bạn sang cái gì đó,noun,/maɪnd/,
-put_all_your_eggs_in_one_basket,https://www.oxfordlearnersdictionaries.com/definition/english/egg_1,C2,put all your eggs in one basket,bỏ tất cả trứng vào một giỏ,noun,/eɡ/,
-resolve,https://www.oxfordlearnersdictionaries.com/definition/english/resolve_2,C1,resolve,giải quyết,noun,/rɪˈzɒlv/,
-race,https://www.oxfordlearnersdictionaries.com/definition/english/race_2,A2,race,loài,verb,/reɪs/,
-persevering,https://www.oxfordlearnersdictionaries.com/definition/english/persevering,C1,persevering,kiên trì,adjective,/ˌpɜːsəˈvɪərɪŋ/,
-pertinacity,https://www.oxfordlearnersdictionaries.com/definition/english/pertinacity,C2,pertinacity,sự kiên trì,noun,/ˌpɜːtɪˈnæsəti/,
-reach_for_the_stars,https://www.oxfordlearnersdictionaries.com/definition/english/reach_1,C2,reach for the stars,vươn tới những vì sao,verb,/riːtʃ/,
-rugged,https://www.oxfordlearnersdictionaries.com/definition/english/rugged,C2,rugged,gồ ghề,adjective,/ˈrʌɡɪd/,
-seek,https://www.oxfordlearnersdictionaries.com/definition/english/seek,B2,seek,tìm kiếm,verb,/siːk/,
-single-minded,https://www.oxfordlearnersdictionaries.com/definition/english/single-minded,C1,single-minded,độc thân,adjective,/ˌsɪŋɡl ˈmaɪndɪd/,
-sell_your_soul_(to_the_devil),https://www.oxfordlearnersdictionaries.com/definition/english/sell_1,C2,sell your soul (to the devil),bán linh hồn của bạn (cho quỷ dữ),verb,/sel/,
-single-mindedness,https://www.oxfordlearnersdictionaries.com/definition/english/single-mindedness,C1,single-mindedness,sự độc thân,noun,/ˌsɪŋɡl ˈmaɪndɪdnəs/,
-single-mindedly,https://www.oxfordlearnersdictionaries.com/definition/english/single-mindedly,C2,single-mindedly,một lòng,adverb,/ˌsɪŋɡl ˈmaɪndɪdli/,
+go-getter,https://www.oxfordlearnersdictionaries.com/definition/english/go-getter,C2,go-getter,người đi trước,noun,/ˈɡəʊ ɡetə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/go_/go_ge/go_getter_1_gb_1.mp3
+invest,https://www.oxfordlearnersdictionaries.com/definition/english/invest,C1,invest,đầu tư,verb,/ɪnˈvest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/inves/invest__gb_2.mp3
+investment,https://www.oxfordlearnersdictionaries.com/definition/english/investment,C1,investment,sự đầu tư,noun,/ɪnˈvestmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/inves/investment__gb_2.mp3
+me-too,https://www.oxfordlearnersdictionaries.com/definition/english/me-too_2,C2,me-too,Tôi cũng vậy,adjective,/ˌmiː ˈtuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/me_/me_to/me_too_1_gb_1.mp3
+killer_instinct,https://www.oxfordlearnersdictionaries.com/definition/english/killer-instinct,C2,killer instinct,bản năng sát thủ,noun,/ˌkɪlər ˈɪnstɪŋkt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kil/kille/killer_instinct_1_gb_1.mp3
+objective,https://www.oxfordlearnersdictionaries.com/definition/english/objective_1,B2,objective,khách quan,noun,/əbˈdʒektɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/obj/objec/objective__gb_2.mp3
+overachiever,https://www.oxfordlearnersdictionaries.com/definition/english/overachiever,C2,overachiever,người thành đạt quá mức,noun,/ˌəʊvərəˈtʃiːvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overa/overachiever__gb_1.mp3
+overachieve,https://www.oxfordlearnersdictionaries.com/definition/english/overachieve,C2,overachieve,thành tích quá mức,verb,/ˌəʊvərəˈtʃiːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overa/overachieve__gb_1.mp3
+last-ditch,https://www.oxfordlearnersdictionaries.com/definition/english/last-ditch,C2,last-ditch,mương cuối cùng,adjective,/ˌlɑːst ˈdɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/las/last_/last_ditch_1_gb_1.mp3
+last-gasp,https://www.oxfordlearnersdictionaries.com/definition/english/last-gasp,C2,last-gasp,hơi thở cuối cùng,adjective,/ˌlɑːst ˈɡɑːsp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/las/last_/last_gasp_1_gb_1.mp3
+keep_up_with_the_joneses,https://www.oxfordlearnersdictionaries.com/definition/english/joneses,C2,keep up with the Joneses,theo kịp Joneses,noun,/ˈdʒəʊnzɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jon/jones/joneses__gb_1.mp3
+overambitious,https://www.oxfordlearnersdictionaries.com/definition/english/overambitious,C2,overambitious,quá tham vọng,adjective,/ˌəʊvəræmˈbɪʃəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overa/overambitious__gb_1.mp3
+perseverance,https://www.oxfordlearnersdictionaries.com/definition/english/perseverance,C1,perseverance,sự kiên trì,noun,/ˌpɜːsəˈvɪərəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perse/perseverance__gb_3.mp3
+jump_through_hoops,https://www.oxfordlearnersdictionaries.com/definition/english/jump_1,C2,jump through hoops,nhảy qua vòng,verb,/dʒʌmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jum/jump_/jump__gb_1.mp3
+pertinacious,https://www.oxfordlearnersdictionaries.com/definition/english/pertinacious,C2,pertinacious,ngoan cố,adjective,/ˌpɜːtɪˈneɪʃəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perti/pertinacious__gb_1.mp3
+persevere,https://www.oxfordlearnersdictionaries.com/definition/english/persevere,C1,persevere,kiên trì,verb,/ˌpɜːsəˈvɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perse/persevere__gb_2.mp3
+punch_above_your_weight,https://www.oxfordlearnersdictionaries.com/definition/english/punch_1,C2,punch above your weight,cú đấm vượt quá trọng lượng của bạn,verb,/pʌntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pun/punch/punch__gb_2.mp3
+positive,https://www.oxfordlearnersdictionaries.com/definition/english/positive_1,B1,positive,tích cực,adjective,/ˈpɒzətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/posit/positive__gb_3.mp3
+race,https://www.oxfordlearnersdictionaries.com/definition/english/race_1,B2,race,loài,noun,/reɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rac/race_/race__gb_2.mp3
+put/set/turn_your_mind_to_something,https://www.oxfordlearnersdictionaries.com/definition/english/mind_1,C2,put/set/turn your mind to something,đặt/đặt/chuyển tâm trí của bạn sang cái gì đó,noun,/maɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/mind_/mind__gb_1.mp3
+put_all_your_eggs_in_one_basket,https://www.oxfordlearnersdictionaries.com/definition/english/egg_1,C2,put all your eggs in one basket,bỏ tất cả trứng vào một giỏ,noun,/eɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/egg/egg__/egg__gb_3.mp3
+resolve,https://www.oxfordlearnersdictionaries.com/definition/english/resolve_2,C1,resolve,giải quyết,noun,/rɪˈzɒlv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resol/resolve__gb_2.mp3
+race,https://www.oxfordlearnersdictionaries.com/definition/english/race_2,A2,race,loài,verb,/reɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rac/race_/race__gb_2.mp3
+persevering,https://www.oxfordlearnersdictionaries.com/definition/english/persevering,C1,persevering,kiên trì,adjective,/ˌpɜːsəˈvɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perse/persevering__gb_3.mp3
+pertinacity,https://www.oxfordlearnersdictionaries.com/definition/english/pertinacity,C2,pertinacity,sự kiên trì,noun,/ˌpɜːtɪˈnæsəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perti/pertinacity__gb_1.mp3
+reach_for_the_stars,https://www.oxfordlearnersdictionaries.com/definition/english/reach_1,C2,reach for the stars,vươn tới những vì sao,verb,/riːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rea/reach/reach__gb_1.mp3
+rugged,https://www.oxfordlearnersdictionaries.com/definition/english/rugged,C2,rugged,gồ ghề,adjective,/ˈrʌɡɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rug/rugge/rugged__gb_1.mp3
+seek,https://www.oxfordlearnersdictionaries.com/definition/english/seek,B2,seek,tìm kiếm,verb,/siːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/see/seek_/seek__gb_1.mp3
+single-minded,https://www.oxfordlearnersdictionaries.com/definition/english/single-minded,C1,single-minded,độc thân,adjective,/ˌsɪŋɡl ˈmaɪndɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/single_minded_1_gb_1.mp3
+sell_your_soul_(to_the_devil),https://www.oxfordlearnersdictionaries.com/definition/english/sell_1,C2,sell your soul (to the devil),bán linh hồn của bạn (cho quỷ dữ),verb,/sel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/sell_/sell__gb_1.mp3
+single-mindedness,https://www.oxfordlearnersdictionaries.com/definition/english/single-mindedness,C1,single-mindedness,sự độc thân,noun,/ˌsɪŋɡl ˈmaɪndɪdnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/single_mindedness_1_gb_1.mp3
+single-mindedly,https://www.oxfordlearnersdictionaries.com/definition/english/single-mindedly,C2,single-mindedly,một lòng,adverb,/ˌsɪŋɡl ˈmaɪndɪdli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/single_mindedly_1_gb_1.mp3
 shoot_for,https://www.oxfordlearnersdictionaries.com/definition/english/shoot-for,C2,shoot for,bắn cho,phrasal verb,,
-singleness,https://www.oxfordlearnersdictionaries.com/definition/english/singleness,C2,singleness,sự độc thân,noun,/ˈsɪŋɡlnəs/,
-slog/sweat/work_your_guts_out,https://www.oxfordlearnersdictionaries.com/definition/english/gut_1,C2,slog/sweat/work your guts out,công việc vất vả/đổ mồ hôi/làm việc hết mình,noun,/ɡʌt/,
-strive,https://www.oxfordlearnersdictionaries.com/definition/english/strive,C1,strive,phấn đấu,verb,/straɪv/,
-striving,https://www.oxfordlearnersdictionaries.com/definition/english/striving,C2,striving,phấn đấu,noun,/ˈstraɪvɪŋ/,
-target,https://www.oxfordlearnersdictionaries.com/definition/english/target_1,A2,target,mục tiêu,noun,/ˈtɑːɡɪt/,
-sweat/slog/work_your_guts_out,https://www.oxfordlearnersdictionaries.com/definition/english/sweat_2,C2,sweat/slog/work your guts out,đổ mồ hôi/làm việc vất vả/làm việc hết mình,verb,/swet/,
+singleness,https://www.oxfordlearnersdictionaries.com/definition/english/singleness,C2,singleness,sự độc thân,noun,/ˈsɪŋɡlnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/singleness__gb_1.mp3
+slog/sweat/work_your_guts_out,https://www.oxfordlearnersdictionaries.com/definition/english/gut_1,C2,slog/sweat/work your guts out,công việc vất vả/đổ mồ hôi/làm việc hết mình,noun,/ɡʌt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gut/gut__/gut__gb_2.mp3
+strive,https://www.oxfordlearnersdictionaries.com/definition/english/strive,C1,strive,phấn đấu,verb,/straɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/striv/strive__gb_1.mp3
+striving,https://www.oxfordlearnersdictionaries.com/definition/english/striving,C2,striving,phấn đấu,noun,/ˈstraɪvɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/striv/striving__gb_1.mp3
+target,https://www.oxfordlearnersdictionaries.com/definition/english/target_1,A2,target,mục tiêu,noun,/ˈtɑːɡɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tar/targe/target__gb_1.mp3
+sweat/slog/work_your_guts_out,https://www.oxfordlearnersdictionaries.com/definition/english/sweat_2,C2,sweat/slog/work your guts out,đổ mồ hôi/làm việc vất vả/làm việc hết mình,verb,/swet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swe/sweat/sweat__gb_1.mp3
 stick_at,https://www.oxfordlearnersdictionaries.com/definition/english/stick-at,C2,stick at,dính vào,phrasal verb,,
-swing_for_the_fences,https://www.oxfordlearnersdictionaries.com/definition/english/swing_1,C2,swing for the fences,đu cho hàng rào,verb,/swɪŋ/,
-vie,https://www.oxfordlearnersdictionaries.com/definition/english/vie,C2,vie,tranh giành,verb,/vaɪ/,
-try_your_luck_(at_something),https://www.oxfordlearnersdictionaries.com/definition/english/try_1,C2,try your luck (at something),thử vận ​​may (ở việc gì đó),verb,/traɪ/,
-when_the_going_gets_tough_(the_tough_get_going),https://www.oxfordlearnersdictionaries.com/definition/english/going_1,C2,when the going gets tough (the tough get going),khi mọi việc trở nên khó khăn (việc khó khăn sẽ xảy ra),noun,/ˈɡəʊɪŋ/,
-the_law_of_the_jungle,https://www.oxfordlearnersdictionaries.com/definition/english/law,C2,the law of the jungle,luật rừng,noun,/lɔː/,
+swing_for_the_fences,https://www.oxfordlearnersdictionaries.com/definition/english/swing_1,C2,swing for the fences,đu cho hàng rào,verb,/swɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swi/swing/swing__gb_3.mp3
+vie,https://www.oxfordlearnersdictionaries.com/definition/english/vie,C2,vie,tranh giành,verb,/vaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vie/vie__/vie__gb_1.mp3
+try_your_luck_(at_something),https://www.oxfordlearnersdictionaries.com/definition/english/try_1,C2,try your luck (at something),thử vận ​​may (ở việc gì đó),verb,/traɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/try/try__/try__gb_1.mp3
+when_the_going_gets_tough_(the_tough_get_going),https://www.oxfordlearnersdictionaries.com/definition/english/going_1,C2,when the going gets tough (the tough get going),khi mọi việc trở nên khó khăn (việc khó khăn sẽ xảy ra),noun,/ˈɡəʊɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/goi/going/going__gb_2.mp3
+the_law_of_the_jungle,https://www.oxfordlearnersdictionaries.com/definition/english/law,C2,the law of the jungle,luật rừng,noun,/lɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/law/law__/law__gb_2.mp3
 work_towards,https://www.oxfordlearnersdictionaries.com/definition/english/work-towards,C1,work towards,làm việc hướng tới,phrasal verb,,
 work_at,https://www.oxfordlearnersdictionaries.com/definition/english/work-at,C2,work at,làm việc tại,phrasal verb,,
 work_on,https://www.oxfordlearnersdictionaries.com/definition/english/work-on,B1,work on,làm việc tiếp,phrasal verb,,

@@ -1,63 +1,63 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-amazed,https://www.oxfordlearnersdictionaries.com/definition/english/amazed,B1,amazed,ngạc nhiên,adjective,/əˈmeɪzd/,
-astounded,https://www.oxfordlearnersdictionaries.com/definition/english/astounded,C1,astounded,kinh ngạc,adjective,/əˈstaʊndɪd/,
-astonish,https://www.oxfordlearnersdictionaries.com/definition/english/astonish,B2,astonish,kinh ngạc,verb,/əˈstɒnɪʃ/,
-amaze,https://www.oxfordlearnersdictionaries.com/definition/english/amaze,B1,amaze,ngạc nhiên,verb,/əˈmeɪz/,
-astonished,https://www.oxfordlearnersdictionaries.com/definition/english/astonished,B2,astonished,ngạc nhiên,adjective,/əˈstɒnɪʃt/,
-aghast,https://www.oxfordlearnersdictionaries.com/definition/english/aghast,C2,aghast,kinh hoàng,adjective,/əˈɡɑːst/,
-amazement,https://www.oxfordlearnersdictionaries.com/definition/english/amazement,B2,amazement,sự kinh ngạc,noun,/əˈmeɪzmənt/,
-astonishment,https://www.oxfordlearnersdictionaries.com/definition/english/astonishment,C1,astonishment,sự kinh ngạc,noun,/əˈstɒnɪʃmənt/,
-be_lost_for_words,https://www.oxfordlearnersdictionaries.com/definition/english/lost_1,C1,be lost for words,không nói nên lời,adjective,/lɒst/,
-boggle,https://www.oxfordlearnersdictionaries.com/definition/english/boggle,C2,boggle,lúng túng,verb,/ˈbɒɡl/,
-be_taken_aback_(by_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/aback,C2,be taken aback (by somebody/something),bị sửng sốt (bởi ai/cái gì),adverb,/əˈbæk/,
-confound,https://www.oxfordlearnersdictionaries.com/definition/english/confound,C2,confound,làm bối rối,verb,/kənˈfaʊnd/,
-blindside,https://www.oxfordlearnersdictionaries.com/definition/english/blindside,C2,blindside,phía trước,verb,/ˈblaɪndsaɪd/,
-astound,https://www.oxfordlearnersdictionaries.com/definition/english/astound,C1,astound,kinh ngạc,verb,/əˈstaʊnd/,
-(catch/throw_somebody)_off_balance,https://www.oxfordlearnersdictionaries.com/definition/english/balance_1,C2,(catch/throw somebody) off balance,(bắt/ném ai đó) mất thăng bằng,noun,/ˈbæləns/,
-dumbfound,https://www.oxfordlearnersdictionaries.com/definition/english/dumbfound,C2,dumbfound,chết lặng,verb,/dʌmˈfaʊnd/,
-dumbfounded,https://www.oxfordlearnersdictionaries.com/definition/english/dumbfounded,C2,dumbfounded,chết lặng,adjective,/dʌmˈfaʊndɪd/,
-ejaculation,https://www.oxfordlearnersdictionaries.com/definition/english/ejaculation,C2,ejaculation,xuất tinh,noun,/ɪˌdʒækjuˈleɪʃn/,
-blow/knock_somebody’s_socks_off,https://www.oxfordlearnersdictionaries.com/definition/english/sock_1,C2,blow/knock somebody’s socks off,thổi/đánh bật tất của ai đó,noun,/sɒk/,
-exclamatory,https://www.oxfordlearnersdictionaries.com/definition/english/exclamatory,C2,exclamatory,cảm thán,adjective,/ɪkˈsklæmətri/,
-flabbergasted,https://www.oxfordlearnersdictionaries.com/definition/english/flabbergasted,C2,flabbergasted,sửng sốt,adjective,/ˈflæbəɡɑːstɪd/,
-floor,https://www.oxfordlearnersdictionaries.com/definition/english/floor_2,C2,floor,sàn nhà,verb,/flɔː(r)/,
+amazed,https://www.oxfordlearnersdictionaries.com/definition/english/amazed,B1,amazed,ngạc nhiên,adjective,/əˈmeɪzd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ama/amaze/amazed__gb_1.mp3
+astounded,https://www.oxfordlearnersdictionaries.com/definition/english/astounded,C1,astounded,kinh ngạc,adjective,/əˈstaʊndɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/astou/astounded__gb_1.mp3
+astonish,https://www.oxfordlearnersdictionaries.com/definition/english/astonish,B2,astonish,kinh ngạc,verb,/əˈstɒnɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/aston/astonish__gb_1.mp3
+amaze,https://www.oxfordlearnersdictionaries.com/definition/english/amaze,B1,amaze,ngạc nhiên,verb,/əˈmeɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ama/amaze/amaze__gb_1.mp3
+astonished,https://www.oxfordlearnersdictionaries.com/definition/english/astonished,B2,astonished,ngạc nhiên,adjective,/əˈstɒnɪʃt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/aston/astonished__gb_1.mp3
+aghast,https://www.oxfordlearnersdictionaries.com/definition/english/aghast,C2,aghast,kinh hoàng,adjective,/əˈɡɑːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/agh/aghas/aghast__gb_1.mp3
+amazement,https://www.oxfordlearnersdictionaries.com/definition/english/amazement,B2,amazement,sự kinh ngạc,noun,/əˈmeɪzmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ama/amaze/amazement__gb_1.mp3
+astonishment,https://www.oxfordlearnersdictionaries.com/definition/english/astonishment,C1,astonishment,sự kinh ngạc,noun,/əˈstɒnɪʃmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/aston/astonishment__gb_1.mp3
+be_lost_for_words,https://www.oxfordlearnersdictionaries.com/definition/english/lost_1,C1,be lost for words,không nói nên lời,adjective,/lɒst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/los/lost_/lost__gb_2.mp3
+boggle,https://www.oxfordlearnersdictionaries.com/definition/english/boggle,C2,boggle,lúng túng,verb,/ˈbɒɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bog/boggl/boggle__gb_2.mp3
+be_taken_aback_(by_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/aback,C2,be taken aback (by somebody/something),bị sửng sốt (bởi ai/cái gì),adverb,/əˈbæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aba/aback/aback__gb_1.mp3
+confound,https://www.oxfordlearnersdictionaries.com/definition/english/confound,C2,confound,làm bối rối,verb,/kənˈfaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconf/xconfound__gb_1.mp3
+blindside,https://www.oxfordlearnersdictionaries.com/definition/english/blindside,C2,blindside,phía trước,verb,/ˈblaɪndsaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bli/blind/blindside__gb_2.mp3
+astound,https://www.oxfordlearnersdictionaries.com/definition/english/astound,C1,astound,kinh ngạc,verb,/əˈstaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/astou/astound__gb_1.mp3
+(catch/throw_somebody)_off_balance,https://www.oxfordlearnersdictionaries.com/definition/english/balance_1,C2,(catch/throw somebody) off balance,(bắt/ném ai đó) mất thăng bằng,noun,/ˈbæləns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bal/balan/balance__gb_4.mp3
+dumbfound,https://www.oxfordlearnersdictionaries.com/definition/english/dumbfound,C2,dumbfound,chết lặng,verb,/dʌmˈfaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dum/dumbf/dumbfound__gb_1.mp3
+dumbfounded,https://www.oxfordlearnersdictionaries.com/definition/english/dumbfounded,C2,dumbfounded,chết lặng,adjective,/dʌmˈfaʊndɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dum/dumbf/dumbfounded__gb_1.mp3
+ejaculation,https://www.oxfordlearnersdictionaries.com/definition/english/ejaculation,C2,ejaculation,xuất tinh,noun,/ɪˌdʒækjuˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eja/ejacu/ejaculation__gb_4.mp3
+blow/knock_somebody’s_socks_off,https://www.oxfordlearnersdictionaries.com/definition/english/sock_1,C2,blow/knock somebody’s socks off,thổi/đánh bật tất của ai đó,noun,/sɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soc/sock_/sock__gb_2.mp3
+exclamatory,https://www.oxfordlearnersdictionaries.com/definition/english/exclamatory,C2,exclamatory,cảm thán,adjective,/ɪkˈsklæmətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exc/excla/exclamatory__gb_1.mp3
+flabbergasted,https://www.oxfordlearnersdictionaries.com/definition/english/flabbergasted,C2,flabbergasted,sửng sốt,adjective,/ˈflæbəɡɑːstɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flabb/flabbergasted__gb_1.mp3
+floor,https://www.oxfordlearnersdictionaries.com/definition/english/floor_2,C2,floor,sàn nhà,verb,/flɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/floor/floor__gb_3.mp3
 bowl_over,https://www.oxfordlearnersdictionaries.com/definition/english/bowl-over,C2,bowl over,bát hơn,phrasal verb,,
-goggle,https://www.oxfordlearnersdictionaries.com/definition/english/goggle,C2,goggle,kính bảo hộ,verb,/ˈɡɒɡl/,
-gasp,https://www.oxfordlearnersdictionaries.com/definition/english/gasp_1,C1,gasp,thở hổn hển,verb,/ɡɑːsp/,
-gobsmacked,https://www.oxfordlearnersdictionaries.com/definition/english/gobsmacked,C2,gobsmacked,sửng sốt,adjective,/ˈɡɒbsmækt/,
-jolt,https://www.oxfordlearnersdictionaries.com/definition/english/jolt_2,C2,jolt,giật mình,noun,/dʒəʊlt/,
-goggle-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/goggle-eyed,C2,goggle-eyed,trợn mắt,adjective,/ˌɡɒɡl ˈaɪd/,
-jump,https://www.oxfordlearnersdictionaries.com/definition/english/jump_1,B1,jump,nhảy,verb,/dʒʌmp/,
-marvel,https://www.oxfordlearnersdictionaries.com/definition/english/marvel_2,C1,marvel,ngạc nhiên,verb,/ˈmɑːvl/,
-open-mouthed,https://www.oxfordlearnersdictionaries.com/definition/english/open-mouthed,C2,open-mouthed,há mồm,adjective,/ˌəʊpən ˈmaʊðd/,
-pop,https://www.oxfordlearnersdictionaries.com/definition/english/pop_3,C2,pop,nhạc pop,verb,/pɒp/,
-knock_somebody_sideways,https://www.oxfordlearnersdictionaries.com/definition/english/knock_1,C2,knock somebody sideways,đánh ai đó sang một bên,verb,/nɒk/,
-sensation,https://www.oxfordlearnersdictionaries.com/definition/english/sensation,C1,sensation,cảm giác,noun,/senˈseɪʃn/,
-shock,https://www.oxfordlearnersdictionaries.com/definition/english/shock_2,B2,shock,sốc,verb,/ʃɒk/,
-shake,https://www.oxfordlearnersdictionaries.com/definition/english/shake_1,B2,shake,lắc,verb,/ʃeɪk/,
-round-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/round-eyed,C2,round-eyed,mắt tròn,adjective,/ˌraʊnd ˈaɪd/,
-poleaxe,https://www.oxfordlearnersdictionaries.com/definition/english/poleaxe,C2,poleaxe,rìu sào,verb,/ˈpəʊlæks/,
-pop-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/pop-eyed,C2,pop-eyed,trợn mắt,adjective,/ˈpɒp aɪd/,
-stagger,https://www.oxfordlearnersdictionaries.com/definition/english/stagger_2,C2,stagger,loạng choạng,verb,/ˈstæɡə(r)/,
-speechless,https://www.oxfordlearnersdictionaries.com/definition/english/speechless,C1,speechless,không nói nên lời,adjective,/ˈspiːtʃləs/,
-sensational,https://www.oxfordlearnersdictionaries.com/definition/english/sensational,C1,sensational,giật gân,adjective,/senˈseɪʃənl/,
-something_boggles_the_mind,https://www.oxfordlearnersdictionaries.com/definition/english/boggle,C2,something boggles the mind,điều gì đó khiến tâm trí bối rối,verb,/ˈbɒɡl/,
-staggered,https://www.oxfordlearnersdictionaries.com/definition/english/staggered,C2,staggered,loạng choạng,adjective,/ˈstæɡəd/,
-start,https://www.oxfordlearnersdictionaries.com/definition/english/start_1,C2,start,bắt đầu,verb,/stɑːt/,
-startled,https://www.oxfordlearnersdictionaries.com/definition/english/startled,C2,startled,giật mình,adjective,/ˈstɑːtld/,
-stun,https://www.oxfordlearnersdictionaries.com/definition/english/stun,C1,stun,choáng váng,verb,/stʌn/,
-stop/halt_somebody_in_their_tracks,https://www.oxfordlearnersdictionaries.com/definition/english/track_1,C2,stop/halt somebody in their tracks,chặn/chặn ai đó lại,noun,/træk/,
-stupefy,https://www.oxfordlearnersdictionaries.com/definition/english/stupefy,C2,stupefy,sửng sốt,verb,/ˈstjuːpɪfaɪ/,
-surprise,https://www.oxfordlearnersdictionaries.com/definition/english/surprise_1,A2,surprise,sự ngạc nhiên,noun,/səˈpraɪz/,
-surprise,https://www.oxfordlearnersdictionaries.com/definition/english/surprise_2,A2,surprise,sự ngạc nhiên,verb,/səˈpraɪz/,
-startle,https://www.oxfordlearnersdictionaries.com/definition/english/startle,C2,startle,giật mình,verb,/ˈstɑːtl/,
-stupefaction,https://www.oxfordlearnersdictionaries.com/definition/english/stupefaction,C2,stupefaction,sửng sốt,noun,/ˌstjuːpɪˈfækʃn/,
+goggle,https://www.oxfordlearnersdictionaries.com/definition/english/goggle,C2,goggle,kính bảo hộ,verb,/ˈɡɒɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gog/goggl/goggle__gb_2.mp3
+gasp,https://www.oxfordlearnersdictionaries.com/definition/english/gasp_1,C1,gasp,thở hổn hển,verb,/ɡɑːsp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gas/gasp_/gasp__gb_5.mp3
+gobsmacked,https://www.oxfordlearnersdictionaries.com/definition/english/gobsmacked,C2,gobsmacked,sửng sốt,adjective,/ˈɡɒbsmækt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gob/gobsm/gobsmacked__gb_3.mp3
+jolt,https://www.oxfordlearnersdictionaries.com/definition/english/jolt_2,C2,jolt,giật mình,noun,/dʒəʊlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jol/jolt_/jolt__gb_1.mp3
+goggle-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/goggle-eyed,C2,goggle-eyed,trợn mắt,adjective,/ˌɡɒɡl ˈaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gog/goggl/goggle_eyed_1_gb_1.mp3
+jump,https://www.oxfordlearnersdictionaries.com/definition/english/jump_1,B1,jump,nhảy,verb,/dʒʌmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jum/jump_/jump__gb_1.mp3
+marvel,https://www.oxfordlearnersdictionaries.com/definition/english/marvel_2,C1,marvel,ngạc nhiên,verb,/ˈmɑːvl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marve/marvel__gb_1.mp3
+open-mouthed,https://www.oxfordlearnersdictionaries.com/definition/english/open-mouthed,C2,open-mouthed,há mồm,adjective,/ˌəʊpən ˈmaʊðd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/open_/open_mouthed_1_gb_1.mp3
+pop,https://www.oxfordlearnersdictionaries.com/definition/english/pop_3,C2,pop,nhạc pop,verb,/pɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pop/pop__/pop__gb_1.mp3
+knock_somebody_sideways,https://www.oxfordlearnersdictionaries.com/definition/english/knock_1,C2,knock somebody sideways,đánh ai đó sang một bên,verb,/nɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kno/knock/knock__gb_2.mp3
+sensation,https://www.oxfordlearnersdictionaries.com/definition/english/sensation,C1,sensation,cảm giác,noun,/senˈseɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/sensa/sensation__gb_1.mp3
+shock,https://www.oxfordlearnersdictionaries.com/definition/english/shock_2,B2,shock,sốc,verb,/ʃɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shock/shock__gb_1.mp3
+shake,https://www.oxfordlearnersdictionaries.com/definition/english/shake_1,B2,shake,lắc,verb,/ʃeɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sha/shake/shake__gb_1.mp3
+round-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/round-eyed,C2,round-eyed,mắt tròn,adjective,/ˌraʊnd ˈaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/round/round_eyed_1_gb_1.mp3
+poleaxe,https://www.oxfordlearnersdictionaries.com/definition/english/poleaxe,C2,poleaxe,rìu sào,verb,/ˈpəʊlæks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polea/poleaxe__gb_1.mp3
+pop-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/pop-eyed,C2,pop-eyed,trợn mắt,adjective,/ˈpɒp aɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pop/pop_e/pop_eyed_1_gb_1.mp3
+stagger,https://www.oxfordlearnersdictionaries.com/definition/english/stagger_2,C2,stagger,loạng choạng,verb,/ˈstæɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stagg/stagger__gb_1.mp3
+speechless,https://www.oxfordlearnersdictionaries.com/definition/english/speechless,C1,speechless,không nói nên lời,adjective,/ˈspiːtʃləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/speec/speechless__gb_1.mp3
+sensational,https://www.oxfordlearnersdictionaries.com/definition/english/sensational,C1,sensational,giật gân,adjective,/senˈseɪʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/sensa/sensational__gb_1.mp3
+something_boggles_the_mind,https://www.oxfordlearnersdictionaries.com/definition/english/boggle,C2,something boggles the mind,điều gì đó khiến tâm trí bối rối,verb,/ˈbɒɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bog/boggl/boggle__gb_2.mp3
+staggered,https://www.oxfordlearnersdictionaries.com/definition/english/staggered,C2,staggered,loạng choạng,adjective,/ˈstæɡəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stagg/staggered__gb_1.mp3
+start,https://www.oxfordlearnersdictionaries.com/definition/english/start_1,C2,start,bắt đầu,verb,/stɑːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/start/start__gb_1.mp3
+startled,https://www.oxfordlearnersdictionaries.com/definition/english/startled,C2,startled,giật mình,adjective,/ˈstɑːtld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/start/startled__gb_1.mp3
+stun,https://www.oxfordlearnersdictionaries.com/definition/english/stun,C1,stun,choáng váng,verb,/stʌn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stun_/stun__gb_1.mp3
+stop/halt_somebody_in_their_tracks,https://www.oxfordlearnersdictionaries.com/definition/english/track_1,C2,stop/halt somebody in their tracks,chặn/chặn ai đó lại,noun,/træk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/track/track__gb_1.mp3
+stupefy,https://www.oxfordlearnersdictionaries.com/definition/english/stupefy,C2,stupefy,sửng sốt,verb,/ˈstjuːpɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stupe/stupefy__gb_1.mp3
+surprise,https://www.oxfordlearnersdictionaries.com/definition/english/surprise_1,A2,surprise,sự ngạc nhiên,noun,/səˈpraɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/surpr/surprise__gb_1.mp3
+surprise,https://www.oxfordlearnersdictionaries.com/definition/english/surprise_2,A2,surprise,sự ngạc nhiên,verb,/səˈpraɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/surpr/surprise__gb_1.mp3
+startle,https://www.oxfordlearnersdictionaries.com/definition/english/startle,C2,startle,giật mình,verb,/ˈstɑːtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/start/startle__gb_1.mp3
+stupefaction,https://www.oxfordlearnersdictionaries.com/definition/english/stupefaction,C2,stupefaction,sửng sốt,noun,/ˌstjuːpɪˈfækʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stupe/stupefaction__gb_1.mp3
 take_aback,https://www.oxfordlearnersdictionaries.com/definition/english/take-aback,C2,take aback,ngạc nhiên,phrasal verb,,
-surprised,https://www.oxfordlearnersdictionaries.com/definition/english/surprised,A2,surprised,ngạc nhiên,adjective,/səˈpraɪzd/,
-throw,https://www.oxfordlearnersdictionaries.com/definition/english/throw_1,C2,throw,ném,verb,/θrəʊ/,
-wonder,https://www.oxfordlearnersdictionaries.com/definition/english/wonder_2,B1,wonder,thắc mắc,noun,/ˈwʌndə(r)/,
-surprising,https://www.oxfordlearnersdictionaries.com/definition/english/surprising,A2,surprising,đáng ngạc nhiên,adjective,/səˈpraɪzɪŋ/,
-wonderful,https://www.oxfordlearnersdictionaries.com/definition/english/wonderful,B1,wonderful,tuyệt vời,adjective,/ˈwʌndəfl/,
-wonderment,https://www.oxfordlearnersdictionaries.com/definition/english/wonderment,C2,wonderment,sự ngạc nhiên,noun,/ˈwʌndəmənt/,
-thunderstruck,https://www.oxfordlearnersdictionaries.com/definition/english/thunderstruck,C2,thunderstruck,bị sét đánh,adjective,/ˈθʌndəstrʌk/,
-wide-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/wide-eyed,C2,wide-eyed,mắt mở to,adjective,/ˌwaɪd ˈaɪd/,
+surprised,https://www.oxfordlearnersdictionaries.com/definition/english/surprised,A2,surprised,ngạc nhiên,adjective,/səˈpraɪzd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/surpr/surprised__gb_1.mp3
+throw,https://www.oxfordlearnersdictionaries.com/definition/english/throw_1,C2,throw,ném,verb,/θrəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/throw/throw__gb_2.mp3
+wonder,https://www.oxfordlearnersdictionaries.com/definition/english/wonder_2,B1,wonder,thắc mắc,noun,/ˈwʌndə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/won/wonde/wonder__gb_1.mp3
+surprising,https://www.oxfordlearnersdictionaries.com/definition/english/surprising,A2,surprising,đáng ngạc nhiên,adjective,/səˈpraɪzɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/surpr/surprising__gb_1.mp3
+wonderful,https://www.oxfordlearnersdictionaries.com/definition/english/wonderful,B1,wonderful,tuyệt vời,adjective,/ˈwʌndəfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/won/wonde/wonderful__gb_1.mp3
+wonderment,https://www.oxfordlearnersdictionaries.com/definition/english/wonderment,C2,wonderment,sự ngạc nhiên,noun,/ˈwʌndəmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/won/wonde/wonderment__gb_1.mp3
+thunderstruck,https://www.oxfordlearnersdictionaries.com/definition/english/thunderstruck,C2,thunderstruck,bị sét đánh,adjective,/ˈθʌndəstrʌk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thu/thund/thunderstruck__gb_1.mp3
+wide-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/wide-eyed,C2,wide-eyed,mắt mở to,adjective,/ˌwaɪd ˈaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wid/wide_/wide_eyed_1_gb_1.mp3

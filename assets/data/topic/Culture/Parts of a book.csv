@@ -1,33 +1,33 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-blurb,https://www.oxfordlearnersdictionaries.com/definition/english/blurb,C2,blurb,lời giới thiệu,noun,/blɜːb/,
-binding,https://www.oxfordlearnersdictionaries.com/definition/english/binding_2,C2,binding,ràng buộc,noun,/ˈbaɪndɪŋ/,
-entry,https://www.oxfordlearnersdictionaries.com/definition/english/entry,B1,entry,lối vào,noun,/ˈentri/,
-epilogue,https://www.oxfordlearnersdictionaries.com/definition/english/epilogue,C2,epilogue,phần kết,noun,/ˈepɪlɒɡ/,
-addendum,https://www.oxfordlearnersdictionaries.com/definition/english/addendum,C2,addendum,phụ lục,noun,/əˈdendəm/,
-cover,https://www.oxfordlearnersdictionaries.com/definition/english/cover_2,B1,cover,che phủ,noun,/ˈkʌvə(r)/,
-appendix,https://www.oxfordlearnersdictionaries.com/definition/english/appendix,C1,appendix,phụ lục,noun,/əˈpendɪks/,
-chapter,https://www.oxfordlearnersdictionaries.com/definition/english/chapter,B1,chapter,chương,noun,/ˈtʃæptə(r)/,
-epigraph,https://www.oxfordlearnersdictionaries.com/definition/english/epigraph,C2,epigraph,chữ khắc,noun,/ˈepɪɡrɑːf/,
-afterword,https://www.oxfordlearnersdictionaries.com/definition/english/afterword,C2,afterword,lời bạt,noun,/ˈɑːftəwɜːd/,
-inscription,https://www.oxfordlearnersdictionaries.com/definition/english/inscription,C2,inscription,chữ khắc,noun,/ɪnˈskrɪpʃn/,
-frontispiece,https://www.oxfordlearnersdictionaries.com/definition/english/frontispiece,C2,frontispiece,mặt trước,noun,/ˈfrʌntɪspiːs/,
-footnote,https://www.oxfordlearnersdictionaries.com/definition/english/footnote,C1,footnote,chú thích cuối trang,noun,/ˈfʊtnəʊt/,
-glossary,https://www.oxfordlearnersdictionaries.com/definition/english/glossary,B1,glossary,bảng thuật ngữ,noun,/ˈɡlɒsəri/,
-gatefold,https://www.oxfordlearnersdictionaries.com/definition/english/gatefold,C2,gatefold,cổng,noun,/ˈɡeɪtfəʊld/,
-folio,https://www.oxfordlearnersdictionaries.com/definition/english/folio,C2,folio,trang bìa,noun,/ˈfəʊliəʊ/,
-jacket,https://www.oxfordlearnersdictionaries.com/definition/english/jacket,C1,jacket,áo khoác,noun,/ˈdʒækɪt/,
-foreword,https://www.oxfordlearnersdictionaries.com/definition/english/foreword,C2,foreword,lời nói đầu,noun,/ˈfɔːwɜːd/,
-index,https://www.oxfordlearnersdictionaries.com/definition/english/index_1,B2,index,chỉ mục,noun,/ˈɪndeks/,
-erratum,https://www.oxfordlearnersdictionaries.com/definition/english/erratum,C2,erratum,lỗi lầm,noun,/eˈrɑːtəm/,
-leaf,https://www.oxfordlearnersdictionaries.com/definition/english/leaf_1,C1,leaf,lá cây,noun,/liːf/,
-preamble,https://www.oxfordlearnersdictionaries.com/definition/english/preamble,C2,preamble,lời mở đầu,noun,/ˈpriːæmbl/,
-margin,https://www.oxfordlearnersdictionaries.com/definition/english/margin,B2,margin,lề,noun,/ˈmɑːdʒɪn/,
-page,https://www.oxfordlearnersdictionaries.com/definition/english/page_1,A1,page,trang,noun,/peɪdʒ/,
-plot_hole,https://www.oxfordlearnersdictionaries.com/definition/english/plot-hole,C2,plot hole,lỗ âm mưu,noun,/ˈplɒt həʊl/,
-miscellanea,https://www.oxfordlearnersdictionaries.com/definition/english/miscellanea,C2,miscellanea,linh tinh,noun,/ˌmɪsəˈleɪniə/,
-preface,https://www.oxfordlearnersdictionaries.com/definition/english/preface_1,C2,preface,lời nói đầu,noun,/ˈprefəs/,
-subtitle,https://www.oxfordlearnersdictionaries.com/definition/english/subtitle_1,B2,subtitle,phụ đề,noun,/ˈsʌbtaɪtl/,
-text,https://www.oxfordlearnersdictionaries.com/definition/english/text_1,A1,text,chữ,noun,/tekst/,
-spine,https://www.oxfordlearnersdictionaries.com/definition/english/spine,C2,spine,xương sống,noun,/spaɪn/,
-title,https://www.oxfordlearnersdictionaries.com/definition/english/title_1,A1,title,tiêu đề,noun,/ˈtaɪtl/,
-title_page,https://www.oxfordlearnersdictionaries.com/definition/english/title-page,C1,title page,trang tiêu đề,noun,/ˈtaɪtl peɪdʒ/,
+blurb,https://www.oxfordlearnersdictionaries.com/definition/english/blurb,C2,blurb,lời giới thiệu,noun,/blɜːb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blu/blurb/blurb__gb_2.mp3
+binding,https://www.oxfordlearnersdictionaries.com/definition/english/binding_2,C2,binding,ràng buộc,noun,/ˈbaɪndɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bin/bindi/binding__gb_3.mp3
+entry,https://www.oxfordlearnersdictionaries.com/definition/english/entry,B1,entry,lối vào,noun,/ˈentri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ent/entry/entry__gb_1.mp3
+epilogue,https://www.oxfordlearnersdictionaries.com/definition/english/epilogue,C2,epilogue,phần kết,noun,/ˈepɪlɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/epi/epilo/epilogue__gb_1.mp3
+addendum,https://www.oxfordlearnersdictionaries.com/definition/english/addendum,C2,addendum,phụ lục,noun,/əˈdendəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/add/adden/addendum__gb_1.mp3
+cover,https://www.oxfordlearnersdictionaries.com/definition/english/cover_2,B1,cover,che phủ,noun,/ˈkʌvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cov/cover/cover__gb_1.mp3
+appendix,https://www.oxfordlearnersdictionaries.com/definition/english/appendix,C1,appendix,phụ lục,noun,/əˈpendɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appen/appendix__gb_4.mp3
+chapter,https://www.oxfordlearnersdictionaries.com/definition/english/chapter,B1,chapter,chương,noun,/ˈtʃæptə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chapt/chapter__gb_2.mp3
+epigraph,https://www.oxfordlearnersdictionaries.com/definition/english/epigraph,C2,epigraph,chữ khắc,noun,/ˈepɪɡrɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/epi/epigr/epigraph__gb_1.mp3
+afterword,https://www.oxfordlearnersdictionaries.com/definition/english/afterword,C2,afterword,lời bạt,noun,/ˈɑːftəwɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aft/after/afterword__gb_1.mp3
+inscription,https://www.oxfordlearnersdictionaries.com/definition/english/inscription,C2,inscription,chữ khắc,noun,/ɪnˈskrɪpʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/inscr/inscription__gb_1.mp3
+frontispiece,https://www.oxfordlearnersdictionaries.com/definition/english/frontispiece,C2,frontispiece,mặt trước,noun,/ˈfrʌntɪspiːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fro/front/frontispiece__gb_1.mp3
+footnote,https://www.oxfordlearnersdictionaries.com/definition/english/footnote,C1,footnote,chú thích cuối trang,noun,/ˈfʊtnəʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/footn/footnote__gb_2.mp3
+glossary,https://www.oxfordlearnersdictionaries.com/definition/english/glossary,B1,glossary,bảng thuật ngữ,noun,/ˈɡlɒsəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/glo/gloss/glossary__gb_2.mp3
+gatefold,https://www.oxfordlearnersdictionaries.com/definition/english/gatefold,C2,gatefold,cổng,noun,/ˈɡeɪtfəʊld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gat/gatef/gatefold__gb_2.mp3
+folio,https://www.oxfordlearnersdictionaries.com/definition/english/folio,C2,folio,trang bìa,noun,/ˈfəʊliəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fol/folio/folio__gb_1.mp3
+jacket,https://www.oxfordlearnersdictionaries.com/definition/english/jacket,C1,jacket,áo khoác,noun,/ˈdʒækɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jac/jacke/jacket__gb_2.mp3
+foreword,https://www.oxfordlearnersdictionaries.com/definition/english/foreword,C2,foreword,lời nói đầu,noun,/ˈfɔːwɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forew/foreword__gb_1.mp3
+index,https://www.oxfordlearnersdictionaries.com/definition/english/index_1,B2,index,chỉ mục,noun,/ˈɪndeks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ind/index/index__gb_2.mp3
+erratum,https://www.oxfordlearnersdictionaries.com/definition/english/erratum,C2,erratum,lỗi lầm,noun,/eˈrɑːtəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/err/errat/erratum__gb_1.mp3
+leaf,https://www.oxfordlearnersdictionaries.com/definition/english/leaf_1,C1,leaf,lá cây,noun,/liːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leaf_/leaf__gb_1.mp3
+preamble,https://www.oxfordlearnersdictionaries.com/definition/english/preamble,C2,preamble,lời mở đầu,noun,/ˈpriːæmbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/pream/preamble__gb_2.mp3
+margin,https://www.oxfordlearnersdictionaries.com/definition/english/margin,B2,margin,lề,noun,/ˈmɑːdʒɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/margi/margin__gb_1.mp3
+page,https://www.oxfordlearnersdictionaries.com/definition/english/page_1,A1,page,trang,noun,/peɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pag/page_/page__gb_1.mp3
+plot_hole,https://www.oxfordlearnersdictionaries.com/definition/english/plot-hole,C2,plot hole,lỗ âm mưu,noun,/ˈplɒt həʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plo/plot_/plot_hole_1_gb_1.mp3
+miscellanea,https://www.oxfordlearnersdictionaries.com/definition/english/miscellanea,C2,miscellanea,linh tinh,noun,/ˌmɪsəˈleɪniə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/misce/miscellanea__gb_1.mp3
+preface,https://www.oxfordlearnersdictionaries.com/definition/english/preface_1,C2,preface,lời nói đầu,noun,/ˈprefəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/prefa/preface__gb_1.mp3
+subtitle,https://www.oxfordlearnersdictionaries.com/definition/english/subtitle_1,B2,subtitle,phụ đề,noun,/ˈsʌbtaɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subti/subtitle__gb_1.mp3
+text,https://www.oxfordlearnersdictionaries.com/definition/english/text_1,A1,text,chữ,noun,/tekst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tex/text_/text__gb_1.mp3
+spine,https://www.oxfordlearnersdictionaries.com/definition/english/spine,C2,spine,xương sống,noun,/spaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spine/spine__gb_1.mp3
+title,https://www.oxfordlearnersdictionaries.com/definition/english/title_1,A1,title,tiêu đề,noun,/ˈtaɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tit/title/title__gb_2.mp3
+title_page,https://www.oxfordlearnersdictionaries.com/definition/english/title-page,C1,title page,trang tiêu đề,noun,/ˈtaɪtl peɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tit/title/title_page_1_gb_1.mp3

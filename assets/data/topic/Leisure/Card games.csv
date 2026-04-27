@@ -1,30 +1,30 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-ace,https://www.oxfordlearnersdictionaries.com/definition/english/ace_1,C2,ace,quân át,noun,/eɪs/,
-blackjack,https://www.oxfordlearnersdictionaries.com/definition/english/blackjack,C2,blackjack,bài xì dách,noun,/ˈblækdʒæk/,
-baccarat,https://www.oxfordlearnersdictionaries.com/definition/english/baccarat,C2,baccarat,baccarat,noun,/ˈbækərɑː/,
-casino,https://www.oxfordlearnersdictionaries.com/definition/english/casino,C1,casino,sòng bạc,noun,/kəˈsiːnəʊ/,
-club,https://www.oxfordlearnersdictionaries.com/definition/english/club_1,C2,club,câu lạc bộ,noun,/klʌb/,
-card,https://www.oxfordlearnersdictionaries.com/definition/english/card_1,A2,card,thẻ,noun,/kɑːd/,
-bridge,https://www.oxfordlearnersdictionaries.com/definition/english/bridge_1,C2,bridge,cầu,noun,/brɪdʒ/,
-card_game,https://www.oxfordlearnersdictionaries.com/definition/english/card-game,A2,card game,trò chơi bài,noun,/ˈkɑːd ɡeɪm/,
-canasta,https://www.oxfordlearnersdictionaries.com/definition/english/canasta,C2,canasta,canasta,noun,/kəˈnæstə/,
-cribbage,https://www.oxfordlearnersdictionaries.com/definition/english/cribbage,C2,cribbage,cái nôi,noun,/ˈkrɪbɪdʒ/,
-deal,https://www.oxfordlearnersdictionaries.com/definition/english/deal_1,A2,deal,thỏa thuận,verb,/diːl/,
-dealer,https://www.oxfordlearnersdictionaries.com/definition/english/dealer,C1,dealer,đại lý,noun,/ˈdiːlə(r)/,
-diamond,https://www.oxfordlearnersdictionaries.com/definition/english/diamond,C2,diamond,kim cương,noun,/ˈdaɪmənd/,
-grand_slam,https://www.oxfordlearnersdictionaries.com/definition/english/grand-slam,C2,grand slam,cuộc tranh tài lớn,noun,/ˌɡrænd ˈslæm/,
-joker,https://www.oxfordlearnersdictionaries.com/definition/english/joker,C2,joker,người pha trò,noun,/ˈdʒəʊkə(r)/,
-pack,https://www.oxfordlearnersdictionaries.com/definition/english/pack_2,C2,pack,đóng gói,noun,/pæk/,
-heart,https://www.oxfordlearnersdictionaries.com/definition/english/heart_1,C2,heart,trái tim,noun,/hɑːt/,
-hand,https://www.oxfordlearnersdictionaries.com/definition/english/hand_1,C2,hand,tay,noun,/hænd/,
-gin_rummy,https://www.oxfordlearnersdictionaries.com/definition/english/gin-rummy,C2,gin rummy,rượu gin,noun,/ˌdʒɪn ˈrʌmi/,
-poker,https://www.oxfordlearnersdictionaries.com/definition/english/poker,C2,poker,bài bạc,noun,/ˈpəʊkə(r)/,
-shuffle,https://www.oxfordlearnersdictionaries.com/definition/english/shuffle_2,C2,shuffle,xáo trộn,noun,/ˈʃʌfl/,
-snap,https://www.oxfordlearnersdictionaries.com/definition/english/snap_2,C2,snap,búng tay,noun,/snæp/,
-playing_card,https://www.oxfordlearnersdictionaries.com/definition/english/playing-card,B2,playing card,chơi bài,noun,/ˈpleɪɪŋ kɑːd/,
-suit,https://www.oxfordlearnersdictionaries.com/definition/english/suit_1,C2,suit,bộ đồ,noun,/suːt/,
-trump,https://www.oxfordlearnersdictionaries.com/definition/english/trump_1,C2,trump,kèn,noun,/trʌmp/,
-three-card_trick,https://www.oxfordlearnersdictionaries.com/definition/english/three-card-trick,C2,three-card trick,thủ thuật ba lá bài,noun,/ˌθriː kɑːd ˈtrɪk/,
-whist,https://www.oxfordlearnersdictionaries.com/definition/english/whist,C2,whist,huýt sáo,noun,/wɪst/,
-rummy,https://www.oxfordlearnersdictionaries.com/definition/english/rummy,C2,rummy,rượu rummy,noun,/ˈrʌmi/,
-solitaire,https://www.oxfordlearnersdictionaries.com/definition/english/solitaire,C2,solitaire,trò chơi bài,noun,/ˌsɒləˈteə(r)/,
+ace,https://www.oxfordlearnersdictionaries.com/definition/english/ace_1,C2,ace,quân át,noun,/eɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ace/ace__/ace__gb_1.mp3
+blackjack,https://www.oxfordlearnersdictionaries.com/definition/english/blackjack,C2,blackjack,bài xì dách,noun,/ˈblækdʒæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bla/black/blackjack__gb_2.mp3
+baccarat,https://www.oxfordlearnersdictionaries.com/definition/english/baccarat,C2,baccarat,baccarat,noun,/ˈbækərɑː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/bacca/baccarat_1_gb_1.mp3
+casino,https://www.oxfordlearnersdictionaries.com/definition/english/casino,C1,casino,sòng bạc,noun,/kəˈsiːnəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cas/casin/casino__gb_2.mp3
+club,https://www.oxfordlearnersdictionaries.com/definition/english/club_1,C2,club,câu lạc bộ,noun,/klʌb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clu/club_/club__gb_1.mp3
+card,https://www.oxfordlearnersdictionaries.com/definition/english/card_1,A2,card,thẻ,noun,/kɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/card_/card__gb_1.mp3
+bridge,https://www.oxfordlearnersdictionaries.com/definition/english/bridge_1,C2,bridge,cầu,noun,/brɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bri/bridg/bridge__gb_3.mp3
+card_game,https://www.oxfordlearnersdictionaries.com/definition/english/card-game,A2,card game,trò chơi bài,noun,/ˈkɑːd ɡeɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/card_/card_game_1_gb_1.mp3
+canasta,https://www.oxfordlearnersdictionaries.com/definition/english/canasta,C2,canasta,canasta,noun,/kəˈnæstə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canas/canasta__gb_2.mp3
+cribbage,https://www.oxfordlearnersdictionaries.com/definition/english/cribbage,C2,cribbage,cái nôi,noun,/ˈkrɪbɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cri/cribb/cribbage__gb_1.mp3
+deal,https://www.oxfordlearnersdictionaries.com/definition/english/deal_1,A2,deal,thỏa thuận,verb,/diːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/deal_/deal__gb_1.mp3
+dealer,https://www.oxfordlearnersdictionaries.com/definition/english/dealer,C1,dealer,đại lý,noun,/ˈdiːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/deale/dealer__gb_2.mp3
+diamond,https://www.oxfordlearnersdictionaries.com/definition/english/diamond,C2,diamond,kim cương,noun,/ˈdaɪmənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/diamo/diamond__gb_2.mp3
+grand_slam,https://www.oxfordlearnersdictionaries.com/definition/english/grand-slam,C2,grand slam,cuộc tranh tài lớn,noun,/ˌɡrænd ˈslæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grand/grand_slam_1_gb_1.mp3
+joker,https://www.oxfordlearnersdictionaries.com/definition/english/joker,C2,joker,người pha trò,noun,/ˈdʒəʊkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jok/joker/joker__gb_1.mp3
+pack,https://www.oxfordlearnersdictionaries.com/definition/english/pack_2,C2,pack,đóng gói,noun,/pæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pac/pack_/pack__gb_1.mp3
+heart,https://www.oxfordlearnersdictionaries.com/definition/english/heart_1,C2,heart,trái tim,noun,/hɑːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/heart/heart__gb_1.mp3
+hand,https://www.oxfordlearnersdictionaries.com/definition/english/hand_1,C2,hand,tay,noun,/hænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hand_/hand__gb_2.mp3
+gin_rummy,https://www.oxfordlearnersdictionaries.com/definition/english/gin-rummy,C2,gin rummy,rượu gin,noun,/ˌdʒɪn ˈrʌmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gin/gin_r/gin_rummy_1_gb_1.mp3
+poker,https://www.oxfordlearnersdictionaries.com/definition/english/poker,C2,poker,bài bạc,noun,/ˈpəʊkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pok/poker/poker__gb_1.mp3
+shuffle,https://www.oxfordlearnersdictionaries.com/definition/english/shuffle_2,C2,shuffle,xáo trộn,noun,/ˈʃʌfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shu/shuff/shuffle__gb_1.mp3
+snap,https://www.oxfordlearnersdictionaries.com/definition/english/snap_2,C2,snap,búng tay,noun,/snæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sna/snap_/snap__gb_1.mp3
+playing_card,https://www.oxfordlearnersdictionaries.com/definition/english/playing-card,B2,playing card,chơi bài,noun,/ˈpleɪɪŋ kɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/playi/playing_card_1_gb_1.mp3
+suit,https://www.oxfordlearnersdictionaries.com/definition/english/suit_1,C2,suit,bộ đồ,noun,/suːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sui/suit_/suit__gb_1.mp3
+trump,https://www.oxfordlearnersdictionaries.com/definition/english/trump_1,C2,trump,kèn,noun,/trʌmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tru/trump/trump__gb_1.mp3
+three-card_trick,https://www.oxfordlearnersdictionaries.com/definition/english/three-card-trick,C2,three-card trick,thủ thuật ba lá bài,noun,/ˌθriː kɑːd ˈtrɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/three/three_card_trick_1_gb_1.mp3
+whist,https://www.oxfordlearnersdictionaries.com/definition/english/whist,C2,whist,huýt sáo,noun,/wɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whi/whist/whist__gb_1.mp3
+rummy,https://www.oxfordlearnersdictionaries.com/definition/english/rummy,C2,rummy,rượu rummy,noun,/ˈrʌmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rum/rummy/rummy__gb_1.mp3
+solitaire,https://www.oxfordlearnersdictionaries.com/definition/english/solitaire,C2,solitaire,trò chơi bài,noun,/ˌsɒləˈteə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solit/solitaire__gb_1.mp3

@@ -1,72 +1,72 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-afghan_hound,https://www.oxfordlearnersdictionaries.com/definition/english/afghan-hound,C2,Afghan hound,Chó săn Afghanistan,noun,/ˌæfɡæn ˈhaʊnd/,
-basset,https://www.oxfordlearnersdictionaries.com/definition/english/basset,C2,basset,cái basset,noun,/ˈbæsɪt/,
-beagle,https://www.oxfordlearnersdictionaries.com/definition/english/beagle,C2,beagle,chó săn nhỏ,noun,/ˈbiːɡl/,
-bitzer,https://www.oxfordlearnersdictionaries.com/definition/english/bitzer,C2,bitzer,cay đắng,noun,/ˈbɪtsə(r)/,
-attack_dog,https://www.oxfordlearnersdictionaries.com/definition/english/attack-dog,C2,attack dog,chó tấn công,noun,/əˈtæk dɒɡ/,
-alsatian,https://www.oxfordlearnersdictionaries.com/definition/english/alsatian,C1,Alsatian,tiếng Alsace,noun,/ælˈseɪʃn/,
-bitch,https://www.oxfordlearnersdictionaries.com/definition/english/bitch_1,C2,bitch,con khốn,noun,/bɪtʃ/,
-bird_dog,https://www.oxfordlearnersdictionaries.com/definition/english/bird-dog,C2,bird dog,chó chim,noun,/ˈbɜːd dɒɡ/,
-bloodhound,https://www.oxfordlearnersdictionaries.com/definition/english/bloodhound,C2,bloodhound,chó săn,noun,/ˈblʌdhaʊnd/,
-assistance_dog,https://www.oxfordlearnersdictionaries.com/definition/english/assistance-dog,C1,assistance dog,chó hỗ trợ,noun,/əˈsɪstəns dɒɡ/,
-border_collie,https://www.oxfordlearnersdictionaries.com/definition/english/border-collie,C2,Border collie,Collie biên giới,noun,/ˌbɔːdə ˈkɒli/,
-bull_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/bull-terrier,C2,bull terrier,chó sục,noun,/ˌbʊl ˈteriə(r)/,
-bull_mastiff,https://www.oxfordlearnersdictionaries.com/definition/english/bull-mastiff,C2,bull mastiff,chó ngao bò,noun,/ˌbʊl ˈmæstɪf/,
-bulldog,https://www.oxfordlearnersdictionaries.com/definition/english/bulldog,C2,bulldog,chó bulldog,noun,/ˈbʊldɒɡ/,
-borzoi,https://www.oxfordlearnersdictionaries.com/definition/english/borzoi,C2,borzoi,bozoi,noun,/ˈbɔːzɔɪ/,
-chihuahua,https://www.oxfordlearnersdictionaries.com/definition/english/chihuahua,C2,chihuahua,chihuahua,noun,/tʃɪˈwɑːwə/,
-canine,https://www.oxfordlearnersdictionaries.com/definition/english/canine_2,C2,canine,chó,noun,/ˈkeɪnaɪn/,
-cocker,https://www.oxfordlearnersdictionaries.com/definition/english/cocker,C2,cocker,gà trống,noun,/ˈkɒkə(r)/,
-collie,https://www.oxfordlearnersdictionaries.com/definition/english/collie,C2,collie,chó collie,noun,/ˈkɒli/,
-boxer,https://www.oxfordlearnersdictionaries.com/definition/english/boxer,C2,boxer,võ sĩ quyền Anh,noun,/ˈbɒksə(r)/,
-cur,https://www.oxfordlearnersdictionaries.com/definition/english/cur,C2,cur,hay gây,noun,/kɜː(r)/,
-dalmatian,https://www.oxfordlearnersdictionaries.com/definition/english/dalmatian,C2,Dalmatian,chó đốm,noun,/dælˈmeɪʃn/,
-deerhound,https://www.oxfordlearnersdictionaries.com/definition/english/deerhound,C2,deerhound,chó săn hươu,noun,/ˈdɪəhaʊnd/,
-dachshund,https://www.oxfordlearnersdictionaries.com/definition/english/dachshund,C2,dachshund,chó dachshund,noun,/ˈdæksnd/,
-elkhound,https://www.oxfordlearnersdictionaries.com/definition/english/elkhound,C2,elkhound,chó săn nai sừng tấm,noun,/ˈelkhaʊnd/,
-foxhound,https://www.oxfordlearnersdictionaries.com/definition/english/foxhound,C2,foxhound,chó săn cáo,noun,/ˈfɒkshaʊnd/,
-german_shepherd,https://www.oxfordlearnersdictionaries.com/definition/english/german-shepherd,C2,German shepherd,Người chăn cừu Đức,noun,/ˌdʒɜːmən ˈʃepəd/,
-golden_retriever,https://www.oxfordlearnersdictionaries.com/definition/english/golden-retriever,C2,golden retriever,chó tha mồi vàng,noun,/ˌɡəʊldən rɪˈtriːvə(r)/,
-greyhound,https://www.oxfordlearnersdictionaries.com/definition/english/greyhound,C2,greyhound,chó săn thỏ,noun,/ˈɡreɪhaʊnd/,
-great_dane,https://www.oxfordlearnersdictionaries.com/definition/english/great-dane,C2,Great Dane,Đại Đan Mạch,noun,/ˌɡreɪt ˈdeɪn/,
-guard_dog,https://www.oxfordlearnersdictionaries.com/definition/english/guard-dog,B2,guard dog,con chó bảo vệ,noun,/ˈɡɑːd dɒɡ/,
-fox_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/fox-terrier,C2,fox terrier,chó sục cáo,noun,/ˌfɒks ˈteriə(r)/,
-hearing_dog,https://www.oxfordlearnersdictionaries.com/definition/english/hearing-dog,B2,hearing dog,chó thính giác,noun,/ˈhɪərɪŋ dɒɡ/,
-corgi,https://www.oxfordlearnersdictionaries.com/definition/english/corgi,C2,corgi,chó corgi,noun,/ˈkɔːɡi/,
-hound,https://www.oxfordlearnersdictionaries.com/definition/english/hound_1,C2,hound,chó săn,noun,/haʊnd/,
-hound_dog,https://www.oxfordlearnersdictionaries.com/definition/english/hound-dog,C2,hound dog,chó săn,noun,/ˈhaʊnd dɒɡ/,
-gun_dog,https://www.oxfordlearnersdictionaries.com/definition/english/gun-dog,C1,gun dog,chó súng,noun,/ˈɡʌn dɒɡ/,
-husky,https://www.oxfordlearnersdictionaries.com/definition/english/husky_2,C2,husky,khàn khàn,noun,/ˈhʌski/,
-lapdog,https://www.oxfordlearnersdictionaries.com/definition/english/lapdog,C2,lapdog,chó cưng,noun,/ˈlæpdɒɡ/,
-mongrel,https://www.oxfordlearnersdictionaries.com/definition/english/mongrel,C2,mongrel,giống lai,noun,/ˈmʌŋɡrəl/,
-labrador,https://www.oxfordlearnersdictionaries.com/definition/english/labrador,C1,Labrador,Labrador,noun,/ˈlæbrədɔː(r)/,
-guide_dog,https://www.oxfordlearnersdictionaries.com/definition/english/guide-dog,B1,guide dog,chó dẫn đường,noun,/ˈɡaɪd dɒɡ/,
-mutt,https://www.oxfordlearnersdictionaries.com/definition/english/mutt,C2,mutt,con chó lai,noun,/mʌt/,
-old_english_sheepdog,https://www.oxfordlearnersdictionaries.com/definition/english/old-english-sheepdog,C2,Old English sheepdog,Chó chăn cừu Anh cổ,noun,/ˌəʊld ˌɪŋɡlɪʃ ˈʃiːpdɒɡ/,
-pekinese,https://www.oxfordlearnersdictionaries.com/definition/english/pekinese,C2,Pekinese,tiếng Bắc Kinh,noun,/ˌpiːkɪˈniːz/,
-police_dog,https://www.oxfordlearnersdictionaries.com/definition/english/police-dog,B1,police dog,chó cảnh sát,noun,/pəˈliːs dɒɡ/,
-pointer,https://www.oxfordlearnersdictionaries.com/definition/english/pointer,C2,pointer,con trỏ,noun,/ˈpɔɪntə(r)/,
-poodle,https://www.oxfordlearnersdictionaries.com/definition/english/poodle,C1,poodle,chó xù,noun,/ˈpuːdl/,
-pug,https://www.oxfordlearnersdictionaries.com/definition/english/pug,C2,pug,chó pug,noun,/pʌɡ/,
-mastiff,https://www.oxfordlearnersdictionaries.com/definition/english/mastiff,C2,mastiff,chó ngao,noun,/ˈmæstɪf/,
-puppy,https://www.oxfordlearnersdictionaries.com/definition/english/puppy,B2,puppy,cún con,noun,/ˈpʌpi/,
-rescue_dog,https://www.oxfordlearnersdictionaries.com/definition/english/rescue-dog,C1,rescue dog,chó cứu hộ,noun,/ˈreskjuː dɒɡ/,
-lurcher,https://www.oxfordlearnersdictionaries.com/definition/english/lurcher,C2,lurcher,người đi lang thang,noun,/ˈlɜːtʃə(r)/,
-rottweiler,https://www.oxfordlearnersdictionaries.com/definition/english/rottweiler,C2,Rottweiler,Rottweiler,noun,/ˈrɒtwaɪlə(r)/,
-schnauzer,https://www.oxfordlearnersdictionaries.com/definition/english/schnauzer,C2,schnauzer,schnauzer,noun,/ˈʃnaʊzə(r)/,
-running_dog,https://www.oxfordlearnersdictionaries.com/definition/english/running-dog,C2,running dog,chó chạy,noun,/ˈrʌnɪŋ dɒɡ/,
-sausage_dog,https://www.oxfordlearnersdictionaries.com/definition/english/sausage-dog,C2,sausage dog,chó xúc xích,noun,/ˈsɒsɪdʒ dɒɡ/,
-seeing_eye_dog™,https://www.oxfordlearnersdictionaries.com/definition/english/seeing-eye-dogtm,C1,Seeing Eye dog™,Chó Mắt™,noun,/ˌsiːɪŋ ˈaɪ dɒɡ/,
-scottie,https://www.oxfordlearnersdictionaries.com/definition/english/scottie,C2,Scottie,Scottie,noun,/ˈskɒti/,
-retriever,https://www.oxfordlearnersdictionaries.com/definition/english/retriever,C2,retriever,người săn mồi,noun,/rɪˈtriːvə(r)/,
-setter,https://www.oxfordlearnersdictionaries.com/definition/english/setter,C2,setter,người định cư,noun,/ˈsetə(r)/,
-scottish_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/scottish-terrier,C2,Scottish terrier,Chó sục Scotland,noun,/ˌskɒtɪʃ ˈteriə(r)/,
-sheepdog,https://www.oxfordlearnersdictionaries.com/definition/english/sheepdog,B1,sheepdog,chó chăn cừu,noun,/ˈʃiːpdɒɡ/,
-spaniel,https://www.oxfordlearnersdictionaries.com/definition/english/spaniel,C2,spaniel,giống chó spaniel,noun,/ˈspænjəl/,
-tosa,https://www.oxfordlearnersdictionaries.com/definition/english/tosa,C2,tosa,tosa,noun,/ˈtəʊsə/,
-whippet,https://www.oxfordlearnersdictionaries.com/definition/english/whippet,C2,whippet,roi da,noun,/ˈwɪpɪt/,
-sniffer_dog,https://www.oxfordlearnersdictionaries.com/definition/english/sniffer-dog,C2,sniffer dog,chó đánh hơi,noun,/ˈsnɪfə dɒɡ/,
-wolfhound,https://www.oxfordlearnersdictionaries.com/definition/english/wolfhound,C2,wolfhound,chó săn chó sói,noun,/ˈwʊlfhaʊnd/,
-yorkshire_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/yorkshire-terrier,C2,Yorkshire terrier,Chó sục Yorkshire,noun,/ˌjɔːkʃə ˈteriə(r)/,
-terrier,https://www.oxfordlearnersdictionaries.com/definition/english/terrier,C2,terrier,chó sục,noun,/ˈteriə(r)/,
-tracker_dog,https://www.oxfordlearnersdictionaries.com/definition/english/tracker-dog,C2,tracker dog,chó theo dõi,noun,/ˈtrækə dɒɡ/,
+afghan_hound,https://www.oxfordlearnersdictionaries.com/definition/english/afghan-hound,C2,Afghan hound,Chó săn Afghanistan,noun,/ˌæfɡæn ˈhaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/afg/afgha/afghan_hound_1_gb_1.mp3
+basset,https://www.oxfordlearnersdictionaries.com/definition/english/basset,C2,basset,cái basset,noun,/ˈbæsɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bas/basse/basset__gb_2.mp3
+beagle,https://www.oxfordlearnersdictionaries.com/definition/english/beagle,C2,beagle,chó săn nhỏ,noun,/ˈbiːɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bea/beagl/beagle__gb_2.mp3
+bitzer,https://www.oxfordlearnersdictionaries.com/definition/english/bitzer,C2,bitzer,cay đắng,noun,/ˈbɪtsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bit/bitze/bitzer__gb_1.mp3
+attack_dog,https://www.oxfordlearnersdictionaries.com/definition/english/attack-dog,C2,attack dog,chó tấn công,noun,/əˈtæk dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/attac/attack_dog_1_gb_1.mp3
+alsatian,https://www.oxfordlearnersdictionaries.com/definition/english/alsatian,C1,Alsatian,tiếng Alsace,noun,/ælˈseɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/als/alsat/alsatian__gb_1.mp3
+bitch,https://www.oxfordlearnersdictionaries.com/definition/english/bitch_1,C2,bitch,con khốn,noun,/bɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bit/bitch/bitch__gb_3.mp3
+bird_dog,https://www.oxfordlearnersdictionaries.com/definition/english/bird-dog,C2,bird dog,chó chim,noun,/ˈbɜːd dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bir/bird_/bird_dog_1_gb_1.mp3
+bloodhound,https://www.oxfordlearnersdictionaries.com/definition/english/bloodhound,C2,bloodhound,chó săn,noun,/ˈblʌdhaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/blood/bloodhound__gb_2.mp3
+assistance_dog,https://www.oxfordlearnersdictionaries.com/definition/english/assistance-dog,C1,assistance dog,chó hỗ trợ,noun,/əˈsɪstəns dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assis/assistance_dog_1_gb_1.mp3
+border_collie,https://www.oxfordlearnersdictionaries.com/definition/english/border-collie,C2,Border collie,Collie biên giới,noun,/ˌbɔːdə ˈkɒli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/borde/border_collie_1_gb_1.mp3
+bull_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/bull-terrier,C2,bull terrier,chó sục,noun,/ˌbʊl ˈteriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bul/bull_/bull_terrier_1_gb_1.mp3
+bull_mastiff,https://www.oxfordlearnersdictionaries.com/definition/english/bull-mastiff,C2,bull mastiff,chó ngao bò,noun,/ˌbʊl ˈmæstɪf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bul/bull_/bull_mastiff_1_gb_1.mp3
+bulldog,https://www.oxfordlearnersdictionaries.com/definition/english/bulldog,C2,bulldog,chó bulldog,noun,/ˈbʊldɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bul/bulld/bulldog__gb_2.mp3
+borzoi,https://www.oxfordlearnersdictionaries.com/definition/english/borzoi,C2,borzoi,bozoi,noun,/ˈbɔːzɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/borzo/borzoi__gb_3.mp3
+chihuahua,https://www.oxfordlearnersdictionaries.com/definition/english/chihuahua,C2,chihuahua,chihuahua,noun,/tʃɪˈwɑːwə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/chihu/chihuahua__gb_2.mp3
+canine,https://www.oxfordlearnersdictionaries.com/definition/english/canine_2,C2,canine,chó,noun,/ˈkeɪnaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canin/canine__gb_1.mp3
+cocker,https://www.oxfordlearnersdictionaries.com/definition/english/cocker,C2,cocker,gà trống,noun,/ˈkɒkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coc/cocke/cocker__gb_1.mp3
+collie,https://www.oxfordlearnersdictionaries.com/definition/english/collie,C2,collie,chó collie,noun,/ˈkɒli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/colli/collie__gb_1.mp3
+boxer,https://www.oxfordlearnersdictionaries.com/definition/english/boxer,C2,boxer,võ sĩ quyền Anh,noun,/ˈbɒksə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/box/boxer/boxer__gb_1.mp3
+cur,https://www.oxfordlearnersdictionaries.com/definition/english/cur,C2,cur,hay gây,noun,/kɜː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cur/cur__/cur__gb_1.mp3
+dalmatian,https://www.oxfordlearnersdictionaries.com/definition/english/dalmatian,C2,Dalmatian,chó đốm,noun,/dælˈmeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dal/dalma/dalmatian__gb_1.mp3
+deerhound,https://www.oxfordlearnersdictionaries.com/definition/english/deerhound,C2,deerhound,chó săn hươu,noun,/ˈdɪəhaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dee/deerh/deerhound__gb_1.mp3
+dachshund,https://www.oxfordlearnersdictionaries.com/definition/english/dachshund,C2,dachshund,chó dachshund,noun,/ˈdæksnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dac/dachs/dachshund__gb_1.mp3
+elkhound,https://www.oxfordlearnersdictionaries.com/definition/english/elkhound,C2,elkhound,chó săn nai sừng tấm,noun,/ˈelkhaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/elk/elk_h/elk_hound_1_gb_1.mp3
+foxhound,https://www.oxfordlearnersdictionaries.com/definition/english/foxhound,C2,foxhound,chó săn cáo,noun,/ˈfɒkshaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fox/foxho/foxhound__gb_1.mp3
+german_shepherd,https://www.oxfordlearnersdictionaries.com/definition/english/german-shepherd,C2,German shepherd,Người chăn cừu Đức,noun,/ˌdʒɜːmən ˈʃepəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/ger/germa/german_shepherd_1_gb_1.mp3
+golden_retriever,https://www.oxfordlearnersdictionaries.com/definition/english/golden-retriever,C2,golden retriever,chó tha mồi vàng,noun,/ˌɡəʊldən rɪˈtriːvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gol/golde/golden_retriever_1_gb_1.mp3
+greyhound,https://www.oxfordlearnersdictionaries.com/definition/english/greyhound,C2,greyhound,chó săn thỏ,noun,/ˈɡreɪhaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/greyh/greyhound__gb_1.mp3
+great_dane,https://www.oxfordlearnersdictionaries.com/definition/english/great-dane,C2,Great Dane,Đại Đan Mạch,noun,/ˌɡreɪt ˈdeɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/great/great_dane_1_gb_1.mp3
+guard_dog,https://www.oxfordlearnersdictionaries.com/definition/english/guard-dog,B2,guard dog,con chó bảo vệ,noun,/ˈɡɑːd dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guard_dog_1_gb_1.mp3
+fox_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/fox-terrier,C2,fox terrier,chó sục cáo,noun,/ˌfɒks ˈteriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fox/fox_t/fox_terrier_1_gb_1.mp3
+hearing_dog,https://www.oxfordlearnersdictionaries.com/definition/english/hearing-dog,B2,hearing dog,chó thính giác,noun,/ˈhɪərɪŋ dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/heari/hearing_dog_1_gb_1.mp3
+corgi,https://www.oxfordlearnersdictionaries.com/definition/english/corgi,C2,corgi,chó corgi,noun,/ˈkɔːɡi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corgi/corgi__gb_1.mp3
+hound,https://www.oxfordlearnersdictionaries.com/definition/english/hound_1,C2,hound,chó săn,noun,/haʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/hound/hound__gb_1.mp3
+hound_dog,https://www.oxfordlearnersdictionaries.com/definition/english/hound-dog,C2,hound dog,chó săn,noun,/ˈhaʊnd dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/hound/hound_dog_1_gb_1.mp3
+gun_dog,https://www.oxfordlearnersdictionaries.com/definition/english/gun-dog,C1,gun dog,chó súng,noun,/ˈɡʌn dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gun/gun_d/gun_dog_1_gb_1.mp3
+husky,https://www.oxfordlearnersdictionaries.com/definition/english/husky_2,C2,husky,khàn khàn,noun,/ˈhʌski/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hus/husky/husky__gb_1.mp3
+lapdog,https://www.oxfordlearnersdictionaries.com/definition/english/lapdog,C2,lapdog,chó cưng,noun,/ˈlæpdɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lap/lapdo/lapdog__gb_1.mp3
+mongrel,https://www.oxfordlearnersdictionaries.com/definition/english/mongrel,C2,mongrel,giống lai,noun,/ˈmʌŋɡrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/mongr/mongrel__gb_1.mp3
+labrador,https://www.oxfordlearnersdictionaries.com/definition/english/labrador,C1,Labrador,Labrador,noun,/ˈlæbrədɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labra/labrador__gb_1.mp3
+guide_dog,https://www.oxfordlearnersdictionaries.com/definition/english/guide-dog,B1,guide dog,chó dẫn đường,noun,/ˈɡaɪd dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gui/guide/guide_dog_1_gb_1.mp3
+mutt,https://www.oxfordlearnersdictionaries.com/definition/english/mutt,C2,mutt,con chó lai,noun,/mʌt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mut/mutt_/mutt__gb_1.mp3
+old_english_sheepdog,https://www.oxfordlearnersdictionaries.com/definition/english/old-english-sheepdog,C2,Old English sheepdog,Chó chăn cừu Anh cổ,noun,/ˌəʊld ˌɪŋɡlɪʃ ˈʃiːpdɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/old/old_e/old_english_sheepdog_1_gb_1.mp3
+pekinese,https://www.oxfordlearnersdictionaries.com/definition/english/pekinese,C2,Pekinese,tiếng Bắc Kinh,noun,/ˌpiːkɪˈniːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pek/pekin/pekinese__gb_1.mp3
+police_dog,https://www.oxfordlearnersdictionaries.com/definition/english/police-dog,B1,police dog,chó cảnh sát,noun,/pəˈliːs dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polic/police_dog_1_gb_1.mp3
+pointer,https://www.oxfordlearnersdictionaries.com/definition/english/pointer,C2,pointer,con trỏ,noun,/ˈpɔɪntə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poi/point/pointer__gb_1.mp3
+poodle,https://www.oxfordlearnersdictionaries.com/definition/english/poodle,C1,poodle,chó xù,noun,/ˈpuːdl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poo/poodl/poodle__gb_1.mp3
+pug,https://www.oxfordlearnersdictionaries.com/definition/english/pug,C2,pug,chó pug,noun,/pʌɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pug/pug__/pug__gb_1.mp3
+mastiff,https://www.oxfordlearnersdictionaries.com/definition/english/mastiff,C2,mastiff,chó ngao,noun,/ˈmæstɪf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/masti/mastiff__gb_1.mp3
+puppy,https://www.oxfordlearnersdictionaries.com/definition/english/puppy,B2,puppy,cún con,noun,/ˈpʌpi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pup/puppy/puppy__gb_2.mp3
+rescue_dog,https://www.oxfordlearnersdictionaries.com/definition/english/rescue-dog,C1,rescue dog,chó cứu hộ,noun,/ˈreskjuː dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rescu/rescue_dog_1_gb_1.mp3
+lurcher,https://www.oxfordlearnersdictionaries.com/definition/english/lurcher,C2,lurcher,người đi lang thang,noun,/ˈlɜːtʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lur/lurch/lurcher__gb_1.mp3
+rottweiler,https://www.oxfordlearnersdictionaries.com/definition/english/rottweiler,C2,Rottweiler,Rottweiler,noun,/ˈrɒtwaɪlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rot/rottw/rottweiler__gb_1.mp3
+schnauzer,https://www.oxfordlearnersdictionaries.com/definition/english/schnauzer,C2,schnauzer,schnauzer,noun,/ˈʃnaʊzə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schna/schnauzer__gb_1.mp3
+running_dog,https://www.oxfordlearnersdictionaries.com/definition/english/running-dog,C2,running dog,chó chạy,noun,/ˈrʌnɪŋ dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/run/runni/running_dog_1_gb_1.mp3
+sausage_dog,https://www.oxfordlearnersdictionaries.com/definition/english/sausage-dog,C2,sausage dog,chó xúc xích,noun,/ˈsɒsɪdʒ dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sau/sausa/sausage_dog_1_gb_1.mp3
+seeing_eye_dog™,https://www.oxfordlearnersdictionaries.com/definition/english/seeing-eye-dogtm,C1,Seeing Eye dog™,Chó Mắt™,noun,/ˌsiːɪŋ ˈaɪ dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/see/seein/seeing_eye_dog_1_gb_1.mp3
+scottie,https://www.oxfordlearnersdictionaries.com/definition/english/scottie,C2,Scottie,Scottie,noun,/ˈskɒti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sco/scott/scottie__gb_1.mp3
+retriever,https://www.oxfordlearnersdictionaries.com/definition/english/retriever,C2,retriever,người săn mồi,noun,/rɪˈtriːvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ret/retri/retriever__gb_1.mp3
+setter,https://www.oxfordlearnersdictionaries.com/definition/english/setter,C2,setter,người định cư,noun,/ˈsetə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/set/sette/setter__gb_1.mp3
+scottish_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/scottish-terrier,C2,Scottish terrier,Chó sục Scotland,noun,/ˌskɒtɪʃ ˈteriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sco/scott/scottish_terrier_1_gb_1.mp3
+sheepdog,https://www.oxfordlearnersdictionaries.com/definition/english/sheepdog,B1,sheepdog,chó chăn cừu,noun,/ˈʃiːpdɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/she/sheep/sheepdog__gb_1.mp3
+spaniel,https://www.oxfordlearnersdictionaries.com/definition/english/spaniel,C2,spaniel,giống chó spaniel,noun,/ˈspænjəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spani/spaniel__gb_1.mp3
+tosa,https://www.oxfordlearnersdictionaries.com/definition/english/tosa,C2,tosa,tosa,noun,/ˈtəʊsə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tos/tosa_/tosa__gb_1.mp3
+whippet,https://www.oxfordlearnersdictionaries.com/definition/english/whippet,C2,whippet,roi da,noun,/ˈwɪpɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whi/whipp/whippet__gb_1.mp3
+sniffer_dog,https://www.oxfordlearnersdictionaries.com/definition/english/sniffer-dog,C2,sniffer dog,chó đánh hơi,noun,/ˈsnɪfə dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sni/sniff/sniffer_dog_1_gb_1.mp3
+wolfhound,https://www.oxfordlearnersdictionaries.com/definition/english/wolfhound,C2,wolfhound,chó săn chó sói,noun,/ˈwʊlfhaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wol/wolfh/wolfhound__gb_1.mp3
+yorkshire_terrier,https://www.oxfordlearnersdictionaries.com/definition/english/yorkshire-terrier,C2,Yorkshire terrier,Chó sục Yorkshire,noun,/ˌjɔːkʃə ˈteriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yor/yorks/yorkshire_terrier_1_gb_1.mp3
+terrier,https://www.oxfordlearnersdictionaries.com/definition/english/terrier,C2,terrier,chó sục,noun,/ˈteriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/terri/terrier__gb_1.mp3
+tracker_dog,https://www.oxfordlearnersdictionaries.com/definition/english/tracker-dog,C2,tracker dog,chó theo dõi,noun,/ˈtrækə dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/track/tracker_dog_1_gb_1.mp3

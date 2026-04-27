@@ -1,84 +1,84 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-candidate,https://www.oxfordlearnersdictionaries.com/definition/english/candidate,B1,candidate,ứng viên,noun,/ˈkændɪdət/,
-answer,https://www.oxfordlearnersdictionaries.com/definition/english/answer_1,A1,answer,trả lời,noun,/ˈɑːnsə(r)/,
-assess,https://www.oxfordlearnersdictionaries.com/definition/english/assess,B2,assess,đánh giá,verb,/əˈses/,
-assessor,https://www.oxfordlearnersdictionaries.com/definition/english/assessor,C1,assessor,giám định viên,noun,/əˈsesə(r)/,
-assessment,https://www.oxfordlearnersdictionaries.com/definition/english/assessment,B2,assessment,đánh giá,noun,/əˈsesmənt/,
+candidate,https://www.oxfordlearnersdictionaries.com/definition/english/candidate,B1,candidate,ứng viên,noun,/ˈkændɪdət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/candi/candidate__gb_1.mp3
+answer,https://www.oxfordlearnersdictionaries.com/definition/english/answer_1,A1,answer,trả lời,noun,/ˈɑːnsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ans/answe/answer__gb_1.mp3
+assess,https://www.oxfordlearnersdictionaries.com/definition/english/assess,B2,assess,đánh giá,verb,/əˈses/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/asses/assess__gb_2.mp3
+assessor,https://www.oxfordlearnersdictionaries.com/definition/english/assessor,C1,assessor,giám định viên,noun,/əˈsesə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/asses/assessor__gb_1.mp3
+assessment,https://www.oxfordlearnersdictionaries.com/definition/english/assessment,B2,assessment,đánh giá,noun,/əˈsesmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/asses/assessment__gb_2.mp3
 btec,https://www.oxfordlearnersdictionaries.com/definition/english/btec,C2,BTEC,BTEC,noun,/ˈbiːtek/,
-ace,https://www.oxfordlearnersdictionaries.com/definition/english/ace_3,C2,ace,quân át,verb,/eɪs/,
-act,https://www.oxfordlearnersdictionaries.com/definition/english/act_3,C2,ACT,HÀNH ĐỘNG,abbreviation,/ˌeɪ siː ˈtiː/,
-a_level,https://www.oxfordlearnersdictionaries.com/definition/english/a-level,C1,A level,Một cấp độ,noun,/ˈeɪ levl/,
-as_(level),https://www.oxfordlearnersdictionaries.com/definition/english/as-level,C2,AS (level),NHƯ (cấp độ),noun,/ˌeɪ ˈes levl/,
-certificate,https://www.oxfordlearnersdictionaries.com/definition/english/certificate_1,B2,certificate,giấy chứng nhận,noun,/səˈtɪfɪkət/,
-commit,https://www.oxfordlearnersdictionaries.com/definition/english/commit,C2,commit,làm,verb,/kəˈmɪt/,
-coursework,https://www.oxfordlearnersdictionaries.com/definition/english/coursework,B2,coursework,bài tập,noun,/ˈkɔːswɜːk/,
-crib,https://www.oxfordlearnersdictionaries.com/definition/english/crib_1,C2,crib,nôi,noun,/krɪb/,
-core_competency,https://www.oxfordlearnersdictionaries.com/definition/english/core-competency,C2,core competency,năng lực cốt lõi,noun,/ˌkɔː ˈkɒmpɪtənsi/,
-diploma,https://www.oxfordlearnersdictionaries.com/definition/english/diploma,B1,diploma,bằng cấp,noun,/dɪˈpləʊmə/,
-eleven-plus,https://www.oxfordlearnersdictionaries.com/definition/english/eleven-plus,C2,eleven-plus,mười một cộng,noun,/ɪˌlevn ˈplʌs/,
-crib,https://www.oxfordlearnersdictionaries.com/definition/english/crib_2,C2,crib,nôi,verb,/krɪb/,
-exam,https://www.oxfordlearnersdictionaries.com/definition/english/exam,A1,exam,bài thi,noun,/ɪɡˈzæm/,
-examination,https://www.oxfordlearnersdictionaries.com/definition/english/examination,B2,examination,bài kiểm tra,noun,/ɪɡˌzæmɪˈneɪʃn/,
-examinee,https://www.oxfordlearnersdictionaries.com/definition/english/examinee,C2,examinee,thí sinh,noun,/ɪɡˌzæmɪˈniː/,
-f,https://www.oxfordlearnersdictionaries.com/definition/english/f_2,C1,F,F,noun,/ef/,
-fail,https://www.oxfordlearnersdictionaries.com/definition/english/fail_1,A2,fail,thất bại,verb,/feɪl/,
-flunk,https://www.oxfordlearnersdictionaries.com/definition/english/flunk,C2,flunk,thất bại,verb,/flʌŋk/,
+ace,https://www.oxfordlearnersdictionaries.com/definition/english/ace_3,C2,ace,quân át,verb,/eɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ace/ace__/ace__gb_1.mp3
+act,https://www.oxfordlearnersdictionaries.com/definition/english/act_3,C2,ACT,HÀNH ĐỘNG,abbreviation,/ˌeɪ siː ˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/act/act__/act__gb_2.mp3
+a_level,https://www.oxfordlearnersdictionaries.com/definition/english/a-level,C1,A level,Một cấp độ,noun,/ˈeɪ levl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/a_l/a_lev/a_level_1_gb_1.mp3
+as_(level),https://www.oxfordlearnersdictionaries.com/definition/english/as-level,C2,AS (level),NHƯ (cấp độ),noun,/ˌeɪ ˈes levl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/as_/as_le/as_level__1_gb_1.mp3
+certificate,https://www.oxfordlearnersdictionaries.com/definition/english/certificate_1,B2,certificate,giấy chứng nhận,noun,/səˈtɪfɪkət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cer/certi/certificate__gb_4.mp3
+commit,https://www.oxfordlearnersdictionaries.com/definition/english/commit,C2,commit,làm,verb,/kəˈmɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commi/commit__gb_2.mp3
+coursework,https://www.oxfordlearnersdictionaries.com/definition/english/coursework,B2,coursework,bài tập,noun,/ˈkɔːswɜːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/cours/coursework__gb_2.mp3
+crib,https://www.oxfordlearnersdictionaries.com/definition/english/crib_1,C2,crib,nôi,noun,/krɪb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cri/crib_/crib__gb_1.mp3
+core_competency,https://www.oxfordlearnersdictionaries.com/definition/english/core-competency,C2,core competency,năng lực cốt lõi,noun,/ˌkɔː ˈkɒmpɪtənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/core_/core_competency_1_gb_1.mp3
+diploma,https://www.oxfordlearnersdictionaries.com/definition/english/diploma,B1,diploma,bằng cấp,noun,/dɪˈpləʊmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dip/diplo/diploma__gb_1.mp3
+eleven-plus,https://www.oxfordlearnersdictionaries.com/definition/english/eleven-plus,C2,eleven-plus,mười một cộng,noun,/ɪˌlevn ˈplʌs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/eleve/eleven_plus_1_gb_1.mp3
+crib,https://www.oxfordlearnersdictionaries.com/definition/english/crib_2,C2,crib,nôi,verb,/krɪb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cri/crib_/crib__gb_1.mp3
+exam,https://www.oxfordlearnersdictionaries.com/definition/english/exam,A1,exam,bài thi,noun,/ɪɡˈzæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exa/exam_/exam__gb_1.mp3
+examination,https://www.oxfordlearnersdictionaries.com/definition/english/examination,B2,examination,bài kiểm tra,noun,/ɪɡˌzæmɪˈneɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exa/exami/examination__gb_2.mp3
+examinee,https://www.oxfordlearnersdictionaries.com/definition/english/examinee,C2,examinee,thí sinh,noun,/ɪɡˌzæmɪˈniː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exa/exami/examinee__gb_1.mp3
+f,https://www.oxfordlearnersdictionaries.com/definition/english/f_2,C1,F,F,noun,/ef/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/f_s/f_s_1/f_s_1_gb_1.mp3
+fail,https://www.oxfordlearnersdictionaries.com/definition/english/fail_1,A2,fail,thất bại,verb,/feɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fai/fail_/fail__gb_1.mp3
+flunk,https://www.oxfordlearnersdictionaries.com/definition/english/flunk,C2,flunk,thất bại,verb,/flʌŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flu/flunk/flunk__gb_1.mp3
 gcse,https://www.oxfordlearnersdictionaries.com/definition/english/gcse,C1,GCSE,GCSE,noun,/ˌdʒiː siː es ˈiː/,
-grade,https://www.oxfordlearnersdictionaries.com/definition/english/grade_2,B2,grade,cấp,verb,/ɡreɪd/,
-grade,https://www.oxfordlearnersdictionaries.com/definition/english/grade_1,B1,grade,cấp,noun,/ɡreɪd/,
+grade,https://www.oxfordlearnersdictionaries.com/definition/english/grade_2,B2,grade,cấp,verb,/ɡreɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grade/grade__gb_1.mp3
+grade,https://www.oxfordlearnersdictionaries.com/definition/english/grade_1,B1,grade,cấp,noun,/ɡreɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grade/grade__gb_1.mp3
 ged,https://www.oxfordlearnersdictionaries.com/definition/english/ged,C2,GED,GED,noun,/ˌdʒiː iː ˈdiː/,
-invigilate,https://www.oxfordlearnersdictionaries.com/definition/english/invigilate,C2,invigilate,giám thị,verb,/ɪnˈvɪdʒɪleɪt/,
-grade_inflation,https://www.oxfordlearnersdictionaries.com/definition/english/grade-inflation,C2,grade inflation,lạm phát cấp,noun,/ˈɡreɪd ɪnfleɪʃn/,
-invigilation,https://www.oxfordlearnersdictionaries.com/definition/english/invigilation,C2,invigilation,giám sát,noun,/ɪnˌvɪdʒɪˈleɪʃn/,
-mark,https://www.oxfordlearnersdictionaries.com/definition/english/mark_2,B1,mark,đánh dấu,noun,/mɑːk/,
-make-up,https://www.oxfordlearnersdictionaries.com/definition/english/make-up_2,C2,make-up,trang điểm,noun,/ˈmeɪk ʌp/,
+invigilate,https://www.oxfordlearnersdictionaries.com/definition/english/invigilate,C2,invigilate,giám thị,verb,/ɪnˈvɪdʒɪleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/invig/invigilate__gb_1.mp3
+grade_inflation,https://www.oxfordlearnersdictionaries.com/definition/english/grade-inflation,C2,grade inflation,lạm phát cấp,noun,/ˈɡreɪd ɪnfleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grade/grade_inflation_1_gb_1.mp3
+invigilation,https://www.oxfordlearnersdictionaries.com/definition/english/invigilation,C2,invigilation,giám sát,noun,/ɪnˌvɪdʒɪˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/invig/invigilation__gb_1.mp3
+mark,https://www.oxfordlearnersdictionaries.com/definition/english/mark_2,B1,mark,đánh dấu,noun,/mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/mark_/mark__gb_1.mp3
+make-up,https://www.oxfordlearnersdictionaries.com/definition/english/make-up_2,C2,make-up,trang điểm,noun,/ˈmeɪk ʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mak/make_/make_up_1_gb_1.mp3
 mark_down,https://www.oxfordlearnersdictionaries.com/definition/english/mark-down,C2,mark down,đánh dấu xuống,phrasal verb,,
-mark,https://www.oxfordlearnersdictionaries.com/definition/english/mark_1,B1,mark,đánh dấu,verb,/mɑːk/,
-k-12,https://www.oxfordlearnersdictionaries.com/definition/english/k-12,C2,K-12,K-12,adjective,/ˌkeɪ ˈtwelv/,
-matric_exemption,https://www.oxfordlearnersdictionaries.com/definition/english/matric-exemption,C2,matric exemption,miễn trừ ma trận,noun,/məˌtrɪk ɪɡˈzempʃn/,
-igcse,https://www.oxfordlearnersdictionaries.com/definition/english/igcse,C1,IGCSE,IGCSE,noun,/ˌaɪ dʒiː siː es ˈiː/,
-grade_point_average,https://www.oxfordlearnersdictionaries.com/definition/english/grade-point-average,C2,grade point average,điểm trung bình,noun,/ˈɡreɪd pɔɪnt ævərɪdʒ/,
-matriculation,https://www.oxfordlearnersdictionaries.com/definition/english/matriculation,C2,matriculation,trúng tuyển,noun,/məˌtrɪkjuˈleɪʃn/,
-mock,https://www.oxfordlearnersdictionaries.com/definition/english/mock_3,C2,mock,giả vờ,noun,/mɒk/,
-memorize,https://www.oxfordlearnersdictionaries.com/definition/english/memorize,B1,memorize,ghi nhớ,verb,/ˈmeməraɪz/,
-mock,https://www.oxfordlearnersdictionaries.com/definition/english/mock_2,C2,mock,giả vờ,adjective,/mɒk/,
-merit,https://www.oxfordlearnersdictionaries.com/definition/english/merit_1,C2,merit,công lao,noun,/ˈmerɪt/,
-moderate,https://www.oxfordlearnersdictionaries.com/definition/english/moderate_2,C2,moderate,vừa phải,verb,/ˈmɒdəreɪt/,
-oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_2,C1,oral,miệng,noun,/ˈɔːrəl/,
-ofsted,https://www.oxfordlearnersdictionaries.com/definition/english/ofsted,C2,Ofsted,Ofsted,abbreviation,/ˈɒfsted/,
-pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_1,A2,pass,vượt qua,verb,/pɑːs/,
-pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_2,B1,pass,vượt qua,noun,/pɑːs/,
-passing,https://www.oxfordlearnersdictionaries.com/definition/english/passing_2,C1,passing,đi qua,adjective,/ˈpɑːsɪŋ/,
-qualification,https://www.oxfordlearnersdictionaries.com/definition/english/qualification,B1,qualification,trình độ chuyên môn,noun,/ˌkwɒlɪfɪˈkeɪʃn/,
-plus,https://www.oxfordlearnersdictionaries.com/definition/english/plus1_2,C2,plus,cộng thêm,adjective,/plʌs/,
-practical,https://www.oxfordlearnersdictionaries.com/definition/english/practical_2,C1,practical,thực tế,noun,/ˈpræktɪkl/,
-pass-fail,https://www.oxfordlearnersdictionaries.com/definition/english/pass-fail_1,C1,pass-fail,đạt-thất bại,adverb,/ˌpɑːs ˈfeɪl/,
-pass-fail,https://www.oxfordlearnersdictionaries.com/definition/english/pass-fail_2,C1,pass-fail,đạt-thất bại,adjective,/ˌpɑːs ˈfeɪl/,
-qualified,https://www.oxfordlearnersdictionaries.com/definition/english/qualified,B1,qualified,đạt tiêu chuẩn,adjective,/ˈkwɒlɪfaɪd/,
-qualify,https://www.oxfordlearnersdictionaries.com/definition/english/qualify,B1,qualify,đủ điều kiện,verb,/ˈkwɒlɪfaɪ/,
-result,https://www.oxfordlearnersdictionaries.com/definition/english/result_1,A1,result,kết quả,noun,/rɪˈzʌlt/,
-resit,https://www.oxfordlearnersdictionaries.com/definition/english/resit_2,C2,resit,ngồi lại,verb,/ˌriːˈsɪt/,
-review,https://www.oxfordlearnersdictionaries.com/definition/english/review_1,A2,review,ôn tập,noun,/rɪˈvjuː/,
-review,https://www.oxfordlearnersdictionaries.com/definition/english/review_2,A2,review,ôn tập,verb,/rɪˈvjuː/,
-revision,https://www.oxfordlearnersdictionaries.com/definition/english/revision,B2,revision,ôn tập,noun,/rɪˈvɪʒn/,
-rubric,https://www.oxfordlearnersdictionaries.com/definition/english/rubric,C2,rubric,phiếu tự đánh giá,noun,/ˈruːbrɪk/,
-retake,https://www.oxfordlearnersdictionaries.com/definition/english/retake_2,C1,retake,thi lại,noun,/ˈriːteɪk/,
-resit,https://www.oxfordlearnersdictionaries.com/definition/english/resit_1,C2,resit,ngồi lại,noun,/ˈriːsɪt/,
-revise,https://www.oxfordlearnersdictionaries.com/definition/english/revise,B1,revise,ôn lại,verb,/rɪˈvaɪz/,
-sat,https://www.oxfordlearnersdictionaries.com/definition/english/sat_2,C2,SAT,ĐÃ NGỒI,noun,/ˌes eɪ ˈtiː/,
-sce,https://www.oxfordlearnersdictionaries.com/definition/english/sce,C2,SCE,SCE,abbreviation,/ˌes siː ˈiː/,
-script,https://www.oxfordlearnersdictionaries.com/definition/english/script_1,C2,script,kịch bản,noun,/skrɪpt/,
-score,https://www.oxfordlearnersdictionaries.com/definition/english/score_1,B1,score,điểm,verb,/skɔː(r)/,
-score,https://www.oxfordlearnersdictionaries.com/definition/english/score_2,A2,score,điểm,noun,/skɔː(r)/,
-stream,https://www.oxfordlearnersdictionaries.com/definition/english/stream_2,C2,stream,suối,verb,/striːm/,
-streaming,https://www.oxfordlearnersdictionaries.com/definition/english/streaming,C1,streaming,phát trực tuyến,noun,/ˈstriːmɪŋ/,
-swot,https://www.oxfordlearnersdictionaries.com/definition/english/swot_2,C2,swot,swat,verb,/swɒt/,
-sit,https://www.oxfordlearnersdictionaries.com/definition/english/sit,C2,sit,ngồi,verb,/sɪt/,
+mark,https://www.oxfordlearnersdictionaries.com/definition/english/mark_1,B1,mark,đánh dấu,verb,/mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/mark_/mark__gb_1.mp3
+k-12,https://www.oxfordlearnersdictionaries.com/definition/english/k-12,C2,K-12,K-12,adjective,/ˌkeɪ ˈtwelv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/k_1/k_12_/k_12_1_gb_1.mp3
+matric_exemption,https://www.oxfordlearnersdictionaries.com/definition/english/matric-exemption,C2,matric exemption,miễn trừ ma trận,noun,/məˌtrɪk ɪɡˈzempʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matri/matric_exemption_1_gb_1.mp3
+igcse,https://www.oxfordlearnersdictionaries.com/definition/english/igcse,C1,IGCSE,IGCSE,noun,/ˌaɪ dʒiː siː es ˈiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/igc/igcse/igcse_1_gb_1.mp3
+grade_point_average,https://www.oxfordlearnersdictionaries.com/definition/english/grade-point-average,C2,grade point average,điểm trung bình,noun,/ˈɡreɪd pɔɪnt ævərɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grade/grade_point_average_1_gb_2.mp3
+matriculation,https://www.oxfordlearnersdictionaries.com/definition/english/matriculation,C2,matriculation,trúng tuyển,noun,/məˌtrɪkjuˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matri/matriculation__gb_1.mp3
+mock,https://www.oxfordlearnersdictionaries.com/definition/english/mock_3,C2,mock,giả vờ,noun,/mɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/moc/mock_/mock__gb_1.mp3
+memorize,https://www.oxfordlearnersdictionaries.com/definition/english/memorize,B1,memorize,ghi nhớ,verb,/ˈmeməraɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mem/memor/memorize__gb_1.mp3
+mock,https://www.oxfordlearnersdictionaries.com/definition/english/mock_2,C2,mock,giả vờ,adjective,/mɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/moc/mock_/mock__gb_1.mp3
+merit,https://www.oxfordlearnersdictionaries.com/definition/english/merit_1,C2,merit,công lao,noun,/ˈmerɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mer/merit/merit__gb_1.mp3
+moderate,https://www.oxfordlearnersdictionaries.com/definition/english/moderate_2,C2,moderate,vừa phải,verb,/ˈmɒdəreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mod/moder/moderate__gb_4.mp3
+oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_2,C1,oral,miệng,noun,/ˈɔːrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ora/oral_/oral__gb_1.mp3
+ofsted,https://www.oxfordlearnersdictionaries.com/definition/english/ofsted,C2,Ofsted,Ofsted,abbreviation,/ˈɒfsted/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ofs/ofste/ofsted__gb_1.mp3
+pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_1,A2,pass,vượt qua,verb,/pɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pass_/pass__gb_1.mp3
+pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_2,B1,pass,vượt qua,noun,/pɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pass_/pass__gb_1.mp3
+passing,https://www.oxfordlearnersdictionaries.com/definition/english/passing_2,C1,passing,đi qua,adjective,/ˈpɑːsɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passi/passing__gb_1.mp3
+qualification,https://www.oxfordlearnersdictionaries.com/definition/english/qualification,B1,qualification,trình độ chuyên môn,noun,/ˌkwɒlɪfɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quali/qualification__gb_1.mp3
+plus,https://www.oxfordlearnersdictionaries.com/definition/english/plus1_2,C2,plus,cộng thêm,adjective,/plʌs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plu/plus_/plus__gb_3.mp3
+practical,https://www.oxfordlearnersdictionaries.com/definition/english/practical_2,C1,practical,thực tế,noun,/ˈpræktɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pra/pract/practical__gb_2.mp3
+pass-fail,https://www.oxfordlearnersdictionaries.com/definition/english/pass-fail_1,C1,pass-fail,đạt-thất bại,adverb,/ˌpɑːs ˈfeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pass_/pass_fail_1_gb_1.mp3
+pass-fail,https://www.oxfordlearnersdictionaries.com/definition/english/pass-fail_2,C1,pass-fail,đạt-thất bại,adjective,/ˌpɑːs ˈfeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pass_/pass_fail_1_gb_1.mp3
+qualified,https://www.oxfordlearnersdictionaries.com/definition/english/qualified,B1,qualified,đạt tiêu chuẩn,adjective,/ˈkwɒlɪfaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quali/qualified__gb_1.mp3
+qualify,https://www.oxfordlearnersdictionaries.com/definition/english/qualify,B1,qualify,đủ điều kiện,verb,/ˈkwɒlɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quali/qualify__gb_1.mp3
+result,https://www.oxfordlearnersdictionaries.com/definition/english/result_1,A1,result,kết quả,noun,/rɪˈzʌlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resul/result__gb_3.mp3
+resit,https://www.oxfordlearnersdictionaries.com/definition/english/resit_2,C2,resit,ngồi lại,verb,/ˌriːˈsɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resit/resit__gb_1.mp3
+review,https://www.oxfordlearnersdictionaries.com/definition/english/review_1,A2,review,ôn tập,noun,/rɪˈvjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/revie/review__gb_2.mp3
+review,https://www.oxfordlearnersdictionaries.com/definition/english/review_2,A2,review,ôn tập,verb,/rɪˈvjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/revie/review__gb_2.mp3
+revision,https://www.oxfordlearnersdictionaries.com/definition/english/revision,B2,revision,ôn tập,noun,/rɪˈvɪʒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/revis/revision__gb_1.mp3
+rubric,https://www.oxfordlearnersdictionaries.com/definition/english/rubric,C2,rubric,phiếu tự đánh giá,noun,/ˈruːbrɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rub/rubri/rubric__gb_1.mp3
+retake,https://www.oxfordlearnersdictionaries.com/definition/english/retake_2,C1,retake,thi lại,noun,/ˈriːteɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ret/retak/retake__gb_2.mp3
+resit,https://www.oxfordlearnersdictionaries.com/definition/english/resit_1,C2,resit,ngồi lại,noun,/ˈriːsɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resit/resit__gb_2.mp3
+revise,https://www.oxfordlearnersdictionaries.com/definition/english/revise,B1,revise,ôn lại,verb,/rɪˈvaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/revis/revise__gb_2.mp3
+sat,https://www.oxfordlearnersdictionaries.com/definition/english/sat_2,C2,SAT,ĐÃ NGỒI,noun,/ˌes eɪ ˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sat/sat__/sat__gb_2.mp3
+sce,https://www.oxfordlearnersdictionaries.com/definition/english/sce,C2,SCE,SCE,abbreviation,/ˌes siː ˈiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sce/sce__/sce__gb_1.mp3
+script,https://www.oxfordlearnersdictionaries.com/definition/english/script_1,C2,script,kịch bản,noun,/skrɪpt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrip/script__gb_1.mp3
+score,https://www.oxfordlearnersdictionaries.com/definition/english/score_1,B1,score,điểm,verb,/skɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sco/score/score__gb_1.mp3
+score,https://www.oxfordlearnersdictionaries.com/definition/english/score_2,A2,score,điểm,noun,/skɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sco/score/score__gb_1.mp3
+stream,https://www.oxfordlearnersdictionaries.com/definition/english/stream_2,C2,stream,suối,verb,/striːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/strea/stream__gb_1.mp3
+streaming,https://www.oxfordlearnersdictionaries.com/definition/english/streaming,C1,streaming,phát trực tuyến,noun,/ˈstriːmɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/strea/streaming__gb_1.mp3
+swot,https://www.oxfordlearnersdictionaries.com/definition/english/swot_2,C2,swot,swat,verb,/swɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swo/swot_/swot__gb_1.mp3
+sit,https://www.oxfordlearnersdictionaries.com/definition/english/sit,C2,sit,ngồi,verb,/sɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sit/sit__/sit__gb_1.mp3
 swot_up_on,https://www.oxfordlearnersdictionaries.com/definition/english/swot-up-on,C2,swot up on,tiếp tục,phrasal verb,,
-test,https://www.oxfordlearnersdictionaries.com/definition/english/test_1,A1,test,Bài kiểm tra,noun,/test/,
-text,https://www.oxfordlearnersdictionaries.com/definition/english/text_1,A1,text,chữ,noun,/tekst/,
-take,https://www.oxfordlearnersdictionaries.com/definition/english/take_1,A2,take,lấy,verb,/teɪk/,
-test,https://www.oxfordlearnersdictionaries.com/definition/english/test_2,A1,test,Bài kiểm tra,verb,/test/,
-written,https://www.oxfordlearnersdictionaries.com/definition/english/written_1,B1,written,bằng văn bản,adjective,/ˈrɪtn/,
+test,https://www.oxfordlearnersdictionaries.com/definition/english/test_1,A1,test,Bài kiểm tra,noun,/test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test__gb_1.mp3
+text,https://www.oxfordlearnersdictionaries.com/definition/english/text_1,A1,text,chữ,noun,/tekst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tex/text_/text__gb_1.mp3
+take,https://www.oxfordlearnersdictionaries.com/definition/english/take_1,A2,take,lấy,verb,/teɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tak/take_/take__gb_1.mp3
+test,https://www.oxfordlearnersdictionaries.com/definition/english/test_2,A1,test,Bài kiểm tra,verb,/test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test__gb_1.mp3
+written,https://www.oxfordlearnersdictionaries.com/definition/english/written_1,B1,written,bằng văn bản,adjective,/ˈrɪtn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wri/writt/written__gb_2.mp3
 swot_up,https://www.oxfordlearnersdictionaries.com/definition/english/swot-up,C2,swot up,đánh thức,phrasal verb,,
-weighting,https://www.oxfordlearnersdictionaries.com/definition/english/weighting,C2,weighting,cân nặng,noun,/ˈweɪtɪŋ/,
+weighting,https://www.oxfordlearnersdictionaries.com/definition/english/weighting,C2,weighting,cân nặng,noun,/ˈweɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wei/weigh/weighting__gb_1.mp3

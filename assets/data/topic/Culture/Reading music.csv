@@ -1,39 +1,39 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-chord,https://www.oxfordlearnersdictionaries.com/definition/english/chord,C2,chord,dây nhau,noun,/kɔːd/,
-c,https://www.oxfordlearnersdictionaries.com/definition/english/c_2,B1,C,C,noun,/siː/,
-clef,https://www.oxfordlearnersdictionaries.com/definition/english/clef,C2,clef,khóa của âm nhạc,noun,/klef/,
-coda,https://www.oxfordlearnersdictionaries.com/definition/english/coda,C2,coda,coda,noun,/ˈkəʊdə/,
-bass,https://www.oxfordlearnersdictionaries.com/definition/english/bass1_1,C1,bass,âm trầm,noun,/beɪs/,
-b,https://www.oxfordlearnersdictionaries.com/definition/english/b_1,B1,B,B,noun,/biː/,
-crescendo,https://www.oxfordlearnersdictionaries.com/definition/english/crescendo,C2,crescendo,lên đến đỉnh điểm,noun,/krəˈʃendəʊ/,
-bar,https://www.oxfordlearnersdictionaries.com/definition/english/bar_1,C1,bar,thanh,noun,/bɑː(r)/,
-bar_line,https://www.oxfordlearnersdictionaries.com/definition/english/bar-line,C2,bar line,dòng thanh,noun,/ˈbɑː laɪn/,
-crotchet,https://www.oxfordlearnersdictionaries.com/definition/english/crotchet,C2,crotchet,cái móc,noun,/ˈkrɒtʃɪt/,
-d,https://www.oxfordlearnersdictionaries.com/definition/english/d_2,B1,D,D,noun,/diː/,
-flat,https://www.oxfordlearnersdictionaries.com/definition/english/flat_2,C1,flat,phẳng,adjective,/flæt/,
-f,https://www.oxfordlearnersdictionaries.com/definition/english/f_2,B1,F,F,noun,/ef/,
-e,https://www.oxfordlearnersdictionaries.com/definition/english/e_1,B1,E,E,noun,/iː/,
-dynamic,https://www.oxfordlearnersdictionaries.com/definition/english/dynamic_2,C2,dynamic,năng động,noun,/daɪˈnæmɪk/,
-dot,https://www.oxfordlearnersdictionaries.com/definition/english/dot_1,C2,dot,dấu chấm,noun,/dɒt/,
-g,https://www.oxfordlearnersdictionaries.com/definition/english/g_3,B1,G,G,noun,/dʒiː/,
-double_bar,https://www.oxfordlearnersdictionaries.com/definition/english/double-bar,C2,double bar,thanh đôi,noun,/ˌdʌbl ˈbɑː(r)/,
-key,https://www.oxfordlearnersdictionaries.com/definition/english/key_1,C1,key,chìa khóa,noun,/kiː/,
-key_signature,https://www.oxfordlearnersdictionaries.com/definition/english/key-signature,C2,key signature,chữ ký chính,noun,/ˈkiː sɪɡnətʃə(r)/,
-notation,https://www.oxfordlearnersdictionaries.com/definition/english/notation,C2,notation,ký hiệu,noun,/nəʊˈteɪʃn/,
-minim,https://www.oxfordlearnersdictionaries.com/definition/english/minim,C2,minim,tối thiểu,noun,/ˈmɪnɪm/,
-measure,https://www.oxfordlearnersdictionaries.com/definition/english/measure_2,C2,measure,đo lường,noun,/ˈmeʒə(r)/,
-octave,https://www.oxfordlearnersdictionaries.com/definition/english/octave,C2,octave,quãng tám,noun,/ˈɒktɪv/,
-natural,https://www.oxfordlearnersdictionaries.com/definition/english/natural_1,C2,natural,tự nhiên,adjective,/ˈnætʃrəl/,
-diminuendo,https://www.oxfordlearnersdictionaries.com/definition/english/diminuendo,C2,diminuendo,sự giảm nhẹ,noun,/dɪˌmɪnjuˈendəʊ/,
-quaver,https://www.oxfordlearnersdictionaries.com/definition/english/quaver_2,C2,quaver,run rẩy,noun,/ˈkweɪvə(r)/,
-rest,https://www.oxfordlearnersdictionaries.com/definition/english/rest_1,C2,rest,nghỉ ngơi,noun,/rest/,
-scale,https://www.oxfordlearnersdictionaries.com/definition/english/scale_1,C1,scale,tỉ lệ,noun,/skeɪl/,
-score,https://www.oxfordlearnersdictionaries.com/definition/english/score_2,C1,score,điểm,noun,/skɔː(r)/,
-semibreve,https://www.oxfordlearnersdictionaries.com/definition/english/semibreve,C2,semibreve,nửa dấu,noun,/ˈsemibriːv/,
-sharp,https://www.oxfordlearnersdictionaries.com/definition/english/sharp_1,C1,sharp,sắc,adjective,/ʃɑːp/,
-staff,https://www.oxfordlearnersdictionaries.com/definition/english/staff_1,C2,staff,nhân viên,noun,/stɑːf/,
-tempo,https://www.oxfordlearnersdictionaries.com/definition/english/tempo,C2,tempo,nhịp độ,noun,/ˈtempəʊ/,
-tie,https://www.oxfordlearnersdictionaries.com/definition/english/tie_2,C2,tie,cà vạt,noun,/taɪ/,
-semiquaver,https://www.oxfordlearnersdictionaries.com/definition/english/semiquaver,C2,semiquaver,bán động,noun,/ˈsemikweɪvə(r)/,
-treble,https://www.oxfordlearnersdictionaries.com/definition/english/treble_1,C2,treble,cú ăn ba,noun,/ˈtrebl/,
-time_signature,https://www.oxfordlearnersdictionaries.com/definition/english/time-signature,C2,time signature,chữ ký thời gian,noun,/ˈtaɪm sɪɡnətʃə(r)/,
+chord,https://www.oxfordlearnersdictionaries.com/definition/english/chord,C2,chord,dây nhau,noun,/kɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cho/chord/chord__gb_2.mp3
+c,https://www.oxfordlearnersdictionaries.com/definition/english/c_2,B1,C,C,noun,/siː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/c_s/c_s_1/c_s_1_gb_2.mp3
+clef,https://www.oxfordlearnersdictionaries.com/definition/english/clef,C2,clef,khóa của âm nhạc,noun,/klef/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clef_/clef__gb_1.mp3
+coda,https://www.oxfordlearnersdictionaries.com/definition/english/coda,C2,coda,coda,noun,/ˈkəʊdə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cod/coda_/coda__gb_1.mp3
+bass,https://www.oxfordlearnersdictionaries.com/definition/english/bass1_1,C1,bass,âm trầm,noun,/beɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bas/bass_/bass__gb_6.mp3
+b,https://www.oxfordlearnersdictionaries.com/definition/english/b_1,B1,B,B,noun,/biː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/b_s/b_s_1/b_s_1_gb_1.mp3
+crescendo,https://www.oxfordlearnersdictionaries.com/definition/english/crescendo,C2,crescendo,lên đến đỉnh điểm,noun,/krəˈʃendəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/cresc/crescendo__gb_1.mp3
+bar,https://www.oxfordlearnersdictionaries.com/definition/english/bar_1,C1,bar,thanh,noun,/bɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/bar__/bar__gb_1.mp3
+bar_line,https://www.oxfordlearnersdictionaries.com/definition/english/bar-line,C2,bar line,dòng thanh,noun,/ˈbɑː laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/bar_l/bar_line_1_gb_1.mp3
+crotchet,https://www.oxfordlearnersdictionaries.com/definition/english/crotchet,C2,crotchet,cái móc,noun,/ˈkrɒtʃɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/crotc/crotchet__gb_1.mp3
+d,https://www.oxfordlearnersdictionaries.com/definition/english/d_2,B1,D,D,noun,/diː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/d_s/d_s_1/d_s_1_gb_1.mp3
+flat,https://www.oxfordlearnersdictionaries.com/definition/english/flat_2,C1,flat,phẳng,adjective,/flæt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flat_/flat__gb_1.mp3
+f,https://www.oxfordlearnersdictionaries.com/definition/english/f_2,B1,F,F,noun,/ef/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/f_s/f_s_1/f_s_1_gb_1.mp3
+e,https://www.oxfordlearnersdictionaries.com/definition/english/e_1,B1,E,E,noun,/iː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/e_s/e_s_1/e_s_1_gb_1.mp3
+dynamic,https://www.oxfordlearnersdictionaries.com/definition/english/dynamic_2,C2,dynamic,năng động,noun,/daɪˈnæmɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dyn/dynam/dynamic__gb_1.mp3
+dot,https://www.oxfordlearnersdictionaries.com/definition/english/dot_1,C2,dot,dấu chấm,noun,/dɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dot/dot__/dot__gb_1.mp3
+g,https://www.oxfordlearnersdictionaries.com/definition/english/g_3,B1,G,G,noun,/dʒiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/g_s/g_s_1/g_s_1_gb_2.mp3
+double_bar,https://www.oxfordlearnersdictionaries.com/definition/english/double-bar,C2,double bar,thanh đôi,noun,/ˌdʌbl ˈbɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dou/doubl/double_bar_1_gb_1.mp3
+key,https://www.oxfordlearnersdictionaries.com/definition/english/key_1,C1,key,chìa khóa,noun,/kiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/key/key__/key__gb_3.mp3
+key_signature,https://www.oxfordlearnersdictionaries.com/definition/english/key-signature,C2,key signature,chữ ký chính,noun,/ˈkiː sɪɡnətʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/key/key_s/key_signature_1_gb_1.mp3
+notation,https://www.oxfordlearnersdictionaries.com/definition/english/notation,C2,notation,ký hiệu,noun,/nəʊˈteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/not/notat/notation__gb_1.mp3
+minim,https://www.oxfordlearnersdictionaries.com/definition/english/minim,C2,minim,tối thiểu,noun,/ˈmɪnɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minim/minim__gb_1.mp3
+measure,https://www.oxfordlearnersdictionaries.com/definition/english/measure_2,C2,measure,đo lường,noun,/ˈmeʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mea/measu/measure__gb_3.mp3
+octave,https://www.oxfordlearnersdictionaries.com/definition/english/octave,C2,octave,quãng tám,noun,/ˈɒktɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oct/octav/octave__gb_1.mp3
+natural,https://www.oxfordlearnersdictionaries.com/definition/english/natural_1,C2,natural,tự nhiên,adjective,/ˈnætʃrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nat/natur/natural__gb_6.mp3
+diminuendo,https://www.oxfordlearnersdictionaries.com/definition/english/diminuendo,C2,diminuendo,sự giảm nhẹ,noun,/dɪˌmɪnjuˈendəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dim/dimin/diminuendo__gb_1.mp3
+quaver,https://www.oxfordlearnersdictionaries.com/definition/english/quaver_2,C2,quaver,run rẩy,noun,/ˈkweɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quave/quaver__gb_1.mp3
+rest,https://www.oxfordlearnersdictionaries.com/definition/english/rest_1,C2,rest,nghỉ ngơi,noun,/rest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rest_/rest__gb_1.mp3
+scale,https://www.oxfordlearnersdictionaries.com/definition/english/scale_1,C1,scale,tỉ lệ,noun,/skeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sca/scale/scale__gb_1.mp3
+score,https://www.oxfordlearnersdictionaries.com/definition/english/score_2,C1,score,điểm,noun,/skɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sco/score/score__gb_1.mp3
+semibreve,https://www.oxfordlearnersdictionaries.com/definition/english/semibreve,C2,semibreve,nửa dấu,noun,/ˈsemibriːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sem/semib/semibreve__gb_1.mp3
+sharp,https://www.oxfordlearnersdictionaries.com/definition/english/sharp_1,C1,sharp,sắc,adjective,/ʃɑːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sha/sharp/sharp__gb_1.mp3
+staff,https://www.oxfordlearnersdictionaries.com/definition/english/staff_1,C2,staff,nhân viên,noun,/stɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/staff/staff__gb_1.mp3
+tempo,https://www.oxfordlearnersdictionaries.com/definition/english/tempo,C2,tempo,nhịp độ,noun,/ˈtempəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tem/tempo/tempo__gb_1.mp3
+tie,https://www.oxfordlearnersdictionaries.com/definition/english/tie_2,C2,tie,cà vạt,noun,/taɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tie/tie__/tie__gb_2.mp3
+semiquaver,https://www.oxfordlearnersdictionaries.com/definition/english/semiquaver,C2,semiquaver,bán động,noun,/ˈsemikweɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sem/semiq/semiquaver__gb_1.mp3
+treble,https://www.oxfordlearnersdictionaries.com/definition/english/treble_1,C2,treble,cú ăn ba,noun,/ˈtrebl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tre/trebl/treble__gb_1.mp3
+time_signature,https://www.oxfordlearnersdictionaries.com/definition/english/time-signature,C2,time signature,chữ ký thời gian,noun,/ˈtaɪm sɪɡnətʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/time_/time_signature_1_gb_1.mp3

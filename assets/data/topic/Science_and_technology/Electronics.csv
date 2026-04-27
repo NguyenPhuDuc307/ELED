@@ -1,60 +1,60 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-amp,https://www.oxfordlearnersdictionaries.com/definition/english/amp,C2,amp,amp,noun,/æmp/,
-bandwidth,https://www.oxfordlearnersdictionaries.com/definition/english/bandwidth,C2,bandwidth,băng thông,noun,/ˈbændwɪdθ/,
-ammeter,https://www.oxfordlearnersdictionaries.com/definition/english/ammeter,C2,ammeter,ampe kế,noun,/ˈæmiːtə(r)/,
-analogue,https://www.oxfordlearnersdictionaries.com/definition/english/analogue_1,C1,analogue,tương tự,adjective,/ˈænəlɒɡ/,
-capacitor,https://www.oxfordlearnersdictionaries.com/definition/english/capacitor,C2,capacitor,tụ điện,noun,/kəˈpæsɪtə(r)/,
-circuit,https://www.oxfordlearnersdictionaries.com/definition/english/circuit,B2,circuit,mạch điện,noun,/ˈsɜːkɪt/,
-circuit_board,https://www.oxfordlearnersdictionaries.com/definition/english/circuit-board,C2,circuit board,bảng mạch,noun,/ˈsɜːkɪt bɔːd/,
+amp,https://www.oxfordlearnersdictionaries.com/definition/english/amp,C2,amp,amp,noun,/æmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amp/amp__/amp__gb_1.mp3
+bandwidth,https://www.oxfordlearnersdictionaries.com/definition/english/bandwidth,C2,bandwidth,băng thông,noun,/ˈbændwɪdθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/bandw/bandwidth__gb_4.mp3
+ammeter,https://www.oxfordlearnersdictionaries.com/definition/english/ammeter,C2,ammeter,ampe kế,noun,/ˈæmiːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amm/ammet/ammeter__gb_1.mp3
+analogue,https://www.oxfordlearnersdictionaries.com/definition/english/analogue_1,C1,analogue,tương tự,adjective,/ˈænəlɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/analo/analogue__gb_1.mp3
+capacitor,https://www.oxfordlearnersdictionaries.com/definition/english/capacitor,C2,capacitor,tụ điện,noun,/kəˈpæsɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/capac/capacitor__gb_1.mp3
+circuit,https://www.oxfordlearnersdictionaries.com/definition/english/circuit,B2,circuit,mạch điện,noun,/ˈsɜːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cir/circu/circuit__gb_1.mp3
+circuit_board,https://www.oxfordlearnersdictionaries.com/definition/english/circuit-board,C2,circuit board,bảng mạch,noun,/ˈsɜːkɪt bɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cir/circu/circuit_board_1_gb_1.mp3
 ac,https://www.oxfordlearnersdictionaries.com/definition/english/ac,C2,AC,AC,abbreviation,/ˌeɪ ˈsiː/,
-blow,https://www.oxfordlearnersdictionaries.com/definition/english/blow_1,C2,blow,thổi,verb,/bləʊ/,
-circuit_breaker,https://www.oxfordlearnersdictionaries.com/definition/english/circuit-breaker,C2,circuit breaker,ngắt mạch,noun,/ˈsɜːkɪt breɪkə(r)/,
-amperage,https://www.oxfordlearnersdictionaries.com/definition/english/amperage,C2,amperage,cường độ dòng điện,noun,/ˈæmpərɪdʒ/,
-coax,https://www.oxfordlearnersdictionaries.com/definition/english/coax_2,C2,coax,dỗ dành,adjective,/ˈkəʊæks/,
-coaxial,https://www.oxfordlearnersdictionaries.com/definition/english/coaxial,C2,coaxial,đồng trục,adjective,/kəʊˈæksiəl/,
-condenser,https://www.oxfordlearnersdictionaries.com/definition/english/condenser,C2,condenser,bình ngưng,noun,/kənˈdensə(r)/,
-conduct,https://www.oxfordlearnersdictionaries.com/definition/english/conduct_1,C1,conduct,chỉ đạo,verb,/kənˈdʌkt/,
-connect,https://www.oxfordlearnersdictionaries.com/definition/english/connect,A2,connect,kết nối,verb,/kəˈnekt/,
-current,https://www.oxfordlearnersdictionaries.com/definition/english/current_2,B2,current,hiện hành,noun,/ˈkʌrənt/,
-dc,https://www.oxfordlearnersdictionaries.com/definition/english/dc,C2,DC,DC,abbreviation,/ˌdiː ˈsiː/,
-diode,https://www.oxfordlearnersdictionaries.com/definition/english/diode,C2,diode,điốt,noun,/ˈdaɪəʊd/,
-electrode,https://www.oxfordlearnersdictionaries.com/definition/english/electrode,C1,electrode,điện cực,noun,/ɪˈlektrəʊd/,
-electronics,https://www.oxfordlearnersdictionaries.com/definition/english/electronics,B2,electronics,thiết bị điện tử,noun,/ɪˌlekˈtrɒnɪks/,
-disconnect,https://www.oxfordlearnersdictionaries.com/definition/english/disconnect_1,C1,disconnect,ngắt kết nối,verb,/ˌdɪskəˈnekt/,
-electric,https://www.oxfordlearnersdictionaries.com/definition/english/electric_1,A2,electric,điện,adjective,/ɪˈlektrɪk/,
-electricity,https://www.oxfordlearnersdictionaries.com/definition/english/electricity,A2,electricity,điện,noun,/ɪˌlekˈtrɪsəti/,
-electronic,https://www.oxfordlearnersdictionaries.com/definition/english/electronic,A2,electronic,điện tử,adjective,/ɪˌlekˈtrɒnɪk/,
-electrical,https://www.oxfordlearnersdictionaries.com/definition/english/electrical,A2,electrical,điện,adjective,/ɪˈlektrɪkl/,
-earth,https://www.oxfordlearnersdictionaries.com/definition/english/earth_1,C2,earth,trái đất,noun,/ɜːθ/,
-earth,https://www.oxfordlearnersdictionaries.com/definition/english/earth_2,C2,earth,trái đất,verb,/ɜːθ/,
-extension_lead,https://www.oxfordlearnersdictionaries.com/definition/english/extension-lead,C2,extension lead,đầu mở rộng,noun,/ɪkˈstenʃn liːd/,
-filament,https://www.oxfordlearnersdictionaries.com/definition/english/filament,C2,filament,dây tóc,noun,/ˈfɪləmənt/,
-live,https://www.oxfordlearnersdictionaries.com/definition/english/live2_1,C1,live,sống,adjective,/laɪv/,
-microchip,https://www.oxfordlearnersdictionaries.com/definition/english/microchip_1,C1,microchip,vi mạch,noun,/ˈmaɪkrəʊtʃɪp/,
-ground,https://www.oxfordlearnersdictionaries.com/definition/english/ground_1,C2,ground,đất,noun,/ɡraʊnd/,
-ground,https://www.oxfordlearnersdictionaries.com/definition/english/ground_2,C2,ground,đất,verb,/ɡraʊnd/,
-ohmmeter,https://www.oxfordlearnersdictionaries.com/definition/english/ohmmeter,C2,ohmmeter,Ôm kế,noun,/ˈəʊmmiːtə(r)/,
-ohm,https://www.oxfordlearnersdictionaries.com/definition/english/ohm,C2,ohm,om,noun,/əʊm/,
-microelectronics,https://www.oxfordlearnersdictionaries.com/definition/english/microelectronics,C2,microelectronics,vi điện tử,noun,/ˌmaɪkrəʊɪˌlekˈtrɒnɪks/,
-microelectronic,https://www.oxfordlearnersdictionaries.com/definition/english/microelectronic,C2,microelectronic,vi điện tử,adjective,/ˌmaɪkrəʊɪˌlekˈtrɒnɪk/,
-oscillator,https://www.oxfordlearnersdictionaries.com/definition/english/oscillator,C2,oscillator,dao động,noun,/ˈɒsɪleɪtə(r)/,
-oscilloscope,https://www.oxfordlearnersdictionaries.com/definition/english/oscilloscope,C2,oscilloscope,máy hiện sóng,noun,/əˈsɪləskəʊp/,
-rewire,https://www.oxfordlearnersdictionaries.com/definition/english/rewire,C2,rewire,nối lại dây,verb,/ˌriːˈwaɪə(r)/,
-semiconductor,https://www.oxfordlearnersdictionaries.com/definition/english/semiconductor,C2,semiconductor,chất bán dẫn,noun,/ˌsemikənˈdʌktə(r)/,
-shock,https://www.oxfordlearnersdictionaries.com/definition/english/shock_1,B2,shock,sốc,noun,/ʃɒk/,
-relay,https://www.oxfordlearnersdictionaries.com/definition/english/relay1_1,C2,relay,tiếp sức,noun,/ˈriːleɪ/,
-parallel_circuit,https://www.oxfordlearnersdictionaries.com/definition/english/parallel-circuit,C2,parallel circuit,mạch song song,noun,/ˌpærəlel ˈsɜːkɪt/,
-photoelectric,https://www.oxfordlearnersdictionaries.com/definition/english/photoelectric,C2,photoelectric,quang điện,adjective,/ˌfəʊtəʊɪˈlektrɪk/,
-silicon_chip,https://www.oxfordlearnersdictionaries.com/definition/english/silicon-chip,C1,silicon chip,chip silicon,noun,/ˌsɪlɪkən ˈtʃɪp/,
-short_circuit,https://www.oxfordlearnersdictionaries.com/definition/english/short-circuit_1,C2,short circuit,ngắn mạch,noun,/ˌʃɔːt ˈsɜːkɪt/,
-solenoid,https://www.oxfordlearnersdictionaries.com/definition/english/solenoid,C2,solenoid,điện từ,noun,/ˈsɒlənɔɪd/,
-transistor,https://www.oxfordlearnersdictionaries.com/definition/english/transistor,C1,transistor,bóng bán dẫn,noun,/trænˈzɪstə(r)/,
-transmitter,https://www.oxfordlearnersdictionaries.com/definition/english/transmitter,C1,transmitter,máy phát,noun,/trænzˈmɪtə(r)/,
-transformer,https://www.oxfordlearnersdictionaries.com/definition/english/transformer,C2,transformer,máy biến áp,noun,/trænsˈfɔːmə(r)/,
-volt,https://www.oxfordlearnersdictionaries.com/definition/english/volt,C2,volt,vôn,noun,/vəʊlt/,
-watt,https://www.oxfordlearnersdictionaries.com/definition/english/watt,C2,watt,oát,noun,/wɒt/,
-voltmeter,https://www.oxfordlearnersdictionaries.com/definition/english/voltmeter,C2,voltmeter,vôn kế,noun,/ˈvəʊltmiːtə(r)/,
-voltage,https://www.oxfordlearnersdictionaries.com/definition/english/voltage,C2,voltage,điện áp,noun,/ˈvəʊltɪdʒ/,
-transducer,https://www.oxfordlearnersdictionaries.com/definition/english/transducer,C2,transducer,đầu dò,noun,/trænzˈdjuːsə(r)/,
-wattage,https://www.oxfordlearnersdictionaries.com/definition/english/wattage,C2,wattage,công suất,noun,/ˈwɒtɪdʒ/,
-wire,https://www.oxfordlearnersdictionaries.com/definition/english/wire_1,B2,wire,dây điện,noun,/ˈwaɪə(r)/,
+blow,https://www.oxfordlearnersdictionaries.com/definition/english/blow_1,C2,blow,thổi,verb,/bləʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/blow_/blow__gb_2.mp3
+circuit_breaker,https://www.oxfordlearnersdictionaries.com/definition/english/circuit-breaker,C2,circuit breaker,ngắt mạch,noun,/ˈsɜːkɪt breɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cir/circu/circuit_breaker_1_gb_1.mp3
+amperage,https://www.oxfordlearnersdictionaries.com/definition/english/amperage,C2,amperage,cường độ dòng điện,noun,/ˈæmpərɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amp/amper/amperage__gb_1.mp3
+coax,https://www.oxfordlearnersdictionaries.com/definition/english/coax_2,C2,coax,dỗ dành,adjective,/ˈkəʊæks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coax_/coax__gb_2.mp3
+coaxial,https://www.oxfordlearnersdictionaries.com/definition/english/coaxial,C2,coaxial,đồng trục,adjective,/kəʊˈæksiəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coaxi/coaxial__gb_1.mp3
+condenser,https://www.oxfordlearnersdictionaries.com/definition/english/condenser,C2,condenser,bình ngưng,noun,/kənˈdensə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xcondenser__gb_1.mp3
+conduct,https://www.oxfordlearnersdictionaries.com/definition/english/conduct_1,C1,conduct,chỉ đạo,verb,/kənˈdʌkt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xconduct__gb_4.mp3
+connect,https://www.oxfordlearnersdictionaries.com/definition/english/connect,A2,connect,kết nối,verb,/kəˈnekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconn/xconnect__gb_1.mp3
+current,https://www.oxfordlearnersdictionaries.com/definition/english/current_2,B2,current,hiện hành,noun,/ˈkʌrənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cur/curre/current__gb_4.mp3
+dc,https://www.oxfordlearnersdictionaries.com/definition/english/dc,C2,DC,DC,abbreviation,/ˌdiː ˈsiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dc_/dc__g/dc__gb_1.mp3
+diode,https://www.oxfordlearnersdictionaries.com/definition/english/diode,C2,diode,điốt,noun,/ˈdaɪəʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dio/diode/diode__gb_1.mp3
+electrode,https://www.oxfordlearnersdictionaries.com/definition/english/electrode,C1,electrode,điện cực,noun,/ɪˈlektrəʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electrode__gb_1.mp3
+electronics,https://www.oxfordlearnersdictionaries.com/definition/english/electronics,B2,electronics,thiết bị điện tử,noun,/ɪˌlekˈtrɒnɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electronics__gb_2.mp3
+disconnect,https://www.oxfordlearnersdictionaries.com/definition/english/disconnect_1,C1,disconnect,ngắt kết nối,verb,/ˌdɪskəˈnekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disco/disconnect__gb_1.mp3
+electric,https://www.oxfordlearnersdictionaries.com/definition/english/electric_1,A2,electric,điện,adjective,/ɪˈlektrɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electric__gb_1.mp3
+electricity,https://www.oxfordlearnersdictionaries.com/definition/english/electricity,A2,electricity,điện,noun,/ɪˌlekˈtrɪsəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electricity__gb_1.mp3
+electronic,https://www.oxfordlearnersdictionaries.com/definition/english/electronic,A2,electronic,điện tử,adjective,/ɪˌlekˈtrɒnɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electronic__gb_2.mp3
+electrical,https://www.oxfordlearnersdictionaries.com/definition/english/electrical,A2,electrical,điện,adjective,/ɪˈlektrɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electrical__gb_2.mp3
+earth,https://www.oxfordlearnersdictionaries.com/definition/english/earth_1,C2,earth,trái đất,noun,/ɜːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ear/earth/earth__gb_1.mp3
+earth,https://www.oxfordlearnersdictionaries.com/definition/english/earth_2,C2,earth,trái đất,verb,/ɜːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ear/earth/earth__gb_1.mp3
+extension_lead,https://www.oxfordlearnersdictionaries.com/definition/english/extension-lead,C2,extension lead,đầu mở rộng,noun,/ɪkˈstenʃn liːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ext/exten/extension_lead_1_gb_1.mp3
+filament,https://www.oxfordlearnersdictionaries.com/definition/english/filament,C2,filament,dây tóc,noun,/ˈfɪləmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filam/filament__gb_1.mp3
+live,https://www.oxfordlearnersdictionaries.com/definition/english/live2_1,C1,live,sống,adjective,/laɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/liv/live_/live__gb_2.mp3
+microchip,https://www.oxfordlearnersdictionaries.com/definition/english/microchip_1,C1,microchip,vi mạch,noun,/ˈmaɪkrəʊtʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microchip__gb_1.mp3
+ground,https://www.oxfordlearnersdictionaries.com/definition/english/ground_1,C2,ground,đất,noun,/ɡraʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/groun/ground__gb_2.mp3
+ground,https://www.oxfordlearnersdictionaries.com/definition/english/ground_2,C2,ground,đất,verb,/ɡraʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/groun/ground__gb_2.mp3
+ohmmeter,https://www.oxfordlearnersdictionaries.com/definition/english/ohmmeter,C2,ohmmeter,Ôm kế,noun,/ˈəʊmmiːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ohm/ohmme/ohmmeter__gb_1.mp3
+ohm,https://www.oxfordlearnersdictionaries.com/definition/english/ohm,C2,ohm,om,noun,/əʊm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ohm/ohm__/ohm__gb_1.mp3
+microelectronics,https://www.oxfordlearnersdictionaries.com/definition/english/microelectronics,C2,microelectronics,vi điện tử,noun,/ˌmaɪkrəʊɪˌlekˈtrɒnɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microelectronics__gb_1.mp3
+microelectronic,https://www.oxfordlearnersdictionaries.com/definition/english/microelectronic,C2,microelectronic,vi điện tử,adjective,/ˌmaɪkrəʊɪˌlekˈtrɒnɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microelectronic__gb_1.mp3
+oscillator,https://www.oxfordlearnersdictionaries.com/definition/english/oscillator,C2,oscillator,dao động,noun,/ˈɒsɪleɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/osc/oscil/oscillator__gb_1.mp3
+oscilloscope,https://www.oxfordlearnersdictionaries.com/definition/english/oscilloscope,C2,oscilloscope,máy hiện sóng,noun,/əˈsɪləskəʊp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/osc/oscil/oscilloscope__gb_1.mp3
+rewire,https://www.oxfordlearnersdictionaries.com/definition/english/rewire,C2,rewire,nối lại dây,verb,/ˌriːˈwaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rew/rewir/rewire__gb_1.mp3
+semiconductor,https://www.oxfordlearnersdictionaries.com/definition/english/semiconductor,C2,semiconductor,chất bán dẫn,noun,/ˌsemikənˈdʌktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sem/semic/semiconductor__gb_1.mp3
+shock,https://www.oxfordlearnersdictionaries.com/definition/english/shock_1,B2,shock,sốc,noun,/ʃɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shock/shock__gb_1.mp3
+relay,https://www.oxfordlearnersdictionaries.com/definition/english/relay1_1,C2,relay,tiếp sức,noun,/ˈriːleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rel/relay/relay__gb_1.mp3
+parallel_circuit,https://www.oxfordlearnersdictionaries.com/definition/english/parallel-circuit,C2,parallel circuit,mạch song song,noun,/ˌpærəlel ˈsɜːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/paral/parallel_circuit_1_gb_1.mp3
+photoelectric,https://www.oxfordlearnersdictionaries.com/definition/english/photoelectric,C2,photoelectric,quang điện,adjective,/ˌfəʊtəʊɪˈlektrɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pho/photo/photoelectric__gb_1.mp3
+silicon_chip,https://www.oxfordlearnersdictionaries.com/definition/english/silicon-chip,C1,silicon chip,chip silicon,noun,/ˌsɪlɪkən ˈtʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sil/silic/silicon_chip_1_gb_1.mp3
+short_circuit,https://www.oxfordlearnersdictionaries.com/definition/english/short-circuit_1,C2,short circuit,ngắn mạch,noun,/ˌʃɔːt ˈsɜːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/short/short_circuit_1_gb_1.mp3
+solenoid,https://www.oxfordlearnersdictionaries.com/definition/english/solenoid,C2,solenoid,điện từ,noun,/ˈsɒlənɔɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solen/solenoid__gb_1.mp3
+transistor,https://www.oxfordlearnersdictionaries.com/definition/english/transistor,C1,transistor,bóng bán dẫn,noun,/trænˈzɪstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transistor__gb_1.mp3
+transmitter,https://www.oxfordlearnersdictionaries.com/definition/english/transmitter,C1,transmitter,máy phát,noun,/trænzˈmɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transmitter__gb_2.mp3
+transformer,https://www.oxfordlearnersdictionaries.com/definition/english/transformer,C2,transformer,máy biến áp,noun,/trænsˈfɔːmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transformer__gb_1.mp3
+volt,https://www.oxfordlearnersdictionaries.com/definition/english/volt,C2,volt,vôn,noun,/vəʊlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vol/volt_/volt__gb_1.mp3
+watt,https://www.oxfordlearnersdictionaries.com/definition/english/watt,C2,watt,oát,noun,/wɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wat/watt_/watt__gb_1.mp3
+voltmeter,https://www.oxfordlearnersdictionaries.com/definition/english/voltmeter,C2,voltmeter,vôn kế,noun,/ˈvəʊltmiːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vol/voltm/voltmeter__gb_1.mp3
+voltage,https://www.oxfordlearnersdictionaries.com/definition/english/voltage,C2,voltage,điện áp,noun,/ˈvəʊltɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vol/volta/voltage__gb_1.mp3
+transducer,https://www.oxfordlearnersdictionaries.com/definition/english/transducer,C2,transducer,đầu dò,noun,/trænzˈdjuːsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transducer__gb_1.mp3
+wattage,https://www.oxfordlearnersdictionaries.com/definition/english/wattage,C2,wattage,công suất,noun,/ˈwɒtɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wat/watta/wattage__gb_1.mp3
+wire,https://www.oxfordlearnersdictionaries.com/definition/english/wire_1,B2,wire,dây điện,noun,/ˈwaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wir/wire_/wire__gb_1.mp3

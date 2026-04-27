@@ -1,40 +1,40 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-alliteration,https://www.oxfordlearnersdictionaries.com/definition/english/alliteration,C2,alliteration,sự ám chỉ,noun,/əˌlɪtəˈreɪʃn/,
-acrostic,https://www.oxfordlearnersdictionaries.com/definition/english/acrostic,C2,acrostic,chữ viết đầu,noun,/əˈkrɒstɪk/,
-canto,https://www.oxfordlearnersdictionaries.com/definition/english/canto,C2,canto,ca khúc,noun,/ˈkæntəʊ/,
-couplet,https://www.oxfordlearnersdictionaries.com/definition/english/couplet,C2,couplet,câu đối,noun,/ˈkʌplət/,
-caesura,https://www.oxfordlearnersdictionaries.com/definition/english/caesura,C2,caesura,caesura,noun,/siˈzjʊərə/,
-anapaest,https://www.oxfordlearnersdictionaries.com/definition/english/anapaest,C2,anapaest,anapa nhất,noun,/ˈænəpiːst/,
-dactyl,https://www.oxfordlearnersdictionaries.com/definition/english/dactyl,C2,dactyl,dactyl,noun,/ˈdæktɪl/,
-dramatic_monologue,https://www.oxfordlearnersdictionaries.com/definition/english/dramatic-monologue,C2,dramatic monologue,độc thoại kịch tính,noun,/drəˌmætɪk ˈmɒnəlɒɡ/,
-doggerel,https://www.oxfordlearnersdictionaries.com/definition/english/doggerel,C2,doggerel,con chó nhỏ,noun,/ˈdɒɡərəl/,
-blank_verse,https://www.oxfordlearnersdictionaries.com/definition/english/blank-verse,C2,blank verse,câu thơ trống,noun,/ˌblæŋk ˈvɜːs/,
-elegy,https://www.oxfordlearnersdictionaries.com/definition/english/elegy,C2,elegy,bi kịch,noun,/ˈelədʒi/,
-epic,https://www.oxfordlearnersdictionaries.com/definition/english/epic_1,C2,epic,sử thi,noun,/ˈepɪk/,
-foot,https://www.oxfordlearnersdictionaries.com/definition/english/foot_1,C2,foot,chân,noun,/fʊt/,
-enjambement,https://www.oxfordlearnersdictionaries.com/definition/english/enjambement,C2,enjambement,sự chèn ép,noun,/ɪnˈdʒæmbmənt/,
-free_verse,https://www.oxfordlearnersdictionaries.com/definition/english/free-verse,C2,free verse,thơ tự do,noun,/ˌfriː ˈvɜːs/,
-haiku,https://www.oxfordlearnersdictionaries.com/definition/english/haiku,C2,haiku,haiku,noun,/ˈhaɪkuː/,
-elegiac_couplet,https://www.oxfordlearnersdictionaries.com/definition/english/elegiac-couplet,C2,elegiac couplet,câu đối bi thương,noun,/ˌelɪˌdʒaɪək ˈkʌplət/,
-hexameter,https://www.oxfordlearnersdictionaries.com/definition/english/hexameter,C2,hexameter,lục kế,noun,/hekˈsæmɪtə(r)/,
-iambus,https://www.oxfordlearnersdictionaries.com/definition/english/iambus,C2,iambus,iambus,noun,/aɪˈæmbəs/,
-iamb,https://www.oxfordlearnersdictionaries.com/definition/english/iamb,C2,iamb,iamb,noun,/ˈaɪæm/,
-metre,https://www.oxfordlearnersdictionaries.com/definition/english/metre,C2,metre,mét,noun,/ˈmiːtə(r)/,
-ode,https://www.oxfordlearnersdictionaries.com/definition/english/ode,C2,ode,ca ngợi,noun,/əʊd/,
-limerick,https://www.oxfordlearnersdictionaries.com/definition/english/limerick_1,C2,limerick,câu châm ngôn,noun,/ˈlɪmərɪk/,
-pentameter,https://www.oxfordlearnersdictionaries.com/definition/english/pentameter,C2,pentameter,ngũ giác,noun,/penˈtæmɪtə(r)/,
-poetic,https://www.oxfordlearnersdictionaries.com/definition/english/poetic,C1,poetic,đầy chất thơ,adjective,/pəʊˈetɪk/,
-poetics,https://www.oxfordlearnersdictionaries.com/definition/english/poetics,C2,poetics,thơ,noun,/pəʊˈetɪks/,
-heroic_couplet,https://www.oxfordlearnersdictionaries.com/definition/english/heroic-couplet,C2,heroic couplet,câu đối anh hùng,noun,/həˌrəʊɪk ˈkʌplət/,
-poetry,https://www.oxfordlearnersdictionaries.com/definition/english/poetry,B1,poetry,thơ ca,noun,/ˈpəʊətri/,
-internal_rhyme,https://www.oxfordlearnersdictionaries.com/definition/english/internal-rhyme,C2,internal rhyme,vần điệu nội bộ,noun,/ɪnˌtɜːnl ˈraɪm/,
-quatrain,https://www.oxfordlearnersdictionaries.com/definition/english/quatrain,C2,quatrain,câu thơ bốn câu,noun,/ˈkwɒtreɪn/,
-rhyme,https://www.oxfordlearnersdictionaries.com/definition/english/rhyme_1,B2,rhyme,vần điệu,noun,/raɪm/,
-rhyme,https://www.oxfordlearnersdictionaries.com/definition/english/rhyme_2,B2,rhyme,vần điệu,verb,/raɪm/,
-scansion,https://www.oxfordlearnersdictionaries.com/definition/english/scansion,C2,scansion,quét,noun,/ˈskænʃn/,
-slam,https://www.oxfordlearnersdictionaries.com/definition/english/slam_2,C2,slam,đập mạnh,noun,/slæm/,
-prosody,https://www.oxfordlearnersdictionaries.com/definition/english/prosody,C2,prosody,thi pháp,noun,/ˈprɒsədi/,
-sonnet,https://www.oxfordlearnersdictionaries.com/definition/english/sonnet,C2,sonnet,bài sonnet,noun,/ˈsɒnɪt/,
-stanza,https://www.oxfordlearnersdictionaries.com/definition/english/stanza,C2,stanza,khổ thơ,noun,/ˈstænzə/,
-spoken_word,https://www.oxfordlearnersdictionaries.com/definition/english/spoken-word,C2,spoken word,lời nói,noun,/ˌspəʊkən ˈwɜːd/,
-verse,https://www.oxfordlearnersdictionaries.com/definition/english/verse,C1,verse,thơ,noun,/vɜːs/,
+alliteration,https://www.oxfordlearnersdictionaries.com/definition/english/alliteration,C2,alliteration,sự ám chỉ,noun,/əˌlɪtəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/all/allit/alliteration__gb_1.mp3
+acrostic,https://www.oxfordlearnersdictionaries.com/definition/english/acrostic,C2,acrostic,chữ viết đầu,noun,/əˈkrɒstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acr/acros/acrostic__gb_1.mp3
+canto,https://www.oxfordlearnersdictionaries.com/definition/english/canto,C2,canto,ca khúc,noun,/ˈkæntəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canto/canto__gb_1.mp3
+couplet,https://www.oxfordlearnersdictionaries.com/definition/english/couplet,C2,couplet,câu đối,noun,/ˈkʌplət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/coupl/couplet__gb_1.mp3
+caesura,https://www.oxfordlearnersdictionaries.com/definition/english/caesura,C2,caesura,caesura,noun,/siˈzjʊərə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cae/caesu/caesura__gb_1.mp3
+anapaest,https://www.oxfordlearnersdictionaries.com/definition/english/anapaest,C2,anapaest,anapa nhất,noun,/ˈænəpiːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/anapa/anapaest__gb_1.mp3
+dactyl,https://www.oxfordlearnersdictionaries.com/definition/english/dactyl,C2,dactyl,dactyl,noun,/ˈdæktɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dac/dacty/dactyl__gb_1.mp3
+dramatic_monologue,https://www.oxfordlearnersdictionaries.com/definition/english/dramatic-monologue,C2,dramatic monologue,độc thoại kịch tính,noun,/drəˌmætɪk ˈmɒnəlɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drama/dramatic_monologue_1_gb_1.mp3
+doggerel,https://www.oxfordlearnersdictionaries.com/definition/english/doggerel,C2,doggerel,con chó nhỏ,noun,/ˈdɒɡərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dog/dogge/doggerel__gb_6.mp3
+blank_verse,https://www.oxfordlearnersdictionaries.com/definition/english/blank-verse,C2,blank verse,câu thơ trống,noun,/ˌblæŋk ˈvɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bla/blank/blank_verse_1_gb_1.mp3
+elegy,https://www.oxfordlearnersdictionaries.com/definition/english/elegy,C2,elegy,bi kịch,noun,/ˈelədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elegy/elegy__gb_1.mp3
+epic,https://www.oxfordlearnersdictionaries.com/definition/english/epic_1,C2,epic,sử thi,noun,/ˈepɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/epi/epic_/epic__gb_1.mp3
+foot,https://www.oxfordlearnersdictionaries.com/definition/english/foot_1,C2,foot,chân,noun,/fʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/foot_/foot__gb_2.mp3
+enjambement,https://www.oxfordlearnersdictionaries.com/definition/english/enjambement,C2,enjambement,sự chèn ép,noun,/ɪnˈdʒæmbmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/enj/enjam/enjambement__gb_1.mp3
+free_verse,https://www.oxfordlearnersdictionaries.com/definition/english/free-verse,C2,free verse,thơ tự do,noun,/ˌfriː ˈvɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/free_/free_verse_1_gb_1.mp3
+haiku,https://www.oxfordlearnersdictionaries.com/definition/english/haiku,C2,haiku,haiku,noun,/ˈhaɪkuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hai/haiku/haiku__gb_2.mp3
+elegiac_couplet,https://www.oxfordlearnersdictionaries.com/definition/english/elegiac-couplet,C2,elegiac couplet,câu đối bi thương,noun,/ˌelɪˌdʒaɪək ˈkʌplət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elegi/elegiac_couplet_1_gb_1.mp3
+hexameter,https://www.oxfordlearnersdictionaries.com/definition/english/hexameter,C2,hexameter,lục kế,noun,/hekˈsæmɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hex/hexam/hexameter__gb_1.mp3
+iambus,https://www.oxfordlearnersdictionaries.com/definition/english/iambus,C2,iambus,iambus,noun,/aɪˈæmbəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iam/iambu/iambus__gb_1.mp3
+iamb,https://www.oxfordlearnersdictionaries.com/definition/english/iamb,C2,iamb,iamb,noun,/ˈaɪæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iam/iamb_/iamb__gb_1.mp3
+metre,https://www.oxfordlearnersdictionaries.com/definition/english/metre,C2,metre,mét,noun,/ˈmiːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/met/metre/metre__gb_1.mp3
+ode,https://www.oxfordlearnersdictionaries.com/definition/english/ode,C2,ode,ca ngợi,noun,/əʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ode/ode__/ode__gb_1.mp3
+limerick,https://www.oxfordlearnersdictionaries.com/definition/english/limerick_1,C2,limerick,câu châm ngôn,noun,/ˈlɪmərɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lim/limer/limerick__gb_1.mp3
+pentameter,https://www.oxfordlearnersdictionaries.com/definition/english/pentameter,C2,pentameter,ngũ giác,noun,/penˈtæmɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/penta/pentameter__gb_1.mp3
+poetic,https://www.oxfordlearnersdictionaries.com/definition/english/poetic,C1,poetic,đầy chất thơ,adjective,/pəʊˈetɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poe/poeti/poetic__gb_1.mp3
+poetics,https://www.oxfordlearnersdictionaries.com/definition/english/poetics,C2,poetics,thơ,noun,/pəʊˈetɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poe/poeti/poetics__gb_1.mp3
+heroic_couplet,https://www.oxfordlearnersdictionaries.com/definition/english/heroic-couplet,C2,heroic couplet,câu đối anh hùng,noun,/həˌrəʊɪk ˈkʌplət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/her/heroi/heroic_couplet_1_gb_1.mp3
+poetry,https://www.oxfordlearnersdictionaries.com/definition/english/poetry,B1,poetry,thơ ca,noun,/ˈpəʊətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poe/poetr/poetry__gb_1.mp3
+internal_rhyme,https://www.oxfordlearnersdictionaries.com/definition/english/internal-rhyme,C2,internal rhyme,vần điệu nội bộ,noun,/ɪnˌtɜːnl ˈraɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/internal_rhyme_1_gb_1.mp3
+quatrain,https://www.oxfordlearnersdictionaries.com/definition/english/quatrain,C2,quatrain,câu thơ bốn câu,noun,/ˈkwɒtreɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quatr/quatrain__gb_1.mp3
+rhyme,https://www.oxfordlearnersdictionaries.com/definition/english/rhyme_1,B2,rhyme,vần điệu,noun,/raɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rhy/rhyme/rhyme__gb_1.mp3
+rhyme,https://www.oxfordlearnersdictionaries.com/definition/english/rhyme_2,B2,rhyme,vần điệu,verb,/raɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rhy/rhyme/rhyme__gb_1.mp3
+scansion,https://www.oxfordlearnersdictionaries.com/definition/english/scansion,C2,scansion,quét,noun,/ˈskænʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sca/scans/scansion__gb_1.mp3
+slam,https://www.oxfordlearnersdictionaries.com/definition/english/slam_2,C2,slam,đập mạnh,noun,/slæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sla/slam_/slam__gb_1.mp3
+prosody,https://www.oxfordlearnersdictionaries.com/definition/english/prosody,C2,prosody,thi pháp,noun,/ˈprɒsədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proso/prosody__gb_1.mp3
+sonnet,https://www.oxfordlearnersdictionaries.com/definition/english/sonnet,C2,sonnet,bài sonnet,noun,/ˈsɒnɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/son/sonne/sonnet__gb_1.mp3
+stanza,https://www.oxfordlearnersdictionaries.com/definition/english/stanza,C2,stanza,khổ thơ,noun,/ˈstænzə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stanz/stanza__gb_1.mp3
+spoken_word,https://www.oxfordlearnersdictionaries.com/definition/english/spoken-word,C2,spoken word,lời nói,noun,/ˌspəʊkən ˈwɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spoke/spoken_word_1_gb_1.mp3
+verse,https://www.oxfordlearnersdictionaries.com/definition/english/verse,C1,verse,thơ,noun,/vɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ver/verse/verse__gb_1.mp3

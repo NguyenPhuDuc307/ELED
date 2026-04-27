@@ -1,57 +1,57 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-appreciate,https://www.oxfordlearnersdictionaries.com/definition/english/appreciate,C1,appreciate,đánh giá,verb,/əˈpriːʃieɪt/,
-change,https://www.oxfordlearnersdictionaries.com/definition/english/change_1,A1,change,thay đổi,verb,/tʃeɪndʒ/,
-cheap,https://www.oxfordlearnersdictionaries.com/definition/english/cheap_1,A1,cheap,rẻ,adjective,/tʃiːp/,
-buck,https://www.oxfordlearnersdictionaries.com/definition/english/buck_1,C1,buck,đô la,noun,/bʌk/,
-amount,https://www.oxfordlearnersdictionaries.com/definition/english/amount_1,A2,amount,số lượng,noun,/əˈmaʊnt/,
-coin,https://www.oxfordlearnersdictionaries.com/definition/english/coin_1,B1,coin,đồng xu,noun,/kɔɪn/,
-billion,https://www.oxfordlearnersdictionaries.com/definition/english/billion,A2,billion,tỷ,number,/ˈbɪljən/,
-cent,https://www.oxfordlearnersdictionaries.com/definition/english/cent_1,A1,cent,xu,noun,/sent/,
-banknote,https://www.oxfordlearnersdictionaries.com/definition/english/banknote,A1,banknote,tiền giấy,noun,/ˈbæŋknəʊt/,
-bomb,https://www.oxfordlearnersdictionaries.com/definition/english/bomb_1,C2,bomb,bom,noun,/bɒm/,
-costly,https://www.oxfordlearnersdictionaries.com/definition/english/costly,C1,costly,tốn kém,adjective,/ˈkɒstli/,
-dime,https://www.oxfordlearnersdictionaries.com/definition/english/dime,C1,dime,đồng xu,noun,/daɪm/,
-dollar,https://www.oxfordlearnersdictionaries.com/definition/english/dollar,A1,dollar,đô la,noun,/ˈdɒlə(r)/,
-euro,https://www.oxfordlearnersdictionaries.com/definition/english/euro_1,A1,euro,euro,noun,/ˈjʊərəʊ/,
-crown,https://www.oxfordlearnersdictionaries.com/definition/english/crown_1,C2,crown,vương miện,noun,/kraʊn/,
-economical,https://www.oxfordlearnersdictionaries.com/definition/english/economical,B2,economical,tiết kiệm,adjective,/ˌiːkəˈnɒmɪkl/,
-dear,https://www.oxfordlearnersdictionaries.com/definition/english/dear_1,C2,dear,Thân mến,adjective,/dɪə(r)/,
-face_value,https://www.oxfordlearnersdictionaries.com/definition/english/face-value,C2,face value,mệnh giá,noun,/ˌfeɪs ˈvæljuː/,
-exchange,https://www.oxfordlearnersdictionaries.com/definition/english/exchange_1,B1,exchange,trao đổi,noun,/ɪksˈtʃeɪndʒ/,
-exchange,https://www.oxfordlearnersdictionaries.com/definition/english/exchange_2,B1,exchange,trao đổi,verb,/ɪksˈtʃeɪndʒ/,
-fortune,https://www.oxfordlearnersdictionaries.com/definition/english/fortune,B2,fortune,vận may,noun,/ˈfɔːtʃuːn/,
-fiver,https://www.oxfordlearnersdictionaries.com/definition/english/fiver,C2,fiver,năm người,noun,/ˈfaɪvə(r)/,
-net_worth,https://www.oxfordlearnersdictionaries.com/definition/english/net-worth,C2,net worth,giá trị ròng,noun,/ˌnet ˈwɜːθ/,
-nickel,https://www.oxfordlearnersdictionaries.com/definition/english/nickel,C1,nickel,niken,noun,/ˈnɪkl/,
-mark,https://www.oxfordlearnersdictionaries.com/definition/english/mark_2,C2,mark,đánh dấu,noun,/mɑːk/,
+appreciate,https://www.oxfordlearnersdictionaries.com/definition/english/appreciate,C1,appreciate,đánh giá,verb,/əˈpriːʃieɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appre/appreciate__gb_1.mp3
+change,https://www.oxfordlearnersdictionaries.com/definition/english/change_1,A1,change,thay đổi,verb,/tʃeɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chang/change__gb_2.mp3
+cheap,https://www.oxfordlearnersdictionaries.com/definition/english/cheap_1,A1,cheap,rẻ,adjective,/tʃiːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/cheap/cheap__gb_3.mp3
+buck,https://www.oxfordlearnersdictionaries.com/definition/english/buck_1,C1,buck,đô la,noun,/bʌk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/buc/buck_/buck__gb_2.mp3
+amount,https://www.oxfordlearnersdictionaries.com/definition/english/amount_1,A2,amount,số lượng,noun,/əˈmaʊnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amo/amoun/amount__gb_2.mp3
+coin,https://www.oxfordlearnersdictionaries.com/definition/english/coin_1,B1,coin,đồng xu,noun,/kɔɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coi/coin_/coin__gb_1.mp3
+billion,https://www.oxfordlearnersdictionaries.com/definition/english/billion,A2,billion,tỷ,number,/ˈbɪljən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/billi/billion__gb_3.mp3
+cent,https://www.oxfordlearnersdictionaries.com/definition/english/cent_1,A1,cent,xu,noun,/sent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cen/cent_/cent__gb_2.mp3
+banknote,https://www.oxfordlearnersdictionaries.com/definition/english/banknote,A1,banknote,tiền giấy,noun,/ˈbæŋknəʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/bankn/banknote__gb_2.mp3
+bomb,https://www.oxfordlearnersdictionaries.com/definition/english/bomb_1,C2,bomb,bom,noun,/bɒm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bom/bomb_/bomb__gb_2.mp3
+costly,https://www.oxfordlearnersdictionaries.com/definition/english/costly,C1,costly,tốn kém,adjective,/ˈkɒstli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cos/costl/costly__gb_1.mp3
+dime,https://www.oxfordlearnersdictionaries.com/definition/english/dime,C1,dime,đồng xu,noun,/daɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dim/dime_/dime__gb_1.mp3
+dollar,https://www.oxfordlearnersdictionaries.com/definition/english/dollar,A1,dollar,đô la,noun,/ˈdɒlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dol/dolla/dollar__gb_2.mp3
+euro,https://www.oxfordlearnersdictionaries.com/definition/english/euro_1,A1,euro,euro,noun,/ˈjʊərəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eur/euro_/euro__gb_2.mp3
+crown,https://www.oxfordlearnersdictionaries.com/definition/english/crown_1,C2,crown,vương miện,noun,/kraʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/crown/crown__gb_1.mp3
+economical,https://www.oxfordlearnersdictionaries.com/definition/english/economical,B2,economical,tiết kiệm,adjective,/ˌiːkəˈnɒmɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eco/econo/economical__gb_1.mp3
+dear,https://www.oxfordlearnersdictionaries.com/definition/english/dear_1,C2,dear,Thân mến,adjective,/dɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/dear_/dear__gb_2.mp3
+face_value,https://www.oxfordlearnersdictionaries.com/definition/english/face-value,C2,face value,mệnh giá,noun,/ˌfeɪs ˈvæljuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/face_/face_value_1_gb_1.mp3
+exchange,https://www.oxfordlearnersdictionaries.com/definition/english/exchange_1,B1,exchange,trao đổi,noun,/ɪksˈtʃeɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exc/excha/exchange__gb_1.mp3
+exchange,https://www.oxfordlearnersdictionaries.com/definition/english/exchange_2,B1,exchange,trao đổi,verb,/ɪksˈtʃeɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exc/excha/exchange__gb_1.mp3
+fortune,https://www.oxfordlearnersdictionaries.com/definition/english/fortune,B2,fortune,vận may,noun,/ˈfɔːtʃuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/fortu/fortune__gb_1.mp3
+fiver,https://www.oxfordlearnersdictionaries.com/definition/english/fiver,C2,fiver,năm người,noun,/ˈfaɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fiv/fiver/fiver__gb_1.mp3
+net_worth,https://www.oxfordlearnersdictionaries.com/definition/english/net-worth,C2,net worth,giá trị ròng,noun,/ˌnet ˈwɜːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/net/net_w/net_worth_1_gb_1.mp3
+nickel,https://www.oxfordlearnersdictionaries.com/definition/english/nickel,C1,nickel,niken,noun,/ˈnɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nic/nicke/nickel__gb_1.mp3
+mark,https://www.oxfordlearnersdictionaries.com/definition/english/mark_2,C2,mark,đánh dấu,noun,/mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/mark_/mark__gb_1.mp3
 live_on,https://www.oxfordlearnersdictionaries.com/definition/english/live-on,C1,live on,sống tiếp,phrasal verb,,
-franc,https://www.oxfordlearnersdictionaries.com/definition/english/franc,C1,franc,đồng franc,noun,/fræŋk/,
-free,https://www.oxfordlearnersdictionaries.com/definition/english/free_1,A2,free,miễn phí,adjective,/friː/,
-negative_equity,https://www.oxfordlearnersdictionaries.com/definition/english/negative-equity,C2,negative equity,vốn chủ sở hữu âm,noun,/ˌneɡətɪv ˈekwəti/,
-p,https://www.oxfordlearnersdictionaries.com/definition/english/p_1,B2,p,P,abbreviation,/piː/,
-penny,https://www.oxfordlearnersdictionaries.com/definition/english/penny_1,A2,penny,đồng xu,noun,/ˈpeni/,
-poor,https://www.oxfordlearnersdictionaries.com/definition/english/poor,A1,poor,nghèo,adjective,/pɔː(r)/,
-note,https://www.oxfordlearnersdictionaries.com/definition/english/note_1,B1,note,ghi chú,noun,/nəʊt/,
-pound,https://www.oxfordlearnersdictionaries.com/definition/english/pound_1,A1,pound,pao,noun,/paʊnd/,
-rate,https://www.oxfordlearnersdictionaries.com/definition/english/rate_1,B1,rate,tỷ lệ,noun,/reɪt/,
-rich,https://www.oxfordlearnersdictionaries.com/definition/english/rich,A1,rich,giàu có,adjective,/rɪtʃ/,
-shilling,https://www.oxfordlearnersdictionaries.com/definition/english/shilling,C2,shilling,shilling,noun,/ˈʃɪlɪŋ/,
-quarter,https://www.oxfordlearnersdictionaries.com/definition/english/quarter_1,C1,quarter,một phần tư,noun,/ˈkwɔːtə(r)/,
-millionaire,https://www.oxfordlearnersdictionaries.com/definition/english/millionaire,B1,millionaire,triệu phú,noun,/ˌmɪljəˈneə(r)/,
-standard_of_living,https://www.oxfordlearnersdictionaries.com/definition/english/standard-of-living,B2,standard of living,mức sống,noun,/ˌstændəd əv ˈlɪvɪŋ/,
-sterling,https://www.oxfordlearnersdictionaries.com/definition/english/sterling_1,C2,sterling,đồng bảng Anh,noun,/ˈstɜːlɪŋ/,
-valuable,https://www.oxfordlearnersdictionaries.com/definition/english/valuable,B1,valuable,có giá trị lớn,adjective,/ˈvæljuəbl/,
-value,https://www.oxfordlearnersdictionaries.com/definition/english/value_1,B1,value,giá trị,noun,/ˈvæljuː/,
-sum,https://www.oxfordlearnersdictionaries.com/definition/english/sum_1,B2,sum,tổng hợp,noun,/sʌm/,
-value,https://www.oxfordlearnersdictionaries.com/definition/english/value_2,B2,value,giá trị,verb,/ˈvæljuː/,
-wealth,https://www.oxfordlearnersdictionaries.com/definition/english/wealth,B2,wealth,sự giàu có,noun,/welθ/,
-tenner,https://www.oxfordlearnersdictionaries.com/definition/english/tenner,C2,tenner,người thuê nhà,noun,/ˈtenə(r)/,
-valueless,https://www.oxfordlearnersdictionaries.com/definition/english/valueless,C2,valueless,vô giá trị,adjective,/ˈvæljuːləs/,
-wealthy,https://www.oxfordlearnersdictionaries.com/definition/english/wealthy,B2,wealthy,giàu có,adjective,/ˈwelθi/,
-world_bank,https://www.oxfordlearnersdictionaries.com/definition/english/the-world-bank,C1,World Bank,Ngân hàng Thế giới,noun,/ðə ˌwɜːld ˈbæŋk/,
-worth,https://www.oxfordlearnersdictionaries.com/definition/english/worth_1,B1,worth,đáng giá,adjective,/wɜːθ/,
-worthless,https://www.oxfordlearnersdictionaries.com/definition/english/worthless,C1,worthless,vô giá trị,adjective,/ˈwɜːθləs/,
-yield,https://www.oxfordlearnersdictionaries.com/definition/english/yield_1,C1,yield,năng suất,noun,/jiːld/,
-worth,https://www.oxfordlearnersdictionaries.com/definition/english/worth_2,B1,worth,đáng giá,noun,/wɜːθ/,
-valuation,https://www.oxfordlearnersdictionaries.com/definition/english/valuation,C2,valuation,định giá,noun,/ˌvæljuˈeɪʃn/,
-yield,https://www.oxfordlearnersdictionaries.com/definition/english/yield_2,C1,yield,năng suất,verb,/jiːld/,
+franc,https://www.oxfordlearnersdictionaries.com/definition/english/franc,C1,franc,đồng franc,noun,/fræŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fra/franc/franc__gb_1.mp3
+free,https://www.oxfordlearnersdictionaries.com/definition/english/free_1,A2,free,miễn phí,adjective,/friː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/free_/free__gb_1.mp3
+negative_equity,https://www.oxfordlearnersdictionaries.com/definition/english/negative-equity,C2,negative equity,vốn chủ sở hữu âm,noun,/ˌneɡətɪv ˈekwəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/neg/negat/negative_equity_1_gb_1.mp3
+p,https://www.oxfordlearnersdictionaries.com/definition/english/p_1,B2,p,P,abbreviation,/piː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/p__/p__gb/p__gb_1.mp3
+penny,https://www.oxfordlearnersdictionaries.com/definition/english/penny_1,A2,penny,đồng xu,noun,/ˈpeni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/penny/penny__gb_1.mp3
+poor,https://www.oxfordlearnersdictionaries.com/definition/english/poor,A1,poor,nghèo,adjective,/pɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poo/poor_/poor__gb_1.mp3
+note,https://www.oxfordlearnersdictionaries.com/definition/english/note_1,B1,note,ghi chú,noun,/nəʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/not/note_/note__gb_2.mp3
+pound,https://www.oxfordlearnersdictionaries.com/definition/english/pound_1,A1,pound,pao,noun,/paʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pou/pound/pound__gb_1.mp3
+rate,https://www.oxfordlearnersdictionaries.com/definition/english/rate_1,B1,rate,tỷ lệ,noun,/reɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rat/rate_/rate__gb_2.mp3
+rich,https://www.oxfordlearnersdictionaries.com/definition/english/rich,A1,rich,giàu có,adjective,/rɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ric/rich_/rich__gb_2.mp3
+shilling,https://www.oxfordlearnersdictionaries.com/definition/english/shilling,C2,shilling,shilling,noun,/ˈʃɪlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shill/shilling__gb_1.mp3
+quarter,https://www.oxfordlearnersdictionaries.com/definition/english/quarter_1,C1,quarter,một phần tư,noun,/ˈkwɔːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quart/quarter__gb_1.mp3
+millionaire,https://www.oxfordlearnersdictionaries.com/definition/english/millionaire,B1,millionaire,triệu phú,noun,/ˌmɪljəˈneə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mil/milli/millionaire__gb_1.mp3
+standard_of_living,https://www.oxfordlearnersdictionaries.com/definition/english/standard-of-living,B2,standard of living,mức sống,noun,/ˌstændəd əv ˈlɪvɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stand/standard_of_living_1_gb_2.mp3
+sterling,https://www.oxfordlearnersdictionaries.com/definition/english/sterling_1,C2,sterling,đồng bảng Anh,noun,/ˈstɜːlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/sterl/sterling__gb_1.mp3
+valuable,https://www.oxfordlearnersdictionaries.com/definition/english/valuable,B1,valuable,có giá trị lớn,adjective,/ˈvæljuəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/valua/valuable__gb_3.mp3
+value,https://www.oxfordlearnersdictionaries.com/definition/english/value_1,B1,value,giá trị,noun,/ˈvæljuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/value/value__gb_2.mp3
+sum,https://www.oxfordlearnersdictionaries.com/definition/english/sum_1,B2,sum,tổng hợp,noun,/sʌm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sum/sum__/sum__gb_1.mp3
+value,https://www.oxfordlearnersdictionaries.com/definition/english/value_2,B2,value,giá trị,verb,/ˈvæljuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/value/value__gb_2.mp3
+wealth,https://www.oxfordlearnersdictionaries.com/definition/english/wealth,B2,wealth,sự giàu có,noun,/welθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/wealt/wealth__gb_1.mp3
+tenner,https://www.oxfordlearnersdictionaries.com/definition/english/tenner,C2,tenner,người thuê nhà,noun,/ˈtenə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ten/tenne/tenner__gb_1.mp3
+valueless,https://www.oxfordlearnersdictionaries.com/definition/english/valueless,C2,valueless,vô giá trị,adjective,/ˈvæljuːləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/value/valueless__gb_1.mp3
+wealthy,https://www.oxfordlearnersdictionaries.com/definition/english/wealthy,B2,wealthy,giàu có,adjective,/ˈwelθi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/wealt/wealthy__gb_1.mp3
+world_bank,https://www.oxfordlearnersdictionaries.com/definition/english/the-world-bank,C1,World Bank,Ngân hàng Thế giới,noun,/ðə ˌwɜːld ˈbæŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_w/the_world_bank_1_gb_1.mp3
+worth,https://www.oxfordlearnersdictionaries.com/definition/english/worth_1,B1,worth,đáng giá,adjective,/wɜːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/worth/worth__gb_1.mp3
+worthless,https://www.oxfordlearnersdictionaries.com/definition/english/worthless,C1,worthless,vô giá trị,adjective,/ˈwɜːθləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/worth/worthless__gb_1.mp3
+yield,https://www.oxfordlearnersdictionaries.com/definition/english/yield_1,C1,yield,năng suất,noun,/jiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yie/yield/yield__gb_2.mp3
+worth,https://www.oxfordlearnersdictionaries.com/definition/english/worth_2,B1,worth,đáng giá,noun,/wɜːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/worth/worth__gb_1.mp3
+valuation,https://www.oxfordlearnersdictionaries.com/definition/english/valuation,C2,valuation,định giá,noun,/ˌvæljuˈeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/valua/valuation__gb_1.mp3
+yield,https://www.oxfordlearnersdictionaries.com/definition/english/yield_2,C1,yield,năng suất,verb,/jiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yie/yield/yield__gb_2.mp3

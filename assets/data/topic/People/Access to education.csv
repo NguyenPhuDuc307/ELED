@@ -1,42 +1,42 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-absentee,https://www.oxfordlearnersdictionaries.com/definition/english/absentee,C2,absentee,vắng mặt,noun,/ˌæbsənˈtiː/,
-bursary,https://www.oxfordlearnersdictionaries.com/definition/english/bursary,C2,bursary,học bổng,noun,/ˈbɜːsəri/,
-application,https://www.oxfordlearnersdictionaries.com/definition/english/application,B1,application,ứng dụng,noun,/ˌæplɪˈkeɪʃn/,
-access_course,https://www.oxfordlearnersdictionaries.com/definition/english/access-course,C2,access course,khóa học truy cập,noun,/ˈækses kɔːs/,
-admission,https://www.oxfordlearnersdictionaries.com/definition/english/admission,C1,admission,nhập học,noun,/ədˈmɪʃn/,
-attendance,https://www.oxfordlearnersdictionaries.com/definition/english/attendance,C1,attendance,sự tham dự,noun,/əˈtendəns/,
-attend,https://www.oxfordlearnersdictionaries.com/definition/english/attend,A2,attend,tham gia,verb,/əˈtend/,
-admit,https://www.oxfordlearnersdictionaries.com/definition/english/admit,C1,admit,thừa nhận,verb,/ədˈmɪt/,
-catchment_area,https://www.oxfordlearnersdictionaries.com/definition/english/catchment-area,C2,catchment area,khu vực lưu vực,noun,/ˈkætʃmənt eəriə/,
-clearing,https://www.oxfordlearnersdictionaries.com/definition/english/clearing,C2,clearing,thanh toán bù trừ,noun,/ˈklɪərɪŋ/,
-ditch,https://www.oxfordlearnersdictionaries.com/definition/english/ditch_2,C2,ditch,mương,verb,/dɪtʃ/,
-absenteeism,https://www.oxfordlearnersdictionaries.com/definition/english/absenteeism,C2,absenteeism,sự vắng mặt,noun,/ˌæbsənˈtiːɪzəm/,
-drop,https://www.oxfordlearnersdictionaries.com/definition/english/drop_1,B2,drop,làm rơi,verb,/drɒp/,
+absentee,https://www.oxfordlearnersdictionaries.com/definition/english/absentee,C2,absentee,vắng mặt,noun,/ˌæbsənˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abs/absen/absentee__gb_1.mp3
+bursary,https://www.oxfordlearnersdictionaries.com/definition/english/bursary,C2,bursary,học bổng,noun,/ˈbɜːsəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/bursa/bursary__gb_1.mp3
+application,https://www.oxfordlearnersdictionaries.com/definition/english/application,B1,application,ứng dụng,noun,/ˌæplɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appli/application__gb_2.mp3
+access_course,https://www.oxfordlearnersdictionaries.com/definition/english/access-course,C2,access course,khóa học truy cập,noun,/ˈækses kɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acc/acces/access_course_1_gb_1.mp3
+admission,https://www.oxfordlearnersdictionaries.com/definition/english/admission,C1,admission,nhập học,noun,/ədˈmɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adm/admis/admission__gb_1.mp3
+attendance,https://www.oxfordlearnersdictionaries.com/definition/english/attendance,C1,attendance,sự tham dự,noun,/əˈtendəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/atten/attendance__gb_1.mp3
+attend,https://www.oxfordlearnersdictionaries.com/definition/english/attend,A2,attend,tham gia,verb,/əˈtend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/atten/attend__gb_1.mp3
+admit,https://www.oxfordlearnersdictionaries.com/definition/english/admit,C1,admit,thừa nhận,verb,/ədˈmɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adm/admit/admit__gb_1.mp3
+catchment_area,https://www.oxfordlearnersdictionaries.com/definition/english/catchment-area,C2,catchment area,khu vực lưu vực,noun,/ˈkætʃmənt eəriə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/catch/catchment_area_1_gb_1.mp3
+clearing,https://www.oxfordlearnersdictionaries.com/definition/english/clearing,C2,clearing,thanh toán bù trừ,noun,/ˈklɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clear/clearing__gb_1.mp3
+ditch,https://www.oxfordlearnersdictionaries.com/definition/english/ditch_2,C2,ditch,mương,verb,/dɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dit/ditch/ditch__gb_1.mp3
+absenteeism,https://www.oxfordlearnersdictionaries.com/definition/english/absenteeism,C2,absenteeism,sự vắng mặt,noun,/ˌæbsənˈtiːɪzəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abs/absen/absenteeism__gb_1.mp3
+drop,https://www.oxfordlearnersdictionaries.com/definition/english/drop_1,B2,drop,làm rơi,verb,/drɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drop_/drop__gb_2.mp3
 drop_out,https://www.oxfordlearnersdictionaries.com/definition/english/drop-out,B2,drop out,bỏ học,phrasal verb,,
-enrolment,https://www.oxfordlearnersdictionaries.com/definition/english/enrolment,C1,enrolment,tuyển sinh,noun,/ɪnˈrəʊlmənt/,
-entrance,https://www.oxfordlearnersdictionaries.com/definition/english/entrance1,B2,entrance,cổng vào,noun,/ˈentrəns/,
-dropout,https://www.oxfordlearnersdictionaries.com/definition/english/dropout,C1,dropout,bỏ học,noun,/ˈdrɒpaʊt/,
-exclusion,https://www.oxfordlearnersdictionaries.com/definition/english/exclusion,C1,exclusion,loại trừ,noun,/ɪkˈskluːʒn/,
-exclude,https://www.oxfordlearnersdictionaries.com/definition/english/exclude,B2,exclude,loại trừ,verb,/ɪkˈskluːd/,
-expulsion,https://www.oxfordlearnersdictionaries.com/definition/english/expulsion,C2,expulsion,trục xuất,noun,/ɪkˈspʌlʃn/,
-fee,https://www.oxfordlearnersdictionaries.com/definition/english/fee,B2,fee,phí,noun,/fiː/,
-enrol,https://www.oxfordlearnersdictionaries.com/definition/english/enrol,C1,enrol,tham gia,verb,/ɪnˈrəʊl/,
-funding,https://www.oxfordlearnersdictionaries.com/definition/english/funding,B2,funding,tài trợ,noun,/ˈfʌndɪŋ/,
-endowment,https://www.oxfordlearnersdictionaries.com/definition/english/endowment,C2,endowment,tài sản,noun,/ɪnˈdaʊmənt/,
-expel,https://www.oxfordlearnersdictionaries.com/definition/english/expel,C1,expel,trục xuất,verb,/ɪkˈspel/,
-exeat,https://www.oxfordlearnersdictionaries.com/definition/english/exeat,C2,exeat,thở ra,noun,/ˈeksɪæt/,
-loan,https://www.oxfordlearnersdictionaries.com/definition/english/loan_1,B2,loan,khoản vay,noun,/ləʊn/,
-grant,https://www.oxfordlearnersdictionaries.com/definition/english/grant_2,B2,grant,khoản trợ cấp,noun,/ɡrɑːnt/,
-intake,https://www.oxfordlearnersdictionaries.com/definition/english/intake,C1,intake,lượng tiêu thụ,noun,/ˈɪnteɪk/,
-personal_statement,https://www.oxfordlearnersdictionaries.com/definition/english/personal-statement,B2,personal statement,tuyên bố cá nhân,noun,/ˌpɜːsənl ˈsteɪtmənt/,
-scholarship,https://www.oxfordlearnersdictionaries.com/definition/english/scholarship,B2,scholarship,học bổng,noun,/ˈskɒləʃɪp/,
-matriculate,https://www.oxfordlearnersdictionaries.com/definition/english/matriculate,C2,matriculate,trúng tuyển,verb,/məˈtrɪkjuleɪt/,
-place,https://www.oxfordlearnersdictionaries.com/definition/english/place_1,B1,place,địa điểm,noun,/pleɪs/,
-non-attendance,https://www.oxfordlearnersdictionaries.com/definition/english/non-attendance,C2,non-attendance,không tham dự,noun,/ˌnɒn əˈtendəns/,
-sen,https://www.oxfordlearnersdictionaries.com/definition/english/sen_1,C2,SEN,SEN,abbreviation,/ˌes iː ˈen/,
-sponsor,https://www.oxfordlearnersdictionaries.com/definition/english/sponsor_1,B2,sponsor,nhà tài trợ,verb,/ˈspɒnsə(r)/,
-skip,https://www.oxfordlearnersdictionaries.com/definition/english/skip_1,C1,skip,nhảy,verb,/skɪp/,
-sponsor,https://www.oxfordlearnersdictionaries.com/definition/english/sponsor_2,B2,sponsor,nhà tài trợ,noun,/ˈspɒnsə(r)/,
-suspension,https://www.oxfordlearnersdictionaries.com/definition/english/suspension,C1,suspension,đình chỉ,noun,/səˈspenʃn/,
-skive,https://www.oxfordlearnersdictionaries.com/definition/english/skive,C2,skive,trượt,verb,/skaɪv/,
-suspend,https://www.oxfordlearnersdictionaries.com/definition/english/suspend,C1,suspend,đình chỉ,verb,/səˈspend/,
+enrolment,https://www.oxfordlearnersdictionaries.com/definition/english/enrolment,C1,enrolment,tuyển sinh,noun,/ɪnˈrəʊlmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/enr/enrol/enrolment__gb_1.mp3
+entrance,https://www.oxfordlearnersdictionaries.com/definition/english/entrance1,B2,entrance,cổng vào,noun,/ˈentrəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ent/entra/entrance__gb_1.mp3
+dropout,https://www.oxfordlearnersdictionaries.com/definition/english/dropout,C1,dropout,bỏ học,noun,/ˈdrɒpaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/dropo/dropout__gb_2.mp3
+exclusion,https://www.oxfordlearnersdictionaries.com/definition/english/exclusion,C1,exclusion,loại trừ,noun,/ɪkˈskluːʒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exc/exclu/exclusion__gb_1.mp3
+exclude,https://www.oxfordlearnersdictionaries.com/definition/english/exclude,B2,exclude,loại trừ,verb,/ɪkˈskluːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exc/exclu/exclude__gb_2.mp3
+expulsion,https://www.oxfordlearnersdictionaries.com/definition/english/expulsion,C2,expulsion,trục xuất,noun,/ɪkˈspʌlʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/expul/expulsion__gb_1.mp3
+fee,https://www.oxfordlearnersdictionaries.com/definition/english/fee,B2,fee,phí,noun,/fiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fee/fee__/fee__gb_2.mp3
+enrol,https://www.oxfordlearnersdictionaries.com/definition/english/enrol,C1,enrol,tham gia,verb,/ɪnˈrəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/enr/enrol/enrol__gb_1.mp3
+funding,https://www.oxfordlearnersdictionaries.com/definition/english/funding,B2,funding,tài trợ,noun,/ˈfʌndɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fun/fundi/funding__gb_3.mp3
+endowment,https://www.oxfordlearnersdictionaries.com/definition/english/endowment,C2,endowment,tài sản,noun,/ɪnˈdaʊmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/end/endow/endowment__gb_1.mp3
+expel,https://www.oxfordlearnersdictionaries.com/definition/english/expel,C1,expel,trục xuất,verb,/ɪkˈspel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/expel/expel__gb_1.mp3
+exeat,https://www.oxfordlearnersdictionaries.com/definition/english/exeat,C2,exeat,thở ra,noun,/ˈeksɪæt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/exeat/exeat__gb_1.mp3
+loan,https://www.oxfordlearnersdictionaries.com/definition/english/loan_1,B2,loan,khoản vay,noun,/ləʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loa/loan_/loan__gb_2.mp3
+grant,https://www.oxfordlearnersdictionaries.com/definition/english/grant_2,B2,grant,khoản trợ cấp,noun,/ɡrɑːnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grant/grant__gb_1.mp3
+intake,https://www.oxfordlearnersdictionaries.com/definition/english/intake,C1,intake,lượng tiêu thụ,noun,/ˈɪnteɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/intak/intake__gb_1.mp3
+personal_statement,https://www.oxfordlearnersdictionaries.com/definition/english/personal-statement,B2,personal statement,tuyên bố cá nhân,noun,/ˌpɜːsənl ˈsteɪtmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perso/personal_statement_1_gb_1.mp3
+scholarship,https://www.oxfordlearnersdictionaries.com/definition/english/scholarship,B2,scholarship,học bổng,noun,/ˈskɒləʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schol/scholarship__gb_1.mp3
+matriculate,https://www.oxfordlearnersdictionaries.com/definition/english/matriculate,C2,matriculate,trúng tuyển,verb,/məˈtrɪkjuleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matri/matriculate__gb_1.mp3
+place,https://www.oxfordlearnersdictionaries.com/definition/english/place_1,B1,place,địa điểm,noun,/pleɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/place/place__gb_1.mp3
+non-attendance,https://www.oxfordlearnersdictionaries.com/definition/english/non-attendance,C2,non-attendance,không tham dự,noun,/ˌnɒn əˈtendəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/non/non_a/non_attendance_1_gb_1.mp3
+sen,https://www.oxfordlearnersdictionaries.com/definition/english/sen_1,C2,SEN,SEN,abbreviation,/ˌes iː ˈen/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/send_/send__gb_1.mp3
+sponsor,https://www.oxfordlearnersdictionaries.com/definition/english/sponsor_1,B2,sponsor,nhà tài trợ,verb,/ˈspɒnsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spons/sponsor__gb_1.mp3
+skip,https://www.oxfordlearnersdictionaries.com/definition/english/skip_1,C1,skip,nhảy,verb,/skɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ski/skip_/skip__gb_1.mp3
+sponsor,https://www.oxfordlearnersdictionaries.com/definition/english/sponsor_2,B2,sponsor,nhà tài trợ,noun,/ˈspɒnsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spons/sponsor__gb_1.mp3
+suspension,https://www.oxfordlearnersdictionaries.com/definition/english/suspension,C1,suspension,đình chỉ,noun,/səˈspenʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspe/suspension__gb_1.mp3
+skive,https://www.oxfordlearnersdictionaries.com/definition/english/skive,C2,skive,trượt,verb,/skaɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ski/skive/skive__gb_1.mp3
+suspend,https://www.oxfordlearnersdictionaries.com/definition/english/suspend,C1,suspend,đình chỉ,verb,/səˈspend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspe/suspend__gb_2.mp3

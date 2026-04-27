@@ -1,58 +1,58 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-cabinet,https://www.oxfordlearnersdictionaries.com/definition/english/cabinet,C1,cabinet,tủ,noun,/ˈkæbɪnət/,
-bureaucracy,https://www.oxfordlearnersdictionaries.com/definition/english/bureaucracy,C1,bureaucracy,sự quan liêu,noun,/bjʊəˈrɒkrəsi/,
-barangay,https://www.oxfordlearnersdictionaries.com/definition/english/barangay,C2,barangay,barangay,noun,/ˌbærəŋˈɡaɪ/,
-agency,https://www.oxfordlearnersdictionaries.com/definition/english/agency,B2,agency,hãng,noun,/ˈeɪdʒənsi/,
-civil_service,https://www.oxfordlearnersdictionaries.com/definition/english/the-civil-service,C2,civil service,công vụ,noun,/ðə ˌsɪvl ˈsɜːvɪs/,
-autonomous,https://www.oxfordlearnersdictionaries.com/definition/english/autonomous,C2,autonomous,tự trị,adjective,/ɔːˈtɒnəməs/,
-bureaucrat,https://www.oxfordlearnersdictionaries.com/definition/english/bureaucrat,C2,bureaucrat,quan chức,noun,/ˈbjʊərəkræt/,
-budget,https://www.oxfordlearnersdictionaries.com/definition/english/budget_1,B2,budget,ngân sách,noun,/ˈbʌdʒɪt/,
-civil_servant,https://www.oxfordlearnersdictionaries.com/definition/english/civil-servant,C1,civil servant,công chức,noun,/ˌsɪvl ˈsɜːvənt/,
-bureau,https://www.oxfordlearnersdictionaries.com/definition/english/bureau,C1,bureau,văn phòng,noun,/ˈbjʊərəʊ/,
-constitutional,https://www.oxfordlearnersdictionaries.com/definition/english/constitutional_1,C1,constitutional,hiến pháp,adjective,/ˌkɒnstɪˈtjuːʃənl/,
-commissioner,https://www.oxfordlearnersdictionaries.com/definition/english/commissioner,C2,commissioner,ủy viên,noun,/kəˈmɪʃənə(r)/,
-constitutionally,https://www.oxfordlearnersdictionaries.com/definition/english/constitutionally,C1,constitutionally,theo hiến pháp,adverb,/ˌkɒnstɪˈtjuːʃənəli/,
-communiqué,https://www.oxfordlearnersdictionaries.com/definition/english/communique,C2,communiqué,thông cáo,noun,/kəˈmjuːnɪkeɪ/,
-corporation,https://www.oxfordlearnersdictionaries.com/definition/english/corporation,C2,corporation,tập đoàn,noun,/ˌkɔːpəˈreɪʃn/,
-crown,https://www.oxfordlearnersdictionaries.com/definition/english/crown_1,C1,crown,vương miện,noun,/kraʊn/,
-constitution,https://www.oxfordlearnersdictionaries.com/definition/english/constitution,C1,constitution,cấu tạo,noun,/ˌkɒnstɪˈtjuːʃn/,
-coalition,https://www.oxfordlearnersdictionaries.com/definition/english/coalition,C1,coalition,liên minh,noun,/ˌkəʊəˈlɪʃn/,
-department,https://www.oxfordlearnersdictionaries.com/definition/english/department,A2,department,phòng,noun,/dɪˈpɑːtmənt/,
-council,https://www.oxfordlearnersdictionaries.com/definition/english/council,B2,council,hội đồng,noun,/ˈkaʊnsl/,
-domestic,https://www.oxfordlearnersdictionaries.com/definition/english/domestic_1,B2,domestic,nội địa,adjective,/dəˈmestɪk/,
-destabilize,https://www.oxfordlearnersdictionaries.com/definition/english/destabilize,C2,destabilize,làm mất ổn định,verb,/ˌdiːˈsteɪbəlaɪz/,
-government,https://www.oxfordlearnersdictionaries.com/definition/english/government,A2,government,chính phủ,noun,/ˈɡʌvənmənt/,
-govern,https://www.oxfordlearnersdictionaries.com/definition/english/govern,B2,govern,cai trị,verb,/ˈɡʌvn/,
-judicial_branch,https://www.oxfordlearnersdictionaries.com/definition/english/the-judicial-branch,C2,judicial branch,ngành tư pháp,noun,/ðə dʒuˈdɪʃl brɑːntʃ/,
-international_law,https://www.oxfordlearnersdictionaries.com/definition/english/international-law,B2,international law,luật pháp quốc tế,noun,/ɪntəˌnæʃnəl ˈlɔː/,
-executive_branch,https://www.oxfordlearnersdictionaries.com/definition/english/the-executive-branch,C2,executive branch,chi nhánh điều hành,noun,/ði ɪɡˈzekjətɪv brɑːntʃ/,
-home_office,https://www.oxfordlearnersdictionaries.com/definition/english/the-home-office,C2,Home Office,Văn phòng tại nhà,noun,/ðə ˈhəʊm ɒfɪs/,
-executive_privilege,https://www.oxfordlearnersdictionaries.com/definition/english/executive-privilege,C2,executive privilege,đặc quyền điều hành,noun,/ɪɡˌzekjətɪv ˈprɪvəlɪdʒ/,
-kleptocracy,https://www.oxfordlearnersdictionaries.com/definition/english/kleptocracy,C2,kleptocracy,chế độ ăn trộm,noun,/klepˈtɒkrəsi/,
-leader,https://www.oxfordlearnersdictionaries.com/definition/english/leader,A2,leader,lãnh đạo,noun,/ˈliːdə(r)/,
-lawful,https://www.oxfordlearnersdictionaries.com/definition/english/lawful,C2,lawful,hợp pháp,adjective,/ˈlɔːfl/,
-legislative_branch,https://www.oxfordlearnersdictionaries.com/definition/english/the-legislative-branch,C2,legislative branch,cơ quan lập pháp,noun,/ðə ˈledʒɪslətɪv brɑːntʃ/,
-executive_order,https://www.oxfordlearnersdictionaries.com/definition/english/executive-order,C2,executive order,lệnh điều hành,noun,/ɪɡˌzekjətɪv ˈɔːdə(r)/,
-mass,https://www.oxfordlearnersdictionaries.com/definition/english/mass_1,B2,mass,khối,noun,/mæs/,
-law,https://www.oxfordlearnersdictionaries.com/definition/english/law,A2,law,pháp luật,noun,/lɔː/,
-ministerial,https://www.oxfordlearnersdictionaries.com/definition/english/ministerial,C2,ministerial,bộ trưởng,adjective,/ˌmɪnɪˈstɪəriəl/,
-kleptocratic,https://www.oxfordlearnersdictionaries.com/definition/english/kleptocratic,C2,kleptocratic,chế độ độc tài,adjective,/ˌkleptəˈkrætɪk/,
-ministry,https://www.oxfordlearnersdictionaries.com/definition/english/ministry,C1,ministry,bộ,noun,/ˈmɪnɪstri/,
-municipality,https://www.oxfordlearnersdictionaries.com/definition/english/municipality,C2,municipality,đô thị,noun,/mjuːˌnɪsɪˈpæləti/,
-office,https://www.oxfordlearnersdictionaries.com/definition/english/office,A2,office,văn phòng,noun,/ˈɒfɪs/,
-policymaking,https://www.oxfordlearnersdictionaries.com/definition/english/policymaking,C1,policymaking,hoạch định chính sách,noun,/ˈpɒləsimeɪkɪŋ/,
-red_tape,https://www.oxfordlearnersdictionaries.com/definition/english/red-tape,C2,red tape,băng đỏ,noun,/ˌred ˈteɪp/,
-line-item_veto,https://www.oxfordlearnersdictionaries.com/definition/english/line-item-veto,C2,line-item veto,quyền phủ quyết chi tiết đơn hàng,noun,/ˌlaɪn aɪtəm ˈviːtəʊ/,
-power_grab,https://www.oxfordlearnersdictionaries.com/definition/english/power-grab,C2,power grab,lấy sức mạnh,noun,/ˈpaʊə ɡræb/,
-rule,https://www.oxfordlearnersdictionaries.com/definition/english/rule_1,B2,rule,luật lệ,noun,/ruːl/,
-rule,https://www.oxfordlearnersdictionaries.com/definition/english/rule_2,B1,rule,luật lệ,verb,/ruːl/,
-ruler,https://www.oxfordlearnersdictionaries.com/definition/english/ruler,B1,ruler,cái thước kẻ,noun,/ˈruːlə(r)/,
-ruling,https://www.oxfordlearnersdictionaries.com/definition/english/ruling_1,C1,ruling,cai trị,noun,/ˈruːlɪŋ/,
-policymaker,https://www.oxfordlearnersdictionaries.com/definition/english/policymaker,C1,policymaker,nhà hoạch định chính sách,noun,/ˈpɒləsimeɪkə(r)/,
-rainbow_coalition,https://www.oxfordlearnersdictionaries.com/definition/english/rainbow-coalition,C2,rainbow coalition,liên minh cầu vồng,noun,/ˌreɪnbəʊ ˌkəʊəˈlɪʃn/,
-secretary,https://www.oxfordlearnersdictionaries.com/definition/english/secretary,B2,secretary,thư ký,noun,/ˈsekrətri/,
-regime_change,https://www.oxfordlearnersdictionaries.com/definition/english/regime-change,C1,regime change,thay đổi chế độ,noun,/reɪˈʒiːm tʃeɪndʒ/,
-state,https://www.oxfordlearnersdictionaries.com/definition/english/state_2,B1,state,tình trạng,adjective,/steɪt/,
-state,https://www.oxfordlearnersdictionaries.com/definition/english/state_1,A2,state,tình trạng,noun,/steɪt/,
-town_hall,https://www.oxfordlearnersdictionaries.com/definition/english/town-hall,B1,town hall,tòa thị chính,noun,/ˌtaʊn ˈhɔːl/,
-state_of_the_union_address,https://www.oxfordlearnersdictionaries.com/definition/english/the-state-of-the-union-address,C2,State of the Union Address,Thông điệp liên bang,noun,/ðə ˌsteɪt əv ðə ˈjuːniən ədres/,
+cabinet,https://www.oxfordlearnersdictionaries.com/definition/english/cabinet,C1,cabinet,tủ,noun,/ˈkæbɪnət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cab/cabin/cabinet__gb_3.mp3
+bureaucracy,https://www.oxfordlearnersdictionaries.com/definition/english/bureaucracy,C1,bureaucracy,sự quan liêu,noun,/bjʊəˈrɒkrəsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/burea/bureaucracy__gb_1.mp3
+barangay,https://www.oxfordlearnersdictionaries.com/definition/english/barangay,C2,barangay,barangay,noun,/ˌbærəŋˈɡaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/baran/barangay__gb_2.mp3
+agency,https://www.oxfordlearnersdictionaries.com/definition/english/agency,B2,agency,hãng,noun,/ˈeɪdʒənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/age/agenc/agency__gb_2.mp3
+civil_service,https://www.oxfordlearnersdictionaries.com/definition/english/the-civil-service,C2,civil service,công vụ,noun,/ðə ˌsɪvl ˈsɜːvɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/civ/civil/civil_service_the_1_gb_1.mp3
+autonomous,https://www.oxfordlearnersdictionaries.com/definition/english/autonomous,C2,autonomous,tự trị,adjective,/ɔːˈtɒnəməs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/auton/autonomous__gb_1.mp3
+bureaucrat,https://www.oxfordlearnersdictionaries.com/definition/english/bureaucrat,C2,bureaucrat,quan chức,noun,/ˈbjʊərəkræt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/burea/bureaucrat__gb_1.mp3
+budget,https://www.oxfordlearnersdictionaries.com/definition/english/budget_1,B2,budget,ngân sách,noun,/ˈbʌdʒɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bud/budge/budget__gb_2.mp3
+civil_servant,https://www.oxfordlearnersdictionaries.com/definition/english/civil-servant,C1,civil servant,công chức,noun,/ˌsɪvl ˈsɜːvənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/civ/civil/civil_servant_1_gb_1.mp3
+bureau,https://www.oxfordlearnersdictionaries.com/definition/english/bureau,C1,bureau,văn phòng,noun,/ˈbjʊərəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/burea/bureau__gb_1.mp3
+constitutional,https://www.oxfordlearnersdictionaries.com/definition/english/constitutional_1,C1,constitutional,hiến pháp,adjective,/ˌkɒnstɪˈtjuːʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconstitutional__gb_1.mp3
+commissioner,https://www.oxfordlearnersdictionaries.com/definition/english/commissioner,C2,commissioner,ủy viên,noun,/kəˈmɪʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commi/commissioner__gb_1.mp3
+constitutionally,https://www.oxfordlearnersdictionaries.com/definition/english/constitutionally,C1,constitutionally,theo hiến pháp,adverb,/ˌkɒnstɪˈtjuːʃənəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconstitutionally__gb_1.mp3
+communiqué,https://www.oxfordlearnersdictionaries.com/definition/english/communique,C2,communiqué,thông cáo,noun,/kəˈmjuːnɪkeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commu/communique_1_gb_1.mp3
+corporation,https://www.oxfordlearnersdictionaries.com/definition/english/corporation,C2,corporation,tập đoàn,noun,/ˌkɔːpəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corpo/corporation__gb_2.mp3
+crown,https://www.oxfordlearnersdictionaries.com/definition/english/crown_1,C1,crown,vương miện,noun,/kraʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/crown/crown__gb_1.mp3
+constitution,https://www.oxfordlearnersdictionaries.com/definition/english/constitution,C1,constitution,cấu tạo,noun,/ˌkɒnstɪˈtjuːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconstitution__gb_2.mp3
+coalition,https://www.oxfordlearnersdictionaries.com/definition/english/coalition,C1,coalition,liên minh,noun,/ˌkəʊəˈlɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coali/coalition__gb_1.mp3
+department,https://www.oxfordlearnersdictionaries.com/definition/english/department,A2,department,phòng,noun,/dɪˈpɑːtmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/depar/department__gb_2.mp3
+council,https://www.oxfordlearnersdictionaries.com/definition/english/council,B2,council,hội đồng,noun,/ˈkaʊnsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/counc/council__gb_1.mp3
+domestic,https://www.oxfordlearnersdictionaries.com/definition/english/domestic_1,B2,domestic,nội địa,adjective,/dəˈmestɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dom/domes/domestic__gb_2.mp3
+destabilize,https://www.oxfordlearnersdictionaries.com/definition/english/destabilize,C2,destabilize,làm mất ổn định,verb,/ˌdiːˈsteɪbəlaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/desta/destabilize__gb_1.mp3
+government,https://www.oxfordlearnersdictionaries.com/definition/english/government,A2,government,chính phủ,noun,/ˈɡʌvənmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gov/gover/government__gb_3.mp3
+govern,https://www.oxfordlearnersdictionaries.com/definition/english/govern,B2,govern,cai trị,verb,/ˈɡʌvn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gov/gover/govern__gb_2.mp3
+judicial_branch,https://www.oxfordlearnersdictionaries.com/definition/english/the-judicial-branch,C2,judicial branch,ngành tư pháp,noun,/ðə dʒuˈdɪʃl brɑːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_j/the_judicial_branch_1_gb_1.mp3
+international_law,https://www.oxfordlearnersdictionaries.com/definition/english/international-law,B2,international law,luật pháp quốc tế,noun,/ɪntəˌnæʃnəl ˈlɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/international_law_1_gb_1.mp3
+executive_branch,https://www.oxfordlearnersdictionaries.com/definition/english/the-executive-branch,C2,executive branch,chi nhánh điều hành,noun,/ði ɪɡˈzekjətɪv brɑːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_e/the_executive_branch_1_gb_1.mp3
+home_office,https://www.oxfordlearnersdictionaries.com/definition/english/the-home-office,C2,Home Office,Văn phòng tại nhà,noun,/ðə ˈhəʊm ɒfɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hom/home_/home_office_1_gb_2.mp3
+executive_privilege,https://www.oxfordlearnersdictionaries.com/definition/english/executive-privilege,C2,executive privilege,đặc quyền điều hành,noun,/ɪɡˌzekjətɪv ˈprɪvəlɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/execu/executive_privilege_1_gb_1.mp3
+kleptocracy,https://www.oxfordlearnersdictionaries.com/definition/english/kleptocracy,C2,kleptocracy,chế độ ăn trộm,noun,/klepˈtɒkrəsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kle/klept/kleptocracy__gb_2.mp3
+leader,https://www.oxfordlearnersdictionaries.com/definition/english/leader,A2,leader,lãnh đạo,noun,/ˈliːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leade/leader__gb_1.mp3
+lawful,https://www.oxfordlearnersdictionaries.com/definition/english/lawful,C2,lawful,hợp pháp,adjective,/ˈlɔːfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/law/lawfu/lawful__gb_1.mp3
+legislative_branch,https://www.oxfordlearnersdictionaries.com/definition/english/the-legislative-branch,C2,legislative branch,cơ quan lập pháp,noun,/ðə ˈledʒɪslətɪv brɑːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_l/the_legislative_branch_1_gb_1.mp3
+executive_order,https://www.oxfordlearnersdictionaries.com/definition/english/executive-order,C2,executive order,lệnh điều hành,noun,/ɪɡˌzekjətɪv ˈɔːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/execu/executive_order_1_gb_1.mp3
+mass,https://www.oxfordlearnersdictionaries.com/definition/english/mass_1,B2,mass,khối,noun,/mæs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/mass_/mass__gb_2.mp3
+law,https://www.oxfordlearnersdictionaries.com/definition/english/law,A2,law,pháp luật,noun,/lɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/law/law__/law__gb_2.mp3
+ministerial,https://www.oxfordlearnersdictionaries.com/definition/english/ministerial,C2,ministerial,bộ trưởng,adjective,/ˌmɪnɪˈstɪəriəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minis/ministerial__gb_1.mp3
+kleptocratic,https://www.oxfordlearnersdictionaries.com/definition/english/kleptocratic,C2,kleptocratic,chế độ độc tài,adjective,/ˌkleptəˈkrætɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kle/klept/kleptocratic__gb_3.mp3
+ministry,https://www.oxfordlearnersdictionaries.com/definition/english/ministry,C1,ministry,bộ,noun,/ˈmɪnɪstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minis/ministry__gb_2.mp3
+municipality,https://www.oxfordlearnersdictionaries.com/definition/english/municipality,C2,municipality,đô thị,noun,/mjuːˌnɪsɪˈpæləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mun/munic/municipality__gb_1.mp3
+office,https://www.oxfordlearnersdictionaries.com/definition/english/office,A2,office,văn phòng,noun,/ˈɒfɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/off/offic/office__gb_2.mp3
+policymaking,https://www.oxfordlearnersdictionaries.com/definition/english/policymaking,C1,policymaking,hoạch định chính sách,noun,/ˈpɒləsimeɪkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polic/policymaking__gb_1.mp3
+red_tape,https://www.oxfordlearnersdictionaries.com/definition/english/red-tape,C2,red tape,băng đỏ,noun,/ˌred ˈteɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/red/red_t/red_tape_1_gb_1.mp3
+line-item_veto,https://www.oxfordlearnersdictionaries.com/definition/english/line-item-veto,C2,line-item veto,quyền phủ quyết chi tiết đơn hàng,noun,/ˌlaɪn aɪtəm ˈviːtəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/line_/line_item_veto_1_gb_1.mp3
+power_grab,https://www.oxfordlearnersdictionaries.com/definition/english/power-grab,C2,power grab,lấy sức mạnh,noun,/ˈpaʊə ɡræb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pow/power/power_grab_1_gb_1.mp3
+rule,https://www.oxfordlearnersdictionaries.com/definition/english/rule_1,B2,rule,luật lệ,noun,/ruːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rul/rule_/rule__gb_1.mp3
+rule,https://www.oxfordlearnersdictionaries.com/definition/english/rule_2,B1,rule,luật lệ,verb,/ruːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rul/rule_/rule__gb_1.mp3
+ruler,https://www.oxfordlearnersdictionaries.com/definition/english/ruler,B1,ruler,cái thước kẻ,noun,/ˈruːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rul/ruler/ruler__gb_2.mp3
+ruling,https://www.oxfordlearnersdictionaries.com/definition/english/ruling_1,C1,ruling,cai trị,noun,/ˈruːlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rul/rulin/ruling__gb_1.mp3
+policymaker,https://www.oxfordlearnersdictionaries.com/definition/english/policymaker,C1,policymaker,nhà hoạch định chính sách,noun,/ˈpɒləsimeɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polic/policymaker__gb_1.mp3
+rainbow_coalition,https://www.oxfordlearnersdictionaries.com/definition/english/rainbow-coalition,C2,rainbow coalition,liên minh cầu vồng,noun,/ˌreɪnbəʊ ˌkəʊəˈlɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rainb/rainbow_coalition_1_gb_1.mp3
+secretary,https://www.oxfordlearnersdictionaries.com/definition/english/secretary,B2,secretary,thư ký,noun,/ˈsekrətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secre/secretary__gb_1.mp3
+regime_change,https://www.oxfordlearnersdictionaries.com/definition/english/regime-change,C1,regime change,thay đổi chế độ,noun,/reɪˈʒiːm tʃeɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/regim/regime_change_1_gb_1.mp3
+state,https://www.oxfordlearnersdictionaries.com/definition/english/state_2,B1,state,tình trạng,adjective,/steɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/state/state__gb_2.mp3
+state,https://www.oxfordlearnersdictionaries.com/definition/english/state_1,A2,state,tình trạng,noun,/steɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/state/state__gb_2.mp3
+town_hall,https://www.oxfordlearnersdictionaries.com/definition/english/town-hall,B1,town hall,tòa thị chính,noun,/ˌtaʊn ˈhɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tow/town_/town_hall_1_gb_1.mp3
+state_of_the_union_address,https://www.oxfordlearnersdictionaries.com/definition/english/the-state-of-the-union-address,C2,State of the Union Address,Thông điệp liên bang,noun,/ðə ˌsteɪt əv ðə ˈjuːniən ədres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_s/the_state_of_the_union_address_1_gb_1.mp3

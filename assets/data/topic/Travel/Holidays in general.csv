@@ -1,52 +1,52 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-currency,https://www.oxfordlearnersdictionaries.com/definition/english/currency,B1,currency,tiền tệ,noun,/ˈkʌrənsi/,
-backpack,https://www.oxfordlearnersdictionaries.com/definition/english/backpack_1,B1,backpack,balo,noun,/ˈbækpæk/,
-customs,https://www.oxfordlearnersdictionaries.com/definition/english/customs,C2,customs,hải quan,noun,/ˈkʌstəmz/,
-duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_1,C1,duty-free,miễn thuế,adjective,/ˌdjuːti ˈfriː/,
-destination,https://www.oxfordlearnersdictionaries.com/definition/english/destination_1,B1,destination,điểm đến,noun,/ˌdestɪˈneɪʃn/,
-deckchair,https://www.oxfordlearnersdictionaries.com/definition/english/deckchair,C2,deckchair,ghế xếp,noun,/ˈdektʃeə(r)/,
-foreign,https://www.oxfordlearnersdictionaries.com/definition/english/foreign,A2,foreign,nước ngoài,adjective,/ˈfɒrən/,
-duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_3,C1,duty-free,miễn thuế,adverb,/ˌdjuːti ˈfriː/,
+currency,https://www.oxfordlearnersdictionaries.com/definition/english/currency,B1,currency,tiền tệ,noun,/ˈkʌrənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cur/curre/currency__gb_2.mp3
+backpack,https://www.oxfordlearnersdictionaries.com/definition/english/backpack_1,B1,backpack,balo,noun,/ˈbækpæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/backp/backpack__gb_1.mp3
+customs,https://www.oxfordlearnersdictionaries.com/definition/english/customs,C2,customs,hải quan,noun,/ˈkʌstəmz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cus/custo/customs__gb_1.mp3
+duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_1,C1,duty-free,miễn thuế,adjective,/ˌdjuːti ˈfriː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dut/duty_/duty_free_1_gb_1.mp3
+destination,https://www.oxfordlearnersdictionaries.com/definition/english/destination_1,B1,destination,điểm đến,noun,/ˌdestɪˈneɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/desti/destination__gb_2.mp3
+deckchair,https://www.oxfordlearnersdictionaries.com/definition/english/deckchair,C2,deckchair,ghế xếp,noun,/ˈdektʃeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/deckc/deckchair__gb_2.mp3
+foreign,https://www.oxfordlearnersdictionaries.com/definition/english/foreign,A2,foreign,nước ngoài,adjective,/ˈfɒrən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forei/foreign__gb_2.mp3
+duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_3,C1,duty-free,miễn thuế,adverb,/ˌdjuːti ˈfriː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dut/duty_/duty_free_1_gb_1.mp3
 get_away,https://www.oxfordlearnersdictionaries.com/definition/english/get-away,B2,get away,tránh xa,phrasal verb,,
-daypack,https://www.oxfordlearnersdictionaries.com/definition/english/daypack,C1,daypack,gói hàng ngày,noun,/ˈdeɪpæk/,
-pack,https://www.oxfordlearnersdictionaries.com/definition/english/pack_1,A2,pack,đóng gói,verb,/pæk/,
-lounger,https://www.oxfordlearnersdictionaries.com/definition/english/lounger,C2,lounger,người đi lang thang,noun,/ˈlaʊndʒə(r)/,
-holidaymaker,https://www.oxfordlearnersdictionaries.com/definition/english/holidaymaker,B2,holidaymaker,người đi nghỉ mát,noun,/ˈhɒlədeɪmeɪkə(r)/,
-luggage,https://www.oxfordlearnersdictionaries.com/definition/english/luggage,A2,luggage,hành lý,noun,/ˈlʌɡɪdʒ/,
-itinerary,https://www.oxfordlearnersdictionaries.com/definition/english/itinerary,C1,itinerary,hành trình,noun,/aɪˈtɪnərəri/,
-passport,https://www.oxfordlearnersdictionaries.com/definition/english/passport,A1,passport,hộ chiếu,noun,/ˈpɑːspɔːt/,
-journey,https://www.oxfordlearnersdictionaries.com/definition/english/journey_1,A1,journey,hành trình,noun,/ˈdʒɜːni/,
-parasol,https://www.oxfordlearnersdictionaries.com/definition/english/parasol,C2,parasol,dù che nắng,noun,/ˈpærəsɒl/,
-pool,https://www.oxfordlearnersdictionaries.com/definition/english/pool_1,A1,pool,hồ bơi,noun,/puːl/,
-holiday_club,https://www.oxfordlearnersdictionaries.com/definition/english/holiday-club,C2,holiday club,câu lạc bộ nghỉ lễ,noun,/ˈhɒlədeɪ klʌb/,
-postcard,https://www.oxfordlearnersdictionaries.com/definition/english/postcard,A2,postcard,bưu thiếp,noun,/ˈpəʊstkɑːd/,
-sandy,https://www.oxfordlearnersdictionaries.com/definition/english/sandy_1,B2,sandy,cát,adjective,/ˈsændi/,
-sea,https://www.oxfordlearnersdictionaries.com/definition/english/sea,A1,sea,biển,noun,/siː/,
-seafront,https://www.oxfordlearnersdictionaries.com/definition/english/seafront,C2,seafront,bờ biển,noun,/ˈsiːfrʌnt/,
-resort,https://www.oxfordlearnersdictionaries.com/definition/english/resort_1,B2,resort,khu nghỉ mát,noun,/rɪˈzɔːt/,
-sandcastle,https://www.oxfordlearnersdictionaries.com/definition/english/sandcastle,C1,sandcastle,lâu đài cát,noun,/ˈsændkɑːsl/,
-sand,https://www.oxfordlearnersdictionaries.com/definition/english/sand_1,B1,sand,cát,noun,/sænd/,
-sightseeing,https://www.oxfordlearnersdictionaries.com/definition/english/sightseeing,A2,sightseeing,tham quan,noun,/ˈsaɪtsiːɪŋ/,
-sight,https://www.oxfordlearnersdictionaries.com/definition/english/sight_1,B1,sight,thị giác,noun,/saɪt/,
-sightsee,https://www.oxfordlearnersdictionaries.com/definition/english/sightsee,C1,sightsee,ngắm cảnh,verb,/ˈsaɪtsiː/,
-souvenir,https://www.oxfordlearnersdictionaries.com/definition/english/souvenir,A2,souvenir,quà lưu niệm,noun,/ˌsuːvəˈnɪə(r)/,
-sunblock,https://www.oxfordlearnersdictionaries.com/definition/english/sunblock,C1,sunblock,kem chống nắng,noun,/ˈsʌnblɒk/,
-suitcase,https://www.oxfordlearnersdictionaries.com/definition/english/suitcase,A2,suitcase,va li,noun,/ˈsuːtkeɪs/,
-sun_cream,https://www.oxfordlearnersdictionaries.com/definition/english/sun-cream,C1,sun cream,kem chống nắng,noun,/ˈsʌn kriːm/,
-sunbathe,https://www.oxfordlearnersdictionaries.com/definition/english/sunbathe,B1,sunbathe,tắm nắng,verb,/ˈsʌnbeɪð/,
-snap,https://www.oxfordlearnersdictionaries.com/definition/english/snap_2,C2,snap,búng tay,noun,/snæp/,
-sunburn,https://www.oxfordlearnersdictionaries.com/definition/english/sunburn,C1,sunburn,cháy nắng,noun,/ˈsʌnbɜːn/,
-sunscreen,https://www.oxfordlearnersdictionaries.com/definition/english/sunscreen,B2,sunscreen,kem chống nắng,noun,/ˈsʌnskriːn/,
-sightseer,https://www.oxfordlearnersdictionaries.com/definition/english/sightseer,C1,sightseer,người ngắm cảnh,noun,/ˈsaɪtsɪə(r)/,
-sunlounger,https://www.oxfordlearnersdictionaries.com/definition/english/sunlounger,C2,sunlounger,ghế tắm nắng,noun,/ˈsʌnlaʊndʒə(r)/,
-suntan,https://www.oxfordlearnersdictionaries.com/definition/english/suntan_2,C1,suntan,rám nắng,noun,/ˈsʌntæn/,
-tan,https://www.oxfordlearnersdictionaries.com/definition/english/tan_2,C1,tan,rám nắng,noun,/tæn/,
-traveller,https://www.oxfordlearnersdictionaries.com/definition/english/traveller,A2,traveller,du khách,noun,/ˈtrævələ(r)/,
-unpack,https://www.oxfordlearnersdictionaries.com/definition/english/unpack,B1,unpack,giải nén,verb,/ˌʌnˈpæk/,
-trip,https://www.oxfordlearnersdictionaries.com/definition/english/trip_1,A1,trip,chuyến đi,noun,/trɪp/,
-traveller’s_cheque,https://www.oxfordlearnersdictionaries.com/definition/english/traveller-s-cheque,C1,traveller’s cheque,séc du lịch,noun,/ˈtrævələz tʃek/,
-tan,https://www.oxfordlearnersdictionaries.com/definition/english/tan_1,C1,tan,rám nắng,verb,/tæn/,
-vacationer,https://www.oxfordlearnersdictionaries.com/definition/english/vacationer,C2,vacationer,người đi nghỉ mát,noun,/veɪˈkeɪʃənə(r)/,
-visa,https://www.oxfordlearnersdictionaries.com/definition/english/visa,B2,visa,visa,noun,/ˈviːzə/,
-visitor,https://www.oxfordlearnersdictionaries.com/definition/english/visitor,A1,visitor,du khách,noun,/ˈvɪzɪtə(r)/,
-voyage,https://www.oxfordlearnersdictionaries.com/definition/english/voyage_1,B2,voyage,chuyến đi,noun,/ˈvɔɪɪdʒ/,
+daypack,https://www.oxfordlearnersdictionaries.com/definition/english/daypack,C1,daypack,gói hàng ngày,noun,/ˈdeɪpæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/daypa/daypack__gb_1.mp3
+pack,https://www.oxfordlearnersdictionaries.com/definition/english/pack_1,A2,pack,đóng gói,verb,/pæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pac/pack_/pack__gb_1.mp3
+lounger,https://www.oxfordlearnersdictionaries.com/definition/english/lounger,C2,lounger,người đi lang thang,noun,/ˈlaʊndʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lou/loung/lounger__gb_1.mp3
+holidaymaker,https://www.oxfordlearnersdictionaries.com/definition/english/holidaymaker,B2,holidaymaker,người đi nghỉ mát,noun,/ˈhɒlədeɪmeɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hol/holid/holidaymaker__gb_1.mp3
+luggage,https://www.oxfordlearnersdictionaries.com/definition/english/luggage,A2,luggage,hành lý,noun,/ˈlʌɡɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lug/lugga/luggage__gb_1.mp3
+itinerary,https://www.oxfordlearnersdictionaries.com/definition/english/itinerary,C1,itinerary,hành trình,noun,/aɪˈtɪnərəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iti/itine/itinerary__gb_6.mp3
+passport,https://www.oxfordlearnersdictionaries.com/definition/english/passport,A1,passport,hộ chiếu,noun,/ˈpɑːspɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passp/passport__gb_1.mp3
+journey,https://www.oxfordlearnersdictionaries.com/definition/english/journey_1,A1,journey,hành trình,noun,/ˈdʒɜːni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jou/journ/journey__gb_2.mp3
+parasol,https://www.oxfordlearnersdictionaries.com/definition/english/parasol,C2,parasol,dù che nắng,noun,/ˈpærəsɒl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/paras/parasol__gb_1.mp3
+pool,https://www.oxfordlearnersdictionaries.com/definition/english/pool_1,A1,pool,hồ bơi,noun,/puːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poo/pool_/pool__gb_3.mp3
+holiday_club,https://www.oxfordlearnersdictionaries.com/definition/english/holiday-club,C2,holiday club,câu lạc bộ nghỉ lễ,noun,/ˈhɒlədeɪ klʌb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hol/holid/holiday_club_1_gb_1.mp3
+postcard,https://www.oxfordlearnersdictionaries.com/definition/english/postcard,A2,postcard,bưu thiếp,noun,/ˈpəʊstkɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/postc/postcard__gb_1.mp3
+sandy,https://www.oxfordlearnersdictionaries.com/definition/english/sandy_1,B2,sandy,cát,adjective,/ˈsændi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/san/sandy/sandy__gb_1.mp3
+sea,https://www.oxfordlearnersdictionaries.com/definition/english/sea,A1,sea,biển,noun,/siː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/sea__/sea__gb_1.mp3
+seafront,https://www.oxfordlearnersdictionaries.com/definition/english/seafront,C2,seafront,bờ biển,noun,/ˈsiːfrʌnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seafr/seafront__gb_1.mp3
+resort,https://www.oxfordlearnersdictionaries.com/definition/english/resort_1,B2,resort,khu nghỉ mát,noun,/rɪˈzɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resor/resort__gb_1.mp3
+sandcastle,https://www.oxfordlearnersdictionaries.com/definition/english/sandcastle,C1,sandcastle,lâu đài cát,noun,/ˈsændkɑːsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/san/sandc/sandcastle__gb_1.mp3
+sand,https://www.oxfordlearnersdictionaries.com/definition/english/sand_1,B1,sand,cát,noun,/sænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/san/sand_/sand__gb_2.mp3
+sightseeing,https://www.oxfordlearnersdictionaries.com/definition/english/sightseeing,A2,sightseeing,tham quan,noun,/ˈsaɪtsiːɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sig/sight/sightseeing__gb_2.mp3
+sight,https://www.oxfordlearnersdictionaries.com/definition/english/sight_1,B1,sight,thị giác,noun,/saɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cit/cite_/cite__gb_2.mp3
+sightsee,https://www.oxfordlearnersdictionaries.com/definition/english/sightsee,C1,sightsee,ngắm cảnh,verb,/ˈsaɪtsiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sig/sight/sightsee__gb_1.mp3
+souvenir,https://www.oxfordlearnersdictionaries.com/definition/english/souvenir,A2,souvenir,quà lưu niệm,noun,/ˌsuːvəˈnɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/souve/souvenir__gb_1.mp3
+sunblock,https://www.oxfordlearnersdictionaries.com/definition/english/sunblock,C1,sunblock,kem chống nắng,noun,/ˈsʌnblɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunbl/sunblock__gb_1.mp3
+suitcase,https://www.oxfordlearnersdictionaries.com/definition/english/suitcase,A2,suitcase,va li,noun,/ˈsuːtkeɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sui/suitc/suitcase__gb_1.mp3
+sun_cream,https://www.oxfordlearnersdictionaries.com/definition/english/sun-cream,C1,sun cream,kem chống nắng,noun,/ˈsʌn kriːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/suncr/suncream__gb_2.mp3
+sunbathe,https://www.oxfordlearnersdictionaries.com/definition/english/sunbathe,B1,sunbathe,tắm nắng,verb,/ˈsʌnbeɪð/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunba/sunbathe__gb_1.mp3
+snap,https://www.oxfordlearnersdictionaries.com/definition/english/snap_2,C2,snap,búng tay,noun,/snæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sna/snap_/snap__gb_1.mp3
+sunburn,https://www.oxfordlearnersdictionaries.com/definition/english/sunburn,C1,sunburn,cháy nắng,noun,/ˈsʌnbɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunbu/sunburn__gb_1.mp3
+sunscreen,https://www.oxfordlearnersdictionaries.com/definition/english/sunscreen,B2,sunscreen,kem chống nắng,noun,/ˈsʌnskriːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunsc/sunscreen__gb_1.mp3
+sightseer,https://www.oxfordlearnersdictionaries.com/definition/english/sightseer,C1,sightseer,người ngắm cảnh,noun,/ˈsaɪtsɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sig/sight/sightseer__gb_1.mp3
+sunlounger,https://www.oxfordlearnersdictionaries.com/definition/english/sunlounger,C2,sunlounger,ghế tắm nắng,noun,/ˈsʌnlaʊndʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunlo/sunlounger__gb_1.mp3
+suntan,https://www.oxfordlearnersdictionaries.com/definition/english/suntan_2,C1,suntan,rám nắng,noun,/ˈsʌntæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunta/suntan__gb_1.mp3
+tan,https://www.oxfordlearnersdictionaries.com/definition/english/tan_2,C1,tan,rám nắng,noun,/tæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tan/tan__/tan__gb_1.mp3
+traveller,https://www.oxfordlearnersdictionaries.com/definition/english/traveller,A2,traveller,du khách,noun,/ˈtrævələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trave/traveller__gb_1.mp3
+unpack,https://www.oxfordlearnersdictionaries.com/definition/english/unpack,B1,unpack,giải nén,verb,/ˌʌnˈpæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unp/unpac/unpack__gb_1.mp3
+trip,https://www.oxfordlearnersdictionaries.com/definition/english/trip_1,A1,trip,chuyến đi,noun,/trɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tri/trip_/trip__gb_2.mp3
+traveller’s_cheque,https://www.oxfordlearnersdictionaries.com/definition/english/traveller-s-cheque,C1,traveller’s cheque,séc du lịch,noun,/ˈtrævələz tʃek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trave/traveller_s_cheque_1_gb_1.mp3
+tan,https://www.oxfordlearnersdictionaries.com/definition/english/tan_1,C1,tan,rám nắng,verb,/tæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tan/tan__/tan__gb_1.mp3
+vacationer,https://www.oxfordlearnersdictionaries.com/definition/english/vacationer,C2,vacationer,người đi nghỉ mát,noun,/veɪˈkeɪʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vac/vacat/vacationer__gb_2.mp3
+visa,https://www.oxfordlearnersdictionaries.com/definition/english/visa,B2,visa,visa,noun,/ˈviːzə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vis/visa_/visa__gb_1.mp3
+visitor,https://www.oxfordlearnersdictionaries.com/definition/english/visitor,A1,visitor,du khách,noun,/ˈvɪzɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vis/visit/visitor__gb_1.mp3
+voyage,https://www.oxfordlearnersdictionaries.com/definition/english/voyage_1,B2,voyage,chuyến đi,noun,/ˈvɔɪɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voy/voyag/voyage__gb_1.mp3

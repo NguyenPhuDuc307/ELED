@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../services/auth_service.dart';
@@ -47,11 +48,25 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isSearching = false;
   Timer? _debounceTimer;
 
+  final _audioPlayer = AudioPlayer();
+  String _playingUrl = '';
+
   @override
   void dispose() {
     _debounceTimer?.cancel();
     _searchController.dispose();
+    _audioPlayer.dispose();
     super.dispose();
+  }
+
+  Future<void> _playAudio(String url) async {
+    if (url.isEmpty || _playingUrl == url) return;
+    setState(() => _playingUrl = url);
+    try {
+      await _audioPlayer.setUrl(url);
+      await _audioPlayer.play();
+    } catch (_) {}
+    if (mounted) setState(() => _playingUrl = '');
   }
 
   @override
@@ -539,11 +554,37 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 16,
-                  color: BrutalistTheme.black.withValues(alpha: 0.5),
-                ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (vocab.audioLink.isNotEmpty)
+                        GestureDetector(
+                          onTap: () => _playAudio(vocab.audioLink),
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: _playingUrl == vocab.audioLink
+                                ? const SizedBox(
+                                    width: 18,
+                                    height: 18,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      color: BrutalistTheme.primary,
+                                    ),
+                                  )
+                                : Icon(
+                                    Icons.volume_up_rounded,
+                                    size: 20,
+                                    color: BrutalistTheme.primary.withValues(alpha: 0.8),
+                                  ),
+                          ),
+                        ),
+                      Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        size: 16,
+                        color: BrutalistTheme.black.withValues(alpha: 0.5),
+                      ),
+                    ],
+                  ),
               ],
             ),
           ),
@@ -674,24 +715,21 @@ class _HomeScreenState extends State<HomeScreen> {
       final key = vocab.word.toLowerCase();
       if (collapsed.containsKey(key)) {
         final existing = collapsed[key]!;
-        if (vocab.topic.isNotEmpty) {
-           final topicsList = existing.topic.split(', ').where((s) => s.isNotEmpty).toList();
-           if (!topicsList.contains(vocab.topic)) {
-              topicsList.add(vocab.topic);
-           }
-           final newTopic = topicsList.join(', ');
-           collapsed[key] = Vocabulary(
-              id: existing.id,
-              url: existing.url,
-              levels: existing.levels,
-              word: existing.word,
-              translation: existing.translation,
-              partOfSpeech: existing.partOfSpeech,
-              ipa: existing.ipa,
-              audioLink: existing.audioLink,
-              topic: newTopic,
-           );
+        final topicsList = existing.topic.split(', ').where((s) => s.isNotEmpty).toList();
+        if (vocab.topic.isNotEmpty && !topicsList.contains(vocab.topic)) {
+          topicsList.add(vocab.topic);
         }
+        collapsed[key] = Vocabulary(
+          id: existing.id,
+          url: existing.url.isNotEmpty ? existing.url : vocab.url,
+          levels: existing.levels,
+          word: existing.word,
+          translation: existing.translation,
+          partOfSpeech: existing.partOfSpeech,
+          ipa: existing.ipa,
+          audioLink: existing.audioLink.isNotEmpty ? existing.audioLink : vocab.audioLink,
+          topic: topicsList.join(', '),
+        );
       } else {
         collapsed[key] = vocab;
       }
@@ -748,10 +786,36 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                  Icon(
-                    Icons.arrow_forward_ios_rounded,
-                    size: 16,
-                    color: BrutalistTheme.black.withValues(alpha: 0.5),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (vocab.audioLink.isNotEmpty)
+                        GestureDetector(
+                          onTap: () => _playAudio(vocab.audioLink),
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: _playingUrl == vocab.audioLink
+                                ? const SizedBox(
+                                    width: 18,
+                                    height: 18,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      color: BrutalistTheme.primary,
+                                    ),
+                                  )
+                                : Icon(
+                                    Icons.volume_up_rounded,
+                                    size: 20,
+                                    color: BrutalistTheme.primary.withValues(alpha: 0.8),
+                                  ),
+                          ),
+                        ),
+                      Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        size: 16,
+                        color: BrutalistTheme.black.withValues(alpha: 0.5),
+                      ),
+                    ],
                   ),
                 ],
               ),

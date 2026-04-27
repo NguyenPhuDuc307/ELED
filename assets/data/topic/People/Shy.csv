@@ -1,9 +1,9 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-introverted,https://www.oxfordlearnersdictionaries.com/definition/english/introverted,C2,introverted,sống nội tâm,adjective,/ˈɪntrəvɜːtɪd/,
-timorous,https://www.oxfordlearnersdictionaries.com/definition/english/timorous,C2,timorous,rụt rè,adjective,/ˈtɪmərəs/,
-timidity,https://www.oxfordlearnersdictionaries.com/definition/english/timidity,C2,timidity,sự rụt rè,noun,/tɪˈmɪdəti/,
-shy,https://www.oxfordlearnersdictionaries.com/definition/english/shy_1,B1,shy,xấu hổ,adjective,/ʃaɪ/,
-timid,https://www.oxfordlearnersdictionaries.com/definition/english/timid,C1,timid,rụt rè,adjective,/ˈtɪmɪd/,
-nervous,https://www.oxfordlearnersdictionaries.com/definition/english/nervous,B1,nervous,lo lắng,adjective,/ˈnɜːvəs/,
-introvert,https://www.oxfordlearnersdictionaries.com/definition/english/introvert_1,B2,introvert,hướng nội,noun,/ˈɪntrəvɜːt/,
-withdrawn,https://www.oxfordlearnersdictionaries.com/definition/english/withdrawn,C1,withdrawn,rút tiền,adjective,/wɪðˈdrɔːn/,
+introverted,https://www.oxfordlearnersdictionaries.com/definition/english/introverted,C2,introverted,sống nội tâm,adjective,/ˈɪntrəvɜːtɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/intro/introverted__gb_1.mp3
+timorous,https://www.oxfordlearnersdictionaries.com/definition/english/timorous,C2,timorous,rụt rè,adjective,/ˈtɪmərəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/timor/timorous__gb_1.mp3
+timidity,https://www.oxfordlearnersdictionaries.com/definition/english/timidity,C2,timidity,sự rụt rè,noun,/tɪˈmɪdəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/timid/timidity__gb_1.mp3
+shy,https://www.oxfordlearnersdictionaries.com/definition/english/shy_1,B1,shy,xấu hổ,adjective,/ʃaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shy/shy__/shy__gb_2.mp3
+timid,https://www.oxfordlearnersdictionaries.com/definition/english/timid,C1,timid,rụt rè,adjective,/ˈtɪmɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/timid/timid__gb_1.mp3
+nervous,https://www.oxfordlearnersdictionaries.com/definition/english/nervous,B1,nervous,lo lắng,adjective,/ˈnɜːvəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/ner/nervo/nervous__gb_1.mp3
+introvert,https://www.oxfordlearnersdictionaries.com/definition/english/introvert_1,B2,introvert,hướng nội,noun,/ˈɪntrəvɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/intro/introvert__gb_1.mp3
+withdrawn,https://www.oxfordlearnersdictionaries.com/definition/english/withdrawn,C1,withdrawn,rút tiền,adjective,/wɪðˈdrɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wit/withd/withdrawn__gb_3.mp3

@@ -1,29 +1,29 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-backstory,https://www.oxfordlearnersdictionaries.com/definition/english/backstory,C1,backstory,cốt truyện,noun,/ˈbækstɔːri/,
-arc,https://www.oxfordlearnersdictionaries.com/definition/english/arc_1,C2,arc,vòng cung,noun,/ɑːk/,
-beginning,https://www.oxfordlearnersdictionaries.com/definition/english/beginning,A1,beginning,sự khởi đầu,noun,/bɪˈɡɪnɪŋ/,
-direct_speech,https://www.oxfordlearnersdictionaries.com/definition/english/direct-speech,B1,direct speech,lời nói trực tiếp,noun,/dəˌrekt ˈspiːtʃ/,
-conclusion,https://www.oxfordlearnersdictionaries.com/definition/english/conclusion,B1,conclusion,Phần kết luận,noun,/kənˈkluːʒn/,
-dialogue,https://www.oxfordlearnersdictionaries.com/definition/english/dialogue,A1,dialogue,đối thoại,noun,/ˈdaɪəlɒɡ/,
-characterization,https://www.oxfordlearnersdictionaries.com/definition/english/characterization,C1,characterization,đặc tính,noun,/ˌkærəktəraɪˈzeɪʃn/,
-episode,https://www.oxfordlearnersdictionaries.com/definition/english/episode,B1,episode,tập phim,noun,/ˈepɪsəʊd/,
-end,https://www.oxfordlearnersdictionaries.com/definition/english/end_1,A1,end,kết thúc,noun,/end/,
-ending,https://www.oxfordlearnersdictionaries.com/definition/english/ending,A2,ending,kết thúc,noun,/ˈendɪŋ/,
-lament,https://www.oxfordlearnersdictionaries.com/definition/english/lament_2,C2,lament,than thở,noun,/ləˈment/,
-indirect_speech,https://www.oxfordlearnersdictionaries.com/definition/english/indirect-speech,B1,indirect speech,lời nói gián tiếp,noun,/ˌɪndərekt ˈspiːtʃ/,
-introduction,https://www.oxfordlearnersdictionaries.com/definition/english/introduction,A2,introduction,giới thiệu,noun,/ˌɪntrəˈdʌkʃn/,
-first_person,https://www.oxfordlearnersdictionaries.com/definition/english/the-first-person,C1,first person,người đầu tiên,noun,/ðə ˌfɜːst ˈpɜːsn/,
-narration,https://www.oxfordlearnersdictionaries.com/definition/english/narration,C1,narration,tường thuật,noun,/nəˈreɪʃn/,
-message,https://www.oxfordlearnersdictionaries.com/definition/english/message_1,B1,message,tin nhắn,noun,/ˈmesɪdʒ/,
-narrative,https://www.oxfordlearnersdictionaries.com/definition/english/narrative_1,B1,narrative,chuyện kể,noun,/ˈnærətɪv/,
-motif,https://www.oxfordlearnersdictionaries.com/definition/english/motif,C2,motif,họa tiết,noun,/məʊˈtiːf/,
-passage,https://www.oxfordlearnersdictionaries.com/definition/english/passage,B2,passage,đoạn văn,noun,/ˈpæsɪdʒ/,
-leitmotif,https://www.oxfordlearnersdictionaries.com/definition/english/leitmotif,C2,leitmotif,leitmotif,noun,/ˈlaɪtməʊtiːf/,
-plot,https://www.oxfordlearnersdictionaries.com/definition/english/plot_1,B1,plot,kịch bản,noun,/plɒt/,
-storyline,https://www.oxfordlearnersdictionaries.com/definition/english/storyline,B2,storyline,cốt truyện,noun,/ˈstɔːrilaɪn/,
-twist,https://www.oxfordlearnersdictionaries.com/definition/english/twist_2,C1,twist,xoắn,noun,/twɪst/,
-second_person,https://www.oxfordlearnersdictionaries.com/definition/english/the-second-person,C1,second person,người thứ hai,noun,/ðə ˌsekənd ˈpɜːsn/,
-third_person,https://www.oxfordlearnersdictionaries.com/definition/english/the-third-person,C1,third person,người thứ ba,noun,/ðə ˌθɜːd ˈpɜːsn/,
-setting,https://www.oxfordlearnersdictionaries.com/definition/english/setting,B1,setting,cài đặt,noun,/ˈsetɪŋ/,
-theme,https://www.oxfordlearnersdictionaries.com/definition/english/theme_1,B1,theme,chủ đề,noun,/θiːm/,
-subplot,https://www.oxfordlearnersdictionaries.com/definition/english/subplot,C2,subplot,tình tiết phụ,noun,/ˈsʌbplɒt/,
+backstory,https://www.oxfordlearnersdictionaries.com/definition/english/backstory,C1,backstory,cốt truyện,noun,/ˈbækstɔːri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/backs/backstory__gb_1.mp3
+arc,https://www.oxfordlearnersdictionaries.com/definition/english/arc_1,C2,arc,vòng cung,noun,/ɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/arc/arc__/arc__gb_1.mp3
+beginning,https://www.oxfordlearnersdictionaries.com/definition/english/beginning,A1,beginning,sự khởi đầu,noun,/bɪˈɡɪnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/beg/begin/beginning__gb_2.mp3
+direct_speech,https://www.oxfordlearnersdictionaries.com/definition/english/direct-speech,B1,direct speech,lời nói trực tiếp,noun,/dəˌrekt ˈspiːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dir/direc/direct_speech_1_gb_4.mp3
+conclusion,https://www.oxfordlearnersdictionaries.com/definition/english/conclusion,B1,conclusion,Phần kết luận,noun,/kənˈkluːʒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconc/xconclusion__gb_3.mp3
+dialogue,https://www.oxfordlearnersdictionaries.com/definition/english/dialogue,A1,dialogue,đối thoại,noun,/ˈdaɪəlɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/dialo/dialogue__gb_1.mp3
+characterization,https://www.oxfordlearnersdictionaries.com/definition/english/characterization,C1,characterization,đặc tính,noun,/ˌkærəktəraɪˈzeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chara/characterization__gb_1.mp3
+episode,https://www.oxfordlearnersdictionaries.com/definition/english/episode,B1,episode,tập phim,noun,/ˈepɪsəʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/epi/episo/episode__gb_1.mp3
+end,https://www.oxfordlearnersdictionaries.com/definition/english/end_1,A1,end,kết thúc,noun,/end/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/end/end__/end__gb_1.mp3
+ending,https://www.oxfordlearnersdictionaries.com/definition/english/ending,A2,ending,kết thúc,noun,/ˈendɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/end/endin/ending__gb_1.mp3
+lament,https://www.oxfordlearnersdictionaries.com/definition/english/lament_2,C2,lament,than thở,noun,/ləˈment/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lam/lamen/lament__gb_1.mp3
+indirect_speech,https://www.oxfordlearnersdictionaries.com/definition/english/indirect-speech,B1,indirect speech,lời nói gián tiếp,noun,/ˌɪndərekt ˈspiːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ind/indir/indirect_speech_1_gb_1.mp3
+introduction,https://www.oxfordlearnersdictionaries.com/definition/english/introduction,A2,introduction,giới thiệu,noun,/ˌɪntrəˈdʌkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/intro/introduction__gb_2.mp3
+first_person,https://www.oxfordlearnersdictionaries.com/definition/english/the-first-person,C1,first person,người đầu tiên,noun,/ðə ˌfɜːst ˈpɜːsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_f/the_first_person_1_gb_1.mp3
+narration,https://www.oxfordlearnersdictionaries.com/definition/english/narration,C1,narration,tường thuật,noun,/nəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nar/narra/narration__gb_1.mp3
+message,https://www.oxfordlearnersdictionaries.com/definition/english/message_1,B1,message,tin nhắn,noun,/ˈmesɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mes/messa/message__gb_1.mp3
+narrative,https://www.oxfordlearnersdictionaries.com/definition/english/narrative_1,B1,narrative,chuyện kể,noun,/ˈnærətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nar/narra/narrative__gb_1.mp3
+motif,https://www.oxfordlearnersdictionaries.com/definition/english/motif,C2,motif,họa tiết,noun,/məʊˈtiːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motif/motif__gb_1.mp3
+passage,https://www.oxfordlearnersdictionaries.com/definition/english/passage,B2,passage,đoạn văn,noun,/ˈpæsɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passa/passage__gb_1.mp3
+leitmotif,https://www.oxfordlearnersdictionaries.com/definition/english/leitmotif,C2,leitmotif,leitmotif,noun,/ˈlaɪtməʊtiːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lei/leitm/leitmotif__gb_1.mp3
+plot,https://www.oxfordlearnersdictionaries.com/definition/english/plot_1,B1,plot,kịch bản,noun,/plɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plo/plot_/plot__gb_2.mp3
+storyline,https://www.oxfordlearnersdictionaries.com/definition/english/storyline,B2,storyline,cốt truyện,noun,/ˈstɔːrilaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/story/storyline__gb_1.mp3
+twist,https://www.oxfordlearnersdictionaries.com/definition/english/twist_2,C1,twist,xoắn,noun,/twɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twi/twist/twist__gb_1.mp3
+second_person,https://www.oxfordlearnersdictionaries.com/definition/english/the-second-person,C1,second person,người thứ hai,noun,/ðə ˌsekənd ˈpɜːsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_s/the_second_person_1_gb_1.mp3
+third_person,https://www.oxfordlearnersdictionaries.com/definition/english/the-third-person,C1,third person,người thứ ba,noun,/ðə ˌθɜːd ˈpɜːsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_t/the_third_person_1_gb_1.mp3
+setting,https://www.oxfordlearnersdictionaries.com/definition/english/setting,B1,setting,cài đặt,noun,/ˈsetɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/set/setti/setting__gb_1.mp3
+theme,https://www.oxfordlearnersdictionaries.com/definition/english/theme_1,B1,theme,chủ đề,noun,/θiːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/theme/theme__gb_2.mp3
+subplot,https://www.oxfordlearnersdictionaries.com/definition/english/subplot,C2,subplot,tình tiết phụ,noun,/ˈsʌbplɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subpl/subplot__gb_1.mp3

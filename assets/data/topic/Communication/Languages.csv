@@ -1,92 +1,92 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-afrikaans,https://www.oxfordlearnersdictionaries.com/definition/english/afrikaans,C2,Afrikaans,tiếng Afrikaans,noun,/ˌæfrɪˈkɑːns/,
-anglo-saxon,https://www.oxfordlearnersdictionaries.com/definition/english/anglo-saxon_1,C1,Anglo-Saxon,người Anglo-Saxon,noun,/ˌæŋɡləʊ ˈsæksn/,
-bengali,https://www.oxfordlearnersdictionaries.com/definition/english/bengali,C1,Bengali,tiếng Bengali,noun,/beŋˈɡɔːli/,
-aramaic,https://www.oxfordlearnersdictionaries.com/definition/english/aramaic,C2,Aramaic,tiếng Aramaic,noun,/ˌærəˈmeɪɪk/,
-breton,https://www.oxfordlearnersdictionaries.com/definition/english/breton_1,C2,Breton,tiếng Breton,noun,/ˈbretən/,
-arabic,https://www.oxfordlearnersdictionaries.com/definition/english/arabic_1,A2,Arabic,tiếng Ả Rập,noun,/ˈærəbɪk/,
-bahasa_indonesia,https://www.oxfordlearnersdictionaries.com/definition/english/bahasa-indonesia,C2,Bahasa Indonesia,Tiếng Bahasa Indonesia,noun,/bəˌhɑːsə ɪndəˈniːʒə/,
-basque,https://www.oxfordlearnersdictionaries.com/definition/english/basque_2,C2,Basque,Tiếng Basque,noun,/bæsk/,
-bangla,https://www.oxfordlearnersdictionaries.com/definition/english/bangla,C2,Bangla,Bangla,noun,/ˈbæŋɡlə/,
-carib,https://www.oxfordlearnersdictionaries.com/definition/english/carib,C2,Carib,Caribe,noun,/ˈkærɪb/,
-cornish,https://www.oxfordlearnersdictionaries.com/definition/english/cornish_1,C2,Cornish,tiếng Cornish,noun,/ˈkɔːnɪʃ/,
-cantonese,https://www.oxfordlearnersdictionaries.com/definition/english/cantonese_1,C2,Cantonese,tiếng Quảng Đông,noun,/ˌkæntəˈniːz/,
-catalan,https://www.oxfordlearnersdictionaries.com/definition/english/catalan_1,C2,Catalan,tiếng Catalan,noun,/ˈkætəlæn/,
-english,https://www.oxfordlearnersdictionaries.com/definition/english/english_1,A1,English,Tiếng Anh,noun,/ˈɪŋɡlɪʃ/,
-danish,https://www.oxfordlearnersdictionaries.com/definition/english/danish_2,B2,Danish,tiếng Đan Mạch,noun,/ˈdeɪnɪʃ/,
-bahasa_malaysia,https://www.oxfordlearnersdictionaries.com/definition/english/bahasa-malaysia,C2,Bahasa Malaysia,Tiếng Bahasa Malaysia,noun,/bəˌhɑːsə məˈleɪʒə/,
-chinese,https://www.oxfordlearnersdictionaries.com/definition/english/chinese_2,A2,Chinese,Tiếng Trung,noun,/ˌtʃaɪˈniːz/,
-creole,https://www.oxfordlearnersdictionaries.com/definition/english/creole,C2,Creole,Tiếng Creole,noun,/ˈkriːəʊl/,
-dharuk,https://www.oxfordlearnersdictionaries.com/definition/english/dharuk,C2,Dharuk,Dharuk,noun,/ˈdʌrʊk/,
-filipino,https://www.oxfordlearnersdictionaries.com/definition/english/filipino_1,C2,Filipino,Tiếng Philippin,noun,/ˌfɪlɪˈpiːnəʊ/,
-etruscan,https://www.oxfordlearnersdictionaries.com/definition/english/etruscan_2,C2,Etruscan,Etruscan,noun,/ɪˈtrʌskən/,
-erse,https://www.oxfordlearnersdictionaries.com/definition/english/erse,C2,Erse,Xóa,noun,/ɜːs/,
-gaelic,https://www.oxfordlearnersdictionaries.com/definition/english/gaelic_2,C2,Gaelic,tiếng Gaelic,noun,/ˈɡælɪk/,
-german,https://www.oxfordlearnersdictionaries.com/definition/english/german_2,A1,German,tiếng Đức,noun,/ˈdʒɜːmən/,
-gujarati,https://www.oxfordlearnersdictionaries.com/definition/english/gujarati,C2,Gujarati,tiếng Gujarati,noun,/ˌɡʊdʒəˈrɑːti/,
-french,https://www.oxfordlearnersdictionaries.com/definition/english/french_2,A1,French,người Pháp,noun,/frentʃ/,
-greek,https://www.oxfordlearnersdictionaries.com/definition/english/greek_1,A2,Greek,tiếng Hy Lạp,noun,/ɡriːk/,
-gullah,https://www.oxfordlearnersdictionaries.com/definition/english/gullah,C2,Gullah,Gullah,noun,/ˈɡʌlə/,
-flemish,https://www.oxfordlearnersdictionaries.com/definition/english/flemish_1,C2,Flemish,người Flemish,noun,/ˈflemɪʃ/,
-gaulish,https://www.oxfordlearnersdictionaries.com/definition/english/gaulish,C2,Gaulish,tiếng Gaul,noun,/ˈɡɔːlɪʃ/,
+afrikaans,https://www.oxfordlearnersdictionaries.com/definition/english/afrikaans,C2,Afrikaans,tiếng Afrikaans,noun,/ˌæfrɪˈkɑːns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/afr/afrik/afrikaans_1_gb_2.mp3
+anglo-saxon,https://www.oxfordlearnersdictionaries.com/definition/english/anglo-saxon_1,C1,Anglo-Saxon,người Anglo-Saxon,noun,/ˌæŋɡləʊ ˈsæksn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ang/anglo/anglo_saxon_1_gb_1.mp3
+bengali,https://www.oxfordlearnersdictionaries.com/definition/english/bengali,C1,Bengali,tiếng Bengali,noun,/beŋˈɡɔːli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ben/benga/bengali_1_gb_1.mp3
+aramaic,https://www.oxfordlearnersdictionaries.com/definition/english/aramaic,C2,Aramaic,tiếng Aramaic,noun,/ˌærəˈmeɪɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ara/arama/aramaic__gb_1.mp3
+breton,https://www.oxfordlearnersdictionaries.com/definition/english/breton_1,C2,Breton,tiếng Breton,noun,/ˈbretən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breto/breton__gb_1.mp3
+arabic,https://www.oxfordlearnersdictionaries.com/definition/english/arabic_1,A2,Arabic,tiếng Ả Rập,noun,/ˈærəbɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ara/arabi/arabic__gb_1.mp3
+bahasa_indonesia,https://www.oxfordlearnersdictionaries.com/definition/english/bahasa-indonesia,C2,Bahasa Indonesia,Tiếng Bahasa Indonesia,noun,/bəˌhɑːsə ɪndəˈniːʒə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bah/bahas/bahasa_indonesia_1_gb_3.mp3
+basque,https://www.oxfordlearnersdictionaries.com/definition/english/basque_2,C2,Basque,Tiếng Basque,noun,/bæsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bas/basqu/basque_1_gb_1.mp3
+bangla,https://www.oxfordlearnersdictionaries.com/definition/english/bangla,C2,Bangla,Bangla,noun,/ˈbæŋɡlə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/bangl/bangla_1_gb_2.mp3
+carib,https://www.oxfordlearnersdictionaries.com/definition/english/carib,C2,Carib,Caribe,noun,/ˈkærɪb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/carib/carib__gb_1.mp3
+cornish,https://www.oxfordlearnersdictionaries.com/definition/english/cornish_1,C2,Cornish,tiếng Cornish,noun,/ˈkɔːnɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corni/cornish__gb_1.mp3
+cantonese,https://www.oxfordlearnersdictionaries.com/definition/english/cantonese_1,C2,Cantonese,tiếng Quảng Đông,noun,/ˌkæntəˈniːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canto/cantonese__gb_1.mp3
+catalan,https://www.oxfordlearnersdictionaries.com/definition/english/catalan_1,C2,Catalan,tiếng Catalan,noun,/ˈkætəlæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/catal/catalan_1_gb_3.mp3
+english,https://www.oxfordlearnersdictionaries.com/definition/english/english_1,A1,English,Tiếng Anh,noun,/ˈɪŋɡlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eng/engli/english__gb_1.mp3
+danish,https://www.oxfordlearnersdictionaries.com/definition/english/danish_2,B2,Danish,tiếng Đan Mạch,noun,/ˈdeɪnɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dan/danis/danish_1_gb_1.mp3
+bahasa_malaysia,https://www.oxfordlearnersdictionaries.com/definition/english/bahasa-malaysia,C2,Bahasa Malaysia,Tiếng Bahasa Malaysia,noun,/bəˌhɑːsə məˈleɪʒə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bah/bahas/bahasa_malaysia_1_gb_3.mp3
+chinese,https://www.oxfordlearnersdictionaries.com/definition/english/chinese_2,A2,Chinese,Tiếng Trung,noun,/ˌtʃaɪˈniːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/chine/chinese_1_gb_1.mp3
+creole,https://www.oxfordlearnersdictionaries.com/definition/english/creole,C2,Creole,Tiếng Creole,noun,/ˈkriːəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/creol/creole__gb_1.mp3
+dharuk,https://www.oxfordlearnersdictionaries.com/definition/english/dharuk,C2,Dharuk,Dharuk,noun,/ˈdʌrʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dha/dharu/dharuk_1_gb_1.mp3
+filipino,https://www.oxfordlearnersdictionaries.com/definition/english/filipino_1,C2,Filipino,Tiếng Philippin,noun,/ˌfɪlɪˈpiːnəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filip/filipino__gb_1.mp3
+etruscan,https://www.oxfordlearnersdictionaries.com/definition/english/etruscan_2,C2,Etruscan,Etruscan,noun,/ɪˈtrʌskən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/etr/etrus/etruscan__gb_1.mp3
+erse,https://www.oxfordlearnersdictionaries.com/definition/english/erse,C2,Erse,Xóa,noun,/ɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ers/erse_/erse__gb_1.mp3
+gaelic,https://www.oxfordlearnersdictionaries.com/definition/english/gaelic_2,C2,Gaelic,tiếng Gaelic,noun,/ˈɡælɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gae/gaeli/gaelic_1_gb_1.mp3
+german,https://www.oxfordlearnersdictionaries.com/definition/english/german_2,A1,German,tiếng Đức,noun,/ˈdʒɜːmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/ger/germa/german_1_gb_1.mp3
+gujarati,https://www.oxfordlearnersdictionaries.com/definition/english/gujarati,C2,Gujarati,tiếng Gujarati,noun,/ˌɡʊdʒəˈrɑːti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/guj/gujar/gujarati_1_gb_1.mp3
+french,https://www.oxfordlearnersdictionaries.com/definition/english/french_2,A1,French,người Pháp,noun,/frentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/frenc/french__gb_1.mp3
+greek,https://www.oxfordlearnersdictionaries.com/definition/english/greek_1,A2,Greek,tiếng Hy Lạp,noun,/ɡriːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/greek/greek__gb_1.mp3
+gullah,https://www.oxfordlearnersdictionaries.com/definition/english/gullah,C2,Gullah,Gullah,noun,/ˈɡʌlə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gul/gulla/gullah_1_gb_1.mp3
+flemish,https://www.oxfordlearnersdictionaries.com/definition/english/flemish_1,C2,Flemish,người Flemish,noun,/ˈflemɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fle/flemi/flemish__gb_1.mp3
+gaulish,https://www.oxfordlearnersdictionaries.com/definition/english/gaulish,C2,Gaulish,tiếng Gaul,noun,/ˈɡɔːlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gau/gauli/gaulish_1_gb_1.mp3
 hebrew,https://www.oxfordlearnersdictionaries.com/definition/english/hebrew_1,C2,Hebrew,tiếng Do Thái,noun,/ˈhiːbruː/,
-hausa,https://www.oxfordlearnersdictionaries.com/definition/english/hausa,C2,Hausa,Tiếng Hausa,noun,/ˈhaʊsə/,
-ibo,https://www.oxfordlearnersdictionaries.com/definition/english/ibo,C2,Ibo,Ibo,noun,/ˈiːbəʊ/,
-igbo,https://www.oxfordlearnersdictionaries.com/definition/english/igbo,C2,Igbo,người Igbo,noun,/ˈiːbəʊ/,
-irish,https://www.oxfordlearnersdictionaries.com/definition/english/irish_1,B1,Irish,người Ireland,noun,/ˈaɪrɪʃ/,
-isixhosa,https://www.oxfordlearnersdictionaries.com/definition/english/isixhosa,C2,isiXhosa,isiXhosa,noun,/ɪsɪˈkəʊsə/,
-isizulu,https://www.oxfordlearnersdictionaries.com/definition/english/isizulu,C2,isiZulu,isiZulu,noun,/ɪsɪˈzuːluː/,
-italian,https://www.oxfordlearnersdictionaries.com/definition/english/italian_2,A1,Italian,người Ý,noun,/ɪˈtæliən/,
-kannada,https://www.oxfordlearnersdictionaries.com/definition/english/kannada,C2,Kannada,tiếng Kannada,noun,/ˈkɑːnədə/,
-javanese,https://www.oxfordlearnersdictionaries.com/definition/english/javanese,C2,Javanese,tiếng Java,noun,/ˌdʒɑːvəˈniːz/,
-khmer,https://www.oxfordlearnersdictionaries.com/definition/english/khmer,C2,Khmer,tiếng Khmer,noun,/kmeə(r)/,
-heritage_language,https://www.oxfordlearnersdictionaries.com/definition/english/heritage-language,C2,heritage language,ngôn ngữ di sản,noun,/ˈherɪtɪdʒ læŋɡwɪdʒ/,
-latin,https://www.oxfordlearnersdictionaries.com/definition/english/latin_1,A2,Latin,tiếng Latinh,noun,/ˈlætɪn/,
-kiswahili,https://www.oxfordlearnersdictionaries.com/definition/english/kiswahili,C1,Kiswahili,tiếng Kiswahili,noun,/ˌkiːswəˈhiːli/,
-malay,https://www.oxfordlearnersdictionaries.com/definition/english/malay_2,C2,Malay,Mã Lai,noun,/məˈleɪ/,
-language,https://www.oxfordlearnersdictionaries.com/definition/english/language,A1,language,ngôn ngữ,noun,/ˈlæŋɡwɪdʒ/,
-malayalam,https://www.oxfordlearnersdictionaries.com/definition/english/malayalam,C2,Malayalam,Mã Lai,noun,/ˌmʌləˈjɑːləm/,
-māori,https://www.oxfordlearnersdictionaries.com/definition/english/maori_2,C1,Māori,người Maori,noun,/ˈmaʊri/,
-marathi,https://www.oxfordlearnersdictionaries.com/definition/english/marathi,C2,Marathi,Tiếng Marathi,noun,/məˈrɑːti/,
-middle_english,https://www.oxfordlearnersdictionaries.com/definition/english/middle-english,C2,Middle English,Tiếng Anh trung cổ,noun,/ˌmɪdl ˈɪŋɡlɪʃ/,
-maltese,https://www.oxfordlearnersdictionaries.com/definition/english/maltese_2,C2,Maltese,tiếng Malta,noun,/ˌmɔːlˈtiːz/,
-odia,https://www.oxfordlearnersdictionaries.com/definition/english/odia,C2,Odia,Odia,noun,/əˈdiːə/,
-nahuatl,https://www.oxfordlearnersdictionaries.com/definition/english/nahuatl,C2,Nahuatl,Nahuatl,noun,/ˈnɑːwɑːtl/,
-persian,https://www.oxfordlearnersdictionaries.com/definition/english/persian_1,C2,Persian,tiếng Ba Tư,noun,/ˈpɜːʃn/,
-pashto,https://www.oxfordlearnersdictionaries.com/definition/english/pashto,C2,Pashto,Tiếng Pa-tô,noun,/ˈpæʃtəʊ/,
-old_english,https://www.oxfordlearnersdictionaries.com/definition/english/old-english,C1,Old English,Tiếng Anh cổ,noun,/ˌəʊld ˈɪŋɡlɪʃ/,
-old_norse,https://www.oxfordlearnersdictionaries.com/definition/english/old-norse,C2,Old Norse,Tiếng Bắc Âu cổ,noun,/ˌəʊld ˈnɔːs/,
-phoenician,https://www.oxfordlearnersdictionaries.com/definition/english/phoenician,C2,Phoenician,người Phoenician,noun,/fəˈniːʃn/,
-pictish,https://www.oxfordlearnersdictionaries.com/definition/english/pictish_1,C2,Pictish,kiểu hình tượng,noun,/ˈpɪktɪʃ/,
-polish,https://www.oxfordlearnersdictionaries.com/definition/english/polish_1,C2,polish,đánh bóng,noun,/ˈpɒlɪʃ/,
-norse,https://www.oxfordlearnersdictionaries.com/definition/english/norse,C2,Norse,tiếng Bắc Âu,noun,/nɔːs/,
-pidgin,https://www.oxfordlearnersdictionaries.com/definition/english/pidgin,C2,pidgin,pidgin,noun,/ˈpɪdʒɪn/,
-occitan,https://www.oxfordlearnersdictionaries.com/definition/english/occitan,C2,Occitan,tiếng Occitan,noun,/ˈɒksɪtən/,
-polish,https://www.oxfordlearnersdictionaries.com/definition/english/polish_4,A2,Polish,Đánh bóng,noun,/ˈpəʊlɪʃ/,
-punjabi,https://www.oxfordlearnersdictionaries.com/definition/english/punjabi_2,C2,Punjabi,Tiếng Punjab,noun,/pʊnˈdʒɑːbi/,
-portuguese,https://www.oxfordlearnersdictionaries.com/definition/english/portuguese_2,A2,Portuguese,tiếng Bồ Đào Nha,noun,/ˌpɔːtʃʊˈɡiːz/,
-quechua,https://www.oxfordlearnersdictionaries.com/definition/english/quechua,C2,Quechua,Quechua,noun,/ˈketʃwə/,
-romani,https://www.oxfordlearnersdictionaries.com/definition/english/romani_2,C2,Romani,tiếng Rumani,noun,/ˈrəʊməni/,
-russian,https://www.oxfordlearnersdictionaries.com/definition/english/russian_2,A2,Russian,tiếng Nga,noun,/ˈrʌʃn/,
-shona,https://www.oxfordlearnersdictionaries.com/definition/english/shona,C2,Shona,Shona,noun,/ˈʃəʊnə/,
-proto-indo-european,https://www.oxfordlearnersdictionaries.com/definition/english/proto-indo-european,C2,Proto-Indo-European,Tiền Ấn-Âu,noun,/ˌprəʊtəʊ ˌɪndəʊ ˌjʊərəˈpiːən/,
-sanskrit,https://www.oxfordlearnersdictionaries.com/definition/english/sanskrit,C2,Sanskrit,tiếng Phạn,noun,/ˈsænskrɪt/,
-sindhi,https://www.oxfordlearnersdictionaries.com/definition/english/sindhi,C2,Sindhi,tiếng Sindhi,noun,/ˈsɪndi/,
-spanish,https://www.oxfordlearnersdictionaries.com/definition/english/spanish_2,A1,Spanish,tiếng Tây Ban Nha,noun,/ˈspænɪʃ/,
-tagalog,https://www.oxfordlearnersdictionaries.com/definition/english/tagalog,C2,Tagalog,tiếng Tagalog,noun,/təˈɡɑːlɒɡ/,
-sinhalese,https://www.oxfordlearnersdictionaries.com/definition/english/sinhalese_2,C2,Sinhalese,tiếng Sinhala,noun,/ˌsɪnhəˈliːz/,
-swahili,https://www.oxfordlearnersdictionaries.com/definition/english/swahili,C1,Swahili,tiếng Swahili,noun,/swəˈhiːli/,
-tamil,https://www.oxfordlearnersdictionaries.com/definition/english/tamil_2,C1,Tamil,Tiếng Tamil,noun,/ˈtæmɪl/,
-turkish,https://www.oxfordlearnersdictionaries.com/definition/english/turkish_2,B2,Turkish,tiếng Thổ Nhĩ Kỳ,noun,/ˈtɜːkɪʃ/,
-tok_pisin,https://www.oxfordlearnersdictionaries.com/definition/english/tok-pisin,C2,Tok Pisin,Tok Pisin,noun,/ˌtɒk ˈpɪzən/,
-telugu,https://www.oxfordlearnersdictionaries.com/definition/english/telugu,C2,Telugu,tiếng Telugu,noun,/ˈteləɡuː/,
-urdu,https://www.oxfordlearnersdictionaries.com/definition/english/urdu,C1,Urdu,tiếng Urdu,noun,/ˈʊəduː/,
-yiddish,https://www.oxfordlearnersdictionaries.com/definition/english/yiddish_2,C2,Yiddish,tiếng Yiddish,noun,/ˈjɪdɪʃ/,
-welsh,https://www.oxfordlearnersdictionaries.com/definition/english/welsh_2,B1,Welsh,tiếng xứ Wales,noun,/welʃ/,
-taino,https://www.oxfordlearnersdictionaries.com/definition/english/taino,C2,Taino,Taino,noun,/ˈtaɪnəʊ/,
-wiradhuri,https://www.oxfordlearnersdictionaries.com/definition/english/wiradhuri,C2,Wiradhuri,Wiradhuri,noun,/wɪˈrædʒəri/,
-yoruba,https://www.oxfordlearnersdictionaries.com/definition/english/yoruba,C2,Yoruba,Tiếng Yoruba,noun,/ˈjɒrʊbə/,
-xhosa,https://www.oxfordlearnersdictionaries.com/definition/english/xhosa,C2,Xhosa,Xhosa,noun,/ˈkəʊsə/,
-yue,https://www.oxfordlearnersdictionaries.com/definition/english/yue,C2,Yue,Yue,noun,/juˈeɪ/,
-zulu,https://www.oxfordlearnersdictionaries.com/definition/english/zulu_2,C2,Zulu,Tiếng Zulu,noun,/ˈzuːluː/,
-vedic,https://www.oxfordlearnersdictionaries.com/definition/english/vedic_2,C2,Vedic,kinh Vệ Đà,noun,/ˈveɪdɪk/,
+hausa,https://www.oxfordlearnersdictionaries.com/definition/english/hausa,C2,Hausa,Tiếng Hausa,noun,/ˈhaʊsə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hau/hausa/hausa__gb_1.mp3
+ibo,https://www.oxfordlearnersdictionaries.com/definition/english/ibo,C2,Ibo,Ibo,noun,/ˈiːbəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ibo/ibo__/ibo__gb_1.mp3
+igbo,https://www.oxfordlearnersdictionaries.com/definition/english/igbo,C2,Igbo,người Igbo,noun,/ˈiːbəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/igb/igbo_/igbo__gb_1.mp3
+irish,https://www.oxfordlearnersdictionaries.com/definition/english/irish_1,B1,Irish,người Ireland,noun,/ˈaɪrɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iri/irish/irish__gb_1.mp3
+isixhosa,https://www.oxfordlearnersdictionaries.com/definition/english/isixhosa,C2,isiXhosa,isiXhosa,noun,/ɪsɪˈkəʊsə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/isi/isixh/isixhosa_1_gb_1.mp3
+isizulu,https://www.oxfordlearnersdictionaries.com/definition/english/isizulu,C2,isiZulu,isiZulu,noun,/ɪsɪˈzuːluː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/isi/isizu/isizulu_1_gb_1.mp3
+italian,https://www.oxfordlearnersdictionaries.com/definition/english/italian_2,A1,Italian,người Ý,noun,/ɪˈtæliən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ita/itali/italian_1_gb_4.mp3
+kannada,https://www.oxfordlearnersdictionaries.com/definition/english/kannada,C2,Kannada,tiếng Kannada,noun,/ˈkɑːnədə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kan/kanna/kannada_1_gb_1.mp3
+javanese,https://www.oxfordlearnersdictionaries.com/definition/english/javanese,C2,Javanese,tiếng Java,noun,/ˌdʒɑːvəˈniːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jav/javan/javanese__gb_1.mp3
+khmer,https://www.oxfordlearnersdictionaries.com/definition/english/khmer,C2,Khmer,tiếng Khmer,noun,/kmeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/khm/khmer/khmer__gb_1.mp3
+heritage_language,https://www.oxfordlearnersdictionaries.com/definition/english/heritage-language,C2,heritage language,ngôn ngữ di sản,noun,/ˈherɪtɪdʒ læŋɡwɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/her/herit/heritage_language_1_gb_1.mp3
+latin,https://www.oxfordlearnersdictionaries.com/definition/english/latin_1,A2,Latin,tiếng Latinh,noun,/ˈlætɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lat/latin/latin__gb_1.mp3
+kiswahili,https://www.oxfordlearnersdictionaries.com/definition/english/kiswahili,C1,Kiswahili,tiếng Kiswahili,noun,/ˌkiːswəˈhiːli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kis/kiswa/kiswahili_1_gb_2.mp3
+malay,https://www.oxfordlearnersdictionaries.com/definition/english/malay_2,C2,Malay,Mã Lai,noun,/məˈleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/malay/malay__gb_1.mp3
+language,https://www.oxfordlearnersdictionaries.com/definition/english/language,A1,language,ngôn ngữ,noun,/ˈlæŋɡwɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/langu/language__gb_1.mp3
+malayalam,https://www.oxfordlearnersdictionaries.com/definition/english/malayalam,C2,Malayalam,Mã Lai,noun,/ˌmʌləˈjɑːləm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/malay/malayalam__gb_1.mp3
+māori,https://www.oxfordlearnersdictionaries.com/definition/english/maori_2,C1,Māori,người Maori,noun,/ˈmaʊri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mao/maori/maori__gb_1.mp3
+marathi,https://www.oxfordlearnersdictionaries.com/definition/english/marathi,C2,Marathi,Tiếng Marathi,noun,/məˈrɑːti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marat/marathi__gb_1.mp3
+middle_english,https://www.oxfordlearnersdictionaries.com/definition/english/middle-english,C2,Middle English,Tiếng Anh trung cổ,noun,/ˌmɪdl ˈɪŋɡlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/middl/middle_english_1_gb_1.mp3
+maltese,https://www.oxfordlearnersdictionaries.com/definition/english/maltese_2,C2,Maltese,tiếng Malta,noun,/ˌmɔːlˈtiːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/malte/maltese_1_gb_6.mp3
+odia,https://www.oxfordlearnersdictionaries.com/definition/english/odia,C2,Odia,Odia,noun,/əˈdiːə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/odi/odia_/odia_1_gb_1.mp3
+nahuatl,https://www.oxfordlearnersdictionaries.com/definition/english/nahuatl,C2,Nahuatl,Nahuatl,noun,/ˈnɑːwɑːtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nah/nahua/nahuatl__gb_1.mp3
+persian,https://www.oxfordlearnersdictionaries.com/definition/english/persian_1,C2,Persian,tiếng Ba Tư,noun,/ˈpɜːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/persi/persian__gb_1.mp3
+pashto,https://www.oxfordlearnersdictionaries.com/definition/english/pashto,C2,Pashto,Tiếng Pa-tô,noun,/ˈpæʃtəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pasht/pashto__gb_1.mp3
+old_english,https://www.oxfordlearnersdictionaries.com/definition/english/old-english,C1,Old English,Tiếng Anh cổ,noun,/ˌəʊld ˈɪŋɡlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/old/old_e/old_english_1_gb_1.mp3
+old_norse,https://www.oxfordlearnersdictionaries.com/definition/english/old-norse,C2,Old Norse,Tiếng Bắc Âu cổ,noun,/ˌəʊld ˈnɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/old/old_n/old_norse_1_gb_1.mp3
+phoenician,https://www.oxfordlearnersdictionaries.com/definition/english/phoenician,C2,Phoenician,người Phoenician,noun,/fəˈniːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pho/phoen/phoenician__gb_1.mp3
+pictish,https://www.oxfordlearnersdictionaries.com/definition/english/pictish_1,C2,Pictish,kiểu hình tượng,noun,/ˈpɪktɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pic/picti/pictish__gb_1.mp3
+polish,https://www.oxfordlearnersdictionaries.com/definition/english/polish_1,C2,polish,đánh bóng,noun,/ˈpɒlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polis/polish__gb_1.mp3
+norse,https://www.oxfordlearnersdictionaries.com/definition/english/norse,C2,Norse,tiếng Bắc Âu,noun,/nɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nor/norse/norse__gb_1.mp3
+pidgin,https://www.oxfordlearnersdictionaries.com/definition/english/pidgin,C2,pidgin,pidgin,noun,/ˈpɪdʒɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pid/pidgi/pidgin__gb_1.mp3
+occitan,https://www.oxfordlearnersdictionaries.com/definition/english/occitan,C2,Occitan,tiếng Occitan,noun,/ˈɒksɪtən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/occ/occit/occitan__gb_1.mp3
+polish,https://www.oxfordlearnersdictionaries.com/definition/english/polish_4,A2,Polish,Đánh bóng,noun,/ˈpəʊlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polis/polish_1_gb_3.mp3
+punjabi,https://www.oxfordlearnersdictionaries.com/definition/english/punjabi_2,C2,Punjabi,Tiếng Punjab,noun,/pʊnˈdʒɑːbi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pun/punja/punjabi__gb_1.mp3
+portuguese,https://www.oxfordlearnersdictionaries.com/definition/english/portuguese_2,A2,Portuguese,tiếng Bồ Đào Nha,noun,/ˌpɔːtʃʊˈɡiːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/por/portu/portuguese_1_gb_4.mp3
+quechua,https://www.oxfordlearnersdictionaries.com/definition/english/quechua,C2,Quechua,Quechua,noun,/ˈketʃwə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/que/quech/quechua__gb_1.mp3
+romani,https://www.oxfordlearnersdictionaries.com/definition/english/romani_2,C2,Romani,tiếng Rumani,noun,/ˈrəʊməni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rom/roman/romany__gb_2.mp3
+russian,https://www.oxfordlearnersdictionaries.com/definition/english/russian_2,A2,Russian,tiếng Nga,noun,/ˈrʌʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rus/russi/russian__gb_1.mp3
+shona,https://www.oxfordlearnersdictionaries.com/definition/english/shona,C2,Shona,Shona,noun,/ˈʃəʊnə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shona/shona__gb_1.mp3
+proto-indo-european,https://www.oxfordlearnersdictionaries.com/definition/english/proto-indo-european,C2,Proto-Indo-European,Tiền Ấn-Âu,noun,/ˌprəʊtəʊ ˌɪndəʊ ˌjʊərəˈpiːən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proto/proto_indo_european_1_gb_1.mp3
+sanskrit,https://www.oxfordlearnersdictionaries.com/definition/english/sanskrit,C2,Sanskrit,tiếng Phạn,noun,/ˈsænskrɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/san/sansk/sanskrit__gb_1.mp3
+sindhi,https://www.oxfordlearnersdictionaries.com/definition/english/sindhi,C2,Sindhi,tiếng Sindhi,noun,/ˈsɪndi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/sindh/sindhi__gb_1.mp3
+spanish,https://www.oxfordlearnersdictionaries.com/definition/english/spanish_2,A1,Spanish,tiếng Tây Ban Nha,noun,/ˈspænɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spani/spanish__gb_1.mp3
+tagalog,https://www.oxfordlearnersdictionaries.com/definition/english/tagalog,C2,Tagalog,tiếng Tagalog,noun,/təˈɡɑːlɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tag/tagal/tagalog__gb_1.mp3
+sinhalese,https://www.oxfordlearnersdictionaries.com/definition/english/sinhalese_2,C2,Sinhalese,tiếng Sinhala,noun,/ˌsɪnhəˈliːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/sinha/sinhalese__gb_1.mp3
+swahili,https://www.oxfordlearnersdictionaries.com/definition/english/swahili,C1,Swahili,tiếng Swahili,noun,/swəˈhiːli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swa/swahi/swahili__gb_1.mp3
+tamil,https://www.oxfordlearnersdictionaries.com/definition/english/tamil_2,C1,Tamil,Tiếng Tamil,noun,/ˈtæmɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tam/tamil/tamil__gb_1.mp3
+turkish,https://www.oxfordlearnersdictionaries.com/definition/english/turkish_2,B2,Turkish,tiếng Thổ Nhĩ Kỳ,noun,/ˈtɜːkɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tur/turki/turkish_1_gb_1.mp3
+tok_pisin,https://www.oxfordlearnersdictionaries.com/definition/english/tok-pisin,C2,Tok Pisin,Tok Pisin,noun,/ˌtɒk ˈpɪzən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tok/tok_p/tok_pisin_1_gb_1.mp3
+telugu,https://www.oxfordlearnersdictionaries.com/definition/english/telugu,C2,Telugu,tiếng Telugu,noun,/ˈteləɡuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tel/telug/telugu__gb_1.mp3
+urdu,https://www.oxfordlearnersdictionaries.com/definition/english/urdu,C1,Urdu,tiếng Urdu,noun,/ˈʊəduː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/urd/urdu_/urdu__gb_1.mp3
+yiddish,https://www.oxfordlearnersdictionaries.com/definition/english/yiddish_2,C2,Yiddish,tiếng Yiddish,noun,/ˈjɪdɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yid/yiddi/yiddish__gb_1.mp3
+welsh,https://www.oxfordlearnersdictionaries.com/definition/english/welsh_2,B1,Welsh,tiếng xứ Wales,noun,/welʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wel/welsh/welsh__gb_1.mp3
+taino,https://www.oxfordlearnersdictionaries.com/definition/english/taino,C2,Taino,Taino,noun,/ˈtaɪnəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tai/taino/taino__gb_1.mp3
+wiradhuri,https://www.oxfordlearnersdictionaries.com/definition/english/wiradhuri,C2,Wiradhuri,Wiradhuri,noun,/wɪˈrædʒəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wir/wirad/wiradhuri__gb_1.mp3
+yoruba,https://www.oxfordlearnersdictionaries.com/definition/english/yoruba,C2,Yoruba,Tiếng Yoruba,noun,/ˈjɒrʊbə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yor/yorub/yoruba__gb_1.mp3
+xhosa,https://www.oxfordlearnersdictionaries.com/definition/english/xhosa,C2,Xhosa,Xhosa,noun,/ˈkəʊsə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xho/xhosa/xhosa__gb_2.mp3
+yue,https://www.oxfordlearnersdictionaries.com/definition/english/yue,C2,Yue,Yue,noun,/juˈeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yue/yue__/yue__gb_2.mp3
+zulu,https://www.oxfordlearnersdictionaries.com/definition/english/zulu_2,C2,Zulu,Tiếng Zulu,noun,/ˈzuːluː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zul/zulu_/zulu__gb_1.mp3
+vedic,https://www.oxfordlearnersdictionaries.com/definition/english/vedic_2,C2,Vedic,kinh Vệ Đà,noun,/ˈveɪdɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ved/vedic/vedic__gb_1.mp3

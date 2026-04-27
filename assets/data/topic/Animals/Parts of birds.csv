@@ -1,19 +1,19 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-breast,https://www.oxfordlearnersdictionaries.com/definition/english/breast_1,B2,breast,nhũ hoa,noun,/brest/,
-beak,https://www.oxfordlearnersdictionaries.com/definition/english/beak,B2,beak,mỏ,noun,/biːk/,
-feather,https://www.oxfordlearnersdictionaries.com/definition/english/feather_1,B2,feather,lông vũ,noun,/ˈfeðə(r)/,
-bill,https://www.oxfordlearnersdictionaries.com/definition/english/bill_1,C2,bill,hóa đơn,noun,/bɪl/,
-egg,https://www.oxfordlearnersdictionaries.com/definition/english/egg_1,A1,egg,trứng,noun,/eɡ/,
-craw,https://www.oxfordlearnersdictionaries.com/definition/english/craw,C2,craw,bò,noun,/krɔː/,
-crest,https://www.oxfordlearnersdictionaries.com/definition/english/crest_1,C2,crest,mào,noun,/krest/,
-gizzard,https://www.oxfordlearnersdictionaries.com/definition/english/gizzard,C2,gizzard,chim,noun,/ˈɡɪzəd/,
-down,https://www.oxfordlearnersdictionaries.com/definition/english/down_5,C2,down,xuống,noun,/daʊn/,
-crop,https://www.oxfordlearnersdictionaries.com/definition/english/crop_1,C2,crop,mùa vụ,noun,/krɒp/,
-mandible,https://www.oxfordlearnersdictionaries.com/definition/english/mandible,C2,mandible,hàm dưới,noun,/ˈmændɪbl/,
-wattle,https://www.oxfordlearnersdictionaries.com/definition/english/wattle,C2,wattle,cây keo,noun,/ˈwɒtl/,
-wing,https://www.oxfordlearnersdictionaries.com/definition/english/wing_1,B1,wing,cánh,noun,/wɪŋ/,
-talon,https://www.oxfordlearnersdictionaries.com/definition/english/talon,C2,talon,móng vuốt,noun,/ˈtælən/,
-vent,https://www.oxfordlearnersdictionaries.com/definition/english/vent_1,C2,vent,trút giận,noun,/vent/,
-wishbone,https://www.oxfordlearnersdictionaries.com/definition/english/wishbone,C2,wishbone,xương đòn,noun,/ˈwɪʃbəʊn/,
-tail,https://www.oxfordlearnersdictionaries.com/definition/english/tail_1,B1,tail,đuôi,noun,/teɪl/,
-plumage,https://www.oxfordlearnersdictionaries.com/definition/english/plumage,C2,plumage,bộ lông,noun,/ˈpluːmɪdʒ/,
+breast,https://www.oxfordlearnersdictionaries.com/definition/english/breast_1,B2,breast,nhũ hoa,noun,/brest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breas/breast__gb_1.mp3
+beak,https://www.oxfordlearnersdictionaries.com/definition/english/beak,B2,beak,mỏ,noun,/biːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bea/beak_/beak__gb_2.mp3
+feather,https://www.oxfordlearnersdictionaries.com/definition/english/feather_1,B2,feather,lông vũ,noun,/ˈfeðə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fea/feath/feather__gb_1.mp3
+bill,https://www.oxfordlearnersdictionaries.com/definition/english/bill_1,C2,bill,hóa đơn,noun,/bɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/bill_/bill__gb_3.mp3
+egg,https://www.oxfordlearnersdictionaries.com/definition/english/egg_1,A1,egg,trứng,noun,/eɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/egg/egg__/egg__gb_3.mp3
+craw,https://www.oxfordlearnersdictionaries.com/definition/english/craw,C2,craw,bò,noun,/krɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/craw_/craw__gb_1.mp3
+crest,https://www.oxfordlearnersdictionaries.com/definition/english/crest_1,C2,crest,mào,noun,/krest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/crest/crest__gb_1.mp3
+gizzard,https://www.oxfordlearnersdictionaries.com/definition/english/gizzard,C2,gizzard,chim,noun,/ˈɡɪzəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/giz/gizza/gizzard__gb_2.mp3
+down,https://www.oxfordlearnersdictionaries.com/definition/english/down_5,C2,down,xuống,noun,/daʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dow/down_/down__gb_1.mp3
+crop,https://www.oxfordlearnersdictionaries.com/definition/english/crop_1,C2,crop,mùa vụ,noun,/krɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/crop_/crop__gb_1.mp3
+mandible,https://www.oxfordlearnersdictionaries.com/definition/english/mandible,C2,mandible,hàm dưới,noun,/ˈmændɪbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/mandi/mandible__gb_1.mp3
+wattle,https://www.oxfordlearnersdictionaries.com/definition/english/wattle,C2,wattle,cây keo,noun,/ˈwɒtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wat/wattl/wattle__gb_1.mp3
+wing,https://www.oxfordlearnersdictionaries.com/definition/english/wing_1,B1,wing,cánh,noun,/wɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wing_/wing__gb_1.mp3
+talon,https://www.oxfordlearnersdictionaries.com/definition/english/talon,C2,talon,móng vuốt,noun,/ˈtælən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tal/talon/talon__gb_1.mp3
+vent,https://www.oxfordlearnersdictionaries.com/definition/english/vent_1,C2,vent,trút giận,noun,/vent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ven/vent_/vent__gb_1.mp3
+wishbone,https://www.oxfordlearnersdictionaries.com/definition/english/wishbone,C2,wishbone,xương đòn,noun,/ˈwɪʃbəʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wis/wishb/wishbone__gb_1.mp3
+tail,https://www.oxfordlearnersdictionaries.com/definition/english/tail_1,B1,tail,đuôi,noun,/teɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tai/tail_/tail__gb_2.mp3
+plumage,https://www.oxfordlearnersdictionaries.com/definition/english/plumage,C2,plumage,bộ lông,noun,/ˈpluːmɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plu/pluma/plumage__gb_1.mp3

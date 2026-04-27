@@ -1,28 +1,28 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-biker,https://www.oxfordlearnersdictionaries.com/definition/english/biker,C1,biker,người đi xe đạp,noun,/ˈbaɪkə(r)/,
-driver,https://www.oxfordlearnersdictionaries.com/definition/english/driver,A1,driver,tài xế,noun,/ˈdraɪvə(r)/,
-courier,https://www.oxfordlearnersdictionaries.com/definition/english/courier_1,C1,courier,chuyển phát nhanh,noun,/ˈkʊriə(r)/,
-conductor,https://www.oxfordlearnersdictionaries.com/definition/english/conductor,C2,conductor,nhạc trưởng,noun,/kənˈdʌktə(r)/,
-chauffeur,https://www.oxfordlearnersdictionaries.com/definition/english/chauffeur_1,C1,chauffeur,tài xế,noun,/ˈʃəʊfə(r)/,
-cabby,https://www.oxfordlearnersdictionaries.com/definition/english/cabby,C2,cabby,người đánh xe,noun,/ˈkæbi/,
-designated_driver,https://www.oxfordlearnersdictionaries.com/definition/english/designated-driver,C2,designated driver,tài xế được chỉ định,noun,/ˌdezɪɡneɪtɪd ˈdraɪvə(r)/,
-back-seat_driver,https://www.oxfordlearnersdictionaries.com/definition/english/back-seat-driver,C2,back-seat driver,tài xế ngồi sau,noun,/ˌbæk siːt ˈdraɪvə(r)/,
-cyclist,https://www.oxfordlearnersdictionaries.com/definition/english/cyclist,B1,cyclist,người đi xe đạp,noun,/ˈsaɪklɪst/,
-boy_racer,https://www.oxfordlearnersdictionaries.com/definition/english/boy-racer,C2,boy racer,tay đua cậu bé,noun,/ˌbɔɪ ˈreɪsə(r)/,
-instructor,https://www.oxfordlearnersdictionaries.com/definition/english/instructor,A2,instructor,người hướng dẫn,noun,/ɪnˈstrʌktə(r)/,
-hells_angel™,https://www.oxfordlearnersdictionaries.com/definition/english/hells-angeltm,C2,Hells Angel™,Thiên thần địa ngục™,noun,/ˌhelz ˈeɪndʒl/,
-learner,https://www.oxfordlearnersdictionaries.com/definition/english/learner,A2,learner,người học,noun,/ˈlɜːnə(r)/,
-grease_monkey,https://www.oxfordlearnersdictionaries.com/definition/english/grease-monkey,C2,grease monkey,khỉ mỡ,noun,/ˈɡriːs mʌŋki/,
-haulier,https://www.oxfordlearnersdictionaries.com/definition/english/haulier,C2,haulier,người vận chuyển,noun,/ˈhɔːliə(r)/,
-motorcyclist,https://www.oxfordlearnersdictionaries.com/definition/english/motorcyclist,B2,motorcyclist,người đi xe máy,noun,/ˈməʊtəsaɪklɪst/,
-mechanic,https://www.oxfordlearnersdictionaries.com/definition/english/mechanic,B2,mechanic,thợ cơ khí,noun,/məˈkænɪk/,
-hitchhiker,https://www.oxfordlearnersdictionaries.com/definition/english/hitchhiker,C1,hitchhiker,người quá giang,noun,/ˈhɪtʃhaɪkə(r)/,
-outrider,https://www.oxfordlearnersdictionaries.com/definition/english/outrider,C2,outrider,người đi trước,noun,/ˈaʊtraɪdə(r)/,
-motorist,https://www.oxfordlearnersdictionaries.com/definition/english/motorist,C1,motorist,người lái xe ô tô,noun,/ˈməʊtərɪst/,
-passenger,https://www.oxfordlearnersdictionaries.com/definition/english/passenger,A2,passenger,hành khách,noun,/ˈpæsɪndʒə(r)/,
-racer,https://www.oxfordlearnersdictionaries.com/definition/english/racer,B2,racer,tay đua,noun,/ˈreɪsə(r)/,
-rider,https://www.oxfordlearnersdictionaries.com/definition/english/rider,B1,rider,người cưỡi ngựa,noun,/ˈraɪdə(r)/,
-road_hog,https://www.oxfordlearnersdictionaries.com/definition/english/road-hog,C2,road hog,con lợn đường,noun,/ˈrəʊd hɒɡ/,
-trucker,https://www.oxfordlearnersdictionaries.com/definition/english/trucker,B2,trucker,người lái xe tải,noun,/ˈtrʌkə(r)/,
-valet,https://www.oxfordlearnersdictionaries.com/definition/english/valet_1,C2,valet,người hầu,noun,/ˈvæleɪ/,
-teamster,https://www.oxfordlearnersdictionaries.com/definition/english/teamster,C2,teamster,đồng đội,noun,/ˈtiːmstə(r)/,
+biker,https://www.oxfordlearnersdictionaries.com/definition/english/biker,C1,biker,người đi xe đạp,noun,/ˈbaɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bik/biker/biker__gb_1.mp3
+driver,https://www.oxfordlearnersdictionaries.com/definition/english/driver,A1,driver,tài xế,noun,/ˈdraɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/driver__gb_2.mp3
+courier,https://www.oxfordlearnersdictionaries.com/definition/english/courier_1,C1,courier,chuyển phát nhanh,noun,/ˈkʊriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/couri/courier__gb_1.mp3
+conductor,https://www.oxfordlearnersdictionaries.com/definition/english/conductor,C2,conductor,nhạc trưởng,noun,/kənˈdʌktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xconductor__gb_1.mp3
+chauffeur,https://www.oxfordlearnersdictionaries.com/definition/english/chauffeur_1,C1,chauffeur,tài xế,noun,/ˈʃəʊfə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chauf/chauffeur__gb_1.mp3
+cabby,https://www.oxfordlearnersdictionaries.com/definition/english/cabby,C2,cabby,người đánh xe,noun,/ˈkæbi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cab/cabby/cabby__gb_2.mp3
+designated_driver,https://www.oxfordlearnersdictionaries.com/definition/english/designated-driver,C2,designated driver,tài xế được chỉ định,noun,/ˌdezɪɡneɪtɪd ˈdraɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/desig/designated_driver_1_gb_1.mp3
+back-seat_driver,https://www.oxfordlearnersdictionaries.com/definition/english/back-seat-driver,C2,back-seat driver,tài xế ngồi sau,noun,/ˌbæk siːt ˈdraɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/back_/back_seat_driver_1_gb_1.mp3
+cyclist,https://www.oxfordlearnersdictionaries.com/definition/english/cyclist,B1,cyclist,người đi xe đạp,noun,/ˈsaɪklɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cyc/cycli/cyclist__gb_1.mp3
+boy_racer,https://www.oxfordlearnersdictionaries.com/definition/english/boy-racer,C2,boy racer,tay đua cậu bé,noun,/ˌbɔɪ ˈreɪsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boy/boy_r/boy_racer_1_gb_1.mp3
+instructor,https://www.oxfordlearnersdictionaries.com/definition/english/instructor,A2,instructor,người hướng dẫn,noun,/ɪnˈstrʌktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/instr/instructor__gb_1.mp3
+hells_angel™,https://www.oxfordlearnersdictionaries.com/definition/english/hells-angeltm,C2,Hells Angel™,Thiên thần địa ngục™,noun,/ˌhelz ˈeɪndʒl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hel/hell_/hell_s_angel_1_gb_1.mp3
+learner,https://www.oxfordlearnersdictionaries.com/definition/english/learner,A2,learner,người học,noun,/ˈlɜːnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/learn/learner__gb_1.mp3
+grease_monkey,https://www.oxfordlearnersdictionaries.com/definition/english/grease-monkey,C2,grease monkey,khỉ mỡ,noun,/ˈɡriːs mʌŋki/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/greas/grease_monkey_1_gb_1.mp3
+haulier,https://www.oxfordlearnersdictionaries.com/definition/english/haulier,C2,haulier,người vận chuyển,noun,/ˈhɔːliə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hau/hauli/haulier__gb_1.mp3
+motorcyclist,https://www.oxfordlearnersdictionaries.com/definition/english/motorcyclist,B2,motorcyclist,người đi xe máy,noun,/ˈməʊtəsaɪklɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motor/motorcyclist__gb_1.mp3
+mechanic,https://www.oxfordlearnersdictionaries.com/definition/english/mechanic,B2,mechanic,thợ cơ khí,noun,/məˈkænɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mec/mecha/mechanic__gb_1.mp3
+hitchhiker,https://www.oxfordlearnersdictionaries.com/definition/english/hitchhiker,C1,hitchhiker,người quá giang,noun,/ˈhɪtʃhaɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hit/hitch/hitchhiker__gb_1.mp3
+outrider,https://www.oxfordlearnersdictionaries.com/definition/english/outrider,C2,outrider,người đi trước,noun,/ˈaʊtraɪdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outri/outrider__gb_1.mp3
+motorist,https://www.oxfordlearnersdictionaries.com/definition/english/motorist,C1,motorist,người lái xe ô tô,noun,/ˈməʊtərɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motor/motorist__gb_1.mp3
+passenger,https://www.oxfordlearnersdictionaries.com/definition/english/passenger,A2,passenger,hành khách,noun,/ˈpæsɪndʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passe/passenger__gb_2.mp3
+racer,https://www.oxfordlearnersdictionaries.com/definition/english/racer,B2,racer,tay đua,noun,/ˈreɪsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rac/racer/racer__gb_1.mp3
+rider,https://www.oxfordlearnersdictionaries.com/definition/english/rider,B1,rider,người cưỡi ngựa,noun,/ˈraɪdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rid/rider/rider__gb_1.mp3
+road_hog,https://www.oxfordlearnersdictionaries.com/definition/english/road-hog,C2,road hog,con lợn đường,noun,/ˈrəʊd hɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_hog_1_gb_1.mp3
+trucker,https://www.oxfordlearnersdictionaries.com/definition/english/trucker,B2,trucker,người lái xe tải,noun,/ˈtrʌkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tru/truck/trucker__gb_1.mp3
+valet,https://www.oxfordlearnersdictionaries.com/definition/english/valet_1,C2,valet,người hầu,noun,/ˈvæleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/valet/valet__gb_1.mp3
+teamster,https://www.oxfordlearnersdictionaries.com/definition/english/teamster,C2,teamster,đồng đội,noun,/ˈtiːmstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tea/teams/teamster__gb_1.mp3

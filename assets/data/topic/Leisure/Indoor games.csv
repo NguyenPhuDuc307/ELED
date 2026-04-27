@@ -1,18 +1,18 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-arcade,https://www.oxfordlearnersdictionaries.com/definition/english/arcade,C1,arcade,trò chơi điện tử,noun,/ɑːˈkeɪd/,
-bingo,https://www.oxfordlearnersdictionaries.com/definition/english/bingo_1,C1,bingo,chơi lô tô,noun,/ˈbɪŋɡəʊ/,
-billiards,https://www.oxfordlearnersdictionaries.com/definition/english/billiards,C2,billiards,bi-a,noun,/ˈbɪliədz/,
-dart,https://www.oxfordlearnersdictionaries.com/definition/english/dart_1,C1,dart,phi tiêu,noun,/dɑːt/,
-escape_room,https://www.oxfordlearnersdictionaries.com/definition/english/escape-room,C2,escape room,phòng thoát hiểm,noun,/ɪˈskeɪp ruːm/,
-foosball,https://www.oxfordlearnersdictionaries.com/definition/english/foosball,C2,foosball,bóng đá,noun,/ˈfuːzbɔːl/,
-lotto,https://www.oxfordlearnersdictionaries.com/definition/english/lotto,C2,lotto,xổ số,noun,/ˈlɒtəʊ/,
-hangman,https://www.oxfordlearnersdictionaries.com/definition/english/hangman,C2,hangman,người treo cổ,noun,/ˈhæŋmən/,
-dartboard,https://www.oxfordlearnersdictionaries.com/definition/english/dartboard,C2,dartboard,bảng phóng phi tiêu,noun,/ˈdɑːtbɔːd/,
-pinball,https://www.oxfordlearnersdictionaries.com/definition/english/pinball,C2,pinball,pinball,noun,/ˈpɪnbɔːl/,
-roulette,https://www.oxfordlearnersdictionaries.com/definition/english/roulette,C2,roulette,roulette,noun,/ruːˈlet/,
-snooker,https://www.oxfordlearnersdictionaries.com/definition/english/snooker_1,C2,snooker,bi da,noun,/ˈsnuːkə(r)/,
-pool,https://www.oxfordlearnersdictionaries.com/definition/english/pool_1,C1,pool,hồ bơi,noun,/puːl/,
-skittle,https://www.oxfordlearnersdictionaries.com/definition/english/skittle,C2,skittle,trò chơi nhỏ,noun,/ˈskɪtl/,
-soft_play,https://www.oxfordlearnersdictionaries.com/definition/english/soft-play,C2,soft play,chơi nhẹ nhàng,noun,/ˌsɒft ˈpleɪ/,
-war_game,https://www.oxfordlearnersdictionaries.com/definition/english/war-game,C1,war game,trò chơi chiến tranh,noun,/ˈwɔː ɡeɪm/,
-table_football,https://www.oxfordlearnersdictionaries.com/definition/english/table-football,C2,table football,bóng bàn,noun,/ˌteɪbl ˈfʊtbɔːl/,
+arcade,https://www.oxfordlearnersdictionaries.com/definition/english/arcade,C1,arcade,trò chơi điện tử,noun,/ɑːˈkeɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/arc/arcad/arcade__gb_1.mp3
+bingo,https://www.oxfordlearnersdictionaries.com/definition/english/bingo_1,C1,bingo,chơi lô tô,noun,/ˈbɪŋɡəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bin/bingo/bingo__gb_3.mp3
+billiards,https://www.oxfordlearnersdictionaries.com/definition/english/billiards,C2,billiards,bi-a,noun,/ˈbɪliədz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/billi/billiards__gb_2.mp3
+dart,https://www.oxfordlearnersdictionaries.com/definition/english/dart_1,C1,dart,phi tiêu,noun,/dɑːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dar/dart_/dart__gb_1.mp3
+escape_room,https://www.oxfordlearnersdictionaries.com/definition/english/escape-room,C2,escape room,phòng thoát hiểm,noun,/ɪˈskeɪp ruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/esc/escap/escape_room_1_gb_1.mp3
+foosball,https://www.oxfordlearnersdictionaries.com/definition/english/foosball,C2,foosball,bóng đá,noun,/ˈfuːzbɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/foosb/foosball__gb_4.mp3
+lotto,https://www.oxfordlearnersdictionaries.com/definition/english/lotto,C2,lotto,xổ số,noun,/ˈlɒtəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lot/lotto/lotto__gb_1.mp3
+hangman,https://www.oxfordlearnersdictionaries.com/definition/english/hangman,C2,hangman,người treo cổ,noun,/ˈhæŋmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hangm/hangman__gb_1.mp3
+dartboard,https://www.oxfordlearnersdictionaries.com/definition/english/dartboard,C2,dartboard,bảng phóng phi tiêu,noun,/ˈdɑːtbɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dar/dartb/dartboard__gb_1.mp3
+pinball,https://www.oxfordlearnersdictionaries.com/definition/english/pinball,C2,pinball,pinball,noun,/ˈpɪnbɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pin/pinba/pinball__gb_1.mp3
+roulette,https://www.oxfordlearnersdictionaries.com/definition/english/roulette,C2,roulette,roulette,noun,/ruːˈlet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/roule/roulette__gb_1.mp3
+snooker,https://www.oxfordlearnersdictionaries.com/definition/english/snooker_1,C2,snooker,bi da,noun,/ˈsnuːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snook/snooker__gb_1.mp3
+pool,https://www.oxfordlearnersdictionaries.com/definition/english/pool_1,C1,pool,hồ bơi,noun,/puːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poo/pool_/pool__gb_3.mp3
+skittle,https://www.oxfordlearnersdictionaries.com/definition/english/skittle,C2,skittle,trò chơi nhỏ,noun,/ˈskɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ski/skitt/skittle__gb_1.mp3
+soft_play,https://www.oxfordlearnersdictionaries.com/definition/english/soft-play,C2,soft play,chơi nhẹ nhàng,noun,/ˌsɒft ˈpleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sof/soft_/soft_play_1_gb_1.mp3
+war_game,https://www.oxfordlearnersdictionaries.com/definition/english/war-game,C1,war game,trò chơi chiến tranh,noun,/ˈwɔː ɡeɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/war_g/war_game_1_gb_1.mp3
+table_football,https://www.oxfordlearnersdictionaries.com/definition/english/table-football,C2,table football,bóng bàn,noun,/ˌteɪbl ˈfʊtbɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tab/table/table_football_1_gb_2.mp3

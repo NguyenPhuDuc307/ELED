@@ -1,19 +1,19 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-blockbuster,https://www.oxfordlearnersdictionaries.com/definition/english/blockbuster,C1,blockbuster,bom tấn,noun,/ˈblɒkbʌstə(r)/,
-golden_age,https://www.oxfordlearnersdictionaries.com/definition/english/golden-age,C1,golden age,thời kỳ hoàng kim,noun,/ˈɡəʊldən eɪdʒ/,
-market_leader,https://www.oxfordlearnersdictionaries.com/definition/english/market-leader,C1,market leader,dẫn đầu thị trường,noun,/ˌmɑːkɪt ˈliːdə(r)/,
-pinnacle,https://www.oxfordlearnersdictionaries.com/definition/english/pinnacle,C2,pinnacle,đỉnh cao,noun,/ˈpɪnəkl/,
-grail,https://www.oxfordlearnersdictionaries.com/definition/english/grail,C2,grail,chén thánh,noun,/ɡreɪl/,
-ideal,https://www.oxfordlearnersdictionaries.com/definition/english/ideal_2,B2,ideal,lý tưởng,noun,/aɪˈdiːəl/,
-holy_grail,https://www.oxfordlearnersdictionaries.com/definition/english/the-holy-grail,C2,Holy Grail,Chén Thánh,noun,/ðə ˌhəʊli ˈɡreɪl/,
-boom_town,https://www.oxfordlearnersdictionaries.com/definition/english/boom-town,C2,boom town,thị trấn bùng nổ,noun,/ˈbuːm taʊn/,
-heyday,https://www.oxfordlearnersdictionaries.com/definition/english/heyday,C2,heyday,thời hoàng kim,noun,/ˈheɪdeɪ/,
-indian_summer,https://www.oxfordlearnersdictionaries.com/definition/english/indian-summer,C2,Indian summer,mùa hè Ấn Độ,noun,/ˌɪndiən ˈsʌmə(r)/,
-productive,https://www.oxfordlearnersdictionaries.com/definition/english/productive,C1,productive,năng suất,adjective,/prəˈdʌktɪv/,
-prime,https://www.oxfordlearnersdictionaries.com/definition/english/prime_2,C2,prime,xuất sắc,noun,/praɪm/,
-sleeper,https://www.oxfordlearnersdictionaries.com/definition/english/sleeper,C2,sleeper,người ngủ,noun,/ˈsliːpə(r)/,
-vintage,https://www.oxfordlearnersdictionaries.com/definition/english/vintage_2,C2,vintage,cổ điển,adjective,/ˈvɪntɪdʒ/,
-wow,https://www.oxfordlearnersdictionaries.com/definition/english/wow_3,C2,wow,Ồ,noun,/waʊ/,
-purple_patch,https://www.oxfordlearnersdictionaries.com/definition/english/purple-patch,C2,purple patch,vá màu tím,noun,/ˈpɜːpl pætʃ/,
-zenith,https://www.oxfordlearnersdictionaries.com/definition/english/zenith_1,C2,zenith,thiên đỉnh,noun,/ˈzenɪθ/,
-x_factor,https://www.oxfordlearnersdictionaries.com/definition/english/x-factor,C2,X factor,yếu tố X,noun,/ˈeks fæktə(r)/,
+blockbuster,https://www.oxfordlearnersdictionaries.com/definition/english/blockbuster,C1,blockbuster,bom tấn,noun,/ˈblɒkbʌstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/block/blockbuster__gb_1.mp3
+golden_age,https://www.oxfordlearnersdictionaries.com/definition/english/golden-age,C1,golden age,thời kỳ hoàng kim,noun,/ˈɡəʊldən eɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gol/golde/golden_age_1_gb_1.mp3
+market_leader,https://www.oxfordlearnersdictionaries.com/definition/english/market-leader,C1,market leader,dẫn đầu thị trường,noun,/ˌmɑːkɪt ˈliːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marke/market_leader_1_gb_1.mp3
+pinnacle,https://www.oxfordlearnersdictionaries.com/definition/english/pinnacle,C2,pinnacle,đỉnh cao,noun,/ˈpɪnəkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pin/pinna/pinnacle__gb_1.mp3
+grail,https://www.oxfordlearnersdictionaries.com/definition/english/grail,C2,grail,chén thánh,noun,/ɡreɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grail/grail__gb_1.mp3
+ideal,https://www.oxfordlearnersdictionaries.com/definition/english/ideal_2,B2,ideal,lý tưởng,noun,/aɪˈdiːəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ide/ideal/ideal__gb_1.mp3
+holy_grail,https://www.oxfordlearnersdictionaries.com/definition/english/the-holy-grail,C2,Holy Grail,Chén Thánh,noun,/ðə ˌhəʊli ˈɡreɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hol/holy_/holy_grail_1_gb_2.mp3
+boom_town,https://www.oxfordlearnersdictionaries.com/definition/english/boom-town,C2,boom town,thị trấn bùng nổ,noun,/ˈbuːm taʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/boom_/boom_town_1_gb_1.mp3
+heyday,https://www.oxfordlearnersdictionaries.com/definition/english/heyday,C2,heyday,thời hoàng kim,noun,/ˈheɪdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hey/heyda/heyday__gb_1.mp3
+indian_summer,https://www.oxfordlearnersdictionaries.com/definition/english/indian-summer,C2,Indian summer,mùa hè Ấn Độ,noun,/ˌɪndiən ˈsʌmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ind/india/indian_summer_1_gb_1.mp3
+productive,https://www.oxfordlearnersdictionaries.com/definition/english/productive,C1,productive,năng suất,adjective,/prəˈdʌktɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/produ/productive__gb_1.mp3
+prime,https://www.oxfordlearnersdictionaries.com/definition/english/prime_2,C2,prime,xuất sắc,noun,/praɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/prime/prime__gb_1.mp3
+sleeper,https://www.oxfordlearnersdictionaries.com/definition/english/sleeper,C2,sleeper,người ngủ,noun,/ˈsliːpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sle/sleep/sleeper__gb_1.mp3
+vintage,https://www.oxfordlearnersdictionaries.com/definition/english/vintage_2,C2,vintage,cổ điển,adjective,/ˈvɪntɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vin/vinta/vintage__gb_1.mp3
+wow,https://www.oxfordlearnersdictionaries.com/definition/english/wow_3,C2,wow,Ồ,noun,/waʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wow/wow__/wow__gb_1.mp3
+purple_patch,https://www.oxfordlearnersdictionaries.com/definition/english/purple-patch,C2,purple patch,vá màu tím,noun,/ˈpɜːpl pætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pur/purpl/purple_patch_1_gb_1.mp3
+zenith,https://www.oxfordlearnersdictionaries.com/definition/english/zenith_1,C2,zenith,thiên đỉnh,noun,/ˈzenɪθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zen/zenit/zenith__gb_1.mp3
+x_factor,https://www.oxfordlearnersdictionaries.com/definition/english/x-factor,C2,X factor,yếu tố X,noun,/ˈeks fæktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/x_f/x_fac/x_factor_1_gb_1.mp3

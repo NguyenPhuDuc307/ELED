@@ -1,8 +1,8 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-emotion,https://www.oxfordlearnersdictionaries.com/definition/english/emotion,B1,emotion,cảm xúc,noun,/ɪˈməʊʃn/,
-sentiment,https://www.oxfordlearnersdictionaries.com/definition/english/sentiment,C1,sentiment,tình cảm,noun,/ˈsentɪmənt/,
-channel,https://www.oxfordlearnersdictionaries.com/definition/english/channel_1,C1,channel,kênh,noun,/ˈtʃænl/,
-emotional,https://www.oxfordlearnersdictionaries.com/definition/english/emotional,B2,emotional,xúc động,adjective,/ɪˈməʊʃənl/,
-feel,https://www.oxfordlearnersdictionaries.com/definition/english/feel_1,A1,feel,cảm thấy,verb,/fiːl/,
-feeling,https://www.oxfordlearnersdictionaries.com/definition/english/feeling,A1,feeling,cảm giác,noun,/ˈfiːlɪŋ/,
-rouse,https://www.oxfordlearnersdictionaries.com/definition/english/rouse,C2,rouse,đánh thức,verb,/raʊz/,
+emotion,https://www.oxfordlearnersdictionaries.com/definition/english/emotion,B1,emotion,cảm xúc,noun,/ɪˈməʊʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emo/emoti/emotion__gb_1.mp3
+sentiment,https://www.oxfordlearnersdictionaries.com/definition/english/sentiment,C1,sentiment,tình cảm,noun,/ˈsentɪmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/senti/sentiment__gb_1.mp3
+channel,https://www.oxfordlearnersdictionaries.com/definition/english/channel_1,C1,channel,kênh,noun,/ˈtʃænl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chann/channel__gb_2.mp3
+emotional,https://www.oxfordlearnersdictionaries.com/definition/english/emotional,B2,emotional,xúc động,adjective,/ɪˈməʊʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emo/emoti/emotional__gb_1.mp3
+feel,https://www.oxfordlearnersdictionaries.com/definition/english/feel_1,A1,feel,cảm thấy,verb,/fiːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fee/feel_/feel__gb_1.mp3
+feeling,https://www.oxfordlearnersdictionaries.com/definition/english/feeling,A1,feeling,cảm giác,noun,/ˈfiːlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fee/feeli/feeling__gb_1.mp3
+rouse,https://www.oxfordlearnersdictionaries.com/definition/english/rouse,C2,rouse,đánh thức,verb,/raʊz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/rouse/rouse__gb_1.mp3

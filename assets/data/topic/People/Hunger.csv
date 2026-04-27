@@ -1,23 +1,23 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-greedy,https://www.oxfordlearnersdictionaries.com/definition/english/greedy,B2,greedy,tham,adjective,/ˈɡriːdi/,
-hunger,https://www.oxfordlearnersdictionaries.com/definition/english/hunger_1,B2,hunger,đói,noun,/ˈhʌŋɡə(r)/,
-famished,https://www.oxfordlearnersdictionaries.com/definition/english/famished,C2,famished,đói bụng,adjective,/ˈfæmɪʃt/,
-greed,https://www.oxfordlearnersdictionaries.com/definition/english/greed,C1,greed,tham lam,noun,/ɡriːd/,
-demolish,https://www.oxfordlearnersdictionaries.com/definition/english/demolish,C2,demolish,phá hủy,verb,/dɪˈmɒlɪʃ/,
-guzzle,https://www.oxfordlearnersdictionaries.com/definition/english/guzzle,C2,guzzle,ăn tham,verb,/ˈɡʌzl/,
-be_starving_(for_something),https://www.oxfordlearnersdictionaries.com/definition/english/starve,C2,be starving (for something),đang đói (vì cái gì đó),verb,/stɑːv/,
-devour,https://www.oxfordlearnersdictionaries.com/definition/english/devour,C1,devour,ngấu nghiến,verb,/dɪˈvaʊə(r)/,
-gorge,https://www.oxfordlearnersdictionaries.com/definition/english/gorge_2,C2,gorge,hẻm núi,verb,/ɡɔːdʒ/,
-hungry,https://www.oxfordlearnersdictionaries.com/definition/english/hungry,A1,hungry,đói bụng,adjective,/ˈhʌŋɡri/,
-scoff,https://www.oxfordlearnersdictionaries.com/definition/english/scoff,C2,scoff,chế giễu,verb,/skɒf/,
-peckish,https://www.oxfordlearnersdictionaries.com/definition/english/peckish,C2,peckish,đói bụng,adjective,/ˈpekɪʃ/,
-pig,https://www.oxfordlearnersdictionaries.com/definition/english/pig_2,C1,pig,con lợn,verb,/pɪɡ/,
-munchies,https://www.oxfordlearnersdictionaries.com/definition/english/munchies,C2,munchies,đồ ăn vặt,noun,/ˈmʌntʃiz/,
-ravenous,https://www.oxfordlearnersdictionaries.com/definition/english/ravenous,C2,ravenous,háu ăn,adjective,/ˈrævənəs/,
-gobble,https://www.oxfordlearnersdictionaries.com/definition/english/gobble,C2,gobble,ngấu nghiến,verb,/ˈɡɒbl/,
-snarf,https://www.oxfordlearnersdictionaries.com/definition/english/snarf,C2,snarf,tiếng ngáy,verb,/snɑːf/,
+greedy,https://www.oxfordlearnersdictionaries.com/definition/english/greedy,B2,greedy,tham,adjective,/ˈɡriːdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/greed/greedy__gb_1.mp3
+hunger,https://www.oxfordlearnersdictionaries.com/definition/english/hunger_1,B2,hunger,đói,noun,/ˈhʌŋɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hun/hunge/hunger__gb_1.mp3
+famished,https://www.oxfordlearnersdictionaries.com/definition/english/famished,C2,famished,đói bụng,adjective,/ˈfæmɪʃt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fam/famis/famished__gb_1.mp3
+greed,https://www.oxfordlearnersdictionaries.com/definition/english/greed,C1,greed,tham lam,noun,/ɡriːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/greed/greed__gb_1.mp3
+demolish,https://www.oxfordlearnersdictionaries.com/definition/english/demolish,C2,demolish,phá hủy,verb,/dɪˈmɒlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dem/demol/demolish__gb_1.mp3
+guzzle,https://www.oxfordlearnersdictionaries.com/definition/english/guzzle,C2,guzzle,ăn tham,verb,/ˈɡʌzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/guz/guzzl/guzzle__gb_2.mp3
+be_starving_(for_something),https://www.oxfordlearnersdictionaries.com/definition/english/starve,C2,be starving (for something),đang đói (vì cái gì đó),verb,/stɑːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/starv/starve__gb_1.mp3
+devour,https://www.oxfordlearnersdictionaries.com/definition/english/devour,C1,devour,ngấu nghiến,verb,/dɪˈvaʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dev/devou/devour__gb_2.mp3
+gorge,https://www.oxfordlearnersdictionaries.com/definition/english/gorge_2,C2,gorge,hẻm núi,verb,/ɡɔːdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gor/gorge/gorge__gb_2.mp3
+hungry,https://www.oxfordlearnersdictionaries.com/definition/english/hungry,A1,hungry,đói bụng,adjective,/ˈhʌŋɡri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hun/hungr/hungry__gb_2.mp3
+scoff,https://www.oxfordlearnersdictionaries.com/definition/english/scoff,C2,scoff,chế giễu,verb,/skɒf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sco/scoff/scoff__gb_1.mp3
+peckish,https://www.oxfordlearnersdictionaries.com/definition/english/peckish,C2,peckish,đói bụng,adjective,/ˈpekɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pec/pecki/peckish__gb_1.mp3
+pig,https://www.oxfordlearnersdictionaries.com/definition/english/pig_2,C1,pig,con lợn,verb,/pɪɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pig/pig__/pig__gb_1.mp3
+munchies,https://www.oxfordlearnersdictionaries.com/definition/english/munchies,C2,munchies,đồ ăn vặt,noun,/ˈmʌntʃiz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mun/munch/munchies__gb_2.mp3
+ravenous,https://www.oxfordlearnersdictionaries.com/definition/english/ravenous,C2,ravenous,háu ăn,adjective,/ˈrævənəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rav/raven/ravenous__gb_1.mp3
+gobble,https://www.oxfordlearnersdictionaries.com/definition/english/gobble,C2,gobble,ngấu nghiến,verb,/ˈɡɒbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gob/gobbl/gobble__gb_6.mp3
+snarf,https://www.oxfordlearnersdictionaries.com/definition/english/snarf,C2,snarf,tiếng ngáy,verb,/snɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sna/snarf/snarf__gb_1.mp3
 stoke_up,https://www.oxfordlearnersdictionaries.com/definition/english/stoke-up,C2,stoke up,đánh thức,phrasal verb,,
-stuff,https://www.oxfordlearnersdictionaries.com/definition/english/stuff_2,C2,stuff,chất liệu,verb,/stʌf/,
-wolf,https://www.oxfordlearnersdictionaries.com/definition/english/wolf_2,C2,wolf,chó sói,verb,/wʊlf/,
-stuffed,https://www.oxfordlearnersdictionaries.com/definition/english/stuffed,C2,stuffed,nhồi bông,adjective,/stʌft/,
-underfed,https://www.oxfordlearnersdictionaries.com/definition/english/underfed,C2,underfed,thiếu ăn,adjective,/ˌʌndəˈfed/,
+stuff,https://www.oxfordlearnersdictionaries.com/definition/english/stuff_2,C2,stuff,chất liệu,verb,/stʌf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stuff/stuff__gb_1.mp3
+wolf,https://www.oxfordlearnersdictionaries.com/definition/english/wolf_2,C2,wolf,chó sói,verb,/wʊlf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wol/wolf_/wolf__gb_1.mp3
+stuffed,https://www.oxfordlearnersdictionaries.com/definition/english/stuffed,C2,stuffed,nhồi bông,adjective,/stʌft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stuff/stuffed__gb_1.mp3
+underfed,https://www.oxfordlearnersdictionaries.com/definition/english/underfed,C2,underfed,thiếu ăn,adjective,/ˌʌndəˈfed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/und/under/underfed__gb_1.mp3

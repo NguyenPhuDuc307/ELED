@@ -1,41 +1,41 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-captain,https://www.oxfordlearnersdictionaries.com/definition/english/captain_1,B1,captain,đội trưởng,noun,/ˈkæptɪn/,
-deckhand,https://www.oxfordlearnersdictionaries.com/definition/english/deckhand,C2,deckhand,bộ bài,noun,/ˈdekhænd/,
-admiral,https://www.oxfordlearnersdictionaries.com/definition/english/admiral,C1,admiral,đô đốc,noun,/ˈædmərəl/,
-buccaneer,https://www.oxfordlearnersdictionaries.com/definition/english/buccaneer,C2,buccaneer,người khai thác hải sản,noun,/ˌbʌkəˈnɪə(r)/,
-cabin_boy,https://www.oxfordlearnersdictionaries.com/definition/english/cabin-boy,C2,cabin boy,cậu bé cabin,noun,/ˈkæbɪn bɔɪ/,
-boatswain,https://www.oxfordlearnersdictionaries.com/definition/english/boatswain,C2,boatswain,người chèo thuyền,noun,/ˈbəʊsn/,
-crew,https://www.oxfordlearnersdictionaries.com/definition/english/crew_1,B2,crew,phi hành đoàn,noun,/kruː/,
-bosun,https://www.oxfordlearnersdictionaries.com/definition/english/bosun,C2,bosun,bosun,noun,/ˈbəʊsn/,
-coastguard,https://www.oxfordlearnersdictionaries.com/definition/english/coastguard,C2,coastguard,lực lượng bảo vệ bờ biển,noun,/ˈkəʊstɡɑːd/,
-engineer,https://www.oxfordlearnersdictionaries.com/definition/english/engineer_1,B1,engineer,kỹ sư,noun,/ˌendʒɪˈnɪə(r)/,
-canoeist,https://www.oxfordlearnersdictionaries.com/definition/english/canoeist,C1,canoeist,người chèo thuyền,noun,/kəˈnuːɪst/,
-first_mate,https://www.oxfordlearnersdictionaries.com/definition/english/first-mate,C2,first mate,người bạn đời đầu tiên,noun,/ˌfɜːst ˈmeɪt/,
-mariner,https://www.oxfordlearnersdictionaries.com/definition/english/mariner_1,C2,mariner,thủy thủ,noun,/ˈmærɪnə(r)/,
-hand,https://www.oxfordlearnersdictionaries.com/definition/english/hand_1,C2,hand,tay,noun,/hænd/,
-mate,https://www.oxfordlearnersdictionaries.com/definition/english/mate_1,C2,mate,bạn,noun,/meɪt/,
-navigator,https://www.oxfordlearnersdictionaries.com/definition/english/navigator,B2,navigator,hoa tiêu,noun,/ˈnævɪɡeɪtə(r)/,
-helmsman,https://www.oxfordlearnersdictionaries.com/definition/english/helmsman,C2,helmsman,người cầm lái,noun,/ˈhelmzmən/,
-helmswoman,https://www.oxfordlearnersdictionaries.com/definition/english/helmswoman,C2,helmswoman,người cầm lái,noun,/ˈhelmzwʊmən/,
-navy,https://www.oxfordlearnersdictionaries.com/definition/english/navy,B2,navy,hải quân,noun,/ˈneɪvi/,
-passenger,https://www.oxfordlearnersdictionaries.com/definition/english/passenger,A2,passenger,hành khách,noun,/ˈpæsɪndʒə(r)/,
-landlubber,https://www.oxfordlearnersdictionaries.com/definition/english/landlubber,C2,landlubber,chủ nhà,noun,/ˈlændlʌbə(r)/,
-pilot,https://www.oxfordlearnersdictionaries.com/definition/english/pilot_1,C1,pilot,phi công,noun,/ˈpaɪlət/,
-purser,https://www.oxfordlearnersdictionaries.com/definition/english/purser,C2,purser,người theo đuổi,noun,/ˈpɜːsə(r)/,
-oarswoman,https://www.oxfordlearnersdictionaries.com/definition/english/oarswoman,C2,oarswoman,người phụ nữ chèo thuyền,noun,/ˈɔːzwʊmən/,
-rating,https://www.oxfordlearnersdictionaries.com/definition/english/rating,C2,rating,đánh giá,noun,/ˈreɪtɪŋ/,
-rower,https://www.oxfordlearnersdictionaries.com/definition/english/rower,B2,rower,người chèo thuyền,noun,/ˈrəʊə(r)/,
-oarsman,https://www.oxfordlearnersdictionaries.com/definition/english/oarsman,C2,oarsman,người chèo thuyền,noun,/ˈɔːzmən/,
-sailor,https://www.oxfordlearnersdictionaries.com/definition/english/sailor,B1,sailor,thủy thủ,noun,/ˈseɪlə(r)/,
-seafarer,https://www.oxfordlearnersdictionaries.com/definition/english/seafarer,C2,seafarer,thủy thủ,noun,/ˈsiːfeərə(r)/,
-shipowner,https://www.oxfordlearnersdictionaries.com/definition/english/shipowner,C1,shipowner,chủ tàu,noun,/ˈʃɪpəʊnə(r)/,
-sea_dog,https://www.oxfordlearnersdictionaries.com/definition/english/sea-dog,C2,sea dog,chó biển,noun,/ˈsiː dɒɡ/,
-shipmate,https://www.oxfordlearnersdictionaries.com/definition/english/shipmate,C2,shipmate,bạn cùng tàu,noun,/ˈʃɪpmeɪt/,
-pirate,https://www.oxfordlearnersdictionaries.com/definition/english/pirate_1,C1,pirate,cướp biển,noun,/ˈpaɪrət/,
-shipper,https://www.oxfordlearnersdictionaries.com/definition/english/shipper,C2,shipper,người giao hàng,noun,/ˈʃɪpə(r)/,
-steward,https://www.oxfordlearnersdictionaries.com/definition/english/steward,C1,steward,người quản lý,noun,/ˈstjuːəd/,
-stowaway,https://www.oxfordlearnersdictionaries.com/definition/english/stowaway,C2,stowaway,người trốn theo tàu,noun,/ˈstəʊəweɪ/,
-seaman,https://www.oxfordlearnersdictionaries.com/definition/english/seaman,C1,seaman,thủy thủ,noun,/ˈsiːmən/,
-skipper,https://www.oxfordlearnersdictionaries.com/definition/english/skipper_1,C2,skipper,thuyền trưởng,noun,/ˈskɪpə(r)/,
-submariner,https://www.oxfordlearnersdictionaries.com/definition/english/submariner,C2,submariner,người đi tàu ngầm,noun,/sʌbˈmærɪnə(r)/,
-voyager,https://www.oxfordlearnersdictionaries.com/definition/english/voyager_1,C2,voyager,người du hành,noun,/ˈvɔɪɪdʒə(r)/,
+captain,https://www.oxfordlearnersdictionaries.com/definition/english/captain_1,B1,captain,đội trưởng,noun,/ˈkæptɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/capta/captain__gb_1.mp3
+deckhand,https://www.oxfordlearnersdictionaries.com/definition/english/deckhand,C2,deckhand,bộ bài,noun,/ˈdekhænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/deckh/deckhand__gb_1.mp3
+admiral,https://www.oxfordlearnersdictionaries.com/definition/english/admiral,C1,admiral,đô đốc,noun,/ˈædmərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adm/admir/admiral__gb_1.mp3
+buccaneer,https://www.oxfordlearnersdictionaries.com/definition/english/buccaneer,C2,buccaneer,người khai thác hải sản,noun,/ˌbʌkəˈnɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/buc/bucca/buccaneer__gb_1.mp3
+cabin_boy,https://www.oxfordlearnersdictionaries.com/definition/english/cabin-boy,C2,cabin boy,cậu bé cabin,noun,/ˈkæbɪn bɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cab/cabin/cabin_boy_1_gb_1.mp3
+boatswain,https://www.oxfordlearnersdictionaries.com/definition/english/boatswain,C2,boatswain,người chèo thuyền,noun,/ˈbəʊsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boa/boats/boatswain__gb_3.mp3
+crew,https://www.oxfordlearnersdictionaries.com/definition/english/crew_1,B2,crew,phi hành đoàn,noun,/kruː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/crew_/crew__gb_1.mp3
+bosun,https://www.oxfordlearnersdictionaries.com/definition/english/bosun,C2,bosun,bosun,noun,/ˈbəʊsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bos/bosun/bosun__gb_2.mp3
+coastguard,https://www.oxfordlearnersdictionaries.com/definition/english/coastguard,C2,coastguard,lực lượng bảo vệ bờ biển,noun,/ˈkəʊstɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coast/coastguard__gb_1.mp3
+engineer,https://www.oxfordlearnersdictionaries.com/definition/english/engineer_1,B1,engineer,kỹ sư,noun,/ˌendʒɪˈnɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eng/engin/engineer__gb_1.mp3
+canoeist,https://www.oxfordlearnersdictionaries.com/definition/english/canoeist,C1,canoeist,người chèo thuyền,noun,/kəˈnuːɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canoe/canoeist__gb_1.mp3
+first_mate,https://www.oxfordlearnersdictionaries.com/definition/english/first-mate,C2,first mate,người bạn đời đầu tiên,noun,/ˌfɜːst ˈmeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/first/first_mate_1_gb_1.mp3
+mariner,https://www.oxfordlearnersdictionaries.com/definition/english/mariner_1,C2,mariner,thủy thủ,noun,/ˈmærɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marin/mariner__gb_1.mp3
+hand,https://www.oxfordlearnersdictionaries.com/definition/english/hand_1,C2,hand,tay,noun,/hænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hand_/hand__gb_2.mp3
+mate,https://www.oxfordlearnersdictionaries.com/definition/english/mate_1,C2,mate,bạn,noun,/meɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/mate_/mate__gb_1.mp3
+navigator,https://www.oxfordlearnersdictionaries.com/definition/english/navigator,B2,navigator,hoa tiêu,noun,/ˈnævɪɡeɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nav/navig/navigator__gb_1.mp3
+helmsman,https://www.oxfordlearnersdictionaries.com/definition/english/helmsman,C2,helmsman,người cầm lái,noun,/ˈhelmzmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hel/helms/helmsman__gb_1.mp3
+helmswoman,https://www.oxfordlearnersdictionaries.com/definition/english/helmswoman,C2,helmswoman,người cầm lái,noun,/ˈhelmzwʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hel/helms/helmswoman__gb_1.mp3
+navy,https://www.oxfordlearnersdictionaries.com/definition/english/navy,B2,navy,hải quân,noun,/ˈneɪvi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nav/navy_/navy__gb_1.mp3
+passenger,https://www.oxfordlearnersdictionaries.com/definition/english/passenger,A2,passenger,hành khách,noun,/ˈpæsɪndʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passe/passenger__gb_2.mp3
+landlubber,https://www.oxfordlearnersdictionaries.com/definition/english/landlubber,C2,landlubber,chủ nhà,noun,/ˈlændlʌbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/landl/landlubber__gb_1.mp3
+pilot,https://www.oxfordlearnersdictionaries.com/definition/english/pilot_1,C1,pilot,phi công,noun,/ˈpaɪlət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pil/pilot/pilot__gb_1.mp3
+purser,https://www.oxfordlearnersdictionaries.com/definition/english/purser,C2,purser,người theo đuổi,noun,/ˈpɜːsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pur/purse/purser__gb_1.mp3
+oarswoman,https://www.oxfordlearnersdictionaries.com/definition/english/oarswoman,C2,oarswoman,người phụ nữ chèo thuyền,noun,/ˈɔːzwʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oar/oarsw/oarswoman__gb_1.mp3
+rating,https://www.oxfordlearnersdictionaries.com/definition/english/rating,C2,rating,đánh giá,noun,/ˈreɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rat/ratin/rating__gb_1.mp3
+rower,https://www.oxfordlearnersdictionaries.com/definition/english/rower,B2,rower,người chèo thuyền,noun,/ˈrəʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/row/rower/rower__gb_1.mp3
+oarsman,https://www.oxfordlearnersdictionaries.com/definition/english/oarsman,C2,oarsman,người chèo thuyền,noun,/ˈɔːzmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oar/oarsm/oarsman__gb_1.mp3
+sailor,https://www.oxfordlearnersdictionaries.com/definition/english/sailor,B1,sailor,thủy thủ,noun,/ˈseɪlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sai/sailo/sailor__gb_1.mp3
+seafarer,https://www.oxfordlearnersdictionaries.com/definition/english/seafarer,C2,seafarer,thủy thủ,noun,/ˈsiːfeərə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seafa/seafarer__gb_1.mp3
+shipowner,https://www.oxfordlearnersdictionaries.com/definition/english/shipowner,C1,shipowner,chủ tàu,noun,/ˈʃɪpəʊnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shipo/shipowner__gb_1.mp3
+sea_dog,https://www.oxfordlearnersdictionaries.com/definition/english/sea-dog,C2,sea dog,chó biển,noun,/ˈsiː dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/sea_d/sea_dog_1_gb_1.mp3
+shipmate,https://www.oxfordlearnersdictionaries.com/definition/english/shipmate,C2,shipmate,bạn cùng tàu,noun,/ˈʃɪpmeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shipm/shipmate__gb_1.mp3
+pirate,https://www.oxfordlearnersdictionaries.com/definition/english/pirate_1,C1,pirate,cướp biển,noun,/ˈpaɪrət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pir/pirat/pirate__gb_2.mp3
+shipper,https://www.oxfordlearnersdictionaries.com/definition/english/shipper,C2,shipper,người giao hàng,noun,/ˈʃɪpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shipp/shipper__gb_1.mp3
+steward,https://www.oxfordlearnersdictionaries.com/definition/english/steward,C1,steward,người quản lý,noun,/ˈstjuːəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/stewa/steward__gb_1.mp3
+stowaway,https://www.oxfordlearnersdictionaries.com/definition/english/stowaway,C2,stowaway,người trốn theo tàu,noun,/ˈstəʊəweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/stowa/stowaway__gb_1.mp3
+seaman,https://www.oxfordlearnersdictionaries.com/definition/english/seaman,C1,seaman,thủy thủ,noun,/ˈsiːmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seama/seaman__gb_1.mp3
+skipper,https://www.oxfordlearnersdictionaries.com/definition/english/skipper_1,C2,skipper,thuyền trưởng,noun,/ˈskɪpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ski/skipp/skipper__gb_1.mp3
+submariner,https://www.oxfordlearnersdictionaries.com/definition/english/submariner,C2,submariner,người đi tàu ngầm,noun,/sʌbˈmærɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subma/submariner__gb_1.mp3
+voyager,https://www.oxfordlearnersdictionaries.com/definition/english/voyager_1,C2,voyager,người du hành,noun,/ˈvɔɪɪdʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voy/voyag/voyager__gb_1.mp3

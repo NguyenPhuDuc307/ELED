@@ -1,20 +1,20 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-herd,https://www.oxfordlearnersdictionaries.com/definition/english/herd_1,C1,herd,bầy đàn,noun,/hɜːd/,
-genus,https://www.oxfordlearnersdictionaries.com/definition/english/genus,C1,genus,chi,noun,/ˈdʒiːnəs/,
-harem,https://www.oxfordlearnersdictionaries.com/definition/english/harem,C2,harem,hậu cung,noun,/ˈhɑːriːm/,
-farrow,https://www.oxfordlearnersdictionaries.com/definition/english/farrow_1,C2,farrow,cái đẻ,noun,/ˈfærəʊ/,
-colony,https://www.oxfordlearnersdictionaries.com/definition/english/colony,C1,colony,thuộc địa,noun,/ˈkɒləni/,
-flock,https://www.oxfordlearnersdictionaries.com/definition/english/flock_1,C1,flock,đàn,noun,/flɒk/,
-class,https://www.oxfordlearnersdictionaries.com/definition/english/class_1,C1,class,lớp học,noun,/klɑːs/,
-family,https://www.oxfordlearnersdictionaries.com/definition/english/family_1,A2,family,gia đình,noun,/ˈfæməli/,
-breed,https://www.oxfordlearnersdictionaries.com/definition/english/breed_2,C1,breed,giống,noun,/briːd/,
-drove,https://www.oxfordlearnersdictionaries.com/definition/english/drove_1,C2,drove,lái xe,noun,/drəʊv/,
-mob,https://www.oxfordlearnersdictionaries.com/definition/english/mob_1,C2,mob,đám đông,noun,/mɒb/,
-pack,https://www.oxfordlearnersdictionaries.com/definition/english/pack_2,B2,pack,đóng gói,noun,/pæk/,
-pod,https://www.oxfordlearnersdictionaries.com/definition/english/pod,C2,pod,vỏ,noun,/pɒd/,
-order,https://www.oxfordlearnersdictionaries.com/definition/english/order_1,C2,order,đặt hàng,noun,/ˈɔːdə(r)/,
-tribe,https://www.oxfordlearnersdictionaries.com/definition/english/tribe,C2,tribe,bộ lạc,noun,/traɪb/,
-race,https://www.oxfordlearnersdictionaries.com/definition/english/race_1,C2,race,loài,noun,/reɪs/,
-pride,https://www.oxfordlearnersdictionaries.com/definition/english/pride_1,C2,pride,kiêu hãnh,noun,/praɪd/,
-species,https://www.oxfordlearnersdictionaries.com/definition/english/species,B2,species,giống loài,noun,/ˈspiːʃiːz/,
-phylum,https://www.oxfordlearnersdictionaries.com/definition/english/phylum,C2,phylum,ngành,noun,/ˈfaɪləm/,
+herd,https://www.oxfordlearnersdictionaries.com/definition/english/herd_1,C1,herd,bầy đàn,noun,/hɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/her/herd_/herd__gb_1.mp3
+genus,https://www.oxfordlearnersdictionaries.com/definition/english/genus,C1,genus,chi,noun,/ˈdʒiːnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gen/gener/genera__gb_1.mp3
+harem,https://www.oxfordlearnersdictionaries.com/definition/english/harem,C2,harem,hậu cung,noun,/ˈhɑːriːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/har/harem/harem__gb_1.mp3
+farrow,https://www.oxfordlearnersdictionaries.com/definition/english/farrow_1,C2,farrow,cái đẻ,noun,/ˈfærəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farro/farrow__gb_1.mp3
+colony,https://www.oxfordlearnersdictionaries.com/definition/english/colony,C1,colony,thuộc địa,noun,/ˈkɒləni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/colon/colony__gb_1.mp3
+flock,https://www.oxfordlearnersdictionaries.com/definition/english/flock_1,C1,flock,đàn,noun,/flɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flock/flock__gb_1.mp3
+class,https://www.oxfordlearnersdictionaries.com/definition/english/class_1,C1,class,lớp học,noun,/klɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/class/class__gb_3.mp3
+family,https://www.oxfordlearnersdictionaries.com/definition/english/family_1,A2,family,gia đình,noun,/ˈfæməli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fam/famil/family__gb_1.mp3
+breed,https://www.oxfordlearnersdictionaries.com/definition/english/breed_2,C1,breed,giống,noun,/briːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breed/breed__gb_1.mp3
+drove,https://www.oxfordlearnersdictionaries.com/definition/english/drove_1,C2,drove,lái xe,noun,/drəʊv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drove/drove__gb_4.mp3
+mob,https://www.oxfordlearnersdictionaries.com/definition/english/mob_1,C2,mob,đám đông,noun,/mɒb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mob/mob__/mob__gb_1.mp3
+pack,https://www.oxfordlearnersdictionaries.com/definition/english/pack_2,B2,pack,đóng gói,noun,/pæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pac/pack_/pack__gb_1.mp3
+pod,https://www.oxfordlearnersdictionaries.com/definition/english/pod,C2,pod,vỏ,noun,/pɒd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pod/pod__/pod__gb_1.mp3
+order,https://www.oxfordlearnersdictionaries.com/definition/english/order_1,C2,order,đặt hàng,noun,/ˈɔːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ord/order/order__gb_1.mp3
+tribe,https://www.oxfordlearnersdictionaries.com/definition/english/tribe,C2,tribe,bộ lạc,noun,/traɪb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tri/tribe/tribe__gb_1.mp3
+race,https://www.oxfordlearnersdictionaries.com/definition/english/race_1,C2,race,loài,noun,/reɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rac/race_/race__gb_2.mp3
+pride,https://www.oxfordlearnersdictionaries.com/definition/english/pride_1,C2,pride,kiêu hãnh,noun,/praɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/pride/pride__gb_1.mp3
+species,https://www.oxfordlearnersdictionaries.com/definition/english/species,B2,species,giống loài,noun,/ˈspiːʃiːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/speci/species__gb_2.mp3
+phylum,https://www.oxfordlearnersdictionaries.com/definition/english/phylum,C2,phylum,ngành,noun,/ˈfaɪləm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/phylu/phylum__gb_1.mp3

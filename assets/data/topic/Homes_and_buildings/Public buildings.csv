@@ -1,51 +1,51 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-aquarium,https://www.oxfordlearnersdictionaries.com/definition/english/aquarium,C1,aquarium,bể cá,noun,/əˈkweəriəm/,
-art_gallery,https://www.oxfordlearnersdictionaries.com/definition/english/art-gallery,A2,art gallery,phòng trưng bày nghệ thuật,noun,/ˈɑːt ɡæləri/,
-auction_room,https://www.oxfordlearnersdictionaries.com/definition/english/auction-room,C1,auction room,phòng đấu giá,noun,/ˈɔːkʃn ruːm/,
-cinema,https://www.oxfordlearnersdictionaries.com/definition/english/cinema,A1,cinema,rạp chiếu phim,noun,/ˈsɪnəmə/,
-court,https://www.oxfordlearnersdictionaries.com/definition/english/court_1,B1,court,tòa án,noun,/kɔːt/,
-bowling_alley,https://www.oxfordlearnersdictionaries.com/definition/english/bowling-alley,C1,bowling alley,sân chơi bowling,noun,/ˈbəʊlɪŋ æli/,
-auditorium,https://www.oxfordlearnersdictionaries.com/definition/english/auditorium,C2,auditorium,khán phòng,noun,/ˌɔːdɪˈtɔːriəm/,
-club,https://www.oxfordlearnersdictionaries.com/definition/english/club_1,A2,club,câu lạc bộ,noun,/klʌb/,
-clubhouse,https://www.oxfordlearnersdictionaries.com/definition/english/clubhouse,C2,clubhouse,câu lạc bộ,noun,/ˈklʌbhaʊs/,
-assembly_room,https://www.oxfordlearnersdictionaries.com/definition/english/assembly-room,C2,assembly room,phòng lắp ráp,noun,/əˈsembli ruːm/,
-crematorium,https://www.oxfordlearnersdictionaries.com/definition/english/crematorium,C2,crematorium,lò hỏa táng,noun,/ˌkreməˈtɔːriəm/,
-hall,https://www.oxfordlearnersdictionaries.com/definition/english/hall,B1,hall,sảnh,noun,/hɔːl/,
-fire_station,https://www.oxfordlearnersdictionaries.com/definition/english/fire-station,B2,fire station,trạm cứu hỏa,noun,/ˈfaɪə steɪʃn/,
-hospice,https://www.oxfordlearnersdictionaries.com/definition/english/hospice,C2,hospice,nhà tế bần,noun,/ˈhɒspɪs/,
-hostel,https://www.oxfordlearnersdictionaries.com/definition/english/hostel,B1,hostel,ký túc xá,noun,/ˈhɒstl/,
-lighthouse,https://www.oxfordlearnersdictionaries.com/definition/english/lighthouse,C1,lighthouse,ngọn hải đăng,noun,/ˈlaɪthaʊs/,
-library,https://www.oxfordlearnersdictionaries.com/definition/english/library,A1,library,thư viện,noun,/ˈlaɪbrəri/,
-hospital,https://www.oxfordlearnersdictionaries.com/definition/english/hospital,A1,hospital,bệnh viện,noun,/ˈhɒspɪtl/,
-leisure_centre,https://www.oxfordlearnersdictionaries.com/definition/english/leisure-centre,B2,leisure centre,trung tâm giải trí,noun,/ˈleʒə sentə(r)/,
-movie_theater,https://www.oxfordlearnersdictionaries.com/definition/english/movie-theater,A1,movie theater,rạp chiếu phim,noun,/ˈmuːvi θɪətə(r)/,
-courthouse,https://www.oxfordlearnersdictionaries.com/definition/english/courthouse,B2,courthouse,tòa án,noun,/ˈkɔːthaʊs/,
-mall,https://www.oxfordlearnersdictionaries.com/definition/english/mall_1,B1,mall,trung tâm mua sắm,noun,/mɔːl/,
-morgue,https://www.oxfordlearnersdictionaries.com/definition/english/morgue,C2,morgue,nhà xác,noun,/mɔːɡ/,
-mortuary,https://www.oxfordlearnersdictionaries.com/definition/english/mortuary,C2,mortuary,nhà xác,noun,/ˈmɔːtʃəri/,
-opera_house,https://www.oxfordlearnersdictionaries.com/definition/english/opera-house,B2,opera house,nhà hát opera,noun,/ˈɒprə haʊs/,
-museum,https://www.oxfordlearnersdictionaries.com/definition/english/museum,A1,museum,bảo tàng,noun,/mjuˈziːəm/,
-municipal,https://www.oxfordlearnersdictionaries.com/definition/english/municipal,C1,municipal,thành phố,adjective,/mjuːˈnɪsɪpl/,
-post_office,https://www.oxfordlearnersdictionaries.com/definition/english/post-office,A1,post office,bưu điện,noun,/ˈpəʊst ɒfɪs/,
-multi-storey_car_park,https://www.oxfordlearnersdictionaries.com/definition/english/multi-storey-car-park,C1,multi-storey car park,bãi đậu xe nhiều tầng,noun,/ˌmʌlti stɔːri ˈkɑː pɑːk/,
-parking_garage,https://www.oxfordlearnersdictionaries.com/definition/english/parking-garage,C2,parking garage,nhà để xe,noun,/ˈpɑːkɪŋ ɡærɑːʒ/,
-planetarium,https://www.oxfordlearnersdictionaries.com/definition/english/planetarium,C2,planetarium,cung thiên văn,noun,/ˌplænɪˈteəriəm/,
-police_station,https://www.oxfordlearnersdictionaries.com/definition/english/police-station,A2,police station,đồn cảnh sát,noun,/pəˈliːs steɪʃn/,
-pub,https://www.oxfordlearnersdictionaries.com/definition/english/pub,A2,pub,quán rượu,noun,/pʌb/,
-pavilion,https://www.oxfordlearnersdictionaries.com/definition/english/pavilion,C2,pavilion,gian hàng,noun,/pəˈvɪliən/,
-school,https://www.oxfordlearnersdictionaries.com/definition/english/school_1,A1,school,trường học,noun,/skuːl/,
-public_house,https://www.oxfordlearnersdictionaries.com/definition/english/public-house,C2,public house,nhà công cộng,noun,/ˌpʌblɪk ˈhaʊs/,
-service_station,https://www.oxfordlearnersdictionaries.com/definition/english/service-station,C1,service station,trạm dịch vụ,noun,/ˈsɜːvɪs steɪʃn/,
-shopping_centre,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-centre,A2,shopping centre,trung tâm mua sắm,noun,/ˈʃɒpɪŋ sentə(r)/,
-public_convenience,https://www.oxfordlearnersdictionaries.com/definition/english/public-convenience,C2,public convenience,tiện ích công cộng,noun,/ˌpʌblɪk kənˈviːniəns/,
-stadium,https://www.oxfordlearnersdictionaries.com/definition/english/stadium,B1,stadium,sân vận động,noun,/ˈsteɪdiəm/,
-station,https://www.oxfordlearnersdictionaries.com/definition/english/station_1,A1,station,ga tàu,noun,/ˈsteɪʃn/,
-shopping_arcade,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-arcade,C2,shopping arcade,khu mua sắm,noun,/ˈʃɒpɪŋ ɑːkeɪd/,
-schoolhouse,https://www.oxfordlearnersdictionaries.com/definition/english/schoolhouse,B2,schoolhouse,ngôi trường,noun,/ˈskuːlhaʊs/,
-station_house,https://www.oxfordlearnersdictionaries.com/definition/english/station-house,C2,station house,nhà ga,noun,/ˈsteɪʃn haʊs/,
-terminal,https://www.oxfordlearnersdictionaries.com/definition/english/terminal_1,B2,terminal,phần cuối,noun,/ˈtɜːmɪnl/,
-shopping_mall,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-mall,B1,shopping mall,trung tâm mua sắm,noun,/ˈʃɒpɪŋ mɔːl/,
-theatre,https://www.oxfordlearnersdictionaries.com/definition/english/theatre,A1,theatre,nhà hát,noun,/ˈθɪətə(r)/,
-sports_centre,https://www.oxfordlearnersdictionaries.com/definition/english/sports-centre,A2,sports centre,trung tâm thể thao,noun,/ˈspɔːts sentə(r)/,
-town_hall,https://www.oxfordlearnersdictionaries.com/definition/english/town-hall,B1,town hall,tòa thị chính,noun,/ˌtaʊn ˈhɔːl/,
-swimming_pool,https://www.oxfordlearnersdictionaries.com/definition/english/swimming-pool,A1,swimming pool,hồ bơi,noun,/ˈswɪmɪŋ puːl/,
+aquarium,https://www.oxfordlearnersdictionaries.com/definition/english/aquarium,C1,aquarium,bể cá,noun,/əˈkweəriəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aqu/aquar/aquarium__gb_1.mp3
+art_gallery,https://www.oxfordlearnersdictionaries.com/definition/english/art-gallery,A2,art gallery,phòng trưng bày nghệ thuật,noun,/ˈɑːt ɡæləri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/art/art_g/art_gallery_1_gb_1.mp3
+auction_room,https://www.oxfordlearnersdictionaries.com/definition/english/auction-room,C1,auction room,phòng đấu giá,noun,/ˈɔːkʃn ruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/auc/aucti/auction_room_1_gb_1.mp3
+cinema,https://www.oxfordlearnersdictionaries.com/definition/english/cinema,A1,cinema,rạp chiếu phim,noun,/ˈsɪnəmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cin/cinem/cinema__gb_4.mp3
+court,https://www.oxfordlearnersdictionaries.com/definition/english/court_1,B1,court,tòa án,noun,/kɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/court/court__gb_2.mp3
+bowling_alley,https://www.oxfordlearnersdictionaries.com/definition/english/bowling-alley,C1,bowling alley,sân chơi bowling,noun,/ˈbəʊlɪŋ æli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bow/bowli/bowling_alley_1_gb_1.mp3
+auditorium,https://www.oxfordlearnersdictionaries.com/definition/english/auditorium,C2,auditorium,khán phòng,noun,/ˌɔːdɪˈtɔːriəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aud/audit/auditorium__gb_1.mp3
+club,https://www.oxfordlearnersdictionaries.com/definition/english/club_1,A2,club,câu lạc bộ,noun,/klʌb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clu/club_/club__gb_1.mp3
+clubhouse,https://www.oxfordlearnersdictionaries.com/definition/english/clubhouse,C2,clubhouse,câu lạc bộ,noun,/ˈklʌbhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clu/clubh/clubhouse__gb_1.mp3
+assembly_room,https://www.oxfordlearnersdictionaries.com/definition/english/assembly-room,C2,assembly room,phòng lắp ráp,noun,/əˈsembli ruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assem/assembly_room_1_gb_1.mp3
+crematorium,https://www.oxfordlearnersdictionaries.com/definition/english/crematorium,C2,crematorium,lò hỏa táng,noun,/ˌkreməˈtɔːriəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/crema/crematorium__gb_1.mp3
+hall,https://www.oxfordlearnersdictionaries.com/definition/english/hall,B1,hall,sảnh,noun,/hɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/hall_/hall__gb_2.mp3
+fire_station,https://www.oxfordlearnersdictionaries.com/definition/english/fire-station,B2,fire station,trạm cứu hỏa,noun,/ˈfaɪə steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/fire_/fire_station_1_gb_2.mp3
+hospice,https://www.oxfordlearnersdictionaries.com/definition/english/hospice,C2,hospice,nhà tế bần,noun,/ˈhɒspɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hos/hospi/hospice__gb_1.mp3
+hostel,https://www.oxfordlearnersdictionaries.com/definition/english/hostel,B1,hostel,ký túc xá,noun,/ˈhɒstl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hos/hoste/hostel__gb_1.mp3
+lighthouse,https://www.oxfordlearnersdictionaries.com/definition/english/lighthouse,C1,lighthouse,ngọn hải đăng,noun,/ˈlaɪthaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lig/light/lighthouse__gb_1.mp3
+library,https://www.oxfordlearnersdictionaries.com/definition/english/library,A1,library,thư viện,noun,/ˈlaɪbrəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lib/libra/library__gb_1.mp3
+hospital,https://www.oxfordlearnersdictionaries.com/definition/english/hospital,A1,hospital,bệnh viện,noun,/ˈhɒspɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hos/hospi/hospital__gb_2.mp3
+leisure_centre,https://www.oxfordlearnersdictionaries.com/definition/english/leisure-centre,B2,leisure centre,trung tâm giải trí,noun,/ˈleʒə sentə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lei/leisu/leisure_center_1_gb_1.mp3
+movie_theater,https://www.oxfordlearnersdictionaries.com/definition/english/movie-theater,A1,movie theater,rạp chiếu phim,noun,/ˈmuːvi θɪətə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mov/movie/movie_theater_1_gb_1.mp3
+courthouse,https://www.oxfordlearnersdictionaries.com/definition/english/courthouse,B2,courthouse,tòa án,noun,/ˈkɔːthaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/court/courthouse__gb_1.mp3
+mall,https://www.oxfordlearnersdictionaries.com/definition/english/mall_1,B1,mall,trung tâm mua sắm,noun,/mɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/mall_/mall__gb_1.mp3
+morgue,https://www.oxfordlearnersdictionaries.com/definition/english/morgue,C2,morgue,nhà xác,noun,/mɔːɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/morgu/morgue__gb_1.mp3
+mortuary,https://www.oxfordlearnersdictionaries.com/definition/english/mortuary,C2,mortuary,nhà xác,noun,/ˈmɔːtʃəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/mortu/mortuary__gb_1.mp3
+opera_house,https://www.oxfordlearnersdictionaries.com/definition/english/opera-house,B2,opera house,nhà hát opera,noun,/ˈɒprə haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/opera/opera_house_1_gb_1.mp3
+museum,https://www.oxfordlearnersdictionaries.com/definition/english/museum,A1,museum,bảo tàng,noun,/mjuˈziːəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mus/museu/museum__gb_1.mp3
+municipal,https://www.oxfordlearnersdictionaries.com/definition/english/municipal,C1,municipal,thành phố,adjective,/mjuːˈnɪsɪpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mun/munic/municipal__gb_1.mp3
+post_office,https://www.oxfordlearnersdictionaries.com/definition/english/post-office,A1,post office,bưu điện,noun,/ˈpəʊst ɒfɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/post_/post_office_1_gb_4.mp3
+multi-storey_car_park,https://www.oxfordlearnersdictionaries.com/definition/english/multi-storey-car-park,C1,multi-storey car park,bãi đậu xe nhiều tầng,noun,/ˌmʌlti stɔːri ˈkɑː pɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mul/multi/multi_storey_car_park_1_gb_1.mp3
+parking_garage,https://www.oxfordlearnersdictionaries.com/definition/english/parking-garage,C2,parking garage,nhà để xe,noun,/ˈpɑːkɪŋ ɡærɑːʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parki/parking_garage_1_gb_2.mp3
+planetarium,https://www.oxfordlearnersdictionaries.com/definition/english/planetarium,C2,planetarium,cung thiên văn,noun,/ˌplænɪˈteəriəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plane/planetarium__gb_1.mp3
+police_station,https://www.oxfordlearnersdictionaries.com/definition/english/police-station,A2,police station,đồn cảnh sát,noun,/pəˈliːs steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polic/police_station_1_gb_2.mp3
+pub,https://www.oxfordlearnersdictionaries.com/definition/english/pub,A2,pub,quán rượu,noun,/pʌb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/pub__/pub__gb_1.mp3
+pavilion,https://www.oxfordlearnersdictionaries.com/definition/english/pavilion,C2,pavilion,gian hàng,noun,/pəˈvɪliən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pav/pavil/pavilion__gb_1.mp3
+school,https://www.oxfordlearnersdictionaries.com/definition/english/school_1,A1,school,trường học,noun,/skuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/school__gb_1.mp3
+public_house,https://www.oxfordlearnersdictionaries.com/definition/english/public-house,C2,public house,nhà công cộng,noun,/ˌpʌblɪk ˈhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/public_house_1_gb_1.mp3
+service_station,https://www.oxfordlearnersdictionaries.com/definition/english/service-station,C1,service station,trạm dịch vụ,noun,/ˈsɜːvɪs steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/servi/service_station_1_gb_1.mp3
+shopping_centre,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-centre,A2,shopping centre,trung tâm mua sắm,noun,/ˈʃɒpɪŋ sentə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shopp/shopping_centre_1_gb_1.mp3
+public_convenience,https://www.oxfordlearnersdictionaries.com/definition/english/public-convenience,C2,public convenience,tiện ích công cộng,noun,/ˌpʌblɪk kənˈviːniəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/public_convenience_1_gb_1.mp3
+stadium,https://www.oxfordlearnersdictionaries.com/definition/english/stadium,B1,stadium,sân vận động,noun,/ˈsteɪdiəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stadi/stadium__gb_1.mp3
+station,https://www.oxfordlearnersdictionaries.com/definition/english/station_1,A1,station,ga tàu,noun,/ˈsteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/station__gb_2.mp3
+shopping_arcade,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-arcade,C2,shopping arcade,khu mua sắm,noun,/ˈʃɒpɪŋ ɑːkeɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shopp/shopping_arcade_1_gb_1.mp3
+schoolhouse,https://www.oxfordlearnersdictionaries.com/definition/english/schoolhouse,B2,schoolhouse,ngôi trường,noun,/ˈskuːlhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/schoolhouse__gb_1.mp3
+station_house,https://www.oxfordlearnersdictionaries.com/definition/english/station-house,C2,station house,nhà ga,noun,/ˈsteɪʃn haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/station_house_1_gb_1.mp3
+terminal,https://www.oxfordlearnersdictionaries.com/definition/english/terminal_1,B2,terminal,phần cuối,noun,/ˈtɜːmɪnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/termi/terminal__gb_3.mp3
+shopping_mall,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-mall,B1,shopping mall,trung tâm mua sắm,noun,/ˈʃɒpɪŋ mɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shopp/shopping_mall_1_gb_1.mp3
+theatre,https://www.oxfordlearnersdictionaries.com/definition/english/theatre,A1,theatre,nhà hát,noun,/ˈθɪətə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/theat/theatre__gb_2.mp3
+sports_centre,https://www.oxfordlearnersdictionaries.com/definition/english/sports-centre,A2,sports centre,trung tâm thể thao,noun,/ˈspɔːts sentə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/sport/sports_centre_1_gb_2.mp3
+town_hall,https://www.oxfordlearnersdictionaries.com/definition/english/town-hall,B1,town hall,tòa thị chính,noun,/ˌtaʊn ˈhɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tow/town_/town_hall_1_gb_1.mp3
+swimming_pool,https://www.oxfordlearnersdictionaries.com/definition/english/swimming-pool,A1,swimming pool,hồ bơi,noun,/ˈswɪmɪŋ puːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swi/swimm/swimming_pool_1_gb_2.mp3

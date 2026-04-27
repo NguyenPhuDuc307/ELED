@@ -1,52 +1,52 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-assembly,https://www.oxfordlearnersdictionaries.com/definition/english/assembly,C1,assembly,cuộc họp,noun,/əˈsembli/,
-blue-collar,https://www.oxfordlearnersdictionaries.com/definition/english/blue-collar,C2,blue-collar,cổ xanh,adjective,/ˌbluː ˈkɒlə(r)/,
-bottleneck,https://www.oxfordlearnersdictionaries.com/definition/english/bottleneck,C2,bottleneck,nút cổ chai,noun,/ˈbɒtlnek/,
-brewery,https://www.oxfordlearnersdictionaries.com/definition/english/brewery,C1,brewery,nhà máy bia,noun,/ˈbruːəri/,
-craft_brewery,https://www.oxfordlearnersdictionaries.com/definition/english/craft-brewery,C2,craft brewery,nhà máy bia thủ công,noun,/ˌkrɑːft ˈbruːəri/,
-assemble,https://www.oxfordlearnersdictionaries.com/definition/english/assemble,C1,assemble,tập hợp,verb,/əˈsembl/,
-cam,https://www.oxfordlearnersdictionaries.com/definition/english/cam_2,C2,CAM,CAM,abbreviation,/kæm/,
-cadcam,https://www.oxfordlearnersdictionaries.com/definition/english/cadcam,C2,CADCAM,CADCAM,abbreviation,/ˈkædkæm/,
-assembly_line,https://www.oxfordlearnersdictionaries.com/definition/english/assembly-line,C1,assembly line,dây chuyền lắp ráp,noun,/əˈsembli laɪn/,
-close_its_doors,https://www.oxfordlearnersdictionaries.com/definition/english/close1_1,C2,close its doors,đóng cửa lại,verb,/kləʊz/,
-division_of_labour,https://www.oxfordlearnersdictionaries.com/definition/english/division-of-labour,C1,division of labour,phân công lao động,noun,/dɪˌvɪʒn əv ˈleɪbə(r)/,
-factory,https://www.oxfordlearnersdictionaries.com/definition/english/factory,A2,factory,nhà máy,noun,/ˈfæktri/,
-generator,https://www.oxfordlearnersdictionaries.com/definition/english/generator,C1,generator,máy phát điện,noun,/ˈdʒenəreɪtə(r)/,
-feedstock,https://www.oxfordlearnersdictionaries.com/definition/english/feedstock,C2,feedstock,nguyên liệu,noun,/ˈfiːdstɒk/,
-goods,https://www.oxfordlearnersdictionaries.com/definition/english/goods,B1,goods,hàng hóa,noun,/ɡʊdz/,
-food-grade,https://www.oxfordlearnersdictionaries.com/definition/english/food-grade,C2,food-grade,cấp thực phẩm,adjective,/ˈfuːd ɡreɪd/,
-heavy_industry,https://www.oxfordlearnersdictionaries.com/definition/english/heavy-industry,C1,heavy industry,công nghiệp nặng,noun,/ˌhevi ˈɪndəstri/,
-gigafactory,https://www.oxfordlearnersdictionaries.com/definition/english/gigafactory,C2,gigafactory,gigafactory,noun,/ˈɡɪɡəfæktəri/,
-factory_floor,https://www.oxfordlearnersdictionaries.com/definition/english/factory-floor,C2,factory floor,sàn nhà xưởng,noun,/ˌfæktri ˈflɔː(r)/,
-industry,https://www.oxfordlearnersdictionaries.com/definition/english/industry,A2,industry,ngành công nghiệp,noun,/ˈɪndəstri/,
-lead_time,https://www.oxfordlearnersdictionaries.com/definition/english/lead-time,C2,lead time,thời gian dẫn,noun,/ˈliːd taɪm/,
-ironworks,https://www.oxfordlearnersdictionaries.com/definition/english/ironworks,C2,ironworks,đồ sắt,noun,/ˈaɪənwɜːks/,
-industrial,https://www.oxfordlearnersdictionaries.com/definition/english/industrial,B2,industrial,công nghiệp,adjective,/ɪnˈdʌstriəl/,
-just-in-time,https://www.oxfordlearnersdictionaries.com/definition/english/just-in-time,C2,just-in-time,đúng lúc,adjective,/ˌdʒʌst ɪn ˈtaɪm/,
-labour,https://www.oxfordlearnersdictionaries.com/definition/english/labour_1,B2,labour,nhân công,noun,/ˈleɪbə(r)/,
-foundry,https://www.oxfordlearnersdictionaries.com/definition/english/foundry,C2,foundry,xưởng đúc,noun,/ˈfaʊndri/,
+assembly,https://www.oxfordlearnersdictionaries.com/definition/english/assembly,C1,assembly,cuộc họp,noun,/əˈsembli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assem/assembly__gb_2.mp3
+blue-collar,https://www.oxfordlearnersdictionaries.com/definition/english/blue-collar,C2,blue-collar,cổ xanh,adjective,/ˌbluː ˈkɒlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blu/blue_/blue_collar_1_gb_1.mp3
+bottleneck,https://www.oxfordlearnersdictionaries.com/definition/english/bottleneck,C2,bottleneck,nút cổ chai,noun,/ˈbɒtlnek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/bottl/bottleneck__gb_2.mp3
+brewery,https://www.oxfordlearnersdictionaries.com/definition/english/brewery,C1,brewery,nhà máy bia,noun,/ˈbruːəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/brewe/brewery__gb_1.mp3
+craft_brewery,https://www.oxfordlearnersdictionaries.com/definition/english/craft-brewery,C2,craft brewery,nhà máy bia thủ công,noun,/ˌkrɑːft ˈbruːəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/craft/craft_brewery_1_gb_1.mp3
+assemble,https://www.oxfordlearnersdictionaries.com/definition/english/assemble,C1,assemble,tập hợp,verb,/əˈsembl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assem/assemble__gb_2.mp3
+cam,https://www.oxfordlearnersdictionaries.com/definition/english/cam_2,C2,CAM,CAM,abbreviation,/kæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cam/cam__/cam__gb_1.mp3
+cadcam,https://www.oxfordlearnersdictionaries.com/definition/english/cadcam,C2,CADCAM,CADCAM,abbreviation,/ˈkædkæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cad/cadca/cadcam_1_gb_1.mp3
+assembly_line,https://www.oxfordlearnersdictionaries.com/definition/english/assembly-line,C1,assembly line,dây chuyền lắp ráp,noun,/əˈsembli laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assem/assembly_line_1_gb_1.mp3
+close_its_doors,https://www.oxfordlearnersdictionaries.com/definition/english/close1_1,C2,close its doors,đóng cửa lại,verb,/kləʊz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/close/close__gb_1.mp3
+division_of_labour,https://www.oxfordlearnersdictionaries.com/definition/english/division-of-labour,C1,division of labour,phân công lao động,noun,/dɪˌvɪʒn əv ˈleɪbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/div/divis/division_of_labour_1_gb_1.mp3
+factory,https://www.oxfordlearnersdictionaries.com/definition/english/factory,A2,factory,nhà máy,noun,/ˈfæktri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/facto/factory__gb_3.mp3
+generator,https://www.oxfordlearnersdictionaries.com/definition/english/generator,C1,generator,máy phát điện,noun,/ˈdʒenəreɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gen/gener/generator__gb_1.mp3
+feedstock,https://www.oxfordlearnersdictionaries.com/definition/english/feedstock,C2,feedstock,nguyên liệu,noun,/ˈfiːdstɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fee/feeds/feedstock__gb_1.mp3
+goods,https://www.oxfordlearnersdictionaries.com/definition/english/goods,B1,goods,hàng hóa,noun,/ɡʊdz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/goo/goods/goods__gb_2.mp3
+food-grade,https://www.oxfordlearnersdictionaries.com/definition/english/food-grade,C2,food-grade,cấp thực phẩm,adjective,/ˈfuːd ɡreɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/food_/food_grade_1_gb_1.mp3
+heavy_industry,https://www.oxfordlearnersdictionaries.com/definition/english/heavy-industry,C1,heavy industry,công nghiệp nặng,noun,/ˌhevi ˈɪndəstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/heavy/heavy_industry_1_gb_1.mp3
+gigafactory,https://www.oxfordlearnersdictionaries.com/definition/english/gigafactory,C2,gigafactory,gigafactory,noun,/ˈɡɪɡəfæktəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gig/gigaf/gigafactory__gb_2.mp3
+factory_floor,https://www.oxfordlearnersdictionaries.com/definition/english/factory-floor,C2,factory floor,sàn nhà xưởng,noun,/ˌfæktri ˈflɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/facto/factory_floor_1_gb_1.mp3
+industry,https://www.oxfordlearnersdictionaries.com/definition/english/industry,A2,industry,ngành công nghiệp,noun,/ˈɪndəstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ind/indus/industry__gb_2.mp3
+lead_time,https://www.oxfordlearnersdictionaries.com/definition/english/lead-time,C2,lead time,thời gian dẫn,noun,/ˈliːd taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/lead_/lead_time_1_gb_1.mp3
+ironworks,https://www.oxfordlearnersdictionaries.com/definition/english/ironworks,C2,ironworks,đồ sắt,noun,/ˈaɪənwɜːks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iro/ironw/ironworks__gb_1.mp3
+industrial,https://www.oxfordlearnersdictionaries.com/definition/english/industrial,B2,industrial,công nghiệp,adjective,/ɪnˈdʌstriəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ind/indus/industrial__gb_1.mp3
+just-in-time,https://www.oxfordlearnersdictionaries.com/definition/english/just-in-time,C2,just-in-time,đúng lúc,adjective,/ˌdʒʌst ɪn ˈtaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jus/just_/just_in_time_1_gb_1.mp3
+labour,https://www.oxfordlearnersdictionaries.com/definition/english/labour_1,B2,labour,nhân công,noun,/ˈleɪbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labou/labour__gb_2.mp3
+foundry,https://www.oxfordlearnersdictionaries.com/definition/english/foundry,C2,foundry,xưởng đúc,noun,/ˈfaʊndri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fou/found/foundry__gb_1.mp3
 labor,https://www.oxfordlearnersdictionaries.com/definition/english/labor_1,B2,labor,nhân công,noun,,
-light_industry,https://www.oxfordlearnersdictionaries.com/definition/english/light-industry,C1,light industry,công nghiệp nhẹ,noun,/ˌlaɪt ˈɪndəstri/,
-machinery,https://www.oxfordlearnersdictionaries.com/definition/english/machinery,C1,machinery,máy móc,noun,/məˈʃiːnəri/,
-manufacture,https://www.oxfordlearnersdictionaries.com/definition/english/manufacture_1,B2,manufacture,sản xuất,verb,/ˌmænjuˈfæktʃə(r)/,
-manufacture,https://www.oxfordlearnersdictionaries.com/definition/english/manufacture_2,B2,manufacture,sản xuất,noun,/ˌmænjuˈfæktʃə(r)/,
-microbrewery,https://www.oxfordlearnersdictionaries.com/definition/english/microbrewery,C2,microbrewery,nhà máy bia nhỏ,noun,/ˈmaɪkrəʊbruːəri/,
-mill,https://www.oxfordlearnersdictionaries.com/definition/english/mill_1,C1,mill,cối xay,noun,/mɪl/,
-manufacturing,https://www.oxfordlearnersdictionaries.com/definition/english/manufacturing,B2,manufacturing,chế tạo,noun,/ˌmænjuˈfæktʃərɪŋ/,
-plant,https://www.oxfordlearnersdictionaries.com/definition/english/plant_1,B1,plant,thực vật,noun,/plɑːnt/,
-output,https://www.oxfordlearnersdictionaries.com/definition/english/output_1,B2,output,đầu ra,noun,/ˈaʊtpʊt/,
-production,https://www.oxfordlearnersdictionaries.com/definition/english/production,B1,production,sản xuất,noun,/prəˈdʌkʃn/,
-mass-market,https://www.oxfordlearnersdictionaries.com/definition/english/mass-market,C2,mass-market,thị trường đại chúng,adjective,/ˌmæs ˈmɑːkɪt/,
-production_line,https://www.oxfordlearnersdictionaries.com/definition/english/production-line,C1,production line,dây chuyền sản xuất,noun,/prəˈdʌkʃn laɪn/,
-robot,https://www.oxfordlearnersdictionaries.com/definition/english/robot,B1,robot,người máy,noun,/ˈrəʊbɒt/,
-research_and_development,https://www.oxfordlearnersdictionaries.com/definition/english/research-and-development,C1,research and development,nghiên cứu và phát triển,noun,/rɪˌsɜːtʃ ən dɪˈveləpmənt/,
-shift,https://www.oxfordlearnersdictionaries.com/definition/english/shift_1,B1,shift,sự thay đổi,noun,/ʃɪft/,
-sawmill,https://www.oxfordlearnersdictionaries.com/definition/english/sawmill,C2,sawmill,xưởng cưa,noun,/ˈsɔːmɪl/,
-shipping,https://www.oxfordlearnersdictionaries.com/definition/english/shipping,C1,shipping,vận chuyển,noun,/ˈʃɪpɪŋ/,
-ship,https://www.oxfordlearnersdictionaries.com/definition/english/ship_3,B2,ship,tàu thủy,verb,/ʃɪp/,
-shop_floor,https://www.oxfordlearnersdictionaries.com/definition/english/shop-floor,C2,shop floor,sàn cửa hàng,noun,/ˌʃɒp ˈflɔː(r)/,
-quality_control,https://www.oxfordlearnersdictionaries.com/definition/english/quality-control,C1,quality control,kiểm soát chất lượng,noun,/ˌkwɒləti kənˈtrəʊl/,
-workshop,https://www.oxfordlearnersdictionaries.com/definition/english/workshop,B2,workshop,xưởng,noun,/ˈwɜːkʃɒp/,
-warehouse,https://www.oxfordlearnersdictionaries.com/definition/english/warehouse,C1,warehouse,kho,noun,/ˈweəhaʊs/,
-winemaking,https://www.oxfordlearnersdictionaries.com/definition/english/winemaking,C1,winemaking,nghề làm rượu vang,noun,/ˈwaɪnmeɪkɪŋ/,
-refinery,https://www.oxfordlearnersdictionaries.com/definition/english/refinery,C2,refinery,nhà máy lọc dầu,noun,/rɪˈfaɪnəri/,
+light_industry,https://www.oxfordlearnersdictionaries.com/definition/english/light-industry,C1,light industry,công nghiệp nhẹ,noun,/ˌlaɪt ˈɪndəstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lig/light/light_industry_1_gb_1.mp3
+machinery,https://www.oxfordlearnersdictionaries.com/definition/english/machinery,C1,machinery,máy móc,noun,/məˈʃiːnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mac/machi/machinery__gb_1.mp3
+manufacture,https://www.oxfordlearnersdictionaries.com/definition/english/manufacture_1,B2,manufacture,sản xuất,verb,/ˌmænjuˈfæktʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/manuf/manufacture__gb_3.mp3
+manufacture,https://www.oxfordlearnersdictionaries.com/definition/english/manufacture_2,B2,manufacture,sản xuất,noun,/ˌmænjuˈfæktʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/manuf/manufacture__gb_3.mp3
+microbrewery,https://www.oxfordlearnersdictionaries.com/definition/english/microbrewery,C2,microbrewery,nhà máy bia nhỏ,noun,/ˈmaɪkrəʊbruːəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microbrewery__gb_1.mp3
+mill,https://www.oxfordlearnersdictionaries.com/definition/english/mill_1,C1,mill,cối xay,noun,/mɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mil/mill_/mill__gb_1.mp3
+manufacturing,https://www.oxfordlearnersdictionaries.com/definition/english/manufacturing,B2,manufacturing,chế tạo,noun,/ˌmænjuˈfæktʃərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/manuf/manufacturing__gb_1.mp3
+plant,https://www.oxfordlearnersdictionaries.com/definition/english/plant_1,B1,plant,thực vật,noun,/plɑːnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plant/plant__gb_3.mp3
+output,https://www.oxfordlearnersdictionaries.com/definition/english/output_1,B2,output,đầu ra,noun,/ˈaʊtpʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outpu/output__gb_1.mp3
+production,https://www.oxfordlearnersdictionaries.com/definition/english/production,B1,production,sản xuất,noun,/prəˈdʌkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/produ/production__gb_1.mp3
+mass-market,https://www.oxfordlearnersdictionaries.com/definition/english/mass-market,C2,mass-market,thị trường đại chúng,adjective,/ˌmæs ˈmɑːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/mass_/mass_market_1_gb_1.mp3
+production_line,https://www.oxfordlearnersdictionaries.com/definition/english/production-line,C1,production line,dây chuyền sản xuất,noun,/prəˈdʌkʃn laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/produ/production_line_1_gb_1.mp3
+robot,https://www.oxfordlearnersdictionaries.com/definition/english/robot,B1,robot,người máy,noun,/ˈrəʊbɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rob/robot/robot__gb_2.mp3
+research_and_development,https://www.oxfordlearnersdictionaries.com/definition/english/research-and-development,C1,research and development,nghiên cứu và phát triển,noun,/rɪˌsɜːtʃ ən dɪˈveləpmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resea/research_and_development_1_gb_1.mp3
+shift,https://www.oxfordlearnersdictionaries.com/definition/english/shift_1,B1,shift,sự thay đổi,noun,/ʃɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shift/shift__gb_2.mp3
+sawmill,https://www.oxfordlearnersdictionaries.com/definition/english/sawmill,C2,sawmill,xưởng cưa,noun,/ˈsɔːmɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/saw/sawmi/sawmill__gb_1.mp3
+shipping,https://www.oxfordlearnersdictionaries.com/definition/english/shipping,C1,shipping,vận chuyển,noun,/ˈʃɪpɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shipp/shipping__gb_1.mp3
+ship,https://www.oxfordlearnersdictionaries.com/definition/english/ship_3,B2,ship,tàu thủy,verb,/ʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/ship_/ship__gb_1.mp3
+shop_floor,https://www.oxfordlearnersdictionaries.com/definition/english/shop-floor,C2,shop floor,sàn cửa hàng,noun,/ˌʃɒp ˈflɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shop_/shop_floor_1_gb_1.mp3
+quality_control,https://www.oxfordlearnersdictionaries.com/definition/english/quality-control,C1,quality control,kiểm soát chất lượng,noun,/ˌkwɒləti kənˈtrəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quali/quality_control_1_gb_2.mp3
+workshop,https://www.oxfordlearnersdictionaries.com/definition/english/workshop,B2,workshop,xưởng,noun,/ˈwɜːkʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/works/workshop__gb_1.mp3
+warehouse,https://www.oxfordlearnersdictionaries.com/definition/english/warehouse,C1,warehouse,kho,noun,/ˈweəhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/wareh/warehouse__gb_1.mp3
+winemaking,https://www.oxfordlearnersdictionaries.com/definition/english/winemaking,C1,winemaking,nghề làm rượu vang,noun,/ˈwaɪnmeɪkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/winem/winemaking__gb_1.mp3
+refinery,https://www.oxfordlearnersdictionaries.com/definition/english/refinery,C2,refinery,nhà máy lọc dầu,noun,/rɪˈfaɪnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ref/refin/refinery__gb_1.mp3

@@ -1,88 +1,88 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-apartment_block,https://www.oxfordlearnersdictionaries.com/definition/english/apartment-block,B1,apartment block,khu chung cư,noun,/əˈpɑːtmənt blɒk/,
-bhavan,https://www.oxfordlearnersdictionaries.com/definition/english/bhavan,C2,bhavan,Bhavan,noun,/ˈbʌvən/,
-bunker,https://www.oxfordlearnersdictionaries.com/definition/english/bunker_1,C2,bunker,hầm trú ẩn,noun,/ˈbʌŋkə(r)/,
-barracks,https://www.oxfordlearnersdictionaries.com/definition/english/barracks,C2,barracks,doanh trại,noun,/ˈbærəks/,
-building,https://www.oxfordlearnersdictionaries.com/definition/english/building,A1,building,xây dựng,noun,/ˈbɪldɪŋ/,
-cabana,https://www.oxfordlearnersdictionaries.com/definition/english/cabana,C2,cabana,túp lều,noun,/kəˈbɑːnə/,
-abattoir,https://www.oxfordlearnersdictionaries.com/definition/english/abattoir,C2,abattoir,lò mổ,noun,/ˈæbətwɑː(r)/,
-bridge,https://www.oxfordlearnersdictionaries.com/definition/english/bridge_1,A2,bridge,cầu,noun,/brɪdʒ/,
-barn,https://www.oxfordlearnersdictionaries.com/definition/english/barn,C1,barn,chuồng ngựa,noun,/bɑːn/,
-bunkhouse,https://www.oxfordlearnersdictionaries.com/definition/english/bunkhouse,C2,bunkhouse,nhà tầng,noun,/ˈbʌŋkhaʊs/,
-condo,https://www.oxfordlearnersdictionaries.com/definition/english/condo,C2,condo,chung cư,noun,/ˈkɒndəʊ/,
-complex,https://www.oxfordlearnersdictionaries.com/definition/english/complex_2,B2,complex,tổ hợp,noun,/ˈkɒmpleks/,
-cabin,https://www.oxfordlearnersdictionaries.com/definition/english/cabin,C2,cabin,cabin,noun,/ˈkæbɪn/,
-cooling_tower,https://www.oxfordlearnersdictionaries.com/definition/english/cooling-tower,C2,cooling tower,tháp giải nhiệt,noun,/ˈkuːlɪŋ taʊə(r)/,
-condominium,https://www.oxfordlearnersdictionaries.com/definition/english/condominium,C2,condominium,chung cư,noun,/ˌkɒndəˈmɪniəm/,
-chawl,https://www.oxfordlearnersdictionaries.com/definition/english/chawl,C2,chawl,chawl,noun,/tʃɔːl/,
-clinic,https://www.oxfordlearnersdictionaries.com/definition/english/clinic,B2,clinic,phòng khám,noun,/ˈklɪnɪk/,
-dam,https://www.oxfordlearnersdictionaries.com/definition/english/dam_1,C1,dam,con đập,noun,/dæm/,
-cottage,https://www.oxfordlearnersdictionaries.com/definition/english/cottage,B1,cottage,ngôi nhà tranh,noun,/ˈkɒtɪdʒ/,
-farm,https://www.oxfordlearnersdictionaries.com/definition/english/farm_1,B1,farm,nông trại,noun,/fɑːm/,
-factory,https://www.oxfordlearnersdictionaries.com/definition/english/factory,A2,factory,nhà máy,noun,/ˈfæktri/,
-embassy,https://www.oxfordlearnersdictionaries.com/definition/english/embassy,C1,embassy,đại sứ quán,noun,/ˈembəsi/,
-dormitory,https://www.oxfordlearnersdictionaries.com/definition/english/dormitory,C1,dormitory,ký túc xá,noun,/ˈdɔːmətri/,
-gallery,https://www.oxfordlearnersdictionaries.com/definition/english/gallery,A2,gallery,phòng trưng bày,noun,/ˈɡæləri/,
-flat,https://www.oxfordlearnersdictionaries.com/definition/english/flat_1,A1,flat,phẳng,noun,/flæt/,
-des_res,https://www.oxfordlearnersdictionaries.com/definition/english/des-res,C2,des res,độ phân giải,noun,/ˌdez ˈrez/,
-consulate,https://www.oxfordlearnersdictionaries.com/definition/english/consulate,C2,consulate,lãnh sự quán,noun,/ˈkɒnsjələt/,
-garage,https://www.oxfordlearnersdictionaries.com/definition/english/garage_1,B1,garage,ga-ra,noun,/ˈɡærɑːʒ/,
-glasshouse,https://www.oxfordlearnersdictionaries.com/definition/english/glasshouse,C2,glasshouse,nhà kính,noun,/ˈɡlɑːshaʊs/,
-gazebo,https://www.oxfordlearnersdictionaries.com/definition/english/gazebo,C2,gazebo,vọng lâu,noun,/ɡəˈziːbəʊ/,
-greenhouse,https://www.oxfordlearnersdictionaries.com/definition/english/greenhouse,B2,greenhouse,nhà kính,noun,/ˈɡriːnhaʊs/,
-hall_of_residence,https://www.oxfordlearnersdictionaries.com/definition/english/hall-of-residence,B2,hall of residence,hội trường cư trú,noun,/ˌhɔːl əv ˈrezɪdəns/,
-guest_house,https://www.oxfordlearnersdictionaries.com/definition/english/guest-house,C1,guest house,nhà khách,noun,/ˈɡest haʊs/,
+apartment_block,https://www.oxfordlearnersdictionaries.com/definition/english/apartment-block,B1,apartment block,khu chung cư,noun,/əˈpɑːtmənt blɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apa/apart/apartment_block_1_gb_1.mp3
+bhavan,https://www.oxfordlearnersdictionaries.com/definition/english/bhavan,C2,bhavan,Bhavan,noun,/ˈbʌvən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bha/bhava/bhavan__gb_4.mp3
+bunker,https://www.oxfordlearnersdictionaries.com/definition/english/bunker_1,C2,bunker,hầm trú ẩn,noun,/ˈbʌŋkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bun/bunke/bunker__gb_1.mp3
+barracks,https://www.oxfordlearnersdictionaries.com/definition/english/barracks,C2,barracks,doanh trại,noun,/ˈbærəks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/barra/barracks__gb_1.mp3
+building,https://www.oxfordlearnersdictionaries.com/definition/english/building,A1,building,xây dựng,noun,/ˈbɪldɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bui/build/building__gb_3.mp3
+cabana,https://www.oxfordlearnersdictionaries.com/definition/english/cabana,C2,cabana,túp lều,noun,/kəˈbɑːnə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cab/caban/cabana__gb_1.mp3
+abattoir,https://www.oxfordlearnersdictionaries.com/definition/english/abattoir,C2,abattoir,lò mổ,noun,/ˈæbətwɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aba/abatt/abattoir__gb_1.mp3
+bridge,https://www.oxfordlearnersdictionaries.com/definition/english/bridge_1,A2,bridge,cầu,noun,/brɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bri/bridg/bridge__gb_3.mp3
+barn,https://www.oxfordlearnersdictionaries.com/definition/english/barn,C1,barn,chuồng ngựa,noun,/bɑːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/barn_/barn__gb_2.mp3
+bunkhouse,https://www.oxfordlearnersdictionaries.com/definition/english/bunkhouse,C2,bunkhouse,nhà tầng,noun,/ˈbʌŋkhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bun/bunkh/bunkhouse__gb_2.mp3
+condo,https://www.oxfordlearnersdictionaries.com/definition/english/condo,C2,condo,chung cư,noun,/ˈkɒndəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xcondo__gb_1.mp3
+complex,https://www.oxfordlearnersdictionaries.com/definition/english/complex_2,B2,complex,tổ hợp,noun,/ˈkɒmpleks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/compl/complex__gb_3.mp3
+cabin,https://www.oxfordlearnersdictionaries.com/definition/english/cabin,C2,cabin,cabin,noun,/ˈkæbɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cab/cabin/cabin__gb_2.mp3
+cooling_tower,https://www.oxfordlearnersdictionaries.com/definition/english/cooling-tower,C2,cooling tower,tháp giải nhiệt,noun,/ˈkuːlɪŋ taʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cooli/cooling_tower_1_gb_1.mp3
+condominium,https://www.oxfordlearnersdictionaries.com/definition/english/condominium,C2,condominium,chung cư,noun,/ˌkɒndəˈmɪniəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xcondominium__gb_1.mp3
+chawl,https://www.oxfordlearnersdictionaries.com/definition/english/chawl,C2,chawl,chawl,noun,/tʃɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chawl/chawl__gb_1.mp3
+clinic,https://www.oxfordlearnersdictionaries.com/definition/english/clinic,B2,clinic,phòng khám,noun,/ˈklɪnɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cli/clini/clinic__gb_1.mp3
+dam,https://www.oxfordlearnersdictionaries.com/definition/english/dam_1,C1,dam,con đập,noun,/dæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dam/dam__/dam__gb_1.mp3
+cottage,https://www.oxfordlearnersdictionaries.com/definition/english/cottage,B1,cottage,ngôi nhà tranh,noun,/ˈkɒtɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cot/cotta/cottage__gb_1.mp3
+farm,https://www.oxfordlearnersdictionaries.com/definition/english/farm_1,B1,farm,nông trại,noun,/fɑːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farm_/farm__gb_1.mp3
+factory,https://www.oxfordlearnersdictionaries.com/definition/english/factory,A2,factory,nhà máy,noun,/ˈfæktri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/facto/factory__gb_3.mp3
+embassy,https://www.oxfordlearnersdictionaries.com/definition/english/embassy,C1,embassy,đại sứ quán,noun,/ˈembəsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emb/embas/embassy__gb_1.mp3
+dormitory,https://www.oxfordlearnersdictionaries.com/definition/english/dormitory,C1,dormitory,ký túc xá,noun,/ˈdɔːmətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dor/dormi/dormitory__gb_3.mp3
+gallery,https://www.oxfordlearnersdictionaries.com/definition/english/gallery,A2,gallery,phòng trưng bày,noun,/ˈɡæləri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gal/galle/gallery__gb_1.mp3
+flat,https://www.oxfordlearnersdictionaries.com/definition/english/flat_1,A1,flat,phẳng,noun,/flæt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flat_/flat__gb_1.mp3
+des_res,https://www.oxfordlearnersdictionaries.com/definition/english/des-res,C2,des res,độ phân giải,noun,/ˌdez ˈrez/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/des_r/des_res_1_gb_2.mp3
+consulate,https://www.oxfordlearnersdictionaries.com/definition/english/consulate,C2,consulate,lãnh sự quán,noun,/ˈkɒnsjələt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconsulate__gb_1.mp3
+garage,https://www.oxfordlearnersdictionaries.com/definition/english/garage_1,B1,garage,ga-ra,noun,/ˈɡærɑːʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gar/garag/garage__gb_6.mp3
+glasshouse,https://www.oxfordlearnersdictionaries.com/definition/english/glasshouse,C2,glasshouse,nhà kính,noun,/ˈɡlɑːshaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gla/glass/glasshouse__gb_2.mp3
+gazebo,https://www.oxfordlearnersdictionaries.com/definition/english/gazebo,C2,gazebo,vọng lâu,noun,/ɡəˈziːbəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gaz/gazeb/gazebo__gb_2.mp3
+greenhouse,https://www.oxfordlearnersdictionaries.com/definition/english/greenhouse,B2,greenhouse,nhà kính,noun,/ˈɡriːnhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/green/greenhouse__gb_1.mp3
+hall_of_residence,https://www.oxfordlearnersdictionaries.com/definition/english/hall-of-residence,B2,hall of residence,hội trường cư trú,noun,/ˌhɔːl əv ˈrezɪdəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/hall_/hall_of_residence_1_gb_1.mp3
+guest_house,https://www.oxfordlearnersdictionaries.com/definition/english/guest-house,C1,guest house,nhà khách,noun,/ˈɡest haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gue/guest/guest_house_1_gb_1.mp3
 hdb,https://www.oxfordlearnersdictionaries.com/definition/english/hdb,C2,HDB,HDB,noun,/ˌeɪtʃ diː ˈbiː/,
-hangar,https://www.oxfordlearnersdictionaries.com/definition/english/hangar,C2,hangar,nhà chứa máy bay,noun,/ˈhæŋə(r)/,
-high-rise,https://www.oxfordlearnersdictionaries.com/definition/english/high-rise_1,C1,high-rise,cao tầng,noun,/ˈhaɪ raɪz/,
-home,https://www.oxfordlearnersdictionaries.com/definition/english/home_1,A2,home,trang chủ,noun,/həʊm/,
-gasometer,https://www.oxfordlearnersdictionaries.com/definition/english/gasometer,C2,gasometer,khí kế,noun,/ɡæˈsɒmɪtə(r)/,
-hotel,https://www.oxfordlearnersdictionaries.com/definition/english/hotel,A1,hotel,khách sạn,noun,/həʊˈtel/,
-igloo,https://www.oxfordlearnersdictionaries.com/definition/english/igloo,C1,igloo,lều tuyết,noun,/ˈɪɡluː/,
-inn,https://www.oxfordlearnersdictionaries.com/definition/english/inn,C1,inn,quán trọ,noun,/ɪn/,
-hut,https://www.oxfordlearnersdictionaries.com/definition/english/hut,B2,hut,túp lều,noun,/hʌt/,
-kiosk,https://www.oxfordlearnersdictionaries.com/definition/english/kiosk,C1,kiosk,ki-ốt,noun,/ˈkiːɒsk/,
-hothouse,https://www.oxfordlearnersdictionaries.com/definition/english/hothouse,C2,hothouse,nhà kính,noun,/ˈhɒthaʊs/,
-house,https://www.oxfordlearnersdictionaries.com/definition/english/house_1,A1,house,căn nhà,noun,/haʊs/,
-lab,https://www.oxfordlearnersdictionaries.com/definition/english/lab_1,A2,lab,phòng thí nghiệm,noun,/læb/,
-lean-to,https://www.oxfordlearnersdictionaries.com/definition/english/lean-to_2,C2,lean-to,tựa vào,noun,/ˈliːn tuː/,
-manor,https://www.oxfordlearnersdictionaries.com/definition/english/manor,C1,manor,trang viên,noun,/ˈmænə(r)/,
-lodge,https://www.oxfordlearnersdictionaries.com/definition/english/lodge_1,C2,lodge,nhà trọ,noun,/lɒdʒ/,
-motel,https://www.oxfordlearnersdictionaries.com/definition/english/motel,C1,motel,nhà nghỉ,noun,/məʊˈtel/,
-mansion,https://www.oxfordlearnersdictionaries.com/definition/english/mansion,C1,mansion,biệt thự,noun,/ˈmænʃn/,
-observatory,https://www.oxfordlearnersdictionaries.com/definition/english/observatory,C2,observatory,đài quan sát,noun,/əbˈzɜːvətri/,
-motor_lodge,https://www.oxfordlearnersdictionaries.com/definition/english/motor-lodge,C2,motor lodge,nhà nghỉ xe máy,noun,/ˈməʊtə lɒdʒ/,
-office_block,https://www.oxfordlearnersdictionaries.com/definition/english/office-block,B1,office block,khối văn phòng,noun,/ˈɒfɪs blɒk/,
-palace,https://www.oxfordlearnersdictionaries.com/definition/english/palace,A2,palace,cung điện,noun,/ˈpæləs/,
-penthouse,https://www.oxfordlearnersdictionaries.com/definition/english/penthouse,C2,penthouse,căn hộ áp mái,noun,/ˈpenthaʊs/,
-outbuilding,https://www.oxfordlearnersdictionaries.com/definition/english/outbuilding,C2,outbuilding,nhà phụ,noun,/ˈaʊtbɪldɪŋ/,
-pier,https://www.oxfordlearnersdictionaries.com/definition/english/pier,C1,pier,đê,noun,/pɪə(r)/,
-power_station,https://www.oxfordlearnersdictionaries.com/definition/english/power-station,B1,power station,trạm điện,noun,/ˈpaʊə steɪʃn/,
-mill,https://www.oxfordlearnersdictionaries.com/definition/english/mill_1,C1,mill,cối xay,noun,/mɪl/,
-prefab,https://www.oxfordlearnersdictionaries.com/definition/english/prefab,C2,prefab,nhà tiền chế,noun,/ˈpriːfæb/,
-premises,https://www.oxfordlearnersdictionaries.com/definition/english/premises,C1,premises,cơ sở,noun,/ˈpremɪsɪz/,
-prison,https://www.oxfordlearnersdictionaries.com/definition/english/prison,A2,prison,nhà tù,noun,/ˈprɪzn/,
-pigsty,https://www.oxfordlearnersdictionaries.com/definition/english/pigsty,C2,pigsty,chuồng lợn,noun,/ˈpɪɡstaɪ/,
-property,https://www.oxfordlearnersdictionaries.com/definition/english/property,B2,property,tài sản,noun,/ˈprɒpəti/,
-portakabin™,https://www.oxfordlearnersdictionaries.com/definition/english/portakabintm,C2,Portakabin™,Portakabin™,noun,/ˈpɔːtəkæbɪn/,
-residency,https://www.oxfordlearnersdictionaries.com/definition/english/residency,C2,residency,cư trú,noun,/ˈrezɪdənsi/,
-rotunda,https://www.oxfordlearnersdictionaries.com/definition/english/rotunda,C2,rotunda,hình tròn,noun,/rəʊˈtʌndə/,
-refinery,https://www.oxfordlearnersdictionaries.com/definition/english/refinery,C2,refinery,nhà máy lọc dầu,noun,/rɪˈfaɪnəri/,
-self-build,https://www.oxfordlearnersdictionaries.com/definition/english/self-build,C2,self-build,tự xây dựng,noun,/ˈself bɪld/,
-semi,https://www.oxfordlearnersdictionaries.com/definition/english/semi_1,C2,semi,bán,noun,/ˈsemi/,
-shed,https://www.oxfordlearnersdictionaries.com/definition/english/shed_2,C1,shed,túp lều,noun,/ʃed/,
-shack,https://www.oxfordlearnersdictionaries.com/definition/english/shack_1,C2,shack,lán,noun,/ʃæk/,
-shelter,https://www.oxfordlearnersdictionaries.com/definition/english/shelter_1,B2,shelter,nơi trú ẩn,noun,/ˈʃeltə(r)/,
-skyscraper,https://www.oxfordlearnersdictionaries.com/definition/english/skyscraper,B1,skyscraper,tòa nhà chọc trời,noun,/ˈskaɪskreɪpə(r)/,
-slaughterhouse,https://www.oxfordlearnersdictionaries.com/definition/english/slaughterhouse,C2,slaughterhouse,lò mổ,noun,/ˈslɔːtəhaʊs/,
-stable,https://www.oxfordlearnersdictionaries.com/definition/english/stable_2,C1,stable,ổn định,noun,/ˈsteɪbl/,
-suspension_bridge,https://www.oxfordlearnersdictionaries.com/definition/english/suspension-bridge,C2,suspension bridge,cầu treo,noun,/səˈspenʃn brɪdʒ/,
-stately_home,https://www.oxfordlearnersdictionaries.com/definition/english/stately-home,C2,stately home,ngôi nhà trang nghiêm,noun,/ˌsteɪtli ˈhəʊm/,
-summer_house,https://www.oxfordlearnersdictionaries.com/definition/english/summer-house,C2,summer house,ngôi nhà mùa hè,noun,/ˈsʌmə haʊs/,
-terrace,https://www.oxfordlearnersdictionaries.com/definition/english/terrace,C2,terrace,sân thượng,noun,/ˈterəs/,
-tenement,https://www.oxfordlearnersdictionaries.com/definition/english/tenement,C2,tenement,chung cư,noun,/ˈtenəmənt/,
-tower,https://www.oxfordlearnersdictionaries.com/definition/english/tower_1,A2,tower,tháp,noun,/ˈtaʊə(r)/,
-villa,https://www.oxfordlearnersdictionaries.com/definition/english/villa,B2,villa,biệt thự,noun,/ˈvɪlə/,
-warehouse,https://www.oxfordlearnersdictionaries.com/definition/english/warehouse,C1,warehouse,kho,noun,/ˈweəhaʊs/,
-tower_block,https://www.oxfordlearnersdictionaries.com/definition/english/tower-block,C1,tower block,khối tháp,noun,/ˈtaʊə blɒk/,
-windmill,https://www.oxfordlearnersdictionaries.com/definition/english/windmill,C1,windmill,cối xay gió,noun,/ˈwɪndmɪl/,
+hangar,https://www.oxfordlearnersdictionaries.com/definition/english/hangar,C2,hangar,nhà chứa máy bay,noun,/ˈhæŋə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hanga/hangar__gb_1.mp3
+high-rise,https://www.oxfordlearnersdictionaries.com/definition/english/high-rise_1,C1,high-rise,cao tầng,noun,/ˈhaɪ raɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hig/high_/high_rise_1_gb_1.mp3
+home,https://www.oxfordlearnersdictionaries.com/definition/english/home_1,A2,home,trang chủ,noun,/həʊm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hom/home_/home__gb_1.mp3
+gasometer,https://www.oxfordlearnersdictionaries.com/definition/english/gasometer,C2,gasometer,khí kế,noun,/ɡæˈsɒmɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gas/gasom/gasometer__gb_1.mp3
+hotel,https://www.oxfordlearnersdictionaries.com/definition/english/hotel,A1,hotel,khách sạn,noun,/həʊˈtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hot/hotel/hotel__gb_4.mp3
+igloo,https://www.oxfordlearnersdictionaries.com/definition/english/igloo,C1,igloo,lều tuyết,noun,/ˈɪɡluː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/igl/igloo/igloo__gb_1.mp3
+inn,https://www.oxfordlearnersdictionaries.com/definition/english/inn,C1,inn,quán trọ,noun,/ɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inn/inn__/inn__gb_1.mp3
+hut,https://www.oxfordlearnersdictionaries.com/definition/english/hut,B2,hut,túp lều,noun,/hʌt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hut/hut__/hut__gb_1.mp3
+kiosk,https://www.oxfordlearnersdictionaries.com/definition/english/kiosk,C1,kiosk,ki-ốt,noun,/ˈkiːɒsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kio/kiosk/kiosk__gb_3.mp3
+hothouse,https://www.oxfordlearnersdictionaries.com/definition/english/hothouse,C2,hothouse,nhà kính,noun,/ˈhɒthaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hot/hotho/hothouse__gb_1.mp3
+house,https://www.oxfordlearnersdictionaries.com/definition/english/house_1,A1,house,căn nhà,noun,/haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/house/house__gb_2.mp3
+lab,https://www.oxfordlearnersdictionaries.com/definition/english/lab_1,A2,lab,phòng thí nghiệm,noun,/læb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/lab__/lab__gb_2.mp3
+lean-to,https://www.oxfordlearnersdictionaries.com/definition/english/lean-to_2,C2,lean-to,tựa vào,noun,/ˈliːn tuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leant/leanto__gb_1.mp3
+manor,https://www.oxfordlearnersdictionaries.com/definition/english/manor,C1,manor,trang viên,noun,/ˈmænə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/manor/manor__gb_1.mp3
+lodge,https://www.oxfordlearnersdictionaries.com/definition/english/lodge_1,C2,lodge,nhà trọ,noun,/lɒdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lod/lodge/lodge__gb_1.mp3
+motel,https://www.oxfordlearnersdictionaries.com/definition/english/motel,C1,motel,nhà nghỉ,noun,/məʊˈtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motel/motel__gb_1.mp3
+mansion,https://www.oxfordlearnersdictionaries.com/definition/english/mansion,C1,mansion,biệt thự,noun,/ˈmænʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/mansi/mansion__gb_1.mp3
+observatory,https://www.oxfordlearnersdictionaries.com/definition/english/observatory,C2,observatory,đài quan sát,noun,/əbˈzɜːvətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/obs/obser/observatory__gb_1.mp3
+motor_lodge,https://www.oxfordlearnersdictionaries.com/definition/english/motor-lodge,C2,motor lodge,nhà nghỉ xe máy,noun,/ˈməʊtə lɒdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motor/motor_lodge_1_gb_1.mp3
+office_block,https://www.oxfordlearnersdictionaries.com/definition/english/office-block,B1,office block,khối văn phòng,noun,/ˈɒfɪs blɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/off/offic/office_block_1_gb_1.mp3
+palace,https://www.oxfordlearnersdictionaries.com/definition/english/palace,A2,palace,cung điện,noun,/ˈpæləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pal/palac/palace__gb_1.mp3
+penthouse,https://www.oxfordlearnersdictionaries.com/definition/english/penthouse,C2,penthouse,căn hộ áp mái,noun,/ˈpenthaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/penth/penthouse__gb_1.mp3
+outbuilding,https://www.oxfordlearnersdictionaries.com/definition/english/outbuilding,C2,outbuilding,nhà phụ,noun,/ˈaʊtbɪldɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outbu/outbuilding__gb_1.mp3
+pier,https://www.oxfordlearnersdictionaries.com/definition/english/pier,C1,pier,đê,noun,/pɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pie/pier_/pier__gb_1.mp3
+power_station,https://www.oxfordlearnersdictionaries.com/definition/english/power-station,B1,power station,trạm điện,noun,/ˈpaʊə steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pow/power/power_station_1_gb_1.mp3
+mill,https://www.oxfordlearnersdictionaries.com/definition/english/mill_1,C1,mill,cối xay,noun,/mɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mil/mill_/mill__gb_1.mp3
+prefab,https://www.oxfordlearnersdictionaries.com/definition/english/prefab,C2,prefab,nhà tiền chế,noun,/ˈpriːfæb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/prefa/prefab__gb_1.mp3
+premises,https://www.oxfordlearnersdictionaries.com/definition/english/premises,C1,premises,cơ sở,noun,/ˈpremɪsɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/premi/premises__gb_1.mp3
+prison,https://www.oxfordlearnersdictionaries.com/definition/english/prison,A2,prison,nhà tù,noun,/ˈprɪzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/priso/prison__gb_1.mp3
+pigsty,https://www.oxfordlearnersdictionaries.com/definition/english/pigsty,C2,pigsty,chuồng lợn,noun,/ˈpɪɡstaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pig/pigst/pigsty__gb_1.mp3
+property,https://www.oxfordlearnersdictionaries.com/definition/english/property,B2,property,tài sản,noun,/ˈprɒpəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prope/property__gb_2.mp3
+portakabin™,https://www.oxfordlearnersdictionaries.com/definition/english/portakabintm,C2,Portakabin™,Portakabin™,noun,/ˈpɔːtəkæbɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/por/porta/portakabin__gb_1.mp3
+residency,https://www.oxfordlearnersdictionaries.com/definition/english/residency,C2,residency,cư trú,noun,/ˈrezɪdənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resid/residency__gb_1.mp3
+rotunda,https://www.oxfordlearnersdictionaries.com/definition/english/rotunda,C2,rotunda,hình tròn,noun,/rəʊˈtʌndə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rot/rotun/rotunda__gb_1.mp3
+refinery,https://www.oxfordlearnersdictionaries.com/definition/english/refinery,C2,refinery,nhà máy lọc dầu,noun,/rɪˈfaɪnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ref/refin/refinery__gb_1.mp3
+self-build,https://www.oxfordlearnersdictionaries.com/definition/english/self-build,C2,self-build,tự xây dựng,noun,/ˈself bɪld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/self_/self_build_1_gb_1.mp3
+semi,https://www.oxfordlearnersdictionaries.com/definition/english/semi_1,C2,semi,bán,noun,/ˈsemi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sem/semi_/semi__gb_1.mp3
+shed,https://www.oxfordlearnersdictionaries.com/definition/english/shed_2,C1,shed,túp lều,noun,/ʃed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/she/shed_/shed__gb_1.mp3
+shack,https://www.oxfordlearnersdictionaries.com/definition/english/shack_1,C2,shack,lán,noun,/ʃæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sha/shack/shack__gb_1.mp3
+shelter,https://www.oxfordlearnersdictionaries.com/definition/english/shelter_1,B2,shelter,nơi trú ẩn,noun,/ˈʃeltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/she/shelt/shelter__gb_1.mp3
+skyscraper,https://www.oxfordlearnersdictionaries.com/definition/english/skyscraper,B1,skyscraper,tòa nhà chọc trời,noun,/ˈskaɪskreɪpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sky/skysc/skyscraper__gb_1.mp3
+slaughterhouse,https://www.oxfordlearnersdictionaries.com/definition/english/slaughterhouse,C2,slaughterhouse,lò mổ,noun,/ˈslɔːtəhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sla/slaug/slaughterhouse__gb_1.mp3
+stable,https://www.oxfordlearnersdictionaries.com/definition/english/stable_2,C1,stable,ổn định,noun,/ˈsteɪbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stabl/stable__gb_1.mp3
+suspension_bridge,https://www.oxfordlearnersdictionaries.com/definition/english/suspension-bridge,C2,suspension bridge,cầu treo,noun,/səˈspenʃn brɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspe/suspension_bridge_1_gb_1.mp3
+stately_home,https://www.oxfordlearnersdictionaries.com/definition/english/stately-home,C2,stately home,ngôi nhà trang nghiêm,noun,/ˌsteɪtli ˈhəʊm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/state/stately_home_1_gb_1.mp3
+summer_house,https://www.oxfordlearnersdictionaries.com/definition/english/summer-house,C2,summer house,ngôi nhà mùa hè,noun,/ˈsʌmə haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sum/summe/summer_house_1_gb_1.mp3
+terrace,https://www.oxfordlearnersdictionaries.com/definition/english/terrace,C2,terrace,sân thượng,noun,/ˈterəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/terra/terrace__gb_1.mp3
+tenement,https://www.oxfordlearnersdictionaries.com/definition/english/tenement,C2,tenement,chung cư,noun,/ˈtenəmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ten/tenem/tenement__gb_1.mp3
+tower,https://www.oxfordlearnersdictionaries.com/definition/english/tower_1,A2,tower,tháp,noun,/ˈtaʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tow/tower/tower__gb_4.mp3
+villa,https://www.oxfordlearnersdictionaries.com/definition/english/villa,B2,villa,biệt thự,noun,/ˈvɪlə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vil/villa/villa__gb_1.mp3
+warehouse,https://www.oxfordlearnersdictionaries.com/definition/english/warehouse,C1,warehouse,kho,noun,/ˈweəhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/wareh/warehouse__gb_1.mp3
+tower_block,https://www.oxfordlearnersdictionaries.com/definition/english/tower-block,C1,tower block,khối tháp,noun,/ˈtaʊə blɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tow/tower/tower_block_1_gb_1.mp3
+windmill,https://www.oxfordlearnersdictionaries.com/definition/english/windmill,C1,windmill,cối xay gió,noun,/ˈwɪndmɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/windm/windmill__gb_1.mp3

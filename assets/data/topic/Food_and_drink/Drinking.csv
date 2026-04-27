@@ -1,14 +1,14 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-guzzle,https://www.oxfordlearnersdictionaries.com/definition/english/guzzle,C2,guzzle,ăn tham,verb,/ˈɡʌzl/,
-slurp,https://www.oxfordlearnersdictionaries.com/definition/english/slurp_1,C2,slurp,húp xì xụp,verb,/slɜːp/,
-gulp,https://www.oxfordlearnersdictionaries.com/definition/english/gulp_1,C2,gulp,nuốt nước miếng,verb,/ɡʌlp/,
-pub,https://www.oxfordlearnersdictionaries.com/definition/english/pub,A2,pub,quán rượu,noun,/pʌb/,
-drink,https://www.oxfordlearnersdictionaries.com/definition/english/drink_2,A1,drink,uống,verb,/drɪŋk/,
-bar,https://www.oxfordlearnersdictionaries.com/definition/english/bar_1,A2,bar,thanh,noun,/bɑː(r)/,
-gulp,https://www.oxfordlearnersdictionaries.com/definition/english/gulp_2,C2,gulp,nuốt nước miếng,noun,/ɡʌlp/,
-sip,https://www.oxfordlearnersdictionaries.com/definition/english/sip_1,C1,sip,nhấm nháp,verb,/sɪp/,
-quench,https://www.oxfordlearnersdictionaries.com/definition/english/quench,C2,quench,dập tắt,verb,/kwentʃ/,
-public_house,https://www.oxfordlearnersdictionaries.com/definition/english/public-house,C2,public house,nhà công cộng,noun,/ˌpʌblɪk ˈhaʊs/,
-sober_curious,https://www.oxfordlearnersdictionaries.com/definition/english/sober-curious,C2,sober curious,tỉnh táo tò mò,adjective,/ˌsəʊbə ˈkjʊəriəs/,
-thirst,https://www.oxfordlearnersdictionaries.com/definition/english/thirst_1,B2,thirst,khát nước,noun,/θɜːst/,
-thirsty,https://www.oxfordlearnersdictionaries.com/definition/english/thirsty,A1,thirsty,khát,adjective,/ˈθɜːsti/,
+guzzle,https://www.oxfordlearnersdictionaries.com/definition/english/guzzle,C2,guzzle,ăn tham,verb,/ˈɡʌzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/guz/guzzl/guzzle__gb_2.mp3
+slurp,https://www.oxfordlearnersdictionaries.com/definition/english/slurp_1,C2,slurp,húp xì xụp,verb,/slɜːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/slu/slurp/slurp__gb_1.mp3
+gulp,https://www.oxfordlearnersdictionaries.com/definition/english/gulp_1,C2,gulp,nuốt nước miếng,verb,/ɡʌlp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gul/gulp_/gulp__gb_2.mp3
+pub,https://www.oxfordlearnersdictionaries.com/definition/english/pub,A2,pub,quán rượu,noun,/pʌb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/pub__/pub__gb_1.mp3
+drink,https://www.oxfordlearnersdictionaries.com/definition/english/drink_2,A1,drink,uống,verb,/drɪŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drink/drink__gb_2.mp3
+bar,https://www.oxfordlearnersdictionaries.com/definition/english/bar_1,A2,bar,thanh,noun,/bɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/bar__/bar__gb_1.mp3
+gulp,https://www.oxfordlearnersdictionaries.com/definition/english/gulp_2,C2,gulp,nuốt nước miếng,noun,/ɡʌlp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gul/gulp_/gulp__gb_2.mp3
+sip,https://www.oxfordlearnersdictionaries.com/definition/english/sip_1,C1,sip,nhấm nháp,verb,/sɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sip/sip__/sip__gb_1.mp3
+quench,https://www.oxfordlearnersdictionaries.com/definition/english/quench,C2,quench,dập tắt,verb,/kwentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/que/quenc/quench__gb_1.mp3
+public_house,https://www.oxfordlearnersdictionaries.com/definition/english/public-house,C2,public house,nhà công cộng,noun,/ˌpʌblɪk ˈhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/public_house_1_gb_1.mp3
+sober_curious,https://www.oxfordlearnersdictionaries.com/definition/english/sober-curious,C2,sober curious,tỉnh táo tò mò,adjective,/ˌsəʊbə ˈkjʊəriəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sob/sober/sober_curious_1_gb_1.mp3
+thirst,https://www.oxfordlearnersdictionaries.com/definition/english/thirst_1,B2,thirst,khát nước,noun,/θɜːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/thirs/thirst__gb_1.mp3
+thirsty,https://www.oxfordlearnersdictionaries.com/definition/english/thirsty,A1,thirsty,khát,adjective,/ˈθɜːsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/thirs/thirsty__gb_2.mp3

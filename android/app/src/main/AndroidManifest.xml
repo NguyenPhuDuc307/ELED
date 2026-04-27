@@ -47,6 +47,12 @@
             </intent-filter>
         </receiver>
 
+        <!-- Native vocabulary notification scheduler -->
+        <receiver android:name=".VocabNotificationReceiver" android:exported="false" />
+
+        <!-- Native "Đã biết" action handler -->
+        <receiver android:name=".MarkWordKnownReceiver" android:exported="false" />
+
         <!-- Widget auto-update alarm receiver -->
         <receiver android:name=".WidgetUpdateReceiver" android:exported="false">
             <intent-filter>

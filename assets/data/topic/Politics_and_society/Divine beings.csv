@@ -1,15 +1,15 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-almighty,https://www.oxfordlearnersdictionaries.com/definition/english/almighty,C2,almighty,toàn năng,adjective,/ɔːlˈmaɪti/,
-christ,https://www.oxfordlearnersdictionaries.com/definition/english/christ_1,C1,Christ,Chúa Kitô,noun,/kraɪst/,
-goddess,https://www.oxfordlearnersdictionaries.com/definition/english/goddess,C1,goddess,nữ thần,noun,/ˈɡɒdes/,
-god,https://www.oxfordlearnersdictionaries.com/definition/english/god,A2,god,chúa,noun,/ɡɒd/,
-allah,https://www.oxfordlearnersdictionaries.com/definition/english/allah,C1,Allah,Thánh Allah,noun,/ˈælə/,
-angel,https://www.oxfordlearnersdictionaries.com/definition/english/angel,C1,angel,thiên thần,noun,/ˈeɪndʒl/,
-avatar,https://www.oxfordlearnersdictionaries.com/definition/english/avatar,C2,avatar,hình đại diện,noun,/ˈævətɑː(r)/,
-divine,https://www.oxfordlearnersdictionaries.com/definition/english/divine_1,C1,divine,thần thánh,adjective,/dɪˈvaɪn/,
-pantheon,https://www.oxfordlearnersdictionaries.com/definition/english/pantheon,C2,pantheon,đền thờ,noun,/ˈpænθiən/,
-guardian_angel,https://www.oxfordlearnersdictionaries.com/definition/english/guardian-angel,C2,guardian angel,thiên thần hộ mệnh,noun,/ˌɡɑːdiən ˈeɪndʒl/,
-jesus,https://www.oxfordlearnersdictionaries.com/definition/english/jesus,C1,Jesus,Chúa Giêsu,noun,/ˈdʒiːzəs/,
-messiah,https://www.oxfordlearnersdictionaries.com/definition/english/messiah,C2,Messiah,Đấng Mê-si,noun,/məˈsaɪə/,
-bhagwan,https://www.oxfordlearnersdictionaries.com/definition/english/bhagwan,C2,Bhagwan,Bhagwan,noun,/bʌˈɡwɑːn/,
-godhead,https://www.oxfordlearnersdictionaries.com/definition/english/godhead,C2,godhead,thần thánh,noun,/ˈɡɒdhed/,
+almighty,https://www.oxfordlearnersdictionaries.com/definition/english/almighty,C2,almighty,toàn năng,adjective,/ɔːlˈmaɪti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alm/almig/almighty__gb_1.mp3
+christ,https://www.oxfordlearnersdictionaries.com/definition/english/christ_1,C1,Christ,Chúa Kitô,noun,/kraɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chr/chris/christ__gb_1.mp3
+goddess,https://www.oxfordlearnersdictionaries.com/definition/english/goddess,C1,goddess,nữ thần,noun,/ˈɡɒdes/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/god/godde/goddess__gb_4.mp3
+god,https://www.oxfordlearnersdictionaries.com/definition/english/god,A2,god,chúa,noun,/ɡɒd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/god/god__/god__gb_2.mp3
+allah,https://www.oxfordlearnersdictionaries.com/definition/english/allah,C1,Allah,Thánh Allah,noun,/ˈælə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/all/allah/allah__gb_1.mp3
+angel,https://www.oxfordlearnersdictionaries.com/definition/english/angel,C1,angel,thiên thần,noun,/ˈeɪndʒl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ang/angel/angel__gb_1.mp3
+avatar,https://www.oxfordlearnersdictionaries.com/definition/english/avatar,C2,avatar,hình đại diện,noun,/ˈævətɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ava/avata/avatar__gb_1.mp3
+divine,https://www.oxfordlearnersdictionaries.com/definition/english/divine_1,C1,divine,thần thánh,adjective,/dɪˈvaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/div/divin/divine__gb_1.mp3
+pantheon,https://www.oxfordlearnersdictionaries.com/definition/english/pantheon,C2,pantheon,đền thờ,noun,/ˈpænθiən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pan/panth/pantheon__gb_1.mp3
+guardian_angel,https://www.oxfordlearnersdictionaries.com/definition/english/guardian-angel,C2,guardian angel,thiên thần hộ mệnh,noun,/ˌɡɑːdiən ˈeɪndʒl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guardian_angel_1_gb_1.mp3
+jesus,https://www.oxfordlearnersdictionaries.com/definition/english/jesus,C1,Jesus,Chúa Giêsu,noun,/ˈdʒiːzəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jes/jesus/jesus__gb_1.mp3
+messiah,https://www.oxfordlearnersdictionaries.com/definition/english/messiah,C2,Messiah,Đấng Mê-si,noun,/məˈsaɪə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mes/messi/messiah__gb_1.mp3
+bhagwan,https://www.oxfordlearnersdictionaries.com/definition/english/bhagwan,C2,Bhagwan,Bhagwan,noun,/bʌˈɡwɑːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bha/bhagw/bhagwan_1_gb_2.mp3
+godhead,https://www.oxfordlearnersdictionaries.com/definition/english/godhead,C2,godhead,thần thánh,noun,/ˈɡɒdhed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/god/godhe/godhead__gb_2.mp3

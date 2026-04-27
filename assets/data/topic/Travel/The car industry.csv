@@ -1,49 +1,49 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-car_wash,https://www.oxfordlearnersdictionaries.com/definition/english/car-wash,B1,car wash,rửa xe,noun,/ˈkɑː wɒʃ/,
-crash-test,https://www.oxfordlearnersdictionaries.com/definition/english/crash-test_2,C1,crash-test,kiểm tra sự cố,verb,/ˈkræʃ test/,
-dealer,https://www.oxfordlearnersdictionaries.com/definition/english/dealer,B2,dealer,đại lý,noun,/ˈdiːlə(r)/,
-constructor,https://www.oxfordlearnersdictionaries.com/definition/english/constructor,C1,constructor,người xây dựng,noun,/kənˈstrʌktə(r)/,
-automaker,https://www.oxfordlearnersdictionaries.com/definition/english/automaker,C2,automaker,nhà sản xuất ô tô,noun,/ˈɔːtəʊmeɪkə(r)/,
-dealership,https://www.oxfordlearnersdictionaries.com/definition/english/dealership,C2,dealership,đại lý,noun,/ˈdiːləʃɪp/,
-assembly_line,https://www.oxfordlearnersdictionaries.com/definition/english/assembly-line,C1,assembly line,dây chuyền lắp ráp,noun,/əˈsembli laɪn/,
-crash-test_dummy,https://www.oxfordlearnersdictionaries.com/definition/english/crash-test-dummy,C2,crash-test dummy,giả thử nghiệm va chạm,noun,/ˌkræʃ test ˈdʌmi/,
-body_shop,https://www.oxfordlearnersdictionaries.com/definition/english/body-shop,C2,body shop,cửa hàng bán đồ cơ thể,noun,/ˈbɒdi ʃɒp/,
-destination_charge,https://www.oxfordlearnersdictionaries.com/definition/english/destination-charge,C2,destination charge,phí đích,noun,/ˌdestɪˈneɪʃn tʃɑːdʒ/,
-detail,https://www.oxfordlearnersdictionaries.com/definition/english/detail_2,C2,detail,chi tiết,verb,/ˈdiːteɪl/,
-garage,https://www.oxfordlearnersdictionaries.com/definition/english/garage_1,B1,garage,ga-ra,noun,/ˈɡærɑːʒ/,
-insure,https://www.oxfordlearnersdictionaries.com/definition/english/insure,C2,insure,bảo hiểm,verb,/ɪnˈʃʊə(r)/,
-forecourt,https://www.oxfordlearnersdictionaries.com/definition/english/forecourt,C2,forecourt,sân trước,noun,/ˈfɔːkɔːt/,
-gas_station,https://www.oxfordlearnersdictionaries.com/definition/english/gas-station,B1,gas station,trạm xăng,noun,/ˈɡæs steɪʃn/,
-filling_station,https://www.oxfordlearnersdictionaries.com/definition/english/filling-station,C2,filling station,trạm đổ xăng,noun,/ˈfɪlɪŋ steɪʃn/,
-logbook,https://www.oxfordlearnersdictionaries.com/definition/english/logbook,C2,logbook,nhật ký,noun,/ˈlɒɡbʊk/,
-junkyard,https://www.oxfordlearnersdictionaries.com/definition/english/junkyard,C2,junkyard,bãi phế liệu,noun,/ˈdʒʌŋkjɑːd/,
-make,https://www.oxfordlearnersdictionaries.com/definition/english/make_2,B2,make,làm,noun,/meɪk/,
+car_wash,https://www.oxfordlearnersdictionaries.com/definition/english/car-wash,B1,car wash,rửa xe,noun,/ˈkɑː wɒʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/car_w/car_wash_1_gb_1.mp3
+crash-test,https://www.oxfordlearnersdictionaries.com/definition/english/crash-test_2,C1,crash-test,kiểm tra sự cố,verb,/ˈkræʃ test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crash/crash_test_1_gb_1.mp3
+dealer,https://www.oxfordlearnersdictionaries.com/definition/english/dealer,B2,dealer,đại lý,noun,/ˈdiːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/deale/dealer__gb_2.mp3
+constructor,https://www.oxfordlearnersdictionaries.com/definition/english/constructor,C1,constructor,người xây dựng,noun,/kənˈstrʌktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconstructor__gb_1.mp3
+automaker,https://www.oxfordlearnersdictionaries.com/definition/english/automaker,C2,automaker,nhà sản xuất ô tô,noun,/ˈɔːtəʊmeɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/autom/automaker__gb_1.mp3
+dealership,https://www.oxfordlearnersdictionaries.com/definition/english/dealership,C2,dealership,đại lý,noun,/ˈdiːləʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/deale/dealership__gb_1.mp3
+assembly_line,https://www.oxfordlearnersdictionaries.com/definition/english/assembly-line,C1,assembly line,dây chuyền lắp ráp,noun,/əˈsembli laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assem/assembly_line_1_gb_1.mp3
+crash-test_dummy,https://www.oxfordlearnersdictionaries.com/definition/english/crash-test-dummy,C2,crash-test dummy,giả thử nghiệm va chạm,noun,/ˌkræʃ test ˈdʌmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crash/crash_test_dummy_1_gb_1.mp3
+body_shop,https://www.oxfordlearnersdictionaries.com/definition/english/body-shop,C2,body shop,cửa hàng bán đồ cơ thể,noun,/ˈbɒdi ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bod/body_/body_shop_1_gb_1.mp3
+destination_charge,https://www.oxfordlearnersdictionaries.com/definition/english/destination-charge,C2,destination charge,phí đích,noun,/ˌdestɪˈneɪʃn tʃɑːdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/desti/destination_charge_1_gb_1.mp3
+detail,https://www.oxfordlearnersdictionaries.com/definition/english/detail_2,C2,detail,chi tiết,verb,/ˈdiːteɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/det/detai/detail__gb_3.mp3
+garage,https://www.oxfordlearnersdictionaries.com/definition/english/garage_1,B1,garage,ga-ra,noun,/ˈɡærɑːʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gar/garag/garage__gb_6.mp3
+insure,https://www.oxfordlearnersdictionaries.com/definition/english/insure,C2,insure,bảo hiểm,verb,/ɪnˈʃʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ens/ensur/ensure__gb_3.mp3
+forecourt,https://www.oxfordlearnersdictionaries.com/definition/english/forecourt,C2,forecourt,sân trước,noun,/ˈfɔːkɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forec/forecourt__gb_1.mp3
+gas_station,https://www.oxfordlearnersdictionaries.com/definition/english/gas-station,B1,gas station,trạm xăng,noun,/ˈɡæs steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gas/gas_s/gas_station_1_gb_1.mp3
+filling_station,https://www.oxfordlearnersdictionaries.com/definition/english/filling-station,C2,filling station,trạm đổ xăng,noun,/ˈfɪlɪŋ steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filli/filling_station_1_gb_1.mp3
+logbook,https://www.oxfordlearnersdictionaries.com/definition/english/logbook,C2,logbook,nhật ký,noun,/ˈlɒɡbʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/log/logbo/logbook__gb_1.mp3
+junkyard,https://www.oxfordlearnersdictionaries.com/definition/english/junkyard,C2,junkyard,bãi phế liệu,noun,/ˈdʒʌŋkjɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jun/junky/junkyard__gb_1.mp3
+make,https://www.oxfordlearnersdictionaries.com/definition/english/make_2,B2,make,làm,noun,/meɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mak/make_/make__gb_1.mp3
 mot,https://www.oxfordlearnersdictionaries.com/definition/english/mot,C2,MOT,Bộ GTVT,noun,/ˌem əʊ ˈtiː/,
-petrol_station,https://www.oxfordlearnersdictionaries.com/definition/english/petrol-station,B1,petrol station,trạm xăng,noun,/ˈpetrəl steɪʃn/,
-production_line,https://www.oxfordlearnersdictionaries.com/definition/english/production-line,C1,production line,dây chuyền sản xuất,noun,/prəˈdʌkʃn laɪn/,
-reg,https://www.oxfordlearnersdictionaries.com/definition/english/reg,C2,reg,đăng ký,abbreviation,/redʒ/,
-registration_number,https://www.oxfordlearnersdictionaries.com/definition/english/registration-number,C2,registration number,số đăng ký,noun,/ˌredʒɪˈstreɪʃn nʌmbə(r)/,
-repair,https://www.oxfordlearnersdictionaries.com/definition/english/repair_1,A2,repair,Sửa chữa,verb,/rɪˈpeə(r)/,
-repair,https://www.oxfordlearnersdictionaries.com/definition/english/repair_2,B1,repair,Sửa chữa,noun,/rɪˈpeə(r)/,
-marque,https://www.oxfordlearnersdictionaries.com/definition/english/marque,C2,marque,thương hiệu,noun,/mɑːk/,
-respray,https://www.oxfordlearnersdictionaries.com/definition/english/respray_1,C2,respray,phun lại,noun,/ˈriːspreɪ/,
-respray,https://www.oxfordlearnersdictionaries.com/definition/english/respray_2,C2,respray,phun lại,verb,/ˌriːˈspreɪ/,
-roadworthiness,https://www.oxfordlearnersdictionaries.com/definition/english/roadworthiness,C2,roadworthiness,khả năng đi đường,noun,/ˈrəʊdwɜːðinəs/,
-road_test,https://www.oxfordlearnersdictionaries.com/definition/english/road-test_1,C2,road test,kiểm tra đường,noun,/ˈrəʊd test/,
-scrap,https://www.oxfordlearnersdictionaries.com/definition/english/scrap_1,C2,scrap,phế liệu,noun,/skræp/,
-road-test,https://www.oxfordlearnersdictionaries.com/definition/english/road-test_2,C2,road-test,kiểm tra đường,verb,/ˈrəʊd test/,
-road_tax,https://www.oxfordlearnersdictionaries.com/definition/english/road-tax,C1,road tax,thuế đường bộ,noun,/ˈrəʊd tæks/,
-salvage_yard,https://www.oxfordlearnersdictionaries.com/definition/english/salvage-yard,C2,salvage yard,bãi cứu hộ,noun,/ˈsælvɪdʒ jɑːd/,
-roadworthy,https://www.oxfordlearnersdictionaries.com/definition/english/roadworthy,C2,roadworthy,có thể đi đường,adjective,/ˈrəʊdwɜːði/,
-showroom,https://www.oxfordlearnersdictionaries.com/definition/english/showroom,C2,showroom,phòng trưng bày,noun,/ˈʃəʊruːm/,
-service,https://www.oxfordlearnersdictionaries.com/definition/english/service_1,C1,service,dịch vụ,noun,/ˈsɜːvɪs/,
-second-hand,https://www.oxfordlearnersdictionaries.com/definition/english/second-hand_2,B2,second-hand,đồ cũ,adjective,/ˌsekənd ˈhænd/,
-test_drive,https://www.oxfordlearnersdictionaries.com/definition/english/test-drive_1,C1,test drive,lái thử,noun,/ˈtest draɪv/,
+petrol_station,https://www.oxfordlearnersdictionaries.com/definition/english/petrol-station,B1,petrol station,trạm xăng,noun,/ˈpetrəl steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pet/petro/petrol_station_1_gb_2.mp3
+production_line,https://www.oxfordlearnersdictionaries.com/definition/english/production-line,C1,production line,dây chuyền sản xuất,noun,/prəˈdʌkʃn laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/produ/production_line_1_gb_1.mp3
+reg,https://www.oxfordlearnersdictionaries.com/definition/english/reg,C2,reg,đăng ký,abbreviation,/redʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/reg__/reg__gb_1.mp3
+registration_number,https://www.oxfordlearnersdictionaries.com/definition/english/registration-number,C2,registration number,số đăng ký,noun,/ˌredʒɪˈstreɪʃn nʌmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/regis/registration_number_1_gb_1.mp3
+repair,https://www.oxfordlearnersdictionaries.com/definition/english/repair_1,A2,repair,Sửa chữa,verb,/rɪˈpeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repai/repair__gb_1.mp3
+repair,https://www.oxfordlearnersdictionaries.com/definition/english/repair_2,B1,repair,Sửa chữa,noun,/rɪˈpeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repai/repair__gb_1.mp3
+marque,https://www.oxfordlearnersdictionaries.com/definition/english/marque,C2,marque,thương hiệu,noun,/mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marqu/marque__gb_1.mp3
+respray,https://www.oxfordlearnersdictionaries.com/definition/english/respray_1,C2,respray,phun lại,noun,/ˈriːspreɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/respr/respray__gb_2.mp3
+respray,https://www.oxfordlearnersdictionaries.com/definition/english/respray_2,C2,respray,phun lại,verb,/ˌriːˈspreɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/respr/respray__gb_1.mp3
+roadworthiness,https://www.oxfordlearnersdictionaries.com/definition/english/roadworthiness,C2,roadworthiness,khả năng đi đường,noun,/ˈrəʊdwɜːðinəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/roadw/roadworthiness__gb_1.mp3
+road_test,https://www.oxfordlearnersdictionaries.com/definition/english/road-test_1,C2,road test,kiểm tra đường,noun,/ˈrəʊd test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_test_1_gb_1.mp3
+scrap,https://www.oxfordlearnersdictionaries.com/definition/english/scrap_1,C2,scrap,phế liệu,noun,/skræp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrap/scrap__gb_1.mp3
+road-test,https://www.oxfordlearnersdictionaries.com/definition/english/road-test_2,C2,road-test,kiểm tra đường,verb,/ˈrəʊd test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_test_1_gb_1.mp3
+road_tax,https://www.oxfordlearnersdictionaries.com/definition/english/road-tax,C1,road tax,thuế đường bộ,noun,/ˈrəʊd tæks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_tax_1_gb_1.mp3
+salvage_yard,https://www.oxfordlearnersdictionaries.com/definition/english/salvage-yard,C2,salvage yard,bãi cứu hộ,noun,/ˈsælvɪdʒ jɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sal/salva/salvage_yard_1_gb_1.mp3
+roadworthy,https://www.oxfordlearnersdictionaries.com/definition/english/roadworthy,C2,roadworthy,có thể đi đường,adjective,/ˈrəʊdwɜːði/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/roadw/roadworthy__gb_1.mp3
+showroom,https://www.oxfordlearnersdictionaries.com/definition/english/showroom,C2,showroom,phòng trưng bày,noun,/ˈʃəʊruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/showr/showroom__gb_1.mp3
+service,https://www.oxfordlearnersdictionaries.com/definition/english/service_1,C1,service,dịch vụ,noun,/ˈsɜːvɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/servi/service__gb_2.mp3
+second-hand,https://www.oxfordlearnersdictionaries.com/definition/english/second-hand_2,B2,second-hand,đồ cũ,adjective,/ˌsekənd ˈhænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secon/second_hand_1_gb_1.mp3
+test_drive,https://www.oxfordlearnersdictionaries.com/definition/english/test-drive_1,C1,test drive,lái thử,noun,/ˈtest draɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test_drive_1_gb_1.mp3
 soup_up,https://www.oxfordlearnersdictionaries.com/definition/english/soup-up,C2,soup up,súp lên,phrasal verb,,
-service,https://www.oxfordlearnersdictionaries.com/definition/english/service_2,C1,service,dịch vụ,verb,/ˈsɜːvɪs/,
-tax_disc,https://www.oxfordlearnersdictionaries.com/definition/english/tax-disc,C2,tax disc,đĩa thuế,noun,/ˈtæks dɪsk/,
-test-drive,https://www.oxfordlearnersdictionaries.com/definition/english/test-drive_2,C1,test-drive,lái thử,verb,/ˈtest draɪv/,
-scrapyard,https://www.oxfordlearnersdictionaries.com/definition/english/scrapyard,C2,scrapyard,bãi phế liệu,noun,/ˈskræpjɑːd/,
-used,https://www.oxfordlearnersdictionaries.com/definition/english/used2,B1,used,đã sử dụng,adjective,/juːzd/,
-valet,https://www.oxfordlearnersdictionaries.com/definition/english/valet_2,C2,valet,người hầu,verb,/ˈvælɪt/,
-warranty,https://www.oxfordlearnersdictionaries.com/definition/english/warranty,C2,warranty,bảo hành,noun,/ˈwɒrənti/,
+service,https://www.oxfordlearnersdictionaries.com/definition/english/service_2,C1,service,dịch vụ,verb,/ˈsɜːvɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/servi/service__gb_2.mp3
+tax_disc,https://www.oxfordlearnersdictionaries.com/definition/english/tax-disc,C2,tax disc,đĩa thuế,noun,/ˈtæks dɪsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tax/tax_d/tax_disc_1_gb_1.mp3
+test-drive,https://www.oxfordlearnersdictionaries.com/definition/english/test-drive_2,C1,test-drive,lái thử,verb,/ˈtest draɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test_drive_1_gb_1.mp3
+scrapyard,https://www.oxfordlearnersdictionaries.com/definition/english/scrapyard,C2,scrapyard,bãi phế liệu,noun,/ˈskræpjɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrap/scrapyard__gb_1.mp3
+used,https://www.oxfordlearnersdictionaries.com/definition/english/used2,B1,used,đã sử dụng,adjective,/juːzd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/use/used_/used__gb_2.mp3
+valet,https://www.oxfordlearnersdictionaries.com/definition/english/valet_2,C2,valet,người hầu,verb,/ˈvælɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/valet/valet__gb_2.mp3
+warranty,https://www.oxfordlearnersdictionaries.com/definition/english/warranty,C2,warranty,bảo hành,noun,/ˈwɒrənti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warra/warranty__gb_1.mp3

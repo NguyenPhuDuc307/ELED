@@ -1,32 +1,32 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-drab,https://www.oxfordlearnersdictionaries.com/definition/english/drab,C2,drab,buồn tẻ,adjective,/dræb/,
-disinterested,https://www.oxfordlearnersdictionaries.com/definition/english/disinterested,C2,disinterested,vô tư,adjective,/dɪsˈɪntrəstɪd/,
-bore,https://www.oxfordlearnersdictionaries.com/definition/english/bore_1,C1,bore,khoan,verb,/bɔː(r)/,
-apathy,https://www.oxfordlearnersdictionaries.com/definition/english/apathy,C2,apathy,thờ ơ,noun,/ˈæpəθi/,
-bored,https://www.oxfordlearnersdictionaries.com/definition/english/bored,A1,bored,chán,adjective,/bɔːd/,
-bore,https://www.oxfordlearnersdictionaries.com/definition/english/bore_2,C1,bore,khoan,noun,/bɔː(r)/,
-drag,https://www.oxfordlearnersdictionaries.com/definition/english/drag_2,C2,drag,lôi kéo,noun,/dræɡ/,
-brain-dead,https://www.oxfordlearnersdictionaries.com/definition/english/brain-dead,C2,brain-dead,chết não,adjective,/ˈbreɪn ded/,
-cool,https://www.oxfordlearnersdictionaries.com/definition/english/cool_1,B2,cool,mát mẻ,adjective,/kuːl/,
-boredom,https://www.oxfordlearnersdictionaries.com/definition/english/boredom,B2,boredom,sự buồn chán,noun,/ˈbɔːdəm/,
-humdrum,https://www.oxfordlearnersdictionaries.com/definition/english/humdrum,C2,humdrum,buồn tẻ,adjective,/ˈhʌmdrʌm/,
-glaze,https://www.oxfordlearnersdictionaries.com/definition/english/glaze_1,C2,glaze,tráng men,verb,/ɡleɪz/,
-dull,https://www.oxfordlearnersdictionaries.com/definition/english/dull_1,B2,dull,đần độn,adjective,/dʌl/,
+drab,https://www.oxfordlearnersdictionaries.com/definition/english/drab,C2,drab,buồn tẻ,adjective,/dræb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drab_/drab__gb_2.mp3
+disinterested,https://www.oxfordlearnersdictionaries.com/definition/english/disinterested,C2,disinterested,vô tư,adjective,/dɪsˈɪntrəstɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disin/disinterested__gb_3.mp3
+bore,https://www.oxfordlearnersdictionaries.com/definition/english/bore_1,C1,bore,khoan,verb,/bɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/bore_/bore__gb_1.mp3
+apathy,https://www.oxfordlearnersdictionaries.com/definition/english/apathy,C2,apathy,thờ ơ,noun,/ˈæpəθi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apa/apath/apathy__gb_1.mp3
+bored,https://www.oxfordlearnersdictionaries.com/definition/english/bored,A1,bored,chán,adjective,/bɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/bored/bored__gb_3.mp3
+bore,https://www.oxfordlearnersdictionaries.com/definition/english/bore_2,C1,bore,khoan,noun,/bɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/bore_/bore__gb_1.mp3
+drag,https://www.oxfordlearnersdictionaries.com/definition/english/drag_2,C2,drag,lôi kéo,noun,/dræɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drag_/drag__gb_2.mp3
+brain-dead,https://www.oxfordlearnersdictionaries.com/definition/english/brain-dead,C2,brain-dead,chết não,adjective,/ˈbreɪn ded/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/brain/brain_dead_1_gb_1.mp3
+cool,https://www.oxfordlearnersdictionaries.com/definition/english/cool_1,B2,cool,mát mẻ,adjective,/kuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cool_/cool__gb_2.mp3
+boredom,https://www.oxfordlearnersdictionaries.com/definition/english/boredom,B2,boredom,sự buồn chán,noun,/ˈbɔːdəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/bored/boredom__gb_2.mp3
+humdrum,https://www.oxfordlearnersdictionaries.com/definition/english/humdrum,C2,humdrum,buồn tẻ,adjective,/ˈhʌmdrʌm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hum/humdr/humdrum__gb_1.mp3
+glaze,https://www.oxfordlearnersdictionaries.com/definition/english/glaze_1,C2,glaze,tráng men,verb,/ɡleɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gla/glaze/glaze__gb_2.mp3
+dull,https://www.oxfordlearnersdictionaries.com/definition/english/dull_1,B2,dull,đần độn,adjective,/dʌl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dul/dull_/dull__gb_1.mp3
 harp_on,https://www.oxfordlearnersdictionaries.com/definition/english/harp-on,C2,harp on,chơi đàn hạc,phrasal verb,,
-monotony,https://www.oxfordlearnersdictionaries.com/definition/english/monotony,C2,monotony,sự đơn điệu,noun,/məˈnɒtəni/,
+monotony,https://www.oxfordlearnersdictionaries.com/definition/english/monotony,C2,monotony,sự đơn điệu,noun,/məˈnɒtəni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monot/monotony__gb_1.mp3
 go_on,https://www.oxfordlearnersdictionaries.com/definition/english/go-on,C1,go on,tiếp tục,phrasal verb,,
-monotonous,https://www.oxfordlearnersdictionaries.com/definition/english/monotonous,C1,monotonous,đơn điệu,adjective,/məˈnɒtənəs/,
-ponderous,https://www.oxfordlearnersdictionaries.com/definition/english/ponderous,C2,ponderous,nặng nề,adjective,/ˈpɒndərəs/,
-mind-numbing,https://www.oxfordlearnersdictionaries.com/definition/english/mind-numbing,C2,mind-numbing,làm tê liệt tâm trí,adjective,/ˈmaɪnd nʌmɪŋ/,
-lukewarm,https://www.oxfordlearnersdictionaries.com/definition/english/lukewarm,C2,lukewarm,ấm áp,adjective,/ˌluːkˈwɔːm/,
-predictable,https://www.oxfordlearnersdictionaries.com/definition/english/predictable,C1,predictable,có thể dự đoán được,adjective,/prɪˈdɪktəbl/,
-repetitive,https://www.oxfordlearnersdictionaries.com/definition/english/repetitive,B2,repetitive,lặp đi lặp lại,adjective,/rɪˈpetətɪv/,
-staid,https://www.oxfordlearnersdictionaries.com/definition/english/staid,C2,staid,nghiêm trang,adjective,/steɪd/,
-routine,https://www.oxfordlearnersdictionaries.com/definition/english/routine_2,B2,routine,lịch trình,adjective,/ruːˈtiːn/,
-routine,https://www.oxfordlearnersdictionaries.com/definition/english/routine_1,B1,routine,lịch trình,noun,/ruːˈtiːn/,
-square,https://www.oxfordlearnersdictionaries.com/definition/english/square_1,C2,square,quảng trường,adjective,/skweə(r)/,
-stuffy,https://www.oxfordlearnersdictionaries.com/definition/english/stuffy,C2,stuffy,ngột ngạt,adjective,/ˈstʌfi/,
-suburban,https://www.oxfordlearnersdictionaries.com/definition/english/suburban,C2,suburban,ngoại ô,adjective,/səˈbɜːbən/,
-unconcerned,https://www.oxfordlearnersdictionaries.com/definition/english/unconcerned,C1,unconcerned,không quan tâm,adjective,/ˌʌnkənˈsɜːnd/,
-rut,https://www.oxfordlearnersdictionaries.com/definition/english/rut,C2,rut,vết mòn,noun,/rʌt/,
-uninterested,https://www.oxfordlearnersdictionaries.com/definition/english/uninterested,B2,uninterested,không quan tâm,adjective,/ʌnˈɪntrəstɪd/,
+monotonous,https://www.oxfordlearnersdictionaries.com/definition/english/monotonous,C1,monotonous,đơn điệu,adjective,/məˈnɒtənəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monot/monotonous__gb_1.mp3
+ponderous,https://www.oxfordlearnersdictionaries.com/definition/english/ponderous,C2,ponderous,nặng nề,adjective,/ˈpɒndərəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pon/ponde/ponderous__gb_1.mp3
+mind-numbing,https://www.oxfordlearnersdictionaries.com/definition/english/mind-numbing,C2,mind-numbing,làm tê liệt tâm trí,adjective,/ˈmaɪnd nʌmɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/mind_/mind_numbing_1_gb_1.mp3
+lukewarm,https://www.oxfordlearnersdictionaries.com/definition/english/lukewarm,C2,lukewarm,ấm áp,adjective,/ˌluːkˈwɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/luk/lukew/lukewarm__gb_1.mp3
+predictable,https://www.oxfordlearnersdictionaries.com/definition/english/predictable,C1,predictable,có thể dự đoán được,adjective,/prɪˈdɪktəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/predi/predictable__gb_1.mp3
+repetitive,https://www.oxfordlearnersdictionaries.com/definition/english/repetitive,B2,repetitive,lặp đi lặp lại,adjective,/rɪˈpetətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repet/repetitive__gb_1.mp3
+staid,https://www.oxfordlearnersdictionaries.com/definition/english/staid,C2,staid,nghiêm trang,adjective,/steɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/staid/staid__gb_1.mp3
+routine,https://www.oxfordlearnersdictionaries.com/definition/english/routine_2,B2,routine,lịch trình,adjective,/ruːˈtiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/routi/routine__gb_1.mp3
+routine,https://www.oxfordlearnersdictionaries.com/definition/english/routine_1,B1,routine,lịch trình,noun,/ruːˈtiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/routi/routine__gb_1.mp3
+square,https://www.oxfordlearnersdictionaries.com/definition/english/square_1,C2,square,quảng trường,adjective,/skweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/squ/squar/square__gb_1.mp3
+stuffy,https://www.oxfordlearnersdictionaries.com/definition/english/stuffy,C2,stuffy,ngột ngạt,adjective,/ˈstʌfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stuff/stuffy__gb_1.mp3
+suburban,https://www.oxfordlearnersdictionaries.com/definition/english/suburban,C2,suburban,ngoại ô,adjective,/səˈbɜːbən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subur/suburban__gb_1.mp3
+unconcerned,https://www.oxfordlearnersdictionaries.com/definition/english/unconcerned,C1,unconcerned,không quan tâm,adjective,/ˌʌnkənˈsɜːnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unc/uncon/unconcerned__gb_1.mp3
+rut,https://www.oxfordlearnersdictionaries.com/definition/english/rut,C2,rut,vết mòn,noun,/rʌt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rut/rut__/rut__gb_1.mp3
+uninterested,https://www.oxfordlearnersdictionaries.com/definition/english/uninterested,B2,uninterested,không quan tâm,adjective,/ʌnˈɪntrəstɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/uni/unint/uninterested__gb_1.mp3

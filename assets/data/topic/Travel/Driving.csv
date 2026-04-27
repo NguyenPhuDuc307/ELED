@@ -1,110 +1,110 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-brake,https://www.oxfordlearnersdictionaries.com/definition/english/brake_2,B2,brake,phanh,verb,/breɪk/,
-bypass,https://www.oxfordlearnersdictionaries.com/definition/english/bypass_2,C1,bypass,đường vòng,verb,/ˈbaɪpɑːs/,
-blind_spot,https://www.oxfordlearnersdictionaries.com/definition/english/blind-spot,C2,blind spot,điểm mù,noun,/ˈblaɪnd spɒt/,
-careen,https://www.oxfordlearnersdictionaries.com/definition/english/careen,C2,careen,quan tâm,verb,/kəˈriːn/,
-beep,https://www.oxfordlearnersdictionaries.com/definition/english/beep_1,C1,beep,tiếng bíp,noun,/biːp/,
-beep,https://www.oxfordlearnersdictionaries.com/definition/english/beep_2,C1,beep,tiếng bíp,verb,/biːp/,
-blind,https://www.oxfordlearnersdictionaries.com/definition/english/blind_1,C2,blind,mù,adjective,/blaɪnd/,
-autonomous,https://www.oxfordlearnersdictionaries.com/definition/english/autonomous,C2,autonomous,tự trị,adjective,/ɔːˈtɒnəməs/,
-burn_rubber,https://www.oxfordlearnersdictionaries.com/definition/english/burn_1,C2,burn rubber,đốt cao su,verb,/bɜːn/,
-accelerate,https://www.oxfordlearnersdictionaries.com/definition/english/accelerate,C1,accelerate,tăng tốc,verb,/əkˈseləreɪt/,
-commute,https://www.oxfordlearnersdictionaries.com/definition/english/commute_1,B1,commute,đi lại,verb,/kəˈmjuːt/,
-coast,https://www.oxfordlearnersdictionaries.com/definition/english/coast_2,C2,coast,bờ biển,verb,/kəʊst/,
-career,https://www.oxfordlearnersdictionaries.com/definition/english/career_2,C2,career,sự nghiệp,verb,/kəˈrɪə(r)/,
-cruise,https://www.oxfordlearnersdictionaries.com/definition/english/cruise_2,C1,cruise,du thuyền,verb,/kruːz/,
-crash_helmet,https://www.oxfordlearnersdictionaries.com/definition/english/crash-helmet,C1,crash helmet,mũ bảo hiểm va chạm,noun,/ˈkræʃ helmɪt/,
+brake,https://www.oxfordlearnersdictionaries.com/definition/english/brake_2,B2,brake,phanh,verb,/breɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/brake/brake__gb_1.mp3
+bypass,https://www.oxfordlearnersdictionaries.com/definition/english/bypass_2,C1,bypass,đường vòng,verb,/ˈbaɪpɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/byp/bypas/bypass__gb_2.mp3
+blind_spot,https://www.oxfordlearnersdictionaries.com/definition/english/blind-spot,C2,blind spot,điểm mù,noun,/ˈblaɪnd spɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bli/blind/blind_spot_1_gb_1.mp3
+careen,https://www.oxfordlearnersdictionaries.com/definition/english/careen,C2,careen,quan tâm,verb,/kəˈriːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/caree/careen__gb_1.mp3
+beep,https://www.oxfordlearnersdictionaries.com/definition/english/beep_1,C1,beep,tiếng bíp,noun,/biːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bee/beep_/beep__gb_2.mp3
+beep,https://www.oxfordlearnersdictionaries.com/definition/english/beep_2,C1,beep,tiếng bíp,verb,/biːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bee/beep_/beep__gb_2.mp3
+blind,https://www.oxfordlearnersdictionaries.com/definition/english/blind_1,C2,blind,mù,adjective,/blaɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bli/blind/blind__gb_11.mp3
+autonomous,https://www.oxfordlearnersdictionaries.com/definition/english/autonomous,C2,autonomous,tự trị,adjective,/ɔːˈtɒnəməs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/auton/autonomous__gb_1.mp3
+burn_rubber,https://www.oxfordlearnersdictionaries.com/definition/english/burn_1,C2,burn rubber,đốt cao su,verb,/bɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/burn_/burn__gb_2.mp3
+accelerate,https://www.oxfordlearnersdictionaries.com/definition/english/accelerate,C1,accelerate,tăng tốc,verb,/əkˈseləreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acc/accel/accelerate__gb_1.mp3
+commute,https://www.oxfordlearnersdictionaries.com/definition/english/commute_1,B1,commute,đi lại,verb,/kəˈmjuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commu/commute__gb_1.mp3
+coast,https://www.oxfordlearnersdictionaries.com/definition/english/coast_2,C2,coast,bờ biển,verb,/kəʊst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coast/coast__gb_1.mp3
+career,https://www.oxfordlearnersdictionaries.com/definition/english/career_2,C2,career,sự nghiệp,verb,/kəˈrɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/caree/career__gb_2.mp3
+cruise,https://www.oxfordlearnersdictionaries.com/definition/english/cruise_2,C1,cruise,du thuyền,verb,/kruːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cru/cruis/cruise__gb_1.mp3
+crash_helmet,https://www.oxfordlearnersdictionaries.com/definition/english/crash-helmet,C1,crash helmet,mũ bảo hiểm va chạm,noun,/ˈkræʃ helmɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crash/crash_helmet_1_gb_1.mp3
 change_up,https://www.oxfordlearnersdictionaries.com/definition/english/change-up,C2,change up,thay đổi,phrasal verb,,
 cut_in,https://www.oxfordlearnersdictionaries.com/definition/english/cut-in_1,C2,cut in,cắt vào,phrasal verb,,
 change_down,https://www.oxfordlearnersdictionaries.com/definition/english/change-down,C2,change down,thay đổi xuống,phrasal verb,,
 cut_up,https://www.oxfordlearnersdictionaries.com/definition/english/cut-up,C2,cut up,cắt nhỏ,phrasal verb,,
-dip,https://www.oxfordlearnersdictionaries.com/definition/english/dip_1,C2,dip,nhúng,verb,/dɪp/,
+dip,https://www.oxfordlearnersdictionaries.com/definition/english/dip_1,C2,dip,nhúng,verb,/dɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dip/dip__/dip__gb_2.mp3
 drive_on,https://www.oxfordlearnersdictionaries.com/definition/english/drive-on,B2,drive on,lái xe đi,phrasal verb,,
 drive_away,https://www.oxfordlearnersdictionaries.com/definition/english/drive-away,B1,drive away,lái xe đi,phrasal verb,,
-driverless,https://www.oxfordlearnersdictionaries.com/definition/english/driverless,B1,driverless,không có người lái,adjective,/ˈdraɪvələs/,
-drive,https://www.oxfordlearnersdictionaries.com/definition/english/drive_1,A1,drive,lái xe,verb,/draɪv/,
+driverless,https://www.oxfordlearnersdictionaries.com/definition/english/driverless,B1,driverless,không có người lái,adjective,/ˈdraɪvələs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/driverless__gb_1.mp3
+drive,https://www.oxfordlearnersdictionaries.com/definition/english/drive_1,A1,drive,lái xe,verb,/draɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/drive__gb_2.mp3
 drive_off,https://www.oxfordlearnersdictionaries.com/definition/english/drive-off,B2,drive off,lái xe đi,phrasal verb,,
-drive,https://www.oxfordlearnersdictionaries.com/definition/english/drive_2,A2,drive,lái xe,noun,/draɪv/,
-drive_time,https://www.oxfordlearnersdictionaries.com/definition/english/drive-time_1,C2,drive time,thời gian lái xe,noun,/ˈdraɪv taɪm/,
-drive-time,https://www.oxfordlearnersdictionaries.com/definition/english/drive-time_2,C2,drive-time,thời gian lái xe,adjective,/ˈdraɪv taɪm/,
-driving_licence,https://www.oxfordlearnersdictionaries.com/definition/english/driving-licence,B2,driving licence,bằng lái xe,noun,/ˈdraɪvɪŋ laɪsns/,
-driving_school,https://www.oxfordlearnersdictionaries.com/definition/english/driving-school,B2,driving school,trường dạy lái xe,noun,/ˈdraɪvɪŋ skuːl/,
-driving_test,https://www.oxfordlearnersdictionaries.com/definition/english/driving-test,B1,driving test,thi lái xe,noun,/ˈdraɪvɪŋ test/,
-drop,https://www.oxfordlearnersdictionaries.com/definition/english/drop_1,B2,drop,làm rơi,verb,/drɒp/,
-escort,https://www.oxfordlearnersdictionaries.com/definition/english/escort_1,C2,escort,hộ tống,noun,/ˈeskɔːt/,
-exhaust,https://www.oxfordlearnersdictionaries.com/definition/english/exhaust_1,C1,exhaust,khí thải,noun,/ɪɡˈzɔːst/,
-fill-up,https://www.oxfordlearnersdictionaries.com/definition/english/fill-up_2,C2,fill-up,đổ đầy,noun,/ˈfɪl ʌp/,
-filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_2,C2,filter,lọc,verb,/ˈfɪltə(r)/,
-fuel_efficiency,https://www.oxfordlearnersdictionaries.com/definition/english/fuel-efficiency,C1,fuel efficiency,hiệu quả nhiên liệu,noun,/ˌfjuːəl ɪˈfɪʃnsi/,
-fuel-efficient,https://www.oxfordlearnersdictionaries.com/definition/english/fuel-efficient,C1,fuel-efficient,tiết kiệm nhiên liệu,adjective,/ˌfjuːəl ɪˈfɪʃnt/,
-floor,https://www.oxfordlearnersdictionaries.com/definition/english/floor_2,C2,floor,sàn nhà,verb,/flɔː(r)/,
-full_beam,https://www.oxfordlearnersdictionaries.com/definition/english/full-beam,C2,full beam,chùm tia đầy đủ,noun,/ˌfʊl ˈbiːm/,
-gun,https://www.oxfordlearnersdictionaries.com/definition/english/gun_2,C2,gun,súng,verb,/ɡʌn/,
-helmet,https://www.oxfordlearnersdictionaries.com/definition/english/helmet,B2,helmet,mũ bảo hiểm,noun,/ˈhelmɪt/,
-handling,https://www.oxfordlearnersdictionaries.com/definition/english/handling,C2,handling,xử lý,noun,/ˈhændlɪŋ/,
-handbrake_turn,https://www.oxfordlearnersdictionaries.com/definition/english/handbrake-turn,C2,handbrake turn,quay phanh tay,noun,/ˈhændbreɪk tɜːn/,
-handle,https://www.oxfordlearnersdictionaries.com/definition/english/handle_1,C2,handle,xử lý,verb,/ˈhændl/,
-hitch,https://www.oxfordlearnersdictionaries.com/definition/english/hitch_1,C2,hitch,xô,verb,/hɪtʃ/,
-hitchhike,https://www.oxfordlearnersdictionaries.com/definition/english/hitchhike,C1,hitchhike,quá giang,verb,/ˈhɪtʃhaɪk/,
-give_way_(to_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/way_1,C2,give way (to somebody/something),nhường đường (cho ai/cái gì),noun,/weɪ/,
-honk,https://www.oxfordlearnersdictionaries.com/definition/english/honk_1,C2,honk,bấm còi,noun,/hɒŋk/,
-honk,https://www.oxfordlearnersdictionaries.com/definition/english/honk_2,C2,honk,bấm còi,verb,/hɒŋk/,
-indicate,https://www.oxfordlearnersdictionaries.com/definition/english/indicate,C1,indicate,biểu thị,verb,/ˈɪndɪkeɪt/,
-hold,https://www.oxfordlearnersdictionaries.com/definition/english/hold_1,C2,hold,giữ,verb,/həʊld/,
-idle,https://www.oxfordlearnersdictionaries.com/definition/english/idle_2,C2,idle,nhàn rỗi,verb,/ˈaɪdl/,
-lift,https://www.oxfordlearnersdictionaries.com/definition/english/lift_2,B1,lift,thang máy,noun,/lɪft/,
-high_beams,https://www.oxfordlearnersdictionaries.com/definition/english/high-beams,C2,high beams,dầm cao,noun,/ˈhaɪ biːmz/,
-lock,https://www.oxfordlearnersdictionaries.com/definition/english/lock_1,B2,lock,khóa,verb,/lɒk/,
-keyless,https://www.oxfordlearnersdictionaries.com/definition/english/keyless,B2,keyless,không cần chìa khóa,adjective,/ˈkiːləs/,
-motor,https://www.oxfordlearnersdictionaries.com/definition/english/motor_3,B2,motor,động cơ,verb,/ˈməʊtə(r)/,
-overtake,https://www.oxfordlearnersdictionaries.com/definition/english/overtake,B2,overtake,vượt qua,verb,/ˌəʊvəˈteɪk/,
-navigate,https://www.oxfordlearnersdictionaries.com/definition/english/navigate,B2,navigate,điều hướng,verb,/ˈnævɪɡeɪt/,
-on_the_road,https://www.oxfordlearnersdictionaries.com/definition/english/road,C2,on the road,trên đường,noun,/rəʊd/,
-nav,https://www.oxfordlearnersdictionaries.com/definition/english/nav,C2,nav,điều hướng,noun,/næv/,
-park,https://www.oxfordlearnersdictionaries.com/definition/english/park_1,C1,park,công viên,noun,/pɑːk/,
-park,https://www.oxfordlearnersdictionaries.com/definition/english/park_2,A1,park,công viên,verb,/pɑːk/,
-l-plate,https://www.oxfordlearnersdictionaries.com/definition/english/l-plate,C2,L-plate,Tấm chữ L,noun,/ˈel pleɪt/,
-parking,https://www.oxfordlearnersdictionaries.com/definition/english/parking,A2,parking,bãi đậu xe,noun,/ˈpɑːkɪŋ/,
-low_beams,https://www.oxfordlearnersdictionaries.com/definition/english/low-beams,C2,low beams,dầm thấp,noun,/ˈləʊ biːmz/,
+drive,https://www.oxfordlearnersdictionaries.com/definition/english/drive_2,A2,drive,lái xe,noun,/draɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/drive__gb_2.mp3
+drive_time,https://www.oxfordlearnersdictionaries.com/definition/english/drive-time_1,C2,drive time,thời gian lái xe,noun,/ˈdraɪv taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/drive_time_1_gb_1.mp3
+drive-time,https://www.oxfordlearnersdictionaries.com/definition/english/drive-time_2,C2,drive-time,thời gian lái xe,adjective,/ˈdraɪv taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/drive_time_1_gb_1.mp3
+driving_licence,https://www.oxfordlearnersdictionaries.com/definition/english/driving-licence,B2,driving licence,bằng lái xe,noun,/ˈdraɪvɪŋ laɪsns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drivi/driving_licence_1_gb_1.mp3
+driving_school,https://www.oxfordlearnersdictionaries.com/definition/english/driving-school,B2,driving school,trường dạy lái xe,noun,/ˈdraɪvɪŋ skuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drivi/driving_school_1_gb_1.mp3
+driving_test,https://www.oxfordlearnersdictionaries.com/definition/english/driving-test,B1,driving test,thi lái xe,noun,/ˈdraɪvɪŋ test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drivi/driving_test_1_gb_1.mp3
+drop,https://www.oxfordlearnersdictionaries.com/definition/english/drop_1,B2,drop,làm rơi,verb,/drɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drop_/drop__gb_2.mp3
+escort,https://www.oxfordlearnersdictionaries.com/definition/english/escort_1,C2,escort,hộ tống,noun,/ˈeskɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/esc/escor/escort__gb_1.mp3
+exhaust,https://www.oxfordlearnersdictionaries.com/definition/english/exhaust_1,C1,exhaust,khí thải,noun,/ɪɡˈzɔːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exh/exhau/exhaust__gb_1.mp3
+fill-up,https://www.oxfordlearnersdictionaries.com/definition/english/fill-up_2,C2,fill-up,đổ đầy,noun,/ˈfɪl ʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/fill_/fill_up_1_gb_1.mp3
+filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_2,C2,filter,lọc,verb,/ˈfɪltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filte/filter__gb_1.mp3
+fuel_efficiency,https://www.oxfordlearnersdictionaries.com/definition/english/fuel-efficiency,C1,fuel efficiency,hiệu quả nhiên liệu,noun,/ˌfjuːəl ɪˈfɪʃnsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fue/fuel_/fuel_efficiency_1_gb_1.mp3
+fuel-efficient,https://www.oxfordlearnersdictionaries.com/definition/english/fuel-efficient,C1,fuel-efficient,tiết kiệm nhiên liệu,adjective,/ˌfjuːəl ɪˈfɪʃnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fue/fuel_/fuel_efficient_1_gb_1.mp3
+floor,https://www.oxfordlearnersdictionaries.com/definition/english/floor_2,C2,floor,sàn nhà,verb,/flɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/floor/floor__gb_3.mp3
+full_beam,https://www.oxfordlearnersdictionaries.com/definition/english/full-beam,C2,full beam,chùm tia đầy đủ,noun,/ˌfʊl ˈbiːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/ful/full_/full_beam_1_gb_1.mp3
+gun,https://www.oxfordlearnersdictionaries.com/definition/english/gun_2,C2,gun,súng,verb,/ɡʌn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gun/gun__/gun__gb_2.mp3
+helmet,https://www.oxfordlearnersdictionaries.com/definition/english/helmet,B2,helmet,mũ bảo hiểm,noun,/ˈhelmɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hel/helme/helmet__gb_1.mp3
+handling,https://www.oxfordlearnersdictionaries.com/definition/english/handling,C2,handling,xử lý,noun,/ˈhændlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/handl/handling__gb_1.mp3
+handbrake_turn,https://www.oxfordlearnersdictionaries.com/definition/english/handbrake-turn,C2,handbrake turn,quay phanh tay,noun,/ˈhændbreɪk tɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/handb/handbrake_turn_1_gb_1.mp3
+handle,https://www.oxfordlearnersdictionaries.com/definition/english/handle_1,C2,handle,xử lý,verb,/ˈhændl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/handl/handle__gb_1.mp3
+hitch,https://www.oxfordlearnersdictionaries.com/definition/english/hitch_1,C2,hitch,xô,verb,/hɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hit/hitch/hitch__gb_1.mp3
+hitchhike,https://www.oxfordlearnersdictionaries.com/definition/english/hitchhike,C1,hitchhike,quá giang,verb,/ˈhɪtʃhaɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hit/hitch/hitchhike__gb_1.mp3
+give_way_(to_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/way_1,C2,give way (to somebody/something),nhường đường (cho ai/cái gì),noun,/weɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/way/way__/way__gb_1.mp3
+honk,https://www.oxfordlearnersdictionaries.com/definition/english/honk_1,C2,honk,bấm còi,noun,/hɒŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hon/honk_/honk__gb_1.mp3
+honk,https://www.oxfordlearnersdictionaries.com/definition/english/honk_2,C2,honk,bấm còi,verb,/hɒŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hon/honk_/honk__gb_1.mp3
+indicate,https://www.oxfordlearnersdictionaries.com/definition/english/indicate,C1,indicate,biểu thị,verb,/ˈɪndɪkeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ind/indic/indicate__gb_2.mp3
+hold,https://www.oxfordlearnersdictionaries.com/definition/english/hold_1,C2,hold,giữ,verb,/həʊld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hol/hold_/hold__gb_1.mp3
+idle,https://www.oxfordlearnersdictionaries.com/definition/english/idle_2,C2,idle,nhàn rỗi,verb,/ˈaɪdl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/idl/idle_/idle__gb_1.mp3
+lift,https://www.oxfordlearnersdictionaries.com/definition/english/lift_2,B1,lift,thang máy,noun,/lɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lif/lift_/lift__gb_2.mp3
+high_beams,https://www.oxfordlearnersdictionaries.com/definition/english/high-beams,C2,high beams,dầm cao,noun,/ˈhaɪ biːmz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hig/high_/high_beams_1_gb_1.mp3
+lock,https://www.oxfordlearnersdictionaries.com/definition/english/lock_1,B2,lock,khóa,verb,/lɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loc/lock_/lock__gb_1.mp3
+keyless,https://www.oxfordlearnersdictionaries.com/definition/english/keyless,B2,keyless,không cần chìa khóa,adjective,/ˈkiːləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/key/keyle/keyless__gb_1.mp3
+motor,https://www.oxfordlearnersdictionaries.com/definition/english/motor_3,B2,motor,động cơ,verb,/ˈməʊtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motor/motor__gb_1.mp3
+overtake,https://www.oxfordlearnersdictionaries.com/definition/english/overtake,B2,overtake,vượt qua,verb,/ˌəʊvəˈteɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overt/overtake__gb_1.mp3
+navigate,https://www.oxfordlearnersdictionaries.com/definition/english/navigate,B2,navigate,điều hướng,verb,/ˈnævɪɡeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nav/navig/navigate__gb_1.mp3
+on_the_road,https://www.oxfordlearnersdictionaries.com/definition/english/road,C2,on the road,trên đường,noun,/rəʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road__gb_1.mp3
+nav,https://www.oxfordlearnersdictionaries.com/definition/english/nav,C2,nav,điều hướng,noun,/næv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nav/nav__/nav__gb_1.mp3
+park,https://www.oxfordlearnersdictionaries.com/definition/english/park_1,C1,park,công viên,noun,/pɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/park_/park__gb_1.mp3
+park,https://www.oxfordlearnersdictionaries.com/definition/english/park_2,A1,park,công viên,verb,/pɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/park_/park__gb_1.mp3
+l-plate,https://www.oxfordlearnersdictionaries.com/definition/english/l-plate,C2,L-plate,Tấm chữ L,noun,/ˈel pleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/l_p/l_pla/l_plate_1_gb_1.mp3
+parking,https://www.oxfordlearnersdictionaries.com/definition/english/parking,A2,parking,bãi đậu xe,noun,/ˈpɑːkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parki/parking__gb_1.mp3
+low_beams,https://www.oxfordlearnersdictionaries.com/definition/english/low-beams,C2,low beams,dầm thấp,noun,/ˈləʊ biːmz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/low/low_b/low_beams_1_gb_1.mp3
 pick_up,https://www.oxfordlearnersdictionaries.com/definition/english/pick-up,B1,pick up,nhặt lên,phrasal verb,,
-priority,https://www.oxfordlearnersdictionaries.com/definition/english/priority,C2,priority,sự ưu tiên,noun,/praɪˈɒrəti/,
+priority,https://www.oxfordlearnersdictionaries.com/definition/english/priority,C2,priority,sự ưu tiên,noun,/praɪˈɒrəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/prior/priority__gb_3.mp3
 pull_in,https://www.oxfordlearnersdictionaries.com/definition/english/pull-in,C1,pull in,kéo vào,phrasal verb,,
-pillion,https://www.oxfordlearnersdictionaries.com/definition/english/pillion_1,C2,pillion,đồ đạc,adverb,/ˈpɪliən/,
+pillion,https://www.oxfordlearnersdictionaries.com/definition/english/pillion_1,C2,pillion,đồ đạc,adverb,/ˈpɪliən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pil/pilli/pillion__gb_1.mp3
 pull_off,https://www.oxfordlearnersdictionaries.com/definition/english/pull-off,C2,pull off,kéo ra,phrasal verb,,
 pull_out,https://www.oxfordlearnersdictionaries.com/definition/english/pull-out_2,C1,pull out,kéo ra,phrasal verb,,
 pull_over,https://www.oxfordlearnersdictionaries.com/definition/english/pull-over,C1,pull over,kéo qua,phrasal verb,,
-purr,https://www.oxfordlearnersdictionaries.com/definition/english/purr_2,C2,purr,tiếng gừ gừ,verb,/pɜː(r)/,
+purr,https://www.oxfordlearnersdictionaries.com/definition/english/purr_2,C2,purr,tiếng gừ gừ,verb,/pɜː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pur/purr_/purr__gb_1.mp3
 pull_up,https://www.oxfordlearnersdictionaries.com/definition/english/pull-up_1,C1,pull up,kéo lên,phrasal verb,,
-provisional_licence,https://www.oxfordlearnersdictionaries.com/definition/english/provisional-licence,C2,provisional licence,giấy phép tạm thời,noun,/prəˌvɪʒənl ˈlaɪsns/,
-reverse,https://www.oxfordlearnersdictionaries.com/definition/english/reverse_1,C1,reverse,đảo ngược,verb,/rɪˈvɜːs/,
-right_of_way,https://www.oxfordlearnersdictionaries.com/definition/english/right-of-way,C2,right of way,quyền ưu tiên,noun,/ˌraɪt əv ˈweɪ/,
-reverse,https://www.oxfordlearnersdictionaries.com/definition/english/reverse_2,C1,reverse,đảo ngược,noun,/rɪˈvɜːs/,
-ride,https://www.oxfordlearnersdictionaries.com/definition/english/ride_1,A1,ride,lái,verb,/raɪd/,
-road_map,https://www.oxfordlearnersdictionaries.com/definition/english/road-map,A2,road map,bản đồ đường đi,noun,/ˈrəʊd mæp/,
-roadholding,https://www.oxfordlearnersdictionaries.com/definition/english/roadholding,C2,roadholding,giữ đường,noun,/ˈrəʊdhəʊldɪŋ/,
-road_trip,https://www.oxfordlearnersdictionaries.com/definition/english/road-trip,B1,road trip,chuyến đi đường bộ,noun,/ˈrəʊd trɪp/,
-roar,https://www.oxfordlearnersdictionaries.com/definition/english/roar_1,C2,roar,kêu la,verb,/rɔː(r)/,
-round,https://www.oxfordlearnersdictionaries.com/definition/english/round_5,C2,round,tròn,verb,/raʊnd/,
-rush_hour,https://www.oxfordlearnersdictionaries.com/definition/english/rush-hour,B2,rush hour,giờ cao điểm,noun,/ˈrʌʃ aʊə(r)/,
-run,https://www.oxfordlearnersdictionaries.com/definition/english/run_1,C2,run,chạy,verb,/rʌn/,
-road_sense,https://www.oxfordlearnersdictionaries.com/definition/english/road-sense,C2,road sense,đường đi,noun,/ˈrəʊd sens/,
-self-driving,https://www.oxfordlearnersdictionaries.com/definition/english/self-driving,B2,self-driving,tự lái,adjective,/ˌself ˈdraɪvɪŋ/,
-steer,https://www.oxfordlearnersdictionaries.com/definition/english/steer_1,C1,steer,chỉ đạo,verb,/stɪə(r)/,
-slow,https://www.oxfordlearnersdictionaries.com/definition/english/slow_2,B1,slow,chậm,verb,/sləʊ/,
-steering,https://www.oxfordlearnersdictionaries.com/definition/english/steering,C1,steering,chỉ đạo,noun,/ˈstɪərɪŋ/,
-swerve,https://www.oxfordlearnersdictionaries.com/definition/english/swerve_1,C1,swerve,đổi hướng,verb,/swɜːv/,
-tailgate,https://www.oxfordlearnersdictionaries.com/definition/english/tailgate_2,C2,tailgate,cửa sau,verb,/ˈteɪlɡeɪt/,
-toot,https://www.oxfordlearnersdictionaries.com/definition/english/toot_1,C2,toot,thổi còi,noun,/tuːt/,
-stop,https://www.oxfordlearnersdictionaries.com/definition/english/stop_1,A1,stop,dừng lại,verb,/stɒp/,
-traffic,https://www.oxfordlearnersdictionaries.com/definition/english/traffic_1,A1,traffic,giao thông,noun,/ˈtræfɪk/,
-toot,https://www.oxfordlearnersdictionaries.com/definition/english/toot_2,C2,toot,thổi còi,verb,/tuːt/,
-truck,https://www.oxfordlearnersdictionaries.com/definition/english/truck_2,C1,truck,xe tải,verb,/trʌk/,
-three-point_turn,https://www.oxfordlearnersdictionaries.com/definition/english/three-point-turn,C2,three-point turn,rẽ ba điểm,noun,/ˌθriː pɔɪnt ˈtɜːn/,
-turn,https://www.oxfordlearnersdictionaries.com/definition/english/turn_1,A1,turn,xoay,verb,/tɜːn/,
+provisional_licence,https://www.oxfordlearnersdictionaries.com/definition/english/provisional-licence,C2,provisional licence,giấy phép tạm thời,noun,/prəˌvɪʒənl ˈlaɪsns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/provi/provisional_licence_1_gb_1.mp3
+reverse,https://www.oxfordlearnersdictionaries.com/definition/english/reverse_1,C1,reverse,đảo ngược,verb,/rɪˈvɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/rever/reverse__gb_2.mp3
+right_of_way,https://www.oxfordlearnersdictionaries.com/definition/english/right-of-way,C2,right of way,quyền ưu tiên,noun,/ˌraɪt əv ˈweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rig/right/right_of_way_1_gb_1.mp3
+reverse,https://www.oxfordlearnersdictionaries.com/definition/english/reverse_2,C1,reverse,đảo ngược,noun,/rɪˈvɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/rever/reverse__gb_2.mp3
+ride,https://www.oxfordlearnersdictionaries.com/definition/english/ride_1,A1,ride,lái,verb,/raɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rid/ride_/ride__gb_2.mp3
+road_map,https://www.oxfordlearnersdictionaries.com/definition/english/road-map,A2,road map,bản đồ đường đi,noun,/ˈrəʊd mæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_map_1_gb_1.mp3
+roadholding,https://www.oxfordlearnersdictionaries.com/definition/english/roadholding,C2,roadholding,giữ đường,noun,/ˈrəʊdhəʊldɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/roadh/roadholding__gb_1.mp3
+road_trip,https://www.oxfordlearnersdictionaries.com/definition/english/road-trip,B1,road trip,chuyến đi đường bộ,noun,/ˈrəʊd trɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_trip_1_gb_1.mp3
+roar,https://www.oxfordlearnersdictionaries.com/definition/english/roar_1,C2,roar,kêu la,verb,/rɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/roar_/roar__gb_1.mp3
+round,https://www.oxfordlearnersdictionaries.com/definition/english/round_5,C2,round,tròn,verb,/raʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/round/round__gb_1.mp3
+rush_hour,https://www.oxfordlearnersdictionaries.com/definition/english/rush-hour,B2,rush hour,giờ cao điểm,noun,/ˈrʌʃ aʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rus/rush_/rush_hour_1_gb_1.mp3
+run,https://www.oxfordlearnersdictionaries.com/definition/english/run_1,C2,run,chạy,verb,/rʌn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/run/run__/run__gb_1.mp3
+road_sense,https://www.oxfordlearnersdictionaries.com/definition/english/road-sense,C2,road sense,đường đi,noun,/ˈrəʊd sens/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roa/road_/road_sense_1_gb_1.mp3
+self-driving,https://www.oxfordlearnersdictionaries.com/definition/english/self-driving,B2,self-driving,tự lái,adjective,/ˌself ˈdraɪvɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/self_/self_driving_1_gb_1.mp3
+steer,https://www.oxfordlearnersdictionaries.com/definition/english/steer_1,C1,steer,chỉ đạo,verb,/stɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/steer/steer__gb_1.mp3
+slow,https://www.oxfordlearnersdictionaries.com/definition/english/slow_2,B1,slow,chậm,verb,/sləʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/slo/slow_/slow__gb_2.mp3
+steering,https://www.oxfordlearnersdictionaries.com/definition/english/steering,C1,steering,chỉ đạo,noun,/ˈstɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/steer/steering__gb_1.mp3
+swerve,https://www.oxfordlearnersdictionaries.com/definition/english/swerve_1,C1,swerve,đổi hướng,verb,/swɜːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swe/swerv/swerve__gb_1.mp3
+tailgate,https://www.oxfordlearnersdictionaries.com/definition/english/tailgate_2,C2,tailgate,cửa sau,verb,/ˈteɪlɡeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tai/tailg/tailgate__gb_1.mp3
+toot,https://www.oxfordlearnersdictionaries.com/definition/english/toot_1,C2,toot,thổi còi,noun,/tuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/too/toot_/toot__gb_1.mp3
+stop,https://www.oxfordlearnersdictionaries.com/definition/english/stop_1,A1,stop,dừng lại,verb,/stɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/stop_/stop__gb_1.mp3
+traffic,https://www.oxfordlearnersdictionaries.com/definition/english/traffic_1,A1,traffic,giao thông,noun,/ˈtræfɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/traff/traffic__gb_1.mp3
+toot,https://www.oxfordlearnersdictionaries.com/definition/english/toot_2,C2,toot,thổi còi,verb,/tuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/too/toot_/toot__gb_1.mp3
+truck,https://www.oxfordlearnersdictionaries.com/definition/english/truck_2,C1,truck,xe tải,verb,/trʌk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tru/truck/truck__gb_1.mp3
+three-point_turn,https://www.oxfordlearnersdictionaries.com/definition/english/three-point-turn,C2,three-point turn,rẽ ba điểm,noun,/ˌθriː pɔɪnt ˈtɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/three/three_point_turn_1_gb_1.mp3
+turn,https://www.oxfordlearnersdictionaries.com/definition/english/turn_1,A1,turn,xoay,verb,/tɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tur/turn_/turn__gb_1.mp3
 turn_off,https://www.oxfordlearnersdictionaries.com/definition/english/turn-off_1,B2,turn off,tắt,phrasal verb,,
-u-turn,https://www.oxfordlearnersdictionaries.com/definition/english/u-turn,C2,U-turn,quay đầu,noun,/ˈjuː tɜːn/,
-veer,https://www.oxfordlearnersdictionaries.com/definition/english/veer,C2,veer,đổi hướng,verb,/vɪə(r)/,
-u-ey,https://www.oxfordlearnersdictionaries.com/definition/english/u-ey,C2,U-ey,U-ôi,noun,/ˈjuːi/,
+u-turn,https://www.oxfordlearnersdictionaries.com/definition/english/u-turn,C2,U-turn,quay đầu,noun,/ˈjuː tɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/u_t/u_tur/u_turn_1_gb_1.mp3
+veer,https://www.oxfordlearnersdictionaries.com/definition/english/veer,C2,veer,đổi hướng,verb,/vɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vee/veer_/veer__gb_1.mp3
+u-ey,https://www.oxfordlearnersdictionaries.com/definition/english/u-ey,C2,U-ey,U-ôi,noun,/ˈjuːi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/u_e/u_ey_/u_ey_1_gb_1.mp3
 tank_up,https://www.oxfordlearnersdictionaries.com/definition/english/tank-up,C2,tank up,tăng bình,phrasal verb,,
-yield,https://www.oxfordlearnersdictionaries.com/definition/english/yield_2,C2,yield,năng suất,verb,/jiːld/,
-turn,https://www.oxfordlearnersdictionaries.com/definition/english/turn_2,A2,turn,xoay,noun,/tɜːn/,
+yield,https://www.oxfordlearnersdictionaries.com/definition/english/yield_2,C2,yield,năng suất,verb,/jiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yie/yield/yield__gb_2.mp3
+turn,https://www.oxfordlearnersdictionaries.com/definition/english/turn_2,A2,turn,xoay,noun,/tɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tur/turn_/turn__gb_1.mp3

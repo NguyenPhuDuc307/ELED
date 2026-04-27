@@ -1,41 +1,41 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-dean,https://www.oxfordlearnersdictionaries.com/definition/english/dean_1,C2,dean,trưởng khoa,noun,/diːn/,
-applicant,https://www.oxfordlearnersdictionaries.com/definition/english/applicant,B2,applicant,người xin việc,noun,/ˈæplɪkənt/,
-doctor,https://www.oxfordlearnersdictionaries.com/definition/english/doctor_1,B1,doctor,bác sĩ,noun,/ˈdɒktə(r)/,
-academic,https://www.oxfordlearnersdictionaries.com/definition/english/academic_2,B2,academic,học thuật,noun,/ˌækəˈdemɪk/,
-bachelor,https://www.oxfordlearnersdictionaries.com/definition/english/bachelor,C2,bachelor,cử nhân,noun,/ˈbætʃələ(r)/,
-chair,https://www.oxfordlearnersdictionaries.com/definition/english/chair_1,C1,chair,cái ghế,noun,/tʃeə(r)/,
-alumnus,https://www.oxfordlearnersdictionaries.com/definition/english/alumnus,C2,alumnus,sinh viên,noun,/əˈlʌmnəs/,
-alumni,https://www.oxfordlearnersdictionaries.com/definition/english/alumni,C2,alumni,cựu sinh viên,noun,/əˈlʌmnaɪ/,
-alumna,https://www.oxfordlearnersdictionaries.com/definition/english/alumna,C2,alumna,cựu sinh viên,noun,/əˈlʌmnə/,
-chancellor,https://www.oxfordlearnersdictionaries.com/definition/english/chancellor,C2,chancellor,thủ tướng,noun,/ˈtʃɑːnsələ(r)/,
-don,https://www.oxfordlearnersdictionaries.com/definition/english/don_1,C2,don,giảng viên đại học,noun,/dɒn/,
-freshman,https://www.oxfordlearnersdictionaries.com/definition/english/freshman,C2,freshman,sinh viên năm nhất,noun,/ˈfreʃmən/,
-fresher,https://www.oxfordlearnersdictionaries.com/definition/english/fresher,C2,fresher,tươi hơn,noun,/ˈfreʃə(r)/,
-entrant,https://www.oxfordlearnersdictionaries.com/definition/english/entrant,C2,entrant,người mới vào,noun,/ˈentrənt/,
+dean,https://www.oxfordlearnersdictionaries.com/definition/english/dean_1,C2,dean,trưởng khoa,noun,/diːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/dean_/dean__gb_1.mp3
+applicant,https://www.oxfordlearnersdictionaries.com/definition/english/applicant,B2,applicant,người xin việc,noun,/ˈæplɪkənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appli/applicant__gb_1.mp3
+doctor,https://www.oxfordlearnersdictionaries.com/definition/english/doctor_1,B1,doctor,bác sĩ,noun,/ˈdɒktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/doc/docto/doctor__gb_2.mp3
+academic,https://www.oxfordlearnersdictionaries.com/definition/english/academic_2,B2,academic,học thuật,noun,/ˌækəˈdemɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aca/acade/academic__gb_2.mp3
+bachelor,https://www.oxfordlearnersdictionaries.com/definition/english/bachelor,C2,bachelor,cử nhân,noun,/ˈbætʃələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/bache/bachelor__gb_1.mp3
+chair,https://www.oxfordlearnersdictionaries.com/definition/english/chair_1,C1,chair,cái ghế,noun,/tʃeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chair/chair__gb_3.mp3
+alumnus,https://www.oxfordlearnersdictionaries.com/definition/english/alumnus,C2,alumnus,sinh viên,noun,/əˈlʌmnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alu/alumn/alumnus__gb_1.mp3
+alumni,https://www.oxfordlearnersdictionaries.com/definition/english/alumni,C2,alumni,cựu sinh viên,noun,/əˈlʌmnaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alu/alumn/alumni__gb_1.mp3
+alumna,https://www.oxfordlearnersdictionaries.com/definition/english/alumna,C2,alumna,cựu sinh viên,noun,/əˈlʌmnə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alu/alumn/alumna__gb_1.mp3
+chancellor,https://www.oxfordlearnersdictionaries.com/definition/english/chancellor,C2,chancellor,thủ tướng,noun,/ˈtʃɑːnsələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chanc/chancellor__gb_1.mp3
+don,https://www.oxfordlearnersdictionaries.com/definition/english/don_1,C2,don,giảng viên đại học,noun,/dɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/don/don__/don__gb_1.mp3
+freshman,https://www.oxfordlearnersdictionaries.com/definition/english/freshman,C2,freshman,sinh viên năm nhất,noun,/ˈfreʃmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/fresh/freshman__gb_1.mp3
+fresher,https://www.oxfordlearnersdictionaries.com/definition/english/fresher,C2,fresher,tươi hơn,noun,/ˈfreʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/fresh/fresher__gb_1.mp3
+entrant,https://www.oxfordlearnersdictionaries.com/definition/english/entrant,C2,entrant,người mới vào,noun,/ˈentrənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ent/entra/entrant__gb_1.mp3
 dr,https://www.oxfordlearnersdictionaries.com/definition/english/dr,B1,Dr,Tiến sĩ,abbreviation,,
-fellow,https://www.oxfordlearnersdictionaries.com/definition/english/fellow_2,C2,fellow,đồng nghiệp,noun,/ˈfeləʊ/,
-freshwoman,https://www.oxfordlearnersdictionaries.com/definition/english/freshwoman,C2,freshwoman,sinh viên năm nhất,noun,/ˈfreʃwʊmən/,
-graduate,https://www.oxfordlearnersdictionaries.com/definition/english/graduate_1,B1,graduate,tốt nghiệp,noun,/ˈɡrædʒuət/,
-grad,https://www.oxfordlearnersdictionaries.com/definition/english/grad,B1,grad,tốt nghiệp,noun,/ɡræd/,
-full_professor,https://www.oxfordlearnersdictionaries.com/definition/english/full-professor,C1,full professor,giáo sư đầy đủ,noun,/ˈfʊl prəfesə(r)/,
-lector,https://www.oxfordlearnersdictionaries.com/definition/english/lector,C2,lector,giảng viên,noun,/ˈlektɔː(r)/,
-lecturer,https://www.oxfordlearnersdictionaries.com/definition/english/lecturer,B1,lecturer,giảng viên,noun,/ˈlektʃərə(r)/,
-president,https://www.oxfordlearnersdictionaries.com/definition/english/president,B1,president,chủ tịch,noun,/ˈprezɪdənt/,
-principal,https://www.oxfordlearnersdictionaries.com/definition/english/principal_2,C1,principal,hiệu trưởng,noun,/ˈprɪnsəpl/,
-lectureship,https://www.oxfordlearnersdictionaries.com/definition/english/lectureship,C2,lectureship,bài giảng,noun,/ˈlektʃəʃɪp/,
-prof,https://www.oxfordlearnersdictionaries.com/definition/english/prof_1,C2,prof,giáo sư,noun,/prɒf/,
-professor,https://www.oxfordlearnersdictionaries.com/definition/english/professor,A2,professor,giáo sư,noun,/prəˈfesə(r)/,
-mature_student,https://www.oxfordlearnersdictionaries.com/definition/english/mature-student,C1,mature student,sinh viên trưởng thành,noun,/məˌtʃʊə ˈstjuːdnt/,
-postgraduate,https://www.oxfordlearnersdictionaries.com/definition/english/postgraduate,B2,postgraduate,sau đại học,noun,/ˌpəʊstˈɡrædʒuət/,
-reader,https://www.oxfordlearnersdictionaries.com/definition/english/reader,C2,reader,người đọc,noun,/ˈriːdə(r)/,
-registrar,https://www.oxfordlearnersdictionaries.com/definition/english/registrar,C2,registrar,người đăng ký,noun,/ˌredʒɪˈstrɑː(r)/,
-readership,https://www.oxfordlearnersdictionaries.com/definition/english/readership,C2,readership,độc giả,noun,/ˈriːdəʃɪp/,
-sophomore,https://www.oxfordlearnersdictionaries.com/definition/english/sophomore,C2,sophomore,sinh viên năm thứ hai,noun,/ˈsɒfəmɔː(r)/,
-student,https://www.oxfordlearnersdictionaries.com/definition/english/student,A1,student,học sinh,noun,/ˈstjuːdnt/,
-vice_principal,https://www.oxfordlearnersdictionaries.com/definition/english/vice-principal,C2,vice principal,phó hiệu trưởng,noun,/ˌvaɪs ˈprɪnsəpl/,
-undergraduate,https://www.oxfordlearnersdictionaries.com/definition/english/undergraduate,C1,undergraduate,đại học,noun,/ˌʌndəˈɡrædʒuət/,
-provost,https://www.oxfordlearnersdictionaries.com/definition/english/provost,C2,provost,thị trưởng,noun,/ˈprɒvəst/,
-room-mate,https://www.oxfordlearnersdictionaries.com/definition/english/room-mate,B2,room-mate,bạn cùng phòng,noun,/ˈruːmmeɪt/,
-visiting,https://www.oxfordlearnersdictionaries.com/definition/english/visiting,B2,visiting,thăm viếng,adjective,/ˈvɪzɪtɪŋ/,
-vice_chancellor,https://www.oxfordlearnersdictionaries.com/definition/english/vice-chancellor,C2,vice chancellor,phó hiệu trưởng,noun,/ˌvaɪs ˈtʃɑːnsələ(r)/,
+fellow,https://www.oxfordlearnersdictionaries.com/definition/english/fellow_2,C2,fellow,đồng nghiệp,noun,/ˈfeləʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fel/fello/fellow__gb_1.mp3
+freshwoman,https://www.oxfordlearnersdictionaries.com/definition/english/freshwoman,C2,freshwoman,sinh viên năm nhất,noun,/ˈfreʃwʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/fresh/freshwoman__gb_1.mp3
+graduate,https://www.oxfordlearnersdictionaries.com/definition/english/graduate_1,B1,graduate,tốt nghiệp,noun,/ˈɡrædʒuət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/gradu/graduate__gb_4.mp3
+grad,https://www.oxfordlearnersdictionaries.com/definition/english/grad,B1,grad,tốt nghiệp,noun,/ɡræd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grad_/grad__gb_1.mp3
+full_professor,https://www.oxfordlearnersdictionaries.com/definition/english/full-professor,C1,full professor,giáo sư đầy đủ,noun,/ˈfʊl prəfesə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/ful/full_/full_professor_1_gb_1.mp3
+lector,https://www.oxfordlearnersdictionaries.com/definition/english/lector,C2,lector,giảng viên,noun,/ˈlektɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lec/lecto/lector__gb_1.mp3
+lecturer,https://www.oxfordlearnersdictionaries.com/definition/english/lecturer,B1,lecturer,giảng viên,noun,/ˈlektʃərə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lec/lectu/lecturer__gb_2.mp3
+president,https://www.oxfordlearnersdictionaries.com/definition/english/president,B1,president,chủ tịch,noun,/ˈprezɪdənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/presi/president__gb_1.mp3
+principal,https://www.oxfordlearnersdictionaries.com/definition/english/principal_2,C1,principal,hiệu trưởng,noun,/ˈprɪnsəpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/princ/principal__gb_3.mp3
+lectureship,https://www.oxfordlearnersdictionaries.com/definition/english/lectureship,C2,lectureship,bài giảng,noun,/ˈlektʃəʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lec/lectu/lectureship__gb_1.mp3
+prof,https://www.oxfordlearnersdictionaries.com/definition/english/prof_1,C2,prof,giáo sư,noun,/prɒf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prof_/prof__gb_1.mp3
+professor,https://www.oxfordlearnersdictionaries.com/definition/english/professor,A2,professor,giáo sư,noun,/prəˈfesə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/profe/professor__gb_2.mp3
+mature_student,https://www.oxfordlearnersdictionaries.com/definition/english/mature-student,C1,mature student,sinh viên trưởng thành,noun,/məˌtʃʊə ˈstjuːdnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matur/mature_student_1_gb_1.mp3
+postgraduate,https://www.oxfordlearnersdictionaries.com/definition/english/postgraduate,B2,postgraduate,sau đại học,noun,/ˌpəʊstˈɡrædʒuət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/postg/postgraduate__gb_1.mp3
+reader,https://www.oxfordlearnersdictionaries.com/definition/english/reader,C2,reader,người đọc,noun,/ˈriːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rea/reade/reader__gb_1.mp3
+registrar,https://www.oxfordlearnersdictionaries.com/definition/english/registrar,C2,registrar,người đăng ký,noun,/ˌredʒɪˈstrɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/regis/registrar__gb_1.mp3
+readership,https://www.oxfordlearnersdictionaries.com/definition/english/readership,C2,readership,độc giả,noun,/ˈriːdəʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rea/reade/readership__gb_1.mp3
+sophomore,https://www.oxfordlearnersdictionaries.com/definition/english/sophomore,C2,sophomore,sinh viên năm thứ hai,noun,/ˈsɒfəmɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sop/sopho/sophomore__gb_1.mp3
+student,https://www.oxfordlearnersdictionaries.com/definition/english/student,A1,student,học sinh,noun,/ˈstjuːdnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stude/student__gb_3.mp3
+vice_principal,https://www.oxfordlearnersdictionaries.com/definition/english/vice-principal,C2,vice principal,phó hiệu trưởng,noun,/ˌvaɪs ˈprɪnsəpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vic/vice_/vice_principal_1_gb_1.mp3
+undergraduate,https://www.oxfordlearnersdictionaries.com/definition/english/undergraduate,C1,undergraduate,đại học,noun,/ˌʌndəˈɡrædʒuət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/und/under/undergraduate__gb_2.mp3
+provost,https://www.oxfordlearnersdictionaries.com/definition/english/provost,C2,provost,thị trưởng,noun,/ˈprɒvəst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/provo/provost__gb_1.mp3
+room-mate,https://www.oxfordlearnersdictionaries.com/definition/english/room-mate,B2,room-mate,bạn cùng phòng,noun,/ˈruːmmeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roo/roomm/roommate__gb_1.mp3
+visiting,https://www.oxfordlearnersdictionaries.com/definition/english/visiting,B2,visiting,thăm viếng,adjective,/ˈvɪzɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vis/visit/visiting__gb_1.mp3
+vice_chancellor,https://www.oxfordlearnersdictionaries.com/definition/english/vice-chancellor,C2,vice chancellor,phó hiệu trưởng,noun,/ˌvaɪs ˈtʃɑːnsələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vic/vice_/vice_chancellor_1_gb_1.mp3

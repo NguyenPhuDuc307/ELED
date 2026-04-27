@@ -1,31 +1,31 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-canine,https://www.oxfordlearnersdictionaries.com/definition/english/canine_2,C2,canine,chó,noun,/ˈkeɪnaɪn/,
-cap,https://www.oxfordlearnersdictionaries.com/definition/english/cap_2,C2,cap,mũ lưỡi trai,verb,/kæp/,
-false_teeth,https://www.oxfordlearnersdictionaries.com/definition/english/false-teeth,B1,false teeth,răng giả,noun,/ˌfɔːls ˈtiːθ/,
-dentures,https://www.oxfordlearnersdictionaries.com/definition/english/dentures,C2,dentures,răng giả,noun,/ˈdentʃəz/,
-brace,https://www.oxfordlearnersdictionaries.com/definition/english/brace_1,C2,brace,cú đúp,noun,/breɪs/,
-denture,https://www.oxfordlearnersdictionaries.com/definition/english/denture,C2,denture,răng giả,adjective,/ˈdentʃə(r)/,
-cavity,https://www.oxfordlearnersdictionaries.com/definition/english/cavity,C2,cavity,khoang,noun,/ˈkævəti/,
-crown,https://www.oxfordlearnersdictionaries.com/definition/english/crown_1,C2,crown,vương miện,noun,/kraʊn/,
-enamel,https://www.oxfordlearnersdictionaries.com/definition/english/enamel,C2,enamel,men,noun,/ɪˈnæml/,
-baby_tooth,https://www.oxfordlearnersdictionaries.com/definition/english/baby-tooth,C1,baby tooth,răng sữa,noun,/ˈbeɪbi tuːθ/,
-gum,https://www.oxfordlearnersdictionaries.com/definition/english/gum_1,C1,gum,kẹo cao su,noun,/ɡʌm/,
-incisor,https://www.oxfordlearnersdictionaries.com/definition/english/incisor,C2,incisor,răng cưa,noun,/ɪnˈsaɪzə(r)/,
-palate,https://www.oxfordlearnersdictionaries.com/definition/english/palate,C2,palate,vòm miệng,noun,/ˈpælət/,
-jaw,https://www.oxfordlearnersdictionaries.com/definition/english/jaw_1,C1,jaw,hàm,noun,/dʒɔː/,
-molar,https://www.oxfordlearnersdictionaries.com/definition/english/molar,C2,molar,răng hàm,noun,/ˈməʊlə(r)/,
-milk_tooth,https://www.oxfordlearnersdictionaries.com/definition/english/milk-tooth,C2,milk tooth,răng sữa,noun,/ˈmɪlk tuːθ/,
-oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_1,C1,oral,miệng,adjective,/ˈɔːrəl/,
-mouth,https://www.oxfordlearnersdictionaries.com/definition/english/mouth_1,A1,mouth,miệng,noun,/maʊθ/,
-filling,https://www.oxfordlearnersdictionaries.com/definition/english/filling_1,C2,filling,điền vào,noun,/ˈfɪlɪŋ/,
-premolar,https://www.oxfordlearnersdictionaries.com/definition/english/premolar,C2,premolar,răng tiền hàm,noun,/ˌpriːˈməʊlə(r)/,
-plaque,https://www.oxfordlearnersdictionaries.com/definition/english/plaque,C2,plaque,mảng bám,noun,/plæk/,
-roof,https://www.oxfordlearnersdictionaries.com/definition/english/roof_1,C1,roof,mái nhà,noun,/ruːf/,
-tongue,https://www.oxfordlearnersdictionaries.com/definition/english/tongue_1,B1,tongue,lưỡi,noun,/tʌŋ/,
-root,https://www.oxfordlearnersdictionaries.com/definition/english/root_1,B2,root,gốc,noun,/ruːt/,
-pulp,https://www.oxfordlearnersdictionaries.com/definition/english/pulp_1,C2,pulp,bột giấy,noun,/pʌlp/,
-saliva,https://www.oxfordlearnersdictionaries.com/definition/english/saliva,C2,saliva,nước bọt,noun,/səˈlaɪvə/,
-tooth,https://www.oxfordlearnersdictionaries.com/definition/english/tooth,A1,tooth,răng,noun,/tuːθ/,
-tartar,https://www.oxfordlearnersdictionaries.com/definition/english/tartar,C2,tartar,cao răng,noun,/ˈtɑːtə(r)/,
-wisdom_tooth,https://www.oxfordlearnersdictionaries.com/definition/english/wisdom-tooth,C2,wisdom tooth,răng khôn,noun,/ˈwɪzdəm tuːθ/,
-taste_bud,https://www.oxfordlearnersdictionaries.com/definition/english/taste-bud,C2,taste bud,nụ vị giác,noun,/ˈteɪst bʌd/,
+canine,https://www.oxfordlearnersdictionaries.com/definition/english/canine_2,C2,canine,chó,noun,/ˈkeɪnaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canin/canine__gb_1.mp3
+cap,https://www.oxfordlearnersdictionaries.com/definition/english/cap_2,C2,cap,mũ lưỡi trai,verb,/kæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/cap__/cap__gb_2.mp3
+false_teeth,https://www.oxfordlearnersdictionaries.com/definition/english/false-teeth,B1,false teeth,răng giả,noun,/ˌfɔːls ˈtiːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/false/false_teeth_1_gb_1.mp3
+dentures,https://www.oxfordlearnersdictionaries.com/definition/english/dentures,C2,dentures,răng giả,noun,/ˈdentʃəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/den/dentu/dentures__gb_1.mp3
+brace,https://www.oxfordlearnersdictionaries.com/definition/english/brace_1,C2,brace,cú đúp,noun,/breɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/brace/brace__gb_1.mp3
+denture,https://www.oxfordlearnersdictionaries.com/definition/english/denture,C2,denture,răng giả,adjective,/ˈdentʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/den/dentu/denture__gb_1.mp3
+cavity,https://www.oxfordlearnersdictionaries.com/definition/english/cavity,C2,cavity,khoang,noun,/ˈkævəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cav/cavit/cavity__gb_3.mp3
+crown,https://www.oxfordlearnersdictionaries.com/definition/english/crown_1,C2,crown,vương miện,noun,/kraʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/crown/crown__gb_1.mp3
+enamel,https://www.oxfordlearnersdictionaries.com/definition/english/enamel,C2,enamel,men,noun,/ɪˈnæml/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ena/ename/enamel__gb_1.mp3
+baby_tooth,https://www.oxfordlearnersdictionaries.com/definition/english/baby-tooth,C1,baby tooth,răng sữa,noun,/ˈbeɪbi tuːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bab/baby_/baby_tooth_1_gb_1.mp3
+gum,https://www.oxfordlearnersdictionaries.com/definition/english/gum_1,C1,gum,kẹo cao su,noun,/ɡʌm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gum/gum__/gum__gb_2.mp3
+incisor,https://www.oxfordlearnersdictionaries.com/definition/english/incisor,C2,incisor,răng cưa,noun,/ɪnˈsaɪzə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incis/incisor__gb_1.mp3
+palate,https://www.oxfordlearnersdictionaries.com/definition/english/palate,C2,palate,vòm miệng,noun,/ˈpælət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pal/palat/palate__gb_1.mp3
+jaw,https://www.oxfordlearnersdictionaries.com/definition/english/jaw_1,C1,jaw,hàm,noun,/dʒɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jaw/jaw__/jaw__gb_1.mp3
+molar,https://www.oxfordlearnersdictionaries.com/definition/english/molar,C2,molar,răng hàm,noun,/ˈməʊlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mol/molar/molar__gb_1.mp3
+milk_tooth,https://www.oxfordlearnersdictionaries.com/definition/english/milk-tooth,C2,milk tooth,răng sữa,noun,/ˈmɪlk tuːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mil/milk_/milk_tooth_1_gb_1.mp3
+oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_1,C1,oral,miệng,adjective,/ˈɔːrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ora/oral_/oral__gb_1.mp3
+mouth,https://www.oxfordlearnersdictionaries.com/definition/english/mouth_1,A1,mouth,miệng,noun,/maʊθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mou/mouth/mouth__gb_3.mp3
+filling,https://www.oxfordlearnersdictionaries.com/definition/english/filling_1,C2,filling,điền vào,noun,/ˈfɪlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filli/filling__gb_1.mp3
+premolar,https://www.oxfordlearnersdictionaries.com/definition/english/premolar,C2,premolar,răng tiền hàm,noun,/ˌpriːˈməʊlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/premo/premolar__gb_1.mp3
+plaque,https://www.oxfordlearnersdictionaries.com/definition/english/plaque,C2,plaque,mảng bám,noun,/plæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plaqu/plaque__gb_1.mp3
+roof,https://www.oxfordlearnersdictionaries.com/definition/english/roof_1,C1,roof,mái nhà,noun,/ruːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roo/roof_/roof__gb_3.mp3
+tongue,https://www.oxfordlearnersdictionaries.com/definition/english/tongue_1,B1,tongue,lưỡi,noun,/tʌŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ton/tongu/tongue__gb_2.mp3
+root,https://www.oxfordlearnersdictionaries.com/definition/english/root_1,B2,root,gốc,noun,/ruːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/route/route__gb_3.mp3
+pulp,https://www.oxfordlearnersdictionaries.com/definition/english/pulp_1,C2,pulp,bột giấy,noun,/pʌlp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pul/pulp_/pulp__gb_1.mp3
+saliva,https://www.oxfordlearnersdictionaries.com/definition/english/saliva,C2,saliva,nước bọt,noun,/səˈlaɪvə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sal/saliv/saliva__gb_1.mp3
+tooth,https://www.oxfordlearnersdictionaries.com/definition/english/tooth,A1,tooth,răng,noun,/tuːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/too/tooth/tooth__gb_2.mp3
+tartar,https://www.oxfordlearnersdictionaries.com/definition/english/tartar,C2,tartar,cao răng,noun,/ˈtɑːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tar/tarta/tartar__gb_1.mp3
+wisdom_tooth,https://www.oxfordlearnersdictionaries.com/definition/english/wisdom-tooth,C2,wisdom tooth,răng khôn,noun,/ˈwɪzdəm tuːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wis/wisdo/wisdom_tooth_1_gb_1.mp3
+taste_bud,https://www.oxfordlearnersdictionaries.com/definition/english/taste-bud,C2,taste bud,nụ vị giác,noun,/ˈteɪst bʌd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tas/taste/taste_bud_1_gb_1.mp3

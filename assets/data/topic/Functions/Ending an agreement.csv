@@ -1,23 +1,23 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-expiry,https://www.oxfordlearnersdictionaries.com/definition/english/expiry,C2,expiry,hết hạn,noun,/ɪkˈspaɪəri/,
-dissolution,https://www.oxfordlearnersdictionaries.com/definition/english/dissolution,C2,dissolution,giải thể,noun,/ˌdɪsəˈluːʃn/,
-breach,https://www.oxfordlearnersdictionaries.com/definition/english/breach_1,C1,breach,sự vi phạm,noun,/briːtʃ/,
-expire,https://www.oxfordlearnersdictionaries.com/definition/english/expire,C1,expire,hết hạn,verb,/ɪkˈspaɪə(r)/,
-dissolve,https://www.oxfordlearnersdictionaries.com/definition/english/dissolve,C2,dissolve,hòa tan,verb,/dɪˈzɒlv/,
-breach,https://www.oxfordlearnersdictionaries.com/definition/english/breach_2,C1,breach,sự vi phạm,verb,/briːtʃ/,
-cancel,https://www.oxfordlearnersdictionaries.com/definition/english/cancel,B2,cancel,Hủy bỏ,verb,/ˈkænsl/,
-abrogate,https://www.oxfordlearnersdictionaries.com/definition/english/abrogate,C2,abrogate,bãi bỏ,verb,/ˈæbrəɡeɪt/,
-abrogation,https://www.oxfordlearnersdictionaries.com/definition/english/abrogation,C2,abrogation,sự bãi bỏ,noun,/ˌæbrəˈɡeɪʃn/,
-dishonour,https://www.oxfordlearnersdictionaries.com/definition/english/dishonour_2,C2,dishonour,làm nhục,verb,/dɪsˈɒnə(r)/,
-rupture,https://www.oxfordlearnersdictionaries.com/definition/english/rupture_1,C2,rupture,vỡ,noun,/ˈrʌptʃə(r)/,
-rescission,https://www.oxfordlearnersdictionaries.com/definition/english/rescission,C2,rescission,sự cắt bỏ,noun,/rɪˈsɪʒn/,
-nullify,https://www.oxfordlearnersdictionaries.com/definition/english/nullify,C2,nullify,vô hiệu hóa,verb,/ˈnʌlɪfaɪ/,
-renege,https://www.oxfordlearnersdictionaries.com/definition/english/renege,C2,renege,phản bội,verb,/rɪˈniːɡ/,
-rescind,https://www.oxfordlearnersdictionaries.com/definition/english/rescind,C2,rescind,hủy bỏ,verb,/rɪˈsɪnd/,
-rupture,https://www.oxfordlearnersdictionaries.com/definition/english/rupture_2,C2,rupture,vỡ,verb,/ˈrʌptʃə(r)/,
+expiry,https://www.oxfordlearnersdictionaries.com/definition/english/expiry,C2,expiry,hết hạn,noun,/ɪkˈspaɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/expir/expiry__gb_1.mp3
+dissolution,https://www.oxfordlearnersdictionaries.com/definition/english/dissolution,C2,dissolution,giải thể,noun,/ˌdɪsəˈluːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disso/dissolution__gb_1.mp3
+breach,https://www.oxfordlearnersdictionaries.com/definition/english/breach_1,C1,breach,sự vi phạm,noun,/briːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breac/breach__gb_1.mp3
+expire,https://www.oxfordlearnersdictionaries.com/definition/english/expire,C1,expire,hết hạn,verb,/ɪkˈspaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/expir/expire__gb_1.mp3
+dissolve,https://www.oxfordlearnersdictionaries.com/definition/english/dissolve,C2,dissolve,hòa tan,verb,/dɪˈzɒlv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disso/dissolve__gb_1.mp3
+breach,https://www.oxfordlearnersdictionaries.com/definition/english/breach_2,C1,breach,sự vi phạm,verb,/briːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breac/breach__gb_1.mp3
+cancel,https://www.oxfordlearnersdictionaries.com/definition/english/cancel,B2,cancel,Hủy bỏ,verb,/ˈkænsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/cance/cancel__gb_1.mp3
+abrogate,https://www.oxfordlearnersdictionaries.com/definition/english/abrogate,C2,abrogate,bãi bỏ,verb,/ˈæbrəɡeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abr/abrog/abrogate__gb_1.mp3
+abrogation,https://www.oxfordlearnersdictionaries.com/definition/english/abrogation,C2,abrogation,sự bãi bỏ,noun,/ˌæbrəˈɡeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abr/abrog/abrogation__gb_1.mp3
+dishonour,https://www.oxfordlearnersdictionaries.com/definition/english/dishonour_2,C2,dishonour,làm nhục,verb,/dɪsˈɒnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disho/dishonour__gb_2.mp3
+rupture,https://www.oxfordlearnersdictionaries.com/definition/english/rupture_1,C2,rupture,vỡ,noun,/ˈrʌptʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rup/ruptu/rupture__gb_1.mp3
+rescission,https://www.oxfordlearnersdictionaries.com/definition/english/rescission,C2,rescission,sự cắt bỏ,noun,/rɪˈsɪʒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resci/rescission__gb_1.mp3
+nullify,https://www.oxfordlearnersdictionaries.com/definition/english/nullify,C2,nullify,vô hiệu hóa,verb,/ˈnʌlɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xnu/xnull/xnullify__gb_1.mp3
+renege,https://www.oxfordlearnersdictionaries.com/definition/english/renege,C2,renege,phản bội,verb,/rɪˈniːɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ren/reneg/renege__gb_1.mp3
+rescind,https://www.oxfordlearnersdictionaries.com/definition/english/rescind,C2,rescind,hủy bỏ,verb,/rɪˈsɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resci/rescind__gb_1.mp3
+rupture,https://www.oxfordlearnersdictionaries.com/definition/english/rupture_2,C2,rupture,vỡ,verb,/ˈrʌptʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rup/ruptu/rupture__gb_1.mp3
 run_out,https://www.oxfordlearnersdictionaries.com/definition/english/run-out_1,B2,run out,hết,phrasal verb,,
-retract,https://www.oxfordlearnersdictionaries.com/definition/english/retract,C2,retract,rút lại,verb,/rɪˈtrækt/,
-term,https://www.oxfordlearnersdictionaries.com/definition/english/term_1,C1,term,thuật ngữ,noun,/tɜːm/,
-violate,https://www.oxfordlearnersdictionaries.com/definition/english/violate,C1,violate,vi phạm,verb,/ˈvaɪəleɪt/,
-violation,https://www.oxfordlearnersdictionaries.com/definition/english/violation,C1,violation,vi phạm,noun,/ˌvaɪəˈleɪʃn/,
-violator,https://www.oxfordlearnersdictionaries.com/definition/english/violator,C2,violator,người vi phạm,noun,/ˈvaɪəleɪtə(r)/,
+retract,https://www.oxfordlearnersdictionaries.com/definition/english/retract,C2,retract,rút lại,verb,/rɪˈtrækt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ret/retra/retract__gb_1.mp3
+term,https://www.oxfordlearnersdictionaries.com/definition/english/term_1,C1,term,thuật ngữ,noun,/tɜːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/term_/term__gb_3.mp3
+violate,https://www.oxfordlearnersdictionaries.com/definition/english/violate,C1,violate,vi phạm,verb,/ˈvaɪəleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vio/viola/violate__gb_2.mp3
+violation,https://www.oxfordlearnersdictionaries.com/definition/english/violation,C1,violation,vi phạm,noun,/ˌvaɪəˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vio/viola/violation__gb_1.mp3
+violator,https://www.oxfordlearnersdictionaries.com/definition/english/violator,C2,violator,người vi phạm,noun,/ˈvaɪəleɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vio/viola/violator__gb_1.mp3

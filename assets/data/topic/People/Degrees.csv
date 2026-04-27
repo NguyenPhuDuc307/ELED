@@ -1,39 +1,39 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
 ba,https://www.oxfordlearnersdictionaries.com/definition/english/ba,C2,BA,cử nhân,noun,/ˌbiː ˈeɪ/,
-capstone_project,https://www.oxfordlearnersdictionaries.com/definition/english/capstone-project,C2,capstone project,dự án đỉnh cao,noun,/ˈkæpstəʊn prɒdʒekt/,
-credit,https://www.oxfordlearnersdictionaries.com/definition/english/credit_1,C2,credit,tín dụng,noun,/ˈkredɪt/,
-confer,https://www.oxfordlearnersdictionaries.com/definition/english/confer,C1,confer,trao,verb,/kənˈfɜː(r)/,
-convocation,https://www.oxfordlearnersdictionaries.com/definition/english/convocation,C2,convocation,sự triệu tập,noun,/ˌkɒnvəˈkeɪʃn/,
-award,https://www.oxfordlearnersdictionaries.com/definition/english/award_1,C1,award,phần thưởng,noun,/əˈwɔːd/,
-degree,https://www.oxfordlearnersdictionaries.com/definition/english/degree,A2,degree,bằng cấp,noun,/dɪˈɡriː/,
-commencement,https://www.oxfordlearnersdictionaries.com/definition/english/commencement,C2,commencement,sự bắt đầu,noun,/kəˈmensmənt/,
-dissertation,https://www.oxfordlearnersdictionaries.com/definition/english/dissertation,C1,dissertation,luận văn,noun,/ˌdɪsəˈteɪʃn/,
-doctorate,https://www.oxfordlearnersdictionaries.com/definition/english/doctorate,C1,doctorate,tiến sĩ,noun,/ˈdɒktərət/,
-extension,https://www.oxfordlearnersdictionaries.com/definition/english/extension,C2,extension,sự mở rộng,noun,/ɪkˈstenʃn/,
-first,https://www.oxfordlearnersdictionaries.com/definition/english/first_3,C2,first,Đầu tiên,noun,/fɜːst/,
-gown,https://www.oxfordlearnersdictionaries.com/definition/english/gown,C1,gown,áo choàng,noun,/ɡaʊn/,
-final,https://www.oxfordlearnersdictionaries.com/definition/english/final_2,C2,final,cuối cùng,noun,/ˈfaɪnl/,
-bsc,https://www.oxfordlearnersdictionaries.com/definition/english/bsc,C2,BSc,Cử nhân,noun,/ˌbiː es ˈsiː/,
-cum_laude,https://www.oxfordlearnersdictionaries.com/definition/english/cum-laude,C2,cum laude,kiêm người xuất sắc,"adverb,adjective",/ˌkʊm ˈlɔːdi/,
+capstone_project,https://www.oxfordlearnersdictionaries.com/definition/english/capstone-project,C2,capstone project,dự án đỉnh cao,noun,/ˈkæpstəʊn prɒdʒekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/capst/capstone_project_1_gb_1.mp3
+credit,https://www.oxfordlearnersdictionaries.com/definition/english/credit_1,C2,credit,tín dụng,noun,/ˈkredɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/credi/credit__gb_1.mp3
+confer,https://www.oxfordlearnersdictionaries.com/definition/english/confer,C1,confer,trao,verb,/kənˈfɜː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconf/xconfer__gb_1.mp3
+convocation,https://www.oxfordlearnersdictionaries.com/definition/english/convocation,C2,convocation,sự triệu tập,noun,/ˌkɒnvəˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconv/xconvocation__gb_1.mp3
+award,https://www.oxfordlearnersdictionaries.com/definition/english/award_1,C1,award,phần thưởng,noun,/əˈwɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/awa/award/award__gb_1.mp3
+degree,https://www.oxfordlearnersdictionaries.com/definition/english/degree,A2,degree,bằng cấp,noun,/dɪˈɡriː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/deg/degre/degree__gb_2.mp3
+commencement,https://www.oxfordlearnersdictionaries.com/definition/english/commencement,C2,commencement,sự bắt đầu,noun,/kəˈmensmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/comme/commencement__gb_1.mp3
+dissertation,https://www.oxfordlearnersdictionaries.com/definition/english/dissertation,C1,dissertation,luận văn,noun,/ˌdɪsəˈteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disse/dissertation__gb_2.mp3
+doctorate,https://www.oxfordlearnersdictionaries.com/definition/english/doctorate,C1,doctorate,tiến sĩ,noun,/ˈdɒktərət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/doc/docto/doctorate__gb_4.mp3
+extension,https://www.oxfordlearnersdictionaries.com/definition/english/extension,C2,extension,sự mở rộng,noun,/ɪkˈstenʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ext/exten/extension__gb_1.mp3
+first,https://www.oxfordlearnersdictionaries.com/definition/english/first_3,C2,first,Đầu tiên,noun,/fɜːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/first/first__gb_1.mp3
+gown,https://www.oxfordlearnersdictionaries.com/definition/english/gown,C1,gown,áo choàng,noun,/ɡaʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gow/gown_/gown__gb_2.mp3
+final,https://www.oxfordlearnersdictionaries.com/definition/english/final_2,C2,final,cuối cùng,noun,/ˈfaɪnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fin/final/final__gb_1.mp3
+bsc,https://www.oxfordlearnersdictionaries.com/definition/english/bsc,C2,BSc,Cử nhân,noun,/ˌbiː es ˈsiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bsc/bsc_1/bsc_1_gb_1.mp3
+cum_laude,https://www.oxfordlearnersdictionaries.com/definition/english/cum-laude,C2,cum laude,kiêm người xuất sắc,"adverb,adjective",/ˌkʊm ˈlɔːdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cum/cum_l/cum_laude_1_gb_1.mp3
 gmat,https://www.oxfordlearnersdictionaries.com/definition/english/gmat,C2,GMAT,GMAT,noun,/ˈdʒiːmæt/,
-graduation,https://www.oxfordlearnersdictionaries.com/definition/english/graduation,B1,graduation,tốt nghiệp,noun,/ˌɡrædʒuˈeɪʃn/,
-hons,https://www.oxfordlearnersdictionaries.com/definition/english/hons,C2,Hons,Hons,abbreviation,/ɒnz/,
-first_class,https://www.oxfordlearnersdictionaries.com/definition/english/first-class_2,C2,first class,hạng nhất,noun,/ˌfɜːst ˈklɑːs/,
-graduate,https://www.oxfordlearnersdictionaries.com/definition/english/graduate_2,B1,graduate,tốt nghiệp,verb,/ˈɡrædʒueɪt/,
-honor,https://www.oxfordlearnersdictionaries.com/definition/english/honor_1,C2,honor,tôn kính,noun,/ˈɒnə(r)/,
-magna_cum_laude,https://www.oxfordlearnersdictionaries.com/definition/english/magna-cum-laude,C2,magna cum laude,xuất sắc,"adverb,adjective",/ˌmæɡnə kʊm ˈlɔːdi/,
-mortar_board,https://www.oxfordlearnersdictionaries.com/definition/english/mortar-board,C2,mortar board,tấm vữa,noun,/ˈmɔːtə bɔːd/,
-msc,https://www.oxfordlearnersdictionaries.com/definition/english/msc,C2,MSc,ThS,noun,/ˌem es ˈsiː/,
-second,https://www.oxfordlearnersdictionaries.com/definition/english/second1_3,C2,second,thứ hai,noun,/ˈsekənd/,
+graduation,https://www.oxfordlearnersdictionaries.com/definition/english/graduation,B1,graduation,tốt nghiệp,noun,/ˌɡrædʒuˈeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/gradu/graduation__gb_1.mp3
+hons,https://www.oxfordlearnersdictionaries.com/definition/english/hons,C2,Hons,Hons,abbreviation,/ɒnz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hon/hons_/hons__gb_1.mp3
+first_class,https://www.oxfordlearnersdictionaries.com/definition/english/first-class_2,C2,first class,hạng nhất,noun,/ˌfɜːst ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/first/first_class_1_gb_1.mp3
+graduate,https://www.oxfordlearnersdictionaries.com/definition/english/graduate_2,B1,graduate,tốt nghiệp,verb,/ˈɡrædʒueɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/gradu/graduate__gb_4.mp3
+honor,https://www.oxfordlearnersdictionaries.com/definition/english/honor_1,C2,honor,tôn kính,noun,/ˈɒnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hon/honou/honour__gb_1.mp3
+magna_cum_laude,https://www.oxfordlearnersdictionaries.com/definition/english/magna-cum-laude,C2,magna cum laude,xuất sắc,"adverb,adjective",/ˌmæɡnə kʊm ˈlɔːdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mag/magna/magna_cum_laude_1_gb_1.mp3
+mortar_board,https://www.oxfordlearnersdictionaries.com/definition/english/mortar-board,C2,mortar board,tấm vữa,noun,/ˈmɔːtə bɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/morta/mortar_board_1_gb_1.mp3
+msc,https://www.oxfordlearnersdictionaries.com/definition/english/msc,C2,MSc,ThS,noun,/ˌem es ˈsiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/msc/msc__/msc__gb_1.mp3
+second,https://www.oxfordlearnersdictionaries.com/definition/english/second1_3,C2,second,thứ hai,noun,/ˈsekənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secon/second__gb_1.mp3
 j.d.,https://www.oxfordlearnersdictionaries.com/definition/english/j-d,C2,J.D.,J.D.,noun,/ˌdʒeɪ ˈdiː/,
-phd,https://www.oxfordlearnersdictionaries.com/definition/english/phd,B2,PhD,tiến sĩ,noun,/ˌpiː eɪtʃ ˈdiː/,
-thesis,https://www.oxfordlearnersdictionaries.com/definition/english/thesis,B2,thesis,luận án,noun,/ˈθiːsɪs/,
-master,https://www.oxfordlearnersdictionaries.com/definition/english/master_1,B2,master,bậc thầy,noun,/ˈmɑːstə(r)/,
-second_class,https://www.oxfordlearnersdictionaries.com/definition/english/second-class_1,C2,second class,hạng hai,noun,/ˌsekənd ˈklɑːs/,
-summa_cum_laude,https://www.oxfordlearnersdictionaries.com/definition/english/summa-cum-laude,C2,summa cum laude,hạng ưu,"adverb,adjective",/ˌsʊmə ˌkʊm ˈlɔːdi/,
-third,https://www.oxfordlearnersdictionaries.com/definition/english/third_2,C2,third,thứ ba,noun,/θɜːd/,
-third-class,https://www.oxfordlearnersdictionaries.com/definition/english/third-class_3,C2,third-class,hạng ba,adjective,/ˌθɜːd ˈklɑːs/,
-transcript,https://www.oxfordlearnersdictionaries.com/definition/english/transcript,C2,transcript,bảng điểm,noun,/ˈtrænskrɪpt/,
-viva_voce,https://www.oxfordlearnersdictionaries.com/definition/english/viva-voce,C2,viva voce,giọng hát sống động,noun,/ˌvaɪvə ˈvəʊtʃi/,
-third_class,https://www.oxfordlearnersdictionaries.com/definition/english/third-class_1,C2,third class,hạng ba,noun,/ˌθɜːd ˈklɑːs/,
-viva,https://www.oxfordlearnersdictionaries.com/definition/english/viva2,C2,viva,viva,noun,/ˈvaɪvə/,
+phd,https://www.oxfordlearnersdictionaries.com/definition/english/phd,B2,PhD,tiến sĩ,noun,/ˌpiː eɪtʃ ˈdiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phd/phd_1/phd_1_gb_1.mp3
+thesis,https://www.oxfordlearnersdictionaries.com/definition/english/thesis,B2,thesis,luận án,noun,/ˈθiːsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/thesi/thesis__gb_2.mp3
+master,https://www.oxfordlearnersdictionaries.com/definition/english/master_1,B2,master,bậc thầy,noun,/ˈmɑːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/maste/master__gb_1.mp3
+second_class,https://www.oxfordlearnersdictionaries.com/definition/english/second-class_1,C2,second class,hạng hai,noun,/ˌsekənd ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secon/second_class_1_gb_1.mp3
+summa_cum_laude,https://www.oxfordlearnersdictionaries.com/definition/english/summa-cum-laude,C2,summa cum laude,hạng ưu,"adverb,adjective",/ˌsʊmə ˌkʊm ˈlɔːdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sum/summa/summa_cum_laude_1_gb_1.mp3
+third,https://www.oxfordlearnersdictionaries.com/definition/english/third_2,C2,third,thứ ba,noun,/θɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/third/third__gb_1.mp3
+third-class,https://www.oxfordlearnersdictionaries.com/definition/english/third-class_3,C2,third-class,hạng ba,adjective,/ˌθɜːd ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/third/third_class_1_gb_2.mp3
+transcript,https://www.oxfordlearnersdictionaries.com/definition/english/transcript,C2,transcript,bảng điểm,noun,/ˈtrænskrɪpt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transcript__gb_1.mp3
+viva_voce,https://www.oxfordlearnersdictionaries.com/definition/english/viva-voce,C2,viva voce,giọng hát sống động,noun,/ˌvaɪvə ˈvəʊtʃi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/viv/viva_/viva_voce_1_gb_1.mp3
+third_class,https://www.oxfordlearnersdictionaries.com/definition/english/third-class_1,C2,third class,hạng ba,noun,/ˌθɜːd ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/third/third_class_1_gb_2.mp3
+viva,https://www.oxfordlearnersdictionaries.com/definition/english/viva2,C2,viva,viva,noun,/ˈvaɪvə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/viv/viva_/viva__gb_2.mp3

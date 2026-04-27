@@ -10,76 +10,18 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
-import '../services/user_data_service.dart';
 import '../screens/learning_screen.dart';
 import '../main.dart';
 
-const kAndroidChannel = AndroidNotificationDetails(
-  'eled_vocab_channel',
-  'Vocabulary Reminders',
-  channelDescription: 'Periodic vocabulary notifications',
-  importance: Importance.max,
-  priority: Priority.high,
-);
+// iOS-only notification channel (Android uses native VocabNotificationReceiver)
+const _kIOSDetails = DarwinNotificationDetails();
 
-const _kAndroidChannelWithActions = AndroidNotificationDetails(
-  'eled_vocab_channel',
-  'Vocabulary Reminders',
-  channelDescription: 'Periodic vocabulary notifications',
-  importance: Importance.max,
-  priority: Priority.high,
-  actions: [
-    AndroidNotificationAction(
-      'mark_known',
-      'Đã biết',
-      showsUserInterface: false,
-      cancelNotification: true,
-    ),
-  ],
-);
+// Native Android notification scheduling channel
+const _kAndroidChannel = MethodChannel('com.nguyenphuduc.eled/notifications');
 
-const _kConfirmChannel = AndroidNotificationDetails(
-  'eled_known_confirm',
-  'Xác nhận từ đã biết',
-  channelDescription: 'Hiện khi đánh dấu từ đã biết từ notification',
-  importance: Importance.low,
-  priority: Priority.low,
-  autoCancel: true,
-  timeoutAfter: 3000,
-);
-
-// Top-level handler required for background notification actions
+// Top-level handler — kept for iOS background actions (not used on Android)
 @pragma('vm:entry-point')
-Future<void> notificationBackgroundHandler(NotificationResponse response) async {
-  if (response.actionId != 'mark_known') return;
-  final payload = response.payload;
-  if (payload == null || payload.isEmpty) return;
-  final word = payload.split('|')[0].trim();
-  if (word.isEmpty) return;
-
-  // Save to SharedPreferences
-  final prefs = await SharedPreferences.getInstance();
-  final known = (prefs.getStringList('knownWords') ?? []).toSet();
-  known.add(word.toLowerCase());
-  await prefs.setStringList('knownWords', known.toList());
-  final pending = (prefs.getStringList('pendingKnownWords') ?? []).toSet();
-  pending.add(word.toLowerCase());
-  await prefs.setStringList('pendingKnownWords', pending.toList());
-
-  // Show brief confirmation notification (auto-dismiss after 3s, no app open)
-  final plugin = FlutterLocalNotificationsPlugin();
-  await plugin.initialize(
-    settings: const InitializationSettings(
-      android: AndroidInitializationSettings('@mipmap/launcher_icon'),
-    ),
-  );
-  await plugin.show(
-    id: 99999,
-    title: '✓ Đã biết',
-    body: '"${word.toUpperCase()}" đã lưu vào từ đã biết',
-    notificationDetails: const NotificationDetails(android: _kConfirmChannel),
-  );
-}
+Future<void> notificationBackgroundHandler(NotificationResponse response) async {}
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
@@ -131,38 +73,6 @@ class NotificationService {
     final payload = response.payload;
     if (payload == null || payload.isEmpty) return;
 
-    if (response.actionId == 'mark_known') {
-      final word = payload.split('|')[0].trim();
-      if (word.isEmpty) return;
-
-      // Save immediately to SharedPreferences as safety net
-      final prefs = await SharedPreferences.getInstance();
-      final known = (prefs.getStringList('knownWords') ?? []).toSet();
-      known.add(word.toLowerCase());
-      await prefs.setStringList('knownWords', known.toList());
-      final pending = (prefs.getStringList('pendingKnownWords') ?? []).toSet();
-      pending.add(word.toLowerCase());
-      await prefs.setStringList('pendingKnownWords', pending.toList());
-
-      // Try sync to UserDataService if already initialized
-      try { await UserDataService().addKnownWord(word); } catch (_) {}
-
-      // Show SnackBar — if context not ready yet, store for MenuScreen to display
-      final ctx = globalNavigatorKey.currentContext;
-      if (ctx != null && ctx.mounted) {
-        ScaffoldMessenger.of(ctx).showSnackBar(
-          SnackBar(
-            content: Text('"${word.toUpperCase()}" đã lưu vào từ đã biết'),
-            duration: const Duration(seconds: 2),
-            behavior: SnackBarBehavior.floating,
-          ),
-        );
-      } else {
-        pendingMarkKnownWord = word;
-      }
-      return;
-    }
-
     if (globalNavigatorKey.currentState == null) {
       pendingNotificationPayload = payload;
       return;
@@ -179,7 +89,6 @@ class NotificationService {
     final exact = matches.where((v) => v.topic.trim().toLowerCase() == matchTopic);
     final vocab = exact.isNotEmpty ? exact.first : matches.first;
 
-    // Save tapped notification to history immediately
     try {
       final prefs = await SharedPreferences.getInstance();
       final history = prefs.getStringList('notificationHistory') ?? [];
@@ -208,6 +117,9 @@ class NotificationService {
   }
 
   Future<void> cancelAllNotifications() async {
+    if (Platform.isAndroid) {
+      try { await _kAndroidChannel.invokeMethod('cancelAll'); } catch (_) {}
+    }
     await flutterLocalNotificationsPlugin.cancelAll();
   }
 
@@ -241,7 +153,6 @@ class NotificationService {
     final startMins = startTime.hour * 60 + startTime.minute;
     final endMins   = endTime.hour * 60 + endTime.minute;
 
-    // Find first slot aligned to interval grid from midnight, after now
     final nowMins = now.hour * 60 + now.minute;
     int firstSlotMins = ((nowMins ~/ intervalMinutes) + 1) * intervalMinutes;
     if (firstSlotMins < startMins) {
@@ -258,43 +169,52 @@ class NotificationService {
           firstSlotMins ~/ 60, firstSlotMins % 60);
     }
 
-    final futures       = <Future<void>>[];
     final logEntries    = <String>[];
     final widgetEntries = <String>[];
 
-    for (int i = 0; i < count; i++) {
-      if (i > 0) {
-        next = next.add(Duration(minutes: intervalMinutes));
-        final curMins = next.hour * 60 + next.minute;
-        if (curMins >= endMins) {
-          final slot = _alignedCeil(startMins, intervalMinutes);
-          next = tz.TZDateTime(tz.local, next.year, next.month, next.day + 1,
-              slot ~/ 60, slot % 60);
-        } else if (curMins < startMins) {
-          final slot = _alignedCeil(startMins, intervalMinutes);
-          next = tz.TZDateTime(tz.local, next.year, next.month, next.day,
-              slot ~/ 60, slot % 60);
+    if (Platform.isAndroid) {
+      // Build batch for native scheduling
+      final items = <Map<String, dynamic>>[];
+      for (int i = 0; i < count; i++) {
+        if (i > 0) {
+          next = _advance(next, intervalMinutes, startMins, endMins);
         }
+        final v = shuffled[i];
+        items.add({
+          'id': i,
+          'word': v.word,
+          'translation': v.translation,
+          'pos': v.partOfSpeech,
+          'topic': v.topic,
+          'atMs': next.millisecondsSinceEpoch,
+        });
+        logEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.topic}');
+        widgetEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.translation}|${v.ipa}|${v.partOfSpeech}|${v.levels}|${v.topic}');
       }
-
-      final v = shuffled[i];
-      futures.add(_scheduleOne(i, v, next));
-      logEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.topic}');
-      widgetEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.translation}|${v.ipa}|${v.partOfSpeech}|${v.levels}|${v.topic}');
+      try {
+        await _kAndroidChannel.invokeMethod('scheduleAll', {'items': items});
+      } catch (_) {}
+    } else {
+      // iOS — use flutter_local_notifications
+      final futures = <Future<void>>[];
+      for (int i = 0; i < count; i++) {
+        if (i > 0) {
+          next = _advance(next, intervalMinutes, startMins, endMins);
+        }
+        final v = shuffled[i];
+        futures.add(_scheduleIOS(i, v, next));
+        logEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.topic}');
+        widgetEntries.add('${next.millisecondsSinceEpoch}|${v.word}|${v.translation}|${v.ipa}|${v.partOfSpeech}|${v.levels}|${v.topic}');
+      }
+      await Future.wait(futures);
     }
 
-    await Future.wait(futures);
-
     final prefs = await SharedPreferences.getInstance();
-
-    // Persist schedule log for widget updates on app-open
     await prefs.setStringList('notificationScheduleLog', logEntries);
 
-    // Save full widget schedule for native alarm receiver
     await HomeWidget.saveWidgetData<String>(
         'widgetScheduleEntries', widgetEntries.join(','));
 
-    // Schedule first native alarm for widget auto-update
     if (Platform.isAndroid && widgetEntries.isNotEmpty) {
       final firstMs = int.tryParse(widgetEntries[0].split('|')[0]);
       if (firstMs != null) {
@@ -305,7 +225,6 @@ class NotificationService {
       }
     }
 
-    // Update widget immediately with first upcoming word
     if (logEntries.isNotEmpty) {
       try {
         await HomeWidget.saveWidgetData<String>('word', shuffled[0].word);
@@ -323,10 +242,17 @@ class NotificationService {
   static Future<void> processScheduleLog() async {
     final prefs = await SharedPreferences.getInstance();
 
+    // Merge native notification tap payload saved by MainActivity.saveNativePayload()
+    final nativePayload = prefs.getString('nativeNotificationPayload');
+    if (nativePayload != null && nativePayload.isNotEmpty) {
+      await prefs.remove('nativeNotificationPayload');
+      pendingNotificationPayload ??= nativePayload;
+    }
+
     // Merge native history written by WidgetUpdateReceiver (no app needed)
-    final nativePending = prefs.getString('nativeHistoryPending') ?? '';
-    if (nativePending.isNotEmpty) {
-      final nativeEntries = nativePending.split('\n').where((e) => e.isNotEmpty).toList();
+    final nativeHistoryPending = prefs.getString('nativeHistoryPending') ?? '';
+    if (nativeHistoryPending.isNotEmpty) {
+      final nativeEntries = nativeHistoryPending.split('\n').where((e) => e.isNotEmpty).toList();
       if (nativeEntries.isNotEmpty) {
         final history = prefs.getStringList('notificationHistory') ?? [];
         for (final entry in nativeEntries) {
@@ -394,21 +320,31 @@ class NotificationService {
     return aligned >= minutes ? aligned : aligned + interval;
   }
 
-  Future<void> _scheduleOne(int id, Vocabulary vocab, tz.TZDateTime at) async {
-    Future<void> schedule(AndroidScheduleMode mode) =>
-        flutterLocalNotificationsPlugin.zonedSchedule(
-          id: id,
-          title: vocab.word.toUpperCase(),
-          body: '${vocab.translation} - ${vocab.partOfSpeech}',
-          scheduledDate: at,
-          notificationDetails: const NotificationDetails(android: _kAndroidChannelWithActions),
-          androidScheduleMode: mode,
-          payload: '${vocab.word}|${vocab.topic}',
-        );
-    try {
-      await schedule(AndroidScheduleMode.exactAllowWhileIdle);
-    } catch (_) {
-      await schedule(AndroidScheduleMode.inexactAllowWhileIdle);
+  static tz.TZDateTime _advance(
+      tz.TZDateTime current, int intervalMinutes, int startMins, int endMins) {
+    var next = current.add(Duration(minutes: intervalMinutes));
+    final curMins = next.hour * 60 + next.minute;
+    if (curMins >= endMins) {
+      final slot = _alignedCeil(startMins, intervalMinutes);
+      next = tz.TZDateTime(tz.local, next.year, next.month, next.day + 1,
+          slot ~/ 60, slot % 60);
+    } else if (curMins < startMins) {
+      final slot = _alignedCeil(startMins, intervalMinutes);
+      next = tz.TZDateTime(tz.local, next.year, next.month, next.day,
+          slot ~/ 60, slot % 60);
     }
+    return next;
+  }
+
+  Future<void> _scheduleIOS(int id, Vocabulary vocab, tz.TZDateTime at) async {
+    await flutterLocalNotificationsPlugin.zonedSchedule(
+      id: id,
+      title: vocab.word.toUpperCase(),
+      body: '${vocab.translation} - ${vocab.partOfSpeech}',
+      scheduledDate: at,
+      notificationDetails: const NotificationDetails(iOS: _kIOSDetails),
+      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+      payload: '${vocab.word}|${vocab.topic}',
+    );
   }
 }

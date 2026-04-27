@@ -1,36 +1,36 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-cookware,https://www.oxfordlearnersdictionaries.com/definition/english/cookware,C2,cookware,dụng cụ nấu nướng,noun,/ˈkʊkweə(r)/,
-appliance,https://www.oxfordlearnersdictionaries.com/definition/english/appliance,B2,appliance,thiết bị,noun,/əˈplaɪəns/,
-cosmetic,https://www.oxfordlearnersdictionaries.com/definition/english/cosmetic_1,B2,cosmetic,mỹ phẩm,noun,/kɒzˈmetɪk/,
-book,https://www.oxfordlearnersdictionaries.com/definition/english/book_1,A1,book,sách,noun,/bʊk/,
-accessory,https://www.oxfordlearnersdictionaries.com/definition/english/accessory_1,C1,accessory,phụ kiện,noun,/əkˈsesəri/,
-crockery,https://www.oxfordlearnersdictionaries.com/definition/english/crockery,C2,crockery,đồ sành sứ,noun,/ˈkrɒkəri/,
-craft,https://www.oxfordlearnersdictionaries.com/definition/english/craft_1,B2,craft,thủ công,noun,/krɑːft/,
-clothing,https://www.oxfordlearnersdictionaries.com/definition/english/clothing,A2,clothing,quần áo,noun,/ˈkləʊðɪŋ/,
-cutlery,https://www.oxfordlearnersdictionaries.com/definition/english/cutlery,C1,cutlery,dao kéo,noun,/ˈkʌtləri/,
-bedding,https://www.oxfordlearnersdictionaries.com/definition/english/bedding,C2,bedding,bộ đồ giường,noun,/ˈbedɪŋ/,
-department,https://www.oxfordlearnersdictionaries.com/definition/english/department,A2,department,phòng,noun,/dɪˈpɑːtmənt/,
-electrical,https://www.oxfordlearnersdictionaries.com/definition/english/electrical,A2,electrical,điện,adjective,/ɪˈlektrɪkl/,
-gadget,https://www.oxfordlearnersdictionaries.com/definition/english/gadget,B1,gadget,tiện ích,noun,/ˈɡædʒɪt/,
-fragrance,https://www.oxfordlearnersdictionaries.com/definition/english/fragrance,C1,fragrance,hương thơm,noun,/ˈfreɪɡrəns/,
-furniture,https://www.oxfordlearnersdictionaries.com/definition/english/furniture,A2,furniture,nội thất,noun,/ˈfɜːnɪtʃə(r)/,
-furnishings,https://www.oxfordlearnersdictionaries.com/definition/english/furnishings,C2,furnishings,nội thất,noun,/ˈfɜːnɪʃɪŋz/,
-game,https://www.oxfordlearnersdictionaries.com/definition/english/game_1,A1,game,trò chơi,noun,/ɡeɪm/,
-food_hall,https://www.oxfordlearnersdictionaries.com/definition/english/food-hall,C1,food hall,phòng ăn,noun,/ˈfuːd hɔːl/,
-fabric,https://www.oxfordlearnersdictionaries.com/definition/english/fabric,B2,fabric,vải vóc,noun,/ˈfæbrɪk/,
-gift,https://www.oxfordlearnersdictionaries.com/definition/english/gift_1,A2,gift,quà,noun,/ɡɪft/,
-glassware,https://www.oxfordlearnersdictionaries.com/definition/english/glassware,C2,glassware,đồ thủy tinh,noun,/ˈɡlɑːsweə(r)/,
-luggage,https://www.oxfordlearnersdictionaries.com/definition/english/luggage,A2,luggage,hành lý,noun,/ˈlʌɡɪdʒ/,
-linen,https://www.oxfordlearnersdictionaries.com/definition/english/linen,C1,linen,lanh,noun,/ˈlɪnɪn/,
-perfume,https://www.oxfordlearnersdictionaries.com/definition/english/perfume_1,B2,perfume,nước hoa,noun,/ˈpɜːfjuːm/,
-grocery,https://www.oxfordlearnersdictionaries.com/definition/english/grocery_1,B2,grocery,cửa hàng tạp hóa,noun,/ˈɡrəʊsəri/,
-shoe,https://www.oxfordlearnersdictionaries.com/definition/english/shoe_1,A1,shoe,giày,noun,/ʃuː/,
-music,https://www.oxfordlearnersdictionaries.com/definition/english/music,A1,music,âm nhạc,noun,/ˈmjuːzɪk/,
-skincare,https://www.oxfordlearnersdictionaries.com/definition/english/skincare,C2,skincare,chăm sóc da,noun,/ˈskɪnkeə(r)/,
-jewellery,https://www.oxfordlearnersdictionaries.com/definition/english/jewellery,A2,jewellery,đồ trang sức,noun,/ˈdʒuːəlri/,
-toiletries,https://www.oxfordlearnersdictionaries.com/definition/english/toiletries,C2,toiletries,đồ vệ sinh cá nhân,noun,/ˈtɔɪlətriz/,
-toy,https://www.oxfordlearnersdictionaries.com/definition/english/toy_1,A2,toy,đồ chơi,noun,/tɔɪ/,
-technology,https://www.oxfordlearnersdictionaries.com/definition/english/technology,A2,technology,công nghệ,noun,/tekˈnɒlədʒi/,
-white_goods,https://www.oxfordlearnersdictionaries.com/definition/english/white-goods,C2,white goods,hàng trắng,noun,/ˈwaɪt ɡʊdz/,
-haberdashery,https://www.oxfordlearnersdictionaries.com/definition/english/haberdashery,C2,haberdashery,đồ may mặc,noun,/ˌhæbəˈdæʃəri/,
-stationery,https://www.oxfordlearnersdictionaries.com/definition/english/stationery,C1,stationery,văn phòng phẩm,noun,/ˈsteɪʃənri/,
+cookware,https://www.oxfordlearnersdictionaries.com/definition/english/cookware,C2,cookware,dụng cụ nấu nướng,noun,/ˈkʊkweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cookw/cookware__gb_1.mp3
+appliance,https://www.oxfordlearnersdictionaries.com/definition/english/appliance,B2,appliance,thiết bị,noun,/əˈplaɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appli/appliance__gb_1.mp3
+cosmetic,https://www.oxfordlearnersdictionaries.com/definition/english/cosmetic_1,B2,cosmetic,mỹ phẩm,noun,/kɒzˈmetɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cos/cosme/cosmetic__gb_1.mp3
+book,https://www.oxfordlearnersdictionaries.com/definition/english/book_1,A1,book,sách,noun,/bʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/book_/book__gb_2.mp3
+accessory,https://www.oxfordlearnersdictionaries.com/definition/english/accessory_1,C1,accessory,phụ kiện,noun,/əkˈsesəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acc/acces/accessory__gb_1.mp3
+crockery,https://www.oxfordlearnersdictionaries.com/definition/english/crockery,C2,crockery,đồ sành sứ,noun,/ˈkrɒkəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/crock/crockery__gb_1.mp3
+craft,https://www.oxfordlearnersdictionaries.com/definition/english/craft_1,B2,craft,thủ công,noun,/krɑːft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/craft/craft__gb_1.mp3
+clothing,https://www.oxfordlearnersdictionaries.com/definition/english/clothing,A2,clothing,quần áo,noun,/ˈkləʊðɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/cloth/clothing__gb_1.mp3
+cutlery,https://www.oxfordlearnersdictionaries.com/definition/english/cutlery,C1,cutlery,dao kéo,noun,/ˈkʌtləri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cut/cutle/cutlery__gb_1.mp3
+bedding,https://www.oxfordlearnersdictionaries.com/definition/english/bedding,C2,bedding,bộ đồ giường,noun,/ˈbedɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bed/beddi/bedding__gb_3.mp3
+department,https://www.oxfordlearnersdictionaries.com/definition/english/department,A2,department,phòng,noun,/dɪˈpɑːtmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/depar/department__gb_2.mp3
+electrical,https://www.oxfordlearnersdictionaries.com/definition/english/electrical,A2,electrical,điện,adjective,/ɪˈlektrɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electrical__gb_2.mp3
+gadget,https://www.oxfordlearnersdictionaries.com/definition/english/gadget,B1,gadget,tiện ích,noun,/ˈɡædʒɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gad/gadge/gadget__gb_2.mp3
+fragrance,https://www.oxfordlearnersdictionaries.com/definition/english/fragrance,C1,fragrance,hương thơm,noun,/ˈfreɪɡrəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fra/fragr/fragrance__gb_1.mp3
+furniture,https://www.oxfordlearnersdictionaries.com/definition/english/furniture,A2,furniture,nội thất,noun,/ˈfɜːnɪtʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fur/furni/furniture__gb_1.mp3
+furnishings,https://www.oxfordlearnersdictionaries.com/definition/english/furnishings,C2,furnishings,nội thất,noun,/ˈfɜːnɪʃɪŋz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fur/furni/furnishings__gb_2.mp3
+game,https://www.oxfordlearnersdictionaries.com/definition/english/game_1,A1,game,trò chơi,noun,/ɡeɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gam/game_/game__gb_2.mp3
+food_hall,https://www.oxfordlearnersdictionaries.com/definition/english/food-hall,C1,food hall,phòng ăn,noun,/ˈfuːd hɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/food_/food_hall_1_gb_1.mp3
+fabric,https://www.oxfordlearnersdictionaries.com/definition/english/fabric,B2,fabric,vải vóc,noun,/ˈfæbrɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fab/fabri/fabric__gb_1.mp3
+gift,https://www.oxfordlearnersdictionaries.com/definition/english/gift_1,A2,gift,quà,noun,/ɡɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gif/gift_/gift__gb_2.mp3
+glassware,https://www.oxfordlearnersdictionaries.com/definition/english/glassware,C2,glassware,đồ thủy tinh,noun,/ˈɡlɑːsweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gla/glass/glassware__gb_1.mp3
+luggage,https://www.oxfordlearnersdictionaries.com/definition/english/luggage,A2,luggage,hành lý,noun,/ˈlʌɡɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lug/lugga/luggage__gb_1.mp3
+linen,https://www.oxfordlearnersdictionaries.com/definition/english/linen,C1,linen,lanh,noun,/ˈlɪnɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/linen/linen__gb_1.mp3
+perfume,https://www.oxfordlearnersdictionaries.com/definition/english/perfume_1,B2,perfume,nước hoa,noun,/ˈpɜːfjuːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perfu/perfume__gb_1.mp3
+grocery,https://www.oxfordlearnersdictionaries.com/definition/english/grocery_1,B2,grocery,cửa hàng tạp hóa,noun,/ˈɡrəʊsəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/groce/grocery__gb_1.mp3
+shoe,https://www.oxfordlearnersdictionaries.com/definition/english/shoe_1,A1,shoe,giày,noun,/ʃuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shoe_/shoe__gb_2.mp3
+music,https://www.oxfordlearnersdictionaries.com/definition/english/music,A1,music,âm nhạc,noun,/ˈmjuːzɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mus/music/music__gb_1.mp3
+skincare,https://www.oxfordlearnersdictionaries.com/definition/english/skincare,C2,skincare,chăm sóc da,noun,/ˈskɪnkeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ski/skinc/skincare__gb_2.mp3
+jewellery,https://www.oxfordlearnersdictionaries.com/definition/english/jewellery,A2,jewellery,đồ trang sức,noun,/ˈdʒuːəlri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jew/jewel/jewellery__gb_1.mp3
+toiletries,https://www.oxfordlearnersdictionaries.com/definition/english/toiletries,C2,toiletries,đồ vệ sinh cá nhân,noun,/ˈtɔɪlətriz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/toi/toile/toiletries__gb_1.mp3
+toy,https://www.oxfordlearnersdictionaries.com/definition/english/toy_1,A2,toy,đồ chơi,noun,/tɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/toy/toy__/toy__gb_1.mp3
+technology,https://www.oxfordlearnersdictionaries.com/definition/english/technology,A2,technology,công nghệ,noun,/tekˈnɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tec/techn/technology__gb_2.mp3
+white_goods,https://www.oxfordlearnersdictionaries.com/definition/english/white-goods,C2,white goods,hàng trắng,noun,/ˈwaɪt ɡʊdz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whi/white/white_goods_1_gb_1.mp3
+haberdashery,https://www.oxfordlearnersdictionaries.com/definition/english/haberdashery,C2,haberdashery,đồ may mặc,noun,/ˌhæbəˈdæʃəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hab/haber/haberdashery__gb_1.mp3
+stationery,https://www.oxfordlearnersdictionaries.com/definition/english/stationery,C1,stationery,văn phòng phẩm,noun,/ˈsteɪʃənri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/stationery__gb_1.mp3

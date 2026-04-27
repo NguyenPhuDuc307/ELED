@@ -1,50 +1,50 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-concourse,https://www.oxfordlearnersdictionaries.com/definition/english/concourse,C2,concourse,buổi hòa nhạc,noun,/ˈkɒŋkɔːs/,
-branch,https://www.oxfordlearnersdictionaries.com/definition/english/branch_1,C1,branch,chi nhánh,noun,/brɑːntʃ/,
-booking_office,https://www.oxfordlearnersdictionaries.com/definition/english/booking-office,B2,booking office,văn phòng đặt vé,noun,/ˈbʊkɪŋ ɒfɪs/,
-embankment,https://www.oxfordlearnersdictionaries.com/definition/english/embankment,C2,embankment,bờ kè,noun,/ɪmˈbæŋkmənt/,
-funicular,https://www.oxfordlearnersdictionaries.com/definition/english/funicular,C2,funicular,đường sắt leo núi,noun,/fjuːˈnɪkjələ(r)/,
-cutting,https://www.oxfordlearnersdictionaries.com/definition/english/cutting_1,C2,cutting,cắt,noun,/ˈkʌtɪŋ/,
-gage,https://www.oxfordlearnersdictionaries.com/definition/english/gage_1,C2,gage,máy đo,noun,/ɡeɪdʒ/,
-gauge,https://www.oxfordlearnersdictionaries.com/definition/english/gauge_1,C2,gauge,máy đo,noun,/ɡeɪdʒ/,
-buffer,https://www.oxfordlearnersdictionaries.com/definition/english/buffer_1,C2,buffer,đệm,noun,/ˈbʌfə(r)/,
-gradient,https://www.oxfordlearnersdictionaries.com/definition/english/gradient,C1,gradient,độ dốc,noun,/ˈɡreɪdiənt/,
-junction,https://www.oxfordlearnersdictionaries.com/definition/english/junction,C1,junction,ngã ba,noun,/ˈdʒʌŋkʃn/,
-grade_crossing,https://www.oxfordlearnersdictionaries.com/definition/english/grade-crossing,C2,grade crossing,vượt lớp,noun,/ˈɡreɪd krɒsɪŋ/,
-halt,https://www.oxfordlearnersdictionaries.com/definition/english/halt_2,C2,halt,dừng lại,noun,/hɔːlt/,
-main_line,https://www.oxfordlearnersdictionaries.com/definition/english/main-line_1,B2,main line,dòng chính,noun,/ˌmeɪn ˈlaɪn/,
-loop,https://www.oxfordlearnersdictionaries.com/definition/english/loop_1,C2,loop,vòng lặp,noun,/luːp/,
-line,https://www.oxfordlearnersdictionaries.com/definition/english/line_1,A2,line,đường kẻ,noun,/laɪn/,
-main-line,https://www.oxfordlearnersdictionaries.com/definition/english/main-line_2,B2,main-line,dòng chính,adjective,/ˌmeɪn ˈlaɪn/,
-left_luggage_office,https://www.oxfordlearnersdictionaries.com/definition/english/left-luggage-office,B2,left luggage office,văn phòng hành lý trái,noun,/ˌleft ˈlʌɡɪdʒ ɒfɪs/,
-level_crossing,https://www.oxfordlearnersdictionaries.com/definition/english/level-crossing,C2,level crossing,vượt cấp,noun,/ˌlevl ˈkrɒsɪŋ/,
-office,https://www.oxfordlearnersdictionaries.com/definition/english/office,A1,office,văn phòng,noun,/ˈɒfɪs/,
-platform,https://www.oxfordlearnersdictionaries.com/definition/english/platform,A2,platform,nền tảng,noun,/ˈplætfɔːm/,
-narrow_gauge,https://www.oxfordlearnersdictionaries.com/definition/english/narrow-gauge,C2,narrow gauge,khổ hẹp,noun,/ˈnærəʊ ɡeɪdʒ/,
-overbridge,https://www.oxfordlearnersdictionaries.com/definition/english/overbridge,C2,overbridge,cầu vượt,noun,/ˈəʊvəbrɪdʒ/,
-rail,https://www.oxfordlearnersdictionaries.com/definition/english/rail_1,B2,rail,đường sắt,noun,/reɪl/,
-marshalling_yard,https://www.oxfordlearnersdictionaries.com/definition/english/marshalling-yard,C2,marshalling yard,bãi tập kết,noun,/ˈmɑːʃlɪŋ jɑːd/,
-point,https://www.oxfordlearnersdictionaries.com/definition/english/point_1,C2,point,điểm,noun,/pɔɪnt/,
-railhead,https://www.oxfordlearnersdictionaries.com/definition/english/railhead,C2,railhead,đầu đường sắt,noun,/ˈreɪlhed/,
-railroad_crossing,https://www.oxfordlearnersdictionaries.com/definition/english/railroad-crossing,B2,railroad crossing,băng qua đường sắt,noun,/ˈreɪlrəʊd krɒsɪŋ/,
-railway,https://www.oxfordlearnersdictionaries.com/definition/english/railway,A2,railway,đường sắt,noun,/ˈreɪlweɪ/,
-railroad,https://www.oxfordlearnersdictionaries.com/definition/english/railroad_1,B1,railroad,đường sắt,noun,/ˈreɪlrəʊd/,
-siding,https://www.oxfordlearnersdictionaries.com/definition/english/siding,C2,siding,vách ngoài,noun,/ˈsaɪdɪŋ/,
-spur,https://www.oxfordlearnersdictionaries.com/definition/english/spur_1,C2,spur,thúc đẩy,noun,/spɜː(r)/,
-signaller,https://www.oxfordlearnersdictionaries.com/definition/english/signaller,C2,signaller,người báo hiệu,noun,/ˈsɪɡnələ(r)/,
-station,https://www.oxfordlearnersdictionaries.com/definition/english/station_1,A1,station,ga tàu,noun,/ˈsteɪʃn/,
-shunt,https://www.oxfordlearnersdictionaries.com/definition/english/shunt_1,C2,shunt,dòng điện,verb,/ʃʌnt/,
-signal_box,https://www.oxfordlearnersdictionaries.com/definition/english/signal-box,C2,signal box,hộp tín hiệu,noun,/ˈsɪɡnəl bɒks/,
-switch,https://www.oxfordlearnersdictionaries.com/definition/english/switch_2,C2,switch,công tắc,noun,/swɪtʃ/,
-switchback,https://www.oxfordlearnersdictionaries.com/definition/english/switchback,C2,switchback,chuyển đổi ngược lại,noun,/ˈswɪtʃbæk/,
-third_rail,https://www.oxfordlearnersdictionaries.com/definition/english/third-rail,C2,third rail,đường sắt thứ ba,noun,/ˌθɜːd ˈreɪl/,
-tannoy™,https://www.oxfordlearnersdictionaries.com/definition/english/tannoytm,C2,Tannoy™,Tannoy™,noun,/ˈtænɔɪ/,
-station_agent,https://www.oxfordlearnersdictionaries.com/definition/english/station-agent,C2,station agent,đại lý trạm,noun,/ˈsteɪʃn eɪdʒənt/,
-stationmaster,https://www.oxfordlearnersdictionaries.com/definition/english/stationmaster,C2,stationmaster,người quản lý ga,noun,/ˈsteɪʃnmɑːstə(r)/,
-tie,https://www.oxfordlearnersdictionaries.com/definition/english/tie_2,C2,tie,cà vạt,noun,/taɪ/,
-underground,https://www.oxfordlearnersdictionaries.com/definition/english/underground_3,A2,underground,bí mật,noun,/ˈʌndəɡraʊnd/,
-tunnel,https://www.oxfordlearnersdictionaries.com/definition/english/tunnel_1,B2,tunnel,đường hầm,noun,/ˈtʌnl/,
-track,https://www.oxfordlearnersdictionaries.com/definition/english/track_1,A2,track,theo dõi,noun,/træk/,
-waiting_room,https://www.oxfordlearnersdictionaries.com/definition/english/waiting-room,A2,waiting room,phòng chờ,noun,/ˈweɪtɪŋ ruːm/,
-signalman,https://www.oxfordlearnersdictionaries.com/definition/english/signalman,C2,signalman,người báo hiệu,noun,/ˈsɪɡnəlmən/,
-underpass,https://www.oxfordlearnersdictionaries.com/definition/english/underpass,C2,underpass,đường hầm,noun,/ˈʌndəpɑːs/,
+concourse,https://www.oxfordlearnersdictionaries.com/definition/english/concourse,C2,concourse,buổi hòa nhạc,noun,/ˈkɒŋkɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconc/xconcourse__gb_1.mp3
+branch,https://www.oxfordlearnersdictionaries.com/definition/english/branch_1,C1,branch,chi nhánh,noun,/brɑːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/branc/branch__gb_1.mp3
+booking_office,https://www.oxfordlearnersdictionaries.com/definition/english/booking-office,B2,booking office,văn phòng đặt vé,noun,/ˈbʊkɪŋ ɒfɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/booki/booking_office_1_gb_1.mp3
+embankment,https://www.oxfordlearnersdictionaries.com/definition/english/embankment,C2,embankment,bờ kè,noun,/ɪmˈbæŋkmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emb/emban/embankment__gb_1.mp3
+funicular,https://www.oxfordlearnersdictionaries.com/definition/english/funicular,C2,funicular,đường sắt leo núi,noun,/fjuːˈnɪkjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fun/funic/funicular__gb_1.mp3
+cutting,https://www.oxfordlearnersdictionaries.com/definition/english/cutting_1,C2,cutting,cắt,noun,/ˈkʌtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cut/cutti/cutting__gb_1.mp3
+gage,https://www.oxfordlearnersdictionaries.com/definition/english/gage_1,C2,gage,máy đo,noun,/ɡeɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gag/gage_/gage__gb_2.mp3
+gauge,https://www.oxfordlearnersdictionaries.com/definition/english/gauge_1,C2,gauge,máy đo,noun,/ɡeɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gau/gauge/gauge__gb_2.mp3
+buffer,https://www.oxfordlearnersdictionaries.com/definition/english/buffer_1,C2,buffer,đệm,noun,/ˈbʌfə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/buf/buffe/buffer__gb_1.mp3
+gradient,https://www.oxfordlearnersdictionaries.com/definition/english/gradient,C1,gradient,độ dốc,noun,/ˈɡreɪdiənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/gradi/gradient__gb_1.mp3
+junction,https://www.oxfordlearnersdictionaries.com/definition/english/junction,C1,junction,ngã ba,noun,/ˈdʒʌŋkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jun/junct/junction__gb_1.mp3
+grade_crossing,https://www.oxfordlearnersdictionaries.com/definition/english/grade-crossing,C2,grade crossing,vượt lớp,noun,/ˈɡreɪd krɒsɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grade/grade_crossing_1_gb_1.mp3
+halt,https://www.oxfordlearnersdictionaries.com/definition/english/halt_2,C2,halt,dừng lại,noun,/hɔːlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/halt_/halt__gb_3.mp3
+main_line,https://www.oxfordlearnersdictionaries.com/definition/english/main-line_1,B2,main line,dòng chính,noun,/ˌmeɪn ˈlaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/main_/main_line_1_gb_1.mp3
+loop,https://www.oxfordlearnersdictionaries.com/definition/english/loop_1,C2,loop,vòng lặp,noun,/luːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loo/loop_/loop__gb_1.mp3
+line,https://www.oxfordlearnersdictionaries.com/definition/english/line_1,A2,line,đường kẻ,noun,/laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/line_/line__gb_1.mp3
+main-line,https://www.oxfordlearnersdictionaries.com/definition/english/main-line_2,B2,main-line,dòng chính,adjective,/ˌmeɪn ˈlaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/main_/main_line_1_gb_1.mp3
+left_luggage_office,https://www.oxfordlearnersdictionaries.com/definition/english/left-luggage-office,B2,left luggage office,văn phòng hành lý trái,noun,/ˌleft ˈlʌɡɪdʒ ɒfɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lef/left_/left_luggage_office_1_gb_1.mp3
+level_crossing,https://www.oxfordlearnersdictionaries.com/definition/english/level-crossing,C2,level crossing,vượt cấp,noun,/ˌlevl ˈkrɒsɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lev/level/level_crossing_1_gb_1.mp3
+office,https://www.oxfordlearnersdictionaries.com/definition/english/office,A1,office,văn phòng,noun,/ˈɒfɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/off/offic/office__gb_2.mp3
+platform,https://www.oxfordlearnersdictionaries.com/definition/english/platform,A2,platform,nền tảng,noun,/ˈplætfɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/platf/platform__gb_1.mp3
+narrow_gauge,https://www.oxfordlearnersdictionaries.com/definition/english/narrow-gauge,C2,narrow gauge,khổ hẹp,noun,/ˈnærəʊ ɡeɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nar/narro/narrow_gauge_1_gb_1.mp3
+overbridge,https://www.oxfordlearnersdictionaries.com/definition/english/overbridge,C2,overbridge,cầu vượt,noun,/ˈəʊvəbrɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overb/overbridge__gb_1.mp3
+rail,https://www.oxfordlearnersdictionaries.com/definition/english/rail_1,B2,rail,đường sắt,noun,/reɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rail_/rail__gb_1.mp3
+marshalling_yard,https://www.oxfordlearnersdictionaries.com/definition/english/marshalling-yard,C2,marshalling yard,bãi tập kết,noun,/ˈmɑːʃlɪŋ jɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marsh/marshalling_yard_1_gb_1.mp3
+point,https://www.oxfordlearnersdictionaries.com/definition/english/point_1,C2,point,điểm,noun,/pɔɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poi/point/point__gb_1.mp3
+railhead,https://www.oxfordlearnersdictionaries.com/definition/english/railhead,C2,railhead,đầu đường sắt,noun,/ˈreɪlhed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/railh/railhead__gb_1.mp3
+railroad_crossing,https://www.oxfordlearnersdictionaries.com/definition/english/railroad-crossing,B2,railroad crossing,băng qua đường sắt,noun,/ˈreɪlrəʊd krɒsɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/railr/railroad_crossing_1_gb_1.mp3
+railway,https://www.oxfordlearnersdictionaries.com/definition/english/railway,A2,railway,đường sắt,noun,/ˈreɪlweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/railw/railway__gb_1.mp3
+railroad,https://www.oxfordlearnersdictionaries.com/definition/english/railroad_1,B1,railroad,đường sắt,noun,/ˈreɪlrəʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/railr/railroad__gb_1.mp3
+siding,https://www.oxfordlearnersdictionaries.com/definition/english/siding,C2,siding,vách ngoài,noun,/ˈsaɪdɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sid/sidin/siding__gb_1.mp3
+spur,https://www.oxfordlearnersdictionaries.com/definition/english/spur_1,C2,spur,thúc đẩy,noun,/spɜː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spu/spur_/spur__gb_1.mp3
+signaller,https://www.oxfordlearnersdictionaries.com/definition/english/signaller,C2,signaller,người báo hiệu,noun,/ˈsɪɡnələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sig/signa/signaller__gb_1.mp3
+station,https://www.oxfordlearnersdictionaries.com/definition/english/station_1,A1,station,ga tàu,noun,/ˈsteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/station__gb_2.mp3
+shunt,https://www.oxfordlearnersdictionaries.com/definition/english/shunt_1,C2,shunt,dòng điện,verb,/ʃʌnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shu/shunt/shunt__gb_1.mp3
+signal_box,https://www.oxfordlearnersdictionaries.com/definition/english/signal-box,C2,signal box,hộp tín hiệu,noun,/ˈsɪɡnəl bɒks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sig/signa/signal_box_1_gb_1.mp3
+switch,https://www.oxfordlearnersdictionaries.com/definition/english/switch_2,C2,switch,công tắc,noun,/swɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swi/switc/switch__gb_1.mp3
+switchback,https://www.oxfordlearnersdictionaries.com/definition/english/switchback,C2,switchback,chuyển đổi ngược lại,noun,/ˈswɪtʃbæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swi/switc/switchback__gb_1.mp3
+third_rail,https://www.oxfordlearnersdictionaries.com/definition/english/third-rail,C2,third rail,đường sắt thứ ba,noun,/ˌθɜːd ˈreɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/third/third_rail_1_gb_1.mp3
+tannoy™,https://www.oxfordlearnersdictionaries.com/definition/english/tannoytm,C2,Tannoy™,Tannoy™,noun,/ˈtænɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tan/tanno/tannoy__gb_1.mp3
+station_agent,https://www.oxfordlearnersdictionaries.com/definition/english/station-agent,C2,station agent,đại lý trạm,noun,/ˈsteɪʃn eɪdʒənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/station_agent_1_gb_1.mp3
+stationmaster,https://www.oxfordlearnersdictionaries.com/definition/english/stationmaster,C2,stationmaster,người quản lý ga,noun,/ˈsteɪʃnmɑːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/stationmaster__gb_1.mp3
+tie,https://www.oxfordlearnersdictionaries.com/definition/english/tie_2,C2,tie,cà vạt,noun,/taɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tie/tie__/tie__gb_2.mp3
+underground,https://www.oxfordlearnersdictionaries.com/definition/english/underground_3,A2,underground,bí mật,noun,/ˈʌndəɡraʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/und/under/underground__gb_1.mp3
+tunnel,https://www.oxfordlearnersdictionaries.com/definition/english/tunnel_1,B2,tunnel,đường hầm,noun,/ˈtʌnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tun/tunne/tunnel__gb_1.mp3
+track,https://www.oxfordlearnersdictionaries.com/definition/english/track_1,A2,track,theo dõi,noun,/træk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/track/track__gb_1.mp3
+waiting_room,https://www.oxfordlearnersdictionaries.com/definition/english/waiting-room,A2,waiting room,phòng chờ,noun,/ˈweɪtɪŋ ruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wai/waiti/waiting_room_1_gb_1.mp3
+signalman,https://www.oxfordlearnersdictionaries.com/definition/english/signalman,C2,signalman,người báo hiệu,noun,/ˈsɪɡnəlmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sig/signa/signalman__gb_1.mp3
+underpass,https://www.oxfordlearnersdictionaries.com/definition/english/underpass,C2,underpass,đường hầm,noun,/ˈʌndəpɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/und/under/underpass__gb_1.mp3

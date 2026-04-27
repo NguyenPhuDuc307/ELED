@@ -1,34 +1,34 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-address_book,https://www.oxfordlearnersdictionaries.com/definition/english/address-book,B2,address book,sổ địa chỉ,noun,/əˈdres bʊk/,
-attach,https://www.oxfordlearnersdictionaries.com/definition/english/attach,B1,attach,gắn,verb,/əˈtætʃ/,
-cc,https://www.oxfordlearnersdictionaries.com/definition/english/cc_1,C2,cc,cc,abbreviation,/ˌsiː ˈsiː/,
-delete,https://www.oxfordlearnersdictionaries.com/definition/english/delete_1,B2,delete,xóa bỏ,verb,/dɪˈliːt/,
-cc,https://www.oxfordlearnersdictionaries.com/definition/english/cc_2,C2,cc,cc,verb,/ˌsiː ˈsiː/,
-attachment,https://www.oxfordlearnersdictionaries.com/definition/english/attachment,B2,attachment,tập tin đính kèm,noun,/əˈtætʃmənt/,
-bounce,https://www.oxfordlearnersdictionaries.com/definition/english/bounce_1,C2,bounce,tung lên,verb,/baʊns/,
+address_book,https://www.oxfordlearnersdictionaries.com/definition/english/address-book,B2,address book,sổ địa chỉ,noun,/əˈdres bʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/add/addre/address_book_1_gb_1.mp3
+attach,https://www.oxfordlearnersdictionaries.com/definition/english/attach,B1,attach,gắn,verb,/əˈtætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/attac/attach__gb_1.mp3
+cc,https://www.oxfordlearnersdictionaries.com/definition/english/cc_1,C2,cc,cc,abbreviation,/ˌsiː ˈsiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cc_/cc__g/cc__gb_2.mp3
+delete,https://www.oxfordlearnersdictionaries.com/definition/english/delete_1,B2,delete,xóa bỏ,verb,/dɪˈliːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/del/delet/delete__gb_2.mp3
+cc,https://www.oxfordlearnersdictionaries.com/definition/english/cc_2,C2,cc,cc,verb,/ˌsiː ˈsiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cc_/cc__g/cc__gb_2.mp3
+attachment,https://www.oxfordlearnersdictionaries.com/definition/english/attachment,B2,attachment,tập tin đính kèm,noun,/əˈtætʃmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/attac/attachment__gb_1.mp3
+bounce,https://www.oxfordlearnersdictionaries.com/definition/english/bounce_1,C2,bounce,tung lên,verb,/baʊns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bou/bounc/bounce__gb_2.mp3
 copy_in,https://www.oxfordlearnersdictionaries.com/definition/english/copy-in,C2,copy in,sao chép vào,phrasal verb,,
-carpet-bomb,https://www.oxfordlearnersdictionaries.com/definition/english/carpet-bomb,C2,carpet-bomb,bom trải thảm,verb,/ˈkɑːpɪt bɒm/,
-at,https://www.oxfordlearnersdictionaries.com/definition/english/at,A1,at,Tại,preposition,/ət/,
-draft,https://www.oxfordlearnersdictionaries.com/definition/english/draft_1,B2,draft,bản nháp,noun,/drɑːft/,
-email,https://www.oxfordlearnersdictionaries.com/definition/english/email_1,A1,email,e-mail,noun,/ˈiːmeɪl/,
-forward,https://www.oxfordlearnersdictionaries.com/definition/english/forward_3,C1,forward,phía trước,verb,/ˈfɔːwəd/,
-draft,https://www.oxfordlearnersdictionaries.com/definition/english/draft_2,B2,draft,bản nháp,verb,/drɑːft/,
-filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_1,C2,filter,lọc,noun,/ˈfɪltə(r)/,
-inbox,https://www.oxfordlearnersdictionaries.com/definition/english/inbox,B2,inbox,hộp thư đến,noun,/ˈɪnbɒks/,
-mail,https://www.oxfordlearnersdictionaries.com/definition/english/mail_1,A2,mail,thư,noun,/meɪl/,
-mail,https://www.oxfordlearnersdictionaries.com/definition/english/mail_2,A2,mail,thư,verb,/meɪl/,
-hate_mail,https://www.oxfordlearnersdictionaries.com/definition/english/hate-mail,B2,hate mail,thư ghét,noun,/ˈheɪt meɪl/,
-mailing_list,https://www.oxfordlearnersdictionaries.com/definition/english/mailing-list,C2,mailing list,danh sách gửi thư,noun,/ˈmeɪlɪŋ lɪst/,
-outbox,https://www.oxfordlearnersdictionaries.com/definition/english/outbox,C1,outbox,hộp thư đi,noun,/ˈaʊtbɒks/,
-spam,https://www.oxfordlearnersdictionaries.com/definition/english/spam_2,B2,spam,thư rác,verb,/spæm/,
-re,https://www.oxfordlearnersdictionaries.com/definition/english/re2,C2,re,nốt Rê,preposition,/riː/,
-spam,https://www.oxfordlearnersdictionaries.com/definition/english/spam_1,C1,spam,thư rác,noun,/spæm/,
-spamming,https://www.oxfordlearnersdictionaries.com/definition/english/spamming,C2,spamming,gửi thư rác,noun,/ˈspæmɪŋ/,
-mailer,https://www.oxfordlearnersdictionaries.com/definition/english/mailer,C2,mailer,người đưa thư,noun,/ˈmeɪlə(r)/,
-spammy,https://www.oxfordlearnersdictionaries.com/definition/english/spammy,C1,spammy,thư rác,adjective,/ˈspæmi/,
-spammer,https://www.oxfordlearnersdictionaries.com/definition/english/spammer,C1,spammer,người gửi thư rác,noun,/ˈspæmə(r)/,
-spoofing,https://www.oxfordlearnersdictionaries.com/definition/english/spoofing,C2,spoofing,giả mạo,noun,/ˈspuːfɪŋ/,
-unsubscribe,https://www.oxfordlearnersdictionaries.com/definition/english/unsubscribe,C2,unsubscribe,hủy đăng ký,verb,/ˌʌnsəbˈskraɪb/,
-viral_marketing,https://www.oxfordlearnersdictionaries.com/definition/english/viral-marketing,C2,viral marketing,tiếp thị lan truyền,noun,/ˌvaɪrəl ˈmɑːkɪtɪŋ/,
-subject_line,https://www.oxfordlearnersdictionaries.com/definition/english/subject-line,B2,subject line,dòng chủ đề,noun,/ˈsʌbdʒɪkt laɪn/,
-spoof,https://www.oxfordlearnersdictionaries.com/definition/english/spoof_2,C2,spoof,giả mạo,verb,/spuːf/,
+carpet-bomb,https://www.oxfordlearnersdictionaries.com/definition/english/carpet-bomb,C2,carpet-bomb,bom trải thảm,verb,/ˈkɑːpɪt bɒm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/carpe/carpet_bomb_1_gb_1.mp3
+at,https://www.oxfordlearnersdictionaries.com/definition/english/at,A1,at,Tại,preposition,/ət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/at_/at__g/at__gb_1.mp3
+draft,https://www.oxfordlearnersdictionaries.com/definition/english/draft_1,B2,draft,bản nháp,noun,/drɑːft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/draft/draft__gb_3.mp3
+email,https://www.oxfordlearnersdictionaries.com/definition/english/email_1,A1,email,e-mail,noun,/ˈiːmeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ema/email/email__gb_1.mp3
+forward,https://www.oxfordlearnersdictionaries.com/definition/english/forward_3,C1,forward,phía trước,verb,/ˈfɔːwəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forwa/forward__gb_1.mp3
+draft,https://www.oxfordlearnersdictionaries.com/definition/english/draft_2,B2,draft,bản nháp,verb,/drɑːft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/draft/draft__gb_3.mp3
+filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_1,C2,filter,lọc,noun,/ˈfɪltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filte/filter__gb_1.mp3
+inbox,https://www.oxfordlearnersdictionaries.com/definition/english/inbox,B2,inbox,hộp thư đến,noun,/ˈɪnbɒks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inb/inbox/inbox__gb_1.mp3
+mail,https://www.oxfordlearnersdictionaries.com/definition/english/mail_1,A2,mail,thư,noun,/meɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/mail_/mail__gb_1.mp3
+mail,https://www.oxfordlearnersdictionaries.com/definition/english/mail_2,A2,mail,thư,verb,/meɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/mail_/mail__gb_1.mp3
+hate_mail,https://www.oxfordlearnersdictionaries.com/definition/english/hate-mail,B2,hate mail,thư ghét,noun,/ˈheɪt meɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hat/hate_/hate_mail_1_gb_1.mp3
+mailing_list,https://www.oxfordlearnersdictionaries.com/definition/english/mailing-list,C2,mailing list,danh sách gửi thư,noun,/ˈmeɪlɪŋ lɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/maili/mailing_list_1_gb_1.mp3
+outbox,https://www.oxfordlearnersdictionaries.com/definition/english/outbox,C1,outbox,hộp thư đi,noun,/ˈaʊtbɒks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outbo/outbox__gb_1.mp3
+spam,https://www.oxfordlearnersdictionaries.com/definition/english/spam_2,B2,spam,thư rác,verb,/spæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spam_/spam__gb_1.mp3
+re,https://www.oxfordlearnersdictionaries.com/definition/english/re2,C2,re,nốt Rê,preposition,/riː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/re_/re__g/re__gb_3.mp3
+spam,https://www.oxfordlearnersdictionaries.com/definition/english/spam_1,C1,spam,thư rác,noun,/spæm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spam_/spam__gb_1.mp3
+spamming,https://www.oxfordlearnersdictionaries.com/definition/english/spamming,C2,spamming,gửi thư rác,noun,/ˈspæmɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spamm/spamming__gb_1.mp3
+mailer,https://www.oxfordlearnersdictionaries.com/definition/english/mailer,C2,mailer,người đưa thư,noun,/ˈmeɪlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/maile/mailer__gb_1.mp3
+spammy,https://www.oxfordlearnersdictionaries.com/definition/english/spammy,C1,spammy,thư rác,adjective,/ˈspæmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spamm/spammy__gb_1.mp3
+spammer,https://www.oxfordlearnersdictionaries.com/definition/english/spammer,C1,spammer,người gửi thư rác,noun,/ˈspæmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spamm/spammer__gb_1.mp3
+spoofing,https://www.oxfordlearnersdictionaries.com/definition/english/spoofing,C2,spoofing,giả mạo,noun,/ˈspuːfɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spoof/spoofing__gb_1.mp3
+unsubscribe,https://www.oxfordlearnersdictionaries.com/definition/english/unsubscribe,C2,unsubscribe,hủy đăng ký,verb,/ˌʌnsəbˈskraɪb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/uns/unsub/unsubscribe__gb_1.mp3
+viral_marketing,https://www.oxfordlearnersdictionaries.com/definition/english/viral-marketing,C2,viral marketing,tiếp thị lan truyền,noun,/ˌvaɪrəl ˈmɑːkɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vir/viral/viral_marketing_1_gb_2.mp3
+subject_line,https://www.oxfordlearnersdictionaries.com/definition/english/subject-line,B2,subject line,dòng chủ đề,noun,/ˈsʌbdʒɪkt laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subje/subject_line_1_gb_1.mp3
+spoof,https://www.oxfordlearnersdictionaries.com/definition/english/spoof_2,C2,spoof,giả mạo,verb,/spuːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spoof/spoof__gb_1.mp3

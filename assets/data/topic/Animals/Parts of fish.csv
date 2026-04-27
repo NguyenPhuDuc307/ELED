@@ -1,12 +1,12 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-tentacle,https://www.oxfordlearnersdictionaries.com/definition/english/tentacle,C1,tentacle,tua,noun,/ˈtentəkl/,
-egg,https://www.oxfordlearnersdictionaries.com/definition/english/egg_1,A1,egg,trứng,noun,/eɡ/,
-fin,https://www.oxfordlearnersdictionaries.com/definition/english/fin,C1,fin,vây,noun,/fɪn/,
-claw,https://www.oxfordlearnersdictionaries.com/definition/english/claw_1,C1,claw,móng vuốt,noun,/klɔː/,
-gill,https://www.oxfordlearnersdictionaries.com/definition/english/gill1,C1,gill,mang,noun,/ɡɪl/,
-pincer,https://www.oxfordlearnersdictionaries.com/definition/english/pincer,C2,pincer,gọng kìm,noun,/ˈpɪnsə(r)/,
-scale,https://www.oxfordlearnersdictionaries.com/definition/english/scale_1,C1,scale,tỉ lệ,noun,/skeɪl/,
-shell,https://www.oxfordlearnersdictionaries.com/definition/english/shell_1,B1,shell,vỏ bọc,noun,/ʃel/,
-tail,https://www.oxfordlearnersdictionaries.com/definition/english/tail_1,B1,tail,đuôi,noun,/teɪl/,
-vent,https://www.oxfordlearnersdictionaries.com/definition/english/vent_1,C2,vent,trút giận,noun,/vent/,
-sucker,https://www.oxfordlearnersdictionaries.com/definition/english/sucker_1,C2,sucker,kẻ ngu ngốc,noun,/ˈsʌkə(r)/,
+tentacle,https://www.oxfordlearnersdictionaries.com/definition/english/tentacle,C1,tentacle,tua,noun,/ˈtentəkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ten/tenta/tentacle__gb_1.mp3
+egg,https://www.oxfordlearnersdictionaries.com/definition/english/egg_1,A1,egg,trứng,noun,/eɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/egg/egg__/egg__gb_3.mp3
+fin,https://www.oxfordlearnersdictionaries.com/definition/english/fin,C1,fin,vây,noun,/fɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fin/fin__/fin__gb_2.mp3
+claw,https://www.oxfordlearnersdictionaries.com/definition/english/claw_1,C1,claw,móng vuốt,noun,/klɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/claw_/claw__gb_1.mp3
+gill,https://www.oxfordlearnersdictionaries.com/definition/english/gill1,C1,gill,mang,noun,/ɡɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gil/gill_/gill__gb_4.mp3
+pincer,https://www.oxfordlearnersdictionaries.com/definition/english/pincer,C2,pincer,gọng kìm,noun,/ˈpɪnsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pin/pince/pincer__gb_1.mp3
+scale,https://www.oxfordlearnersdictionaries.com/definition/english/scale_1,C1,scale,tỉ lệ,noun,/skeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sca/scale/scale__gb_1.mp3
+shell,https://www.oxfordlearnersdictionaries.com/definition/english/shell_1,B1,shell,vỏ bọc,noun,/ʃel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/she/shell/shell__gb_1.mp3
+tail,https://www.oxfordlearnersdictionaries.com/definition/english/tail_1,B1,tail,đuôi,noun,/teɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tai/tail_/tail__gb_2.mp3
+vent,https://www.oxfordlearnersdictionaries.com/definition/english/vent_1,C2,vent,trút giận,noun,/vent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ven/vent_/vent__gb_1.mp3
+sucker,https://www.oxfordlearnersdictionaries.com/definition/english/sucker_1,C2,sucker,kẻ ngu ngốc,noun,/ˈsʌkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/suc/sucke/sucker__gb_1.mp3

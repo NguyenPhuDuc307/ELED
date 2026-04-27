@@ -1,42 +1,42 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-debug,https://www.oxfordlearnersdictionaries.com/definition/english/debug_1,C2,debug,gỡ lỗi,noun,/ˈdiːbʌɡ/,
-botnet,https://www.oxfordlearnersdictionaries.com/definition/english/botnet,C2,botnet,mạng botnet,noun,/ˈbɒtnet/,
-corrupt,https://www.oxfordlearnersdictionaries.com/definition/english/corrupt_2,C2,corrupt,tham nhũng,verb,/kəˈrʌpt/,
-crash,https://www.oxfordlearnersdictionaries.com/definition/english/crash_1,B2,crash,tai nạn,noun,/kræʃ/,
-cracker,https://www.oxfordlearnersdictionaries.com/definition/english/cracker,C2,cracker,bánh quy giòn,noun,/ˈkrækə(r)/,
-bug,https://www.oxfordlearnersdictionaries.com/definition/english/bug_1,B2,bug,sâu bọ,noun,/bʌɡ/,
-buggy,https://www.oxfordlearnersdictionaries.com/definition/english/buggy_2,C2,buggy,có xe lôi,adjective,/ˈbʌɡi/,
-crash,https://www.oxfordlearnersdictionaries.com/definition/english/crash_2,B2,crash,tai nạn,verb,/kræʃ/,
-cybercrime,https://www.oxfordlearnersdictionaries.com/definition/english/cybercrime,C1,cybercrime,tội phạm mạng,noun,/ˈsaɪbəkraɪm/,
-corruption,https://www.oxfordlearnersdictionaries.com/definition/english/corruption,C2,corruption,tham nhũng,noun,/kəˈrʌpʃn/,
-debug,https://www.oxfordlearnersdictionaries.com/definition/english/debug_2,C2,debug,gỡ lỗi,verb,/ˌdiːˈbʌɡ/,
-hacker,https://www.oxfordlearnersdictionaries.com/definition/english/hacker,C1,hacker,tin tặc,noun,/ˈhækə(r)/,
-hack,https://www.oxfordlearnersdictionaries.com/definition/english/hack_1,B2,hack,hack,verb,/hæk/,
-freeze,https://www.oxfordlearnersdictionaries.com/definition/english/freeze_1,C2,freeze,đông cứng,verb,/friːz/,
-error_message,https://www.oxfordlearnersdictionaries.com/definition/english/error-message,B1,error message,thông báo lỗi,noun,/ˈerə mesɪdʒ/,
-hallucination,https://www.oxfordlearnersdictionaries.com/definition/english/hallucination,C2,hallucination,ảo giác,noun,/həˌluːsɪˈneɪʃn/,
-hallucinate,https://www.oxfordlearnersdictionaries.com/definition/english/hallucinate,C2,hallucinate,ảo giác,verb,/həˈluːsɪneɪt/,
-disinfect,https://www.oxfordlearnersdictionaries.com/definition/english/disinfect,C2,disinfect,khử trùng,verb,/ˌdɪsɪnˈfekt/,
-error_correction,https://www.oxfordlearnersdictionaries.com/definition/english/error-correction,B2,error correction,sửa lỗi,noun,/ˈerə kərekʃn/,
-down,https://www.oxfordlearnersdictionaries.com/definition/english/down_4,C1,down,xuống,adjective,/daʊn/,
-malicious,https://www.oxfordlearnersdictionaries.com/definition/english/malicious,C2,malicious,độc hại,adjective,/məˈlɪʃəs/,
-laggy,https://www.oxfordlearnersdictionaries.com/definition/english/laggy,C2,laggy,lag,adjective,/ˈlæɡi/,
-noise,https://www.oxfordlearnersdictionaries.com/definition/english/noise,C2,noise,tiếng ồn,noun,/nɔɪz/,
-overflow,https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2,C2,overflow,tràn,noun,/ˈəʊvəfləʊ/,
-overload,https://www.oxfordlearnersdictionaries.com/definition/english/overload_1,C1,overload,quá tải,verb,/ˌəʊvəˈləʊd/,
-malvertising,https://www.oxfordlearnersdictionaries.com/definition/english/malvertising,C2,malvertising,quảng cáo độc hại,noun,/ˈmælvətaɪzɪŋ/,
-hard_error,https://www.oxfordlearnersdictionaries.com/definition/english/hard-error,C2,hard error,lỗi cứng,noun,/ˌhɑːd ˈerə(r)/,
-help_desk,https://www.oxfordlearnersdictionaries.com/definition/english/help-desk,C1,help desk,bàn trợ giúp,noun,/ˈhelp desk/,
-malware,https://www.oxfordlearnersdictionaries.com/definition/english/malware,C2,malware,phần mềm độc hại,noun,/ˈmælweə(r)/,
-overload,https://www.oxfordlearnersdictionaries.com/definition/english/overload_2,C1,overload,quá tải,noun,/ˈəʊvələʊd/,
-security_hole,https://www.oxfordlearnersdictionaries.com/definition/english/security-hole,C2,security hole,lỗ hổng bảo mật,noun,/sɪˈkjʊərəti həʊl/,
-timeout,https://www.oxfordlearnersdictionaries.com/definition/english/timeout,C2,timeout,hết thời gian,noun,/ˈtaɪmaʊt/,
+debug,https://www.oxfordlearnersdictionaries.com/definition/english/debug_1,C2,debug,gỡ lỗi,noun,/ˈdiːbʌɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/deb/debug/debug__gb_2.mp3
+botnet,https://www.oxfordlearnersdictionaries.com/definition/english/botnet,C2,botnet,mạng botnet,noun,/ˈbɒtnet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/botne/botnet__gb_1.mp3
+corrupt,https://www.oxfordlearnersdictionaries.com/definition/english/corrupt_2,C2,corrupt,tham nhũng,verb,/kəˈrʌpt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corru/corrupt__gb_1.mp3
+crash,https://www.oxfordlearnersdictionaries.com/definition/english/crash_1,B2,crash,tai nạn,noun,/kræʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crash/crash__gb_2.mp3
+cracker,https://www.oxfordlearnersdictionaries.com/definition/english/cracker,C2,cracker,bánh quy giòn,noun,/ˈkrækə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crack/cracker__gb_1.mp3
+bug,https://www.oxfordlearnersdictionaries.com/definition/english/bug_1,B2,bug,sâu bọ,noun,/bʌɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bug/bug__/bug__gb_3.mp3
+buggy,https://www.oxfordlearnersdictionaries.com/definition/english/buggy_2,C2,buggy,có xe lôi,adjective,/ˈbʌɡi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bug/buggy/buggy__gb_4.mp3
+crash,https://www.oxfordlearnersdictionaries.com/definition/english/crash_2,B2,crash,tai nạn,verb,/kræʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crash/crash__gb_2.mp3
+cybercrime,https://www.oxfordlearnersdictionaries.com/definition/english/cybercrime,C1,cybercrime,tội phạm mạng,noun,/ˈsaɪbəkraɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cyb/cyber/cybercime__gb_1.mp3
+corruption,https://www.oxfordlearnersdictionaries.com/definition/english/corruption,C2,corruption,tham nhũng,noun,/kəˈrʌpʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corru/corruption__gb_1.mp3
+debug,https://www.oxfordlearnersdictionaries.com/definition/english/debug_2,C2,debug,gỡ lỗi,verb,/ˌdiːˈbʌɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/deb/debug/debug__gb_1.mp3
+hacker,https://www.oxfordlearnersdictionaries.com/definition/english/hacker,C1,hacker,tin tặc,noun,/ˈhækə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hac/hacke/hacker__gb_1.mp3
+hack,https://www.oxfordlearnersdictionaries.com/definition/english/hack_1,B2,hack,hack,verb,/hæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hac/hack_/hack__gb_9.mp3
+freeze,https://www.oxfordlearnersdictionaries.com/definition/english/freeze_1,C2,freeze,đông cứng,verb,/friːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/freez/freeze__gb_1.mp3
+error_message,https://www.oxfordlearnersdictionaries.com/definition/english/error-message,B1,error message,thông báo lỗi,noun,/ˈerə mesɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/err/error/error_message_1_gb_1.mp3
+hallucination,https://www.oxfordlearnersdictionaries.com/definition/english/hallucination,C2,hallucination,ảo giác,noun,/həˌluːsɪˈneɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/hallu/hallucination__gb_3.mp3
+hallucinate,https://www.oxfordlearnersdictionaries.com/definition/english/hallucinate,C2,hallucinate,ảo giác,verb,/həˈluːsɪneɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/hallu/hallucinate__gb_3.mp3
+disinfect,https://www.oxfordlearnersdictionaries.com/definition/english/disinfect,C2,disinfect,khử trùng,verb,/ˌdɪsɪnˈfekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disin/disinfect__gb_1.mp3
+error_correction,https://www.oxfordlearnersdictionaries.com/definition/english/error-correction,B2,error correction,sửa lỗi,noun,/ˈerə kərekʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/err/error/error_correction_1_gb_1.mp3
+down,https://www.oxfordlearnersdictionaries.com/definition/english/down_4,C1,down,xuống,adjective,/daʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dow/down_/down__gb_1.mp3
+malicious,https://www.oxfordlearnersdictionaries.com/definition/english/malicious,C2,malicious,độc hại,adjective,/məˈlɪʃəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/malic/malicious__gb_1.mp3
+laggy,https://www.oxfordlearnersdictionaries.com/definition/english/laggy,C2,laggy,lag,adjective,/ˈlæɡi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lag/laggy/laggy__gb_1.mp3
+noise,https://www.oxfordlearnersdictionaries.com/definition/english/noise,C2,noise,tiếng ồn,noun,/nɔɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/noi/noise/noise__gb_1.mp3
+overflow,https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2,C2,overflow,tràn,noun,/ˈəʊvəfləʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overf/overflow__gb_2.mp3
+overload,https://www.oxfordlearnersdictionaries.com/definition/english/overload_1,C1,overload,quá tải,verb,/ˌəʊvəˈləʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overl/overload__gb_1.mp3
+malvertising,https://www.oxfordlearnersdictionaries.com/definition/english/malvertising,C2,malvertising,quảng cáo độc hại,noun,/ˈmælvətaɪzɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/malve/malvertising__gb_1.mp3
+hard_error,https://www.oxfordlearnersdictionaries.com/definition/english/hard-error,C2,hard error,lỗi cứng,noun,/ˌhɑːd ˈerə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/har/hard_/hard_error_1_gb_1.mp3
+help_desk,https://www.oxfordlearnersdictionaries.com/definition/english/help-desk,C1,help desk,bàn trợ giúp,noun,/ˈhelp desk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hel/help_/help_desk_1_gb_1.mp3
+malware,https://www.oxfordlearnersdictionaries.com/definition/english/malware,C2,malware,phần mềm độc hại,noun,/ˈmælweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mal/malwa/malware__gb_2.mp3
+overload,https://www.oxfordlearnersdictionaries.com/definition/english/overload_2,C1,overload,quá tải,noun,/ˈəʊvələʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overl/overload__gb_2.mp3
+security_hole,https://www.oxfordlearnersdictionaries.com/definition/english/security-hole,C2,security hole,lỗ hổng bảo mật,noun,/sɪˈkjʊərəti həʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secur/security_hole_1_gb_1.mp3
+timeout,https://www.oxfordlearnersdictionaries.com/definition/english/timeout,C2,timeout,hết thời gian,noun,/ˈtaɪmaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/timeo/timeout__gb_1.mp3
 time_out,https://www.oxfordlearnersdictionaries.com/definition/english/time-out_1,C1,time out,hết giờ,phrasal verb,,
-trojan,https://www.oxfordlearnersdictionaries.com/definition/english/trojan,C2,Trojan,Trojan,noun,/ˈtrəʊdʒən/,
-trojan_horse,https://www.oxfordlearnersdictionaries.com/definition/english/trojan-horse,C2,Trojan horse,ngựa thành Troy,noun,/ˌtrəʊdʒən ˈhɔːs/,
-soft_error,https://www.oxfordlearnersdictionaries.com/definition/english/soft-error,C2,soft error,lỗi mềm,noun,/ˌsɒft ˈerə(r)/,
-unreadable,https://www.oxfordlearnersdictionaries.com/definition/english/unreadable,C2,unreadable,không thể đọc được,adjective,/ʌnˈriːdəbl/,
-troubleshoot,https://www.oxfordlearnersdictionaries.com/definition/english/troubleshoot,C2,troubleshoot,khắc phục sự cố,verb,/ˈtrʌblʃuːt/,
-infect,https://www.oxfordlearnersdictionaries.com/definition/english/infect,C1,infect,lây nhiễm,verb,/ɪnˈfekt/,
-virus,https://www.oxfordlearnersdictionaries.com/definition/english/virus,A2,virus,vi-rút,noun,/ˈvaɪrəs/,
-worm,https://www.oxfordlearnersdictionaries.com/definition/english/worm_1,C2,worm,sâu,noun,/wɜːm/,
+trojan,https://www.oxfordlearnersdictionaries.com/definition/english/trojan,C2,Trojan,Trojan,noun,/ˈtrəʊdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tro/troja/trojan__gb_1.mp3
+trojan_horse,https://www.oxfordlearnersdictionaries.com/definition/english/trojan-horse,C2,Trojan horse,ngựa thành Troy,noun,/ˌtrəʊdʒən ˈhɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tro/troja/trojan_horse_1_gb_1.mp3
+soft_error,https://www.oxfordlearnersdictionaries.com/definition/english/soft-error,C2,soft error,lỗi mềm,noun,/ˌsɒft ˈerə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sof/soft_/soft_error_1_gb_1.mp3
+unreadable,https://www.oxfordlearnersdictionaries.com/definition/english/unreadable,C2,unreadable,không thể đọc được,adjective,/ʌnˈriːdəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unr/unrea/unreadable__gb_1.mp3
+troubleshoot,https://www.oxfordlearnersdictionaries.com/definition/english/troubleshoot,C2,troubleshoot,khắc phục sự cố,verb,/ˈtrʌblʃuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tro/troub/troubleshoot__gb_1.mp3
+infect,https://www.oxfordlearnersdictionaries.com/definition/english/infect,C1,infect,lây nhiễm,verb,/ɪnˈfekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inf/infec/infect__gb_1.mp3
+virus,https://www.oxfordlearnersdictionaries.com/definition/english/virus,A2,virus,vi-rút,noun,/ˈvaɪrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vir/virus/virus__gb_2.mp3
+worm,https://www.oxfordlearnersdictionaries.com/definition/english/worm_1,C2,worm,sâu,noun,/wɜːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/worm_/worm__gb_1.mp3

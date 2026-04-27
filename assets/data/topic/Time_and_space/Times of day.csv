@@ -1,27 +1,27 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-afternoon,https://www.oxfordlearnersdictionaries.com/definition/english/afternoon,A1,afternoon,buổi chiều,noun,/ˌɑːftəˈnuːn/,
-dawn,https://www.oxfordlearnersdictionaries.com/definition/english/dawn_1,C1,dawn,bình minh,noun,/dɔːn/,
-dusk,https://www.oxfordlearnersdictionaries.com/definition/english/dusk,C1,dusk,hoàng hôn,noun,/dʌsk/,
-daylight,https://www.oxfordlearnersdictionaries.com/definition/english/daylight,B1,daylight,ánh sáng ban ngày,noun,/ˈdeɪlaɪt/,
-eve,https://www.oxfordlearnersdictionaries.com/definition/english/eve_1,C2,eve,đêm,noun,/iːv/,
-daytime,https://www.oxfordlearnersdictionaries.com/definition/english/daytime,B1,daytime,ban ngày,noun,/ˈdeɪtaɪm/,
-daybreak,https://www.oxfordlearnersdictionaries.com/definition/english/daybreak,C2,daybreak,bình minh,noun,/ˈdeɪbreɪk/,
-afternoons,https://www.oxfordlearnersdictionaries.com/definition/english/afternoons,A2,afternoons,buổi chiều,adverb,/ˌɑːftəˈnuːnz/,
-all-day,https://www.oxfordlearnersdictionaries.com/definition/english/all-day,C1,all-day,cả ngày,adjective,/ˈɔːl deɪ/,
-24-hour_clock,https://www.oxfordlearnersdictionaries.com/definition/english/24-hour-clock,C1,24-hour clock,đồng hồ 24 giờ,noun,/ˌtwenti fɔːr aʊə ˈklɒk/,
-midnight,https://www.oxfordlearnersdictionaries.com/definition/english/midnight,A1,midnight,nửa đêm,noun,/ˈmɪdnaɪt/,
-late,https://www.oxfordlearnersdictionaries.com/definition/english/late_2,A1,late,muộn,adverb,/leɪt/,
-lunchtime,https://www.oxfordlearnersdictionaries.com/definition/english/lunchtime,A2,lunchtime,giờ ăn trưa,noun,/ˈlʌntʃtaɪm/,
-morning,https://www.oxfordlearnersdictionaries.com/definition/english/morning_1,A1,morning,buổi sáng,noun,/ˈmɔːnɪŋ/,
-evening,https://www.oxfordlearnersdictionaries.com/definition/english/evening,A1,evening,buổi tối,noun,/ˈiːvnɪŋ/,
-midday,https://www.oxfordlearnersdictionaries.com/definition/english/midday,B1,midday,giữa trưa,noun,/ˌmɪdˈdeɪ/,
-nightly,https://www.oxfordlearnersdictionaries.com/definition/english/nightly_1,C1,nightly,hàng đêm,adjective,/ˈnaɪtli/,
-night,https://www.oxfordlearnersdictionaries.com/definition/english/night,A1,night,đêm,noun,/naɪt/,
-noon,https://www.oxfordlearnersdictionaries.com/definition/english/noon,C1,noon,buổi trưa,noun,/nuːn/,
-noontide,https://www.oxfordlearnersdictionaries.com/definition/english/noontide,C2,noontide,ban trưa,noun,/ˈnuːntaɪd/,
-sunrise,https://www.oxfordlearnersdictionaries.com/definition/english/sunrise,B2,sunrise,mặt trời mọc,noun,/ˈsʌnraɪz/,
-sunset,https://www.oxfordlearnersdictionaries.com/definition/english/sunset_1,B2,sunset,hoàng hôn,noun,/ˈsʌnset/,
-night-time,https://www.oxfordlearnersdictionaries.com/definition/english/night-time,B1,night-time,ban đêm,noun,/ˈnaɪt taɪm/,
-predawn,https://www.oxfordlearnersdictionaries.com/definition/english/predawn,C2,predawn,trước bình minh,adjective,/ˌpriːˈdɔːn/,
-o’clock,https://www.oxfordlearnersdictionaries.com/definition/english/o-clock,A1,o’clock,giờ,adverb,/əˈklɒk/,
-the_small/early_hours,https://www.oxfordlearnersdictionaries.com/definition/english/hour,C2,the small/early hours,những giờ nhỏ/đầu giờ,noun,/ˈaʊə(r)/,
+afternoon,https://www.oxfordlearnersdictionaries.com/definition/english/afternoon,A1,afternoon,buổi chiều,noun,/ˌɑːftəˈnuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aft/after/afternoon__gb_1.mp3
+dawn,https://www.oxfordlearnersdictionaries.com/definition/english/dawn_1,C1,dawn,bình minh,noun,/dɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/daw/dawn_/dawn__gb_1.mp3
+dusk,https://www.oxfordlearnersdictionaries.com/definition/english/dusk,C1,dusk,hoàng hôn,noun,/dʌsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dus/dusk_/dusk__gb_1.mp3
+daylight,https://www.oxfordlearnersdictionaries.com/definition/english/daylight,B1,daylight,ánh sáng ban ngày,noun,/ˈdeɪlaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/dayli/daylight__gb_1.mp3
+eve,https://www.oxfordlearnersdictionaries.com/definition/english/eve_1,C2,eve,đêm,noun,/iːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eve/eve__/eve__gb_1.mp3
+daytime,https://www.oxfordlearnersdictionaries.com/definition/english/daytime,B1,daytime,ban ngày,noun,/ˈdeɪtaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/dayti/daytime__gb_1.mp3
+daybreak,https://www.oxfordlearnersdictionaries.com/definition/english/daybreak,C2,daybreak,bình minh,noun,/ˈdeɪbreɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/daybr/daybreak__gb_2.mp3
+afternoons,https://www.oxfordlearnersdictionaries.com/definition/english/afternoons,A2,afternoons,buổi chiều,adverb,/ˌɑːftəˈnuːnz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aft/after/afternoons__gb_1.mp3
+all-day,https://www.oxfordlearnersdictionaries.com/definition/english/all-day,C1,all-day,cả ngày,adjective,/ˈɔːl deɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/all/all_d/all_day_1_gb_1.mp3
+24-hour_clock,https://www.oxfordlearnersdictionaries.com/definition/english/24-hour-clock,C1,24-hour clock,đồng hồ 24 giờ,noun,/ˌtwenti fɔːr aʊə ˈklɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/2/24_/24_ho/24_hour_clock_1_gb_1.mp3
+midnight,https://www.oxfordlearnersdictionaries.com/definition/english/midnight,A1,midnight,nửa đêm,noun,/ˈmɪdnaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/midni/midnight__gb_2.mp3
+late,https://www.oxfordlearnersdictionaries.com/definition/english/late_2,A1,late,muộn,adverb,/leɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lat/late_/late__gb_1.mp3
+lunchtime,https://www.oxfordlearnersdictionaries.com/definition/english/lunchtime,A2,lunchtime,giờ ăn trưa,noun,/ˈlʌntʃtaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lun/lunch/lunchtime__gb_1.mp3
+morning,https://www.oxfordlearnersdictionaries.com/definition/english/morning_1,A1,morning,buổi sáng,noun,/ˈmɔːnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/morni/morning__gb_1.mp3
+evening,https://www.oxfordlearnersdictionaries.com/definition/english/evening,A1,evening,buổi tối,noun,/ˈiːvnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eve/eveni/evening__gb_1.mp3
+midday,https://www.oxfordlearnersdictionaries.com/definition/english/midday,B1,midday,giữa trưa,noun,/ˌmɪdˈdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/midda/midday__gb_2.mp3
+nightly,https://www.oxfordlearnersdictionaries.com/definition/english/nightly_1,C1,nightly,hàng đêm,adjective,/ˈnaɪtli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nig/night/nightly__gb_1.mp3
+night,https://www.oxfordlearnersdictionaries.com/definition/english/night,A1,night,đêm,noun,/naɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nig/night/night__gb_2.mp3
+noon,https://www.oxfordlearnersdictionaries.com/definition/english/noon,C1,noon,buổi trưa,noun,/nuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/noo/noon_/noon__gb_1.mp3
+noontide,https://www.oxfordlearnersdictionaries.com/definition/english/noontide,C2,noontide,ban trưa,noun,/ˈnuːntaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/noo/noont/noontide__gb_1.mp3
+sunrise,https://www.oxfordlearnersdictionaries.com/definition/english/sunrise,B2,sunrise,mặt trời mọc,noun,/ˈsʌnraɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunri/sunrise__gb_1.mp3
+sunset,https://www.oxfordlearnersdictionaries.com/definition/english/sunset_1,B2,sunset,hoàng hôn,noun,/ˈsʌnset/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunse/sunset__gb_1.mp3
+night-time,https://www.oxfordlearnersdictionaries.com/definition/english/night-time,B1,night-time,ban đêm,noun,/ˈnaɪt taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nig/night/night_time_1_gb_1.mp3
+predawn,https://www.oxfordlearnersdictionaries.com/definition/english/predawn,C2,predawn,trước bình minh,adjective,/ˌpriːˈdɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preda/predawn__gb_2.mp3
+o’clock,https://www.oxfordlearnersdictionaries.com/definition/english/o-clock,A1,o’clock,giờ,adverb,/əˈklɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/o_c/o_clo/o_clock_1_gb_1.mp3
+the_small/early_hours,https://www.oxfordlearnersdictionaries.com/definition/english/hour,C2,the small/early hours,những giờ nhỏ/đầu giờ,noun,/ˈaʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/hour_/hour__gb_1.mp3

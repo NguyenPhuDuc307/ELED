@@ -1,67 +1,67 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-bouncer,https://www.oxfordlearnersdictionaries.com/definition/english/bouncer,C1,bouncer,người bảo vệ,noun,/ˈbaʊnsə(r)/,
-bat,https://www.oxfordlearnersdictionaries.com/definition/english/bat_1,B2,bat,dơi,noun,/bæt/,
-batting_average,https://www.oxfordlearnersdictionaries.com/definition/english/batting-average,C2,batting average,trung bình đánh bóng,noun,/ˈbætɪŋ ævərɪdʒ/,
-bowler,https://www.oxfordlearnersdictionaries.com/definition/english/bowler,C1,bowler,người ném bóng,noun,/ˈbəʊlə(r)/,
-bowling,https://www.oxfordlearnersdictionaries.com/definition/english/bowling,C1,bowling,bowling,noun,/ˈbəʊlɪŋ/,
-bail,https://www.oxfordlearnersdictionaries.com/definition/english/bail_1,C2,bail,tại ngoại,noun,/beɪl/,
-box,https://www.oxfordlearnersdictionaries.com/definition/english/box_1,C2,box,hộp,noun,/bɒks/,
-boundary,https://www.oxfordlearnersdictionaries.com/definition/english/boundary,C2,boundary,ranh giới,noun,/ˈbaʊndri/,
-batswoman,https://www.oxfordlearnersdictionaries.com/definition/english/batswoman,C2,batswoman,người đánh bóng chày,noun,/ˈbætswʊmən/,
-cricket,https://www.oxfordlearnersdictionaries.com/definition/english/cricket,A2,cricket,dế,noun,/ˈkrɪkɪt/,
-declare,https://www.oxfordlearnersdictionaries.com/definition/english/declare,C2,declare,tuyên bố,verb,/dɪˈkleə(r)/,
-crease,https://www.oxfordlearnersdictionaries.com/definition/english/crease_1,C2,crease,nếp gấp,noun,/kriːs/,
-delivery,https://www.oxfordlearnersdictionaries.com/definition/english/delivery,C2,delivery,vận chuyển,noun,/dɪˈlɪvəri/,
-century,https://www.oxfordlearnersdictionaries.com/definition/english/century,C2,century,thế kỷ,noun,/ˈsentʃəri/,
-dismiss,https://www.oxfordlearnersdictionaries.com/definition/english/dismiss,C2,dismiss,miễn nhiệm,verb,/dɪsˈmɪs/,
-batsman,https://www.oxfordlearnersdictionaries.com/definition/english/batsman,C2,batsman,người đánh bóng,noun,/ˈbætsmən/,
-cricketer,https://www.oxfordlearnersdictionaries.com/definition/english/cricketer,B1,cricketer,vận động viên cricket,noun,/ˈkrɪkɪtə(r)/,
-cricketing,https://www.oxfordlearnersdictionaries.com/definition/english/cricketing,B2,cricketing,bán vé,adjective,/ˈkrɪkɪtɪŋ/,
-decision_review_system,https://www.oxfordlearnersdictionaries.com/definition/english/decision-review-system,C2,Decision Review System,Hệ thống xem xét quyết định,noun,/dɪˌsɪʒn rɪˈvjuː sɪstəm/,
-dismissal,https://www.oxfordlearnersdictionaries.com/definition/english/dismissal,C2,dismissal,sa thải,noun,/dɪsˈmɪsl/,
-duck,https://www.oxfordlearnersdictionaries.com/definition/english/duck_1,C2,duck,con vịt,noun,/dʌk/,
+bouncer,https://www.oxfordlearnersdictionaries.com/definition/english/bouncer,C1,bouncer,người bảo vệ,noun,/ˈbaʊnsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bou/bounc/bouncer__gb_1.mp3
+bat,https://www.oxfordlearnersdictionaries.com/definition/english/bat_1,B2,bat,dơi,noun,/bæt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bat/bat__/bat__gb_4.mp3
+batting_average,https://www.oxfordlearnersdictionaries.com/definition/english/batting-average,C2,batting average,trung bình đánh bóng,noun,/ˈbætɪŋ ævərɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bat/batti/batting_average_1_gb_1.mp3
+bowler,https://www.oxfordlearnersdictionaries.com/definition/english/bowler,C1,bowler,người ném bóng,noun,/ˈbəʊlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bow/bowle/bowler__gb_1.mp3
+bowling,https://www.oxfordlearnersdictionaries.com/definition/english/bowling,C1,bowling,bowling,noun,/ˈbəʊlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bow/bowli/bowling__gb_3.mp3
+bail,https://www.oxfordlearnersdictionaries.com/definition/english/bail_1,C2,bail,tại ngoại,noun,/beɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bai/bail_/bail__gb_2.mp3
+box,https://www.oxfordlearnersdictionaries.com/definition/english/box_1,C2,box,hộp,noun,/bɒks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/box/box__/box__gb_2.mp3
+boundary,https://www.oxfordlearnersdictionaries.com/definition/english/boundary,C2,boundary,ranh giới,noun,/ˈbaʊndri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bou/bound/boundary__gb_1.mp3
+batswoman,https://www.oxfordlearnersdictionaries.com/definition/english/batswoman,C2,batswoman,người đánh bóng chày,noun,/ˈbætswʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bat/batsw/batswoman__gb_1.mp3
+cricket,https://www.oxfordlearnersdictionaries.com/definition/english/cricket,A2,cricket,dế,noun,/ˈkrɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cri/crick/cricket__gb_2.mp3
+declare,https://www.oxfordlearnersdictionaries.com/definition/english/declare,C2,declare,tuyên bố,verb,/dɪˈkleə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decla/declare__gb_3.mp3
+crease,https://www.oxfordlearnersdictionaries.com/definition/english/crease_1,C2,crease,nếp gấp,noun,/kriːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/creas/crease__gb_1.mp3
+delivery,https://www.oxfordlearnersdictionaries.com/definition/english/delivery,C2,delivery,vận chuyển,noun,/dɪˈlɪvəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/del/deliv/delivery__gb_2.mp3
+century,https://www.oxfordlearnersdictionaries.com/definition/english/century,C2,century,thế kỷ,noun,/ˈsentʃəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cen/centu/century__gb_3.mp3
+dismiss,https://www.oxfordlearnersdictionaries.com/definition/english/dismiss,C2,dismiss,miễn nhiệm,verb,/dɪsˈmɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/dismi/dismiss__gb_1.mp3
+batsman,https://www.oxfordlearnersdictionaries.com/definition/english/batsman,C2,batsman,người đánh bóng,noun,/ˈbætsmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bat/batsm/batsman__gb_2.mp3
+cricketer,https://www.oxfordlearnersdictionaries.com/definition/english/cricketer,B1,cricketer,vận động viên cricket,noun,/ˈkrɪkɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cri/crick/cricketer__gb_1.mp3
+cricketing,https://www.oxfordlearnersdictionaries.com/definition/english/cricketing,B2,cricketing,bán vé,adjective,/ˈkrɪkɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cri/crick/cricketing__gb_1.mp3
+decision_review_system,https://www.oxfordlearnersdictionaries.com/definition/english/decision-review-system,C2,Decision Review System,Hệ thống xem xét quyết định,noun,/dɪˌsɪʒn rɪˈvjuː sɪstəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decis/decision_review_system_1_gb_1.mp3
+dismissal,https://www.oxfordlearnersdictionaries.com/definition/english/dismissal,C2,dismissal,sa thải,noun,/dɪsˈmɪsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/dismi/dismissal__gb_1.mp3
+duck,https://www.oxfordlearnersdictionaries.com/definition/english/duck_1,C2,duck,con vịt,noun,/dʌk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/duc/duck_/duck__gb_2.mp3
 drs,https://www.oxfordlearnersdictionaries.com/definition/english/drs,C2,DRS,DRS,noun,/ˌdiː ɑːr ˈes/,
-fielder,https://www.oxfordlearnersdictionaries.com/definition/english/fielder,C2,fielder,người điều khiển,noun,/ˈfiːldə(r)/,
-field,https://www.oxfordlearnersdictionaries.com/definition/english/field_2,C2,field,cánh đồng,verb,/fiːld/,
+fielder,https://www.oxfordlearnersdictionaries.com/definition/english/fielder,C2,fielder,người điều khiển,noun,/ˈfiːldə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fie/field/fielder__gb_1.mp3
+field,https://www.oxfordlearnersdictionaries.com/definition/english/field_2,C2,field,cánh đồng,verb,/fiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fie/field/field__gb_3.mp3
 follow_on,https://www.oxfordlearnersdictionaries.com/definition/english/follow-on_1,C2,follow on,theo dõi tiếp,phrasal verb,,
-follow-on,https://www.oxfordlearnersdictionaries.com/definition/english/follow-on_2,C2,follow-on,tiếp theo,noun,/ˌfɒləʊ ˈɒn/,
-four,https://www.oxfordlearnersdictionaries.com/definition/english/four,C2,four,bốn,number,/fɔː(r)/,
-free_hit,https://www.oxfordlearnersdictionaries.com/definition/english/free-hit,C2,free hit,cú đánh miễn phí,noun,/ˌfriː ˈhɪt/,
-fast_bowler,https://www.oxfordlearnersdictionaries.com/definition/english/fast-bowler,C1,fast bowler,vận động viên ném bóng nhanh,noun,/ˈfɑːst bəʊlə(r)/,
-googly,https://www.oxfordlearnersdictionaries.com/definition/english/googly,C2,googly,googly,noun,/ˈɡuːɡli/,
-grubber,https://www.oxfordlearnersdictionaries.com/definition/english/grubber,C2,grubber,người đào bới,noun,/ˈɡrʌbə(r)/,
-howzat,https://www.oxfordlearnersdictionaries.com/definition/english/howzat,C2,howzat,tiếng hú,exclamation,/ˌhaʊˈzæt/,
-infield,https://www.oxfordlearnersdictionaries.com/definition/english/infield_1,C2,infield,nội đồng,noun,/ˈɪnfiːld/,
-full_toss,https://www.oxfordlearnersdictionaries.com/definition/english/full-toss,C2,full toss,ném đầy đủ,noun,/ˌfʊl ˈtɒs/,
-innings,https://www.oxfordlearnersdictionaries.com/definition/english/innings,C2,innings,phiên,noun,/ˈɪnɪŋz/,
-half-century,https://www.oxfordlearnersdictionaries.com/definition/english/half-century,C2,half-century,nửa thế kỷ,noun,/ˌhɑːf ˈsentʃəri/,
-keep_wicket,https://www.oxfordlearnersdictionaries.com/definition/english/wicket,C2,keep wicket,giữ wicket,noun,/ˈwɪkɪt/,
-in,https://www.oxfordlearnersdictionaries.com/definition/english/in_2,A2,in,TRONG,adverb,/ɪn/,
-maiden,https://www.oxfordlearnersdictionaries.com/definition/english/maiden_1,C2,maiden,thiếu nữ,noun,/ˈmeɪdn/,
-opener,https://www.oxfordlearnersdictionaries.com/definition/english/opener,C2,opener,cái mở đầu,noun,/ˈəʊpənə(r)/,
-no-ball,https://www.oxfordlearnersdictionaries.com/definition/english/no-ball,C2,no-ball,không có bóng,noun,/ˌnəʊ ˈbɔːl/,
-leg_bye,https://www.oxfordlearnersdictionaries.com/definition/english/leg-bye,C2,leg bye,tạm biệt,noun,/ˌleɡ ˈbaɪ/,
-lbw,https://www.oxfordlearnersdictionaries.com/definition/english/lbw,C2,lbw,lbw,abbreviation,/ˌel biː ˈdʌbljuː/,
-one-dayer,https://www.oxfordlearnersdictionaries.com/definition/english/one-dayer,C2,one-dayer,một ngày,noun,/ˌwʌn ˈdeɪə(r)/,
+follow-on,https://www.oxfordlearnersdictionaries.com/definition/english/follow-on_2,C2,follow-on,tiếp theo,noun,/ˌfɒləʊ ˈɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fol/follo/follow_on_1_gb_1.mp3
+four,https://www.oxfordlearnersdictionaries.com/definition/english/four,C2,four,bốn,number,/fɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fou/four_/four__gb_2.mp3
+free_hit,https://www.oxfordlearnersdictionaries.com/definition/english/free-hit,C2,free hit,cú đánh miễn phí,noun,/ˌfriː ˈhɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/free_/free_hit_1_gb_1.mp3
+fast_bowler,https://www.oxfordlearnersdictionaries.com/definition/english/fast-bowler,C1,fast bowler,vận động viên ném bóng nhanh,noun,/ˈfɑːst bəʊlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fas/fast_/fast_bowler_1_gb_2.mp3
+googly,https://www.oxfordlearnersdictionaries.com/definition/english/googly,C2,googly,googly,noun,/ˈɡuːɡli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/goo/googl/googly__gb_2.mp3
+grubber,https://www.oxfordlearnersdictionaries.com/definition/english/grubber,C2,grubber,người đào bới,noun,/ˈɡrʌbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gru/grubb/grubber__gb_1.mp3
+howzat,https://www.oxfordlearnersdictionaries.com/definition/english/howzat,C2,howzat,tiếng hú,exclamation,/ˌhaʊˈzæt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/how/howza/howzat__gb_1.mp3
+infield,https://www.oxfordlearnersdictionaries.com/definition/english/infield_1,C2,infield,nội đồng,noun,/ˈɪnfiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inf/infie/infield__gb_1.mp3
+full_toss,https://www.oxfordlearnersdictionaries.com/definition/english/full-toss,C2,full toss,ném đầy đủ,noun,/ˌfʊl ˈtɒs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/ful/full_/full_toss_1_gb_1.mp3
+innings,https://www.oxfordlearnersdictionaries.com/definition/english/innings,C2,innings,phiên,noun,/ˈɪnɪŋz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inn/innin/innings__gb_1.mp3
+half-century,https://www.oxfordlearnersdictionaries.com/definition/english/half-century,C2,half-century,nửa thế kỷ,noun,/ˌhɑːf ˈsentʃəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/half_/half_century_1_gb_1.mp3
+keep_wicket,https://www.oxfordlearnersdictionaries.com/definition/english/wicket,C2,keep wicket,giữ wicket,noun,/ˈwɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wic/wicke/wicket__gb_1.mp3
+in,https://www.oxfordlearnersdictionaries.com/definition/english/in_2,A2,in,TRONG,adverb,/ɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/in_/in__g/in__gb_1.mp3
+maiden,https://www.oxfordlearnersdictionaries.com/definition/english/maiden_1,C2,maiden,thiếu nữ,noun,/ˈmeɪdn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/maide/maiden__gb_1.mp3
+opener,https://www.oxfordlearnersdictionaries.com/definition/english/opener,C2,opener,cái mở đầu,noun,/ˈəʊpənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/opene/opener__gb_2.mp3
+no-ball,https://www.oxfordlearnersdictionaries.com/definition/english/no-ball,C2,no-ball,không có bóng,noun,/ˌnəʊ ˈbɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/no_/no_ba/no_ball_1_gb_1.mp3
+leg_bye,https://www.oxfordlearnersdictionaries.com/definition/english/leg-bye,C2,leg bye,tạm biệt,noun,/ˌleɡ ˈbaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/leg/leg_b/leg_bye_1_gb_1.mp3
+lbw,https://www.oxfordlearnersdictionaries.com/definition/english/lbw,C2,lbw,lbw,abbreviation,/ˌel biː ˈdʌbljuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lbw/lbw__/lbw__gb_1.mp3
+one-dayer,https://www.oxfordlearnersdictionaries.com/definition/english/one-dayer,C2,one-dayer,một ngày,noun,/ˌwʌn ˈdeɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/one/one_d/one_dayer_1_gb_1.mp3
 odi,https://www.oxfordlearnersdictionaries.com/definition/english/odi,C2,ODI,ODI,noun,/ˌəʊ diː ˈaɪ/,
-out,https://www.oxfordlearnersdictionaries.com/definition/english/out_1,A2,out,ngoài,"adverb,preposition",/aʊt/,
-over,https://www.oxfordlearnersdictionaries.com/definition/english/over_3,C2,over,qua,noun,/ˈəʊvə(r)/,
-pace_bowler,https://www.oxfordlearnersdictionaries.com/definition/english/pace-bowler,C2,pace bowler,vận động viên ném bóng tốc độ,noun,/ˈpeɪs bəʊlə(r)/,
-pad,https://www.oxfordlearnersdictionaries.com/definition/english/pad_1,B2,pad,đệm,noun,/pæd/,
+out,https://www.oxfordlearnersdictionaries.com/definition/english/out_1,A2,out,ngoài,"adverb,preposition",/aʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/out__/out__gb_1.mp3
+over,https://www.oxfordlearnersdictionaries.com/definition/english/over_3,C2,over,qua,noun,/ˈəʊvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/over_/over__gb_1.mp3
+pace_bowler,https://www.oxfordlearnersdictionaries.com/definition/english/pace-bowler,C2,pace bowler,vận động viên ném bóng tốc độ,noun,/ˈpeɪs bəʊlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pac/pace_/pace_bowler_1_gb_2.mp3
+pad,https://www.oxfordlearnersdictionaries.com/definition/english/pad_1,B2,pad,đệm,noun,/pæd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pad/pad__/pad__gb_1.mp3
 run_out,https://www.oxfordlearnersdictionaries.com/definition/english/run-out_1,C2,run out,hết,phrasal verb,,
-run-out,https://www.oxfordlearnersdictionaries.com/definition/english/run-out_2,C2,run-out,hết,noun,/ˈrʌn aʊt/,
-run,https://www.oxfordlearnersdictionaries.com/definition/english/run_2,C2,run,chạy,noun,/rʌn/,
-series,https://www.oxfordlearnersdictionaries.com/definition/english/series,C2,series,loạt,noun,/ˈsɪəriːz/,
-outfield,https://www.oxfordlearnersdictionaries.com/definition/english/outfield_1,C2,outfield,ngoài sân,noun,/ˈaʊtfiːld/,
-six,https://www.oxfordlearnersdictionaries.com/definition/english/six,C2,six,sáu,number,/sɪks/,
-sledging,https://www.oxfordlearnersdictionaries.com/definition/english/sledging,C2,sledging,trượt tuyết,noun,/ˈsledʒɪŋ/,
-stump,https://www.oxfordlearnersdictionaries.com/definition/english/stump_1,C2,stump,gốc cây,noun,/stʌmp/,
-spinner,https://www.oxfordlearnersdictionaries.com/definition/english/spinner,C2,spinner,máy quay,noun,/ˈspɪnə(r)/,
-twenty20™,https://www.oxfordlearnersdictionaries.com/definition/english/twenty20tm,C2,Twenty20™,Twenty20™,noun,/twenti ˈtwenti/,
-wicket,https://www.oxfordlearnersdictionaries.com/definition/english/wicket,C2,wicket,cái bấc,noun,/ˈwɪkɪt/,
-walk,https://www.oxfordlearnersdictionaries.com/definition/english/walk_1,C2,walk,đi bộ,verb,/wɔːk/,
-test_match,https://www.oxfordlearnersdictionaries.com/definition/english/test-match,C2,Test match,Trận đấu thử nghiệm,noun,/ˈtest mætʃ/,
-super_over,https://www.oxfordlearnersdictionaries.com/definition/english/super-over,C2,super over,siêu hơn,noun,/ˈsuːpər əʊvə(r)/,
+run-out,https://www.oxfordlearnersdictionaries.com/definition/english/run-out_2,C2,run-out,hết,noun,/ˈrʌn aʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/run/run_o/run_out_1_gb_1.mp3
+run,https://www.oxfordlearnersdictionaries.com/definition/english/run_2,C2,run,chạy,noun,/rʌn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/run/run__/run__gb_1.mp3
+series,https://www.oxfordlearnersdictionaries.com/definition/english/series,C2,series,loạt,noun,/ˈsɪəriːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/serie/series__gb_3.mp3
+outfield,https://www.oxfordlearnersdictionaries.com/definition/english/outfield_1,C2,outfield,ngoài sân,noun,/ˈaʊtfiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outfi/outfield__gb_1.mp3
+six,https://www.oxfordlearnersdictionaries.com/definition/english/six,C2,six,sáu,number,/sɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/six/six__/six__gb_2.mp3
+sledging,https://www.oxfordlearnersdictionaries.com/definition/english/sledging,C2,sledging,trượt tuyết,noun,/ˈsledʒɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sle/sledg/sledging__gb_3.mp3
+stump,https://www.oxfordlearnersdictionaries.com/definition/english/stump_1,C2,stump,gốc cây,noun,/stʌmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stump/stump__gb_1.mp3
+spinner,https://www.oxfordlearnersdictionaries.com/definition/english/spinner,C2,spinner,máy quay,noun,/ˈspɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spinn/spinner__gb_1.mp3
+twenty20™,https://www.oxfordlearnersdictionaries.com/definition/english/twenty20tm,C2,Twenty20™,Twenty20™,noun,/twenti ˈtwenti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twe/twent/twenty20_1_gb_1.mp3
+wicket,https://www.oxfordlearnersdictionaries.com/definition/english/wicket,C2,wicket,cái bấc,noun,/ˈwɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wic/wicke/wicket__gb_1.mp3
+walk,https://www.oxfordlearnersdictionaries.com/definition/english/walk_1,C2,walk,đi bộ,verb,/wɔːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wal/walk_/walk__gb_1.mp3
+test_match,https://www.oxfordlearnersdictionaries.com/definition/english/test-match,C2,Test match,Trận đấu thử nghiệm,noun,/ˈtest mætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test_match_1_gb_1.mp3
+super_over,https://www.oxfordlearnersdictionaries.com/definition/english/super-over,C2,super over,siêu hơn,noun,/ˈsuːpər əʊvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sup/super/super_over_1_gb_1.mp3
 t20™,https://www.oxfordlearnersdictionaries.com/definition/english/t20tm,C2,T20™,T20™,abbreviation,/ˈtiː twenti/,
-spin,https://www.oxfordlearnersdictionaries.com/definition/english/spin_2,C1,spin,quay,noun,/spɪn/,
-wicketkeeper,https://www.oxfordlearnersdictionaries.com/definition/english/wicketkeeper,C2,wicketkeeper,người giữ bóng,noun,/ˈwɪkɪtkiːpə(r)/,
+spin,https://www.oxfordlearnersdictionaries.com/definition/english/spin_2,C1,spin,quay,noun,/spɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spin_/spin__gb_1.mp3
+wicketkeeper,https://www.oxfordlearnersdictionaries.com/definition/english/wicketkeeper,C2,wicketkeeper,người giữ bóng,noun,/ˈwɪkɪtkiːpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wic/wicke/wicketkeeper__gb_1.mp3

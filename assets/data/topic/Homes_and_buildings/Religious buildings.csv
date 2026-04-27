@@ -1,45 +1,45 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-abbey,https://www.oxfordlearnersdictionaries.com/definition/english/abbey,B2,abbey,tu viện,noun,/ˈæbi/,
-aisle,https://www.oxfordlearnersdictionaries.com/definition/english/aisle,B2,aisle,lối đi,noun,/aɪl/,
-cloister,https://www.oxfordlearnersdictionaries.com/definition/english/cloister,C2,cloister,tu viện,noun,/ˈklɔɪstə(r)/,
-ashram,https://www.oxfordlearnersdictionaries.com/definition/english/ashram,C2,ashram,đạo tràng,noun,/ˈæʃrəm/,
-chapel,https://www.oxfordlearnersdictionaries.com/definition/english/chapel,C2,chapel,nhà nguyện,noun,/ˈtʃæpl/,
-church,https://www.oxfordlearnersdictionaries.com/definition/english/church,A2,church,nhà thờ,noun,/tʃɜːtʃ/,
-apse,https://www.oxfordlearnersdictionaries.com/definition/english/apse,C2,apse,nơi an nghỉ,noun,/æps/,
-cathedral,https://www.oxfordlearnersdictionaries.com/definition/english/cathedral,B1,cathedral,thánh đường,noun,/kəˈθiːdrəl/,
-choir,https://www.oxfordlearnersdictionaries.com/definition/english/choir,C2,choir,dàn đồng ca,noun,/ˈkwaɪə(r)/,
-convent,https://www.oxfordlearnersdictionaries.com/definition/english/convent,C2,convent,tu viện,noun,/ˈkɒnvənt/,
-gargoyle,https://www.oxfordlearnersdictionaries.com/definition/english/gargoyle,C2,gargoyle,tượng đầu thú,noun,/ˈɡɑːɡɔɪl/,
-hermitage,https://www.oxfordlearnersdictionaries.com/definition/english/hermitage,C2,hermitage,ẩn thất,noun,/ˈhɜːmɪtɪdʒ/,
-chapter_house,https://www.oxfordlearnersdictionaries.com/definition/english/chapter-house,C2,chapter house,nhà chương,noun,/ˈtʃæptə haʊs/,
-friary,https://www.oxfordlearnersdictionaries.com/definition/english/friary,C2,friary,giáo đoàn,noun,/ˈfraɪəri/,
-gurdwara,https://www.oxfordlearnersdictionaries.com/definition/english/gurdwara,C2,gurdwara,gurdwara,noun,/ɡɜːˈdwɑːrə/,
-flying_buttress,https://www.oxfordlearnersdictionaries.com/definition/english/flying-buttress,C2,flying buttress,trụ bay,noun,/ˌflaɪɪŋ ˈbʌtrəs/,
-kaaba,https://www.oxfordlearnersdictionaries.com/definition/english/kaaba,C2,Kaaba,Kaaba,noun,/ˈkɑːbə/,
-madrasa,https://www.oxfordlearnersdictionaries.com/definition/english/madrasa,C2,madrasa,madrasa,noun,/məˈdræsə/,
-monastery,https://www.oxfordlearnersdictionaries.com/definition/english/monastery,C1,monastery,tu viện,noun,/ˈmɒnəstri/,
-meeting_house,https://www.oxfordlearnersdictionaries.com/definition/english/meeting-house,C2,meeting house,nhà họp,noun,/ˈmiːtɪŋ haʊs/,
-minaret,https://www.oxfordlearnersdictionaries.com/definition/english/minaret,C2,minaret,tháp nhỏ,noun,/ˌmɪnəˈret/,
-mandir,https://www.oxfordlearnersdictionaries.com/definition/english/mandir,C2,mandir,mandir,noun,/ˈmændɪə(r)/,
-masjid,https://www.oxfordlearnersdictionaries.com/definition/english/masjid,C2,masjid,nhà thờ Hồi giáo,noun,/ˈmʌsdʒɪd/,
-mosque,https://www.oxfordlearnersdictionaries.com/definition/english/mosque,B2,mosque,nhà thờ Hồi giáo,noun,/mɒsk/,
-nunnery,https://www.oxfordlearnersdictionaries.com/definition/english/nunnery,C2,nunnery,ni viện,noun,/ˈnʌnəri/,
-nave,https://www.oxfordlearnersdictionaries.com/definition/english/nave,C2,nave,gian giữa,noun,/neɪv/,
-narthex,https://www.oxfordlearnersdictionaries.com/definition/english/narthex,C2,narthex,narthex,noun,/ˈnɑːθeks/,
-pagoda,https://www.oxfordlearnersdictionaries.com/definition/english/pagoda,C2,pagoda,chùa,noun,/pəˈɡəʊdə/,
-sanctuary,https://www.oxfordlearnersdictionaries.com/definition/english/sanctuary,C2,sanctuary,nơi tôn nghiêm,noun,/ˈsæŋktʃuəri/,
-spire,https://www.oxfordlearnersdictionaries.com/definition/english/spire,C1,spire,ngọn lửa,noun,/ˈspaɪə(r)/,
-screen,https://www.oxfordlearnersdictionaries.com/definition/english/screen_1,C2,screen,màn hình,noun,/skriːn/,
-shrine,https://www.oxfordlearnersdictionaries.com/definition/english/shrine,C1,shrine,điện thờ,noun,/ʃraɪn/,
-parsonage,https://www.oxfordlearnersdictionaries.com/definition/english/parsonage,C2,parsonage,nhà phân tích,noun,/ˈpɑːsənɪdʒ/,
-pulpit,https://www.oxfordlearnersdictionaries.com/definition/english/pulpit,C2,pulpit,bục giảng,noun,/ˈpʊlpɪt/,
-rectory,https://www.oxfordlearnersdictionaries.com/definition/english/rectory,C2,rectory,nhà xứ,noun,/ˈrektəri/,
-priory,https://www.oxfordlearnersdictionaries.com/definition/english/priory,C2,priory,tu viện,noun,/ˈpraɪəri/,
-steeple,https://www.oxfordlearnersdictionaries.com/definition/english/steeple,C2,steeple,gác chuông,noun,/ˈstiːpl/,
-synagogue,https://www.oxfordlearnersdictionaries.com/definition/english/synagogue,C2,synagogue,giáo đường Do Thái,noun,/ˈsɪnəɡɒɡ/,
-transept,https://www.oxfordlearnersdictionaries.com/definition/english/transept,C2,transept,ngang qua,noun,/ˈtrænsept/,
-temple,https://www.oxfordlearnersdictionaries.com/definition/english/temple,B2,temple,ngôi đền,noun,/ˈtempl/,
-vault,https://www.oxfordlearnersdictionaries.com/definition/english/vault_1,C2,vault,kho tiền,noun,/vɔːlt/,
-ziggurat,https://www.oxfordlearnersdictionaries.com/definition/english/ziggurat,C2,ziggurat,ngoằn ngoèo,noun,/ˈzɪɡəræt/,
-stained_glass,https://www.oxfordlearnersdictionaries.com/definition/english/stained-glass,C2,stained glass,kính màu,noun,/ˌsteɪnd ˈɡlɑːs/,
-vicarage,https://www.oxfordlearnersdictionaries.com/definition/english/vicarage,C2,vicarage,nhà mục sư,noun,/ˈvɪkərɪdʒ/,
+abbey,https://www.oxfordlearnersdictionaries.com/definition/english/abbey,B2,abbey,tu viện,noun,/ˈæbi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abb/abbey/abbey__gb_1.mp3
+aisle,https://www.oxfordlearnersdictionaries.com/definition/english/aisle,B2,aisle,lối đi,noun,/aɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ais/aisle/aisle__gb_1.mp3
+cloister,https://www.oxfordlearnersdictionaries.com/definition/english/cloister,C2,cloister,tu viện,noun,/ˈklɔɪstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/clois/cloister__gb_1.mp3
+ashram,https://www.oxfordlearnersdictionaries.com/definition/english/ashram,C2,ashram,đạo tràng,noun,/ˈæʃrəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ash/ashra/ashram__gb_1.mp3
+chapel,https://www.oxfordlearnersdictionaries.com/definition/english/chapel,C2,chapel,nhà nguyện,noun,/ˈtʃæpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chape/chapel__gb_3.mp3
+church,https://www.oxfordlearnersdictionaries.com/definition/english/church,A2,church,nhà thờ,noun,/tʃɜːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chu/churc/church__gb_2.mp3
+apse,https://www.oxfordlearnersdictionaries.com/definition/english/apse,C2,apse,nơi an nghỉ,noun,/æps/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aps/apse_/apse__gb_1.mp3
+cathedral,https://www.oxfordlearnersdictionaries.com/definition/english/cathedral,B1,cathedral,thánh đường,noun,/kəˈθiːdrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/cathe/cathedral__gb_1.mp3
+choir,https://www.oxfordlearnersdictionaries.com/definition/english/choir,C2,choir,dàn đồng ca,noun,/ˈkwaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cho/choir/choir__gb_1.mp3
+convent,https://www.oxfordlearnersdictionaries.com/definition/english/convent,C2,convent,tu viện,noun,/ˈkɒnvənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconv/xconvent__gb_1.mp3
+gargoyle,https://www.oxfordlearnersdictionaries.com/definition/english/gargoyle,C2,gargoyle,tượng đầu thú,noun,/ˈɡɑːɡɔɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gar/gargo/gargoyle__gb_2.mp3
+hermitage,https://www.oxfordlearnersdictionaries.com/definition/english/hermitage,C2,hermitage,ẩn thất,noun,/ˈhɜːmɪtɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/her/hermi/hermitage__gb_1.mp3
+chapter_house,https://www.oxfordlearnersdictionaries.com/definition/english/chapter-house,C2,chapter house,nhà chương,noun,/ˈtʃæptə haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chapt/chapter_house_1_gb_1.mp3
+friary,https://www.oxfordlearnersdictionaries.com/definition/english/friary,C2,friary,giáo đoàn,noun,/ˈfraɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fri/friar/friary__gb_1.mp3
+gurdwara,https://www.oxfordlearnersdictionaries.com/definition/english/gurdwara,C2,gurdwara,gurdwara,noun,/ɡɜːˈdwɑːrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gur/gurdw/gurdwara__gb_1.mp3
+flying_buttress,https://www.oxfordlearnersdictionaries.com/definition/english/flying-buttress,C2,flying buttress,trụ bay,noun,/ˌflaɪɪŋ ˈbʌtrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fly/flyin/flying_buttress_1_gb_1.mp3
+kaaba,https://www.oxfordlearnersdictionaries.com/definition/english/kaaba,C2,Kaaba,Kaaba,noun,/ˈkɑːbə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kaa/kaaba/kaaba__gb_1.mp3
+madrasa,https://www.oxfordlearnersdictionaries.com/definition/english/madrasa,C2,madrasa,madrasa,noun,/məˈdræsə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mad/madra/madrasa__gb_1.mp3
+monastery,https://www.oxfordlearnersdictionaries.com/definition/english/monastery,C1,monastery,tu viện,noun,/ˈmɒnəstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monas/monastery__gb_1.mp3
+meeting_house,https://www.oxfordlearnersdictionaries.com/definition/english/meeting-house,C2,meeting house,nhà họp,noun,/ˈmiːtɪŋ haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mee/meeti/meeting_house_1_gb_1.mp3
+minaret,https://www.oxfordlearnersdictionaries.com/definition/english/minaret,C2,minaret,tháp nhỏ,noun,/ˌmɪnəˈret/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minar/minaret__gb_1.mp3
+mandir,https://www.oxfordlearnersdictionaries.com/definition/english/mandir,C2,mandir,mandir,noun,/ˈmændɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/man/mandi/mandir__gb_1.mp3
+masjid,https://www.oxfordlearnersdictionaries.com/definition/english/masjid,C2,masjid,nhà thờ Hồi giáo,noun,/ˈmʌsdʒɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/masji/masjid__gb_2.mp3
+mosque,https://www.oxfordlearnersdictionaries.com/definition/english/mosque,B2,mosque,nhà thờ Hồi giáo,noun,/mɒsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mos/mosqu/mosque__gb_1.mp3
+nunnery,https://www.oxfordlearnersdictionaries.com/definition/english/nunnery,C2,nunnery,ni viện,noun,/ˈnʌnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nun/nunne/nunnery__gb_1.mp3
+nave,https://www.oxfordlearnersdictionaries.com/definition/english/nave,C2,nave,gian giữa,noun,/neɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nav/nave_/nave__gb_1.mp3
+narthex,https://www.oxfordlearnersdictionaries.com/definition/english/narthex,C2,narthex,narthex,noun,/ˈnɑːθeks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nar/narth/narthex__gb_1.mp3
+pagoda,https://www.oxfordlearnersdictionaries.com/definition/english/pagoda,C2,pagoda,chùa,noun,/pəˈɡəʊdə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pag/pagod/pagoda__gb_1.mp3
+sanctuary,https://www.oxfordlearnersdictionaries.com/definition/english/sanctuary,C2,sanctuary,nơi tôn nghiêm,noun,/ˈsæŋktʃuəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/san/sanct/sanctuary__gb_1.mp3
+spire,https://www.oxfordlearnersdictionaries.com/definition/english/spire,C1,spire,ngọn lửa,noun,/ˈspaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spire/spire__gb_1.mp3
+screen,https://www.oxfordlearnersdictionaries.com/definition/english/screen_1,C2,screen,màn hình,noun,/skriːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scree/screen__gb_1.mp3
+shrine,https://www.oxfordlearnersdictionaries.com/definition/english/shrine,C1,shrine,điện thờ,noun,/ʃraɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shr/shrin/shrine__gb_1.mp3
+parsonage,https://www.oxfordlearnersdictionaries.com/definition/english/parsonage,C2,parsonage,nhà phân tích,noun,/ˈpɑːsənɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parso/parsonage__gb_1.mp3
+pulpit,https://www.oxfordlearnersdictionaries.com/definition/english/pulpit,C2,pulpit,bục giảng,noun,/ˈpʊlpɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pul/pulpi/pulpit__gb_1.mp3
+rectory,https://www.oxfordlearnersdictionaries.com/definition/english/rectory,C2,rectory,nhà xứ,noun,/ˈrektəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rec/recto/rectory__gb_1.mp3
+priory,https://www.oxfordlearnersdictionaries.com/definition/english/priory,C2,priory,tu viện,noun,/ˈpraɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/prior/priory__gb_1.mp3
+steeple,https://www.oxfordlearnersdictionaries.com/definition/english/steeple,C2,steeple,gác chuông,noun,/ˈstiːpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/steep/steeple__gb_1.mp3
+synagogue,https://www.oxfordlearnersdictionaries.com/definition/english/synagogue,C2,synagogue,giáo đường Do Thái,noun,/ˈsɪnəɡɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/syn/synag/synagogue__gb_1.mp3
+transept,https://www.oxfordlearnersdictionaries.com/definition/english/transept,C2,transept,ngang qua,noun,/ˈtrænsept/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transept__gb_1.mp3
+temple,https://www.oxfordlearnersdictionaries.com/definition/english/temple,B2,temple,ngôi đền,noun,/ˈtempl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tem/templ/temple__gb_1.mp3
+vault,https://www.oxfordlearnersdictionaries.com/definition/english/vault_1,C2,vault,kho tiền,noun,/vɔːlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vau/vault/vault__gb_1.mp3
+ziggurat,https://www.oxfordlearnersdictionaries.com/definition/english/ziggurat,C2,ziggurat,ngoằn ngoèo,noun,/ˈzɪɡəræt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zig/ziggu/ziggurat__gb_1.mp3
+stained_glass,https://www.oxfordlearnersdictionaries.com/definition/english/stained-glass,C2,stained glass,kính màu,noun,/ˌsteɪnd ˈɡlɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stain/stained_glass_1_gb_1.mp3
+vicarage,https://www.oxfordlearnersdictionaries.com/definition/english/vicarage,C2,vicarage,nhà mục sư,noun,/ˈvɪkərɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vic/vicar/vicarage__gb_1.mp3

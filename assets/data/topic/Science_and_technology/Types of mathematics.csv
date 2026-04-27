@@ -1,12 +1,12 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-differential_calculus,https://www.oxfordlearnersdictionaries.com/definition/english/differential-calculus,C2,differential calculus,phép tính vi phân,noun,/ˌdɪfərenʃl ˈkælkjələs/,
-arithmetic,https://www.oxfordlearnersdictionaries.com/definition/english/arithmetic_1,C1,arithmetic,số học,noun,/əˈrɪθmətɪk/,
-algebra,https://www.oxfordlearnersdictionaries.com/definition/english/algebra,C1,algebra,đại số,noun,/ˈældʒɪbrə/,
-geometry,https://www.oxfordlearnersdictionaries.com/definition/english/geometry,C2,geometry,hình học,noun,/dʒiˈɒmətri/,
-information_theory,https://www.oxfordlearnersdictionaries.com/definition/english/information-theory,C2,information theory,lý thuyết thông tin,noun,/ˌɪnfəˈmeɪʃn θɪəri/,
-calculus,https://www.oxfordlearnersdictionaries.com/definition/english/calculus,C2,calculus,phép tính,noun,/ˈkælkjələs/,
-chaos_theory,https://www.oxfordlearnersdictionaries.com/definition/english/chaos-theory,C2,chaos theory,lý thuyết hỗn loạn,noun,/ˈkeɪɒs θɪəri/,
-game_theory,https://www.oxfordlearnersdictionaries.com/definition/english/game-theory,C2,game theory,lý thuyết trò chơi,noun,/ˈɡeɪm θɪəri/,
-integral_calculus,https://www.oxfordlearnersdictionaries.com/definition/english/integral-calculus,C2,integral calculus,phép tính tích phân,noun,/ˌɪntɪɡrəl ˈkælkjələs/,
-catastrophe_theory,https://www.oxfordlearnersdictionaries.com/definition/english/catastrophe-theory,C2,catastrophe theory,lý thuyết thảm họa,noun,/kəˈtæstrəfi θɪəri/,
-trigonometry,https://www.oxfordlearnersdictionaries.com/definition/english/trigonometry,C2,trigonometry,lượng giác,noun,/ˌtrɪɡəˈnɒmətri/,
+differential_calculus,https://www.oxfordlearnersdictionaries.com/definition/english/differential-calculus,C2,differential calculus,phép tính vi phân,noun,/ˌdɪfərenʃl ˈkælkjələs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dif/diffe/differential_calculus_1_gb_1.mp3
+arithmetic,https://www.oxfordlearnersdictionaries.com/definition/english/arithmetic_1,C1,arithmetic,số học,noun,/əˈrɪθmətɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ari/arith/arithmetic__gb_1.mp3
+algebra,https://www.oxfordlearnersdictionaries.com/definition/english/algebra,C1,algebra,đại số,noun,/ˈældʒɪbrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alg/algeb/algebra__gb_1.mp3
+geometry,https://www.oxfordlearnersdictionaries.com/definition/english/geometry,C2,geometry,hình học,noun,/dʒiˈɒmətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geome/geometry__gb_1.mp3
+information_theory,https://www.oxfordlearnersdictionaries.com/definition/english/information-theory,C2,information theory,lý thuyết thông tin,noun,/ˌɪnfəˈmeɪʃn θɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inf/infor/information_theory_1_gb_1.mp3
+calculus,https://www.oxfordlearnersdictionaries.com/definition/english/calculus,C2,calculus,phép tính,noun,/ˈkælkjələs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cal/calcu/calculus__gb_2.mp3
+chaos_theory,https://www.oxfordlearnersdictionaries.com/definition/english/chaos-theory,C2,chaos theory,lý thuyết hỗn loạn,noun,/ˈkeɪɒs θɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chaos/chaos_theory_1_gb_1.mp3
+game_theory,https://www.oxfordlearnersdictionaries.com/definition/english/game-theory,C2,game theory,lý thuyết trò chơi,noun,/ˈɡeɪm θɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gam/game_/game_theory_1_gb_1.mp3
+integral_calculus,https://www.oxfordlearnersdictionaries.com/definition/english/integral-calculus,C2,integral calculus,phép tính tích phân,noun,/ˌɪntɪɡrəl ˈkælkjələs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/integ/integral_calculus_1_gb_1.mp3
+catastrophe_theory,https://www.oxfordlearnersdictionaries.com/definition/english/catastrophe-theory,C2,catastrophe theory,lý thuyết thảm họa,noun,/kəˈtæstrəfi θɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/catas/catastrophe_theory_1_gb_1.mp3
+trigonometry,https://www.oxfordlearnersdictionaries.com/definition/english/trigonometry,C2,trigonometry,lượng giác,noun,/ˌtrɪɡəˈnɒmətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tri/trigo/trigonometry__gb_1.mp3

@@ -1,74 +1,74 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-carbon_monoxide,https://www.oxfordlearnersdictionaries.com/definition/english/carbon-monoxide,C1,carbon monoxide,cacbon monoxit,noun,/ˌkɑːbən məˈnɒksaɪd/,
-acid_rain,https://www.oxfordlearnersdictionaries.com/definition/english/acid-rain,C1,acid rain,mưa axit,noun,/ˌæsɪd ˈreɪn/,
-asbestos,https://www.oxfordlearnersdictionaries.com/definition/english/asbestos,C2,asbestos,amiăng,noun,/æsˈbestɒs/,
-aerosol,https://www.oxfordlearnersdictionaries.com/definition/english/aerosol,C2,aerosol,bình xịt,noun,/ˈeərəsɒl/,
-catalytic_converter,https://www.oxfordlearnersdictionaries.com/definition/english/catalytic-converter,C2,catalytic converter,bộ chuyển đổi xúc tác,noun,/ˌkætəˌlɪtɪk kənˈvɜːtə(r)/,
-air,https://www.oxfordlearnersdictionaries.com/definition/english/air_1,A1,air,không khí,noun,/eə(r)/,
-air_quality,https://www.oxfordlearnersdictionaries.com/definition/english/air-quality,A2,air quality,chất lượng không khí,noun,/ˈeə kwɒləti/,
-biohazard,https://www.oxfordlearnersdictionaries.com/definition/english/biohazard,C2,biohazard,nguy hiểm sinh học,noun,/ˈbaɪəʊhæzəd/,
+carbon_monoxide,https://www.oxfordlearnersdictionaries.com/definition/english/carbon-monoxide,C1,carbon monoxide,cacbon monoxit,noun,/ˌkɑːbən məˈnɒksaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/carbo/carbon_monoxide_1_gb_2.mp3
+acid_rain,https://www.oxfordlearnersdictionaries.com/definition/english/acid-rain,C1,acid rain,mưa axit,noun,/ˌæsɪd ˈreɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aci/acid_/acid_rain_1_gb_1.mp3
+asbestos,https://www.oxfordlearnersdictionaries.com/definition/english/asbestos,C2,asbestos,amiăng,noun,/æsˈbestɒs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asb/asbes/asbestos__gb_4.mp3
+aerosol,https://www.oxfordlearnersdictionaries.com/definition/english/aerosol,C2,aerosol,bình xịt,noun,/ˈeərəsɒl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aer/aeros/aerosol__gb_1.mp3
+catalytic_converter,https://www.oxfordlearnersdictionaries.com/definition/english/catalytic-converter,C2,catalytic converter,bộ chuyển đổi xúc tác,noun,/ˌkætəˌlɪtɪk kənˈvɜːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/catal/catalytic_converter_1_gb_1.mp3
+air,https://www.oxfordlearnersdictionaries.com/definition/english/air_1,A1,air,không khí,noun,/eə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/air/air__/air__gb_1.mp3
+air_quality,https://www.oxfordlearnersdictionaries.com/definition/english/air-quality,A2,air quality,chất lượng không khí,noun,/ˈeə kwɒləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/air/air_q/air_quality_1_gb_1.mp3
+biohazard,https://www.oxfordlearnersdictionaries.com/definition/english/biohazard,C2,biohazard,nguy hiểm sinh học,noun,/ˈbaɪəʊhæzəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bio/bioha/biohazard__gb_2.mp3
 cfc,https://www.oxfordlearnersdictionaries.com/definition/english/cfc,C2,CFC,CFC,noun,/ˌsiː ef ˈsiː/,
-clean-up,https://www.oxfordlearnersdictionaries.com/definition/english/clean-up_2,B2,clean-up,dọn dẹp,noun,/ˈkliːn ʌp/,
-compost,https://www.oxfordlearnersdictionaries.com/definition/english/compost_2,C2,compost,phân trộn,verb,/ˈkɒmpɒst/,
-biodegradable,https://www.oxfordlearnersdictionaries.com/definition/english/biodegradable,C1,biodegradable,phân hủy sinh học,adjective,/ˌbaɪəʊdɪˈɡreɪdəbl/,
-bottle_bank,https://www.oxfordlearnersdictionaries.com/definition/english/bottle-bank,B2,bottle bank,ngân hàng chai,noun,/ˈbɒtl bæŋk/,
-clean,https://www.oxfordlearnersdictionaries.com/definition/english/clean_1,A1,clean,lau dọn,adjective,/kliːn/,
+clean-up,https://www.oxfordlearnersdictionaries.com/definition/english/clean-up_2,B2,clean-up,dọn dẹp,noun,/ˈkliːn ʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clean/clean_up_1_gb_1.mp3
+compost,https://www.oxfordlearnersdictionaries.com/definition/english/compost_2,C2,compost,phân trộn,verb,/ˈkɒmpɒst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/compo/compost__gb_1.mp3
+biodegradable,https://www.oxfordlearnersdictionaries.com/definition/english/biodegradable,C1,biodegradable,phân hủy sinh học,adjective,/ˌbaɪəʊdɪˈɡreɪdəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bio/biode/biodegradable__gb_1.mp3
+bottle_bank,https://www.oxfordlearnersdictionaries.com/definition/english/bottle-bank,B2,bottle bank,ngân hàng chai,noun,/ˈbɒtl bæŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/bottl/bottle_bank_1_gb_1.mp3
+clean,https://www.oxfordlearnersdictionaries.com/definition/english/clean_1,A1,clean,lau dọn,adjective,/kliːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clean/clean__gb_2.mp3
 clean_up,https://www.oxfordlearnersdictionaries.com/definition/english/clean-up_1,B1,clean up,dọn dẹp,phrasal verb,,
-disposal,https://www.oxfordlearnersdictionaries.com/definition/english/disposal,C1,disposal,xử lý,noun,/dɪˈspəʊzl/,
-contaminate,https://www.oxfordlearnersdictionaries.com/definition/english/contaminate,C1,contaminate,làm ô uế,verb,/kənˈtæmɪneɪt/,
-contamination,https://www.oxfordlearnersdictionaries.com/definition/english/contamination,C1,contamination,sự ô nhiễm,noun,/kənˌtæmɪˈneɪʃn/,
-effluent,https://www.oxfordlearnersdictionaries.com/definition/english/effluent,C2,effluent,nước thải,noun,/ˈefluənt/,
-dump,https://www.oxfordlearnersdictionaries.com/definition/english/dump_1,B2,dump,bãi rác,verb,/dʌmp/,
-emission,https://www.oxfordlearnersdictionaries.com/definition/english/emission,B2,emission,khí thải,noun,/ɪˈmɪʃn/,
-dumper,https://www.oxfordlearnersdictionaries.com/definition/english/dumper,C1,dumper,người đổ rác,noun,/ˈdʌmpə(r)/,
-fallout,https://www.oxfordlearnersdictionaries.com/definition/english/fallout,C2,fallout,bụi phóng xạ,noun,/ˈfɔːlaʊt/,
-exhaust,https://www.oxfordlearnersdictionaries.com/definition/english/exhaust_1,C1,exhaust,khí thải,noun,/ɪɡˈzɔːst/,
-dumping,https://www.oxfordlearnersdictionaries.com/definition/english/dumping,C1,dumping,đổ rác,noun,/ˈdʌmpɪŋ/,
-fumes,https://www.oxfordlearnersdictionaries.com/definition/english/fumes,C1,fumes,khói,noun,/fjuːmz/,
-forever_chemical,https://www.oxfordlearnersdictionaries.com/definition/english/forever-chemical,C1,forever chemical,mãi mãi hóa chất,noun,/fərˈevə kemɪkl/,
-food_mile,https://www.oxfordlearnersdictionaries.com/definition/english/food-mile,C1,food mile,dặm ăn,noun,/ˈfuːd maɪl/,
-garbage,https://www.oxfordlearnersdictionaries.com/definition/english/garbage,A2,garbage,rác,noun,/ˈɡɑːbɪdʒ/,
-leach,https://www.oxfordlearnersdictionaries.com/definition/english/leach,C2,leach,nước rỉ ra,verb,/liːtʃ/,
-landfill,https://www.oxfordlearnersdictionaries.com/definition/english/landfill,B2,landfill,bãi rác,noun,/ˈlændfɪl/,
-hazmat,https://www.oxfordlearnersdictionaries.com/definition/english/hazmat,C2,hazmat,nguy hiểm,noun,/ˈhæzmæt/,
-leaded,https://www.oxfordlearnersdictionaries.com/definition/english/leaded,C2,leaded,có chì,adjective,/ˈledɪd/,
-microplastic,https://www.oxfordlearnersdictionaries.com/definition/english/microplastic,C1,microplastic,vi nhựa,noun,/ˈmaɪkrəʊplæstɪk/,
-nanoplastic,https://www.oxfordlearnersdictionaries.com/definition/english/nanoplastic,C2,nanoplastic,nhựa nano,noun,/ˈnænəʊplæstɪk/,
-garbage_patch,https://www.oxfordlearnersdictionaries.com/definition/english/garbage-patch,C2,garbage patch,vá rác,noun,/ˈɡɑːbɪdʒ pætʃ/,
-non-biodegradable,https://www.oxfordlearnersdictionaries.com/definition/english/non-biodegradable,C2,non-biodegradable,không thể phân hủy sinh học,adjective,/ˌnɒn ˌbaɪəʊdɪˈɡreɪdəbl/,
-hazmat_suit,https://www.oxfordlearnersdictionaries.com/definition/english/hazmat-suit,C2,hazmat suit,bộ đồ nguy hiểm,noun,/ˈhæzmæt suːt/,
-nitrogen_fixation,https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen-fixation,C2,nitrogen fixation,cố định nitơ,noun,/ˈnaɪtrədʒən fɪkseɪʃn/,
-nitrogen_cycle,https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen-cycle,C2,nitrogen cycle,chu trình nitơ,noun,/ˈnaɪtrədʒən saɪkl/,
-oil_slick,https://www.oxfordlearnersdictionaries.com/definition/english/oil-slick,C2,oil slick,vết dầu loang,noun,/ˈɔɪl slɪk/,
-ozone-friendly,https://www.oxfordlearnersdictionaries.com/definition/english/ozone-friendly,C2,ozone-friendly,thân thiện với tầng ozone,adjective,/ˌəʊzəʊn ˈfrendli/,
-ozone_hole,https://www.oxfordlearnersdictionaries.com/definition/english/ozone-hole,C2,ozone hole,lỗ thủng tầng ozone,noun,/ˈəʊzəʊn həʊl/,
-ozone_layer,https://www.oxfordlearnersdictionaries.com/definition/english/ozone-layer,C1,ozone layer,tầng ozone,noun,/ˈəʊzəʊn leɪə(r)/,
-nurdle,https://www.oxfordlearnersdictionaries.com/definition/english/nurdle,C2,nurdle,trẻ con,noun,/ˈnɜːdl/,
-particulate,https://www.oxfordlearnersdictionaries.com/definition/english/particulate_1,C2,particulate,hạt,adjective,/pɑːˈtɪkjələt/,
-plastic,https://www.oxfordlearnersdictionaries.com/definition/english/plastic_1,A2,plastic,nhựa,noun,/ˈplæstɪk/,
-plume,https://www.oxfordlearnersdictionaries.com/definition/english/plume,C2,plume,lông chim,noun,/pluːm/,
-pet,https://www.oxfordlearnersdictionaries.com/definition/english/pet_4,C2,PET,THÚ CƯNG,noun,/ˌpiː iː ˈtiː/,
-particulate,https://www.oxfordlearnersdictionaries.com/definition/english/particulate_2,C2,particulate,hạt,noun,/pɑːˈtɪkjələt/,
-pm2.5,https://www.oxfordlearnersdictionaries.com/definition/english/pm2-5,C2,PM2.5,PM2.5,noun,/ˌpiː em ˌtuː pɔɪnt ˈfaɪv/,
-nitrogen-fixing,https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen-fixing,C2,nitrogen-fixing,cố định đạm,adjective,/ˈnaɪtrədʒən fɪksɪŋ/,
-poisonous,https://www.oxfordlearnersdictionaries.com/definition/english/poisonous,B1,poisonous,chất độc,adjective,/ˈpɔɪzənəs/,
-pollute,https://www.oxfordlearnersdictionaries.com/definition/english/pollute,B1,pollute,làm ô nhiễm,verb,/pəˈluːt/,
+disposal,https://www.oxfordlearnersdictionaries.com/definition/english/disposal,C1,disposal,xử lý,noun,/dɪˈspəʊzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/dispo/disposal__gb_2.mp3
+contaminate,https://www.oxfordlearnersdictionaries.com/definition/english/contaminate,C1,contaminate,làm ô uế,verb,/kənˈtæmɪneɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontaminate__gb_1.mp3
+contamination,https://www.oxfordlearnersdictionaries.com/definition/english/contamination,C1,contamination,sự ô nhiễm,noun,/kənˌtæmɪˈneɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontamination__gb_1.mp3
+effluent,https://www.oxfordlearnersdictionaries.com/definition/english/effluent,C2,effluent,nước thải,noun,/ˈefluənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eff/efflu/effluent__gb_1.mp3
+dump,https://www.oxfordlearnersdictionaries.com/definition/english/dump_1,B2,dump,bãi rác,verb,/dʌmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dum/dump_/dump__gb_1.mp3
+emission,https://www.oxfordlearnersdictionaries.com/definition/english/emission,B2,emission,khí thải,noun,/ɪˈmɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emi/emiss/emission__gb_5.mp3
+dumper,https://www.oxfordlearnersdictionaries.com/definition/english/dumper,C1,dumper,người đổ rác,noun,/ˈdʌmpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dum/dumpe/dumper__gb_2.mp3
+fallout,https://www.oxfordlearnersdictionaries.com/definition/english/fallout,C2,fallout,bụi phóng xạ,noun,/ˈfɔːlaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/fallo/fallout__gb_1.mp3
+exhaust,https://www.oxfordlearnersdictionaries.com/definition/english/exhaust_1,C1,exhaust,khí thải,noun,/ɪɡˈzɔːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exh/exhau/exhaust__gb_1.mp3
+dumping,https://www.oxfordlearnersdictionaries.com/definition/english/dumping,C1,dumping,đổ rác,noun,/ˈdʌmpɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dum/dumpi/dumping__gb_1.mp3
+fumes,https://www.oxfordlearnersdictionaries.com/definition/english/fumes,C1,fumes,khói,noun,/fjuːmz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fum/fumes/fumes__gb_3.mp3
+forever_chemical,https://www.oxfordlearnersdictionaries.com/definition/english/forever-chemical,C1,forever chemical,mãi mãi hóa chất,noun,/fərˈevə kemɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forev/forever_chemical_1_gb_1.mp3
+food_mile,https://www.oxfordlearnersdictionaries.com/definition/english/food-mile,C1,food mile,dặm ăn,noun,/ˈfuːd maɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/food_/food_mile_1_gb_1.mp3
+garbage,https://www.oxfordlearnersdictionaries.com/definition/english/garbage,A2,garbage,rác,noun,/ˈɡɑːbɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gar/garba/garbage__gb_2.mp3
+leach,https://www.oxfordlearnersdictionaries.com/definition/english/leach,C2,leach,nước rỉ ra,verb,/liːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leach/leach__gb_1.mp3
+landfill,https://www.oxfordlearnersdictionaries.com/definition/english/landfill,B2,landfill,bãi rác,noun,/ˈlændfɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/landf/landfill__gb_1.mp3
+hazmat,https://www.oxfordlearnersdictionaries.com/definition/english/hazmat,C2,hazmat,nguy hiểm,noun,/ˈhæzmæt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/haz/hazma/hazmat__gb_1.mp3
+leaded,https://www.oxfordlearnersdictionaries.com/definition/english/leaded,C2,leaded,có chì,adjective,/ˈledɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leade/leaded__gb_1.mp3
+microplastic,https://www.oxfordlearnersdictionaries.com/definition/english/microplastic,C1,microplastic,vi nhựa,noun,/ˈmaɪkrəʊplæstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microplastic__gb_2.mp3
+nanoplastic,https://www.oxfordlearnersdictionaries.com/definition/english/nanoplastic,C2,nanoplastic,nhựa nano,noun,/ˈnænəʊplæstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nan/nanop/nanoplastic__gb_1.mp3
+garbage_patch,https://www.oxfordlearnersdictionaries.com/definition/english/garbage-patch,C2,garbage patch,vá rác,noun,/ˈɡɑːbɪdʒ pætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gar/garba/garbage_patch_1_gb_1.mp3
+non-biodegradable,https://www.oxfordlearnersdictionaries.com/definition/english/non-biodegradable,C2,non-biodegradable,không thể phân hủy sinh học,adjective,/ˌnɒn ˌbaɪəʊdɪˈɡreɪdəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/non/non_b/non_biodegradable_1_gb_1.mp3
+hazmat_suit,https://www.oxfordlearnersdictionaries.com/definition/english/hazmat-suit,C2,hazmat suit,bộ đồ nguy hiểm,noun,/ˈhæzmæt suːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/haz/hazma/hazmat_suit_1_gb_2.mp3
+nitrogen_fixation,https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen-fixation,C2,nitrogen fixation,cố định nitơ,noun,/ˈnaɪtrədʒən fɪkseɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nit/nitro/nitrogen_fixation_1_gb_1.mp3
+nitrogen_cycle,https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen-cycle,C2,nitrogen cycle,chu trình nitơ,noun,/ˈnaɪtrədʒən saɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nit/nitro/nitrogen_cycle_1_gb_1.mp3
+oil_slick,https://www.oxfordlearnersdictionaries.com/definition/english/oil-slick,C2,oil slick,vết dầu loang,noun,/ˈɔɪl slɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oil/oil_s/oil_slick_1_gb_1.mp3
+ozone-friendly,https://www.oxfordlearnersdictionaries.com/definition/english/ozone-friendly,C2,ozone-friendly,thân thiện với tầng ozone,adjective,/ˌəʊzəʊn ˈfrendli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ozo/ozone/ozone_friendly_1_gb_1.mp3
+ozone_hole,https://www.oxfordlearnersdictionaries.com/definition/english/ozone-hole,C2,ozone hole,lỗ thủng tầng ozone,noun,/ˈəʊzəʊn həʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ozo/ozone/ozone_hole_1_gb_1.mp3
+ozone_layer,https://www.oxfordlearnersdictionaries.com/definition/english/ozone-layer,C1,ozone layer,tầng ozone,noun,/ˈəʊzəʊn leɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ozo/ozone/ozone_layer_1_gb_1.mp3
+nurdle,https://www.oxfordlearnersdictionaries.com/definition/english/nurdle,C2,nurdle,trẻ con,noun,/ˈnɜːdl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nur/nurdl/nurdle__gb_2.mp3
+particulate,https://www.oxfordlearnersdictionaries.com/definition/english/particulate_1,C2,particulate,hạt,adjective,/pɑːˈtɪkjələt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parti/particulate__gb_1.mp3
+plastic,https://www.oxfordlearnersdictionaries.com/definition/english/plastic_1,A2,plastic,nhựa,noun,/ˈplæstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plast/plastic__gb_1.mp3
+plume,https://www.oxfordlearnersdictionaries.com/definition/english/plume,C2,plume,lông chim,noun,/pluːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plu/plume/plume__gb_1.mp3
+pet,https://www.oxfordlearnersdictionaries.com/definition/english/pet_4,C2,PET,THÚ CƯNG,noun,/ˌpiː iː ˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pet/pet__/pet__gb_4.mp3
+particulate,https://www.oxfordlearnersdictionaries.com/definition/english/particulate_2,C2,particulate,hạt,noun,/pɑːˈtɪkjələt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parti/particulate__gb_1.mp3
+pm2.5,https://www.oxfordlearnersdictionaries.com/definition/english/pm2-5,C2,PM2.5,PM2.5,noun,/ˌpiː em ˌtuː pɔɪnt ˈfaɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pm2/pm2_5/pm2_5_1_gb_2.mp3
+nitrogen-fixing,https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen-fixing,C2,nitrogen-fixing,cố định đạm,adjective,/ˈnaɪtrədʒən fɪksɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nit/nitro/nitrogen_fixing_1_gb_1.mp3
+poisonous,https://www.oxfordlearnersdictionaries.com/definition/english/poisonous,B1,poisonous,chất độc,adjective,/ˈpɔɪzənəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poi/poiso/poisonous__gb_1.mp3
+pollute,https://www.oxfordlearnersdictionaries.com/definition/english/pollute,B1,pollute,làm ô nhiễm,verb,/pəˈluːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/pollu/pollute__gb_1.mp3
 pm10,https://www.oxfordlearnersdictionaries.com/definition/english/pm10,C2,PM10,PM10,noun,/ˌpiː em ˈten/,
-pollution,https://www.oxfordlearnersdictionaries.com/definition/english/pollution,A2,pollution,sự ô nhiễm,noun,/pəˈluːʃn/,
-reuse,https://www.oxfordlearnersdictionaries.com/definition/english/reuse_1,C1,reuse,tái sử dụng,verb,/ˌriːˈjuːz/,
-recycle,https://www.oxfordlearnersdictionaries.com/definition/english/recycle,A2,recycle,tái chế,verb,/ˌriːˈsaɪkl/,
-recycling,https://www.oxfordlearnersdictionaries.com/definition/english/recycling,A2,recycling,tái chế,noun,/ˌriːˈsaɪklɪŋ/,
-rubbish,https://www.oxfordlearnersdictionaries.com/definition/english/rubbish_1,A2,rubbish,rác,noun,/ˈrʌbɪʃ/,
-slick,https://www.oxfordlearnersdictionaries.com/definition/english/slick_2,C2,slick,bóng mượt,noun,/slɪk/,
-smoke,https://www.oxfordlearnersdictionaries.com/definition/english/smoke_1,A2,smoke,khói,noun,/sməʊk/,
-toxicity,https://www.oxfordlearnersdictionaries.com/definition/english/toxicity,C2,toxicity,độc tính,noun,/tɒkˈsɪsəti/,
-toxic,https://www.oxfordlearnersdictionaries.com/definition/english/toxic,C1,toxic,độc hại,adjective,/ˈtɒksɪk/,
-soot,https://www.oxfordlearnersdictionaries.com/definition/english/soot,C2,soot,bồ hóng,noun,/sʊt/,
-trash,https://www.oxfordlearnersdictionaries.com/definition/english/trash_1,A2,trash,rác,noun,/træʃ/,
-polluter,https://www.oxfordlearnersdictionaries.com/definition/english/polluter,B2,polluter,người gây ô nhiễm,noun,/pəˈluːtə(r)/,
-unleaded,https://www.oxfordlearnersdictionaries.com/definition/english/unleaded_1,C2,unleaded,không chì,noun,/ˌʌnˈledɪd/,
-reuse,https://www.oxfordlearnersdictionaries.com/definition/english/reuse_2,C1,reuse,tái sử dụng,noun,/ˌriːˈjuːs/,
-smog,https://www.oxfordlearnersdictionaries.com/definition/english/smog,C1,smog,sương khói,noun,/smɒɡ/,
-unleaded,https://www.oxfordlearnersdictionaries.com/definition/english/unleaded_2,C2,unleaded,không chì,adjective,/ˌʌnˈledɪd/,
-waste,https://www.oxfordlearnersdictionaries.com/definition/english/waste_1,B1,waste,rác thải,noun,/weɪst/,
-zero-emission,https://www.oxfordlearnersdictionaries.com/definition/english/zero-emission,C1,zero-emission,không phát thải,adjective,/ˌzɪərəʊ ɪˈmɪʃn/,
+pollution,https://www.oxfordlearnersdictionaries.com/definition/english/pollution,A2,pollution,sự ô nhiễm,noun,/pəˈluːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/pollu/pollution__gb_2.mp3
+reuse,https://www.oxfordlearnersdictionaries.com/definition/english/reuse_1,C1,reuse,tái sử dụng,verb,/ˌriːˈjuːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reu/reuse/reuse__gb_1.mp3
+recycle,https://www.oxfordlearnersdictionaries.com/definition/english/recycle,A2,recycle,tái chế,verb,/ˌriːˈsaɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rec/recyc/recycle__gb_2.mp3
+recycling,https://www.oxfordlearnersdictionaries.com/definition/english/recycling,A2,recycling,tái chế,noun,/ˌriːˈsaɪklɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rec/recyc/recycling__gb_2.mp3
+rubbish,https://www.oxfordlearnersdictionaries.com/definition/english/rubbish_1,A2,rubbish,rác,noun,/ˈrʌbɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rub/rubbi/rubbish__gb_1.mp3
+slick,https://www.oxfordlearnersdictionaries.com/definition/english/slick_2,C2,slick,bóng mượt,noun,/slɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sli/slick/slick__gb_1.mp3
+smoke,https://www.oxfordlearnersdictionaries.com/definition/english/smoke_1,A2,smoke,khói,noun,/sməʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/smo/smoke/smoke__gb_2.mp3
+toxicity,https://www.oxfordlearnersdictionaries.com/definition/english/toxicity,C2,toxicity,độc tính,noun,/tɒkˈsɪsəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tox/toxic/toxicity__gb_1.mp3
+toxic,https://www.oxfordlearnersdictionaries.com/definition/english/toxic,C1,toxic,độc hại,adjective,/ˈtɒksɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tox/toxic/toxic__gb_1.mp3
+soot,https://www.oxfordlearnersdictionaries.com/definition/english/soot,C2,soot,bồ hóng,noun,/sʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soo/soot_/soot__gb_1.mp3
+trash,https://www.oxfordlearnersdictionaries.com/definition/english/trash_1,A2,trash,rác,noun,/træʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trash/trash__gb_1.mp3
+polluter,https://www.oxfordlearnersdictionaries.com/definition/english/polluter,B2,polluter,người gây ô nhiễm,noun,/pəˈluːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/pollu/polluter__gb_1.mp3
+unleaded,https://www.oxfordlearnersdictionaries.com/definition/english/unleaded_1,C2,unleaded,không chì,noun,/ˌʌnˈledɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unl/unlea/unleaded__gb_1.mp3
+reuse,https://www.oxfordlearnersdictionaries.com/definition/english/reuse_2,C1,reuse,tái sử dụng,noun,/ˌriːˈjuːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reu/reuse/reuse__gb_2.mp3
+smog,https://www.oxfordlearnersdictionaries.com/definition/english/smog,C1,smog,sương khói,noun,/smɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/smo/smog_/smog__gb_1.mp3
+unleaded,https://www.oxfordlearnersdictionaries.com/definition/english/unleaded_2,C2,unleaded,không chì,adjective,/ˌʌnˈledɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unl/unlea/unleaded__gb_1.mp3
+waste,https://www.oxfordlearnersdictionaries.com/definition/english/waste_1,B1,waste,rác thải,noun,/weɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/was/waste/waste__gb_2.mp3
+zero-emission,https://www.oxfordlearnersdictionaries.com/definition/english/zero-emission,C1,zero-emission,không phát thải,adjective,/ˌzɪərəʊ ɪˈmɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zer/zero_/zero_emission_1_gb_1.mp3

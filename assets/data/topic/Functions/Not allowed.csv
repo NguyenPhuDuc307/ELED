@@ -1,28 +1,28 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-ban,https://www.oxfordlearnersdictionaries.com/definition/english/ban_2,B1,ban,lệnh cấm,noun,/bæn/,
-impermissible,https://www.oxfordlearnersdictionaries.com/definition/english/impermissible,C2,impermissible,không được phép,adjective,/ˌɪmpɜːˈmɪsəbl/,
-illicit,https://www.oxfordlearnersdictionaries.com/definition/english/illicit,C2,illicit,bất hợp pháp,adjective,/ɪˈlɪsɪt/,
-forbidden_fruit,https://www.oxfordlearnersdictionaries.com/definition/english/forbidden,C2,forbidden fruit,trái cấm,adjective,/fəˈbɪdn/,
-illegal,https://www.oxfordlearnersdictionaries.com/definition/english/illegal_1,B1,illegal,bất hợp pháp,adjective,/ɪˈliːɡl/,
-ban,https://www.oxfordlearnersdictionaries.com/definition/english/ban_1,B1,ban,lệnh cấm,verb,/bæn/,
-illegally,https://www.oxfordlearnersdictionaries.com/definition/english/illegally,B1,illegally,bất hợp pháp,adverb,/ɪˈliːɡəli/,
-forbidden,https://www.oxfordlearnersdictionaries.com/definition/english/forbidden,B2,forbidden,cấm,adjective,/fəˈbɪdn/,
-forbid,https://www.oxfordlearnersdictionaries.com/definition/english/forbid,B2,forbid,cấm,verb,/fəˈbɪd/,
-illicitly,https://www.oxfordlearnersdictionaries.com/definition/english/illicitly,C2,illicitly,trái phép,adverb,/ɪˈlɪsɪtli/,
-inadmissible,https://www.oxfordlearnersdictionaries.com/definition/english/inadmissible,C2,inadmissible,không thể chấp nhận được,adjective,/ˌɪnədˈmɪsəbl/,
-non-smoking,https://www.oxfordlearnersdictionaries.com/definition/english/non-smoking_1,B1,non-smoking,không hút thuốc,adjective,/ˌnɒn ˈsməʊkɪŋ/,
-no-smoking,https://www.oxfordlearnersdictionaries.com/definition/english/no-smoking,B1,no-smoking,không hút thuốc,adjective,/ˌnəʊ ˈsməʊkɪŋ/,
-in/under_no_circumstances,https://www.oxfordlearnersdictionaries.com/definition/english/circumstance,C1,in/under no circumstances,trong/không trong hoàn cảnh nào,noun,/ˈsɜːkəmstəns/,
-off-limits,https://www.oxfordlearnersdictionaries.com/definition/english/off-limits,C2,off-limits,ngoài giới hạn,adjective,/ˌɒf ˈlɪmɪts/,
-no,https://www.oxfordlearnersdictionaries.com/definition/english/no_2,A1,no,KHÔNG,determiner,/nəʊ/,
-not_be_supposed_to_do_something,https://www.oxfordlearnersdictionaries.com/definition/english/suppose,B2,not be supposed to do something,không được phép làm điều gì đó,verb,/səˈpəʊz/,
-no_go,https://www.oxfordlearnersdictionaries.com/definition/english/go_1,C2,no go,không đi,verb,/ɡəʊ/,
-out,https://www.oxfordlearnersdictionaries.com/definition/english/out_1,C2,out,ngoài,"adverb,preposition",/aʊt/,
-out_of_order,https://www.oxfordlearnersdictionaries.com/definition/english/order_1,C2,out of order,không theo thứ tự,noun,/ˈɔːdə(r)/,
-prohibition,https://www.oxfordlearnersdictionaries.com/definition/english/prohibition,B2,prohibition,sự cấm đoán,noun,/ˌprəʊɪˈbɪʃn/,
-prohibit,https://www.oxfordlearnersdictionaries.com/definition/english/prohibit,B2,prohibit,cấm,verb,/prəˈhɪbɪt/,
-out_of_the_question,https://www.oxfordlearnersdictionaries.com/definition/english/question_1,C1,out of the question,không còn nghi ngờ gì nữa,noun,/ˈkwestʃən/,
-unlawful,https://www.oxfordlearnersdictionaries.com/definition/english/unlawful,C2,unlawful,bất hợp pháp,adjective,/ʌnˈlɔːfl/,
-unlawfully,https://www.oxfordlearnersdictionaries.com/definition/english/unlawfully,C2,unlawfully,trái pháp luật,adverb,/ʌnˈlɔːfəli/,
-out_of_bounds_(to/for_somebody),https://www.oxfordlearnersdictionaries.com/definition/english/bounds,C2,out of bounds (to/for somebody),ngoài giới hạn (với/cho ai đó),noun,/baʊndz/,
-run_afoul_of_something,https://www.oxfordlearnersdictionaries.com/definition/english/afoul,C2,run afoul of something,gặp phải điều gì đó,adverb,/əˈfaʊl/,
+ban,https://www.oxfordlearnersdictionaries.com/definition/english/ban_2,B1,ban,lệnh cấm,noun,/bæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/ban__/ban__gb_4.mp3
+impermissible,https://www.oxfordlearnersdictionaries.com/definition/english/impermissible,C2,impermissible,không được phép,adjective,/ˌɪmpɜːˈmɪsəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/imp/imper/impermissible__gb_1.mp3
+illicit,https://www.oxfordlearnersdictionaries.com/definition/english/illicit,C2,illicit,bất hợp pháp,adjective,/ɪˈlɪsɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ill/illic/illicit__gb_1.mp3
+forbidden_fruit,https://www.oxfordlearnersdictionaries.com/definition/english/forbidden,C2,forbidden fruit,trái cấm,adjective,/fəˈbɪdn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forbi/forbidden__gb_2.mp3
+illegal,https://www.oxfordlearnersdictionaries.com/definition/english/illegal_1,B1,illegal,bất hợp pháp,adjective,/ɪˈliːɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ill/illeg/illegal__gb_2.mp3
+ban,https://www.oxfordlearnersdictionaries.com/definition/english/ban_1,B1,ban,lệnh cấm,verb,/bæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/ban__/ban__gb_4.mp3
+illegally,https://www.oxfordlearnersdictionaries.com/definition/english/illegally,B1,illegally,bất hợp pháp,adverb,/ɪˈliːɡəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ill/illeg/illegally__gb_1.mp3
+forbidden,https://www.oxfordlearnersdictionaries.com/definition/english/forbidden,B2,forbidden,cấm,adjective,/fəˈbɪdn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forbi/forbidden__gb_2.mp3
+forbid,https://www.oxfordlearnersdictionaries.com/definition/english/forbid,B2,forbid,cấm,verb,/fəˈbɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forbi/forbid__gb_1.mp3
+illicitly,https://www.oxfordlearnersdictionaries.com/definition/english/illicitly,C2,illicitly,trái phép,adverb,/ɪˈlɪsɪtli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ill/illic/illicitly__gb_1.mp3
+inadmissible,https://www.oxfordlearnersdictionaries.com/definition/english/inadmissible,C2,inadmissible,không thể chấp nhận được,adjective,/ˌɪnədˈmɪsəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inadm/inadmissible__gb_1.mp3
+non-smoking,https://www.oxfordlearnersdictionaries.com/definition/english/non-smoking_1,B1,non-smoking,không hút thuốc,adjective,/ˌnɒn ˈsməʊkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/non/non_s/non_smoking_1_gb_1.mp3
+no-smoking,https://www.oxfordlearnersdictionaries.com/definition/english/no-smoking,B1,no-smoking,không hút thuốc,adjective,/ˌnəʊ ˈsməʊkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/no_/no_sm/no_smoking_1_gb_1.mp3
+in/under_no_circumstances,https://www.oxfordlearnersdictionaries.com/definition/english/circumstance,C1,in/under no circumstances,trong/không trong hoàn cảnh nào,noun,/ˈsɜːkəmstəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cir/circu/circumstance__gb_1.mp3
+off-limits,https://www.oxfordlearnersdictionaries.com/definition/english/off-limits,C2,off-limits,ngoài giới hạn,adjective,/ˌɒf ˈlɪmɪts/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/off/off_l/off_limits_1_gb_1.mp3
+no,https://www.oxfordlearnersdictionaries.com/definition/english/no_2,A1,no,KHÔNG,determiner,/nəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/no_/no__g/no__gb_1.mp3
+not_be_supposed_to_do_something,https://www.oxfordlearnersdictionaries.com/definition/english/suppose,B2,not be supposed to do something,không được phép làm điều gì đó,verb,/səˈpəʊz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sup/suppo/suppose__gb_1.mp3
+no_go,https://www.oxfordlearnersdictionaries.com/definition/english/go_1,C2,no go,không đi,verb,/ɡəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/go_/go__g/go__gb_4.mp3
+out,https://www.oxfordlearnersdictionaries.com/definition/english/out_1,C2,out,ngoài,"adverb,preposition",/aʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/out__/out__gb_1.mp3
+out_of_order,https://www.oxfordlearnersdictionaries.com/definition/english/order_1,C2,out of order,không theo thứ tự,noun,/ˈɔːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ord/order/order__gb_1.mp3
+prohibition,https://www.oxfordlearnersdictionaries.com/definition/english/prohibition,B2,prohibition,sự cấm đoán,noun,/ˌprəʊɪˈbɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prohi/prohibition__gb_1.mp3
+prohibit,https://www.oxfordlearnersdictionaries.com/definition/english/prohibit,B2,prohibit,cấm,verb,/prəˈhɪbɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prohi/prohibit__gb_3.mp3
+out_of_the_question,https://www.oxfordlearnersdictionaries.com/definition/english/question_1,C1,out of the question,không còn nghi ngờ gì nữa,noun,/ˈkwestʃən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/que/quest/question__gb_2.mp3
+unlawful,https://www.oxfordlearnersdictionaries.com/definition/english/unlawful,C2,unlawful,bất hợp pháp,adjective,/ʌnˈlɔːfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unl/unlaw/unlawful__gb_1.mp3
+unlawfully,https://www.oxfordlearnersdictionaries.com/definition/english/unlawfully,C2,unlawfully,trái pháp luật,adverb,/ʌnˈlɔːfəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unl/unlaw/unlawfully__gb_1.mp3
+out_of_bounds_(to/for_somebody),https://www.oxfordlearnersdictionaries.com/definition/english/bounds,C2,out of bounds (to/for somebody),ngoài giới hạn (với/cho ai đó),noun,/baʊndz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bou/bound/bounds__gb_4.mp3
+run_afoul_of_something,https://www.oxfordlearnersdictionaries.com/definition/english/afoul,C2,run afoul of something,gặp phải điều gì đó,adverb,/əˈfaʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/afo/afoul/afoul__gb_1.mp3

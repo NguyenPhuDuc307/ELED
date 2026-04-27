@@ -1,34 +1,34 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-blood_test,https://www.oxfordlearnersdictionaries.com/definition/english/blood-test,B1,blood test,xét nghiệm máu,noun,/ˈblʌd test/,
-blood_type,https://www.oxfordlearnersdictionaries.com/definition/english/blood-type,C1,blood type,nhóm máu,noun,/ˈblʌd taɪp/,
-blood_group,https://www.oxfordlearnersdictionaries.com/definition/english/blood-group,C1,blood group,nhóm máu,noun,/ˈblʌd ɡruːp/,
-check-up,https://www.oxfordlearnersdictionaries.com/definition/english/check-up,B2,check-up,kiểm tra,noun,/ˈtʃek ʌp/,
-diagnose,https://www.oxfordlearnersdictionaries.com/definition/english/diagnose,C1,diagnose,chẩn đoán,verb,/ˈdaɪəɡnəʊz/,
-biopsy,https://www.oxfordlearnersdictionaries.com/definition/english/biopsy,C2,biopsy,sinh thiết,noun,/ˈbaɪɒpsi/,
-barium_meal,https://www.oxfordlearnersdictionaries.com/definition/english/barium-meal,C2,barium meal,bữa ăn bari,noun,/ˌbeəriəm ˈmiːl/,
-angiography,https://www.oxfordlearnersdictionaries.com/definition/english/angiography,C2,angiography,chụp động mạch,noun,/ˌændʒiˈɒɡrəfi/,
-cat_scan,https://www.oxfordlearnersdictionaries.com/definition/english/cat-scan,C2,CAT scan,Quét CAT,noun,/ˈkæt skæn/,
-angiogram,https://www.oxfordlearnersdictionaries.com/definition/english/angiogram,C2,angiogram,chụp động mạch,noun,/ˈændʒiəʊɡræm/,
-diagnostic,https://www.oxfordlearnersdictionaries.com/definition/english/diagnostic_1,C2,diagnostic,chẩn đoán,adjective,/ˌdaɪəɡˈnɒstɪk/,
-examination,https://www.oxfordlearnersdictionaries.com/definition/english/examination,B2,examination,bài kiểm tra,noun,/ɪɡˌzæmɪˈneɪʃn/,
-diagnosis,https://www.oxfordlearnersdictionaries.com/definition/english/diagnosis,C1,diagnosis,chẩn đoán,noun,/ˌdaɪəɡˈnəʊsɪs/,
-echocardiogram,https://www.oxfordlearnersdictionaries.com/definition/english/echocardiogram,C2,echocardiogram,siêu âm tim,noun,/ˌekəʊˈkɑːdiəʊɡræm/,
-examine,https://www.oxfordlearnersdictionaries.com/definition/english/examine,B1,examine,nghiên cứu,verb,/ɪɡˈzæmɪn/,
-health_check,https://www.oxfordlearnersdictionaries.com/definition/english/health-check,B1,health check,kiểm tra sức khỏe,noun,/ˈhelθ tʃek/,
-mri,https://www.oxfordlearnersdictionaries.com/definition/english/mri,C2,MRI,MRI,noun,/ˌem ɑːr ˈaɪ/,
-medical,https://www.oxfordlearnersdictionaries.com/definition/english/medical_2,B2,medical,thuộc về y học,noun,/ˈmedɪkl/,
-health_screening,https://www.oxfordlearnersdictionaries.com/definition/english/health-screening,C2,health screening,khám sức khỏe,noun,/ˈhelθ skriːnɪŋ/,
-echocardiography,https://www.oxfordlearnersdictionaries.com/definition/english/echocardiography,C2,echocardiography,siêu âm tim,noun,/ˌekəʊˌkɑːdiˈɒɡrəfi/,
-sample,https://www.oxfordlearnersdictionaries.com/definition/english/sample_1,B2,sample,vật mẫu,noun,/ˈsɑːmpl/,
-scan,https://www.oxfordlearnersdictionaries.com/definition/english/scan_2,B2,scan,quét,noun,/skæn/,
-scan,https://www.oxfordlearnersdictionaries.com/definition/english/scan_1,B2,scan,quét,verb,/skæn/,
-prognosis,https://www.oxfordlearnersdictionaries.com/definition/english/prognosis,C2,prognosis,tiên lượng,noun,/prɒɡˈnəʊsɪs/,
-specimen,https://www.oxfordlearnersdictionaries.com/definition/english/specimen,C1,specimen,mẫu vật,noun,/ˈspesɪmən/,
-stool,https://www.oxfordlearnersdictionaries.com/definition/english/stool,C2,stool,ghế đẩu,noun,/stuːl/,
-test,https://www.oxfordlearnersdictionaries.com/definition/english/test_2,A2,test,Bài kiểm tra,verb,/test/,
-test,https://www.oxfordlearnersdictionaries.com/definition/english/test_1,A2,test,Bài kiểm tra,noun,/test/,
-probe,https://www.oxfordlearnersdictionaries.com/definition/english/probe_2,C2,probe,thăm dò,verb,/prəʊb/,
-screen,https://www.oxfordlearnersdictionaries.com/definition/english/screen_1,C2,screen,màn hình,noun,/skriːn/,
-x-ray,https://www.oxfordlearnersdictionaries.com/definition/english/x-ray_2,B2,X-ray,tia X,noun,/ˈeks reɪ/,
-ultrasound,https://www.oxfordlearnersdictionaries.com/definition/english/ultrasound,C2,ultrasound,siêu âm,noun,/ˈʌltrəsaʊnd/,
-x-ray,https://www.oxfordlearnersdictionaries.com/definition/english/x-ray_1,B2,X-ray,tia X,verb,/ˈeks reɪ/,
+blood_test,https://www.oxfordlearnersdictionaries.com/definition/english/blood-test,B1,blood test,xét nghiệm máu,noun,/ˈblʌd test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/blood/blood_test_1_gb_1.mp3
+blood_type,https://www.oxfordlearnersdictionaries.com/definition/english/blood-type,C1,blood type,nhóm máu,noun,/ˈblʌd taɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/blood/blood_type_1_gb_1.mp3
+blood_group,https://www.oxfordlearnersdictionaries.com/definition/english/blood-group,C1,blood group,nhóm máu,noun,/ˈblʌd ɡruːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/blood/blood_group_1_gb_1.mp3
+check-up,https://www.oxfordlearnersdictionaries.com/definition/english/check-up,B2,check-up,kiểm tra,noun,/ˈtʃek ʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/check/check_up_1_gb_1.mp3
+diagnose,https://www.oxfordlearnersdictionaries.com/definition/english/diagnose,C1,diagnose,chẩn đoán,verb,/ˈdaɪəɡnəʊz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/diagn/diagnose__gb_1.mp3
+biopsy,https://www.oxfordlearnersdictionaries.com/definition/english/biopsy,C2,biopsy,sinh thiết,noun,/ˈbaɪɒpsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bio/biops/biopsy__gb_2.mp3
+barium_meal,https://www.oxfordlearnersdictionaries.com/definition/english/barium-meal,C2,barium meal,bữa ăn bari,noun,/ˌbeəriəm ˈmiːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/bariu/barium_meal_1_gb_1.mp3
+angiography,https://www.oxfordlearnersdictionaries.com/definition/english/angiography,C2,angiography,chụp động mạch,noun,/ˌændʒiˈɒɡrəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ang/angio/angiography__gb_1.mp3
+cat_scan,https://www.oxfordlearnersdictionaries.com/definition/english/cat-scan,C2,CAT scan,Quét CAT,noun,/ˈkæt skæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/cat_s/cat_scan_1_gb_2.mp3
+angiogram,https://www.oxfordlearnersdictionaries.com/definition/english/angiogram,C2,angiogram,chụp động mạch,noun,/ˈændʒiəʊɡræm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ang/angio/angiogram__gb_1.mp3
+diagnostic,https://www.oxfordlearnersdictionaries.com/definition/english/diagnostic_1,C2,diagnostic,chẩn đoán,adjective,/ˌdaɪəɡˈnɒstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/diagn/diagnostic__gb_1.mp3
+examination,https://www.oxfordlearnersdictionaries.com/definition/english/examination,B2,examination,bài kiểm tra,noun,/ɪɡˌzæmɪˈneɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exa/exami/examination__gb_2.mp3
+diagnosis,https://www.oxfordlearnersdictionaries.com/definition/english/diagnosis,C1,diagnosis,chẩn đoán,noun,/ˌdaɪəɡˈnəʊsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/diagn/diagnosis__gb_2.mp3
+echocardiogram,https://www.oxfordlearnersdictionaries.com/definition/english/echocardiogram,C2,echocardiogram,siêu âm tim,noun,/ˌekəʊˈkɑːdiəʊɡræm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ech/echoc/echocardiogram__gb_1.mp3
+examine,https://www.oxfordlearnersdictionaries.com/definition/english/examine,B1,examine,nghiên cứu,verb,/ɪɡˈzæmɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exa/exami/examine__gb_1.mp3
+health_check,https://www.oxfordlearnersdictionaries.com/definition/english/health-check,B1,health check,kiểm tra sức khỏe,noun,/ˈhelθ tʃek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/healt/health_check_1_gb_1.mp3
+mri,https://www.oxfordlearnersdictionaries.com/definition/english/mri,C2,MRI,MRI,noun,/ˌem ɑːr ˈaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mri/mri__/mri__gb_1.mp3
+medical,https://www.oxfordlearnersdictionaries.com/definition/english/medical_2,B2,medical,thuộc về y học,noun,/ˈmedɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/med/medic/medical__gb_2.mp3
+health_screening,https://www.oxfordlearnersdictionaries.com/definition/english/health-screening,C2,health screening,khám sức khỏe,noun,/ˈhelθ skriːnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/healt/health_screening_1_gb_2.mp3
+echocardiography,https://www.oxfordlearnersdictionaries.com/definition/english/echocardiography,C2,echocardiography,siêu âm tim,noun,/ˌekəʊˌkɑːdiˈɒɡrəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ech/echoc/echocardiography__gb_1.mp3
+sample,https://www.oxfordlearnersdictionaries.com/definition/english/sample_1,B2,sample,vật mẫu,noun,/ˈsɑːmpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sam/sampl/sample__gb_3.mp3
+scan,https://www.oxfordlearnersdictionaries.com/definition/english/scan_2,B2,scan,quét,noun,/skæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sca/scan_/scan__gb_1.mp3
+scan,https://www.oxfordlearnersdictionaries.com/definition/english/scan_1,B2,scan,quét,verb,/skæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sca/scan_/scan__gb_1.mp3
+prognosis,https://www.oxfordlearnersdictionaries.com/definition/english/prognosis,C2,prognosis,tiên lượng,noun,/prɒɡˈnəʊsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/progn/prognosis__gb_1.mp3
+specimen,https://www.oxfordlearnersdictionaries.com/definition/english/specimen,C1,specimen,mẫu vật,noun,/ˈspesɪmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/speci/specimen__gb_2.mp3
+stool,https://www.oxfordlearnersdictionaries.com/definition/english/stool,C2,stool,ghế đẩu,noun,/stuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/stool/stool__gb_1.mp3
+test,https://www.oxfordlearnersdictionaries.com/definition/english/test_2,A2,test,Bài kiểm tra,verb,/test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test__gb_1.mp3
+test,https://www.oxfordlearnersdictionaries.com/definition/english/test_1,A2,test,Bài kiểm tra,noun,/test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test__gb_1.mp3
+probe,https://www.oxfordlearnersdictionaries.com/definition/english/probe_2,C2,probe,thăm dò,verb,/prəʊb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/probe/probe__gb_1.mp3
+screen,https://www.oxfordlearnersdictionaries.com/definition/english/screen_1,C2,screen,màn hình,noun,/skriːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scree/screen__gb_1.mp3
+x-ray,https://www.oxfordlearnersdictionaries.com/definition/english/x-ray_2,B2,X-ray,tia X,noun,/ˈeks reɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/x_r/x_ray/x_ray_1_gb_1.mp3
+ultrasound,https://www.oxfordlearnersdictionaries.com/definition/english/ultrasound,C2,ultrasound,siêu âm,noun,/ˈʌltrəsaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/ult/ultra/ultrasound__gb_1.mp3
+x-ray,https://www.oxfordlearnersdictionaries.com/definition/english/x-ray_1,B2,X-ray,tia X,verb,/ˈeks reɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/x_r/x_ray/x_ray_1_gb_1.mp3

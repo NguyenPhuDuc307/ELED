@@ -1,37 +1,37 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-biology,https://www.oxfordlearnersdictionaries.com/definition/english/biology,A2,biology,sinh vật học,noun,/baɪˈɒlədʒi/,
-earth_science,https://www.oxfordlearnersdictionaries.com/definition/english/earth-science,B2,earth science,khoa học trái đất,noun,/ˈɜːθ saɪəns/,
-anatomy,https://www.oxfordlearnersdictionaries.com/definition/english/anatomy,C2,anatomy,giải phẫu,noun,/əˈnætəmi/,
-cybernetics,https://www.oxfordlearnersdictionaries.com/definition/english/cybernetics,C2,cybernetics,điều khiển học,noun,/ˌsaɪbəˈnetɪks/,
-archaeology,https://www.oxfordlearnersdictionaries.com/definition/english/archaeology,B2,archaeology,khảo cổ học,noun,/ˌɑːkiˈɒlədʒi/,
-biochemistry,https://www.oxfordlearnersdictionaries.com/definition/english/biochemistry,B2,biochemistry,hóa sinh,noun,/ˌbaɪəʊˈkemɪstri/,
-chemistry,https://www.oxfordlearnersdictionaries.com/definition/english/chemistry,A2,chemistry,hoá học,noun,/ˈkemɪstri/,
-botanist,https://www.oxfordlearnersdictionaries.com/definition/english/botanist,C2,botanist,nhà thực vật học,noun,/ˈbɒtənɪst/,
-botany,https://www.oxfordlearnersdictionaries.com/definition/english/botany,C2,botany,thực vật học,noun,/ˈbɒtəni/,
-climatology,https://www.oxfordlearnersdictionaries.com/definition/english/climatology,C2,climatology,khí hậu học,noun,/ˌklaɪməˈtɒlədʒi/,
-engineering,https://www.oxfordlearnersdictionaries.com/definition/english/engineering,B1,engineering,kỹ thuật,noun,/ˌendʒɪˈnɪərɪŋ/,
-food_science,https://www.oxfordlearnersdictionaries.com/definition/english/food-science,B2,food science,khoa học thực phẩm,noun,/ˈfuːd saɪəns/,
-geology,https://www.oxfordlearnersdictionaries.com/definition/english/geology,B2,geology,địa chất,noun,/dʒiˈɒlədʒi/,
-geologist,https://www.oxfordlearnersdictionaries.com/definition/english/geologist,B2,geologist,nhà địa chất,noun,/dʒiˈɒlədʒɪst/,
-hydrology,https://www.oxfordlearnersdictionaries.com/definition/english/hydrology,C2,hydrology,thủy văn,noun,/haɪˈdrɒlədʒi/,
-geochemical,https://www.oxfordlearnersdictionaries.com/definition/english/geochemical,C1,geochemical,địa hóa,adjective,/ˌdʒiːəʊˈkemɪkl/,
-food_technology,https://www.oxfordlearnersdictionaries.com/definition/english/food-technology,B2,food technology,công nghệ thực phẩm,noun,/ˌfuːd tekˈnɒlədʒi/,
-earth_scientist,https://www.oxfordlearnersdictionaries.com/definition/english/earth-scientist,B2,earth scientist,nhà khoa học trái đất,noun,/ˌɜːθ ˈsaɪəntɪst/,
-geoscience,https://www.oxfordlearnersdictionaries.com/definition/english/geoscience,C1,geoscience,khoa học địa chất,noun,/ˈdʒiːəʊsaɪəns/,
-kinesiology,https://www.oxfordlearnersdictionaries.com/definition/english/kinesiology,C2,kinesiology,vận động học,noun,/kɪˌniːsiˈɒlədʒi/,
-meteorology,https://www.oxfordlearnersdictionaries.com/definition/english/meteorology,C1,meteorology,khí tượng học,noun,/ˌmiːtiəˈrɒlədʒi/,
-medicine,https://www.oxfordlearnersdictionaries.com/definition/english/medicine,A2,medicine,thuốc,noun,/ˈmedsn/,
-meteorological,https://www.oxfordlearnersdictionaries.com/definition/english/meteorological,C1,meteorological,khí tượng,adjective,/ˌmiːtiərəˈlɒdʒɪkl/,
-oceanography,https://www.oxfordlearnersdictionaries.com/definition/english/oceanography,C2,oceanography,hải dương học,noun,/ˌəʊʃəˈnɒɡrəfi/,
-oceanographer,https://www.oxfordlearnersdictionaries.com/definition/english/oceanographer,C2,oceanographer,nhà hải dương học,noun,/ˌəʊʃəˈnɒɡrəfə(r)/,
-neurobiology,https://www.oxfordlearnersdictionaries.com/definition/english/neurobiology,C2,neurobiology,sinh học thần kinh,noun,/ˌnjʊərəʊˌbaɪˈɒlədʒi/,
-pathology,https://www.oxfordlearnersdictionaries.com/definition/english/pathology,C2,pathology,bệnh lý,noun,/pəˈθɒlədʒi/,
-geochemistry,https://www.oxfordlearnersdictionaries.com/definition/english/geochemistry,C1,geochemistry,địa hóa học,noun,/ˌdʒiːəʊˈkemɪstri/,
-physics,https://www.oxfordlearnersdictionaries.com/definition/english/physics,A2,physics,vật lý,noun,/ˈfɪzɪks/,
-physiology,https://www.oxfordlearnersdictionaries.com/definition/english/physiology,C1,physiology,sinh lý học,noun,/ˌfɪziˈɒlədʒi/,
-psychological,https://www.oxfordlearnersdictionaries.com/definition/english/psychological,B2,psychological,tâm lý,adjective,/ˌsaɪkəˈlɒdʒɪkl/,
-quantum_physics,https://www.oxfordlearnersdictionaries.com/definition/english/quantum-physics,C2,quantum physics,vật lý lượng tử,noun,/ˈkwɒntəm fɪzɪks/,
-zoology,https://www.oxfordlearnersdictionaries.com/definition/english/zoology,C1,zoology,động vật học,noun,/zuˈɒlədʒi/,
-technology,https://www.oxfordlearnersdictionaries.com/definition/english/technology,A2,technology,công nghệ,noun,/tekˈnɒlədʒi/,
-soil_science,https://www.oxfordlearnersdictionaries.com/definition/english/soil-science,C1,soil science,khoa học đất,noun,/ˈsɔɪl saɪəns/,
-psychologist,https://www.oxfordlearnersdictionaries.com/definition/english/psychologist,B2,psychologist,nhà tâm lý học,noun,/saɪˈkɒlədʒɪst/,
+biology,https://www.oxfordlearnersdictionaries.com/definition/english/biology,A2,biology,sinh vật học,noun,/baɪˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bio/biolo/biology__gb_2.mp3
+earth_science,https://www.oxfordlearnersdictionaries.com/definition/english/earth-science,B2,earth science,khoa học trái đất,noun,/ˈɜːθ saɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ear/earth/earth_science_1_gb_1.mp3
+anatomy,https://www.oxfordlearnersdictionaries.com/definition/english/anatomy,C2,anatomy,giải phẫu,noun,/əˈnætəmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/anato/anatomy__gb_1.mp3
+cybernetics,https://www.oxfordlearnersdictionaries.com/definition/english/cybernetics,C2,cybernetics,điều khiển học,noun,/ˌsaɪbəˈnetɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cyb/cyber/cybernetics__gb_1.mp3
+archaeology,https://www.oxfordlearnersdictionaries.com/definition/english/archaeology,B2,archaeology,khảo cổ học,noun,/ˌɑːkiˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/arc/archa/archaeology__gb_2.mp3
+biochemistry,https://www.oxfordlearnersdictionaries.com/definition/english/biochemistry,B2,biochemistry,hóa sinh,noun,/ˌbaɪəʊˈkemɪstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bio/bioch/biochemistry__gb_1.mp3
+chemistry,https://www.oxfordlearnersdictionaries.com/definition/english/chemistry,A2,chemistry,hoá học,noun,/ˈkemɪstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chemi/chemistry__gb_2.mp3
+botanist,https://www.oxfordlearnersdictionaries.com/definition/english/botanist,C2,botanist,nhà thực vật học,noun,/ˈbɒtənɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/botan/botanist__gb_3.mp3
+botany,https://www.oxfordlearnersdictionaries.com/definition/english/botany,C2,botany,thực vật học,noun,/ˈbɒtəni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/botan/botany__gb_3.mp3
+climatology,https://www.oxfordlearnersdictionaries.com/definition/english/climatology,C2,climatology,khí hậu học,noun,/ˌklaɪməˈtɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cli/clima/climatology__gb_1.mp3
+engineering,https://www.oxfordlearnersdictionaries.com/definition/english/engineering,B1,engineering,kỹ thuật,noun,/ˌendʒɪˈnɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eng/engin/engineering__gb_3.mp3
+food_science,https://www.oxfordlearnersdictionaries.com/definition/english/food-science,B2,food science,khoa học thực phẩm,noun,/ˈfuːd saɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/food_/food_science_1_gb_1.mp3
+geology,https://www.oxfordlearnersdictionaries.com/definition/english/geology,B2,geology,địa chất,noun,/dʒiˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geolo/geology__gb_3.mp3
+geologist,https://www.oxfordlearnersdictionaries.com/definition/english/geologist,B2,geologist,nhà địa chất,noun,/dʒiˈɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geolo/geologist__gb_2.mp3
+hydrology,https://www.oxfordlearnersdictionaries.com/definition/english/hydrology,C2,hydrology,thủy văn,noun,/haɪˈdrɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyd/hydro/hydrology__gb_1.mp3
+geochemical,https://www.oxfordlearnersdictionaries.com/definition/english/geochemical,C1,geochemical,địa hóa,adjective,/ˌdʒiːəʊˈkemɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geoch/geochemical__gb_1.mp3
+food_technology,https://www.oxfordlearnersdictionaries.com/definition/english/food-technology,B2,food technology,công nghệ thực phẩm,noun,/ˌfuːd tekˈnɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/food_/food_technology_1_gb_1.mp3
+earth_scientist,https://www.oxfordlearnersdictionaries.com/definition/english/earth-scientist,B2,earth scientist,nhà khoa học trái đất,noun,/ˌɜːθ ˈsaɪəntɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ear/earth/earth_scientist_1_gb_1.mp3
+geoscience,https://www.oxfordlearnersdictionaries.com/definition/english/geoscience,C1,geoscience,khoa học địa chất,noun,/ˈdʒiːəʊsaɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geosc/geoscience__gb_3.mp3
+kinesiology,https://www.oxfordlearnersdictionaries.com/definition/english/kinesiology,C2,kinesiology,vận động học,noun,/kɪˌniːsiˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kin/kines/kinesiology__gb_2.mp3
+meteorology,https://www.oxfordlearnersdictionaries.com/definition/english/meteorology,C1,meteorology,khí tượng học,noun,/ˌmiːtiəˈrɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/met/meteo/meteorology__gb_1.mp3
+medicine,https://www.oxfordlearnersdictionaries.com/definition/english/medicine,A2,medicine,thuốc,noun,/ˈmedsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/med/medic/medicine__gb_5.mp3
+meteorological,https://www.oxfordlearnersdictionaries.com/definition/english/meteorological,C1,meteorological,khí tượng,adjective,/ˌmiːtiərəˈlɒdʒɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/met/meteo/meteorological__gb_1.mp3
+oceanography,https://www.oxfordlearnersdictionaries.com/definition/english/oceanography,C2,oceanography,hải dương học,noun,/ˌəʊʃəˈnɒɡrəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oce/ocean/oceanography__gb_1.mp3
+oceanographer,https://www.oxfordlearnersdictionaries.com/definition/english/oceanographer,C2,oceanographer,nhà hải dương học,noun,/ˌəʊʃəˈnɒɡrəfə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oce/ocean/oceanographer__gb_1.mp3
+neurobiology,https://www.oxfordlearnersdictionaries.com/definition/english/neurobiology,C2,neurobiology,sinh học thần kinh,noun,/ˌnjʊərəʊˌbaɪˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/neu/neuro/neurobiology__gb_1.mp3
+pathology,https://www.oxfordlearnersdictionaries.com/definition/english/pathology,C2,pathology,bệnh lý,noun,/pəˈθɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pat/patho/pathology__gb_1.mp3
+geochemistry,https://www.oxfordlearnersdictionaries.com/definition/english/geochemistry,C1,geochemistry,địa hóa học,noun,/ˌdʒiːəʊˈkemɪstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geoch/geochemistry__gb_2.mp3
+physics,https://www.oxfordlearnersdictionaries.com/definition/english/physics,A2,physics,vật lý,noun,/ˈfɪzɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/physi/physics__gb_2.mp3
+physiology,https://www.oxfordlearnersdictionaries.com/definition/english/physiology,C1,physiology,sinh lý học,noun,/ˌfɪziˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/physi/physiology__gb_1.mp3
+psychological,https://www.oxfordlearnersdictionaries.com/definition/english/psychological,B2,psychological,tâm lý,adjective,/ˌsaɪkəˈlɒdʒɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/psy/psych/psychological__gb_1.mp3
+quantum_physics,https://www.oxfordlearnersdictionaries.com/definition/english/quantum-physics,C2,quantum physics,vật lý lượng tử,noun,/ˈkwɒntəm fɪzɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quant/quantum_physics_1_gb_1.mp3
+zoology,https://www.oxfordlearnersdictionaries.com/definition/english/zoology,C1,zoology,động vật học,noun,/zuˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zoo/zoolo/zoology__gb_2.mp3
+technology,https://www.oxfordlearnersdictionaries.com/definition/english/technology,A2,technology,công nghệ,noun,/tekˈnɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tec/techn/technology__gb_2.mp3
+soil_science,https://www.oxfordlearnersdictionaries.com/definition/english/soil-science,C1,soil science,khoa học đất,noun,/ˈsɔɪl saɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soi/soil_/soil_science_1_gb_1.mp3
+psychologist,https://www.oxfordlearnersdictionaries.com/definition/english/psychologist,B2,psychologist,nhà tâm lý học,noun,/saɪˈkɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/psy/psych/psychologist__gb_1.mp3

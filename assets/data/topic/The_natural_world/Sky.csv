@@ -1,33 +1,33 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-cloudy,https://www.oxfordlearnersdictionaries.com/definition/english/cloudy,B1,cloudy,nhiều mây,adjective,/ˈklaʊdi/,
-azure,https://www.oxfordlearnersdictionaries.com/definition/english/azure_2,C2,azure,màu xanh,noun,/ˈæʒə(r)/,
-cirrus,https://www.oxfordlearnersdictionaries.com/definition/english/cirrus,C2,cirrus,tua quăn,noun,/ˈsɪrəs/,
-cover,https://www.oxfordlearnersdictionaries.com/definition/english/cover_2,C1,cover,che phủ,noun,/ˈkʌvə(r)/,
-bolt,https://www.oxfordlearnersdictionaries.com/definition/english/bolt_1,C2,bolt,chốt,noun,/bəʊlt/,
-azure,https://www.oxfordlearnersdictionaries.com/definition/english/azure_1,C2,azure,màu xanh,adjective,/ˈæʒə(r)/,
-cloud,https://www.oxfordlearnersdictionaries.com/definition/english/cloud_1,A2,cloud,đám mây,noun,/klaʊd/,
-clear,https://www.oxfordlearnersdictionaries.com/definition/english/clear_1,A2,clear,thông thoáng,adjective,/klɪə(r)/,
-crepuscular,https://www.oxfordlearnersdictionaries.com/definition/english/crepuscular,C2,crepuscular,hoàng hôn,adjective,/krɪˈpʌskjələ(r)/,
-cloudless,https://www.oxfordlearnersdictionaries.com/definition/english/cloudless,B2,cloudless,không có mây,adjective,/ˈklaʊdləs/,
-gray,https://www.oxfordlearnersdictionaries.com/definition/english/gray_1,A2,gray,xám,adjective,/ɡreɪ/,
-firmament,https://www.oxfordlearnersdictionaries.com/definition/english/firmament,C2,firmament,bầu trời,noun,/ˈfɜːməmənt/,
-grey,https://www.oxfordlearnersdictionaries.com/definition/english/grey_1,A2,grey,xám,adjective,/ɡreɪ/,
-cumulus,https://www.oxfordlearnersdictionaries.com/definition/english/cumulus,C2,cumulus,tích lũy,noun,/ˈkjuːmjələs/,
-dark,https://www.oxfordlearnersdictionaries.com/definition/english/dark_1,A1,dark,tối tăm,adjective,/dɑːk/,
-horizon,https://www.oxfordlearnersdictionaries.com/definition/english/horizon_1,C1,horizon,chân trời,noun,/həˈraɪzn/,
-nimbus,https://www.oxfordlearnersdictionaries.com/definition/english/nimbus,C2,nimbus,nimbus,noun,/ˈnɪmbəs/,
-overcast,https://www.oxfordlearnersdictionaries.com/definition/english/overcast,C2,overcast,u ám,adjective,/ˌəʊvəˈkɑːst/,
-cumulonimbus,https://www.oxfordlearnersdictionaries.com/definition/english/cumulonimbus,C2,cumulonimbus,vũ tích vũ tích,noun,/ˌkjuːmələʊˈnɪmbəs/,
-heat_lightning,https://www.oxfordlearnersdictionaries.com/definition/english/heat-lightning,C2,heat lightning,sét nhiệt,noun,/ˈhiːt laɪtnɪŋ/,
-overhead,https://www.oxfordlearnersdictionaries.com/definition/english/overhead_1,C1,overhead,trên không,adverb,/ˌəʊvəˈhed/,
-rainbow,https://www.oxfordlearnersdictionaries.com/definition/english/rainbow,C1,rainbow,cầu vồng,noun,/ˈreɪnbəʊ/,
-sky,https://www.oxfordlearnersdictionaries.com/definition/english/sky_1,A2,sky,bầu trời,noun,/skaɪ/,
-starless,https://www.oxfordlearnersdictionaries.com/definition/english/starless,B2,starless,không có sao,adjective,/ˈstɑːləs/,
-pall,https://www.oxfordlearnersdictionaries.com/definition/english/pall_1,C2,pall,màu xanh da trời,noun,/pɔːl/,
-sun,https://www.oxfordlearnersdictionaries.com/definition/english/sun_1,A1,sun,mặt trời,noun,/sʌn/,
-sunny,https://www.oxfordlearnersdictionaries.com/definition/english/sunny,A1,sunny,nhiều nắng,adjective,/ˈsʌni/,
-sunburst,https://www.oxfordlearnersdictionaries.com/definition/english/sunburst,C2,sunburst,ánh nắng chói chang,noun,/ˈsʌnbɜːst/,
-sunless,https://www.oxfordlearnersdictionaries.com/definition/english/sunless,B2,sunless,không có nắng,adjective,/ˈsʌnləs/,
-sunshine,https://www.oxfordlearnersdictionaries.com/definition/english/sunshine,B1,sunshine,ánh nắng mặt trời,noun,/ˈsʌnʃaɪn/,
-zenith,https://www.oxfordlearnersdictionaries.com/definition/english/zenith_1,C2,zenith,thiên đỉnh,noun,/ˈzenɪθ/,
-thundercloud,https://www.oxfordlearnersdictionaries.com/definition/english/thundercloud,C1,thundercloud,đám mây giông,noun,/ˈθʌndəklaʊd/,
+cloudy,https://www.oxfordlearnersdictionaries.com/definition/english/cloudy,B1,cloudy,nhiều mây,adjective,/ˈklaʊdi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/cloud/cloudy__gb_1.mp3
+azure,https://www.oxfordlearnersdictionaries.com/definition/english/azure_2,C2,azure,màu xanh,noun,/ˈæʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/azu/azure/azure__gb_1.mp3
+cirrus,https://www.oxfordlearnersdictionaries.com/definition/english/cirrus,C2,cirrus,tua quăn,noun,/ˈsɪrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cir/cirru/cirrus__gb_1.mp3
+cover,https://www.oxfordlearnersdictionaries.com/definition/english/cover_2,C1,cover,che phủ,noun,/ˈkʌvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cov/cover/cover__gb_1.mp3
+bolt,https://www.oxfordlearnersdictionaries.com/definition/english/bolt_1,C2,bolt,chốt,noun,/bəʊlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bol/bolt_/bolt__gb_2.mp3
+azure,https://www.oxfordlearnersdictionaries.com/definition/english/azure_1,C2,azure,màu xanh,adjective,/ˈæʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/azu/azure/azure__gb_1.mp3
+cloud,https://www.oxfordlearnersdictionaries.com/definition/english/cloud_1,A2,cloud,đám mây,noun,/klaʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/cloud/cloud__gb_1.mp3
+clear,https://www.oxfordlearnersdictionaries.com/definition/english/clear_1,A2,clear,thông thoáng,adjective,/klɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clear/clear__gb_1.mp3
+crepuscular,https://www.oxfordlearnersdictionaries.com/definition/english/crepuscular,C2,crepuscular,hoàng hôn,adjective,/krɪˈpʌskjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/crepu/crepuscular__gb_1.mp3
+cloudless,https://www.oxfordlearnersdictionaries.com/definition/english/cloudless,B2,cloudless,không có mây,adjective,/ˈklaʊdləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/cloud/cloudless__gb_1.mp3
+gray,https://www.oxfordlearnersdictionaries.com/definition/english/gray_1,A2,gray,xám,adjective,/ɡreɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/gray_/gray__gb_1.mp3
+firmament,https://www.oxfordlearnersdictionaries.com/definition/english/firmament,C2,firmament,bầu trời,noun,/ˈfɜːməmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/firma/firmament__gb_1.mp3
+grey,https://www.oxfordlearnersdictionaries.com/definition/english/grey_1,A2,grey,xám,adjective,/ɡreɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/grey_/grey_1_gb_1.mp3
+cumulus,https://www.oxfordlearnersdictionaries.com/definition/english/cumulus,C2,cumulus,tích lũy,noun,/ˈkjuːmjələs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cum/cumul/cumulus__gb_1.mp3
+dark,https://www.oxfordlearnersdictionaries.com/definition/english/dark_1,A1,dark,tối tăm,adjective,/dɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dar/dark_/dark__gb_1.mp3
+horizon,https://www.oxfordlearnersdictionaries.com/definition/english/horizon_1,C1,horizon,chân trời,noun,/həˈraɪzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hor/horiz/horizon__gb_1.mp3
+nimbus,https://www.oxfordlearnersdictionaries.com/definition/english/nimbus,C2,nimbus,nimbus,noun,/ˈnɪmbəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nim/nimbu/nimbus__gb_1.mp3
+overcast,https://www.oxfordlearnersdictionaries.com/definition/english/overcast,C2,overcast,u ám,adjective,/ˌəʊvəˈkɑːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overc/overcast__gb_1.mp3
+cumulonimbus,https://www.oxfordlearnersdictionaries.com/definition/english/cumulonimbus,C2,cumulonimbus,vũ tích vũ tích,noun,/ˌkjuːmələʊˈnɪmbəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cum/cumul/cumulonimbus__gb_1.mp3
+heat_lightning,https://www.oxfordlearnersdictionaries.com/definition/english/heat-lightning,C2,heat lightning,sét nhiệt,noun,/ˈhiːt laɪtnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/heat_/heat_lightning_1_gb_1.mp3
+overhead,https://www.oxfordlearnersdictionaries.com/definition/english/overhead_1,C1,overhead,trên không,adverb,/ˌəʊvəˈhed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overh/overhead__gb_1.mp3
+rainbow,https://www.oxfordlearnersdictionaries.com/definition/english/rainbow,C1,rainbow,cầu vồng,noun,/ˈreɪnbəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rainb/rainbow__gb_1.mp3
+sky,https://www.oxfordlearnersdictionaries.com/definition/english/sky_1,A2,sky,bầu trời,noun,/skaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sky/sky__/sky__gb_1.mp3
+starless,https://www.oxfordlearnersdictionaries.com/definition/english/starless,B2,starless,không có sao,adjective,/ˈstɑːləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/starl/starless__gb_1.mp3
+pall,https://www.oxfordlearnersdictionaries.com/definition/english/pall_1,C2,pall,màu xanh da trời,noun,/pɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pal/pall_/pall__gb_1.mp3
+sun,https://www.oxfordlearnersdictionaries.com/definition/english/sun_1,A1,sun,mặt trời,noun,/sʌn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sun__/sun__gb_2.mp3
+sunny,https://www.oxfordlearnersdictionaries.com/definition/english/sunny,A1,sunny,nhiều nắng,adjective,/ˈsʌni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunny/sunny__gb_1.mp3
+sunburst,https://www.oxfordlearnersdictionaries.com/definition/english/sunburst,C2,sunburst,ánh nắng chói chang,noun,/ˈsʌnbɜːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunbu/sunburst__gb_1.mp3
+sunless,https://www.oxfordlearnersdictionaries.com/definition/english/sunless,B2,sunless,không có nắng,adjective,/ˈsʌnləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunle/sunless__gb_1.mp3
+sunshine,https://www.oxfordlearnersdictionaries.com/definition/english/sunshine,B1,sunshine,ánh nắng mặt trời,noun,/ˈsʌnʃaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunsh/sunshine__gb_1.mp3
+zenith,https://www.oxfordlearnersdictionaries.com/definition/english/zenith_1,C2,zenith,thiên đỉnh,noun,/ˈzenɪθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zen/zenit/zenith__gb_1.mp3
+thundercloud,https://www.oxfordlearnersdictionaries.com/definition/english/thundercloud,C1,thundercloud,đám mây giông,noun,/ˈθʌndəklaʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thu/thund/thundercloud__gb_1.mp3

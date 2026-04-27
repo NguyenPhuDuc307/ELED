@@ -1,38 +1,38 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-drift,https://www.oxfordlearnersdictionaries.com/definition/english/drift_1,C1,drift,trôi dạt,verb,/drɪft/,
-drift,https://www.oxfordlearnersdictionaries.com/definition/english/drift_2,C1,drift,trôi dạt,noun,/drɪft/,
-blizzard,https://www.oxfordlearnersdictionaries.com/definition/english/blizzard,B2,blizzard,bão tuyết,noun,/ˈblɪzəd/,
-freeze,https://www.oxfordlearnersdictionaries.com/definition/english/freeze_1,B1,freeze,đông cứng,verb,/friːz/,
-avalanche,https://www.oxfordlearnersdictionaries.com/definition/english/avalanche,B2,avalanche,trận tuyết lở,noun,/ˈævəlɑːnʃ/,
-blanket,https://www.oxfordlearnersdictionaries.com/definition/english/blanket_1,C1,blanket,cái chăn,noun,/ˈblæŋkɪt/,
-bank,https://www.oxfordlearnersdictionaries.com/definition/english/bank_1,C2,bank,ngân hàng,noun,/bæŋk/,
-fall,https://www.oxfordlearnersdictionaries.com/definition/english/fall_2,A2,fall,ngã,noun,/fɔːl/,
-flurry,https://www.oxfordlearnersdictionaries.com/definition/english/flurry,C2,flurry,sự náo động,noun,/ˈflʌri/,
-frost,https://www.oxfordlearnersdictionaries.com/definition/english/frost_1,C1,frost,sương giá,noun,/frɒst/,
-frosty,https://www.oxfordlearnersdictionaries.com/definition/english/frosty,C1,frosty,băng giá,adjective,/ˈfrɒsti/,
-hail,https://www.oxfordlearnersdictionaries.com/definition/english/hail_1,C2,hail,kêu,verb,/heɪl/,
-hail,https://www.oxfordlearnersdictionaries.com/definition/english/hail_2,C2,hail,kêu,noun,/heɪl/,
-ice,https://www.oxfordlearnersdictionaries.com/definition/english/ice_1,A1,ice,đá,noun,/aɪs/,
-icy,https://www.oxfordlearnersdictionaries.com/definition/english/icy,B2,icy,băng giá,adjective,/ˈaɪsi/,
-flake,https://www.oxfordlearnersdictionaries.com/definition/english/flake_1,C2,flake,vảy,noun,/fleɪk/,
-icicle,https://www.oxfordlearnersdictionaries.com/definition/english/icicle,C2,icicle,cột băng,noun,/ˈaɪsɪkl/,
-hailstone,https://www.oxfordlearnersdictionaries.com/definition/english/hailstone,C2,hailstone,hạt mưa đá,noun,/ˈheɪlstəʊn/,
-powder_snow,https://www.oxfordlearnersdictionaries.com/definition/english/powder-snow,C1,powder snow,bột tuyết,noun,/ˈpaʊdə snəʊ/,
-sleet,https://www.oxfordlearnersdictionaries.com/definition/english/sleet_1,C2,sleet,mưa tuyết,noun,/sliːt/,
-melt,https://www.oxfordlearnersdictionaries.com/definition/english/melt,B2,melt,tan chảy,verb,/melt/,
-slush,https://www.oxfordlearnersdictionaries.com/definition/english/slush,C2,slush,sền sệt,noun,/slʌʃ/,
-snow,https://www.oxfordlearnersdictionaries.com/definition/english/snow_1,A1,snow,tuyết,noun,/snəʊ/,
-snowbound,https://www.oxfordlearnersdictionaries.com/definition/english/snowbound,C2,snowbound,có tuyết rơi,adjective,/ˈsnəʊbaʊnd/,
-snow,https://www.oxfordlearnersdictionaries.com/definition/english/snow_2,A1,snow,tuyết,verb,/snəʊ/,
-snowdrift,https://www.oxfordlearnersdictionaries.com/definition/english/snowdrift,C1,snowdrift,tuyết rơi,noun,/ˈsnəʊdrɪft/,
-sleet,https://www.oxfordlearnersdictionaries.com/definition/english/sleet_2,C2,sleet,mưa tuyết,verb,/sliːt/,
-snowfall,https://www.oxfordlearnersdictionaries.com/definition/english/snowfall,B1,snowfall,tuyết rơi,noun,/ˈsnəʊfɔːl/,
-snowplough,https://www.oxfordlearnersdictionaries.com/definition/english/snowplough_1,C2,snowplough,xe xúc tuyết,noun,/ˈsnəʊplaʊ/,
-snowslide,https://www.oxfordlearnersdictionaries.com/definition/english/snowslide,C1,snowslide,trượt tuyết,noun,/ˈsnəʊslaɪd/,
-snowflake,https://www.oxfordlearnersdictionaries.com/definition/english/snowflake,C1,snowflake,bông tuyết,noun,/ˈsnəʊfleɪk/,
-powder,https://www.oxfordlearnersdictionaries.com/definition/english/powder_1,B1,powder,bột,noun,/ˈpaʊdə(r)/,
-snowstorm,https://www.oxfordlearnersdictionaries.com/definition/english/snowstorm,B1,snowstorm,bão tuyết,noun,/ˈsnəʊstɔːm/,
-thaw,https://www.oxfordlearnersdictionaries.com/definition/english/thaw_1,C2,thaw,tan băng,verb,/θɔː/,
-snowy,https://www.oxfordlearnersdictionaries.com/definition/english/snowy,A2,snowy,có tuyết,adjective,/ˈsnəʊi/,
-thaw,https://www.oxfordlearnersdictionaries.com/definition/english/thaw_2,C2,thaw,tan băng,noun,/θɔː/,
-white-out,https://www.oxfordlearnersdictionaries.com/definition/english/white-out,C2,white-out,tẩy trắng,noun,/ˈwaɪt aʊt/,
+drift,https://www.oxfordlearnersdictionaries.com/definition/english/drift_1,C1,drift,trôi dạt,verb,/drɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drift/drift__gb_2.mp3
+drift,https://www.oxfordlearnersdictionaries.com/definition/english/drift_2,C1,drift,trôi dạt,noun,/drɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drift/drift__gb_2.mp3
+blizzard,https://www.oxfordlearnersdictionaries.com/definition/english/blizzard,B2,blizzard,bão tuyết,noun,/ˈblɪzəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bli/blizz/blizzard__gb_2.mp3
+freeze,https://www.oxfordlearnersdictionaries.com/definition/english/freeze_1,B1,freeze,đông cứng,verb,/friːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/freez/freeze__gb_1.mp3
+avalanche,https://www.oxfordlearnersdictionaries.com/definition/english/avalanche,B2,avalanche,trận tuyết lở,noun,/ˈævəlɑːnʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ava/avala/avalanche__gb_6.mp3
+blanket,https://www.oxfordlearnersdictionaries.com/definition/english/blanket_1,C1,blanket,cái chăn,noun,/ˈblæŋkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bla/blank/blanket__gb_2.mp3
+bank,https://www.oxfordlearnersdictionaries.com/definition/english/bank_1,C2,bank,ngân hàng,noun,/bæŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/bank_/bank__gb_2.mp3
+fall,https://www.oxfordlearnersdictionaries.com/definition/english/fall_2,A2,fall,ngã,noun,/fɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/fall_/fall__gb_2.mp3
+flurry,https://www.oxfordlearnersdictionaries.com/definition/english/flurry,C2,flurry,sự náo động,noun,/ˈflʌri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flu/flurr/flurry__gb_1.mp3
+frost,https://www.oxfordlearnersdictionaries.com/definition/english/frost_1,C1,frost,sương giá,noun,/frɒst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fro/frost/frost__gb_1.mp3
+frosty,https://www.oxfordlearnersdictionaries.com/definition/english/frosty,C1,frosty,băng giá,adjective,/ˈfrɒsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fro/frost/frosty__gb_1.mp3
+hail,https://www.oxfordlearnersdictionaries.com/definition/english/hail_1,C2,hail,kêu,verb,/heɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hai/hail_/hail__gb_4.mp3
+hail,https://www.oxfordlearnersdictionaries.com/definition/english/hail_2,C2,hail,kêu,noun,/heɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hai/hail_/hail__gb_4.mp3
+ice,https://www.oxfordlearnersdictionaries.com/definition/english/ice_1,A1,ice,đá,noun,/aɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ice/ice__/ice__gb_1.mp3
+icy,https://www.oxfordlearnersdictionaries.com/definition/english/icy,B2,icy,băng giá,adjective,/ˈaɪsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/icy/icy__/icy__gb_1.mp3
+flake,https://www.oxfordlearnersdictionaries.com/definition/english/flake_1,C2,flake,vảy,noun,/fleɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flake/flake__gb_1.mp3
+icicle,https://www.oxfordlearnersdictionaries.com/definition/english/icicle,C2,icicle,cột băng,noun,/ˈaɪsɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ici/icicl/icicle__gb_1.mp3
+hailstone,https://www.oxfordlearnersdictionaries.com/definition/english/hailstone,C2,hailstone,hạt mưa đá,noun,/ˈheɪlstəʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hai/hails/hailstone__gb_2.mp3
+powder_snow,https://www.oxfordlearnersdictionaries.com/definition/english/powder-snow,C1,powder snow,bột tuyết,noun,/ˈpaʊdə snəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pow/powde/powder_snow_1_gb_1.mp3
+sleet,https://www.oxfordlearnersdictionaries.com/definition/english/sleet_1,C2,sleet,mưa tuyết,noun,/sliːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sle/sleet/sleet__gb_1.mp3
+melt,https://www.oxfordlearnersdictionaries.com/definition/english/melt,B2,melt,tan chảy,verb,/melt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mel/melt_/melt__gb_1.mp3
+slush,https://www.oxfordlearnersdictionaries.com/definition/english/slush,C2,slush,sền sệt,noun,/slʌʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/slu/slush/slush__gb_1.mp3
+snow,https://www.oxfordlearnersdictionaries.com/definition/english/snow_1,A1,snow,tuyết,noun,/snəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snow_/snow__gb_1.mp3
+snowbound,https://www.oxfordlearnersdictionaries.com/definition/english/snowbound,C2,snowbound,có tuyết rơi,adjective,/ˈsnəʊbaʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snowb/snowbound__gb_1.mp3
+snow,https://www.oxfordlearnersdictionaries.com/definition/english/snow_2,A1,snow,tuyết,verb,/snəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snow_/snow__gb_1.mp3
+snowdrift,https://www.oxfordlearnersdictionaries.com/definition/english/snowdrift,C1,snowdrift,tuyết rơi,noun,/ˈsnəʊdrɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snowd/snowdrift__gb_1.mp3
+sleet,https://www.oxfordlearnersdictionaries.com/definition/english/sleet_2,C2,sleet,mưa tuyết,verb,/sliːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sle/sleet/sleet__gb_1.mp3
+snowfall,https://www.oxfordlearnersdictionaries.com/definition/english/snowfall,B1,snowfall,tuyết rơi,noun,/ˈsnəʊfɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snowf/snowfall__gb_1.mp3
+snowplough,https://www.oxfordlearnersdictionaries.com/definition/english/snowplough_1,C2,snowplough,xe xúc tuyết,noun,/ˈsnəʊplaʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snowp/snowplough__gb_1.mp3
+snowslide,https://www.oxfordlearnersdictionaries.com/definition/english/snowslide,C1,snowslide,trượt tuyết,noun,/ˈsnəʊslaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snows/snowslide__gb_1.mp3
+snowflake,https://www.oxfordlearnersdictionaries.com/definition/english/snowflake,C1,snowflake,bông tuyết,noun,/ˈsnəʊfleɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snowf/snowflake__gb_1.mp3
+powder,https://www.oxfordlearnersdictionaries.com/definition/english/powder_1,B1,powder,bột,noun,/ˈpaʊdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pow/powde/powder__gb_1.mp3
+snowstorm,https://www.oxfordlearnersdictionaries.com/definition/english/snowstorm,B1,snowstorm,bão tuyết,noun,/ˈsnəʊstɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snows/snowstorm__gb_2.mp3
+thaw,https://www.oxfordlearnersdictionaries.com/definition/english/thaw_1,C2,thaw,tan băng,verb,/θɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tha/thaw_/thaw__gb_1.mp3
+snowy,https://www.oxfordlearnersdictionaries.com/definition/english/snowy,A2,snowy,có tuyết,adjective,/ˈsnəʊi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snowy/snowy__gb_1.mp3
+thaw,https://www.oxfordlearnersdictionaries.com/definition/english/thaw_2,C2,thaw,tan băng,noun,/θɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tha/thaw_/thaw__gb_1.mp3
+white-out,https://www.oxfordlearnersdictionaries.com/definition/english/white-out,C2,white-out,tẩy trắng,noun,/ˈwaɪt aʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whi/white/white_out_1_gb_1.mp3

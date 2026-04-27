@@ -1,77 +1,77 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-business_studies,https://www.oxfordlearnersdictionaries.com/definition/english/business-studies,B1,business studies,nghiên cứu kinh doanh,noun,/ˈbɪznəs stʌdiz/,
-compulsory,https://www.oxfordlearnersdictionaries.com/definition/english/compulsory,B2,compulsory,bắt buộc,adjective,/kəmˈpʌlsəri/,
-co-curricular,https://www.oxfordlearnersdictionaries.com/definition/english/co-curricular,C2,co-curricular,đồng khóa học,adjective,/ˌkəʊ kəˈrɪkjələ(r)/,
-art,https://www.oxfordlearnersdictionaries.com/definition/english/art_1,A1,art,nghệ thuật,noun,/ɑːt/,
-arithmetic,https://www.oxfordlearnersdictionaries.com/definition/english/arithmetic_1,C1,arithmetic,số học,noun,/əˈrɪθmətɪk/,
-course,https://www.oxfordlearnersdictionaries.com/definition/english/course_1,A1,course,khóa học,noun,/kɔːs/,
-classic,https://www.oxfordlearnersdictionaries.com/definition/english/classic_2,C1,classic,cổ điển,noun,/ˈklæsɪk/,
-chemistry,https://www.oxfordlearnersdictionaries.com/definition/english/chemistry,A2,chemistry,hoá học,noun,/ˈkemɪstri/,
-algebra,https://www.oxfordlearnersdictionaries.com/definition/english/algebra,C1,algebra,đại số,noun,/ˈældʒɪbrə/,
-biology,https://www.oxfordlearnersdictionaries.com/definition/english/biology,A2,biology,sinh vật học,noun,/baɪˈɒlədʒi/,
-curricular,https://www.oxfordlearnersdictionaries.com/definition/english/curricular,C2,curricular,chương trình giảng dạy,adjective,/kəˈrɪkjələ(r)/,
-curriculum,https://www.oxfordlearnersdictionaries.com/definition/english/curriculum,B2,curriculum,chương trình giảng dạy,noun,/kəˈrɪkjələm/,
-disciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/disciplinary,C2,disciplinary,kỷ luật,adjective,/ˌdɪsəˈplɪnəri/,
-dt,https://www.oxfordlearnersdictionaries.com/definition/english/dt,C2,DT,DT,noun,/ˌdiː ˈtiː/,
-drama,https://www.oxfordlearnersdictionaries.com/definition/english/drama,A2,drama,kịch,noun,/ˈdrɑːmə/,
-economics,https://www.oxfordlearnersdictionaries.com/definition/english/economics,B2,economics,kinh tế,noun,/ˌiːkəˈnɒmɪks/,
-elective,https://www.oxfordlearnersdictionaries.com/definition/english/elective_1,C2,elective,tự chọn,adjective,/ɪˈlektɪv/,
-decolonize,https://www.oxfordlearnersdictionaries.com/definition/english/decolonize,C2,decolonize,giải phóng thuộc địa,verb,/ˌdiːˈkɒlənaɪz/,
-cross-disciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/cross-disciplinary,C2,cross-disciplinary,liên ngành,adjective,/ˌkrɒs dɪsəˈplɪnəri/,
-day_school,https://www.oxfordlearnersdictionaries.com/definition/english/day-school,C2,day school,trường học ban ngày,noun,/ˈdeɪ skuːl/,
-engineering,https://www.oxfordlearnersdictionaries.com/definition/english/engineering,B1,engineering,kỹ thuật,noun,/ˌendʒɪˈnɪərɪŋ/,
-extramural,https://www.oxfordlearnersdictionaries.com/definition/english/extramural,C2,extramural,ngoại thành,adjective,/ˌekstrəˈmjʊərəl/,
-extracurricular,https://www.oxfordlearnersdictionaries.com/definition/english/extracurricular,C1,extracurricular,ngoại khóa,adjective,/ˌekstrəkəˈrɪkjələ(r)/,
-geography,https://www.oxfordlearnersdictionaries.com/definition/english/geography,A1,geography,địa lý,noun,/dʒiˈɒɡrəfi/,
-foundation_course,https://www.oxfordlearnersdictionaries.com/definition/english/foundation-course,C2,foundation course,khóa học nền tảng,noun,/faʊnˈdeɪʃn kɔːs/,
-english,https://www.oxfordlearnersdictionaries.com/definition/english/english_1,A1,English,Tiếng Anh,noun,/ˈɪŋɡlɪʃ/,
-gender_studies,https://www.oxfordlearnersdictionaries.com/definition/english/gender-studies,B2,gender studies,nghiên cứu về giới,noun,/ˈdʒendə stʌdiz/,
-gymnastics,https://www.oxfordlearnersdictionaries.com/definition/english/gymnastics,B1,gymnastics,thể dục dụng cụ,noun,/dʒɪmˈnæstɪks/,
-geometry,https://www.oxfordlearnersdictionaries.com/definition/english/geometry,C2,geometry,hình học,noun,/dʒiˈɒmətri/,
-geology,https://www.oxfordlearnersdictionaries.com/definition/english/geology,B2,geology,địa chất,noun,/dʒiˈɒlədʒi/,
-history,https://www.oxfordlearnersdictionaries.com/definition/english/history,A1,history,lịch sử,noun,/ˈhɪstri/,
-home_economics,https://www.oxfordlearnersdictionaries.com/definition/english/home-economics,C2,home economics,kinh tế gia đình,noun,/ˌhəʊm ˌiːkəˈnɒmɪks/,
-elective,https://www.oxfordlearnersdictionaries.com/definition/english/elective_2,C2,elective,tự chọn,noun,/ɪˈlektɪv/,
-information_technology,https://www.oxfordlearnersdictionaries.com/definition/english/information-technology,B1,information technology,công nghệ thông tin,noun,/ˌɪnfəˌmeɪʃn tekˈnɒlədʒi/,
-ict,https://www.oxfordlearnersdictionaries.com/definition/english/ict,B2,ICT,CNTT,noun,/ˌaɪ siː ˈtiː/,
-humanity,https://www.oxfordlearnersdictionaries.com/definition/english/humanity,C1,humanity,nhân loại,noun,/hjuːˈmænəti/,
-honour,https://www.oxfordlearnersdictionaries.com/definition/english/honour_1,C2,honour,tôn kính,noun,/ˈɒnə(r)/,
-interdisciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/interdisciplinary,C2,interdisciplinary,liên ngành,adjective,/ˌɪntədɪsəˈplɪnəri/,
-human_geography,https://www.oxfordlearnersdictionaries.com/definition/english/human-geography,C1,human geography,địa lý nhân văn,noun,/ˌhjuːmən dʒiˈɒɡrəfi/,
-liberal_arts,https://www.oxfordlearnersdictionaries.com/definition/english/liberal-arts,C2,liberal arts,nghệ thuật tự do,noun,/ˌlɪbərəl ˈɑːts/,
-interdisciplinarity,https://www.oxfordlearnersdictionaries.com/definition/english/interdisciplinarity,C2,interdisciplinarity,liên ngành,noun,/ˌɪntəˌdɪsəplɪˈnærəti/,
-linguistics,https://www.oxfordlearnersdictionaries.com/definition/english/linguistics,C2,linguistics,ngôn ngữ học,noun,/lɪŋˈɡwɪstɪks/,
-mathematics,https://www.oxfordlearnersdictionaries.com/definition/english/mathematics,A2,mathematics,toán học,noun,/ˌmæθəˈmætɪks/,
+business_studies,https://www.oxfordlearnersdictionaries.com/definition/english/business-studies,B1,business studies,nghiên cứu kinh doanh,noun,/ˈbɪznəs stʌdiz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/busin/business_studies_1_gb_1.mp3
+compulsory,https://www.oxfordlearnersdictionaries.com/definition/english/compulsory,B2,compulsory,bắt buộc,adjective,/kəmˈpʌlsəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/compu/compulsory__gb_1.mp3
+co-curricular,https://www.oxfordlearnersdictionaries.com/definition/english/co-curricular,C2,co-curricular,đồng khóa học,adjective,/ˌkəʊ kəˈrɪkjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/co_/co_cu/co_curricular_1_gb_1.mp3
+art,https://www.oxfordlearnersdictionaries.com/definition/english/art_1,A1,art,nghệ thuật,noun,/ɑːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/art/art__/art__gb_3.mp3
+arithmetic,https://www.oxfordlearnersdictionaries.com/definition/english/arithmetic_1,C1,arithmetic,số học,noun,/əˈrɪθmətɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ari/arith/arithmetic__gb_1.mp3
+course,https://www.oxfordlearnersdictionaries.com/definition/english/course_1,A1,course,khóa học,noun,/kɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/cours/course__gb_2.mp3
+classic,https://www.oxfordlearnersdictionaries.com/definition/english/classic_2,C1,classic,cổ điển,noun,/ˈklæsɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/class/classic__gb_1.mp3
+chemistry,https://www.oxfordlearnersdictionaries.com/definition/english/chemistry,A2,chemistry,hoá học,noun,/ˈkemɪstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chemi/chemistry__gb_2.mp3
+algebra,https://www.oxfordlearnersdictionaries.com/definition/english/algebra,C1,algebra,đại số,noun,/ˈældʒɪbrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alg/algeb/algebra__gb_1.mp3
+biology,https://www.oxfordlearnersdictionaries.com/definition/english/biology,A2,biology,sinh vật học,noun,/baɪˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bio/biolo/biology__gb_2.mp3
+curricular,https://www.oxfordlearnersdictionaries.com/definition/english/curricular,C2,curricular,chương trình giảng dạy,adjective,/kəˈrɪkjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cur/curri/curricular__gb_1.mp3
+curriculum,https://www.oxfordlearnersdictionaries.com/definition/english/curriculum,B2,curriculum,chương trình giảng dạy,noun,/kəˈrɪkjələm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cur/curri/curriculum__gb_1.mp3
+disciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/disciplinary,C2,disciplinary,kỷ luật,adjective,/ˌdɪsəˈplɪnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disci/disciplinary__gb_4.mp3
+dt,https://www.oxfordlearnersdictionaries.com/definition/english/dt,C2,DT,DT,noun,/ˌdiː ˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dt_/dt_1_/dt_1_gb_2.mp3
+drama,https://www.oxfordlearnersdictionaries.com/definition/english/drama,A2,drama,kịch,noun,/ˈdrɑːmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drama/drama__gb_2.mp3
+economics,https://www.oxfordlearnersdictionaries.com/definition/english/economics,B2,economics,kinh tế,noun,/ˌiːkəˈnɒmɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eco/econo/economics__gb_4.mp3
+elective,https://www.oxfordlearnersdictionaries.com/definition/english/elective_1,C2,elective,tự chọn,adjective,/ɪˈlektɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/elective__gb_1.mp3
+decolonize,https://www.oxfordlearnersdictionaries.com/definition/english/decolonize,C2,decolonize,giải phóng thuộc địa,verb,/ˌdiːˈkɒlənaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decol/decolonize__gb_1.mp3
+cross-disciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/cross-disciplinary,C2,cross-disciplinary,liên ngành,adjective,/ˌkrɒs dɪsəˈplɪnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/cross/cross_disciplinary_1_gb_1.mp3
+day_school,https://www.oxfordlearnersdictionaries.com/definition/english/day-school,C2,day school,trường học ban ngày,noun,/ˈdeɪ skuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/day_s/day_school_1_gb_1.mp3
+engineering,https://www.oxfordlearnersdictionaries.com/definition/english/engineering,B1,engineering,kỹ thuật,noun,/ˌendʒɪˈnɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eng/engin/engineering__gb_3.mp3
+extramural,https://www.oxfordlearnersdictionaries.com/definition/english/extramural,C2,extramural,ngoại thành,adjective,/ˌekstrəˈmjʊərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ext/extra/extramural__gb_1.mp3
+extracurricular,https://www.oxfordlearnersdictionaries.com/definition/english/extracurricular,C1,extracurricular,ngoại khóa,adjective,/ˌekstrəkəˈrɪkjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ext/extra/extra_curricular_1_gb_1.mp3
+geography,https://www.oxfordlearnersdictionaries.com/definition/english/geography,A1,geography,địa lý,noun,/dʒiˈɒɡrəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geogr/geography__gb_1.mp3
+foundation_course,https://www.oxfordlearnersdictionaries.com/definition/english/foundation-course,C2,foundation course,khóa học nền tảng,noun,/faʊnˈdeɪʃn kɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fou/found/foundation_course_1_gb_1.mp3
+english,https://www.oxfordlearnersdictionaries.com/definition/english/english_1,A1,English,Tiếng Anh,noun,/ˈɪŋɡlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eng/engli/english__gb_1.mp3
+gender_studies,https://www.oxfordlearnersdictionaries.com/definition/english/gender-studies,B2,gender studies,nghiên cứu về giới,noun,/ˈdʒendə stʌdiz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gen/gende/gender_studies_1_gb_1.mp3
+gymnastics,https://www.oxfordlearnersdictionaries.com/definition/english/gymnastics,B1,gymnastics,thể dục dụng cụ,noun,/dʒɪmˈnæstɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gym/gymna/gymnastics__gb_3.mp3
+geometry,https://www.oxfordlearnersdictionaries.com/definition/english/geometry,C2,geometry,hình học,noun,/dʒiˈɒmətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geome/geometry__gb_1.mp3
+geology,https://www.oxfordlearnersdictionaries.com/definition/english/geology,B2,geology,địa chất,noun,/dʒiˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/geo/geolo/geology__gb_3.mp3
+history,https://www.oxfordlearnersdictionaries.com/definition/english/history,A1,history,lịch sử,noun,/ˈhɪstri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/his/histo/history__gb_3.mp3
+home_economics,https://www.oxfordlearnersdictionaries.com/definition/english/home-economics,C2,home economics,kinh tế gia đình,noun,/ˌhəʊm ˌiːkəˈnɒmɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hom/home_/home_economics_1_gb_1.mp3
+elective,https://www.oxfordlearnersdictionaries.com/definition/english/elective_2,C2,elective,tự chọn,noun,/ɪˈlektɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/elective__gb_1.mp3
+information_technology,https://www.oxfordlearnersdictionaries.com/definition/english/information-technology,B1,information technology,công nghệ thông tin,noun,/ˌɪnfəˌmeɪʃn tekˈnɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inf/infor/information_technology_1_gb_3.mp3
+ict,https://www.oxfordlearnersdictionaries.com/definition/english/ict,B2,ICT,CNTT,noun,/ˌaɪ siː ˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ict/ict__/ict__gb_1.mp3
+humanity,https://www.oxfordlearnersdictionaries.com/definition/english/humanity,C1,humanity,nhân loại,noun,/hjuːˈmænəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hum/human/humanity__gb_1.mp3
+honour,https://www.oxfordlearnersdictionaries.com/definition/english/honour_1,C2,honour,tôn kính,noun,/ˈɒnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hon/honou/honour__gb_1.mp3
+interdisciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/interdisciplinary,C2,interdisciplinary,liên ngành,adjective,/ˌɪntədɪsəˈplɪnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interdisciplinary__gb_1.mp3
+human_geography,https://www.oxfordlearnersdictionaries.com/definition/english/human-geography,C1,human geography,địa lý nhân văn,noun,/ˌhjuːmən dʒiˈɒɡrəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hum/human/human_geography_1_gb_1.mp3
+liberal_arts,https://www.oxfordlearnersdictionaries.com/definition/english/liberal-arts,C2,liberal arts,nghệ thuật tự do,noun,/ˌlɪbərəl ˈɑːts/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lib/liber/liberal_arts_1_gb_1.mp3
+interdisciplinarity,https://www.oxfordlearnersdictionaries.com/definition/english/interdisciplinarity,C2,interdisciplinarity,liên ngành,noun,/ˌɪntəˌdɪsəplɪˈnærəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interdisciplinarity__gb_1.mp3
+linguistics,https://www.oxfordlearnersdictionaries.com/definition/english/linguistics,C2,linguistics,ngôn ngữ học,noun,/lɪŋˈɡwɪstɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/lingu/linguistics__gb_1.mp3
+mathematics,https://www.oxfordlearnersdictionaries.com/definition/english/mathematics,A2,mathematics,toán học,noun,/ˌmæθəˈmætɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/mathe/mathematics__gb_1.mp3
 major_in,https://www.oxfordlearnersdictionaries.com/definition/english/major-in,C1,major in,chuyên ngành,phrasal verb,,
-major,https://www.oxfordlearnersdictionaries.com/definition/english/major_2,C1,major,lớn lao,noun,/ˈmeɪdʒə(r)/,
-minor,https://www.oxfordlearnersdictionaries.com/definition/english/minor_2,C1,minor,người vị thành niên,noun,/ˈmaɪnə(r)/,
-modular,https://www.oxfordlearnersdictionaries.com/definition/english/modular,C2,modular,mô-đun,adjective,/ˈmɒdjələ(r)/,
-law,https://www.oxfordlearnersdictionaries.com/definition/english/law,B1,law,pháp luật,noun,/lɔː/,
-module,https://www.oxfordlearnersdictionaries.com/definition/english/module,B2,module,mô-đun,noun,/ˈmɒdjuːl/,
-multidisciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/multidisciplinary,C2,multidisciplinary,đa ngành,adjective,/ˌmʌltidɪsəˈplɪnəri/,
-media_studies,https://www.oxfordlearnersdictionaries.com/definition/english/media-studies,B2,media studies,nghiên cứu truyền thông,noun,/ˈmiːdiə stʌdiz/,
-music,https://www.oxfordlearnersdictionaries.com/definition/english/music,A1,music,âm nhạc,noun,/ˈmjuːzɪk/,
-optional,https://www.oxfordlearnersdictionaries.com/definition/english/optional,B2,optional,không bắt buộc,adjective,/ˈɒpʃənl/,
+major,https://www.oxfordlearnersdictionaries.com/definition/english/major_2,C1,major,lớn lao,noun,/ˈmeɪdʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/maj/major/major__gb_2.mp3
+minor,https://www.oxfordlearnersdictionaries.com/definition/english/minor_2,C1,minor,người vị thành niên,noun,/ˈmaɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minor/minor__gb_1.mp3
+modular,https://www.oxfordlearnersdictionaries.com/definition/english/modular,C2,modular,mô-đun,adjective,/ˈmɒdjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mod/modul/modular__gb_1.mp3
+law,https://www.oxfordlearnersdictionaries.com/definition/english/law,B1,law,pháp luật,noun,/lɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/law/law__/law__gb_2.mp3
+module,https://www.oxfordlearnersdictionaries.com/definition/english/module,B2,module,mô-đun,noun,/ˈmɒdjuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mod/modul/module__gb_1.mp3
+multidisciplinary,https://www.oxfordlearnersdictionaries.com/definition/english/multidisciplinary,C2,multidisciplinary,đa ngành,adjective,/ˌmʌltidɪsəˈplɪnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mul/multi/multidisciplinary__gb_1.mp3
+media_studies,https://www.oxfordlearnersdictionaries.com/definition/english/media-studies,B2,media studies,nghiên cứu truyền thông,noun,/ˈmiːdiə stʌdiz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/med/media/media_studies_1_gb_1.mp3
+music,https://www.oxfordlearnersdictionaries.com/definition/english/music,A1,music,âm nhạc,noun,/ˈmjuːzɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mus/music/music__gb_1.mp3
+optional,https://www.oxfordlearnersdictionaries.com/definition/english/optional,B2,optional,không bắt buộc,adjective,/ˈɒpʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/opt/optio/optional__gb_1.mp3
 pe,https://www.oxfordlearnersdictionaries.com/definition/english/pe,B1,PE,Thể dục,noun,/ˌpiː ˈiː/,
-performing_arts,https://www.oxfordlearnersdictionaries.com/definition/english/the-performing-arts,B2,performing arts,biểu diễn nghệ thuật,noun,/ðə pəˌfɔːmɪŋ ˈɑːts/,
-philosophy,https://www.oxfordlearnersdictionaries.com/definition/english/philosophy,B2,philosophy,triết lý,noun,/fəˈlɒsəfi/,
-physical_education,https://www.oxfordlearnersdictionaries.com/definition/english/physical-education,B1,physical education,giáo dục thể chất,noun,/ˌfɪzɪkl edʒuˈkeɪʃn/,
-physics,https://www.oxfordlearnersdictionaries.com/definition/english/physics,A2,physics,vật lý,noun,/ˈfɪzɪks/,
-politics,https://www.oxfordlearnersdictionaries.com/definition/english/politics,B1,politics,chính trị,noun,/ˈpɒlətɪks/,
-programme,https://www.oxfordlearnersdictionaries.com/definition/english/programme_1,B1,programme,chương trình,noun,/ˈprəʊɡræm/,
-psychology,https://www.oxfordlearnersdictionaries.com/definition/english/psychology,B2,psychology,tâm lý,noun,/saɪˈkɒlədʒi/,
-pshe,https://www.oxfordlearnersdictionaries.com/definition/english/pshe,C2,PSHE,PSHE,noun,/ˌpiː es eɪtʃ ˈiː/,
+performing_arts,https://www.oxfordlearnersdictionaries.com/definition/english/the-performing-arts,B2,performing arts,biểu diễn nghệ thuật,noun,/ðə pəˌfɔːmɪŋ ˈɑːts/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perfo/performing_arts_the_1_gb_1.mp3
+philosophy,https://www.oxfordlearnersdictionaries.com/definition/english/philosophy,B2,philosophy,triết lý,noun,/fəˈlɒsəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phi/philo/philosophy__gb_3.mp3
+physical_education,https://www.oxfordlearnersdictionaries.com/definition/english/physical-education,B1,physical education,giáo dục thể chất,noun,/ˌfɪzɪkl edʒuˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/physi/physical_education_1_gb_1.mp3
+physics,https://www.oxfordlearnersdictionaries.com/definition/english/physics,A2,physics,vật lý,noun,/ˈfɪzɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/physi/physics__gb_2.mp3
+politics,https://www.oxfordlearnersdictionaries.com/definition/english/politics,B1,politics,chính trị,noun,/ˈpɒlətɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/polit/politics__gb_3.mp3
+programme,https://www.oxfordlearnersdictionaries.com/definition/english/programme_1,B1,programme,chương trình,noun,/ˈprəʊɡræm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/progr/programme__gb_2.mp3
+psychology,https://www.oxfordlearnersdictionaries.com/definition/english/psychology,B2,psychology,tâm lý,noun,/saɪˈkɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/psy/psych/psychology__gb_2.mp3
+pshe,https://www.oxfordlearnersdictionaries.com/definition/english/pshe,C2,PSHE,PSHE,noun,/ˌpiː es eɪtʃ ˈiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/psh/pshe_/pshe__gb_1.mp3
 re,https://www.oxfordlearnersdictionaries.com/definition/english/re_1,C2,RE,NỐT RÊ,noun,/ˌɑːr ˈiː/,
-postdoctoral,https://www.oxfordlearnersdictionaries.com/definition/english/postdoctoral,C2,postdoctoral,sau tiến sĩ,adjective,/ˌpəʊstˈdɒktərəl/,
-science,https://www.oxfordlearnersdictionaries.com/definition/english/science,A1,science,khoa học,noun,/ˈsaɪəns/,
-social_studies,https://www.oxfordlearnersdictionaries.com/definition/english/social-studies,B2,social studies,nghiên cứu xã hội,noun,/ˌsəʊʃl ˈstʌdiz/,
-social_science,https://www.oxfordlearnersdictionaries.com/definition/english/social-science,B2,social science,khoa học xã hội,noun,/ˌsəʊʃl ˈsaɪəns/,
-steam,https://www.oxfordlearnersdictionaries.com/definition/english/steam_2,C2,STEAM,HƠI NƯỚC,abbreviation,/stiːm/,
-stem,https://www.oxfordlearnersdictionaries.com/definition/english/stem_2,C1,STEM,THÂN CÂY,abbreviation,/stem/,
-sociology,https://www.oxfordlearnersdictionaries.com/definition/english/sociology,B2,sociology,xã hội học,noun,/ˌsəʊsiˈɒlədʒi/,
-subject,https://www.oxfordlearnersdictionaries.com/definition/english/subject_1,A1,subject,chủ thể,noun,/ˈsʌbdʒɪkt/,
-theology,https://www.oxfordlearnersdictionaries.com/definition/english/theology,C1,theology,thần học,noun,/θiˈɒlədʒi/,
-vocational,https://www.oxfordlearnersdictionaries.com/definition/english/vocational,C1,vocational,nghề nghiệp,adjective,/vəʊˈkeɪʃənl/,
-zoology,https://www.oxfordlearnersdictionaries.com/definition/english/zoology,C1,zoology,động vật học,noun,/zuˈɒlədʒi/,
-sociological,https://www.oxfordlearnersdictionaries.com/definition/english/sociological,C1,sociological,xã hội học,adjective,/ˌsəʊsiəˈlɒdʒɪkl/,
-summer_school,https://www.oxfordlearnersdictionaries.com/definition/english/summer-school,B2,summer school,học hè,noun,/ˈsʌmə skuːl/,
+postdoctoral,https://www.oxfordlearnersdictionaries.com/definition/english/postdoctoral,C2,postdoctoral,sau tiến sĩ,adjective,/ˌpəʊstˈdɒktərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/postd/postdoctoral__gb_1.mp3
+science,https://www.oxfordlearnersdictionaries.com/definition/english/science,A1,science,khoa học,noun,/ˈsaɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sci/scien/science__gb_2.mp3
+social_studies,https://www.oxfordlearnersdictionaries.com/definition/english/social-studies,B2,social studies,nghiên cứu xã hội,noun,/ˌsəʊʃl ˈstʌdiz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soc/socia/social_studies_1_gb_1.mp3
+social_science,https://www.oxfordlearnersdictionaries.com/definition/english/social-science,B2,social science,khoa học xã hội,noun,/ˌsəʊʃl ˈsaɪəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soc/socia/social_science_1_gb_1.mp3
+steam,https://www.oxfordlearnersdictionaries.com/definition/english/steam_2,C2,STEAM,HƠI NƯỚC,abbreviation,/stiːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/steam/steam__gb_1.mp3
+stem,https://www.oxfordlearnersdictionaries.com/definition/english/stem_2,C1,STEM,THÂN CÂY,abbreviation,/stem/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ste/stem_/stem__gb_1.mp3
+sociology,https://www.oxfordlearnersdictionaries.com/definition/english/sociology,B2,sociology,xã hội học,noun,/ˌsəʊsiˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soc/socio/sociology__gb_4.mp3
+subject,https://www.oxfordlearnersdictionaries.com/definition/english/subject_1,A1,subject,chủ thể,noun,/ˈsʌbdʒɪkt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subje/subject__gb_7.mp3
+theology,https://www.oxfordlearnersdictionaries.com/definition/english/theology,C1,theology,thần học,noun,/θiˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/theol/theology__gb_1.mp3
+vocational,https://www.oxfordlearnersdictionaries.com/definition/english/vocational,C1,vocational,nghề nghiệp,adjective,/vəʊˈkeɪʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voc/vocat/vocational__gb_1.mp3
+zoology,https://www.oxfordlearnersdictionaries.com/definition/english/zoology,C1,zoology,động vật học,noun,/zuˈɒlədʒi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zoo/zoolo/zoology__gb_2.mp3
+sociological,https://www.oxfordlearnersdictionaries.com/definition/english/sociological,C1,sociological,xã hội học,adjective,/ˌsəʊsiəˈlɒdʒɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soc/socio/sociological__gb_1.mp3
+summer_school,https://www.oxfordlearnersdictionaries.com/definition/english/summer-school,B2,summer school,học hè,noun,/ˈsʌmə skuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sum/summe/summer_school_1_gb_1.mp3

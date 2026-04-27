@@ -1,50 +1,50 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-anemometer,https://www.oxfordlearnersdictionaries.com/definition/english/anemometer,C2,anemometer,máy đo gió,noun,/ˌænɪˈmɒmɪtə(r)/,
-crosswind,https://www.oxfordlearnersdictionaries.com/definition/english/crosswind,C2,crosswind,gió ngược,noun,/ˈkrɒswɪnd/,
-breeze,https://www.oxfordlearnersdictionaries.com/definition/english/breeze_1,B2,breeze,gió nhẹ,noun,/briːz/,
-cyclone,https://www.oxfordlearnersdictionaries.com/definition/english/cyclone,C1,cyclone,lốc xoáy,noun,/ˈsaɪkləʊn/,
-blustery,https://www.oxfordlearnersdictionaries.com/definition/english/blustery,C2,blustery,ồn ào,adjective,/ˈblʌstəri/,
-calm,https://www.oxfordlearnersdictionaries.com/definition/english/calm_1,B1,calm,điềm tĩnh,adjective,/kɑːm/,
-breezy,https://www.oxfordlearnersdictionaries.com/definition/english/breezy,C1,breezy,mát mẻ,adjective,/ˈbriːzi/,
-blow,https://www.oxfordlearnersdictionaries.com/definition/english/blow_1,A2,blow,thổi,verb,/bləʊ/,
-beaufort_scale,https://www.oxfordlearnersdictionaries.com/definition/english/the-beaufort-scale,C2,Beaufort scale,thang đo Beaufort,noun,/ðə ˈbəʊfət skeɪl/,
-east,https://www.oxfordlearnersdictionaries.com/definition/english/east_2,A1,east,phía đông,adjective,/iːst/,
-gale,https://www.oxfordlearnersdictionaries.com/definition/english/gale,C1,gale,cơn gió mạnh,noun,/ɡeɪl/,
+anemometer,https://www.oxfordlearnersdictionaries.com/definition/english/anemometer,C2,anemometer,máy đo gió,noun,/ˌænɪˈmɒmɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ane/anemo/anemometer__gb_1.mp3
+crosswind,https://www.oxfordlearnersdictionaries.com/definition/english/crosswind,C2,crosswind,gió ngược,noun,/ˈkrɒswɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/cross/crosswind__gb_1.mp3
+breeze,https://www.oxfordlearnersdictionaries.com/definition/english/breeze_1,B2,breeze,gió nhẹ,noun,/briːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breez/breeze__gb_1.mp3
+cyclone,https://www.oxfordlearnersdictionaries.com/definition/english/cyclone,C1,cyclone,lốc xoáy,noun,/ˈsaɪkləʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cyc/cyclo/cyclone__gb_1.mp3
+blustery,https://www.oxfordlearnersdictionaries.com/definition/english/blustery,C2,blustery,ồn ào,adjective,/ˈblʌstəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blu/blust/blustery__gb_1.mp3
+calm,https://www.oxfordlearnersdictionaries.com/definition/english/calm_1,B1,calm,điềm tĩnh,adjective,/kɑːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cal/calm_/calm__gb_1.mp3
+breezy,https://www.oxfordlearnersdictionaries.com/definition/english/breezy,C1,breezy,mát mẻ,adjective,/ˈbriːzi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breez/breezy__gb_1.mp3
+blow,https://www.oxfordlearnersdictionaries.com/definition/english/blow_1,A2,blow,thổi,verb,/bləʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/blow_/blow__gb_2.mp3
+beaufort_scale,https://www.oxfordlearnersdictionaries.com/definition/english/the-beaufort-scale,C2,Beaufort scale,thang đo Beaufort,noun,/ðə ˈbəʊfət skeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bea/beauf/beaufort_scale_1_gb_2.mp3
+east,https://www.oxfordlearnersdictionaries.com/definition/english/east_2,A1,east,phía đông,adjective,/iːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eas/east_/east__gb_1.mp3
+gale,https://www.oxfordlearnersdictionaries.com/definition/english/gale,C1,gale,cơn gió mạnh,noun,/ɡeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gal/gale_/gale__gb_2.mp3
 get_up,https://www.oxfordlearnersdictionaries.com/definition/english/get-up_1,C2,get up,thức dậy,phrasal verb,,
-gust,https://www.oxfordlearnersdictionaries.com/definition/english/gust_1,C2,gust,cơn gió mạnh,noun,/ɡʌst/,
-gust,https://www.oxfordlearnersdictionaries.com/definition/english/gust_2,C2,gust,cơn gió mạnh,verb,/ɡʌst/,
-easterly,https://www.oxfordlearnersdictionaries.com/definition/english/easterly_2,C2,easterly,hướng đông,noun,/ˈiːstəli/,
-force,https://www.oxfordlearnersdictionaries.com/definition/english/force_1,C1,force,lực lượng,noun,/fɔːs/,
-easterly,https://www.oxfordlearnersdictionaries.com/definition/english/easterly_1,C2,easterly,hướng Đông,adjective,/ˈiːstəli/,
-dust_storm,https://www.oxfordlearnersdictionaries.com/definition/english/dust-storm,B2,dust storm,bão bụi,noun,/ˈdʌst stɔːm/,
-headwind,https://www.oxfordlearnersdictionaries.com/definition/english/headwind,C2,headwind,cơn gió ngược,noun,/ˈhedwɪnd/,
-hurricane,https://www.oxfordlearnersdictionaries.com/definition/english/hurricane,B1,hurricane,cơn bão,noun,/ˈhʌrɪkən/,
-northerly,https://www.oxfordlearnersdictionaries.com/definition/english/northerly_2,C2,northerly,hướng bắc,noun,/ˈnɔːðəli/,
-northerly,https://www.oxfordlearnersdictionaries.com/definition/english/northerly_1,C2,northerly,hướng bắc,adjective,/ˈnɔːðəli/,
-prevailing,https://www.oxfordlearnersdictionaries.com/definition/english/prevailing,C2,prevailing,chiếm ưu thế,adjective,/prɪˈveɪlɪŋ/,
-gusty,https://www.oxfordlearnersdictionaries.com/definition/english/gusty,C2,gusty,gió mạnh,adjective,/ˈɡʌsti/,
-mistral,https://www.oxfordlearnersdictionaries.com/definition/english/mistral,C2,mistral,sương mù,noun,/ˈmɪstrəl/,
-sirocco,https://www.oxfordlearnersdictionaries.com/definition/english/sirocco,C2,sirocco,sirocco,noun,/sɪˈrɒkəʊ/,
-south,https://www.oxfordlearnersdictionaries.com/definition/english/south_2,A1,south,phía nam,adjective,/saʊθ/,
-north,https://www.oxfordlearnersdictionaries.com/definition/english/north_2,A1,north,phía bắc,adjective,/nɔːθ/,
-strong,https://www.oxfordlearnersdictionaries.com/definition/english/strong,B1,strong,mạnh,adjective,/strɒŋ/,
-squall,https://www.oxfordlearnersdictionaries.com/definition/english/squall_1,C2,squall,cơn giông,noun,/skwɔːl/,
-storm,https://www.oxfordlearnersdictionaries.com/definition/english/storm_1,A2,storm,bão,noun,/stɔːm/,
-nor'easter,https://www.oxfordlearnersdictionaries.com/definition/english/nor-easter,C2,nor'easter,đông bắc,noun,/ˌnɔːrˈiːstə(r)/,
-southerly,https://www.oxfordlearnersdictionaries.com/definition/english/southerly_1,C2,southerly,phương nam,adjective,/ˈsʌðəli/,
-southerly,https://www.oxfordlearnersdictionaries.com/definition/english/southerly_2,C2,southerly,phương nam,noun,/ˈsʌðəli/,
-tailwind,https://www.oxfordlearnersdictionaries.com/definition/english/tailwind,C2,tailwind,gió thuận,noun,/ˈteɪlwɪnd/,
-tempest,https://www.oxfordlearnersdictionaries.com/definition/english/tempest,C2,tempest,bão tố,noun,/ˈtempɪst/,
-tornado,https://www.oxfordlearnersdictionaries.com/definition/english/tornado_1,B1,tornado,cơn lốc xoáy,noun,/tɔːˈneɪdəʊ/,
-typhoon,https://www.oxfordlearnersdictionaries.com/definition/english/typhoon,B2,typhoon,cơn bão,noun,/taɪˈfuːn/,
-twister,https://www.oxfordlearnersdictionaries.com/definition/english/twister,C2,twister,cơn lốc xoáy,noun,/ˈtwɪstə(r)/,
-weathervane,https://www.oxfordlearnersdictionaries.com/definition/english/weathervane,C2,weathervane,cánh gió,noun,/ˈweðəveɪn/,
-whirlwind,https://www.oxfordlearnersdictionaries.com/definition/english/whirlwind_1,C1,whirlwind,cơn lốc,noun,/ˈwɜːlwɪnd/,
-west,https://www.oxfordlearnersdictionaries.com/definition/english/west_2,A1,west,hướng Tây,adjective,/west/,
-wind,https://www.oxfordlearnersdictionaries.com/definition/english/wind1_1,A2,wind,gió,noun,/wɪnd/,
-windy,https://www.oxfordlearnersdictionaries.com/definition/english/windy,A2,windy,có gió,adjective,/ˈwɪndi/,
-windless,https://www.oxfordlearnersdictionaries.com/definition/english/windless,B2,windless,không có gió,adjective,/ˈwɪndləs/,
-zephyr,https://www.oxfordlearnersdictionaries.com/definition/english/zephyr,C2,zephyr,zephyr,noun,/ˈzefə(r)/,
-westerly,https://www.oxfordlearnersdictionaries.com/definition/english/westerly_2,C2,westerly,hướng tây,noun,/ˈwestəli/,
-westerly,https://www.oxfordlearnersdictionaries.com/definition/english/westerly_1,C2,westerly,hướng tây,adjective,/ˈwestəli/,
-wind_gauge,https://www.oxfordlearnersdictionaries.com/definition/english/wind-gauge,C2,wind gauge,máy đo gió,noun,/ˈwɪnd ɡeɪdʒ/,
+gust,https://www.oxfordlearnersdictionaries.com/definition/english/gust_1,C2,gust,cơn gió mạnh,noun,/ɡʌst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gus/gust_/gust__gb_2.mp3
+gust,https://www.oxfordlearnersdictionaries.com/definition/english/gust_2,C2,gust,cơn gió mạnh,verb,/ɡʌst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gus/gust_/gust__gb_2.mp3
+easterly,https://www.oxfordlearnersdictionaries.com/definition/english/easterly_2,C2,easterly,hướng đông,noun,/ˈiːstəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eas/easte/easterly__gb_1.mp3
+force,https://www.oxfordlearnersdictionaries.com/definition/english/force_1,C1,force,lực lượng,noun,/fɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/force/force__gb_1.mp3
+easterly,https://www.oxfordlearnersdictionaries.com/definition/english/easterly_1,C2,easterly,hướng Đông,adjective,/ˈiːstəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eas/easte/easterly__gb_1.mp3
+dust_storm,https://www.oxfordlearnersdictionaries.com/definition/english/dust-storm,B2,dust storm,bão bụi,noun,/ˈdʌst stɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dus/dust_/dust_storm_1_gb_1.mp3
+headwind,https://www.oxfordlearnersdictionaries.com/definition/english/headwind,C2,headwind,cơn gió ngược,noun,/ˈhedwɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/headw/headwind__gb_1.mp3
+hurricane,https://www.oxfordlearnersdictionaries.com/definition/english/hurricane,B1,hurricane,cơn bão,noun,/ˈhʌrɪkən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hur/hurri/hurricane__gb_3.mp3
+northerly,https://www.oxfordlearnersdictionaries.com/definition/english/northerly_2,C2,northerly,hướng bắc,noun,/ˈnɔːðəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nor/north/northerly__gb_1.mp3
+northerly,https://www.oxfordlearnersdictionaries.com/definition/english/northerly_1,C2,northerly,hướng bắc,adjective,/ˈnɔːðəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nor/north/northerly__gb_1.mp3
+prevailing,https://www.oxfordlearnersdictionaries.com/definition/english/prevailing,C2,prevailing,chiếm ưu thế,adjective,/prɪˈveɪlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preva/prevailing__gb_1.mp3
+gusty,https://www.oxfordlearnersdictionaries.com/definition/english/gusty,C2,gusty,gió mạnh,adjective,/ˈɡʌsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gus/gusty/gusty__gb_2.mp3
+mistral,https://www.oxfordlearnersdictionaries.com/definition/english/mistral,C2,mistral,sương mù,noun,/ˈmɪstrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/mistr/mistral__gb_1.mp3
+sirocco,https://www.oxfordlearnersdictionaries.com/definition/english/sirocco,C2,sirocco,sirocco,noun,/sɪˈrɒkəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sci/sciro/scirocco__gb_1.mp3
+south,https://www.oxfordlearnersdictionaries.com/definition/english/south_2,A1,south,phía nam,adjective,/saʊθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/south/south__gb_1.mp3
+north,https://www.oxfordlearnersdictionaries.com/definition/english/north_2,A1,north,phía bắc,adjective,/nɔːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nor/north/north__gb_1.mp3
+strong,https://www.oxfordlearnersdictionaries.com/definition/english/strong,B1,strong,mạnh,adjective,/strɒŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/stron/strong__gb_2.mp3
+squall,https://www.oxfordlearnersdictionaries.com/definition/english/squall_1,C2,squall,cơn giông,noun,/skwɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/squ/squal/squall__gb_1.mp3
+storm,https://www.oxfordlearnersdictionaries.com/definition/english/storm_1,A2,storm,bão,noun,/stɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/storm/storm__gb_1.mp3
+nor'easter,https://www.oxfordlearnersdictionaries.com/definition/english/nor-easter,C2,nor'easter,đông bắc,noun,/ˌnɔːrˈiːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nor/nor_e/nor_easter_1_gb_1.mp3
+southerly,https://www.oxfordlearnersdictionaries.com/definition/english/southerly_1,C2,southerly,phương nam,adjective,/ˈsʌðəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/south/southerly__gb_1.mp3
+southerly,https://www.oxfordlearnersdictionaries.com/definition/english/southerly_2,C2,southerly,phương nam,noun,/ˈsʌðəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/south/southerly__gb_1.mp3
+tailwind,https://www.oxfordlearnersdictionaries.com/definition/english/tailwind,C2,tailwind,gió thuận,noun,/ˈteɪlwɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tai/tailw/tailwind__gb_1.mp3
+tempest,https://www.oxfordlearnersdictionaries.com/definition/english/tempest,C2,tempest,bão tố,noun,/ˈtempɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tem/tempe/tempest__gb_1.mp3
+tornado,https://www.oxfordlearnersdictionaries.com/definition/english/tornado_1,B1,tornado,cơn lốc xoáy,noun,/tɔːˈneɪdəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tor/torna/tornado__gb_3.mp3
+typhoon,https://www.oxfordlearnersdictionaries.com/definition/english/typhoon,B2,typhoon,cơn bão,noun,/taɪˈfuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/typ/typho/typhoon__gb_1.mp3
+twister,https://www.oxfordlearnersdictionaries.com/definition/english/twister,C2,twister,cơn lốc xoáy,noun,/ˈtwɪstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twi/twist/twister__gb_1.mp3
+weathervane,https://www.oxfordlearnersdictionaries.com/definition/english/weathervane,C2,weathervane,cánh gió,noun,/ˈweðəveɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/weath/weathervane__gb_1.mp3
+whirlwind,https://www.oxfordlearnersdictionaries.com/definition/english/whirlwind_1,C1,whirlwind,cơn lốc,noun,/ˈwɜːlwɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whi/whirl/whirlwind__gb_1.mp3
+west,https://www.oxfordlearnersdictionaries.com/definition/english/west_2,A1,west,hướng Tây,adjective,/west/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wes/west_/west__gb_1.mp3
+wind,https://www.oxfordlearnersdictionaries.com/definition/english/wind1_1,A2,wind,gió,noun,/wɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wind_/wind__gb_1.mp3
+windy,https://www.oxfordlearnersdictionaries.com/definition/english/windy,A2,windy,có gió,adjective,/ˈwɪndi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/windy/windy__gb_2.mp3
+windless,https://www.oxfordlearnersdictionaries.com/definition/english/windless,B2,windless,không có gió,adjective,/ˈwɪndləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/windl/windless__gb_1.mp3
+zephyr,https://www.oxfordlearnersdictionaries.com/definition/english/zephyr,C2,zephyr,zephyr,noun,/ˈzefə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zep/zephy/zephyr__gb_1.mp3
+westerly,https://www.oxfordlearnersdictionaries.com/definition/english/westerly_2,C2,westerly,hướng tây,noun,/ˈwestəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wes/weste/westerly__gb_1.mp3
+westerly,https://www.oxfordlearnersdictionaries.com/definition/english/westerly_1,C2,westerly,hướng tây,adjective,/ˈwestəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wes/weste/westerly__gb_1.mp3
+wind_gauge,https://www.oxfordlearnersdictionaries.com/definition/english/wind-gauge,C2,wind gauge,máy đo gió,noun,/ˈwɪnd ɡeɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wind_/wind_gauge_1_gb_1.mp3

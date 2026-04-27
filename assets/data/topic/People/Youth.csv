@@ -1,48 +1,48 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-adolescent,https://www.oxfordlearnersdictionaries.com/definition/english/adolescent_1,C1,adolescent,thanh niên,noun,/ˌædəˈlesnt/,
-adolescence,https://www.oxfordlearnersdictionaries.com/definition/english/adolescence,C1,adolescence,tuổi thiếu niên,noun,/ˌædəˈlesns/,
-boy,https://www.oxfordlearnersdictionaries.com/definition/english/boy_1,A1,boy,con trai,noun,/bɔɪ/,
-childhood,https://www.oxfordlearnersdictionaries.com/definition/english/childhood,B1,childhood,thời thơ ấu,noun,/ˈtʃaɪldhʊd/,
-child,https://www.oxfordlearnersdictionaries.com/definition/english/child,A1,child,đứa trẻ,noun,/tʃaɪld/,
-childish,https://www.oxfordlearnersdictionaries.com/definition/english/childish,B2,childish,trẻ con,adjective,/ˈtʃaɪldɪʃ/,
-break,https://www.oxfordlearnersdictionaries.com/definition/english/break_1,C2,break,phá vỡ,verb,/breɪk/,
-baby-faced,https://www.oxfordlearnersdictionaries.com/definition/english/baby-faced,C1,baby-faced,mặt trẻ con,adjective,/ˈbeɪbi feɪst/,
-boyhood,https://www.oxfordlearnersdictionaries.com/definition/english/boyhood,C1,boyhood,tuổi thơ,noun,/ˈbɔɪhʊd/,
-adolescent,https://www.oxfordlearnersdictionaries.com/definition/english/adolescent_2,B2,adolescent,thanh niên,adjective,/ˌædəˈlesnt/,
-girl,https://www.oxfordlearnersdictionaries.com/definition/english/girl,A1,girl,con gái,noun,/ɡɜːl/,
-girlhood,https://www.oxfordlearnersdictionaries.com/definition/english/girlhood,C1,girlhood,thời con gái,noun,/ˈɡɜːlhʊd/,
+adolescent,https://www.oxfordlearnersdictionaries.com/definition/english/adolescent_1,C1,adolescent,thanh niên,noun,/ˌædəˈlesnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adole/adolescent__gb_1.mp3
+adolescence,https://www.oxfordlearnersdictionaries.com/definition/english/adolescence,C1,adolescence,tuổi thiếu niên,noun,/ˌædəˈlesns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adole/adolescence__gb_2.mp3
+boy,https://www.oxfordlearnersdictionaries.com/definition/english/boy_1,A1,boy,con trai,noun,/bɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boy/boy__/boy__gb_2.mp3
+childhood,https://www.oxfordlearnersdictionaries.com/definition/english/childhood,B1,childhood,thời thơ ấu,noun,/ˈtʃaɪldhʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/child/childhood__gb_2.mp3
+child,https://www.oxfordlearnersdictionaries.com/definition/english/child,A1,child,đứa trẻ,noun,/tʃaɪld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/child/child__gb_2.mp3
+childish,https://www.oxfordlearnersdictionaries.com/definition/english/childish,B2,childish,trẻ con,adjective,/ˈtʃaɪldɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/child/childish__gb_2.mp3
+break,https://www.oxfordlearnersdictionaries.com/definition/english/break_1,C2,break,phá vỡ,verb,/breɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/break/break__gb_1.mp3
+baby-faced,https://www.oxfordlearnersdictionaries.com/definition/english/baby-faced,C1,baby-faced,mặt trẻ con,adjective,/ˈbeɪbi feɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bab/baby_/baby_faced_1_gb_1.mp3
+boyhood,https://www.oxfordlearnersdictionaries.com/definition/english/boyhood,C1,boyhood,tuổi thơ,noun,/ˈbɔɪhʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boy/boyho/boyhood__gb_2.mp3
+adolescent,https://www.oxfordlearnersdictionaries.com/definition/english/adolescent_2,B2,adolescent,thanh niên,adjective,/ˌædəˈlesnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ado/adole/adolescent__gb_1.mp3
+girl,https://www.oxfordlearnersdictionaries.com/definition/english/girl,A1,girl,con gái,noun,/ɡɜːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gir/girl_/girl__gb_2.mp3
+girlhood,https://www.oxfordlearnersdictionaries.com/definition/english/girlhood,C1,girlhood,thời con gái,noun,/ˈɡɜːlhʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gir/girlh/girlhood__gb_2.mp3
 grow_into,https://www.oxfordlearnersdictionaries.com/definition/english/grow-into,C2,grow into,phát triển thành,phrasal verb,,
-fresh-faced,https://www.oxfordlearnersdictionaries.com/definition/english/fresh-faced,C2,fresh-faced,khuôn mặt tươi tắn,adjective,/ˌfreʃ ˈfeɪst/,
+fresh-faced,https://www.oxfordlearnersdictionaries.com/definition/english/fresh-faced,C2,fresh-faced,khuôn mặt tươi tắn,adjective,/ˌfreʃ ˈfeɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/fresh/fresh_faced_1_gb_2.mp3
 grow_up,https://www.oxfordlearnersdictionaries.com/definition/english/grow-up,A1,grow up,lớn lên,phrasal verb,,
-growing_pains,https://www.oxfordlearnersdictionaries.com/definition/english/growing-pains,C2,growing pains,nỗi đau ngày càng tăng,noun,/ˈɡrəʊɪŋ peɪnz/,
+growing_pains,https://www.oxfordlearnersdictionaries.com/definition/english/growing-pains,C2,growing pains,nỗi đau ngày càng tăng,noun,/ˈɡrəʊɪŋ peɪnz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/growi/growing_pains_1_gb_1.mp3
 grow_out_of,https://www.oxfordlearnersdictionaries.com/definition/english/grow-out-of,C1,grow out of,lớn lên từ,phrasal verb,,
-immature,https://www.oxfordlearnersdictionaries.com/definition/english/immature,B2,immature,chưa trưởng thành,adjective,/ˌɪməˈtjʊə(r)/,
-gawky,https://www.oxfordlearnersdictionaries.com/definition/english/gawky,C2,gawky,vụng về,adjective,/ˈɡɔːki/,
-ingénue,https://www.oxfordlearnersdictionaries.com/definition/english/ingenue,C2,ingénue,ngây thơ,noun,/ˈæ̃ʒənjuː/,
-juvenile,https://www.oxfordlearnersdictionaries.com/definition/english/juvenile_1,C1,juvenile,vị thành niên,adjective,/ˈdʒuːvənaɪl/,
-kid,https://www.oxfordlearnersdictionaries.com/definition/english/kid_1,A2,kid,đứa trẻ,noun,/kɪd/,
-lass,https://www.oxfordlearnersdictionaries.com/definition/english/lass,C2,lass,cô gái,noun,/læs/,
-lad,https://www.oxfordlearnersdictionaries.com/definition/english/lad,C1,lad,thanh niên,noun,/læd/,
-maturity,https://www.oxfordlearnersdictionaries.com/definition/english/maturity,C1,maturity,trưởng thành,noun,/məˈtʃʊərəti/,
-minor,https://www.oxfordlearnersdictionaries.com/definition/english/minor_2,C2,minor,người vị thành niên,noun,/ˈmaɪnə(r)/,
-mature,https://www.oxfordlearnersdictionaries.com/definition/english/mature_1,C1,mature,trưởng thành,adjective,/məˈtʃʊə(r)/,
-innocent,https://www.oxfordlearnersdictionaries.com/definition/english/innocent_1,B2,innocent,vô tội,adjective,/ˈɪnəsnt/,
-naive,https://www.oxfordlearnersdictionaries.com/definition/english/naive,C1,naive,ngây thơ,adjective,/naɪˈiːv/,
-puberty,https://www.oxfordlearnersdictionaries.com/definition/english/puberty,C2,puberty,tuổi dậy thì,noun,/ˈpjuːbəti/,
-pre-teen,https://www.oxfordlearnersdictionaries.com/definition/english/pre-teen_1,C2,pre-teen,trước tuổi thiếu niên,adjective,/ˌpriː ˈtiːn/,
-school_day,https://www.oxfordlearnersdictionaries.com/definition/english/school-day,B1,school day,ngày học,noun,/ˈskuːldeɪ/,
-pubescent,https://www.oxfordlearnersdictionaries.com/definition/english/pubescent,C2,pubescent,tuổi dậy thì,adjective,/pjuːˈbesnt/,
-teens,https://www.oxfordlearnersdictionaries.com/definition/english/teens,B2,teens,thanh thiếu niên,noun,/tiːnz/,
-teenager,https://www.oxfordlearnersdictionaries.com/definition/english/teenager,A1,teenager,thiếu niên,noun,/ˈtiːneɪdʒə(r)/,
-pre-teen,https://www.oxfordlearnersdictionaries.com/definition/english/pre-teen_2,C2,pre-teen,trước tuổi thiếu niên,noun,/ˌpriː ˈtiːn/,
-tot,https://www.oxfordlearnersdictionaries.com/definition/english/tot_1,C2,tot,con,noun,/tɒt/,
-tearaway,https://www.oxfordlearnersdictionaries.com/definition/english/tearaway,C2,tearaway,nước mắt,noun,/ˈteərəweɪ/,
-youngster,https://www.oxfordlearnersdictionaries.com/definition/english/youngster,C1,youngster,người trẻ tuổi,noun,/ˈjʌŋstə(r)/,
-tween,https://www.oxfordlearnersdictionaries.com/definition/english/tween,C2,tween,mười hai,noun,/twiːn/,
-young,https://www.oxfordlearnersdictionaries.com/definition/english/young_1,A1,young,trẻ,adjective,/jʌŋ/,
-wunderkind,https://www.oxfordlearnersdictionaries.com/definition/english/wunderkind,C2,wunderkind,thần đồng,noun,/ˈwʊndəkɪnd/,
-young_adult,https://www.oxfordlearnersdictionaries.com/definition/english/young-adult_1,A2,young adult,thanh niên,noun,/ˌjʌŋ ˈædʌlt/,
-teenage,https://www.oxfordlearnersdictionaries.com/definition/english/teenage,A2,teenage,thiếu niên,adjective,/ˈtiːneɪdʒ/,
-underage,https://www.oxfordlearnersdictionaries.com/definition/english/underage,C1,underage,chưa đủ tuổi,adjective,/ˈʌndəreɪdʒ/,
-youth,https://www.oxfordlearnersdictionaries.com/definition/english/youth,B1,youth,thiếu niên,noun,/juːθ/,
-youthful,https://www.oxfordlearnersdictionaries.com/definition/english/youthful,C1,youthful,trẻ trung,adjective,/ˈjuːθfl/,
+immature,https://www.oxfordlearnersdictionaries.com/definition/english/immature,B2,immature,chưa trưởng thành,adjective,/ˌɪməˈtjʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/imm/immat/immature__gb_1.mp3
+gawky,https://www.oxfordlearnersdictionaries.com/definition/english/gawky,C2,gawky,vụng về,adjective,/ˈɡɔːki/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gaw/gawky/gawky__gb_2.mp3
+ingénue,https://www.oxfordlearnersdictionaries.com/definition/english/ingenue,C2,ingénue,ngây thơ,noun,/ˈæ̃ʒənjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ing/ingen/ingenue_1_gb_3.mp3
+juvenile,https://www.oxfordlearnersdictionaries.com/definition/english/juvenile_1,C1,juvenile,vị thành niên,adjective,/ˈdʒuːvənaɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/juv/juven/juvenile__gb_1.mp3
+kid,https://www.oxfordlearnersdictionaries.com/definition/english/kid_1,A2,kid,đứa trẻ,noun,/kɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kid/kid__/kid__gb_2.mp3
+lass,https://www.oxfordlearnersdictionaries.com/definition/english/lass,C2,lass,cô gái,noun,/læs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/las/lass_/lass__gb_1.mp3
+lad,https://www.oxfordlearnersdictionaries.com/definition/english/lad,C1,lad,thanh niên,noun,/læd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lad/lad__/lad__gb_2.mp3
+maturity,https://www.oxfordlearnersdictionaries.com/definition/english/maturity,C1,maturity,trưởng thành,noun,/məˈtʃʊərəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matur/maturity__gb_1.mp3
+minor,https://www.oxfordlearnersdictionaries.com/definition/english/minor_2,C2,minor,người vị thành niên,noun,/ˈmaɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minor/minor__gb_1.mp3
+mature,https://www.oxfordlearnersdictionaries.com/definition/english/mature_1,C1,mature,trưởng thành,adjective,/məˈtʃʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matur/mature__gb_1.mp3
+innocent,https://www.oxfordlearnersdictionaries.com/definition/english/innocent_1,B2,innocent,vô tội,adjective,/ˈɪnəsnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inn/innoc/innocent__gb_2.mp3
+naive,https://www.oxfordlearnersdictionaries.com/definition/english/naive,C1,naive,ngây thơ,adjective,/naɪˈiːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nai/naive/naive__gb_1.mp3
+puberty,https://www.oxfordlearnersdictionaries.com/definition/english/puberty,C2,puberty,tuổi dậy thì,noun,/ˈpjuːbəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/puber/puberty__gb_1.mp3
+pre-teen,https://www.oxfordlearnersdictionaries.com/definition/english/pre-teen_1,C2,pre-teen,trước tuổi thiếu niên,adjective,/ˌpriː ˈtiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/pre_t/pre_teen_1_gb_1.mp3
+school_day,https://www.oxfordlearnersdictionaries.com/definition/english/school-day,B1,school day,ngày học,noun,/ˈskuːldeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/schoolday__gb_1.mp3
+pubescent,https://www.oxfordlearnersdictionaries.com/definition/english/pubescent,C2,pubescent,tuổi dậy thì,adjective,/pjuːˈbesnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/pubes/pubescent__gb_1.mp3
+teens,https://www.oxfordlearnersdictionaries.com/definition/english/teens,B2,teens,thanh thiếu niên,noun,/tiːnz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tee/teens/teens__gb_1.mp3
+teenager,https://www.oxfordlearnersdictionaries.com/definition/english/teenager,A1,teenager,thiếu niên,noun,/ˈtiːneɪdʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tee/teena/teenager__gb_1.mp3
+pre-teen,https://www.oxfordlearnersdictionaries.com/definition/english/pre-teen_2,C2,pre-teen,trước tuổi thiếu niên,noun,/ˌpriː ˈtiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/pre_t/pre_teen_1_gb_1.mp3
+tot,https://www.oxfordlearnersdictionaries.com/definition/english/tot_1,C2,tot,con,noun,/tɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tot/tot__/tot__gb_1.mp3
+tearaway,https://www.oxfordlearnersdictionaries.com/definition/english/tearaway,C2,tearaway,nước mắt,noun,/ˈteərəweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tea/teara/tearaway__gb_1.mp3
+youngster,https://www.oxfordlearnersdictionaries.com/definition/english/youngster,C1,youngster,người trẻ tuổi,noun,/ˈjʌŋstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/young/youngster__gb_1.mp3
+tween,https://www.oxfordlearnersdictionaries.com/definition/english/tween,C2,tween,mười hai,noun,/twiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twe/tween/tween__gb_1.mp3
+young,https://www.oxfordlearnersdictionaries.com/definition/english/young_1,A1,young,trẻ,adjective,/jʌŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/young/young_1_gb_1.mp3
+wunderkind,https://www.oxfordlearnersdictionaries.com/definition/english/wunderkind,C2,wunderkind,thần đồng,noun,/ˈwʊndəkɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wun/wunde/wunderkind__gb_1.mp3
+young_adult,https://www.oxfordlearnersdictionaries.com/definition/english/young-adult_1,A2,young adult,thanh niên,noun,/ˌjʌŋ ˈædʌlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/young/young_adult_1_gb_1.mp3
+teenage,https://www.oxfordlearnersdictionaries.com/definition/english/teenage,A2,teenage,thiếu niên,adjective,/ˈtiːneɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tee/teena/teenage__gb_1.mp3
+underage,https://www.oxfordlearnersdictionaries.com/definition/english/underage,C1,underage,chưa đủ tuổi,adjective,/ˈʌndəreɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/und/under/underage__gb_1.mp3
+youth,https://www.oxfordlearnersdictionaries.com/definition/english/youth,B1,youth,thiếu niên,noun,/juːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/youth/youth__gb_1.mp3
+youthful,https://www.oxfordlearnersdictionaries.com/definition/english/youthful,C1,youthful,trẻ trung,adjective,/ˈjuːθfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/youth/youthful__gb_1.mp3

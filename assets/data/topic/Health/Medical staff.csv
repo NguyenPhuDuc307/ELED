@@ -1,67 +1,67 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-clinician,https://www.oxfordlearnersdictionaries.com/definition/english/clinician,C2,clinician,bác sĩ lâm sàng,noun,/klɪˈnɪʃn/,
-consultant,https://www.oxfordlearnersdictionaries.com/definition/english/consultant,B2,consultant,tư vấn,noun,/kənˈsʌltənt/,
-chiropractor,https://www.oxfordlearnersdictionaries.com/definition/english/chiropractor,C2,chiropractor,bác sĩ nắn khớp xương,noun,/ˈkaɪərəʊpræktə(r)/,
-chiropodist,https://www.oxfordlearnersdictionaries.com/definition/english/chiropodist,C2,chiropodist,bác sĩ chỉnh hình,noun,/kɪˈrɒpədɪst/,
-chemist,https://www.oxfordlearnersdictionaries.com/definition/english/chemist,A2,chemist,nhà hóa học,noun,/ˈkemɪst/,
-acupuncturist,https://www.oxfordlearnersdictionaries.com/definition/english/acupuncturist,C2,acupuncturist,nhà châm cứu,noun,/ˈækjupʌŋktʃərɪst/,
-attendant,https://www.oxfordlearnersdictionaries.com/definition/english/attendant_1,B2,attendant,tiếp viên,noun,/əˈtendənt/,
-bedside_manner,https://www.oxfordlearnersdictionaries.com/definition/english/bedside-manner,C2,bedside manner,cách thức bên giường bệnh,noun,/ˌbedsaɪd ˈmænə(r)/,
-dental_surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/dental-surgeon,C1,dental surgeon,bác sĩ phẫu thuật nha khoa,noun,/ˈdentl sɜːdʒən/,
-anaesthetist,https://www.oxfordlearnersdictionaries.com/definition/english/anaesthetist,C2,anaesthetist,bác sĩ gây mê,noun,/əˈniːsθətɪst/,
-dentist,https://www.oxfordlearnersdictionaries.com/definition/english/dentist,A2,dentist,nha sĩ,noun,/ˈdentɪst/,
-dietician,https://www.oxfordlearnersdictionaries.com/definition/english/dietician,C2,dietician,chuyên gia dinh dưỡng,noun,/ˌdaɪəˈtɪʃn/,
-dermatologist,https://www.oxfordlearnersdictionaries.com/definition/english/dermatologist,C2,dermatologist,bác sĩ da liễu,noun,/ˌdɜːməˈtɒlədʒɪst/,
-doctor,https://www.oxfordlearnersdictionaries.com/definition/english/doctor_1,A1,doctor,bác sĩ,noun,/ˈdɒktə(r)/,
+clinician,https://www.oxfordlearnersdictionaries.com/definition/english/clinician,C2,clinician,bác sĩ lâm sàng,noun,/klɪˈnɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cli/clini/clinician__gb_1.mp3
+consultant,https://www.oxfordlearnersdictionaries.com/definition/english/consultant,B2,consultant,tư vấn,noun,/kənˈsʌltənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconsultant__gb_1.mp3
+chiropractor,https://www.oxfordlearnersdictionaries.com/definition/english/chiropractor,C2,chiropractor,bác sĩ nắn khớp xương,noun,/ˈkaɪərəʊpræktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/chiro/chiropractor__gb_1.mp3
+chiropodist,https://www.oxfordlearnersdictionaries.com/definition/english/chiropodist,C2,chiropodist,bác sĩ chỉnh hình,noun,/kɪˈrɒpədɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/chiro/chiropodist__gb_1.mp3
+chemist,https://www.oxfordlearnersdictionaries.com/definition/english/chemist,A2,chemist,nhà hóa học,noun,/ˈkemɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chemi/chemist__gb_3.mp3
+acupuncturist,https://www.oxfordlearnersdictionaries.com/definition/english/acupuncturist,C2,acupuncturist,nhà châm cứu,noun,/ˈækjupʌŋktʃərɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acu/acupu/acupuncturist__gb_1.mp3
+attendant,https://www.oxfordlearnersdictionaries.com/definition/english/attendant_1,B2,attendant,tiếp viên,noun,/əˈtendənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/atten/attendant__gb_1.mp3
+bedside_manner,https://www.oxfordlearnersdictionaries.com/definition/english/bedside-manner,C2,bedside manner,cách thức bên giường bệnh,noun,/ˌbedsaɪd ˈmænə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bed/bedsi/bedside_manner_1_gb_1.mp3
+dental_surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/dental-surgeon,C1,dental surgeon,bác sĩ phẫu thuật nha khoa,noun,/ˈdentl sɜːdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/den/denta/dental_surgeon_1_gb_1.mp3
+anaesthetist,https://www.oxfordlearnersdictionaries.com/definition/english/anaesthetist,C2,anaesthetist,bác sĩ gây mê,noun,/əˈniːsθətɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/anaes/anaesthetist__gb_1.mp3
+dentist,https://www.oxfordlearnersdictionaries.com/definition/english/dentist,A2,dentist,nha sĩ,noun,/ˈdentɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/den/denti/dentist__gb_2.mp3
+dietician,https://www.oxfordlearnersdictionaries.com/definition/english/dietician,C2,dietician,chuyên gia dinh dưỡng,noun,/ˌdaɪəˈtɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/die/dieti/dietitian__gb_1.mp3
+dermatologist,https://www.oxfordlearnersdictionaries.com/definition/english/dermatologist,C2,dermatologist,bác sĩ da liễu,noun,/ˌdɜːməˈtɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/der/derma/dermatologist__gb_1.mp3
+doctor,https://www.oxfordlearnersdictionaries.com/definition/english/doctor_1,A1,doctor,bác sĩ,noun,/ˈdɒktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/doc/docto/doctor__gb_2.mp3
 dr,https://www.oxfordlearnersdictionaries.com/definition/english/dr,B1,Dr,Tiến sĩ,abbreviation,,
-dispensing_chemist,https://www.oxfordlearnersdictionaries.com/definition/english/dispensing-chemist,C2,dispensing chemist,nhà hóa học pha chế,noun,/dɪˈspensɪŋ kemɪst/,
-druggist,https://www.oxfordlearnersdictionaries.com/definition/english/druggist,C2,druggist,người bán thuốc,noun,/ˈdrʌɡɪst/,
-healer,https://www.oxfordlearnersdictionaries.com/definition/english/healer,C1,healer,người chữa bệnh,noun,/ˈhiːlə(r)/,
-district_nurse,https://www.oxfordlearnersdictionaries.com/definition/english/district-nurse,C2,district nurse,y tá huyện,noun,/ˌdɪstrɪkt ˈnɜːs/,
+dispensing_chemist,https://www.oxfordlearnersdictionaries.com/definition/english/dispensing-chemist,C2,dispensing chemist,nhà hóa học pha chế,noun,/dɪˈspensɪŋ kemɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/dispe/dispensing_chemist_1_gb_1.mp3
+druggist,https://www.oxfordlearnersdictionaries.com/definition/english/druggist,C2,druggist,người bán thuốc,noun,/ˈdrʌɡɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dru/drugg/druggist__gb_2.mp3
+healer,https://www.oxfordlearnersdictionaries.com/definition/english/healer,C1,healer,người chữa bệnh,noun,/ˈhiːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/heale/healer__gb_1.mp3
+district_nurse,https://www.oxfordlearnersdictionaries.com/definition/english/district-nurse,C2,district nurse,y tá huyện,noun,/ˌdɪstrɪkt ˈnɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/distr/district_nurse_1_gb_1.mp3
 gp,https://www.oxfordlearnersdictionaries.com/definition/english/gp,C2,GP,bác sĩ gia đình,noun,/ˌdʒiː ˈpiː/,
-gynaecologist,https://www.oxfordlearnersdictionaries.com/definition/english/gynaecologist,C2,gynaecologist,bác sĩ phụ khoa,noun,/ˌɡaɪnəˈkɒlədʒɪst/,
-health_professional,https://www.oxfordlearnersdictionaries.com/definition/english/health-professional,B2,health professional,chuyên gia y tế,noun,/ˈhelθ prəfeʃənl/,
-family_doctor,https://www.oxfordlearnersdictionaries.com/definition/english/family-doctor,B1,family doctor,bác sĩ gia đình,noun,/ˌfæməli ˈdɒktə(r)/,
-family_practitioner,https://www.oxfordlearnersdictionaries.com/definition/english/family-practitioner,C1,family practitioner,bác sĩ gia đình,noun,/ˌfæməli prækˈtɪʃənə(r)/,
-hospitalist,https://www.oxfordlearnersdictionaries.com/definition/english/hospitalist,C2,hospitalist,bệnh viện,noun,/ˈhɒspɪtəlɪst/,
-general_practitioner,https://www.oxfordlearnersdictionaries.com/definition/english/general-practitioner,C2,general practitioner,bác sĩ đa khoa,noun,/ˌdʒenrəl prækˈtɪʃənə(r)/,
-homeopath,https://www.oxfordlearnersdictionaries.com/definition/english/homeopath,C2,homeopath,vi lượng đồng căn,noun,/ˈhəʊmiəpæθ/,
-locum,https://www.oxfordlearnersdictionaries.com/definition/english/locum,C2,locum,vị trí,noun,/ˈləʊkəm/,
-midwife,https://www.oxfordlearnersdictionaries.com/definition/english/midwife,C2,midwife,bà đỡ,noun,/ˈmɪdwaɪf/,
-medic,https://www.oxfordlearnersdictionaries.com/definition/english/medic,C2,medic,bác sĩ,noun,/ˈmedɪk/,
-intern,https://www.oxfordlearnersdictionaries.com/definition/english/intern_2,C2,intern,thực tập sinh,noun,/ˈɪntɜːn/,
-matron,https://www.oxfordlearnersdictionaries.com/definition/english/matron,C2,matron,người vợ,noun,/ˈmeɪtrən/,
-midwifery,https://www.oxfordlearnersdictionaries.com/definition/english/midwifery,C2,midwifery,nghề hộ sinh,noun,/ˌmɪdˈwɪfəri/,
-medical_doctor,https://www.oxfordlearnersdictionaries.com/definition/english/medical-doctor,C2,medical doctor,bác sĩ y khoa,noun,/ˈmedɪkl dɒktə(r)/,
-neurologist,https://www.oxfordlearnersdictionaries.com/definition/english/neurologist,C2,neurologist,nhà thần kinh học,noun,/njʊəˈrɒlədʒɪst/,
-junior_doctor,https://www.oxfordlearnersdictionaries.com/definition/english/junior-doctor,B2,junior doctor,bác sĩ trẻ,noun,/ˌdʒuːniə ˈdɒktə(r)/,
-occupational_therapist,https://www.oxfordlearnersdictionaries.com/definition/english/occupational-therapist,C2,occupational therapist,nhà trị liệu nghề nghiệp,noun,/ˌɒkjuˌpeɪʃənl ˈθerəpɪst/,
-nurse,https://www.oxfordlearnersdictionaries.com/definition/english/nurse_1,A1,nurse,y tá,noun,/nɜːs/,
-nutritionist,https://www.oxfordlearnersdictionaries.com/definition/english/nutritionist,B2,nutritionist,chuyên gia dinh dưỡng,noun,/njuˈtrɪʃənɪst/,
-naturopath,https://www.oxfordlearnersdictionaries.com/definition/english/naturopath,C2,naturopath,liệu pháp thiên nhiên,noun,/ˈneɪtʃərəpæθ/,
-ophthalmic_optician,https://www.oxfordlearnersdictionaries.com/definition/english/ophthalmic-optician,C2,ophthalmic optician,bác sĩ nhãn khoa,noun,/ɒfˌθælmɪk ɒpˈtɪʃn/,
-ophthalmologist,https://www.oxfordlearnersdictionaries.com/definition/english/ophthalmologist,C2,ophthalmologist,bác sĩ nhãn khoa,noun,/ˌɒfθælˈmɒlədʒɪst/,
-optician,https://www.oxfordlearnersdictionaries.com/definition/english/optician,C1,optician,bác sĩ nhãn khoa,noun,/ɒpˈtɪʃn/,
-orderly,https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2,C2,orderly,có trật tự,noun,/ˈɔːdəli/,
-paramedical,https://www.oxfordlearnersdictionaries.com/definition/english/paramedical,C2,paramedical,nhân viên y tế,adjective,/ˌpærəˈmedɪkl/,
-paramedic,https://www.oxfordlearnersdictionaries.com/definition/english/paramedic,C1,paramedic,nhân viên y tế,noun,/ˌpærəˈmedɪk/,
-paediatrician,https://www.oxfordlearnersdictionaries.com/definition/english/paediatrician,C2,paediatrician,bác sĩ nhi khoa,noun,/ˌpiːdiəˈtrɪʃn/,
-neurosurgeon,https://www.oxfordlearnersdictionaries.com/definition/english/neurosurgeon,C2,neurosurgeon,bác sĩ giải phẫu thần kinh,noun,/ˈnjʊərəʊsɜːdʒən/,
-osteopath,https://www.oxfordlearnersdictionaries.com/definition/english/osteopath,C2,osteopath,người nắn xương,noun,/ˈɒstiəpæθ/,
-pharmacist,https://www.oxfordlearnersdictionaries.com/definition/english/pharmacist,B2,pharmacist,dược sĩ,noun,/ˈfɑːməsɪst/,
-pcp,https://www.oxfordlearnersdictionaries.com/definition/english/pcp,C2,PCP,PCP,noun,/ˌpiː siː ˈpiː/,
-physician,https://www.oxfordlearnersdictionaries.com/definition/english/physician,C1,physician,bác sĩ,noun,/fɪˈzɪʃn/,
-physiotherapist,https://www.oxfordlearnersdictionaries.com/definition/english/physiotherapist,C1,physiotherapist,nhà vật lý trị liệu,noun,/ˌfɪziəʊˈθerəpɪst/,
-podiatrist,https://www.oxfordlearnersdictionaries.com/definition/english/podiatrist,C2,podiatrist,bác sĩ chân,noun,/pəˈdaɪətrɪst/,
-practitioner,https://www.oxfordlearnersdictionaries.com/definition/english/practitioner,C1,practitioner,người hành nghề,noun,/prækˈtɪʃənə(r)/,
-primary_care_physician,https://www.oxfordlearnersdictionaries.com/definition/english/primary-care-physician,C2,primary care physician,bác sĩ chăm sóc chính,noun,/ˌpraɪməri ˈkeə fɪzɪʃn/,
-registrar,https://www.oxfordlearnersdictionaries.com/definition/english/registrar,C2,registrar,người đăng ký,noun,/ˌredʒɪˈstrɑː(r)/,
-plastic_surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/plastic-surgeon,C1,plastic surgeon,bác sĩ phẫu thuật thẩm mỹ,noun,/ˌplæstɪk ˈsɜːdʒən/,
-resident,https://www.oxfordlearnersdictionaries.com/definition/english/resident_1,C2,resident,người dân,noun,/ˈrezɪdənt/,
-radiologist,https://www.oxfordlearnersdictionaries.com/definition/english/radiologist,C2,radiologist,bác sĩ X quang,noun,/ˌreɪdiˈɒlədʒɪst/,
+gynaecologist,https://www.oxfordlearnersdictionaries.com/definition/english/gynaecologist,C2,gynaecologist,bác sĩ phụ khoa,noun,/ˌɡaɪnəˈkɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gyn/gynae/gynaecologist__gb_5.mp3
+health_professional,https://www.oxfordlearnersdictionaries.com/definition/english/health-professional,B2,health professional,chuyên gia y tế,noun,/ˈhelθ prəfeʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/healt/health_professional_1_gb_1.mp3
+family_doctor,https://www.oxfordlearnersdictionaries.com/definition/english/family-doctor,B1,family doctor,bác sĩ gia đình,noun,/ˌfæməli ˈdɒktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fam/famil/family_doctor_1_gb_1.mp3
+family_practitioner,https://www.oxfordlearnersdictionaries.com/definition/english/family-practitioner,C1,family practitioner,bác sĩ gia đình,noun,/ˌfæməli prækˈtɪʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fam/famil/family_practitioner_1_gb_1.mp3
+hospitalist,https://www.oxfordlearnersdictionaries.com/definition/english/hospitalist,C2,hospitalist,bệnh viện,noun,/ˈhɒspɪtəlɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hos/hospi/hospitalist__gb_1.mp3
+general_practitioner,https://www.oxfordlearnersdictionaries.com/definition/english/general-practitioner,C2,general practitioner,bác sĩ đa khoa,noun,/ˌdʒenrəl prækˈtɪʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gen/gener/general_practitioner_1_gb_1.mp3
+homeopath,https://www.oxfordlearnersdictionaries.com/definition/english/homeopath,C2,homeopath,vi lượng đồng căn,noun,/ˈhəʊmiəpæθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hom/homeo/homeopath__gb_1.mp3
+locum,https://www.oxfordlearnersdictionaries.com/definition/english/locum,C2,locum,vị trí,noun,/ˈləʊkəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loc/locum/locum__gb_1.mp3
+midwife,https://www.oxfordlearnersdictionaries.com/definition/english/midwife,C2,midwife,bà đỡ,noun,/ˈmɪdwaɪf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/midwi/midwife__gb_1.mp3
+medic,https://www.oxfordlearnersdictionaries.com/definition/english/medic,C2,medic,bác sĩ,noun,/ˈmedɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/med/medic/medic__gb_1.mp3
+intern,https://www.oxfordlearnersdictionaries.com/definition/english/intern_2,C2,intern,thực tập sinh,noun,/ˈɪntɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/intern__gb_2.mp3
+matron,https://www.oxfordlearnersdictionaries.com/definition/english/matron,C2,matron,người vợ,noun,/ˈmeɪtrən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matro/matron__gb_1.mp3
+midwifery,https://www.oxfordlearnersdictionaries.com/definition/english/midwifery,C2,midwifery,nghề hộ sinh,noun,/ˌmɪdˈwɪfəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/midwi/midwifery__gb_1.mp3
+medical_doctor,https://www.oxfordlearnersdictionaries.com/definition/english/medical-doctor,C2,medical doctor,bác sĩ y khoa,noun,/ˈmedɪkl dɒktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/med/medic/medical_doctor_1_gb_2.mp3
+neurologist,https://www.oxfordlearnersdictionaries.com/definition/english/neurologist,C2,neurologist,nhà thần kinh học,noun,/njʊəˈrɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/neu/neuro/neurologist__gb_1.mp3
+junior_doctor,https://www.oxfordlearnersdictionaries.com/definition/english/junior-doctor,B2,junior doctor,bác sĩ trẻ,noun,/ˌdʒuːniə ˈdɒktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jun/junio/junior_doctor_1_gb_2.mp3
+occupational_therapist,https://www.oxfordlearnersdictionaries.com/definition/english/occupational-therapist,C2,occupational therapist,nhà trị liệu nghề nghiệp,noun,/ˌɒkjuˌpeɪʃənl ˈθerəpɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/occ/occup/occupational_therapist_1_gb_1.mp3
+nurse,https://www.oxfordlearnersdictionaries.com/definition/english/nurse_1,A1,nurse,y tá,noun,/nɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nur/nurse/nurse__gb_1.mp3
+nutritionist,https://www.oxfordlearnersdictionaries.com/definition/english/nutritionist,B2,nutritionist,chuyên gia dinh dưỡng,noun,/njuˈtrɪʃənɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nut/nutri/nutritionist__gb_1.mp3
+naturopath,https://www.oxfordlearnersdictionaries.com/definition/english/naturopath,C2,naturopath,liệu pháp thiên nhiên,noun,/ˈneɪtʃərəpæθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nat/natur/naturopath__gb_1.mp3
+ophthalmic_optician,https://www.oxfordlearnersdictionaries.com/definition/english/ophthalmic-optician,C2,ophthalmic optician,bác sĩ nhãn khoa,noun,/ɒfˌθælmɪk ɒpˈtɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oph/ophth/ophthalmic_optician_1_gb_1.mp3
+ophthalmologist,https://www.oxfordlearnersdictionaries.com/definition/english/ophthalmologist,C2,ophthalmologist,bác sĩ nhãn khoa,noun,/ˌɒfθælˈmɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oph/ophth/ophthalmologist__gb_1.mp3
+optician,https://www.oxfordlearnersdictionaries.com/definition/english/optician,C1,optician,bác sĩ nhãn khoa,noun,/ɒpˈtɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/opt/optic/optician__gb_1.mp3
+orderly,https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2,C2,orderly,có trật tự,noun,/ˈɔːdəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ord/order/orderly__gb_1.mp3
+paramedical,https://www.oxfordlearnersdictionaries.com/definition/english/paramedical,C2,paramedical,nhân viên y tế,adjective,/ˌpærəˈmedɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/param/paramedical__gb_1.mp3
+paramedic,https://www.oxfordlearnersdictionaries.com/definition/english/paramedic,C1,paramedic,nhân viên y tế,noun,/ˌpærəˈmedɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/param/paramedic__gb_1.mp3
+paediatrician,https://www.oxfordlearnersdictionaries.com/definition/english/paediatrician,C2,paediatrician,bác sĩ nhi khoa,noun,/ˌpiːdiəˈtrɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pae/paedi/paediatrician__gb_1.mp3
+neurosurgeon,https://www.oxfordlearnersdictionaries.com/definition/english/neurosurgeon,C2,neurosurgeon,bác sĩ giải phẫu thần kinh,noun,/ˈnjʊərəʊsɜːdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/neu/neuro/neurosurgeon__gb_3.mp3
+osteopath,https://www.oxfordlearnersdictionaries.com/definition/english/osteopath,C2,osteopath,người nắn xương,noun,/ˈɒstiəpæθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ost/osteo/osteopath__gb_1.mp3
+pharmacist,https://www.oxfordlearnersdictionaries.com/definition/english/pharmacist,B2,pharmacist,dược sĩ,noun,/ˈfɑːməsɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pha/pharm/pharmacist__gb_1.mp3
+pcp,https://www.oxfordlearnersdictionaries.com/definition/english/pcp,C2,PCP,PCP,noun,/ˌpiː siː ˈpiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pcp/pcp_1/pcp_1_gb_1.mp3
+physician,https://www.oxfordlearnersdictionaries.com/definition/english/physician,C1,physician,bác sĩ,noun,/fɪˈzɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/physi/physician__gb_1.mp3
+physiotherapist,https://www.oxfordlearnersdictionaries.com/definition/english/physiotherapist,C1,physiotherapist,nhà vật lý trị liệu,noun,/ˌfɪziəʊˈθerəpɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/phy/physi/physiotherapist__gb_1.mp3
+podiatrist,https://www.oxfordlearnersdictionaries.com/definition/english/podiatrist,C2,podiatrist,bác sĩ chân,noun,/pəˈdaɪətrɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pod/podia/podiatrist__gb_1.mp3
+practitioner,https://www.oxfordlearnersdictionaries.com/definition/english/practitioner,C1,practitioner,người hành nghề,noun,/prækˈtɪʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pra/pract/practitioner__gb_1.mp3
+primary_care_physician,https://www.oxfordlearnersdictionaries.com/definition/english/primary-care-physician,C2,primary care physician,bác sĩ chăm sóc chính,noun,/ˌpraɪməri ˈkeə fɪzɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/prima/primary_care_physician_1_gb_1.mp3
+registrar,https://www.oxfordlearnersdictionaries.com/definition/english/registrar,C2,registrar,người đăng ký,noun,/ˌredʒɪˈstrɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/regis/registrar__gb_1.mp3
+plastic_surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/plastic-surgeon,C1,plastic surgeon,bác sĩ phẫu thuật thẩm mỹ,noun,/ˌplæstɪk ˈsɜːdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plast/plastic_surgeon_1_gb_1.mp3
+resident,https://www.oxfordlearnersdictionaries.com/definition/english/resident_1,C2,resident,người dân,noun,/ˈrezɪdənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resid/resident__gb_2.mp3
+radiologist,https://www.oxfordlearnersdictionaries.com/definition/english/radiologist,C2,radiologist,bác sĩ X quang,noun,/ˌreɪdiˈɒlədʒɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rad/radio/radiologist__gb_1.mp3
 physician's_assistant,https://www.oxfordlearnersdictionaries.com/definition/english/physician-s-assistant,C1,physician's assistant,trợ lý bác sĩ,noun,,
-sister,https://www.oxfordlearnersdictionaries.com/definition/english/sister,C1,sister,em gái,noun,/ˈsɪstə(r)/,
-specialist,https://www.oxfordlearnersdictionaries.com/definition/english/specialist_1,B2,specialist,chuyên gia,noun,/ˈspeʃəlɪst/,
-surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/surgeon,B2,surgeon,bác sĩ phẫu thuật,noun,/ˈsɜːdʒən/,
-therapist,https://www.oxfordlearnersdictionaries.com/definition/english/therapist,B2,therapist,nhà trị liệu,noun,/ˈθerəpɪst/,
-senior_nursing_officer,https://www.oxfordlearnersdictionaries.com/definition/english/senior-nursing-officer,C2,senior nursing officer,điều dưỡng cao cấp,noun,/ˌsiːniə ˈnɜːsɪŋ ɒfɪsə(r)/,
+sister,https://www.oxfordlearnersdictionaries.com/definition/english/sister,C1,sister,em gái,noun,/ˈsɪstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sis/siste/sister__gb_2.mp3
+specialist,https://www.oxfordlearnersdictionaries.com/definition/english/specialist_1,B2,specialist,chuyên gia,noun,/ˈspeʃəlɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/speci/specialist__gb_1.mp3
+surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/surgeon,B2,surgeon,bác sĩ phẫu thuật,noun,/ˈsɜːdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/surge/surgeon__gb_1.mp3
+therapist,https://www.oxfordlearnersdictionaries.com/definition/english/therapist,B2,therapist,nhà trị liệu,noun,/ˈθerəpɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/thera/therapist__gb_1.mp3
+senior_nursing_officer,https://www.oxfordlearnersdictionaries.com/definition/english/senior-nursing-officer,C2,senior nursing officer,điều dưỡng cao cấp,noun,/ˌsiːniə ˈnɜːsɪŋ ɒfɪsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/senio/senior_nursing_officer_1_gb_1.mp3

@@ -1,33 +1,33 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-abide,https://www.oxfordlearnersdictionaries.com/definition/english/abide,C2,abide,tuân theo,verb,/əˈbaɪd/,
-antipathy,https://www.oxfordlearnersdictionaries.com/definition/english/antipathy,C2,antipathy,ác cảm,noun,/ænˈtɪpəθi/,
-disgust,https://www.oxfordlearnersdictionaries.com/definition/english/disgust_1,C1,disgust,ghê tởm,noun,/dɪsˈɡʌst/,
-allergic,https://www.oxfordlearnersdictionaries.com/definition/english/allergic,C2,allergic,dị ứng,adjective,/əˈlɜːdʒɪk/,
-despise,https://www.oxfordlearnersdictionaries.com/definition/english/despise,C1,despise,coi thường,verb,/dɪˈspaɪz/,
-dislike,https://www.oxfordlearnersdictionaries.com/definition/english/dislike_1,B1,dislike,không thích,verb,/dɪsˈlaɪk/,
-antipathetic,https://www.oxfordlearnersdictionaries.com/definition/english/antipathetic,C2,antipathetic,phản cảm,adjective,/ˌæntɪpəˈθetɪk/,
-dislike,https://www.oxfordlearnersdictionaries.com/definition/english/dislike_2,B1,dislike,không thích,noun,/dɪsˈlaɪk/,
-enemy,https://www.oxfordlearnersdictionaries.com/definition/english/enemy,B1,enemy,kẻ thù,noun,/ˈenəmi/,
-anathema,https://www.oxfordlearnersdictionaries.com/definition/english/anathema,C2,anathema,lời nguyền rủa,noun,/əˈnæθəmə/,
-finicky,https://www.oxfordlearnersdictionaries.com/definition/english/finicky,C2,finicky,khó tính,adjective,/ˈfɪnɪki/,
-hate,https://www.oxfordlearnersdictionaries.com/definition/english/hate_2,B1,hate,ghét,noun,/heɪt/,
-hate,https://www.oxfordlearnersdictionaries.com/definition/english/hate_1,A1,hate,ghét,verb,/heɪt/,
-frenemy,https://www.oxfordlearnersdictionaries.com/definition/english/frenemy,C2,frenemy,kẻ thù không đội trời chung,noun,/ˈfrenəmi/,
-grudge,https://www.oxfordlearnersdictionaries.com/definition/english/grudge_1,C2,grudge,mối hận thù,noun,/ɡrʌdʒ/,
-"hate,_be_sick_of,_etc._the_sight_of_somebody/something",https://www.oxfordlearnersdictionaries.com/definition/english/sight_1,C2,"hate, be sick of, etc. the sight of somebody/something","ghét, chán ngấy, v.v. việc nhìn thấy ai đó/cái gì đó",noun,/saɪt/,
-have_a_thing_about_somebody/something,https://www.oxfordlearnersdictionaries.com/definition/english/thing,C2,have a thing about somebody/something,có điều gì đó về ai đó/cái gì đó,noun,/θɪŋ/,
-have_no_use_for_somebody,https://www.oxfordlearnersdictionaries.com/definition/english/use_2,C2,have no use for somebody,không có ích gì cho ai,noun,/juːs/,
+abide,https://www.oxfordlearnersdictionaries.com/definition/english/abide,C2,abide,tuân theo,verb,/əˈbaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abi/abide/abide__gb_1.mp3
+antipathy,https://www.oxfordlearnersdictionaries.com/definition/english/antipathy,C2,antipathy,ác cảm,noun,/ænˈtɪpəθi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ant/antip/antipathy__gb_1.mp3
+disgust,https://www.oxfordlearnersdictionaries.com/definition/english/disgust_1,C1,disgust,ghê tởm,noun,/dɪsˈɡʌst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disgu/disgust__gb_1.mp3
+allergic,https://www.oxfordlearnersdictionaries.com/definition/english/allergic,C2,allergic,dị ứng,adjective,/əˈlɜːdʒɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/all/aller/allergic__gb_1.mp3
+despise,https://www.oxfordlearnersdictionaries.com/definition/english/despise,C1,despise,coi thường,verb,/dɪˈspaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/despi/despise__gb_1.mp3
+dislike,https://www.oxfordlearnersdictionaries.com/definition/english/dislike_1,B1,dislike,không thích,verb,/dɪsˈlaɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disli/dislike__gb_2.mp3
+antipathetic,https://www.oxfordlearnersdictionaries.com/definition/english/antipathetic,C2,antipathetic,phản cảm,adjective,/ˌæntɪpəˈθetɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ant/antip/antipathetic__gb_1.mp3
+dislike,https://www.oxfordlearnersdictionaries.com/definition/english/dislike_2,B1,dislike,không thích,noun,/dɪsˈlaɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disli/dislike__gb_2.mp3
+enemy,https://www.oxfordlearnersdictionaries.com/definition/english/enemy,B1,enemy,kẻ thù,noun,/ˈenəmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ene/enemy/enemy__gb_1.mp3
+anathema,https://www.oxfordlearnersdictionaries.com/definition/english/anathema,C2,anathema,lời nguyền rủa,noun,/əˈnæθəmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/anath/anathema__gb_1.mp3
+finicky,https://www.oxfordlearnersdictionaries.com/definition/english/finicky,C2,finicky,khó tính,adjective,/ˈfɪnɪki/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fin/finic/finicky__gb_1.mp3
+hate,https://www.oxfordlearnersdictionaries.com/definition/english/hate_2,B1,hate,ghét,noun,/heɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hat/hate_/hate__gb_3.mp3
+hate,https://www.oxfordlearnersdictionaries.com/definition/english/hate_1,A1,hate,ghét,verb,/heɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hat/hate_/hate__gb_3.mp3
+frenemy,https://www.oxfordlearnersdictionaries.com/definition/english/frenemy,C2,frenemy,kẻ thù không đội trời chung,noun,/ˈfrenəmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/frene/frenemy__gb_1.mp3
+grudge,https://www.oxfordlearnersdictionaries.com/definition/english/grudge_1,C2,grudge,mối hận thù,noun,/ɡrʌdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gru/grudg/grudge__gb_1.mp3
+"hate,_be_sick_of,_etc._the_sight_of_somebody/something",https://www.oxfordlearnersdictionaries.com/definition/english/sight_1,C2,"hate, be sick of, etc. the sight of somebody/something","ghét, chán ngấy, v.v. việc nhìn thấy ai đó/cái gì đó",noun,/saɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cit/cite_/cite__gb_2.mp3
+have_a_thing_about_somebody/something,https://www.oxfordlearnersdictionaries.com/definition/english/thing,C2,have a thing about somebody/something,có điều gì đó về ai đó/cái gì đó,noun,/θɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/thing/thing__gb_1.mp3
+have_no_use_for_somebody,https://www.oxfordlearnersdictionaries.com/definition/english/use_2,C2,have no use for somebody,không có ích gì cho ai,noun,/juːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/use/use__/use__gb_4.mp3
 have_against,https://www.oxfordlearnersdictionaries.com/definition/english/have-against,C2,have against,có chống lại,phrasal verb,,
-misogynist,https://www.oxfordlearnersdictionaries.com/definition/english/misogynist,C2,misogynist,người theo chủ nghĩa sai lầm,noun,/mɪˈsɒdʒɪnɪst/,
-prejudice,https://www.oxfordlearnersdictionaries.com/definition/english/prejudice_1,C1,prejudice,định kiến,noun,/ˈpredʒədɪs/,
-misogynistic,https://www.oxfordlearnersdictionaries.com/definition/english/misogynistic,C2,misogynistic,khinh thường phụ nữ,adjective,/mɪˌsɒdʒɪˈnɪstɪk/,
-prejudiced,https://www.oxfordlearnersdictionaries.com/definition/english/prejudiced,C2,prejudiced,thành kiến,adjective,/ˈpredʒədɪst/,
-have_no_time_for_somebody/something,https://www.oxfordlearnersdictionaries.com/definition/english/time_1,C2,have no time for somebody/something,không có thời gian dành cho ai/cái gì,noun,/taɪm/,
--phobe,https://www.oxfordlearnersdictionaries.com/definition/english/phobe,C2,-phobe,-phobe,combining form,/fəʊb/,
-resistance,https://www.oxfordlearnersdictionaries.com/definition/english/resistance,C1,resistance,sức chống cự,noun,/rɪˈzɪstəns/,
-repulsion,https://www.oxfordlearnersdictionaries.com/definition/english/repulsion,C2,repulsion,lực đẩy,noun,/rɪˈpʌlʃn/,
+misogynist,https://www.oxfordlearnersdictionaries.com/definition/english/misogynist,C2,misogynist,người theo chủ nghĩa sai lầm,noun,/mɪˈsɒdʒɪnɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/misog/misogynist__gb_1.mp3
+prejudice,https://www.oxfordlearnersdictionaries.com/definition/english/prejudice_1,C1,prejudice,định kiến,noun,/ˈpredʒədɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preju/prejudice__gb_2.mp3
+misogynistic,https://www.oxfordlearnersdictionaries.com/definition/english/misogynistic,C2,misogynistic,khinh thường phụ nữ,adjective,/mɪˌsɒdʒɪˈnɪstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/misog/misogynistic__gb_1.mp3
+prejudiced,https://www.oxfordlearnersdictionaries.com/definition/english/prejudiced,C2,prejudiced,thành kiến,adjective,/ˈpredʒədɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preju/prejudiced__gb_1.mp3
+have_no_time_for_somebody/something,https://www.oxfordlearnersdictionaries.com/definition/english/time_1,C2,have no time for somebody/something,không có thời gian dành cho ai/cái gì,noun,/taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/time_/time__gb_1.mp3
+-phobe,https://www.oxfordlearnersdictionaries.com/definition/english/phobe,C2,-phobe,-phobe,combining form,/fəʊb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/_/_ph/_phob/_phobe_1_gb_1.mp3
+resistance,https://www.oxfordlearnersdictionaries.com/definition/english/resistance,C1,resistance,sức chống cự,noun,/rɪˈzɪstəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resis/resistance__gb_1.mp3
+repulsion,https://www.oxfordlearnersdictionaries.com/definition/english/repulsion,C2,repulsion,lực đẩy,noun,/rɪˈpʌlʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repul/repulsion__gb_1.mp3
 put_off,https://www.oxfordlearnersdictionaries.com/definition/english/put-off,C1,put off,hoãn,phrasal verb,,
-repugnance,https://www.oxfordlearnersdictionaries.com/definition/english/repugnance,C2,repugnance,sự ghê tởm,noun,/rɪˈpʌɡnəns/,
-somebody’s_pet_peeve,https://www.oxfordlearnersdictionaries.com/definition/english/peeve,C2,somebody’s pet peeve,thú cưng của ai đó,noun,/piːv/,
-somebody’s_pet_hate,https://www.oxfordlearnersdictionaries.com/definition/english/pet_3,C2,somebody’s pet hate,sự căm ghét thú cưng của ai đó,adjective,/pet/,
-somebody’s_pet_hate,https://www.oxfordlearnersdictionaries.com/definition/english/hate_2,C2,somebody’s pet hate,sự căm ghét thú cưng của ai đó,noun,/heɪt/,
+repugnance,https://www.oxfordlearnersdictionaries.com/definition/english/repugnance,C2,repugnance,sự ghê tởm,noun,/rɪˈpʌɡnəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repug/repugnance__gb_1.mp3
+somebody’s_pet_peeve,https://www.oxfordlearnersdictionaries.com/definition/english/peeve,C2,somebody’s pet peeve,thú cưng của ai đó,noun,/piːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pee/peeve/peeve__gb_1.mp3
+somebody’s_pet_hate,https://www.oxfordlearnersdictionaries.com/definition/english/pet_3,C2,somebody’s pet hate,sự căm ghét thú cưng của ai đó,adjective,/pet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pet/pet__/pet__gb_4.mp3
+somebody’s_pet_hate,https://www.oxfordlearnersdictionaries.com/definition/english/hate_2,C2,somebody’s pet hate,sự căm ghét thú cưng của ai đó,noun,/heɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hat/hate_/hate__gb_3.mp3

@@ -1,36 +1,36 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-breakout,https://www.oxfordlearnersdictionaries.com/definition/english/breakout_1,C2,breakout,đột phá,noun,/ˈbreɪkaʊt/,
-borstal,https://www.oxfordlearnersdictionaries.com/definition/english/borstal,C2,borstal,borstal,noun,/ˈbɔːstl/,
-detention,https://www.oxfordlearnersdictionaries.com/definition/english/detention,C1,detention,giam giữ,noun,/dɪˈtenʃn/,
-cell,https://www.oxfordlearnersdictionaries.com/definition/english/cell,B2,cell,tế bào,noun,/sel/,
-guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,B1,guard,canh gác,noun,/ɡɑːd/,
-furlough,https://www.oxfordlearnersdictionaries.com/definition/english/furlough_2,C2,furlough,nghỉ việc tạm thời,noun,/ˈfɜːləʊ/,
-custody,https://www.oxfordlearnersdictionaries.com/definition/english/custody,C1,custody,quyền giám hộ,noun,/ˈkʌstədi/,
-do_time,https://www.oxfordlearnersdictionaries.com/definition/english/time_1,C2,do time,dành thời gian,noun,/taɪm/,
-death_row,https://www.oxfordlearnersdictionaries.com/definition/english/death-row,C2,death row,tử tù,noun,/ˌdeθ ˈrəʊ/,
-boot_camp,https://www.oxfordlearnersdictionaries.com/definition/english/boot-camp,C2,boot camp,chương trình đào tạo,noun,/ˈbuːt kæmp/,
-high-security,https://www.oxfordlearnersdictionaries.com/definition/english/high-security,C1,high-security,bảo mật cao,adjective,/ˌhaɪ sɪˈkjʊərəti/,
-jailbreak,https://www.oxfordlearnersdictionaries.com/definition/english/jailbreak_1,C2,jailbreak,bẻ khóa,noun,/ˈdʒeɪlbreɪk/,
-inmate,https://www.oxfordlearnersdictionaries.com/definition/english/inmate,C1,inmate,tù nhân,noun,/ˈɪnmeɪt/,
-inside,https://www.oxfordlearnersdictionaries.com/definition/english/inside_2,C2,inside,bên trong,adverb,/ˌɪnˈsaɪd/,
-imprisonment,https://www.oxfordlearnersdictionaries.com/definition/english/imprisonment,C1,imprisonment,bỏ tù,noun,/ɪmˈprɪznmənt/,
-jail,https://www.oxfordlearnersdictionaries.com/definition/english/jail_1,B2,jail,nhà tù,noun,/dʒeɪl/,
-incarceration,https://www.oxfordlearnersdictionaries.com/definition/english/incarceration,C2,incarceration,sự giam giữ,noun,/ɪnˌkɑːsəˈreɪʃn/,
-jailer,https://www.oxfordlearnersdictionaries.com/definition/english/jailer,C2,jailer,người cai ngục,noun,/ˈdʒeɪlə(r)/,
-jailhouse,https://www.oxfordlearnersdictionaries.com/definition/english/jailhouse,C2,jailhouse,nhà tù,noun,/ˈdʒeɪlhaʊs/,
-halfway_house,https://www.oxfordlearnersdictionaries.com/definition/english/halfway-house,C2,halfway house,ngôi nhà nửa chừng,noun,/ˈhɑːfweɪ haʊs/,
-lock-up,https://www.oxfordlearnersdictionaries.com/definition/english/lock-up_3,C2,lock-up,nhốt,noun,/ˈlɒk ʌp/,
-nick,https://www.oxfordlearnersdictionaries.com/definition/english/nick_1,C2,nick,biệt hiệu,noun,/nɪk/,
-minimum_security_prison,https://www.oxfordlearnersdictionaries.com/definition/english/minimum-security-prison,C2,minimum security prison,nhà tù an ninh tối thiểu,noun,/ˌmɪnɪməm sɪˌkjʊərəti ˈprɪzn/,
-remand_centre,https://www.oxfordlearnersdictionaries.com/definition/english/remand-centre,C2,remand centre,trung tâm tạm giam,noun,/rɪˈmɑːnd sentə(r)/,
-open_prison,https://www.oxfordlearnersdictionaries.com/definition/english/open-prison,C2,open prison,nhà tù mở,noun,/ˌəʊpən ˈprɪzn/,
-prison_visitor,https://www.oxfordlearnersdictionaries.com/definition/english/prison-visitor,C2,prison visitor,người thăm tù,noun,/ˌprɪzn ˈvɪzɪtə(r)/,
-prisoner_of_war,https://www.oxfordlearnersdictionaries.com/definition/english/prisoner-of-war,B2,prisoner of war,tù nhân chiến tranh,noun,/ˌprɪznər əv ˈwɔː(r)/,
-penitentiary,https://www.oxfordlearnersdictionaries.com/definition/english/penitentiary,C2,penitentiary,nhà tù,noun,/ˌpenɪˈtenʃəri/,
-reformatory,https://www.oxfordlearnersdictionaries.com/definition/english/reformatory,C2,reformatory,trường giáo dưỡng,noun,/rɪˈfɔːmətri/,
-probation_officer,https://www.oxfordlearnersdictionaries.com/definition/english/probation-officer,C2,probation officer,nhân viên quản chế,noun,/prəˈbeɪʃn ɒfɪsə(r)/,
-serve,https://www.oxfordlearnersdictionaries.com/definition/english/serve_1,C1,serve,phục vụ,verb,/sɜːv/,
-warden,https://www.oxfordlearnersdictionaries.com/definition/english/warden,C2,warden,cai ngục,noun,/ˈwɔːdn/,
-supermax,https://www.oxfordlearnersdictionaries.com/definition/english/supermax,C2,supermax,siêu tối đa,noun,/ˈsuːpəmæks/,
-warder,https://www.oxfordlearnersdictionaries.com/definition/english/warder,C2,warder,người cai ngục,noun,/ˈwɔːdə(r)/,
-work_release,https://www.oxfordlearnersdictionaries.com/definition/english/work-release,C2,work release,phát hành công việc,noun,/ˈwɜːk rɪliːs/,
+breakout,https://www.oxfordlearnersdictionaries.com/definition/english/breakout_1,C2,breakout,đột phá,noun,/ˈbreɪkaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/break/breakout__gb_1.mp3
+borstal,https://www.oxfordlearnersdictionaries.com/definition/english/borstal,C2,borstal,borstal,noun,/ˈbɔːstl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/borst/borstal__gb_3.mp3
+detention,https://www.oxfordlearnersdictionaries.com/definition/english/detention,C1,detention,giam giữ,noun,/dɪˈtenʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/det/deten/detention__gb_1.mp3
+cell,https://www.oxfordlearnersdictionaries.com/definition/english/cell,B2,cell,tế bào,noun,/sel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cel/cell_/cell__gb_2.mp3
+guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,B1,guard,canh gác,noun,/ɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guard__gb_2.mp3
+furlough,https://www.oxfordlearnersdictionaries.com/definition/english/furlough_2,C2,furlough,nghỉ việc tạm thời,noun,/ˈfɜːləʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fur/furlo/furlough__gb_2.mp3
+custody,https://www.oxfordlearnersdictionaries.com/definition/english/custody,C1,custody,quyền giám hộ,noun,/ˈkʌstədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cus/custo/custody__gb_1.mp3
+do_time,https://www.oxfordlearnersdictionaries.com/definition/english/time_1,C2,do time,dành thời gian,noun,/taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/time_/time__gb_1.mp3
+death_row,https://www.oxfordlearnersdictionaries.com/definition/english/death-row,C2,death row,tử tù,noun,/ˌdeθ ˈrəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/death/death_row_1_gb_1.mp3
+boot_camp,https://www.oxfordlearnersdictionaries.com/definition/english/boot-camp,C2,boot camp,chương trình đào tạo,noun,/ˈbuːt kæmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/boot_/boot_camp_1_gb_1.mp3
+high-security,https://www.oxfordlearnersdictionaries.com/definition/english/high-security,C1,high-security,bảo mật cao,adjective,/ˌhaɪ sɪˈkjʊərəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hig/high_/high_security_1_gb_1.mp3
+jailbreak,https://www.oxfordlearnersdictionaries.com/definition/english/jailbreak_1,C2,jailbreak,bẻ khóa,noun,/ˈdʒeɪlbreɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jai/jailb/jailbreak__gb_1.mp3
+inmate,https://www.oxfordlearnersdictionaries.com/definition/english/inmate,C1,inmate,tù nhân,noun,/ˈɪnmeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inm/inmat/inmate__gb_1.mp3
+inside,https://www.oxfordlearnersdictionaries.com/definition/english/inside_2,C2,inside,bên trong,adverb,/ˌɪnˈsaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/insid/inside__gb_1.mp3
+imprisonment,https://www.oxfordlearnersdictionaries.com/definition/english/imprisonment,C1,imprisonment,bỏ tù,noun,/ɪmˈprɪznmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/imp/impri/imprisonment__gb_1.mp3
+jail,https://www.oxfordlearnersdictionaries.com/definition/english/jail_1,B2,jail,nhà tù,noun,/dʒeɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jai/jail_/jail__gb_1.mp3
+incarceration,https://www.oxfordlearnersdictionaries.com/definition/english/incarceration,C2,incarceration,sự giam giữ,noun,/ɪnˌkɑːsəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incar/incarceration__gb_1.mp3
+jailer,https://www.oxfordlearnersdictionaries.com/definition/english/jailer,C2,jailer,người cai ngục,noun,/ˈdʒeɪlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jai/jaile/jailer__gb_1.mp3
+jailhouse,https://www.oxfordlearnersdictionaries.com/definition/english/jailhouse,C2,jailhouse,nhà tù,noun,/ˈdʒeɪlhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jai/jailh/jailhouse__gb_1.mp3
+halfway_house,https://www.oxfordlearnersdictionaries.com/definition/english/halfway-house,C2,halfway house,ngôi nhà nửa chừng,noun,/ˈhɑːfweɪ haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/halfw/halfway_house_1_gb_2.mp3
+lock-up,https://www.oxfordlearnersdictionaries.com/definition/english/lock-up_3,C2,lock-up,nhốt,noun,/ˈlɒk ʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loc/lock_/lock_up_1_gb_1.mp3
+nick,https://www.oxfordlearnersdictionaries.com/definition/english/nick_1,C2,nick,biệt hiệu,noun,/nɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nic/nick_/nick__gb_1.mp3
+minimum_security_prison,https://www.oxfordlearnersdictionaries.com/definition/english/minimum-security-prison,C2,minimum security prison,nhà tù an ninh tối thiểu,noun,/ˌmɪnɪməm sɪˌkjʊərəti ˈprɪzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minim/minimum_security_prison_1_gb_2.mp3
+remand_centre,https://www.oxfordlearnersdictionaries.com/definition/english/remand-centre,C2,remand centre,trung tâm tạm giam,noun,/rɪˈmɑːnd sentə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rem/reman/remand_centre_1_gb_1.mp3
+open_prison,https://www.oxfordlearnersdictionaries.com/definition/english/open-prison,C2,open prison,nhà tù mở,noun,/ˌəʊpən ˈprɪzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/open_/open_prison_1_gb_1.mp3
+prison_visitor,https://www.oxfordlearnersdictionaries.com/definition/english/prison-visitor,C2,prison visitor,người thăm tù,noun,/ˌprɪzn ˈvɪzɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/priso/prison_visitor_1_gb_1.mp3
+prisoner_of_war,https://www.oxfordlearnersdictionaries.com/definition/english/prisoner-of-war,B2,prisoner of war,tù nhân chiến tranh,noun,/ˌprɪznər əv ˈwɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/priso/prisoner_of_war_1_gb_1.mp3
+penitentiary,https://www.oxfordlearnersdictionaries.com/definition/english/penitentiary,C2,penitentiary,nhà tù,noun,/ˌpenɪˈtenʃəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/penit/penitentiary__gb_1.mp3
+reformatory,https://www.oxfordlearnersdictionaries.com/definition/english/reformatory,C2,reformatory,trường giáo dưỡng,noun,/rɪˈfɔːmətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ref/refor/reformatory__gb_1.mp3
+probation_officer,https://www.oxfordlearnersdictionaries.com/definition/english/probation-officer,C2,probation officer,nhân viên quản chế,noun,/prəˈbeɪʃn ɒfɪsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proba/probation_officer_1_gb_1.mp3
+serve,https://www.oxfordlearnersdictionaries.com/definition/english/serve_1,C1,serve,phục vụ,verb,/sɜːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/serve/serve__gb_1.mp3
+warden,https://www.oxfordlearnersdictionaries.com/definition/english/warden,C2,warden,cai ngục,noun,/ˈwɔːdn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warde/warden__gb_1.mp3
+supermax,https://www.oxfordlearnersdictionaries.com/definition/english/supermax,C2,supermax,siêu tối đa,noun,/ˈsuːpəmæks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sup/super/supermax__gb_2.mp3
+warder,https://www.oxfordlearnersdictionaries.com/definition/english/warder,C2,warder,người cai ngục,noun,/ˈwɔːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warde/warder__gb_1.mp3
+work_release,https://www.oxfordlearnersdictionaries.com/definition/english/work-release,C2,work release,phát hành công việc,noun,/ˈwɜːk rɪliːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/work_/work_release_1_gb_1.mp3

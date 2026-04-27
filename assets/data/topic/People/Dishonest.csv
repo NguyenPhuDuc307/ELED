@@ -1,51 +1,51 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-bogus,https://www.oxfordlearnersdictionaries.com/definition/english/bogus,C2,bogus,không có thật,adjective,/ˈbəʊɡəs/,
-bluff,https://www.oxfordlearnersdictionaries.com/definition/english/bluff_1,C2,bluff,lừa gạt,verb,/blʌf/,
-deceitful,https://www.oxfordlearnersdictionaries.com/definition/english/deceitful,C2,deceitful,lừa dối,adjective,/dɪˈsiːtfl/,
-artful,https://www.oxfordlearnersdictionaries.com/definition/english/artful,C2,artful,khéo léo,adjective,/ˈɑːtfl/,
-deceit,https://www.oxfordlearnersdictionaries.com/definition/english/deceit,C2,deceit,lừa dối,noun,/dɪˈsiːt/,
-cunning,https://www.oxfordlearnersdictionaries.com/definition/english/cunning_2,C2,cunning,xảo quyệt,noun,/ˈkʌnɪŋ/,
-crafty,https://www.oxfordlearnersdictionaries.com/definition/english/crafty,C2,crafty,xảo quyệt,adjective,/ˈkrɑːfti/,
-cheat,https://www.oxfordlearnersdictionaries.com/definition/english/cheat_1,B1,cheat,gian lận,verb,/tʃiːt/,
-cunning,https://www.oxfordlearnersdictionaries.com/definition/english/cunning_1,C2,cunning,xảo quyệt,adjective,/ˈkʌnɪŋ/,
-conniving,https://www.oxfordlearnersdictionaries.com/definition/english/conniving,C2,conniving,thông đồng,adjective,/kəˈnaɪvɪŋ/,
-deceive,https://www.oxfordlearnersdictionaries.com/definition/english/deceive,B2,deceive,lừa dối,verb,/dɪˈsiːv/,
-dishonesty,https://www.oxfordlearnersdictionaries.com/definition/english/dishonesty,B2,dishonesty,sự không trung thực,noun,/dɪsˈɒnɪsti/,
-devious,https://www.oxfordlearnersdictionaries.com/definition/english/devious,C2,devious,quanh co,adjective,/ˈdiːviəs/,
-dishonest,https://www.oxfordlearnersdictionaries.com/definition/english/dishonest,B2,dishonest,không trung thực,adjective,/dɪsˈɒnɪst/,
-deception,https://www.oxfordlearnersdictionaries.com/definition/english/deception,C1,deception,sự lừa dối,noun,/dɪˈsepʃn/,
-false,https://www.oxfordlearnersdictionaries.com/definition/english/false,B2,false,SAI,adjective,/fɔːls/,
-fake,https://www.oxfordlearnersdictionaries.com/definition/english/fake_1,B2,fake,giả mạo,adjective,/feɪk/,
-dubious,https://www.oxfordlearnersdictionaries.com/definition/english/dubious,C2,dubious,đáng ngờ,adjective,/ˈdjuːbiəs/,
-fake,https://www.oxfordlearnersdictionaries.com/definition/english/fake_2,B1,fake,giả mạo,noun,/feɪk/,
-duplicity,https://www.oxfordlearnersdictionaries.com/definition/english/duplicity,C2,duplicity,sự dối trá,noun,/djuːˈplɪsəti/,
-fickle,https://www.oxfordlearnersdictionaries.com/definition/english/fickle,C2,fickle,hay thay đổi,adjective,/ˈfɪkl/,
-fool,https://www.oxfordlearnersdictionaries.com/definition/english/fool_2,B1,fool,ngu xuẩn,verb,/fuːl/,
-guile,https://www.oxfordlearnersdictionaries.com/definition/english/guile,C2,guile,thủ đoạn,noun,/ɡaɪl/,
-front,https://www.oxfordlearnersdictionaries.com/definition/english/front_1,C2,front,đằng trước,noun,/frʌnt/,
-inconstant,https://www.oxfordlearnersdictionaries.com/definition/english/inconstant,C2,inconstant,hay thay đổi,adjective,/ɪnˈkɒnstənt/,
-invent,https://www.oxfordlearnersdictionaries.com/definition/english/invent,B1,invent,phát minh,verb,/ɪnˈvent/,
-forced,https://www.oxfordlearnersdictionaries.com/definition/english/forced,C2,forced,bị ép,adjective,/fɔːst/,
-kid,https://www.oxfordlearnersdictionaries.com/definition/english/kid_2,C2,kid,đứa trẻ,verb,/kɪd/,
+bogus,https://www.oxfordlearnersdictionaries.com/definition/english/bogus,C2,bogus,không có thật,adjective,/ˈbəʊɡəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bog/bogus/bogus__gb_2.mp3
+bluff,https://www.oxfordlearnersdictionaries.com/definition/english/bluff_1,C2,bluff,lừa gạt,verb,/blʌf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blu/bluff/bluff__gb_2.mp3
+deceitful,https://www.oxfordlearnersdictionaries.com/definition/english/deceitful,C2,deceitful,lừa dối,adjective,/dɪˈsiːtfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decei/deceitful__gb_1.mp3
+artful,https://www.oxfordlearnersdictionaries.com/definition/english/artful,C2,artful,khéo léo,adjective,/ˈɑːtfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/art/artfu/artful__gb_1.mp3
+deceit,https://www.oxfordlearnersdictionaries.com/definition/english/deceit,C2,deceit,lừa dối,noun,/dɪˈsiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decei/deceit__gb_1.mp3
+cunning,https://www.oxfordlearnersdictionaries.com/definition/english/cunning_2,C2,cunning,xảo quyệt,noun,/ˈkʌnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cun/cunni/cunning__gb_1.mp3
+crafty,https://www.oxfordlearnersdictionaries.com/definition/english/crafty,C2,crafty,xảo quyệt,adjective,/ˈkrɑːfti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/craft/crafty__gb_1.mp3
+cheat,https://www.oxfordlearnersdictionaries.com/definition/english/cheat_1,B1,cheat,gian lận,verb,/tʃiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/cheat/cheat__gb_2.mp3
+cunning,https://www.oxfordlearnersdictionaries.com/definition/english/cunning_1,C2,cunning,xảo quyệt,adjective,/ˈkʌnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cun/cunni/cunning__gb_1.mp3
+conniving,https://www.oxfordlearnersdictionaries.com/definition/english/conniving,C2,conniving,thông đồng,adjective,/kəˈnaɪvɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconn/xconniving__gb_1.mp3
+deceive,https://www.oxfordlearnersdictionaries.com/definition/english/deceive,B2,deceive,lừa dối,verb,/dɪˈsiːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decei/deceive__gb_1.mp3
+dishonesty,https://www.oxfordlearnersdictionaries.com/definition/english/dishonesty,B2,dishonesty,sự không trung thực,noun,/dɪsˈɒnɪsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disho/dishonesty__gb_1.mp3
+devious,https://www.oxfordlearnersdictionaries.com/definition/english/devious,C2,devious,quanh co,adjective,/ˈdiːviəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dev/devio/devious__gb_1.mp3
+dishonest,https://www.oxfordlearnersdictionaries.com/definition/english/dishonest,B2,dishonest,không trung thực,adjective,/dɪsˈɒnɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disho/dishonest__gb_1.mp3
+deception,https://www.oxfordlearnersdictionaries.com/definition/english/deception,C1,deception,sự lừa dối,noun,/dɪˈsepʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decep/deception__gb_1.mp3
+false,https://www.oxfordlearnersdictionaries.com/definition/english/false,B2,false,SAI,adjective,/fɔːls/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/false/false__gb_3.mp3
+fake,https://www.oxfordlearnersdictionaries.com/definition/english/fake_1,B2,fake,giả mạo,adjective,/feɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fak/fake_/fake__gb_2.mp3
+dubious,https://www.oxfordlearnersdictionaries.com/definition/english/dubious,C2,dubious,đáng ngờ,adjective,/ˈdjuːbiəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dub/dubio/dubious__gb_1.mp3
+fake,https://www.oxfordlearnersdictionaries.com/definition/english/fake_2,B1,fake,giả mạo,noun,/feɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fak/fake_/fake__gb_2.mp3
+duplicity,https://www.oxfordlearnersdictionaries.com/definition/english/duplicity,C2,duplicity,sự dối trá,noun,/djuːˈplɪsəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dup/dupli/duplicity__gb_1.mp3
+fickle,https://www.oxfordlearnersdictionaries.com/definition/english/fickle,C2,fickle,hay thay đổi,adjective,/ˈfɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fic/fickl/fickle__gb_1.mp3
+fool,https://www.oxfordlearnersdictionaries.com/definition/english/fool_2,B1,fool,ngu xuẩn,verb,/fuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/foo/fool_/fool__gb_2.mp3
+guile,https://www.oxfordlearnersdictionaries.com/definition/english/guile,C2,guile,thủ đoạn,noun,/ɡaɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gui/guile/guile__gb_2.mp3
+front,https://www.oxfordlearnersdictionaries.com/definition/english/front_1,C2,front,đằng trước,noun,/frʌnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fro/front/front__gb_1.mp3
+inconstant,https://www.oxfordlearnersdictionaries.com/definition/english/inconstant,C2,inconstant,hay thay đổi,adjective,/ɪnˈkɒnstənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incon/inconstant__gb_1.mp3
+invent,https://www.oxfordlearnersdictionaries.com/definition/english/invent,B1,invent,phát minh,verb,/ɪnˈvent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/inven/invent__gb_1.mp3
+forced,https://www.oxfordlearnersdictionaries.com/definition/english/forced,C2,forced,bị ép,adjective,/fɔːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/force/forced__gb_1.mp3
+kid,https://www.oxfordlearnersdictionaries.com/definition/english/kid_2,C2,kid,đứa trẻ,verb,/kɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kid/kid__/kid__gb_2.mp3
 lead_on,https://www.oxfordlearnersdictionaries.com/definition/english/lead-on,C2,lead on,dẫn đầu,phrasal verb,,
-inconstancy,https://www.oxfordlearnersdictionaries.com/definition/english/inconstancy,C2,inconstancy,sự thất thường,noun,/ɪnˈkɒnstənsi/,
-misleading,https://www.oxfordlearnersdictionaries.com/definition/english/misleading,C1,misleading,gây hiểu lầm,adjective,/ˌmɪsˈliːdɪŋ/,
-lie,https://www.oxfordlearnersdictionaries.com/definition/english/lie2_1,B1,lie,nói dối,verb,/laɪ/,
-phony,https://www.oxfordlearnersdictionaries.com/definition/english/phony_1,C2,phony,giả tạo,adjective,/ˈfəʊni/,
-misrepresent,https://www.oxfordlearnersdictionaries.com/definition/english/misrepresent,C1,misrepresent,xuyên tạc,verb,/ˌmɪsˌreprɪˈzent/,
-pretend,https://www.oxfordlearnersdictionaries.com/definition/english/pretend_1,B1,pretend,giả vờ,verb,/prɪˈtend/,
-mislead,https://www.oxfordlearnersdictionaries.com/definition/english/mislead,B2,mislead,đánh lạc hướng,verb,/ˌmɪsˈliːd/,
-profess,https://www.oxfordlearnersdictionaries.com/definition/english/profess,C1,profess,xưng nhận,verb,/prəˈfes/,
-secretive,https://www.oxfordlearnersdictionaries.com/definition/english/secretive,C1,secretive,bí mật,adjective,/ˈsiːkrətɪv/,
-shifty,https://www.oxfordlearnersdictionaries.com/definition/english/shifty,C2,shifty,gian xảo,adjective,/ˈʃɪfti/,
-sly,https://www.oxfordlearnersdictionaries.com/definition/english/sly,C2,sly,ranh mãnh,adjective,/slaɪ/,
-smear,https://www.oxfordlearnersdictionaries.com/definition/english/smear_1,C2,smear,bôi nhọ,verb,/smɪə(r)/,
-suspicion,https://www.oxfordlearnersdictionaries.com/definition/english/suspicion,C1,suspicion,sự nghi ngờ,noun,/səˈspɪʃn/,
-superficial,https://www.oxfordlearnersdictionaries.com/definition/english/superficial,C1,superficial,hời hợt,adjective,/ˌsuːpəˈfɪʃl/,
-suspicious,https://www.oxfordlearnersdictionaries.com/definition/english/suspicious,C1,suspicious,khả nghi,adjective,/səˈspɪʃəs/,
-phoney,https://www.oxfordlearnersdictionaries.com/definition/english/phoney_1,C2,phoney,giả tạo,adjective,/ˈfəʊni/,
-suave,https://www.oxfordlearnersdictionaries.com/definition/english/suave,C2,suave,dịu dàng,adjective,/swɑːv/,
-trick,https://www.oxfordlearnersdictionaries.com/definition/english/trick_2,B1,trick,lừa,verb,/trɪk/,
-wily,https://www.oxfordlearnersdictionaries.com/definition/english/wily,C2,wily,quỷ quyệt,adjective,/ˈwaɪli/,
-"spin_(somebody)_a_yarn,_tale,_etc.",https://www.oxfordlearnersdictionaries.com/definition/english/spin_1,C2,"spin (somebody) a yarn, tale, etc.","quay (ai đó) một câu chuyện, một câu chuyện, v.v.",verb,/spɪn/,
-untruthful,https://www.oxfordlearnersdictionaries.com/definition/english/untruthful,C1,untruthful,không thành thật,adjective,/ʌnˈtruːθfl/,
+inconstancy,https://www.oxfordlearnersdictionaries.com/definition/english/inconstancy,C2,inconstancy,sự thất thường,noun,/ɪnˈkɒnstənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incon/inconstancy__gb_1.mp3
+misleading,https://www.oxfordlearnersdictionaries.com/definition/english/misleading,C1,misleading,gây hiểu lầm,adjective,/ˌmɪsˈliːdɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/misle/misleading__gb_3.mp3
+lie,https://www.oxfordlearnersdictionaries.com/definition/english/lie2_1,B1,lie,nói dối,verb,/laɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lie/lie__/lie__gb_1.mp3
+phony,https://www.oxfordlearnersdictionaries.com/definition/english/phony_1,C2,phony,giả tạo,adjective,/ˈfəʊni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pho/phone/phoney__gb_1.mp3
+misrepresent,https://www.oxfordlearnersdictionaries.com/definition/english/misrepresent,C1,misrepresent,xuyên tạc,verb,/ˌmɪsˌreprɪˈzent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/misre/misrepresent__gb_1.mp3
+pretend,https://www.oxfordlearnersdictionaries.com/definition/english/pretend_1,B1,pretend,giả vờ,verb,/prɪˈtend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/prete/pretend__gb_1.mp3
+mislead,https://www.oxfordlearnersdictionaries.com/definition/english/mislead,B2,mislead,đánh lạc hướng,verb,/ˌmɪsˈliːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/misle/mislead__gb_1.mp3
+profess,https://www.oxfordlearnersdictionaries.com/definition/english/profess,C1,profess,xưng nhận,verb,/prəˈfes/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/profe/profess__gb_1.mp3
+secretive,https://www.oxfordlearnersdictionaries.com/definition/english/secretive,C1,secretive,bí mật,adjective,/ˈsiːkrətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secre/secretive__gb_1.mp3
+shifty,https://www.oxfordlearnersdictionaries.com/definition/english/shifty,C2,shifty,gian xảo,adjective,/ˈʃɪfti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shi/shift/shifty__gb_1.mp3
+sly,https://www.oxfordlearnersdictionaries.com/definition/english/sly,C2,sly,ranh mãnh,adjective,/slaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sly/sly__/sly__gb_1.mp3
+smear,https://www.oxfordlearnersdictionaries.com/definition/english/smear_1,C2,smear,bôi nhọ,verb,/smɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sme/smear/smear__gb_1.mp3
+suspicion,https://www.oxfordlearnersdictionaries.com/definition/english/suspicion,C1,suspicion,sự nghi ngờ,noun,/səˈspɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspi/suspicion__gb_1.mp3
+superficial,https://www.oxfordlearnersdictionaries.com/definition/english/superficial,C1,superficial,hời hợt,adjective,/ˌsuːpəˈfɪʃl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sup/super/superficial__gb_1.mp3
+suspicious,https://www.oxfordlearnersdictionaries.com/definition/english/suspicious,C1,suspicious,khả nghi,adjective,/səˈspɪʃəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspi/suspicious__gb_1.mp3
+phoney,https://www.oxfordlearnersdictionaries.com/definition/english/phoney_1,C2,phoney,giả tạo,adjective,/ˈfəʊni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pho/phone/phoney__gb_1.mp3
+suave,https://www.oxfordlearnersdictionaries.com/definition/english/suave,C2,suave,dịu dàng,adjective,/swɑːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sua/suave/suave__gb_1.mp3
+trick,https://www.oxfordlearnersdictionaries.com/definition/english/trick_2,B1,trick,lừa,verb,/trɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tri/trick/trick__gb_1.mp3
+wily,https://www.oxfordlearnersdictionaries.com/definition/english/wily,C2,wily,quỷ quyệt,adjective,/ˈwaɪli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wil/wily_/wily__gb_1.mp3
+"spin_(somebody)_a_yarn,_tale,_etc.",https://www.oxfordlearnersdictionaries.com/definition/english/spin_1,C2,"spin (somebody) a yarn, tale, etc.","quay (ai đó) một câu chuyện, một câu chuyện, v.v.",verb,/spɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spin_/spin__gb_1.mp3
+untruthful,https://www.oxfordlearnersdictionaries.com/definition/english/untruthful,C1,untruthful,không thành thật,adjective,/ʌnˈtruːθfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unt/untru/untruthful__gb_1.mp3

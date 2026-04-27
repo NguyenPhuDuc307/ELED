@@ -1,33 +1,33 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-drowsy,https://www.oxfordlearnersdictionaries.com/definition/english/drowsy,C2,drowsy,buồn ngủ,adjective,/ˈdraʊzi/,
-dead_beat,https://www.oxfordlearnersdictionaries.com/definition/english/dead-beat,C2,dead beat,nhịp chết,adjective,/ˌded ˈbiːt/,
-broken,https://www.oxfordlearnersdictionaries.com/definition/english/broken_1,C1,broken,vỡ,adjective,/ˈbrəʊkən/,
-bleary,https://www.oxfordlearnersdictionaries.com/definition/english/bleary,C2,bleary,ảm đạm,adjective,/ˈblɪəri/,
-exhausted,https://www.oxfordlearnersdictionaries.com/definition/english/exhausted,B1,exhausted,kiệt sức,adjective,/ɪɡˈzɔːstɪd/,
-bleary-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/bleary-eyed,C2,bleary-eyed,mờ mắt,adjective,/ˌblɪəri ˈaɪd/,
-exhausting,https://www.oxfordlearnersdictionaries.com/definition/english/exhausting,B2,exhausting,kiệt sức,adjective,/ɪɡˈzɔːstɪŋ/,
-dog-tired,https://www.oxfordlearnersdictionaries.com/definition/english/dog-tired,C2,dog-tired,mệt quá,adjective,/ˌdɒɡ ˈtaɪəd/,
-careworn,https://www.oxfordlearnersdictionaries.com/definition/english/careworn,C2,careworn,mệt mỏi,adjective,/ˈkeəwɔːn/,
-flop,https://www.oxfordlearnersdictionaries.com/definition/english/flop_1,C2,flop,rơi phịch xuống,verb,/flɒp/,
-faintness,https://www.oxfordlearnersdictionaries.com/definition/english/faintness,C2,faintness,sự ngất xỉu,noun,/ˈfeɪntnəs/,
-fatigued,https://www.oxfordlearnersdictionaries.com/definition/english/fatigued,C2,fatigued,mệt mỏi,adjective,/fəˈtiːɡd/,
-frazzled,https://www.oxfordlearnersdictionaries.com/definition/english/frazzled,C2,frazzled,kiệt sức,adjective,/ˈfræzld/,
-exhaustion,https://www.oxfordlearnersdictionaries.com/definition/english/exhaustion,C1,exhaustion,kiệt sức,noun,/ɪɡˈzɔːstʃən/,
-groggy,https://www.oxfordlearnersdictionaries.com/definition/english/groggy,C2,groggy,lảo đảo,adjective,/ˈɡrɒɡi/,
-overtired,https://www.oxfordlearnersdictionaries.com/definition/english/overtired,C2,overtired,quá mệt mỏi,adjective,/ˌəʊvəˈtaɪəd/,
-fatigue,https://www.oxfordlearnersdictionaries.com/definition/english/fatigue,C1,fatigue,Mệt mỏi,noun,/fəˈtiːɡ/,
-drained,https://www.oxfordlearnersdictionaries.com/definition/english/drained,C2,drained,cạn nước,adjective,/dreɪnd/,
-shattered,https://www.oxfordlearnersdictionaries.com/definition/english/shattered,C1,shattered,tan vỡ,adjective,/ˈʃætəd/,
-spent,https://www.oxfordlearnersdictionaries.com/definition/english/spent_1,C2,spent,đã tiêu,adjective,/spent/,
-tiredness,https://www.oxfordlearnersdictionaries.com/definition/english/tiredness,B1,tiredness,sự mệt mỏi,noun,/ˈtaɪədnəs/,
+drowsy,https://www.oxfordlearnersdictionaries.com/definition/english/drowsy,C2,drowsy,buồn ngủ,adjective,/ˈdraʊzi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drows/drowsy__gb_2.mp3
+dead_beat,https://www.oxfordlearnersdictionaries.com/definition/english/dead-beat,C2,dead beat,nhịp chết,adjective,/ˌded ˈbiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/dead_/dead_beat_1_gb_1.mp3
+broken,https://www.oxfordlearnersdictionaries.com/definition/english/broken_1,C1,broken,vỡ,adjective,/ˈbrəʊkən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bro/broke/broken__gb_1.mp3
+bleary,https://www.oxfordlearnersdictionaries.com/definition/english/bleary,C2,bleary,ảm đạm,adjective,/ˈblɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ble/blear/bleary__gb_1.mp3
+exhausted,https://www.oxfordlearnersdictionaries.com/definition/english/exhausted,B1,exhausted,kiệt sức,adjective,/ɪɡˈzɔːstɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exh/exhau/exhausted__gb_1.mp3
+bleary-eyed,https://www.oxfordlearnersdictionaries.com/definition/english/bleary-eyed,C2,bleary-eyed,mờ mắt,adjective,/ˌblɪəri ˈaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ble/blear/bleary_eyed_1_gb_1.mp3
+exhausting,https://www.oxfordlearnersdictionaries.com/definition/english/exhausting,B2,exhausting,kiệt sức,adjective,/ɪɡˈzɔːstɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exh/exhau/exhausting__gb_1.mp3
+dog-tired,https://www.oxfordlearnersdictionaries.com/definition/english/dog-tired,C2,dog-tired,mệt quá,adjective,/ˌdɒɡ ˈtaɪəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dog/dog_t/dog_tired_1_gb_1.mp3
+careworn,https://www.oxfordlearnersdictionaries.com/definition/english/careworn,C2,careworn,mệt mỏi,adjective,/ˈkeəwɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/carew/careworn__gb_1.mp3
+flop,https://www.oxfordlearnersdictionaries.com/definition/english/flop_1,C2,flop,rơi phịch xuống,verb,/flɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flop_/flop__gb_1.mp3
+faintness,https://www.oxfordlearnersdictionaries.com/definition/english/faintness,C2,faintness,sự ngất xỉu,noun,/ˈfeɪntnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fai/faint/faintness__gb_1.mp3
+fatigued,https://www.oxfordlearnersdictionaries.com/definition/english/fatigued,C2,fatigued,mệt mỏi,adjective,/fəˈtiːɡd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fat/fatig/fatigued__gb_1.mp3
+frazzled,https://www.oxfordlearnersdictionaries.com/definition/english/frazzled,C2,frazzled,kiệt sức,adjective,/ˈfræzld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fra/frazz/frazzled__gb_1.mp3
+exhaustion,https://www.oxfordlearnersdictionaries.com/definition/english/exhaustion,C1,exhaustion,kiệt sức,noun,/ɪɡˈzɔːstʃən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exh/exhau/exhaustion__gb_1.mp3
+groggy,https://www.oxfordlearnersdictionaries.com/definition/english/groggy,C2,groggy,lảo đảo,adjective,/ˈɡrɒɡi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/grogg/groggy__gb_1.mp3
+overtired,https://www.oxfordlearnersdictionaries.com/definition/english/overtired,C2,overtired,quá mệt mỏi,adjective,/ˌəʊvəˈtaɪəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overt/overtired__gb_1.mp3
+fatigue,https://www.oxfordlearnersdictionaries.com/definition/english/fatigue,C1,fatigue,Mệt mỏi,noun,/fəˈtiːɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fat/fatig/fatigue__gb_1.mp3
+drained,https://www.oxfordlearnersdictionaries.com/definition/english/drained,C2,drained,cạn nước,adjective,/dreɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drain/drained__gb_4.mp3
+shattered,https://www.oxfordlearnersdictionaries.com/definition/english/shattered,C1,shattered,tan vỡ,adjective,/ˈʃætəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sha/shatt/shattered__gb_1.mp3
+spent,https://www.oxfordlearnersdictionaries.com/definition/english/spent_1,C2,spent,đã tiêu,adjective,/spent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/spent/spent__gb_2.mp3
+tiredness,https://www.oxfordlearnersdictionaries.com/definition/english/tiredness,B1,tiredness,sự mệt mỏi,noun,/ˈtaɪədnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tir/tired/tiredness__gb_1.mp3
 wear_out,https://www.oxfordlearnersdictionaries.com/definition/english/wear-out,C2,wear out,hao mòn,phrasal verb,,
-wearing,https://www.oxfordlearnersdictionaries.com/definition/english/wearing,C2,wearing,mặc,adjective,/ˈweərɪŋ/,
-tired,https://www.oxfordlearnersdictionaries.com/definition/english/tired,A1,tired,mệt,adjective,/ˈtaɪəd/,
-tire,https://www.oxfordlearnersdictionaries.com/definition/english/tire_1,C2,tire,lốp xe,verb,/ˈtaɪə(r)/,
-weary,https://www.oxfordlearnersdictionaries.com/definition/english/weary_1,C2,weary,mệt mỏi,adjective,/ˈwɪəri/,
-whacked,https://www.oxfordlearnersdictionaries.com/definition/english/whacked,C2,whacked,bị đánh đòn,adjective,/wækt/,
-wiped_out,https://www.oxfordlearnersdictionaries.com/definition/english/wiped-out,C2,wiped out,bị xóa sổ,adjective,/ˌwaɪpt ˈaʊt/,
-worn,https://www.oxfordlearnersdictionaries.com/definition/english/worn_1,C2,worn,rách nát,adjective,/wɔːn/,
-worn_out,https://www.oxfordlearnersdictionaries.com/definition/english/worn-out,C1,worn out,kiệt sức,adjective,/ˌwɔːn ˈaʊt/,
-wilt,https://www.oxfordlearnersdictionaries.com/definition/english/wilt,C2,wilt,héo,verb,/wɪlt/,
-wearisome,https://www.oxfordlearnersdictionaries.com/definition/english/wearisome,C2,wearisome,mệt mỏi,adjective,/ˈwɪərisəm/,
+wearing,https://www.oxfordlearnersdictionaries.com/definition/english/wearing,C2,wearing,mặc,adjective,/ˈweərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/weari/wearing__gb_1.mp3
+tired,https://www.oxfordlearnersdictionaries.com/definition/english/tired,A1,tired,mệt,adjective,/ˈtaɪəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tir/tired/tired__gb_3.mp3
+tire,https://www.oxfordlearnersdictionaries.com/definition/english/tire_1,C2,tire,lốp xe,verb,/ˈtaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tir/tire_/tire__gb_1.mp3
+weary,https://www.oxfordlearnersdictionaries.com/definition/english/weary_1,C2,weary,mệt mỏi,adjective,/ˈwɪəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/weary/weary__gb_1.mp3
+whacked,https://www.oxfordlearnersdictionaries.com/definition/english/whacked,C2,whacked,bị đánh đòn,adjective,/wækt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wha/whack/whacked__gb_1.mp3
+wiped_out,https://www.oxfordlearnersdictionaries.com/definition/english/wiped-out,C2,wiped out,bị xóa sổ,adjective,/ˌwaɪpt ˈaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wip/wiped/wiped_out_1_gb_1.mp3
+worn,https://www.oxfordlearnersdictionaries.com/definition/english/worn_1,C2,worn,rách nát,adjective,/wɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/worn_/worn__gb_2.mp3
+worn_out,https://www.oxfordlearnersdictionaries.com/definition/english/worn-out,C1,worn out,kiệt sức,adjective,/ˌwɔːn ˈaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/worn_/worn_out_1_gb_1.mp3
+wilt,https://www.oxfordlearnersdictionaries.com/definition/english/wilt,C2,wilt,héo,verb,/wɪlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wil/wilt_/wilt__gb_1.mp3
+wearisome,https://www.oxfordlearnersdictionaries.com/definition/english/wearisome,C2,wearisome,mệt mỏi,adjective,/ˈwɪərisəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/weari/wearisome__gb_1.mp3

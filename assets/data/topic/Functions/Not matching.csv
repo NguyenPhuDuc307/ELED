@@ -1,14 +1,14 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
 go_against,https://www.oxfordlearnersdictionaries.com/definition/english/go-against,C1,go against,đi ngược lại,phrasal verb,,
-contradictory,https://www.oxfordlearnersdictionaries.com/definition/english/contradictory,C1,contradictory,mâu thuẫn,adjective,/ˌkɒntrəˈdɪktəri/,
-contradiction,https://www.oxfordlearnersdictionaries.com/definition/english/contradiction,C1,contradiction,mâu thuẫn,noun,/ˌkɒntrəˈdɪkʃn/,
-inconsistent,https://www.oxfordlearnersdictionaries.com/definition/english/inconsistent,C2,inconsistent,không nhất quán,adjective,/ˌɪnkənˈsɪstənt/,
-inconsistency,https://www.oxfordlearnersdictionaries.com/definition/english/inconsistency,C2,inconsistency,sự không nhất quán,noun,/ˌɪnkənˈsɪstənsi/,
-different,https://www.oxfordlearnersdictionaries.com/definition/english/different,A1,different,khác biệt,adjective,/ˈdɪfrənt/,
-inconsistently,https://www.oxfordlearnersdictionaries.com/definition/english/inconsistently,C2,inconsistently,không nhất quán,adverb,/ˌɪnkənˈsɪstəntli/,
-differ,https://www.oxfordlearnersdictionaries.com/definition/english/differ,B2,differ,khác nhau,verb,/ˈdɪfə(r)/,
-difference,https://www.oxfordlearnersdictionaries.com/definition/english/difference,A1,difference,sự khác biệt,noun,/ˈdɪfrəns/,
-at_variance_(with_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/variance,C2,at variance (with somebody/something),không đồng nhất (với ai/cái gì),noun,/ˈveəriəns/,
-out_of_kilter,https://www.oxfordlearnersdictionaries.com/definition/english/kilter,C2,out of kilter,hết lò,noun,/ˈkɪltə(r)/,
-out_of_keeping_(with_something),https://www.oxfordlearnersdictionaries.com/definition/english/keeping,C2,out of keeping (with something),không theo kịp (với cái gì),noun,/ˈkiːpɪŋ/,
-out_of_whack,https://www.oxfordlearnersdictionaries.com/definition/english/whack_2,C2,out of whack,ngoài ý muốn,noun,/wæk/,
+contradictory,https://www.oxfordlearnersdictionaries.com/definition/english/contradictory,C1,contradictory,mâu thuẫn,adjective,/ˌkɒntrəˈdɪktəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontradictory__gb_1.mp3
+contradiction,https://www.oxfordlearnersdictionaries.com/definition/english/contradiction,C1,contradiction,mâu thuẫn,noun,/ˌkɒntrəˈdɪkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontradiction__gb_1.mp3
+inconsistent,https://www.oxfordlearnersdictionaries.com/definition/english/inconsistent,C2,inconsistent,không nhất quán,adjective,/ˌɪnkənˈsɪstənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incon/inconsistent__gb_2.mp3
+inconsistency,https://www.oxfordlearnersdictionaries.com/definition/english/inconsistency,C2,inconsistency,sự không nhất quán,noun,/ˌɪnkənˈsɪstənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incon/inconsistency__gb_1.mp3
+different,https://www.oxfordlearnersdictionaries.com/definition/english/different,A1,different,khác biệt,adjective,/ˈdɪfrənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dif/diffe/different__gb_3.mp3
+inconsistently,https://www.oxfordlearnersdictionaries.com/definition/english/inconsistently,C2,inconsistently,không nhất quán,adverb,/ˌɪnkənˈsɪstəntli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incon/inconsistently__gb_1.mp3
+differ,https://www.oxfordlearnersdictionaries.com/definition/english/differ,B2,differ,khác nhau,verb,/ˈdɪfə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dif/diffe/differ__gb_2.mp3
+difference,https://www.oxfordlearnersdictionaries.com/definition/english/difference,A1,difference,sự khác biệt,noun,/ˈdɪfrəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dif/diffe/difference__gb_4.mp3
+at_variance_(with_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/variance,C2,at variance (with somebody/something),không đồng nhất (với ai/cái gì),noun,/ˈveəriəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/var/varia/variance__gb_1.mp3
+out_of_kilter,https://www.oxfordlearnersdictionaries.com/definition/english/kilter,C2,out of kilter,hết lò,noun,/ˈkɪltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kil/kilte/kilter__gb_1.mp3
+out_of_keeping_(with_something),https://www.oxfordlearnersdictionaries.com/definition/english/keeping,C2,out of keeping (with something),không theo kịp (với cái gì),noun,/ˈkiːpɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kee/keepi/keeping__gb_3.mp3
+out_of_whack,https://www.oxfordlearnersdictionaries.com/definition/english/whack_2,C2,out of whack,ngoài ý muốn,noun,/wæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wha/whack/whack__gb_1.mp3

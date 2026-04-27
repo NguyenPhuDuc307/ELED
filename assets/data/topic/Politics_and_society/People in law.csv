@@ -1,33 +1,33 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-bar,https://www.oxfordlearnersdictionaries.com/definition/english/bar_1,C2,bar,thanh,noun,/bɑː(r)/,
-defendant,https://www.oxfordlearnersdictionaries.com/definition/english/defendant,C1,defendant,bị cáo,noun,/dɪˈfendənt/,
-attorney,https://www.oxfordlearnersdictionaries.com/definition/english/attorney,C1,attorney,luật sư,noun,/əˈtɜːni/,
-counsel,https://www.oxfordlearnersdictionaries.com/definition/english/counsel_1,C2,counsel,lời khuyên,noun,/ˈkaʊnsl/,
-advocate,https://www.oxfordlearnersdictionaries.com/definition/english/advocate_1,C2,advocate,người bào chữa,noun,/ˈædvəkət/,
-executioner,https://www.oxfordlearnersdictionaries.com/definition/english/executioner,C2,executioner,đao phủ,noun,/ˌeksɪˈkjuːʃənə(r)/,
-authority,https://www.oxfordlearnersdictionaries.com/definition/english/authority,B2,authority,thẩm quyền,noun,/ɔːˈθɒrəti/,
-barrister,https://www.oxfordlearnersdictionaries.com/definition/english/barrister,C2,barrister,luật sư,noun,/ˈbærɪstə(r)/,
-complainant,https://www.oxfordlearnersdictionaries.com/definition/english/complainant,C2,complainant,người khiếu nại,noun,/kəmˈpleɪnənt/,
-conveyancer,https://www.oxfordlearnersdictionaries.com/definition/english/conveyancer,C2,conveyancer,người vận chuyển,noun,/kənˈveɪənsə(r)/,
-hangman,https://www.oxfordlearnersdictionaries.com/definition/english/hangman,C1,hangman,người treo cổ,noun,/ˈhæŋmən/,
-judiciary,https://www.oxfordlearnersdictionaries.com/definition/english/judiciary,C2,judiciary,tư pháp,noun,/dʒuˈdɪʃəri/,
-judge,https://www.oxfordlearnersdictionaries.com/definition/english/judge_1,B1,judge,phán xét,noun,/dʒʌdʒ/,
-general_counsel,https://www.oxfordlearnersdictionaries.com/definition/english/general-counsel,C2,general counsel,luật sư chung,noun,/ˌdʒenrəl ˈkaʊnsl/,
-jp,https://www.oxfordlearnersdictionaries.com/definition/english/jp,C2,JP,JP,noun,/ˌdʒeɪ ˈpiː/,
-jurist,https://www.oxfordlearnersdictionaries.com/definition/english/jurist,C2,jurist,luật gia,noun,/ˈdʒʊərɪst/,
-jury,https://www.oxfordlearnersdictionaries.com/definition/english/jury,B2,jury,bồi thẩm đoàn,noun,/ˈdʒʊəri/,
-lawyer,https://www.oxfordlearnersdictionaries.com/definition/english/lawyer,A2,lawyer,luật sư,noun,/ˈlɔɪə(r)/,
-gown,https://www.oxfordlearnersdictionaries.com/definition/english/gown,C1,gown,áo choàng,noun,/ɡaʊn/,
-justice_of_the_peace,https://www.oxfordlearnersdictionaries.com/definition/english/justice-of-the-peace,C2,Justice of the Peace,Công lý hòa bình,noun,/ˌdʒʌstɪs əv ðə ˈpiːs/,
-legislature,https://www.oxfordlearnersdictionaries.com/definition/english/legislature,C1,legislature,cơ quan lập pháp,noun,/ˈledʒɪslətʃə(r)/,
-notary,https://www.oxfordlearnersdictionaries.com/definition/english/notary,C2,notary,công chứng viên,noun,/ˈnəʊtəri/,
-magistrate,https://www.oxfordlearnersdictionaries.com/definition/english/magistrate,C1,magistrate,quan tòa,noun,/ˈmædʒɪstreɪt/,
-party,https://www.oxfordlearnersdictionaries.com/definition/english/party_1,C1,party,buổi tiệc,noun,/ˈpɑːti/,
-plaintiff,https://www.oxfordlearnersdictionaries.com/definition/english/plaintiff,C2,plaintiff,nguyên đơn,noun,/ˈpleɪntɪf/,
-prosecutor,https://www.oxfordlearnersdictionaries.com/definition/english/prosecutor,C1,prosecutor,công tố viên,noun,/ˈprɒsɪkjuːtə(r)/,
-public_defender,https://www.oxfordlearnersdictionaries.com/definition/english/public-defender,C2,public defender,luật sư công,noun,/ˌpʌblɪk dɪˈfendə(r)/,
-solicitor,https://www.oxfordlearnersdictionaries.com/definition/english/solicitor,C1,solicitor,luật sư,noun,/səˈlɪsɪtə(r)/,
-litigator,https://www.oxfordlearnersdictionaries.com/definition/english/litigator,C2,litigator,người kiện tụng,noun,/ˈlɪtɪɡeɪtə(r)/,
-magistracy,https://www.oxfordlearnersdictionaries.com/definition/english/the-magistracy,C2,magistracy,quan tòa,noun,/ðə ˈmædʒɪstrəsi/,
-mckenzie_friend,https://www.oxfordlearnersdictionaries.com/definition/english/mckenzie-friend,C2,McKenzie friend,Bạn McKenzie,noun,/məˈkenzi frend/,
-public_prosecutor,https://www.oxfordlearnersdictionaries.com/definition/english/public-prosecutor,C2,public prosecutor,công tố viên,noun,/ˌpʌblɪk ˈprɒsɪkjuːtə(r)/,
+bar,https://www.oxfordlearnersdictionaries.com/definition/english/bar_1,C2,bar,thanh,noun,/bɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/bar__/bar__gb_1.mp3
+defendant,https://www.oxfordlearnersdictionaries.com/definition/english/defendant,C1,defendant,bị cáo,noun,/dɪˈfendənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/def/defen/defendant__gb_1.mp3
+attorney,https://www.oxfordlearnersdictionaries.com/definition/english/attorney,C1,attorney,luật sư,noun,/əˈtɜːni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/att/attor/attorney__gb_1.mp3
+counsel,https://www.oxfordlearnersdictionaries.com/definition/english/counsel_1,C2,counsel,lời khuyên,noun,/ˈkaʊnsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/couns/counsel__gb_1.mp3
+advocate,https://www.oxfordlearnersdictionaries.com/definition/english/advocate_1,C2,advocate,người bào chữa,noun,/ˈædvəkət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adv/advoc/advocate__gb_2.mp3
+executioner,https://www.oxfordlearnersdictionaries.com/definition/english/executioner,C2,executioner,đao phủ,noun,/ˌeksɪˈkjuːʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/execu/executioner__gb_1.mp3
+authority,https://www.oxfordlearnersdictionaries.com/definition/english/authority,B2,authority,thẩm quyền,noun,/ɔːˈθɒrəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/autho/authority__gb_3.mp3
+barrister,https://www.oxfordlearnersdictionaries.com/definition/english/barrister,C2,barrister,luật sư,noun,/ˈbærɪstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/barri/barrister__gb_1.mp3
+complainant,https://www.oxfordlearnersdictionaries.com/definition/english/complainant,C2,complainant,người khiếu nại,noun,/kəmˈpleɪnənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/compl/complainant__gb_1.mp3
+conveyancer,https://www.oxfordlearnersdictionaries.com/definition/english/conveyancer,C2,conveyancer,người vận chuyển,noun,/kənˈveɪənsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconv/xconveyancer__gb_1.mp3
+hangman,https://www.oxfordlearnersdictionaries.com/definition/english/hangman,C1,hangman,người treo cổ,noun,/ˈhæŋmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hangm/hangman__gb_1.mp3
+judiciary,https://www.oxfordlearnersdictionaries.com/definition/english/judiciary,C2,judiciary,tư pháp,noun,/dʒuˈdɪʃəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jud/judic/judiciary__gb_1.mp3
+judge,https://www.oxfordlearnersdictionaries.com/definition/english/judge_1,B1,judge,phán xét,noun,/dʒʌdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jud/judge/judge__gb_2.mp3
+general_counsel,https://www.oxfordlearnersdictionaries.com/definition/english/general-counsel,C2,general counsel,luật sư chung,noun,/ˌdʒenrəl ˈkaʊnsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gen/gener/general_counsel_1_gb_1.mp3
+jp,https://www.oxfordlearnersdictionaries.com/definition/english/jp,C2,JP,JP,noun,/ˌdʒeɪ ˈpiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jp_/jp__g/jp__gb_1.mp3
+jurist,https://www.oxfordlearnersdictionaries.com/definition/english/jurist,C2,jurist,luật gia,noun,/ˈdʒʊərɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jur/juris/jurist__gb_1.mp3
+jury,https://www.oxfordlearnersdictionaries.com/definition/english/jury,B2,jury,bồi thẩm đoàn,noun,/ˈdʒʊəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jur/jury_/jury__gb_2.mp3
+lawyer,https://www.oxfordlearnersdictionaries.com/definition/english/lawyer,A2,lawyer,luật sư,noun,/ˈlɔɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/law/lawye/lawyer__gb_5.mp3
+gown,https://www.oxfordlearnersdictionaries.com/definition/english/gown,C1,gown,áo choàng,noun,/ɡaʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gow/gown_/gown__gb_2.mp3
+justice_of_the_peace,https://www.oxfordlearnersdictionaries.com/definition/english/justice-of-the-peace,C2,Justice of the Peace,Công lý hòa bình,noun,/ˌdʒʌstɪs əv ðə ˈpiːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jus/justi/justice_of_the_peace_1_gb_1.mp3
+legislature,https://www.oxfordlearnersdictionaries.com/definition/english/legislature,C1,legislature,cơ quan lập pháp,noun,/ˈledʒɪslətʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/leg/legis/legislature__gb_2.mp3
+notary,https://www.oxfordlearnersdictionaries.com/definition/english/notary,C2,notary,công chứng viên,noun,/ˈnəʊtəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/not/notar/notary__gb_1.mp3
+magistrate,https://www.oxfordlearnersdictionaries.com/definition/english/magistrate,C1,magistrate,quan tòa,noun,/ˈmædʒɪstreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mag/magis/magistrate__gb_1.mp3
+party,https://www.oxfordlearnersdictionaries.com/definition/english/party_1,C1,party,buổi tiệc,noun,/ˈpɑːti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/party/party__gb_2.mp3
+plaintiff,https://www.oxfordlearnersdictionaries.com/definition/english/plaintiff,C2,plaintiff,nguyên đơn,noun,/ˈpleɪntɪf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plain/plaintiff__gb_1.mp3
+prosecutor,https://www.oxfordlearnersdictionaries.com/definition/english/prosecutor,C1,prosecutor,công tố viên,noun,/ˈprɒsɪkjuːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prose/prosecutor__gb_1.mp3
+public_defender,https://www.oxfordlearnersdictionaries.com/definition/english/public-defender,C2,public defender,luật sư công,noun,/ˌpʌblɪk dɪˈfendə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/public_defender_1_gb_1.mp3
+solicitor,https://www.oxfordlearnersdictionaries.com/definition/english/solicitor,C1,solicitor,luật sư,noun,/səˈlɪsɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solic/solicitor__gb_1.mp3
+litigator,https://www.oxfordlearnersdictionaries.com/definition/english/litigator,C2,litigator,người kiện tụng,noun,/ˈlɪtɪɡeɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lit/litig/litigator__gb_1.mp3
+magistracy,https://www.oxfordlearnersdictionaries.com/definition/english/the-magistracy,C2,magistracy,quan tòa,noun,/ðə ˈmædʒɪstrəsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_m/the_magistracy_1_gb_1.mp3
+mckenzie_friend,https://www.oxfordlearnersdictionaries.com/definition/english/mckenzie-friend,C2,McKenzie friend,Bạn McKenzie,noun,/məˈkenzi frend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mck/mcken/mckenzie_friend_1_gb_1.mp3
+public_prosecutor,https://www.oxfordlearnersdictionaries.com/definition/english/public-prosecutor,C2,public prosecutor,công tố viên,noun,/ˌpʌblɪk ˈprɒsɪkjuːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/public_prosecutor_1_gb_1.mp3

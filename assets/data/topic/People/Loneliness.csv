@@ -1,16 +1,16 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-isolation,https://www.oxfordlearnersdictionaries.com/definition/english/isolation,C1,isolation,sự cách ly,noun,/ˌaɪsəˈleɪʃn/,
-loner,https://www.oxfordlearnersdictionaries.com/definition/english/loner,C2,loner,cô đơn,noun,/ˈləʊnə(r)/,
-forlorn,https://www.oxfordlearnersdictionaries.com/definition/english/forlorn,C2,forlorn,tuyệt vọng,adjective,/fəˈlɔːn/,
-alone,https://www.oxfordlearnersdictionaries.com/definition/english/alone,B1,alone,một mình,"adjective,adverb",/əˈləʊn/,
-bereft,https://www.oxfordlearnersdictionaries.com/definition/english/bereft,C2,bereft,bị bỏ rơi,adjective,/bɪˈreft/,
-loneliness,https://www.oxfordlearnersdictionaries.com/definition/english/loneliness,C1,loneliness,sự cô đơn,noun,/ˈləʊnlinəs/,
-desolate,https://www.oxfordlearnersdictionaries.com/definition/english/desolate_1,C1,desolate,hoang vắng,adjective,/ˈdesələt/,
-break,https://www.oxfordlearnersdictionaries.com/definition/english/break_1,C2,break,phá vỡ,verb,/breɪk/,
-adrift,https://www.oxfordlearnersdictionaries.com/definition/english/adrift,C2,adrift,trôi dạt,adjective,/əˈdrɪft/,
-solitude,https://www.oxfordlearnersdictionaries.com/definition/english/solitude,C2,solitude,sự cô độc,noun,/ˈsɒlətjuːd/,
-recluse,https://www.oxfordlearnersdictionaries.com/definition/english/recluse,C2,recluse,ẩn dật,noun,/rɪˈkluːs/,
-lonesome,https://www.oxfordlearnersdictionaries.com/definition/english/lonesome_1,C2,lonesome,cô đơn,adjective,/ˈləʊnsəm/,
-solitary,https://www.oxfordlearnersdictionaries.com/definition/english/solitary_1,C1,solitary,đơn độc,adjective,/ˈsɒlətri/,
-desolation,https://www.oxfordlearnersdictionaries.com/definition/english/desolation,C2,desolation,sự tàn phá,noun,/ˌdesəˈleɪʃn/,
-reclusive,https://www.oxfordlearnersdictionaries.com/definition/english/reclusive,C2,reclusive,ẩn dật,adjective,/rɪˈkluːsɪv/,
+isolation,https://www.oxfordlearnersdictionaries.com/definition/english/isolation,C1,isolation,sự cách ly,noun,/ˌaɪsəˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iso/isola/isolation__gb_1.mp3
+loner,https://www.oxfordlearnersdictionaries.com/definition/english/loner,C2,loner,cô đơn,noun,/ˈləʊnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lon/loner/loner__gb_1.mp3
+forlorn,https://www.oxfordlearnersdictionaries.com/definition/english/forlorn,C2,forlorn,tuyệt vọng,adjective,/fəˈlɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forlo/forlorn__gb_1.mp3
+alone,https://www.oxfordlearnersdictionaries.com/definition/english/alone,B1,alone,một mình,"adjective,adverb",/əˈləʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alo/alone/alone__gb_1.mp3
+bereft,https://www.oxfordlearnersdictionaries.com/definition/english/bereft,C2,bereft,bị bỏ rơi,adjective,/bɪˈreft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ber/beref/bereft__gb_1.mp3
+loneliness,https://www.oxfordlearnersdictionaries.com/definition/english/loneliness,C1,loneliness,sự cô đơn,noun,/ˈləʊnlinəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lon/lonel/loneliness__gb_1.mp3
+desolate,https://www.oxfordlearnersdictionaries.com/definition/english/desolate_1,C1,desolate,hoang vắng,adjective,/ˈdesələt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/desol/desolate__gb_1.mp3
+break,https://www.oxfordlearnersdictionaries.com/definition/english/break_1,C2,break,phá vỡ,verb,/breɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/break/break__gb_1.mp3
+adrift,https://www.oxfordlearnersdictionaries.com/definition/english/adrift,C2,adrift,trôi dạt,adjective,/əˈdrɪft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adr/adrif/adrift__gb_1.mp3
+solitude,https://www.oxfordlearnersdictionaries.com/definition/english/solitude,C2,solitude,sự cô độc,noun,/ˈsɒlətjuːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solit/solitude__gb_2.mp3
+recluse,https://www.oxfordlearnersdictionaries.com/definition/english/recluse,C2,recluse,ẩn dật,noun,/rɪˈkluːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rec/reclu/recluse__gb_1.mp3
+lonesome,https://www.oxfordlearnersdictionaries.com/definition/english/lonesome_1,C2,lonesome,cô đơn,adjective,/ˈləʊnsəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lon/lones/lonesome__gb_1.mp3
+solitary,https://www.oxfordlearnersdictionaries.com/definition/english/solitary_1,C1,solitary,đơn độc,adjective,/ˈsɒlətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solit/solitary__gb_1.mp3
+desolation,https://www.oxfordlearnersdictionaries.com/definition/english/desolation,C2,desolation,sự tàn phá,noun,/ˌdesəˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/desol/desolation__gb_1.mp3
+reclusive,https://www.oxfordlearnersdictionaries.com/definition/english/reclusive,C2,reclusive,ẩn dật,adjective,/rɪˈkluːsɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rec/reclu/reclusive__gb_1.mp3

@@ -1,37 +1,37 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-drizzle,https://www.oxfordlearnersdictionaries.com/definition/english/drizzle_2,C2,drizzle,mưa phùn,noun,/ˈdrɪzl/,
-drought,https://www.oxfordlearnersdictionaries.com/definition/english/drought,B2,drought,hạn hán,noun,/draʊt/,
-drizzle,https://www.oxfordlearnersdictionaries.com/definition/english/drizzle_1,C2,drizzle,mưa phùn,verb,/ˈdrɪzl/,
-acid_rain,https://www.oxfordlearnersdictionaries.com/definition/english/acid-rain,C1,acid rain,mưa axit,noun,/ˌæsɪd ˈreɪn/,
-deluge,https://www.oxfordlearnersdictionaries.com/definition/english/deluge_1,C2,deluge,trận lụt lớn,noun,/ˈdeljuːdʒ/,
-drench,https://www.oxfordlearnersdictionaries.com/definition/english/drench,C2,drench,ướt sũng,verb,/drentʃ/,
-dry_spell,https://www.oxfordlearnersdictionaries.com/definition/english/dry-spell,C1,dry spell,tình trạng khô hạn,noun,/ˈdraɪ spel/,
-cloudburst,https://www.oxfordlearnersdictionaries.com/definition/english/cloudburst,C2,cloudburst,đám mây bùng nổ,noun,/ˈklaʊdbɜːst/,
-flood,https://www.oxfordlearnersdictionaries.com/definition/english/flood_1,B1,flood,lụt,noun,/flʌd/,
-flash_flood,https://www.oxfordlearnersdictionaries.com/definition/english/flash-flood,C2,flash flood,lũ quét,noun,/ˌflæʃ ˈflʌd/,
-downpour,https://www.oxfordlearnersdictionaries.com/definition/english/downpour,C1,downpour,trận mưa như trút nước,noun,/ˈdaʊnpɔː(r)/,
-damp,https://www.oxfordlearnersdictionaries.com/definition/english/damp_1,C1,damp,ẩm ướt,adjective,/dæmp/,
-precipitation,https://www.oxfordlearnersdictionaries.com/definition/english/precipitation,C2,precipitation,sự kết tủa,noun,/prɪˌsɪpɪˈteɪʃn/,
-monsoon,https://www.oxfordlearnersdictionaries.com/definition/english/monsoon,C1,monsoon,gió mùa,noun,/ˌmɒnˈsuːn/,
-pour,https://www.oxfordlearnersdictionaries.com/definition/english/pour,B1,pour,đổ,verb,/pɔː(r)/,
-flood,https://www.oxfordlearnersdictionaries.com/definition/english/flood_2,B1,flood,lụt,verb,/flʌd/,
-pluvial,https://www.oxfordlearnersdictionaries.com/definition/english/pluvial,C2,pluvial,có nhiều mưa,adjective,/ˈpluːviəl/,
-puddle,https://www.oxfordlearnersdictionaries.com/definition/english/puddle,C1,puddle,vũng nước,noun,/ˈpʌdl/,
-rain,https://www.oxfordlearnersdictionaries.com/definition/english/rain_2,A1,rain,cơn mưa,verb,/reɪn/,
-rainfall,https://www.oxfordlearnersdictionaries.com/definition/english/rainfall,B1,rainfall,lượng mưa,noun,/ˈreɪnfɔːl/,
-rainwater,https://www.oxfordlearnersdictionaries.com/definition/english/rainwater,B1,rainwater,nước mưa,noun,/ˈreɪnwɔːtə(r)/,
-raindrop,https://www.oxfordlearnersdictionaries.com/definition/english/raindrop,B2,raindrop,giọt mưa,noun,/ˈreɪndrɒp/,
-rainstorm,https://www.oxfordlearnersdictionaries.com/definition/english/rainstorm,B1,rainstorm,mưa bão,noun,/ˈreɪnstɔːm/,
-shower,https://www.oxfordlearnersdictionaries.com/definition/english/shower_1,B1,shower,vòi sen,noun,/ˈʃaʊə(r)/,
-rainy,https://www.oxfordlearnersdictionaries.com/definition/english/rainy,A2,rainy,nhiều mưa,adjective,/ˈreɪni/,
-rain,https://www.oxfordlearnersdictionaries.com/definition/english/rain_1,A1,rain,cơn mưa,noun,/reɪn/,
-showery,https://www.oxfordlearnersdictionaries.com/definition/english/showery,C2,showery,có mưa rào,adjective,/ˈʃaʊəri/,
-spit,https://www.oxfordlearnersdictionaries.com/definition/english/spit_1,C2,spit,nhổ,verb,/spɪt/,
-soak,https://www.oxfordlearnersdictionaries.com/definition/english/soak_1,C1,soak,ngâm,verb,/səʊk/,
-torrent,https://www.oxfordlearnersdictionaries.com/definition/english/torrent,C1,torrent,torrent,noun,/ˈtɒrənt/,
-sprinkle,https://www.oxfordlearnersdictionaries.com/definition/english/sprinkle_1,C2,sprinkle,rắc,verb,/ˈsprɪŋkl/,
-spot,https://www.oxfordlearnersdictionaries.com/definition/english/spot_1,C1,spot,điểm,noun,/spɒt/,
-umbrella,https://www.oxfordlearnersdictionaries.com/definition/english/umbrella,A1,umbrella,Chiếc ô,noun,/ʌmˈbrelə/,
-wet,https://www.oxfordlearnersdictionaries.com/definition/english/wet_1,A2,wet,ướt,adjective,/wet/,
-stormy,https://www.oxfordlearnersdictionaries.com/definition/english/stormy,B2,stormy,giông bão,adjective,/ˈstɔːmi/,
-thunderstorm,https://www.oxfordlearnersdictionaries.com/definition/english/thunderstorm,B2,thunderstorm,dông,noun,/ˈθʌndəstɔːm/,
+drizzle,https://www.oxfordlearnersdictionaries.com/definition/english/drizzle_2,C2,drizzle,mưa phùn,noun,/ˈdrɪzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drizz/drizzle__gb_2.mp3
+drought,https://www.oxfordlearnersdictionaries.com/definition/english/drought,B2,drought,hạn hán,noun,/draʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/droug/drought__gb_3.mp3
+drizzle,https://www.oxfordlearnersdictionaries.com/definition/english/drizzle_1,C2,drizzle,mưa phùn,verb,/ˈdrɪzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drizz/drizzle__gb_2.mp3
+acid_rain,https://www.oxfordlearnersdictionaries.com/definition/english/acid-rain,C1,acid rain,mưa axit,noun,/ˌæsɪd ˈreɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aci/acid_/acid_rain_1_gb_1.mp3
+deluge,https://www.oxfordlearnersdictionaries.com/definition/english/deluge_1,C2,deluge,trận lụt lớn,noun,/ˈdeljuːdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/del/delug/deluge__gb_1.mp3
+drench,https://www.oxfordlearnersdictionaries.com/definition/english/drench,C2,drench,ướt sũng,verb,/drentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dre/drenc/drench__gb_2.mp3
+dry_spell,https://www.oxfordlearnersdictionaries.com/definition/english/dry-spell,C1,dry spell,tình trạng khô hạn,noun,/ˈdraɪ spel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dry/dry_s/dry_spell_1_gb_1.mp3
+cloudburst,https://www.oxfordlearnersdictionaries.com/definition/english/cloudburst,C2,cloudburst,đám mây bùng nổ,noun,/ˈklaʊdbɜːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clo/cloud/cloudburst__gb_1.mp3
+flood,https://www.oxfordlearnersdictionaries.com/definition/english/flood_1,B1,flood,lụt,noun,/flʌd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flood/flood__gb_2.mp3
+flash_flood,https://www.oxfordlearnersdictionaries.com/definition/english/flash-flood,C2,flash flood,lũ quét,noun,/ˌflæʃ ˈflʌd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flash/flash_flood_1_gb_2.mp3
+downpour,https://www.oxfordlearnersdictionaries.com/definition/english/downpour,C1,downpour,trận mưa như trút nước,noun,/ˈdaʊnpɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dow/downp/downpour__gb_4.mp3
+damp,https://www.oxfordlearnersdictionaries.com/definition/english/damp_1,C1,damp,ẩm ướt,adjective,/dæmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dam/damp_/damp__gb_1.mp3
+precipitation,https://www.oxfordlearnersdictionaries.com/definition/english/precipitation,C2,precipitation,sự kết tủa,noun,/prɪˌsɪpɪˈteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preci/precipitation__gb_1.mp3
+monsoon,https://www.oxfordlearnersdictionaries.com/definition/english/monsoon,C1,monsoon,gió mùa,noun,/ˌmɒnˈsuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monso/monsoon__gb_1.mp3
+pour,https://www.oxfordlearnersdictionaries.com/definition/english/pour,B1,pour,đổ,verb,/pɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pou/pour_/pour__gb_1.mp3
+flood,https://www.oxfordlearnersdictionaries.com/definition/english/flood_2,B1,flood,lụt,verb,/flʌd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flood/flood__gb_2.mp3
+pluvial,https://www.oxfordlearnersdictionaries.com/definition/english/pluvial,C2,pluvial,có nhiều mưa,adjective,/ˈpluːviəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plu/pluvi/pluvial__gb_1.mp3
+puddle,https://www.oxfordlearnersdictionaries.com/definition/english/puddle,C1,puddle,vũng nước,noun,/ˈpʌdl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pud/puddl/puddle__gb_1.mp3
+rain,https://www.oxfordlearnersdictionaries.com/definition/english/rain_2,A1,rain,cơn mưa,verb,/reɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rain_/rain__gb_2.mp3
+rainfall,https://www.oxfordlearnersdictionaries.com/definition/english/rainfall,B1,rainfall,lượng mưa,noun,/ˈreɪnfɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rainf/rainfall__gb_1.mp3
+rainwater,https://www.oxfordlearnersdictionaries.com/definition/english/rainwater,B1,rainwater,nước mưa,noun,/ˈreɪnwɔːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rainw/rainwater__gb_1.mp3
+raindrop,https://www.oxfordlearnersdictionaries.com/definition/english/raindrop,B2,raindrop,giọt mưa,noun,/ˈreɪndrɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/raind/raindrop__gb_1.mp3
+rainstorm,https://www.oxfordlearnersdictionaries.com/definition/english/rainstorm,B1,rainstorm,mưa bão,noun,/ˈreɪnstɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rains/rainstorm__gb_1.mp3
+shower,https://www.oxfordlearnersdictionaries.com/definition/english/shower_1,B1,shower,vòi sen,noun,/ˈʃaʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/showe/shower__gb_2.mp3
+rainy,https://www.oxfordlearnersdictionaries.com/definition/english/rainy,A2,rainy,nhiều mưa,adjective,/ˈreɪni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rainy/rainy__gb_1.mp3
+rain,https://www.oxfordlearnersdictionaries.com/definition/english/rain_1,A1,rain,cơn mưa,noun,/reɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rain_/rain__gb_2.mp3
+showery,https://www.oxfordlearnersdictionaries.com/definition/english/showery,C2,showery,có mưa rào,adjective,/ˈʃaʊəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/showe/showery__gb_1.mp3
+spit,https://www.oxfordlearnersdictionaries.com/definition/english/spit_1,C2,spit,nhổ,verb,/spɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spit_/spit__gb_1.mp3
+soak,https://www.oxfordlearnersdictionaries.com/definition/english/soak_1,C1,soak,ngâm,verb,/səʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soa/soak_/soak__gb_1.mp3
+torrent,https://www.oxfordlearnersdictionaries.com/definition/english/torrent,C1,torrent,torrent,noun,/ˈtɒrənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tor/torre/torrent__gb_1.mp3
+sprinkle,https://www.oxfordlearnersdictionaries.com/definition/english/sprinkle_1,C2,sprinkle,rắc,verb,/ˈsprɪŋkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spr/sprin/sprinkle__gb_1.mp3
+spot,https://www.oxfordlearnersdictionaries.com/definition/english/spot_1,C1,spot,điểm,noun,/spɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spot_/spot__gb_1.mp3
+umbrella,https://www.oxfordlearnersdictionaries.com/definition/english/umbrella,A1,umbrella,Chiếc ô,noun,/ʌmˈbrelə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/umb/umbre/umbrella__gb_2.mp3
+wet,https://www.oxfordlearnersdictionaries.com/definition/english/wet_1,A2,wet,ướt,adjective,/wet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wet/wet__/wet__gb_2.mp3
+stormy,https://www.oxfordlearnersdictionaries.com/definition/english/stormy,B2,stormy,giông bão,adjective,/ˈstɔːmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/storm/stormy__gb_1.mp3
+thunderstorm,https://www.oxfordlearnersdictionaries.com/definition/english/thunderstorm,B2,thunderstorm,dông,noun,/ˈθʌndəstɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thu/thund/thunderstorm__gb_1.mp3

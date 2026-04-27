@@ -1,15 +1,15 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
 bc,https://www.oxfordlearnersdictionaries.com/definition/english/bc,C1,BC,BC,abbreviation,/ˌbiː ˈsiː/,
-ah,https://www.oxfordlearnersdictionaries.com/definition/english/ah_2,C2,AH,AH,abbreviation,/ˌeɪ ˈeɪtʃ/,
-bicentenary,https://www.oxfordlearnersdictionaries.com/definition/english/bicentenary_1,C2,bicentenary,hai trăm năm,noun,/ˌbaɪsenˈtiːnəri/,
-bicentenary,https://www.oxfordlearnersdictionaries.com/definition/english/bicentenary_2,C2,bicentenary,hai trăm năm,adjective,/ˌbaɪsenˈtiːnəri/,
+ah,https://www.oxfordlearnersdictionaries.com/definition/english/ah_2,C2,AH,AH,abbreviation,/ˌeɪ ˈeɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ah_/ah__g/ah__gb_2.mp3
+bicentenary,https://www.oxfordlearnersdictionaries.com/definition/english/bicentenary_1,C2,bicentenary,hai trăm năm,noun,/ˌbaɪsenˈtiːnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bic/bicen/bicentenary__gb_1.mp3
+bicentenary,https://www.oxfordlearnersdictionaries.com/definition/english/bicentenary_2,C2,bicentenary,hai trăm năm,adjective,/ˌbaɪsenˈtiːnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bic/bicen/bicentenary__gb_1.mp3
 bce,https://www.oxfordlearnersdictionaries.com/definition/english/bce,C1,BCE,TCN,abbreviation,/ˌbiː siː ˈiː/,
-bicentennial,https://www.oxfordlearnersdictionaries.com/definition/english/bicentennial_2,C2,bicentennial,hai trăm năm,adjective,/ˌbaɪsenˈteniəl/,
+bicentennial,https://www.oxfordlearnersdictionaries.com/definition/english/bicentennial_2,C2,bicentennial,hai trăm năm,adjective,/ˌbaɪsenˈteniəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bic/bicen/bicentennial__gb_3.mp3
 ce,https://www.oxfordlearnersdictionaries.com/definition/english/ce,C1,CE,CN,abbreviation,/ˌsiː ˈiː/,
-centenary,https://www.oxfordlearnersdictionaries.com/definition/english/centenary,C2,centenary,trăm năm,noun,/senˈtiːnəri/,
-bicentennial,https://www.oxfordlearnersdictionaries.com/definition/english/bicentennial_1,C2,bicentennial,hai trăm năm,noun,/ˌbaɪsenˈteniəl/,
-ad,https://www.oxfordlearnersdictionaries.com/definition/english/ad_2,C1,AD,QUẢNG CÁO,abbreviation,/ˌeɪ ˈdiː/,
-date,https://www.oxfordlearnersdictionaries.com/definition/english/date_1,A1,date,ngày,noun,/deɪt/,
-gregorian_calendar,https://www.oxfordlearnersdictionaries.com/definition/english/gregorian-calendar,C2,Gregorian calendar,lịch Gregory,noun,/ɡrɪˌɡɔːriən ˈkælɪndə(r)/,
-noughties,https://www.oxfordlearnersdictionaries.com/definition/english/the-noughties,C2,noughties,nghịch ngợm,noun,/ðə ˈnɔːtiz/,
-julian_calendar,https://www.oxfordlearnersdictionaries.com/definition/english/julian-calendar,C2,Julian calendar,lịch Julian,noun,/ˌdʒuːliən ˈkælɪndə(r)/,
+centenary,https://www.oxfordlearnersdictionaries.com/definition/english/centenary,C2,centenary,trăm năm,noun,/senˈtiːnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cen/cente/centenary__gb_1.mp3
+bicentennial,https://www.oxfordlearnersdictionaries.com/definition/english/bicentennial_1,C2,bicentennial,hai trăm năm,noun,/ˌbaɪsenˈteniəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bic/bicen/bicentennial__gb_3.mp3
+ad,https://www.oxfordlearnersdictionaries.com/definition/english/ad_2,C1,AD,QUẢNG CÁO,abbreviation,/ˌeɪ ˈdiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ad_/ad__g/ad__gb_2.mp3
+date,https://www.oxfordlearnersdictionaries.com/definition/english/date_1,A1,date,ngày,noun,/deɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dat/date_/date__gb_1.mp3
+gregorian_calendar,https://www.oxfordlearnersdictionaries.com/definition/english/gregorian-calendar,C2,Gregorian calendar,lịch Gregory,noun,/ɡrɪˌɡɔːriən ˈkælɪndə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/grego/gregorian_calendar_1_gb_1.mp3
+noughties,https://www.oxfordlearnersdictionaries.com/definition/english/the-noughties,C2,noughties,nghịch ngợm,noun,/ðə ˈnɔːtiz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_n/the_noughties_1_gb_1.mp3
+julian_calendar,https://www.oxfordlearnersdictionaries.com/definition/english/julian-calendar,C2,Julian calendar,lịch Julian,noun,/ˌdʒuːliən ˈkælɪndə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jul/julia/julian_calendar_1_gb_1.mp3

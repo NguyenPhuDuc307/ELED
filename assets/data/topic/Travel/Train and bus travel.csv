@@ -1,87 +1,87 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-booking,https://www.oxfordlearnersdictionaries.com/definition/english/booking,B2,booking,đặt phòng,noun,/ˈbʊkɪŋ/,
-alight,https://www.oxfordlearnersdictionaries.com/definition/english/alight_2,C2,alight,xuống xe,verb,/əˈlaɪt/,
-bus_pass,https://www.oxfordlearnersdictionaries.com/definition/english/bus-pass,B1,bus pass,vé xe buýt,noun,/ˈbʌs pɑːs/,
-aboard,https://www.oxfordlearnersdictionaries.com/definition/english/aboard,C1,aboard,ở nước ngoài,"adverb,preposition",/əˈbɔːd/,
+booking,https://www.oxfordlearnersdictionaries.com/definition/english/booking,B2,booking,đặt phòng,noun,/ˈbʊkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/booki/booking__gb_3.mp3
+alight,https://www.oxfordlearnersdictionaries.com/definition/english/alight_2,C2,alight,xuống xe,verb,/əˈlaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ali/aligh/alight__gb_1.mp3
+bus_pass,https://www.oxfordlearnersdictionaries.com/definition/english/bus-pass,B1,bus pass,vé xe buýt,noun,/ˈbʌs pɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus_p/bus_pass_1_gb_1.mp3
+aboard,https://www.oxfordlearnersdictionaries.com/definition/english/aboard,C1,aboard,ở nước ngoài,"adverb,preposition",/əˈbɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abo/aboar/aboard__gb_1.mp3
 brt,https://www.oxfordlearnersdictionaries.com/definition/english/brt,C2,BRT,BRT,noun,/ˌbiː ɑː ˈtiː/,
-bus,https://www.oxfordlearnersdictionaries.com/definition/english/bus_1,A1,bus,xe buýt,noun,/bʌs/,
-book,https://www.oxfordlearnersdictionaries.com/definition/english/book_2,A2,book,sách,verb,/bʊk/,
-board,https://www.oxfordlearnersdictionaries.com/definition/english/board_2,B1,board,Cái bảng,verb,/bɔːd/,
-bus_lane,https://www.oxfordlearnersdictionaries.com/definition/english/bus-lane,B2,bus lane,làn đường xe buýt,noun,/ˈbʌs leɪn/,
-bus_rapid_transit,https://www.oxfordlearnersdictionaries.com/definition/english/bus-rapid-transit,C2,bus rapid transit,xe buýt vận chuyển nhanh,noun,/ˈbʌs ræpɪd trænzɪt/,
-bus_stand,https://www.oxfordlearnersdictionaries.com/definition/english/bus-stand,C2,bus stand,bến xe buýt,noun,/ˈbʌs stænd/,
-bus_stop,https://www.oxfordlearnersdictionaries.com/definition/english/bus-stop,A1,bus stop,trạm xe buýt,noun,/ˈbʌs stɒp/,
-bus_station,https://www.oxfordlearnersdictionaries.com/definition/english/bus-station,A1,bus station,bến xe buýt,noun,/ˈbʌs steɪʃn/,
-change,https://www.oxfordlearnersdictionaries.com/definition/english/change_1,A2,change,thay đổi,verb,/tʃeɪndʒ/,
-catch,https://www.oxfordlearnersdictionaries.com/definition/english/catch_1,A2,catch,nắm lấy,verb,/kætʃ/,
-commute,https://www.oxfordlearnersdictionaries.com/definition/english/commute_2,B1,commute,đi lại,noun,/kəˈmjuːt/,
-coach,https://www.oxfordlearnersdictionaries.com/definition/english/coach_1,A2,coach,huấn luyện viên,noun,/kəʊtʃ/,
-commute,https://www.oxfordlearnersdictionaries.com/definition/english/commute_1,B1,commute,đi lại,verb,/kəˈmjuːt/,
-class,https://www.oxfordlearnersdictionaries.com/definition/english/class_1,B1,class,lớp học,noun,/klɑːs/,
-concession,https://www.oxfordlearnersdictionaries.com/definition/english/concession,C2,concession,nhượng bộ,noun,/kənˈseʃn/,
-departure,https://www.oxfordlearnersdictionaries.com/definition/english/departure,B1,departure,sự khởi hành,noun,/dɪˈpɑːtʃə(r)/,
-conductor,https://www.oxfordlearnersdictionaries.com/definition/english/conductor,C2,conductor,nhạc trưởng,noun,/kənˈdʌktə(r)/,
-connection,https://www.oxfordlearnersdictionaries.com/definition/english/connection,B2,connection,sự liên quan,noun,/kəˈnekʃn/,
-derailment,https://www.oxfordlearnersdictionaries.com/definition/english/derailment,C2,derailment,trật bánh,noun,/diːˈreɪlmənt/,
-derail,https://www.oxfordlearnersdictionaries.com/definition/english/derail,C2,derail,trật bánh,verb,/diːˈreɪl/,
-depot,https://www.oxfordlearnersdictionaries.com/definition/english/depot,C2,depot,kho hàng,noun,/ˈdepəʊ/,
-deck,https://www.oxfordlearnersdictionaries.com/definition/english/deck_1,B2,deck,boong tàu,noun,/dek/,
-day_return,https://www.oxfordlearnersdictionaries.com/definition/english/day-return,B2,day return,ngày trở về,noun,/ˌdeɪ rɪˈtɜːn/,
-danfo,https://www.oxfordlearnersdictionaries.com/definition/english/danfo,C2,danfo,danfo,noun,/ˈdænfəʊ/,
-detrain,https://www.oxfordlearnersdictionaries.com/definition/english/detrain,C2,detrain,ngăn cản,verb,/ˌdiːˈtreɪn/,
-double-decker,https://www.oxfordlearnersdictionaries.com/definition/english/double-decker,C1,double-decker,xe hai tầng,noun,/ˌdʌbl ˈdekə(r)/,
-fare,https://www.oxfordlearnersdictionaries.com/definition/english/fare_1,B2,fare,giá vé,noun,/feə(r)/,
-e-ticket,https://www.oxfordlearnersdictionaries.com/definition/english/e-ticket,B2,e-ticket,vé điện tử,noun,/ˈiː tɪkɪt/,
-first_class,https://www.oxfordlearnersdictionaries.com/definition/english/first-class_1,B1,first class,hạng nhất,adverb,/ˌfɜːst ˈklɑːs/,
-e-ticketing,https://www.oxfordlearnersdictionaries.com/definition/english/e-ticketing,C1,e-ticketing,vé điện tử,noun,/ˈiː tɪkɪtɪŋ/,
-hail,https://www.oxfordlearnersdictionaries.com/definition/english/hail_1,C2,hail,kêu,verb,/heɪl/,
-one-way,https://www.oxfordlearnersdictionaries.com/definition/english/one-way,B1,one-way,một chiều,adjective,/ˌwʌn ˈweɪ/,
-guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,B2,guard,canh gác,noun,/ɡɑːd/,
-light_railway,https://www.oxfordlearnersdictionaries.com/definition/english/light-railway,C1,light railway,đường sắt nhẹ,noun,/ˌlaɪt ˈreɪlweɪ/,
-inspector,https://www.oxfordlearnersdictionaries.com/definition/english/inspector,B2,inspector,thanh tra,noun,/ɪnˈspektə(r)/,
-non-stop,https://www.oxfordlearnersdictionaries.com/definition/english/non-stop_1,B1,non-stop,không ngừng nghỉ,adjective,/ˌnɒn ˈstɒp/,
-hop,https://www.oxfordlearnersdictionaries.com/definition/english/hop_1,C2,hop,nhảy lò cò,verb,/hɒp/,
-jitney,https://www.oxfordlearnersdictionaries.com/definition/english/jitney,C2,jitney,jitney,noun,/ˈdʒɪtni/,
-get,https://www.oxfordlearnersdictionaries.com/definition/english/get,A1,get,lấy,verb,/ɡet/,
-mass_transit,https://www.oxfordlearnersdictionaries.com/definition/english/mass-transit,C1,mass transit,vận chuyển công cộng,noun,/ˌmæs ˈtrænzɪt/,
-parkway,https://www.oxfordlearnersdictionaries.com/definition/english/parkway,C2,parkway,đại lộ,noun,/ˈpɑːkweɪ/,
-passenger,https://www.oxfordlearnersdictionaries.com/definition/english/passenger,A2,passenger,hành khách,noun,/ˈpæsɪndʒə(r)/,
-ply,https://www.oxfordlearnersdictionaries.com/definition/english/ply_1,C2,ply,lớp,verb,/plaɪ/,
-public_transport,https://www.oxfordlearnersdictionaries.com/definition/english/public-transport,A2,public transport,phương tiện giao thông công cộng,noun,/ˌpʌblɪk ˈtrænspɔːt/,
-pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_2,B1,pass,vượt qua,noun,/pɑːs/,
-porter,https://www.oxfordlearnersdictionaries.com/definition/english/porter,C1,porter,người khuân vác,noun,/ˈpɔːtə(r)/,
-park_and_ride,https://www.oxfordlearnersdictionaries.com/definition/english/park-and-ride,C2,park and ride,đỗ xe và đi xe,noun,/ˌpɑːk ən ˈraɪd/,
+bus,https://www.oxfordlearnersdictionaries.com/definition/english/bus_1,A1,bus,xe buýt,noun,/bʌs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus__/bus__gb_3.mp3
+book,https://www.oxfordlearnersdictionaries.com/definition/english/book_2,A2,book,sách,verb,/bʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/book_/book__gb_2.mp3
+board,https://www.oxfordlearnersdictionaries.com/definition/english/board_2,B1,board,Cái bảng,verb,/bɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boa/board/board__gb_2.mp3
+bus_lane,https://www.oxfordlearnersdictionaries.com/definition/english/bus-lane,B2,bus lane,làn đường xe buýt,noun,/ˈbʌs leɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus_l/bus_lane_1_gb_1.mp3
+bus_rapid_transit,https://www.oxfordlearnersdictionaries.com/definition/english/bus-rapid-transit,C2,bus rapid transit,xe buýt vận chuyển nhanh,noun,/ˈbʌs ræpɪd trænzɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus_r/bus_rapid_transit_1_gb_3.mp3
+bus_stand,https://www.oxfordlearnersdictionaries.com/definition/english/bus-stand,C2,bus stand,bến xe buýt,noun,/ˈbʌs stænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus_s/bus_stand_1_gb_1.mp3
+bus_stop,https://www.oxfordlearnersdictionaries.com/definition/english/bus-stop,A1,bus stop,trạm xe buýt,noun,/ˈbʌs stɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus_s/bus_stop_1_gb_2.mp3
+bus_station,https://www.oxfordlearnersdictionaries.com/definition/english/bus-station,A1,bus station,bến xe buýt,noun,/ˈbʌs steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/bus_s/bus_station_1_gb_1.mp3
+change,https://www.oxfordlearnersdictionaries.com/definition/english/change_1,A2,change,thay đổi,verb,/tʃeɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chang/change__gb_2.mp3
+catch,https://www.oxfordlearnersdictionaries.com/definition/english/catch_1,A2,catch,nắm lấy,verb,/kætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/catch/catch__gb_2.mp3
+commute,https://www.oxfordlearnersdictionaries.com/definition/english/commute_2,B1,commute,đi lại,noun,/kəˈmjuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commu/commute__gb_1.mp3
+coach,https://www.oxfordlearnersdictionaries.com/definition/english/coach_1,A2,coach,huấn luyện viên,noun,/kəʊtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coach/coach__gb_2.mp3
+commute,https://www.oxfordlearnersdictionaries.com/definition/english/commute_1,B1,commute,đi lại,verb,/kəˈmjuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commu/commute__gb_1.mp3
+class,https://www.oxfordlearnersdictionaries.com/definition/english/class_1,B1,class,lớp học,noun,/klɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/class/class__gb_3.mp3
+concession,https://www.oxfordlearnersdictionaries.com/definition/english/concession,C2,concession,nhượng bộ,noun,/kənˈseʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconc/xconcession__gb_1.mp3
+departure,https://www.oxfordlearnersdictionaries.com/definition/english/departure,B1,departure,sự khởi hành,noun,/dɪˈpɑːtʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/depar/departure__gb_3.mp3
+conductor,https://www.oxfordlearnersdictionaries.com/definition/english/conductor,C2,conductor,nhạc trưởng,noun,/kənˈdʌktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xconductor__gb_1.mp3
+connection,https://www.oxfordlearnersdictionaries.com/definition/english/connection,B2,connection,sự liên quan,noun,/kəˈnekʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconn/xconnection__gb_2.mp3
+derailment,https://www.oxfordlearnersdictionaries.com/definition/english/derailment,C2,derailment,trật bánh,noun,/diːˈreɪlmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/der/derai/derailment__gb_2.mp3
+derail,https://www.oxfordlearnersdictionaries.com/definition/english/derail,C2,derail,trật bánh,verb,/diːˈreɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/der/derai/derail__gb_2.mp3
+depot,https://www.oxfordlearnersdictionaries.com/definition/english/depot,C2,depot,kho hàng,noun,/ˈdepəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/depot/depot__gb_1.mp3
+deck,https://www.oxfordlearnersdictionaries.com/definition/english/deck_1,B2,deck,boong tàu,noun,/dek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/deck_/deck__gb_1.mp3
+day_return,https://www.oxfordlearnersdictionaries.com/definition/english/day-return,B2,day return,ngày trở về,noun,/ˌdeɪ rɪˈtɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/day_r/day_return_1_gb_1.mp3
+danfo,https://www.oxfordlearnersdictionaries.com/definition/english/danfo,C2,danfo,danfo,noun,/ˈdænfəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dan/danfo/danfo__gb_3.mp3
+detrain,https://www.oxfordlearnersdictionaries.com/definition/english/detrain,C2,detrain,ngăn cản,verb,/ˌdiːˈtreɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/det/detra/detrain__gb_3.mp3
+double-decker,https://www.oxfordlearnersdictionaries.com/definition/english/double-decker,C1,double-decker,xe hai tầng,noun,/ˌdʌbl ˈdekə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dou/doubl/double_decker_1_gb_1.mp3
+fare,https://www.oxfordlearnersdictionaries.com/definition/english/fare_1,B2,fare,giá vé,noun,/feə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/fare_/fare__gb_1.mp3
+e-ticket,https://www.oxfordlearnersdictionaries.com/definition/english/e-ticket,B2,e-ticket,vé điện tử,noun,/ˈiː tɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/e_t/e_tic/e_ticket_1_gb_1.mp3
+first_class,https://www.oxfordlearnersdictionaries.com/definition/english/first-class_1,B1,first class,hạng nhất,adverb,/ˌfɜːst ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/first/first_class_1_gb_1.mp3
+e-ticketing,https://www.oxfordlearnersdictionaries.com/definition/english/e-ticketing,C1,e-ticketing,vé điện tử,noun,/ˈiː tɪkɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/e_t/e_tic/e_ticketing_1_gb_1.mp3
+hail,https://www.oxfordlearnersdictionaries.com/definition/english/hail_1,C2,hail,kêu,verb,/heɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hai/hail_/hail__gb_4.mp3
+one-way,https://www.oxfordlearnersdictionaries.com/definition/english/one-way,B1,one-way,một chiều,adjective,/ˌwʌn ˈweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/one/one_w/one_way_1_gb_1.mp3
+guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,B2,guard,canh gác,noun,/ɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guard__gb_2.mp3
+light_railway,https://www.oxfordlearnersdictionaries.com/definition/english/light-railway,C1,light railway,đường sắt nhẹ,noun,/ˌlaɪt ˈreɪlweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lig/light/light_railway_1_gb_1.mp3
+inspector,https://www.oxfordlearnersdictionaries.com/definition/english/inspector,B2,inspector,thanh tra,noun,/ɪnˈspektə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/inspe/inspector__gb_1.mp3
+non-stop,https://www.oxfordlearnersdictionaries.com/definition/english/non-stop_1,B1,non-stop,không ngừng nghỉ,adjective,/ˌnɒn ˈstɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/non/non_s/non_stop_1_gb_1.mp3
+hop,https://www.oxfordlearnersdictionaries.com/definition/english/hop_1,C2,hop,nhảy lò cò,verb,/hɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hop/hop__/hop__gb_1.mp3
+jitney,https://www.oxfordlearnersdictionaries.com/definition/english/jitney,C2,jitney,jitney,noun,/ˈdʒɪtni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jit/jitne/jitney__gb_1.mp3
+get,https://www.oxfordlearnersdictionaries.com/definition/english/get,A1,get,lấy,verb,/ɡet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/get/get__/get__gb_2.mp3
+mass_transit,https://www.oxfordlearnersdictionaries.com/definition/english/mass-transit,C1,mass transit,vận chuyển công cộng,noun,/ˌmæs ˈtrænzɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/mass_/mass_transit_1_gb_1.mp3
+parkway,https://www.oxfordlearnersdictionaries.com/definition/english/parkway,C2,parkway,đại lộ,noun,/ˈpɑːkweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parkw/parkway__gb_1.mp3
+passenger,https://www.oxfordlearnersdictionaries.com/definition/english/passenger,A2,passenger,hành khách,noun,/ˈpæsɪndʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passe/passenger__gb_2.mp3
+ply,https://www.oxfordlearnersdictionaries.com/definition/english/ply_1,C2,ply,lớp,verb,/plaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/ply/ply__/ply__gb_1.mp3
+public_transport,https://www.oxfordlearnersdictionaries.com/definition/english/public-transport,A2,public transport,phương tiện giao thông công cộng,noun,/ˌpʌblɪk ˈtrænspɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/public_transport_1_gb_1.mp3
+pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_2,B1,pass,vượt qua,noun,/pɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pass_/pass__gb_1.mp3
+porter,https://www.oxfordlearnersdictionaries.com/definition/english/porter,C1,porter,người khuân vác,noun,/ˈpɔːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/por/porte/porter__gb_1.mp3
+park_and_ride,https://www.oxfordlearnersdictionaries.com/definition/english/park-and-ride,C2,park and ride,đỗ xe và đi xe,noun,/ˌpɑːk ən ˈraɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/park_/park_and_ride_1_gb_1.mp3
 pull_in,https://www.oxfordlearnersdictionaries.com/definition/english/pull-in,C1,pull in,kéo vào,phrasal verb,,
 pull_away,https://www.oxfordlearnersdictionaries.com/definition/english/pull-away,C1,pull away,kéo đi,phrasal verb,,
-rapid_transit,https://www.oxfordlearnersdictionaries.com/definition/english/rapid-transit,C1,rapid transit,vận chuyển nhanh chóng,noun,/ˌræpɪd ˈtrænzɪt/,
+rapid_transit,https://www.oxfordlearnersdictionaries.com/definition/english/rapid-transit,C1,rapid transit,vận chuyển nhanh chóng,noun,/ˌræpɪd ˈtrænzɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rap/rapid/rapid_transit_1_gb_3.mp3
 pull_out,https://www.oxfordlearnersdictionaries.com/definition/english/pull-out_2,C1,pull out,kéo ra,phrasal verb,,
-redcap,https://www.oxfordlearnersdictionaries.com/definition/english/redcap,C2,redcap,mũ đỏ,noun,/ˈredkæp/,
-return,https://www.oxfordlearnersdictionaries.com/definition/english/return_2,B1,return,trở lại,noun,/rɪˈtɜːn/,
-reservation,https://www.oxfordlearnersdictionaries.com/definition/english/reservation,B1,reservation,sự đặt chỗ,noun,/ˌrezəˈveɪʃn/,
-request_stop,https://www.oxfordlearnersdictionaries.com/definition/english/request-stop,C1,request stop,yêu cầu dừng lại,noun,/rɪˈkwest stɒp/,
-round_trip,https://www.oxfordlearnersdictionaries.com/definition/english/round-trip_1,B1,round trip,chuyến đi khứ hồi,noun,/ˌraʊnd ˈtrɪp/,
-return_ticket,https://www.oxfordlearnersdictionaries.com/definition/english/return-ticket,A2,return ticket,vé khứ hồi,noun,/rɪˌtɜːn ˈtɪkɪt/,
-railcard,https://www.oxfordlearnersdictionaries.com/definition/english/railcard,C2,railcard,thẻ đường sắt,noun,/ˈreɪlkɑːd/,
-round-trip,https://www.oxfordlearnersdictionaries.com/definition/english/round-trip_2,B1,round-trip,chuyến đi khứ hồi,adjective,/ˌraʊnd ˈtrɪp/,
-route,https://www.oxfordlearnersdictionaries.com/definition/english/route_1,A2,route,tuyến đường,noun,/ruːt/,
-schedule,https://www.oxfordlearnersdictionaries.com/definition/english/schedule_1,A2,schedule,lịch trình,noun,/ˈʃedjuːl/,
-run,https://www.oxfordlearnersdictionaries.com/definition/english/run_1,B1,run,chạy,verb,/rʌn/,
-second_class,https://www.oxfordlearnersdictionaries.com/definition/english/second-class_1,B1,second class,hạng hai,noun,/ˌsekənd ˈklɑːs/,
-service,https://www.oxfordlearnersdictionaries.com/definition/english/service_1,B2,service,dịch vụ,noun,/ˈsɜːvɪs/,
-shuttle,https://www.oxfordlearnersdictionaries.com/definition/english/shuttle_1,C1,shuttle,đưa đón,noun,/ˈʃʌtl/,
-season_ticket,https://www.oxfordlearnersdictionaries.com/definition/english/season-ticket,C1,season ticket,vé mùa,noun,/ˈsiːzn tɪkɪt/,
-single,https://www.oxfordlearnersdictionaries.com/definition/english/single_1,A2,single,đơn,adjective,/ˈsɪŋɡl/,
-single,https://www.oxfordlearnersdictionaries.com/definition/english/single_2,A2,single,đơn,noun,/ˈsɪŋɡl/,
-stop,https://www.oxfordlearnersdictionaries.com/definition/english/stop_2,A1,stop,dừng lại,noun,/stɒp/,
-single-decker,https://www.oxfordlearnersdictionaries.com/definition/english/single-decker,C1,single-decker,tàu một tầng,noun,/ˌsɪŋɡl ˈdekə(r)/,
-terminal,https://www.oxfordlearnersdictionaries.com/definition/english/terminal_1,B2,terminal,phần cuối,noun,/ˈtɜːmɪnl/,
-terminate,https://www.oxfordlearnersdictionaries.com/definition/english/terminate,C2,terminate,chấm dứt,verb,/ˈtɜːmɪneɪt/,
-third_class,https://www.oxfordlearnersdictionaries.com/definition/english/third-class_2,B1,third class,hạng ba,adverb,/ˌθɜːd ˈklɑːs/,
-ticket,https://www.oxfordlearnersdictionaries.com/definition/english/ticket_1,A1,ticket,vé,noun,/ˈtɪkɪt/,
-terminus,https://www.oxfordlearnersdictionaries.com/definition/english/terminus,C2,terminus,ga cuối,noun,/ˈtɜːmɪnəs/,
-take,https://www.oxfordlearnersdictionaries.com/definition/english/take_1,A1,take,lấy,verb,/teɪk/,
-through,https://www.oxfordlearnersdictionaries.com/definition/english/through_2,A2,through,bởi vì,adverb,/θruː/,
-timetable,https://www.oxfordlearnersdictionaries.com/definition/english/timetable_1,A2,timetable,thời gian biểu,noun,/ˈtaɪmteɪbl/,
-transfer,https://www.oxfordlearnersdictionaries.com/definition/english/transfer_2,C1,transfer,chuyển khoản,noun,/ˈtrænsfɜː(r)/,
-window_seat,https://www.oxfordlearnersdictionaries.com/definition/english/window-seat,B1,window seat,chỗ ngồi bên cửa sổ,noun,/ˈwɪndəʊ siːt/,
-transit,https://www.oxfordlearnersdictionaries.com/definition/english/transit_1,C1,transit,quá cảnh,noun,/ˈtrænzɪt/,
+redcap,https://www.oxfordlearnersdictionaries.com/definition/english/redcap,C2,redcap,mũ đỏ,noun,/ˈredkæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/red/redca/redcap__gb_1.mp3
+return,https://www.oxfordlearnersdictionaries.com/definition/english/return_2,B1,return,trở lại,noun,/rɪˈtɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ret/retur/return__gb_1.mp3
+reservation,https://www.oxfordlearnersdictionaries.com/definition/english/reservation,B1,reservation,sự đặt chỗ,noun,/ˌrezəˈveɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/reser/reservation__gb_2.mp3
+request_stop,https://www.oxfordlearnersdictionaries.com/definition/english/request-stop,C1,request stop,yêu cầu dừng lại,noun,/rɪˈkwest stɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/req/reque/request_stop_1_gb_1.mp3
+round_trip,https://www.oxfordlearnersdictionaries.com/definition/english/round-trip_1,B1,round trip,chuyến đi khứ hồi,noun,/ˌraʊnd ˈtrɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/round/round_trip_1_gb_1.mp3
+return_ticket,https://www.oxfordlearnersdictionaries.com/definition/english/return-ticket,A2,return ticket,vé khứ hồi,noun,/rɪˌtɜːn ˈtɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ret/retur/return_ticket_1_gb_1.mp3
+railcard,https://www.oxfordlearnersdictionaries.com/definition/english/railcard,C2,railcard,thẻ đường sắt,noun,/ˈreɪlkɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/railc/railcard__gb_1.mp3
+round-trip,https://www.oxfordlearnersdictionaries.com/definition/english/round-trip_2,B1,round-trip,chuyến đi khứ hồi,adjective,/ˌraʊnd ˈtrɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/round/round_trip_1_gb_1.mp3
+route,https://www.oxfordlearnersdictionaries.com/definition/english/route_1,A2,route,tuyến đường,noun,/ruːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/route/route__gb_4.mp3
+schedule,https://www.oxfordlearnersdictionaries.com/definition/english/schedule_1,A2,schedule,lịch trình,noun,/ˈʃedjuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/sched/schedule__gb_1.mp3
+run,https://www.oxfordlearnersdictionaries.com/definition/english/run_1,B1,run,chạy,verb,/rʌn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/run/run__/run__gb_1.mp3
+second_class,https://www.oxfordlearnersdictionaries.com/definition/english/second-class_1,B1,second class,hạng hai,noun,/ˌsekənd ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secon/second_class_1_gb_1.mp3
+service,https://www.oxfordlearnersdictionaries.com/definition/english/service_1,B2,service,dịch vụ,noun,/ˈsɜːvɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/servi/service__gb_2.mp3
+shuttle,https://www.oxfordlearnersdictionaries.com/definition/english/shuttle_1,C1,shuttle,đưa đón,noun,/ˈʃʌtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/shu/shutt/shuttle__gb_1.mp3
+season_ticket,https://www.oxfordlearnersdictionaries.com/definition/english/season-ticket,C1,season ticket,vé mùa,noun,/ˈsiːzn tɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seaso/season_ticket_1_gb_1.mp3
+single,https://www.oxfordlearnersdictionaries.com/definition/english/single_1,A2,single,đơn,adjective,/ˈsɪŋɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/single__gb_1.mp3
+single,https://www.oxfordlearnersdictionaries.com/definition/english/single_2,A2,single,đơn,noun,/ˈsɪŋɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/single__gb_1.mp3
+stop,https://www.oxfordlearnersdictionaries.com/definition/english/stop_2,A1,stop,dừng lại,noun,/stɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/stop_/stop__gb_1.mp3
+single-decker,https://www.oxfordlearnersdictionaries.com/definition/english/single-decker,C1,single-decker,tàu một tầng,noun,/ˌsɪŋɡl ˈdekə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/singl/single_decker_1_gb_1.mp3
+terminal,https://www.oxfordlearnersdictionaries.com/definition/english/terminal_1,B2,terminal,phần cuối,noun,/ˈtɜːmɪnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/termi/terminal__gb_3.mp3
+terminate,https://www.oxfordlearnersdictionaries.com/definition/english/terminate,C2,terminate,chấm dứt,verb,/ˈtɜːmɪneɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/termi/terminate__gb_3.mp3
+third_class,https://www.oxfordlearnersdictionaries.com/definition/english/third-class_2,B1,third class,hạng ba,adverb,/ˌθɜːd ˈklɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/third/third_class_1_gb_2.mp3
+ticket,https://www.oxfordlearnersdictionaries.com/definition/english/ticket_1,A1,ticket,vé,noun,/ˈtɪkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tic/ticke/ticket__gb_1.mp3
+terminus,https://www.oxfordlearnersdictionaries.com/definition/english/terminus,C2,terminus,ga cuối,noun,/ˈtɜːmɪnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/termi/terminus__gb_1.mp3
+take,https://www.oxfordlearnersdictionaries.com/definition/english/take_1,A1,take,lấy,verb,/teɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tak/take_/take__gb_1.mp3
+through,https://www.oxfordlearnersdictionaries.com/definition/english/through_2,A2,through,bởi vì,adverb,/θruː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/throu/through__gb_1.mp3
+timetable,https://www.oxfordlearnersdictionaries.com/definition/english/timetable_1,A2,timetable,thời gian biểu,noun,/ˈtaɪmteɪbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/timet/timetable__gb_1.mp3
+transfer,https://www.oxfordlearnersdictionaries.com/definition/english/transfer_2,C1,transfer,chuyển khoản,noun,/ˈtrænsfɜː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transfer__gb_3.mp3
+window_seat,https://www.oxfordlearnersdictionaries.com/definition/english/window-seat,B1,window seat,chỗ ngồi bên cửa sổ,noun,/ˈwɪndəʊ siːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/windo/window_seat_1_gb_1.mp3
+transit,https://www.oxfordlearnersdictionaries.com/definition/english/transit_1,C1,transit,quá cảnh,noun,/ˈtrænzɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trans/transit__gb_1.mp3

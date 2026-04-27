@@ -1,31 +1,31 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-hadith,https://www.oxfordlearnersdictionaries.com/definition/english/hadith,C2,Hadith,Hadith,noun,/hæˈdiːθ/,
-biblical,https://www.oxfordlearnersdictionaries.com/definition/english/biblical,C2,biblical,kinh thánh,adjective,/ˈbɪblɪkl/,
-gospel,https://www.oxfordlearnersdictionaries.com/definition/english/gospel,C2,gospel,phúc âm,noun,/ˈɡɒspl/,
-koran,https://www.oxfordlearnersdictionaries.com/definition/english/koran,C1,Koran,kinh Koran,noun,/kəˈrɑːn/,
-bible,https://www.oxfordlearnersdictionaries.com/definition/english/bible,C1,bible,kinh thánh,noun,/ˈbaɪbl/,
-canonical,https://www.oxfordlearnersdictionaries.com/definition/english/canonical,C2,canonical,kinh điển,adjective,/kəˈnɒnɪkl/,
-adi_granth,https://www.oxfordlearnersdictionaries.com/definition/english/adi-granth,C2,Adi Granth,Adi Granth,noun,/ˌɑːdi ˈɡrʌnt/,
-guru_granth_sahib,https://www.oxfordlearnersdictionaries.com/definition/english/guru-granth-sahib,C2,Guru Granth Sahib,Đạo sư Granth Sahib,noun,/ˌɡʊruː ˈɡrʌnt sɑːb/,
-hymn_book,https://www.oxfordlearnersdictionaries.com/definition/english/hymn-book,C2,hymn book,sách thánh ca,noun,/ˈhɪm bʊk/,
-parable,https://www.oxfordlearnersdictionaries.com/definition/english/parable,C2,parable,chuyện ngụ ngôn,noun,/ˈpærəbl/,
-psalm,https://www.oxfordlearnersdictionaries.com/definition/english/psalm,C2,psalm,thánh vịnh,noun,/sɑːm/,
-qur’an,https://www.oxfordlearnersdictionaries.com/definition/english/qur-an,C1,Qur’an,Kinh Qur'an,noun,/kəˈrɑːn/,
-epistle,https://www.oxfordlearnersdictionaries.com/definition/english/epistle,C2,epistle,thư tín,noun,/ɪˈpɪsl/,
-old_testament,https://www.oxfordlearnersdictionaries.com/definition/english/the-old-testament,C2,Old Testament,Cựu Ước,noun,/ði ˌəʊld ˈtestəmənt/,
-new_testament,https://www.oxfordlearnersdictionaries.com/definition/english/the-new-testament,C2,New Testament,Tân Ước,noun,/ðə ˌnjuː ˈtestəmənt/,
-psalter,https://www.oxfordlearnersdictionaries.com/definition/english/psalter,C2,psalter,thánh vịnh,noun,/ˈsɔːltə(r)/,
-scriptural,https://www.oxfordlearnersdictionaries.com/definition/english/scriptural,C2,scriptural,kinh thánh,adjective,/ˈskrɪptʃərəl/,
-reading,https://www.oxfordlearnersdictionaries.com/definition/english/reading_1,C2,reading,đọc,noun,/ˈriːdɪŋ/,
-scripture,https://www.oxfordlearnersdictionaries.com/definition/english/scripture,C2,scripture,kinh thánh,noun,/ˈskrɪptʃə(r)/,
-rig_veda,https://www.oxfordlearnersdictionaries.com/definition/english/the-rig-veda,C2,Rig Veda,Rig Veda,noun,/ðə ˌrɪɡ ˈveɪdə/,
-sura,https://www.oxfordlearnersdictionaries.com/definition/english/sura,C2,sura,sura,noun,/ˈsʊərə/,
-talmud,https://www.oxfordlearnersdictionaries.com/definition/english/the-talmud,C2,Talmud,Talmud,noun,/ðə ˈtælmʊd/,
-tantra,https://www.oxfordlearnersdictionaries.com/definition/english/tantra,C2,tantra,mật tông,noun,/ˈtæntrə/,
-torah,https://www.oxfordlearnersdictionaries.com/definition/english/torah,C2,Torah,kinh Torah,noun,/ˈtɔːrə/,
-veda,https://www.oxfordlearnersdictionaries.com/definition/english/veda,C2,Veda,kinh Veda,noun,/ˈveɪdə/,
-sutra,https://www.oxfordlearnersdictionaries.com/definition/english/sutra,C2,sutra,kinh,noun,/ˈsuːtrə/,
-verse,https://www.oxfordlearnersdictionaries.com/definition/english/verse,C2,verse,thơ,noun,/vɜːs/,
-word,https://www.oxfordlearnersdictionaries.com/definition/english/word_1,C2,word,từ,noun,/wɜːd/,
-vedic,https://www.oxfordlearnersdictionaries.com/definition/english/vedic_1,C2,Vedic,kinh Vệ Đà,adjective,/ˈveɪdɪk/,
-zend_a’vesta,https://www.oxfordlearnersdictionaries.com/definition/english/zend-a-vesta,C2,Zend A’vesta,Zend A'vesta,noun,/ˌzend əˈvestə/,
+hadith,https://www.oxfordlearnersdictionaries.com/definition/english/hadith,C2,Hadith,Hadith,noun,/hæˈdiːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/had/hadit/hadith_1_gb_2.mp3
+biblical,https://www.oxfordlearnersdictionaries.com/definition/english/biblical,C2,biblical,kinh thánh,adjective,/ˈbɪblɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bib/bibli/biblical__gb_2.mp3
+gospel,https://www.oxfordlearnersdictionaries.com/definition/english/gospel,C2,gospel,phúc âm,noun,/ˈɡɒspl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gos/gospe/gospel__gb_2.mp3
+koran,https://www.oxfordlearnersdictionaries.com/definition/english/koran,C1,Koran,kinh Koran,noun,/kəˈrɑːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kor/koran/koran__gb_1.mp3
+bible,https://www.oxfordlearnersdictionaries.com/definition/english/bible,C1,bible,kinh thánh,noun,/ˈbaɪbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bib/bible/bible__gb_2.mp3
+canonical,https://www.oxfordlearnersdictionaries.com/definition/english/canonical,C2,canonical,kinh điển,adjective,/kəˈnɒnɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canon/canonical__gb_1.mp3
+adi_granth,https://www.oxfordlearnersdictionaries.com/definition/english/adi-granth,C2,Adi Granth,Adi Granth,noun,/ˌɑːdi ˈɡrʌnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adi/adi_g/adi_granth_1_gb_1.mp3
+guru_granth_sahib,https://www.oxfordlearnersdictionaries.com/definition/english/guru-granth-sahib,C2,Guru Granth Sahib,Đạo sư Granth Sahib,noun,/ˌɡʊruː ˈɡrʌnt sɑːb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gur/guru_/guru_granth_sahib_1_gb_6.mp3
+hymn_book,https://www.oxfordlearnersdictionaries.com/definition/english/hymn-book,C2,hymn book,sách thánh ca,noun,/ˈhɪm bʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hym/hymn_/hymn_book_1_gb_1.mp3
+parable,https://www.oxfordlearnersdictionaries.com/definition/english/parable,C2,parable,chuyện ngụ ngôn,noun,/ˈpærəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parab/parable__gb_1.mp3
+psalm,https://www.oxfordlearnersdictionaries.com/definition/english/psalm,C2,psalm,thánh vịnh,noun,/sɑːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/psa/psalm/psalm__gb_1.mp3
+qur’an,https://www.oxfordlearnersdictionaries.com/definition/english/qur-an,C1,Qur’an,Kinh Qur'an,noun,/kəˈrɑːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kor/koran/koran__gb_1.mp3
+epistle,https://www.oxfordlearnersdictionaries.com/definition/english/epistle,C2,epistle,thư tín,noun,/ɪˈpɪsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/epi/epist/epistle__gb_1.mp3
+old_testament,https://www.oxfordlearnersdictionaries.com/definition/english/the-old-testament,C2,Old Testament,Cựu Ước,noun,/ði ˌəʊld ˈtestəmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_o/the_old_testament_1_gb_1.mp3
+new_testament,https://www.oxfordlearnersdictionaries.com/definition/english/the-new-testament,C2,New Testament,Tân Ước,noun,/ðə ˌnjuː ˈtestəmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_n/the_new_testament_1_gb_1.mp3
+psalter,https://www.oxfordlearnersdictionaries.com/definition/english/psalter,C2,psalter,thánh vịnh,noun,/ˈsɔːltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/psa/psalt/psalter__gb_1.mp3
+scriptural,https://www.oxfordlearnersdictionaries.com/definition/english/scriptural,C2,scriptural,kinh thánh,adjective,/ˈskrɪptʃərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrip/scriptural__gb_1.mp3
+reading,https://www.oxfordlearnersdictionaries.com/definition/english/reading_1,C2,reading,đọc,noun,/ˈriːdɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rea/readi/reading__gb_1.mp3
+scripture,https://www.oxfordlearnersdictionaries.com/definition/english/scripture,C2,scripture,kinh thánh,noun,/ˈskrɪptʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrip/scripture__gb_1.mp3
+rig_veda,https://www.oxfordlearnersdictionaries.com/definition/english/the-rig-veda,C2,Rig Veda,Rig Veda,noun,/ðə ˌrɪɡ ˈveɪdə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_r/the_rig_veda_1_gb_1.mp3
+sura,https://www.oxfordlearnersdictionaries.com/definition/english/sura,C2,sura,sura,noun,/ˈsʊərə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sur/sura_/sura__gb_1.mp3
+talmud,https://www.oxfordlearnersdictionaries.com/definition/english/the-talmud,C2,Talmud,Talmud,noun,/ðə ˈtælmʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_t/the_talmud_1_gb_1.mp3
+tantra,https://www.oxfordlearnersdictionaries.com/definition/english/tantra,C2,tantra,mật tông,noun,/ˈtæntrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tan/tantr/tantra__gb_1.mp3
+torah,https://www.oxfordlearnersdictionaries.com/definition/english/torah,C2,Torah,kinh Torah,noun,/ˈtɔːrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tor/torah/torah_1_gb_3.mp3
+veda,https://www.oxfordlearnersdictionaries.com/definition/english/veda,C2,Veda,kinh Veda,noun,/ˈveɪdə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ved/veda_/veda__gb_1.mp3
+sutra,https://www.oxfordlearnersdictionaries.com/definition/english/sutra,C2,sutra,kinh,noun,/ˈsuːtrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sut/sutra/sutra__gb_1.mp3
+verse,https://www.oxfordlearnersdictionaries.com/definition/english/verse,C2,verse,thơ,noun,/vɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ver/verse/verse__gb_1.mp3
+word,https://www.oxfordlearnersdictionaries.com/definition/english/word_1,C2,word,từ,noun,/wɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/word_/word__gb_1.mp3
+vedic,https://www.oxfordlearnersdictionaries.com/definition/english/vedic_1,C2,Vedic,kinh Vệ Đà,adjective,/ˈveɪdɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ved/vedic/vedic__gb_1.mp3
+zend_a’vesta,https://www.oxfordlearnersdictionaries.com/definition/english/zend-a-vesta,C2,Zend A’vesta,Zend A'vesta,noun,/ˌzend əˈvestə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zen/zend_/zend_a_vesta_1_gb_1.mp3

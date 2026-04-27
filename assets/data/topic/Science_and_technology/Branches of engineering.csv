@@ -1,6 +1,6 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-civil_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/civil-engineering,C1,civil engineering,kỹ thuật dân dụng,noun,/ˌsɪvl endʒɪˈnɪərɪŋ/,
-robotics,https://www.oxfordlearnersdictionaries.com/definition/english/robotics,C1,robotics,người máy,noun,/rəʊˈbɒtɪks/,
-electrical_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/electrical-engineering,B2,electrical engineering,kỹ thuật điện,noun,/ɪˌlektrɪkl endʒɪˈnɪərɪŋ/,
-chemical_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/chemical-engineering,B2,chemical engineering,kỹ thuật hóa học,noun,/ˌkemɪkl endʒɪˈnɪərɪŋ/,
-mechanical_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/mechanical-engineering,B2,mechanical engineering,kỹ thuật cơ khí,noun,/məˌkænɪkl endʒɪˈnɪərɪŋ/,
+civil_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/civil-engineering,C1,civil engineering,kỹ thuật dân dụng,noun,/ˌsɪvl endʒɪˈnɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/civ/civil/civil_engineering_1_gb_1.mp3
+robotics,https://www.oxfordlearnersdictionaries.com/definition/english/robotics,C1,robotics,người máy,noun,/rəʊˈbɒtɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rob/robot/robotics__gb_1.mp3
+electrical_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/electrical-engineering,B2,electrical engineering,kỹ thuật điện,noun,/ɪˌlektrɪkl endʒɪˈnɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electrical_engineering_1_gb_1.mp3
+chemical_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/chemical-engineering,B2,chemical engineering,kỹ thuật hóa học,noun,/ˌkemɪkl endʒɪˈnɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chemi/chemical_engineering_1_gb_1.mp3
+mechanical_engineering,https://www.oxfordlearnersdictionaries.com/definition/english/mechanical-engineering,B2,mechanical engineering,kỹ thuật cơ khí,noun,/məˌkænɪkl endʒɪˈnɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mec/mecha/mechanical_engineering_1_gb_1.mp3

@@ -1,45 +1,45 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-alert,https://www.oxfordlearnersdictionaries.com/definition/english/alert_3,C1,alert,báo động,adjective,/əˈlɜːt/,
-caution,https://www.oxfordlearnersdictionaries.com/definition/english/caution_1,C1,caution,thận trọng,noun,/ˈkɔːʃn/,
-alarm,https://www.oxfordlearnersdictionaries.com/definition/english/alarm_1,B1,alarm,báo thức,noun,/əˈlɑːm/,
-be_on_the_watch_(for_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/watch_2,C2,be on the watch (for somebody/something),canh chừng (cho ai/cái gì),noun,/wɒtʃ/,
-do_something_at_your_(own)_peril,https://www.oxfordlearnersdictionaries.com/definition/english/peril,C2,do something at your (own) peril,làm điều gì đó trong tình trạng nguy hiểm (của riêng bạn),noun,/ˈperəl/,
-be_on_the_lookout_(for_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/lookout,C2,be on the lookout (for somebody/something),đề phòng (ai/cái gì),noun,/ˈlʊkaʊt/,
-alert,https://www.oxfordlearnersdictionaries.com/definition/english/alert_1,C1,alert,báo động,verb,/əˈlɜːt/,
-be_on_your_guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,C2,be on your guard,hãy cảnh giác,noun,/ɡɑːd/,
-avert,https://www.oxfordlearnersdictionaries.com/definition/english/avert,C1,avert,tránh xa,verb,/əˈvɜːt/,
-escape,https://www.oxfordlearnersdictionaries.com/definition/english/escape_2,B1,escape,bỏ trốn,noun,/ɪˈskeɪp/,
-escape,https://www.oxfordlearnersdictionaries.com/definition/english/escape_1,B1,escape,bỏ trốn,verb,/ɪˈskeɪp/,
-evacuate,https://www.oxfordlearnersdictionaries.com/definition/english/evacuate,C1,evacuate,sơ tán,verb,/ɪˈvækjueɪt/,
-discretion_is_the_better_part_of_valour,https://www.oxfordlearnersdictionaries.com/definition/english/discretion,C2,discretion is the better part of valour,sự thận trọng là phần tốt hơn của lòng dũng cảm,noun,/dɪˈskreʃn/,
-evacuation,https://www.oxfordlearnersdictionaries.com/definition/english/evacuation,C1,evacuation,sơ tán,noun,/ɪˌvækjuˈeɪʃn/,
-flight,https://www.oxfordlearnersdictionaries.com/definition/english/flight_1,C2,flight,chuyến bay,noun,/flaɪt/,
-evacuee,https://www.oxfordlearnersdictionaries.com/definition/english/evacuee,C2,evacuee,người sơ tán,noun,/ɪˌvækjuˈiː/,
-flee,https://www.oxfordlearnersdictionaries.com/definition/english/flee,C1,flee,chạy trốn,verb,/fliː/,
-early_warning,https://www.oxfordlearnersdictionaries.com/definition/english/early-warning,C1,early warning,cảnh báo sớm,noun,/ˌɜːli ˈwɔːnɪŋ/,
-guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,B2,guard,canh gác,noun,/ɡɑːd/,
-harmless,https://www.oxfordlearnersdictionaries.com/definition/english/harmless,B2,harmless,vô hại,adjective,/ˈhɑːmləs/,
-guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_2,B1,guard,canh gác,verb,/ɡɑːd/,
-for_fear_of_something/of_doing_something,https://www.oxfordlearnersdictionaries.com/definition/english/fear_1,C1,for fear of something/of doing something,vì sợ điều gì đó/làm điều gì đó,noun,/fɪə(r)/,
-forewarned_is_forearmed,https://www.oxfordlearnersdictionaries.com/definition/english/forewarn,C2,forewarned is forearmed,được báo trước là đã được báo trước,verb,/fɔːˈwɔːn/,
-harmlessly,https://www.oxfordlearnersdictionaries.com/definition/english/harmlessly,B2,harmlessly,vô hại,adverb,/ˈhɑːmləsli/,
-foghorn,https://www.oxfordlearnersdictionaries.com/definition/english/foghorn,C2,foghorn,còi báo sương mù,noun,/ˈfɒɡhɔːn/,
-help,https://www.oxfordlearnersdictionaries.com/definition/english/help_2,A1,help,giúp đỡ,noun,/help/,
-"live,_etc._to_tell_the_tale",https://www.oxfordlearnersdictionaries.com/definition/english/tell,C2,"live, etc. to tell the tale","sống, v.v. để kể câu chuyện",verb,/tel/,
+alert,https://www.oxfordlearnersdictionaries.com/definition/english/alert_3,C1,alert,báo động,adjective,/əˈlɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ale/alert/alert__gb_1.mp3
+caution,https://www.oxfordlearnersdictionaries.com/definition/english/caution_1,C1,caution,thận trọng,noun,/ˈkɔːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cau/cauti/caution__gb_2.mp3
+alarm,https://www.oxfordlearnersdictionaries.com/definition/english/alarm_1,B1,alarm,báo thức,noun,/əˈlɑːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ala/alarm/alarm__gb_1.mp3
+be_on_the_watch_(for_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/watch_2,C2,be on the watch (for somebody/something),canh chừng (cho ai/cái gì),noun,/wɒtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wat/watch/watch__gb_2.mp3
+do_something_at_your_(own)_peril,https://www.oxfordlearnersdictionaries.com/definition/english/peril,C2,do something at your (own) peril,làm điều gì đó trong tình trạng nguy hiểm (của riêng bạn),noun,/ˈperəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/peril/peril__gb_1.mp3
+be_on_the_lookout_(for_somebody/something),https://www.oxfordlearnersdictionaries.com/definition/english/lookout,C2,be on the lookout (for somebody/something),đề phòng (ai/cái gì),noun,/ˈlʊkaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loo/looko/lookout__gb_1.mp3
+alert,https://www.oxfordlearnersdictionaries.com/definition/english/alert_1,C1,alert,báo động,verb,/əˈlɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ale/alert/alert__gb_1.mp3
+be_on_your_guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,C2,be on your guard,hãy cảnh giác,noun,/ɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guard__gb_2.mp3
+avert,https://www.oxfordlearnersdictionaries.com/definition/english/avert,C1,avert,tránh xa,verb,/əˈvɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ave/avert/avert__gb_1.mp3
+escape,https://www.oxfordlearnersdictionaries.com/definition/english/escape_2,B1,escape,bỏ trốn,noun,/ɪˈskeɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/esc/escap/escape__gb_1.mp3
+escape,https://www.oxfordlearnersdictionaries.com/definition/english/escape_1,B1,escape,bỏ trốn,verb,/ɪˈskeɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/esc/escap/escape__gb_1.mp3
+evacuate,https://www.oxfordlearnersdictionaries.com/definition/english/evacuate,C1,evacuate,sơ tán,verb,/ɪˈvækjueɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eva/evacu/evacuate__gb_1.mp3
+discretion_is_the_better_part_of_valour,https://www.oxfordlearnersdictionaries.com/definition/english/discretion,C2,discretion is the better part of valour,sự thận trọng là phần tốt hơn của lòng dũng cảm,noun,/dɪˈskreʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/discr/discretion__gb_2.mp3
+evacuation,https://www.oxfordlearnersdictionaries.com/definition/english/evacuation,C1,evacuation,sơ tán,noun,/ɪˌvækjuˈeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eva/evacu/evacuation__gb_1.mp3
+flight,https://www.oxfordlearnersdictionaries.com/definition/english/flight_1,C2,flight,chuyến bay,noun,/flaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fli/fligh/flight__gb_1.mp3
+evacuee,https://www.oxfordlearnersdictionaries.com/definition/english/evacuee,C2,evacuee,người sơ tán,noun,/ɪˌvækjuˈiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eva/evacu/evacuee__gb_1.mp3
+flee,https://www.oxfordlearnersdictionaries.com/definition/english/flee,C1,flee,chạy trốn,verb,/fliː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fle/flee_/flee__gb_1.mp3
+early_warning,https://www.oxfordlearnersdictionaries.com/definition/english/early-warning,C1,early warning,cảnh báo sớm,noun,/ˌɜːli ˈwɔːnɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ear/early/early_warning_1_gb_1.mp3
+guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_1,B2,guard,canh gác,noun,/ɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guard__gb_2.mp3
+harmless,https://www.oxfordlearnersdictionaries.com/definition/english/harmless,B2,harmless,vô hại,adjective,/ˈhɑːmləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/har/harml/harmless__gb_1.mp3
+guard,https://www.oxfordlearnersdictionaries.com/definition/english/guard_2,B1,guard,canh gác,verb,/ɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gua/guard/guard__gb_2.mp3
+for_fear_of_something/of_doing_something,https://www.oxfordlearnersdictionaries.com/definition/english/fear_1,C1,for fear of something/of doing something,vì sợ điều gì đó/làm điều gì đó,noun,/fɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fea/fear_/fear__gb_1.mp3
+forewarned_is_forearmed,https://www.oxfordlearnersdictionaries.com/definition/english/forewarn,C2,forewarned is forearmed,được báo trước là đã được báo trước,verb,/fɔːˈwɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forew/forewarn__gb_1.mp3
+harmlessly,https://www.oxfordlearnersdictionaries.com/definition/english/harmlessly,B2,harmlessly,vô hại,adverb,/ˈhɑːmləsli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/har/harml/harmlessly__gb_1.mp3
+foghorn,https://www.oxfordlearnersdictionaries.com/definition/english/foghorn,C2,foghorn,còi báo sương mù,noun,/ˈfɒɡhɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fog/fogho/foghorn__gb_1.mp3
+help,https://www.oxfordlearnersdictionaries.com/definition/english/help_2,A1,help,giúp đỡ,noun,/help/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hel/help_/help__gb_1.mp3
+"live,_etc._to_tell_the_tale",https://www.oxfordlearnersdictionaries.com/definition/english/tell,C2,"live, etc. to tell the tale","sống, v.v. để kể câu chuyện",verb,/tel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tel/tell_/tell__gb_1.mp3
 look_out,https://www.oxfordlearnersdictionaries.com/definition/english/look-out,B1,look out,nhìn ra ngoài,phrasal verb,,
-precautionary,https://www.oxfordlearnersdictionaries.com/definition/english/precautionary,C2,precautionary,đề phòng,adjective,/prɪˈkɔːʃənəri/,
-precaution,https://www.oxfordlearnersdictionaries.com/definition/english/precaution,C1,precaution,đề phòng,noun,/prɪˈkɔːʃn/,
-mind,https://www.oxfordlearnersdictionaries.com/definition/english/mind_2,B1,mind,tâm trí,verb,/maɪnd/,
-presence_of_mind,https://www.oxfordlearnersdictionaries.com/definition/english/presence-of-mind,C2,presence of mind,sự hiện diện của tâm trí,noun,/ˌprezns əv ˈmaɪnd/,
-red_alert,https://www.oxfordlearnersdictionaries.com/definition/english/red-alert,C2,red alert,báo động đỏ,noun,/ˌred əˈlɜːt/,
-refuge,https://www.oxfordlearnersdictionaries.com/definition/english/refuge,C1,refuge,nơi trú ẩn,noun,/ˈrefjuːdʒ/,
+precautionary,https://www.oxfordlearnersdictionaries.com/definition/english/precautionary,C2,precautionary,đề phòng,adjective,/prɪˈkɔːʃənəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preca/precautionary__gb_1.mp3
+precaution,https://www.oxfordlearnersdictionaries.com/definition/english/precaution,C1,precaution,đề phòng,noun,/prɪˈkɔːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/preca/precaution__gb_1.mp3
+mind,https://www.oxfordlearnersdictionaries.com/definition/english/mind_2,B1,mind,tâm trí,verb,/maɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/mind_/mind__gb_1.mp3
+presence_of_mind,https://www.oxfordlearnersdictionaries.com/definition/english/presence-of-mind,C2,presence of mind,sự hiện diện của tâm trí,noun,/ˌprezns əv ˈmaɪnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/prese/presence_of_mind_1_gb_1.mp3
+red_alert,https://www.oxfordlearnersdictionaries.com/definition/english/red-alert,C2,red alert,báo động đỏ,noun,/ˌred əˈlɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/red/red_a/red_alert_1_gb_1.mp3
+refuge,https://www.oxfordlearnersdictionaries.com/definition/english/refuge,C1,refuge,nơi trú ẩn,noun,/ˈrefjuːdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ref/refug/refuge__gb_1.mp3
 mind_out,https://www.oxfordlearnersdictionaries.com/definition/english/mind-out,C2,mind out,để ý,phrasal verb,,
-rescue,https://www.oxfordlearnersdictionaries.com/definition/english/rescue_1,B2,rescue,giải thoát,verb,/ˈreskjuː/,
-red_flag,https://www.oxfordlearnersdictionaries.com/definition/english/red-flag,C2,red flag,cờ đỏ,noun,/ˌred ˈflæɡ/,
-rescue_dog,https://www.oxfordlearnersdictionaries.com/definition/english/rescue-dog,C1,rescue dog,chó cứu hộ,noun,/ˈreskjuː dɒɡ/,
-rescue_worker,https://www.oxfordlearnersdictionaries.com/definition/english/rescue-worker,B2,rescue worker,nhân viên cứu hộ,noun,/ˈreskjuː wɜːkə(r)/,
-rescuer,https://www.oxfordlearnersdictionaries.com/definition/english/rescuer,B2,rescuer,người cứu hộ,noun,/ˈreskjuːə(r)/,
-risk-averse,https://www.oxfordlearnersdictionaries.com/definition/english/risk-averse,C2,risk-averse,không thích rủi ro,adjective,/ˈrɪsk əvɜːs/,
-safeguard,https://www.oxfordlearnersdictionaries.com/definition/english/safeguard_2,C1,safeguard,bảo vệ,noun,/ˈseɪfɡɑːd/,
-rescue,https://www.oxfordlearnersdictionaries.com/definition/english/rescue_2,B2,rescue,giải thoát,noun,/ˈreskjuː/,
-safety_measure,https://www.oxfordlearnersdictionaries.com/definition/english/safety-measure,B1,safety measure,biện pháp an toàn,noun,/ˈseɪfti meʒə(r)/,
+rescue,https://www.oxfordlearnersdictionaries.com/definition/english/rescue_1,B2,rescue,giải thoát,verb,/ˈreskjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rescu/rescue__gb_1.mp3
+red_flag,https://www.oxfordlearnersdictionaries.com/definition/english/red-flag,C2,red flag,cờ đỏ,noun,/ˌred ˈflæɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/red/red_f/red_flag_1_gb_1.mp3
+rescue_dog,https://www.oxfordlearnersdictionaries.com/definition/english/rescue-dog,C1,rescue dog,chó cứu hộ,noun,/ˈreskjuː dɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rescu/rescue_dog_1_gb_1.mp3
+rescue_worker,https://www.oxfordlearnersdictionaries.com/definition/english/rescue-worker,B2,rescue worker,nhân viên cứu hộ,noun,/ˈreskjuː wɜːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rescu/rescue_worker_1_gb_1.mp3
+rescuer,https://www.oxfordlearnersdictionaries.com/definition/english/rescuer,B2,rescuer,người cứu hộ,noun,/ˈreskjuːə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rescu/rescuer__gb_1.mp3
+risk-averse,https://www.oxfordlearnersdictionaries.com/definition/english/risk-averse,C2,risk-averse,không thích rủi ro,adjective,/ˈrɪsk əvɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ris/risk_/risk_averse_1_gb_3.mp3
+safeguard,https://www.oxfordlearnersdictionaries.com/definition/english/safeguard_2,C1,safeguard,bảo vệ,noun,/ˈseɪfɡɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/saf/safeg/safeguard__gb_1.mp3
+rescue,https://www.oxfordlearnersdictionaries.com/definition/english/rescue_2,B2,rescue,giải thoát,noun,/ˈreskjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/rescu/rescue__gb_1.mp3
+safety_measure,https://www.oxfordlearnersdictionaries.com/definition/english/safety-measure,B1,safety measure,biện pháp an toàn,noun,/ˈseɪfti meʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/saf/safet/safety_measure_1_gb_1.mp3

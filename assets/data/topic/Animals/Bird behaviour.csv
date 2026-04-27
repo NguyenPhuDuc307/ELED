@@ -1,39 +1,39 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-dive,https://www.oxfordlearnersdictionaries.com/definition/english/dive_1,B2,dive,lặn,verb,/daɪv/,
-flight,https://www.oxfordlearnersdictionaries.com/definition/english/flight_1,C2,flight,chuyến bay,noun,/flaɪt/,
-cluck,https://www.oxfordlearnersdictionaries.com/definition/english/cluck_2,C2,cluck,cục tác,noun,/klʌk/,
-clutch,https://www.oxfordlearnersdictionaries.com/definition/english/clutch_2,C2,clutch,ly hợp,noun,/klʌtʃ/,
-breed,https://www.oxfordlearnersdictionaries.com/definition/english/breed_1,C1,breed,giống,verb,/briːd/,
-chirp,https://www.oxfordlearnersdictionaries.com/definition/english/chirp_1,C2,chirp,ríu rít,noun,/tʃɜːp/,
-call,https://www.oxfordlearnersdictionaries.com/definition/english/call_1,B2,call,gọi,verb,/kɔːl/,
-coo,https://www.oxfordlearnersdictionaries.com/definition/english/coo_2,C2,coo,kêu,verb,/kuː/,
-call,https://www.oxfordlearnersdictionaries.com/definition/english/call_2,B2,call,gọi,noun,/kɔːl/,
-brood,https://www.oxfordlearnersdictionaries.com/definition/english/brood_2,C2,brood,bố mẹ,noun,/bruːd/,
-hoot,https://www.oxfordlearnersdictionaries.com/definition/english/hoot_2,C2,hoot,kêu la,noun,/huːt/,
-hoot,https://www.oxfordlearnersdictionaries.com/definition/english/hoot_1,C2,hoot,kêu la,verb,/huːt/,
-hop,https://www.oxfordlearnersdictionaries.com/definition/english/hop_1,C1,hop,nhảy lò cò,verb,/hɒp/,
-gaggle,https://www.oxfordlearnersdictionaries.com/definition/english/gaggle,C2,gaggle,nói chuyện phiếm,noun,/ˈɡæɡl/,
-hatch,https://www.oxfordlearnersdictionaries.com/definition/english/hatch_1,C1,hatch,nở,verb,/hætʃ/,
-fly,https://www.oxfordlearnersdictionaries.com/definition/english/fly_1,A1,fly,bay,verb,/flaɪ/,
-incubate,https://www.oxfordlearnersdictionaries.com/definition/english/incubate,C2,incubate,ủ,verb,/ˈɪŋkjubeɪt/,
-hop,https://www.oxfordlearnersdictionaries.com/definition/english/hop_2,C1,hop,nhảy lò cò,noun,/hɒp/,
-lay,https://www.oxfordlearnersdictionaries.com/definition/english/lay_1,B2,lay,đặt nằm,verb,/leɪ/,
-hover,https://www.oxfordlearnersdictionaries.com/definition/english/hover,C1,hover,di chuột,verb,/ˈhɒvə(r)/,
-nest,https://www.oxfordlearnersdictionaries.com/definition/english/nest_2,C1,nest,tổ,verb,/nest/,
-migrate,https://www.oxfordlearnersdictionaries.com/definition/english/migrate,B2,migrate,di cư,verb,/maɪˈɡreɪt/,
-peck,https://www.oxfordlearnersdictionaries.com/definition/english/peck_1,C2,peck,mổ,verb,/pek/,
-mate,https://www.oxfordlearnersdictionaries.com/definition/english/mate_1,B2,mate,bạn,noun,/meɪt/,
-migration,https://www.oxfordlearnersdictionaries.com/definition/english/migration,C1,migration,di cư,noun,/maɪˈɡreɪʃn/,
-quack,https://www.oxfordlearnersdictionaries.com/definition/english/quack_1,C1,quack,lang băm,noun,/kwæk/,
-mate,https://www.oxfordlearnersdictionaries.com/definition/english/mate_2,B2,mate,bạn,verb,/meɪt/,
-prey,https://www.oxfordlearnersdictionaries.com/definition/english/prey_1,C1,prey,con mồi,noun,/preɪ/,
-peck,https://www.oxfordlearnersdictionaries.com/definition/english/peck_2,C2,peck,mổ,noun,/pek/,
-perch,https://www.oxfordlearnersdictionaries.com/definition/english/perch_1,C1,perch,cá rô,verb,/pɜːtʃ/,
-soar,https://www.oxfordlearnersdictionaries.com/definition/english/soar,C1,soar,bay lên,verb,/sɔː(r)/,
-quack,https://www.oxfordlearnersdictionaries.com/definition/english/quack_2,C1,quack,lang băm,verb,/kwæk/,
-tweet,https://www.oxfordlearnersdictionaries.com/definition/english/tweet_1,C2,tweet,tweet,noun,/twiːt/,
-squawk,https://www.oxfordlearnersdictionaries.com/definition/english/squawk_1,C2,squawk,kêu quác quác,verb,/skwɔːk/,
-twitter,https://www.oxfordlearnersdictionaries.com/definition/english/twitter_1,C2,twitter,Twitter,verb,/ˈtwɪtə(r)/,
-squawk,https://www.oxfordlearnersdictionaries.com/definition/english/squawk_2,C2,squawk,kêu quác quác,noun,/skwɔːk/,
-twitter,https://www.oxfordlearnersdictionaries.com/definition/english/twitter_2,C2,twitter,Twitter,noun,/ˈtwɪtə(r)/,
-tweet,https://www.oxfordlearnersdictionaries.com/definition/english/tweet_2,C2,tweet,tweet,verb,/twiːt/,
+dive,https://www.oxfordlearnersdictionaries.com/definition/english/dive_1,B2,dive,lặn,verb,/daɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/div/dive_/dive__gb_2.mp3
+flight,https://www.oxfordlearnersdictionaries.com/definition/english/flight_1,C2,flight,chuyến bay,noun,/flaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fli/fligh/flight__gb_1.mp3
+cluck,https://www.oxfordlearnersdictionaries.com/definition/english/cluck_2,C2,cluck,cục tác,noun,/klʌk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clu/cluck/cluck__gb_1.mp3
+clutch,https://www.oxfordlearnersdictionaries.com/definition/english/clutch_2,C2,clutch,ly hợp,noun,/klʌtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clu/clutc/clutch__gb_1.mp3
+breed,https://www.oxfordlearnersdictionaries.com/definition/english/breed_1,C1,breed,giống,verb,/briːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/breed/breed__gb_1.mp3
+chirp,https://www.oxfordlearnersdictionaries.com/definition/english/chirp_1,C2,chirp,ríu rít,noun,/tʃɜːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/chirp/chirp__gb_2.mp3
+call,https://www.oxfordlearnersdictionaries.com/definition/english/call_1,B2,call,gọi,verb,/kɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cal/call_/call__gb_3.mp3
+coo,https://www.oxfordlearnersdictionaries.com/definition/english/coo_2,C2,coo,kêu,verb,/kuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cooed/cooed__gb_1.mp3
+call,https://www.oxfordlearnersdictionaries.com/definition/english/call_2,B2,call,gọi,noun,/kɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cal/call_/call__gb_3.mp3
+brood,https://www.oxfordlearnersdictionaries.com/definition/english/brood_2,C2,brood,bố mẹ,noun,/bruːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bro/brood/brood__gb_1.mp3
+hoot,https://www.oxfordlearnersdictionaries.com/definition/english/hoot_2,C2,hoot,kêu la,noun,/huːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hoo/hoot_/hoot__gb_1.mp3
+hoot,https://www.oxfordlearnersdictionaries.com/definition/english/hoot_1,C2,hoot,kêu la,verb,/huːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hoo/hoot_/hoot__gb_1.mp3
+hop,https://www.oxfordlearnersdictionaries.com/definition/english/hop_1,C1,hop,nhảy lò cò,verb,/hɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hop/hop__/hop__gb_1.mp3
+gaggle,https://www.oxfordlearnersdictionaries.com/definition/english/gaggle,C2,gaggle,nói chuyện phiếm,noun,/ˈɡæɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gag/gaggl/gaggle__gb_2.mp3
+hatch,https://www.oxfordlearnersdictionaries.com/definition/english/hatch_1,C1,hatch,nở,verb,/hætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hat/hatch/hatch__gb_1.mp3
+fly,https://www.oxfordlearnersdictionaries.com/definition/english/fly_1,A1,fly,bay,verb,/flaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fly/fly__/fly__gb_1.mp3
+incubate,https://www.oxfordlearnersdictionaries.com/definition/english/incubate,C2,incubate,ủ,verb,/ˈɪŋkjubeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incub/incubate__gb_1.mp3
+hop,https://www.oxfordlearnersdictionaries.com/definition/english/hop_2,C1,hop,nhảy lò cò,noun,/hɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hop/hop__/hop__gb_1.mp3
+lay,https://www.oxfordlearnersdictionaries.com/definition/english/lay_1,B2,lay,đặt nằm,verb,/leɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lay/lay__/lay__gb_1.mp3
+hover,https://www.oxfordlearnersdictionaries.com/definition/english/hover,C1,hover,di chuột,verb,/ˈhɒvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hov/hover/hover__gb_1.mp3
+nest,https://www.oxfordlearnersdictionaries.com/definition/english/nest_2,C1,nest,tổ,verb,/nest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nes/nest_/nest__gb_1.mp3
+migrate,https://www.oxfordlearnersdictionaries.com/definition/english/migrate,B2,migrate,di cư,verb,/maɪˈɡreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mig/migra/migrates__gb_1.mp3
+peck,https://www.oxfordlearnersdictionaries.com/definition/english/peck_1,C2,peck,mổ,verb,/pek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pec/peck_/peck__gb_1.mp3
+mate,https://www.oxfordlearnersdictionaries.com/definition/english/mate_1,B2,mate,bạn,noun,/meɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/mate_/mate__gb_1.mp3
+migration,https://www.oxfordlearnersdictionaries.com/definition/english/migration,C1,migration,di cư,noun,/maɪˈɡreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mig/migra/migration__gb_2.mp3
+quack,https://www.oxfordlearnersdictionaries.com/definition/english/quack_1,C1,quack,lang băm,noun,/kwæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quack/quack__gb_1.mp3
+mate,https://www.oxfordlearnersdictionaries.com/definition/english/mate_2,B2,mate,bạn,verb,/meɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/mate_/mate__gb_1.mp3
+prey,https://www.oxfordlearnersdictionaries.com/definition/english/prey_1,C1,prey,con mồi,noun,/preɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/prey_/prey__gb_1.mp3
+peck,https://www.oxfordlearnersdictionaries.com/definition/english/peck_2,C2,peck,mổ,noun,/pek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pec/peck_/peck__gb_1.mp3
+perch,https://www.oxfordlearnersdictionaries.com/definition/english/perch_1,C1,perch,cá rô,verb,/pɜːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perch/perch__gb_1.mp3
+soar,https://www.oxfordlearnersdictionaries.com/definition/english/soar,C1,soar,bay lên,verb,/sɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/soa/soar_/soar__gb_1.mp3
+quack,https://www.oxfordlearnersdictionaries.com/definition/english/quack_2,C1,quack,lang băm,verb,/kwæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quack/quack__gb_1.mp3
+tweet,https://www.oxfordlearnersdictionaries.com/definition/english/tweet_1,C2,tweet,tweet,noun,/twiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twe/tweet/tweet__gb_1.mp3
+squawk,https://www.oxfordlearnersdictionaries.com/definition/english/squawk_1,C2,squawk,kêu quác quác,verb,/skwɔːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/squ/squaw/squawk__gb_1.mp3
+twitter,https://www.oxfordlearnersdictionaries.com/definition/english/twitter_1,C2,twitter,Twitter,verb,/ˈtwɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twi/twitt/twitter__gb_1.mp3
+squawk,https://www.oxfordlearnersdictionaries.com/definition/english/squawk_2,C2,squawk,kêu quác quác,noun,/skwɔːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/squ/squaw/squawk__gb_1.mp3
+twitter,https://www.oxfordlearnersdictionaries.com/definition/english/twitter_2,C2,twitter,Twitter,noun,/ˈtwɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twi/twitt/twitter__gb_1.mp3
+tweet,https://www.oxfordlearnersdictionaries.com/definition/english/tweet_2,C2,tweet,tweet,verb,/twiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/twe/tweet/tweet__gb_1.mp3

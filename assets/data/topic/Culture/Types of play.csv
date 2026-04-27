@@ -1,32 +1,32 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-farce,https://www.oxfordlearnersdictionaries.com/definition/english/farce,C2,farce,trò hề,noun,/fɑːs/,
-ballet,https://www.oxfordlearnersdictionaries.com/definition/english/ballet,B2,ballet,múa ba lê,noun,/ˈbæleɪ/,
-benefit,https://www.oxfordlearnersdictionaries.com/definition/english/benefit_1,C2,benefit,lợi ích,noun,/ˈbenɪfɪt/,
-masque,https://www.oxfordlearnersdictionaries.com/definition/english/masque,C2,masque,mặt nạ,noun,/mɑːsk/,
-comedy,https://www.oxfordlearnersdictionaries.com/definition/english/comedy,A2,comedy,hài kịch,noun,/ˈkɒmədi/,
-broadway,https://www.oxfordlearnersdictionaries.com/definition/english/broadway,C1,Broadway,sân khấu Broadway,noun,/ˈbrɔːdweɪ/,
-dramatic,https://www.oxfordlearnersdictionaries.com/definition/english/dramatic,B2,dramatic,kịch,adjective,/drəˈmætɪk/,
-kabuki,https://www.oxfordlearnersdictionaries.com/definition/english/kabuki,C2,kabuki,kịch kabuki,noun,/kəˈbuːki/,
-comedy_of_manners,https://www.oxfordlearnersdictionaries.com/definition/english/comedy-of-manners,C2,comedy of manners,hài kịch về cách cư xử,noun,/ˌkɒmədi əv ˈmænəz/,
-morality_play,https://www.oxfordlearnersdictionaries.com/definition/english/morality-play,C2,morality play,trò chơi đạo đức,noun,/məˈræləti pleɪ/,
-musical,https://www.oxfordlearnersdictionaries.com/definition/english/musical_2,B1,musical,âm nhạc,noun,/ˈmjuːzɪkl/,
-fringe_theatre,https://www.oxfordlearnersdictionaries.com/definition/english/fringe-theatre,C2,fringe theatre,nhà hát rìa,noun,/ˌfrɪndʒ ˈθɪətə(r)/,
-off-broadway,https://www.oxfordlearnersdictionaries.com/definition/english/off-broadway,C2,off-Broadway,ngoài sân khấu Broadway,adjective,/ˌɒf ˈbrɔːdweɪ/,
-mime,https://www.oxfordlearnersdictionaries.com/definition/english/mime_1,C2,mime,kịch câm,noun,/maɪm/,
-music_hall,https://www.oxfordlearnersdictionaries.com/definition/english/music-hall,C2,music hall,hội trường âm nhạc,noun,/ˈmjuːzɪk hɔːl/,
-nativity_play,https://www.oxfordlearnersdictionaries.com/definition/english/nativity-play,C2,nativity play,chơi Chúa giáng sinh,noun,/nəˈtɪvəti pleɪ/,
-melodrama,https://www.oxfordlearnersdictionaries.com/definition/english/melodrama,C2,melodrama,kịch tình cảm,noun,/ˈmelədrɑːmə/,
-pantomime,https://www.oxfordlearnersdictionaries.com/definition/english/pantomime,C2,pantomime,kịch câm,noun,/ˈpæntəmaɪm/,
-play,https://www.oxfordlearnersdictionaries.com/definition/english/play_2,A1,play,chơi,noun,/pleɪ/,
-mystery_play,https://www.oxfordlearnersdictionaries.com/definition/english/mystery-play,C2,mystery play,vở kịch bí ẩn,noun,/ˈmɪstri pleɪ/,
-potboiler,https://www.oxfordlearnersdictionaries.com/definition/english/potboiler,C2,potboiler,người nấu nồi hơi,noun,/ˈpɒtbɔɪlə(r)/,
-period_piece,https://www.oxfordlearnersdictionaries.com/definition/english/period-piece,C2,period piece,mảnh thời kỳ,noun,/ˈpɪəriəd piːs/,
-revue,https://www.oxfordlearnersdictionaries.com/definition/english/revue,C2,revue,xem lại,noun,/rɪˈvjuː/,
-whodunnit,https://www.oxfordlearnersdictionaries.com/definition/english/whodunnit,C2,whodunnit,ngu ngốc,noun,/ˌhuːˈdʌnɪt/,
-variety,https://www.oxfordlearnersdictionaries.com/definition/english/variety_1,C2,variety,đa dạng,noun,/vəˈraɪəti/,
-smash,https://www.oxfordlearnersdictionaries.com/definition/english/smash_2,C2,smash,đập vỡ,noun,/smæʃ/,
-vaudeville,https://www.oxfordlearnersdictionaries.com/definition/english/vaudeville,C2,vaudeville,tạp kỹ,noun,/ˈvɔːdəvɪl/,
-sketch,https://www.oxfordlearnersdictionaries.com/definition/english/sketch_1,C1,sketch,phác họa,noun,/sketʃ/,
-two-hander,https://www.oxfordlearnersdictionaries.com/definition/english/two-hander,C2,two-hander,hai tay,noun,/ˌtuː ˈhændə(r)/,
-tragicomedy,https://www.oxfordlearnersdictionaries.com/definition/english/tragicomedy,C2,tragicomedy,bi kịch,noun,/ˌtrædʒiˈkɒmədi/,
-tragedy,https://www.oxfordlearnersdictionaries.com/definition/english/tragedy,B2,tragedy,bi kịch,noun,/ˈtrædʒədi/,
+farce,https://www.oxfordlearnersdictionaries.com/definition/english/farce,C2,farce,trò hề,noun,/fɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farce/farce__gb_1.mp3
+ballet,https://www.oxfordlearnersdictionaries.com/definition/english/ballet,B2,ballet,múa ba lê,noun,/ˈbæleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bal/balle/ballet__gb_2.mp3
+benefit,https://www.oxfordlearnersdictionaries.com/definition/english/benefit_1,C2,benefit,lợi ích,noun,/ˈbenɪfɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ben/benef/benefit__gb_2.mp3
+masque,https://www.oxfordlearnersdictionaries.com/definition/english/masque,C2,masque,mặt nạ,noun,/mɑːsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/masqu/masque__gb_1.mp3
+comedy,https://www.oxfordlearnersdictionaries.com/definition/english/comedy,A2,comedy,hài kịch,noun,/ˈkɒmədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/comed/comedy__gb_1.mp3
+broadway,https://www.oxfordlearnersdictionaries.com/definition/english/broadway,C1,Broadway,sân khấu Broadway,noun,/ˈbrɔːdweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bro/broad/broadway__gb_1.mp3
+dramatic,https://www.oxfordlearnersdictionaries.com/definition/english/dramatic,B2,dramatic,kịch,adjective,/drəˈmætɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drama/dramatic__gb_2.mp3
+kabuki,https://www.oxfordlearnersdictionaries.com/definition/english/kabuki,C2,kabuki,kịch kabuki,noun,/kəˈbuːki/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kab/kabuk/kabuki__gb_1.mp3
+comedy_of_manners,https://www.oxfordlearnersdictionaries.com/definition/english/comedy-of-manners,C2,comedy of manners,hài kịch về cách cư xử,noun,/ˌkɒmədi əv ˈmænəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/comed/comedy_of_manners_1_gb_1.mp3
+morality_play,https://www.oxfordlearnersdictionaries.com/definition/english/morality-play,C2,morality play,trò chơi đạo đức,noun,/məˈræləti pleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/moral/morality_play_1_gb_1.mp3
+musical,https://www.oxfordlearnersdictionaries.com/definition/english/musical_2,B1,musical,âm nhạc,noun,/ˈmjuːzɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mus/music/musical__gb_1.mp3
+fringe_theatre,https://www.oxfordlearnersdictionaries.com/definition/english/fringe-theatre,C2,fringe theatre,nhà hát rìa,noun,/ˌfrɪndʒ ˈθɪətə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fri/fring/fringe_theatre_1_gb_1.mp3
+off-broadway,https://www.oxfordlearnersdictionaries.com/definition/english/off-broadway,C2,off-Broadway,ngoài sân khấu Broadway,adjective,/ˌɒf ˈbrɔːdweɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/off/off_b/off_broadway_1_gb_1.mp3
+mime,https://www.oxfordlearnersdictionaries.com/definition/english/mime_1,C2,mime,kịch câm,noun,/maɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mim/mime_/mime__gb_1.mp3
+music_hall,https://www.oxfordlearnersdictionaries.com/definition/english/music-hall,C2,music hall,hội trường âm nhạc,noun,/ˈmjuːzɪk hɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mus/music/music_hall_1_gb_1.mp3
+nativity_play,https://www.oxfordlearnersdictionaries.com/definition/english/nativity-play,C2,nativity play,chơi Chúa giáng sinh,noun,/nəˈtɪvəti pleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nat/nativ/nativity_play_1_gb_1.mp3
+melodrama,https://www.oxfordlearnersdictionaries.com/definition/english/melodrama,C2,melodrama,kịch tình cảm,noun,/ˈmelədrɑːmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mel/melod/melodrama__gb_1.mp3
+pantomime,https://www.oxfordlearnersdictionaries.com/definition/english/pantomime,C2,pantomime,kịch câm,noun,/ˈpæntəmaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pan/panto/pantomime__gb_1.mp3
+play,https://www.oxfordlearnersdictionaries.com/definition/english/play_2,A1,play,chơi,noun,/pleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/play_/play__gb_1.mp3
+mystery_play,https://www.oxfordlearnersdictionaries.com/definition/english/mystery-play,C2,mystery play,vở kịch bí ẩn,noun,/ˈmɪstri pleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mys/myste/mystery_play_1_gb_1.mp3
+potboiler,https://www.oxfordlearnersdictionaries.com/definition/english/potboiler,C2,potboiler,người nấu nồi hơi,noun,/ˈpɒtbɔɪlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pot/potbo/potboiler__gb_1.mp3
+period_piece,https://www.oxfordlearnersdictionaries.com/definition/english/period-piece,C2,period piece,mảnh thời kỳ,noun,/ˈpɪəriəd piːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perio/period_piece_1_gb_1.mp3
+revue,https://www.oxfordlearnersdictionaries.com/definition/english/revue,C2,revue,xem lại,noun,/rɪˈvjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/revie/review__gb_2.mp3
+whodunnit,https://www.oxfordlearnersdictionaries.com/definition/english/whodunnit,C2,whodunnit,ngu ngốc,noun,/ˌhuːˈdʌnɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/who/whodu/whodunnit__gb_1.mp3
+variety,https://www.oxfordlearnersdictionaries.com/definition/english/variety_1,C2,variety,đa dạng,noun,/vəˈraɪəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/var/varie/variety__gb_1.mp3
+smash,https://www.oxfordlearnersdictionaries.com/definition/english/smash_2,C2,smash,đập vỡ,noun,/smæʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sma/smash/smash__gb_1.mp3
+vaudeville,https://www.oxfordlearnersdictionaries.com/definition/english/vaudeville,C2,vaudeville,tạp kỹ,noun,/ˈvɔːdəvɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vau/vaude/vaudeville__gb_1.mp3
+sketch,https://www.oxfordlearnersdictionaries.com/definition/english/sketch_1,C1,sketch,phác họa,noun,/sketʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ske/sketc/sketch__gb_1.mp3
+two-hander,https://www.oxfordlearnersdictionaries.com/definition/english/two-hander,C2,two-hander,hai tay,noun,/ˌtuː ˈhændə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/two/two_h/two_hander_1_gb_1.mp3
+tragicomedy,https://www.oxfordlearnersdictionaries.com/definition/english/tragicomedy,C2,tragicomedy,bi kịch,noun,/ˌtrædʒiˈkɒmədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/tragi/tragicomedy__gb_1.mp3
+tragedy,https://www.oxfordlearnersdictionaries.com/definition/english/tragedy,B2,tragedy,bi kịch,noun,/ˈtrædʒədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trage/tragedy__gb_1.mp3

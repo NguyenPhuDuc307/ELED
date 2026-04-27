@@ -5,9 +5,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class VocabularySyncService {
   static const _versionKey = 'vocabulary_local_version';
-  static const _currentVersion = 'v1.0-vocab';
+  static const _currentVersion = 'v1.1-vocab';
   static const _downloadUrl =
-      'https://github.com/NguyenPhuDuc307/ELED/releases/download/v1.0-vocab/vocabulary_v1.zip';
+      'https://github.com/NguyenPhuDuc307/ELED/releases/download/v1.1-vocab/vocabulary_v2.zip';
 
   static Future<Directory> _localDir() async {
     final docs = await getApplicationDocumentsDirectory();
@@ -19,6 +19,11 @@ class VocabularySyncService {
   static Future<bool> hasLocalData() async {
     final dir = await _localDir();
     return Directory('${dir.path}/popularity').exists();
+  }
+
+  static Future<bool> isOutdated() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_versionKey) != _currentVersion;
   }
 
   /// Downloads and extracts vocabulary zip if version changed or missing.

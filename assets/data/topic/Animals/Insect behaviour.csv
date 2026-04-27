@@ -1,9 +1,9 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-poisonous,https://www.oxfordlearnersdictionaries.com/definition/english/poisonous,B1,poisonous,chất độc,adjective,/ˈpɔɪzənəs/,
-sting,https://www.oxfordlearnersdictionaries.com/definition/english/sting_1,B2,sting,đốt,verb,/stɪŋ/,
-flying,https://www.oxfordlearnersdictionaries.com/definition/english/flying_1,A2,flying,bay,adjective,/ˈflaɪɪŋ/,
-buzz,https://www.oxfordlearnersdictionaries.com/definition/english/buzz_1,C1,buzz,buzz,verb,/bʌz/,
-crawl,https://www.oxfordlearnersdictionaries.com/definition/english/crawl_1,C1,crawl,thu thập thông tin,verb,/krɔːl/,
-fly,https://www.oxfordlearnersdictionaries.com/definition/english/fly_1,A1,fly,bay,verb,/flaɪ/,
-hatch,https://www.oxfordlearnersdictionaries.com/definition/english/hatch_1,C1,hatch,nở,verb,/hætʃ/,
-lay,https://www.oxfordlearnersdictionaries.com/definition/english/lay_1,B2,lay,đặt nằm,verb,/leɪ/,
+poisonous,https://www.oxfordlearnersdictionaries.com/definition/english/poisonous,B1,poisonous,chất độc,adjective,/ˈpɔɪzənəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poi/poiso/poisonous__gb_1.mp3
+sting,https://www.oxfordlearnersdictionaries.com/definition/english/sting_1,B2,sting,đốt,verb,/stɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sti/sting/sting__gb_1.mp3
+flying,https://www.oxfordlearnersdictionaries.com/definition/english/flying_1,A2,flying,bay,adjective,/ˈflaɪɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fly/flyin/flying__gb_1.mp3
+buzz,https://www.oxfordlearnersdictionaries.com/definition/english/buzz_1,C1,buzz,buzz,verb,/bʌz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/buz/buzze/buzzes__gb_1.mp3
+crawl,https://www.oxfordlearnersdictionaries.com/definition/english/crawl_1,C1,crawl,thu thập thông tin,verb,/krɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crawl/crawl__gb_1.mp3
+fly,https://www.oxfordlearnersdictionaries.com/definition/english/fly_1,A1,fly,bay,verb,/flaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fly/fly__/fly__gb_1.mp3
+hatch,https://www.oxfordlearnersdictionaries.com/definition/english/hatch_1,C1,hatch,nở,verb,/hætʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hat/hatch/hatch__gb_1.mp3
+lay,https://www.oxfordlearnersdictionaries.com/definition/english/lay_1,B2,lay,đặt nằm,verb,/leɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lay/lay__/lay__gb_1.mp3

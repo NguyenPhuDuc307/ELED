@@ -1,38 +1,38 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
 brush_up,https://www.oxfordlearnersdictionaries.com/definition/english/brush-up,C2,brush up,chải lên,phrasal verb,,
-accent,https://www.oxfordlearnersdictionaries.com/definition/english/accent_1,B2,accent,giọng,noun,/ˈæksent/,
-coherent,https://www.oxfordlearnersdictionaries.com/definition/english/coherent,C1,coherent,mạch lạc,adjective,/kəʊˈhɪərənt/,
-beginner,https://www.oxfordlearnersdictionaries.com/definition/english/beginner,B1,beginner,người mới bắt đầu,noun,/bɪˈɡɪnə(r)/,
-aural,https://www.oxfordlearnersdictionaries.com/definition/english/aural,C2,aural,thính giác,adjective,/ˈɔːrəl/,
-articulate,https://www.oxfordlearnersdictionaries.com/definition/english/articulate_2,C1,articulate,nói rõ ràng,adjective,/ɑːˈtɪkjələt/,
-advanced,https://www.oxfordlearnersdictionaries.com/definition/english/advanced,B1,advanced,trình độ cao,adjective,/ədˈvɑːnst/,
-broad,https://www.oxfordlearnersdictionaries.com/definition/english/broad_1,C2,broad,rộng rãi,adjective,/brɔːd/,
+accent,https://www.oxfordlearnersdictionaries.com/definition/english/accent_1,B2,accent,giọng,noun,/ˈæksent/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acc/accen/accent__gb_1.mp3
+coherent,https://www.oxfordlearnersdictionaries.com/definition/english/coherent,C1,coherent,mạch lạc,adjective,/kəʊˈhɪərənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coh/coher/coherent__gb_2.mp3
+beginner,https://www.oxfordlearnersdictionaries.com/definition/english/beginner,B1,beginner,người mới bắt đầu,noun,/bɪˈɡɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/beg/begin/beginner__gb_1.mp3
+aural,https://www.oxfordlearnersdictionaries.com/definition/english/aural,C2,aural,thính giác,adjective,/ˈɔːrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aur/aural/aural__gb_1.mp3
+articulate,https://www.oxfordlearnersdictionaries.com/definition/english/articulate_2,C1,articulate,nói rõ ràng,adjective,/ɑːˈtɪkjələt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/art/artic/articulate__gb_1.mp3
+advanced,https://www.oxfordlearnersdictionaries.com/definition/english/advanced,B1,advanced,trình độ cao,adjective,/ədˈvɑːnst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adv/advan/advanced__gb_1.mp3
+broad,https://www.oxfordlearnersdictionaries.com/definition/english/broad_1,C2,broad,rộng rãi,adjective,/brɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bro/broad/broad__gb_1.mp3
 brush_up_on,https://www.oxfordlearnersdictionaries.com/definition/english/brush-up-on,C2,brush up on,chải lên,phrasal verb,,
-articulate,https://www.oxfordlearnersdictionaries.com/definition/english/articulate_1,C1,articulate,nói rõ ràng,verb,/ɑːˈtɪkjuleɪt/,
-communication,https://www.oxfordlearnersdictionaries.com/definition/english/communication,B1,communication,giao tiếp,noun,/kəˌmjuːnɪˈkeɪʃn/,
-drill,https://www.oxfordlearnersdictionaries.com/definition/english/drill_2,C2,drill,máy khoan,verb,/drɪl/,
-drill,https://www.oxfordlearnersdictionaries.com/definition/english/drill_1,C2,drill,máy khoan,noun,/drɪl/,
-fluency,https://www.oxfordlearnersdictionaries.com/definition/english/fluency,B2,fluency,sự lưu loát,noun,/ˈfluːənsi/,
-faultless,https://www.oxfordlearnersdictionaries.com/definition/english/faultless,C2,faultless,không có lỗi,adjective,/ˈfɔːltləs/,
-encode,https://www.oxfordlearnersdictionaries.com/definition/english/encode,C2,encode,mã hóa,verb,/ɪnˈkəʊd/,
-fluent,https://www.oxfordlearnersdictionaries.com/definition/english/fluent,B1,fluent,thông thạo,adjective,/ˈfluːənt/,
-inarticulate,https://www.oxfordlearnersdictionaries.com/definition/english/inarticulate,C2,inarticulate,câm,adjective,/ˌɪnɑːˈtɪkjələt/,
-gabble,https://www.oxfordlearnersdictionaries.com/definition/english/gabble_1,C2,gabble,lảm nhảm,verb,/ˈɡæbl/,
-intermediate,https://www.oxfordlearnersdictionaries.com/definition/english/intermediate_1,C1,intermediate,trung cấp,adjective,/ˌɪntəˈmiːdiət/,
-intermediate,https://www.oxfordlearnersdictionaries.com/definition/english/intermediate_2,B2,intermediate,trung cấp,noun,/ˌɪntəˈmiːdiət/,
-incomprehensibility,https://www.oxfordlearnersdictionaries.com/definition/english/incomprehensibility,C2,incomprehensibility,sự khó hiểu,noun,/ɪnˌkɒmprɪˌhensəˈbɪləti/,
-language_transfer,https://www.oxfordlearnersdictionaries.com/definition/english/language-transfer,C2,language transfer,chuyển giao ngôn ngữ,noun,/ˈlæŋɡwɪdʒ trænsfɜː(r)/,
-linguistics,https://www.oxfordlearnersdictionaries.com/definition/english/linguistics,C2,linguistics,ngôn ngữ học,noun,/lɪŋˈɡwɪstɪks/,
-native_speaker,https://www.oxfordlearnersdictionaries.com/definition/english/native-speaker,B1,native speaker,người bản ngữ,noun,/ˌneɪtɪv ˈspiːkə(r)/,
-master,https://www.oxfordlearnersdictionaries.com/definition/english/master_2,B2,master,bậc thầy,verb,/ˈmɑːstə(r)/,
-incomprehensible,https://www.oxfordlearnersdictionaries.com/definition/english/incomprehensible,C1,incomprehensible,không thể hiểu được,adjective,/ɪnˌkɒmprɪˈhensəbl/,
-linguistic,https://www.oxfordlearnersdictionaries.com/definition/english/linguistic,B2,linguistic,ngôn ngữ học,adjective,/lɪŋˈɡwɪstɪk/,
-stammer,https://www.oxfordlearnersdictionaries.com/definition/english/stammer_1,C2,stammer,lắp bắp,verb,/ˈstæmə(r)/,
-perfect,https://www.oxfordlearnersdictionaries.com/definition/english/perfect_2,C1,perfect,hoàn hảo,verb,/pəˈfekt/,
-practise,https://www.oxfordlearnersdictionaries.com/definition/english/practise,A1,practise,luyện tập,verb,/ˈpræktɪs/,
-oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_2,C1,oral,miệng,noun,/ˈɔːrəl/,
-pronunciation,https://www.oxfordlearnersdictionaries.com/definition/english/pronunciation,A1,pronunciation,cách phát âm,noun,/prəˌnʌnsiˈeɪʃn/,
-verbal,https://www.oxfordlearnersdictionaries.com/definition/english/verbal,C1,verbal,bằng lời nói,adjective,/ˈvɜːbl/,
-oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_1,C1,oral,miệng,adjective,/ˈɔːrəl/,
-rusty,https://www.oxfordlearnersdictionaries.com/definition/english/rusty,C2,rusty,gỉ,adjective,/ˈrʌsti/,
-stumble,https://www.oxfordlearnersdictionaries.com/definition/english/stumble_2,C2,stumble,vấp ngã,verb,/ˈstʌmbl/,
+articulate,https://www.oxfordlearnersdictionaries.com/definition/english/articulate_1,C1,articulate,nói rõ ràng,verb,/ɑːˈtɪkjuleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/art/artic/articulate__gb_1.mp3
+communication,https://www.oxfordlearnersdictionaries.com/definition/english/communication,B1,communication,giao tiếp,noun,/kəˌmjuːnɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commu/communication__gb_2.mp3
+drill,https://www.oxfordlearnersdictionaries.com/definition/english/drill_2,C2,drill,máy khoan,verb,/drɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drill/drill__gb_3.mp3
+drill,https://www.oxfordlearnersdictionaries.com/definition/english/drill_1,C2,drill,máy khoan,noun,/drɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drill/drill__gb_3.mp3
+fluency,https://www.oxfordlearnersdictionaries.com/definition/english/fluency,B2,fluency,sự lưu loát,noun,/ˈfluːənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flu/fluen/fluency__gb_1.mp3
+faultless,https://www.oxfordlearnersdictionaries.com/definition/english/faultless,C2,faultless,không có lỗi,adjective,/ˈfɔːltləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fau/fault/faultless__gb_1.mp3
+encode,https://www.oxfordlearnersdictionaries.com/definition/english/encode,C2,encode,mã hóa,verb,/ɪnˈkəʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/enc/encod/encode__gb_1.mp3
+fluent,https://www.oxfordlearnersdictionaries.com/definition/english/fluent,B1,fluent,thông thạo,adjective,/ˈfluːənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flu/fluen/fluent__gb_1.mp3
+inarticulate,https://www.oxfordlearnersdictionaries.com/definition/english/inarticulate,C2,inarticulate,câm,adjective,/ˌɪnɑːˈtɪkjələt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inart/inarticulate__gb_1.mp3
+gabble,https://www.oxfordlearnersdictionaries.com/definition/english/gabble_1,C2,gabble,lảm nhảm,verb,/ˈɡæbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gab/gabbl/gabble__gb_2.mp3
+intermediate,https://www.oxfordlearnersdictionaries.com/definition/english/intermediate_1,C1,intermediate,trung cấp,adjective,/ˌɪntəˈmiːdiət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/intermediate__gb_1.mp3
+intermediate,https://www.oxfordlearnersdictionaries.com/definition/english/intermediate_2,B2,intermediate,trung cấp,noun,/ˌɪntəˈmiːdiət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/intermediate__gb_1.mp3
+incomprehensibility,https://www.oxfordlearnersdictionaries.com/definition/english/incomprehensibility,C2,incomprehensibility,sự khó hiểu,noun,/ɪnˌkɒmprɪˌhensəˈbɪləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incom/incomprehensibility__gb_1.mp3
+language_transfer,https://www.oxfordlearnersdictionaries.com/definition/english/language-transfer,C2,language transfer,chuyển giao ngôn ngữ,noun,/ˈlæŋɡwɪdʒ trænsfɜː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/langu/language_transfer_1_gb_1.mp3
+linguistics,https://www.oxfordlearnersdictionaries.com/definition/english/linguistics,C2,linguistics,ngôn ngữ học,noun,/lɪŋˈɡwɪstɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/lingu/linguistics__gb_1.mp3
+native_speaker,https://www.oxfordlearnersdictionaries.com/definition/english/native-speaker,B1,native speaker,người bản ngữ,noun,/ˌneɪtɪv ˈspiːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nat/nativ/native_speaker_1_gb_1.mp3
+master,https://www.oxfordlearnersdictionaries.com/definition/english/master_2,B2,master,bậc thầy,verb,/ˈmɑːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/maste/master__gb_1.mp3
+incomprehensible,https://www.oxfordlearnersdictionaries.com/definition/english/incomprehensible,C1,incomprehensible,không thể hiểu được,adjective,/ɪnˌkɒmprɪˈhensəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inc/incom/incomprehensible__gb_1.mp3
+linguistic,https://www.oxfordlearnersdictionaries.com/definition/english/linguistic,B2,linguistic,ngôn ngữ học,adjective,/lɪŋˈɡwɪstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/lingu/linguistic__gb_1.mp3
+stammer,https://www.oxfordlearnersdictionaries.com/definition/english/stammer_1,C2,stammer,lắp bắp,verb,/ˈstæmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stamm/stammer__gb_1.mp3
+perfect,https://www.oxfordlearnersdictionaries.com/definition/english/perfect_2,C1,perfect,hoàn hảo,verb,/pəˈfekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perfe/perfect__gb_1.mp3
+practise,https://www.oxfordlearnersdictionaries.com/definition/english/practise,A1,practise,luyện tập,verb,/ˈpræktɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pra/pract/practice__gb_2.mp3
+oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_2,C1,oral,miệng,noun,/ˈɔːrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ora/oral_/oral__gb_1.mp3
+pronunciation,https://www.oxfordlearnersdictionaries.com/definition/english/pronunciation,A1,pronunciation,cách phát âm,noun,/prəˌnʌnsiˈeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/pronu/pronunciation__gb_1.mp3
+verbal,https://www.oxfordlearnersdictionaries.com/definition/english/verbal,C1,verbal,bằng lời nói,adjective,/ˈvɜːbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ver/verba/verbal__gb_1.mp3
+oral,https://www.oxfordlearnersdictionaries.com/definition/english/oral_1,C1,oral,miệng,adjective,/ˈɔːrəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ora/oral_/oral__gb_1.mp3
+rusty,https://www.oxfordlearnersdictionaries.com/definition/english/rusty,C2,rusty,gỉ,adjective,/ˈrʌsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rus/rusty/rusty__gb_1.mp3
+stumble,https://www.oxfordlearnersdictionaries.com/definition/english/stumble_2,C2,stumble,vấp ngã,verb,/ˈstʌmbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/stu/stumb/stumble__gb_1.mp3

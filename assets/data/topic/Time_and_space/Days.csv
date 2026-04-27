@@ -1,21 +1,21 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-diurnal,https://www.oxfordlearnersdictionaries.com/definition/english/diurnal,C2,diurnal,ngày,adjective,/daɪˈɜːnl/,
-monday,https://www.oxfordlearnersdictionaries.com/definition/english/monday,A1,Monday,Thứ hai,noun,/ˈmʌndeɪ/,
-today,https://www.oxfordlearnersdictionaries.com/definition/english/today_2,A1,today,Hôm nay,noun,/təˈdeɪ/,
-today,https://www.oxfordlearnersdictionaries.com/definition/english/today_1,A1,today,Hôm nay,adverb,/təˈdeɪ/,
-friday,https://www.oxfordlearnersdictionaries.com/definition/english/friday,A1,Friday,Thứ sáu,noun,/ˈfraɪdeɪ/,
-thursday,https://www.oxfordlearnersdictionaries.com/definition/english/thursday,A1,Thursday,Thứ năm,noun,/ˈθɜːzdeɪ/,
-saturday,https://www.oxfordlearnersdictionaries.com/definition/english/saturday,A1,Saturday,Thứ bảy,noun,/ˈsætədeɪ/,
-bank_holiday,https://www.oxfordlearnersdictionaries.com/definition/english/bank-holiday,C1,bank holiday,kỳ nghỉ ngân hàng,noun,/ˌbæŋk ˈhɒlədeɪ/,
-day,https://www.oxfordlearnersdictionaries.com/definition/english/day,A1,day,ngày,noun,/deɪ/,
-sunday,https://www.oxfordlearnersdictionaries.com/definition/english/sunday,A1,Sunday,Chủ nhật,noun,/ˈsʌndeɪ/,
-tuesday,https://www.oxfordlearnersdictionaries.com/definition/english/tuesday,A1,Tuesday,Thứ ba,noun,/ˈtjuːzdeɪ/,
-weekday,https://www.oxfordlearnersdictionaries.com/definition/english/weekday,B1,weekday,ngày trong tuần,noun,/ˈwiːkdeɪ/,
-tonight,https://www.oxfordlearnersdictionaries.com/definition/english/tonight_2,A1,tonight,tối nay,noun,/təˈnaɪt/,
-tomorrow,https://www.oxfordlearnersdictionaries.com/definition/english/tomorrow_1,A1,tomorrow,Ngày mai,adverb,/təˈmɒrəʊ/,
-tomorrow,https://www.oxfordlearnersdictionaries.com/definition/english/tomorrow_2,A1,tomorrow,Ngày mai,noun,/təˈmɒrəʊ/,
-weekdays,https://www.oxfordlearnersdictionaries.com/definition/english/weekdays,B2,weekdays,các ngày trong tuần,adverb,/ˈwiːkdeɪz/,
-wednesday,https://www.oxfordlearnersdictionaries.com/definition/english/wednesday,A1,Wednesday,Thứ Tư,noun,/ˈwenzdeɪ/,
-yesterday,https://www.oxfordlearnersdictionaries.com/definition/english/yesterday_2,A1,yesterday,Hôm qua,noun,/ˈjestədeɪ/,
-yesterday,https://www.oxfordlearnersdictionaries.com/definition/english/yesterday_1,A1,yesterday,Hôm qua,adverb,/ˈjestədeɪ/,
-victoria_day,https://www.oxfordlearnersdictionaries.com/definition/english/victoria-day,C2,Victoria Day,Ngày Victoria,noun,/vɪkˈtɔːriə deɪ/,
+diurnal,https://www.oxfordlearnersdictionaries.com/definition/english/diurnal,C2,diurnal,ngày,adjective,/daɪˈɜːnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/diu/diurn/diurnal__gb_1.mp3
+monday,https://www.oxfordlearnersdictionaries.com/definition/english/monday,A1,Monday,Thứ hai,noun,/ˈmʌndeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monda/monday__gb_1.mp3
+today,https://www.oxfordlearnersdictionaries.com/definition/english/today_2,A1,today,Hôm nay,noun,/təˈdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tod/today/today__gb_1.mp3
+today,https://www.oxfordlearnersdictionaries.com/definition/english/today_1,A1,today,Hôm nay,adverb,/təˈdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tod/today/today__gb_1.mp3
+friday,https://www.oxfordlearnersdictionaries.com/definition/english/friday,A1,Friday,Thứ sáu,noun,/ˈfraɪdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fri/frida/friday_1_gb_1.mp3
+thursday,https://www.oxfordlearnersdictionaries.com/definition/english/thursday,A1,Thursday,Thứ năm,noun,/ˈθɜːzdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thu/thurs/thursday_1_gb_1.mp3
+saturday,https://www.oxfordlearnersdictionaries.com/definition/english/saturday,A1,Saturday,Thứ bảy,noun,/ˈsætədeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sat/satur/saturday_1_gb_1.mp3
+bank_holiday,https://www.oxfordlearnersdictionaries.com/definition/english/bank-holiday,C1,bank holiday,kỳ nghỉ ngân hàng,noun,/ˌbæŋk ˈhɒlədeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/bank_/bank_holiday_1_gb_1.mp3
+day,https://www.oxfordlearnersdictionaries.com/definition/english/day,A1,day,ngày,noun,/deɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/day/day__/day__gb_2.mp3
+sunday,https://www.oxfordlearnersdictionaries.com/definition/english/sunday,A1,Sunday,Chủ nhật,noun,/ˈsʌndeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sun/sunda/sunday_1_gb_1.mp3
+tuesday,https://www.oxfordlearnersdictionaries.com/definition/english/tuesday,A1,Tuesday,Thứ ba,noun,/ˈtjuːzdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tue/tuesd/tuesday__gb_1.mp3
+weekday,https://www.oxfordlearnersdictionaries.com/definition/english/weekday,B1,weekday,ngày trong tuần,noun,/ˈwiːkdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wee/weekd/weekday__gb_1.mp3
+tonight,https://www.oxfordlearnersdictionaries.com/definition/english/tonight_2,A1,tonight,tối nay,noun,/təˈnaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ton/tonig/tonight__gb_1.mp3
+tomorrow,https://www.oxfordlearnersdictionaries.com/definition/english/tomorrow_1,A1,tomorrow,Ngày mai,adverb,/təˈmɒrəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tom/tomor/tomorrow__gb_1.mp3
+tomorrow,https://www.oxfordlearnersdictionaries.com/definition/english/tomorrow_2,A1,tomorrow,Ngày mai,noun,/təˈmɒrəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tom/tomor/tomorrow__gb_1.mp3
+weekdays,https://www.oxfordlearnersdictionaries.com/definition/english/weekdays,B2,weekdays,các ngày trong tuần,adverb,/ˈwiːkdeɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wee/weekd/weekdays__gb_1.mp3
+wednesday,https://www.oxfordlearnersdictionaries.com/definition/english/wednesday,A1,Wednesday,Thứ Tư,noun,/ˈwenzdeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wed/wedne/wednesday_1_gb_1.mp3
+yesterday,https://www.oxfordlearnersdictionaries.com/definition/english/yesterday_2,A1,yesterday,Hôm qua,noun,/ˈjestədeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yes/yeste/yesterday__gb_1.mp3
+yesterday,https://www.oxfordlearnersdictionaries.com/definition/english/yesterday_1,A1,yesterday,Hôm qua,adverb,/ˈjestədeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yes/yeste/yesterday__gb_1.mp3
+victoria_day,https://www.oxfordlearnersdictionaries.com/definition/english/victoria-day,C2,Victoria Day,Ngày Victoria,noun,/vɪkˈtɔːriə deɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vic/victo/victoria_day_1_gb_1.mp3

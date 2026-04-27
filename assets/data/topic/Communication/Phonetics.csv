@@ -1,67 +1,67 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-aspirate,https://www.oxfordlearnersdictionaries.com/definition/english/aspirate_1,C2,aspirate,hút,noun,/ˈæspərət/,
-cluster,https://www.oxfordlearnersdictionaries.com/definition/english/cluster_1,C1,cluster,cụm,noun,/ˈklʌstə(r)/,
-aspirate,https://www.oxfordlearnersdictionaries.com/definition/english/aspirate_2,C2,aspirate,hút,verb,/ˈæspəreɪt/,
-consonant,https://www.oxfordlearnersdictionaries.com/definition/english/consonant_1,A2,consonant,phụ âm,noun,/ˈkɒnsənənt/,
-bilabial,https://www.oxfordlearnersdictionaries.com/definition/english/bilabial_2,C2,bilabial,hai môi,noun,/ˌbaɪˈleɪbiəl/,
-alphabet,https://www.oxfordlearnersdictionaries.com/definition/english/alphabet,A1,alphabet,bảng chữ cái,noun,/ˈælfəbet/,
-circumflex,https://www.oxfordlearnersdictionaries.com/definition/english/circumflex,C2,circumflex,dấu mũ,noun,/ˈsɜːkəmfleks/,
+aspirate,https://www.oxfordlearnersdictionaries.com/definition/english/aspirate_1,C2,aspirate,hút,noun,/ˈæspərət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspirate__gb_1.mp3
+cluster,https://www.oxfordlearnersdictionaries.com/definition/english/cluster_1,C1,cluster,cụm,noun,/ˈklʌstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/clu/clust/cluster__gb_1.mp3
+aspirate,https://www.oxfordlearnersdictionaries.com/definition/english/aspirate_2,C2,aspirate,hút,verb,/ˈæspəreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/asp/aspir/aspirate__gb_2.mp3
+consonant,https://www.oxfordlearnersdictionaries.com/definition/english/consonant_1,A2,consonant,phụ âm,noun,/ˈkɒnsənənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconsonant__gb_1.mp3
+bilabial,https://www.oxfordlearnersdictionaries.com/definition/english/bilabial_2,C2,bilabial,hai môi,noun,/ˌbaɪˈleɪbiəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/bilab/bilabial__gb_2.mp3
+alphabet,https://www.oxfordlearnersdictionaries.com/definition/english/alphabet,A1,alphabet,bảng chữ cái,noun,/ˈælfəbet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alp/alpha/alphabet__gb_1.mp3
+circumflex,https://www.oxfordlearnersdictionaries.com/definition/english/circumflex,C2,circumflex,dấu mũ,noun,/ˈsɜːkəmfleks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cir/circu/circumflex__gb_1.mp3
 closed_syllable,https://www.oxfordlearnersdictionaries.com/definition/english/closed-syllable,C2,closed syllable,âm tiết đóng,noun,/ˌkləʊzd ˈsɪləbl/,
-cedilla,https://www.oxfordlearnersdictionaries.com/definition/english/cedilla,C2,cedilla,cây tuyết tùng,noun,/sɪˈdɪlə/,
-allophone,https://www.oxfordlearnersdictionaries.com/definition/english/allophone_2,C2,allophone,nói nhiều thứ tiếng,noun,/ˈæləfəʊn/,
-fricative,https://www.oxfordlearnersdictionaries.com/definition/english/fricative_1,C2,fricative,ma sát,noun,/ˈfrɪkətɪv/,
-elision,https://www.oxfordlearnersdictionaries.com/definition/english/elision,C2,elision,sự bỏ phiếu,noun,/ɪˈlɪʒn/,
-glide,https://www.oxfordlearnersdictionaries.com/definition/english/glide_2,C2,glide,lướt đi,noun,/ɡlaɪd/,
-continuant,https://www.oxfordlearnersdictionaries.com/definition/english/continuant_1,C2,continuant,liên tục,adjective,/kənˈtɪnjuənt/,
-elide,https://www.oxfordlearnersdictionaries.com/definition/english/elide,C2,elide,elide,verb,/ɪˈlaɪd/,
-diaeresis,https://www.oxfordlearnersdictionaries.com/definition/english/diaeresis,C2,diaeresis,bệnh tiểu đường,noun,/daɪˈerəsɪs/,
-continuant,https://www.oxfordlearnersdictionaries.com/definition/english/continuant_2,C2,continuant,liên tục,noun,/kənˈtɪnjuənt/,
-glottal,https://www.oxfordlearnersdictionaries.com/definition/english/glottal_2,C2,glottal,glottal,noun,/ˈɡlɒtl/,
-glottal_stop,https://www.oxfordlearnersdictionaries.com/definition/english/glottal-stop,C2,glottal stop,dừng lại,noun,/ˌɡlɒtl ˈstɒp/,
-diphthong,https://www.oxfordlearnersdictionaries.com/definition/english/diphthong,C1,diphthong,nguyên âm đôi,noun,/ˈdɪfθɒŋ/,
-grave,https://www.oxfordlearnersdictionaries.com/definition/english/grave2,C2,grave,phần mộ,noun,/ɡrɑːv/,
-hard,https://www.oxfordlearnersdictionaries.com/definition/english/hard_1,C1,hard,cứng,adjective,/hɑːd/,
-intonation,https://www.oxfordlearnersdictionaries.com/definition/english/intonation,B1,intonation,ngữ điệu,noun,/ˌɪntəˈneɪʃn/,
-nasal,https://www.oxfordlearnersdictionaries.com/definition/english/nasal,C2,nasal,mũi,adjective,/ˈneɪzl/,
-labial,https://www.oxfordlearnersdictionaries.com/definition/english/labial_1,C2,labial,môi,noun,/ˈleɪbiəl/,
-labiodental,https://www.oxfordlearnersdictionaries.com/definition/english/labiodental_1,C2,labiodental,môi răng,noun,/ˌleɪbiəʊˈdentl/,
-labiovelar,https://www.oxfordlearnersdictionaries.com/definition/english/labiovelar_1,C2,labiovelar,môi âm hộ,noun,/ˌleɪbiəʊˈviːlə(r)/,
-palatal,https://www.oxfordlearnersdictionaries.com/definition/english/palatal_1,C2,palatal,vòm miệng,noun,/ˈpælətl/,
+cedilla,https://www.oxfordlearnersdictionaries.com/definition/english/cedilla,C2,cedilla,cây tuyết tùng,noun,/sɪˈdɪlə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/ced/cedil/cedilla__gb_2.mp3
+allophone,https://www.oxfordlearnersdictionaries.com/definition/english/allophone_2,C2,allophone,nói nhiều thứ tiếng,noun,/ˈæləfəʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/all/allop/allophone__gb_1.mp3
+fricative,https://www.oxfordlearnersdictionaries.com/definition/english/fricative_1,C2,fricative,ma sát,noun,/ˈfrɪkətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fri/frica/fricative__gb_1.mp3
+elision,https://www.oxfordlearnersdictionaries.com/definition/english/elision,C2,elision,sự bỏ phiếu,noun,/ɪˈlɪʒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eli/elisi/elision__gb_1.mp3
+glide,https://www.oxfordlearnersdictionaries.com/definition/english/glide_2,C2,glide,lướt đi,noun,/ɡlaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gli/glide/glide__gb_2.mp3
+continuant,https://www.oxfordlearnersdictionaries.com/definition/english/continuant_1,C2,continuant,liên tục,adjective,/kənˈtɪnjuənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontinuant__gb_1.mp3
+elide,https://www.oxfordlearnersdictionaries.com/definition/english/elide,C2,elide,elide,verb,/ɪˈlaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eli/elide/elide__gb_1.mp3
+diaeresis,https://www.oxfordlearnersdictionaries.com/definition/english/diaeresis,C2,diaeresis,bệnh tiểu đường,noun,/daɪˈerəsɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/diaer/diaeresis__gb_4.mp3
+continuant,https://www.oxfordlearnersdictionaries.com/definition/english/continuant_2,C2,continuant,liên tục,noun,/kənˈtɪnjuənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontinuant__gb_1.mp3
+glottal,https://www.oxfordlearnersdictionaries.com/definition/english/glottal_2,C2,glottal,glottal,noun,/ˈɡlɒtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/glo/glott/glottal__gb_2.mp3
+glottal_stop,https://www.oxfordlearnersdictionaries.com/definition/english/glottal-stop,C2,glottal stop,dừng lại,noun,/ˌɡlɒtl ˈstɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/glo/glott/glottal_stop_1_gb_2.mp3
+diphthong,https://www.oxfordlearnersdictionaries.com/definition/english/diphthong,C1,diphthong,nguyên âm đôi,noun,/ˈdɪfθɒŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dip/dipht/diphthong__gb_1.mp3
+grave,https://www.oxfordlearnersdictionaries.com/definition/english/grave2,C2,grave,phần mộ,noun,/ɡrɑːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grave/grave__gb_2.mp3
+hard,https://www.oxfordlearnersdictionaries.com/definition/english/hard_1,C1,hard,cứng,adjective,/hɑːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/har/hard_/hard__gb_1.mp3
+intonation,https://www.oxfordlearnersdictionaries.com/definition/english/intonation,B1,intonation,ngữ điệu,noun,/ˌɪntəˈneɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inton/intonation__gb_1.mp3
+nasal,https://www.oxfordlearnersdictionaries.com/definition/english/nasal,C2,nasal,mũi,adjective,/ˈneɪzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nas/nasal/nasal__gb_1.mp3
+labial,https://www.oxfordlearnersdictionaries.com/definition/english/labial_1,C2,labial,môi,noun,/ˈleɪbiəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labia/labial__gb_2.mp3
+labiodental,https://www.oxfordlearnersdictionaries.com/definition/english/labiodental_1,C2,labiodental,môi răng,noun,/ˌleɪbiəʊˈdentl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labio/labiodental__gb_3.mp3
+labiovelar,https://www.oxfordlearnersdictionaries.com/definition/english/labiovelar_1,C2,labiovelar,môi âm hộ,noun,/ˌleɪbiəʊˈviːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labio/labiovelar__gb_1.mp3
+palatal,https://www.oxfordlearnersdictionaries.com/definition/english/palatal_1,C2,palatal,vòm miệng,noun,/ˈpælətl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pal/palat/palatal__gb_1.mp3
 phoneme,https://www.oxfordlearnersdictionaries.com/definition/english/phoneme,C2,phoneme,đơn âm,noun,/ˈfəʊniːm/,
 plosive,https://www.oxfordlearnersdictionaries.com/definition/english/plosive_2,C2,plosive,nổ tung,noun,/ˈpləʊsɪv/,
-pitch,https://www.oxfordlearnersdictionaries.com/definition/english/pitch_1,C1,pitch,sân bóng đá,noun,/pɪtʃ/,
-prosody,https://www.oxfordlearnersdictionaries.com/definition/english/prosody,C2,prosody,thi pháp,noun,/ˈprɒsədi/,
-roll,https://www.oxfordlearnersdictionaries.com/definition/english/roll_1,C2,roll,cuộn,verb,/rəʊl/,
-rhotic,https://www.oxfordlearnersdictionaries.com/definition/english/rhotic,C2,rhotic,rhotic,adjective,/ˈrəʊtɪk/,
-schwa,https://www.oxfordlearnersdictionaries.com/definition/english/schwa,B2,schwa,schwa,noun,/ʃwɑː/,
+pitch,https://www.oxfordlearnersdictionaries.com/definition/english/pitch_1,C1,pitch,sân bóng đá,noun,/pɪtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pit/pitch/pitch__gb_1.mp3
+prosody,https://www.oxfordlearnersdictionaries.com/definition/english/prosody,C2,prosody,thi pháp,noun,/ˈprɒsədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proso/prosody__gb_1.mp3
+roll,https://www.oxfordlearnersdictionaries.com/definition/english/roll_1,C2,roll,cuộn,verb,/rəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rol/role_/role__gb_2.mp3
+rhotic,https://www.oxfordlearnersdictionaries.com/definition/english/rhotic,C2,rhotic,rhotic,adjective,/ˈrəʊtɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rho/rhoti/rhotic__gb_1.mp3
+schwa,https://www.oxfordlearnersdictionaries.com/definition/english/schwa,B2,schwa,schwa,noun,/ʃwɑː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schwa/schwa__gb_1.mp3
 rounded,https://www.oxfordlearnersdictionaries.com/definition/english/rounded,C2,rounded,làm tròn,adjective,/ˈraʊndɪd/,
-primary_stress,https://www.oxfordlearnersdictionaries.com/definition/english/primary-stress,C1,primary stress,căng thẳng chính,noun,/ˌpraɪməri ˈstres/,
-phonetics,https://www.oxfordlearnersdictionaries.com/definition/english/phonetics,C1,phonetics,ngữ âm,noun,/fəˈnetɪks/,
-shwa,https://www.oxfordlearnersdictionaries.com/definition/english/shwa,B2,shwa,shwa,noun,/ʃwɑː/,
-sibilant,https://www.oxfordlearnersdictionaries.com/definition/english/sibilant_2,C2,sibilant,giọng xuýt xoa,noun,/ˈsɪbɪlənt/,
-soft,https://www.oxfordlearnersdictionaries.com/definition/english/soft,C1,soft,mềm mại,adjective,/sɒft/,
-stress,https://www.oxfordlearnersdictionaries.com/definition/english/stress_2,A2,stress,nhấn mạnh,verb,/stres/,
-stressed,https://www.oxfordlearnersdictionaries.com/definition/english/stressed,A2,stressed,nhấn mạnh,adjective,/strest/,
-stress,https://www.oxfordlearnersdictionaries.com/definition/english/stress_1,A2,stress,nhấn mạnh,noun,/stres/,
-secondary_stress,https://www.oxfordlearnersdictionaries.com/definition/english/secondary-stress,C1,secondary stress,căng thẳng thứ cấp,noun,/ˌsekəndri ˈstres/,
-spirant,https://www.oxfordlearnersdictionaries.com/definition/english/spirant_1,C2,spirant,người có hơi thở,noun,/ˈspaɪərənt/,
-stress-timed,https://www.oxfordlearnersdictionaries.com/definition/english/stress-timed,C2,stress-timed,căng thẳng,adjective,/ˈstres taɪmd/,
-stress_mark,https://www.oxfordlearnersdictionaries.com/definition/english/stress-mark,C1,stress mark,dấu căng thẳng,noun,/ˈstres mɑːk/,
-syncope,https://www.oxfordlearnersdictionaries.com/definition/english/syncope,C2,syncope,ngất,noun,/ˈsɪŋkəpi/,
-tap,https://www.oxfordlearnersdictionaries.com/definition/english/tap_2,C2,tap,vỗ nhẹ,noun,/tæp/,
-syllable,https://www.oxfordlearnersdictionaries.com/definition/english/syllable,A2,syllable,âm tiết,noun,/ˈsɪləbl/,
-thorn,https://www.oxfordlearnersdictionaries.com/definition/english/thorn,C2,thorn,gai,noun,/θɔːn/,
-syllable-timed,https://www.oxfordlearnersdictionaries.com/definition/english/syllable-timed,C2,syllable-timed,thời gian theo âm tiết,adjective,/ˈsɪləbl taɪmd/,
-tone,https://www.oxfordlearnersdictionaries.com/definition/english/tone_1,C1,tone,giai điệu,noun,/təʊn/,
-syllabic,https://www.oxfordlearnersdictionaries.com/definition/english/syllabic,C2,syllabic,âm tiết,adjective,/sɪˈlæbɪk/,
-timbre,https://www.oxfordlearnersdictionaries.com/definition/english/timbre,C2,timbre,âm sắc,noun,/ˈtæmbə(r)/,
-trill,https://www.oxfordlearnersdictionaries.com/definition/english/trill_1,C2,trill,ngân vang,noun,/trɪl/,
-umlaut,https://www.oxfordlearnersdictionaries.com/definition/english/umlaut,C2,umlaut,âm sắc,noun,/ˈʊmlaʊt/,
-unvoiced,https://www.oxfordlearnersdictionaries.com/definition/english/unvoiced,C1,unvoiced,vô thanh,adjective,/ˌʌnˈvɔɪst/,
-unrounded,https://www.oxfordlearnersdictionaries.com/definition/english/unrounded,C2,unrounded,không có vòng tròn,adjective,/ˌʌnˈraʊndɪd/,
-voice,https://www.oxfordlearnersdictionaries.com/definition/english/voice_2,C1,voice,tiếng nói,verb,/vɔɪs/,
-voiced,https://www.oxfordlearnersdictionaries.com/definition/english/voiced,C1,voiced,lên tiếng,adjective,/vɔɪst/,
-velar,https://www.oxfordlearnersdictionaries.com/definition/english/velar_1,C2,velar,mềm mại,noun,/ˈviːlə(r)/,
-vowel,https://www.oxfordlearnersdictionaries.com/definition/english/vowel,A2,vowel,nguyên âm,noun,/ˈvaʊəl/,
-uvular,https://www.oxfordlearnersdictionaries.com/definition/english/uvular,C2,uvular,lưỡi gà,adjective,/ˈjuːvjələ(r)/,
-voiceless,https://www.oxfordlearnersdictionaries.com/definition/english/voiceless,C1,voiceless,vô thanh,adjective,/ˈvɔɪsləs/,
+primary_stress,https://www.oxfordlearnersdictionaries.com/definition/english/primary-stress,C1,primary stress,căng thẳng chính,noun,/ˌpraɪməri ˈstres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/prima/primary_stress_1_gb_1.mp3
+phonetics,https://www.oxfordlearnersdictionaries.com/definition/english/phonetics,C1,phonetics,ngữ âm,noun,/fəˈnetɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pho/phone/phonetics__gb_1.mp3
+shwa,https://www.oxfordlearnersdictionaries.com/definition/english/shwa,B2,shwa,shwa,noun,/ʃwɑː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schwa/schwa__gb_1.mp3
+sibilant,https://www.oxfordlearnersdictionaries.com/definition/english/sibilant_2,C2,sibilant,giọng xuýt xoa,noun,/ˈsɪbɪlənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sib/sibil/sibilant__gb_1.mp3
+soft,https://www.oxfordlearnersdictionaries.com/definition/english/soft,C1,soft,mềm mại,adjective,/sɒft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sof/soft_/soft__gb_3.mp3
+stress,https://www.oxfordlearnersdictionaries.com/definition/english/stress_2,A2,stress,nhấn mạnh,verb,/stres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/stres/stress__gb_2.mp3
+stressed,https://www.oxfordlearnersdictionaries.com/definition/english/stressed,A2,stressed,nhấn mạnh,adjective,/strest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/stres/stressed__gb_1.mp3
+stress,https://www.oxfordlearnersdictionaries.com/definition/english/stress_1,A2,stress,nhấn mạnh,noun,/stres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/stres/stress__gb_2.mp3
+secondary_stress,https://www.oxfordlearnersdictionaries.com/definition/english/secondary-stress,C1,secondary stress,căng thẳng thứ cấp,noun,/ˌsekəndri ˈstres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secon/secondary_stress_1_gb_1.mp3
+spirant,https://www.oxfordlearnersdictionaries.com/definition/english/spirant_1,C2,spirant,người có hơi thở,noun,/ˈspaɪərənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spi/spira/spirant__gb_1.mp3
+stress-timed,https://www.oxfordlearnersdictionaries.com/definition/english/stress-timed,C2,stress-timed,căng thẳng,adjective,/ˈstres taɪmd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/stres/stress_timed_1_gb_1.mp3
+stress_mark,https://www.oxfordlearnersdictionaries.com/definition/english/stress-mark,C1,stress mark,dấu căng thẳng,noun,/ˈstres mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/stres/stress_mark_1_gb_1.mp3
+syncope,https://www.oxfordlearnersdictionaries.com/definition/english/syncope,C2,syncope,ngất,noun,/ˈsɪŋkəpi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/syn/synco/syncope__gb_1.mp3
+tap,https://www.oxfordlearnersdictionaries.com/definition/english/tap_2,C2,tap,vỗ nhẹ,noun,/tæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tap/tap__/tap__gb_2.mp3
+syllable,https://www.oxfordlearnersdictionaries.com/definition/english/syllable,A2,syllable,âm tiết,noun,/ˈsɪləbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/syl/sylla/syllable__gb_1.mp3
+thorn,https://www.oxfordlearnersdictionaries.com/definition/english/thorn,C2,thorn,gai,noun,/θɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tho/thorn/thorn__gb_1.mp3
+syllable-timed,https://www.oxfordlearnersdictionaries.com/definition/english/syllable-timed,C2,syllable-timed,thời gian theo âm tiết,adjective,/ˈsɪləbl taɪmd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/syl/sylla/syllable_timed_1_gb_1.mp3
+tone,https://www.oxfordlearnersdictionaries.com/definition/english/tone_1,C1,tone,giai điệu,noun,/təʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ton/tone_/tone__gb_1.mp3
+syllabic,https://www.oxfordlearnersdictionaries.com/definition/english/syllabic,C2,syllabic,âm tiết,adjective,/sɪˈlæbɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/syl/sylla/syllabic__gb_1.mp3
+timbre,https://www.oxfordlearnersdictionaries.com/definition/english/timbre,C2,timbre,âm sắc,noun,/ˈtæmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/timbr/timbre__gb_1.mp3
+trill,https://www.oxfordlearnersdictionaries.com/definition/english/trill_1,C2,trill,ngân vang,noun,/trɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tri/trill/trill__gb_1.mp3
+umlaut,https://www.oxfordlearnersdictionaries.com/definition/english/umlaut,C2,umlaut,âm sắc,noun,/ˈʊmlaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/uml/umlau/umlaut__gb_1.mp3
+unvoiced,https://www.oxfordlearnersdictionaries.com/definition/english/unvoiced,C1,unvoiced,vô thanh,adjective,/ˌʌnˈvɔɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unv/unvoi/unvoiced__gb_1.mp3
+unrounded,https://www.oxfordlearnersdictionaries.com/definition/english/unrounded,C2,unrounded,không có vòng tròn,adjective,/ˌʌnˈraʊndɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/unr/unrou/unrounded__gb_1.mp3
+voice,https://www.oxfordlearnersdictionaries.com/definition/english/voice_2,C1,voice,tiếng nói,verb,/vɔɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voi/voice/voice__gb_1.mp3
+voiced,https://www.oxfordlearnersdictionaries.com/definition/english/voiced,C1,voiced,lên tiếng,adjective,/vɔɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voi/voice/voiced__gb_1.mp3
+velar,https://www.oxfordlearnersdictionaries.com/definition/english/velar_1,C2,velar,mềm mại,noun,/ˈviːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vel/velar/velar__gb_1.mp3
+vowel,https://www.oxfordlearnersdictionaries.com/definition/english/vowel,A2,vowel,nguyên âm,noun,/ˈvaʊəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vow/vowel/vowel__gb_1.mp3
+uvular,https://www.oxfordlearnersdictionaries.com/definition/english/uvular,C2,uvular,lưỡi gà,adjective,/ˈjuːvjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/uvu/uvula/uvular__gb_1.mp3
+voiceless,https://www.oxfordlearnersdictionaries.com/definition/english/voiceless,C1,voiceless,vô thanh,adjective,/ˈvɔɪsləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voi/voice/voiceless__gb_1.mp3

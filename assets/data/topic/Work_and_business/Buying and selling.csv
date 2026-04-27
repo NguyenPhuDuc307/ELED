@@ -1,43 +1,43 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-commodity,https://www.oxfordlearnersdictionaries.com/definition/english/commodity,C1,commodity,hàng hóa,noun,/kəˈmɒdəti/,
-broker,https://www.oxfordlearnersdictionaries.com/definition/english/broker_1,C2,broker,người môi giới,noun,/ˈbrəʊkə(r)/,
-auction,https://www.oxfordlearnersdictionaries.com/definition/english/auction_1,B2,auction,đấu giá,noun,/ˈɔːkʃn/,
-auction,https://www.oxfordlearnersdictionaries.com/definition/english/auction_2,B2,auction,đấu giá,verb,/ˈɔːkʃn/,
-checkout,https://www.oxfordlearnersdictionaries.com/definition/english/checkout,B2,checkout,thanh toán,noun,/ˈtʃekaʊt/,
-charge,https://www.oxfordlearnersdictionaries.com/definition/english/charge_1,B1,charge,thù lao,noun,/tʃɑːdʒ/,
-bargain,https://www.oxfordlearnersdictionaries.com/definition/english/bargain_1,B2,bargain,mặc cả,noun,/ˈbɑːɡən/,
-charge,https://www.oxfordlearnersdictionaries.com/definition/english/charge_2,B1,charge,thù lao,verb,/tʃɑːdʒ/,
-change,https://www.oxfordlearnersdictionaries.com/definition/english/change_2,B1,change,thay đổi,noun,/tʃeɪndʒ/,
-buy,https://www.oxfordlearnersdictionaries.com/definition/english/buy_1,A1,buy,mua,verb,/baɪ/,
-consumer_spending,https://www.oxfordlearnersdictionaries.com/definition/english/consumer-spending,C1,consumer spending,chi tiêu tiêu dùng,noun,/kənˌsjuːmə ˈspendɪŋ/,
-dealing,https://www.oxfordlearnersdictionaries.com/definition/english/dealing,C2,dealing,giao dịch,noun,/ˈdiːlɪŋ/,
-discount,https://www.oxfordlearnersdictionaries.com/definition/english/discount_2,B2,discount,giảm giá,verb,/ˈdɪskaʊnt/,
-duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_3,C1,duty-free,miễn thuế,adverb,/ˌdjuːti ˈfriː/,
-duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_1,C1,duty-free,miễn thuế,adjective,/ˌdjuːti ˈfriː/,
-cost,https://www.oxfordlearnersdictionaries.com/definition/english/cost_1,A1,cost,trị giá,noun,/kɒst/,
-discount,https://www.oxfordlearnersdictionaries.com/definition/english/discount_1,B1,discount,giảm giá,noun,/ˈdɪskaʊnt/,
-coupon,https://www.oxfordlearnersdictionaries.com/definition/english/coupon,B2,coupon,phiếu giảm giá,noun,/ˈkuːpɒn/,
-duty,https://www.oxfordlearnersdictionaries.com/definition/english/duty,C1,duty,nhiệm vụ,noun,/ˈdjuːti/,
-expensive,https://www.oxfordlearnersdictionaries.com/definition/english/expensive,A1,expensive,đắt,adjective,/ɪkˈspensɪv/,
-price,https://www.oxfordlearnersdictionaries.com/definition/english/price_1,A1,price,giá,noun,/praɪs/,
-haggle,https://www.oxfordlearnersdictionaries.com/definition/english/haggle,C2,haggle,mặc cả,verb,/ˈhæɡl/,
-raffle,https://www.oxfordlearnersdictionaries.com/definition/english/raffle_1,C2,raffle,xổ số,noun,/ˈræfl/,
-reduce,https://www.oxfordlearnersdictionaries.com/definition/english/reduce,A2,reduce,giảm bớt,verb,/rɪˈdjuːs/,
-outspend,https://www.oxfordlearnersdictionaries.com/definition/english/outspend,C2,outspend,chi tiêu nhiều hơn,verb,/ˌaʊtˈspend/,
-folding_money,https://www.oxfordlearnersdictionaries.com/definition/english/folding-money,C2,folding money,gấp tiền,noun,/ˈfəʊldɪŋ mʌni/,
-down_payment,https://www.oxfordlearnersdictionaries.com/definition/english/down-payment,C2,down payment,trả trước,noun,/ˌdaʊn ˈpeɪmənt/,
-price,https://www.oxfordlearnersdictionaries.com/definition/english/price_2,B2,price,giá,verb,/praɪs/,
-price-fixing,https://www.oxfordlearnersdictionaries.com/definition/english/price-fixing,C1,price-fixing,ấn định giá,noun,/ˈpraɪs fɪksɪŋ/,
-reduction,https://www.oxfordlearnersdictionaries.com/definition/english/reduction,B2,reduction,sự giảm bớt,noun,/rɪˈdʌkʃn/,
-silent_auction,https://www.oxfordlearnersdictionaries.com/definition/english/silent-auction,C2,silent auction,đấu giá im lặng,noun,/ˌsaɪlənt ˈɔːkʃn/,
-sell,https://www.oxfordlearnersdictionaries.com/definition/english/sell_1,A1,sell,bán,verb,/sel/,
-till,https://www.oxfordlearnersdictionaries.com/definition/english/till_2,C1,till,cho đến khi,noun,/tɪl/,
-trade,https://www.oxfordlearnersdictionaries.com/definition/english/trade_2,B1,trade,buôn bán,verb,/treɪd/,
-takings,https://www.oxfordlearnersdictionaries.com/definition/english/takings,C2,takings,thu nhập,noun,/ˈteɪkɪŋz/,
-spend,https://www.oxfordlearnersdictionaries.com/definition/english/spend_1,A1,spend,tiêu,verb,/spend/,
-trading,https://www.oxfordlearnersdictionaries.com/definition/english/trading,B2,trading,giao dịch,noun,/ˈtreɪdɪŋ/,
-undercut,https://www.oxfordlearnersdictionaries.com/definition/english/undercut_1,C2,undercut,sự cắt xén,verb,/ˌʌndəˈkʌt/,
-spending,https://www.oxfordlearnersdictionaries.com/definition/english/spending,B1,spending,chi tiêu,noun,/ˈspendɪŋ/,
-upsell,https://www.oxfordlearnersdictionaries.com/definition/english/upsell_1,C2,upsell,bán thêm,noun,/ˈʌpsel/,
-upselling,https://www.oxfordlearnersdictionaries.com/definition/english/upselling,C2,upselling,bán thêm,noun,/ˈʌpselɪŋ/,
-upsell,https://www.oxfordlearnersdictionaries.com/definition/english/upsell_2,C2,upsell,bán thêm,verb,/ˈʌpsel/,
+commodity,https://www.oxfordlearnersdictionaries.com/definition/english/commodity,C1,commodity,hàng hóa,noun,/kəˈmɒdəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commo/commodity__gb_3.mp3
+broker,https://www.oxfordlearnersdictionaries.com/definition/english/broker_1,C2,broker,người môi giới,noun,/ˈbrəʊkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bro/broke/broker__gb_1.mp3
+auction,https://www.oxfordlearnersdictionaries.com/definition/english/auction_1,B2,auction,đấu giá,noun,/ˈɔːkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/auc/aucti/auction__gb_1.mp3
+auction,https://www.oxfordlearnersdictionaries.com/definition/english/auction_2,B2,auction,đấu giá,verb,/ˈɔːkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/auc/aucti/auction__gb_1.mp3
+checkout,https://www.oxfordlearnersdictionaries.com/definition/english/checkout,B2,checkout,thanh toán,noun,/ˈtʃekaʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/check/checkout__gb_3.mp3
+charge,https://www.oxfordlearnersdictionaries.com/definition/english/charge_1,B1,charge,thù lao,noun,/tʃɑːdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/charg/charge__gb_2.mp3
+bargain,https://www.oxfordlearnersdictionaries.com/definition/english/bargain_1,B2,bargain,mặc cả,noun,/ˈbɑːɡən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/barga/bargain__gb_3.mp3
+charge,https://www.oxfordlearnersdictionaries.com/definition/english/charge_2,B1,charge,thù lao,verb,/tʃɑːdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/charg/charge__gb_2.mp3
+change,https://www.oxfordlearnersdictionaries.com/definition/english/change_2,B1,change,thay đổi,noun,/tʃeɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chang/change__gb_2.mp3
+buy,https://www.oxfordlearnersdictionaries.com/definition/english/buy_1,A1,buy,mua,verb,/baɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/buy/buy__/buy__gb_2.mp3
+consumer_spending,https://www.oxfordlearnersdictionaries.com/definition/english/consumer-spending,C1,consumer spending,chi tiêu tiêu dùng,noun,/kənˌsjuːmə ˈspendɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcons/xconsumer_spending_1_gb_1.mp3
+dealing,https://www.oxfordlearnersdictionaries.com/definition/english/dealing,C2,dealing,giao dịch,noun,/ˈdiːlɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dea/deali/dealing__gb_1.mp3
+discount,https://www.oxfordlearnersdictionaries.com/definition/english/discount_2,B2,discount,giảm giá,verb,/ˈdɪskaʊnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disco/discount__gb_1.mp3
+duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_3,C1,duty-free,miễn thuế,adverb,/ˌdjuːti ˈfriː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dut/duty_/duty_free_1_gb_1.mp3
+duty-free,https://www.oxfordlearnersdictionaries.com/definition/english/duty-free_1,C1,duty-free,miễn thuế,adjective,/ˌdjuːti ˈfriː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dut/duty_/duty_free_1_gb_1.mp3
+cost,https://www.oxfordlearnersdictionaries.com/definition/english/cost_1,A1,cost,trị giá,noun,/kɒst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cos/cost_/cost__gb_1.mp3
+discount,https://www.oxfordlearnersdictionaries.com/definition/english/discount_1,B1,discount,giảm giá,noun,/ˈdɪskaʊnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disco/discount__gb_1.mp3
+coupon,https://www.oxfordlearnersdictionaries.com/definition/english/coupon,B2,coupon,phiếu giảm giá,noun,/ˈkuːpɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/coupo/coupon__gb_1.mp3
+duty,https://www.oxfordlearnersdictionaries.com/definition/english/duty,C1,duty,nhiệm vụ,noun,/ˈdjuːti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dut/duty_/duty__gb_1.mp3
+expensive,https://www.oxfordlearnersdictionaries.com/definition/english/expensive,A1,expensive,đắt,adjective,/ɪkˈspensɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/expen/expensive__gb_3.mp3
+price,https://www.oxfordlearnersdictionaries.com/definition/english/price_1,A1,price,giá,noun,/praɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/price/price__gb_1.mp3
+haggle,https://www.oxfordlearnersdictionaries.com/definition/english/haggle,C2,haggle,mặc cả,verb,/ˈhæɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hag/haggl/haggle__gb_2.mp3
+raffle,https://www.oxfordlearnersdictionaries.com/definition/english/raffle_1,C2,raffle,xổ số,noun,/ˈræfl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/raf/raffl/raffle__gb_1.mp3
+reduce,https://www.oxfordlearnersdictionaries.com/definition/english/reduce,A2,reduce,giảm bớt,verb,/rɪˈdjuːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/red/reduc/reduce__gb_2.mp3
+outspend,https://www.oxfordlearnersdictionaries.com/definition/english/outspend,C2,outspend,chi tiêu nhiều hơn,verb,/ˌaʊtˈspend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outsp/outspend__gb_2.mp3
+folding_money,https://www.oxfordlearnersdictionaries.com/definition/english/folding-money,C2,folding money,gấp tiền,noun,/ˈfəʊldɪŋ mʌni/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fol/foldi/folding_money_1_gb_1.mp3
+down_payment,https://www.oxfordlearnersdictionaries.com/definition/english/down-payment,C2,down payment,trả trước,noun,/ˌdaʊn ˈpeɪmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dow/down_/down_payment_1_gb_1.mp3
+price,https://www.oxfordlearnersdictionaries.com/definition/english/price_2,B2,price,giá,verb,/praɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/price/price__gb_1.mp3
+price-fixing,https://www.oxfordlearnersdictionaries.com/definition/english/price-fixing,C1,price-fixing,ấn định giá,noun,/ˈpraɪs fɪksɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/price/price_fixing_1_gb_1.mp3
+reduction,https://www.oxfordlearnersdictionaries.com/definition/english/reduction,B2,reduction,sự giảm bớt,noun,/rɪˈdʌkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/red/reduc/reduction__gb_1.mp3
+silent_auction,https://www.oxfordlearnersdictionaries.com/definition/english/silent-auction,C2,silent auction,đấu giá im lặng,noun,/ˌsaɪlənt ˈɔːkʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sil/silen/silent_auction_1_gb_1.mp3
+sell,https://www.oxfordlearnersdictionaries.com/definition/english/sell_1,A1,sell,bán,verb,/sel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/sell_/sell__gb_1.mp3
+till,https://www.oxfordlearnersdictionaries.com/definition/english/till_2,C1,till,cho đến khi,noun,/tɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/til/till_/till__gb_1.mp3
+trade,https://www.oxfordlearnersdictionaries.com/definition/english/trade_2,B1,trade,buôn bán,verb,/treɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trade/trade__gb_1.mp3
+takings,https://www.oxfordlearnersdictionaries.com/definition/english/takings,C2,takings,thu nhập,noun,/ˈteɪkɪŋz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tak/takin/takings__gb_1.mp3
+spend,https://www.oxfordlearnersdictionaries.com/definition/english/spend_1,A1,spend,tiêu,verb,/spend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/spend/spend__gb_1.mp3
+trading,https://www.oxfordlearnersdictionaries.com/definition/english/trading,B2,trading,giao dịch,noun,/ˈtreɪdɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/tradi/trading__gb_1.mp3
+undercut,https://www.oxfordlearnersdictionaries.com/definition/english/undercut_1,C2,undercut,sự cắt xén,verb,/ˌʌndəˈkʌt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/und/under/undercut__gb_1.mp3
+spending,https://www.oxfordlearnersdictionaries.com/definition/english/spending,B1,spending,chi tiêu,noun,/ˈspendɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/spend/spending__gb_1.mp3
+upsell,https://www.oxfordlearnersdictionaries.com/definition/english/upsell_1,C2,upsell,bán thêm,noun,/ˈʌpsel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/ups/upsel/upsell__gb_1.mp3
+upselling,https://www.oxfordlearnersdictionaries.com/definition/english/upselling,C2,upselling,bán thêm,noun,/ˈʌpselɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/ups/upsel/upselling__gb_1.mp3
+upsell,https://www.oxfordlearnersdictionaries.com/definition/english/upsell_2,C2,upsell,bán thêm,verb,/ˈʌpsel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/ups/upsel/upsell__gb_1.mp3

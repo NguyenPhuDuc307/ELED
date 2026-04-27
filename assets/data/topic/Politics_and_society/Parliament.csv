@@ -1,60 +1,60 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-capitol,https://www.oxfordlearnersdictionaries.com/definition/english/capitol,C2,capitol,thủ đô,noun,/ˈkæpɪtl/,
-congress,https://www.oxfordlearnersdictionaries.com/definition/english/congress,B2,congress,đại hội,noun,/ˈkɒŋɡres/,
-assembly,https://www.oxfordlearnersdictionaries.com/definition/english/assembly,C1,assembly,cuộc họp,noun,/əˈsembli/,
-chamber,https://www.oxfordlearnersdictionaries.com/definition/english/chamber,C1,chamber,buồng,noun,/ˈtʃeɪmbə(r)/,
-bill,https://www.oxfordlearnersdictionaries.com/definition/english/bill_1,B2,bill,hóa đơn,noun,/bɪl/,
-bench,https://www.oxfordlearnersdictionaries.com/definition/english/bench_1,C2,bench,băng ghế dự bị,noun,/bentʃ/,
-act,https://www.oxfordlearnersdictionaries.com/definition/english/act_2,B1,act,hành động,noun,/ækt/,
-conference_committee,https://www.oxfordlearnersdictionaries.com/definition/english/conference-committee,C2,conference committee,ủy ban hội nghị,noun,/ˈkɒnfərəns kəmɪti/,
-congressional,https://www.oxfordlearnersdictionaries.com/definition/english/congressional,C1,congressional,quốc hội,adjective,/kənˈɡreʃənl/,
-commons,https://www.oxfordlearnersdictionaries.com/definition/english/the-commons,C2,Commons,chung,noun,/ˈkɒmənz/,
-executive,https://www.oxfordlearnersdictionaries.com/definition/english/executive_1,C1,executive,điều hành,noun,/ɪɡˈzekjətɪv/,
-debate,https://www.oxfordlearnersdictionaries.com/definition/english/debate_1,B2,debate,tranh luận,noun,/dɪˈbeɪt/,
-debate,https://www.oxfordlearnersdictionaries.com/definition/english/debate_2,B2,debate,tranh luận,verb,/dɪˈbeɪt/,
-back_bench,https://www.oxfordlearnersdictionaries.com/definition/english/back-bench,C2,back bench,băng ghế sau,noun,/ˌbæk ˈbentʃ/,
-house_of_representatives,https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-representatives,C2,House of Representatives,Hạ viện,noun,/ðə ˌhaʊs əv ˌreprɪˈzentətɪvz/,
-house_of_lords,https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-lords,C2,House of Lords,Nhà của các lãnh chúa,noun,/ðə ˌhaʊs əv ˈlɔːdz/,
-house_of_commons,https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-commons,C2,House of Commons,Hạ viện,noun,/ðə ˌhaʊs əv ˈkɒmənz/,
-inaugural,https://www.oxfordlearnersdictionaries.com/definition/english/inaugural_2,C2,inaugural,khai mạc,noun,/ɪˈnɔːɡjərəl/,
-inaugurate,https://www.oxfordlearnersdictionaries.com/definition/english/inaugurate,C2,inaugurate,khánh thành,verb,/ɪˈnɔːɡjəreɪt/,
-inauguration,https://www.oxfordlearnersdictionaries.com/definition/english/inauguration,C2,inauguration,lễ khánh thành,noun,/ɪˌnɔːɡjəˈreɪʃn/,
-inauguration_day,https://www.oxfordlearnersdictionaries.com/definition/english/inauguration-day,C2,Inauguration Day,Ngày khánh thành,noun,/ɪˌnɔːɡjəˈreɪʃn deɪ/,
-houses_of_parliament,https://www.oxfordlearnersdictionaries.com/definition/english/the-houses-of-parliament,C1,Houses of Parliament,Nhà Quốc hội,noun,/ðə ˌhaʊzɪz əv ˈpɑːləmənt/,
-inaugural,https://www.oxfordlearnersdictionaries.com/definition/english/inaugural_1,C2,inaugural,khai mạc,adjective,/ɪˈnɔːɡjərəl/,
-legislate,https://www.oxfordlearnersdictionaries.com/definition/english/legislate,C1,legislate,lập pháp,verb,/ˈledʒɪsleɪt/,
-legislation,https://www.oxfordlearnersdictionaries.com/definition/english/legislation,C1,legislation,pháp luật,noun,/ˌledʒɪsˈleɪʃn/,
-legislative,https://www.oxfordlearnersdictionaries.com/definition/english/legislative,C1,legislative,lập pháp,adjective,/ˈledʒɪslətɪv/,
-leader_of_the_opposition,https://www.oxfordlearnersdictionaries.com/definition/english/the-leader-of-the-opposition,C2,Leader of the Opposition,Lãnh đạo phe đối lập,noun,/ðə ˌliːdər əv ði ˌɒpəˈzɪʃn/,
-lobby,https://www.oxfordlearnersdictionaries.com/definition/english/lobby_1,C1,lobby,sảnh,noun,/ˈlɒbi/,
-lobby,https://www.oxfordlearnersdictionaries.com/definition/english/lobby_2,C1,lobby,sảnh,verb,/ˈlɒbi/,
-legislature,https://www.oxfordlearnersdictionaries.com/definition/english/legislature,C1,legislature,cơ quan lập pháp,noun,/ˈledʒɪslətʃə(r)/,
-leader_of_the_house,https://www.oxfordlearnersdictionaries.com/definition/english/the-leader-of-the-house,C2,Leader of the House,Lãnh đạo Nhà,noun,/ðə ˌliːdər əv ðə ˈhaʊs/,
-pairing,https://www.oxfordlearnersdictionaries.com/definition/english/pairing,C2,pairing,ghép nối,noun,/ˈpeərɪŋ/,
-parliamentary,https://www.oxfordlearnersdictionaries.com/definition/english/parliamentary,C1,parliamentary,nghị viện,adjective,/ˌpɑːləˈmentri/,
-parliament,https://www.oxfordlearnersdictionaries.com/definition/english/parliament,B2,parliament,quốc hội,noun,/ˈpɑːləmənt/,
-passage,https://www.oxfordlearnersdictionaries.com/definition/english/passage,C2,passage,đoạn văn,noun,/ˈpæsɪdʒ/,
-pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_1,B2,pass,vượt qua,verb,/pɑːs/,
-passing,https://www.oxfordlearnersdictionaries.com/definition/english/passing_1,C1,passing,đi qua,noun,/ˈpɑːsɪŋ/,
-pentagon,https://www.oxfordlearnersdictionaries.com/definition/english/pentagon,C2,pentagon,ngũ giác,noun,/ˈpentəɡən/,
-minority_government,https://www.oxfordlearnersdictionaries.com/definition/english/minority-government,C2,minority government,chính phủ thiểu số,noun,/maɪˌnɒrəti ˈɡʌvənmənt/,
-parliamentary_privilege,https://www.oxfordlearnersdictionaries.com/definition/english/parliamentary-privilege,C2,parliamentary privilege,đặc quyền của nghị viện,noun,/ˌpɑːləˌmentri ˈprɪvəlɪdʒ/,
-opposition,https://www.oxfordlearnersdictionaries.com/definition/english/opposition,B2,opposition,sự phản đối,noun,/ˌɒpəˈzɪʃn/,
-proposition,https://www.oxfordlearnersdictionaries.com/definition/english/proposition_1,C1,proposition,lời đề nghị,noun,/ˌprɒpəˈzɪʃn/,
-repeal,https://www.oxfordlearnersdictionaries.com/definition/english/repeal_1,C2,repeal,bãi bỏ,noun,/rɪˈpiːl/,
-repeal,https://www.oxfordlearnersdictionaries.com/definition/english/repeal_2,C2,repeal,bãi bỏ,verb,/rɪˈpiːl/,
-recess,https://www.oxfordlearnersdictionaries.com/definition/english/recess_1,C2,recess,giờ ra chơi,noun,/ˈriːses/,
-seat,https://www.oxfordlearnersdictionaries.com/definition/english/seat_1,B2,seat,ghế,noun,/siːt/,
-senate,https://www.oxfordlearnersdictionaries.com/definition/english/senate,C1,senate,thượng viện,noun,/ˈsenət/,
-session,https://www.oxfordlearnersdictionaries.com/definition/english/session,B2,session,phiên họp,noun,/ˈseʃn/,
-second_chamber,https://www.oxfordlearnersdictionaries.com/definition/english/second-chamber,C2,second chamber,buồng thứ hai,noun,/ˌsekənd ˈtʃeɪmbə(r)/,
-prorogue,https://www.oxfordlearnersdictionaries.com/definition/english/prorogue,C2,prorogue,lời mở đầu,verb,/prəʊˈrəʊɡ/,
-sit,https://www.oxfordlearnersdictionaries.com/definition/english/sit,C2,sit,ngồi,verb,/sɪt/,
-statute,https://www.oxfordlearnersdictionaries.com/definition/english/statute,C2,statute,quy chế,noun,/ˈstætʃuːt/,
-press_gallery,https://www.oxfordlearnersdictionaries.com/definition/english/press-gallery,C2,press gallery,phòng trưng bày báo chí,noun,/ˈpres ɡæləri/,
-state_house,https://www.oxfordlearnersdictionaries.com/definition/english/state-house,C2,state house,nhà nước,noun,/ˈsteɪt haʊs/,
-statute_law,https://www.oxfordlearnersdictionaries.com/definition/english/statute-law,C2,statute law,luật lệ,noun,/ˈstætʃuːt lɔː/,
-upper_house,https://www.oxfordlearnersdictionaries.com/definition/english/upper-house,C2,upper house,thượng viện,noun,/ˌʌpə ˈhaʊs/,
-whip,https://www.oxfordlearnersdictionaries.com/definition/english/whip_1,C2,whip,roi da,verb,/wɪp/,
-upper_chamber,https://www.oxfordlearnersdictionaries.com/definition/english/upper-chamber,C2,upper chamber,buồng trên,noun,/ˌʌpə ˈtʃeɪmbə(r)/,
-westminster,https://www.oxfordlearnersdictionaries.com/definition/english/westminster,C2,Westminster,Westminster,noun,/ˈwestmɪnstə(r)/,
+capitol,https://www.oxfordlearnersdictionaries.com/definition/english/capitol,C2,capitol,thủ đô,noun,/ˈkæpɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/capit/capitol__gb_1.mp3
+congress,https://www.oxfordlearnersdictionaries.com/definition/english/congress,B2,congress,đại hội,noun,/ˈkɒŋɡres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcong/xcongress__gb_5.mp3
+assembly,https://www.oxfordlearnersdictionaries.com/definition/english/assembly,C1,assembly,cuộc họp,noun,/əˈsembli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ass/assem/assembly__gb_2.mp3
+chamber,https://www.oxfordlearnersdictionaries.com/definition/english/chamber,C1,chamber,buồng,noun,/ˈtʃeɪmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chamb/chamber__gb_1.mp3
+bill,https://www.oxfordlearnersdictionaries.com/definition/english/bill_1,B2,bill,hóa đơn,noun,/bɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/bill_/bill__gb_3.mp3
+bench,https://www.oxfordlearnersdictionaries.com/definition/english/bench_1,C2,bench,băng ghế dự bị,noun,/bentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ben/bench/bench__gb_5.mp3
+act,https://www.oxfordlearnersdictionaries.com/definition/english/act_2,B1,act,hành động,noun,/ækt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/act/act__/act__gb_2.mp3
+conference_committee,https://www.oxfordlearnersdictionaries.com/definition/english/conference-committee,C2,conference committee,ủy ban hội nghị,noun,/ˈkɒnfərəns kəmɪti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconf/xconference_committee_1_gb_1.mp3
+congressional,https://www.oxfordlearnersdictionaries.com/definition/english/congressional,C1,congressional,quốc hội,adjective,/kənˈɡreʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcong/xcongressional__gb_1.mp3
+commons,https://www.oxfordlearnersdictionaries.com/definition/english/the-commons,C2,Commons,chung,noun,/ˈkɒmənz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commo/commons__gb_1.mp3
+executive,https://www.oxfordlearnersdictionaries.com/definition/english/executive_1,C1,executive,điều hành,noun,/ɪɡˈzekjətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/execu/executive__gb_1.mp3
+debate,https://www.oxfordlearnersdictionaries.com/definition/english/debate_1,B2,debate,tranh luận,noun,/dɪˈbeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/deb/debat/debate__gb_2.mp3
+debate,https://www.oxfordlearnersdictionaries.com/definition/english/debate_2,B2,debate,tranh luận,verb,/dɪˈbeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/deb/debat/debate__gb_2.mp3
+back_bench,https://www.oxfordlearnersdictionaries.com/definition/english/back-bench,C2,back bench,băng ghế sau,noun,/ˌbæk ˈbentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/back_/back_bench_1_gb_1.mp3
+house_of_representatives,https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-representatives,C2,House of Representatives,Hạ viện,noun,/ðə ˌhaʊs əv ˌreprɪˈzentətɪvz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_h/the_house_of_representatives_1_gb_1.mp3
+house_of_lords,https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-lords,C2,House of Lords,Nhà của các lãnh chúa,noun,/ðə ˌhaʊs əv ˈlɔːdz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/house/house_of_lords_the_1_gb_1.mp3
+house_of_commons,https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-commons,C2,House of Commons,Hạ viện,noun,/ðə ˌhaʊs əv ˈkɒmənz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/house/house_of_commons_the_1_gb_1.mp3
+inaugural,https://www.oxfordlearnersdictionaries.com/definition/english/inaugural_2,C2,inaugural,khai mạc,noun,/ɪˈnɔːɡjərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inaug/inaugural__gb_1.mp3
+inaugurate,https://www.oxfordlearnersdictionaries.com/definition/english/inaugurate,C2,inaugurate,khánh thành,verb,/ɪˈnɔːɡjəreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inaug/inaugurate__gb_1.mp3
+inauguration,https://www.oxfordlearnersdictionaries.com/definition/english/inauguration,C2,inauguration,lễ khánh thành,noun,/ɪˌnɔːɡjəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inaug/inauguration__gb_1.mp3
+inauguration_day,https://www.oxfordlearnersdictionaries.com/definition/english/inauguration-day,C2,Inauguration Day,Ngày khánh thành,noun,/ɪˌnɔːɡjəˈreɪʃn deɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inaug/inauguration_day_1_gb_2.mp3
+houses_of_parliament,https://www.oxfordlearnersdictionaries.com/definition/english/the-houses-of-parliament,C1,Houses of Parliament,Nhà Quốc hội,noun,/ðə ˌhaʊzɪz əv ˈpɑːləmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/house/houses_of_parliament_1_gb_2.mp3
+inaugural,https://www.oxfordlearnersdictionaries.com/definition/english/inaugural_1,C2,inaugural,khai mạc,adjective,/ɪˈnɔːɡjərəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ina/inaug/inaugural__gb_1.mp3
+legislate,https://www.oxfordlearnersdictionaries.com/definition/english/legislate,C1,legislate,lập pháp,verb,/ˈledʒɪsleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/leg/legis/legislate__gb_1.mp3
+legislation,https://www.oxfordlearnersdictionaries.com/definition/english/legislation,C1,legislation,pháp luật,noun,/ˌledʒɪsˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/leg/legis/legislation__gb_3.mp3
+legislative,https://www.oxfordlearnersdictionaries.com/definition/english/legislative,C1,legislative,lập pháp,adjective,/ˈledʒɪslətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/leg/legis/legislative__gb_1.mp3
+leader_of_the_opposition,https://www.oxfordlearnersdictionaries.com/definition/english/the-leader-of-the-opposition,C2,Leader of the Opposition,Lãnh đạo phe đối lập,noun,/ðə ˌliːdər əv ði ˌɒpəˈzɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leade/leader_of_the_opposition_1_gb_1.mp3
+lobby,https://www.oxfordlearnersdictionaries.com/definition/english/lobby_1,C1,lobby,sảnh,noun,/ˈlɒbi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lob/lobby/lobby__gb_1.mp3
+lobby,https://www.oxfordlearnersdictionaries.com/definition/english/lobby_2,C1,lobby,sảnh,verb,/ˈlɒbi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lob/lobby/lobby__gb_1.mp3
+legislature,https://www.oxfordlearnersdictionaries.com/definition/english/legislature,C1,legislature,cơ quan lập pháp,noun,/ˈledʒɪslətʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/leg/legis/legislature__gb_2.mp3
+leader_of_the_house,https://www.oxfordlearnersdictionaries.com/definition/english/the-leader-of-the-house,C2,Leader of the House,Lãnh đạo Nhà,noun,/ðə ˌliːdər əv ðə ˈhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/leade/leader_of_the_house_1_gb_2.mp3
+pairing,https://www.oxfordlearnersdictionaries.com/definition/english/pairing,C2,pairing,ghép nối,noun,/ˈpeərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pai/pairi/pairing__gb_1.mp3
+parliamentary,https://www.oxfordlearnersdictionaries.com/definition/english/parliamentary,C1,parliamentary,nghị viện,adjective,/ˌpɑːləˈmentri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parli/parliamentary__gb_1.mp3
+parliament,https://www.oxfordlearnersdictionaries.com/definition/english/parliament,B2,parliament,quốc hội,noun,/ˈpɑːləmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parli/parliament__gb_1.mp3
+passage,https://www.oxfordlearnersdictionaries.com/definition/english/passage,C2,passage,đoạn văn,noun,/ˈpæsɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passa/passage__gb_1.mp3
+pass,https://www.oxfordlearnersdictionaries.com/definition/english/pass_1,B2,pass,vượt qua,verb,/pɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/pass_/pass__gb_1.mp3
+passing,https://www.oxfordlearnersdictionaries.com/definition/english/passing_1,C1,passing,đi qua,noun,/ˈpɑːsɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passi/passing__gb_1.mp3
+pentagon,https://www.oxfordlearnersdictionaries.com/definition/english/pentagon,C2,pentagon,ngũ giác,noun,/ˈpentəɡən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/penta/pentagon__gb_2.mp3
+minority_government,https://www.oxfordlearnersdictionaries.com/definition/english/minority-government,C2,minority government,chính phủ thiểu số,noun,/maɪˌnɒrəti ˈɡʌvənmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minor/minority_government_1_gb_1.mp3
+parliamentary_privilege,https://www.oxfordlearnersdictionaries.com/definition/english/parliamentary-privilege,C2,parliamentary privilege,đặc quyền của nghị viện,noun,/ˌpɑːləˌmentri ˈprɪvəlɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parli/parliamentary_privilege_1_gb_1.mp3
+opposition,https://www.oxfordlearnersdictionaries.com/definition/english/opposition,B2,opposition,sự phản đối,noun,/ˌɒpəˈzɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/opp/oppos/opposition__gb_1.mp3
+proposition,https://www.oxfordlearnersdictionaries.com/definition/english/proposition_1,C1,proposition,lời đề nghị,noun,/ˌprɒpəˈzɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/propo/proposition__gb_1.mp3
+repeal,https://www.oxfordlearnersdictionaries.com/definition/english/repeal_1,C2,repeal,bãi bỏ,noun,/rɪˈpiːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repea/repeal__gb_1.mp3
+repeal,https://www.oxfordlearnersdictionaries.com/definition/english/repeal_2,C2,repeal,bãi bỏ,verb,/rɪˈpiːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rep/repea/repeal__gb_1.mp3
+recess,https://www.oxfordlearnersdictionaries.com/definition/english/recess_1,C2,recess,giờ ra chơi,noun,/ˈriːses/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rec/reces/recess__gb_2.mp3
+seat,https://www.oxfordlearnersdictionaries.com/definition/english/seat_1,B2,seat,ghế,noun,/siːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seat_/seat__gb_1.mp3
+senate,https://www.oxfordlearnersdictionaries.com/definition/english/senate,C1,senate,thượng viện,noun,/ˈsenət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/senat/senate__gb_1.mp3
+session,https://www.oxfordlearnersdictionaries.com/definition/english/session,B2,session,phiên họp,noun,/ˈseʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ses/sessi/session__gb_1.mp3
+second_chamber,https://www.oxfordlearnersdictionaries.com/definition/english/second-chamber,C2,second chamber,buồng thứ hai,noun,/ˌsekənd ˈtʃeɪmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sec/secon/second_chamber_1_gb_1.mp3
+prorogue,https://www.oxfordlearnersdictionaries.com/definition/english/prorogue,C2,prorogue,lời mở đầu,verb,/prəʊˈrəʊɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proro/prorogue__gb_2.mp3
+sit,https://www.oxfordlearnersdictionaries.com/definition/english/sit,C2,sit,ngồi,verb,/sɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sit/sit__/sit__gb_1.mp3
+statute,https://www.oxfordlearnersdictionaries.com/definition/english/statute,C2,statute,quy chế,noun,/ˈstætʃuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/statu/statute__gb_1.mp3
+press_gallery,https://www.oxfordlearnersdictionaries.com/definition/english/press-gallery,C2,press gallery,phòng trưng bày báo chí,noun,/ˈpres ɡæləri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/press/press_gallery_1_gb_1.mp3
+state_house,https://www.oxfordlearnersdictionaries.com/definition/english/state-house,C2,state house,nhà nước,noun,/ˈsteɪt haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/state/state_house_1_gb_1.mp3
+statute_law,https://www.oxfordlearnersdictionaries.com/definition/english/statute-law,C2,statute law,luật lệ,noun,/ˈstætʃuːt lɔː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/statu/statute_law_1_gb_1.mp3
+upper_house,https://www.oxfordlearnersdictionaries.com/definition/english/upper-house,C2,upper house,thượng viện,noun,/ˌʌpə ˈhaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/upp/upper/upper_house_1_gb_1.mp3
+whip,https://www.oxfordlearnersdictionaries.com/definition/english/whip_1,C2,whip,roi da,verb,/wɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/whi/whip_/whip__gb_1.mp3
+upper_chamber,https://www.oxfordlearnersdictionaries.com/definition/english/upper-chamber,C2,upper chamber,buồng trên,noun,/ˌʌpə ˈtʃeɪmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/upp/upper/upper_chamber_1_gb_1.mp3
+westminster,https://www.oxfordlearnersdictionaries.com/definition/english/westminster,C2,Westminster,Westminster,noun,/ˈwestmɪnstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wes/westm/westminster__gb_1.mp3

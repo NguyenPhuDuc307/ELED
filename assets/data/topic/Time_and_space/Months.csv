@@ -1,15 +1,15 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-august,https://www.oxfordlearnersdictionaries.com/definition/english/august_2,A1,August,Tháng tám,noun,/ˈɔːɡəst/,
-february,https://www.oxfordlearnersdictionaries.com/definition/english/february,A1,February,Tháng hai,noun,/ˈfebruəri/,
-june,https://www.oxfordlearnersdictionaries.com/definition/english/june,A1,June,Tháng sáu,noun,/dʒuːn/,
-july,https://www.oxfordlearnersdictionaries.com/definition/english/july,A1,July,Tháng bảy,noun,/dʒuˈlaɪ/,
-january,https://www.oxfordlearnersdictionaries.com/definition/english/january,A1,January,Tháng Một,noun,/ˈdʒænjuəri/,
-december,https://www.oxfordlearnersdictionaries.com/definition/english/december,A1,December,Tháng 12,noun,/dɪˈsembə(r)/,
-may,https://www.oxfordlearnersdictionaries.com/definition/english/may_3,A1,May,Có thể,noun,/meɪ/,
-april,https://www.oxfordlearnersdictionaries.com/definition/english/april,A1,April,Tháng tư,noun,/ˈeɪprəl/,
-march,https://www.oxfordlearnersdictionaries.com/definition/english/march_3,A1,March,Bước đều,noun,/mɑːtʃ/,
-calendar_month,https://www.oxfordlearnersdictionaries.com/definition/english/calendar-month,C2,calendar month,tháng dương lịch,noun,/ˌkælɪndə ˈmʌnθ/,
-month,https://www.oxfordlearnersdictionaries.com/definition/english/month,A1,month,tháng,noun,/mʌnθ/,
-november,https://www.oxfordlearnersdictionaries.com/definition/english/november,A1,November,Tháng mười một,noun,/nəʊˈvembə(r)/,
-september,https://www.oxfordlearnersdictionaries.com/definition/english/september,A1,September,Tháng 9,noun,/sepˈtembə(r)/,
-october,https://www.oxfordlearnersdictionaries.com/definition/english/october,A1,October,tháng mười,noun,/ɒkˈtəʊbə(r)/,
+august,https://www.oxfordlearnersdictionaries.com/definition/english/august_2,A1,August,Tháng tám,noun,/ˈɔːɡəst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aug/augus/august_1_gb_1.mp3
+february,https://www.oxfordlearnersdictionaries.com/definition/english/february,A1,February,Tháng hai,noun,/ˈfebruəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/feb/febru/february__gb_1.mp3
+june,https://www.oxfordlearnersdictionaries.com/definition/english/june,A1,June,Tháng sáu,noun,/dʒuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jun/june_/june__gb_1.mp3
+july,https://www.oxfordlearnersdictionaries.com/definition/english/july,A1,July,Tháng bảy,noun,/dʒuˈlaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jul/july_/july__gb_1.mp3
+january,https://www.oxfordlearnersdictionaries.com/definition/english/january,A1,January,Tháng Một,noun,/ˈdʒænjuəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jan/janua/january__gb_1.mp3
+december,https://www.oxfordlearnersdictionaries.com/definition/english/december,A1,December,Tháng 12,noun,/dɪˈsembə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/decem/december_1_gb_2.mp3
+may,https://www.oxfordlearnersdictionaries.com/definition/english/may_3,A1,May,Có thể,noun,/meɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/may/may_1/may_1_gb_1.mp3
+april,https://www.oxfordlearnersdictionaries.com/definition/english/april,A1,April,Tháng tư,noun,/ˈeɪprəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apr/april/april_1_gb_2.mp3
+march,https://www.oxfordlearnersdictionaries.com/definition/english/march_3,A1,March,Bước đều,noun,/mɑːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/march/march__gb_2.mp3
+calendar_month,https://www.oxfordlearnersdictionaries.com/definition/english/calendar-month,C2,calendar month,tháng dương lịch,noun,/ˌkælɪndə ˈmʌnθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cal/calen/calendar_month_1_gb_2.mp3
+month,https://www.oxfordlearnersdictionaries.com/definition/english/month,A1,month,tháng,noun,/mʌnθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/month/month__gb_1.mp3
+november,https://www.oxfordlearnersdictionaries.com/definition/english/november,A1,November,Tháng mười một,noun,/nəʊˈvembə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nov/novem/november__gb_1.mp3
+september,https://www.oxfordlearnersdictionaries.com/definition/english/september,A1,September,Tháng 9,noun,/sepˈtembə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sep/septe/september_1_gb_1.mp3
+october,https://www.oxfordlearnersdictionaries.com/definition/english/october,A1,October,tháng mười,noun,/ɒkˈtəʊbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oct/octob/october_1_gb_1.mp3

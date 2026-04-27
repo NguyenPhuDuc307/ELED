@@ -1,13 +1,13 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-pest,https://www.oxfordlearnersdictionaries.com/definition/english/pest,C1,pest,côn trùng gây hại,noun,/pest/,
-arthropod,https://www.oxfordlearnersdictionaries.com/definition/english/arthropod,C2,arthropod,động vật chân đốt,noun,/ˈɑːθrəpɒd/,
-mollusc,https://www.oxfordlearnersdictionaries.com/definition/english/mollusc,C2,mollusc,nhuyễn thể,noun,/ˈmɒləsk/,
-creature,https://www.oxfordlearnersdictionaries.com/definition/english/creature,B2,creature,sinh vật,noun,/ˈkriːtʃə(r)/,
-invertebrate,https://www.oxfordlearnersdictionaries.com/definition/english/invertebrate_2,C2,invertebrate,Động vật không xương sống,adjective,/ɪnˈvɜːtɪbrət/,
-minibeast,https://www.oxfordlearnersdictionaries.com/definition/english/minibeast,C2,minibeast,con thú nhỏ,noun,/ˈmɪnibiːst/,
-millipede,https://www.oxfordlearnersdictionaries.com/definition/english/millipede,C2,millipede,con cuốn chiếu,noun,/ˈmɪlɪpiːd/,
-centipede,https://www.oxfordlearnersdictionaries.com/definition/english/centipede,C2,centipede,con rết,noun,/ˈsentɪpiːd/,
-slug,https://www.oxfordlearnersdictionaries.com/definition/english/slug_1,C2,slug,sên,noun,/slʌɡ/,
-invertebrate,https://www.oxfordlearnersdictionaries.com/definition/english/invertebrate_1,C2,invertebrate,Động vật không xương sống,noun,/ɪnˈvɜːtɪbrət/,
-snail,https://www.oxfordlearnersdictionaries.com/definition/english/snail,B2,snail,ốc sên,noun,/sneɪl/,
-woodlouse,https://www.oxfordlearnersdictionaries.com/definition/english/woodlouse,C2,woodlouse,rận rừng,noun,/ˈwʊdlaʊs/,
+pest,https://www.oxfordlearnersdictionaries.com/definition/english/pest,C1,pest,côn trùng gây hại,noun,/pest/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pes/pest_/pest__gb_1.mp3
+arthropod,https://www.oxfordlearnersdictionaries.com/definition/english/arthropod,C2,arthropod,động vật chân đốt,noun,/ˈɑːθrəpɒd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/art/arthr/arthropod__gb_1.mp3
+mollusc,https://www.oxfordlearnersdictionaries.com/definition/english/mollusc,C2,mollusc,nhuyễn thể,noun,/ˈmɒləsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mol/mollu/mollusc__gb_1.mp3
+creature,https://www.oxfordlearnersdictionaries.com/definition/english/creature,B2,creature,sinh vật,noun,/ˈkriːtʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cre/creat/creature__gb_1.mp3
+invertebrate,https://www.oxfordlearnersdictionaries.com/definition/english/invertebrate_2,C2,invertebrate,Động vật không xương sống,adjective,/ɪnˈvɜːtɪbrət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/inver/invertebrate__gb_1.mp3
+minibeast,https://www.oxfordlearnersdictionaries.com/definition/english/minibeast,C2,minibeast,con thú nhỏ,noun,/ˈmɪnibiːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/min/minib/minibeast__gb_1.mp3
+millipede,https://www.oxfordlearnersdictionaries.com/definition/english/millipede,C2,millipede,con cuốn chiếu,noun,/ˈmɪlɪpiːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mil/mille/millepede__gb_1.mp3
+centipede,https://www.oxfordlearnersdictionaries.com/definition/english/centipede,C2,centipede,con rết,noun,/ˈsentɪpiːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cen/centi/centipede__gb_2.mp3
+slug,https://www.oxfordlearnersdictionaries.com/definition/english/slug_1,C2,slug,sên,noun,/slʌɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/slu/slug_/slug__gb_1.mp3
+invertebrate,https://www.oxfordlearnersdictionaries.com/definition/english/invertebrate_1,C2,invertebrate,Động vật không xương sống,noun,/ɪnˈvɜːtɪbrət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/inver/invertebrate__gb_1.mp3
+snail,https://www.oxfordlearnersdictionaries.com/definition/english/snail,B2,snail,ốc sên,noun,/sneɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sna/snail/snail__gb_1.mp3
+woodlouse,https://www.oxfordlearnersdictionaries.com/definition/english/woodlouse,C2,woodlouse,rận rừng,noun,/ˈwʊdlaʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/woo/woodl/woodlouse__gb_1.mp3

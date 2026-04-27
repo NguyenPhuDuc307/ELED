@@ -1,33 +1,33 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-anion,https://www.oxfordlearnersdictionaries.com/definition/english/anion,C2,anion,anion,noun,/ˈænaɪən/,
-antimatter,https://www.oxfordlearnersdictionaries.com/definition/english/antimatter,C2,antimatter,phản vật chất,noun,/ˈæntimætə(r)/,
-atom,https://www.oxfordlearnersdictionaries.com/definition/english/atom,B2,atom,nguyên tử,noun,/ˈætəm/,
-crystal,https://www.oxfordlearnersdictionaries.com/definition/english/crystal,C1,crystal,pha lê,noun,/ˈkrɪstl/,
-bond,https://www.oxfordlearnersdictionaries.com/definition/english/bond_1,C2,bond,trái phiếu,noun,/bɒnd/,
-alpha_particle,https://www.oxfordlearnersdictionaries.com/definition/english/alpha-particle,C2,alpha particle,hạt alpha,noun,/ˈælfə pɑːtɪkl/,
-atomic,https://www.oxfordlearnersdictionaries.com/definition/english/atomic,C1,atomic,nguyên tử,adjective,/əˈtɒmɪk/,
-cation,https://www.oxfordlearnersdictionaries.com/definition/english/cation,C2,cation,cation,noun,/ˈkætaɪən/,
-covalent,https://www.oxfordlearnersdictionaries.com/definition/english/covalent,C2,covalent,cộng hóa trị,adjective,/ˌkəʊˈveɪlənt/,
-atomic_number,https://www.oxfordlearnersdictionaries.com/definition/english/atomic-number,C2,atomic number,số nguyên tử,noun,/əˌtɒmɪk ˈnʌmbə(r)/,
-electron,https://www.oxfordlearnersdictionaries.com/definition/english/electron,C1,electron,điện tử,noun,/ɪˈlektrɒn/,
-ion,https://www.oxfordlearnersdictionaries.com/definition/english/ion_1,C2,ion,ion,noun,/ˈaɪən/,
-dark_matter,https://www.oxfordlearnersdictionaries.com/definition/english/dark-matter,C2,dark matter,vật chất tối,noun,/ˌdɑːk ˈmætə(r)/,
-ionic,https://www.oxfordlearnersdictionaries.com/definition/english/ionic,C2,ionic,ion,adjective,/aɪˈɒnɪk/,
-liquid,https://www.oxfordlearnersdictionaries.com/definition/english/liquid_1,B1,liquid,chất lỏng,noun,/ˈlɪkwɪd/,
-mass,https://www.oxfordlearnersdictionaries.com/definition/english/mass_1,C1,mass,khối,noun,/mæs/,
-gas,https://www.oxfordlearnersdictionaries.com/definition/english/gas_1,A2,gas,khí đốt,noun,/ɡæs/,
-elementary_particle,https://www.oxfordlearnersdictionaries.com/definition/english/elementary-particle,C2,elementary particle,hạt cơ bản,noun,/ˌelɪmentri ˈpɑːtɪkl/,
-fundamental_particle,https://www.oxfordlearnersdictionaries.com/definition/english/fundamental-particle,C2,fundamental particle,hạt cơ bản,noun,/ˌfʌndəmentl ˈpɑːtɪkl/,
-matter,https://www.oxfordlearnersdictionaries.com/definition/english/matter_1,B2,matter,vấn đề,noun,/ˈmætə(r)/,
-molecular,https://www.oxfordlearnersdictionaries.com/definition/english/molecular,C1,molecular,phân tử,adjective,/məˈlekjələ(r)/,
-nucleus,https://www.oxfordlearnersdictionaries.com/definition/english/nucleus,C1,nucleus,hạt nhân,noun,/ˈnjuːkliəs/,
-proton,https://www.oxfordlearnersdictionaries.com/definition/english/proton,C2,proton,proton,noun,/ˈprəʊtɒn/,
-molecule,https://www.oxfordlearnersdictionaries.com/definition/english/molecule,B2,molecule,phân tử,noun,/ˈmɒlɪkjuːl/,
-particle,https://www.oxfordlearnersdictionaries.com/definition/english/particle,C1,particle,hạt,noun,/ˈpɑːtɪkl/,
-plasma,https://www.oxfordlearnersdictionaries.com/definition/english/plasma,C2,plasma,huyết tương,noun,/ˈplæzmə/,
-neutron,https://www.oxfordlearnersdictionaries.com/definition/english/neutron,C2,neutron,neutron,noun,/ˈnjuːtrɒn/,
-quark,https://www.oxfordlearnersdictionaries.com/definition/english/quark,C2,quark,quark,noun,/kwɑːk/,
-suspension,https://www.oxfordlearnersdictionaries.com/definition/english/suspension,C2,suspension,đình chỉ,noun,/səˈspenʃn/,
-vapour,https://www.oxfordlearnersdictionaries.com/definition/english/vapour,C1,vapour,hơi nước,noun,/ˈveɪpə(r)/,
-vapor,https://www.oxfordlearnersdictionaries.com/definition/english/vapor,C1,vapor,hơi nước,noun,/ˈveɪpə(r)/,
-vacuum,https://www.oxfordlearnersdictionaries.com/definition/english/vacuum_1,C1,vacuum,chân không,noun,/ˈvækjuːm/,
+anion,https://www.oxfordlearnersdictionaries.com/definition/english/anion,C2,anion,anion,noun,/ˈænaɪən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ani/anion/anion__gb_1.mp3
+antimatter,https://www.oxfordlearnersdictionaries.com/definition/english/antimatter,C2,antimatter,phản vật chất,noun,/ˈæntimætə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ant/antim/antimatter__gb_1.mp3
+atom,https://www.oxfordlearnersdictionaries.com/definition/english/atom,B2,atom,nguyên tử,noun,/ˈætəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ato/atom_/atom__gb_1.mp3
+crystal,https://www.oxfordlearnersdictionaries.com/definition/english/crystal,C1,crystal,pha lê,noun,/ˈkrɪstl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cry/cryst/crystal__gb_1.mp3
+bond,https://www.oxfordlearnersdictionaries.com/definition/english/bond_1,C2,bond,trái phiếu,noun,/bɒnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bon/bond_/bond__gb_2.mp3
+alpha_particle,https://www.oxfordlearnersdictionaries.com/definition/english/alpha-particle,C2,alpha particle,hạt alpha,noun,/ˈælfə pɑːtɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alp/alpha/alpha_particle_1_gb_1.mp3
+atomic,https://www.oxfordlearnersdictionaries.com/definition/english/atomic,C1,atomic,nguyên tử,adjective,/əˈtɒmɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ato/atomi/atomic__gb_1.mp3
+cation,https://www.oxfordlearnersdictionaries.com/definition/english/cation,C2,cation,cation,noun,/ˈkætaɪən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/catio/cation__gb_2.mp3
+covalent,https://www.oxfordlearnersdictionaries.com/definition/english/covalent,C2,covalent,cộng hóa trị,adjective,/ˌkəʊˈveɪlənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cov/coval/covalent__gb_1.mp3
+atomic_number,https://www.oxfordlearnersdictionaries.com/definition/english/atomic-number,C2,atomic number,số nguyên tử,noun,/əˌtɒmɪk ˈnʌmbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ato/atomi/atomic_number_1_gb_1.mp3
+electron,https://www.oxfordlearnersdictionaries.com/definition/english/electron,C1,electron,điện tử,noun,/ɪˈlektrɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/elect/electron__gb_1.mp3
+ion,https://www.oxfordlearnersdictionaries.com/definition/english/ion_1,C2,ion,ion,noun,/ˈaɪən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ion/ion__/ion__gb_1.mp3
+dark_matter,https://www.oxfordlearnersdictionaries.com/definition/english/dark-matter,C2,dark matter,vật chất tối,noun,/ˌdɑːk ˈmætə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dar/dark_/dark_matter_1_gb_1.mp3
+ionic,https://www.oxfordlearnersdictionaries.com/definition/english/ionic,C2,ionic,ion,adjective,/aɪˈɒnɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ion/ionic/ionic__gb_1.mp3
+liquid,https://www.oxfordlearnersdictionaries.com/definition/english/liquid_1,B1,liquid,chất lỏng,noun,/ˈlɪkwɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/liq/liqui/liquid__gb_1.mp3
+mass,https://www.oxfordlearnersdictionaries.com/definition/english/mass_1,C1,mass,khối,noun,/mæs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/mass_/mass__gb_2.mp3
+gas,https://www.oxfordlearnersdictionaries.com/definition/english/gas_1,A2,gas,khí đốt,noun,/ɡæs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gas/gas__/gas__gb_2.mp3
+elementary_particle,https://www.oxfordlearnersdictionaries.com/definition/english/elementary-particle,C2,elementary particle,hạt cơ bản,noun,/ˌelɪmentri ˈpɑːtɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ele/eleme/elementary_particle_1_gb_1.mp3
+fundamental_particle,https://www.oxfordlearnersdictionaries.com/definition/english/fundamental-particle,C2,fundamental particle,hạt cơ bản,noun,/ˌfʌndəmentl ˈpɑːtɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fun/funda/fundamental_particle_1_gb_1.mp3
+matter,https://www.oxfordlearnersdictionaries.com/definition/english/matter_1,B2,matter,vấn đề,noun,/ˈmætə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matte/matter__gb_1.mp3
+molecular,https://www.oxfordlearnersdictionaries.com/definition/english/molecular,C1,molecular,phân tử,adjective,/məˈlekjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mol/molec/molecular__gb_1.mp3
+nucleus,https://www.oxfordlearnersdictionaries.com/definition/english/nucleus,C1,nucleus,hạt nhân,noun,/ˈnjuːkliəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nuc/nucle/nucleus__gb_1.mp3
+proton,https://www.oxfordlearnersdictionaries.com/definition/english/proton,C2,proton,proton,noun,/ˈprəʊtɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proto/proton__gb_1.mp3
+molecule,https://www.oxfordlearnersdictionaries.com/definition/english/molecule,B2,molecule,phân tử,noun,/ˈmɒlɪkjuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mol/molec/molecule__gb_1.mp3
+particle,https://www.oxfordlearnersdictionaries.com/definition/english/particle,C1,particle,hạt,noun,/ˈpɑːtɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parti/particle__gb_1.mp3
+plasma,https://www.oxfordlearnersdictionaries.com/definition/english/plasma,C2,plasma,huyết tương,noun,/ˈplæzmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plasm/plasma__gb_1.mp3
+neutron,https://www.oxfordlearnersdictionaries.com/definition/english/neutron,C2,neutron,neutron,noun,/ˈnjuːtrɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/neu/neutr/neutron__gb_1.mp3
+quark,https://www.oxfordlearnersdictionaries.com/definition/english/quark,C2,quark,quark,noun,/kwɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qua/quark/quark__gb_1.mp3
+suspension,https://www.oxfordlearnersdictionaries.com/definition/english/suspension,C2,suspension,đình chỉ,noun,/səˈspenʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspe/suspension__gb_1.mp3
+vapour,https://www.oxfordlearnersdictionaries.com/definition/english/vapour,C1,vapour,hơi nước,noun,/ˈveɪpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vap/vapou/vapour__gb_2.mp3
+vapor,https://www.oxfordlearnersdictionaries.com/definition/english/vapor,C1,vapor,hơi nước,noun,/ˈveɪpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vap/vapou/vapour__gb_2.mp3
+vacuum,https://www.oxfordlearnersdictionaries.com/definition/english/vacuum_1,C1,vacuum,chân không,noun,/ˈvækjuːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vac/vacuu/vacuum__gb_2.mp3

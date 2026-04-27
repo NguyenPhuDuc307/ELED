@@ -1,36 +1,36 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-board_game,https://www.oxfordlearnersdictionaries.com/definition/english/board-game,A2,board game,trò chơi cờ bàn,noun,/ˈbɔːd ɡeɪm/,
-bagatelle,https://www.oxfordlearnersdictionaries.com/definition/english/bagatelle,C2,bagatelle,bánh mì tròn,noun,/ˌbæɡəˈtel/,
-backgammon,https://www.oxfordlearnersdictionaries.com/definition/english/backgammon,C2,backgammon,cờ thỏ cáo,noun,/ˈbækɡæmən/,
-chess,https://www.oxfordlearnersdictionaries.com/definition/english/chess,B1,chess,cờ vua,noun,/tʃes/,
-chessman,https://www.oxfordlearnersdictionaries.com/definition/english/chessman,C2,chessman,người chơi cờ,noun,/ˈtʃesmæn/,
-castle,https://www.oxfordlearnersdictionaries.com/definition/english/castle,C2,castle,lâu đài,noun,/ˈkɑːsl/,
-bishop,https://www.oxfordlearnersdictionaries.com/definition/english/bishop,C2,bishop,giám mục,noun,/ˈbɪʃəp/,
-checkers,https://www.oxfordlearnersdictionaries.com/definition/english/checkers_1,C2,checkers,quân cờ,noun,/ˈtʃekəz/,
-check,https://www.oxfordlearnersdictionaries.com/definition/english/check_2,C2,check,kiểm tra,noun,/tʃek/,
-board,https://www.oxfordlearnersdictionaries.com/definition/english/board_1,A2,board,Cái bảng,noun,/bɔːd/,
-domino,https://www.oxfordlearnersdictionaries.com/definition/english/domino,C2,domino,domino,noun,/ˈdɒmɪnəʊ/,
-dice,https://www.oxfordlearnersdictionaries.com/definition/english/dice_1,C1,dice,xúc xắc,noun,/daɪs/,
-counter,https://www.oxfordlearnersdictionaries.com/definition/english/counter_1,C2,counter,quầy tính tiền,noun,/ˈkaʊntə(r)/,
-knight,https://www.oxfordlearnersdictionaries.com/definition/english/knight_1,C2,knight,hiệp sĩ,noun,/naɪt/,
-draught,https://www.oxfordlearnersdictionaries.com/definition/english/draught_1,C2,draught,bản nháp,noun,/drɑːft/,
-crossword,https://www.oxfordlearnersdictionaries.com/definition/english/crossword,B1,crossword,ô chữ,noun,/ˈkrɒswɜːd/,
-king,https://www.oxfordlearnersdictionaries.com/definition/english/king,C2,king,nhà vua,noun,/kɪŋ/,
-go,https://www.oxfordlearnersdictionaries.com/definition/english/go_2,B1,go,đi,noun,/ɡəʊ/,
-chutes_and_ladders™,https://www.oxfordlearnersdictionaries.com/definition/english/chutes-and-ladderstm,C2,Chutes and Ladders™,Máng và Thang™,noun,/ˌʃuːts ən ˈlædəz/,
-pawn,https://www.oxfordlearnersdictionaries.com/definition/english/pawn_1,C2,pawn,con tốt,noun,/pɔːn/,
-ludo,https://www.oxfordlearnersdictionaries.com/definition/english/ludo,C2,ludo,chơi bài ludo,noun,/ˈluːdəʊ/,
-monopoly,https://www.oxfordlearnersdictionaries.com/definition/english/monopoly,C1,monopoly,độc quyền,noun,/məˈnɒpəli/,
-mahjong,https://www.oxfordlearnersdictionaries.com/definition/english/mahjong,C2,mahjong,mạt chược,noun,/mɑːˈdʒɒŋ/,
-chinese_chequers,https://www.oxfordlearnersdictionaries.com/definition/english/chinese-chequers,C2,Chinese chequers,Cờ đam Trung Quốc,noun,/ˌtʃaɪniːz ˈtʃekəz/,
-move,https://www.oxfordlearnersdictionaries.com/definition/english/move_2,B1,move,di chuyển,noun,/muːv/,
-piece,https://www.oxfordlearnersdictionaries.com/definition/english/piece_1,B2,piece,cái,noun,/piːs/,
-puzzle,https://www.oxfordlearnersdictionaries.com/definition/english/puzzle_1,B2,puzzle,câu đố,noun,/ˈpʌzl/,
-pelmanism,https://www.oxfordlearnersdictionaries.com/definition/english/pelmanism,C2,Pelmanism,chủ nghĩa Pelman,noun,/ˈpelmənɪzəm/,
-queen,https://www.oxfordlearnersdictionaries.com/definition/english/queen_1,C2,queen,nữ hoàng,noun,/kwiːn/,
-quiz,https://www.oxfordlearnersdictionaries.com/definition/english/quiz_1,A1,quiz,câu đố,noun,/kwɪz/,
-tiddlywinks,https://www.oxfordlearnersdictionaries.com/definition/english/tiddlywinks,C2,tiddlywinks,tiddlywinks,noun,/ˈtɪdliwɪŋks/,
-stalemate,https://www.oxfordlearnersdictionaries.com/definition/english/stalemate,C2,stalemate,bế tắc,noun,/ˈsteɪlmeɪt/,
-scrabble™,https://www.oxfordlearnersdictionaries.com/definition/english/scrabbletm,C2,Scrabble™,Scrabble™,noun,/ˈskræbl/,
-turn,https://www.oxfordlearnersdictionaries.com/definition/english/turn_2,A1,turn,xoay,noun,/tɜːn/,
-snakes_and_ladders,https://www.oxfordlearnersdictionaries.com/definition/english/snakes-and-ladders,C2,snakes and ladders,rắn và thang,noun,/ˌsneɪks ən ˈlædəz/,
+board_game,https://www.oxfordlearnersdictionaries.com/definition/english/board-game,A2,board game,trò chơi cờ bàn,noun,/ˈbɔːd ɡeɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boa/board/board_game_1_gb_1.mp3
+bagatelle,https://www.oxfordlearnersdictionaries.com/definition/english/bagatelle,C2,bagatelle,bánh mì tròn,noun,/ˌbæɡəˈtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bag/bagat/bagatelle__gb_2.mp3
+backgammon,https://www.oxfordlearnersdictionaries.com/definition/english/backgammon,C2,backgammon,cờ thỏ cáo,noun,/ˈbækɡæmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/backg/backgammon__gb_1.mp3
+chess,https://www.oxfordlearnersdictionaries.com/definition/english/chess,B1,chess,cờ vua,noun,/tʃes/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chess/chess__gb_3.mp3
+chessman,https://www.oxfordlearnersdictionaries.com/definition/english/chessman,C2,chessman,người chơi cờ,noun,/ˈtʃesmæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chess/chessman__gb_2.mp3
+castle,https://www.oxfordlearnersdictionaries.com/definition/english/castle,C2,castle,lâu đài,noun,/ˈkɑːsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cas/castl/castle__gb_2.mp3
+bishop,https://www.oxfordlearnersdictionaries.com/definition/english/bishop,C2,bishop,giám mục,noun,/ˈbɪʃəp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bis/bisho/bishop__gb_3.mp3
+checkers,https://www.oxfordlearnersdictionaries.com/definition/english/checkers_1,C2,checkers,quân cờ,noun,/ˈtʃekəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/check/checkers__gb_3.mp3
+check,https://www.oxfordlearnersdictionaries.com/definition/english/check_2,C2,check,kiểm tra,noun,/tʃek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/check/check__gb_2.mp3
+board,https://www.oxfordlearnersdictionaries.com/definition/english/board_1,A2,board,Cái bảng,noun,/bɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boa/board/board__gb_2.mp3
+domino,https://www.oxfordlearnersdictionaries.com/definition/english/domino,C2,domino,domino,noun,/ˈdɒmɪnəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dom/domin/domino__gb_2.mp3
+dice,https://www.oxfordlearnersdictionaries.com/definition/english/dice_1,C1,dice,xúc xắc,noun,/daɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dic/dice_/dice__gb_1.mp3
+counter,https://www.oxfordlearnersdictionaries.com/definition/english/counter_1,C2,counter,quầy tính tiền,noun,/ˈkaʊntə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/count/counter__gb_1.mp3
+knight,https://www.oxfordlearnersdictionaries.com/definition/english/knight_1,C2,knight,hiệp sĩ,noun,/naɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kni/knigh/knight__gb_3.mp3
+draught,https://www.oxfordlearnersdictionaries.com/definition/english/draught_1,C2,draught,bản nháp,noun,/drɑːft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/draft/draft__gb_3.mp3
+crossword,https://www.oxfordlearnersdictionaries.com/definition/english/crossword,B1,crossword,ô chữ,noun,/ˈkrɒswɜːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/cross/crossword__gb_1.mp3
+king,https://www.oxfordlearnersdictionaries.com/definition/english/king,C2,king,nhà vua,noun,/kɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kin/king_/king__gb_2.mp3
+go,https://www.oxfordlearnersdictionaries.com/definition/english/go_2,B1,go,đi,noun,/ɡəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/go_/go__g/go__gb_4.mp3
+chutes_and_ladders™,https://www.oxfordlearnersdictionaries.com/definition/english/chutes-and-ladderstm,C2,Chutes and Ladders™,Máng và Thang™,noun,/ˌʃuːts ən ˈlædəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chu/chute/chutes_and_ladders_1_gb_1.mp3
+pawn,https://www.oxfordlearnersdictionaries.com/definition/english/pawn_1,C2,pawn,con tốt,noun,/pɔːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/paw/pawn_/pawn__gb_1.mp3
+ludo,https://www.oxfordlearnersdictionaries.com/definition/english/ludo,C2,ludo,chơi bài ludo,noun,/ˈluːdəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lud/ludo_/ludo__gb_1.mp3
+monopoly,https://www.oxfordlearnersdictionaries.com/definition/english/monopoly,C1,monopoly,độc quyền,noun,/məˈnɒpəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monop/monopoly__gb_1.mp3
+mahjong,https://www.oxfordlearnersdictionaries.com/definition/english/mahjong,C2,mahjong,mạt chược,noun,/mɑːˈdʒɒŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mah/mahjo/mahjongg__gb_1.mp3
+chinese_chequers,https://www.oxfordlearnersdictionaries.com/definition/english/chinese-chequers,C2,Chinese chequers,Cờ đam Trung Quốc,noun,/ˌtʃaɪniːz ˈtʃekəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chi/chine/chinese_chequers_1_gb_1.mp3
+move,https://www.oxfordlearnersdictionaries.com/definition/english/move_2,B1,move,di chuyển,noun,/muːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mov/move_/move__gb_1.mp3
+piece,https://www.oxfordlearnersdictionaries.com/definition/english/piece_1,B2,piece,cái,noun,/piːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pie/piece/piece__gb_1.mp3
+puzzle,https://www.oxfordlearnersdictionaries.com/definition/english/puzzle_1,B2,puzzle,câu đố,noun,/ˈpʌzl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/puz/puzzl/puzzle__gb_2.mp3
+pelmanism,https://www.oxfordlearnersdictionaries.com/definition/english/pelmanism,C2,Pelmanism,chủ nghĩa Pelman,noun,/ˈpelmənɪzəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pel/pelma/pelmanism__gb_1.mp3
+queen,https://www.oxfordlearnersdictionaries.com/definition/english/queen_1,C2,queen,nữ hoàng,noun,/kwiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/que/queen/queen_1_gb_1.mp3
+quiz,https://www.oxfordlearnersdictionaries.com/definition/english/quiz_1,A1,quiz,câu đố,noun,/kwɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qui/quiz_/quiz__gb_1.mp3
+tiddlywinks,https://www.oxfordlearnersdictionaries.com/definition/english/tiddlywinks,C2,tiddlywinks,tiddlywinks,noun,/ˈtɪdliwɪŋks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tid/tiddl/tiddlywinks__gb_1.mp3
+stalemate,https://www.oxfordlearnersdictionaries.com/definition/english/stalemate,C2,stalemate,bế tắc,noun,/ˈsteɪlmeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stale/stalemate__gb_1.mp3
+scrabble™,https://www.oxfordlearnersdictionaries.com/definition/english/scrabbletm,C2,Scrabble™,Scrabble™,noun,/ˈskræbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrab/scrabble__gb_1.mp3
+turn,https://www.oxfordlearnersdictionaries.com/definition/english/turn_2,A1,turn,xoay,noun,/tɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tur/turn_/turn__gb_1.mp3
+snakes_and_ladders,https://www.oxfordlearnersdictionaries.com/definition/english/snakes-and-ladders,C2,snakes and ladders,rắn và thang,noun,/ˌsneɪks ən ˈlædəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sna/snake/snakes_and_ladders_1_gb_1.mp3

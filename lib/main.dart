@@ -11,6 +11,7 @@ import 'services/notification_service.dart';
 import 'services/user_data_service.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
+final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
 String? pendingNotificationPayload;
 String? pendingMarkKnownWord;
 
@@ -42,10 +43,30 @@ void main() async {
   }
 
   await NotificationService.processScheduleLog();
-  _restockNotifications();
+  _ensureNotificationVersion();
 
-  final needsSync = !await VocabularySyncService.hasLocalData();
+  final needsSync = !await VocabularySyncService.hasLocalData() ||
+      await VocabularySyncService.isOutdated();
   runApp(EledApp(needsSync: needsSync));
+}
+
+// Bump this string whenever notification format changes (actions, channels, etc.)
+const _kNotificationFormatVersion = 'v4-native';
+
+Future<void> _ensureNotificationVersion() async {
+  try {
+    final prefs = await SharedPreferences.getInstance();
+    if (prefs.getString('notification_format_version') == _kNotificationFormatVersion) {
+      _restockNotifications();
+      return;
+    }
+    // Format changed → cancel all and reschedule with new format
+    await NotificationService().cancelAllNotifications();
+    await prefs.setString('notification_format_version', _kNotificationFormatVersion);
+    _restockNotifications();
+  } catch (e) {
+    debugPrint('Failed to ensure notification version: $e');
+  }
 }
 
 Future<void> _restockNotifications() async {
@@ -122,6 +143,7 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
       builder: (context, ThemeMode currentMode, child) {
         return MaterialApp(
           navigatorKey: globalNavigatorKey,
+          scaffoldMessengerKey: scaffoldMessengerKey,
           title: 'ELED - English Learning',
           theme: BrutalistTheme.lightTheme,
           darkTheme: BrutalistTheme.darkTheme,

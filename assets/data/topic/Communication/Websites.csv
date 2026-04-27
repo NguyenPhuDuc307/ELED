@@ -1,44 +1,44 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-cookie,https://www.oxfordlearnersdictionaries.com/definition/english/cookie,C1,cookie,bánh quy,noun,/ˈkʊki/,
-crawler,https://www.oxfordlearnersdictionaries.com/definition/english/crawler,C2,crawler,trình thu thập thông tin,noun,/ˈkrɔːlə(r)/,
-banner,https://www.oxfordlearnersdictionaries.com/definition/english/banner,C2,banner,ngọn cờ,noun,/ˈbænə(r)/,
-domain,https://www.oxfordlearnersdictionaries.com/definition/english/domain,C1,domain,lãnh địa,noun,/dəˈmeɪn/,
-address,https://www.oxfordlearnersdictionaries.com/definition/english/address_1,A1,address,Địa chỉ,noun,/əˈdres/,
-doi,https://www.oxfordlearnersdictionaries.com/definition/english/doi,C2,DOI,DOI,abbreviation,/ˌdiː əʊ ˈaɪ/,
-banner_ad,https://www.oxfordlearnersdictionaries.com/definition/english/banner-ad,C2,banner ad,biểu ngữ quảng cáo,noun,/ˈbænər æd/,
-domain_name,https://www.oxfordlearnersdictionaries.com/definition/english/domain-name,C2,domain name,tên miền,noun,/dəˈmeɪn neɪm/,
-crawl,https://www.oxfordlearnersdictionaries.com/definition/english/crawl_1,C2,crawl,thu thập thông tin,verb,/krɔːl/,
-forum,https://www.oxfordlearnersdictionaries.com/definition/english/forum,B2,forum,diễn đàn,noun,/ˈfɔːrəm/,
-home_page,https://www.oxfordlearnersdictionaries.com/definition/english/home-page,B2,home page,trang chủ,noun,/ˈhəʊm peɪdʒ/,
-discussion_forum,https://www.oxfordlearnersdictionaries.com/definition/english/discussion-forum,C1,discussion forum,diễn đàn thảo luận,noun,/dɪˈskʌʃn fɔːrəm/,
-html,https://www.oxfordlearnersdictionaries.com/definition/english/html,C1,HTML,HTML,abbreviation,/ˌeɪtʃ tiː em ˈel/,
-http,https://www.oxfordlearnersdictionaries.com/definition/english/http,B2,HTTP,HTTP,abbreviation,/ˌeɪtʃ tiː tiː ˈpiː/,
-ebay™,https://www.oxfordlearnersdictionaries.com/definition/english/ebaytm,B2,eBay™,eBay™,noun,/ˈiːbeɪ/,
-hotlink,https://www.oxfordlearnersdictionaries.com/definition/english/hotlink,A2,hotlink,liên kết nóng,noun,/ˈhɒtlɪŋk/,
-dot-com,https://www.oxfordlearnersdictionaries.com/definition/english/dot-com,C2,dot-com,dot-com,noun,/ˌdɒt ˈkɒm/,
-hyperlink,https://www.oxfordlearnersdictionaries.com/definition/english/hyperlink,A2,hyperlink,siêu liên kết,noun,/ˈhaɪpəlɪŋk/,
-e-zine,https://www.oxfordlearnersdictionaries.com/definition/english/e-zine,C2,e-zine,tạp chí điện tử,noun,/ˈiː ziːn/,
-landing_page,https://www.oxfordlearnersdictionaries.com/definition/english/landing-page,C2,landing page,trang đích,noun,/ˈlændɪŋ peɪdʒ/,
-hypertext,https://www.oxfordlearnersdictionaries.com/definition/english/hypertext,C2,hypertext,siêu văn bản,noun,/ˈhaɪpətekst/,
-message_board,https://www.oxfordlearnersdictionaries.com/definition/english/message-board,B2,message board,bảng tin,noun,/ˈmesɪdʒ bɔːd/,
-link,https://www.oxfordlearnersdictionaries.com/definition/english/link_1,A2,link,liên kết,noun,/lɪŋk/,
-live,https://www.oxfordlearnersdictionaries.com/definition/english/live2_1,C1,live,sống,adjective,/laɪv/,
-page,https://www.oxfordlearnersdictionaries.com/definition/english/page_1,A1,page,trang,noun,/peɪdʒ/,
-newsgroup,https://www.oxfordlearnersdictionaries.com/definition/english/newsgroup,C2,newsgroup,nhóm tin,noun,/ˈnjuːzɡruːp/,
-mirror_site,https://www.oxfordlearnersdictionaries.com/definition/english/mirror-site,C2,mirror site,trang web nhân bản,noun,/ˈmɪrə saɪt/,
-pay-per-click,https://www.oxfordlearnersdictionaries.com/definition/english/pay-per-click,C2,pay-per-click,trả tiền cho mỗi lần nhấp chuột,noun,/ˌpeɪ pə ˈklɪk/,
+cookie,https://www.oxfordlearnersdictionaries.com/definition/english/cookie,C1,cookie,bánh quy,noun,/ˈkʊki/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cooki/cookie__gb_1.mp3
+crawler,https://www.oxfordlearnersdictionaries.com/definition/english/crawler,C2,crawler,trình thu thập thông tin,noun,/ˈkrɔːlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crawl/crawler__gb_1.mp3
+banner,https://www.oxfordlearnersdictionaries.com/definition/english/banner,C2,banner,ngọn cờ,noun,/ˈbænə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/banne/banner__gb_1.mp3
+domain,https://www.oxfordlearnersdictionaries.com/definition/english/domain,C1,domain,lãnh địa,noun,/dəˈmeɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dom/domai/domain__gb_1.mp3
+address,https://www.oxfordlearnersdictionaries.com/definition/english/address_1,A1,address,Địa chỉ,noun,/əˈdres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/add/addre/address__gb_3.mp3
+doi,https://www.oxfordlearnersdictionaries.com/definition/english/doi,C2,DOI,DOI,abbreviation,/ˌdiː əʊ ˈaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/doi/doi__/doi__gb_1.mp3
+banner_ad,https://www.oxfordlearnersdictionaries.com/definition/english/banner-ad,C2,banner ad,biểu ngữ quảng cáo,noun,/ˈbænər æd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/banne/banner_ad_1_gb_1.mp3
+domain_name,https://www.oxfordlearnersdictionaries.com/definition/english/domain-name,C2,domain name,tên miền,noun,/dəˈmeɪn neɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dom/domai/domain_name_1_gb_1.mp3
+crawl,https://www.oxfordlearnersdictionaries.com/definition/english/crawl_1,C2,crawl,thu thập thông tin,verb,/krɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/crawl/crawl__gb_1.mp3
+forum,https://www.oxfordlearnersdictionaries.com/definition/english/forum,B2,forum,diễn đàn,noun,/ˈfɔːrəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/forum/forum__gb_1.mp3
+home_page,https://www.oxfordlearnersdictionaries.com/definition/english/home-page,B2,home page,trang chủ,noun,/ˈhəʊm peɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hom/home_/home_page_1_gb_1.mp3
+discussion_forum,https://www.oxfordlearnersdictionaries.com/definition/english/discussion-forum,C1,discussion forum,diễn đàn thảo luận,noun,/dɪˈskʌʃn fɔːrəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/discu/discussion_forum_1_gb_1.mp3
+html,https://www.oxfordlearnersdictionaries.com/definition/english/html,C1,HTML,HTML,abbreviation,/ˌeɪtʃ tiː em ˈel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/htm/html_/html__gb_1.mp3
+http,https://www.oxfordlearnersdictionaries.com/definition/english/http,B2,HTTP,HTTP,abbreviation,/ˌeɪtʃ tiː tiː ˈpiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/htt/http_/http__gb_1.mp3
+ebay™,https://www.oxfordlearnersdictionaries.com/definition/english/ebaytm,B2,eBay™,eBay™,noun,/ˈiːbeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/eba/ebay_/ebay__gb_1.mp3
+hotlink,https://www.oxfordlearnersdictionaries.com/definition/english/hotlink,A2,hotlink,liên kết nóng,noun,/ˈhɒtlɪŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hot/hotli/hotlink__gb_1.mp3
+dot-com,https://www.oxfordlearnersdictionaries.com/definition/english/dot-com,C2,dot-com,dot-com,noun,/ˌdɒt ˈkɒm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dot/dot_c/dot_com_1_gb_1.mp3
+hyperlink,https://www.oxfordlearnersdictionaries.com/definition/english/hyperlink,A2,hyperlink,siêu liên kết,noun,/ˈhaɪpəlɪŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyp/hyper/hyperlink__gb_1.mp3
+e-zine,https://www.oxfordlearnersdictionaries.com/definition/english/e-zine,C2,e-zine,tạp chí điện tử,noun,/ˈiː ziːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/e_z/e_zin/e_zine_1_gb_1.mp3
+landing_page,https://www.oxfordlearnersdictionaries.com/definition/english/landing-page,C2,landing page,trang đích,noun,/ˈlændɪŋ peɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/landi/landing_page_1_gb_3.mp3
+hypertext,https://www.oxfordlearnersdictionaries.com/definition/english/hypertext,C2,hypertext,siêu văn bản,noun,/ˈhaɪpətekst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyp/hyper/hypertext__gb_1.mp3
+message_board,https://www.oxfordlearnersdictionaries.com/definition/english/message-board,B2,message board,bảng tin,noun,/ˈmesɪdʒ bɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mes/messa/message_board_1_gb_1.mp3
+link,https://www.oxfordlearnersdictionaries.com/definition/english/link_1,A2,link,liên kết,noun,/lɪŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/link_/link__gb_2.mp3
+live,https://www.oxfordlearnersdictionaries.com/definition/english/live2_1,C1,live,sống,adjective,/laɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/liv/live_/live__gb_2.mp3
+page,https://www.oxfordlearnersdictionaries.com/definition/english/page_1,A1,page,trang,noun,/peɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pag/page_/page__gb_1.mp3
+newsgroup,https://www.oxfordlearnersdictionaries.com/definition/english/newsgroup,C2,newsgroup,nhóm tin,noun,/ˈnjuːzɡruːp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/new/newsg/newsgroup__gb_1.mp3
+mirror_site,https://www.oxfordlearnersdictionaries.com/definition/english/mirror-site,C2,mirror site,trang web nhân bản,noun,/ˈmɪrə saɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mir/mirro/mirror_site_1_gb_1.mp3
+pay-per-click,https://www.oxfordlearnersdictionaries.com/definition/english/pay-per-click,C2,pay-per-click,trả tiền cho mỗi lần nhấp chuột,noun,/ˌpeɪ pə ˈklɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pay/pay_p/pay_per_click_1_gb_2.mp3
 podcasting,https://www.oxfordlearnersdictionaries.com/definition/english/podcasting,B2,podcasting,podcasting,noun,,
-podcast,https://www.oxfordlearnersdictionaries.com/definition/english/podcast,B1,podcast,podcast,noun,/ˈpɒdkɑːst/,
+podcast,https://www.oxfordlearnersdictionaries.com/definition/english/podcast,B1,podcast,podcast,noun,/ˈpɒdkɑːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pod/podca/podcast__gb_2.mp3
 podcaster,https://www.oxfordlearnersdictionaries.com/definition/english/podcaster,B2,podcaster,podcaster,noun,,
-post,https://www.oxfordlearnersdictionaries.com/definition/english/post_2,A2,post,bưu kiện,noun,/pəʊst/,
-portal,https://www.oxfordlearnersdictionaries.com/definition/english/portal,C2,portal,cổng thông tin,noun,/ˈpɔːtl/,
-newswire,https://www.oxfordlearnersdictionaries.com/definition/english/newswire,C2,newswire,dây tin tức,noun,/ˈnjuːzwaɪə(r)/,
-post,https://www.oxfordlearnersdictionaries.com/definition/english/post_3,A2,post,bưu kiện,verb,/pəʊst/,
-publish,https://www.oxfordlearnersdictionaries.com/definition/english/publish,A2,publish,xuất bản,verb,/ˈpʌblɪʃ/,
-scrape,https://www.oxfordlearnersdictionaries.com/definition/english/scrape_1,C2,scrape,cạo,verb,/skreɪp/,
-search_engine,https://www.oxfordlearnersdictionaries.com/definition/english/search-engine,B1,search engine,công cụ tìm kiếm,noun,/ˈsɜːtʃ endʒɪn/,
-storefront,https://www.oxfordlearnersdictionaries.com/definition/english/storefront,C2,storefront,mặt tiền cửa hàng,noun,/ˈstɔːfrʌnt/,
-takedown,https://www.oxfordlearnersdictionaries.com/definition/english/takedown,C2,takedown,gỡ xuống,noun,/ˈteɪkdaʊn/,
-website,https://www.oxfordlearnersdictionaries.com/definition/english/website,A1,website,trang web,noun,/ˈwebsaɪt/,
-site,https://www.oxfordlearnersdictionaries.com/definition/english/site_1,A2,site,địa điểm,noun,/saɪt/,
-thread,https://www.oxfordlearnersdictionaries.com/definition/english/thread_1,C1,thread,chủ đề,noun,/θred/,
+post,https://www.oxfordlearnersdictionaries.com/definition/english/post_2,A2,post,bưu kiện,noun,/pəʊst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/post_/post__gb_1.mp3
+portal,https://www.oxfordlearnersdictionaries.com/definition/english/portal,C2,portal,cổng thông tin,noun,/ˈpɔːtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/por/porta/portal__gb_1.mp3
+newswire,https://www.oxfordlearnersdictionaries.com/definition/english/newswire,C2,newswire,dây tin tức,noun,/ˈnjuːzwaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/new/newsw/newswire__gb_1.mp3
+post,https://www.oxfordlearnersdictionaries.com/definition/english/post_3,A2,post,bưu kiện,verb,/pəʊst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/post_/post__gb_1.mp3
+publish,https://www.oxfordlearnersdictionaries.com/definition/english/publish,A2,publish,xuất bản,verb,/ˈpʌblɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/publish__gb_2.mp3
+scrape,https://www.oxfordlearnersdictionaries.com/definition/english/scrape_1,C2,scrape,cạo,verb,/skreɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrap/scrape__gb_1.mp3
+search_engine,https://www.oxfordlearnersdictionaries.com/definition/english/search-engine,B1,search engine,công cụ tìm kiếm,noun,/ˈsɜːtʃ endʒɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/searc/search_engine_1_gb_1.mp3
+storefront,https://www.oxfordlearnersdictionaries.com/definition/english/storefront,C2,storefront,mặt tiền cửa hàng,noun,/ˈstɔːfrʌnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/store/storefront__gb_1.mp3
+takedown,https://www.oxfordlearnersdictionaries.com/definition/english/takedown,C2,takedown,gỡ xuống,noun,/ˈteɪkdaʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tak/taked/takedown__gb_1.mp3
+website,https://www.oxfordlearnersdictionaries.com/definition/english/website,A1,website,trang web,noun,/ˈwebsaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/web/websi/website__gb_1.mp3
+site,https://www.oxfordlearnersdictionaries.com/definition/english/site_1,A2,site,địa điểm,noun,/saɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cit/cite_/cite__gb_2.mp3
+thread,https://www.oxfordlearnersdictionaries.com/definition/english/thread_1,C1,thread,chủ đề,noun,/θred/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/threa/thread__gb_1.mp3

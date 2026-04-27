@@ -1,23 +1,23 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-solstice,https://www.oxfordlearnersdictionaries.com/definition/english/solstice,C1,solstice,ngày hạ chí,noun,/ˈsɒlstɪs/,
-seasonal,https://www.oxfordlearnersdictionaries.com/definition/english/seasonal,C1,seasonal,theo mùa,adjective,/ˈsiːzənl/,
-equinox,https://www.oxfordlearnersdictionaries.com/definition/english/equinox,C2,equinox,phân,noun,/ˈekwɪnɒks/,
-fall,https://www.oxfordlearnersdictionaries.com/definition/english/fall_2,A2,fall,ngã,noun,/fɔːl/,
-season,https://www.oxfordlearnersdictionaries.com/definition/english/season_1,A2,season,mùa,noun,/ˈsiːzn/,
-semester,https://www.oxfordlearnersdictionaries.com/definition/english/semester,B1,semester,học kỳ,noun,/sɪˈmestə(r)/,
-autumn,https://www.oxfordlearnersdictionaries.com/definition/english/autumn,A1,autumn,mùa thu,noun,/ˈɔːtəm/,
-seasonality,https://www.oxfordlearnersdictionaries.com/definition/english/seasonality,C2,seasonality,tính thời vụ,noun,/ˌsiːzəˈnæləti/,
-midwinter,https://www.oxfordlearnersdictionaries.com/definition/english/midwinter,C1,midwinter,giữa mùa đông,noun,/ˌmɪdˈwɪntə(r)/,
-term,https://www.oxfordlearnersdictionaries.com/definition/english/term_1,B1,term,thuật ngữ,noun,/tɜːm/,
-summertime,https://www.oxfordlearnersdictionaries.com/definition/english/summertime,B1,summertime,mùa hè,noun,/ˈsʌmətaɪm/,
-springtime,https://www.oxfordlearnersdictionaries.com/definition/english/springtime,B1,springtime,mùa xuân,noun,/ˈsprɪŋtaɪm/,
-spring,https://www.oxfordlearnersdictionaries.com/definition/english/spring_1,A1,spring,mùa xuân,noun,/sprɪŋ/,
-summer,https://www.oxfordlearnersdictionaries.com/definition/english/summer_1,A1,summer,mùa hè,noun,/ˈsʌmə(r)/,
-midsummer,https://www.oxfordlearnersdictionaries.com/definition/english/midsummer,C1,midsummer,giữa hè,noun,/ˌmɪdˈsʌmə(r)/,
-winter,https://www.oxfordlearnersdictionaries.com/definition/english/winter_1,A1,winter,mùa đông,noun,/ˈwɪntə(r)/,
-termly,https://www.oxfordlearnersdictionaries.com/definition/english/termly,C2,termly,có kỳ hạn,adjective,/ˈtɜːmli/,
-term-time,https://www.oxfordlearnersdictionaries.com/definition/english/term-time_2,B2,term-time,thời hạn,adjective,/ˈtɜːm taɪm/,
-term_time,https://www.oxfordlearnersdictionaries.com/definition/english/term-time_1,B2,term time,thời hạn,noun,/ˈtɜːm taɪm/,
-wintertime,https://www.oxfordlearnersdictionaries.com/definition/english/wintertime,B1,wintertime,thời điểm mùa đông,noun,/ˈwɪntətaɪm/,
-yearly,https://www.oxfordlearnersdictionaries.com/definition/english/yearly_2,C1,yearly,hàng năm,adjective,/ˈjɪəli/,
-yearly,https://www.oxfordlearnersdictionaries.com/definition/english/yearly_1,C1,yearly,hàng năm,adverb,/ˈjɪəli/,
+solstice,https://www.oxfordlearnersdictionaries.com/definition/english/solstice,C1,solstice,ngày hạ chí,noun,/ˈsɒlstɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solst/solstice__gb_1.mp3
+seasonal,https://www.oxfordlearnersdictionaries.com/definition/english/seasonal,C1,seasonal,theo mùa,adjective,/ˈsiːzənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seaso/seasonal__gb_1.mp3
+equinox,https://www.oxfordlearnersdictionaries.com/definition/english/equinox,C2,equinox,phân,noun,/ˈekwɪnɒks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/equ/equin/equinox__gb_2.mp3
+fall,https://www.oxfordlearnersdictionaries.com/definition/english/fall_2,A2,fall,ngã,noun,/fɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/fall_/fall__gb_2.mp3
+season,https://www.oxfordlearnersdictionaries.com/definition/english/season_1,A2,season,mùa,noun,/ˈsiːzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seaso/season__gb_1.mp3
+semester,https://www.oxfordlearnersdictionaries.com/definition/english/semester,B1,semester,học kỳ,noun,/sɪˈmestə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sem/semes/semester__gb_1.mp3
+autumn,https://www.oxfordlearnersdictionaries.com/definition/english/autumn,A1,autumn,mùa thu,noun,/ˈɔːtəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/autum/autumn__gb_2.mp3
+seasonality,https://www.oxfordlearnersdictionaries.com/definition/english/seasonality,C2,seasonality,tính thời vụ,noun,/ˌsiːzəˈnæləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sea/seaso/seasonality__gb_1.mp3
+midwinter,https://www.oxfordlearnersdictionaries.com/definition/english/midwinter,C1,midwinter,giữa mùa đông,noun,/ˌmɪdˈwɪntə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/midwi/midwinter__gb_1.mp3
+term,https://www.oxfordlearnersdictionaries.com/definition/english/term_1,B1,term,thuật ngữ,noun,/tɜːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/term_/term__gb_3.mp3
+summertime,https://www.oxfordlearnersdictionaries.com/definition/english/summertime,B1,summertime,mùa hè,noun,/ˈsʌmətaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sum/summe/summertime__gb_1.mp3
+springtime,https://www.oxfordlearnersdictionaries.com/definition/english/springtime,B1,springtime,mùa xuân,noun,/ˈsprɪŋtaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spr/sprin/springtime__gb_1.mp3
+spring,https://www.oxfordlearnersdictionaries.com/definition/english/spring_1,A1,spring,mùa xuân,noun,/sprɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spr/sprin/spring__gb_1.mp3
+summer,https://www.oxfordlearnersdictionaries.com/definition/english/summer_1,A1,summer,mùa hè,noun,/ˈsʌmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sum/summe/summer__gb_2.mp3
+midsummer,https://www.oxfordlearnersdictionaries.com/definition/english/midsummer,C1,midsummer,giữa hè,noun,/ˌmɪdˈsʌmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/midsu/midsummer__gb_1.mp3
+winter,https://www.oxfordlearnersdictionaries.com/definition/english/winter_1,A1,winter,mùa đông,noun,/ˈwɪntə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/winte/winter__gb_2.mp3
+termly,https://www.oxfordlearnersdictionaries.com/definition/english/termly,C2,termly,có kỳ hạn,adjective,/ˈtɜːmli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/terml/termly__gb_1.mp3
+term-time,https://www.oxfordlearnersdictionaries.com/definition/english/term-time_2,B2,term-time,thời hạn,adjective,/ˈtɜːm taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/term_/term_time_1_gb_1.mp3
+term_time,https://www.oxfordlearnersdictionaries.com/definition/english/term-time_1,B2,term time,thời hạn,noun,/ˈtɜːm taɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/term_/term_time_1_gb_1.mp3
+wintertime,https://www.oxfordlearnersdictionaries.com/definition/english/wintertime,B1,wintertime,thời điểm mùa đông,noun,/ˈwɪntətaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/winte/wintertime__gb_1.mp3
+yearly,https://www.oxfordlearnersdictionaries.com/definition/english/yearly_2,C1,yearly,hàng năm,adjective,/ˈjɪəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yea/yearl/yearly__gb_1.mp3
+yearly,https://www.oxfordlearnersdictionaries.com/definition/english/yearly_1,C1,yearly,hàng năm,adverb,/ˈjɪəli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yea/yearl/yearly__gb_1.mp3

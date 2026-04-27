@@ -1,114 +1,114 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-ar,https://www.oxfordlearnersdictionaries.com/definition/english/ar_2,C2,AR,AR,noun,/ˌeɪ ˈɑː(r)/,
-add-in,https://www.oxfordlearnersdictionaries.com/definition/english/add-in_2,C2,add-in,bổ trợ,noun,/ˈæd ɪn/,
-alert,https://www.oxfordlearnersdictionaries.com/definition/english/alert_2,C1,alert,báo động,noun,/əˈlɜːt/,
-app,https://www.oxfordlearnersdictionaries.com/definition/english/app,A2,app,ứng dụng,noun,/æp/,
-animation,https://www.oxfordlearnersdictionaries.com/definition/english/animation,B2,animation,hoạt hình,noun,/ˌænɪˈmeɪʃn/,
-application,https://www.oxfordlearnersdictionaries.com/definition/english/application,C1,application,ứng dụng,noun,/ˌæplɪˈkeɪʃn/,
-analogue,https://www.oxfordlearnersdictionaries.com/definition/english/analogue_1,C1,analogue,tương tự,adjective,/ˈænəlɒɡ/,
-algorithm,https://www.oxfordlearnersdictionaries.com/definition/english/algorithm,C2,algorithm,thuật toán,noun,/ˈælɡərɪðəm/,
-applet,https://www.oxfordlearnersdictionaries.com/definition/english/applet,C2,applet,tiểu dụng,noun,/ˈæplət/,
-autocorrect,https://www.oxfordlearnersdictionaries.com/definition/english/autocorrect_1,C2,autocorrect,tự động sửa,noun,/ˈɔːtəʊkərekt/,
-antivirus,https://www.oxfordlearnersdictionaries.com/definition/english/antivirus,C1,antivirus,chống virus,adjective,/ˈæntivaɪrəs/,
-back_end,https://www.oxfordlearnersdictionaries.com/definition/english/back-end_1,C2,back end,phần cuối,noun,/ˌbæk ˈend/,
-autocorrect,https://www.oxfordlearnersdictionaries.com/definition/english/autocorrect_2,C2,autocorrect,tự động sửa,verb,/ˌɔːtəʊkəˈrekt/,
-blockchain,https://www.oxfordlearnersdictionaries.com/definition/english/blockchain,C2,blockchain,chuỗi khối,noun,/ˈblɒktʃeɪn/,
-bootstrap,https://www.oxfordlearnersdictionaries.com/definition/english/bootstrap_1,C2,bootstrap,khởi động,noun,/ˈbuːtstræp/,
-backup,https://www.oxfordlearnersdictionaries.com/definition/english/backup,C1,backup,hỗ trợ,noun,/ˈbækʌp/,
-beta_version,https://www.oxfordlearnersdictionaries.com/definition/english/beta-version,C2,beta version,phiên bản thử nghiệm,noun,/ˈbiːtə vɜːʃn/,
-bootstrap,https://www.oxfordlearnersdictionaries.com/definition/english/bootstrap_2,C2,bootstrap,khởi động,verb,/ˈbuːtstræp/,
+ar,https://www.oxfordlearnersdictionaries.com/definition/english/ar_2,C2,AR,AR,noun,/ˌeɪ ˈɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ar_/ar_1_/ar_1_gb_1.mp3
+add-in,https://www.oxfordlearnersdictionaries.com/definition/english/add-in_2,C2,add-in,bổ trợ,noun,/ˈæd ɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/add/add_i/add_in_1_gb_1.mp3
+alert,https://www.oxfordlearnersdictionaries.com/definition/english/alert_2,C1,alert,báo động,noun,/əˈlɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ale/alert/alert__gb_1.mp3
+app,https://www.oxfordlearnersdictionaries.com/definition/english/app,A2,app,ứng dụng,noun,/æp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/app__/app__gb_1.mp3
+animation,https://www.oxfordlearnersdictionaries.com/definition/english/animation,B2,animation,hoạt hình,noun,/ˌænɪˈmeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ani/anima/animation__gb_1.mp3
+application,https://www.oxfordlearnersdictionaries.com/definition/english/application,C1,application,ứng dụng,noun,/ˌæplɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appli/application__gb_2.mp3
+analogue,https://www.oxfordlearnersdictionaries.com/definition/english/analogue_1,C1,analogue,tương tự,adjective,/ˈænəlɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ana/analo/analogue__gb_1.mp3
+algorithm,https://www.oxfordlearnersdictionaries.com/definition/english/algorithm,C2,algorithm,thuật toán,noun,/ˈælɡərɪðəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/alg/algor/algorithm__gb_1.mp3
+applet,https://www.oxfordlearnersdictionaries.com/definition/english/applet,C2,applet,tiểu dụng,noun,/ˈæplət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/apple/applet__gb_1.mp3
+autocorrect,https://www.oxfordlearnersdictionaries.com/definition/english/autocorrect_1,C2,autocorrect,tự động sửa,noun,/ˈɔːtəʊkərekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/autoc/autocorrect__gb_1.mp3
+antivirus,https://www.oxfordlearnersdictionaries.com/definition/english/antivirus,C1,antivirus,chống virus,adjective,/ˈæntivaɪrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ant/antiv/antivirus__gb_1.mp3
+back_end,https://www.oxfordlearnersdictionaries.com/definition/english/back-end_1,C2,back end,phần cuối,noun,/ˌbæk ˈend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/back_/back_end_1_gb_1.mp3
+autocorrect,https://www.oxfordlearnersdictionaries.com/definition/english/autocorrect_2,C2,autocorrect,tự động sửa,verb,/ˌɔːtəʊkəˈrekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/autoc/autocorrect__gb_2.mp3
+blockchain,https://www.oxfordlearnersdictionaries.com/definition/english/blockchain,C2,blockchain,chuỗi khối,noun,/ˈblɒktʃeɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/blo/block/blockchain__gb_1.mp3
+bootstrap,https://www.oxfordlearnersdictionaries.com/definition/english/bootstrap_1,C2,bootstrap,khởi động,noun,/ˈbuːtstræp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/boots/bootstrap__gb_1.mp3
+backup,https://www.oxfordlearnersdictionaries.com/definition/english/backup,C1,backup,hỗ trợ,noun,/ˈbækʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/backu/backup__gb_1.mp3
+beta_version,https://www.oxfordlearnersdictionaries.com/definition/english/beta-version,C2,beta version,phiên bản thử nghiệm,noun,/ˈbiːtə vɜːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bet/beta_/beta_version_1_gb_2.mp3
+bootstrap,https://www.oxfordlearnersdictionaries.com/definition/english/bootstrap_2,C2,bootstrap,khởi động,verb,/ˈbuːtstræp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/boots/bootstrap__gb_1.mp3
 back_up,https://www.oxfordlearnersdictionaries.com/definition/english/back-up,C1,back up,hỗ trợ,phrasal verb,,
-bot,https://www.oxfordlearnersdictionaries.com/definition/english/bot,C1,bot,bot,noun,/bɒt/,
-bundle,https://www.oxfordlearnersdictionaries.com/definition/english/bundle_1,C2,bundle,bó,noun,/ˈbʌndl/,
-chatbot,https://www.oxfordlearnersdictionaries.com/definition/english/chatbot,C2,chatbot,chatbot,noun,/ˈtʃætbɒt/,
-bundle,https://www.oxfordlearnersdictionaries.com/definition/english/bundle_2,C2,bundle,bó,verb,/ˈbʌndl/,
-burn,https://www.oxfordlearnersdictionaries.com/definition/english/burn_1,C2,burn,đốt cháy,verb,/bɜːn/,
-chatgpt,https://www.oxfordlearnersdictionaries.com/definition/english/chatgpt,C2,ChatGPT,Trò chuyệnGPT,noun,/ˌtʃætdʒiːpiːˈtiː/,
-codec,https://www.oxfordlearnersdictionaries.com/definition/english/codec,C2,codec,bộ giải mã,noun,/ˈkəʊdek/,
-clip_art,https://www.oxfordlearnersdictionaries.com/definition/english/clip-art,C2,clip art,clip nghệ thuật,noun,/ˈklɪp ɑːt/,
+bot,https://www.oxfordlearnersdictionaries.com/definition/english/bot,C1,bot,bot,noun,/bɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/bot__/bot__gb_2.mp3
+bundle,https://www.oxfordlearnersdictionaries.com/definition/english/bundle_1,C2,bundle,bó,noun,/ˈbʌndl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bun/bundl/bundle__gb_2.mp3
+chatbot,https://www.oxfordlearnersdictionaries.com/definition/english/chatbot,C2,chatbot,chatbot,noun,/ˈtʃætbɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chatb/chatbot__gb_1.mp3
+bundle,https://www.oxfordlearnersdictionaries.com/definition/english/bundle_2,C2,bundle,bó,verb,/ˈbʌndl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bun/bundl/bundle__gb_2.mp3
+burn,https://www.oxfordlearnersdictionaries.com/definition/english/burn_1,C2,burn,đốt cháy,verb,/bɜːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/burn_/burn__gb_2.mp3
+chatgpt,https://www.oxfordlearnersdictionaries.com/definition/english/chatgpt,C2,ChatGPT,Trò chuyệnGPT,noun,/ˌtʃætdʒiːpiːˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chatg/chatgpt_1_gb_2.mp3
+codec,https://www.oxfordlearnersdictionaries.com/definition/english/codec,C2,codec,bộ giải mã,noun,/ˈkəʊdek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cod/codec/codec__gb_1.mp3
+clip_art,https://www.oxfordlearnersdictionaries.com/definition/english/clip-art,C2,clip art,clip nghệ thuật,noun,/ˈklɪp ɑːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cli/clip_/clip_art_1_gb_1.mp3
 cms,https://www.oxfordlearnersdictionaries.com/definition/english/cms,C2,CMS,CMS,noun,/ˌsiː em ˈes/,
-content_management_system,https://www.oxfordlearnersdictionaries.com/definition/english/content-management-system,C2,content management system,hệ thống quản lý nội dung,noun,/ˌkɒntent ˈmænɪdʒmənt sɪstəm/,
-courseware,https://www.oxfordlearnersdictionaries.com/definition/english/courseware,C2,courseware,chương trình học,noun,/ˈkɔːsweə(r)/,
-configure,https://www.oxfordlearnersdictionaries.com/definition/english/configure,C2,configure,cấu hình,verb,/kənˈfɪɡə(r)/,
-deprecate,https://www.oxfordlearnersdictionaries.com/definition/english/deprecate,C2,deprecate,xin,verb,/ˈdeprəkeɪt/,
-debugger,https://www.oxfordlearnersdictionaries.com/definition/english/debugger,C2,debugger,trình gỡ lỗi,noun,/ˌdiːˈbʌɡə(r)/,
-diagnostic,https://www.oxfordlearnersdictionaries.com/definition/english/diagnostic_2,C2,diagnostic,chẩn đoán,noun,/ˌdaɪəɡˈnɒstɪk/,
-download,https://www.oxfordlearnersdictionaries.com/definition/english/download_2,A2,download,tải về,noun,/ˈdaʊnləʊd/,
-deck,https://www.oxfordlearnersdictionaries.com/definition/english/deck_1,C2,deck,boong tàu,noun,/dek/,
-demo,https://www.oxfordlearnersdictionaries.com/definition/english/demo_1,C2,demo,thử nghiệm,noun,/ˈdeməʊ/,
-e-book,https://www.oxfordlearnersdictionaries.com/definition/english/e-book,B2,e-book,sách điện tử,noun,/ˈiː bʊk/,
-driver,https://www.oxfordlearnersdictionaries.com/definition/english/driver,C2,driver,tài xế,noun,/ˈdraɪvə(r)/,
-edutainment,https://www.oxfordlearnersdictionaries.com/definition/english/edutainment,C2,edutainment,giáo dục giải trí,noun,/ˌedʒuˈteɪnmənt/,
-digital_asset,https://www.oxfordlearnersdictionaries.com/definition/english/digital-asset,C1,digital asset,tài sản kỹ thuật số,noun,/ˌdɪdʒɪtl ˈæset/,
-disassembler,https://www.oxfordlearnersdictionaries.com/definition/english/disassembler,C2,disassembler,người tháo rời,noun,/ˌdɪsəˈsemblə(r)/,
-executable,https://www.oxfordlearnersdictionaries.com/definition/english/executable,C2,executable,thực thi được,adjective,/ˌeksɪˈkjuːtəbl/,
-extension,https://www.oxfordlearnersdictionaries.com/definition/english/extension,C2,extension,sự mở rộng,noun,/ɪkˈstenʃn/,
-facial_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/facial-recognition,C1,facial recognition,nhận dạng khuôn mặt,noun,/ˌfeɪʃl rekəɡˈnɪʃn/,
-filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_1,C2,filter,lọc,noun,/ˈfɪltə(r)/,
-firmware,https://www.oxfordlearnersdictionaries.com/definition/english/firmware,C2,firmware,phần sụn,noun,/ˈfɜːmweə(r)/,
-flic,https://www.oxfordlearnersdictionaries.com/definition/english/flic,C2,flic,lắc lư,noun,/flɪk/,
-freeware,https://www.oxfordlearnersdictionaries.com/definition/english/freeware,C2,freeware,phần mềm miễn phí,noun,/ˈfriːweə(r)/,
-front_end,https://www.oxfordlearnersdictionaries.com/definition/english/front-end_1,C2,front end,giao diện người dùng,noun,/ˌfrʌnt ˈend/,
-firewall,https://www.oxfordlearnersdictionaries.com/definition/english/firewall,C1,firewall,tường lửa,noun,/ˈfaɪəwɔːl/,
+content_management_system,https://www.oxfordlearnersdictionaries.com/definition/english/content-management-system,C2,content management system,hệ thống quản lý nội dung,noun,/ˌkɒntent ˈmænɪdʒmənt sɪstəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontent_management_system_1_gb_1.mp3
+courseware,https://www.oxfordlearnersdictionaries.com/definition/english/courseware,C2,courseware,chương trình học,noun,/ˈkɔːsweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/cours/courseware__gb_1.mp3
+configure,https://www.oxfordlearnersdictionaries.com/definition/english/configure,C2,configure,cấu hình,verb,/kənˈfɪɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconf/xconfigure__gb_1.mp3
+deprecate,https://www.oxfordlearnersdictionaries.com/definition/english/deprecate,C2,deprecate,xin,verb,/ˈdeprəkeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/depre/deprecate__gb_3.mp3
+debugger,https://www.oxfordlearnersdictionaries.com/definition/english/debugger,C2,debugger,trình gỡ lỗi,noun,/ˌdiːˈbʌɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/deb/debug/debugger__gb_2.mp3
+diagnostic,https://www.oxfordlearnersdictionaries.com/definition/english/diagnostic_2,C2,diagnostic,chẩn đoán,noun,/ˌdaɪəɡˈnɒstɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dia/diagn/diagnostic__gb_1.mp3
+download,https://www.oxfordlearnersdictionaries.com/definition/english/download_2,A2,download,tải về,noun,/ˈdaʊnləʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dow/downl/download__gb_1.mp3
+deck,https://www.oxfordlearnersdictionaries.com/definition/english/deck_1,C2,deck,boong tàu,noun,/dek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dec/deck_/deck__gb_1.mp3
+demo,https://www.oxfordlearnersdictionaries.com/definition/english/demo_1,C2,demo,thử nghiệm,noun,/ˈdeməʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dem/demo_/demo__gb_1.mp3
+e-book,https://www.oxfordlearnersdictionaries.com/definition/english/e-book,B2,e-book,sách điện tử,noun,/ˈiː bʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/e_b/e_boo/e_book_1_gb_2.mp3
+driver,https://www.oxfordlearnersdictionaries.com/definition/english/driver,C2,driver,tài xế,noun,/ˈdraɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dri/drive/driver__gb_2.mp3
+edutainment,https://www.oxfordlearnersdictionaries.com/definition/english/edutainment,C2,edutainment,giáo dục giải trí,noun,/ˌedʒuˈteɪnmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/edu/eduta/edutainment__gb_1.mp3
+digital_asset,https://www.oxfordlearnersdictionaries.com/definition/english/digital-asset,C1,digital asset,tài sản kỹ thuật số,noun,/ˌdɪdʒɪtl ˈæset/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dig/digit/digital_asset_1_gb_2.mp3
+disassembler,https://www.oxfordlearnersdictionaries.com/definition/english/disassembler,C2,disassembler,người tháo rời,noun,/ˌdɪsəˈsemblə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disas/disassembler__gb_2.mp3
+executable,https://www.oxfordlearnersdictionaries.com/definition/english/executable,C2,executable,thực thi được,adjective,/ˌeksɪˈkjuːtəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exe/execu/executable__gb_3.mp3
+extension,https://www.oxfordlearnersdictionaries.com/definition/english/extension,C2,extension,sự mở rộng,noun,/ɪkˈstenʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/ext/exten/extension__gb_1.mp3
+facial_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/facial-recognition,C1,facial recognition,nhận dạng khuôn mặt,noun,/ˌfeɪʃl rekəɡˈnɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/facia/facial_recognition_1_gb_1.mp3
+filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_1,C2,filter,lọc,noun,/ˈfɪltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filte/filter__gb_1.mp3
+firmware,https://www.oxfordlearnersdictionaries.com/definition/english/firmware,C2,firmware,phần sụn,noun,/ˈfɜːmweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/firmw/firmware__gb_1.mp3
+flic,https://www.oxfordlearnersdictionaries.com/definition/english/flic,C2,flic,lắc lư,noun,/flɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fli/flick/flick__gb_1.mp3
+freeware,https://www.oxfordlearnersdictionaries.com/definition/english/freeware,C2,freeware,phần mềm miễn phí,noun,/ˈfriːweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/freew/freeware__gb_1.mp3
+front_end,https://www.oxfordlearnersdictionaries.com/definition/english/front-end_1,C2,front end,giao diện người dùng,noun,/ˌfrʌnt ˈend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fro/front/front_end_1_gb_2.mp3
+firewall,https://www.oxfordlearnersdictionaries.com/definition/english/firewall,C1,firewall,tường lửa,noun,/ˈfaɪəwɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fir/firew/firewall__gb_1.mp3
 gif,https://www.oxfordlearnersdictionaries.com/definition/english/gif,C2,GIF,GIF,noun,/ɡɪf/,
-face_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/face-recognition,C1,face recognition,nhận dạng khuôn mặt,noun,/ˌfeɪs rekəɡˈnɪʃn/,
-file_manager,https://www.oxfordlearnersdictionaries.com/definition/english/file-manager,C2,file manager,quản lý tập tin,noun,/ˈfaɪl mænɪdʒə(r)/,
-interactive,https://www.oxfordlearnersdictionaries.com/definition/english/interactive,C1,interactive,tương tác,adjective,/ˌɪntərˈæktɪv/,
-groupware,https://www.oxfordlearnersdictionaries.com/definition/english/groupware,C2,groupware,phần mềm nhóm,noun,/ˈɡruːpweə(r)/,
-interface,https://www.oxfordlearnersdictionaries.com/definition/english/interface_1,C1,interface,giao diện,noun,/ˈɪntəfeɪs/,
-interpreter,https://www.oxfordlearnersdictionaries.com/definition/english/interpreter,C2,interpreter,thông dịch viên,noun,/ɪnˈtɜːprətə(r)/,
-macro,https://www.oxfordlearnersdictionaries.com/definition/english/macro_1,C2,macro,vĩ mô,noun,/ˈmækrəʊ/,
-logger,https://www.oxfordlearnersdictionaries.com/definition/english/logger,C2,logger,người khai thác gỗ,noun,/ˈlɒɡə(r)/,
-llm,https://www.oxfordlearnersdictionaries.com/definition/english/llm,C2,LLM,LLM,noun,/ˌel el ˈem/,
-killer_app,https://www.oxfordlearnersdictionaries.com/definition/english/killer-app,C2,killer app,ứng dụng sát thủ,noun,/ˌkɪlər ˈæp/,
-mailer,https://www.oxfordlearnersdictionaries.com/definition/english/mailer,C2,mailer,người đưa thư,noun,/ˈmeɪlə(r)/,
-metaverse,https://www.oxfordlearnersdictionaries.com/definition/english/metaverse,C2,metaverse,metaverse,noun,/ˈmetəvɜːs/,
-middleware,https://www.oxfordlearnersdictionaries.com/definition/english/middleware,C2,middleware,phần mềm trung gian,noun,/ˈmɪdlweə(r)/,
-mixed_reality,https://www.oxfordlearnersdictionaries.com/definition/english/mixed-reality,C2,mixed reality,thực tế hỗn hợp,noun,/ˌmɪkst riˈæləti/,
-nav,https://www.oxfordlearnersdictionaries.com/definition/english/nav,C2,nav,điều hướng,noun,/næv/,
-large_language_model,https://www.oxfordlearnersdictionaries.com/definition/english/large-language-model,C2,large language model,mô hình ngôn ngữ lớn,noun,/ˌlɑːdʒ ˈlæŋɡwɪdʒ mɒdl/,
-nft,https://www.oxfordlearnersdictionaries.com/definition/english/nft,C2,NFT,NFT,noun,/ˌen ef ˈtiː/,
-open-source,https://www.oxfordlearnersdictionaries.com/definition/english/open-source,C2,open-source,mã nguồn mở,adjective,/ˌəʊpən ˈsɔːs/,
-notification,https://www.oxfordlearnersdictionaries.com/definition/english/notification,C1,notification,thông báo,noun,/ˌnəʊtɪfɪˈkeɪʃn/,
-operating_system,https://www.oxfordlearnersdictionaries.com/definition/english/operating-system,C1,operating system,hệ điều hành,noun,/ˈɒpəreɪtɪŋ sɪstəm/,
-pirate,https://www.oxfordlearnersdictionaries.com/definition/english/pirate_2,C1,pirate,cướp biển,verb,/ˈpaɪrət/,
-non-fungible_token,https://www.oxfordlearnersdictionaries.com/definition/english/non-fungible-token,C2,non-fungible token,mã thông báo không thể thay thế,noun,/ˌnɒn fʌndʒəbl ˈtəʊkən/,
-platform,https://www.oxfordlearnersdictionaries.com/definition/english/platform,C2,platform,nền tảng,noun,/ˈplætfɔːm/,
-predictive,https://www.oxfordlearnersdictionaries.com/definition/english/predictive,C2,predictive,tiên đoán,adjective,/prɪˈdɪktɪv/,
-program,https://www.oxfordlearnersdictionaries.com/definition/english/program_1,A2,program,chương trình,noun,/ˈprəʊɡræm/,
-saas,https://www.oxfordlearnersdictionaries.com/definition/english/saas,C2,SaaS,SaaS,noun,/sæs/,
-push_notification,https://www.oxfordlearnersdictionaries.com/definition/english/push-notification,C2,push notification,thông báo đẩy,noun,/ˈpʊʃ nəʊtɪfɪkeɪʃn/,
-real_time,https://www.oxfordlearnersdictionaries.com/definition/english/real-time,B2,real time,thời gian thực,noun,/ˌriːəl ˈtaɪm/,
-piracy,https://www.oxfordlearnersdictionaries.com/definition/english/piracy,C1,piracy,cướp biển,noun,/ˈpaɪrəsi/,
-shareware,https://www.oxfordlearnersdictionaries.com/definition/english/shareware,C2,shareware,phần mềm chia sẻ,noun,/ˈʃeəweə(r)/,
-screen_reader,https://www.oxfordlearnersdictionaries.com/definition/english/screen-reader,C1,screen reader,trình đọc màn hình,noun,/ˈskriːn riːdə(r)/,
-screen_saver,https://www.oxfordlearnersdictionaries.com/definition/english/screen-saver,C2,screen saver,bảo vệ màn hình,noun,/ˈskriːn seɪvə(r)/,
-push_alert,https://www.oxfordlearnersdictionaries.com/definition/english/push-alert,C2,push alert,đẩy cảnh báo,noun,/ˈpʊʃ əlɜːt/,
-scareware,https://www.oxfordlearnersdictionaries.com/definition/english/scareware,C2,scareware,đồ hù dọa,noun,/ˈskeəweə(r)/,
-skin,https://www.oxfordlearnersdictionaries.com/definition/english/skin_1,C2,skin,da,noun,/skɪn/,
-sound_effect,https://www.oxfordlearnersdictionaries.com/definition/english/sound-effect,B2,sound effect,hiệu ứng âm thanh,noun,/ˈsaʊnd ɪfekt/,
-software,https://www.oxfordlearnersdictionaries.com/definition/english/software,B1,software,phần mềm,noun,/ˈsɒftweə(r)/,
-slide_show,https://www.oxfordlearnersdictionaries.com/definition/english/slide-show,C2,slide show,trình chiếu,noun,/ˈslaɪd ʃəʊ/,
-split_screen,https://www.oxfordlearnersdictionaries.com/definition/english/split-screen_1,C2,split screen,chia đôi màn hình,noun,/ˌsplɪt ˈskriːn/,
-spellcheck,https://www.oxfordlearnersdictionaries.com/definition/english/spellcheck_2,C1,spellcheck,kiểm tra chính tả,noun,/ˈspeltʃek/,
-spambot,https://www.oxfordlearnersdictionaries.com/definition/english/spambot,C2,spambot,thư rác,noun,/ˈspæmbɒt/,
-speech_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/speech-recognition,C2,speech recognition,nhận dạng giọng nói,noun,/ˈspiːtʃ rekəɡnɪʃn/,
-spreadsheet,https://www.oxfordlearnersdictionaries.com/definition/english/spreadsheet,C1,spreadsheet,bảng tính,noun,/ˈspredʃiːt/,
-split-screen,https://www.oxfordlearnersdictionaries.com/definition/english/split-screen_2,C2,split-screen,chia đôi màn hình,adjective,/ˌsplɪt ˈskriːn/,
-spellchecker,https://www.oxfordlearnersdictionaries.com/definition/english/spellchecker,C1,spellchecker,người kiểm tra chính tả,noun,/ˈspeltʃekə(r)/,
-suite,https://www.oxfordlearnersdictionaries.com/definition/english/suite,C2,suite,bộ,noun,/swiːt/,
-tab,https://www.oxfordlearnersdictionaries.com/definition/english/tab_1,C1,tab,tab,noun,/tæb/,
-sprint,https://www.oxfordlearnersdictionaries.com/definition/english/sprint_2,C2,sprint,chạy nước rút,noun,/sprɪnt/,
-text-to-speech,https://www.oxfordlearnersdictionaries.com/definition/english/text-to-speech,C2,text-to-speech,chuyển văn bản thành giọng nói,noun,/ˌtekst tə ˈspiːtʃ/,
+face_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/face-recognition,C1,face recognition,nhận dạng khuôn mặt,noun,/ˌfeɪs rekəɡˈnɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/face_/face_recognition_1_gb_1.mp3
+file_manager,https://www.oxfordlearnersdictionaries.com/definition/english/file-manager,C2,file manager,quản lý tập tin,noun,/ˈfaɪl mænɪdʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/file_/file_manager_1_gb_1.mp3
+interactive,https://www.oxfordlearnersdictionaries.com/definition/english/interactive,C1,interactive,tương tác,adjective,/ˌɪntərˈæktɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interactive__gb_1.mp3
+groupware,https://www.oxfordlearnersdictionaries.com/definition/english/groupware,C2,groupware,phần mềm nhóm,noun,/ˈɡruːpweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/group/groupware__gb_1.mp3
+interface,https://www.oxfordlearnersdictionaries.com/definition/english/interface_1,C1,interface,giao diện,noun,/ˈɪntəfeɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interface__gb_1.mp3
+interpreter,https://www.oxfordlearnersdictionaries.com/definition/english/interpreter,C2,interpreter,thông dịch viên,noun,/ɪnˈtɜːprətə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interpreter__gb_1.mp3
+macro,https://www.oxfordlearnersdictionaries.com/definition/english/macro_1,C2,macro,vĩ mô,noun,/ˈmækrəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mac/macro/macro__gb_1.mp3
+logger,https://www.oxfordlearnersdictionaries.com/definition/english/logger,C2,logger,người khai thác gỗ,noun,/ˈlɒɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/log/logge/logger__gb_1.mp3
+llm,https://www.oxfordlearnersdictionaries.com/definition/english/llm,C2,LLM,LLM,noun,/ˌel el ˈem/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/llm/llm_1/llm_1_gb_1.mp3
+killer_app,https://www.oxfordlearnersdictionaries.com/definition/english/killer-app,C2,killer app,ứng dụng sát thủ,noun,/ˌkɪlər ˈæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kil/kille/killer_app_1_gb_1.mp3
+mailer,https://www.oxfordlearnersdictionaries.com/definition/english/mailer,C2,mailer,người đưa thư,noun,/ˈmeɪlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/maile/mailer__gb_1.mp3
+metaverse,https://www.oxfordlearnersdictionaries.com/definition/english/metaverse,C2,metaverse,metaverse,noun,/ˈmetəvɜːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/met/metav/metaverse__gb_1.mp3
+middleware,https://www.oxfordlearnersdictionaries.com/definition/english/middleware,C2,middleware,phần mềm trung gian,noun,/ˈmɪdlweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mid/middl/middleware__gb_1.mp3
+mixed_reality,https://www.oxfordlearnersdictionaries.com/definition/english/mixed-reality,C2,mixed reality,thực tế hỗn hợp,noun,/ˌmɪkst riˈæləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mix/mixed/mixed_reality_1_gb_1.mp3
+nav,https://www.oxfordlearnersdictionaries.com/definition/english/nav,C2,nav,điều hướng,noun,/næv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nav/nav__/nav__gb_1.mp3
+large_language_model,https://www.oxfordlearnersdictionaries.com/definition/english/large-language-model,C2,large language model,mô hình ngôn ngữ lớn,noun,/ˌlɑːdʒ ˈlæŋɡwɪdʒ mɒdl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lar/large/large_language_model_1_gb_1.mp3
+nft,https://www.oxfordlearnersdictionaries.com/definition/english/nft,C2,NFT,NFT,noun,/ˌen ef ˈtiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nft/nft__/nft__gb_1.mp3
+open-source,https://www.oxfordlearnersdictionaries.com/definition/english/open-source,C2,open-source,mã nguồn mở,adjective,/ˌəʊpən ˈsɔːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/open_/open_source_1_gb_1.mp3
+notification,https://www.oxfordlearnersdictionaries.com/definition/english/notification,C1,notification,thông báo,noun,/ˌnəʊtɪfɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/not/notif/notification__gb_1.mp3
+operating_system,https://www.oxfordlearnersdictionaries.com/definition/english/operating-system,C1,operating system,hệ điều hành,noun,/ˈɒpəreɪtɪŋ sɪstəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/opera/operating_system_1_gb_1.mp3
+pirate,https://www.oxfordlearnersdictionaries.com/definition/english/pirate_2,C1,pirate,cướp biển,verb,/ˈpaɪrət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pir/pirat/pirate__gb_2.mp3
+non-fungible_token,https://www.oxfordlearnersdictionaries.com/definition/english/non-fungible-token,C2,non-fungible token,mã thông báo không thể thay thế,noun,/ˌnɒn fʌndʒəbl ˈtəʊkən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/non/non_f/non_fungible_token_1_gb_1.mp3
+platform,https://www.oxfordlearnersdictionaries.com/definition/english/platform,C2,platform,nền tảng,noun,/ˈplætfɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/platf/platform__gb_1.mp3
+predictive,https://www.oxfordlearnersdictionaries.com/definition/english/predictive,C2,predictive,tiên đoán,adjective,/prɪˈdɪktɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/predi/predictive__gb_1.mp3
+program,https://www.oxfordlearnersdictionaries.com/definition/english/program_1,A2,program,chương trình,noun,/ˈprəʊɡræm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/progr/programme__gb_2.mp3
+saas,https://www.oxfordlearnersdictionaries.com/definition/english/saas,C2,SaaS,SaaS,noun,/sæs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/saa/saas_/saas_1_gb_1.mp3
+push_notification,https://www.oxfordlearnersdictionaries.com/definition/english/push-notification,C2,push notification,thông báo đẩy,noun,/ˈpʊʃ nəʊtɪfɪkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pus/push_/push_notification_1_gb_1.mp3
+real_time,https://www.oxfordlearnersdictionaries.com/definition/english/real-time,B2,real time,thời gian thực,noun,/ˌriːəl ˈtaɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rea/real_/real_time_1_gb_3.mp3
+piracy,https://www.oxfordlearnersdictionaries.com/definition/english/piracy,C1,piracy,cướp biển,noun,/ˈpaɪrəsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pir/pirac/piracy__gb_1.mp3
+shareware,https://www.oxfordlearnersdictionaries.com/definition/english/shareware,C2,shareware,phần mềm chia sẻ,noun,/ˈʃeəweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sha/share/shareware__gb_1.mp3
+screen_reader,https://www.oxfordlearnersdictionaries.com/definition/english/screen-reader,C1,screen reader,trình đọc màn hình,noun,/ˈskriːn riːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scree/screen_reader_1_gb_1.mp3
+screen_saver,https://www.oxfordlearnersdictionaries.com/definition/english/screen-saver,C2,screen saver,bảo vệ màn hình,noun,/ˈskriːn seɪvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scree/screen_saver_1_gb_1.mp3
+push_alert,https://www.oxfordlearnersdictionaries.com/definition/english/push-alert,C2,push alert,đẩy cảnh báo,noun,/ˈpʊʃ əlɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pus/push_/push_alert_1_gb_1.mp3
+scareware,https://www.oxfordlearnersdictionaries.com/definition/english/scareware,C2,scareware,đồ hù dọa,noun,/ˈskeəweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sca/scare/scareware__gb_2.mp3
+skin,https://www.oxfordlearnersdictionaries.com/definition/english/skin_1,C2,skin,da,noun,/skɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ski/skin_/skin__gb_1.mp3
+sound_effect,https://www.oxfordlearnersdictionaries.com/definition/english/sound-effect,B2,sound effect,hiệu ứng âm thanh,noun,/ˈsaʊnd ɪfekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/sound/sound_effect_1_gb_1.mp3
+software,https://www.oxfordlearnersdictionaries.com/definition/english/software,B1,software,phần mềm,noun,/ˈsɒftweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sof/softw/software__gb_3.mp3
+slide_show,https://www.oxfordlearnersdictionaries.com/definition/english/slide-show,C2,slide show,trình chiếu,noun,/ˈslaɪd ʃəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sli/slide/slide_show_1_gb_1.mp3
+split_screen,https://www.oxfordlearnersdictionaries.com/definition/english/split-screen_1,C2,split screen,chia đôi màn hình,noun,/ˌsplɪt ˈskriːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spl/split/split_screen_1_gb_1.mp3
+spellcheck,https://www.oxfordlearnersdictionaries.com/definition/english/spellcheck_2,C1,spellcheck,kiểm tra chính tả,noun,/ˈspeltʃek/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/spell/spellcheck__gb_1.mp3
+spambot,https://www.oxfordlearnersdictionaries.com/definition/english/spambot,C2,spambot,thư rác,noun,/ˈspæmbɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/spamb/spambot__gb_1.mp3
+speech_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/speech-recognition,C2,speech recognition,nhận dạng giọng nói,noun,/ˈspiːtʃ rekəɡnɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/speec/speech_recognition_1_gb_1.mp3
+spreadsheet,https://www.oxfordlearnersdictionaries.com/definition/english/spreadsheet,C1,spreadsheet,bảng tính,noun,/ˈspredʃiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spr/sprea/spreadsheet__gb_1.mp3
+split-screen,https://www.oxfordlearnersdictionaries.com/definition/english/split-screen_2,C2,split-screen,chia đôi màn hình,adjective,/ˌsplɪt ˈskriːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spl/split/split_screen_1_gb_1.mp3
+spellchecker,https://www.oxfordlearnersdictionaries.com/definition/english/spellchecker,C1,spellchecker,người kiểm tra chính tả,noun,/ˈspeltʃekə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spe/spell/spellchecker__gb_1.mp3
+suite,https://www.oxfordlearnersdictionaries.com/definition/english/suite,C2,suite,bộ,noun,/swiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sui/suite/suite__gb_1.mp3
+tab,https://www.oxfordlearnersdictionaries.com/definition/english/tab_1,C1,tab,tab,noun,/tæb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tab/tab__/tab__gb_1.mp3
+sprint,https://www.oxfordlearnersdictionaries.com/definition/english/sprint_2,C2,sprint,chạy nước rút,noun,/sprɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spr/sprin/sprint__gb_1.mp3
+text-to-speech,https://www.oxfordlearnersdictionaries.com/definition/english/text-to-speech,C2,text-to-speech,chuyển văn bản thành giọng nói,noun,/ˌtekst tə ˈspiːtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tex/text_/text_to_speech_1_gb_1.mp3
 tts,https://www.oxfordlearnersdictionaries.com/definition/english/tts,C2,TTS,TTS,abbreviation,/ˌtiː tiː ˈes/,
-upload,https://www.oxfordlearnersdictionaries.com/definition/english/upload_2,A2,upload,tải lên,noun,/ˈʌpləʊd/,
-utility,https://www.oxfordlearnersdictionaries.com/definition/english/utility_1,C2,utility,tính thiết thực,noun,/juːˈtɪləti/,
-virtual,https://www.oxfordlearnersdictionaries.com/definition/english/virtual,B2,virtual,ảo,adjective,/ˈvɜːtʃuəl/,
-virtual_machine,https://www.oxfordlearnersdictionaries.com/definition/english/virtual-machine,C2,virtual machine,máy ảo,noun,/ˌvɜːtʃuəl məˈʃiːn/,
-virtual_reality,https://www.oxfordlearnersdictionaries.com/definition/english/virtual-reality,B2,virtual reality,thực tế ảo,noun,/ˌvɜːtʃuəl riˈæləti/,
-voice_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/voice-recognition,C1,voice recognition,nhận dạng giọng nói,noun,/ˈvɔɪs rekəɡnɪʃn/,
-voice_assistant,https://www.oxfordlearnersdictionaries.com/definition/english/voice-assistant,C1,voice assistant,trợ lý giọng nói,noun,/ˈvɔɪs əsɪstənt/,
-word_processing,https://www.oxfordlearnersdictionaries.com/definition/english/word-processing,C1,word processing,xử lý văn bản,noun,/ˈwɜːd prəʊsesɪŋ/,
+upload,https://www.oxfordlearnersdictionaries.com/definition/english/upload_2,A2,upload,tải lên,noun,/ˈʌpləʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/upl/uploa/upload__gb_2.mp3
+utility,https://www.oxfordlearnersdictionaries.com/definition/english/utility_1,C2,utility,tính thiết thực,noun,/juːˈtɪləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/uti/utili/utility__gb_1.mp3
+virtual,https://www.oxfordlearnersdictionaries.com/definition/english/virtual,B2,virtual,ảo,adjective,/ˈvɜːtʃuəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vir/virtu/virtual__gb_1.mp3
+virtual_machine,https://www.oxfordlearnersdictionaries.com/definition/english/virtual-machine,C2,virtual machine,máy ảo,noun,/ˌvɜːtʃuəl məˈʃiːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vir/virtu/virtual_machine_1_gb_1.mp3
+virtual_reality,https://www.oxfordlearnersdictionaries.com/definition/english/virtual-reality,B2,virtual reality,thực tế ảo,noun,/ˌvɜːtʃuəl riˈæləti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vir/virtu/virtual_reality_1_gb_1.mp3
+voice_recognition,https://www.oxfordlearnersdictionaries.com/definition/english/voice-recognition,C1,voice recognition,nhận dạng giọng nói,noun,/ˈvɔɪs rekəɡnɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voi/voice/voice_recognition_1_gb_1.mp3
+voice_assistant,https://www.oxfordlearnersdictionaries.com/definition/english/voice-assistant,C1,voice assistant,trợ lý giọng nói,noun,/ˈvɔɪs əsɪstənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voi/voice/voice_assistant_1_gb_1.mp3
+word_processing,https://www.oxfordlearnersdictionaries.com/definition/english/word-processing,C1,word processing,xử lý văn bản,noun,/ˈwɜːd prəʊsesɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wor/word_/word_processing_1_gb_1.mp3
 vr,https://www.oxfordlearnersdictionaries.com/definition/english/vr,C2,VR,thực tế ảo,noun,/ˌviː ˈɑː(r)/,
-vapourware,https://www.oxfordlearnersdictionaries.com/definition/english/vapourware,C2,vapourware,hơi nước,noun,/ˈveɪpəweə(r)/,
-wysiwyg,https://www.oxfordlearnersdictionaries.com/definition/english/wysiwyg,C2,WYSIWYG,WYSIWYG,abbreviation,/ˈwɪziwɪɡ/,
+vapourware,https://www.oxfordlearnersdictionaries.com/definition/english/vapourware,C2,vapourware,hơi nước,noun,/ˈveɪpəweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vap/vapou/vapourware__gb_1.mp3
+wysiwyg,https://www.oxfordlearnersdictionaries.com/definition/english/wysiwyg,C2,WYSIWYG,WYSIWYG,abbreviation,/ˈwɪziwɪɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wys/wysiw/wysiwyg__gb_1.mp3

@@ -1,28 +1,28 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-bias,https://www.oxfordlearnersdictionaries.com/definition/english/bias_2,C1,bias,sự thiên vị,verb,/ˈbaɪəs/,
-correlate,https://www.oxfordlearnersdictionaries.com/definition/english/correlate_1,C1,correlate,tương quan,verb,/ˈkɒrəleɪt/,
-correlation,https://www.oxfordlearnersdictionaries.com/definition/english/correlation,C1,correlation,sự tương quan,noun,/ˌkɒrəˈleɪʃn/,
-conclusion,https://www.oxfordlearnersdictionaries.com/definition/english/conclusion,B1,conclusion,Phần kết luận,noun,/kənˈkluːʒn/,
-confirm,https://www.oxfordlearnersdictionaries.com/definition/english/confirm,B1,confirm,xác nhận,verb,/kənˈfɜːm/,
-conclude,https://www.oxfordlearnersdictionaries.com/definition/english/conclude,B1,conclude,kết luận,verb,/kənˈkluːd/,
-corroborate,https://www.oxfordlearnersdictionaries.com/definition/english/corroborate,C2,corroborate,chứng thực,verb,/kəˈrɒbəreɪt/,
-corroboration,https://www.oxfordlearnersdictionaries.com/definition/english/corroboration,C2,corroboration,sự chứng thực,noun,/kəˌrɒbəˈreɪʃn/,
-bias,https://www.oxfordlearnersdictionaries.com/definition/english/bias_1,C1,bias,sự thiên vị,noun,/ˈbaɪəs/,
-colligate,https://www.oxfordlearnersdictionaries.com/definition/english/colligate,C2,colligate,tập hợp lại,verb,/ˈkɒlɪɡeɪt/,
-demolish,https://www.oxfordlearnersdictionaries.com/definition/english/demolish,C2,demolish,phá hủy,verb,/dɪˈmɒlɪʃ/,
-detect,https://www.oxfordlearnersdictionaries.com/definition/english/detect,B2,detect,phát hiện,verb,/dɪˈtekt/,
-disprove,https://www.oxfordlearnersdictionaries.com/definition/english/disprove,C1,disprove,bác bỏ,verb,/ˌdɪsˈpruːv/,
-falsification,https://www.oxfordlearnersdictionaries.com/definition/english/falsification,C2,falsification,sự xuyên tạc,noun,/ˌfɔːlsɪfɪˈkeɪʃn/,
-discovery,https://www.oxfordlearnersdictionaries.com/definition/english/discovery,A2,discovery,khám phá,noun,/dɪˈskʌvəri/,
-discover,https://www.oxfordlearnersdictionaries.com/definition/english/discover,A2,discover,phát hiện,verb,/dɪˈskʌvə(r)/,
-falsify,https://www.oxfordlearnersdictionaries.com/definition/english/falsify,C2,falsify,làm sai lệch,verb,/ˈfɔːlsɪfaɪ/,
-determine,https://www.oxfordlearnersdictionaries.com/definition/english/determine,B1,determine,quyết tâm,verb,/dɪˈtɜːmɪn/,
-finding,https://www.oxfordlearnersdictionaries.com/definition/english/finding,B2,finding,tìm thấy,noun,/ˈfaɪndɪŋ/,
-detectable,https://www.oxfordlearnersdictionaries.com/definition/english/detectable,C1,detectable,có thể phát hiện được,adjective,/dɪˈtektəbl/,
-negative,https://www.oxfordlearnersdictionaries.com/definition/english/negative_2,B2,negative,tiêu cực,noun,/ˈneɡətɪv/,
-positivity,https://www.oxfordlearnersdictionaries.com/definition/english/positivity,C2,positivity,sự tích cực,noun,/ˌpɒzəˈtɪvəti/,
-positive,https://www.oxfordlearnersdictionaries.com/definition/english/positive_2,B2,positive,tích cực,noun,/ˈpɒzətɪv/,
-prove,https://www.oxfordlearnersdictionaries.com/definition/english/prove,B1,prove,chứng minh,verb,/pruːv/,
-self-report,https://www.oxfordlearnersdictionaries.com/definition/english/self-report_2,C1,self-report,tự báo cáo,noun,/ˌself rɪˈpɔːt/,
-verify,https://www.oxfordlearnersdictionaries.com/definition/english/verify,C1,verify,xác minh,verb,/ˈverɪfaɪ/,
-self-report,https://www.oxfordlearnersdictionaries.com/definition/english/self-report_1,C1,self-report,tự báo cáo,verb,/ˌself rɪˈpɔːt/,
+bias,https://www.oxfordlearnersdictionaries.com/definition/english/bias_2,C1,bias,sự thiên vị,verb,/ˈbaɪəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bia/bias_/bias__gb_2.mp3
+correlate,https://www.oxfordlearnersdictionaries.com/definition/english/correlate_1,C1,correlate,tương quan,verb,/ˈkɒrəleɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corre/correlate__gb_1.mp3
+correlation,https://www.oxfordlearnersdictionaries.com/definition/english/correlation,C1,correlation,sự tương quan,noun,/ˌkɒrəˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corre/correlation__gb_2.mp3
+conclusion,https://www.oxfordlearnersdictionaries.com/definition/english/conclusion,B1,conclusion,Phần kết luận,noun,/kənˈkluːʒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconc/xconclusion__gb_3.mp3
+confirm,https://www.oxfordlearnersdictionaries.com/definition/english/confirm,B1,confirm,xác nhận,verb,/kənˈfɜːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconf/xconfirm__gb_2.mp3
+conclude,https://www.oxfordlearnersdictionaries.com/definition/english/conclude,B1,conclude,kết luận,verb,/kənˈkluːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconc/xconclude__gb_3.mp3
+corroborate,https://www.oxfordlearnersdictionaries.com/definition/english/corroborate,C2,corroborate,chứng thực,verb,/kəˈrɒbəreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corro/corroborate__gb_1.mp3
+corroboration,https://www.oxfordlearnersdictionaries.com/definition/english/corroboration,C2,corroboration,sự chứng thực,noun,/kəˌrɒbəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corro/corroboration__gb_1.mp3
+bias,https://www.oxfordlearnersdictionaries.com/definition/english/bias_1,C1,bias,sự thiên vị,noun,/ˈbaɪəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bia/bias_/bias__gb_2.mp3
+colligate,https://www.oxfordlearnersdictionaries.com/definition/english/colligate,C2,colligate,tập hợp lại,verb,/ˈkɒlɪɡeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/colli/colligate__gb_1.mp3
+demolish,https://www.oxfordlearnersdictionaries.com/definition/english/demolish,C2,demolish,phá hủy,verb,/dɪˈmɒlɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dem/demol/demolish__gb_1.mp3
+detect,https://www.oxfordlearnersdictionaries.com/definition/english/detect,B2,detect,phát hiện,verb,/dɪˈtekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/det/detec/detect__gb_2.mp3
+disprove,https://www.oxfordlearnersdictionaries.com/definition/english/disprove,C1,disprove,bác bỏ,verb,/ˌdɪsˈpruːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/dispr/disprove__gb_2.mp3
+falsification,https://www.oxfordlearnersdictionaries.com/definition/english/falsification,C2,falsification,sự xuyên tạc,noun,/ˌfɔːlsɪfɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/falsi/falsification__gb_1.mp3
+discovery,https://www.oxfordlearnersdictionaries.com/definition/english/discovery,A2,discovery,khám phá,noun,/dɪˈskʌvəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disco/discovery__gb_2.mp3
+discover,https://www.oxfordlearnersdictionaries.com/definition/english/discover,A2,discover,phát hiện,verb,/dɪˈskʌvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disco/discover__gb_2.mp3
+falsify,https://www.oxfordlearnersdictionaries.com/definition/english/falsify,C2,falsify,làm sai lệch,verb,/ˈfɔːlsɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fal/falsi/falsify__gb_1.mp3
+determine,https://www.oxfordlearnersdictionaries.com/definition/english/determine,B1,determine,quyết tâm,verb,/dɪˈtɜːmɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/det/deter/determine__gb_1.mp3
+finding,https://www.oxfordlearnersdictionaries.com/definition/english/finding,B2,finding,tìm thấy,noun,/ˈfaɪndɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fin/findi/finding__gb_3.mp3
+detectable,https://www.oxfordlearnersdictionaries.com/definition/english/detectable,C1,detectable,có thể phát hiện được,adjective,/dɪˈtektəbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/det/detec/detectable__gb_1.mp3
+negative,https://www.oxfordlearnersdictionaries.com/definition/english/negative_2,B2,negative,tiêu cực,noun,/ˈneɡətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/neg/negat/negative__gb_2.mp3
+positivity,https://www.oxfordlearnersdictionaries.com/definition/english/positivity,C2,positivity,sự tích cực,noun,/ˌpɒzəˈtɪvəti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/posit/positivity__gb_2.mp3
+positive,https://www.oxfordlearnersdictionaries.com/definition/english/positive_2,B2,positive,tích cực,noun,/ˈpɒzətɪv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pos/posit/positive__gb_3.mp3
+prove,https://www.oxfordlearnersdictionaries.com/definition/english/prove,B1,prove,chứng minh,verb,/pruːv/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prove/prove__gb_2.mp3
+self-report,https://www.oxfordlearnersdictionaries.com/definition/english/self-report_2,C1,self-report,tự báo cáo,noun,/ˌself rɪˈpɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/self_/self_report_1_gb_1.mp3
+verify,https://www.oxfordlearnersdictionaries.com/definition/english/verify,C1,verify,xác minh,verb,/ˈverɪfaɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ver/verif/verify__gb_1.mp3
+self-report,https://www.oxfordlearnersdictionaries.com/definition/english/self-report_1,C1,self-report,tự báo cáo,verb,/ˌself rɪˈpɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/self_/self_report_1_gb_1.mp3

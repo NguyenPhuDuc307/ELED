@@ -1,17 +1,17 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-billiard,https://www.oxfordlearnersdictionaries.com/definition/english/billiard,C2,billiard,bida,adjective,/ˈbɪliəd/,
-billiards,https://www.oxfordlearnersdictionaries.com/definition/english/billiards,C2,billiards,bi-a,noun,/ˈbɪliədz/,
-cue,https://www.oxfordlearnersdictionaries.com/definition/english/cue_1,C2,cue,tín hiệu,noun,/kjuː/,
-pool,https://www.oxfordlearnersdictionaries.com/definition/english/pool_1,C1,pool,hồ bơi,noun,/puːl/,
-cushion,https://www.oxfordlearnersdictionaries.com/definition/english/cushion_1,C2,cushion,cái đệm,noun,/ˈkʊʃn/,
-frame,https://www.oxfordlearnersdictionaries.com/definition/english/frame_1,C2,frame,khung,noun,/freɪm/,
-pocket,https://www.oxfordlearnersdictionaries.com/definition/english/pocket_1,C2,pocket,túi,noun,/ˈpɒkɪt/,
-cue_ball,https://www.oxfordlearnersdictionaries.com/definition/english/cue-ball,C2,cue ball,bi cái,noun,/ˈkjuː bɔːl/,
-baize,https://www.oxfordlearnersdictionaries.com/definition/english/baize,C2,baize,vải len,noun,/beɪz/,
-break,https://www.oxfordlearnersdictionaries.com/definition/english/break_2,C2,break,phá vỡ,noun,/breɪk/,
-pot,https://www.oxfordlearnersdictionaries.com/definition/english/pot_1,C2,pot,cái nồi,noun,/pɒt/,
-pot,https://www.oxfordlearnersdictionaries.com/definition/english/pot_2,C2,pot,cái nồi,verb,/pɒt/,
-sink,https://www.oxfordlearnersdictionaries.com/definition/english/sink_1,C2,sink,bồn rửa,verb,/sɪŋk/,
-snooker,https://www.oxfordlearnersdictionaries.com/definition/english/snooker_2,C2,snooker,bi da,verb,/ˈsnuːkə(r)/,
-snooker,https://www.oxfordlearnersdictionaries.com/definition/english/snooker_1,C2,snooker,bi da,noun,/ˈsnuːkə(r)/,
-poolroom,https://www.oxfordlearnersdictionaries.com/definition/english/poolroom,C1,poolroom,phòng bi-a,noun,/ˈpuːlruːm/,
+billiard,https://www.oxfordlearnersdictionaries.com/definition/english/billiard,C2,billiard,bida,adjective,/ˈbɪliəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/billi/billiard__gb_1.mp3
+billiards,https://www.oxfordlearnersdictionaries.com/definition/english/billiards,C2,billiards,bi-a,noun,/ˈbɪliədz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bil/billi/billiards__gb_2.mp3
+cue,https://www.oxfordlearnersdictionaries.com/definition/english/cue_1,C2,cue,tín hiệu,noun,/kjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cue/cue__/cue__gb_1.mp3
+pool,https://www.oxfordlearnersdictionaries.com/definition/english/pool_1,C1,pool,hồ bơi,noun,/puːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poo/pool_/pool__gb_3.mp3
+cushion,https://www.oxfordlearnersdictionaries.com/definition/english/cushion_1,C2,cushion,cái đệm,noun,/ˈkʊʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cus/cushi/cushion__gb_1.mp3
+frame,https://www.oxfordlearnersdictionaries.com/definition/english/frame_1,C2,frame,khung,noun,/freɪm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fra/frame/frame__gb_1.mp3
+pocket,https://www.oxfordlearnersdictionaries.com/definition/english/pocket_1,C2,pocket,túi,noun,/ˈpɒkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poc/pocke/pocket__gb_2.mp3
+cue_ball,https://www.oxfordlearnersdictionaries.com/definition/english/cue-ball,C2,cue ball,bi cái,noun,/ˈkjuː bɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cue/cue_b/cue_ball_1_gb_1.mp3
+baize,https://www.oxfordlearnersdictionaries.com/definition/english/baize,C2,baize,vải len,noun,/beɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bai/baize/baize__gb_2.mp3
+break,https://www.oxfordlearnersdictionaries.com/definition/english/break_2,C2,break,phá vỡ,noun,/breɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/break/break__gb_1.mp3
+pot,https://www.oxfordlearnersdictionaries.com/definition/english/pot_1,C2,pot,cái nồi,noun,/pɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pot/pot__/pot__gb_1.mp3
+pot,https://www.oxfordlearnersdictionaries.com/definition/english/pot_2,C2,pot,cái nồi,verb,/pɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pot/pot__/pot__gb_1.mp3
+sink,https://www.oxfordlearnersdictionaries.com/definition/english/sink_1,C2,sink,bồn rửa,verb,/sɪŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sin/sink_/sink__gb_2.mp3
+snooker,https://www.oxfordlearnersdictionaries.com/definition/english/snooker_2,C2,snooker,bi da,verb,/ˈsnuːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snook/snooker__gb_1.mp3
+snooker,https://www.oxfordlearnersdictionaries.com/definition/english/snooker_1,C2,snooker,bi da,noun,/ˈsnuːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sno/snook/snooker__gb_1.mp3
+poolroom,https://www.oxfordlearnersdictionaries.com/definition/english/poolroom,C1,poolroom,phòng bi-a,noun,/ˈpuːlruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poo/poolr/poolroom__gb_1.mp3

@@ -1,41 +1,41 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-farmer,https://www.oxfordlearnersdictionaries.com/definition/english/farmer,A1,farmer,nông dân,noun,/ˈfɑːmə(r)/,
-dirt_farmer,https://www.oxfordlearnersdictionaries.com/definition/english/dirt-farmer,C2,dirt farmer,nông dân bẩn thỉu,noun,/ˈdɜːt fɑːmə(r)/,
-cowboy,https://www.oxfordlearnersdictionaries.com/definition/english/cowboy,B2,cowboy,cao bồi,noun,/ˈkaʊbɔɪ/,
-crofter,https://www.oxfordlearnersdictionaries.com/definition/english/crofter,C2,crofter,người chăn nuôi,noun,/ˈkrɒftə(r)/,
-boer,https://www.oxfordlearnersdictionaries.com/definition/english/boer,C2,Boer,Boer,noun,/bɔː(r)/,
-bailiff,https://www.oxfordlearnersdictionaries.com/definition/english/bailiff,C2,bailiff,thừa phát lại,noun,/ˈbeɪlɪf/,
-cultivator,https://www.oxfordlearnersdictionaries.com/definition/english/cultivator,C2,cultivator,người trồng trọt,noun,/ˈkʌltɪveɪtə(r)/,
-dairyman,https://www.oxfordlearnersdictionaries.com/definition/english/dairyman,C2,dairyman,người chăn nuôi bò sữa,noun,/ˈdeərimən/,
-cattleman,https://www.oxfordlearnersdictionaries.com/definition/english/cattleman,C2,cattleman,người chăn bò,noun,/ˈkætlmən/,
-cowpoke,https://www.oxfordlearnersdictionaries.com/definition/english/cowpoke,C2,cowpoke,người chăn bò,noun,/ˈkaʊpəʊk/,
-grazier,https://www.oxfordlearnersdictionaries.com/definition/english/grazier,C2,grazier,người chăn thả gia súc,noun,/ˈɡreɪziə(r)/,
-hired_hand,https://www.oxfordlearnersdictionaries.com/definition/english/hired-hand,C2,hired hand,người làm thuê,noun,/ˌhaɪəd ˈhænd/,
-laborer,https://www.oxfordlearnersdictionaries.com/definition/english/laborer,C1,laborer,người lao động,noun,/ˈleɪbərə(r)/,
-hand,https://www.oxfordlearnersdictionaries.com/definition/english/hand_1,C2,hand,tay,noun,/hænd/,
-jackaroo,https://www.oxfordlearnersdictionaries.com/definition/english/jackaroo,C2,jackaroo,con chó rừng,noun,/ˌdʒækəˈruː/,
-farmhand,https://www.oxfordlearnersdictionaries.com/definition/english/farmhand,C2,farmhand,nông dân,noun,/ˈfɑːmhænd/,
-jillaroo,https://www.oxfordlearnersdictionaries.com/definition/english/jillaroo,C2,jillaroo,jillarooo,noun,/ˌdʒɪləˈruː/,
-herder,https://www.oxfordlearnersdictionaries.com/definition/english/herder,C2,herder,người chăn nuôi,noun,/ˈhɜːdə(r)/,
-field_hand,https://www.oxfordlearnersdictionaries.com/definition/english/field-hand,C2,field hand,tay đồng ruộng,noun,/ˈfiːld hænd/,
-labourer,https://www.oxfordlearnersdictionaries.com/definition/english/labourer,C1,labourer,người lao động,noun,/ˈleɪbərə(r)/,
-landowner,https://www.oxfordlearnersdictionaries.com/definition/english/landowner,C1,landowner,địa chủ,noun,/ˈlændəʊnə(r)/,
-peasant,https://www.oxfordlearnersdictionaries.com/definition/english/peasant,C1,peasant,nông dân,noun,/ˈpeznt/,
-picker,https://www.oxfordlearnersdictionaries.com/definition/english/picker,C2,picker,người nhặt đồ,noun,/ˈpɪkə(r)/,
-producer,https://www.oxfordlearnersdictionaries.com/definition/english/producer,B1,producer,nhà sản xuất,noun,/prəˈdjuːsə(r)/,
-rustler,https://www.oxfordlearnersdictionaries.com/definition/english/rustler,C2,rustler,người rỉ sét,noun,/ˈrʌslə(r)/,
-serf,https://www.oxfordlearnersdictionaries.com/definition/english/serf,C2,serf,nông nô,noun,/sɜːf/,
-rancher,https://www.oxfordlearnersdictionaries.com/definition/english/rancher,C2,rancher,chủ trang trại,noun,/ˈrɑːntʃə(r)/,
-reaper,https://www.oxfordlearnersdictionaries.com/definition/english/reaper,C2,reaper,máy gặt,noun,/ˈriːpə(r)/,
-ploughman,https://www.oxfordlearnersdictionaries.com/definition/english/ploughman,C2,ploughman,người đi cày,noun,/ˈplaʊmən/,
-shepherd,https://www.oxfordlearnersdictionaries.com/definition/english/shepherd_1,C1,shepherd,người chăn cừu,noun,/ˈʃepəd/,
-sheepherder,https://www.oxfordlearnersdictionaries.com/definition/english/sheepherder,C2,sheepherder,người chăn cừu,noun,/ˈʃiːphɜːdə(r)/,
-sower,https://www.oxfordlearnersdictionaries.com/definition/english/sower,C2,sower,người gieo hạt,noun,/ˈsəʊə(r)/,
-sharecropper,https://www.oxfordlearnersdictionaries.com/definition/english/sharecropper,C2,sharecropper,người chia sẻ,noun,/ˈʃeəkrɒpə(r)/,
-vet,https://www.oxfordlearnersdictionaries.com/definition/english/vet_1,B2,vet,bác sĩ thú y,noun,/vet/,
-winegrower,https://www.oxfordlearnersdictionaries.com/definition/english/winegrower,C1,winegrower,người trồng nho,noun,/ˈwaɪnɡrəʊə(r)/,
-winemaker,https://www.oxfordlearnersdictionaries.com/definition/english/winemaker,C1,winemaker,người làm rượu,noun,/ˈwaɪnmeɪkə(r)/,
-veterinarian,https://www.oxfordlearnersdictionaries.com/definition/english/veterinarian,C2,veterinarian,bác sĩ thú y,noun,/ˌvetərɪˈneəriən/,
-veterinary_surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/veterinary-surgeon,C2,veterinary surgeon,bác sĩ thú y,noun,/ˈvetnri sɜːdʒən/,
-yeoman,https://www.oxfordlearnersdictionaries.com/definition/english/yeoman,C2,yeoman,yeoman,noun,/ˈjəʊmən/,
-stockman,https://www.oxfordlearnersdictionaries.com/definition/english/stockman,C2,stockman,người chăn nuôi,noun,/ˈstɒkmən/,
+farmer,https://www.oxfordlearnersdictionaries.com/definition/english/farmer,A1,farmer,nông dân,noun,/ˈfɑːmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farme/farmer__gb_1.mp3
+dirt_farmer,https://www.oxfordlearnersdictionaries.com/definition/english/dirt-farmer,C2,dirt farmer,nông dân bẩn thỉu,noun,/ˈdɜːt fɑːmə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dir/dirt_/dirt_farmer_1_gb_1.mp3
+cowboy,https://www.oxfordlearnersdictionaries.com/definition/english/cowboy,B2,cowboy,cao bồi,noun,/ˈkaʊbɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cow/cowbo/cowboy__gb_1.mp3
+crofter,https://www.oxfordlearnersdictionaries.com/definition/english/crofter,C2,crofter,người chăn nuôi,noun,/ˈkrɒftə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cro/croft/crofter__gb_1.mp3
+boer,https://www.oxfordlearnersdictionaries.com/definition/english/boer,C2,Boer,Boer,noun,/bɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boe/boer_/boer__gb_1.mp3
+bailiff,https://www.oxfordlearnersdictionaries.com/definition/english/bailiff,C2,bailiff,thừa phát lại,noun,/ˈbeɪlɪf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bai/baili/bailiff__gb_3.mp3
+cultivator,https://www.oxfordlearnersdictionaries.com/definition/english/cultivator,C2,cultivator,người trồng trọt,noun,/ˈkʌltɪveɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cul/culti/cultivator__gb_1.mp3
+dairyman,https://www.oxfordlearnersdictionaries.com/definition/english/dairyman,C2,dairyman,người chăn nuôi bò sữa,noun,/ˈdeərimən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dai/dairy/dairyman__gb_1.mp3
+cattleman,https://www.oxfordlearnersdictionaries.com/definition/english/cattleman,C2,cattleman,người chăn bò,noun,/ˈkætlmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cat/cattl/cattleman__gb_1.mp3
+cowpoke,https://www.oxfordlearnersdictionaries.com/definition/english/cowpoke,C2,cowpoke,người chăn bò,noun,/ˈkaʊpəʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cow/cowpo/cowpoke__gb_1.mp3
+grazier,https://www.oxfordlearnersdictionaries.com/definition/english/grazier,C2,grazier,người chăn thả gia súc,noun,/ˈɡreɪziə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grazi/grazier__gb_1.mp3
+hired_hand,https://www.oxfordlearnersdictionaries.com/definition/english/hired-hand,C2,hired hand,người làm thuê,noun,/ˌhaɪəd ˈhænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hir/hired/hired_hand_1_gb_1.mp3
+laborer,https://www.oxfordlearnersdictionaries.com/definition/english/laborer,C1,laborer,người lao động,noun,/ˈleɪbərə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labou/labourer__gb_1.mp3
+hand,https://www.oxfordlearnersdictionaries.com/definition/english/hand_1,C2,hand,tay,noun,/hænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hand_/hand__gb_2.mp3
+jackaroo,https://www.oxfordlearnersdictionaries.com/definition/english/jackaroo,C2,jackaroo,con chó rừng,noun,/ˌdʒækəˈruː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jac/jacka/jackaroo__gb_1.mp3
+farmhand,https://www.oxfordlearnersdictionaries.com/definition/english/farmhand,C2,farmhand,nông dân,noun,/ˈfɑːmhænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farmh/farmhand__gb_1.mp3
+jillaroo,https://www.oxfordlearnersdictionaries.com/definition/english/jillaroo,C2,jillaroo,jillarooo,noun,/ˌdʒɪləˈruː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jil/jilla/jillaroo__gb_1.mp3
+herder,https://www.oxfordlearnersdictionaries.com/definition/english/herder,C2,herder,người chăn nuôi,noun,/ˈhɜːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/her/herde/herder__gb_3.mp3
+field_hand,https://www.oxfordlearnersdictionaries.com/definition/english/field-hand,C2,field hand,tay đồng ruộng,noun,/ˈfiːld hænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fie/field/field_hand_1_gb_1.mp3
+labourer,https://www.oxfordlearnersdictionaries.com/definition/english/labourer,C1,labourer,người lao động,noun,/ˈleɪbərə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labou/labourer__gb_1.mp3
+landowner,https://www.oxfordlearnersdictionaries.com/definition/english/landowner,C1,landowner,địa chủ,noun,/ˈlændəʊnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/lando/landowner__gb_1.mp3
+peasant,https://www.oxfordlearnersdictionaries.com/definition/english/peasant,C1,peasant,nông dân,noun,/ˈpeznt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pea/peasa/peasant__gb_1.mp3
+picker,https://www.oxfordlearnersdictionaries.com/definition/english/picker,C2,picker,người nhặt đồ,noun,/ˈpɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pic/picke/picker__gb_1.mp3
+producer,https://www.oxfordlearnersdictionaries.com/definition/english/producer,B1,producer,nhà sản xuất,noun,/prəˈdjuːsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/produ/producer__gb_1.mp3
+rustler,https://www.oxfordlearnersdictionaries.com/definition/english/rustler,C2,rustler,người rỉ sét,noun,/ˈrʌslə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rus/rustl/rustler__gb_1.mp3
+serf,https://www.oxfordlearnersdictionaries.com/definition/english/serf,C2,serf,nông nô,noun,/sɜːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/serf_/serf__gb_1.mp3
+rancher,https://www.oxfordlearnersdictionaries.com/definition/english/rancher,C2,rancher,chủ trang trại,noun,/ˈrɑːntʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ran/ranch/rancher__gb_1.mp3
+reaper,https://www.oxfordlearnersdictionaries.com/definition/english/reaper,C2,reaper,máy gặt,noun,/ˈriːpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rea/reape/reaper__gb_1.mp3
+ploughman,https://www.oxfordlearnersdictionaries.com/definition/english/ploughman,C2,ploughman,người đi cày,noun,/ˈplaʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plo/ploug/ploughman__gb_1.mp3
+shepherd,https://www.oxfordlearnersdictionaries.com/definition/english/shepherd_1,C1,shepherd,người chăn cừu,noun,/ˈʃepəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/she/sheph/shepherd__gb_1.mp3
+sheepherder,https://www.oxfordlearnersdictionaries.com/definition/english/sheepherder,C2,sheepherder,người chăn cừu,noun,/ˈʃiːphɜːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/she/sheep/sheepherder__gb_1.mp3
+sower,https://www.oxfordlearnersdictionaries.com/definition/english/sower,C2,sower,người gieo hạt,noun,/ˈsəʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sow/sower/sower__gb_1.mp3
+sharecropper,https://www.oxfordlearnersdictionaries.com/definition/english/sharecropper,C2,sharecropper,người chia sẻ,noun,/ˈʃeəkrɒpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sha/share/sharecropper__gb_1.mp3
+vet,https://www.oxfordlearnersdictionaries.com/definition/english/vet_1,B2,vet,bác sĩ thú y,noun,/vet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vet/vet__/vet__gb_1.mp3
+winegrower,https://www.oxfordlearnersdictionaries.com/definition/english/winegrower,C1,winegrower,người trồng nho,noun,/ˈwaɪnɡrəʊə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wineg/winegrower__gb_1.mp3
+winemaker,https://www.oxfordlearnersdictionaries.com/definition/english/winemaker,C1,winemaker,người làm rượu,noun,/ˈwaɪnmeɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/winem/winemaker__gb_1.mp3
+veterinarian,https://www.oxfordlearnersdictionaries.com/definition/english/veterinarian,C2,veterinarian,bác sĩ thú y,noun,/ˌvetərɪˈneəriən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vet/veter/veterinarian__gb_1.mp3
+veterinary_surgeon,https://www.oxfordlearnersdictionaries.com/definition/english/veterinary-surgeon,C2,veterinary surgeon,bác sĩ thú y,noun,/ˈvetnri sɜːdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vet/veter/veterinary_surgeon_1_gb_2.mp3
+yeoman,https://www.oxfordlearnersdictionaries.com/definition/english/yeoman,C2,yeoman,yeoman,noun,/ˈjəʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/yeo/yeoma/yeoman__gb_1.mp3
+stockman,https://www.oxfordlearnersdictionaries.com/definition/english/stockman,C2,stockman,người chăn nuôi,noun,/ˈstɒkmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/stock/stockman__gb_1.mp3

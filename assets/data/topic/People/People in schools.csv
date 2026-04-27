@@ -1,48 +1,48 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-caretaker,https://www.oxfordlearnersdictionaries.com/definition/english/caretaker_1,C1,caretaker,người chăm sóc,noun,/ˈkeəteɪkə(r)/,
-deputy,https://www.oxfordlearnersdictionaries.com/definition/english/deputy,C1,deputy,phó,noun,/ˈdepjuti/,
-boarder,https://www.oxfordlearnersdictionaries.com/definition/english/boarder,C2,boarder,người ở trọ,noun,/ˈbɔːdə(r)/,
-coach,https://www.oxfordlearnersdictionaries.com/definition/english/coach_2,B1,coach,huấn luyện viên,verb,/kəʊtʃ/,
+caretaker,https://www.oxfordlearnersdictionaries.com/definition/english/caretaker_1,C1,caretaker,người chăm sóc,noun,/ˈkeəteɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/caret/caretaker__gb_1.mp3
+deputy,https://www.oxfordlearnersdictionaries.com/definition/english/deputy,C1,deputy,phó,noun,/ˈdepjuti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/deput/deputy__gb_1.mp3
+boarder,https://www.oxfordlearnersdictionaries.com/definition/english/boarder,C2,boarder,người ở trọ,noun,/ˈbɔːdə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boa/board/boarder__gb_1.mp3
+coach,https://www.oxfordlearnersdictionaries.com/definition/english/coach_2,B1,coach,huấn luyện viên,verb,/kəʊtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coach/coach__gb_2.mp3
 ell,https://www.oxfordlearnersdictionaries.com/definition/english/ell_2,C2,ELL,ELL,noun,/ˌiː el ˈel/,
-class,https://www.oxfordlearnersdictionaries.com/definition/english/class_1,A1,class,lớp học,noun,/klɑːs/,
-coach,https://www.oxfordlearnersdictionaries.com/definition/english/coach_1,A2,coach,huấn luyện viên,noun,/kəʊtʃ/,
-classmate,https://www.oxfordlearnersdictionaries.com/definition/english/classmate,A1,classmate,bạn cùng lớp,noun,/ˈklɑːsmeɪt/,
-custodian,https://www.oxfordlearnersdictionaries.com/definition/english/custodian,C2,custodian,người trông coi,noun,/kʌˈstəʊdiən/,
-educator,https://www.oxfordlearnersdictionaries.com/definition/english/educator,C1,educator,nhà giáo dục,noun,/ˈedʒukeɪtə(r)/,
-inspector,https://www.oxfordlearnersdictionaries.com/definition/english/inspector,C1,inspector,thanh tra,noun,/ɪnˈspektə(r)/,
-instructor,https://www.oxfordlearnersdictionaries.com/definition/english/instructor,A2,instructor,người hướng dẫn,noun,/ɪnˈstrʌktə(r)/,
-head_girl,https://www.oxfordlearnersdictionaries.com/definition/english/head-girl,C2,head girl,cô gái đứng đầu,noun,/ˌhed ˈɡɜːl/,
-housemaster,https://www.oxfordlearnersdictionaries.com/definition/english/housemaster,C2,housemaster,quản gia,noun,/ˈhaʊsmɑːstə(r)/,
-head,https://www.oxfordlearnersdictionaries.com/definition/english/head_1,B2,head,cái đầu,noun,/hed/,
-invigilator,https://www.oxfordlearnersdictionaries.com/definition/english/invigilator,C2,invigilator,giám thị,noun,/ɪnˈvɪdʒɪleɪtə(r)/,
-janitor,https://www.oxfordlearnersdictionaries.com/definition/english/janitor,C2,janitor,người gác cổng,noun,/ˈdʒænɪtə(r)/,
-headmistress,https://www.oxfordlearnersdictionaries.com/definition/english/headmistress,C2,headmistress,hiệu trưởng,noun,/ˌhedˈmɪstrəs/,
-headmaster,https://www.oxfordlearnersdictionaries.com/definition/english/headmaster,C1,headmaster,hiệu trưởng,noun,/ˌhedˈmɑːstə(r)/,
-head_boy,https://www.oxfordlearnersdictionaries.com/definition/english/head-boy,C2,head boy,cậu bé đứng đầu,noun,/ˌhed ˈbɔɪ/,
-mistress,https://www.oxfordlearnersdictionaries.com/definition/english/mistress,C2,mistress,tình nhân,noun,/ˈmɪstrəs/,
-junior,https://www.oxfordlearnersdictionaries.com/definition/english/junior_2,C1,junior,nhỏ,noun,/ˈdʒuːniə(r)/,
-marker,https://www.oxfordlearnersdictionaries.com/definition/english/marker,B2,marker,điểm đánh dấu,noun,/ˈmɑːkə(r)/,
-learner,https://www.oxfordlearnersdictionaries.com/definition/english/learner,A1,learner,người học,noun,/ˈlɜːnə(r)/,
-moderator,https://www.oxfordlearnersdictionaries.com/definition/english/moderator,C2,moderator,người điều hành,noun,/ˈmɒdəreɪtə(r)/,
-matron,https://www.oxfordlearnersdictionaries.com/definition/english/matron,C2,matron,người vợ,noun,/ˈmeɪtrən/,
-monitor,https://www.oxfordlearnersdictionaries.com/definition/english/monitor_1,C2,monitor,màn hình,noun,/ˈmɒnɪtə(r)/,
-prefect,https://www.oxfordlearnersdictionaries.com/definition/english/prefect,C2,prefect,quận trưởng,noun,/ˈpriːfekt/,
-paraprofessional,https://www.oxfordlearnersdictionaries.com/definition/english/paraprofessional_1,C2,paraprofessional,bán chuyên nghiệp,noun,/ˌpærəprəˈfeʃənl/,
-scholar,https://www.oxfordlearnersdictionaries.com/definition/english/scholar,C1,scholar,học giả,noun,/ˈskɒlə(r)/,
-pupil,https://www.oxfordlearnersdictionaries.com/definition/english/pupil,B2,pupil,học sinh,noun,/ˈpjuːpl/,
-pta,https://www.oxfordlearnersdictionaries.com/definition/english/pta,C2,PTA,PTA,abbreviation,/ˌpiː tiː ˈeɪ/,
-school-leaver,https://www.oxfordlearnersdictionaries.com/definition/english/school-leaver,B1,school-leaver,người bỏ học,noun,/ˈskuːl liːvə(r)/,
-paraprofessional,https://www.oxfordlearnersdictionaries.com/definition/english/paraprofessional_2,C2,paraprofessional,bán chuyên nghiệp,adjective,/ˌpærəprəˈfeʃənl/,
-schoolchild,https://www.oxfordlearnersdictionaries.com/definition/english/schoolchild,A2,schoolchild,học sinh,noun,/ˈskuːltʃaɪld/,
-schoolkid,https://www.oxfordlearnersdictionaries.com/definition/english/schoolkid,A2,schoolkid,học sinh,noun,/ˈskuːlkɪd/,
-school_council,https://www.oxfordlearnersdictionaries.com/definition/english/school-council,C1,school council,hội đồng trường,noun,/ˌskuːl ˈkaʊnsl/,
-staff,https://www.oxfordlearnersdictionaries.com/definition/english/staff_1,C2,staff,nhân viên,noun,/stɑːf/,
-schoolmistress,https://www.oxfordlearnersdictionaries.com/definition/english/schoolmistress,C2,schoolmistress,cô giáo,noun,/ˈskuːlmɪstrəs/,
-teacher,https://www.oxfordlearnersdictionaries.com/definition/english/teacher,A1,teacher,giáo viên,noun,/ˈtiːtʃə(r)/,
-senior,https://www.oxfordlearnersdictionaries.com/definition/english/senior_2,C1,senior,người lớn tuổi,noun,/ˈsiːniə(r)/,
-swot,https://www.oxfordlearnersdictionaries.com/definition/english/swot_1,C2,swot,swat,noun,/swɒt/,
-trainee,https://www.oxfordlearnersdictionaries.com/definition/english/trainee,B2,trainee,thực tập sinh,noun,/ˌtreɪˈniː/,
-tutor,https://www.oxfordlearnersdictionaries.com/definition/english/tutor_1,B1,tutor,gia sư,noun,/ˈtjuːtə(r)/,
-truant,https://www.oxfordlearnersdictionaries.com/definition/english/truant_2,C1,truant,trốn học,noun,/ˈtruːənt/,
-teaching_assistant,https://www.oxfordlearnersdictionaries.com/definition/english/teaching-assistant,B1,teaching assistant,trợ giảng,noun,/ˈtiːtʃɪŋ əsɪstənt/,
-teacher_trainer,https://www.oxfordlearnersdictionaries.com/definition/english/teacher-trainer,B2,teacher trainer,giáo viên huấn luyện,noun,/ˌtiːtʃə ˈtreɪnə(r)/,
+class,https://www.oxfordlearnersdictionaries.com/definition/english/class_1,A1,class,lớp học,noun,/klɑːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/class/class__gb_3.mp3
+coach,https://www.oxfordlearnersdictionaries.com/definition/english/coach_1,A2,coach,huấn luyện viên,noun,/kəʊtʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coa/coach/coach__gb_2.mp3
+classmate,https://www.oxfordlearnersdictionaries.com/definition/english/classmate,A1,classmate,bạn cùng lớp,noun,/ˈklɑːsmeɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/class/classmate__gb_1.mp3
+custodian,https://www.oxfordlearnersdictionaries.com/definition/english/custodian,C2,custodian,người trông coi,noun,/kʌˈstəʊdiən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cus/custo/custodian__gb_1.mp3
+educator,https://www.oxfordlearnersdictionaries.com/definition/english/educator,C1,educator,nhà giáo dục,noun,/ˈedʒukeɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/edu/educa/educator__gb_1.mp3
+inspector,https://www.oxfordlearnersdictionaries.com/definition/english/inspector,C1,inspector,thanh tra,noun,/ɪnˈspektə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/inspe/inspector__gb_1.mp3
+instructor,https://www.oxfordlearnersdictionaries.com/definition/english/instructor,A2,instructor,người hướng dẫn,noun,/ɪnˈstrʌktə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/instr/instructor__gb_1.mp3
+head_girl,https://www.oxfordlearnersdictionaries.com/definition/english/head-girl,C2,head girl,cô gái đứng đầu,noun,/ˌhed ˈɡɜːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/head_/head_girl_1_gb_1.mp3
+housemaster,https://www.oxfordlearnersdictionaries.com/definition/english/housemaster,C2,housemaster,quản gia,noun,/ˈhaʊsmɑːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hou/house/housemaster__gb_1.mp3
+head,https://www.oxfordlearnersdictionaries.com/definition/english/head_1,B2,head,cái đầu,noun,/hed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/head_/head__gb_1.mp3
+invigilator,https://www.oxfordlearnersdictionaries.com/definition/english/invigilator,C2,invigilator,giám thị,noun,/ɪnˈvɪdʒɪleɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/invig/invigilator__gb_1.mp3
+janitor,https://www.oxfordlearnersdictionaries.com/definition/english/janitor,C2,janitor,người gác cổng,noun,/ˈdʒænɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jan/janit/janitor__gb_1.mp3
+headmistress,https://www.oxfordlearnersdictionaries.com/definition/english/headmistress,C2,headmistress,hiệu trưởng,noun,/ˌhedˈmɪstrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/headm/headmaster__gb_2.mp3
+headmaster,https://www.oxfordlearnersdictionaries.com/definition/english/headmaster,C1,headmaster,hiệu trưởng,noun,/ˌhedˈmɑːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/headm/headmaster__gb_1.mp3
+head_boy,https://www.oxfordlearnersdictionaries.com/definition/english/head-boy,C2,head boy,cậu bé đứng đầu,noun,/ˌhed ˈbɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/head_/head_boy_1_gb_1.mp3
+mistress,https://www.oxfordlearnersdictionaries.com/definition/english/mistress,C2,mistress,tình nhân,noun,/ˈmɪstrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/mistr/mistress__gb_1.mp3
+junior,https://www.oxfordlearnersdictionaries.com/definition/english/junior_2,C1,junior,nhỏ,noun,/ˈdʒuːniə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jun/junio/junior__gb_1.mp3
+marker,https://www.oxfordlearnersdictionaries.com/definition/english/marker,B2,marker,điểm đánh dấu,noun,/ˈmɑːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marke/marker__gb_1.mp3
+learner,https://www.oxfordlearnersdictionaries.com/definition/english/learner,A1,learner,người học,noun,/ˈlɜːnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lea/learn/learner__gb_1.mp3
+moderator,https://www.oxfordlearnersdictionaries.com/definition/english/moderator,C2,moderator,người điều hành,noun,/ˈmɒdəreɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mod/moder/moderator__gb_1.mp3
+matron,https://www.oxfordlearnersdictionaries.com/definition/english/matron,C2,matron,người vợ,noun,/ˈmeɪtrən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mat/matro/matron__gb_1.mp3
+monitor,https://www.oxfordlearnersdictionaries.com/definition/english/monitor_1,C2,monitor,màn hình,noun,/ˈmɒnɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mon/monit/monitor__gb_3.mp3
+prefect,https://www.oxfordlearnersdictionaries.com/definition/english/prefect,C2,prefect,quận trưởng,noun,/ˈpriːfekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pre/prefe/prefect__gb_1.mp3
+paraprofessional,https://www.oxfordlearnersdictionaries.com/definition/english/paraprofessional_1,C2,paraprofessional,bán chuyên nghiệp,noun,/ˌpærəprəˈfeʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parap/paraprofessional__gb_1.mp3
+scholar,https://www.oxfordlearnersdictionaries.com/definition/english/scholar,C1,scholar,học giả,noun,/ˈskɒlə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schol/scholar__gb_1.mp3
+pupil,https://www.oxfordlearnersdictionaries.com/definition/english/pupil,B2,pupil,học sinh,noun,/ˈpjuːpl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pup/pupil/pupil__gb_1.mp3
+pta,https://www.oxfordlearnersdictionaries.com/definition/english/pta,C2,PTA,PTA,abbreviation,/ˌpiː tiː ˈeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pta/pta__/pta__gb_1.mp3
+school-leaver,https://www.oxfordlearnersdictionaries.com/definition/english/school-leaver,B1,school-leaver,người bỏ học,noun,/ˈskuːl liːvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/school_leaver_1_gb_2.mp3
+paraprofessional,https://www.oxfordlearnersdictionaries.com/definition/english/paraprofessional_2,C2,paraprofessional,bán chuyên nghiệp,adjective,/ˌpærəprəˈfeʃənl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parap/paraprofessional__gb_1.mp3
+schoolchild,https://www.oxfordlearnersdictionaries.com/definition/english/schoolchild,A2,schoolchild,học sinh,noun,/ˈskuːltʃaɪld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/schoolchild__gb_1.mp3
+schoolkid,https://www.oxfordlearnersdictionaries.com/definition/english/schoolkid,A2,schoolkid,học sinh,noun,/ˈskuːlkɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/schoolkid__gb_1.mp3
+school_council,https://www.oxfordlearnersdictionaries.com/definition/english/school-council,C1,school council,hội đồng trường,noun,/ˌskuːl ˈkaʊnsl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/school_council_1_gb_1.mp3
+staff,https://www.oxfordlearnersdictionaries.com/definition/english/staff_1,C2,staff,nhân viên,noun,/stɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/staff/staff__gb_1.mp3
+schoolmistress,https://www.oxfordlearnersdictionaries.com/definition/english/schoolmistress,C2,schoolmistress,cô giáo,noun,/ˈskuːlmɪstrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sch/schoo/schoolmaster__gb_2.mp3
+teacher,https://www.oxfordlearnersdictionaries.com/definition/english/teacher,A1,teacher,giáo viên,noun,/ˈtiːtʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tea/teach/teacher__gb_1.mp3
+senior,https://www.oxfordlearnersdictionaries.com/definition/english/senior_2,C1,senior,người lớn tuổi,noun,/ˈsiːniə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/senio/senior__gb_1.mp3
+swot,https://www.oxfordlearnersdictionaries.com/definition/english/swot_1,C2,swot,swat,noun,/swɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swo/swot_/swot__gb_1.mp3
+trainee,https://www.oxfordlearnersdictionaries.com/definition/english/trainee,B2,trainee,thực tập sinh,noun,/ˌtreɪˈniː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/train/trainee__gb_1.mp3
+tutor,https://www.oxfordlearnersdictionaries.com/definition/english/tutor_1,B1,tutor,gia sư,noun,/ˈtjuːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tut/tutor/tutor__gb_3.mp3
+truant,https://www.oxfordlearnersdictionaries.com/definition/english/truant_2,C1,truant,trốn học,noun,/ˈtruːənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tru/truan/truant__gb_1.mp3
+teaching_assistant,https://www.oxfordlearnersdictionaries.com/definition/english/teaching-assistant,B1,teaching assistant,trợ giảng,noun,/ˈtiːtʃɪŋ əsɪstənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tea/teach/teaching_assistant_1_gb_1.mp3
+teacher_trainer,https://www.oxfordlearnersdictionaries.com/definition/english/teacher-trainer,B2,teacher trainer,giáo viên huấn luyện,noun,/ˌtiːtʃə ˈtreɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tea/teach/teacher_trainer_1_gb_1.mp3

@@ -1,9 +1,9 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-thirst,https://www.oxfordlearnersdictionaries.com/definition/english/thirst_1,B2,thirst,khát nước,noun,/θɜːst/,
-dry,https://www.oxfordlearnersdictionaries.com/definition/english/dry_1,C2,dry,khô,adjective,/draɪ/,
-thirsty,https://www.oxfordlearnersdictionaries.com/definition/english/thirsty,A1,thirsty,khát,adjective,/ˈθɜːsti/,
-parched,https://www.oxfordlearnersdictionaries.com/definition/english/parched,C2,parched,khô,adjective,/pɑːtʃt/,
-quench,https://www.oxfordlearnersdictionaries.com/definition/english/quench,C2,quench,dập tắt,verb,/kwentʃ/,
-chug,https://www.oxfordlearnersdictionaries.com/definition/english/chug_1,C2,chug,chug,verb,/tʃʌɡ/,
-slake,https://www.oxfordlearnersdictionaries.com/definition/english/slake,C2,slake,nước đá,verb,/sleɪk/,
-down,https://www.oxfordlearnersdictionaries.com/definition/english/down_3,C2,down,xuống,verb,/daʊn/,
+thirst,https://www.oxfordlearnersdictionaries.com/definition/english/thirst_1,B2,thirst,khát nước,noun,/θɜːst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/thirs/thirst__gb_1.mp3
+dry,https://www.oxfordlearnersdictionaries.com/definition/english/dry_1,C2,dry,khô,adjective,/draɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dry/dry__/dry__gb_3.mp3
+thirsty,https://www.oxfordlearnersdictionaries.com/definition/english/thirsty,A1,thirsty,khát,adjective,/ˈθɜːsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thi/thirs/thirsty__gb_2.mp3
+parched,https://www.oxfordlearnersdictionaries.com/definition/english/parched,C2,parched,khô,adjective,/pɑːtʃt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parch/parched__gb_1.mp3
+quench,https://www.oxfordlearnersdictionaries.com/definition/english/quench,C2,quench,dập tắt,verb,/kwentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/que/quenc/quench__gb_1.mp3
+chug,https://www.oxfordlearnersdictionaries.com/definition/english/chug_1,C2,chug,chug,verb,/tʃʌɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chu/chug_/chug__gb_2.mp3
+slake,https://www.oxfordlearnersdictionaries.com/definition/english/slake,C2,slake,nước đá,verb,/sleɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sla/slake/slake__gb_1.mp3
+down,https://www.oxfordlearnersdictionaries.com/definition/english/down_3,C2,down,xuống,verb,/daʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dow/down_/down__gb_1.mp3

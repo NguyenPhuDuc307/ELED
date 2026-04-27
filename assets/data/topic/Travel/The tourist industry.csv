@@ -1,23 +1,23 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-high_season,https://www.oxfordlearnersdictionaries.com/definition/english/high-season,C1,high season,mùa cao điểm,noun,/ˌhaɪ ˈsiːzn/,
-book,https://www.oxfordlearnersdictionaries.com/definition/english/book_2,A2,book,sách,verb,/bʊk/,
-courier,https://www.oxfordlearnersdictionaries.com/definition/english/courier_1,C2,courier,chuyển phát nhanh,noun,/ˈkʊriə(r)/,
-booking,https://www.oxfordlearnersdictionaries.com/definition/english/booking,B2,booking,đặt phòng,noun,/ˈbʊkɪŋ/,
-guide,https://www.oxfordlearnersdictionaries.com/definition/english/guide_1,A2,guide,hướng dẫn,noun,/ɡaɪd/,
-bureau,https://www.oxfordlearnersdictionaries.com/definition/english/bureau,C2,bureau,văn phòng,noun,/ˈbjʊərəʊ/,
-brochure,https://www.oxfordlearnersdictionaries.com/definition/english/brochure,B1,brochure,cuốn sách nhỏ,noun,/ˈbrəʊʃə(r)/,
-cancellation,https://www.oxfordlearnersdictionaries.com/definition/english/cancellation,C1,cancellation,hủy bỏ,noun,/ˌkænsəˈleɪʃn/,
-bucket_shop,https://www.oxfordlearnersdictionaries.com/definition/english/bucket-shop,C2,bucket shop,cửa hàng xô,noun,/ˈbʌkɪt ʃɒp/,
-adventure_tourism,https://www.oxfordlearnersdictionaries.com/definition/english/adventure-tourism,B2,adventure tourism,du lịch mạo hiểm,noun,/ədˌventʃə ˈtʊərɪzəm/,
-hotspot,https://www.oxfordlearnersdictionaries.com/definition/english/hotspot,C2,hotspot,điểm nóng,noun,/ˈhɒtspɒt/,
-low_season,https://www.oxfordlearnersdictionaries.com/definition/english/low-season,C1,low season,mùa thấp điểm,noun,/ˈləʊ siːzn/,
-operator,https://www.oxfordlearnersdictionaries.com/definition/english/operator,B2,operator,toán tử,noun,/ˈɒpəreɪtə(r)/,
-tourism,https://www.oxfordlearnersdictionaries.com/definition/english/tourism,A2,tourism,du lịch,noun,/ˈtʊərɪzəm/,
-overbook,https://www.oxfordlearnersdictionaries.com/definition/english/overbook,C2,overbook,đặt trước quá nhiều,verb,/ˌəʊvəˈbʊk/,
-star,https://www.oxfordlearnersdictionaries.com/definition/english/star_1,A2,star,ngôi sao,noun,/stɑː(r)/,
-overtourism,https://www.oxfordlearnersdictionaries.com/definition/english/overtourism,C1,overtourism,du lịch thái quá,noun,/ˌəʊvəˈtʊərɪzəm/,
-tourist,https://www.oxfordlearnersdictionaries.com/definition/english/tourist,A1,tourist,du khách,noun,/ˈtʊərɪst/,
-touristy,https://www.oxfordlearnersdictionaries.com/definition/english/touristy,C1,touristy,có tính du lịch,adjective,/ˈtʊərɪsti/,
-travel_agency,https://www.oxfordlearnersdictionaries.com/definition/english/travel-agency,B2,travel agency,đại lý du lịch,noun,/ˈtrævl eɪdʒənsi/,
-travel_agent,https://www.oxfordlearnersdictionaries.com/definition/english/travel-agent,B2,travel agent,đại lý du lịch,noun,/ˈtrævl eɪdʒənt/,
-tourist_trap,https://www.oxfordlearnersdictionaries.com/definition/english/tourist-trap,C2,tourist trap,cái bẫy du lịch,noun,/ˈtʊərɪst træp/,
+high_season,https://www.oxfordlearnersdictionaries.com/definition/english/high-season,C1,high season,mùa cao điểm,noun,/ˌhaɪ ˈsiːzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hig/high_/high_season_1_gb_1.mp3
+book,https://www.oxfordlearnersdictionaries.com/definition/english/book_2,A2,book,sách,verb,/bʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/book_/book__gb_2.mp3
+courier,https://www.oxfordlearnersdictionaries.com/definition/english/courier_1,C2,courier,chuyển phát nhanh,noun,/ˈkʊriə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/couri/courier__gb_1.mp3
+booking,https://www.oxfordlearnersdictionaries.com/definition/english/booking,B2,booking,đặt phòng,noun,/ˈbʊkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/booki/booking__gb_3.mp3
+guide,https://www.oxfordlearnersdictionaries.com/definition/english/guide_1,A2,guide,hướng dẫn,noun,/ɡaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gui/guide/guide__gb_3.mp3
+bureau,https://www.oxfordlearnersdictionaries.com/definition/english/bureau,C2,bureau,văn phòng,noun,/ˈbjʊərəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bur/burea/bureau__gb_1.mp3
+brochure,https://www.oxfordlearnersdictionaries.com/definition/english/brochure,B1,brochure,cuốn sách nhỏ,noun,/ˈbrəʊʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bro/broch/brochure__gb_1.mp3
+cancellation,https://www.oxfordlearnersdictionaries.com/definition/english/cancellation,C1,cancellation,hủy bỏ,noun,/ˌkænsəˈleɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/cance/cancellation__gb_1.mp3
+bucket_shop,https://www.oxfordlearnersdictionaries.com/definition/english/bucket-shop,C2,bucket shop,cửa hàng xô,noun,/ˈbʌkɪt ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/buc/bucke/bucket_shop_1_gb_1.mp3
+adventure_tourism,https://www.oxfordlearnersdictionaries.com/definition/english/adventure-tourism,B2,adventure tourism,du lịch mạo hiểm,noun,/ədˌventʃə ˈtʊərɪzəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/adv/adven/adventure_tourism_1_gb_1.mp3
+hotspot,https://www.oxfordlearnersdictionaries.com/definition/english/hotspot,C2,hotspot,điểm nóng,noun,/ˈhɒtspɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hot/hot_s/hot_spot_1_gb_2.mp3
+low_season,https://www.oxfordlearnersdictionaries.com/definition/english/low-season,C1,low season,mùa thấp điểm,noun,/ˈləʊ siːzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/low/low_s/low_season_1_gb_1.mp3
+operator,https://www.oxfordlearnersdictionaries.com/definition/english/operator,B2,operator,toán tử,noun,/ˈɒpəreɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ope/opera/operator__gb_1.mp3
+tourism,https://www.oxfordlearnersdictionaries.com/definition/english/tourism,A2,tourism,du lịch,noun,/ˈtʊərɪzəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tou/touri/tourism__gb_1.mp3
+overbook,https://www.oxfordlearnersdictionaries.com/definition/english/overbook,C2,overbook,đặt trước quá nhiều,verb,/ˌəʊvəˈbʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overb/overbook__gb_1.mp3
+star,https://www.oxfordlearnersdictionaries.com/definition/english/star_1,A2,star,ngôi sao,noun,/stɑː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/star_/star__gb_2.mp3
+overtourism,https://www.oxfordlearnersdictionaries.com/definition/english/overtourism,C1,overtourism,du lịch thái quá,noun,/ˌəʊvəˈtʊərɪzəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/ove/overt/overtourism__gb_1.mp3
+tourist,https://www.oxfordlearnersdictionaries.com/definition/english/tourist,A1,tourist,du khách,noun,/ˈtʊərɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tou/touri/tourist__gb_1.mp3
+touristy,https://www.oxfordlearnersdictionaries.com/definition/english/touristy,C1,touristy,có tính du lịch,adjective,/ˈtʊərɪsti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tou/touri/touristy__gb_1.mp3
+travel_agency,https://www.oxfordlearnersdictionaries.com/definition/english/travel-agency,B2,travel agency,đại lý du lịch,noun,/ˈtrævl eɪdʒənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trave/travel_agency_1_gb_1.mp3
+travel_agent,https://www.oxfordlearnersdictionaries.com/definition/english/travel-agent,B2,travel agent,đại lý du lịch,noun,/ˈtrævl eɪdʒənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trave/travel_agent_1_gb_1.mp3
+tourist_trap,https://www.oxfordlearnersdictionaries.com/definition/english/tourist-trap,C2,tourist trap,cái bẫy du lịch,noun,/ˈtʊərɪst træp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tou/touri/tourist_trap_1_gb_2.mp3

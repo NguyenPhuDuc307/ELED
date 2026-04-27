@@ -1,15 +1,15 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-filmstrip,https://www.oxfordlearnersdictionaries.com/definition/english/filmstrip,C2,filmstrip,đoạn phim,noun,/ˈfɪlmstrɪp/,
-master,https://www.oxfordlearnersdictionaries.com/definition/english/master_1,C2,master,bậc thầy,noun,/ˈmɑːstə(r)/,
-camera,https://www.oxfordlearnersdictionaries.com/definition/english/camera,A1,camera,máy ảnh,noun,/ˈkæmrə/,
-dolly,https://www.oxfordlearnersdictionaries.com/definition/english/dolly_1,C2,dolly,búp bê,noun,/ˈdɒli/,
-clapperboard,https://www.oxfordlearnersdictionaries.com/definition/english/clapperboard,C2,clapperboard,tấm ván nhỏ,noun,/ˈklæpəbɔːd/,
-director’s_chair,https://www.oxfordlearnersdictionaries.com/definition/english/director-s-chair,B2,director’s chair,ghế giám đốc,noun,/dəˈrektəz tʃeə(r)/,
-canister,https://www.oxfordlearnersdictionaries.com/definition/english/canister,C2,canister,cái hộp đựng,noun,/ˈkænɪstə(r)/,
-floodlight,https://www.oxfordlearnersdictionaries.com/definition/english/floodlight_1,C1,floodlight,đèn pha,noun,/ˈflʌdlaɪt/,
-make-up,https://www.oxfordlearnersdictionaries.com/definition/english/make-up_2,B2,make-up,trang điểm,noun,/ˈmeɪk ʌp/,
-celluloid,https://www.oxfordlearnersdictionaries.com/definition/english/celluloid,C2,celluloid,chất celluloid,noun,/ˈseljulɔɪd/,
-reel,https://www.oxfordlearnersdictionaries.com/definition/english/reel_1,C1,reel,cuộn dây,noun,/riːl/,
-sound_stage,https://www.oxfordlearnersdictionaries.com/definition/english/sound-stage,C2,sound stage,sân khấu âm thanh,noun,/ˈsaʊnd steɪdʒ/,
-mixer,https://www.oxfordlearnersdictionaries.com/definition/english/mixer,C2,mixer,máy trộn,noun,/ˈmɪksə(r)/,
-spotlight,https://www.oxfordlearnersdictionaries.com/definition/english/spotlight_1,C1,spotlight,điểm sáng,noun,/ˈspɒtlaɪt/,
+filmstrip,https://www.oxfordlearnersdictionaries.com/definition/english/filmstrip,C2,filmstrip,đoạn phim,noun,/ˈfɪlmstrɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/films/filmstrip__gb_1.mp3
+master,https://www.oxfordlearnersdictionaries.com/definition/english/master_1,C2,master,bậc thầy,noun,/ˈmɑːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/maste/master__gb_1.mp3
+camera,https://www.oxfordlearnersdictionaries.com/definition/english/camera,A1,camera,máy ảnh,noun,/ˈkæmrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cam/camer/camera__gb_2.mp3
+dolly,https://www.oxfordlearnersdictionaries.com/definition/english/dolly_1,C2,dolly,búp bê,noun,/ˈdɒli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dol/dolly/dolly__gb_1.mp3
+clapperboard,https://www.oxfordlearnersdictionaries.com/definition/english/clapperboard,C2,clapperboard,tấm ván nhỏ,noun,/ˈklæpəbɔːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cla/clapp/clapperboard__gb_1.mp3
+director’s_chair,https://www.oxfordlearnersdictionaries.com/definition/english/director-s-chair,B2,director’s chair,ghế giám đốc,noun,/dəˈrektəz tʃeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dir/direc/director_s_chair_1_gb_1.mp3
+canister,https://www.oxfordlearnersdictionaries.com/definition/english/canister,C2,canister,cái hộp đựng,noun,/ˈkænɪstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/can/canis/canister__gb_1.mp3
+floodlight,https://www.oxfordlearnersdictionaries.com/definition/english/floodlight_1,C1,floodlight,đèn pha,noun,/ˈflʌdlaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flood/floodlight__gb_1.mp3
+make-up,https://www.oxfordlearnersdictionaries.com/definition/english/make-up_2,B2,make-up,trang điểm,noun,/ˈmeɪk ʌp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mak/make_/make_up_1_gb_1.mp3
+celluloid,https://www.oxfordlearnersdictionaries.com/definition/english/celluloid,C2,celluloid,chất celluloid,noun,/ˈseljulɔɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cel/cellu/celluloid__gb_3.mp3
+reel,https://www.oxfordlearnersdictionaries.com/definition/english/reel_1,C1,reel,cuộn dây,noun,/riːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ree/reel_/reel__gb_1.mp3
+sound_stage,https://www.oxfordlearnersdictionaries.com/definition/english/sound-stage,C2,sound stage,sân khấu âm thanh,noun,/ˈsaʊnd steɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/sound/sound_stage_1_gb_1.mp3
+mixer,https://www.oxfordlearnersdictionaries.com/definition/english/mixer,C2,mixer,máy trộn,noun,/ˈmɪksə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mix/mixer/mixer__gb_1.mp3
+spotlight,https://www.oxfordlearnersdictionaries.com/definition/english/spotlight_1,C1,spotlight,điểm sáng,noun,/ˈspɒtlaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spo/spotl/spotlight__gb_1.mp3

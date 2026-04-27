@@ -1,27 +1,27 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-apartment,https://www.oxfordlearnersdictionaries.com/definition/english/apartment,A1,apartment,căn hộ,noun,/əˈpɑːtmənt/,
-cottage,https://www.oxfordlearnersdictionaries.com/definition/english/cottage,B1,cottage,ngôi nhà tranh,noun,/ˈkɒtɪdʒ/,
-guest_house,https://www.oxfordlearnersdictionaries.com/definition/english/guest-house,C1,guest house,nhà khách,noun,/ˈɡest haʊs/,
-accommodation,https://www.oxfordlearnersdictionaries.com/definition/english/accommodation,B1,accommodation,chỗ ở,noun,/əˌkɒməˈdeɪʃn/,
-fleabag,https://www.oxfordlearnersdictionaries.com/definition/english/fleabag,C2,fleabag,túi bọ chét,noun,/ˈfliːbæɡ/,
-chalet,https://www.oxfordlearnersdictionaries.com/definition/english/chalet,C1,chalet,nhà gỗ,noun,/ˈʃæleɪ/,
-aparthotel,https://www.oxfordlearnersdictionaries.com/definition/english/aparthotel,C2,aparthotel,khách sạn căn hộ,noun,/əˈpɑːthəʊtel/,
-apartment_hotel,https://www.oxfordlearnersdictionaries.com/definition/english/apartment-hotel,C2,apartment hotel,khách sạn căn hộ,noun,/əˈpɑːtmənt həʊtel/,
-b_and_b,https://www.oxfordlearnersdictionaries.com/definition/english/b-and-b,C2,B and B,B và B,abbreviation,/ˌbiː ən ˈbiː/,
-caravan,https://www.oxfordlearnersdictionaries.com/definition/english/caravan,B2,caravan,đoàn lữ hành,noun,/ˈkærəvæn/,
-holiday_camp,https://www.oxfordlearnersdictionaries.com/definition/english/holiday-camp,B1,holiday camp,trại nghỉ dưỡng,noun,/ˈhɒlədeɪ kæmp/,
-homestay,https://www.oxfordlearnersdictionaries.com/definition/english/homestay,C1,homestay,nhà trọ,noun,/ˈhəʊmsteɪ/,
-hostel,https://www.oxfordlearnersdictionaries.com/definition/english/hostel,B1,hostel,ký túc xá,noun,/ˈhɒstl/,
-hotel,https://www.oxfordlearnersdictionaries.com/definition/english/hotel,A1,hotel,khách sạn,noun,/həʊˈtel/,
-hostelry,https://www.oxfordlearnersdictionaries.com/definition/english/hostelry,C2,hostelry,ký túc xá,noun,/ˈhɒstəlri/,
-pension,https://www.oxfordlearnersdictionaries.com/definition/english/pension2,C2,pension,lương hưu,noun,/ˈpɒ̃sjɒ̃/,
-inn,https://www.oxfordlearnersdictionaries.com/definition/english/inn,C1,inn,quán trọ,noun,/ɪn/,
-motel,https://www.oxfordlearnersdictionaries.com/definition/english/motel,C1,motel,nhà nghỉ,noun,/məʊˈtel/,
-motor_lodge,https://www.oxfordlearnersdictionaries.com/definition/english/motor-lodge,C2,motor lodge,nhà nghỉ xe máy,noun,/ˈməʊtə lɒdʒ/,
-self-catering,https://www.oxfordlearnersdictionaries.com/definition/english/self-catering_1,C1,self-catering,tự phục vụ,adjective,/ˌself ˈkeɪtərɪŋ/,
-suite,https://www.oxfordlearnersdictionaries.com/definition/english/suite,C1,suite,bộ,noun,/swiːt/,
-rest_house,https://www.oxfordlearnersdictionaries.com/definition/english/rest-house,C2,rest house,nhà nghỉ,noun,/ˈrest haʊs/,
-villa,https://www.oxfordlearnersdictionaries.com/definition/english/villa,B2,villa,biệt thự,noun,/ˈvɪlə/,
-timeshare,https://www.oxfordlearnersdictionaries.com/definition/english/timeshare,C2,timeshare,chia sẻ thời gian,noun,/ˈtaɪmʃeə(r)/,
-self-catering,https://www.oxfordlearnersdictionaries.com/definition/english/self-catering_2,C1,self-catering,tự phục vụ,noun,/ˌself ˈkeɪtərɪŋ/,
-youth_hostel,https://www.oxfordlearnersdictionaries.com/definition/english/youth-hostel,B1,youth hostel,ký túc xá thanh niên,noun,/ˈjuːθ hɒstl/,
+apartment,https://www.oxfordlearnersdictionaries.com/definition/english/apartment,A1,apartment,căn hộ,noun,/əˈpɑːtmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apa/apart/apartment__gb_1.mp3
+cottage,https://www.oxfordlearnersdictionaries.com/definition/english/cottage,B1,cottage,ngôi nhà tranh,noun,/ˈkɒtɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cot/cotta/cottage__gb_1.mp3
+guest_house,https://www.oxfordlearnersdictionaries.com/definition/english/guest-house,C1,guest house,nhà khách,noun,/ˈɡest haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gue/guest/guest_house_1_gb_1.mp3
+accommodation,https://www.oxfordlearnersdictionaries.com/definition/english/accommodation,B1,accommodation,chỗ ở,noun,/əˌkɒməˈdeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/acc/accom/accommodation__gb_2.mp3
+fleabag,https://www.oxfordlearnersdictionaries.com/definition/english/fleabag,C2,fleabag,túi bọ chét,noun,/ˈfliːbæɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fle/fleab/fleabag__gb_1.mp3
+chalet,https://www.oxfordlearnersdictionaries.com/definition/english/chalet,C1,chalet,nhà gỗ,noun,/ˈʃæleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chale/chalet__gb_3.mp3
+aparthotel,https://www.oxfordlearnersdictionaries.com/definition/english/aparthotel,C2,aparthotel,khách sạn căn hộ,noun,/əˈpɑːthəʊtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apa/apart/aparthotel__gb_1.mp3
+apartment_hotel,https://www.oxfordlearnersdictionaries.com/definition/english/apartment-hotel,C2,apartment hotel,khách sạn căn hộ,noun,/əˈpɑːtmənt həʊtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apa/apart/apartment_hotel_1_gb_1.mp3
+b_and_b,https://www.oxfordlearnersdictionaries.com/definition/english/b-and-b,C2,B and B,B và B,abbreviation,/ˌbiː ən ˈbiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/b_a/b_and/b_and_b_1_gb_2.mp3
+caravan,https://www.oxfordlearnersdictionaries.com/definition/english/caravan,B2,caravan,đoàn lữ hành,noun,/ˈkærəvæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/carav/caravan__gb_1.mp3
+holiday_camp,https://www.oxfordlearnersdictionaries.com/definition/english/holiday-camp,B1,holiday camp,trại nghỉ dưỡng,noun,/ˈhɒlədeɪ kæmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hol/holid/holiday_camp_1_gb_1.mp3
+homestay,https://www.oxfordlearnersdictionaries.com/definition/english/homestay,C1,homestay,nhà trọ,noun,/ˈhəʊmsteɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hom/homes/homestay__gb_1.mp3
+hostel,https://www.oxfordlearnersdictionaries.com/definition/english/hostel,B1,hostel,ký túc xá,noun,/ˈhɒstl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hos/hoste/hostel__gb_1.mp3
+hotel,https://www.oxfordlearnersdictionaries.com/definition/english/hotel,A1,hotel,khách sạn,noun,/həʊˈtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hot/hotel/hotel__gb_4.mp3
+hostelry,https://www.oxfordlearnersdictionaries.com/definition/english/hostelry,C2,hostelry,ký túc xá,noun,/ˈhɒstəlri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hos/hoste/hostelry__gb_1.mp3
+pension,https://www.oxfordlearnersdictionaries.com/definition/english/pension2,C2,pension,lương hưu,noun,/ˈpɒ̃sjɒ̃/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/pensi/pension__gb_2.mp3
+inn,https://www.oxfordlearnersdictionaries.com/definition/english/inn,C1,inn,quán trọ,noun,/ɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inn/inn__/inn__gb_1.mp3
+motel,https://www.oxfordlearnersdictionaries.com/definition/english/motel,C1,motel,nhà nghỉ,noun,/məʊˈtel/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motel/motel__gb_1.mp3
+motor_lodge,https://www.oxfordlearnersdictionaries.com/definition/english/motor-lodge,C2,motor lodge,nhà nghỉ xe máy,noun,/ˈməʊtə lɒdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mot/motor/motor_lodge_1_gb_1.mp3
+self-catering,https://www.oxfordlearnersdictionaries.com/definition/english/self-catering_1,C1,self-catering,tự phục vụ,adjective,/ˌself ˈkeɪtərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/self_/self_catering_1_gb_1.mp3
+suite,https://www.oxfordlearnersdictionaries.com/definition/english/suite,C1,suite,bộ,noun,/swiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sui/suite/suite__gb_1.mp3
+rest_house,https://www.oxfordlearnersdictionaries.com/definition/english/rest-house,C2,rest house,nhà nghỉ,noun,/ˈrest haʊs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resth/resthouse__gb_1.mp3
+villa,https://www.oxfordlearnersdictionaries.com/definition/english/villa,B2,villa,biệt thự,noun,/ˈvɪlə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vil/villa/villa__gb_1.mp3
+timeshare,https://www.oxfordlearnersdictionaries.com/definition/english/timeshare,C2,timeshare,chia sẻ thời gian,noun,/ˈtaɪmʃeə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tim/times/timeshare__gb_1.mp3
+self-catering,https://www.oxfordlearnersdictionaries.com/definition/english/self-catering_2,C1,self-catering,tự phục vụ,noun,/ˌself ˈkeɪtərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sel/self_/self_catering_1_gb_1.mp3
+youth_hostel,https://www.oxfordlearnersdictionaries.com/definition/english/youth-hostel,B1,youth hostel,ký túc xá thanh niên,noun,/ˈjuːθ hɒstl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/youth/youth_hostel_1_gb_1.mp3

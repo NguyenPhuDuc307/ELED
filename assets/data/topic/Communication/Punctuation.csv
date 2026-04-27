@@ -1,30 +1,30 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-apostrophe,https://www.oxfordlearnersdictionaries.com/definition/english/apostrophe,B1,apostrophe,dấu nháy đơn,noun,/əˈpɒstrəfi/,
-backslash,https://www.oxfordlearnersdictionaries.com/definition/english/backslash,C2,backslash,dấu gạch chéo ngược,noun,/ˈbækslæʃ/,
-bullet_point,https://www.oxfordlearnersdictionaries.com/definition/english/bullet-point,B2,bullet point,điểm đầu dòng,noun,/ˈbʊlɪt pɔɪnt/,
-dash,https://www.oxfordlearnersdictionaries.com/definition/english/dash_1,B2,dash,dấu gạch ngang,noun,/dæʃ/,
-bracket,https://www.oxfordlearnersdictionaries.com/definition/english/bracket_1,C1,bracket,dấu ngoặc,noun,/ˈbrækɪt/,
-comma,https://www.oxfordlearnersdictionaries.com/definition/english/comma,A2,comma,dấu phẩy,noun,/ˈkɒmə/,
-brace,https://www.oxfordlearnersdictionaries.com/definition/english/brace_1,C2,brace,cú đúp,noun,/breɪs/,
-colon,https://www.oxfordlearnersdictionaries.com/definition/english/colon,C1,colon,dấu hai chấm,noun,/ˈkəʊlən/,
-asterisk,https://www.oxfordlearnersdictionaries.com/definition/english/asterisk_2,C2,asterisk,dấu hoa thị,noun,/ˈæstərɪsk/,
-ampersand,https://www.oxfordlearnersdictionaries.com/definition/english/ampersand,C2,ampersand,dấu và,noun,/ˈæmpəsænd/,
-ditto,https://www.oxfordlearnersdictionaries.com/definition/english/ditto_1,C2,ditto,như trên,noun,/ˈdɪtəʊ/,
-dot,https://www.oxfordlearnersdictionaries.com/definition/english/dot_1,B2,dot,dấu chấm,noun,/dɒt/,
-inverted_commas,https://www.oxfordlearnersdictionaries.com/definition/english/inverted-commas,C2,inverted commas,dấu phẩy đảo ngược,noun,/ɪnˌvɜːtɪd ˈkɒməz/,
-hyphenate,https://www.oxfordlearnersdictionaries.com/definition/english/hyphenate_1,C1,hyphenate,gạch nối,verb,/ˈhaɪfəneɪt/,
-period,https://www.oxfordlearnersdictionaries.com/definition/english/period_1,B1,period,Giai đoạn,noun,/ˈpɪəriəd/,
-hyphen,https://www.oxfordlearnersdictionaries.com/definition/english/hyphen,B2,hyphen,gạch nối,noun,/ˈhaɪfn/,
-point,https://www.oxfordlearnersdictionaries.com/definition/english/point_1,B1,point,điểm,noun,/pɔɪnt/,
-pound_sign,https://www.oxfordlearnersdictionaries.com/definition/english/pound-sign,C2,pound sign,ký hiệu bảng Anh,noun,/ˈpaʊnd saɪn/,
-quotation_marks,https://www.oxfordlearnersdictionaries.com/definition/english/quotation-marks,B1,quotation marks,dấu ngoặc kép,noun,/kwəʊˈteɪʃn mɑːks/,
-question_mark,https://www.oxfordlearnersdictionaries.com/definition/english/question-mark,A2,question mark,dấu chấm hỏi,noun,/ˈkwestʃən mɑːk/,
-quote,https://www.oxfordlearnersdictionaries.com/definition/english/quote_2,B2,quote,trích dẫn,noun,/kwəʊt/,
-punctuation,https://www.oxfordlearnersdictionaries.com/definition/english/punctuation,A2,punctuation,dấu câu,noun,/ˌpʌŋktʃuˈeɪʃn/,
-semicolon,https://www.oxfordlearnersdictionaries.com/definition/english/semicolon,C1,semicolon,dấu chấm phẩy,noun,/ˌsemiˈkəʊlən/,
-exclamation_mark,https://www.oxfordlearnersdictionaries.com/definition/english/exclamation-mark,B1,exclamation mark,dấu chấm than,noun,/ˌekskləˈmeɪʃn mɑːk/,
-punctuate,https://www.oxfordlearnersdictionaries.com/definition/english/punctuate,C1,punctuate,chấm câu,verb,/ˈpʌŋktʃueɪt/,
-punctuation_mark,https://www.oxfordlearnersdictionaries.com/definition/english/punctuation-mark,A2,punctuation mark,dấu chấm câu,noun,/ˌpʌŋktʃuˈeɪʃn mɑːk/,
-slash,https://www.oxfordlearnersdictionaries.com/definition/english/slash_2,C1,slash,gạch chéo,noun,/slæʃ/,
-tilde,https://www.oxfordlearnersdictionaries.com/definition/english/tilde,C2,tilde,dấu ngã,noun,/ˈtɪldə/,
-round_bracket,https://www.oxfordlearnersdictionaries.com/definition/english/round-bracket,C1,round bracket,dấu ngoặc tròn,noun,/ˈraʊnd brækɪt/,
+apostrophe,https://www.oxfordlearnersdictionaries.com/definition/english/apostrophe,B1,apostrophe,dấu nháy đơn,noun,/əˈpɒstrəfi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/apo/apost/apostrophe__gb_1.mp3
+backslash,https://www.oxfordlearnersdictionaries.com/definition/english/backslash,C2,backslash,dấu gạch chéo ngược,noun,/ˈbækslæʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/backs/backslash__gb_1.mp3
+bullet_point,https://www.oxfordlearnersdictionaries.com/definition/english/bullet-point,B2,bullet point,điểm đầu dòng,noun,/ˈbʊlɪt pɔɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bul/bulle/bullet_point_1_gb_1.mp3
+dash,https://www.oxfordlearnersdictionaries.com/definition/english/dash_1,B2,dash,dấu gạch ngang,noun,/dæʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/das/dash_/dash__gb_1.mp3
+bracket,https://www.oxfordlearnersdictionaries.com/definition/english/bracket_1,C1,bracket,dấu ngoặc,noun,/ˈbrækɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/brack/bracket__gb_1.mp3
+comma,https://www.oxfordlearnersdictionaries.com/definition/english/comma,A2,comma,dấu phẩy,noun,/ˈkɒmə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/comma/comma__gb_1.mp3
+brace,https://www.oxfordlearnersdictionaries.com/definition/english/brace_1,C2,brace,cú đúp,noun,/breɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/brace/brace__gb_1.mp3
+colon,https://www.oxfordlearnersdictionaries.com/definition/english/colon,C1,colon,dấu hai chấm,noun,/ˈkəʊlən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/colon/colon__gb_1.mp3
+asterisk,https://www.oxfordlearnersdictionaries.com/definition/english/asterisk_2,C2,asterisk,dấu hoa thị,noun,/ˈæstərɪsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/aster/asterisk__gb_1.mp3
+ampersand,https://www.oxfordlearnersdictionaries.com/definition/english/ampersand,C2,ampersand,dấu và,noun,/ˈæmpəsænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/amp/amper/ampersand__gb_1.mp3
+ditto,https://www.oxfordlearnersdictionaries.com/definition/english/ditto_1,C2,ditto,như trên,noun,/ˈdɪtəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dit/ditto/ditto__gb_1.mp3
+dot,https://www.oxfordlearnersdictionaries.com/definition/english/dot_1,B2,dot,dấu chấm,noun,/dɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dot/dot__/dot__gb_1.mp3
+inverted_commas,https://www.oxfordlearnersdictionaries.com/definition/english/inverted-commas,C2,inverted commas,dấu phẩy đảo ngược,noun,/ɪnˌvɜːtɪd ˈkɒməz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/inv/inver/inverted_commas_1_gb_1.mp3
+hyphenate,https://www.oxfordlearnersdictionaries.com/definition/english/hyphenate_1,C1,hyphenate,gạch nối,verb,/ˈhaɪfəneɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyp/hyphe/hyphenate__gb_1.mp3
+period,https://www.oxfordlearnersdictionaries.com/definition/english/period_1,B1,period,Giai đoạn,noun,/ˈpɪəriəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/per/perio/period__gb_2.mp3
+hyphen,https://www.oxfordlearnersdictionaries.com/definition/english/hyphen,B2,hyphen,gạch nối,noun,/ˈhaɪfn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyp/hyphe/hyphen__gb_1.mp3
+point,https://www.oxfordlearnersdictionaries.com/definition/english/point_1,B1,point,điểm,noun,/pɔɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/poi/point/point__gb_1.mp3
+pound_sign,https://www.oxfordlearnersdictionaries.com/definition/english/pound-sign,C2,pound sign,ký hiệu bảng Anh,noun,/ˈpaʊnd saɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pou/pound/pound_sign_1_gb_1.mp3
+quotation_marks,https://www.oxfordlearnersdictionaries.com/definition/english/quotation-marks,B1,quotation marks,dấu ngoặc kép,noun,/kwəʊˈteɪʃn mɑːks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/quo/quota/quotation_marks_1_gb_2.mp3
+question_mark,https://www.oxfordlearnersdictionaries.com/definition/english/question-mark,A2,question mark,dấu chấm hỏi,noun,/ˈkwestʃən mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/que/quest/question_mark_1_gb_1.mp3
+quote,https://www.oxfordlearnersdictionaries.com/definition/english/quote_2,B2,quote,trích dẫn,noun,/kwəʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/quo/quote/quote__gb_2.mp3
+punctuation,https://www.oxfordlearnersdictionaries.com/definition/english/punctuation,A2,punctuation,dấu câu,noun,/ˌpʌŋktʃuˈeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pun/punct/punctuation__gb_1.mp3
+semicolon,https://www.oxfordlearnersdictionaries.com/definition/english/semicolon,C1,semicolon,dấu chấm phẩy,noun,/ˌsemiˈkəʊlən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sem/semic/semicolon__gb_2.mp3
+exclamation_mark,https://www.oxfordlearnersdictionaries.com/definition/english/exclamation-mark,B1,exclamation mark,dấu chấm than,noun,/ˌekskləˈmeɪʃn mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exc/excla/exclamation_mark_1_gb_1.mp3
+punctuate,https://www.oxfordlearnersdictionaries.com/definition/english/punctuate,C1,punctuate,chấm câu,verb,/ˈpʌŋktʃueɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pun/punct/punctuate__gb_1.mp3
+punctuation_mark,https://www.oxfordlearnersdictionaries.com/definition/english/punctuation-mark,A2,punctuation mark,dấu chấm câu,noun,/ˌpʌŋktʃuˈeɪʃn mɑːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pun/punct/punctuation_mark_1_gb_1.mp3
+slash,https://www.oxfordlearnersdictionaries.com/definition/english/slash_2,C1,slash,gạch chéo,noun,/slæʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sla/slash/slash__gb_1.mp3
+tilde,https://www.oxfordlearnersdictionaries.com/definition/english/tilde,C2,tilde,dấu ngã,noun,/ˈtɪldə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/til/tilde/tilde__gb_1.mp3
+round_bracket,https://www.oxfordlearnersdictionaries.com/definition/english/round-bracket,C1,round bracket,dấu ngoặc tròn,noun,/ˈraʊnd brækɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rou/round/round_bracket_1_gb_1.mp3

@@ -1,42 +1,42 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-booster,https://www.oxfordlearnersdictionaries.com/definition/english/booster,C2,booster,tăng cường,noun,/ˈbuːstə(r)/,
-cosmonaut,https://www.oxfordlearnersdictionaries.com/definition/english/cosmonaut,C1,cosmonaut,phi hành gia,noun,/ˈkɒzmənɔːt/,
-blast-off,https://www.oxfordlearnersdictionaries.com/definition/english/blast-off_2,C2,blast-off,vụ nổ,noun,/ˈblɑːst ɒf/,
-flying_saucer,https://www.oxfordlearnersdictionaries.com/definition/english/flying-saucer,C2,flying saucer,đĩa bay,noun,/ˌflaɪɪŋ ˈsɔːsə(r)/,
-astronaut,https://www.oxfordlearnersdictionaries.com/definition/english/astronaut,B1,astronaut,phi hành gia,noun,/ˈæstrənɔːt/,
-aerospace,https://www.oxfordlearnersdictionaries.com/definition/english/aerospace,C1,aerospace,hàng không vũ trụ,noun,/ˈeərəʊspeɪs/,
-dock,https://www.oxfordlearnersdictionaries.com/definition/english/dock_2,C2,dock,bến tàu,verb,/dɒk/,
-countdown,https://www.oxfordlearnersdictionaries.com/definition/english/countdown_1,C2,countdown,đếm ngược,noun,/ˈkaʊntdaʊn/,
+booster,https://www.oxfordlearnersdictionaries.com/definition/english/booster,C2,booster,tăng cường,noun,/ˈbuːstə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/boost/booster__gb_1.mp3
+cosmonaut,https://www.oxfordlearnersdictionaries.com/definition/english/cosmonaut,C1,cosmonaut,phi hành gia,noun,/ˈkɒzmənɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cos/cosmo/cosmonaut__gb_1.mp3
+blast-off,https://www.oxfordlearnersdictionaries.com/definition/english/blast-off_2,C2,blast-off,vụ nổ,noun,/ˈblɑːst ɒf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bla/blast/blast_off_1_gb_1.mp3
+flying_saucer,https://www.oxfordlearnersdictionaries.com/definition/english/flying-saucer,C2,flying saucer,đĩa bay,noun,/ˌflaɪɪŋ ˈsɔːsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fly/flyin/flying_saucer_1_gb_1.mp3
+astronaut,https://www.oxfordlearnersdictionaries.com/definition/english/astronaut,B1,astronaut,phi hành gia,noun,/ˈæstrənɔːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ast/astro/astronaut__gb_2.mp3
+aerospace,https://www.oxfordlearnersdictionaries.com/definition/english/aerospace,C1,aerospace,hàng không vũ trụ,noun,/ˈeərəʊspeɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aer/aeros/aerospace__gb_1.mp3
+dock,https://www.oxfordlearnersdictionaries.com/definition/english/dock_2,C2,dock,bến tàu,verb,/dɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/doc/dock_/dock__gb_1.mp3
+countdown,https://www.oxfordlearnersdictionaries.com/definition/english/countdown_1,C2,countdown,đếm ngược,noun,/ˈkaʊntdaʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/count/countdown__gb_1.mp3
 blast_off,https://www.oxfordlearnersdictionaries.com/definition/english/blast-off_1,C2,blast off,nổ tung,phrasal verb,,
-intergalactic,https://www.oxfordlearnersdictionaries.com/definition/english/intergalactic,C2,intergalactic,liên thiên hà,adjective,/ˌɪntəɡəˈlæktɪk/,
-launch,https://www.oxfordlearnersdictionaries.com/definition/english/launch_1,B2,launch,phóng,verb,/lɔːntʃ/,
-interstellar,https://www.oxfordlearnersdictionaries.com/definition/english/interstellar,C2,interstellar,giữa các vì sao,adjective,/ˌɪntəˈstelə(r)/,
-land,https://www.oxfordlearnersdictionaries.com/definition/english/land_2,A2,land,đất,verb,/lænd/,
-landing,https://www.oxfordlearnersdictionaries.com/definition/english/landing,B2,landing,hạ cánh,noun,/ˈlændɪŋ/,
-launch,https://www.oxfordlearnersdictionaries.com/definition/english/launch_2,B2,launch,phóng,noun,/lɔːntʃ/,
-launch_vehicle,https://www.oxfordlearnersdictionaries.com/definition/english/launch-vehicle,C2,launch vehicle,xe phóng,noun,/ˈlɔːntʃ viːɪkl/,
-interplanetary,https://www.oxfordlearnersdictionaries.com/definition/english/interplanetary,C2,interplanetary,liên hành tinh,adjective,/ˌɪntəˈplænɪtri/,
+intergalactic,https://www.oxfordlearnersdictionaries.com/definition/english/intergalactic,C2,intergalactic,liên thiên hà,adjective,/ˌɪntəɡəˈlæktɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/intergalactic__gb_1.mp3
+launch,https://www.oxfordlearnersdictionaries.com/definition/english/launch_1,B2,launch,phóng,verb,/lɔːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lau/launc/launch__gb_1.mp3
+interstellar,https://www.oxfordlearnersdictionaries.com/definition/english/interstellar,C2,interstellar,giữa các vì sao,adjective,/ˌɪntəˈstelə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interstellar__gb_1.mp3
+land,https://www.oxfordlearnersdictionaries.com/definition/english/land_2,A2,land,đất,verb,/lænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/land_/land__gb_1.mp3
+landing,https://www.oxfordlearnersdictionaries.com/definition/english/landing,B2,landing,hạ cánh,noun,/ˈlændɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/landi/landing__gb_1.mp3
+launch,https://www.oxfordlearnersdictionaries.com/definition/english/launch_2,B2,launch,phóng,noun,/lɔːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lau/launc/launch__gb_1.mp3
+launch_vehicle,https://www.oxfordlearnersdictionaries.com/definition/english/launch-vehicle,C2,launch vehicle,xe phóng,noun,/ˈlɔːntʃ viːɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lau/launc/launch_vehicle_1_gb_1.mp3
+interplanetary,https://www.oxfordlearnersdictionaries.com/definition/english/interplanetary,C2,interplanetary,liên hành tinh,adjective,/ˌɪntəˈplænɪtri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/int/inter/interplanetary__gb_1.mp3
 lift_off,https://www.oxfordlearnersdictionaries.com/definition/english/lift-off_1,C1,lift off,nhấc lên,phrasal verb,,
-lift-off,https://www.oxfordlearnersdictionaries.com/definition/english/lift-off_2,C2,lift-off,cất cánh,noun,/ˈlɪft ɒf/,
-mission,https://www.oxfordlearnersdictionaries.com/definition/english/mission,C1,mission,Sứ mệnh,noun,/ˈmɪʃn/,
-nasa,https://www.oxfordlearnersdictionaries.com/definition/english/nasa,C1,NASA,NASA,abbreviation,/ˈnæsə/,
-probe,https://www.oxfordlearnersdictionaries.com/definition/english/probe_1,C2,probe,thăm dò,noun,/prəʊb/,
-rocket,https://www.oxfordlearnersdictionaries.com/definition/english/rocket_1,B2,rocket,tên lửa,noun,/ˈrɒkɪt/,
-pod,https://www.oxfordlearnersdictionaries.com/definition/english/pod,C2,pod,vỏ,noun,/pɒd/,
-satellite,https://www.oxfordlearnersdictionaries.com/definition/english/satellite,B2,satellite,vệ tinh,noun,/ˈsætəlaɪt/,
-spacecraft,https://www.oxfordlearnersdictionaries.com/definition/english/spacecraft,B2,spacecraft,tàu vũ trụ,noun,/ˈspeɪskrɑːft/,
-space_probe,https://www.oxfordlearnersdictionaries.com/definition/english/space-probe,C2,space probe,tàu thăm dò không gian,noun,/ˈspeɪs prəʊb/,
-space_shuttle,https://www.oxfordlearnersdictionaries.com/definition/english/space-shuttle,C1,space shuttle,tàu con thoi,noun,/ˈspeɪs ʃʌtl/,
-spaceship,https://www.oxfordlearnersdictionaries.com/definition/english/spaceship,B1,spaceship,tàu vũ trụ,noun,/ˈspeɪsʃɪp/,
-spacesuit,https://www.oxfordlearnersdictionaries.com/definition/english/spacesuit,B2,spacesuit,bộ đồ du hành vũ trụ,noun,/ˈspeɪssuːt/,
-space_station,https://www.oxfordlearnersdictionaries.com/definition/english/space-station,B1,space station,trạm không gian,noun,/ˈspeɪs steɪʃn/,
-sputnik,https://www.oxfordlearnersdictionaries.com/definition/english/sputnik,C2,sputnik,sputnik,noun,/ˈspʌtnɪk/,
-spacewalk,https://www.oxfordlearnersdictionaries.com/definition/english/spacewalk,B2,spacewalk,đi bộ ngoài không gian,noun,/ˈspeɪswɔːk/,
-spacewoman,https://www.oxfordlearnersdictionaries.com/definition/english/spacewoman,B2,spacewoman,nữ phi hành gia,noun,/ˈspeɪswʊmən/,
-spaceman,https://www.oxfordlearnersdictionaries.com/definition/english/spaceman,B2,spaceman,người du hành vũ trụ,noun,/ˈspeɪsmæn/,
-ufo,https://www.oxfordlearnersdictionaries.com/definition/english/ufo,C1,UFO,UFO,noun,/ˌjuː ef ˈəʊ/,
+lift-off,https://www.oxfordlearnersdictionaries.com/definition/english/lift-off_2,C2,lift-off,cất cánh,noun,/ˈlɪft ɒf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lif/lift_/lift_off_1_gb_1.mp3
+mission,https://www.oxfordlearnersdictionaries.com/definition/english/mission,C1,mission,Sứ mệnh,noun,/ˈmɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/missi/mission__gb_1.mp3
+nasa,https://www.oxfordlearnersdictionaries.com/definition/english/nasa,C1,NASA,NASA,abbreviation,/ˈnæsə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nas/nasa_/nasa__gb_1.mp3
+probe,https://www.oxfordlearnersdictionaries.com/definition/english/probe_1,C2,probe,thăm dò,noun,/prəʊb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/probe/probe__gb_1.mp3
+rocket,https://www.oxfordlearnersdictionaries.com/definition/english/rocket_1,B2,rocket,tên lửa,noun,/ˈrɒkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/roc/rocke/rocket__gb_1.mp3
+pod,https://www.oxfordlearnersdictionaries.com/definition/english/pod,C2,pod,vỏ,noun,/pɒd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pod/pod__/pod__gb_1.mp3
+satellite,https://www.oxfordlearnersdictionaries.com/definition/english/satellite,B2,satellite,vệ tinh,noun,/ˈsætəlaɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sat/satel/satellite__gb_1.mp3
+spacecraft,https://www.oxfordlearnersdictionaries.com/definition/english/spacecraft,B2,spacecraft,tàu vũ trụ,noun,/ˈspeɪskrɑːft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/spacecraft__gb_1.mp3
+space_probe,https://www.oxfordlearnersdictionaries.com/definition/english/space-probe,C2,space probe,tàu thăm dò không gian,noun,/ˈspeɪs prəʊb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/space_probe_1_gb_1.mp3
+space_shuttle,https://www.oxfordlearnersdictionaries.com/definition/english/space-shuttle,C1,space shuttle,tàu con thoi,noun,/ˈspeɪs ʃʌtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/space_shuttle_1_gb_1.mp3
+spaceship,https://www.oxfordlearnersdictionaries.com/definition/english/spaceship,B1,spaceship,tàu vũ trụ,noun,/ˈspeɪsʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/spaceship__gb_1.mp3
+spacesuit,https://www.oxfordlearnersdictionaries.com/definition/english/spacesuit,B2,spacesuit,bộ đồ du hành vũ trụ,noun,/ˈspeɪssuːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/spacesuit__gb_1.mp3
+space_station,https://www.oxfordlearnersdictionaries.com/definition/english/space-station,B1,space station,trạm không gian,noun,/ˈspeɪs steɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/space_station_1_gb_1.mp3
+sputnik,https://www.oxfordlearnersdictionaries.com/definition/english/sputnik,C2,sputnik,sputnik,noun,/ˈspʌtnɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spu/sputn/sputnik__gb_1.mp3
+spacewalk,https://www.oxfordlearnersdictionaries.com/definition/english/spacewalk,B2,spacewalk,đi bộ ngoài không gian,noun,/ˈspeɪswɔːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/spacewalk__gb_1.mp3
+spacewoman,https://www.oxfordlearnersdictionaries.com/definition/english/spacewoman,B2,spacewoman,nữ phi hành gia,noun,/ˈspeɪswʊmən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/spacewoman__gb_1.mp3
+spaceman,https://www.oxfordlearnersdictionaries.com/definition/english/spaceman,B2,spaceman,người du hành vũ trụ,noun,/ˈspeɪsmæn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spa/space/spaceman__gb_1.mp3
+ufo,https://www.oxfordlearnersdictionaries.com/definition/english/ufo,C1,UFO,UFO,noun,/ˌjuː ef ˈəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/ufo/ufo__/ufo__gb_1.mp3
 take_off,https://www.oxfordlearnersdictionaries.com/definition/english/take-off_1,A2,take off,cởi,phrasal verb,,
-weightlessness,https://www.oxfordlearnersdictionaries.com/definition/english/weightlessness,C1,weightlessness,không trọng lượng,noun,/ˈweɪtləsnəs/,
-take-off,https://www.oxfordlearnersdictionaries.com/definition/english/take-off_2,B2,take-off,cởi,noun,/ˈteɪk ɒf/,
-weightless,https://www.oxfordlearnersdictionaries.com/definition/english/weightless,C1,weightless,không trọng lượng,adjective,/ˈweɪtləs/,
-voyage,https://www.oxfordlearnersdictionaries.com/definition/english/voyage_1,B2,voyage,chuyến đi,noun,/ˈvɔɪɪdʒ/,
+weightlessness,https://www.oxfordlearnersdictionaries.com/definition/english/weightlessness,C1,weightlessness,không trọng lượng,noun,/ˈweɪtləsnəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wei/weigh/weightlessness__gb_1.mp3
+take-off,https://www.oxfordlearnersdictionaries.com/definition/english/take-off_2,B2,take-off,cởi,noun,/ˈteɪk ɒf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tak/take_/take_off_1_gb_3.mp3
+weightless,https://www.oxfordlearnersdictionaries.com/definition/english/weightless,C1,weightless,không trọng lượng,adjective,/ˈweɪtləs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wei/weigh/weightless__gb_1.mp3
+voyage,https://www.oxfordlearnersdictionaries.com/definition/english/voyage_1,B2,voyage,chuyến đi,noun,/ˈvɔɪɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/voy/voyag/voyage__gb_1.mp3

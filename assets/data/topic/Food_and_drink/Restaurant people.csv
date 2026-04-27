@@ -1,21 +1,21 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-commis,https://www.oxfordlearnersdictionaries.com/definition/english/commis,C2,commis,dấu phẩy,noun,/ˈkɒmi/,
-regular,https://www.oxfordlearnersdictionaries.com/definition/english/regular_2,C1,regular,thường xuyên,noun,/ˈreɡjələ(r)/,
-server,https://www.oxfordlearnersdictionaries.com/definition/english/server,B2,server,máy chủ,noun,/ˈsɜːvə(r)/,
-greeter,https://www.oxfordlearnersdictionaries.com/definition/english/greeter,C2,greeter,người chào hỏi,noun,/ˈɡriːtə(r)/,
-cook,https://www.oxfordlearnersdictionaries.com/definition/english/cook_2,A2,cook,đầu bếp,noun,/kʊk/,
-chef,https://www.oxfordlearnersdictionaries.com/definition/english/chef,A2,chef,đầu bếp,noun,/ʃef/,
-diner,https://www.oxfordlearnersdictionaries.com/definition/english/diner,C1,diner,quán ăn,noun,/ˈdaɪnə(r)/,
-busboy,https://www.oxfordlearnersdictionaries.com/definition/english/busboy,C2,busboy,chàng trai phục vụ bàn,noun,/ˈbʌsbɔɪ/,
-maître_d’,https://www.oxfordlearnersdictionaries.com/definition/english/maitre-d,C2,maître d’,maître d’,noun,/ˌmeɪtrə ˈdiː/,
-kitchen_porter,https://www.oxfordlearnersdictionaries.com/definition/english/kitchen-porter,C2,kitchen porter,người khuân vác nhà bếp,noun,/ˌkɪtʃɪn ˈpɔːtə(r)/,
-valet,https://www.oxfordlearnersdictionaries.com/definition/english/valet_1,C2,valet,người hầu,noun,/ˈvæleɪ/,
-waitstaff,https://www.oxfordlearnersdictionaries.com/definition/english/waitstaff,C2,waitstaff,nhân viên phục vụ bàn,noun,/ˈweɪtstɑːf/,
-waiter,https://www.oxfordlearnersdictionaries.com/definition/english/waiter,A1,waiter,phục vụ nam,noun,/ˈweɪtə(r)/,
-short-order_cook,https://www.oxfordlearnersdictionaries.com/definition/english/short-order-cook,C2,short-order cook,đầu bếp gọi món ngắn hạn,noun,/ˌʃɔːt ɔːdə ˈkʊk/,
-waitress,https://www.oxfordlearnersdictionaries.com/definition/english/waitress,B1,waitress,cô hầu bàn,noun,/ˈweɪtrəs/,
-waitperson,https://www.oxfordlearnersdictionaries.com/definition/english/waitperson,C2,waitperson,người hầu bàn,noun,/ˈweɪtpɜːsn/,
-sous-chef,https://www.oxfordlearnersdictionaries.com/definition/english/sous-chef,C2,sous-chef,đầu bếp phó,noun,/ˈsuː ʃef/,
-sommelier,https://www.oxfordlearnersdictionaries.com/definition/english/sommelier,C2,sommelier,người pha rượu,noun,/səˈmelɪeɪ/,
-wine_waiter,https://www.oxfordlearnersdictionaries.com/definition/english/wine-waiter,B1,wine waiter,người phục vụ rượu,noun,/ˈwaɪn weɪtə(r)/,
-wine_steward,https://www.oxfordlearnersdictionaries.com/definition/english/wine-steward,C2,wine steward,người quản lý rượu,noun,/ˈwaɪn stjuːəd/,
+commis,https://www.oxfordlearnersdictionaries.com/definition/english/commis,C2,commis,dấu phẩy,noun,/ˈkɒmi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commi/commis__gb_1.mp3
+regular,https://www.oxfordlearnersdictionaries.com/definition/english/regular_2,C1,regular,thường xuyên,noun,/ˈreɡjələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/regul/regular__gb_1.mp3
+server,https://www.oxfordlearnersdictionaries.com/definition/english/server,B2,server,máy chủ,noun,/ˈsɜːvə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/ser/serve/server__gb_1.mp3
+greeter,https://www.oxfordlearnersdictionaries.com/definition/english/greeter,C2,greeter,người chào hỏi,noun,/ˈɡriːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/greet/greeter__gb_1.mp3
+cook,https://www.oxfordlearnersdictionaries.com/definition/english/cook_2,A2,cook,đầu bếp,noun,/kʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cook_/cook__gb_3.mp3
+chef,https://www.oxfordlearnersdictionaries.com/definition/english/chef,A2,chef,đầu bếp,noun,/ʃef/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chef_/chef__gb_2.mp3
+diner,https://www.oxfordlearnersdictionaries.com/definition/english/diner,C1,diner,quán ăn,noun,/ˈdaɪnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/din/diner/diner__gb_2.mp3
+busboy,https://www.oxfordlearnersdictionaries.com/definition/english/busboy,C2,busboy,chàng trai phục vụ bàn,noun,/ˈbʌsbɔɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bus/busbo/busboy__gb_2.mp3
+maître_d’,https://www.oxfordlearnersdictionaries.com/definition/english/maitre-d,C2,maître d’,maître d’,noun,/ˌmeɪtrə ˈdiː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mai/maitr/maitre_d__1_gb_1.mp3
+kitchen_porter,https://www.oxfordlearnersdictionaries.com/definition/english/kitchen-porter,C2,kitchen porter,người khuân vác nhà bếp,noun,/ˌkɪtʃɪn ˈpɔːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kit/kitch/kitchen_porter_1_gb_1.mp3
+valet,https://www.oxfordlearnersdictionaries.com/definition/english/valet_1,C2,valet,người hầu,noun,/ˈvæleɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/val/valet/valet__gb_1.mp3
+waitstaff,https://www.oxfordlearnersdictionaries.com/definition/english/waitstaff,C2,waitstaff,nhân viên phục vụ bàn,noun,/ˈweɪtstɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wai/waits/waitstaff__gb_1.mp3
+waiter,https://www.oxfordlearnersdictionaries.com/definition/english/waiter,A1,waiter,phục vụ nam,noun,/ˈweɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wai/waite/waiter__gb_2.mp3
+short-order_cook,https://www.oxfordlearnersdictionaries.com/definition/english/short-order-cook,C2,short-order cook,đầu bếp gọi món ngắn hạn,noun,/ˌʃɔːt ɔːdə ˈkʊk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/short/short_order_cook_1_gb_1.mp3
+waitress,https://www.oxfordlearnersdictionaries.com/definition/english/waitress,B1,waitress,cô hầu bàn,noun,/ˈweɪtrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wai/waitr/waitress__gb_1.mp3
+waitperson,https://www.oxfordlearnersdictionaries.com/definition/english/waitperson,C2,waitperson,người hầu bàn,noun,/ˈweɪtpɜːsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wai/waitp/waitperson__gb_1.mp3
+sous-chef,https://www.oxfordlearnersdictionaries.com/definition/english/sous-chef,C2,sous-chef,đầu bếp phó,noun,/ˈsuː ʃef/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sou/sous_/sous_chef_1_gb_1.mp3
+sommelier,https://www.oxfordlearnersdictionaries.com/definition/english/sommelier,C2,sommelier,người pha rượu,noun,/səˈmelɪeɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/som/somme/sommelier__gb_1.mp3
+wine_waiter,https://www.oxfordlearnersdictionaries.com/definition/english/wine-waiter,B1,wine waiter,người phục vụ rượu,noun,/ˈwaɪn weɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wine_/wine_waiter_1_gb_1.mp3
+wine_steward,https://www.oxfordlearnersdictionaries.com/definition/english/wine-steward,C2,wine steward,người quản lý rượu,noun,/ˈwaɪn stjuːəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wine_/wine_steward_1_gb_1.mp3

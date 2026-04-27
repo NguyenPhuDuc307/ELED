@@ -1,49 +1,49 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-abridgement,https://www.oxfordlearnersdictionaries.com/definition/english/abridgement,C2,abridgement,sự rút gọn,noun,/əˈbrɪdʒmənt/,
-abridge,https://www.oxfordlearnersdictionaries.com/definition/english/abridge,C2,abridge,rút ngắn lại,verb,/əˈbrɪdʒ/,
-compose,https://www.oxfordlearnersdictionaries.com/definition/english/compose,C1,compose,soạn,verb,/kəmˈpəʊz/,
-co-authorship,https://www.oxfordlearnersdictionaries.com/definition/english/co-authorship,C2,co-authorship,đồng tác giả,noun,/ˌkəʊ ˈɔːθəʃɪp/,
-commission,https://www.oxfordlearnersdictionaries.com/definition/english/commission_2,B2,commission,nhiệm vụ,verb,/kəˈmɪʃn/,
-chronicle,https://www.oxfordlearnersdictionaries.com/definition/english/chronicle_2,C2,chronicle,biên niên sử,verb,/ˈkrɒnɪkl/,
-author,https://www.oxfordlearnersdictionaries.com/definition/english/author_2,B2,author,tác giả,verb,/ˈɔːθə(r)/,
-adapt,https://www.oxfordlearnersdictionaries.com/definition/english/adapt,B2,adapt,thích nghi,verb,/əˈdæpt/,
-dictate,https://www.oxfordlearnersdictionaries.com/definition/english/dictate_1,C1,dictate,ra lệnh,verb,/dɪkˈteɪt/,
-abridged,https://www.oxfordlearnersdictionaries.com/definition/english/abridged,C2,abridged,rút gọn,adjective,/əˈbrɪdʒd/,
-co-author,https://www.oxfordlearnersdictionaries.com/definition/english/co-author_1,C1,co-author,đồng tác giả,verb,/ˌkəʊ ˈɔːθə(r)/,
-draft,https://www.oxfordlearnersdictionaries.com/definition/english/draft_2,B2,draft,bản nháp,verb,/drɑːft/,
-edit,https://www.oxfordlearnersdictionaries.com/definition/english/edit_2,B2,edit,biên tập,verb,/ˈedɪt/,
-highbrow,https://www.oxfordlearnersdictionaries.com/definition/english/highbrow,C2,highbrow,trí thức,adjective,/ˈhaɪbraʊ/,
-gloss,https://www.oxfordlearnersdictionaries.com/definition/english/gloss_2,C2,gloss,độ bóng,verb,/ɡlɒs/,
-illustrate,https://www.oxfordlearnersdictionaries.com/definition/english/illustrate,B2,illustrate,minh họa,verb,/ˈɪləstreɪt/,
-ghostwrite,https://www.oxfordlearnersdictionaries.com/definition/english/ghostwrite,C2,ghostwrite,viết ma,verb,/ˈɡəʊstraɪt/,
-get_into_print,https://www.oxfordlearnersdictionaries.com/definition/english/print_2,C1,get into print,đi vào in ấn,noun,/prɪnt/,
-inspiration,https://www.oxfordlearnersdictionaries.com/definition/english/inspiration,C1,inspiration,cảm hứng,noun,/ˌɪnspəˈreɪʃn/,
-inspire,https://www.oxfordlearnersdictionaries.com/definition/english/inspire,B2,inspire,truyền cảm hứng,verb,/ɪnˈspaɪə(r)/,
-literature,https://www.oxfordlearnersdictionaries.com/definition/english/literature,B1,literature,văn học,noun,/ˈlɪtrətʃə(r)/,
-lowbrow,https://www.oxfordlearnersdictionaries.com/definition/english/lowbrow,C2,lowbrow,người có trí tuệ thấp,adjective,/ˈləʊbraʊ/,
-limited_edition,https://www.oxfordlearnersdictionaries.com/definition/english/limited-edition,C2,limited edition,phiên bản giới hạn,noun,/ˌlɪmɪtɪd ɪˈdɪʃn/,
+abridgement,https://www.oxfordlearnersdictionaries.com/definition/english/abridgement,C2,abridgement,sự rút gọn,noun,/əˈbrɪdʒmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abr/abrid/abridgement__gb_1.mp3
+abridge,https://www.oxfordlearnersdictionaries.com/definition/english/abridge,C2,abridge,rút ngắn lại,verb,/əˈbrɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abr/abrid/abridge__gb_1.mp3
+compose,https://www.oxfordlearnersdictionaries.com/definition/english/compose,C1,compose,soạn,verb,/kəmˈpəʊz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/compo/compose__gb_1.mp3
+co-authorship,https://www.oxfordlearnersdictionaries.com/definition/english/co-authorship,C2,co-authorship,đồng tác giả,noun,/ˌkəʊ ˈɔːθəʃɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/co_/co_au/co_authorship_1_gb_1.mp3
+commission,https://www.oxfordlearnersdictionaries.com/definition/english/commission_2,B2,commission,nhiệm vụ,verb,/kəˈmɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commi/commission__gb_2.mp3
+chronicle,https://www.oxfordlearnersdictionaries.com/definition/english/chronicle_2,C2,chronicle,biên niên sử,verb,/ˈkrɒnɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/chr/chron/chronicle__gb_1.mp3
+author,https://www.oxfordlearnersdictionaries.com/definition/english/author_2,B2,author,tác giả,verb,/ˈɔːθə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/aut/autho/author__gb_2.mp3
+adapt,https://www.oxfordlearnersdictionaries.com/definition/english/adapt,B2,adapt,thích nghi,verb,/əˈdæpt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ada/adapt/adapt__gb_2.mp3
+dictate,https://www.oxfordlearnersdictionaries.com/definition/english/dictate_1,C1,dictate,ra lệnh,verb,/dɪkˈteɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dic/dicta/dictate__gb_1.mp3
+abridged,https://www.oxfordlearnersdictionaries.com/definition/english/abridged,C2,abridged,rút gọn,adjective,/əˈbrɪdʒd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/abr/abrid/abridged__gb_1.mp3
+co-author,https://www.oxfordlearnersdictionaries.com/definition/english/co-author_1,C1,co-author,đồng tác giả,verb,/ˌkəʊ ˈɔːθə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/co_/co_au/co_author_1_gb_1.mp3
+draft,https://www.oxfordlearnersdictionaries.com/definition/english/draft_2,B2,draft,bản nháp,verb,/drɑːft/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/draft/draft__gb_3.mp3
+edit,https://www.oxfordlearnersdictionaries.com/definition/english/edit_2,B2,edit,biên tập,verb,/ˈedɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/edi/edit_/edit__gb_2.mp3
+highbrow,https://www.oxfordlearnersdictionaries.com/definition/english/highbrow,C2,highbrow,trí thức,adjective,/ˈhaɪbraʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hig/highb/highbrow__gb_1.mp3
+gloss,https://www.oxfordlearnersdictionaries.com/definition/english/gloss_2,C2,gloss,độ bóng,verb,/ɡlɒs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/glo/gloss/gloss__gb_2.mp3
+illustrate,https://www.oxfordlearnersdictionaries.com/definition/english/illustrate,B2,illustrate,minh họa,verb,/ˈɪləstreɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ill/illus/illustrate__gb_3.mp3
+ghostwrite,https://www.oxfordlearnersdictionaries.com/definition/english/ghostwrite,C2,ghostwrite,viết ma,verb,/ˈɡəʊstraɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gho/ghost/ghostwrite__gb_1.mp3
+get_into_print,https://www.oxfordlearnersdictionaries.com/definition/english/print_2,C1,get into print,đi vào in ấn,noun,/prɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/print/print__gb_1.mp3
+inspiration,https://www.oxfordlearnersdictionaries.com/definition/english/inspiration,C1,inspiration,cảm hứng,noun,/ˌɪnspəˈreɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/inspi/inspiration__gb_1.mp3
+inspire,https://www.oxfordlearnersdictionaries.com/definition/english/inspire,B2,inspire,truyền cảm hứng,verb,/ɪnˈspaɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/inspi/inspire__gb_1.mp3
+literature,https://www.oxfordlearnersdictionaries.com/definition/english/literature,B1,literature,văn học,noun,/ˈlɪtrətʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lit/liter/literature__gb_3.mp3
+lowbrow,https://www.oxfordlearnersdictionaries.com/definition/english/lowbrow,C2,lowbrow,người có trí tuệ thấp,adjective,/ˈləʊbraʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/low/lowbr/lowbrow__gb_1.mp3
+limited_edition,https://www.oxfordlearnersdictionaries.com/definition/english/limited-edition,C2,limited edition,phiên bản giới hạn,noun,/ˌlɪmɪtɪd ɪˈdɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lim/limit/limited_edition_1_gb_1.mp3
 jot_down,https://www.oxfordlearnersdictionaries.com/definition/english/jot-down,C1,jot down,ghi lại,phrasal verb,,
-lampoon,https://www.oxfordlearnersdictionaries.com/definition/english/lampoon_1,C2,lampoon,đèn đả kích,verb,/læmˈpuːn/,
-magnum_opus,https://www.oxfordlearnersdictionaries.com/definition/english/magnum-opus,C2,magnum opus,kiệt tác,noun,/ˌmæɡnəm ˈəʊpəs/,
-masterpiece,https://www.oxfordlearnersdictionaries.com/definition/english/masterpiece_1,B2,masterpiece,kiệt tác,noun,/ˈmɑːstəpiːs/,
-masterwork,https://www.oxfordlearnersdictionaries.com/definition/english/masterwork,C2,masterwork,kiệt tác,noun,/ˈmɑːstəwɜːk/,
-muse,https://www.oxfordlearnersdictionaries.com/definition/english/muse_1,C2,muse,nàng thơ,noun,/mjuːz/,
-proofread,https://www.oxfordlearnersdictionaries.com/definition/english/proofread,C1,proofread,hiệu đính,verb,/ˈpruːfriːd/,
-parody,https://www.oxfordlearnersdictionaries.com/definition/english/parody_2,C2,parody,sự nhại lại,verb,/ˈpærədi/,
-print,https://www.oxfordlearnersdictionaries.com/definition/english/print_1,A2,print,in,verb,/prɪnt/,
-publication,https://www.oxfordlearnersdictionaries.com/definition/english/publication,B2,publication,công bố,noun,/ˌpʌblɪˈkeɪʃn/,
-plot,https://www.oxfordlearnersdictionaries.com/definition/english/plot_2,B2,plot,kịch bản,verb,/plɒt/,
-pen,https://www.oxfordlearnersdictionaries.com/definition/english/pen_2,C2,pen,cái bút,verb,/pen/,
-publish,https://www.oxfordlearnersdictionaries.com/definition/english/publish,A2,publish,xuất bản,verb,/ˈpʌblɪʃ/,
-publishing,https://www.oxfordlearnersdictionaries.com/definition/english/publishing,B2,publishing,xuất bản,noun,/ˈpʌblɪʃɪŋ/,
-quote,https://www.oxfordlearnersdictionaries.com/definition/english/quote_1,B1,quote,trích dẫn,verb,/kwəʊt/,
-review,https://www.oxfordlearnersdictionaries.com/definition/english/review_2,A2,review,ôn tập,verb,/rɪˈvjuː/,
-scribble,https://www.oxfordlearnersdictionaries.com/definition/english/scribble_1,C2,scribble,viết nguệch ngoạc,verb,/ˈskrɪbl/,
-satirize,https://www.oxfordlearnersdictionaries.com/definition/english/satirize,C2,satirize,châm biếm,verb,/ˈsætəraɪz/,
-typesetting,https://www.oxfordlearnersdictionaries.com/definition/english/typesetting,C2,typesetting,sắp chữ,noun,/ˈtaɪpsetɪŋ/,
-typeset,https://www.oxfordlearnersdictionaries.com/definition/english/typeset,C2,typeset,bộ sắp chữ,verb,/ˈtaɪpset/,
-writing,https://www.oxfordlearnersdictionaries.com/definition/english/writing,A1,writing,viết,noun,/ˈraɪtɪŋ/,
-write,https://www.oxfordlearnersdictionaries.com/definition/english/write,A1,write,viết,verb,/raɪt/,
-young_adult,https://www.oxfordlearnersdictionaries.com/definition/english/young-adult_2,B1,young adult,thanh niên,adjective,/ˌjʌŋ ˈædʌlt/,
-versification,https://www.oxfordlearnersdictionaries.com/definition/english/versification,C2,versification,sự đa dạng hóa,noun,/ˌvɜːsɪfɪˈkeɪʃn/,
-script,https://www.oxfordlearnersdictionaries.com/definition/english/script_2,C1,script,kịch bản,verb,/skrɪpt/,
+lampoon,https://www.oxfordlearnersdictionaries.com/definition/english/lampoon_1,C2,lampoon,đèn đả kích,verb,/læmˈpuːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lam/lampo/lampoon__gb_1.mp3
+magnum_opus,https://www.oxfordlearnersdictionaries.com/definition/english/magnum-opus,C2,magnum opus,kiệt tác,noun,/ˌmæɡnəm ˈəʊpəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mag/magnu/magnum_opus_1_gb_1.mp3
+masterpiece,https://www.oxfordlearnersdictionaries.com/definition/english/masterpiece_1,B2,masterpiece,kiệt tác,noun,/ˈmɑːstəpiːs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/maste/masterpiece__gb_1.mp3
+masterwork,https://www.oxfordlearnersdictionaries.com/definition/english/masterwork,C2,masterwork,kiệt tác,noun,/ˈmɑːstəwɜːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mas/maste/masterwork__gb_1.mp3
+muse,https://www.oxfordlearnersdictionaries.com/definition/english/muse_1,C2,muse,nàng thơ,noun,/mjuːz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mus/muse_/muse__gb_1.mp3
+proofread,https://www.oxfordlearnersdictionaries.com/definition/english/proofread,C1,proofread,hiệu đính,verb,/ˈpruːfriːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proof/proofread__gb_1.mp3
+parody,https://www.oxfordlearnersdictionaries.com/definition/english/parody_2,C2,parody,sự nhại lại,verb,/ˈpærədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/parod/parody__gb_1.mp3
+print,https://www.oxfordlearnersdictionaries.com/definition/english/print_1,A2,print,in,verb,/prɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pri/print/print__gb_1.mp3
+publication,https://www.oxfordlearnersdictionaries.com/definition/english/publication,B2,publication,công bố,noun,/ˌpʌblɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/publication__gb_1.mp3
+plot,https://www.oxfordlearnersdictionaries.com/definition/english/plot_2,B2,plot,kịch bản,verb,/plɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/plo/plot_/plot__gb_2.mp3
+pen,https://www.oxfordlearnersdictionaries.com/definition/english/pen_2,C2,pen,cái bút,verb,/pen/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/pen__/pen__gb_2.mp3
+publish,https://www.oxfordlearnersdictionaries.com/definition/english/publish,A2,publish,xuất bản,verb,/ˈpʌblɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/publish__gb_2.mp3
+publishing,https://www.oxfordlearnersdictionaries.com/definition/english/publishing,B2,publishing,xuất bản,noun,/ˈpʌblɪʃɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pub/publi/publishing__gb_1.mp3
+quote,https://www.oxfordlearnersdictionaries.com/definition/english/quote_1,B1,quote,trích dẫn,verb,/kwəʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/quo/quote/quote__gb_2.mp3
+review,https://www.oxfordlearnersdictionaries.com/definition/english/review_2,A2,review,ôn tập,verb,/rɪˈvjuː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rev/revie/review__gb_2.mp3
+scribble,https://www.oxfordlearnersdictionaries.com/definition/english/scribble_1,C2,scribble,viết nguệch ngoạc,verb,/ˈskrɪbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrib/scribble__gb_1.mp3
+satirize,https://www.oxfordlearnersdictionaries.com/definition/english/satirize,C2,satirize,châm biếm,verb,/ˈsætəraɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sat/satir/satirize__gb_1.mp3
+typesetting,https://www.oxfordlearnersdictionaries.com/definition/english/typesetting,C2,typesetting,sắp chữ,noun,/ˈtaɪpsetɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/typ/types/typesetting__gb_1.mp3
+typeset,https://www.oxfordlearnersdictionaries.com/definition/english/typeset,C2,typeset,bộ sắp chữ,verb,/ˈtaɪpset/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/typ/types/typeset__gb_1.mp3
+writing,https://www.oxfordlearnersdictionaries.com/definition/english/writing,A1,writing,viết,noun,/ˈraɪtɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wri/writi/writing__gb_1.mp3
+write,https://www.oxfordlearnersdictionaries.com/definition/english/write,A1,write,viết,verb,/raɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rig/right/right__gb_4.mp3
+young_adult,https://www.oxfordlearnersdictionaries.com/definition/english/young-adult_2,B1,young adult,thanh niên,adjective,/ˌjʌŋ ˈædʌlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/young/young_adult_1_gb_1.mp3
+versification,https://www.oxfordlearnersdictionaries.com/definition/english/versification,C2,versification,sự đa dạng hóa,noun,/ˌvɜːsɪfɪˈkeɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/ver/versi/versification__gb_1.mp3
+script,https://www.oxfordlearnersdictionaries.com/definition/english/script_2,C1,script,kịch bản,verb,/skrɪpt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrip/script__gb_1.mp3

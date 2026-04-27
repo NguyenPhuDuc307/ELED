@@ -1,44 +1,44 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-flanker,https://www.oxfordlearnersdictionaries.com/definition/english/flanker,C2,flanker,người ở bên sườn,noun,/ˈflæŋkə(r)/,
-backline,https://www.oxfordlearnersdictionaries.com/definition/english/backline,C2,backline,tuyến sau,noun,/ˈbæklaɪn/,
-fly_half,https://www.oxfordlearnersdictionaries.com/definition/english/fly-half,C2,fly half,bay một nửa,noun,/ˌflaɪ ˈhɑːf/,
-free_kick,https://www.oxfordlearnersdictionaries.com/definition/english/free-kick,B2,free kick,đá phạt,noun,/ˌfriː ˈkɪk/,
-drop_kick,https://www.oxfordlearnersdictionaries.com/definition/english/drop-kick_1,C2,drop kick,thả đá,noun,/ˈdrɒp kɪk/,
-drop-kick,https://www.oxfordlearnersdictionaries.com/definition/english/drop-kick_2,C2,drop-kick,cú đá rơi,verb,/ˈdrɒp kɪk/,
-field_goal,https://www.oxfordlearnersdictionaries.com/definition/english/field-goal,C2,field goal,mục tiêu sân cỏ,noun,/ˈfiːld ɡəʊl/,
-convert,https://www.oxfordlearnersdictionaries.com/definition/english/convert_1,C2,convert,chuyển thành,verb,/kənˈvɜːt/,
-drop_goal,https://www.oxfordlearnersdictionaries.com/definition/english/drop-goal,C2,drop goal,thả mục tiêu,noun,/ˈdrɒp ɡəʊl/,
-conversion,https://www.oxfordlearnersdictionaries.com/definition/english/conversion,C2,conversion,chuyển đổi,noun,/kənˈvɜːʃn/,
-handoff,https://www.oxfordlearnersdictionaries.com/definition/english/handoff,C2,handoff,chuyển giao,noun,/ˈhændɒf/,
-kicker,https://www.oxfordlearnersdictionaries.com/definition/english/kicker,C2,kicker,người đá bóng,noun,/ˈkɪkə(r)/,
-in-goal_area,https://www.oxfordlearnersdictionaries.com/definition/english/in-goal-area,C2,in-goal area,khu vực trong khung thành,noun,/ˈɪn ɡəʊl eəriə/,
-full_back,https://www.oxfordlearnersdictionaries.com/definition/english/full-back,C2,full back,lưng đầy đủ,noun,/ˈfʊl bæk/,
-half_back,https://www.oxfordlearnersdictionaries.com/definition/english/half-back,C2,half back,nửa lưng,noun,/ˈhɑːf bæk/,
-lock,https://www.oxfordlearnersdictionaries.com/definition/english/lock_2,C2,lock,khóa,noun,/lɒk/,
-line-out,https://www.oxfordlearnersdictionaries.com/definition/english/line-out,C2,line-out,xếp hàng,noun,/ˈlaɪn aʊt/,
-hooker,https://www.oxfordlearnersdictionaries.com/definition/english/hooker,C2,hooker,gái điếm,noun,/ˈhʊkə(r)/,
-place_kick,https://www.oxfordlearnersdictionaries.com/definition/english/place-kick,C2,place kick,nơi đá,noun,/ˈpleɪs kɪk/,
-no_side,https://www.oxfordlearnersdictionaries.com/definition/english/no-side,C2,no side,không có bên,noun,/ˌnəʊ ˈsaɪd/,
-prop,https://www.oxfordlearnersdictionaries.com/definition/english/prop_1,C2,prop,chống đỡ,noun,/prɒp/,
-punt,https://www.oxfordlearnersdictionaries.com/definition/english/punt_1,C2,punt,thuyền đánh cá,noun,/pʌnt/,
-loose_head,https://www.oxfordlearnersdictionaries.com/definition/english/loose-head,C2,loose head,đầu lỏng lẻo,noun,/ˌluːs ˈhed/,
-rugby,https://www.oxfordlearnersdictionaries.com/definition/english/rugby,B1,rugby,bóng bầu dục,noun,/ˈrʌɡbi/,
-put-in,https://www.oxfordlearnersdictionaries.com/definition/english/put-in_2,C2,put-in,đưa vào,noun,/ˈpʊt ɪn/,
-ruck,https://www.oxfordlearnersdictionaries.com/definition/english/ruck_1,C2,ruck,sự hỗn loạn,noun,/rʌk/,
-loose_forward,https://www.oxfordlearnersdictionaries.com/definition/english/loose-forward,C2,loose forward,thả lỏng về phía trước,noun,/ˌluːs ˈfɔːwəd/,
-scrum,https://www.oxfordlearnersdictionaries.com/definition/english/scrum,C2,scrum,cặn bã,noun,/skrʌm/,
-rugby_union,https://www.oxfordlearnersdictionaries.com/definition/english/rugby-union,C2,Rugby Union,Liên đoàn bóng bầu dục,noun,/ˌrʌɡbi ˈjuːniən/,
-scrum_half,https://www.oxfordlearnersdictionaries.com/definition/english/scrum-half,C2,scrum half,một nửa,noun,/ˌskrʌm ˈhɑːf/,
-rugger,https://www.oxfordlearnersdictionaries.com/definition/english/rugger,C2,rugger,kẻ cướp,noun,/ˈrʌɡə(r)/,
-springbok,https://www.oxfordlearnersdictionaries.com/definition/english/springbok,C2,springbok,lò xo,noun,/ˈsprɪŋbɒk/,
-rugby_league,https://www.oxfordlearnersdictionaries.com/definition/english/rugby-league,C2,Rugby League,Giải bóng bầu dục,noun,/ˌrʌɡbi ˈliːɡ/,
+flanker,https://www.oxfordlearnersdictionaries.com/definition/english/flanker,C2,flanker,người ở bên sườn,noun,/ˈflæŋkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flank/flanker__gb_1.mp3
+backline,https://www.oxfordlearnersdictionaries.com/definition/english/backline,C2,backline,tuyến sau,noun,/ˈbæklaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bac/backl/backline__gb_1.mp3
+fly_half,https://www.oxfordlearnersdictionaries.com/definition/english/fly-half,C2,fly half,bay một nửa,noun,/ˌflaɪ ˈhɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fly/fly_h/fly_half_1_gb_1.mp3
+free_kick,https://www.oxfordlearnersdictionaries.com/definition/english/free-kick,B2,free kick,đá phạt,noun,/ˌfriː ˈkɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fre/free_/free_kick_1_gb_1.mp3
+drop_kick,https://www.oxfordlearnersdictionaries.com/definition/english/drop-kick_1,C2,drop kick,thả đá,noun,/ˈdrɒp kɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drop_/drop_kick_1_gb_1.mp3
+drop-kick,https://www.oxfordlearnersdictionaries.com/definition/english/drop-kick_2,C2,drop-kick,cú đá rơi,verb,/ˈdrɒp kɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drop_/drop_kick_1_gb_1.mp3
+field_goal,https://www.oxfordlearnersdictionaries.com/definition/english/field-goal,C2,field goal,mục tiêu sân cỏ,noun,/ˈfiːld ɡəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fie/field/field_goal_1_gb_1.mp3
+convert,https://www.oxfordlearnersdictionaries.com/definition/english/convert_1,C2,convert,chuyển thành,verb,/kənˈvɜːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconv/xconvert__gb_3.mp3
+drop_goal,https://www.oxfordlearnersdictionaries.com/definition/english/drop-goal,C2,drop goal,thả mục tiêu,noun,/ˈdrɒp ɡəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dro/drop_/drop_goal_1_gb_1.mp3
+conversion,https://www.oxfordlearnersdictionaries.com/definition/english/conversion,C2,conversion,chuyển đổi,noun,/kənˈvɜːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconv/xconversion__gb_1.mp3
+handoff,https://www.oxfordlearnersdictionaries.com/definition/english/handoff,C2,handoff,chuyển giao,noun,/ˈhændɒf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/han/hando/handoff__gb_1.mp3
+kicker,https://www.oxfordlearnersdictionaries.com/definition/english/kicker,C2,kicker,người đá bóng,noun,/ˈkɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kic/kicke/kicker__gb_1.mp3
+in-goal_area,https://www.oxfordlearnersdictionaries.com/definition/english/in-goal-area,C2,in-goal area,khu vực trong khung thành,noun,/ˈɪn ɡəʊl eəriə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/in_/in_go/in_goal_area_1_gb_1.mp3
+full_back,https://www.oxfordlearnersdictionaries.com/definition/english/full-back,C2,full back,lưng đầy đủ,noun,/ˈfʊl bæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/ful/full_/full_back_1_gb_2.mp3
+half_back,https://www.oxfordlearnersdictionaries.com/definition/english/half-back,C2,half back,nửa lưng,noun,/ˈhɑːf bæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hal/half_/half_back_1_gb_2.mp3
+lock,https://www.oxfordlearnersdictionaries.com/definition/english/lock_2,C2,lock,khóa,noun,/lɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loc/lock_/lock__gb_1.mp3
+line-out,https://www.oxfordlearnersdictionaries.com/definition/english/line-out,C2,line-out,xếp hàng,noun,/ˈlaɪn aʊt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lin/line_/line_out_1_gb_1.mp3
+hooker,https://www.oxfordlearnersdictionaries.com/definition/english/hooker,C2,hooker,gái điếm,noun,/ˈhʊkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hoo/hooke/hooker__gb_1.mp3
+place_kick,https://www.oxfordlearnersdictionaries.com/definition/english/place-kick,C2,place kick,nơi đá,noun,/ˈpleɪs kɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/place/place_kick_1_gb_1.mp3
+no_side,https://www.oxfordlearnersdictionaries.com/definition/english/no-side,C2,no side,không có bên,noun,/ˌnəʊ ˈsaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/no_/no_si/no_side_1_gb_1.mp3
+prop,https://www.oxfordlearnersdictionaries.com/definition/english/prop_1,C2,prop,chống đỡ,noun,/prɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/prop_/prop__gb_1.mp3
+punt,https://www.oxfordlearnersdictionaries.com/definition/english/punt_1,C2,punt,thuyền đánh cá,noun,/pʌnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pun/punt_/punt__gb_1.mp3
+loose_head,https://www.oxfordlearnersdictionaries.com/definition/english/loose-head,C2,loose head,đầu lỏng lẻo,noun,/ˌluːs ˈhed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loo/loose/loose_head_1_gb_1.mp3
+rugby,https://www.oxfordlearnersdictionaries.com/definition/english/rugby,B1,rugby,bóng bầu dục,noun,/ˈrʌɡbi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rug/rugby/rugby__gb_1.mp3
+put-in,https://www.oxfordlearnersdictionaries.com/definition/english/put-in_2,C2,put-in,đưa vào,noun,/ˈpʊt ɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/put/put_i/put_in_1_gb_1.mp3
+ruck,https://www.oxfordlearnersdictionaries.com/definition/english/ruck_1,C2,ruck,sự hỗn loạn,noun,/rʌk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ruc/ruck_/ruck__gb_1.mp3
+loose_forward,https://www.oxfordlearnersdictionaries.com/definition/english/loose-forward,C2,loose forward,thả lỏng về phía trước,noun,/ˌluːs ˈfɔːwəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/loo/loose/loose_forward_1_gb_1.mp3
+scrum,https://www.oxfordlearnersdictionaries.com/definition/english/scrum,C2,scrum,cặn bã,noun,/skrʌm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrum/scrum__gb_1.mp3
+rugby_union,https://www.oxfordlearnersdictionaries.com/definition/english/rugby-union,C2,Rugby Union,Liên đoàn bóng bầu dục,noun,/ˌrʌɡbi ˈjuːniən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rug/rugby/rugby_union_1_gb_1.mp3
+scrum_half,https://www.oxfordlearnersdictionaries.com/definition/english/scrum-half,C2,scrum half,một nửa,noun,/ˌskrʌm ˈhɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/scr/scrum/scrum_half_1_gb_1.mp3
+rugger,https://www.oxfordlearnersdictionaries.com/definition/english/rugger,C2,rugger,kẻ cướp,noun,/ˈrʌɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rug/rugge/rugger__gb_1.mp3
+springbok,https://www.oxfordlearnersdictionaries.com/definition/english/springbok,C2,springbok,lò xo,noun,/ˈsprɪŋbɒk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/spr/sprin/springbok__gb_1.mp3
+rugby_league,https://www.oxfordlearnersdictionaries.com/definition/english/rugby-league,C2,Rugby League,Giải bóng bầu dục,noun,/ˌrʌɡbi ˈliːɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rug/rugby/rugby_league_1_gb_1.mp3
 touch_down,https://www.oxfordlearnersdictionaries.com/definition/english/touch-down,C2,touch down,chạm xuống,phrasal verb,,
-stand-off_half,https://www.oxfordlearnersdictionaries.com/definition/english/stand-off-half,C2,stand-off half,một nửa bế tắc,noun,/ˌstænd ɒf ˈhɑːf/,
-tap_penalty,https://www.oxfordlearnersdictionaries.com/definition/english/tap-penalty,C2,tap penalty,chạm vào hình phạt,noun,/ˌtæp ˈpenəlti/,
-throw-in,https://www.oxfordlearnersdictionaries.com/definition/english/throw-in_2,C1,throw-in,quả ném biên,noun,/ˈθrəʊ ɪn/,
-try,https://www.oxfordlearnersdictionaries.com/definition/english/try_2,C2,try,thử,noun,/traɪ/,
-touch_judge,https://www.oxfordlearnersdictionaries.com/definition/english/touch-judge,C2,touch judge,chạm vào thẩm phán,noun,/ˈtʌtʃ dʒʌdʒ/,
-touchline,https://www.oxfordlearnersdictionaries.com/definition/english/touchline,C2,touchline,đường dây liên lạc,noun,/ˈtʌtʃlaɪn/,
-tight_head,https://www.oxfordlearnersdictionaries.com/definition/english/tight-head,C2,tight head,chặt đầu,noun,/ˈtaɪt hed/,
-try_line,https://www.oxfordlearnersdictionaries.com/definition/english/try-line,C2,try line,thử dòng,noun,/ˈtraɪ laɪn/,
-up-and-under,https://www.oxfordlearnersdictionaries.com/definition/english/up-and-under,C2,up-and-under,trên dưới,noun,/ˌʌp ən ˈʌndə(r)/,
+stand-off_half,https://www.oxfordlearnersdictionaries.com/definition/english/stand-off-half,C2,stand-off half,một nửa bế tắc,noun,/ˌstænd ɒf ˈhɑːf/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stand/stand_off_half_1_gb_1.mp3
+tap_penalty,https://www.oxfordlearnersdictionaries.com/definition/english/tap-penalty,C2,tap penalty,chạm vào hình phạt,noun,/ˌtæp ˈpenəlti/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tap/tap_p/tap_penalty_1_gb_1.mp3
+throw-in,https://www.oxfordlearnersdictionaries.com/definition/english/throw-in_2,C1,throw-in,quả ném biên,noun,/ˈθrəʊ ɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/throw/throw_in_1_gb_1.mp3
+try,https://www.oxfordlearnersdictionaries.com/definition/english/try_2,C2,try,thử,noun,/traɪ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/try/try__/try__gb_1.mp3
+touch_judge,https://www.oxfordlearnersdictionaries.com/definition/english/touch-judge,C2,touch judge,chạm vào thẩm phán,noun,/ˈtʌtʃ dʒʌdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tou/touch/touch_judge_1_gb_1.mp3
+touchline,https://www.oxfordlearnersdictionaries.com/definition/english/touchline,C2,touchline,đường dây liên lạc,noun,/ˈtʌtʃlaɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tou/touch/touchline__gb_1.mp3
+tight_head,https://www.oxfordlearnersdictionaries.com/definition/english/tight-head,C2,tight head,chặt đầu,noun,/ˈtaɪt hed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tig/tight/tight_head_1_gb_1.mp3
+try_line,https://www.oxfordlearnersdictionaries.com/definition/english/try-line,C2,try line,thử dòng,noun,/ˈtraɪ laɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/try/try_l/try_line_1_gb_1.mp3
+up-and-under,https://www.oxfordlearnersdictionaries.com/definition/english/up-and-under,C2,up-and-under,trên dưới,noun,/ˌʌp ən ˈʌndə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/u/up_/up_an/up_and_under_1_gb_1.mp3

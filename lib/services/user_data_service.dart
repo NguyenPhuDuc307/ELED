@@ -56,6 +56,21 @@ class UserDataService {
     _knownWords = (prefs.getStringList('knownWords') ?? [])
         .map((w) => w.toLowerCase())
         .toSet();
+
+    // Merge words marked known by native MarkWordKnownReceiver while app was closed
+    final nativePending = prefs.getString('nativePendingKnownWords') ?? '';
+    if (nativePending.isNotEmpty) {
+      final words = nativePending.split('\n').where((w) => w.isNotEmpty);
+      bool changed = false;
+      for (final w in words) {
+        if (_knownWords.add(w.toLowerCase())) changed = true;
+      }
+      if (changed) {
+        await prefs.setStringList('knownWords', _knownWords.toList());
+      }
+      await prefs.remove('nativePendingKnownWords');
+    }
+
     _collections = await _getLocalCollections();
     _knownWordsCtrl.add(_knownWords);
     _collectionsCtrl.add(Map.from(_collections));

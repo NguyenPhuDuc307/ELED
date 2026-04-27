@@ -1,70 +1,70 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-bakery,https://www.oxfordlearnersdictionaries.com/definition/english/bakery,B2,bakery,tiệm bánh,noun,/ˈbeɪkəri/,
-barber,https://www.oxfordlearnersdictionaries.com/definition/english/barber,B2,barber,thợ cắt tóc,noun,/ˈbɑːbə(r)/,
-baker,https://www.oxfordlearnersdictionaries.com/definition/english/baker,B1,baker,thợ làm bánh,noun,/ˈbeɪkə(r)/,
-bakeshop,https://www.oxfordlearnersdictionaries.com/definition/english/bakeshop,B2,bakeshop,tiệm bánh nướng,noun,/ˈbeɪkʃɒp/,
-antique,https://www.oxfordlearnersdictionaries.com/definition/english/antique_2,B2,antique,đồ cổ,noun,/ænˈtiːk/,
-bookshop,https://www.oxfordlearnersdictionaries.com/definition/english/bookshop,A2,bookshop,hiệu sách,noun,/ˈbʊkʃɒp/,
-bookie,https://www.oxfordlearnersdictionaries.com/definition/english/bookie,C2,bookie,người đánh cá,noun,/ˈbʊki/,
-bookmaking,https://www.oxfordlearnersdictionaries.com/definition/english/bookmaking,C2,bookmaking,nghề cá cược,noun,/ˈbʊkmeɪkɪŋ/,
-betting_shop,https://www.oxfordlearnersdictionaries.com/definition/english/betting-shop,C2,betting shop,cửa hàng cá cược,noun,/ˈbetɪŋ ʃɒp/,
-bookstall,https://www.oxfordlearnersdictionaries.com/definition/english/bookstall,C1,bookstall,hiệu sách,noun,/ˈbʊkstɔːl/,
-chain,https://www.oxfordlearnersdictionaries.com/definition/english/chain_1,B1,chain,xích,noun,/tʃeɪn/,
-chain_store,https://www.oxfordlearnersdictionaries.com/definition/english/chain-store,C1,chain store,chuỗi cửa hàng,noun,/ˈtʃeɪn stɔː(r)/,
-cleaner,https://www.oxfordlearnersdictionaries.com/definition/english/cleaner,B2,cleaner,sạch hơn,noun,/ˈkliːnə(r)/,
-butcher,https://www.oxfordlearnersdictionaries.com/definition/english/butcher_1,B2,butcher,người bán thịt,noun,/ˈbʊtʃə(r)/,
-corner_shop,https://www.oxfordlearnersdictionaries.com/definition/english/corner-shop,B2,corner shop,cửa hàng góc,noun,/ˈkɔːnə ʃɒp/,
-convenience_store,https://www.oxfordlearnersdictionaries.com/definition/english/convenience-store,B2,convenience store,cửa hàng tiện lợi,noun,/kənˈviːniəns stɔː(r)/,
-confectioner,https://www.oxfordlearnersdictionaries.com/definition/english/confectioner,C2,confectioner,người làm bánh kẹo,noun,/kənˈfekʃənə(r)/,
-boutique,https://www.oxfordlearnersdictionaries.com/definition/english/boutique_1,C1,boutique,cửa hàng,noun,/buːˈtiːk/,
-chemist,https://www.oxfordlearnersdictionaries.com/definition/english/chemist,A2,chemist,nhà hóa học,noun,/ˈkemɪst/,
-deli,https://www.oxfordlearnersdictionaries.com/definition/english/deli,C1,deli,đồ nguội,noun,/ˈdeli/,
-delicatessen,https://www.oxfordlearnersdictionaries.com/definition/english/delicatessen,C1,delicatessen,đặc sản,noun,/ˌdelɪkəˈtesn/,
-department_store,https://www.oxfordlearnersdictionaries.com/definition/english/department-store,B1,department store,cửa hàng bách hóa,noun,/dɪˈpɑːtmənt stɔː(r)/,
-drugstore,https://www.oxfordlearnersdictionaries.com/definition/english/drugstore,B2,drugstore,hiệu thuốc,noun,/ˈdrʌɡstɔː(r)/,
-draper,https://www.oxfordlearnersdictionaries.com/definition/english/draper,C2,draper,người xếp nếp,noun,/ˈdreɪpə(r)/,
-estate_agent,https://www.oxfordlearnersdictionaries.com/definition/english/estate-agent,B2,estate agent,đại lý bất động sản,noun,/ɪˈsteɪt eɪdʒənt/,
-florist,https://www.oxfordlearnersdictionaries.com/definition/english/florist,C1,florist,người bán hoa,noun,/ˈflɒrɪst/,
-fishmonger,https://www.oxfordlearnersdictionaries.com/definition/english/fishmonger,C2,fishmonger,người bán cá,noun,/ˈfɪʃmʌŋɡə(r)/,
-factory_shop,https://www.oxfordlearnersdictionaries.com/definition/english/factory-shop,C1,factory shop,cửa hàng nhà máy,noun,/ˈfæktri ʃɒp/,
-dry-cleaner’s,https://www.oxfordlearnersdictionaries.com/definition/english/dry-cleaner-s,C2,dry-cleaner’s,tiệm giặt khô,noun,/ˌdraɪ ˈkliːnəz/,
-farm_shop,https://www.oxfordlearnersdictionaries.com/definition/english/farm-shop,B2,farm shop,cửa hàng nông sản,noun,/ˈfɑːm ʃɒp/,
-garden_centre,https://www.oxfordlearnersdictionaries.com/definition/english/garden-centre,C1,garden centre,trung tâm vườn,noun,/ˈɡɑːdn sentə(r)/,
-greengrocer,https://www.oxfordlearnersdictionaries.com/definition/english/greengrocer,B2,greengrocer,người bán rau,noun,/ˈɡriːnɡrəʊsə(r)/,
-grocer,https://www.oxfordlearnersdictionaries.com/definition/english/grocer,C1,grocer,người bán tạp phẩm,noun,/ˈɡrəʊsə(r)/,
-farmers’_market,https://www.oxfordlearnersdictionaries.com/definition/english/farmers-market,B2,farmers’ market,chợ nông sản,noun,/ˈfɑːməz mɑːkɪt/,
-hairdresser,https://www.oxfordlearnersdictionaries.com/definition/english/hairdresser,A2,hairdresser,thợ làm tóc,noun,/ˈheədresə(r)/,
-health_food,https://www.oxfordlearnersdictionaries.com/definition/english/health-food,B2,health food,thực phẩm tốt cho sức khỏe,noun,/ˈhelθ fuːd/,
-hardware,https://www.oxfordlearnersdictionaries.com/definition/english/hardware,C1,hardware,phần cứng,noun,/ˈhɑːdweə(r)/,
-ironmonger,https://www.oxfordlearnersdictionaries.com/definition/english/ironmonger,C2,ironmonger,người buôn sắt,noun,/ˈaɪənmʌŋɡə(r)/,
-hypermarket,https://www.oxfordlearnersdictionaries.com/definition/english/hypermarket,C2,hypermarket,đại siêu thị,noun,/ˈhaɪpəmɑːkɪt/,
-kiosk,https://www.oxfordlearnersdictionaries.com/definition/english/kiosk,C1,kiosk,ki-ốt,noun,/ˈkiːɒsk/,
-launderette,https://www.oxfordlearnersdictionaries.com/definition/english/launderette,C2,launderette,tiệm giặt là nhỏ,noun,/ˌlɔːndəˈret/,
-liquor_store,https://www.oxfordlearnersdictionaries.com/definition/english/liquor-store,C2,liquor store,cửa hàng rượu,noun,/ˈlɪkə stɔː(r)/,
-market,https://www.oxfordlearnersdictionaries.com/definition/english/market_1,A1,market,chợ,noun,/ˈmɑːkɪt/,
-outlet,https://www.oxfordlearnersdictionaries.com/definition/english/outlet,C1,outlet,chỗ thoát,noun,/ˈaʊtlet/,
-newsagent,https://www.oxfordlearnersdictionaries.com/definition/english/newsagent,B2,newsagent,quầy bán báo,noun,/ˈnjuːzeɪdʒənt/,
-off-licence,https://www.oxfordlearnersdictionaries.com/definition/english/off-licence,C2,off-licence,không có giấy phép,noun,/ˈɒf laɪsns/,
-megastore,https://www.oxfordlearnersdictionaries.com/definition/english/megastore,C2,megastore,siêu thị,noun,/ˈmeɡəstɔː(r)/,
-jeweller,https://www.oxfordlearnersdictionaries.com/definition/english/jeweller,B2,jeweller,thợ kim hoàn,noun,/ˈdʒuːələ(r)/,
-optician,https://www.oxfordlearnersdictionaries.com/definition/english/optician,C1,optician,bác sĩ nhãn khoa,noun,/ɒpˈtɪʃn/,
-package_store,https://www.oxfordlearnersdictionaries.com/definition/english/package-store,C2,package store,cửa hàng trọn gói,noun,/ˈpækɪdʒ stɔː(r)/,
-pharmacist,https://www.oxfordlearnersdictionaries.com/definition/english/pharmacist,C1,pharmacist,dược sĩ,noun,/ˈfɑːməsɪst/,
-paper_shop,https://www.oxfordlearnersdictionaries.com/definition/english/paper-shop,C2,paper shop,cửa hàng giấy,noun,/ˈpeɪpə ʃɒp/,
-salon,https://www.oxfordlearnersdictionaries.com/definition/english/salon,B2,salon,thẩm mỹ viện,noun,/ˈsælɒn/,
-pharmacy,https://www.oxfordlearnersdictionaries.com/definition/english/pharmacy,B2,pharmacy,hiệu thuốc,noun,/ˈfɑːməsi/,
-sari-sari_store,https://www.oxfordlearnersdictionaries.com/definition/english/sari-sari-store,C2,sari-sari store,cửa hàng sari sari,noun,/ˌsæri ˈsæri stɔː(r)/,
-showroom,https://www.oxfordlearnersdictionaries.com/definition/english/showroom,C2,showroom,phòng trưng bày,noun,/ˈʃəʊruːm/,
-stall,https://www.oxfordlearnersdictionaries.com/definition/english/stall_1,B2,stall,quầy hàng,noun,/stɔːl/,
-shopping_centre,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-centre,A2,shopping centre,trung tâm mua sắm,noun,/ˈʃɒpɪŋ sentə(r)/,
-stationer,https://www.oxfordlearnersdictionaries.com/definition/english/stationer,C1,stationer,người giữ văn phòng phẩm,noun,/ˈsteɪʃənə(r)/,
-stand,https://www.oxfordlearnersdictionaries.com/definition/english/stand_2,B2,stand,đứng,noun,/stænd/,
-store,https://www.oxfordlearnersdictionaries.com/definition/english/store_1,A2,store,cửa hàng,noun,/stɔː(r)/,
-supermarket,https://www.oxfordlearnersdictionaries.com/definition/english/supermarket,A1,supermarket,siêu thị,noun,/ˈsuːpəmɑːkɪt/,
-stockist,https://www.oxfordlearnersdictionaries.com/definition/english/stockist,C2,stockist,người bán hàng,noun,/ˈstɒkɪst/,
-superstore,https://www.oxfordlearnersdictionaries.com/definition/english/superstore,C1,superstore,siêu thị,noun,/ˈsuːpəstɔː(r)/,
-thrift_shop,https://www.oxfordlearnersdictionaries.com/definition/english/thrift-shop,C2,thrift shop,cửa hàng tiết kiệm,noun,/ˈθrɪft ʃɒp/,
-shop,https://www.oxfordlearnersdictionaries.com/definition/english/shop_1,A1,shop,cửa hàng,noun,/ʃɒp/,
-wet_market,https://www.oxfordlearnersdictionaries.com/definition/english/wet-market,C2,wet market,chợ ẩm ướt,noun,/ˈwet mɑːkɪt/,
-tobacconist,https://www.oxfordlearnersdictionaries.com/definition/english/tobacconist,C2,tobacconist,người bán thuốc lá,noun,/təˈbækənɪst/,
-travel_agency,https://www.oxfordlearnersdictionaries.com/definition/english/travel-agency,B2,travel agency,đại lý du lịch,noun,/ˈtrævl eɪdʒənsi/,
+bakery,https://www.oxfordlearnersdictionaries.com/definition/english/bakery,B2,bakery,tiệm bánh,noun,/ˈbeɪkəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bak/baker/bakery__gb_1.mp3
+barber,https://www.oxfordlearnersdictionaries.com/definition/english/barber,B2,barber,thợ cắt tóc,noun,/ˈbɑːbə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/barbe/barber__gb_1.mp3
+baker,https://www.oxfordlearnersdictionaries.com/definition/english/baker,B1,baker,thợ làm bánh,noun,/ˈbeɪkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bak/baker/baker__gb_2.mp3
+bakeshop,https://www.oxfordlearnersdictionaries.com/definition/english/bakeshop,B2,bakeshop,tiệm bánh nướng,noun,/ˈbeɪkʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bak/bakes/bakeshop__gb_2.mp3
+antique,https://www.oxfordlearnersdictionaries.com/definition/english/antique_2,B2,antique,đồ cổ,noun,/ænˈtiːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/ant/antiq/antique__gb_1.mp3
+bookshop,https://www.oxfordlearnersdictionaries.com/definition/english/bookshop,A2,bookshop,hiệu sách,noun,/ˈbʊkʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/books/bookshop__gb_2.mp3
+bookie,https://www.oxfordlearnersdictionaries.com/definition/english/bookie,C2,bookie,người đánh cá,noun,/ˈbʊki/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/booki/bookie__gb_2.mp3
+bookmaking,https://www.oxfordlearnersdictionaries.com/definition/english/bookmaking,C2,bookmaking,nghề cá cược,noun,/ˈbʊkmeɪkɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/bookm/bookmaking__gb_1.mp3
+betting_shop,https://www.oxfordlearnersdictionaries.com/definition/english/betting-shop,C2,betting shop,cửa hàng cá cược,noun,/ˈbetɪŋ ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bet/betti/betting_shop_1_gb_1.mp3
+bookstall,https://www.oxfordlearnersdictionaries.com/definition/english/bookstall,C1,bookstall,hiệu sách,noun,/ˈbʊkstɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boo/books/bookstall__gb_2.mp3
+chain,https://www.oxfordlearnersdictionaries.com/definition/english/chain_1,B1,chain,xích,noun,/tʃeɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chain/chain__gb_2.mp3
+chain_store,https://www.oxfordlearnersdictionaries.com/definition/english/chain-store,C1,chain store,chuỗi cửa hàng,noun,/ˈtʃeɪn stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cha/chain/chain_store_1_gb_1.mp3
+cleaner,https://www.oxfordlearnersdictionaries.com/definition/english/cleaner,B2,cleaner,sạch hơn,noun,/ˈkliːnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clean/cleaner__gb_1.mp3
+butcher,https://www.oxfordlearnersdictionaries.com/definition/english/butcher_1,B2,butcher,người bán thịt,noun,/ˈbʊtʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/but/butch/butcher__gb_2.mp3
+corner_shop,https://www.oxfordlearnersdictionaries.com/definition/english/corner-shop,B2,corner shop,cửa hàng góc,noun,/ˈkɔːnə ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corne/corner_shop_1_gb_1.mp3
+convenience_store,https://www.oxfordlearnersdictionaries.com/definition/english/convenience-store,B2,convenience store,cửa hàng tiện lợi,noun,/kənˈviːniəns stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconv/xconvenience_store_1_gb_1.mp3
+confectioner,https://www.oxfordlearnersdictionaries.com/definition/english/confectioner,C2,confectioner,người làm bánh kẹo,noun,/kənˈfekʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xconf/xconfectioner__gb_1.mp3
+boutique,https://www.oxfordlearnersdictionaries.com/definition/english/boutique_1,C1,boutique,cửa hàng,noun,/buːˈtiːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bou/bouti/boutique__gb_2.mp3
+chemist,https://www.oxfordlearnersdictionaries.com/definition/english/chemist,A2,chemist,nhà hóa học,noun,/ˈkemɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/chemi/chemist__gb_3.mp3
+deli,https://www.oxfordlearnersdictionaries.com/definition/english/deli,C1,deli,đồ nguội,noun,/ˈdeli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/del/deli_/deli__gb_1.mp3
+delicatessen,https://www.oxfordlearnersdictionaries.com/definition/english/delicatessen,C1,delicatessen,đặc sản,noun,/ˌdelɪkəˈtesn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/del/delic/delicatessen__gb_1.mp3
+department_store,https://www.oxfordlearnersdictionaries.com/definition/english/department-store,B1,department store,cửa hàng bách hóa,noun,/dɪˈpɑːtmənt stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dep/depar/department_store_1_gb_1.mp3
+drugstore,https://www.oxfordlearnersdictionaries.com/definition/english/drugstore,B2,drugstore,hiệu thuốc,noun,/ˈdrʌɡstɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dru/drugs/drugstore__gb_2.mp3
+draper,https://www.oxfordlearnersdictionaries.com/definition/english/draper,C2,draper,người xếp nếp,noun,/ˈdreɪpə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dra/drape/draper__gb_2.mp3
+estate_agent,https://www.oxfordlearnersdictionaries.com/definition/english/estate-agent,B2,estate agent,đại lý bất động sản,noun,/ɪˈsteɪt eɪdʒənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/est/estat/estate_agent_1_gb_1.mp3
+florist,https://www.oxfordlearnersdictionaries.com/definition/english/florist,C1,florist,người bán hoa,noun,/ˈflɒrɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flori/florist__gb_1.mp3
+fishmonger,https://www.oxfordlearnersdictionaries.com/definition/english/fishmonger,C2,fishmonger,người bán cá,noun,/ˈfɪʃmʌŋɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fis/fishm/fishmonger__gb_1.mp3
+factory_shop,https://www.oxfordlearnersdictionaries.com/definition/english/factory-shop,C1,factory shop,cửa hàng nhà máy,noun,/ˈfæktri ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fac/facto/factory_shop_1_gb_2.mp3
+dry-cleaner’s,https://www.oxfordlearnersdictionaries.com/definition/english/dry-cleaner-s,C2,dry-cleaner’s,tiệm giặt khô,noun,/ˌdraɪ ˈkliːnəz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dry/dry_c/dry_cleaner_s_1_gb_2.mp3
+farm_shop,https://www.oxfordlearnersdictionaries.com/definition/english/farm-shop,B2,farm shop,cửa hàng nông sản,noun,/ˈfɑːm ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farm_/farm_shop_1_gb_1.mp3
+garden_centre,https://www.oxfordlearnersdictionaries.com/definition/english/garden-centre,C1,garden centre,trung tâm vườn,noun,/ˈɡɑːdn sentə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gar/garde/garden_centre_1_gb_1.mp3
+greengrocer,https://www.oxfordlearnersdictionaries.com/definition/english/greengrocer,B2,greengrocer,người bán rau,noun,/ˈɡriːnɡrəʊsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gre/green/greengrocer__gb_1.mp3
+grocer,https://www.oxfordlearnersdictionaries.com/definition/english/grocer,C1,grocer,người bán tạp phẩm,noun,/ˈɡrəʊsə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/groce/grocer__gb_1.mp3
+farmers’_market,https://www.oxfordlearnersdictionaries.com/definition/english/farmers-market,B2,farmers’ market,chợ nông sản,noun,/ˈfɑːməz mɑːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farme/farmers_market_1_gb_1.mp3
+hairdresser,https://www.oxfordlearnersdictionaries.com/definition/english/hairdresser,A2,hairdresser,thợ làm tóc,noun,/ˈheədresə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hai/haird/hairdresser__gb_2.mp3
+health_food,https://www.oxfordlearnersdictionaries.com/definition/english/health-food,B2,health food,thực phẩm tốt cho sức khỏe,noun,/ˈhelθ fuːd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/healt/health_food_1_gb_1.mp3
+hardware,https://www.oxfordlearnersdictionaries.com/definition/english/hardware,C1,hardware,phần cứng,noun,/ˈhɑːdweə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/har/hardw/hardware__gb_1.mp3
+ironmonger,https://www.oxfordlearnersdictionaries.com/definition/english/ironmonger,C2,ironmonger,người buôn sắt,noun,/ˈaɪənmʌŋɡə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/iro/ironm/ironmonger__gb_1.mp3
+hypermarket,https://www.oxfordlearnersdictionaries.com/definition/english/hypermarket,C2,hypermarket,đại siêu thị,noun,/ˈhaɪpəmɑːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hyp/hyper/hypermarket__gb_1.mp3
+kiosk,https://www.oxfordlearnersdictionaries.com/definition/english/kiosk,C1,kiosk,ki-ốt,noun,/ˈkiːɒsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/kio/kiosk/kiosk__gb_3.mp3
+launderette,https://www.oxfordlearnersdictionaries.com/definition/english/launderette,C2,launderette,tiệm giặt là nhỏ,noun,/ˌlɔːndəˈret/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lau/laund/launderette__gb_3.mp3
+liquor_store,https://www.oxfordlearnersdictionaries.com/definition/english/liquor-store,C2,liquor store,cửa hàng rượu,noun,/ˈlɪkə stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/liq/liquo/liquor_store_1_gb_1.mp3
+market,https://www.oxfordlearnersdictionaries.com/definition/english/market_1,A1,market,chợ,noun,/ˈmɑːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marke/market__gb_3.mp3
+outlet,https://www.oxfordlearnersdictionaries.com/definition/english/outlet,C1,outlet,chỗ thoát,noun,/ˈaʊtlet/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outle/outlet__gb_1.mp3
+newsagent,https://www.oxfordlearnersdictionaries.com/definition/english/newsagent,B2,newsagent,quầy bán báo,noun,/ˈnjuːzeɪdʒənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/new/newsa/newsagent__gb_1.mp3
+off-licence,https://www.oxfordlearnersdictionaries.com/definition/english/off-licence,C2,off-licence,không có giấy phép,noun,/ˈɒf laɪsns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/off/off_l/off_licence_1_gb_1.mp3
+megastore,https://www.oxfordlearnersdictionaries.com/definition/english/megastore,C2,megastore,siêu thị,noun,/ˈmeɡəstɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/meg/megas/megastore__gb_1.mp3
+jeweller,https://www.oxfordlearnersdictionaries.com/definition/english/jeweller,B2,jeweller,thợ kim hoàn,noun,/ˈdʒuːələ(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jew/jewel/jeweller__gb_1.mp3
+optician,https://www.oxfordlearnersdictionaries.com/definition/english/optician,C1,optician,bác sĩ nhãn khoa,noun,/ɒpˈtɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/opt/optic/optician__gb_1.mp3
+package_store,https://www.oxfordlearnersdictionaries.com/definition/english/package-store,C2,package store,cửa hàng trọn gói,noun,/ˈpækɪdʒ stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pac/packa/package_store_1_gb_1.mp3
+pharmacist,https://www.oxfordlearnersdictionaries.com/definition/english/pharmacist,C1,pharmacist,dược sĩ,noun,/ˈfɑːməsɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pha/pharm/pharmacist__gb_1.mp3
+paper_shop,https://www.oxfordlearnersdictionaries.com/definition/english/paper-shop,C2,paper shop,cửa hàng giấy,noun,/ˈpeɪpə ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pap/paper/paper_shop_1_gb_1.mp3
+salon,https://www.oxfordlearnersdictionaries.com/definition/english/salon,B2,salon,thẩm mỹ viện,noun,/ˈsælɒn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sal/salon/salon__gb_1.mp3
+pharmacy,https://www.oxfordlearnersdictionaries.com/definition/english/pharmacy,B2,pharmacy,hiệu thuốc,noun,/ˈfɑːməsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pha/pharm/pharmacy__gb_1.mp3
+sari-sari_store,https://www.oxfordlearnersdictionaries.com/definition/english/sari-sari-store,C2,sari-sari store,cửa hàng sari sari,noun,/ˌsæri ˈsæri stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sar/sari_/sari_sari_store_1_gb_1.mp3
+showroom,https://www.oxfordlearnersdictionaries.com/definition/english/showroom,C2,showroom,phòng trưng bày,noun,/ˈʃəʊruːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/showr/showroom__gb_1.mp3
+stall,https://www.oxfordlearnersdictionaries.com/definition/english/stall_1,B2,stall,quầy hàng,noun,/stɔːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stall/stall__gb_1.mp3
+shopping_centre,https://www.oxfordlearnersdictionaries.com/definition/english/shopping-centre,A2,shopping centre,trung tâm mua sắm,noun,/ˈʃɒpɪŋ sentə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shopp/shopping_centre_1_gb_1.mp3
+stationer,https://www.oxfordlearnersdictionaries.com/definition/english/stationer,C1,stationer,người giữ văn phòng phẩm,noun,/ˈsteɪʃənə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stati/stationer__gb_1.mp3
+stand,https://www.oxfordlearnersdictionaries.com/definition/english/stand_2,B2,stand,đứng,noun,/stænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sta/stand/stand__gb_1.mp3
+store,https://www.oxfordlearnersdictionaries.com/definition/english/store_1,A2,store,cửa hàng,noun,/stɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/store/store__gb_2.mp3
+supermarket,https://www.oxfordlearnersdictionaries.com/definition/english/supermarket,A1,supermarket,siêu thị,noun,/ˈsuːpəmɑːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sup/super/supermarket__gb_1.mp3
+stockist,https://www.oxfordlearnersdictionaries.com/definition/english/stockist,C2,stockist,người bán hàng,noun,/ˈstɒkɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sto/stock/stockist__gb_1.mp3
+superstore,https://www.oxfordlearnersdictionaries.com/definition/english/superstore,C1,superstore,siêu thị,noun,/ˈsuːpəstɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sup/super/superstore__gb_1.mp3
+thrift_shop,https://www.oxfordlearnersdictionaries.com/definition/english/thrift-shop,C2,thrift shop,cửa hàng tiết kiệm,noun,/ˈθrɪft ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/thr/thrif/thrift_shop_1_gb_1.mp3
+shop,https://www.oxfordlearnersdictionaries.com/definition/english/shop_1,A1,shop,cửa hàng,noun,/ʃɒp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sho/shop_/shop__gb_2.mp3
+wet_market,https://www.oxfordlearnersdictionaries.com/definition/english/wet-market,C2,wet market,chợ ẩm ướt,noun,/ˈwet mɑːkɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wet/wet_m/wet_market_1_gb_1.mp3
+tobacconist,https://www.oxfordlearnersdictionaries.com/definition/english/tobacconist,C2,tobacconist,người bán thuốc lá,noun,/təˈbækənɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tob/tobac/tobacconist__gb_1.mp3
+travel_agency,https://www.oxfordlearnersdictionaries.com/definition/english/travel-agency,B2,travel agency,đại lý du lịch,noun,/ˈtrævl eɪdʒənsi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tra/trave/travel_agency_1_gb_1.mp3

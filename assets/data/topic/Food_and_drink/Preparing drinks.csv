@@ -1,17 +1,17 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-ice_cube,https://www.oxfordlearnersdictionaries.com/definition/english/ice-cube,B2,ice cube,khối băng,noun,/ˈaɪs kjuːb/,
-brewery,https://www.oxfordlearnersdictionaries.com/definition/english/brewery,C1,brewery,nhà máy bia,noun,/ˈbruːəri/,
-microbrewery,https://www.oxfordlearnersdictionaries.com/definition/english/microbrewery,C2,microbrewery,nhà máy bia nhỏ,noun,/ˈmaɪkrəʊbruːəri/,
-corkscrew,https://www.oxfordlearnersdictionaries.com/definition/english/corkscrew_1,C1,corkscrew,cái mở nút chai,noun,/ˈkɔːkskruː/,
-kettle,https://www.oxfordlearnersdictionaries.com/definition/english/kettle_1,B1,kettle,ấm đun nước,noun,/ˈketl/,
-distillery,https://www.oxfordlearnersdictionaries.com/definition/english/distillery,C2,distillery,nhà máy chưng cất,noun,/dɪˈstɪləri/,
-brew,https://www.oxfordlearnersdictionaries.com/definition/english/brew_1,C1,brew,pha chế,verb,/bruː/,
-ice,https://www.oxfordlearnersdictionaries.com/definition/english/ice_1,A1,ice,đá,noun,/aɪs/,
-craft_brewery,https://www.oxfordlearnersdictionaries.com/definition/english/craft-brewery,C2,craft brewery,nhà máy bia thủ công,noun,/ˌkrɑːft ˈbruːəri/,
-distil,https://www.oxfordlearnersdictionaries.com/definition/english/distil,C2,distil,chưng cất,verb,/dɪˈstɪl/,
-pour,https://www.oxfordlearnersdictionaries.com/definition/english/pour,B1,pour,đổ,verb,/pɔː(r)/,
-pint,https://www.oxfordlearnersdictionaries.com/definition/english/pint,C1,pint,pint,noun,/paɪnt/,
-on_ice,https://www.oxfordlearnersdictionaries.com/definition/english/ice_1,B2,on ice,trên băng,noun,/aɪs/,
-straight,https://www.oxfordlearnersdictionaries.com/definition/english/straight_2,C2,straight,thẳng,adjective,/streɪt/,
-neat,https://www.oxfordlearnersdictionaries.com/definition/english/neat,C2,neat,gọn gàng,adjective,/niːt/,
-teapot,https://www.oxfordlearnersdictionaries.com/definition/english/teapot,B1,teapot,ấm trà,noun,/ˈtiːpɒt/,
+ice_cube,https://www.oxfordlearnersdictionaries.com/definition/english/ice-cube,B2,ice cube,khối băng,noun,/ˈaɪs kjuːb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ice/ice_c/ice_cube_1_gb_1.mp3
+brewery,https://www.oxfordlearnersdictionaries.com/definition/english/brewery,C1,brewery,nhà máy bia,noun,/ˈbruːəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/brewe/brewery__gb_1.mp3
+microbrewery,https://www.oxfordlearnersdictionaries.com/definition/english/microbrewery,C2,microbrewery,nhà máy bia nhỏ,noun,/ˈmaɪkrəʊbruːəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microbrewery__gb_1.mp3
+corkscrew,https://www.oxfordlearnersdictionaries.com/definition/english/corkscrew_1,C1,corkscrew,cái mở nút chai,noun,/ˈkɔːkskruː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cor/corks/corkscrew__gb_1.mp3
+kettle,https://www.oxfordlearnersdictionaries.com/definition/english/kettle_1,B1,kettle,ấm đun nước,noun,/ˈketl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/k/ket/kettl/kettle__gb_2.mp3
+distillery,https://www.oxfordlearnersdictionaries.com/definition/english/distillery,C2,distillery,nhà máy chưng cất,noun,/dɪˈstɪləri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disti/distillery__gb_2.mp3
+brew,https://www.oxfordlearnersdictionaries.com/definition/english/brew_1,C1,brew,pha chế,verb,/bruː/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bre/brew_/brew__gb_1.mp3
+ice,https://www.oxfordlearnersdictionaries.com/definition/english/ice_1,A1,ice,đá,noun,/aɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ice/ice__/ice__gb_1.mp3
+craft_brewery,https://www.oxfordlearnersdictionaries.com/definition/english/craft-brewery,C2,craft brewery,nhà máy bia thủ công,noun,/ˌkrɑːft ˈbruːəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cra/craft/craft_brewery_1_gb_1.mp3
+distil,https://www.oxfordlearnersdictionaries.com/definition/english/distil,C2,distil,chưng cất,verb,/dɪˈstɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disti/distil__gb_1.mp3
+pour,https://www.oxfordlearnersdictionaries.com/definition/english/pour,B1,pour,đổ,verb,/pɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pou/pour_/pour__gb_1.mp3
+pint,https://www.oxfordlearnersdictionaries.com/definition/english/pint,C1,pint,pint,noun,/paɪnt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pin/pint_/pint__gb_1.mp3
+on_ice,https://www.oxfordlearnersdictionaries.com/definition/english/ice_1,B2,on ice,trên băng,noun,/aɪs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ice/ice__/ice__gb_1.mp3
+straight,https://www.oxfordlearnersdictionaries.com/definition/english/straight_2,C2,straight,thẳng,adjective,/streɪt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/str/strai/straight__gb_2.mp3
+neat,https://www.oxfordlearnersdictionaries.com/definition/english/neat,C2,neat,gọn gàng,adjective,/niːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/n/nea/neat_/neat__gb_1.mp3
+teapot,https://www.oxfordlearnersdictionaries.com/definition/english/teapot,B1,teapot,ấm trà,noun,/ˈtiːpɒt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tea/teapo/teapot__gb_1.mp3

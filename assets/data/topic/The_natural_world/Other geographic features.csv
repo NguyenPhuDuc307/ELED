@@ -1,73 +1,73 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-barrage,https://www.oxfordlearnersdictionaries.com/definition/english/barrage,C2,barrage,đập phá,noun,/ˈbærɑːʒ/,
-basin,https://www.oxfordlearnersdictionaries.com/definition/english/basin,C2,basin,lưu vực,noun,/ˈbeɪsn/,
-babble,https://www.oxfordlearnersdictionaries.com/definition/english/babble_2,C2,babble,lảm nhảm,verb,/ˈbæbl/,
-archipelago,https://www.oxfordlearnersdictionaries.com/definition/english/archipelago,C2,archipelago,quần đảo,noun,/ˌɑːkɪˈpeləɡəʊ/,
-bog,https://www.oxfordlearnersdictionaries.com/definition/english/bog_1,C2,bog,đầm lầy,noun,/bɒɡ/,
-belt,https://www.oxfordlearnersdictionaries.com/definition/english/belt_1,C2,belt,thắt lưng,noun,/belt/,
-bank,https://www.oxfordlearnersdictionaries.com/definition/english/bank_1,B1,bank,ngân hàng,noun,/bæŋk/,
-bend,https://www.oxfordlearnersdictionaries.com/definition/english/bend_2,B1,bend,uốn cong,noun,/bend/,
-area,https://www.oxfordlearnersdictionaries.com/definition/english/area,A1,area,khu vực,noun,/ˈeəriə/,
-bed,https://www.oxfordlearnersdictionaries.com/definition/english/bed_1,B2,bed,giường,noun,/bed/,
-bore,https://www.oxfordlearnersdictionaries.com/definition/english/bore_2,C2,bore,khoan,noun,/bɔː(r)/,
-bottom,https://www.oxfordlearnersdictionaries.com/definition/english/bottom_1,A2,bottom,đáy,noun,/ˈbɒtəm/,
-branch,https://www.oxfordlearnersdictionaries.com/definition/english/branch_2,C1,branch,chi nhánh,verb,/brɑːntʃ/,
-brush,https://www.oxfordlearnersdictionaries.com/definition/english/brush_2,C2,brush,chải,noun,/brʌʃ/,
-boulder,https://www.oxfordlearnersdictionaries.com/definition/english/boulder,C2,boulder,tảng đá,noun,/ˈbəʊldə(r)/,
+barrage,https://www.oxfordlearnersdictionaries.com/definition/english/barrage,C2,barrage,đập phá,noun,/ˈbærɑːʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bar/barra/barrage__gb_1.mp3
+basin,https://www.oxfordlearnersdictionaries.com/definition/english/basin,C2,basin,lưu vực,noun,/ˈbeɪsn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bas/basin/basin__gb_2.mp3
+babble,https://www.oxfordlearnersdictionaries.com/definition/english/babble_2,C2,babble,lảm nhảm,verb,/ˈbæbl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bab/babbl/babble__gb_1.mp3
+archipelago,https://www.oxfordlearnersdictionaries.com/definition/english/archipelago,C2,archipelago,quần đảo,noun,/ˌɑːkɪˈpeləɡəʊ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/arc/archi/archipelago__gb_1.mp3
+bog,https://www.oxfordlearnersdictionaries.com/definition/english/bog_1,C2,bog,đầm lầy,noun,/bɒɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bog/bog__/bog__gb_2.mp3
+belt,https://www.oxfordlearnersdictionaries.com/definition/english/belt_1,C2,belt,thắt lưng,noun,/belt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bel/belt_/belt__gb_2.mp3
+bank,https://www.oxfordlearnersdictionaries.com/definition/english/bank_1,B1,bank,ngân hàng,noun,/bæŋk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/bank_/bank__gb_2.mp3
+bend,https://www.oxfordlearnersdictionaries.com/definition/english/bend_2,B1,bend,uốn cong,noun,/bend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ben/bend_/bend__gb_2.mp3
+area,https://www.oxfordlearnersdictionaries.com/definition/english/area,A1,area,khu vực,noun,/ˈeəriə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/are/area_/area__gb_3.mp3
+bed,https://www.oxfordlearnersdictionaries.com/definition/english/bed_1,B2,bed,giường,noun,/bed/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bed/bed__/bed__gb_3.mp3
+bore,https://www.oxfordlearnersdictionaries.com/definition/english/bore_2,C2,bore,khoan,noun,/bɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/bore_/bore__gb_1.mp3
+bottom,https://www.oxfordlearnersdictionaries.com/definition/english/bottom_1,A2,bottom,đáy,noun,/ˈbɒtəm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bot/botto/bottom__gb_2.mp3
+branch,https://www.oxfordlearnersdictionaries.com/definition/english/branch_2,C1,branch,chi nhánh,verb,/brɑːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/branc/branch__gb_1.mp3
+brush,https://www.oxfordlearnersdictionaries.com/definition/english/brush_2,C2,brush,chải,noun,/brʌʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bru/brush/brush__gb_1.mp3
+boulder,https://www.oxfordlearnersdictionaries.com/definition/english/boulder,C2,boulder,tảng đá,noun,/ˈbəʊldə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bou/bould/boulder__gb_1.mp3
 branch_off,https://www.oxfordlearnersdictionaries.com/definition/english/branch-off,C2,branch off,phân nhánh,phrasal verb,,
-countryside,https://www.oxfordlearnersdictionaries.com/definition/english/countryside,B1,countryside,nông thôn,noun,/ˈkʌntrisaɪd/,
-clearing,https://www.oxfordlearnersdictionaries.com/definition/english/clearing,C1,clearing,thanh toán bù trừ,noun,/ˈklɪərɪŋ/,
-branch,https://www.oxfordlearnersdictionaries.com/definition/english/branch_1,C1,branch,chi nhánh,noun,/brɑːntʃ/,
-desert,https://www.oxfordlearnersdictionaries.com/definition/english/desert_1,A2,desert,sa mạc,noun,/ˈdezət/,
-district,https://www.oxfordlearnersdictionaries.com/definition/english/district,B2,district,huyện,noun,/ˈdɪstrɪkt/,
-floodplain,https://www.oxfordlearnersdictionaries.com/definition/english/floodplain,C2,floodplain,vùng ngập lũ,noun,/ˈflʌdpleɪn/,
-equator,https://www.oxfordlearnersdictionaries.com/definition/english/equator,B2,equator,đường xích đạo,noun,/ɪˈkweɪtə(r)/,
-farmland,https://www.oxfordlearnersdictionaries.com/definition/english/farmland,B1,farmland,đất nông nghiệp,noun,/ˈfɑːmlænd/,
-grassland,https://www.oxfordlearnersdictionaries.com/definition/english/grassland,B1,grassland,đồng cỏ,noun,/ˈɡrɑːslænd/,
-forest,https://www.oxfordlearnersdictionaries.com/definition/english/forest,A2,forest,rừng,noun,/ˈfɒrɪst/,
-fault,https://www.oxfordlearnersdictionaries.com/definition/english/fault_1,C2,fault,lỗi,noun,/fɔːlt/,
-ground,https://www.oxfordlearnersdictionaries.com/definition/english/ground_1,A2,ground,đất,noun,/ɡraʊnd/,
-ice_sheet,https://www.oxfordlearnersdictionaries.com/definition/english/ice-sheet,C2,ice sheet,tảng băng,noun,/ˈaɪs ʃiːt/,
-hemisphere,https://www.oxfordlearnersdictionaries.com/definition/english/hemisphere,B2,hemisphere,bán cầu,noun,/ˈhemɪsfɪə(r)/,
-island,https://www.oxfordlearnersdictionaries.com/definition/english/island,A1,island,hòn đảo,noun,/ˈaɪlənd/,
-horizon,https://www.oxfordlearnersdictionaries.com/definition/english/horizon_1,C1,horizon,chân trời,noun,/həˈraɪzn/,
-heath,https://www.oxfordlearnersdictionaries.com/definition/english/heath,C2,heath,cây thạch thảo,noun,/hiːθ/,
-glade,https://www.oxfordlearnersdictionaries.com/definition/english/glade,C2,glade,trảng cỏ,noun,/ɡleɪd/,
-jungle,https://www.oxfordlearnersdictionaries.com/definition/english/jungle,B1,jungle,rừng,noun,/ˈdʒʌŋɡl/,
-isthmus,https://www.oxfordlearnersdictionaries.com/definition/english/isthmus,C2,isthmus,eo đất,noun,/ˈɪsməs/,
-ice_cap,https://www.oxfordlearnersdictionaries.com/definition/english/ice-cap,B2,ice cap,chỏm băng,noun,/ˈaɪs kæp/,
-landscape,https://www.oxfordlearnersdictionaries.com/definition/english/landscape_1,B2,landscape,phong cảnh,noun,/ˈlændskeɪp/,
-oilfield,https://www.oxfordlearnersdictionaries.com/definition/english/oilfield,C1,oilfield,mỏ dầu,noun,/ˈɔɪlfiːld/,
-morass,https://www.oxfordlearnersdictionaries.com/definition/english/morass,C2,morass,bãi lầy,noun,/məˈræs/,
-lowland,https://www.oxfordlearnersdictionaries.com/definition/english/lowland_2,B2,lowland,vùng đất thấp,noun,/ˈləʊlənd/,
-outback,https://www.oxfordlearnersdictionaries.com/definition/english/outback,B2,outback,vùng hẻo lánh,noun,/ˈaʊtbæk/,
-marsh,https://www.oxfordlearnersdictionaries.com/definition/english/marsh,C2,marsh,đầm lầy,noun,/mɑːʃ/,
-pavement,https://www.oxfordlearnersdictionaries.com/definition/english/pavement,C2,pavement,vỉa hè,noun,/ˈpeɪvmənt/,
-north_pole,https://www.oxfordlearnersdictionaries.com/definition/english/the-north-pole,B2,North Pole,Bắc Cực,noun,/ðə ˌnɔːθ ˈpəʊl/,
-moorland,https://www.oxfordlearnersdictionaries.com/definition/english/moorland,C2,moorland,vùng đất hoang,noun,/ˈmɔːlənd/,
-moor,https://www.oxfordlearnersdictionaries.com/definition/english/moor_1,C2,moor,đồng hoang,noun,/mɔː(r)/,
-outskirts,https://www.oxfordlearnersdictionaries.com/definition/english/outskirts,C1,outskirts,vùng ngoại ô,noun,/ˈaʊtskɜːts/,
-peninsula,https://www.oxfordlearnersdictionaries.com/definition/english/peninsula,C1,peninsula,bán đảo,noun,/pəˈnɪnsjələ/,
-peatland,https://www.oxfordlearnersdictionaries.com/definition/english/peatland,C2,peatland,đất than bùn,noun,/ˈpiːtlənd/,
-plantation,https://www.oxfordlearnersdictionaries.com/definition/english/plantation,C1,plantation,đồn điền,noun,/plɑːnˈteɪʃn/,
-plain,https://www.oxfordlearnersdictionaries.com/definition/english/plain_2,C1,plain,đơn giản,noun,/pleɪn/,
-rainforest,https://www.oxfordlearnersdictionaries.com/definition/english/rainforest,A2,rainforest,rừng nhiệt đới,noun,/ˈreɪnfɒrɪst/,
-region,https://www.oxfordlearnersdictionaries.com/definition/english/region,A2,region,vùng đất,noun,/ˈriːdʒən/,
-prairie,https://www.oxfordlearnersdictionaries.com/definition/english/prairie,C2,prairie,đồng cỏ,noun,/ˈpreəri/,
-pole,https://www.oxfordlearnersdictionaries.com/definition/english/pole_1,C1,pole,cực,noun,/pəʊl/,
-sand,https://www.oxfordlearnersdictionaries.com/definition/english/sand_1,B1,sand,cát,noun,/sænd/,
-scenery,https://www.oxfordlearnersdictionaries.com/definition/english/scenery,B1,scenery,phong cảnh,noun,/ˈsiːnəri/,
-quicksand,https://www.oxfordlearnersdictionaries.com/definition/english/quicksand,C2,quicksand,cát lún,noun,/ˈkwɪksænd/,
-swamp,https://www.oxfordlearnersdictionaries.com/definition/english/swamp_1,C1,swamp,đầm lầy,noun,/swɒmp/,
-tropic,https://www.oxfordlearnersdictionaries.com/definition/english/tropic,C1,tropic,nhiệt đới,noun,/ˈtrɒpɪk/,
-suburb,https://www.oxfordlearnersdictionaries.com/definition/english/suburb,B2,suburb,ngoại ô,noun,/ˈsʌbɜːb/,
-subtropics,https://www.oxfordlearnersdictionaries.com/definition/english/the-subtropics,C2,subtropics,cận nhiệt đới,noun,/ðə ˌsʌbˈtrɒpɪks/,
-subcontinent,https://www.oxfordlearnersdictionaries.com/definition/english/subcontinent,C2,subcontinent,tiểu lục địa,noun,/ˌsʌbˈkɒntɪnənt/,
-terrain,https://www.oxfordlearnersdictionaries.com/definition/english/terrain,C1,terrain,địa hình,noun,/təˈreɪn/,
-village,https://www.oxfordlearnersdictionaries.com/definition/english/village,A1,village,làng bản,noun,/ˈvɪlɪdʒ/,
-woodland,https://www.oxfordlearnersdictionaries.com/definition/english/woodland,B1,woodland,Rừng cây,noun,/ˈwʊdlənd/,
-zone,https://www.oxfordlearnersdictionaries.com/definition/english/zone_1,B2,zone,vùng,noun,/zəʊn/,
-tundra,https://www.oxfordlearnersdictionaries.com/definition/english/tundra,C1,tundra,lãnh nguyên,noun,/ˈtʌndrə/,
-wood,https://www.oxfordlearnersdictionaries.com/definition/english/wood,A2,wood,gỗ,noun,/wʊd/,
-town,https://www.oxfordlearnersdictionaries.com/definition/english/town,A1,town,thị trấn,noun,/taʊn/,
-south_pole,https://www.oxfordlearnersdictionaries.com/definition/english/the-south-pole,B2,South Pole,Nam Cực,noun,/ðə ˌsaʊθ ˈpəʊl/,
+countryside,https://www.oxfordlearnersdictionaries.com/definition/english/countryside,B1,countryside,nông thôn,noun,/ˈkʌntrisaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cou/count/countryside__gb_1.mp3
+clearing,https://www.oxfordlearnersdictionaries.com/definition/english/clearing,C1,clearing,thanh toán bù trừ,noun,/ˈklɪərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cle/clear/clearing__gb_1.mp3
+branch,https://www.oxfordlearnersdictionaries.com/definition/english/branch_1,C1,branch,chi nhánh,noun,/brɑːntʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bra/branc/branch__gb_1.mp3
+desert,https://www.oxfordlearnersdictionaries.com/definition/english/desert_1,A2,desert,sa mạc,noun,/ˈdezət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/des/deser/desert__gb_2.mp3
+district,https://www.oxfordlearnersdictionaries.com/definition/english/district,B2,district,huyện,noun,/ˈdɪstrɪkt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/distr/district__gb_2.mp3
+floodplain,https://www.oxfordlearnersdictionaries.com/definition/english/floodplain,C2,floodplain,vùng ngập lũ,noun,/ˈflʌdpleɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/flo/flood/flood_plain_1_gb_1.mp3
+equator,https://www.oxfordlearnersdictionaries.com/definition/english/equator,B2,equator,đường xích đạo,noun,/ɪˈkweɪtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/equ/equat/equator__gb_1.mp3
+farmland,https://www.oxfordlearnersdictionaries.com/definition/english/farmland,B1,farmland,đất nông nghiệp,noun,/ˈfɑːmlænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/far/farml/farmland__gb_1.mp3
+grassland,https://www.oxfordlearnersdictionaries.com/definition/english/grassland,B1,grassland,đồng cỏ,noun,/ˈɡrɑːslænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gra/grass/grassland__gb_1.mp3
+forest,https://www.oxfordlearnersdictionaries.com/definition/english/forest,A2,forest,rừng,noun,/ˈfɒrɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/for/fores/forest__gb_2.mp3
+fault,https://www.oxfordlearnersdictionaries.com/definition/english/fault_1,C2,fault,lỗi,noun,/fɔːlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fau/fault/fault__gb_1.mp3
+ground,https://www.oxfordlearnersdictionaries.com/definition/english/ground_1,A2,ground,đất,noun,/ɡraʊnd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gro/groun/ground__gb_2.mp3
+ice_sheet,https://www.oxfordlearnersdictionaries.com/definition/english/ice-sheet,C2,ice sheet,tảng băng,noun,/ˈaɪs ʃiːt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ice/ice_s/ice_sheet_1_gb_1.mp3
+hemisphere,https://www.oxfordlearnersdictionaries.com/definition/english/hemisphere,B2,hemisphere,bán cầu,noun,/ˈhemɪsfɪə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hem/hemis/hemisphere__gb_1.mp3
+island,https://www.oxfordlearnersdictionaries.com/definition/english/island,A1,island,hòn đảo,noun,/ˈaɪlənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/isl/islan/island__gb_2.mp3
+horizon,https://www.oxfordlearnersdictionaries.com/definition/english/horizon_1,C1,horizon,chân trời,noun,/həˈraɪzn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hor/horiz/horizon__gb_1.mp3
+heath,https://www.oxfordlearnersdictionaries.com/definition/english/heath,C2,heath,cây thạch thảo,noun,/hiːθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/h/hea/heath/heath__gb_1.mp3
+glade,https://www.oxfordlearnersdictionaries.com/definition/english/glade,C2,glade,trảng cỏ,noun,/ɡleɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gla/glade/glade__gb_2.mp3
+jungle,https://www.oxfordlearnersdictionaries.com/definition/english/jungle,B1,jungle,rừng,noun,/ˈdʒʌŋɡl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/j/jun/jungl/jungle__gb_3.mp3
+isthmus,https://www.oxfordlearnersdictionaries.com/definition/english/isthmus,C2,isthmus,eo đất,noun,/ˈɪsməs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ist/isthm/isthmus__gb_1.mp3
+ice_cap,https://www.oxfordlearnersdictionaries.com/definition/english/ice-cap,B2,ice cap,chỏm băng,noun,/ˈaɪs kæp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ice/ice_c/ice_cap_1_gb_1.mp3
+landscape,https://www.oxfordlearnersdictionaries.com/definition/english/landscape_1,B2,landscape,phong cảnh,noun,/ˈlændskeɪp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lan/lands/landscape__gb_1.mp3
+oilfield,https://www.oxfordlearnersdictionaries.com/definition/english/oilfield,C1,oilfield,mỏ dầu,noun,/ˈɔɪlfiːld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/oil/oilfi/oilfield__gb_1.mp3
+morass,https://www.oxfordlearnersdictionaries.com/definition/english/morass,C2,morass,bãi lầy,noun,/məˈræs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/moras/morass__gb_1.mp3
+lowland,https://www.oxfordlearnersdictionaries.com/definition/english/lowland_2,B2,lowland,vùng đất thấp,noun,/ˈləʊlənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/low/lowla/lowland__gb_1.mp3
+outback,https://www.oxfordlearnersdictionaries.com/definition/english/outback,B2,outback,vùng hẻo lánh,noun,/ˈaʊtbæk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outba/outback__gb_1.mp3
+marsh,https://www.oxfordlearnersdictionaries.com/definition/english/marsh,C2,marsh,đầm lầy,noun,/mɑːʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mar/marsh/marsh__gb_1.mp3
+pavement,https://www.oxfordlearnersdictionaries.com/definition/english/pavement,C2,pavement,vỉa hè,noun,/ˈpeɪvmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pav/pavem/pavement__gb_1.mp3
+north_pole,https://www.oxfordlearnersdictionaries.com/definition/english/the-north-pole,B2,North Pole,Bắc Cực,noun,/ðə ˌnɔːθ ˈpəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_n/the_north_pole_1_gb_1.mp3
+moorland,https://www.oxfordlearnersdictionaries.com/definition/english/moorland,C2,moorland,vùng đất hoang,noun,/ˈmɔːlənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/moo/moorl/moorland__gb_1.mp3
+moor,https://www.oxfordlearnersdictionaries.com/definition/english/moor_1,C2,moor,đồng hoang,noun,/mɔː(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/moo/moor_/moor__gb_3.mp3
+outskirts,https://www.oxfordlearnersdictionaries.com/definition/english/outskirts,C1,outskirts,vùng ngoại ô,noun,/ˈaʊtskɜːts/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/o/out/outsk/outskirts__gb_1.mp3
+peninsula,https://www.oxfordlearnersdictionaries.com/definition/english/peninsula,C1,peninsula,bán đảo,noun,/pəˈnɪnsjələ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pen/penin/peninsula__gb_1.mp3
+peatland,https://www.oxfordlearnersdictionaries.com/definition/english/peatland,C2,peatland,đất than bùn,noun,/ˈpiːtlənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pea/peatl/peatland__gb_1.mp3
+plantation,https://www.oxfordlearnersdictionaries.com/definition/english/plantation,C1,plantation,đồn điền,noun,/plɑːnˈteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plant/plantation__gb_1.mp3
+plain,https://www.oxfordlearnersdictionaries.com/definition/english/plain_2,C1,plain,đơn giản,noun,/pleɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pla/plain/plain__gb_1.mp3
+rainforest,https://www.oxfordlearnersdictionaries.com/definition/english/rainforest,A2,rainforest,rừng nhiệt đới,noun,/ˈreɪnfɒrɪst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/rai/rainf/rainforest__gb_1.mp3
+region,https://www.oxfordlearnersdictionaries.com/definition/english/region,A2,region,vùng đất,noun,/ˈriːdʒən/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/reg/regio/region__gb_2.mp3
+prairie,https://www.oxfordlearnersdictionaries.com/definition/english/prairie,C2,prairie,đồng cỏ,noun,/ˈpreəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pra/prair/prairie__gb_1.mp3
+pole,https://www.oxfordlearnersdictionaries.com/definition/english/pole_1,C1,pole,cực,noun,/pəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pol/pole_/pole__gb_1.mp3
+sand,https://www.oxfordlearnersdictionaries.com/definition/english/sand_1,B1,sand,cát,noun,/sænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/san/sand_/sand__gb_2.mp3
+scenery,https://www.oxfordlearnersdictionaries.com/definition/english/scenery,B1,scenery,phong cảnh,noun,/ˈsiːnəri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sce/scene/scenery__gb_1.mp3
+quicksand,https://www.oxfordlearnersdictionaries.com/definition/english/quicksand,C2,quicksand,cát lún,noun,/ˈkwɪksænd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/q/qui/quick/quicksand__gb_1.mp3
+swamp,https://www.oxfordlearnersdictionaries.com/definition/english/swamp_1,C1,swamp,đầm lầy,noun,/swɒmp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swa/swamp/swamp__gb_1.mp3
+tropic,https://www.oxfordlearnersdictionaries.com/definition/english/tropic,C1,tropic,nhiệt đới,noun,/ˈtrɒpɪk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tro/tropi/tropic__gb_1.mp3
+suburb,https://www.oxfordlearnersdictionaries.com/definition/english/suburb,B2,suburb,ngoại ô,noun,/ˈsʌbɜːb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subur/suburb__gb_1.mp3
+subtropics,https://www.oxfordlearnersdictionaries.com/definition/english/the-subtropics,C2,subtropics,cận nhiệt đới,noun,/ðə ˌsʌbˈtrɒpɪks/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_s/the_subtropics_1_gb_1.mp3
+subcontinent,https://www.oxfordlearnersdictionaries.com/definition/english/subcontinent,C2,subcontinent,tiểu lục địa,noun,/ˌsʌbˈkɒntɪnənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subco/subcontinent__gb_1.mp3
+terrain,https://www.oxfordlearnersdictionaries.com/definition/english/terrain,C1,terrain,địa hình,noun,/təˈreɪn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/terra/terrain__gb_1.mp3
+village,https://www.oxfordlearnersdictionaries.com/definition/english/village,A1,village,làng bản,noun,/ˈvɪlɪdʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/vil/villa/village__gb_1.mp3
+woodland,https://www.oxfordlearnersdictionaries.com/definition/english/woodland,B1,woodland,Rừng cây,noun,/ˈwʊdlənd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/woo/woodl/woodland__gb_1.mp3
+zone,https://www.oxfordlearnersdictionaries.com/definition/english/zone_1,B2,zone,vùng,noun,/zəʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/z/zon/zone_/zone__gb_1.mp3
+tundra,https://www.oxfordlearnersdictionaries.com/definition/english/tundra,C1,tundra,lãnh nguyên,noun,/ˈtʌndrə/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tun/tundr/tundra__gb_1.mp3
+wood,https://www.oxfordlearnersdictionaries.com/definition/english/wood,A2,wood,gỗ,noun,/wʊd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/woo/wood_/wood__gb_1.mp3
+town,https://www.oxfordlearnersdictionaries.com/definition/english/town,A1,town,thị trấn,noun,/taʊn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tow/town_/town__gb_1.mp3
+south_pole,https://www.oxfordlearnersdictionaries.com/definition/english/the-south-pole,B2,South Pole,Nam Cực,noun,/ðə ˌsaʊθ ˈpəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/the/the_s/the_south_pole_1_gb_1.mp3

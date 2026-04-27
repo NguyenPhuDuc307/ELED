@@ -1,17 +1,17 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-beaker,https://www.oxfordlearnersdictionaries.com/definition/english/beaker,C2,beaker,cốc thủy tinh,noun,/ˈbiːkə(r)/,
-equipment,https://www.oxfordlearnersdictionaries.com/definition/english/equipment,A2,equipment,thiết bị,noun,/ɪˈkwɪpmənt/,
-flask,https://www.oxfordlearnersdictionaries.com/definition/english/flask,C2,flask,bình,noun,/flɑːsk/,
-bunsen_burner,https://www.oxfordlearnersdictionaries.com/definition/english/bunsen-burner,C2,Bunsen burner,Đầu đốt Bunsen,noun,/ˌbʌnsn ˈbɜːnə(r)/,
-filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_1,C1,filter,lọc,noun,/ˈfɪltə(r)/,
-microscope,https://www.oxfordlearnersdictionaries.com/definition/english/microscope,B2,microscope,kính hiển vi,noun,/ˈmaɪkrəskəʊp/,
-mortar,https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1,C2,mortar,vữa,noun,/ˈmɔːtə(r)/,
-funnel,https://www.oxfordlearnersdictionaries.com/definition/english/funnel_1,C2,funnel,cái phễu,noun,/ˈfʌnl/,
-instrument,https://www.oxfordlearnersdictionaries.com/definition/english/instrument,B2,instrument,dụng cụ,noun,/ˈɪnstrəmənt/,
-apparatus,https://www.oxfordlearnersdictionaries.com/definition/english/apparatus,C1,apparatus,bộ máy,noun,/ˌæpəˈreɪtəs/,
-pestle,https://www.oxfordlearnersdictionaries.com/definition/english/pestle,C2,pestle,chày,noun,/ˈpesl/,
-telescope,https://www.oxfordlearnersdictionaries.com/definition/english/telescope_1,B2,telescope,kính thiên văn,noun,/ˈtelɪskəʊp/,
-slide,https://www.oxfordlearnersdictionaries.com/definition/english/slide_2,C2,slide,cầu trượt,noun,/slaɪd/,
-syringe,https://www.oxfordlearnersdictionaries.com/definition/english/syringe_1,C2,syringe,ống tiêm,noun,/sɪˈrɪndʒ/,
-test_tube,https://www.oxfordlearnersdictionaries.com/definition/english/test-tube,C1,test tube,ống nghiệm,noun,/ˈtest tjuːb/,
-weather_balloon,https://www.oxfordlearnersdictionaries.com/definition/english/weather-balloon,C2,weather balloon,bong bóng thời tiết,noun,/ˈweðə bəluːn/,
+beaker,https://www.oxfordlearnersdictionaries.com/definition/english/beaker,C2,beaker,cốc thủy tinh,noun,/ˈbiːkə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bea/beake/beaker__gb_1.mp3
+equipment,https://www.oxfordlearnersdictionaries.com/definition/english/equipment,A2,equipment,thiết bị,noun,/ɪˈkwɪpmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/equ/equip/equipment__gb_2.mp3
+flask,https://www.oxfordlearnersdictionaries.com/definition/english/flask,C2,flask,bình,noun,/flɑːsk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fla/flask/flask__gb_1.mp3
+bunsen_burner,https://www.oxfordlearnersdictionaries.com/definition/english/bunsen-burner,C2,Bunsen burner,Đầu đốt Bunsen,noun,/ˌbʌnsn ˈbɜːnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bun/bunse/bunsen_burner_1_gb_1.mp3
+filter,https://www.oxfordlearnersdictionaries.com/definition/english/filter_1,C1,filter,lọc,noun,/ˈfɪltə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fil/filte/filter__gb_1.mp3
+microscope,https://www.oxfordlearnersdictionaries.com/definition/english/microscope,B2,microscope,kính hiển vi,noun,/ˈmaɪkrəskəʊp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mic/micro/microscope__gb_1.mp3
+mortar,https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1,C2,mortar,vữa,noun,/ˈmɔːtə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mor/morta/mortar__gb_1.mp3
+funnel,https://www.oxfordlearnersdictionaries.com/definition/english/funnel_1,C2,funnel,cái phễu,noun,/ˈfʌnl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/f/fun/funne/funnel__gb_2.mp3
+instrument,https://www.oxfordlearnersdictionaries.com/definition/english/instrument,B2,instrument,dụng cụ,noun,/ˈɪnstrəmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/i/ins/instr/instrument__gb_3.mp3
+apparatus,https://www.oxfordlearnersdictionaries.com/definition/english/apparatus,C1,apparatus,bộ máy,noun,/ˌæpəˈreɪtəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/a/app/appar/apparatus__gb_1.mp3
+pestle,https://www.oxfordlearnersdictionaries.com/definition/english/pestle,C2,pestle,chày,noun,/ˈpesl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pes/pestl/pestle__gb_1.mp3
+telescope,https://www.oxfordlearnersdictionaries.com/definition/english/telescope_1,B2,telescope,kính thiên văn,noun,/ˈtelɪskəʊp/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tel/teles/telescope__gb_1.mp3
+slide,https://www.oxfordlearnersdictionaries.com/definition/english/slide_2,C2,slide,cầu trượt,noun,/slaɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sli/slide/slide__gb_2.mp3
+syringe,https://www.oxfordlearnersdictionaries.com/definition/english/syringe_1,C2,syringe,ống tiêm,noun,/sɪˈrɪndʒ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/syr/syrin/syringe__gb_1.mp3
+test_tube,https://www.oxfordlearnersdictionaries.com/definition/english/test-tube,C1,test tube,ống nghiệm,noun,/ˈtest tjuːb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test_tube_1_gb_1.mp3
+weather_balloon,https://www.oxfordlearnersdictionaries.com/definition/english/weather-balloon,C2,weather balloon,bong bóng thời tiết,noun,/ˈweðə bəluːn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wea/weath/weather_balloon_1_gb_1.mp3

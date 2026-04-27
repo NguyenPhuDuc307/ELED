@@ -109,13 +109,13 @@ class CsvService {
 
           merged[key] = Vocabulary(
             id: existing.id,
-            url: existing.url,
+            url: existing.url.isNotEmpty ? existing.url : vocab.url,
             levels: existing.levels,
             word: existing.word,
             translation: newTrans,
             partOfSpeech: newPos,
-            ipa: existing.ipa,
-            audioLink: existing.audioLink,
+            ipa: existing.ipa.isNotEmpty ? existing.ipa : vocab.ipa,
+            audioLink: existing.audioLink.isNotEmpty ? existing.audioLink : vocab.audioLink,
             topic: newTopic,
           );
         } else {

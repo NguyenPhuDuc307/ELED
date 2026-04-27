@@ -1,25 +1,25 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-clinical_trial,https://www.oxfordlearnersdictionaries.com/definition/english/clinical-trial,C1,clinical trial,thử nghiệm lâm sàng,noun,/ˌklɪnɪkl ˈtraɪəl/,
-dissect,https://www.oxfordlearnersdictionaries.com/definition/english/dissect,C2,dissect,mổ xẻ,verb,/dɪˈsekt/,
-conduct,https://www.oxfordlearnersdictionaries.com/definition/english/conduct_1,B2,conduct,chỉ đạo,verb,/kənˈdʌkt/,
-experimental,https://www.oxfordlearnersdictionaries.com/definition/english/experimental,C1,experimental,thực nghiệm,adjective,/ɪkˌsperɪˈmentl/,
-control,https://www.oxfordlearnersdictionaries.com/definition/english/control_1,C1,control,điều khiển,noun,/kənˈtrəʊl/,
-empirical,https://www.oxfordlearnersdictionaries.com/definition/english/empirical,C1,empirical,thực nghiệm,adjective,/ɪmˈpɪrɪkl/,
-experimentation,https://www.oxfordlearnersdictionaries.com/definition/english/experimentation,C1,experimentation,sự thử nghiệm,noun,/ɪkˌsperɪmenˈteɪʃn/,
-experiment,https://www.oxfordlearnersdictionaries.com/definition/english/experiment_2,B1,experiment,cuộc thí nghiệm,verb,/ɪkˈsperɪment/,
-empirically,https://www.oxfordlearnersdictionaries.com/definition/english/empirically,C1,empirically,theo kinh nghiệm,adverb,/ɪmˈpɪrɪkli/,
-controlled_experiment,https://www.oxfordlearnersdictionaries.com/definition/english/controlled-experiment,C2,controlled experiment,thí nghiệm có kiểm soát,noun,/kənˌtrəʊld ɪkˈsperɪmənt/,
-laboratory,https://www.oxfordlearnersdictionaries.com/definition/english/laboratory,B1,laboratory,phòng thí nghiệm,noun,/ləˈbɒrətri/,
-guinea_pig,https://www.oxfordlearnersdictionaries.com/definition/english/guinea-pig,C1,guinea pig,chuột lang,noun,/ˈɡɪni pɪɡ/,
-lab,https://www.oxfordlearnersdictionaries.com/definition/english/lab_1,A2,lab,phòng thí nghiệm,noun,/læb/,
-procedure,https://www.oxfordlearnersdictionaries.com/definition/english/procedure,B2,procedure,thủ tục,noun,/prəˈsiːdʒə(r)/,
-protocol,https://www.oxfordlearnersdictionaries.com/definition/english/protocol,C2,protocol,giao thức,noun,/ˈprəʊtəkɒl/,
-method,https://www.oxfordlearnersdictionaries.com/definition/english/method,A2,method,phương pháp,noun,/ˈmeθəd/,
-result,https://www.oxfordlearnersdictionaries.com/definition/english/result_1,A1,result,kết quả,noun,/rɪˈzʌlt/,
-randomize,https://www.oxfordlearnersdictionaries.com/definition/english/randomize,C2,randomize,chọn ngẫu nhiên,verb,/ˈrændəmaɪz/,
-subject,https://www.oxfordlearnersdictionaries.com/definition/english/subject_1,C1,subject,chủ thể,noun,/ˈsʌbdʒɪkt/,
-test,https://www.oxfordlearnersdictionaries.com/definition/english/test_1,A2,test,Bài kiểm tra,noun,/test/,
-trial,https://www.oxfordlearnersdictionaries.com/definition/english/trial_1,B2,trial,sự thử nghiệm,noun,/ˈtraɪəl/,
-test,https://www.oxfordlearnersdictionaries.com/definition/english/test_2,A2,test,Bài kiểm tra,verb,/test/,
-thought_experiment,https://www.oxfordlearnersdictionaries.com/definition/english/thought-experiment,B2,thought experiment,thí nghiệm suy nghĩ,noun,/ˈθɔːt ɪksperɪmənt/,
-vivisection,https://www.oxfordlearnersdictionaries.com/definition/english/vivisection,C2,vivisection,giải phẫu sống,noun,/ˌvɪvɪˈsekʃn/,
+clinical_trial,https://www.oxfordlearnersdictionaries.com/definition/english/clinical-trial,C1,clinical trial,thử nghiệm lâm sàng,noun,/ˌklɪnɪkl ˈtraɪəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cli/clini/clinical_trial_1_gb_1.mp3
+dissect,https://www.oxfordlearnersdictionaries.com/definition/english/dissect,C2,dissect,mổ xẻ,verb,/dɪˈsekt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/d/dis/disse/dissect__gb_1.mp3
+conduct,https://www.oxfordlearnersdictionaries.com/definition/english/conduct_1,B2,conduct,chỉ đạo,verb,/kənˈdʌkt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcond/xconduct__gb_4.mp3
+experimental,https://www.oxfordlearnersdictionaries.com/definition/english/experimental,C1,experimental,thực nghiệm,adjective,/ɪkˌsperɪˈmentl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/exper/experimental__gb_2.mp3
+control,https://www.oxfordlearnersdictionaries.com/definition/english/control_1,C1,control,điều khiển,noun,/kənˈtrəʊl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontrol__gb_2.mp3
+empirical,https://www.oxfordlearnersdictionaries.com/definition/english/empirical,C1,empirical,thực nghiệm,adjective,/ɪmˈpɪrɪkl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emp/empir/empirical__gb_1.mp3
+experimentation,https://www.oxfordlearnersdictionaries.com/definition/english/experimentation,C1,experimentation,sự thử nghiệm,noun,/ɪkˌsperɪmenˈteɪʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/exper/experimentation__gb_1.mp3
+experiment,https://www.oxfordlearnersdictionaries.com/definition/english/experiment_2,B1,experiment,cuộc thí nghiệm,verb,/ɪkˈsperɪment/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exp/exper/experiment__gb_7.mp3
+empirically,https://www.oxfordlearnersdictionaries.com/definition/english/empirically,C1,empirically,theo kinh nghiệm,adverb,/ɪmˈpɪrɪkli/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/emp/empir/empirically__gb_1.mp3
+controlled_experiment,https://www.oxfordlearnersdictionaries.com/definition/english/controlled-experiment,C2,controlled experiment,thí nghiệm có kiểm soát,noun,/kənˌtrəʊld ɪkˈsperɪmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/x/xco/xcont/xcontrolled_experiment_1_gb_1.mp3
+laboratory,https://www.oxfordlearnersdictionaries.com/definition/english/laboratory,B1,laboratory,phòng thí nghiệm,noun,/ləˈbɒrətri/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/labor/laboratory__gb_2.mp3
+guinea_pig,https://www.oxfordlearnersdictionaries.com/definition/english/guinea-pig,C1,guinea pig,chuột lang,noun,/ˈɡɪni pɪɡ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/g/gui/guine/guinea_pig_1_gb_1.mp3
+lab,https://www.oxfordlearnersdictionaries.com/definition/english/lab_1,A2,lab,phòng thí nghiệm,noun,/læb/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lab/lab__/lab__gb_2.mp3
+procedure,https://www.oxfordlearnersdictionaries.com/definition/english/procedure,B2,procedure,thủ tục,noun,/prəˈsiːdʒə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proce/procedure__gb_3.mp3
+protocol,https://www.oxfordlearnersdictionaries.com/definition/english/protocol,C2,protocol,giao thức,noun,/ˈprəʊtəkɒl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pro/proto/protocol__gb_1.mp3
+method,https://www.oxfordlearnersdictionaries.com/definition/english/method,A2,method,phương pháp,noun,/ˈmeθəd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/met/metho/method__gb_2.mp3
+result,https://www.oxfordlearnersdictionaries.com/definition/english/result_1,A1,result,kết quả,noun,/rɪˈzʌlt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/res/resul/result__gb_3.mp3
+randomize,https://www.oxfordlearnersdictionaries.com/definition/english/randomize,C2,randomize,chọn ngẫu nhiên,verb,/ˈrændəmaɪz/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/r/ran/rando/randomize__gb_1.mp3
+subject,https://www.oxfordlearnersdictionaries.com/definition/english/subject_1,C1,subject,chủ thể,noun,/ˈsʌbdʒɪkt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sub/subje/subject__gb_7.mp3
+test,https://www.oxfordlearnersdictionaries.com/definition/english/test_1,A2,test,Bài kiểm tra,noun,/test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test__gb_1.mp3
+trial,https://www.oxfordlearnersdictionaries.com/definition/english/trial_1,B2,trial,sự thử nghiệm,noun,/ˈtraɪəl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tri/trial/trial__gb_2.mp3
+test,https://www.oxfordlearnersdictionaries.com/definition/english/test_2,A2,test,Bài kiểm tra,verb,/test/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tes/test_/test__gb_1.mp3
+thought_experiment,https://www.oxfordlearnersdictionaries.com/definition/english/thought-experiment,B2,thought experiment,thí nghiệm suy nghĩ,noun,/ˈθɔːt ɪksperɪmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tho/thoug/thought_experiment_1_gb_1.mp3
+vivisection,https://www.oxfordlearnersdictionaries.com/definition/english/vivisection,C2,vivisection,giải phẫu sống,noun,/ˌvɪvɪˈsekʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/v/viv/vivis/vivisection__gb_1.mp3

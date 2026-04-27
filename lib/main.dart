@@ -1,5 +1,7 @@
+import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'screens/menu_screen.dart';
@@ -45,6 +47,18 @@ void main() async {
 
   await NotificationService.processScheduleLog();
   _ensureNotificationVersion();
+
+  if (Platform.isAndroid) {
+    const MethodChannel('com.nguyenphuduc.eled/knownwords')
+        .setMethodCallHandler((call) async {
+      if (call.method == 'markKnown') {
+        final word = call.arguments as String?;
+        if (word != null && word.isNotEmpty) {
+          await UserDataService().addKnownWord(word);
+        }
+      }
+    });
+  }
 
   final needsSync = !await VocabularySyncService.hasLocalData() ||
       await VocabularySyncService.isOutdated();

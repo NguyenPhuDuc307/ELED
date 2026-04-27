@@ -12,6 +12,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
 import '../services/update_service.dart';
+import '../services/user_data_service.dart';
 import '../screens/learning_screen.dart';
 import '../main.dart';
 
@@ -296,6 +297,15 @@ class NotificationService {
   static Future<void> processScheduleLog() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.reload();
+
+    // Merge words marked known via notification action while app was in background
+    final pendingKnown = prefs.getString('nativePendingKnownWords') ?? '';
+    if (pendingKnown.isNotEmpty) {
+      await prefs.remove('nativePendingKnownWords');
+      for (final word in pendingKnown.split('\n').where((w) => w.isNotEmpty)) {
+        await UserDataService().addKnownWord(word);
+      }
+    }
 
     // Merge native notification tap payload saved by MainActivity.saveNativePayload()
     final nativePayload = prefs.getString('nativeNotificationPayload');

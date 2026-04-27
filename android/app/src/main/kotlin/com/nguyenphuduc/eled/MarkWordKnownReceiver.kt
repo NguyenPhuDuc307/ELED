@@ -27,5 +27,11 @@ class MarkWordKnownReceiver : BroadcastReceiver() {
             .apply()
 
         Toast.makeText(context, "Marked as known: ${word.uppercase()}", Toast.LENGTH_SHORT).show()
+
+        // Notify MainActivity if app is in foreground so Flutter can update immediately
+        context.sendBroadcast(Intent("com.nguyenphuduc.eled.MARK_KNOWN").apply {
+            putExtra("word", word)
+            setPackage(context.packageName)
+        })
     }
 }

@@ -38,6 +38,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _checkingUpdate = false;
   bool _updateChecked = false;
   bool _autoCheckUpdate = true;
+  bool _downloading = false;
+  double _downloadProgress = 0.0;
 
   final List<String> _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -137,6 +139,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
         const SnackBar(content: Text('Settings saved!')),
       );
       Navigator.of(context).pop();
+    }
+  }
+
+  Future<void> _downloadAndInstall() async {
+    final info = _updateInfo;
+    if (info == null || info.apkUrl.isEmpty) return;
+    setState(() { _downloading = true; _downloadProgress = 0.0; });
+    try {
+      await UpdateService.downloadAndInstall(
+        info.apkUrl,
+        onProgress: (p) {
+          if (mounted) setState(() => _downloadProgress = p < 0 ? -1.0 : p);
+        },
+      );
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Download failed: $e')),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _downloading = false);
     }
   }
 
@@ -474,39 +498,62 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     color: BrutalistTheme.primaryLight,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Row(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      const Icon(Icons.new_releases_rounded, color: BrutalistTheme.primary, size: 20),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          'v${_updateInfo!.version} available!',
-                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                fontWeight: FontWeight.w700,
-                                color: BrutalistTheme.primary,
+                      Row(
+                        children: [
+                          const Icon(Icons.new_releases_rounded, color: BrutalistTheme.primary, size: 20),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              'v${_updateInfo!.version} available!',
+                              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                    fontWeight: FontWeight.w700,
+                                    color: BrutalistTheme.primary,
+                                  ),
+                            ),
+                          ),
+                          if (!_downloading)
+                            TextButton(
+                              onPressed: _updateInfo!.apkUrl.isNotEmpty
+                                  ? _downloadAndInstall
+                                  : () async {
+                                      final url = Uri.parse(_updateInfo!.releaseUrl);
+                                      await launchUrl(url, mode: LaunchMode.externalApplication);
+                                    },
+                              child: Text(
+                                _updateInfo!.apkUrl.isNotEmpty ? 'Update Now' : 'Open',
+                                style: const TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
                               ),
-                        ),
+                            )
+                          else
+                            const SizedBox(
+                              width: 22, height: 22,
+                              child: CircularProgressIndicator(strokeWidth: 2, color: BrutalistTheme.primary),
+                            ),
+                        ],
                       ),
-                      TextButton(
-                        onPressed: () async {
-                          final url = Uri.parse(
-                            _updateInfo!.apkUrl.isNotEmpty
-                                ? _updateInfo!.apkUrl
-                                : _updateInfo!.releaseUrl,
-                          );
-                          if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
-                            if (mounted) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(content: Text('Could not open link.')),
-                              );
-                            }
-                          }
-                        },
-                        child: const Text(
-                          'Download',
-                          style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
+                      if (_downloading) ...[
+                        const SizedBox(height: 8),
+                        LinearProgressIndicator(
+                          value: _downloadProgress < 0 ? null : _downloadProgress,
+                          backgroundColor: BrutalistTheme.primary.withValues(alpha: 0.2),
+                          valueColor: const AlwaysStoppedAnimation(BrutalistTheme.primary),
+                          borderRadius: BorderRadius.circular(4),
                         ),
-                      ),
+                        if (_downloadProgress >= 0) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            '${(_downloadProgress * 100).toInt()}%',
+                            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                  color: BrutalistTheme.primary,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ],
                     ],
                   ),
                 ),

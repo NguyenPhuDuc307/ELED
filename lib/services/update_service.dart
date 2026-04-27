@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UpdateInfo {
@@ -73,6 +75,37 @@ class UpdateService {
     } catch (_) {
       return null;
     }
+  }
+
+  /// Downloads the APK to cache and triggers the Android package installer.
+  /// [onProgress] receives 0.0–1.0; -1.0 means indeterminate (no content-length).
+  static Future<void> downloadAndInstall(
+    String apkUrl, {
+    void Function(double progress)? onProgress,
+  }) async {
+    final tmpDir = await getTemporaryDirectory();
+    final file = File('${tmpDir.path}/eled_update.apk');
+    if (file.existsSync()) file.deleteSync();
+
+    final client = HttpClient();
+    try {
+      final req = await client.getUrl(Uri.parse(apkUrl));
+      final res = await req.close();
+      final total = res.contentLength;
+      int received = 0;
+      final sink = file.openWrite();
+      await for (final chunk in res) {
+        sink.add(chunk);
+        received += chunk.length;
+        onProgress?.call(total > 0 ? received / total : -1.0);
+      }
+      await sink.close();
+    } finally {
+      client.close();
+    }
+
+    const installChannel = MethodChannel('com.nguyenphuduc.eled/install');
+    await installChannel.invokeMethod('installApk', {'path': file.path});
   }
 
   /// Current installed version string, e.g. "1.0.0-alpha.5"

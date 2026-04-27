@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class UpdateInfo {
   final String version;   // e.g. "1.0.0-alpha.6"
@@ -17,6 +18,17 @@ class UpdateInfo {
 class UpdateService {
   static const _apiUrl =
       'https://api.github.com/repos/NguyenPhuDuc307/ELED/releases?per_page=20';
+  static const autoCheckPrefKey = 'autoCheckUpdate';
+
+  static Future<bool> isAutoCheckEnabled() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool(autoCheckPrefKey) ?? true;
+  }
+
+  static Future<void> setAutoCheck(bool enabled) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(autoCheckPrefKey, enabled);
+  }
 
   /// Returns [UpdateInfo] if a newer app release exists, null otherwise.
   static Future<UpdateInfo?> checkForUpdate() async {

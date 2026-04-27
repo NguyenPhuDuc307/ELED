@@ -37,6 +37,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   UpdateInfo? _updateInfo;
   bool _checkingUpdate = false;
   bool _updateChecked = false;
+  bool _autoCheckUpdate = true;
 
   final List<String> _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -55,6 +56,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
       _loadSettingsAndData();
     });
     _loadSettingsAndData();
+    _loadCurrentVersion();
+  }
+
+  Future<void> _loadCurrentVersion() async {
+    final v = await UpdateService.currentVersion();
+    final auto = await UpdateService.isAutoCheckEnabled();
+    if (mounted) setState(() { _currentVersion = v; _autoCheckUpdate = auto; });
   }
 
   Future<void> _loadSettingsAndData() async {
@@ -431,6 +439,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
                         ),
                       ),
+              ],
+            ),
+            const SizedBox(height: 4),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    'Auto-check on startup',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: context.bMuted),
+                  ),
+                ),
+                Switch(
+                  value: _autoCheckUpdate,
+                  onChanged: (val) async {
+                    setState(() => _autoCheckUpdate = val);
+                    await UpdateService.setAutoCheck(val);
+                  },
+                  activeThumbColor: BrutalistTheme.white,
+                  activeTrackColor: BrutalistTheme.primary,
+                  inactiveThumbColor: BrutalistTheme.white,
+                  inactiveTrackColor: BrutalistTheme.border,
+                  trackOutlineColor: WidgetStateProperty.all(Colors.transparent),
+                ),
               ],
             ),
             if (_updateChecked) ...[

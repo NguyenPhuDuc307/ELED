@@ -8,6 +8,7 @@ import 'services/vocabulary_sync_service.dart';
 import 'theme/brutalist_theme.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
+import 'services/update_service.dart';
 import 'services/user_data_service.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
@@ -48,6 +49,16 @@ void main() async {
   final needsSync = !await VocabularySyncService.hasLocalData() ||
       await VocabularySyncService.isOutdated();
   runApp(EledApp(needsSync: needsSync));
+
+  _autoCheckForUpdate();
+}
+
+Future<void> _autoCheckForUpdate() async {
+  try {
+    if (!await UpdateService.isAutoCheckEnabled()) return;
+    final info = await UpdateService.checkForUpdate();
+    if (info != null) await NotificationService.showUpdateNotification(info);
+  } catch (_) {}
 }
 
 // Bump this string whenever notification format changes (actions, channels, etc.)

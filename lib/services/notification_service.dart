@@ -8,8 +8,10 @@ import 'package:home_widget/home_widget.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
+import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
 import '../services/csv_service.dart';
+import '../services/update_service.dart';
 import '../screens/learning_screen.dart';
 import '../main.dart';
 
@@ -69,9 +71,43 @@ class NotificationService {
     } catch (_) {}
   }
 
+  /// Shows a system notification that a new app version is available.
+  static Future<void> showUpdateNotification(UpdateInfo info) async {
+    final plugin = NotificationService().flutterLocalNotificationsPlugin;
+    if (Platform.isAndroid) {
+      const channel = AndroidNotificationChannel(
+        'eled_update',
+        'App Updates',
+        importance: Importance.defaultImportance,
+      );
+      await plugin
+          .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
+          ?.createNotificationChannel(channel);
+    }
+    await plugin.show(
+      id: 99999,
+      title: 'Update available — v${info.version}',
+      body: 'Tap to download the latest version',
+      notificationDetails: const NotificationDetails(
+        android: AndroidNotificationDetails('eled_update', 'App Updates'),
+        iOS: DarwinNotificationDetails(),
+      ),
+      payload: 'update:${info.apkUrl.isNotEmpty ? info.apkUrl : info.releaseUrl}',
+    );
+  }
+
   static Future<void> _onNotificationTapped(NotificationResponse response) async {
     final payload = response.payload;
     if (payload == null || payload.isEmpty) return;
+
+    // Handle update notification tap — open download URL in browser
+    if (payload.startsWith('update:')) {
+      final url = payload.substring('update:'.length);
+      if (url.isNotEmpty) {
+        await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+      }
+      return;
+    }
 
     if (globalNavigatorKey.currentState == null) {
       pendingNotificationPayload = payload;

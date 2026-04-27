@@ -25,37 +25,37 @@ ELED helps you build English vocabulary through **passive exposure** — notific
 
 ## Features
 
-### 📚 Vocabulary Database — 24,853 unique words
+### Vocabulary Database — 24,853 unique words
 - **Oxford Core (5,878 words)** — CEFR levels A1 → C1, deduplicated
 - **Topic sets (23,073 words)** — 480 specialized topics (Business, Medicine, Technology, Daily Life, etc.)
 - All CSV data is merged at runtime into a single deduplicated flashcard pool
 
-### 🔔 Background Notifications
+### Background Notifications
 - Schedule vocabulary notifications at custom intervals (1 min – 60 min)
 - Set an active time window (e.g. 09:00 – 22:00) — silent outside those hours
 - Native Android scheduling via `AlarmManager` for 100% reliable delivery
 - **Pronunciation audio plays automatically** when each notification fires (Oxford UK MP3)
 - One-tap "Known" action button — marks the word without opening the app
 
-### 🃏 Flashcard Learning
+### Flashcard Learning
 - Swipe through word cards with IPA, part of speech, CEFR level, and topic badges
 - Toggle between **English definition** (Oxford) and **Vietnamese translation** of that definition (Google Translate, on demand)
 - Tap the Oxford link to open the full dictionary entry in-browser
 - Audio playback button on every card
 
-### 🔍 Search & History
+### Search & History
 - Full-text search across the entire 24,853-word database
 - Notification history — last 500 words surfaced, tap any to revisit
 - Known Words list — words you've marked; excluded from future notifications
 
-### 📦 Collections
+### Collections
 - Save words to custom collections for focused review
 
-### 🏠 Home Screen Widget (Android)
+### Home Screen Widget (Android)
 - Displays the current vocabulary word directly on your home screen
 - Updates automatically in sync with notifications
 
-### 🔄 In-App Updates
+### In-App Updates
 - Check for new releases from Settings → App Version
 - Direct APK download link when an update is available
 

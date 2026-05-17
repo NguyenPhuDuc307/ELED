@@ -249,10 +249,17 @@ class SrsService {
 
   // ── Exercise picker ────────────────────────────────────────────────────
 
-  /// Chooses which exercise style to use for [word] in this session. Brand-new
-  /// words always get [ExerciseType.recognize] so the user sees the meaning
-  /// before being quizzed on it. Once familiar we cycle MC → Listen-and-type
-  /// → Fill-in-context so each repeat feels different.
+  /// Chooses which exercise style to use for [word] in this session.
+  ///
+  /// Stage-gated so quizzes only happen during active learning:
+  /// - `fresh` (totalSeen == 0) → [ExerciseType.recognize]. User sees the
+  ///   meaning before any test.
+  /// - `learning` (rated a few times but not yet stable) → cycle through
+  ///   MC → Listen-and-type → Fill-in-context. This is where the user is
+  ///   actually figuring the word out and quizzes provide value.
+  /// - `reviewing` and `mastered` → [ExerciseType.recognize] only. These
+  ///   are words the user has already demonstrated they know; the daily
+  ///   re-surface is a gentle refresher, not a re-exam.
   ExerciseType pickExerciseType(
     String word, {
     bool hasAudio = true,
@@ -260,7 +267,12 @@ class SrsService {
   }) {
     final state = stateFor(word);
     if (state.totalSeen == 0) return ExerciseType.recognize;
-    // Deterministic 3-way rotation so the same session feels stable on re-entry.
+    // Anything past the learning stage is "you already know this" and gets
+    // a flashcard refresher instead of a quiz.
+    if (state.stage == SrsStage.reviewing || state.stage == SrsStage.mastered) {
+      return ExerciseType.recognize;
+    }
+    // Deterministic 3-way rotation inside the learning phase.
     final basis = (state.totalSeen + word.length) % 3;
     ExerciseType candidate;
     switch (basis) {
@@ -280,6 +292,26 @@ class SrsService {
       candidate = ExerciseType.multipleChoice;
     }
     return candidate;
+  }
+
+  /// Hard-promotes a word to mastered with a year-long interval. Used by the
+  /// "I already know this" shortcut so the user can permanently drop trivial
+  /// words from the daily queue without having to rate Easy several times.
+  Future<void> markMastered(String word) async {
+    await ready;
+    final key = word.toLowerCase();
+    final now = DateTime.now().millisecondsSinceEpoch;
+    const oneYear = 365 * 24 * 60 * 60 * 1000;
+    _states[key] = stateFor(word).copyWith(
+      stage: SrsStage.mastered,
+      easeFactor: _maxEase,
+      intervalDays: 365,
+      repetitions: 5,
+      dueAtMs: now + oneYear,
+      lastReviewedMs: now,
+      totalSeen: stateFor(word).totalSeen + 1,
+    );
+    await _persist();
   }
 
   // ── Debug / reset ──────────────────────────────────────────────────────

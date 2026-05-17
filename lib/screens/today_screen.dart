@@ -31,6 +31,10 @@ class _TodayScreenState extends State<TodayScreen> {
   int _freshAvailable = 0;
   int _knownCount = 0;
   List<Vocabulary> _session = const [];
+  // Subset of _session that's in fresh/learning stage — what the match game
+  // is actually allowed to draw from. Computed in _refresh so the CTA's
+  // visibility matches what _startMatchGame would do.
+  int _gameEligibleCount = 0;
   StreamSubscription<void>? _srsSub;
   StreamSubscription<void>? _streakSub;
   int _streak = 0;
@@ -81,6 +85,10 @@ class _TodayScreenState extends State<TodayScreen> {
     final session = await srs.buildTodaySession(levelFilter: levels);
     final fresh = await srs.freshPool(levelFilter: levels, limit: 200);
     if (!mounted) return;
+    final gameEligible = session.where((v) {
+      final stage = srs.stateFor(v.word).stage;
+      return stage == SrsStage.fresh || stage == SrsStage.learning;
+    }).length;
     setState(() {
       _dueCount = srs.dueCount();
       _freshAvailable = fresh.length;
@@ -89,6 +97,7 @@ class _TodayScreenState extends State<TodayScreen> {
               s.stage == SrsStage.reviewing || s.stage == SrsStage.mastered)
           .length;
       _session = session;
+      _gameEligibleCount = gameEligible;
       _streak = StreakService().current;
       _activeDays = StreakService().activeDays;
       _loading = false;
@@ -105,9 +114,24 @@ class _TodayScreenState extends State<TodayScreen> {
   }
 
   Future<void> _startMatchGame() async {
-    if (_session.length < 4) return;
+    // Game should only use words the user is actively learning. Reviewing /
+    // mastered words are "already known" and don't need a guessing puzzle —
+    // they get a gentle Recognize refresher inside Start session instead.
+    final srs = SrsService();
+    final pool = _session.where((v) {
+      final stage = srs.stateFor(v.word).stage;
+      return stage == SrsStage.fresh || stage == SrsStage.learning;
+    }).toList();
+    if (pool.length < 4) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Need at least 4 new or learning words for the game'),
+        ),
+      );
+      return;
+    }
     await Navigator.of(context).push(smoothRoute(MatchGameScreen(
-      pool: _session,
+      pool: pool,
     )));
     _refresh();
   }
@@ -160,7 +184,7 @@ class _TodayScreenState extends State<TodayScreen> {
                   _heading(),
                   const SizedBox(height: 20),
                   _sessionCard(),
-                  if (_session.length >= 4) ...[
+                  if (_gameEligibleCount >= 4) ...[
                     const SizedBox(height: 10),
                     _matchGameCta(),
                   ],

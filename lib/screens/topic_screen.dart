@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
+
+import '../services/csv_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
-import '../services/csv_service.dart';
-import 'learning_screen.dart';
+import 'topic_category_screen.dart';
 
 class TopicScreen extends StatefulWidget {
   const TopicScreen({super.key});
@@ -15,31 +16,9 @@ class TopicScreen extends StatefulWidget {
 class _TopicScreenState extends State<TopicScreen> {
   bool _isLoading = true;
   Map<String, List<Map<String, String>>> _topics = {};
-  
-  final List<String> _levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
-  List<String> _selectedTopicLevels = ['A1', 'A2', 'B1'];
 
-  void _openSubtopic(BuildContext context, List<Map<String, String>> sublists, int index, {bool replace = false}) {
-    if (index >= sublists.length) return;
-    final sub = sublists[index];
-    final onCompleted = index + 1 < sublists.length
-        ? () => _openSubtopic(context, sublists, index + 1, replace: true)
-        : null;
-    CsvService.loadVocabularyByDayFromPath(
-      sub['path']!,
-      excludeKnown: true,
-      levelFilter: _selectedTopicLevels,
-    ).then((data) {
-      final pool = data.values.expand((v) => v).toList();
-      if (!context.mounted || pool.isEmpty) return;
-      final screen = LearningScreen(day: 0, vocabularies: pool, onCompleted: onCompleted);
-      if (replace) {
-        Navigator.of(context).pushReplacement(smoothRoute(screen));
-      } else {
-        Navigator.of(context).push(smoothRoute(screen));
-      }
-    });
-  }
+  static const _levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  List<String> _selectedLevels = ['A1', 'A2', 'B1'];
 
   @override
   void initState() {
@@ -48,238 +27,257 @@ class _TopicScreenState extends State<TopicScreen> {
   }
 
   Future<void> _loadTopics() async {
-    setState(() {
-      _isLoading = true;
-    });
+    setState(() => _isLoading = true);
     try {
-      final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-      final topicFiles = assetManifest.listAssets()
-          .where((String key) => key.startsWith('assets/data/topic/') && key.endsWith('.csv'))
+      final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
+      final topicFiles = manifest
+          .listAssets()
+          .where((k) => k.startsWith('assets/data/topic/') && k.endsWith('.csv'))
           .toList();
 
-      Map<String, List<Map<String, String>>> topics = {};
-
-      for (var path in topicFiles) {
+      final topics = <String, List<Map<String, String>>>{};
+      for (final path in topicFiles) {
         final parts = path.split('/');
-        String category = 'Others';
-        String filename = parts.last.replaceAll('.csv', '');
-        
-        if (parts.length >= 5) {
-          category = parts[3];
-        }
+        final category = parts.length >= 5 ? parts[3] : 'Others';
+        final filename = parts.last.replaceAll('.csv', '');
 
-        final vocabList = await CsvService.loadVocabularyFromPath(path, excludeKnown: true);
-        final filteredCount = _selectedTopicLevels.isEmpty ? vocabList.length : vocabList.where((v) {
-          final vLevel = v.levels.toUpperCase();
-          return _selectedTopicLevels.any((filter) => vLevel.contains(filter.toUpperCase()));
-        }).length;
+        final vocabList =
+            await CsvService.loadVocabularyFromPath(path, excludeKnown: true);
+        final filteredCount = _selectedLevels.isEmpty
+            ? vocabList.length
+            : vocabList.where((v) {
+                final vLevel = v.levels.toUpperCase();
+                return _selectedLevels
+                    .any((f) => vLevel.contains(f.toUpperCase()));
+              }).length;
 
         if (filteredCount > 0) {
-          if (!topics.containsKey(category)) {
-            topics[category] = [];
-          }
-          topics[category]!.add({
-            'name': filename,
-            'path': path,
-            'count': filteredCount.toString(),
-          });
+          topics
+              .putIfAbsent(category, () => [])
+              .add({'name': filename, 'path': path, 'count': '$filteredCount'});
         }
       }
 
+      if (!mounted) return;
       setState(() {
         _topics = topics;
         _isLoading = false;
       });
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
+    } catch (_) {
+      if (mounted) setState(() => _isLoading = false);
     }
+  }
+
+  void _toggleLevel(String level) {
+    final updated = List<String>.from(_selectedLevels);
+    if (updated.contains(level)) {
+      if (updated.length == 1) return;
+      updated.remove(level);
+    } else {
+      updated.add(level);
+    }
+    setState(() => _selectedLevels = updated);
+    _loadTopics();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Topics'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.filter_list_rounded),
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (ctx) {
-                  return StatefulBuilder(
-                    builder: (context, setDialogState) {
-                      return AlertDialog(
-                        backgroundColor: context.bBg,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                        title: Text(
-                          'Filter by Level',
-                          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        content: SingleChildScrollView(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: _levels.map((level) {
-                              return CheckboxListTile(
-                                title: Text(level, style: TextStyle(fontWeight: FontWeight.w600, color: context.bBorder)),
-                                value: _selectedTopicLevels.contains(level),
-                                activeColor: BrutalistTheme.primary,
-                                checkColor: BrutalistTheme.white,
-                                side: BorderSide(color: context.bSubtle, width: 1.5),
-                                onChanged: (bool? value) {
-                                  setDialogState(() {
-                                    if (value == true) {
-                                      _selectedTopicLevels.add(level);
-                                    } else {
-                                      _selectedTopicLevels.remove(level);
-                                    }
-                                  });
-                                },
-                              );
-                            }).toList(),
-                          ),
-                        ),
-                        actions: [
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              backgroundColor: BrutalistTheme.primary,
-                              foregroundColor: BrutalistTheme.white,
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
-                            ),
-                            onPressed: () {
-                              Navigator.of(ctx).pop();
-                              _loadTopics();
-                            },
-                            child: const Text('Apply', style: TextStyle(fontWeight: FontWeight.w600)),
-                          ),
-                        ],
-                      );
-                    }
-                  );
-                },
-              );
-            },
+      appBar: AppBar(title: const Text('Topics')),
+      body: Column(
+        children: [
+          _buildLevelSelector(),
+          Expanded(
+            child: _isLoading
+                ? Center(
+                    child: CircularProgressIndicator(
+                      color: context.bBorder,
+                      strokeWidth: 5,
+                    ),
+                  )
+                : _topics.isEmpty
+                    ? _buildEmptyState()
+                    : _buildCategoryList(),
           ),
         ],
       ),
-      body: _isLoading
-          ? Center(
-              child: CircularProgressIndicator(
-                color: context.bBorder,
-                strokeWidth: 6,
+    );
+  }
+
+  Widget _buildLevelSelector() {
+    return Container(
+      height: 68,
+      decoration: BoxDecoration(
+        color: context.bBg,
+        border: Border(bottom: BorderSide(color: context.bSubtle, width: 1)),
+      ),
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        itemCount: _levels.length,
+        itemBuilder: (context, index) {
+          final level = _levels[index];
+          final isSelected = _selectedLevels.contains(level);
+          return Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: GestureDetector(
+              onTap: () => _toggleLevel(level),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                width: 64,
+                decoration: BoxDecoration(
+                  color: isSelected ? BrutalistTheme.primary : Colors.transparent,
+                  borderRadius: BorderRadius.circular(24),
+                  border: Border.all(
+                    color: isSelected ? BrutalistTheme.primary : context.bSubtle,
+                    width: 1.5,
+                  ),
+                ),
+                alignment: Alignment.center,
+                child: Text(
+                  level,
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: isSelected ? BrutalistTheme.white : context.bMuted,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14,
+                      ),
+                ),
               ),
-            )
-          : _topics.isEmpty
-              ? _buildEmptyState()
-              : _buildTopicList(),
+            ),
+          );
+        },
+      ),
     );
   }
 
   Widget _buildEmptyState() {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(32.0),
-        child: BrutalistCard(
-          backgroundColor: BrutalistTheme.secondary,
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Text(
-              'NO TOPIC DATA FOUND.\nPLEASE USE THE SCRAPER TO FETCH DATA!',
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    color: context.bBg,
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(20),
+              decoration: const BoxDecoration(
+                color: BrutalistTheme.primaryLight,
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.category_outlined,
+                  size: 36, color: BrutalistTheme.primary),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              'No topics in the selected levels',
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 18,
+                    color: context.bBorder,
                   ),
               textAlign: TextAlign.center,
             ),
-          ),
+            const SizedBox(height: 8),
+            Text(
+              'Pick more levels above to see topics.',
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium
+                  ?.copyWith(color: context.bMuted),
+              textAlign: TextAlign.center,
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Widget _buildTopicList() {
+  Widget _buildCategoryList() {
     final categories = _topics.keys.toList()..sort();
-
     return ListView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      clipBehavior: Clip.none,
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
       itemCount: categories.length,
       itemBuilder: (context, index) {
         final category = categories[index];
         final sublists = _topics[category]!;
-        sublists.sort((a, b) => a['name']!.compareTo(b['name']!));
-
-        final isDark = Theme.of(context).brightness == Brightness.dark;
-        final cardBg = index % 2 == 0
-            ? (isDark ? const Color(0xFF1A3020) : BrutalistTheme.primaryLight)
-            : (isDark ? const Color(0xFF2A1810) : BrutalistTheme.accentLight);
+        final wordCount = sublists.fold<int>(
+            0, (sum, e) => sum + (int.tryParse(e['count'] ?? '0') ?? 0));
 
         return BrutalistCard(
-            backgroundColor: cardBg,
-            child: Theme(
-              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-              child: ExpansionTile(
-                shape: const Border(),
-                collapsedShape: const Border(),
-                iconColor: context.bBorder,
-                collapsedIconColor: context.bBorder,
-                title: Text(
-                  category.replaceAll('_', ' ').toUpperCase(),
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.w700,
-                        color: context.bBorder,
-                        fontSize: 18,
-                      ),
-                ),
-                children: [
-                  Container(
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      border: Border(top: BorderSide(color: context.bSubtle, width: 1)),
-                      color: context.bBg,
-                    ),
-                    padding: const EdgeInsets.all(16.0),
-                    child: Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: sublists.map((sublist) {
-                        return IntrinsicWidth(
-                          child: GestureDetector(
-                            onTap: () {
-                              final i = sublists.indexOf(sublist);
-                              _openSubtopic(context, sublists, i);
-                            },
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
-                              decoration: BoxDecoration(
-                                color: isDark ? const Color(0xFF1E3A28) : BrutalistTheme.primaryLight,
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Text(
-                                '${sublist['name']!.replaceAll('_', ' ')} (${sublist['count']!})',
-                                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                      fontWeight: FontWeight.w600,
-                                      color: context.bBorder,
-                                      fontSize: 13,
-                                    ),
-                              ),
-                            ),
-                          ),
-                        );
-                      }).toList(),
-                    ),
+          backgroundColor: context.bBg,
+          onTap: () {
+            Navigator.of(context).push(smoothRoute(TopicCategoryScreen(
+              category: category,
+              sublists: sublists,
+              levelFilter: _selectedLevels,
+            )));
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: BrutalistTheme.primaryLight,
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                ],
-              ),
+                  child: Icon(_iconFor(category),
+                      color: BrutalistTheme.primary, size: 24),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        category.replaceAll('_', ' '),
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                            ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        '${sublists.length} ${sublists.length == 1 ? "topic" : "topics"} · $wordCount words',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium
+                            ?.copyWith(color: context.bMuted),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.chevron_right_rounded, color: context.bMuted),
+              ],
             ),
+          ),
         );
       },
     );
+  }
+
+  /// Pick a passable icon for each top-level category. Falls back to a
+  /// generic tag if the name doesn't match anything below.
+  IconData _iconFor(String category) {
+    final c = category.toLowerCase();
+    if (c.contains('animal')) return Icons.pets_rounded;
+    if (c.contains('appearance')) return Icons.face_rounded;
+    if (c.contains('communication')) return Icons.chat_bubble_outline_rounded;
+    if (c.contains('culture')) return Icons.theater_comedy_rounded;
+    if (c.contains('food') || c.contains('drink')) return Icons.restaurant_rounded;
+    if (c.contains('function')) return Icons.build_rounded;
+    if (c.contains('health')) return Icons.favorite_border_rounded;
+    if (c.contains('home') || c.contains('building')) return Icons.home_rounded;
+    if (c.contains('leisure')) return Icons.sports_esports_rounded;
+    if (c.contains('notion')) return Icons.lightbulb_outline_rounded;
+    if (c.contains('people')) return Icons.people_rounded;
+    if (c.contains('politic') || c.contains('society')) return Icons.account_balance_rounded;
+    if (c.contains('science') || c.contains('tech')) return Icons.science_rounded;
+    if (c.contains('sport')) return Icons.sports_basketball_rounded;
+    if (c.contains('natural')) return Icons.park_rounded;
+    if (c.contains('time') || c.contains('space')) return Icons.schedule_rounded;
+    if (c.contains('travel')) return Icons.flight_rounded;
+    if (c.contains('work') || c.contains('business')) return Icons.work_outline_rounded;
+    return Icons.label_outline_rounded;
   }
 }

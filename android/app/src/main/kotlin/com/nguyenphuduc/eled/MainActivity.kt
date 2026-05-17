@@ -96,6 +96,11 @@ class MainActivity : FlutterActivity() {
                             .putInt(ScheduleEngine.KEY_POOL_CURSOR, items.size)
                             .apply()
                         WatchdogWorker.enqueuePeriodic(applicationContext)
+                        // Kick off pronunciation pre-download in the background so the
+                        // first few alarms have audio ready even if the device is offline.
+                        Thread {
+                            try { ScheduleEngine.prefetchAudio(applicationContext, 20) } catch (_: Exception) {}
+                        }.start()
                         result.success(null)
                     }
                     "cancelAll" -> {

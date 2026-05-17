@@ -1,5 +1,9 @@
+import 'dart:async';
 import 'dart:io';
+import 'dart:ui';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:home_widget/home_widget.dart';
@@ -12,6 +16,7 @@ import 'services/auth_service.dart';
 import 'services/notification_service.dart';
 import 'services/update_service.dart';
 import 'services/user_data_service.dart';
+import 'utils/log.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -19,9 +24,28 @@ String? pendingNotificationPayload;
 String? pendingMarkKnownWord;
 
 void main() async {
+  runZonedGuarded<Future<void>>(_bootstrap, (error, stack) {
+    FirebaseCrashlytics.instance.recordError(error, stack, fatal: false);
+  });
+}
+
+Future<void> _bootstrap() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp();
+
+  // Route Flutter framework errors + platform-dispatcher errors to Crashlytics.
+  // Disabled in debug to keep the IDE log focused on the failing widget tree.
+  FlutterError.onError = (details) {
+    FlutterError.presentError(details);
+    if (!kDebugMode) FirebaseCrashlytics.instance.recordFlutterFatalError(details);
+  };
+  PlatformDispatcher.instance.onError = (error, stack) {
+    if (!kDebugMode) FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
+  await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
+
   await HomeWidget.setAppGroupId('group.com.nguyenphuduc.eled');
 
   final (prefs, _) = await (
@@ -72,7 +96,9 @@ Future<void> _autoCheckForUpdate() async {
     if (!await UpdateService.isAutoCheckEnabled()) return;
     final info = await UpdateService.checkForUpdate();
     if (info != null) await NotificationService.showUpdateNotification(info);
-  } catch (_) {}
+  } catch (e, st) {
+    logCaught(e, st, '_autoCheckForUpdate');
+  }
 }
 
 // Bump this string whenever notification format changes (actions, channels, etc.)

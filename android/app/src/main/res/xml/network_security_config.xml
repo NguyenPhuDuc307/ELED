@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+        All endpoints the app talks to are HTTPS:
+        - api.github.com / github.com (update check + release download)
+        - www.oxfordlearnersdictionaries.com (audio + definitions)
+        - translate.googleapis.com (fallback translation)
+        - Firebase / Google APIs (auth, firestore)
+        Cleartext is denied by default; no per-domain exception is needed.
+    -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+
+    <!-- Allow cleartext to localhost for debug builds / loopback test tooling -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

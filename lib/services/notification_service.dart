@@ -14,6 +14,7 @@ import '../services/csv_service.dart';
 import '../services/update_service.dart';
 import '../services/user_data_service.dart';
 import '../screens/learning_screen.dart';
+import '../utils/log.dart';
 import '../main.dart';
 
 // iOS-only notification channel (Android uses native VocabNotificationReceiver)
@@ -90,7 +91,9 @@ class NotificationService {
           ));
         }
       }
-    } catch (_) {}
+    } catch (e, st) {
+      logCaught(e, st, 'NotificationService._onWidgetTapped');
+    }
   }
 
   /// Shows a system notification that a new app version is available.
@@ -155,7 +158,9 @@ class NotificationService {
       history.insert(0, entry);
       if (history.length > 500) history.length = 500;
       await prefs.setStringList('notificationHistory', history);
-    } catch (_) {}
+    } catch (e, st) {
+      logCaught(e, st, 'NotificationService._onNotificationTapped:historyWrite');
+    }
 
     globalNavigatorKey.currentState?.push(
       MaterialPageRoute(
@@ -176,7 +181,11 @@ class NotificationService {
 
   Future<void> cancelAllNotifications() async {
     if (Platform.isAndroid) {
-      try { await _kAndroidChannel.invokeMethod('cancelAll'); } catch (_) {}
+      try {
+        await _kAndroidChannel.invokeMethod('cancelAll');
+      } catch (e, st) {
+        logCaught(e, st, 'NotificationService.cancelAllNotifications:nativeCancel');
+      }
       // Clear persisted pool/config so the watchdog & boot receiver stop re-arming.
       try {
         final prefs = await SharedPreferences.getInstance();
@@ -187,7 +196,9 @@ class NotificationService {
         await prefs.remove('vocabScheduleLatestMs');
         await prefs.remove('vocabScheduleLastFireMs');
         await prefs.remove('vocabSchedulePoolCursor');
-      } catch (_) {}
+      } catch (e, st) {
+        logCaught(e, st, 'NotificationService.cancelAllNotifications:clearPrefs');
+      }
     }
     await flutterLocalNotificationsPlugin.cancelAll();
   }
@@ -199,7 +210,8 @@ class NotificationService {
     try {
       final v = await _kAndroidChannel.invokeMethod<bool>('isIgnoringBatteryOptimizations');
       return v ?? false;
-    } catch (_) {
+    } catch (e, st) {
+      logCaught(e, st, 'NotificationService.isIgnoringBatteryOptimizations');
       return false;
     }
   }
@@ -207,14 +219,22 @@ class NotificationService {
   /// Shows the system "Allow app to run in background" prompt.
   Future<void> requestIgnoreBatteryOptimizations() async {
     if (!Platform.isAndroid) return;
-    try { await _kAndroidChannel.invokeMethod('requestIgnoreBatteryOptimizations'); } catch (_) {}
+    try {
+      await _kAndroidChannel.invokeMethod('requestIgnoreBatteryOptimizations');
+    } catch (e, st) {
+      logCaught(e, st, 'NotificationService.requestIgnoreBatteryOptimizations');
+    }
   }
 
   /// Opens the OS "Battery optimization" settings list (fallback when the
   /// prompt above is unavailable, e.g. some OEM ROMs).
   Future<void> openBatteryOptimizationSettings() async {
     if (!Platform.isAndroid) return;
-    try { await _kAndroidChannel.invokeMethod('openBatteryOptimizationSettings'); } catch (_) {}
+    try {
+      await _kAndroidChannel.invokeMethod('openBatteryOptimizationSettings');
+    } catch (e, st) {
+      logCaught(e, st, 'NotificationService.openBatteryOptimizationSettings');
+    }
   }
 
   /// Loads the vocabulary pool based on user settings from SharedPreferences.
@@ -298,7 +318,9 @@ class NotificationService {
       }
       try {
         await _kAndroidChannel.invokeMethod('scheduleAll', {'items': items});
-      } catch (_) {}
+      } catch (e, st) {
+        logCaught(e, st, 'NotificationService.scheduleAll:nativeBatch');
+      }
     } else {
       // iOS — use flutter_local_notifications
       final futures = <Future<void>>[];
@@ -326,7 +348,9 @@ class NotificationService {
         try {
           await const MethodChannel('com.nguyenphuduc.eled/widget_alarm')
               .invokeMethod('scheduleFirst', {'atMs': firstMs});
-        } catch (_) {}
+        } catch (e, st) {
+          logCaught(e, st, 'NotificationService.scheduleAll:widgetAlarm');
+        }
       }
     }
 
@@ -339,7 +363,9 @@ class NotificationService {
         await HomeWidget.saveWidgetData<String>('levels', shuffled[0].levels);
         await HomeWidget.saveWidgetData<String>('topic', shuffled[0].topic);
         await HomeWidget.updateWidget(name: 'VocabularyWidgetProvider');
-      } catch (_) {}
+      } catch (e, st) {
+        logCaught(e, st, 'NotificationService.scheduleAll:widgetData');
+      }
     }
   }
 
@@ -435,7 +461,9 @@ class NotificationService {
           await HomeWidget.saveWidgetData<String>('topic', v.topic);
           await HomeWidget.updateWidget(name: 'VocabularyWidgetProvider');
         }
-      } catch (_) {}
+      } catch (e, st) {
+        logCaught(e, st, 'NotificationService.processScheduleLog:widgetData');
+      }
     }
   }
 

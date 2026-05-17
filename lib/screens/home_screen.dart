@@ -907,8 +907,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildList() {
     final days = _vocabData.keys.toList()..sort();
 
-    return ListView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+    // Compact 2-column grid so 8-10 days fit on one screen instead of 5.
+    return GridView.builder(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 4,
+        crossAxisSpacing: 4,
+        childAspectRatio: 1.35,
+      ),
       itemCount: days.length,
       itemBuilder: (context, index) {
         final day = days[index];
@@ -937,45 +944,38 @@ class _HomeScreenState extends State<HomeScreen> {
             )));
           },
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),
-            child: Row(
+            padding: const EdgeInsets.fromLTRB(16, 14, 14, 14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Day $day',
-                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                              fontWeight: FontWeight.w700,
-                              color: BrutalistTheme.black,
-                              fontSize: 18,
-                            ),
+                Text(
+                  'Day $day',
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: BrutalistTheme.black,
+                        fontSize: 20,
                       ),
-                      const SizedBox(height: 2),
-                      Text(
-                        () {
-                          final levels = vocabList
-                              .map((v) => v.levels.toUpperCase())
-                              .where((l) => l.isNotEmpty)
-                              .toSet()
-                              .toList()
-                            ..sort();
-                          final levelStr = levels.isNotEmpty ? ' · ${levels.join(', ')}' : '';
-                          return '${vocabList.length} words$levelStr';
-                        }(),
-                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                              color: BrutalistTheme.black.withValues(alpha: 0.55),
-                              fontSize: 13,
-                            ),
-                      ),
-                    ],
-                  ),
                 ),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 16,
-                  color: BrutalistTheme.black.withValues(alpha: 0.5),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        '${vocabList.length} words',
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.55),
+                              fontSize: 12,
+                            ),
+                      ),
+                    ),
+                    Icon(
+                      Icons.chevron_right_rounded,
+                      size: 20,
+                      color: BrutalistTheme.black.withValues(alpha: 0.55),
+                    ),
+                  ],
                 ),
               ],
             ),

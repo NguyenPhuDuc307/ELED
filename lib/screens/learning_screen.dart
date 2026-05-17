@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
+import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
@@ -55,6 +56,26 @@ class _LearningScreenState extends State<LearningScreen> {
     _pageController = PageController(initialPage: _currentIndex);
     _loadKnownWords();
     _fetchDefinition(_currentIndex);
+    _persistContext();
+  }
+
+  /// Persists "where the user left off" so the menu's Continue tile can
+  /// jump back into this session. Called on first build + every page change.
+  void _persistContext() {
+    if (widget.vocabularies.isEmpty) return;
+    final label = widget.day > 0
+        ? 'Day ${widget.day}'
+        : widget.vocabularies.length == 1
+            ? widget.vocabularies.first.word
+            : 'Last session';
+    LearningStateService().saveContext(LearningContext(
+      label: label,
+      day: widget.day,
+      wordKeys: widget.vocabularies.map((v) => v.word.toLowerCase()).toList(),
+      currentIndex: _currentIndex,
+      totalCount: widget.vocabularies.length,
+      lastOpenedMs: DateTime.now().millisecondsSinceEpoch,
+    ));
   }
 
   Future<void> _loadKnownWords() async {
@@ -198,6 +219,7 @@ class _LearningScreenState extends State<LearningScreen> {
               onPageChanged: (index) {
                 setState(() => _currentIndex = index);
                 _fetchDefinition(index);
+                _persistContext();
               },
               itemBuilder: (context, index) {
                 final vocab = widget.vocabularies[index];

@@ -700,8 +700,35 @@ class _HomeScreenState extends State<HomeScreen> {
                 ) ?? false;
               },
               onDismissed: (dir) async {
+                final messenger = ScaffoldMessenger.of(context);
+                final removedIndex = _allVocabData.indexOf(vocab);
                 await CollectionService.removeWord(widget.topicTitle!, vocab.word);
+                if (!mounted) return;
                 setState(() { _allVocabData.remove(vocab); });
+                messenger.showSnackBar(
+                  SnackBar(
+                    content: Text('Removed "${vocab.word}"'),
+                    duration: const Duration(seconds: 4),
+                    action: SnackBarAction(
+                      label: 'Undo',
+                      onPressed: () async {
+                        await CollectionService.addWord(
+                            widget.topicTitle!, vocab.word);
+                        if (!mounted) return;
+                        setState(() {
+                          // Put it back at its original index so the list order
+                          // matches what the user saw before they swiped.
+                          if (removedIndex >= 0 &&
+                              removedIndex <= _allVocabData.length) {
+                            _allVocabData.insert(removedIndex, vocab);
+                          } else {
+                            _allVocabData.add(vocab);
+                          }
+                        });
+                      },
+                    ),
+                  ),
+                );
               },
               child: card,
             );

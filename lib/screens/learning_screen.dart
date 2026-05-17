@@ -80,18 +80,27 @@ class _LearningScreenState extends State<LearningScreen> {
     final messenger = ScaffoldMessenger.of(context);
     final isAdded = !_knownWords.contains(word.toLowerCase());
     await UserDataService().toggleKnownWord(word);
+    if (!mounted) return;
     setState(() {
       _knownWords = UserDataService().knownWords;
     });
-    if (mounted) {
-      messenger.clearSnackBars();
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(isAdded ? 'Marked as known' : 'Removed from known words'),
-          duration: const Duration(milliseconds: 1500),
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(isAdded ? 'Marked as known' : 'Removed from known words'),
+        duration: const Duration(seconds: 4),
+        action: SnackBarAction(
+          label: 'Undo',
+          onPressed: () async {
+            await UserDataService().toggleKnownWord(word);
+            if (!mounted) return;
+            setState(() {
+              _knownWords = UserDataService().knownWords;
+            });
+          },
         ),
-      );
-    }
+      ),
+    );
   }
 
   Future<void> _playAudio(String url) async {
@@ -231,7 +240,6 @@ class _LearningScreenState extends State<LearningScreen> {
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
-                    onTap: () => _toggleTranslation(index),
                     child: SingleChildScrollView(
                       padding: const EdgeInsets.all(32.0),
                       child: Column(
@@ -299,7 +307,7 @@ class _LearningScreenState extends State<LearningScreen> {
                                       final Uri url = Uri.parse(vocab.url);
                                       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
                                         if (context.mounted) {
-                                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Could not open link.')));
+                                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Couldn't open link")));
                                         }
                                       }
                                     },
@@ -338,16 +346,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           const SizedBox(height: 20),
                           // Definitions: English by default, Vietnamese when _translateDefinition=true
                           if (_loadingDef && !_oxfordCache.containsKey(index))
-                            const Center(
-                              child: SizedBox(
-                                height: 20,
-                                width: 20,
-                                child: CircularProgressIndicator(
-                                  strokeWidth: 2,
-                                  color: BrutalistTheme.primary,
-                                ),
-                              ),
-                            )
+                            const _DefinitionSkeleton()
                           else if ((_oxfordCache[index] ?? []).isNotEmpty)
                             ...List.generate(_oxfordCache[index]!.length, (si) {
                               final s = _oxfordCache[index]![si];
@@ -413,7 +412,7 @@ class _LearningScreenState extends State<LearningScreen> {
           ),
           Container(
             margin: const EdgeInsets.fromLTRB(16, 0, 16, 20),
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
             decoration: BoxDecoration(
               color: context.bBg,
               borderRadius: BorderRadius.circular(20),
@@ -426,7 +425,7 @@ class _LearningScreenState extends State<LearningScreen> {
               ],
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 _buildNavButton(
                   icon: Icons.arrow_back_ios_new_rounded,
@@ -437,29 +436,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           )
                       : null,
                 ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      _translateDefinition ? 'VI' : 'EN',
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.w600,
-                            color: context.bMuted,
-                            fontSize: 13,
-                          ),
-                    ),
-                    const SizedBox(height: 2),
-                    Switch(
-                      value: _translateDefinition,
-                      onChanged: (_) => _toggleTranslation(_currentIndex),
-                      activeThumbColor: BrutalistTheme.white,
-                      activeTrackColor: BrutalistTheme.primary,
-                      inactiveThumbColor: BrutalistTheme.white,
-                      inactiveTrackColor: BrutalistTheme.border,
-                      trackOutlineColor: WidgetStateProperty.all(Colors.transparent),
-                    ),
-                  ],
-                ),
+                _buildDefinitionLanguageToggle(),
                 _buildNavButton(
                   icon: _currentIndex < widget.vocabularies.length - 1
                       ? Icons.arrow_forward_ios_rounded
@@ -497,6 +474,66 @@ class _LearningScreenState extends State<LearningScreen> {
     );
   }
 
+  /// Compact segmented control: "English" / "Tiếng Việt" with a one-line label
+  /// above so the user can tell what it's switching. Replaces a bare iOS-style
+  /// switch with an "EN"/"VI" code that was easy to misread.
+  Widget _buildDefinitionLanguageToggle() {
+    Widget seg(String label, bool active, VoidCallback onTap) {
+      return InkWell(
+        onTap: active ? null : onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          decoration: BoxDecoration(
+            color: active ? BrutalistTheme.primary : Colors.transparent,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Text(
+            label,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.w700,
+                  color: active ? BrutalistTheme.white : context.bMuted,
+                ),
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'Definition',
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: context.bMuted,
+                fontSize: 11,
+                letterSpacing: 0.3,
+              ),
+        ),
+        const SizedBox(height: 4),
+        Container(
+          padding: const EdgeInsets.all(2),
+          decoration: BoxDecoration(
+            color: context.bSubtle.withValues(alpha: 0.4),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              seg('English', !_translateDefinition, () {
+                if (_translateDefinition) _toggleTranslation(_currentIndex);
+              }),
+              seg('Tiếng Việt', _translateDefinition, () {
+                if (!_translateDefinition) _toggleTranslation(_currentIndex);
+              }),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _buildNavButton({required IconData icon, required VoidCallback? onPressed}) {
     final active = onPressed != null;
     return Material(
@@ -510,6 +547,71 @@ class _LearningScreenState extends State<LearningScreen> {
           child: Icon(icon, color: active ? BrutalistTheme.primary : BrutalistTheme.textMuted, size: 24),
         ),
       ),
+    );
+  }
+}
+
+/// Subtle pulsing placeholder for the Oxford definition while it's being
+/// fetched. Three skeleton lines feel like an actual paragraph is loading,
+/// so the user doesn't think the screen is broken.
+class _DefinitionSkeleton extends StatefulWidget {
+  const _DefinitionSkeleton();
+
+  @override
+  State<_DefinitionSkeleton> createState() => _DefinitionSkeletonState();
+}
+
+class _DefinitionSkeletonState extends State<_DefinitionSkeleton>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl;
+  late final Animation<double> _opacity;
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..repeat(reverse: true);
+    _opacity = Tween<double>(begin: 0.35, end: 0.8).animate(
+      CurvedAnimation(parent: _ctrl, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  Widget _bar(double width) {
+    return AnimatedBuilder(
+      animation: _opacity,
+      builder: (_, _) => Opacity(
+        opacity: _opacity.value,
+        child: Container(
+          height: 14,
+          width: width,
+          margin: const EdgeInsets.symmetric(vertical: 4),
+          decoration: BoxDecoration(
+            color: BrutalistTheme.black.withValues(alpha: 0.18),
+            borderRadius: BorderRadius.circular(6),
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _bar(width * 0.65),
+        _bar(width * 0.55),
+        _bar(width * 0.4),
+      ],
     );
   }
 }

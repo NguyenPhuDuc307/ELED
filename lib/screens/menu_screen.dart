@@ -8,7 +8,6 @@ import 'settings_screen.dart';
 import 'learning_screen.dart';
 import '../services/csv_service.dart';
 import '../services/learning_state_service.dart';
-import '../services/user_data_service.dart';
 import '../main.dart';
 
 
@@ -24,7 +23,6 @@ class _MenuScreenState extends State<MenuScreen> {
 
   LearningContext? _continueCtx;
   bool _continueReady = false;
-  int _knownCount = 0;
 
   Future<void> _navigate(Widget page) async {
     if (_isNavigating) return;
@@ -32,7 +30,7 @@ class _MenuScreenState extends State<MenuScreen> {
     await Navigator.of(context).push(smoothRoute(page));
     if (mounted) {
       setState(() => _isNavigating = false);
-      _refreshQuickAccess(); // counters may have changed while away
+      _refreshQuickAccess(); // continue context may have changed while away
     }
   }
 
@@ -42,7 +40,6 @@ class _MenuScreenState extends State<MenuScreen> {
     setState(() {
       _continueCtx = ctx;
       _continueReady = true;
-      _knownCount = UserDataService().knownWords.length;
     });
   }
 
@@ -71,32 +68,10 @@ class _MenuScreenState extends State<MenuScreen> {
     if (mounted) _refreshQuickAccess();
   }
 
-  Future<void> _startDailyReview() async {
-    setState(() => _isNavigating = true);
-    final words = await LearningStateService().dailyReviewWords();
-    if (!mounted) return;
-    setState(() => _isNavigating = false);
-    if (words.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Mark a few words as known first')),
-      );
-      return;
-    }
-    await Navigator.of(context).push(smoothRoute(LearningScreen(
-      day: 0,
-      vocabularies: words,
-    )));
-    if (mounted) _refreshQuickAccess();
-  }
-
   @override
   void initState() {
     super.initState();
     _refreshQuickAccess();
-    UserDataService().knownWordsStream.listen((set) {
-      if (!mounted) return;
-      setState(() => _knownCount = set.length);
-    });
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       // Handle "Known" action from notification when app was not in foreground
       if (pendingMarkKnownWord != null) {
@@ -140,14 +115,7 @@ class _MenuScreenState extends State<MenuScreen> {
   Widget _buildQuickAccess() {
     return Padding(
       padding: const EdgeInsets.only(bottom: 18),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (_continueCtx != null) _continueTile(_continueCtx!),
-          if (_continueCtx != null && _knownCount >= 3) const SizedBox(height: 10),
-          if (_knownCount >= 3) _reviewTile(),
-        ],
-      ),
+      child: _continueTile(_continueCtx!),
     );
   }
 
@@ -207,50 +175,6 @@ class _MenuScreenState extends State<MenuScreen> {
                 valueColor: const AlwaysStoppedAnimation(BrutalistTheme.white),
               ),
             ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _reviewTile() {
-    return BrutalistCard(
-      backgroundColor: BrutalistTheme.accentLight,
-      onTap: _startDailyReview,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-        child: Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: BrutalistTheme.accent.withValues(alpha: 0.18),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: const Icon(Icons.refresh_rounded,
-                  color: BrutalistTheme.accent, size: 22),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Daily review',
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          fontWeight: FontWeight.w700,
-                          color: BrutalistTheme.accent,
-                          fontSize: 16)),
-                  Text(
-                    '10 random words from your known list',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: BrutalistTheme.accent.withValues(alpha: 0.75),
-                        fontSize: 12),
-                  ),
-                ],
-              ),
-            ),
-            Icon(Icons.chevron_right_rounded,
-                color: BrutalistTheme.accent.withValues(alpha: 0.7)),
           ],
         ),
       ),
@@ -385,8 +309,7 @@ class _MenuScreenState extends State<MenuScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                if (_continueReady && (_continueCtx != null || _knownCount >= 3))
-                  _buildQuickAccess(),
+                if (_continueReady && _continueCtx != null) _buildQuickAccess(),
             // 2-column staggered grid
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,

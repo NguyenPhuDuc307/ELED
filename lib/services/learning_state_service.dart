@@ -5,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../utils/log.dart';
 import 'csv_service.dart';
-import 'user_data_service.dart';
 
 /// Last position the user was at inside a Learning session. We store just
 /// enough to rebuild the screen — labels and the ordered list of word keys —
@@ -115,26 +114,4 @@ class LearningStateService {
     }
   }
 
-  /// Pick up to [count] known words at random for a quick review session.
-  /// Returns an empty list if there aren't enough known words.
-  Future<List<Vocabulary>> dailyReviewWords({int count = 10}) async {
-    try {
-      final known = UserDataService().knownWords;
-      if (known.length < 3) return [];
-      final all = await CsvService.loadAllVocabulary(excludeKnown: false);
-      final pool = <Vocabulary>[];
-      final seen = <String>{};
-      for (final v in all) {
-        final k = v.word.toLowerCase();
-        if (known.contains(k) && seen.add(k)) {
-          pool.add(v);
-        }
-      }
-      pool.shuffle();
-      return pool.take(count).toList();
-    } catch (e, st) {
-      logCaught(e, st, 'LearningStateService.dailyReviewWords');
-      return [];
-    }
-  }
 }

@@ -16,6 +16,7 @@ import 'services/analytics_service.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
 import 'services/srs_service.dart';
+import 'services/streak_service.dart';
 import 'services/update_service.dart';
 import 'services/user_data_service.dart';
 import 'utils/log.dart';
@@ -63,6 +64,7 @@ Future<void> _bootstrap() async {
   // SRS depends on UserDataService.knownWords for its one-time migration, so
   // it has to come after the parallel init above.
   await SrsService().init();
+  await StreakService().init();
 
   final themeStr = prefs.getString('themeMode') ?? 'system';
   EledApp.themeNotifier.value = themeStr == 'dark'

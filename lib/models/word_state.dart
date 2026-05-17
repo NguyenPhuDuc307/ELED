@@ -133,4 +133,8 @@ enum ExerciseType {
 
   /// Audio plays, user types the word. Lenient match. Auto-rates Good / Again.
   listenAndType,
+
+  /// Example sentence with the target word blanked out. User types the
+  /// missing word. Lenient match. Auto-rates Good / Again.
+  fillInContext,
 }

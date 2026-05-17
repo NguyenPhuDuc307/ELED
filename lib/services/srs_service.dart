@@ -251,15 +251,35 @@ class SrsService {
 
   /// Chooses which exercise style to use for [word] in this session. Brand-new
   /// words always get [ExerciseType.recognize] so the user sees the meaning
-  /// before being quizzed on it. Once familiar we alternate multiple choice
-  /// (recognition) and listen-and-type (active recall) for variety.
-  ExerciseType pickExerciseType(String word, {bool hasAudio = true}) {
+  /// before being quizzed on it. Once familiar we cycle MC → Listen-and-type
+  /// → Fill-in-context so each repeat feels different.
+  ExerciseType pickExerciseType(
+    String word, {
+    bool hasAudio = true,
+    bool hasExample = true,
+  }) {
     final state = stateFor(word);
     if (state.totalSeen == 0) return ExerciseType.recognize;
-    // Deterministic alternation so the same session feels stable on re-entry.
-    final basis = state.totalSeen + word.length;
-    if (basis.isEven || !hasAudio) return ExerciseType.multipleChoice;
-    return ExerciseType.listenAndType;
+    // Deterministic 3-way rotation so the same session feels stable on re-entry.
+    final basis = (state.totalSeen + word.length) % 3;
+    ExerciseType candidate;
+    switch (basis) {
+      case 0:
+        candidate = ExerciseType.multipleChoice;
+        break;
+      case 1:
+        candidate = ExerciseType.listenAndType;
+        break;
+      default:
+        candidate = ExerciseType.fillInContext;
+    }
+    if (candidate == ExerciseType.listenAndType && !hasAudio) {
+      candidate = ExerciseType.multipleChoice;
+    }
+    if (candidate == ExerciseType.fillInContext && !hasExample) {
+      candidate = ExerciseType.multipleChoice;
+    }
+    return candidate;
   }
 
   // ── Debug / reset ──────────────────────────────────────────────────────

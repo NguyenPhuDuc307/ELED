@@ -120,3 +120,17 @@ class WordState {
 /// User rating after seeing a word. The mapping to SM-2 interval/ease updates
 /// happens inside SrsService.applyReview.
 enum ReviewRating { again, hard, good, easy }
+
+/// Which interaction style a card uses inside a session. Picked per-card by
+/// [SrsService.pickExerciseType] so a session has varied feel instead of
+/// the same flashcard repeated 20 times.
+enum ExerciseType {
+  /// Classic flashcard with manual Again / Hard / Good / Easy rating.
+  recognize,
+
+  /// 4 translation options, tap the correct one. Auto-rates Good / Again.
+  multipleChoice,
+
+  /// Audio plays, user types the word. Lenient match. Auto-rates Good / Again.
+  listenAndType,
+}

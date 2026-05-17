@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -43,6 +45,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   final List<String> _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
+  // True if the OS is letting us run alarms in background freely. On Android < M
+  // this is always true. On iOS we don't care — it has no Doze mode.
+  bool _batteryUnrestricted = true;
+
   @override
   void initState() {
     super.initState();
@@ -59,6 +65,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
     });
     _loadSettingsAndData();
     _loadCurrentVersion();
+    _refreshBatteryStatus();
+  }
+
+  Future<void> _refreshBatteryStatus() async {
+    if (!Platform.isAndroid) return;
+    final ok = await NotificationService().isIgnoringBatteryOptimizations();
+    if (mounted) setState(() => _batteryUnrestricted = ok);
   }
 
   Future<void> _loadCurrentVersion() async {
@@ -125,6 +138,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
         startTime: _startTime,
         endTime: _endTime,
       );
+
+      // First-time-only: prompt the user to exempt us from battery optimization,
+      // otherwise OEM doze policies will silently kill alarms within ~1 day.
+      if (Platform.isAndroid) {
+        final ok = await NotificationService().isIgnoringBatteryOptimizations();
+        if (!ok && prefs.getBool('batteryOptPrompted') != true) {
+          await prefs.setBool('batteryOptPrompted', true);
+          if (mounted) await _showBatteryOptPrompt();
+        }
+        await _refreshBatteryStatus();
+      }
     } else {
       await NotificationService().cancelAllNotifications();
     }
@@ -179,6 +203,33 @@ class _SettingsScreenState extends State<SettingsScreen> {
       _checkingUpdate = false;
       _updateChecked = true;
     });
+  }
+
+  Future<void> _showBatteryOptPrompt() async {
+    final ctx = context;
+    final accept = await showDialog<bool>(
+      context: ctx,
+      builder: (dctx) => AlertDialog(
+        title: const Text('Keep notifications running'),
+        content: const Text(
+          'Android may stop ELED notifications after a day to save battery. '
+          'Allow ELED to run unrestricted so vocabulary reminders keep firing on schedule.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dctx).pop(false),
+            child: const Text('Not now'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(dctx).pop(true),
+            child: const Text('Allow'),
+          ),
+        ],
+      ),
+    );
+    if (accept == true) {
+      await NotificationService().requestIgnoreBatteryOptimizations();
+    }
   }
 
   Future<void> _pickTime(bool isStart) async {
@@ -261,6 +312,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   const SizedBox(height: 16),
                   _buildIntervalSelector(),
+                  if (Platform.isAndroid && !_batteryUnrestricted) ...[
+                    const SizedBox(height: 16),
+                    _buildBatteryOptCard(),
+                  ],
                   const SizedBox(height: 32),
                   Divider(color: context.bBorder, thickness: 4),
                   const SizedBox(height: 32),
@@ -675,6 +730,47 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
               ],
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBatteryOptCard() {
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.primaryLight,
+      onTap: () async {
+        await NotificationService().requestIgnoreBatteryOptimizations();
+        await Future.delayed(const Duration(milliseconds: 500));
+        await _refreshBatteryStatus();
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: Row(
+          children: [
+            const Icon(Icons.battery_alert_rounded, color: BrutalistTheme.primary, size: 22),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Allow background activity',
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: BrutalistTheme.primary,
+                        ),
+                  ),
+                  Text(
+                    'Tap to keep notifications firing past 1 day',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: BrutalistTheme.primary,
+                        ),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded, color: BrutalistTheme.primary),
           ],
         ),
       ),

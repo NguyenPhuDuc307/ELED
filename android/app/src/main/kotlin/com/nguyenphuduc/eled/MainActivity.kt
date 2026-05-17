@@ -4,7 +4,11 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.os.PowerManager
+import android.provider.Settings
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import io.flutter.embedding.android.FlutterActivity
@@ -65,6 +69,7 @@ class MainActivity : FlutterActivity() {
                         @Suppress("UNCHECKED_CAST")
                         val items = call.argument<List<Map<String, Any>>>("items") ?: emptyList()
                         VocabNotificationReceiver.cancelAll(applicationContext)
+                        var latestMs = 0L
                         for (item in items) {
                             val id = (item["id"] as? Int) ?: continue
                             val word = (item["word"] as? String) ?: continue
@@ -80,11 +85,33 @@ class MainActivity : FlutterActivity() {
                             VocabNotificationReceiver.schedule(
                                 applicationContext, id, word, translation, pos, topic, atMs, audioUrl
                             )
+                            if (atMs > latestMs) latestMs = atMs
                         }
+                        // Record tail of pipeline + reset pool cursor so rolling refill
+                        // picks up where Flutter left off.
+                        applicationContext.getSharedPreferences(
+                            "FlutterSharedPreferences", Context.MODE_PRIVATE
+                        ).edit()
+                            .putLong(ScheduleEngine.KEY_LATEST_SCHEDULED_MS, latestMs)
+                            .putInt(ScheduleEngine.KEY_POOL_CURSOR, items.size)
+                            .apply()
+                        WatchdogWorker.enqueuePeriodic(applicationContext)
                         result.success(null)
                     }
                     "cancelAll" -> {
                         VocabNotificationReceiver.cancelAll(applicationContext)
+                        WatchdogWorker.cancel(applicationContext)
+                        result.success(null)
+                    }
+                    "isIgnoringBatteryOptimizations" -> {
+                        result.success(isIgnoringBatteryOptimizations())
+                    }
+                    "requestIgnoreBatteryOptimizations" -> {
+                        requestIgnoreBatteryOptimizations()
+                        result.success(null)
+                    }
+                    "openBatteryOptimizationSettings" -> {
+                        openBatteryOptimizationSettings()
                         result.success(null)
                     }
                     else -> result.notImplemented()
@@ -122,6 +149,38 @@ class MainActivity : FlutterActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         saveNativePayload(intent)
+        // Make sure the watchdog stays scheduled across app launches.
+        try { WatchdogWorker.enqueuePeriodic(applicationContext) } catch (_: Exception) {}
+    }
+
+    private fun isIgnoringBatteryOptimizations(): Boolean {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) return true
+        val pm = getSystemService(Context.POWER_SERVICE) as PowerManager
+        return pm.isIgnoringBatteryOptimizations(packageName)
+    }
+
+    @SuppressWarnings("BatteryLife")
+    private fun requestIgnoreBatteryOptimizations() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) return
+        if (isIgnoringBatteryOptimizations()) return
+        try {
+            val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
+                data = Uri.parse("package:$packageName")
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+            startActivity(intent)
+        } catch (_: Exception) {
+            openBatteryOptimizationSettings()
+        }
+    }
+
+    private fun openBatteryOptimizationSettings() {
+        try {
+            val intent = Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS).apply {
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+            startActivity(intent)
+        } catch (_: Exception) {}
     }
 
     override fun onNewIntent(intent: Intent) {

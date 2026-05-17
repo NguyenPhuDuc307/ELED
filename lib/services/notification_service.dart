@@ -25,6 +25,10 @@ const _kAndroidChannel = MethodChannel('com.nguyenphuduc.eled/notifications');
 // Navigation channel — Kotlin sends openPayload when user taps a notification
 const _kNavChannel = MethodChannel('com.nguyenphuduc.eled/nav');
 
+// Separators for the persisted pool string (must match ScheduleEngine.kt).
+const _kFieldSep = '';
+const _kItemSep = '\n';
+
 // Top-level handler — kept for iOS background actions (not used on Android)
 @pragma('vm:entry-point')
 Future<void> notificationBackgroundHandler(NotificationResponse response) async {}
@@ -173,8 +177,44 @@ class NotificationService {
   Future<void> cancelAllNotifications() async {
     if (Platform.isAndroid) {
       try { await _kAndroidChannel.invokeMethod('cancelAll'); } catch (_) {}
+      // Clear persisted pool/config so the watchdog & boot receiver stop re-arming.
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.remove('vocabSchedulePool');
+        await prefs.remove('vocabScheduleIntervalMinutes');
+        await prefs.remove('vocabScheduleStartMinutes');
+        await prefs.remove('vocabScheduleEndMinutes');
+        await prefs.remove('vocabScheduleLatestMs');
+        await prefs.remove('vocabScheduleLastFireMs');
+        await prefs.remove('vocabSchedulePoolCursor');
+      } catch (_) {}
     }
     await flutterLocalNotificationsPlugin.cancelAll();
+  }
+
+  /// Returns true if the user has already exempted the app from battery optimizations
+  /// (or running on a pre-Marshmallow device where the API doesn't exist).
+  Future<bool> isIgnoringBatteryOptimizations() async {
+    if (!Platform.isAndroid) return true;
+    try {
+      final v = await _kAndroidChannel.invokeMethod<bool>('isIgnoringBatteryOptimizations');
+      return v ?? false;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Shows the system "Allow app to run in background" prompt.
+  Future<void> requestIgnoreBatteryOptimizations() async {
+    if (!Platform.isAndroid) return;
+    try { await _kAndroidChannel.invokeMethod('requestIgnoreBatteryOptimizations'); } catch (_) {}
+  }
+
+  /// Opens the OS "Battery optimization" settings list (fallback when the
+  /// prompt above is unavailable, e.g. some OEM ROMs).
+  Future<void> openBatteryOptimizationSettings() async {
+    if (!Platform.isAndroid) return;
+    try { await _kAndroidChannel.invokeMethod('openBatteryOptimizationSettings'); } catch (_) {}
   }
 
   /// Loads the vocabulary pool based on user settings from SharedPreferences.
@@ -227,6 +267,16 @@ class NotificationService {
     final widgetEntries = <String>[];
 
     if (Platform.isAndroid) {
+      // Persist the full shuffled pool + config so native code (rolling refill,
+      // BootReceiver, WatchdogWorker) can keep the queue topped up after the
+      // initial batch fires.
+      await _persistAndroidConfig(
+        pool: shuffled,
+        intervalMinutes: intervalMinutes,
+        startMins: startMins,
+        endMins: endMins,
+      );
+
       // Build batch for native scheduling
       final items = <Map<String, dynamic>>[];
       for (int i = 0; i < count; i++) {
@@ -408,6 +458,35 @@ class NotificationService {
           slot ~/ 60, slot % 60);
     }
     return next;
+  }
+
+  /// Persists the schedule pool + window to SharedPreferences using the keys
+  /// expected by [ScheduleEngine] on the Kotlin side. The native rolling refill,
+  /// boot receiver and watchdog all read from these keys.
+  Future<void> _persistAndroidConfig({
+    required List<Vocabulary> pool,
+    required int intervalMinutes,
+    required int startMins,
+    required int endMins,
+  }) async {
+    final prefs = await SharedPreferences.getInstance();
+    final encoded = pool.map((v) => [
+          v.word,
+          v.translation,
+          v.partOfSpeech,
+          v.topic,
+          v.audioLink,
+          v.ipa,
+          v.levels,
+        ].join(_kFieldSep)).join(_kItemSep);
+
+    await prefs.setString('vocabSchedulePool', encoded);
+    await prefs.setInt('vocabScheduleIntervalMinutes', intervalMinutes);
+    await prefs.setInt('vocabScheduleStartMinutes', startMins);
+    await prefs.setInt('vocabScheduleEndMinutes', endMins);
+    // Reset fire/cursor markers for the new schedule. Native scheduleAll handler
+    // will fill latestMs + poolCursor based on the actual batch it just queued.
+    await prefs.remove('vocabScheduleLastFireMs');
   }
 
   Future<void> _scheduleIOS(int id, Vocabulary vocab, tz.TZDateTime at) async {

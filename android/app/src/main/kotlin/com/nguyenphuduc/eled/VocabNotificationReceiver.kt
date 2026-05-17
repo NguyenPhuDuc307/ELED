@@ -129,6 +129,10 @@ class VocabNotificationReceiver : BroadcastReceiver() {
 
         NotificationManagerCompat.from(context).notify(id, notif)
 
+        // Rolling refill: schedule the next slot at the tail of the queue so the
+        // pipeline never runs out (fixes ~1-day exhaustion of the initial 100-alarm batch).
+        try { ScheduleEngine.refillAfterFire(context, id) } catch (_: Exception) {}
+
         if (audioUrl.isEmpty()) return
 
         // Play pronunciation MP3 asynchronously (goAsync extends BroadcastReceiver lifetime)

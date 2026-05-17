@@ -225,6 +225,23 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
 
+  String get _screenTitle {
+    switch (widget.mode) {
+      case 'KNOWN':
+        return 'Known words';
+      case 'HISTORY':
+        return 'History';
+      case 'COLLECTION':
+        return widget.topicTitle ?? 'Collection';
+      case 'TOPIC':
+        return widget.topicTitle ?? 'Topic';
+      case 'SEARCH':
+        return 'Search';
+      default:
+        return 'Popularity';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -240,7 +257,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
                 decoration: InputDecoration(
-                  hintText: 'Search entire database...',
+                  hintText: 'Type a word or translation…',
                   hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: context.bMuted,
                       ),
@@ -248,17 +265,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 style: Theme.of(context).textTheme.bodyLarge,
               )
-            : Text(
-                widget.mode == 'KNOWN'
-                    ? 'Known Words'
-                    : widget.mode == 'HISTORY'
-                        ? 'History'
-                        : widget.mode == 'COLLECTION' && widget.topicTitle != null
-                            ? widget.topicTitle!
-                            : widget.mode == 'TOPIC' && widget.topicTitle != null
-                                ? widget.topicTitle!
-                                : 'Popularity',
-              ),
+            : Text(_screenTitle),
         actions: [
           if (widget.mode == 'HISTORY')
             IconButton(
@@ -312,7 +319,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           setState(() => _allVocabData.clear());
                           if (mounted) {
                             messenger.showSnackBar(
-                              const SnackBar(content: Text('History cleared.')),
+                              const SnackBar(content: Text('History cleared')),
                             );
                           }
                         },
@@ -335,7 +342,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onWordSelected: (vocab) async {
                         final added = await CollectionService.addWord(widget.topicTitle!, vocab.word);
                         if (added && mounted) {
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Word added to collection!')));
+                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Word added to collection')));
                           _loadCollectionData();
                         }
                         if (mounted) Navigator.of(context).pop(); // pop search screen
@@ -394,16 +401,94 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildSearchPromptState() {
+    return _emptyState(
+      icon: Icons.search_rounded,
+      title: 'Search the entire vocabulary',
+      subtitle: 'Type a word or its translation to begin.',
+    );
+  }
+
+  /// 44x44 hit target so audio is comfortable to tap on a moving card.
+  /// Shows a tiny spinner while the URL is being prepared.
+  Widget _audioButton(String url) {
+    final isPlaying = _playingUrl == url;
+    return SizedBox(
+      width: 44,
+      height: 44,
+      child: Material(
+        color: Colors.transparent,
+        shape: const CircleBorder(),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: () => _playAudio(url),
+          child: Center(
+            child: isPlaying
+                ? const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: BrutalistTheme.primary,
+                    ),
+                  )
+                : Icon(
+                    Icons.volume_up_rounded,
+                    size: 22,
+                    color: BrutalistTheme.primary.withValues(alpha: 0.85),
+                  ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Centred empty/zero state with a soft icon, sentence-case title, and an
+  /// optional subtitle that explains the next action the user can take.
+  Widget _emptyState({
+    required IconData icon,
+    required String title,
+    String? subtitle,
+    Widget? action,
+  }) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(32.0),
-        child: Text(
-          'ENTER KEYWORD TO SEARCH...',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Colors.grey.shade600,
-                fontWeight: FontWeight.w900,
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.primaryLight,
+                shape: BoxShape.circle,
               ),
-          textAlign: TextAlign.center,
+              child: Icon(icon, size: 36, color: BrutalistTheme.primary),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              title,
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 18,
+                    color: context.bBorder,
+                  ),
+              textAlign: TextAlign.center,
+            ),
+            if (subtitle != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                subtitle,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: context.bMuted,
+                    ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+            if (action != null) ...[
+              const SizedBox(height: 20),
+              action,
+            ],
+          ],
         ),
       ),
     );
@@ -466,42 +551,35 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildEmptyState() {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(32.0),
-        child: BrutalistCard(
-          backgroundColor: BrutalistTheme.secondary,
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Text(
-              'NO DATA FOUND IN CSV.\nPLEASE ADD VOCABULARY.',
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    color: context.bBg,
-                  ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-        ),
-      ),
+    return _emptyState(
+      icon: Icons.menu_book_rounded,
+      title: 'No words to show yet',
+      subtitle: widget.mode == 'POPULARITY'
+          ? 'Try selecting a different level above, or come back after you sync vocabulary.'
+          : 'Try adjusting your filters or come back after the next vocabulary sync.',
     );
   }
 
   Widget _buildFlatList(List<Vocabulary> results) {
     if (results.isEmpty) {
-      return Center(
-        child: Padding(
-          padding: const EdgeInsets.all(32.0),
-          child: Text(
-            widget.mode == 'COLLECTION'
-                ? 'COLLECTION IS EMPTY.\nTAP + TO ADD WORDS!'
-                : 'NO KNOWN WORDS YET.\nKEEP LEARNING!',
-            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  color: context.bBorder,
-                  fontWeight: FontWeight.w900,
-                ),
-            textAlign: TextAlign.center,
-          ),
-        ),
+      if (widget.mode == 'COLLECTION') {
+        return _emptyState(
+          icon: Icons.bookmark_add_outlined,
+          title: 'This collection is empty',
+          subtitle: 'Tap the + button above to add your first word.',
+        );
+      }
+      if (widget.mode == 'HISTORY') {
+        return _emptyState(
+          icon: Icons.history_rounded,
+          title: 'No notification history yet',
+          subtitle: 'Words sent to you as reminders will appear here.',
+        );
+      }
+      return _emptyState(
+        icon: Icons.check_circle_outline_rounded,
+        title: 'No known words yet',
+        subtitle: 'Mark words as known while you study to see them here.',
       );
     }
 
@@ -560,31 +638,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      if (vocab.audioLink.isNotEmpty)
-                        GestureDetector(
-                          onTap: () => _playAudio(vocab.audioLink),
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 8),
-                            child: _playingUrl == vocab.audioLink
-                                ? const SizedBox(
-                                    width: 18,
-                                    height: 18,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                      color: BrutalistTheme.primary,
-                                    ),
-                                  )
-                                : Icon(
-                                    Icons.volume_up_rounded,
-                                    size: 20,
-                                    color: BrutalistTheme.primary.withValues(alpha: 0.8),
-                                  ),
-                          ),
-                        ),
+                      if (vocab.audioLink.isNotEmpty) _audioButton(vocab.audioLink),
+                      const SizedBox(width: 6),
                       Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        size: 16,
-                        color: BrutalistTheme.black.withValues(alpha: 0.5),
+                        Icons.chevron_right_rounded,
+                        size: 22,
+                        color: BrutalistTheme.black.withValues(alpha: 0.55),
                       ),
                     ],
                   ),
@@ -608,40 +667,68 @@ class _HomeScreenState extends State<HomeScreen> {
                   context: context,
                   builder: (ctx) => AlertDialog(
                     backgroundColor: context.bBg,
-                    shape: Border.all(color: context.bBorder, width: 4),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                     title: Text(
-                      'REMOVE FROM COLLECTION?',
+                      'Remove from collection?',
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.w900,
-                        color: context.bBorder,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                     content: Text(
                       'Remove "${vocab.word}" from this collection?',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: context.bBorder,
+                        color: context.bMuted,
                       ),
                     ),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.of(ctx).pop(false),
-                        child: Text('CANCEL', style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+                        child: Text('Cancel', style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
                           backgroundColor: BrutalistTheme.secondary,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                          foregroundColor: BrutalistTheme.white,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         ),
                         onPressed: () => Navigator.of(ctx).pop(true),
-                        child: Text('REMOVE', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                        child: const Text('Remove', style: TextStyle(fontWeight: FontWeight.w600)),
                       ),
                     ],
                   ),
                 ) ?? false;
               },
               onDismissed: (dir) async {
+                final messenger = ScaffoldMessenger.of(context);
+                final removedIndex = _allVocabData.indexOf(vocab);
                 await CollectionService.removeWord(widget.topicTitle!, vocab.word);
+                if (!mounted) return;
                 setState(() { _allVocabData.remove(vocab); });
+                messenger.showSnackBar(
+                  SnackBar(
+                    content: Text('Removed "${vocab.word}"'),
+                    duration: const Duration(seconds: 4),
+                    action: SnackBarAction(
+                      label: 'Undo',
+                      onPressed: () async {
+                        await CollectionService.addWord(
+                            widget.topicTitle!, vocab.word);
+                        if (!mounted) return;
+                        setState(() {
+                          // Put it back at its original index so the list order
+                          // matches what the user saw before they swiped.
+                          if (removedIndex >= 0 &&
+                              removedIndex <= _allVocabData.length) {
+                            _allVocabData.insert(removedIndex, vocab);
+                          } else {
+                            _allVocabData.add(vocab);
+                          }
+                        });
+                      },
+                    ),
+                  ),
+                );
               },
               child: card,
             );
@@ -702,14 +789,10 @@ class _HomeScreenState extends State<HomeScreen> {
     });
 
     if (results.isEmpty) {
-      return Center(
-        child: Text(
-          'NO RESULTS FOUND.',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-            color: context.bBorder,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
+      return _emptyState(
+        icon: Icons.search_off_rounded,
+        title: 'No matches',
+        subtitle: 'Try a different keyword.',
       );
     }
 
@@ -792,31 +875,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      if (vocab.audioLink.isNotEmpty)
-                        GestureDetector(
-                          onTap: () => _playAudio(vocab.audioLink),
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 8),
-                            child: _playingUrl == vocab.audioLink
-                                ? const SizedBox(
-                                    width: 18,
-                                    height: 18,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                      color: BrutalistTheme.primary,
-                                    ),
-                                  )
-                                : Icon(
-                                    Icons.volume_up_rounded,
-                                    size: 20,
-                                    color: BrutalistTheme.primary.withValues(alpha: 0.8),
-                                  ),
-                          ),
-                        ),
+                      if (vocab.audioLink.isNotEmpty) _audioButton(vocab.audioLink),
+                      const SizedBox(width: 6),
                       Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        size: 16,
-                        color: BrutalistTheme.black.withValues(alpha: 0.5),
+                        Icons.chevron_right_rounded,
+                        size: 22,
+                        color: BrutalistTheme.black.withValues(alpha: 0.55),
                       ),
                     ],
                   ),
@@ -843,8 +907,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildList() {
     final days = _vocabData.keys.toList()..sort();
 
-    return ListView.builder(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+    // Compact 2-column grid so 8-10 days fit on one screen instead of 5.
+    return GridView.builder(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 4,
+        crossAxisSpacing: 4,
+        childAspectRatio: 1.35,
+      ),
       itemCount: days.length,
       itemBuilder: (context, index) {
         final day = days[index];
@@ -873,45 +944,38 @@ class _HomeScreenState extends State<HomeScreen> {
             )));
           },
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),
-            child: Row(
+            padding: const EdgeInsets.fromLTRB(16, 14, 14, 14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Day $day',
-                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                              fontWeight: FontWeight.w700,
-                              color: BrutalistTheme.black,
-                              fontSize: 18,
-                            ),
+                Text(
+                  'Day $day',
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: BrutalistTheme.black,
+                        fontSize: 20,
                       ),
-                      const SizedBox(height: 2),
-                      Text(
-                        () {
-                          final levels = vocabList
-                              .map((v) => v.levels.toUpperCase())
-                              .where((l) => l.isNotEmpty)
-                              .toSet()
-                              .toList()
-                            ..sort();
-                          final levelStr = levels.isNotEmpty ? ' · ${levels.join(', ')}' : '';
-                          return '${vocabList.length} words$levelStr';
-                        }(),
-                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                              color: BrutalistTheme.black.withValues(alpha: 0.55),
-                              fontSize: 13,
-                            ),
-                      ),
-                    ],
-                  ),
                 ),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 16,
-                  color: BrutalistTheme.black.withValues(alpha: 0.5),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        '${vocabList.length} words',
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              color: BrutalistTheme.black.withValues(alpha: 0.55),
+                              fontSize: 12,
+                            ),
+                      ),
+                    ),
+                    Icon(
+                      Icons.chevron_right_rounded,
+                      size: 20,
+                      color: BrutalistTheme.black.withValues(alpha: 0.55),
+                    ),
+                  ],
                 ),
               ],
             ),

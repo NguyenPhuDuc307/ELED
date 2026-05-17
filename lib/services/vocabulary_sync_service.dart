@@ -49,7 +49,7 @@ class VocabularySyncService {
       final response = await request.close();
 
       if (response.statusCode != 200) {
-        throw Exception('Tải thất bại (HTTP ${response.statusCode})');
+        throw Exception('Download failed (HTTP ${response.statusCode})');
       }
 
       final total = response.contentLength;

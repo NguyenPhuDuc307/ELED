@@ -5,8 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
+import '../models/word_state.dart';
+import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
+import '../services/srs_service.dart';
 import '../services/user_data_service.dart';
+import 'exercises/listen_and_type_exercise.dart';
+import 'exercises/multiple_choice_exercise.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
@@ -48,19 +53,54 @@ class _LearningScreenState extends State<LearningScreen> {
   final _audioPlayer = AudioPlayer();
   bool _playingAudio = false;
 
+  // Pinned exercise + distractor pick per card so PageView rebuilds don't
+  // swap exercise types mid-card.
+  final Map<int, ExerciseType> _exerciseCache = {};
+  final Map<int, List<Vocabulary>> _distractorsCache = {};
+
   @override
   void initState() {
     super.initState();
     _currentIndex = widget.initialIndex;
     _pageController = PageController(initialPage: _currentIndex);
     _loadKnownWords();
-    _fetchDefinition(_currentIndex);
+    _prepareCard(_currentIndex);
+    _persistContext();
+  }
+
+  /// Persists "where the user left off" so the menu's Continue tile can
+  /// jump back into this session. Called on first build + every page change.
+  void _persistContext() {
+    if (widget.vocabularies.isEmpty) return;
+    final label = widget.day > 0
+        ? 'Day ${widget.day}'
+        : widget.vocabularies.length == 1
+            ? widget.vocabularies.first.word
+            : 'Last session';
+    LearningStateService().saveContext(LearningContext(
+      label: label,
+      day: widget.day,
+      wordKeys: widget.vocabularies.map((v) => v.word.toLowerCase()).toList(),
+      currentIndex: _currentIndex,
+      totalCount: widget.vocabularies.length,
+      lastOpenedMs: DateTime.now().millisecondsSinceEpoch,
+    ));
   }
 
   Future<void> _loadKnownWords() async {
     setState(() {
       _knownWords = UserDataService().knownWords;
     });
+  }
+
+  /// Fetches the English definition for the card at [index]; if the user is
+  /// currently viewing Vietnamese, chains a translation so the new card
+  /// arrives already translated instead of forcing them to toggle EN → VI.
+  Future<void> _prepareCard(int index) async {
+    await _fetchDefinition(index);
+    if (_translateDefinition && mounted) {
+      await _translateSenses(index);
+    }
   }
 
   Future<void> _fetchDefinition(int index) async {
@@ -80,18 +120,27 @@ class _LearningScreenState extends State<LearningScreen> {
     final messenger = ScaffoldMessenger.of(context);
     final isAdded = !_knownWords.contains(word.toLowerCase());
     await UserDataService().toggleKnownWord(word);
+    if (!mounted) return;
     setState(() {
       _knownWords = UserDataService().knownWords;
     });
-    if (mounted) {
-      messenger.clearSnackBars();
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(isAdded ? 'MARKED AS KNOWN!' : 'REMOVED FROM KNOWN WORDS!'),
-          duration: const Duration(milliseconds: 1500),
+    messenger.clearSnackBars();
+    messenger.showSnackBar(
+      SnackBar(
+        content: Text(isAdded ? 'Marked as known' : 'Removed from known words'),
+        duration: const Duration(seconds: 4),
+        action: SnackBarAction(
+          label: 'Undo',
+          onPressed: () async {
+            await UserDataService().toggleKnownWord(word);
+            if (!mounted) return;
+            setState(() {
+              _knownWords = UserDataService().knownWords;
+            });
+          },
         ),
-      );
-    }
+      ),
+    );
   }
 
   Future<void> _playAudio(String url) async {
@@ -181,60 +230,56 @@ class _LearningScreenState extends State<LearningScreen> {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(24.0, 16.0, 24.0, 8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  '${_currentIndex + 1} / ${widget.vocabularies.length}',
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: context.bMuted,
-                      ),
-                ),
-                Text(
-                  '${((_currentIndex + 1) / widget.vocabularies.length * 100).round()}%',
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: BrutalistTheme.primary,
-                      ),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: ClipRRect(
-              child: LinearProgressIndicator(
-                value: widget.vocabularies.isEmpty
-                    ? 0
-                    : (_currentIndex + 1) / widget.vocabularies.length,
-                minHeight: 8,
-                color: BrutalistTheme.primary,
-                backgroundColor: context.bBorder.withValues(alpha: 0.15),
-              ),
-            ),
-          ),
-          const SizedBox(height: 8),
+          _buildLocationIndicator(),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
               itemCount: widget.vocabularies.length,
               onPageChanged: (index) {
                 setState(() => _currentIndex = index);
-                _fetchDefinition(index);
+                _prepareCard(index);
+                _persistContext();
               },
               itemBuilder: (context, index) {
                 final vocab = widget.vocabularies[index];
+                final exType = _exerciseFor(index);
+                if (exType == ExerciseType.multipleChoice) {
+                  return MultipleChoiceExercise(
+                    word: vocab,
+                    distractors: _distractorsFor(index),
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
+                if (exType == ExerciseType.listenAndType) {
+                  return ListenAndTypeExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
                 return Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
-                    onTap: () => _toggleTranslation(index),
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.all(32.0),
-                      child: Column(
+                    child: Stack(
+                      children: [
+                        // Small affordance to peek at level/topic without forcing
+                        // metadata into the main reading column.
+                        Positioned(
+                          top: 8,
+                          right: 8,
+                          child: IconButton(
+                            tooltip: 'Word details',
+                            icon: Icon(
+                              Icons.info_outline_rounded,
+                              color: BrutalistTheme.black.withValues(alpha: 0.45),
+                              size: 22,
+                            ),
+                            onPressed: () => _showWordDetails(vocab),
+                          ),
+                        ),
+                        SingleChildScrollView(
+                          padding: const EdgeInsets.all(32.0),
+                          child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
@@ -299,7 +344,7 @@ class _LearningScreenState extends State<LearningScreen> {
                                       final Uri url = Uri.parse(vocab.url);
                                       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
                                         if (context.mounted) {
-                                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Could not open link.')));
+                                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Couldn't open link")));
                                         }
                                       }
                                     },
@@ -311,21 +356,21 @@ class _LearningScreenState extends State<LearningScreen> {
                                 ),
                             ],
                           ),
-                          const SizedBox(height: 16),
-                          Wrap(
-                            alignment: WrapAlignment.center,
-                            spacing: 8,
-                            runSpacing: 8,
-                            children: [
-                              _badge(context, vocab.partOfSpeech, BrutalistTheme.primary, BrutalistTheme.primaryLight),
-                              _badge(context, vocab.levels.toUpperCase(), BrutalistTheme.black, BrutalistTheme.border.withValues(alpha: 0.4)),
-                              if (vocab.topic.isNotEmpty)
-                                _badge(context, vocab.topic, BrutalistTheme.accent, BrutalistTheme.accentLight),
-                            ],
-                          ),
+                          if (vocab.partOfSpeech.isNotEmpty) ...[
+                            const SizedBox(height: 6),
+                            // Part of speech kept inline as a subtle caption — the
+                            // most learning-relevant tag. Level + topic move to the
+                            // info sheet so the card isn't a wall of metadata.
+                            Text(
+                              vocab.partOfSpeech.toLowerCase(),
+                              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                    fontStyle: FontStyle.italic,
+                                    color: BrutalistTheme.black.withValues(alpha: 0.55),
+                                  ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
                           const SizedBox(height: 28),
-                          Divider(color: context.bSubtle, thickness: 1),
-                          const SizedBox(height: 20),
                           // Vietnamese word translation — always visible
                           Text(
                             vocab.translation,
@@ -338,16 +383,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           const SizedBox(height: 20),
                           // Definitions: English by default, Vietnamese when _translateDefinition=true
                           if (_loadingDef && !_oxfordCache.containsKey(index))
-                            const Center(
-                              child: SizedBox(
-                                height: 20,
-                                width: 20,
-                                child: CircularProgressIndicator(
-                                  strokeWidth: 2,
-                                  color: BrutalistTheme.primary,
-                                ),
-                              ),
-                            )
+                            const _DefinitionSkeleton()
                           else if ((_oxfordCache[index] ?? []).isNotEmpty)
                             ...List.generate(_oxfordCache[index]!.length, (si) {
                               final s = _oxfordCache[index]![si];
@@ -356,46 +392,37 @@ class _LearningScreenState extends State<LearningScreen> {
                               final defText = showVI && si < viDefs.length
                                   ? viDefs[si]
                                   : s.definition;
+                              final isLast = si == _oxfordCache[index]!.length - 1;
                               return Padding(
-                                padding: const EdgeInsets.only(bottom: 10),
+                                padding: EdgeInsets.only(bottom: isLast ? 0 : 18),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          '${s.number}. ',
-                                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                fontWeight: FontWeight.w700,
-                                                color: BrutalistTheme.primary,
-                                              ),
-                                        ),
-                                        Expanded(
-                                          child: _translatingDef && _translateDefinition && viDefs == null
-                                              ? const SizedBox(
-                                                  height: 18,
-                                                  width: 18,
-                                                  child: CircularProgressIndicator(strokeWidth: 2, color: BrutalistTheme.primary),
-                                                )
-                                              : Text(
-                                                  defText,
-                                                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                        fontWeight: FontWeight.w600,
-                                                        color: BrutalistTheme.black,
-                                                      ),
+                                    _translatingDef && _translateDefinition && viDefs == null
+                                        ? const SizedBox(
+                                            height: 18,
+                                            width: 18,
+                                            child: CircularProgressIndicator(
+                                                strokeWidth: 2,
+                                                color: BrutalistTheme.primary),
+                                          )
+                                        : Text(
+                                            defText,
+                                            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                                  fontWeight: FontWeight.w500,
+                                                  color: BrutalistTheme.black,
+                                                  height: 1.45,
                                                 ),
-                                        ),
-                                      ],
-                                    ),
+                                          ),
                                     if (s.example.isNotEmpty)
                                       Padding(
-                                        padding: const EdgeInsets.only(left: 18, top: 2),
+                                        padding: const EdgeInsets.only(top: 6),
                                         child: Text(
                                           '"${s.example}"',
                                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                                 fontStyle: FontStyle.italic,
                                                 color: BrutalistTheme.textMuted,
+                                                height: 1.4,
                                               ),
                                         ),
                                       ),
@@ -406,14 +433,22 @@ class _LearningScreenState extends State<LearningScreen> {
                         ],
                       ),
                     ),
+                      ],
+                    ),
                   ),
                 );
               },
             ),
           ),
+          if (widget.vocabularies.isNotEmpty &&
+              _exerciseFor(_currentIndex) == ExerciseType.recognize) ...[
+            _buildRatingRow(),
+          ],
+          if (widget.vocabularies.isNotEmpty &&
+              _exerciseFor(_currentIndex) == ExerciseType.recognize)
           Container(
             margin: const EdgeInsets.fromLTRB(16, 0, 16, 20),
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
             decoration: BoxDecoration(
               color: context.bBg,
               borderRadius: BorderRadius.circular(20),
@@ -426,7 +461,7 @@ class _LearningScreenState extends State<LearningScreen> {
               ],
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 _buildNavButton(
                   icon: Icons.arrow_back_ios_new_rounded,
@@ -437,29 +472,7 @@ class _LearningScreenState extends State<LearningScreen> {
                           )
                       : null,
                 ),
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      _translateDefinition ? 'VI' : 'EN',
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.w600,
-                            color: context.bMuted,
-                            fontSize: 13,
-                          ),
-                    ),
-                    const SizedBox(height: 2),
-                    Switch(
-                      value: _translateDefinition,
-                      onChanged: (_) => _toggleTranslation(_currentIndex),
-                      activeThumbColor: BrutalistTheme.white,
-                      activeTrackColor: BrutalistTheme.primary,
-                      inactiveThumbColor: BrutalistTheme.white,
-                      inactiveTrackColor: BrutalistTheme.border,
-                      trackOutlineColor: WidgetStateProperty.all(Colors.transparent),
-                    ),
-                  ],
-                ),
+                _buildDefinitionLanguageToggle(),
                 _buildNavButton(
                   icon: _currentIndex < widget.vocabularies.length - 1
                       ? Icons.arrow_forward_ios_rounded
@@ -475,6 +488,65 @@ class _LearningScreenState extends State<LearningScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  /// Bottom sheet showing level + topic for the current word. Keeps the
+  /// metadata one tap away without cluttering the reading column.
+  void _showWordDetails(Vocabulary vocab) {
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: context.bBg,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (_) => Padding(
+        padding: const EdgeInsets.fromLTRB(24, 16, 24, 32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: context.bSubtle,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              vocab.word,
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    fontWeight: FontWeight.w700,
+                  ),
+            ),
+            const SizedBox(height: 16),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                if (vocab.levels.isNotEmpty)
+                  _badge(
+                    context,
+                    vocab.levels.toUpperCase(),
+                    BrutalistTheme.black,
+                    BrutalistTheme.border.withValues(alpha: 0.4),
+                  ),
+                if (vocab.topic.isNotEmpty)
+                  _badge(
+                    context,
+                    vocab.topic,
+                    BrutalistTheme.accent,
+                    BrutalistTheme.accentLight,
+                  ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -497,6 +569,219 @@ class _LearningScreenState extends State<LearningScreen> {
     );
   }
 
+  /// Replaces the old "X / Y" + "Z%" + linear progress bar. Up to 30 vocab
+  /// items render as dots (current = solid primary, others = muted). Beyond
+  /// 30 we fall back to a one-line muted caption so the dot row doesn't
+  /// become an unreadable smudge.
+  Widget _buildLocationIndicator() {
+    final total = widget.vocabularies.length;
+    if (total == 0) return const SizedBox(height: 16);
+    if (total > 30) {
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(24, 14, 24, 6),
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            'Word ${_currentIndex + 1} of $total',
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: context.bMuted,
+                ),
+          ),
+        ),
+      );
+    }
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(24, 14, 24, 6),
+      child: Wrap(
+        spacing: 6,
+        runSpacing: 6,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: List.generate(total, (i) {
+          final isActive = i == _currentIndex;
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            width: isActive ? 18 : 6,
+            height: 6,
+            decoration: BoxDecoration(
+              color: isActive
+                  ? BrutalistTheme.primary
+                  : context.bSubtle,
+              borderRadius: BorderRadius.circular(3),
+            ),
+          );
+        }),
+      ),
+    );
+  }
+
+  /// Compact segmented control: "English" / "Tiếng Việt" with a one-line label
+  /// above so the user can tell what it's switching. Replaces a bare iOS-style
+  /// switch with an "EN"/"VI" code that was easy to misread.
+  Widget _buildDefinitionLanguageToggle() {
+    Widget seg(String label, bool active, VoidCallback onTap) {
+      return InkWell(
+        onTap: active ? null : onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          decoration: BoxDecoration(
+            color: active ? BrutalistTheme.primary : Colors.transparent,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Text(
+            label,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.w700,
+                  color: active ? BrutalistTheme.white : context.bMuted,
+                ),
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'Definition',
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: context.bMuted,
+                fontSize: 11,
+                letterSpacing: 0.3,
+              ),
+        ),
+        const SizedBox(height: 4),
+        Container(
+          padding: const EdgeInsets.all(2),
+          decoration: BoxDecoration(
+            color: context.bSubtle.withValues(alpha: 0.4),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              seg('English', !_translateDefinition, () {
+                if (_translateDefinition) _toggleTranslation(_currentIndex);
+              }),
+              seg('Tiếng Việt', _translateDefinition, () {
+                if (!_translateDefinition) _toggleTranslation(_currentIndex);
+              }),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Decides which exercise widget to render for the card at [index]. Cached
+  /// in [_exerciseCache] so the choice is stable across rebuilds — otherwise
+  /// the SRS state could mutate mid-card and the page would re-render with a
+  /// different exercise type.
+  ExerciseType _exerciseFor(int index) {
+    final cached = _exerciseCache[index];
+    if (cached != null) return cached;
+    final vocab = widget.vocabularies[index];
+    final type = SrsService().pickExerciseType(
+      vocab.word,
+      hasAudio: vocab.audioLink.isNotEmpty,
+    );
+    _exerciseCache[index] = type;
+    return type;
+  }
+
+  /// Picks 3 distractor words from the rest of the session for the multiple
+  /// choice exercise. Stable across rebuilds.
+  List<Vocabulary> _distractorsFor(int index) {
+    final cached = _distractorsCache[index];
+    if (cached != null) return cached;
+    final pool = <Vocabulary>[];
+    final correct = widget.vocabularies[index].word.toLowerCase();
+    for (final v in widget.vocabularies) {
+      if (v.word.toLowerCase() != correct &&
+          v.translation.trim().isNotEmpty) {
+        pool.add(v);
+      }
+    }
+    pool.shuffle();
+    final picks = pool.take(3).toList();
+    _distractorsCache[index] = picks;
+    return picks;
+  }
+
+  /// Submits an SRS rating for the current word and advances to the next card.
+  /// At the end of the deck we call onCompleted so the caller can chain into
+  /// the next session (e.g. next Day).
+  Future<void> _submitRating(ReviewRating rating) async {
+    if (widget.vocabularies.isEmpty) return;
+    final word = widget.vocabularies[_currentIndex].word;
+    await SrsService().submitReview(word, rating);
+    // Keep the legacy known-words store in sync so notifications + browse
+    // modes still exclude what the user has already mastered.
+    if (rating == ReviewRating.good || rating == ReviewRating.easy) {
+      await UserDataService().addKnownWord(word);
+    } else if (rating == ReviewRating.again) {
+      await UserDataService().removeKnownWord(word);
+    }
+    if (!mounted) return;
+    if (_currentIndex < widget.vocabularies.length - 1) {
+      _pageController.nextPage(
+        duration: const Duration(milliseconds: 280),
+        curve: Curves.easeOut,
+      );
+    } else {
+      // Last card — bounce out so the user lands back on Today / Day list and
+      // can see the queue refresh.
+      widget.onCompleted?.call();
+      Navigator.of(context).pop();
+    }
+  }
+
+  /// Row of four rating chips above the nav bar. Color encodes severity:
+  /// red Again → orange Hard → green Good → blue Easy.
+  Widget _buildRatingRow() {
+    Widget chip(String label, ReviewRating rating, Color color) {
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: Material(
+            color: color.withValues(alpha: 0.12),
+            borderRadius: BorderRadius.circular(12),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => _submitRating(rating),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: Center(
+                  child: Text(
+                    label,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: color,
+                          fontSize: 13,
+                        ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 4, 12, 6),
+      child: Row(
+        children: [
+          chip('Again', ReviewRating.again, const Color(0xFFD9534F)),
+          chip('Hard', ReviewRating.hard, const Color(0xFFE5874E)),
+          chip('Good', ReviewRating.good, BrutalistTheme.primary),
+          chip('Easy', ReviewRating.easy, const Color(0xFF3E7CB1)),
+        ],
+      ),
+    );
+  }
+
   Widget _buildNavButton({required IconData icon, required VoidCallback? onPressed}) {
     final active = onPressed != null;
     return Material(
@@ -510,6 +795,71 @@ class _LearningScreenState extends State<LearningScreen> {
           child: Icon(icon, color: active ? BrutalistTheme.primary : BrutalistTheme.textMuted, size: 24),
         ),
       ),
+    );
+  }
+}
+
+/// Subtle pulsing placeholder for the Oxford definition while it's being
+/// fetched. Three skeleton lines feel like an actual paragraph is loading,
+/// so the user doesn't think the screen is broken.
+class _DefinitionSkeleton extends StatefulWidget {
+  const _DefinitionSkeleton();
+
+  @override
+  State<_DefinitionSkeleton> createState() => _DefinitionSkeletonState();
+}
+
+class _DefinitionSkeletonState extends State<_DefinitionSkeleton>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl;
+  late final Animation<double> _opacity;
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..repeat(reverse: true);
+    _opacity = Tween<double>(begin: 0.35, end: 0.8).animate(
+      CurvedAnimation(parent: _ctrl, curve: Curves.easeInOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  Widget _bar(double width) {
+    return AnimatedBuilder(
+      animation: _opacity,
+      builder: (_, _) => Opacity(
+        opacity: _opacity.value,
+        child: Container(
+          height: 14,
+          width: width,
+          margin: const EdgeInsets.symmetric(vertical: 4),
+          decoration: BoxDecoration(
+            color: BrutalistTheme.black.withValues(alpha: 0.18),
+            borderRadius: BorderRadius.circular(6),
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _bar(width * 0.65),
+        _bar(width * 0.55),
+        _bar(width * 0.4),
+      ],
     );
   }
 }

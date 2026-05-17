@@ -10,6 +10,7 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
+import '../services/analytics_service.dart';
 import '../services/csv_service.dart';
 import '../services/update_service.dart';
 import '../services/user_data_service.dart';
@@ -162,6 +163,11 @@ class NotificationService {
       logCaught(e, st, 'NotificationService._onNotificationTapped:historyWrite');
     }
 
+    AnalyticsService().logEvent('notification_opened', {
+      'word': vocab.word,
+      'topic': vocab.topic,
+    });
+
     globalNavigatorKey.currentState?.push(
       MaterialPageRoute(
         builder: (_) => LearningScreen(day: 0, vocabularies: [vocab]),
@@ -259,6 +265,13 @@ class NotificationService {
   }) async {
     await cancelAllNotifications();
     if (pool.isEmpty || intervalMinutes <= 0) return;
+
+    AnalyticsService().logEvent('schedule_set', {
+      'interval_minutes': intervalMinutes,
+      'pool_size': pool.length,
+      'window_minutes':
+          (endTime.hour * 60 + endTime.minute) - (startTime.hour * 60 + startTime.minute),
+    });
 
     final now      = tz.TZDateTime.now(tz.local);
     final count    = min(Platform.isAndroid ? 100 : 64, pool.length);

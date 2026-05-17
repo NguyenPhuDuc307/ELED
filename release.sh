@@ -5,14 +5,18 @@
 #   ./release.sh 8 "note"     — with custom release note
 #   ./release.sh -f           — overwrite current version (no new commit)
 #   ./release.sh -f 8         — overwrite specific alpha number
+#   ./release.sh --bundle     — also build + attach AAB (for Play Store / Play App Signing)
 set -euo pipefail
 
 # ── Parse flags ───────────────────────────────────────────────────────────────
 FORCE=false
+BUNDLE=false
 ARGS=()
 for arg in "$@"; do
   if [ "$arg" = "-f" ] || [ "$arg" = "--force" ]; then
     FORCE=true
+  elif [ "$arg" = "--bundle" ] || [ "$arg" = "-b" ]; then
+    BUNDLE=true
   else
     ARGS+=("$arg")
   fi
@@ -37,6 +41,9 @@ TITLE="Alpha ${ALPHA}"
 APK_NAME="eled-alpha${ALPHA}.apk"
 APK_SRC="build/app/outputs/flutter-apk/app-release.apk"
 APK_DST="build/app/outputs/flutter-apk/${APK_NAME}"
+AAB_NAME="eled-alpha${ALPHA}.aab"
+AAB_SRC="build/app/outputs/bundle/release/app-release.aab"
+AAB_DST="build/app/outputs/bundle/release/${AAB_NAME}"
 
 echo "══════════════════════════════════════════"
 if [ "$FORCE" = true ]; then
@@ -78,6 +85,16 @@ flutter build apk --release
 cp "$APK_SRC" "$APK_DST"
 echo "✓ Built ${APK_NAME}"
 
+# ── Optionally build AAB ──────────────────────────────────────────────────────
+RELEASE_ASSETS=("$APK_DST")
+if [ "$BUNDLE" = true ]; then
+  echo "Building AAB…"
+  flutter build appbundle --release
+  cp "$AAB_SRC" "$AAB_DST"
+  echo "✓ Built ${AAB_NAME}"
+  RELEASE_ASSETS+=("$AAB_DST")
+fi
+
 # ── Build release notes ───────────────────────────────────────────────────────
 NOTES="## Alpha ${ALPHA}"
 if [ -n "$EXTRA_NOTE" ]; then
@@ -91,7 +108,7 @@ gh release create "$TAG" \
   --title "$TITLE" \
   --notes "$NOTES" \
   --prerelease \
-  "$APK_DST"
+  "${RELEASE_ASSETS[@]}"
 
 echo ""
 echo "✓ Done: https://github.com/NguyenPhuDuc307/ELED/releases/tag/${TAG}"

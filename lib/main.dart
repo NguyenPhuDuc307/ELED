@@ -12,6 +12,7 @@ import 'screens/menu_screen.dart';
 import 'screens/sync_screen.dart';
 import 'services/vocabulary_sync_service.dart';
 import 'theme/brutalist_theme.dart';
+import 'services/analytics_service.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
 import 'services/update_service.dart';
@@ -45,6 +46,7 @@ Future<void> _bootstrap() async {
     return true;
   };
   await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
+  await AnalyticsService().init();
 
   await HomeWidget.setAppGroupId('group.com.nguyenphuduc.eled');
 
@@ -200,6 +202,7 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
         return MaterialApp(
           navigatorKey: globalNavigatorKey,
           scaffoldMessengerKey: scaffoldMessengerKey,
+          navigatorObservers: [AnalyticsService().observer()],
           title: 'ELED - English Learning',
           theme: BrutalistTheme.lightTheme,
           darkTheme: BrutalistTheme.darkTheme,

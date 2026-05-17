@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'analytics_service.dart';
 import 'auth_service.dart';
 import 'csv_service.dart';
 
@@ -227,12 +228,18 @@ class UserDataService {
 
   Future<void> addKnownWord(String word) async {
     final lower = word.toLowerCase();
+    final isNew = !_knownWords.contains(lower);
     // Update in-memory cache and local prefs immediately regardless of login state
     _knownWords.add(lower);
     CsvService.invalidateKnownWordsFilter();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList('knownWords', _knownWords.toList());
     _knownWordsCtrl.add(_knownWords);
+    if (isNew) {
+      AnalyticsService().logEvent('known_word_marked', {
+        'total_known': _knownWords.length,
+      });
+    }
     if (_uid != null) {
       await _userDoc!.set({
         'knownWords': FieldValue.arrayUnion([lower]),

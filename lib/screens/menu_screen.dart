@@ -31,14 +31,14 @@ class _MenuScreenState extends State<MenuScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      // Handle "Đã biết" action from notification when app was not in foreground
+      // Handle "Known" action from notification when app was not in foreground
       if (pendingMarkKnownWord != null) {
         final word = pendingMarkKnownWord!;
         pendingMarkKnownWord = null;
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('"${word.toUpperCase()}" đã lưu vào từ đã biết'),
+              content: Text('"${word.toLowerCase()}" added to your known words'),
               duration: const Duration(seconds: 2),
               behavior: SnackBarBehavior.floating,
             ),

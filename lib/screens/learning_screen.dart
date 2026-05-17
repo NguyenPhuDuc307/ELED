@@ -87,7 +87,7 @@ class _LearningScreenState extends State<LearningScreen> {
       messenger.clearSnackBars();
       messenger.showSnackBar(
         SnackBar(
-          content: Text(isAdded ? 'MARKED AS KNOWN!' : 'REMOVED FROM KNOWN WORDS!'),
+          content: Text(isAdded ? 'Marked as known' : 'Removed from known words'),
           duration: const Duration(milliseconds: 1500),
         ),
       );

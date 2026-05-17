@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
@@ -117,11 +119,20 @@ class _HomeScreenState extends State<HomeScreen> {
     const levelOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
     final sorted = levelOrder.where((l) => levels.contains(l)).toList();
     final allVocab = await CsvService.loadSpecificPopularityVocabulary(sorted, excludeKnown: true);
+
+    // The CSV is alphabetised, so each 20-word slice would otherwise be
+    // thematically random *and* A-Z within the slice ("ability, able, about,
+    // …"). Shuffle once with a deterministic seed per level combo so the
+    // groupings feel mixed but stay stable across re-opens.
+    final shuffled = [...allVocab];
+    final seed = sorted.join(',').codeUnits.fold<int>(7919, (a, b) => a * 31 + b);
+    shuffled.shuffle(Random(seed));
+
     final Map<int, List<Vocabulary>> grouped = {};
     int day = 1;
-    for (var i = 0; i < allVocab.length; i++) {
+    for (var i = 0; i < shuffled.length; i++) {
       if (i > 0 && i % 20 == 0) day++;
-      grouped.putIfAbsent(day, () => []).add(allVocab[i]);
+      grouped.putIfAbsent(day, () => []).add(shuffled[i]);
     }
     grouped.removeWhere((_, v) => v.isEmpty);
     if (mounted) setState(() { _vocabData = grouped; _isLoading = false; });

@@ -39,8 +39,11 @@ class _TodayScreenState extends State<TodayScreen> {
   @override
   void initState() {
     super.initState();
-    _refresh();
-    _srsSub = SrsService().changes.listen((_) => _refresh());
+    _refresh(initial: true);
+    // SrsService.changes fires after every single rating. Re-running a full
+    // session rebuild + masking the screen with a spinner every time made the
+    // loading indicator look frozen on slow devices. We refresh quietly now.
+    _srsSub = SrsService().changes.listen((_) => _refresh(initial: false));
     _streakSub = StreakService().changes.listen((_) => _refreshStreak());
   }
 
@@ -59,10 +62,20 @@ class _TodayScreenState extends State<TodayScreen> {
     });
   }
 
-  Future<void> _refresh() async {
-    setState(() => _loading = true);
+  Future<void> _refresh({bool initial = false}) async {
+    // Only mask the screen on the cold load. Subsequent refreshes update in
+    // place so the user doesn't see a half-rotated spinner each time SRS
+    // changes fire.
+    if (initial && _loading == false) {
+      setState(() => _loading = true);
+    } else if (initial) {
+      // already loading on first frame — leave it
+    }
     final srs = SrsService();
     await srs.ready;
+    // Yield once so the spinner can paint a frame before we start synchronous
+    // map-building over the entire vocab pool.
+    await Future<void>.delayed(Duration.zero);
     final prefs = await SharedPreferences.getInstance();
     final levels = prefs.getStringList('selectedPopularity') ?? ['A1', 'A2', 'B1'];
     final session = await srs.buildTodaySession(levelFilter: levels);

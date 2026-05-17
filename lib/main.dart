@@ -14,6 +14,7 @@ import 'services/vocabulary_sync_service.dart';
 import 'theme/brutalist_theme.dart';
 import 'services/analytics_service.dart';
 import 'services/auth_service.dart';
+import 'services/csv_service.dart';
 import 'services/notification_service.dart';
 import 'services/srs_service.dart';
 import 'services/streak_service.dart';
@@ -65,6 +66,11 @@ Future<void> _bootstrap() async {
   // it has to come after the parallel init above.
   await SrsService().init();
   await StreakService().init();
+
+  // Warm the vocabulary cache in the background so TodayScreen's first build
+  // doesn't have to parse 5000+ CSV rows on the UI thread. Fire-and-forget —
+  // if it hasn't finished by the time Today asks, the call just waits.
+  unawaited(CsvService.loadAllVocabulary(excludeKnown: false));
 
   final themeStr = prefs.getString('themeMode') ?? 'system';
   EledApp.themeNotifier.value = themeStr == 'dark'

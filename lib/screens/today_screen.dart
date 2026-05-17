@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/vocabulary.dart';
 import '../models/word_state.dart';
 import '../services/srs_service.dart';
+import '../services/streak_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'home_screen.dart';
@@ -30,18 +31,31 @@ class _TodayScreenState extends State<TodayScreen> {
   int _knownCount = 0;
   List<Vocabulary> _session = const [];
   StreamSubscription<void>? _srsSub;
+  StreamSubscription<void>? _streakSub;
+  int _streak = 0;
+  Set<String> _activeDays = const {};
 
   @override
   void initState() {
     super.initState();
     _refresh();
     _srsSub = SrsService().changes.listen((_) => _refresh());
+    _streakSub = StreakService().changes.listen((_) => _refreshStreak());
   }
 
   @override
   void dispose() {
     _srsSub?.cancel();
+    _streakSub?.cancel();
     super.dispose();
+  }
+
+  void _refreshStreak() {
+    if (!mounted) return;
+    setState(() {
+      _streak = StreakService().current;
+      _activeDays = StreakService().activeDays;
+    });
   }
 
   Future<void> _refresh() async {
@@ -61,6 +75,8 @@ class _TodayScreenState extends State<TodayScreen> {
               s.stage == SrsStage.reviewing || s.stage == SrsStage.mastered)
           .length;
       _session = session;
+      _streak = StreakService().current;
+      _activeDays = StreakService().activeDays;
       _loading = false;
     });
   }
@@ -124,6 +140,10 @@ class _TodayScreenState extends State<TodayScreen> {
                   _sessionCard(),
                   const SizedBox(height: 16),
                   _statsRow(),
+                  if (_streak > 0 || _activeDays.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    _streakHeatmapCard(),
+                  ],
                 ],
               ),
             ),
@@ -319,6 +339,105 @@ class _TodayScreenState extends State<TodayScreen> {
       ],
     );
   }
+
+  /// 28-day calendar heatmap (4 weeks). A flame icon + current streak count
+  /// anchor the card; the grid shows which days the user was active so
+  /// momentum becomes visible.
+  Widget _streakHeatmapCard() {
+    final today = DateTime.now();
+    // Build last 28 day keys, oldest first, grouped into 4 rows of 7.
+    final cells = <DateTime>[];
+    for (int i = 27; i >= 0; i--) {
+      cells.add(today.subtract(Duration(days: i)));
+    }
+    return BrutalistCard(
+      backgroundColor: context.bBg,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: BrutalistTheme.accentLight,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Icon(Icons.local_fire_department_rounded,
+                      color: BrutalistTheme.accent, size: 20),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Streak',
+                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                color: context.bMuted,
+                                fontSize: 12,
+                                letterSpacing: 0.3,
+                              )),
+                      Text(
+                        _streak == 0
+                            ? 'Start one today'
+                            : '$_streak ${_streak == 1 ? "day" : "days"}',
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                              fontWeight: FontWeight.w800,
+                              fontSize: 20,
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            LayoutBuilder(builder: (context, c) {
+              final cell = ((c.maxWidth - 6 * 6) / 7).clamp(14.0, 28.0);
+              return Column(
+                children: List.generate(4, (row) {
+                  return Padding(
+                    padding: EdgeInsets.only(bottom: row == 3 ? 0 : 6),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: List.generate(7, (col) {
+                        final dt = cells[row * 7 + col];
+                        final key = StreakService.dateKeyFor(dt);
+                        final active = _activeDays.contains(key);
+                        final isToday = _sameDay(dt, today);
+                        return _heatmapCell(cell, active, isToday);
+                      }),
+                    ),
+                  );
+                }),
+              );
+            }),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _heatmapCell(double size, bool active, bool isToday) {
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        color: active
+            ? BrutalistTheme.primary
+            : BrutalistTheme.primary.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(5),
+        border: isToday
+            ? Border.all(color: BrutalistTheme.accent, width: 1.5)
+            : null,
+      ),
+    );
+  }
+
+  static bool _sameDay(DateTime a, DateTime b) =>
+      a.year == b.year && a.month == b.month && a.day == b.day;
 
   Widget _statCard(String label, int value, IconData icon) {
     return BrutalistCard(

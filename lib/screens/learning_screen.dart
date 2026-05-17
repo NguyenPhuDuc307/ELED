@@ -10,8 +10,10 @@ import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
 import '../services/srs_service.dart';
 import '../services/user_data_service.dart';
+import 'exercises/fill_in_context_exercise.dart';
 import 'exercises/listen_and_type_exercise.dart';
 import 'exercises/multiple_choice_exercise.dart';
+import 'session_results_screen.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
@@ -57,6 +59,10 @@ class _LearningScreenState extends State<LearningScreen> {
   // swap exercise types mid-card.
   final Map<int, ExerciseType> _exerciseCache = {};
   final Map<int, List<Vocabulary>> _distractorsCache = {};
+
+  // Ratings the user submitted during this session, in card order. Handed
+  // off to the results screen on completion.
+  final List<ReviewRating> _sessionRatings = [];
 
   @override
   void initState() {
@@ -252,6 +258,12 @@ class _LearningScreenState extends State<LearningScreen> {
                 }
                 if (exType == ExerciseType.listenAndType) {
                   return ListenAndTypeExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
+                if (exType == ExerciseType.fillInContext) {
+                  return FillInContextExercise(
                     word: vocab,
                     onAnswered: (rating) => _submitRating(rating),
                   );
@@ -685,6 +697,7 @@ class _LearningScreenState extends State<LearningScreen> {
     final type = SrsService().pickExerciseType(
       vocab.word,
       hasAudio: vocab.audioLink.isNotEmpty,
+      hasExample: vocab.url.isNotEmpty,
     );
     _exerciseCache[index] = type;
     return type;
@@ -715,6 +728,7 @@ class _LearningScreenState extends State<LearningScreen> {
   Future<void> _submitRating(ReviewRating rating) async {
     if (widget.vocabularies.isEmpty) return;
     final word = widget.vocabularies[_currentIndex].word;
+    _sessionRatings.add(rating);
     await SrsService().submitReview(word, rating);
     // Keep the legacy known-words store in sync so notifications + browse
     // modes still exclude what the user has already mastered.
@@ -730,10 +744,15 @@ class _LearningScreenState extends State<LearningScreen> {
         curve: Curves.easeOut,
       );
     } else {
-      // Last card — bounce out so the user lands back on Today / Day list and
-      // can see the queue refresh.
+      // Last card — push the results screen on top so the session closes with
+      // a clear summary + streak signal instead of just popping silently.
       widget.onCompleted?.call();
-      Navigator.of(context).pop();
+      await Navigator.of(context).pushReplacement(smoothRoute(
+        SessionResultsScreen(
+          ratings: List.of(_sessionRatings),
+          moreDue: SrsService().dueCount() > 0,
+        ),
+      ));
     }
   }
 

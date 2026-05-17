@@ -274,19 +274,34 @@ class _LearningScreenState extends State<LearningScreen> {
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
                     child: Stack(
                       children: [
-                        // Small affordance to peek at level/topic without forcing
-                        // metadata into the main reading column.
+                        // Small affordances: info ⓘ peeks at level/topic; archive
+                        // box lets the user permanently drop a trivial word from
+                        // the daily queue without rating it Easy multiple times.
                         Positioned(
-                          top: 8,
-                          right: 8,
-                          child: IconButton(
-                            tooltip: 'Word details',
-                            icon: Icon(
-                              Icons.info_outline_rounded,
-                              color: BrutalistTheme.black.withValues(alpha: 0.45),
-                              size: 22,
-                            ),
-                            onPressed: () => _showWordDetails(vocab),
+                          top: 4,
+                          right: 4,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              IconButton(
+                                tooltip: 'I already know this',
+                                icon: Icon(
+                                  Icons.archive_outlined,
+                                  color: BrutalistTheme.black.withValues(alpha: 0.45),
+                                  size: 22,
+                                ),
+                                onPressed: () => _confirmAlreadyKnown(vocab),
+                              ),
+                              IconButton(
+                                tooltip: 'Word details',
+                                icon: Icon(
+                                  Icons.info_outline_rounded,
+                                  color: BrutalistTheme.black.withValues(alpha: 0.45),
+                                  size: 22,
+                                ),
+                                onPressed: () => _showWordDetails(vocab),
+                              ),
+                            ],
                           ),
                         ),
                         SingleChildScrollView(
@@ -502,6 +517,59 @@ class _LearningScreenState extends State<LearningScreen> {
         ],
       ),
     );
+  }
+
+  /// One-tap exit for trivial words. Confirms, then hard-promotes the word
+  /// to "mastered" with a year-long interval — so it stops appearing in
+  /// daily sessions without the user having to rate Easy five times.
+  Future<void> _confirmAlreadyKnown(Vocabulary vocab) async {
+    final accept = await showDialog<bool>(
+      context: context,
+      builder: (dctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Text('Skip this word from now on?'),
+        content: Text(
+          '"${vocab.word}" will be marked as mastered and won\'t appear in your daily sessions for a long time.',
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: context.bMuted),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dctx).pop(false),
+            child: Text('Cancel',
+                style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
+          ),
+          TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: BrutalistTheme.primary,
+              foregroundColor: BrutalistTheme.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+            ),
+            onPressed: () => Navigator.of(dctx).pop(true),
+            child: const Text('Skip', style: TextStyle(fontWeight: FontWeight.w600)),
+          ),
+        ],
+      ),
+    );
+    if (accept != true || !mounted) return;
+    await SrsService().markMastered(vocab.word);
+    await UserDataService().addKnownWord(vocab.word);
+    _sessionRatings.add(ReviewRating.easy);
+    if (!mounted) return;
+    if (_currentIndex < widget.vocabularies.length - 1) {
+      _pageController.nextPage(
+        duration: const Duration(milliseconds: 280),
+        curve: Curves.easeOut,
+      );
+    } else {
+      widget.onCompleted?.call();
+      await Navigator.of(context).pushReplacement(smoothRoute(
+        SessionResultsScreen(
+          ratings: List.of(_sessionRatings),
+          moreDue: SrsService().dueCount() > 0,
+        ),
+      ));
+    }
   }
 
   /// Bottom sheet showing level + topic for the current word. Keeps the

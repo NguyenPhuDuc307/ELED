@@ -102,8 +102,12 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
       );
     }
     final showAnswer = _correctness != null;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(24, 24, 24, 24),
+    // Same compaction strategy as ListenAndType: shrink top spacing when the
+    // keyboard is up so the action buttons stay reachable on small screens.
+    final compact = MediaQuery.of(context).viewInsets.bottom > 0;
+    return SingleChildScrollView(
+      reverse: true,
+      padding: EdgeInsets.fromLTRB(24, compact ? 12 : 24, 24, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -116,7 +120,7 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
                 ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 28),
+          SizedBox(height: compact ? 14 : 28),
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(

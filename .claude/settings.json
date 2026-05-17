@@ -1,7 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(flutter pub *)",
+      "Bash(*)",
       "Bash(flutter analyze *)",
       "Bash(git checkout *)",
       "Bash(git add *)"

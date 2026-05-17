@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'analytics_service.dart';
 import 'auth_service.dart';
 import 'csv_service.dart';
+import 'review_service.dart';
 
 class UserDataService {
   static final _instance = UserDataService._internal();
@@ -239,6 +240,8 @@ class UserDataService {
       AnalyticsService().logEvent('known_word_marked', {
         'total_known': _knownWords.length,
       });
+      // Fire-and-forget — the service rate-limits + filters internally.
+      ReviewService().maybePromptAfterMilestone(_knownWords.length);
     }
     if (_uid != null) {
       await _userDoc!.set({

@@ -44,3 +44,15 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 tools/serviceAccountKey.json
+
+# Firebase / GCP service account credentials — NEVER commit
+*-firebase-adminsdk-*.json
+serviceAccountKey*.json
+firebase-debug.log
+firebase-debug.*.log
+.firebaserc
+
+# Duplicate / stray Google Services configs at repo root
+# (the canonical one lives at android/app/google-services.json)
+/google-services *.json
+/google-services.json

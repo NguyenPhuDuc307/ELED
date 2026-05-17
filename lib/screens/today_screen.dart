@@ -11,6 +11,7 @@ import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'home_screen.dart';
 import 'learning_screen.dart';
+import 'match_game_screen.dart';
 import 'menu_screen.dart';
 import 'settings_screen.dart';
 
@@ -90,6 +91,14 @@ class _TodayScreenState extends State<TodayScreen> {
     _refresh();
   }
 
+  Future<void> _startMatchGame() async {
+    if (_session.length < 4) return;
+    await Navigator.of(context).push(smoothRoute(MatchGameScreen(
+      pool: _session,
+    )));
+    _refresh();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -138,6 +147,10 @@ class _TodayScreenState extends State<TodayScreen> {
                   _heading(),
                   const SizedBox(height: 20),
                   _sessionCard(),
+                  if (_session.length >= 4) ...[
+                    const SizedBox(height: 10),
+                    _matchGameCta(),
+                  ],
                   const SizedBox(height: 16),
                   _statsRow(),
                   if (_streak > 0 || _activeDays.isNotEmpty) ...[
@@ -337,6 +350,51 @@ class _TodayScreenState extends State<TodayScreen> {
         const SizedBox(width: 12),
         Expanded(child: _statCard('To learn', _freshAvailable, Icons.add_rounded)),
       ],
+    );
+  }
+
+  /// Secondary action next to the main "Start session" — same pool, but
+  /// played as a 4-pair matching mini-game instead of a flashcard rotation.
+  /// Hidden when fewer than 4 cards are queued (not enough to fill the grid).
+  Widget _matchGameCta() {
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.accentLight,
+      onTap: _startMatchGame,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.accent.withValues(alpha: 0.18),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.extension_rounded,
+                  color: BrutalistTheme.accent, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Match game',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: BrutalistTheme.accent,
+                          fontSize: 15)),
+                  Text('Pair 4 words with their meanings',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: BrutalistTheme.accent.withValues(alpha: 0.75),
+                          fontSize: 12)),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: BrutalistTheme.accent.withValues(alpha: 0.7)),
+          ],
+        ),
+      ),
     );
   }
 

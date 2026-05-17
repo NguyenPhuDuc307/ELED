@@ -10,8 +10,10 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
+import '../models/word_state.dart';
 import '../services/analytics_service.dart';
 import '../services/csv_service.dart';
+import '../services/srs_service.dart';
 import '../services/update_service.dart';
 import '../services/user_data_service.dart';
 import '../screens/learning_screen.dart';
@@ -243,18 +245,62 @@ class NotificationService {
     }
   }
 
-  /// Loads the vocabulary pool based on user settings from SharedPreferences.
+  /// Loads the notification pool, prioritising what SRS says is actually due.
+  ///
+  /// Order:
+  /// 1. Words whose SRS state is due (due-soonest first) and that match the
+  ///    selected level/topic filters
+  /// 2. Brand-new words (no SRS entry yet) within those filters, oldest-CSV
+  ///    order — used as filler when the due queue is short
+  ///
+  /// Mastered words (interval ≥ 60 days, stage = mastered) are skipped so the
+  /// user doesn't get notified about vocabulary they've already nailed.
   static Future<List<Vocabulary>> loadPool({
     required List<String> popularity,
     required List<String> topics,
     bool excludeKnown = true,
   }) async {
-    if (topics.isNotEmpty) {
-      return CsvService.loadSpecificTopicsVocabulary(
-          topics, levelFilter: popularity, excludeKnown: excludeKnown);
+    // 1) Base CSV pool respecting filters. Pull *with* known words so SRS can
+    // surface them as reviews — we filter mastered separately below.
+    final base = topics.isNotEmpty
+        ? await CsvService.loadSpecificTopicsVocabulary(
+            topics, levelFilter: popularity, excludeKnown: false)
+        : await CsvService.loadSpecificPopularityVocabulary(
+            popularity, excludeKnown: false);
+    final byKey = <String, Vocabulary>{};
+    for (final v in base) {
+      byKey.putIfAbsent(v.word.toLowerCase(), () => v);
     }
-    return CsvService.loadSpecificPopularityVocabulary(
-        popularity, excludeKnown: excludeKnown);
+
+    final srs = SrsService();
+    await srs.ready;
+
+    // 2) Due first, due-soonest order. Skip mastered (still in due list iff
+    // a long interval just expired — those are fine to re-surface, but we
+    // don't want never-due masters in here).
+    final due = <Vocabulary>[];
+    for (final s in srs.dueStates()) {
+      if (s.stage == SrsStage.mastered && !s.isDue) continue;
+      final v = byKey[s.word];
+      if (v != null) due.add(v);
+    }
+
+    // 3) Fresh: in-filter words SRS has never seen + the user hasn't marked
+    // known yet (when excludeKnown is true). Preserves the legacy "surface
+    // new vocabulary in notifications" behaviour as filler.
+    final known = UserDataService().knownWords;
+    final seenKeys = {...due.map((v) => v.word.toLowerCase())};
+    final fresh = <Vocabulary>[];
+    for (final v in base) {
+      final k = v.word.toLowerCase();
+      if (seenKeys.contains(k)) continue;
+      if (srs.stateFor(k).totalSeen > 0) continue;
+      if (excludeKnown && known.contains(k)) continue;
+      fresh.add(v);
+    }
+
+    final result = [...due, ...fresh];
+    return result;
   }
 
   Future<void> scheduleVocabularyNotifications({

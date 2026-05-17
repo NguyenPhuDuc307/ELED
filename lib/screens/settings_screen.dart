@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../services/auth_service.dart';
+import '../services/backup_service.dart';
 import '../services/notification_service.dart';
 import '../services/csv_service.dart';
+import '../services/review_service.dart';
 import '../services/update_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
@@ -457,6 +459,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   const SizedBox(height: 32),
 
                   Text(
+                    'BACKUP & FEEDBACK',
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                          fontWeight: FontWeight.w900,
+                        ),
+                  ),
+                  const SizedBox(height: 16),
+                  _buildBackupRow(),
+                  const SizedBox(height: 12),
+                  _buildRateAppRow(),
+
+                  const SizedBox(height: 32),
+                  Divider(color: context.bBorder, thickness: 4),
+                  const SizedBox(height: 32),
+
+                  Text(
                     'APP VERSION',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           fontWeight: FontWeight.w900,
@@ -468,6 +485,91 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ],
               ),
             ),
+    );
+  }
+
+  Widget _buildBackupRow() {
+    return BrutalistCard(
+      backgroundColor: context.bBg,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        child: Row(
+          children: [
+            Expanded(
+              child: TextButton.icon(
+                icon: const Icon(Icons.upload_file_rounded, color: BrutalistTheme.primary),
+                label: Text(
+                  'Export',
+                  style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
+                ),
+                onPressed: () async {
+                  final messenger = ScaffoldMessenger.of(context);
+                  final path = await BackupService().exportToShareSheet();
+                  if (mounted) {
+                    messenger.showSnackBar(SnackBar(
+                      content: Text(path == null ? 'Export failed' : 'Backup ready to share'),
+                    ));
+                  }
+                },
+              ),
+            ),
+            Container(width: 1, height: 28, color: context.bSubtle),
+            Expanded(
+              child: TextButton.icon(
+                icon: const Icon(Icons.download_rounded, color: BrutalistTheme.primary),
+                label: Text(
+                  'Import',
+                  style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
+                ),
+                onPressed: () async {
+                  final messenger = ScaffoldMessenger.of(context);
+                  final result = await BackupService().importFromPicker();
+                  if (!mounted) return;
+                  if (result == null) {
+                    messenger.showSnackBar(const SnackBar(content: Text('Import cancelled or failed')));
+                  } else {
+                    messenger.showSnackBar(SnackBar(
+                      content: Text(
+                        'Added ${result.knownAdded} new known words, ${result.collectionsAdded} new collections',
+                      ),
+                    ));
+                  }
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRateAppRow() {
+    return BrutalistCard(
+      backgroundColor: context.bBg,
+      onTap: () => ReviewService().openStoreListing(),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.primaryLight,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.star_rate_rounded, color: BrutalistTheme.primary, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Text(
+                'Rate ELED',
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600),
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: context.bMuted),
+          ],
+        ),
+      ),
     );
   }
 

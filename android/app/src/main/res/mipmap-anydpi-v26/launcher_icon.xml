@@ -6,4 +6,15 @@
           android:drawable="@drawable/ic_launcher_foreground"
           android:inset="16%" />
   </foreground>
+  <!--
+      Android 13+ themed icon. Reuses the foreground drawable; the system
+      tints all non-transparent pixels with the wallpaper-derived monochrome
+      colour. Swap @drawable/ic_launcher_foreground for a proper alpha-only
+      silhouette PNG when one exists for a cleaner themed render.
+  -->
+  <monochrome>
+      <inset
+          android:drawable="@drawable/ic_launcher_foreground"
+          android:inset="16%" />
+  </monochrome>
 </adaptive-icon>

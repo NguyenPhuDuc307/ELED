@@ -49,6 +49,7 @@ dependencies:
   firebase_auth: ^6.4.0
   cloud_firestore: ^6.3.0
   firebase_crashlytics: ^5.0.0
+  firebase_analytics: ^12.0.0
   path_provider: ^2.1.5
   archive: ^3.6.0
   package_info_plus: ^8.0.0
@@ -127,3 +128,10 @@ flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/icon.png"
+  # Adaptive icon for Android 8+. Background matches the mint-green outer of
+  # icon.png; foreground reuses the same artwork. Replace with a transparent
+  # foreground PNG later for a tighter fit inside the adaptive safe zone.
+  adaptive_icon_background: "#B8DCC6"
+  adaptive_icon_foreground: "assets/icon.png"
+  remove_alpha_ios: true   # App Store rejects icons with alpha channel
+  min_sdk_android: 21

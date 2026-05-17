@@ -8,13 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'screens/menu_screen.dart';
 import 'screens/sync_screen.dart';
+import 'screens/today_screen.dart';
 import 'services/vocabulary_sync_service.dart';
 import 'theme/brutalist_theme.dart';
 import 'services/analytics_service.dart';
 import 'services/auth_service.dart';
 import 'services/notification_service.dart';
+import 'services/srs_service.dart';
 import 'services/update_service.dart';
 import 'services/user_data_service.dart';
 import 'utils/log.dart';
@@ -58,6 +59,10 @@ Future<void> _bootstrap() async {
       UserDataService().initialize(),
     ]),
   ).wait;
+
+  // SRS depends on UserDataService.knownWords for its one-time migration, so
+  // it has to come after the parallel init above.
+  await SrsService().init();
 
   final themeStr = prefs.getString('themeMode') ?? 'system';
   EledApp.themeNotifier.value = themeStr == 'dark'
@@ -207,7 +212,7 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
           theme: BrutalistTheme.lightTheme,
           darkTheme: BrutalistTheme.darkTheme,
           themeMode: currentMode,
-          home: widget.needsSync ? const SyncScreen() : const MenuScreen(),
+          home: widget.needsSync ? const SyncScreen() : const TodayScreen(),
           debugShowCheckedModeBanner: false,
         );
       },

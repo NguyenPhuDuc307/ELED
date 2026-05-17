@@ -5,9 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
+import '../models/word_state.dart';
 import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
+import '../services/srs_service.dart';
 import '../services/user_data_service.dart';
+import 'exercises/listen_and_type_exercise.dart';
+import 'exercises/multiple_choice_exercise.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
@@ -48,6 +52,11 @@ class _LearningScreenState extends State<LearningScreen> {
 
   final _audioPlayer = AudioPlayer();
   bool _playingAudio = false;
+
+  // Pinned exercise + distractor pick per card so PageView rebuilds don't
+  // swap exercise types mid-card.
+  final Map<int, ExerciseType> _exerciseCache = {};
+  final Map<int, List<Vocabulary>> _distractorsCache = {};
 
   @override
   void initState() {
@@ -233,6 +242,20 @@ class _LearningScreenState extends State<LearningScreen> {
               },
               itemBuilder: (context, index) {
                 final vocab = widget.vocabularies[index];
+                final exType = _exerciseFor(index);
+                if (exType == ExerciseType.multipleChoice) {
+                  return MultipleChoiceExercise(
+                    word: vocab,
+                    distractors: _distractorsFor(index),
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
+                if (exType == ExerciseType.listenAndType) {
+                  return ListenAndTypeExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
                 return Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
@@ -417,6 +440,12 @@ class _LearningScreenState extends State<LearningScreen> {
               },
             ),
           ),
+          if (widget.vocabularies.isNotEmpty &&
+              _exerciseFor(_currentIndex) == ExerciseType.recognize) ...[
+            _buildRatingRow(),
+          ],
+          if (widget.vocabularies.isNotEmpty &&
+              _exerciseFor(_currentIndex) == ExerciseType.recognize)
           Container(
             margin: const EdgeInsets.fromLTRB(16, 0, 16, 20),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -642,6 +671,114 @@ class _LearningScreenState extends State<LearningScreen> {
           ),
         ),
       ],
+    );
+  }
+
+  /// Decides which exercise widget to render for the card at [index]. Cached
+  /// in [_exerciseCache] so the choice is stable across rebuilds — otherwise
+  /// the SRS state could mutate mid-card and the page would re-render with a
+  /// different exercise type.
+  ExerciseType _exerciseFor(int index) {
+    final cached = _exerciseCache[index];
+    if (cached != null) return cached;
+    final vocab = widget.vocabularies[index];
+    final type = SrsService().pickExerciseType(
+      vocab.word,
+      hasAudio: vocab.audioLink.isNotEmpty,
+    );
+    _exerciseCache[index] = type;
+    return type;
+  }
+
+  /// Picks 3 distractor words from the rest of the session for the multiple
+  /// choice exercise. Stable across rebuilds.
+  List<Vocabulary> _distractorsFor(int index) {
+    final cached = _distractorsCache[index];
+    if (cached != null) return cached;
+    final pool = <Vocabulary>[];
+    final correct = widget.vocabularies[index].word.toLowerCase();
+    for (final v in widget.vocabularies) {
+      if (v.word.toLowerCase() != correct &&
+          v.translation.trim().isNotEmpty) {
+        pool.add(v);
+      }
+    }
+    pool.shuffle();
+    final picks = pool.take(3).toList();
+    _distractorsCache[index] = picks;
+    return picks;
+  }
+
+  /// Submits an SRS rating for the current word and advances to the next card.
+  /// At the end of the deck we call onCompleted so the caller can chain into
+  /// the next session (e.g. next Day).
+  Future<void> _submitRating(ReviewRating rating) async {
+    if (widget.vocabularies.isEmpty) return;
+    final word = widget.vocabularies[_currentIndex].word;
+    await SrsService().submitReview(word, rating);
+    // Keep the legacy known-words store in sync so notifications + browse
+    // modes still exclude what the user has already mastered.
+    if (rating == ReviewRating.good || rating == ReviewRating.easy) {
+      await UserDataService().addKnownWord(word);
+    } else if (rating == ReviewRating.again) {
+      await UserDataService().removeKnownWord(word);
+    }
+    if (!mounted) return;
+    if (_currentIndex < widget.vocabularies.length - 1) {
+      _pageController.nextPage(
+        duration: const Duration(milliseconds: 280),
+        curve: Curves.easeOut,
+      );
+    } else {
+      // Last card — bounce out so the user lands back on Today / Day list and
+      // can see the queue refresh.
+      widget.onCompleted?.call();
+      Navigator.of(context).pop();
+    }
+  }
+
+  /// Row of four rating chips above the nav bar. Color encodes severity:
+  /// red Again → orange Hard → green Good → blue Easy.
+  Widget _buildRatingRow() {
+    Widget chip(String label, ReviewRating rating, Color color) {
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: Material(
+            color: color.withValues(alpha: 0.12),
+            borderRadius: BorderRadius.circular(12),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => _submitRating(rating),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: Center(
+                  child: Text(
+                    label,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: color,
+                          fontSize: 13,
+                        ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 4, 12, 6),
+      child: Row(
+        children: [
+          chip('Again', ReviewRating.again, const Color(0xFFD9534F)),
+          chip('Hard', ReviewRating.hard, const Color(0xFFE5874E)),
+          chip('Good', ReviewRating.good, BrutalistTheme.primary),
+          chip('Easy', ReviewRating.easy, const Color(0xFF3E7CB1)),
+        ],
+      ),
     );
   }
 

@@ -232,27 +232,39 @@ class _MenuScreenState extends State<MenuScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final canPop = Navigator.canPop(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'ELED',
-          style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                fontSize: 28,
-                fontWeight: FontWeight.w700,
-                color: BrutalistTheme.primary,
+        // When pushed from Today this screen is a sub-screen — show an explicit
+        // back arrow and the "Browse" label so the user always knows they can
+        // return. When opened as the root (legacy entry) keep the ELED title.
+        leading: canPop
+            ? IconButton(
+                icon: const Icon(Icons.arrow_back_rounded),
+                onPressed: () => Navigator.of(context).pop(),
+              )
+            : null,
+        title: canPop
+            ? const Text('Browse')
+            : Text(
+                'ELED',
+                style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w700,
+                      color: BrutalistTheme.primary,
+                    ),
               ),
-        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.search_rounded),
             onPressed: () => Navigator.of(context).push(
-              smoothRoute( const HomeScreen(mode: 'SEARCH')),
+              smoothRoute(const HomeScreen(mode: 'SEARCH')),
             ),
           ),
           IconButton(
             icon: const Icon(Icons.settings_rounded),
             onPressed: () => Navigator.of(context).push(
-              smoothRoute( const SettingsScreen()),
+              smoothRoute(const SettingsScreen()),
             ),
           ),
           const SizedBox(width: 4),

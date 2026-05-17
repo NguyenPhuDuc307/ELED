@@ -190,42 +190,7 @@ class _LearningScreenState extends State<LearningScreen> {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(24.0, 16.0, 24.0, 8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  '${_currentIndex + 1} / ${widget.vocabularies.length}',
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: context.bMuted,
-                      ),
-                ),
-                Text(
-                  '${((_currentIndex + 1) / widget.vocabularies.length * 100).round()}%',
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        fontWeight: FontWeight.w600,
-                        color: BrutalistTheme.primary,
-                      ),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: ClipRRect(
-              child: LinearProgressIndicator(
-                value: widget.vocabularies.isEmpty
-                    ? 0
-                    : (_currentIndex + 1) / widget.vocabularies.length,
-                minHeight: 8,
-                color: BrutalistTheme.primary,
-                backgroundColor: context.bBorder.withValues(alpha: 0.15),
-              ),
-            ),
-          ),
-          const SizedBox(height: 8),
+          _buildLocationIndicator(),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
@@ -240,9 +205,26 @@ class _LearningScreenState extends State<LearningScreen> {
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.all(32.0),
-                      child: Column(
+                    child: Stack(
+                      children: [
+                        // Small affordance to peek at level/topic without forcing
+                        // metadata into the main reading column.
+                        Positioned(
+                          top: 8,
+                          right: 8,
+                          child: IconButton(
+                            tooltip: 'Word details',
+                            icon: Icon(
+                              Icons.info_outline_rounded,
+                              color: BrutalistTheme.black.withValues(alpha: 0.45),
+                              size: 22,
+                            ),
+                            onPressed: () => _showWordDetails(vocab),
+                          ),
+                        ),
+                        SingleChildScrollView(
+                          padding: const EdgeInsets.all(32.0),
+                          child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
@@ -319,21 +301,21 @@ class _LearningScreenState extends State<LearningScreen> {
                                 ),
                             ],
                           ),
-                          const SizedBox(height: 16),
-                          Wrap(
-                            alignment: WrapAlignment.center,
-                            spacing: 8,
-                            runSpacing: 8,
-                            children: [
-                              _badge(context, vocab.partOfSpeech, BrutalistTheme.primary, BrutalistTheme.primaryLight),
-                              _badge(context, vocab.levels.toUpperCase(), BrutalistTheme.black, BrutalistTheme.border.withValues(alpha: 0.4)),
-                              if (vocab.topic.isNotEmpty)
-                                _badge(context, vocab.topic, BrutalistTheme.accent, BrutalistTheme.accentLight),
-                            ],
-                          ),
+                          if (vocab.partOfSpeech.isNotEmpty) ...[
+                            const SizedBox(height: 6),
+                            // Part of speech kept inline as a subtle caption — the
+                            // most learning-relevant tag. Level + topic move to the
+                            // info sheet so the card isn't a wall of metadata.
+                            Text(
+                              vocab.partOfSpeech.toLowerCase(),
+                              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                    fontStyle: FontStyle.italic,
+                                    color: BrutalistTheme.black.withValues(alpha: 0.55),
+                                  ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
                           const SizedBox(height: 28),
-                          Divider(color: context.bSubtle, thickness: 1),
-                          const SizedBox(height: 20),
                           // Vietnamese word translation — always visible
                           Text(
                             vocab.translation,
@@ -355,46 +337,37 @@ class _LearningScreenState extends State<LearningScreen> {
                               final defText = showVI && si < viDefs.length
                                   ? viDefs[si]
                                   : s.definition;
+                              final isLast = si == _oxfordCache[index]!.length - 1;
                               return Padding(
-                                padding: const EdgeInsets.only(bottom: 10),
+                                padding: EdgeInsets.only(bottom: isLast ? 0 : 18),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          '${s.number}. ',
-                                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                fontWeight: FontWeight.w700,
-                                                color: BrutalistTheme.primary,
-                                              ),
-                                        ),
-                                        Expanded(
-                                          child: _translatingDef && _translateDefinition && viDefs == null
-                                              ? const SizedBox(
-                                                  height: 18,
-                                                  width: 18,
-                                                  child: CircularProgressIndicator(strokeWidth: 2, color: BrutalistTheme.primary),
-                                                )
-                                              : Text(
-                                                  defText,
-                                                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                                        fontWeight: FontWeight.w600,
-                                                        color: BrutalistTheme.black,
-                                                      ),
+                                    _translatingDef && _translateDefinition && viDefs == null
+                                        ? const SizedBox(
+                                            height: 18,
+                                            width: 18,
+                                            child: CircularProgressIndicator(
+                                                strokeWidth: 2,
+                                                color: BrutalistTheme.primary),
+                                          )
+                                        : Text(
+                                            defText,
+                                            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                                  fontWeight: FontWeight.w500,
+                                                  color: BrutalistTheme.black,
+                                                  height: 1.45,
                                                 ),
-                                        ),
-                                      ],
-                                    ),
+                                          ),
                                     if (s.example.isNotEmpty)
                                       Padding(
-                                        padding: const EdgeInsets.only(left: 18, top: 2),
+                                        padding: const EdgeInsets.only(top: 6),
                                         child: Text(
                                           '"${s.example}"',
                                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                                 fontStyle: FontStyle.italic,
                                                 color: BrutalistTheme.textMuted,
+                                                height: 1.4,
                                               ),
                                         ),
                                       ),
@@ -404,6 +377,8 @@ class _LearningScreenState extends State<LearningScreen> {
                             }),
                         ],
                       ),
+                    ),
+                      ],
                     ),
                   ),
                 );
@@ -456,6 +431,65 @@ class _LearningScreenState extends State<LearningScreen> {
     );
   }
 
+  /// Bottom sheet showing level + topic for the current word. Keeps the
+  /// metadata one tap away without cluttering the reading column.
+  void _showWordDetails(Vocabulary vocab) {
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: context.bBg,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+      ),
+      builder: (_) => Padding(
+        padding: const EdgeInsets.fromLTRB(24, 16, 24, 32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: context.bSubtle,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              vocab.word,
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    fontWeight: FontWeight.w700,
+                  ),
+            ),
+            const SizedBox(height: 16),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                if (vocab.levels.isNotEmpty)
+                  _badge(
+                    context,
+                    vocab.levels.toUpperCase(),
+                    BrutalistTheme.black,
+                    BrutalistTheme.border.withValues(alpha: 0.4),
+                  ),
+                if (vocab.topic.isNotEmpty)
+                  _badge(
+                    context,
+                    vocab.topic,
+                    BrutalistTheme.accent,
+                    BrutalistTheme.accentLight,
+                  ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _badge(BuildContext context, String label, Color textColor, Color bgColor) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 12),
@@ -470,6 +504,51 @@ class _LearningScreenState extends State<LearningScreen> {
               fontWeight: FontWeight.w600,
               fontSize: 13,
             ),
+      ),
+    );
+  }
+
+  /// Replaces the old "X / Y" + "Z%" + linear progress bar. Up to 30 vocab
+  /// items render as dots (current = solid primary, others = muted). Beyond
+  /// 30 we fall back to a one-line muted caption so the dot row doesn't
+  /// become an unreadable smudge.
+  Widget _buildLocationIndicator() {
+    final total = widget.vocabularies.length;
+    if (total == 0) return const SizedBox(height: 16);
+    if (total > 30) {
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(24, 14, 24, 6),
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            'Word ${_currentIndex + 1} of $total',
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: context.bMuted,
+                ),
+          ),
+        ),
+      );
+    }
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(24, 14, 24, 6),
+      child: Wrap(
+        spacing: 6,
+        runSpacing: 6,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: List.generate(total, (i) {
+          final isActive = i == _currentIndex;
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            width: isActive ? 18 : 6,
+            height: 6,
+            decoration: BoxDecoration(
+              color: isActive
+                  ? BrutalistTheme.primary
+                  : context.bSubtle,
+              borderRadius: BorderRadius.circular(3),
+            ),
+          );
+        }),
       ),
     );
   }

@@ -1,0 +1,259 @@
+import 'dart:async';
+import 'dart:convert';
+import 'dart:math';
+
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../models/vocabulary.dart';
+import '../models/word_state.dart';
+import '../utils/log.dart';
+import 'csv_service.dart';
+import 'user_data_service.dart';
+
+/// Manages each word's spaced-repetition state. Implements an SM-2 variant:
+/// each rating updates the interval (days until next review) and an ease
+/// factor (multiplier for the next interval). Stored as a single JSON map
+/// in SharedPreferences keyed by `srsStates`.
+///
+/// Sized for ~5000 vocab; only words the user has touched have entries.
+class SrsService {
+  static final SrsService _instance = SrsService._internal();
+  factory SrsService() => _instance;
+  SrsService._internal();
+
+  static const _kStatesKey = 'srsStates';
+  static const _kMigratedKey = 'srsKnownWordsMigrated';
+
+  static const _minEase = 1.3;
+  static const _maxEase = 3.0;
+  static const _newCardsPerSession = 8;
+  static const _maxSessionSize = 20;
+
+  final _ready = Completer<void>();
+  final Map<String, WordState> _states = {};
+  final _changeCtrl = StreamController<void>.broadcast();
+  Stream<void> get changes => _changeCtrl.stream;
+
+  bool _loaded = false;
+  Future<void> get ready => _ready.future;
+
+  // ── Lifecycle ──────────────────────────────────────────────────────────
+
+  Future<void> init() async {
+    if (_loaded) return;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getString(_kStatesKey);
+      if (raw != null && raw.isNotEmpty) {
+        final decoded = jsonDecode(raw) as Map<String, dynamic>;
+        for (final entry in decoded.entries) {
+          _states[entry.key] = WordState.fromJson(
+            (entry.value as Map<String, dynamic>),
+          );
+        }
+      }
+      await _migrateKnownWordsIfNeeded(prefs);
+    } catch (e, st) {
+      logCaught(e, st, 'SrsService.init');
+    } finally {
+      _loaded = true;
+      if (!_ready.isCompleted) _ready.complete();
+    }
+  }
+
+  /// One-time migration: every word currently in `UserDataService.knownWords`
+  /// becomes a `reviewing` card due in 7 days. That way SRS surfaces them
+  /// soon enough to verify retention without acting like every "known" word
+  /// is brand new.
+  Future<void> _migrateKnownWordsIfNeeded(SharedPreferences prefs) async {
+    if (prefs.getBool(_kMigratedKey) == true) return;
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final due = now + 7 * 24 * 60 * 60 * 1000;
+    for (final w in UserDataService().knownWords) {
+      final key = w.toLowerCase();
+      if (_states.containsKey(key)) continue;
+      _states[key] = WordState(
+        word: key,
+        stage: SrsStage.reviewing,
+        easeFactor: 2.5,
+        intervalDays: 7,
+        repetitions: 2,
+        dueAtMs: due,
+        lastReviewedMs: now,
+        totalSeen: 1,
+        totalLapses: 0,
+      );
+    }
+    await _persist(prefs);
+    await prefs.setBool(_kMigratedKey, true);
+  }
+
+  Future<void> _persist([SharedPreferences? prefs]) async {
+    try {
+      prefs ??= await SharedPreferences.getInstance();
+      final map = <String, dynamic>{};
+      _states.forEach((k, v) => map[k] = v.toJson());
+      await prefs.setString(_kStatesKey, jsonEncode(map));
+      if (!_changeCtrl.isClosed) _changeCtrl.add(null);
+    } catch (e, st) {
+      logCaught(e, st, 'SrsService._persist');
+    }
+  }
+
+  // ── Queries ────────────────────────────────────────────────────────────
+
+  WordState stateFor(String word) =>
+      _states[word.toLowerCase()] ?? WordState.fresh(word);
+
+  Iterable<WordState> get all => _states.values;
+
+  /// All currently due word states. Sorted by how overdue they are.
+  List<WordState> dueStates() {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final due = _states.values
+        .where((s) => s.dueAtMs > 0 && s.dueAtMs <= now)
+        .toList();
+    due.sort((a, b) => a.dueAtMs.compareTo(b.dueAtMs));
+    return due;
+  }
+
+  /// Number of reviews waiting today.
+  int dueCount() => dueStates().length;
+
+  /// Words the user has never rated. Pulled from the bundled vocabulary so
+  /// the count reflects what's actually available, not whatever was
+  /// historically seen.
+  Future<List<Vocabulary>> freshPool({
+    List<String>? levelFilter,
+    int limit = 50,
+  }) async {
+    final all = await CsvService.loadAllVocabulary(excludeKnown: false);
+    final result = <Vocabulary>[];
+    for (final v in all) {
+      final key = v.word.toLowerCase();
+      if (_states.containsKey(key)) continue;
+      if (levelFilter != null && levelFilter.isNotEmpty) {
+        final vLevel = v.levels.toUpperCase();
+        if (!levelFilter.any((l) => vLevel.contains(l.toUpperCase()))) continue;
+      }
+      result.add(v);
+      if (result.length >= limit) break;
+    }
+    return result;
+  }
+
+  /// Builds today's session: every due card + up to [_newCardsPerSession]
+  /// fresh words, capped at [_maxSessionSize] total.
+  Future<List<Vocabulary>> buildTodaySession({
+    List<String>? levelFilter,
+  }) async {
+    await ready;
+    final all = await CsvService.loadAllVocabulary(excludeKnown: false);
+    final byKey = {for (final v in all) v.word.toLowerCase(): v};
+
+    final dueWords = <Vocabulary>[];
+    for (final s in dueStates()) {
+      final v = byKey[s.word];
+      if (v != null) dueWords.add(v);
+      if (dueWords.length >= _maxSessionSize) break;
+    }
+
+    final remaining = _maxSessionSize - dueWords.length;
+    final newWordBudget = min(_newCardsPerSession, remaining);
+    final fresh = newWordBudget <= 0
+        ? <Vocabulary>[]
+        : await freshPool(levelFilter: levelFilter, limit: newWordBudget);
+
+    return [...dueWords, ...fresh];
+  }
+
+  // ── Rating ─────────────────────────────────────────────────────────────
+
+  /// Applies a user rating to [word]. Updates ease, interval, due-date, and
+  /// stage according to a lightweight SM-2 schedule, then persists.
+  Future<void> submitReview(String word, ReviewRating rating) async {
+    await ready;
+    final key = word.toLowerCase();
+    final prev = _states[key] ?? WordState.fresh(word);
+
+    final next = _applyReview(prev, rating);
+    _states[key] = next;
+    await _persist();
+  }
+
+  WordState _applyReview(WordState prev, ReviewRating rating) {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    double ease = prev.easeFactor;
+    int interval = prev.intervalDays;
+    int repetitions = prev.repetitions;
+    int lapses = prev.totalLapses;
+    SrsStage stage = prev.stage;
+
+    switch (rating) {
+      case ReviewRating.again:
+        ease = (ease - 0.2).clamp(_minEase, _maxEase);
+        interval = 1;
+        repetitions = 0;
+        stage = SrsStage.learning;
+        if (prev.stage == SrsStage.reviewing || prev.stage == SrsStage.mastered) {
+          lapses += 1;
+        }
+        break;
+      case ReviewRating.hard:
+        ease = (ease - 0.15).clamp(_minEase, _maxEase);
+        interval = max(1, (interval * 1.2).round());
+        repetitions += 1;
+        stage = repetitions >= 2 ? SrsStage.reviewing : SrsStage.learning;
+        break;
+      case ReviewRating.good:
+        if (repetitions == 0) {
+          interval = 1;
+        } else if (repetitions == 1) {
+          interval = 4;
+        } else {
+          interval = max(1, (interval * ease).round());
+        }
+        repetitions += 1;
+        stage = _stageForInterval(interval);
+        break;
+      case ReviewRating.easy:
+        ease = (ease + 0.15).clamp(_minEase, _maxEase);
+        if (repetitions == 0) {
+          interval = 4;
+        } else {
+          interval = max(1, (interval * ease * 1.3).round());
+        }
+        repetitions += 1;
+        stage = _stageForInterval(interval);
+        break;
+    }
+
+    final dueAt = now + interval * 24 * 60 * 60 * 1000;
+    return prev.copyWith(
+      stage: stage,
+      easeFactor: ease,
+      intervalDays: interval,
+      repetitions: repetitions,
+      dueAtMs: dueAt,
+      lastReviewedMs: now,
+      totalSeen: prev.totalSeen + 1,
+      totalLapses: lapses,
+    );
+  }
+
+  SrsStage _stageForInterval(int interval) {
+    if (interval >= 60) return SrsStage.mastered;
+    if (interval >= 4) return SrsStage.reviewing;
+    return SrsStage.learning;
+  }
+
+  // ── Debug / reset ──────────────────────────────────────────────────────
+
+  Future<void> resetAll() async {
+    _states.clear();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_kStatesKey);
+    await prefs.remove(_kMigratedKey);
+    if (!_changeCtrl.isClosed) _changeCtrl.add(null);
+  }
+}

@@ -5,8 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
+import '../models/word_state.dart';
 import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
+import '../services/srs_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
@@ -417,6 +419,7 @@ class _LearningScreenState extends State<LearningScreen> {
               },
             ),
           ),
+          _buildRatingRow(),
           Container(
             margin: const EdgeInsets.fromLTRB(16, 0, 16, 20),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -642,6 +645,79 @@ class _LearningScreenState extends State<LearningScreen> {
           ),
         ),
       ],
+    );
+  }
+
+  /// Submits an SRS rating for the current word and advances to the next card.
+  /// At the end of the deck we call onCompleted so the caller can chain into
+  /// the next session (e.g. next Day).
+  Future<void> _submitRating(ReviewRating rating) async {
+    if (widget.vocabularies.isEmpty) return;
+    final word = widget.vocabularies[_currentIndex].word;
+    await SrsService().submitReview(word, rating);
+    // Keep the legacy known-words store in sync so notifications + browse
+    // modes still exclude what the user has already mastered.
+    if (rating == ReviewRating.good || rating == ReviewRating.easy) {
+      await UserDataService().addKnownWord(word);
+    } else if (rating == ReviewRating.again) {
+      await UserDataService().removeKnownWord(word);
+    }
+    if (!mounted) return;
+    if (_currentIndex < widget.vocabularies.length - 1) {
+      _pageController.nextPage(
+        duration: const Duration(milliseconds: 280),
+        curve: Curves.easeOut,
+      );
+    } else {
+      // Last card — bounce out so the user lands back on Today / Day list and
+      // can see the queue refresh.
+      widget.onCompleted?.call();
+      Navigator.of(context).pop();
+    }
+  }
+
+  /// Row of four rating chips above the nav bar. Color encodes severity:
+  /// red Again → orange Hard → green Good → blue Easy.
+  Widget _buildRatingRow() {
+    Widget chip(String label, ReviewRating rating, Color color) {
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: Material(
+            color: color.withValues(alpha: 0.12),
+            borderRadius: BorderRadius.circular(12),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => _submitRating(rating),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: Center(
+                  child: Text(
+                    label,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: color,
+                          fontSize: 13,
+                        ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 4, 12, 6),
+      child: Row(
+        children: [
+          chip('Again', ReviewRating.again, const Color(0xFFD9534F)),
+          chip('Hard', ReviewRating.hard, const Color(0xFFE5874E)),
+          chip('Good', ReviewRating.good, BrutalistTheme.primary),
+          chip('Easy', ReviewRating.easy, const Color(0xFF3E7CB1)),
+        ],
+      ),
     );
   }
 

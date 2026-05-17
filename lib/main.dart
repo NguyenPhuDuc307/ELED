@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'screens/onboarding_screen.dart';
 import 'screens/sync_screen.dart';
 import 'screens/today_screen.dart';
 import 'services/vocabulary_sync_service.dart';
@@ -101,7 +102,8 @@ Future<void> _bootstrap() async {
 
   final needsSync = !await VocabularySyncService.hasLocalData() ||
       await VocabularySyncService.isOutdated();
-  runApp(EledApp(needsSync: needsSync));
+  final onboarded = prefs.getBool('onboardedV1') ?? false;
+  runApp(EledApp(needsSync: needsSync, needsOnboarding: !onboarded));
 
   _autoCheckForUpdate();
 }
@@ -175,9 +177,14 @@ Future<void> _restockNotifications() async {
 }
 
 class EledApp extends StatefulWidget {
-  const EledApp({super.key, this.needsSync = false});
+  const EledApp({
+    super.key,
+    this.needsSync = false,
+    this.needsOnboarding = false,
+  });
 
   final bool needsSync;
+  final bool needsOnboarding;
 
   static final ValueNotifier<ThemeMode> themeNotifier =
       ValueNotifier(ThemeMode.system);
@@ -187,9 +194,12 @@ class EledApp extends StatefulWidget {
 }
 
 class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
+  late bool _showOnboarding;
+
   @override
   void initState() {
     super.initState();
+    _showOnboarding = widget.needsOnboarding && !widget.needsSync;
     WidgetsBinding.instance.addObserver(this);
   }
 
@@ -220,7 +230,13 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
           theme: BrutalistTheme.lightTheme,
           darkTheme: BrutalistTheme.darkTheme,
           themeMode: currentMode,
-          home: widget.needsSync ? const SyncScreen() : const TodayScreen(),
+          home: widget.needsSync
+              ? const SyncScreen()
+              : _showOnboarding
+                  ? OnboardingScreen(onDone: () {
+                      setState(() => _showOnboarding = false);
+                    })
+                  : const TodayScreen(),
           debugShowCheckedModeBanner: false,
         );
       },

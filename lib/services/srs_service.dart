@@ -247,6 +247,21 @@ class SrsService {
     return SrsStage.learning;
   }
 
+  // ── Exercise picker ────────────────────────────────────────────────────
+
+  /// Chooses which exercise style to use for [word] in this session. Brand-new
+  /// words always get [ExerciseType.recognize] so the user sees the meaning
+  /// before being quizzed on it. Once familiar we alternate multiple choice
+  /// (recognition) and listen-and-type (active recall) for variety.
+  ExerciseType pickExerciseType(String word, {bool hasAudio = true}) {
+    final state = stateFor(word);
+    if (state.totalSeen == 0) return ExerciseType.recognize;
+    // Deterministic alternation so the same session feels stable on re-entry.
+    final basis = state.totalSeen + word.length;
+    if (basis.isEven || !hasAudio) return ExerciseType.multipleChoice;
+    return ExerciseType.listenAndType;
+  }
+
   // ── Debug / reset ──────────────────────────────────────────────────────
 
   Future<void> resetAll() async {

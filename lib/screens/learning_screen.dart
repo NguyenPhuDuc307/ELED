@@ -10,6 +10,8 @@ import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
 import '../services/srs_service.dart';
 import '../services/user_data_service.dart';
+import 'exercises/listen_and_type_exercise.dart';
+import 'exercises/multiple_choice_exercise.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
@@ -50,6 +52,11 @@ class _LearningScreenState extends State<LearningScreen> {
 
   final _audioPlayer = AudioPlayer();
   bool _playingAudio = false;
+
+  // Pinned exercise + distractor pick per card so PageView rebuilds don't
+  // swap exercise types mid-card.
+  final Map<int, ExerciseType> _exerciseCache = {};
+  final Map<int, List<Vocabulary>> _distractorsCache = {};
 
   @override
   void initState() {
@@ -235,6 +242,20 @@ class _LearningScreenState extends State<LearningScreen> {
               },
               itemBuilder: (context, index) {
                 final vocab = widget.vocabularies[index];
+                final exType = _exerciseFor(index);
+                if (exType == ExerciseType.multipleChoice) {
+                  return MultipleChoiceExercise(
+                    word: vocab,
+                    distractors: _distractorsFor(index),
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
+                if (exType == ExerciseType.listenAndType) {
+                  return ListenAndTypeExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
                 return Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
@@ -419,7 +440,12 @@ class _LearningScreenState extends State<LearningScreen> {
               },
             ),
           ),
-          _buildRatingRow(),
+          if (widget.vocabularies.isNotEmpty &&
+              _exerciseFor(_currentIndex) == ExerciseType.recognize) ...[
+            _buildRatingRow(),
+          ],
+          if (widget.vocabularies.isNotEmpty &&
+              _exerciseFor(_currentIndex) == ExerciseType.recognize)
           Container(
             margin: const EdgeInsets.fromLTRB(16, 0, 16, 20),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -646,6 +672,41 @@ class _LearningScreenState extends State<LearningScreen> {
         ),
       ],
     );
+  }
+
+  /// Decides which exercise widget to render for the card at [index]. Cached
+  /// in [_exerciseCache] so the choice is stable across rebuilds — otherwise
+  /// the SRS state could mutate mid-card and the page would re-render with a
+  /// different exercise type.
+  ExerciseType _exerciseFor(int index) {
+    final cached = _exerciseCache[index];
+    if (cached != null) return cached;
+    final vocab = widget.vocabularies[index];
+    final type = SrsService().pickExerciseType(
+      vocab.word,
+      hasAudio: vocab.audioLink.isNotEmpty,
+    );
+    _exerciseCache[index] = type;
+    return type;
+  }
+
+  /// Picks 3 distractor words from the rest of the session for the multiple
+  /// choice exercise. Stable across rebuilds.
+  List<Vocabulary> _distractorsFor(int index) {
+    final cached = _distractorsCache[index];
+    if (cached != null) return cached;
+    final pool = <Vocabulary>[];
+    final correct = widget.vocabularies[index].word.toLowerCase();
+    for (final v in widget.vocabularies) {
+      if (v.word.toLowerCase() != correct &&
+          v.translation.trim().isNotEmpty) {
+        pool.add(v);
+      }
+    }
+    pool.shuffle();
+    final picks = pool.take(3).toList();
+    _distractorsCache[index] = picks;
+    return picks;
   }
 
   /// Submits an SRS rating for the current word and advances to the next card.

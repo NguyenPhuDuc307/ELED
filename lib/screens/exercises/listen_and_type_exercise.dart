@@ -90,8 +90,15 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
   @override
   Widget build(BuildContext context) {
     final showAnswer = _correctness != null;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(24, 24, 24, 24),
+    // Compact the layout when the keyboard is up — otherwise the audio button
+    // + padding + buttons overflow a typical 5" screen.
+    final bottomInset = MediaQuery.of(context).viewInsets.bottom;
+    final compact = bottomInset > 0;
+    return SingleChildScrollView(
+      // reverse so the action buttons stay near the keyboard rather than
+      // floating mid-screen when the column shrinks.
+      reverse: true,
+      padding: EdgeInsets.fromLTRB(24, compact ? 12 : 24, 24, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -104,9 +111,9 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
                 ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 28),
-          Center(child: _bigAudioButton()),
-          const SizedBox(height: 28),
+          SizedBox(height: compact ? 12 : 28),
+          Center(child: _bigAudioButton(compact: compact)),
+          SizedBox(height: compact ? 14 : 28),
           TextField(
             controller: _controller,
             focusNode: _focusNode,
@@ -208,7 +215,10 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
     );
   }
 
-  Widget _bigAudioButton() {
+  Widget _bigAudioButton({bool compact = false}) {
+    final pad = compact ? 18.0 : 28.0;
+    final iconSize = compact ? 32.0 : 48.0;
+    final spinnerSize = compact ? 24.0 : 36.0;
     return Material(
       color: BrutalistTheme.primaryLight,
       shape: const CircleBorder(),
@@ -216,19 +226,19 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
         customBorder: const CircleBorder(),
         onTap: _play,
         child: Padding(
-          padding: const EdgeInsets.all(28),
+          padding: EdgeInsets.all(pad),
           child: _loadingAudio
-              ? const SizedBox(
-                  width: 36,
-                  height: 36,
-                  child: CircularProgressIndicator(
+              ? SizedBox(
+                  width: spinnerSize,
+                  height: spinnerSize,
+                  child: const CircularProgressIndicator(
                     strokeWidth: 3,
                     color: BrutalistTheme.primary,
                   ),
                 )
-              : const Icon(
+              : Icon(
                   Icons.volume_up_rounded,
-                  size: 48,
+                  size: iconSize,
                   color: BrutalistTheme.primary,
                 ),
         ),

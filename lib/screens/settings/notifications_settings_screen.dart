@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../models/vocabulary.dart';
 import '../../services/csv_service.dart';
 import '../../services/notification_service.dart';
 import '../../services/user_data_service.dart';
@@ -88,14 +87,11 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     if (_intervalMinutes > 0) {
       await NotificationService().requestPermissions();
 
-      final pool = <Vocabulary>[];
-      if (_selectedTopics.isNotEmpty) {
-        pool.addAll(await CsvService.loadSpecificTopicsVocabulary(
-            _selectedTopics, levelFilter: _selectedPopularity, excludeKnown: true));
-      } else {
-        pool.addAll(await CsvService.loadSpecificPopularityVocabulary(
-            _selectedPopularity, excludeKnown: true));
-      }
+      // Use SRS-aware pool: due-soonest first, then fresh words as filler.
+      final pool = await NotificationService.loadPool(
+        popularity: _selectedPopularity,
+        topics: _selectedTopics,
+      );
 
       await NotificationService().scheduleVocabularyNotifications(
         pool: pool,

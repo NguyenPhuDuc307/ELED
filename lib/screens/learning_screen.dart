@@ -8,6 +8,7 @@ import '../models/vocabulary.dart';
 import '../services/oxford_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
+import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
 
 class LearningScreen extends StatefulWidget {
@@ -99,7 +100,9 @@ class _LearningScreenState extends State<LearningScreen> {
     try {
       await _audioPlayer.setUrl(url);
       await _audioPlayer.play();
-    } catch (_) {}
+    } catch (e, st) {
+      logCaught(e, st, 'LearningScreen.playAudio');
+    }
     if (mounted) setState(() => _playingAudio = false);
   }
 

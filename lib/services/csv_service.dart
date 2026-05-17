@@ -7,12 +7,21 @@ class CsvService {
   // ── In-memory cache ──────────────────────────────────────────────────────
   static final Map<String, List<Vocabulary>> _rawCache = {};
   static List<String>? _topicFilesCache;
+  // Memoized merge of all CSVs — hit by every notification tap.
+  static List<Vocabulary>? _allCacheUnfiltered;
+  static List<Vocabulary>? _allCacheKnownFiltered;
 
-  static void invalidateKnownWordsFilter() {}
+  /// Called by [UserDataService] when the known-words set changes — the
+  /// known-filtered cache must be rebuilt next access.
+  static void invalidateKnownWordsFilter() {
+    _allCacheKnownFiltered = null;
+  }
 
   static void clearCache() {
     _rawCache.clear();
     _topicFilesCache = null;
+    _allCacheUnfiltered = null;
+    _allCacheKnownFiltered = null;
   }
 
   // ── CSV parser ───────────────────────────────────────────────────────────
@@ -210,6 +219,9 @@ class CsvService {
   }
 
   static Future<List<Vocabulary>> loadAllVocabulary({bool excludeKnown = false}) async {
+    if (excludeKnown && _allCacheKnownFiltered != null) return _allCacheKnownFiltered!;
+    if (!excludeKnown && _allCacheUnfiltered != null) return _allCacheUnfiltered!;
+
     const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
     final topicFiles = await _getTopicFiles();
 
@@ -219,8 +231,11 @@ class CsvService {
     ]);
 
     final all = results.expand((r) => r).toList();
+    _allCacheUnfiltered = all;
     if (!excludeKnown) return all;
-    return _applyKnownFilter(all);
+    final filtered = await _applyKnownFilter(all);
+    _allCacheKnownFiltered = filtered;
+    return filtered;
   }
 
   static Future<List<Vocabulary>> loadSpecificPopularityVocabulary(

@@ -45,6 +45,11 @@ class WatchdogWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, param
             if (staleByFire || staleByQueue) {
                 ScheduleEngine.rescheduleAll(ctx)
             }
+
+            // Pre-fetch pronunciation MP3s so audio is ready when alarms fire
+            // even if the device is offline at that moment.
+            ScheduleEngine.prefetchAudio(ctx, count = 20)
+
             return Result.success()
         } catch (_: Exception) {
             return Result.retry()

@@ -1,6 +1,8 @@
 package com.nguyenphuduc.eled
 
 import android.content.Context
+import java.net.HttpURLConnection
+import java.net.URL
 import java.util.Calendar
 
 /**
@@ -179,5 +181,38 @@ object ScheduleEngine {
             .putLong(KEY_LATEST_SCHEDULED_MS, lastScheduled)
             .putInt(KEY_POOL_CURSOR, (cursorStart + count) % maxOf(pool.size, 1))
             .apply()
+    }
+
+    /**
+     * Downloads pronunciation MP3 for the next [count] words in the schedule pool
+     * to the local audio cache. Skips items already cached. Best-effort: failures
+     * for individual items don't abort the rest. Call this from WatchdogWorker
+     * so audio is ready before each alarm fires (no spinning when offline).
+     */
+    fun prefetchAudio(ctx: Context, count: Int = 20) {
+        val pool = loadPool(ctx)
+        if (pool.isEmpty()) return
+        val p = prefs(ctx)
+        val cursor = p.getInt(KEY_POOL_CURSOR, 0)
+
+        for (i in 0 until count) {
+            val item = pool[(cursor + i) % pool.size]
+            if (item.audioUrl.isEmpty()) continue
+            val file = VocabNotificationReceiver.audioCacheFile(ctx, item.word)
+            if (file.exists() && file.length() > 0L) continue
+            try {
+                val conn = URL(item.audioUrl).openConnection() as HttpURLConnection
+                conn.connectTimeout = 8_000
+                conn.readTimeout = 8_000
+                try {
+                    conn.inputStream.use { it.copyTo(file.outputStream()) }
+                } finally {
+                    conn.disconnect()
+                }
+            } catch (_: Exception) {
+                // Individual download failure — keep going. The runtime download
+                // path in VocabNotificationReceiver.onReceive will retry at fire time.
+            }
+        }
     }
 }

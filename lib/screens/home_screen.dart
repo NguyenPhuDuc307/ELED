@@ -9,6 +9,7 @@ import '../services/csv_service.dart';
 import '../services/collection_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
+import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
 import 'learning_screen.dart';
 
@@ -65,7 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
     try {
       await _audioPlayer.setUrl(url);
       await _audioPlayer.play();
-    } catch (_) {}
+    } catch (e, st) {
+      logCaught(e, st, 'HomeScreen.playAudio');
+    }
     if (mounted) setState(() => _playingUrl = '');
   }
 

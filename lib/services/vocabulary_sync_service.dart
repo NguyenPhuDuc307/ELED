@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:archive/archive_io.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../utils/log.dart';
 
 class VocabularySyncService {
   static const _versionKey = 'vocabulary_local_version';
@@ -93,7 +94,9 @@ class VocabularySyncService {
       final dir = await _localDir();
       final file = File('${dir.path}/$relativePath');
       if (await file.exists()) return file.readAsString();
-    } catch (_) {}
+    } catch (e, st) {
+      logCaught(e, st, 'VocabularySyncService.readLocalFile($relativePath)');
+    }
     return null;
   }
 

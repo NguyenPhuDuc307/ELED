@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'auth_service.dart';
+import 'csv_service.dart';
 
 class UserDataService {
   static final _instance = UserDataService._internal();
@@ -89,6 +90,7 @@ class UserDataService {
       _knownWords = Set<String>.from(
         (data['knownWords'] as List? ?? []).map((e) => e.toString().toLowerCase()),
       );
+      CsvService.invalidateKnownWordsFilter();
       _knownWordsCtrl.add(_knownWords);
 
       // Sync words marked known via notification action while app was closed
@@ -227,6 +229,7 @@ class UserDataService {
     final lower = word.toLowerCase();
     // Update in-memory cache and local prefs immediately regardless of login state
     _knownWords.add(lower);
+    CsvService.invalidateKnownWordsFilter();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList('knownWords', _knownWords.toList());
     _knownWordsCtrl.add(_knownWords);
@@ -242,6 +245,7 @@ class UserDataService {
     final lower = word.toLowerCase();
     // Update in-memory cache and local prefs immediately regardless of login state
     _knownWords.remove(lower);
+    CsvService.invalidateKnownWordsFilter();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList('knownWords', _knownWords.toList());
     _knownWordsCtrl.add(_knownWords);

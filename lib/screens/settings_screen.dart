@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../services/auth_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
+import 'help_screen.dart';
 import 'settings/about_screen.dart';
 import 'settings/appearance_settings_screen.dart';
 import 'settings/data_settings_screen.dart';
@@ -85,6 +86,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   : (_user!.email ?? 'Signed in'),
               onTap: () => Navigator.of(context).push(
                 smoothRoute(const DataSettingsScreen()),
+              ),
+            ),
+            _category(
+              icon: Icons.help_outline_rounded,
+              title: 'How to use',
+              subtitle: 'Ratings, exercises, streaks — explained',
+              onTap: () => Navigator.of(context).push(
+                smoothRoute(const HelpScreen()),
               ),
             ),
             _category(

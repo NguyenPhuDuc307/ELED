@@ -55,7 +55,7 @@ class _LearningScreenState extends State<LearningScreen> {
     _currentIndex = widget.initialIndex;
     _pageController = PageController(initialPage: _currentIndex);
     _loadKnownWords();
-    _fetchDefinition(_currentIndex);
+    _prepareCard(_currentIndex);
     _persistContext();
   }
 
@@ -82,6 +82,16 @@ class _LearningScreenState extends State<LearningScreen> {
     setState(() {
       _knownWords = UserDataService().knownWords;
     });
+  }
+
+  /// Fetches the English definition for the card at [index]; if the user is
+  /// currently viewing Vietnamese, chains a translation so the new card
+  /// arrives already translated instead of forcing them to toggle EN → VI.
+  Future<void> _prepareCard(int index) async {
+    await _fetchDefinition(index);
+    if (_translateDefinition && mounted) {
+      await _translateSenses(index);
+    }
   }
 
   Future<void> _fetchDefinition(int index) async {
@@ -218,7 +228,7 @@ class _LearningScreenState extends State<LearningScreen> {
               itemCount: widget.vocabularies.length,
               onPageChanged: (index) {
                 setState(() => _currentIndex = index);
-                _fetchDefinition(index);
+                _prepareCard(index);
                 _persistContext();
               },
               itemBuilder: (context, index) {

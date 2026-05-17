@@ -83,10 +83,10 @@ class _SyncScreenState extends State<SyncScreen> {
               const SizedBox(height: 8),
               Text(
                 _error
-                    ? 'Không thể tải dữ liệu'
+                    ? "Couldn't load vocabulary"
                     : _progress == 0
-                        ? 'Đang chuẩn bị từ vựng...'
-                        : 'Đang tải từ vựng...',
+                        ? 'Preparing your vocabulary…'
+                        : 'Loading vocabulary…',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -131,7 +131,7 @@ class _SyncScreenState extends State<SyncScreen> {
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: const Text(
-                      'Thử lại',
+                      'Try again',
                       style: TextStyle(
                         color: BrutalistTheme.white,
                         fontWeight: FontWeight.w600,

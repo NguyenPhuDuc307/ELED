@@ -3,6 +3,7 @@ import '../l10n/gen/app_localizations.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import '../services/collection_service.dart';
+import 'bulk_import_screen.dart';
 import 'home_screen.dart';
 
 class CollectionsScreen extends StatefulWidget {
@@ -114,6 +115,18 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(t.collectionsTitle),
+        actions: [
+          IconButton(
+            tooltip: t.bulkImportTitle,
+            icon: const Icon(Icons.file_upload_outlined),
+            onPressed: () async {
+              final added = await Navigator.of(context)
+                  .push<bool>(smoothRoute(const BulkImportScreen()));
+              if (added == true) _loadCollections();
+            },
+          ),
+          const SizedBox(width: 4),
+        ],
       ),
       body: _isLoading
           ? Center(

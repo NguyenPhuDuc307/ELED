@@ -10,6 +10,7 @@ import '../models/vocabulary.dart';
 import '../services/auth_service.dart';
 import '../services/csv_service.dart';
 import '../services/collection_service.dart';
+import '../services/custom_word_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
@@ -210,15 +211,28 @@ class _HomeScreenState extends State<HomeScreen> {
     final allData = await CsvService.loadAllVocabulary();
     final collections = await CollectionService.getCollections();
     final collectionWords = collections[widget.topicTitle!] ?? [];
+    final byKey = <String, Vocabulary>{
+      for (final v in allData) v.word.toLowerCase(): v,
+    };
+    final custom = CustomWordService();
+
+    // Any word that's missing translation goes through Google now so the
+    // list renders with meanings instead of empty rows. Cheap on re-open
+    // since CustomWordService caches results.
+    final needsTranslation = <String>[
+      for (final w in collectionWords)
+        if (!byKey.containsKey(w) && !custom.has(w)) w,
+    ];
+    if (needsTranslation.isNotEmpty) {
+      await custom.translateAndStore(needsTranslation);
+    }
 
     if (mounted) {
       setState(() {
-        List<Vocabulary> list = [];
-        for (var w in collectionWords) {
-          final matches = allData.where((v) => v.word.toLowerCase() == w);
-          if (matches.isNotEmpty) {
-            list.add(matches.first);
-          }
+        final list = <Vocabulary>[];
+        for (final w in collectionWords) {
+          final hit = byKey[w];
+          list.add(hit ?? custom.syntheticVocabulary(w));
         }
         _allVocabData = list;
         _isLoading = false;
@@ -460,6 +474,25 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Centred empty/zero state with a soft icon, sentence-case title, and an
   /// optional subtitle that explains the next action the user can take.
+  Widget _customBadge(AppLocalizations t) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+      decoration: BoxDecoration(
+        color: BrutalistTheme.black.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      child: Text(
+        t.bulkImportCustomBadge.toUpperCase(),
+        style: TextStyle(
+          fontSize: 9,
+          fontWeight: FontWeight.w800,
+          letterSpacing: 0.5,
+          color: BrutalistTheme.black.withValues(alpha: 0.7),
+        ),
+      ),
+    );
+  }
+
   Widget _emptyState({
     required IconData icon,
     required String title,
@@ -632,13 +665,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        vocab.word,
-                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                              fontWeight: FontWeight.w700,
-                              color: BrutalistTheme.black,
-                              fontSize: 18,
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.baseline,
+                        textBaseline: TextBaseline.alphabetic,
+                        children: [
+                          Flexible(
+                            child: Text(
+                              vocab.word,
+                              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                                    fontWeight: FontWeight.w700,
+                                    color: BrutalistTheme.black,
+                                    fontSize: 18,
+                                  ),
+                              overflow: TextOverflow.ellipsis,
                             ),
+                          ),
+                          if (vocab.id.startsWith('custom:')) ...[
+                            const SizedBox(width: 8),
+                            _customBadge(t),
+                          ],
+                        ],
                       ),
                       const SizedBox(height: 2),
                       Text(
@@ -808,10 +854,33 @@ class _HomeScreenState extends State<HomeScreen> {
 
     if (results.isEmpty) {
       final t = AppLocalizations.of(context);
+      // When Search is opened from a collection's "+" picker, offer to keep
+      // the typed query as a custom word — translated on the fly, added to
+      // that collection. Plain Search (no callback) doesn't have a target
+      // collection, so we don't surface the CTA there.
+      final cb = widget.onWordSelected;
+      final canAddCustom = cb != null && query.isNotEmpty;
       return _emptyState(
         icon: Icons.search_off_rounded,
         title: t.homeNoMatchesTitle,
         subtitle: t.homeNoMatchesSubtitle,
+        action: canAddCustom
+            ? FilledButton.icon(
+                style: FilledButton.styleFrom(
+                  backgroundColor: BrutalistTheme.primary,
+                  foregroundColor: BrutalistTheme.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                ),
+                onPressed: () async {
+                  await CustomWordService().translateAndStore([query]);
+                  if (!mounted) return;
+                  cb(CustomWordService().syntheticVocabulary(query));
+                },
+                icon: const Icon(Icons.add_rounded),
+                label: Text(t.searchAddCustomCta(query)),
+              )
+            : null,
       );
     }
 

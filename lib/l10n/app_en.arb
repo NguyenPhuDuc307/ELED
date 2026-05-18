@@ -6,24 +6,39 @@
   "languageEnglish": "English",
   "languageVietnamese": "Tiếng Việt",
   "languageSystem": "System default",
-
   "today": "Today",
   "todaySessionLabel": "Today's session",
   "todaySessionCountSingular": "{count} word",
   "@todaySessionCountSingular": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "todaySessionCountPlural": "{count} words",
   "@todaySessionCountPlural": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "todayPillReview": "{count} review",
   "@todayPillReview": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "todayPillNew": "{count} new",
   "@todayPillNew": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "todayStartSession": "Start session",
   "todayMatchGameTitle": "Match game",
@@ -37,16 +52,23 @@
   "todayStreakNone": "Start one today",
   "todayStreakDaysSingular": "{count} day",
   "@todayStreakDaysSingular": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "todayStreakDaysPlural": "{count} days",
   "@todayStreakDaysPlural": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "todayTooltipSearch": "Search",
   "todayTooltipBrowse": "Browse",
   "todayTooltipSettings": "Settings",
-
   "weekdayMonday": "Monday",
   "weekdayTuesday": "Tuesday",
   "weekdayWednesday": "Wednesday",
@@ -54,7 +76,6 @@
   "weekdayFriday": "Friday",
   "weekdaySaturday": "Saturday",
   "weekdaySunday": "Sunday",
-
   "monthJanuary": "January",
   "monthFebruary": "February",
   "monthMarch": "March",
@@ -67,12 +88,10 @@
   "monthOctober": "October",
   "monthNovember": "November",
   "monthDecember": "December",
-
   "syncPreparing": "Preparing your vocabulary…",
   "syncLoading": "Loading vocabulary…",
   "syncErrorTitle": "Couldn't load vocabulary",
   "syncTryAgain": "Try again",
-
   "settingsTitle": "Settings",
   "settingsAppearance": "Appearance",
   "settingsAppearanceSubtitle": "Theme",
@@ -83,7 +102,6 @@
   "settingsDataSubtitle": "Backup and reset",
   "settingsAbout": "About",
   "settingsAboutSubtitle": "Version and credits",
-
   "appearanceTitle": "Appearance",
   "appearanceTheme": "Theme",
   "appearanceThemeSubtitle": "Choose a colour scheme. Changes apply instantly.",
@@ -91,7 +109,6 @@
   "themeSystem": "System",
   "themeLight": "Light",
   "themeDark": "Dark",
-
   "commonCancel": "Cancel",
   "commonSave": "Save",
   "commonDone": "Done",
@@ -111,7 +128,6 @@
   "commonNotNow": "Not now",
   "commonOpen": "Open",
   "commonCheck": "Check",
-
   "menuTitle": "Browse",
   "menuPopularity": "By level",
   "menuTopic": "By topic",
@@ -123,9 +139,15 @@
   "menuContinueProgress": "{label} · {current} of {total}",
   "@menuContinueProgress": {
     "placeholders": {
-      "label": { "type": "String" },
-      "current": { "type": "int" },
-      "total": { "type": "int" }
+      "label": {
+        "type": "String"
+      },
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "menuCardPopularityTitle": "Popularity",
@@ -141,9 +163,12 @@
   "menuCouldNotResume": "Couldn't resume — vocabulary changed",
   "menuMarkedKnownToast": "\"{word}\" added to your known words",
   "@menuMarkedKnownToast": {
-    "placeholders": { "word": { "type": "String" } }
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
   },
-
   "homeSearchHint": "Search a word",
   "homeNoResults": "No results",
   "homeNoResultsHint": "Try a different spelling or browse by level / topic.",
@@ -161,11 +186,19 @@
   "homeRemoveFromCollectionTitle": "Remove from collection?",
   "homeRemoveFromCollectionBody": "Remove \"{word}\" from this collection?",
   "@homeRemoveFromCollectionBody": {
-    "placeholders": { "word": { "type": "String" } }
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
   },
   "homeRemovedWord": "Removed \"{word}\"",
   "@homeRemovedWord": {
-    "placeholders": { "word": { "type": "String" } }
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
   },
   "homeSearchPromptTitle": "Search the entire vocabulary",
   "homeSearchPromptSubtitle": "Type a word or its translation to begin.",
@@ -182,18 +215,29 @@
   "homeNoMatchesSubtitle": "Try a different keyword.",
   "homeDayLabel": "Day {day}",
   "@homeDayLabel": {
-    "placeholders": { "day": { "type": "int" } }
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
   },
   "homeWordsCount": "{count} words",
   "@homeWordsCount": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
-
   "learningProgress": "{current} / {total}",
   "@learningProgress": {
     "placeholders": {
-      "current": { "type": "int" },
-      "total": { "type": "int" }
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "learningKnowThis": "I already know this",
@@ -209,21 +253,33 @@
   "learningSearchTitle": "Search",
   "learningDayTitle": "Day {day}",
   "@learningDayTitle": {
-    "placeholders": { "day": { "type": "int" } }
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
   },
   "learningTooltipKnown": "I already know this",
   "learningTooltipDetails": "Word details",
   "learningSkipTitle": "Skip this word from now on?",
   "learningSkipBody": "\"{word}\" will be marked as mastered and won't appear in your daily sessions for a long time.",
   "@learningSkipBody": {
-    "placeholders": { "word": { "type": "String" } }
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
   },
   "learningSkipAction": "Skip",
   "learningWordOfTotal": "Word {current} of {total}",
   "@learningWordOfTotal": {
     "placeholders": {
-      "current": { "type": "int" },
-      "total": { "type": "int" }
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
   "learningDefinition": "Definition",
@@ -235,9 +291,12 @@
   "learningLastSession": "Last session",
   "learningSessionLabelDay": "Day {day}",
   "@learningSessionLabelDay": {
-    "placeholders": { "day": { "type": "int" } }
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
   },
-
   "resultsTitle": "Session complete",
   "resultsReviewed": "Reviewed",
   "resultsAccuracy": "Accuracy",
@@ -252,11 +311,19 @@
   "resultsNoCardsRated": "No cards rated.",
   "resultsReviewedSingular": "You reviewed {count} word.",
   "@resultsReviewedSingular": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "resultsReviewedPlural": "You reviewed {count} words.",
   "@resultsReviewedPlural": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "resultsCorrect": "Correct",
   "resultsStruggled": "Struggled",
@@ -264,15 +331,22 @@
   "resultsStreak": "Streak",
   "resultsStreakDaysSingular": "{count} day",
   "@resultsStreakDaysSingular": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "resultsStreakDaysPlural": "{count} days",
   "@resultsStreakDaysPlural": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "resultsAnotherSession": "Another session",
   "resultsBackToToday": "Back to Today",
-
   "onboardingNext": "Next",
   "onboardingGetStarted": "Get started",
   "onboardingSkip": "Skip",
@@ -284,7 +358,6 @@
   "onboarding3Body": "After each card tell us how it went: Again / Hard / Good / Easy. We use your rating to decide when the word reappears — Easy disappears for a month, Again comes back tomorrow.",
   "onboarding4Title": "Variety beats grind",
   "onboarding4Body": "As you learn, sessions mix flashcards with multiple choice, listen-and-type, fill-in-context, and a 4-pair match game. Same vocabulary, fresh angle every time.",
-
   "helpTitle": "Help",
   "helpAppBarTitle": "How to use",
   "helpTopic1Title": "How learning works",
@@ -309,7 +382,6 @@
   "helpTopic10Body": "The magnifier icon searches the entire vocabulary by word or translation. Use it for ad-hoc look-ups; tapping a result opens its full Recognize card with the audio, IPA, and definitions.",
   "helpTopic11Title": "Backup & sync",
   "helpTopic11Body": "Settings → Account & data lets you Export your known words + collections to a JSON file via the system share sheet, and Import the same shape back. Sign in with Google to sync the knownWords + collections across devices automatically.",
-
   "matchGameTitle": "Match game",
   "matchGameCongrats": "Nice match!",
   "matchGamePlayAgain": "Play again",
@@ -317,11 +389,14 @@
   "matchGameProgress": "{matched} / {total}",
   "@matchGameProgress": {
     "placeholders": {
-      "matched": { "type": "int" },
-      "total": { "type": "int" }
+      "matched": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
-
   "collectionsTitle": "Collections",
   "collectionsEmpty": "No collections yet",
   "collectionsEmptyHint": "Tap a word's bookmark to add it here.",
@@ -336,52 +411,81 @@
   "collectionsNamePlaceholder": "e.g. TOEFL Words...",
   "collectionsDeleteTitle": "DELETE {name}?",
   "@collectionsDeleteTitle": {
-    "placeholders": { "name": { "type": "String" } }
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
   },
   "collectionsDeleteBody": "Are you sure you want to delete this collection?",
   "collectionsWordsCount": "{count} words",
   "@collectionsWordsCount": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
-
   "topicsTitle": "Topics",
   "topicsEmptyTitle": "No topics in the selected levels",
   "topicsEmptyHint": "Pick more levels above to see topics.",
   "topicsCategorySummarySingular": "{topicCount} topic · {wordCount} words",
   "@topicsCategorySummarySingular": {
     "placeholders": {
-      "topicCount": { "type": "int" },
-      "wordCount": { "type": "int" }
+      "topicCount": {
+        "type": "int"
+      },
+      "wordCount": {
+        "type": "int"
+      }
     }
   },
   "topicsCategorySummaryPlural": "{topicCount} topics · {wordCount} words",
   "@topicsCategorySummaryPlural": {
     "placeholders": {
-      "topicCount": { "type": "int" },
-      "wordCount": { "type": "int" }
+      "topicCount": {
+        "type": "int"
+      },
+      "wordCount": {
+        "type": "int"
+      }
     }
   },
   "topicCategoryWordSingular": "{count} word",
   "@topicCategoryWordSingular": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "topicCategoryWordPlural": "{count} words",
   "@topicCategoryWordPlural": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
-
   "topicCategoryTitle": "{category}",
   "@topicCategoryTitle": {
-    "placeholders": { "category": { "type": "String" } }
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
   },
-
   "notificationsTitle": "Notifications",
   "notificationsEnable": "Vocabulary reminders",
   "notificationsEnableSubtitle": "Get a new word periodically while the app is closed.",
   "notificationsInterval": "Interval",
   "notificationsIntervalMinutes": "{count} min",
   "@notificationsIntervalMinutes": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "notificationsActiveHours": "Active hours",
   "notificationsFrom": "From",
@@ -402,7 +506,6 @@
   "notificationsBatteryBody": "Android may pause ELED notifications after a day to save battery. Allow ELED to run unrestricted so vocabulary reminders keep firing.",
   "notificationsBatteryCardTitle": "Allow background activity",
   "notificationsBatteryCardSubtitle": "Tap to keep notifications firing past 1 day",
-
   "dataTitle": "Data",
   "dataBackup": "Backup",
   "dataExport": "Export",
@@ -421,7 +524,11 @@
   "dataSignedOut": "Signed out",
   "dataSignInFailed": "Sign-in failed: {error}",
   "@dataSignInFailed": {
-    "placeholders": { "error": { "type": "String" } }
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
   },
   "dataExportFailed": "Export failed",
   "dataBackupReady": "Backup ready to share",
@@ -429,8 +536,12 @@
   "dataImportResult": "Added {knownAdded} known words and {collectionsAdded} new collections",
   "@dataImportResult": {
     "placeholders": {
-      "knownAdded": { "type": "int" },
-      "collectionsAdded": { "type": "int" }
+      "knownAdded": {
+        "type": "int"
+      },
+      "collectionsAdded": {
+        "type": "int"
+      }
     }
   },
   "dataSignInWithGoogle": "Sign in with Google",
@@ -438,7 +549,6 @@
   "dataGoogleUser": "Google user",
   "dataSignOut": "Sign out",
   "dataRateApp": "Rate ELED",
-
   "aboutTitle": "About",
   "aboutVersion": "Version",
   "aboutRateApp": "Rate the app",
@@ -450,22 +560,33 @@
   "aboutCurrentVersion": "Current version",
   "aboutVersionPrefix": "v{version}",
   "@aboutVersionPrefix": {
-    "placeholders": { "version": { "type": "String" } }
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
   },
   "aboutCheckButton": "Check",
   "aboutAutoCheckOnStartup": "Auto-check on startup",
   "aboutNewVersionAvailable": "v{version} available",
   "@aboutNewVersionAvailable": {
-    "placeholders": { "version": { "type": "String" } }
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
   },
   "aboutUpdateNow": "Update now",
   "aboutOpen": "Open",
   "aboutUpToDate": "You're up to date",
   "aboutDownloadFailed": "Download failed: {error}",
   "@aboutDownloadFailed": {
-    "placeholders": { "error": { "type": "String" } }
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
   },
-
   "exerciseCorrect": "Correct",
   "exerciseIncorrect": "Not quite",
   "exerciseAnswerLabel": "Answer",
@@ -476,9 +597,86 @@
   "exerciseMissingWord": "Missing word",
   "exerciseSkip": "Skip",
   "exerciseCheck": "Check",
-
   "popularityLevelLabel": "Level {level}",
   "@popularityLevelLabel": {
-    "placeholders": { "level": { "type": "String" } }
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "bulkImportTitle": "Import words",
+  "bulkImportTargetLabel": "Target collection",
+  "bulkImportPickCollection": "Pick a collection",
+  "bulkImportCreateNew": "Create new collection…",
+  "bulkImportNewNameHint": "Collection name",
+  "bulkImportPasteLabel": "Paste words",
+  "bulkImportPasteHint": "One word per line. Commas also work.",
+  "bulkImportPreview": "Preview",
+  "bulkImportPreviewMatched": "{count} will be added",
+  "@bulkImportPreviewMatched": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bulkImportPreviewSkipped": "{count} skipped (not in vocabulary)",
+  "@bulkImportPreviewSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bulkImportShowSkipped": "Show skipped",
+  "bulkImportHideSkipped": "Hide",
+  "bulkImportAlreadyIn": "{count} already in collection",
+  "@bulkImportAlreadyIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bulkImportConfirmAdd": "Add {count} words",
+  "@bulkImportConfirmAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bulkImportNoMatches": "No matching words found",
+  "bulkImportEmptyInput": "Paste at least one word",
+  "bulkImportNeedCollection": "Pick or create a collection first",
+  "bulkImportDoneToast": "Added {count} to \"{name}\"",
+  "@bulkImportDoneToast": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "bulkImportPreviewCustom": "{count} custom (will be auto-translated)",
+  "@bulkImportPreviewCustom": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bulkImportTranslating": "Translating custom words…",
+  "bulkImportCustomBadge": "custom",
+  "searchAddCustomCta": "Use \"{word}\" as a custom word",
+  "@searchAddCustomCta": {
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
   }
 }

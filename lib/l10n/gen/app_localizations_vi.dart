@@ -1101,4 +1101,84 @@ class AppLocalizationsVi extends AppLocalizations {
   String popularityLevelLabel(String level) {
     return 'Cấp $level';
   }
+
+  @override
+  String get bulkImportTitle => 'Nhập danh sách từ';
+
+  @override
+  String get bulkImportTargetLabel => 'Bộ sưu tập đích';
+
+  @override
+  String get bulkImportPickCollection => 'Chọn bộ sưu tập';
+
+  @override
+  String get bulkImportCreateNew => 'Tạo bộ sưu tập mới…';
+
+  @override
+  String get bulkImportNewNameHint => 'Tên bộ sưu tập';
+
+  @override
+  String get bulkImportPasteLabel => 'Dán danh sách từ';
+
+  @override
+  String get bulkImportPasteHint => 'Mỗi dòng một từ. Dấu phẩy cũng được.';
+
+  @override
+  String get bulkImportPreview => 'Xem trước';
+
+  @override
+  String bulkImportPreviewMatched(int count) {
+    return '$count từ sẽ được thêm';
+  }
+
+  @override
+  String bulkImportPreviewSkipped(int count) {
+    return '$count từ bị bỏ qua (không có trong từ vựng)';
+  }
+
+  @override
+  String get bulkImportShowSkipped => 'Xem từ bị bỏ qua';
+
+  @override
+  String get bulkImportHideSkipped => 'Ẩn';
+
+  @override
+  String bulkImportAlreadyIn(int count) {
+    return '$count từ đã có trong bộ sưu tập';
+  }
+
+  @override
+  String bulkImportConfirmAdd(int count) {
+    return 'Thêm $count từ';
+  }
+
+  @override
+  String get bulkImportNoMatches => 'Không khớp được từ nào';
+
+  @override
+  String get bulkImportEmptyInput => 'Hãy dán ít nhất một từ';
+
+  @override
+  String get bulkImportNeedCollection => 'Chọn hoặc tạo bộ sưu tập trước';
+
+  @override
+  String bulkImportDoneToast(int count, String name) {
+    return 'Đã thêm $count từ vào \"$name\"';
+  }
+
+  @override
+  String bulkImportPreviewCustom(int count) {
+    return '$count từ tự định nghĩa (sẽ dịch tự động)';
+  }
+
+  @override
+  String get bulkImportTranslating => 'Đang dịch từ tự định nghĩa…';
+
+  @override
+  String get bulkImportCustomBadge => 'tự định nghĩa';
+
+  @override
+  String searchAddCustomCta(String word) {
+    return 'Dùng \"$word\" làm từ tự định nghĩa';
+  }
 }

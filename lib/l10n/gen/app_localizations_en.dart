@@ -1106,4 +1106,84 @@ class AppLocalizationsEn extends AppLocalizations {
   String popularityLevelLabel(String level) {
     return 'Level $level';
   }
+
+  @override
+  String get bulkImportTitle => 'Import words';
+
+  @override
+  String get bulkImportTargetLabel => 'Target collection';
+
+  @override
+  String get bulkImportPickCollection => 'Pick a collection';
+
+  @override
+  String get bulkImportCreateNew => 'Create new collection…';
+
+  @override
+  String get bulkImportNewNameHint => 'Collection name';
+
+  @override
+  String get bulkImportPasteLabel => 'Paste words';
+
+  @override
+  String get bulkImportPasteHint => 'One word per line. Commas also work.';
+
+  @override
+  String get bulkImportPreview => 'Preview';
+
+  @override
+  String bulkImportPreviewMatched(int count) {
+    return '$count will be added';
+  }
+
+  @override
+  String bulkImportPreviewSkipped(int count) {
+    return '$count skipped (not in vocabulary)';
+  }
+
+  @override
+  String get bulkImportShowSkipped => 'Show skipped';
+
+  @override
+  String get bulkImportHideSkipped => 'Hide';
+
+  @override
+  String bulkImportAlreadyIn(int count) {
+    return '$count already in collection';
+  }
+
+  @override
+  String bulkImportConfirmAdd(int count) {
+    return 'Add $count words';
+  }
+
+  @override
+  String get bulkImportNoMatches => 'No matching words found';
+
+  @override
+  String get bulkImportEmptyInput => 'Paste at least one word';
+
+  @override
+  String get bulkImportNeedCollection => 'Pick or create a collection first';
+
+  @override
+  String bulkImportDoneToast(int count, String name) {
+    return 'Added $count to \"$name\"';
+  }
+
+  @override
+  String bulkImportPreviewCustom(int count) {
+    return '$count custom (will be auto-translated)';
+  }
+
+  @override
+  String get bulkImportTranslating => 'Translating custom words…';
+
+  @override
+  String get bulkImportCustomBadge => 'custom';
+
+  @override
+  String searchAddCustomCta(String word) {
+    return 'Use \"$word\" as a custom word';
+  }
 }

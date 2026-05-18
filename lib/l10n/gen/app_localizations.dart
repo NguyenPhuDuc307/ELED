@@ -2071,6 +2071,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Level {level}'**
   String popularityLevelLabel(String level);
+
+  /// No description provided for @bulkImportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Import words'**
+  String get bulkImportTitle;
+
+  /// No description provided for @bulkImportTargetLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Target collection'**
+  String get bulkImportTargetLabel;
+
+  /// No description provided for @bulkImportPickCollection.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a collection'**
+  String get bulkImportPickCollection;
+
+  /// No description provided for @bulkImportCreateNew.
+  ///
+  /// In en, this message translates to:
+  /// **'Create new collection…'**
+  String get bulkImportCreateNew;
+
+  /// No description provided for @bulkImportNewNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Collection name'**
+  String get bulkImportNewNameHint;
+
+  /// No description provided for @bulkImportPasteLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste words'**
+  String get bulkImportPasteLabel;
+
+  /// No description provided for @bulkImportPasteHint.
+  ///
+  /// In en, this message translates to:
+  /// **'One word per line. Commas also work.'**
+  String get bulkImportPasteHint;
+
+  /// No description provided for @bulkImportPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get bulkImportPreview;
+
+  /// No description provided for @bulkImportPreviewMatched.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} will be added'**
+  String bulkImportPreviewMatched(int count);
+
+  /// No description provided for @bulkImportPreviewSkipped.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} skipped (not in vocabulary)'**
+  String bulkImportPreviewSkipped(int count);
+
+  /// No description provided for @bulkImportShowSkipped.
+  ///
+  /// In en, this message translates to:
+  /// **'Show skipped'**
+  String get bulkImportShowSkipped;
+
+  /// No description provided for @bulkImportHideSkipped.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide'**
+  String get bulkImportHideSkipped;
+
+  /// No description provided for @bulkImportAlreadyIn.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} already in collection'**
+  String bulkImportAlreadyIn(int count);
+
+  /// No description provided for @bulkImportConfirmAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Add {count} words'**
+  String bulkImportConfirmAdd(int count);
+
+  /// No description provided for @bulkImportNoMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching words found'**
+  String get bulkImportNoMatches;
+
+  /// No description provided for @bulkImportEmptyInput.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste at least one word'**
+  String get bulkImportEmptyInput;
+
+  /// No description provided for @bulkImportNeedCollection.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick or create a collection first'**
+  String get bulkImportNeedCollection;
+
+  /// No description provided for @bulkImportDoneToast.
+  ///
+  /// In en, this message translates to:
+  /// **'Added {count} to \"{name}\"'**
+  String bulkImportDoneToast(int count, String name);
+
+  /// No description provided for @bulkImportPreviewCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} custom (will be auto-translated)'**
+  String bulkImportPreviewCustom(int count);
+
+  /// No description provided for @bulkImportTranslating.
+  ///
+  /// In en, this message translates to:
+  /// **'Translating custom words…'**
+  String get bulkImportTranslating;
+
+  /// No description provided for @bulkImportCustomBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'custom'**
+  String get bulkImportCustomBadge;
+
+  /// No description provided for @searchAddCustomCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Use \"{word}\" as a custom word'**
+  String searchAddCustomCta(String word);
 }
 
 class _AppLocalizationsDelegate

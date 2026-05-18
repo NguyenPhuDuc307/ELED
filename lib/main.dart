@@ -17,6 +17,7 @@ import 'theme/brutalist_theme.dart';
 import 'services/analytics_service.dart';
 import 'services/auth_service.dart';
 import 'services/csv_service.dart';
+import 'services/custom_word_service.dart';
 import 'services/locale_service.dart';
 import 'services/notification_service.dart';
 import 'services/srs_service.dart';
@@ -69,6 +70,7 @@ Future<void> _bootstrap() async {
   // it has to come after the parallel init above.
   await SrsService().init();
   await StreakService().init();
+  await CustomWordService().init();
 
   // Warm the vocabulary cache in the background so TodayScreen's first build
   // doesn't have to parse 5000+ CSV rows on the UI thread. Fire-and-forget —

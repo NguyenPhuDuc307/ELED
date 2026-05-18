@@ -1,5 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
@@ -10,6 +8,7 @@ import '../models/word_state.dart';
 import '../services/learning_state_service.dart';
 import '../services/oxford_service.dart';
 import '../services/srs_service.dart';
+import '../services/translation_service.dart';
 import '../services/user_data_service.dart';
 import 'exercises/fill_in_context_exercise.dart';
 import 'exercises/listen_and_type_exercise.dart';
@@ -169,36 +168,14 @@ class _LearningScreenState extends State<LearningScreen> {
     if (senses == null || senses.isEmpty) return;
     if (!mounted) return;
     setState(() => _translatingDef = true);
-    final results = await Future.wait(senses.map((s) => _translateToVi(s.definition)));
+    final results = await Future.wait(
+      senses.map((s) => TranslationService.toVi(s.definition)),
+    );
     if (!mounted) return;
     setState(() {
       _translatedDefsCache[index] = results;
       _translatingDef = false;
     });
-  }
-
-  static Future<String> _translateToVi(String text) async {
-    if (text.isEmpty) return '';
-    try {
-      final uri = Uri.parse(
-        'https://translate.googleapis.com/translate_a/single'
-        '?client=gtx&sl=en&tl=vi&dt=t&q=${Uri.encodeComponent(text)}',
-      );
-      final client = HttpClient();
-      final request = await client.getUrl(uri);
-      final response = await request.close();
-      client.close();
-      if (response.statusCode != 200) return text;
-      final body = await response.transform(utf8.decoder).join();
-      final json = jsonDecode(body) as List;
-      final segments = json[0] as List;
-      return segments
-          .where((s) => s is List && s.isNotEmpty && s[0] is String)
-          .map((s) => s[0] as String)
-          .join();
-    } catch (_) {
-      return text;
-    }
   }
 
   @override

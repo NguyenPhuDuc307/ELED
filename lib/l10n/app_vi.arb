@@ -6,7 +6,6 @@
   "languageEnglish": "English",
   "languageVietnamese": "Tiếng Việt",
   "languageSystem": "Theo hệ thống",
-
   "today": "Hôm nay",
   "todaySessionLabel": "Phiên hôm nay",
   "todaySessionCountSingular": "{count} từ",
@@ -28,7 +27,6 @@
   "todayTooltipSearch": "Tìm kiếm",
   "todayTooltipBrowse": "Duyệt",
   "todayTooltipSettings": "Cài đặt",
-
   "weekdayMonday": "Thứ Hai",
   "weekdayTuesday": "Thứ Ba",
   "weekdayWednesday": "Thứ Tư",
@@ -36,7 +34,6 @@
   "weekdayFriday": "Thứ Sáu",
   "weekdaySaturday": "Thứ Bảy",
   "weekdaySunday": "Chủ Nhật",
-
   "monthJanuary": "Tháng 1",
   "monthFebruary": "Tháng 2",
   "monthMarch": "Tháng 3",
@@ -49,12 +46,10 @@
   "monthOctober": "Tháng 10",
   "monthNovember": "Tháng 11",
   "monthDecember": "Tháng 12",
-
   "syncPreparing": "Đang chuẩn bị từ vựng…",
   "syncLoading": "Đang tải từ vựng…",
   "syncErrorTitle": "Không tải được từ vựng",
   "syncTryAgain": "Thử lại",
-
   "settingsTitle": "Cài đặt",
   "settingsAppearance": "Giao diện",
   "settingsAppearanceSubtitle": "Chủ đề",
@@ -65,7 +60,6 @@
   "settingsDataSubtitle": "Sao lưu và đặt lại",
   "settingsAbout": "Giới thiệu",
   "settingsAboutSubtitle": "Phiên bản và đóng góp",
-
   "appearanceTitle": "Giao diện",
   "appearanceTheme": "Chủ đề",
   "appearanceThemeSubtitle": "Chọn bảng màu. Thay đổi áp dụng ngay.",
@@ -73,7 +67,6 @@
   "themeSystem": "Hệ thống",
   "themeLight": "Sáng",
   "themeDark": "Tối",
-
   "commonCancel": "Huỷ",
   "commonSave": "Lưu",
   "commonDone": "Xong",
@@ -93,7 +86,6 @@
   "commonNotNow": "Để sau",
   "commonOpen": "Mở",
   "commonCheck": "Kiểm tra",
-
   "menuTitle": "Duyệt",
   "menuPopularity": "Theo cấp độ",
   "menuTopic": "Theo chủ đề",
@@ -115,7 +107,6 @@
   "menuCardHistorySubtitle": "Từ qua thông báo",
   "menuCouldNotResume": "Không thể tiếp tục — từ vựng đã thay đổi",
   "menuMarkedKnownToast": "Đã thêm \"{word}\" vào danh sách từ đã biết",
-
   "homeSearchHint": "Tìm một từ",
   "homeNoResults": "Không có kết quả",
   "homeNoResultsHint": "Thử chính tả khác hoặc duyệt theo cấp độ / chủ đề.",
@@ -148,7 +139,6 @@
   "homeNoMatchesSubtitle": "Thử từ khoá khác.",
   "homeDayLabel": "Ngày {day}",
   "homeWordsCount": "{count} từ",
-
   "learningProgress": "{current} / {total}",
   "learningKnowThis": "Tôi đã biết từ này",
   "learningAgain": "Lại",
@@ -176,7 +166,6 @@
   "learningCouldntOpenLink": "Không mở được liên kết",
   "learningLastSession": "Phiên gần nhất",
   "learningSessionLabelDay": "Ngày {day}",
-
   "resultsTitle": "Hoàn thành",
   "resultsReviewed": "Đã ôn",
   "resultsAccuracy": "Độ chính xác",
@@ -199,7 +188,6 @@
   "resultsStreakDaysPlural": "{count} ngày",
   "resultsAnotherSession": "Phiên khác",
   "resultsBackToToday": "Về Hôm nay",
-
   "onboardingNext": "Tiếp",
   "onboardingGetStarted": "Bắt đầu",
   "onboardingSkip": "Bỏ qua",
@@ -211,7 +199,6 @@
   "onboarding3Body": "Sau mỗi thẻ, hãy đánh giá: Lại / Khó / Tốt / Dễ. Đánh giá của bạn quyết định khi nào từ đó xuất hiện lại — Dễ sẽ biến mất một tháng, Lại quay lại ngày mai.",
   "onboarding4Title": "Đa dạng hơn nhồi nhét",
   "onboarding4Body": "Khi học, các phiên kết hợp thẻ học, trắc nghiệm, nghe và gõ, điền vào ngữ cảnh, cùng trò ghép 4 cặp. Cùng từ vựng, mỗi lần một góc nhìn mới.",
-
   "helpTitle": "Trợ giúp",
   "helpAppBarTitle": "Hướng dẫn sử dụng",
   "helpTopic1Title": "Cách học hoạt động",
@@ -236,13 +223,11 @@
   "helpTopic10Body": "Biểu tượng kính lúp tìm trong toàn bộ từ vựng theo từ hoặc bản dịch. Dùng cho tra cứu nhanh; bấm vào kết quả mở thẻ Nhận diện đầy đủ với audio, IPA và định nghĩa.",
   "helpTopic11Title": "Sao lưu & đồng bộ",
   "helpTopic11Body": "Cài đặt → Tài khoản & dữ liệu cho phép Xuất từ đã biết + bộ sưu tập sang tệp JSON qua bảng chia sẻ hệ thống, và Nhập lại đúng định dạng đó. Đăng nhập Google để tự động đồng bộ danh sách từ đã biết và bộ sưu tập trên các thiết bị.",
-
   "matchGameTitle": "Ghép cặp",
   "matchGameCongrats": "Tuyệt!",
   "matchGamePlayAgain": "Chơi lại",
   "matchGameDone": "Xong",
   "matchGameProgress": "{matched} / {total}",
-
   "collectionsTitle": "Bộ sưu tập",
   "collectionsEmpty": "Chưa có bộ sưu tập nào",
   "collectionsEmptyHint": "Bấm dấu lưu trên một từ để thêm vào đây.",
@@ -258,7 +243,6 @@
   "collectionsDeleteTitle": "XOÁ {name}?",
   "collectionsDeleteBody": "Bạn có chắc muốn xoá bộ sưu tập này?",
   "collectionsWordsCount": "{count} từ",
-
   "topicsTitle": "Chủ đề",
   "topicsEmptyTitle": "Không có chủ đề ở các cấp đã chọn",
   "topicsEmptyHint": "Chọn thêm cấp độ ở trên để xem chủ đề.",
@@ -266,9 +250,7 @@
   "topicsCategorySummaryPlural": "{topicCount} chủ đề · {wordCount} từ",
   "topicCategoryWordSingular": "{count} từ",
   "topicCategoryWordPlural": "{count} từ",
-
   "topicCategoryTitle": "{category}",
-
   "notificationsTitle": "Thông báo",
   "notificationsEnable": "Nhắc học từ",
   "notificationsEnableSubtitle": "Nhận một từ mới định kỳ khi không mở app.",
@@ -293,7 +275,6 @@
   "notificationsBatteryBody": "Android có thể tạm dừng thông báo ELED sau một ngày để tiết kiệm pin. Cho phép ELED chạy không giới hạn để thông báo tiếp tục hoạt động.",
   "notificationsBatteryCardTitle": "Cho phép chạy nền",
   "notificationsBatteryCardSubtitle": "Bấm để thông báo tiếp tục sau 1 ngày",
-
   "dataTitle": "Dữ liệu",
   "dataBackup": "Sao lưu",
   "dataExport": "Xuất",
@@ -320,7 +301,6 @@
   "dataGoogleUser": "Người dùng Google",
   "dataSignOut": "Đăng xuất",
   "dataRateApp": "Đánh giá ELED",
-
   "aboutTitle": "Giới thiệu",
   "aboutVersion": "Phiên bản",
   "aboutRateApp": "Đánh giá ứng dụng",
@@ -338,7 +318,6 @@
   "aboutOpen": "Mở",
   "aboutUpToDate": "Bạn đang dùng phiên bản mới nhất",
   "aboutDownloadFailed": "Tải về thất bại: {error}",
-
   "exerciseCorrect": "Chính xác",
   "exerciseIncorrect": "Chưa đúng",
   "exerciseAnswerLabel": "Đáp án",
@@ -349,6 +328,27 @@
   "exerciseMissingWord": "Từ còn thiếu",
   "exerciseSkip": "Bỏ qua",
   "exerciseCheck": "Kiểm tra",
-
-  "popularityLevelLabel": "Cấp {level}"
+  "popularityLevelLabel": "Cấp {level}",
+  "bulkImportTitle": "Nhập danh sách từ",
+  "bulkImportTargetLabel": "Bộ sưu tập đích",
+  "bulkImportPickCollection": "Chọn bộ sưu tập",
+  "bulkImportCreateNew": "Tạo bộ sưu tập mới…",
+  "bulkImportNewNameHint": "Tên bộ sưu tập",
+  "bulkImportPasteLabel": "Dán danh sách từ",
+  "bulkImportPasteHint": "Mỗi dòng một từ. Dấu phẩy cũng được.",
+  "bulkImportPreview": "Xem trước",
+  "bulkImportPreviewMatched": "{count} từ sẽ được thêm",
+  "bulkImportPreviewSkipped": "{count} từ bị bỏ qua (không có trong từ vựng)",
+  "bulkImportShowSkipped": "Xem từ bị bỏ qua",
+  "bulkImportHideSkipped": "Ẩn",
+  "bulkImportAlreadyIn": "{count} từ đã có trong bộ sưu tập",
+  "bulkImportConfirmAdd": "Thêm {count} từ",
+  "bulkImportNoMatches": "Không khớp được từ nào",
+  "bulkImportEmptyInput": "Hãy dán ít nhất một từ",
+  "bulkImportNeedCollection": "Chọn hoặc tạo bộ sưu tập trước",
+  "bulkImportDoneToast": "Đã thêm {count} từ vào \"{name}\"",
+  "bulkImportPreviewCustom": "{count} từ tự định nghĩa (sẽ dịch tự động)",
+  "bulkImportTranslating": "Đang dịch từ tự định nghĩa…",
+  "bulkImportCustomBadge": "tự định nghĩa",
+  "searchAddCustomCta": "Dùng \"{word}\" làm từ tự định nghĩa"
 }

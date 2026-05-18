@@ -55,6 +55,11 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
   bool _isSearching = false;
+
+  /// Active part-of-speech filter. Empty = no filter (show all). When non-
+  /// empty, only words whose POS column contains *any* of the selected
+  /// tokens are surfaced.
+  final Set<String> _selectedPos = {};
   Timer? _debounceTimer;
 
   final _audioPlayer = AudioPlayer();
@@ -419,13 +424,15 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           if (!_isSearching && widget.mode == 'POPULARITY') _buildLevelSelector(),
+          if (!_isSearching && !_isLoading && _supportsPosFilter())
+            _buildPosFilter(_posFilterPool()),
           Expanded(
             child: _isLoading
                 ? _SkeletonLoader(
                     isDayList: widget.mode == 'POPULARITY' || widget.mode == 'TOPIC',
                   )
                 : (widget.mode == 'KNOWN' || widget.mode == 'HISTORY' || widget.mode == 'COLLECTION')
-                    ? _buildFlatList(_allVocabData)
+                    ? _buildFlatList(_filteredFlatList(_allVocabData))
                     : _vocabData.isEmpty && _allVocabData.isEmpty
                         ? _buildEmptyState()
                         : (_isSearching && _searchQuery.isEmpty && widget.mode == 'SEARCH')
@@ -437,6 +444,27 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
     );
+  }
+
+  bool _supportsPosFilter() {
+    return widget.mode == 'POPULARITY' ||
+        widget.mode == 'TOPIC' ||
+        widget.mode == 'COLLECTION' ||
+        widget.mode == 'KNOWN';
+  }
+
+  /// Pool of vocab used to compute the chip row. For grouped modes we
+  /// flatten every Day's words; for flat modes we just hand back the list.
+  List<Vocabulary> _posFilterPool() {
+    if (widget.mode == 'POPULARITY' || widget.mode == 'TOPIC') {
+      return [for (final list in _vocabData.values) ...list];
+    }
+    return _allVocabData;
+  }
+
+  List<Vocabulary> _filteredFlatList(List<Vocabulary> source) {
+    if (_selectedPos.isEmpty) return source;
+    return source.where(_matchesPosFilter).toList();
   }
 
   Widget _buildSearchPromptState() {
@@ -476,6 +504,168 @@ class _HomeScreenState extends State<HomeScreen> {
                     size: 22,
                     color: BrutalistTheme.primary.withValues(alpha: 0.85),
                   ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ── POS filter helpers ──────────────────────────────────────────────────
+
+  /// Splits a CSV-style POS field ("noun, verb") into canonical lowercase
+  /// tokens. Returns an empty list when the field has no recognised value.
+  List<String> _splitPos(String raw) {
+    if (raw.isEmpty) return const [];
+    return raw
+        .split(RegExp(r'[,/;]'))
+        .map((s) => s.trim().toLowerCase())
+        .where((s) => s.isNotEmpty)
+        .toList();
+  }
+
+  /// Maps a raw POS token to a localized display label. Falls back to the
+  /// raw token (Title Case) so unmapped tokens still surface readably.
+  String _posLabel(String token, AppLocalizations t) {
+    switch (token) {
+      case 'noun':
+      case 'n.':
+        return t.posNoun;
+      case 'verb':
+      case 'v.':
+        return t.posVerb;
+      case 'adjective':
+      case 'adj.':
+      case 'adj':
+        return t.posAdjective;
+      case 'adverb':
+      case 'adv.':
+      case 'adv':
+        return t.posAdverb;
+      case 'preposition':
+      case 'prep.':
+      case 'prep':
+        return t.posPreposition;
+      case 'conjunction':
+      case 'conj.':
+      case 'conj':
+        return t.posConjunction;
+      case 'pronoun':
+      case 'pron.':
+      case 'pron':
+        return t.posPronoun;
+      case 'determiner':
+      case 'det.':
+      case 'det':
+        return t.posDeterminer;
+      case 'exclamation':
+      case 'excl.':
+      case 'exclam':
+        return t.posExclamation;
+      case 'modal verb':
+      case 'modal':
+        return t.posModal;
+      case 'number':
+      case 'num.':
+        return t.posNumber;
+      case 'article':
+        return t.posArticle;
+      default:
+        return token.isEmpty
+            ? token
+            : token[0].toUpperCase() + token.substring(1);
+    }
+  }
+
+  /// Collects the unique canonical POS tokens present in [pool], sorted so
+  /// the chip row is stable across rebuilds.
+  List<String> _availablePos(List<Vocabulary> pool) {
+    final set = <String>{};
+    for (final v in pool) {
+      set.addAll(_splitPos(v.partOfSpeech));
+    }
+    final list = set.toList()..sort();
+    return list;
+  }
+
+  /// True when [vocab] passes the active POS filter — i.e. any of the
+  /// vocab's POS tokens is in [_selectedPos]. Empty filter ⇒ everything
+  /// passes.
+  bool _matchesPosFilter(Vocabulary vocab) {
+    if (_selectedPos.isEmpty) return true;
+    final tokens = _splitPos(vocab.partOfSpeech);
+    for (final tok in tokens) {
+      if (_selectedPos.contains(tok)) return true;
+    }
+    return false;
+  }
+
+  /// Horizontal chip row above the list. Tap to toggle each POS token in
+  /// the active filter. Hidden when the source pool has only one (or zero)
+  /// POS values — a chip row of one is just noise.
+  Widget _buildPosFilter(List<Vocabulary> pool) {
+    final t = AppLocalizations.of(context);
+    final pos = _availablePos(pool);
+    if (pos.length < 2) return const SizedBox.shrink();
+    return SizedBox(
+      height: 44,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+        children: [
+          _posChip(
+            label: t.posFilterAll,
+            selected: _selectedPos.isEmpty,
+            onTap: () => setState(_selectedPos.clear),
+          ),
+          const SizedBox(width: 8),
+          for (final token in pos) ...[
+            _posChip(
+              label: _posLabel(token, t),
+              selected: _selectedPos.contains(token),
+              onTap: () => setState(() {
+                if (!_selectedPos.add(token)) _selectedPos.remove(token);
+              }),
+            ),
+            const SizedBox(width: 8),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _posChip({
+    required String label,
+    required bool selected,
+    required VoidCallback onTap,
+  }) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 140),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+          decoration: BoxDecoration(
+            color: selected
+                ? BrutalistTheme.primary
+                : context.bBg,
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: selected ? BrutalistTheme.primary : context.bSubtle,
+              width: 1.5,
+            ),
+          ),
+          alignment: Alignment.center,
+          child: Text(
+            label,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: selected
+                      ? BrutalistTheme.white
+                      : context.bBorder,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 12,
+                ),
           ),
         ),
       ),
@@ -1239,9 +1429,15 @@ class _HomeScreenState extends State<HomeScreen> {
     if (index + 1 >= days.length) return null;
     return () {
       final nextDay = days[index + 1];
+      final raw = _vocabData[nextDay] ?? const <Vocabulary>[];
+      // Honour the active POS filter when chaining day → day, otherwise
+      // the next session would silently include filtered-out words.
+      final words = _selectedPos.isEmpty
+          ? raw
+          : raw.where(_matchesPosFilter).toList();
       Navigator.of(context).pushReplacement(smoothRoute(LearningScreen(
         day: nextDay,
-        vocabularies: _vocabData[nextDay]!,
+        vocabularies: words,
         onCompleted: _buildNextDayCallback(context, days, index + 1),
       )));
     };
@@ -1249,7 +1445,26 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildList() {
     final t = AppLocalizations.of(context);
-    final days = _vocabData.keys.toList()..sort();
+    // Build a POS-filtered view of every day. Days that have zero matching
+    // words after filtering disappear from the grid so the user isn't left
+    // tapping into an empty session.
+    final allDays = _vocabData.keys.toList()..sort();
+    final dayWords = <int, List<Vocabulary>>{};
+    for (final d in allDays) {
+      final list = _selectedPos.isEmpty
+          ? _vocabData[d]!
+          : _vocabData[d]!.where(_matchesPosFilter).toList();
+      if (list.isNotEmpty) dayWords[d] = list;
+    }
+    final days = dayWords.keys.toList();
+
+    if (days.isEmpty) {
+      return _emptyState(
+        icon: Icons.filter_alt_outlined,
+        title: t.homeNoMatchesTitle,
+        subtitle: t.homeNoMatchesSubtitle,
+      );
+    }
 
     // Compact 2-column grid so 8-10 days fit on one screen instead of 5.
     return GridView.builder(
@@ -1263,7 +1478,7 @@ class _HomeScreenState extends State<HomeScreen> {
       itemCount: days.length,
       itemBuilder: (context, index) {
         final day = days[index];
-        final vocabList = _vocabData[day]!;
+        final vocabList = dayWords[day]!;
         final dominantLevel = vocabList.isNotEmpty ? vocabList.first.levels : '';
 
         VoidCallback? onCompleted;
@@ -1272,7 +1487,7 @@ class _HomeScreenState extends State<HomeScreen> {
             final nextDay = days[index + 1];
             Navigator.of(context).pushReplacement(smoothRoute(LearningScreen(
               day: nextDay,
-              vocabularies: _vocabData[nextDay]!,
+              vocabularies: dayWords[nextDay]!,
               onCompleted: _buildNextDayCallback(context, days, index + 1),
             )));
           };

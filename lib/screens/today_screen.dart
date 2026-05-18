@@ -188,6 +188,12 @@ class _TodayScreenState extends State<TodayScreen> {
         ),
         actions: [
           IconButton(
+            tooltip: t.menuCardHistoryTitle,
+            icon: const Icon(Icons.notifications_none_rounded),
+            onPressed: () => Navigator.of(context)
+                .push(smoothRoute(const HomeScreen(mode: 'HISTORY'))),
+          ),
+          IconButton(
             tooltip: t.todayTooltipSearch,
             icon: const Icon(Icons.search_rounded),
             onPressed: () => Navigator.of(context)

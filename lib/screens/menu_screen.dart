@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../l10n/gen/app_localizations.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
@@ -33,7 +32,6 @@ class _MenuScreenState extends State<MenuScreen> {
   int _topicsCount = -1;
   int _collectionsCount = -1;
   int _knownCount = -1;
-  int _historyCount = -1;
 
   Future<void> _navigate(Widget page) async {
     if (_isNavigating) return;
@@ -61,19 +59,16 @@ class _MenuScreenState extends State<MenuScreen> {
       CsvService.loadAllVocabulary(excludeKnown: false),
       CsvService.getAvailableTopics(),
       CollectionService.getCollections(),
-      SharedPreferences.getInstance(),
     ]);
     if (!mounted) return;
     final vocab = results[0] as List;
     final topics = results[1] as List;
     final collections = results[2] as Map;
-    final prefs = results[3] as SharedPreferences;
     setState(() {
       _popularityCount = vocab.length;
       _topicsCount = topics.length;
       _collectionsCount = collections.length;
       _knownCount = UserDataService().knownWords.length;
-      _historyCount = (prefs.getStringList('notificationHistory') ?? []).length;
     });
   }
 
@@ -429,16 +424,6 @@ class _MenuScreenState extends State<MenuScreen> {
                         icon: Icons.bookmark_rounded,
                         count: _collectionsCount,
                         onTap: () => _navigate(const CollectionsScreen()),
-                      ),
-                      _menuCardGrid(
-                        context,
-                        title: t.menuCardHistoryTitle,
-                        subtitle: t.menuCardHistorySubtitle,
-                        color: const Color(0xFFE8D4C8),
-                        titleColor: const Color(0xFF5A3028),
-                        icon: Icons.history_rounded,
-                        count: _historyCount,
-                        onTap: () => _navigate(const HomeScreen(mode: 'HISTORY')),
                       ),
                     ],
                   ),

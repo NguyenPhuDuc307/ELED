@@ -368,5 +368,19 @@
   "speedMatchNeedMore": "Cần ít nhất 6 từ mới hoặc đang học",
   "speedMatchToday": "Match tốc độ",
   "helpTopic13Title": "Mini game & bài tập",
-  "helpTopic13Body": "Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy từ tiếng Anh, gõ nghĩa.\n\nMàn Today cũng có hai trò độc lập khi đủ từ mới: Ghép cặp (4–6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây)."
+  "helpTopic13Body": "Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy từ tiếng Anh, gõ nghĩa.\n\nMàn Today cũng có hai trò độc lập khi đủ từ mới: Ghép cặp (4–6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây).",
+  "posFilterLabel": "Lọc theo loại từ",
+  "posFilterAll": "Tất cả",
+  "posNoun": "Danh từ",
+  "posVerb": "Động từ",
+  "posAdjective": "Tính từ",
+  "posAdverb": "Trạng từ",
+  "posPreposition": "Giới từ",
+  "posConjunction": "Liên từ",
+  "posPronoun": "Đại từ",
+  "posDeterminer": "Hạn định từ",
+  "posExclamation": "Cảm thán từ",
+  "posModal": "Động từ tình thái",
+  "posNumber": "Số từ",
+  "posArticle": "Mạo từ"
 }

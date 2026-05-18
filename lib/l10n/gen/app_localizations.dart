@@ -2311,6 +2311,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer).'**
   String get helpTopic13Body;
+
+  /// No description provided for @posFilterLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter by part of speech'**
+  String get posFilterLabel;
+
+  /// No description provided for @posFilterAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get posFilterAll;
+
+  /// No description provided for @posNoun.
+  ///
+  /// In en, this message translates to:
+  /// **'Noun'**
+  String get posNoun;
+
+  /// No description provided for @posVerb.
+  ///
+  /// In en, this message translates to:
+  /// **'Verb'**
+  String get posVerb;
+
+  /// No description provided for @posAdjective.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjective'**
+  String get posAdjective;
+
+  /// No description provided for @posAdverb.
+  ///
+  /// In en, this message translates to:
+  /// **'Adverb'**
+  String get posAdverb;
+
+  /// No description provided for @posPreposition.
+  ///
+  /// In en, this message translates to:
+  /// **'Preposition'**
+  String get posPreposition;
+
+  /// No description provided for @posConjunction.
+  ///
+  /// In en, this message translates to:
+  /// **'Conjunction'**
+  String get posConjunction;
+
+  /// No description provided for @posPronoun.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronoun'**
+  String get posPronoun;
+
+  /// No description provided for @posDeterminer.
+  ///
+  /// In en, this message translates to:
+  /// **'Determiner'**
+  String get posDeterminer;
+
+  /// No description provided for @posExclamation.
+  ///
+  /// In en, this message translates to:
+  /// **'Exclamation'**
+  String get posExclamation;
+
+  /// No description provided for @posModal.
+  ///
+  /// In en, this message translates to:
+  /// **'Modal verb'**
+  String get posModal;
+
+  /// No description provided for @posNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Number'**
+  String get posNumber;
+
+  /// No description provided for @posArticle.
+  ///
+  /// In en, this message translates to:
+  /// **'Article'**
+  String get posArticle;
 }
 
 class _AppLocalizationsDelegate

@@ -1247,4 +1247,46 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get helpTopic13Body =>
       'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer).';
+
+  @override
+  String get posFilterLabel => 'Filter by part of speech';
+
+  @override
+  String get posFilterAll => 'All';
+
+  @override
+  String get posNoun => 'Noun';
+
+  @override
+  String get posVerb => 'Verb';
+
+  @override
+  String get posAdjective => 'Adjective';
+
+  @override
+  String get posAdverb => 'Adverb';
+
+  @override
+  String get posPreposition => 'Preposition';
+
+  @override
+  String get posConjunction => 'Conjunction';
+
+  @override
+  String get posPronoun => 'Pronoun';
+
+  @override
+  String get posDeterminer => 'Determiner';
+
+  @override
+  String get posExclamation => 'Exclamation';
+
+  @override
+  String get posModal => 'Modal verb';
+
+  @override
+  String get posNumber => 'Number';
+
+  @override
+  String get posArticle => 'Article';
 }

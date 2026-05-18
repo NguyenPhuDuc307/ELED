@@ -1241,4 +1241,46 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get helpTopic13Body =>
       'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy từ tiếng Anh, gõ nghĩa.\n\nMàn Today cũng có hai trò độc lập khi đủ từ mới: Ghép cặp (4–6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây).';
+
+  @override
+  String get posFilterLabel => 'Lọc theo loại từ';
+
+  @override
+  String get posFilterAll => 'Tất cả';
+
+  @override
+  String get posNoun => 'Danh từ';
+
+  @override
+  String get posVerb => 'Động từ';
+
+  @override
+  String get posAdjective => 'Tính từ';
+
+  @override
+  String get posAdverb => 'Trạng từ';
+
+  @override
+  String get posPreposition => 'Giới từ';
+
+  @override
+  String get posConjunction => 'Liên từ';
+
+  @override
+  String get posPronoun => 'Đại từ';
+
+  @override
+  String get posDeterminer => 'Hạn định từ';
+
+  @override
+  String get posExclamation => 'Cảm thán từ';
+
+  @override
+  String get posModal => 'Động từ tình thái';
+
+  @override
+  String get posNumber => 'Số từ';
+
+  @override
+  String get posArticle => 'Mạo từ';
 }

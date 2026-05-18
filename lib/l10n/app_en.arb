@@ -710,5 +710,19 @@
   "speedMatchNeedMore": "Need at least 6 new or learning words",
   "speedMatchToday": "Speed match",
   "helpTopic13Title": "Mini games & exercises",
-  "helpTopic13Body": "Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer)."
+  "helpTopic13Body": "Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer).",
+  "posFilterLabel": "Filter by part of speech",
+  "posFilterAll": "All",
+  "posNoun": "Noun",
+  "posVerb": "Verb",
+  "posAdjective": "Adjective",
+  "posAdverb": "Adverb",
+  "posPreposition": "Preposition",
+  "posConjunction": "Conjunction",
+  "posPronoun": "Pronoun",
+  "posDeterminer": "Determiner",
+  "posExclamation": "Exclamation",
+  "posModal": "Modal verb",
+  "posNumber": "Number",
+  "posArticle": "Article"
 }

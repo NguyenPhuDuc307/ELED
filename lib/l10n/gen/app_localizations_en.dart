@@ -691,7 +691,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Quiz (six-style mini-quiz, 10 words per round), Match game (calm 4-6 pair puzzle), and Speed match (30-second arcade) cards below. The same trio also surfaces on top of any collection you open.';
+      'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Quiz (mini-quiz of 10 words, pick which exercise types to include before starting), Match game (calm 4-6 pair puzzle), and Speed match (30-second arcade) cards below. The same trio also surfaces on top of any collection you open.';
 
   @override
   String get helpTopic3Title => 'The three rating buttons';
@@ -705,7 +705,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic4Body =>
-      'Cards inside a session rotate between six exercise styles so practice never gets repetitive: Recognize, Multiple choice, Listen and type, Fill in context, Anagram, First letter, and Reverse typing. See \"Mini games & exercises\" below for what each one does.\n\nOnce you have shown you know a word, sessions ease off to the gentle Recognize card — no more guessing puzzles on words you have already mastered.';
+      'Cards inside a session rotate between five exercise styles so practice never gets repetitive: Recognize, Multiple choice, Listen and type, Fill in context, Anagram, and Type the English word. See \"Mini games & exercises\" below for what each one does.\n\nOnce you have shown you know a word, sessions ease off to the gentle Recognize card — no more guessing puzzles on words you have already mastered.';
 
   @override
   String get helpTopic5Title => 'The match game';
@@ -747,7 +747,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic10Body =>
-      'The magnifier icon searches the entire vocabulary by word or translation. Use it for ad-hoc look-ups; tapping a result opens its full Recognize card with the audio, IPA, and definitions.';
+      'The magnifier icon searches the entire vocabulary by word or translation. Use it for ad-hoc look-ups; tapping a result opens its full Recognize card with the audio, IPA, and definitions.\n\nWhen a word or sentence isn\'t in the list, a Translate button appears — tap it to call Google Translate, auto-detecting English ↔ Vietnamese. Handy for sentences or words the app doesn\'t yet cover.';
 
   @override
   String get helpTopic11Title => 'Backup & sync';
@@ -1281,7 +1281,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic13Body =>
-      'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the Vietnamese meaning, type the English word.\n\nThe Today screen + each collection also offer three standalone activities: Quiz (mini-quiz round of 10), Match game (4-6 calm pairs), and Speed match (30-second timer).';
+      'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• Type the English word — see the Vietnamese meaning, type the English word.\n\nAll typing exercises use an IP-address-style slot input — one box per letter, with apostrophes and hyphens shown automatically. A free Hint button is available: Multiple choice removes one wrong option; typing exercises reveal the first letter.\n\nThe Today screen + each collection also offer three standalone activities: Quiz (mini-quiz round of 10, pick exercise types before starting), Match game (4-6 calm pairs), and Speed match (30-second timer).';
 
   @override
   String get posFilterLabel => 'Filter by part of speech';

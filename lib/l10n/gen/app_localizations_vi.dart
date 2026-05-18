@@ -689,7 +689,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n• Từ đến hạn ôn (đã hết khoảng cách lịch học)\n• Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Quiz (mini-quiz sáu kiểu, 10 từ mỗi lượt), Ghép cặp (4-6 cặp thư thái), và Match tốc độ (đồng hồ 30 giây). Cùng bộ 3 thẻ này cũng xuất hiện ở đầu mỗi bộ sưu tập.';
+      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n• Từ đến hạn ôn (đã hết khoảng cách lịch học)\n• Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Quiz (mini-quiz 10 từ mỗi lượt, có chọn dạng bài trước khi bắt đầu), Ghép cặp (4-6 cặp thư thái), và Match tốc độ (đồng hồ 30 giây). Cùng bộ 3 thẻ này cũng xuất hiện ở đầu mỗi bộ sưu tập.';
 
   @override
   String get helpTopic3Title => 'Ba nút đánh giá';
@@ -703,7 +703,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic4Body =>
-      'Các thẻ trong một phiên luân phiên qua sáu kiểu bài tập để không bị nhàm chán: Nhận biết, Trắc nghiệm, Nghe và gõ, Điền vào câu, Anagram, Chữ cái đầu, và Gõ ngược. Xem \"Mini game & bài tập\" bên dưới để biết chi tiết mỗi kiểu.\n\nKhi bạn đã thuộc một từ, phiên học sẽ chuyển sang thẻ Nhận biết nhẹ nhàng — không còn câu đố trên những từ bạn đã nắm vững.';
+      'Các thẻ trong một phiên luân phiên qua năm kiểu bài tập để không bị nhàm chán: Nhận biết, Trắc nghiệm, Nghe và gõ, Điền vào câu, Anagram, và Gõ từ tiếng Anh. Xem \"Mini game & bài tập\" bên dưới để biết chi tiết mỗi kiểu.\n\nKhi bạn đã thuộc một từ, phiên học sẽ chuyển sang thẻ Nhận biết nhẹ nhàng — không còn câu đố trên những từ bạn đã nắm vững.';
 
   @override
   String get helpTopic5Title => 'Trò ghép cặp';
@@ -745,7 +745,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic10Body =>
-      'Biểu tượng kính lúp tìm trong toàn bộ từ vựng theo từ hoặc bản dịch. Dùng cho tra cứu nhanh; bấm vào kết quả mở thẻ Nhận diện đầy đủ với audio, IPA và định nghĩa.';
+      'Biểu tượng kính lúp tìm trong toàn bộ từ vựng theo từ hoặc bản dịch. Dùng cho tra cứu nhanh; bấm vào kết quả mở thẻ Nhận diện đầy đủ với audio, IPA và định nghĩa.\n\nKhi từ hoặc câu không có trong danh sách, app sẽ hiện nút Dịch — bấm để gọi Google Translate, tự nhận biết tiếng Anh ↔ tiếng Việt. Hữu ích để tra nhanh câu hoặc từ chưa được app hỗ trợ.';
 
   @override
   String get helpTopic11Title => 'Sao lưu & đồng bộ';
@@ -1274,7 +1274,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic13Body =>
-      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy nghĩa tiếng Việt, gõ từ tiếng Anh.\n\nMàn Today và mỗi bộ sưu tập đều có ba hoạt động độc lập: Quiz (10 từ mỗi lượt), Ghép cặp (4-6 cặp), và Match tốc độ (đồng hồ 30 giây).';
+      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Gõ từ tiếng Anh — thấy nghĩa tiếng Việt, gõ từ tiếng Anh.\n\nMọi dạng gõ chữ dùng ô nhập kiểu IP-address — mỗi ký tự một ô, dấu nháy/gạch nối tự hiện sẵn. Có nút Gợi ý miễn phí: với Trắc nghiệm là loại 1 đáp án sai, các dạng gõ là lộ chữ cái đầu.\n\nMàn Today và mỗi bộ sưu tập đều có ba hoạt động độc lập: Quiz (10 từ mỗi lượt, chọn dạng bài trước khi bắt đầu), Ghép cặp (4-6 cặp), và Match tốc độ (đồng hồ 30 giây).';
 
   @override
   String get posFilterLabel => 'Lọc theo loại từ';

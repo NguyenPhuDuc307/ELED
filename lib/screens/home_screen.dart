@@ -693,6 +693,10 @@ class _HomeScreenState extends State<HomeScreen> {
           _collectionSessionCard(t, pool),
           if (gamePool.length >= 4) ...[
             const SizedBox(height: 8),
+            _collectionQuizCta(t, gamePool),
+          ],
+          if (gamePool.length >= 4) ...[
+            const SizedBox(height: 8),
             _collectionMatchCta(t, gamePool),
           ],
           if (gamePool.length >= 6) ...[
@@ -706,7 +710,13 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _collectionSessionCard(AppLocalizations t, List<Vocabulary> pool) {
+    // Each session is capped at a comfortable mini-pile so the user sees a
+    // clear finish line even when the collection has hundreds of words.
+    const sessionSize = 10;
     final total = pool.length;
+    final round = pool.length > sessionSize
+        ? (List.of(pool)..shuffle()).take(sessionSize).toList()
+        : pool;
     final label = total == 1
         ? t.todaySessionCountSingular(total)
         : t.todaySessionCountPlural(total);
@@ -714,7 +724,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: BrutalistTheme.primary,
       onTap: () => Navigator.of(context).push(smoothRoute(LearningScreen(
         day: 0,
-        vocabularies: pool,
+        vocabularies: round,
       ))),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
@@ -772,6 +782,59 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _collectionQuizCta(AppLocalizations t, List<Vocabulary> pool) {
+    const titleColor = Color(0xFF5A3A18);
+    return BrutalistCard(
+      backgroundColor: const Color(0xFFF5E4CC),
+      onTap: () {
+        // Mini-quiz round capped so the user gets a clear finish line even
+        // when the collection has many words.
+        const quizSize = 10;
+        final round = (List.of(pool)..shuffle()).take(quizSize).toList();
+        Navigator.of(context).push(smoothRoute(LearningScreen(
+          day: 0,
+          vocabularies: round,
+          quizMode: true,
+        )));
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: titleColor.withValues(alpha: 0.14),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.quiz_rounded,
+                  color: titleColor, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t.todayQuizTitle,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: titleColor,
+                          fontSize: 15)),
+                  Text(t.todayQuizSubtitle,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: titleColor.withValues(alpha: 0.75),
+                          fontSize: 12)),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: titleColor.withValues(alpha: 0.7)),
           ],
         ),
       ),

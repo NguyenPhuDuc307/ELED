@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show HapticFeedback, SystemSound, SystemSoundType;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -28,6 +29,10 @@ class LearningScreen extends StatefulWidget {
   final List<Vocabulary> vocabularies;
   final int initialIndex;
   final VoidCallback? onCompleted;
+  /// When true, every card runs a quiz-style exercise (MC / Listen /
+  /// Fill-in / Anagram / FirstLetter / ReverseTyping). The Recognize
+  /// flashcard is skipped — used by the standalone Quiz CTA on Today.
+  final bool quizMode;
 
   const LearningScreen({
     super.key,
@@ -35,6 +40,7 @@ class LearningScreen extends StatefulWidget {
     required this.vocabularies,
     this.initialIndex = 0,
     this.onCompleted,
+    this.quizMode = false,
   });
 
   @override
@@ -155,6 +161,50 @@ class _LearningScreenState extends State<LearningScreen> {
       behavior: SnackBarBehavior.floating,
     ));
     _armSnackTimer(messenger, const Duration(seconds: 2));
+  }
+
+  /// Quiz / auto-rated card feedback: "Chính xác" or "Chưa đúng" with a
+  /// matching haptic + system click so the answer feels acknowledged
+  /// without the user having to read the snackbar.
+  void _flashAutoRatedFeedback({required bool correct}) {
+    final t = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    final color = correct
+        ? BrutalistTheme.primary
+        : const Color(0xFFD9534F);
+    final icon = correct
+        ? Icons.check_circle_rounded
+        : Icons.cancel_rounded;
+    final label = correct ? t.exerciseCorrect : t.exerciseIncorrect;
+
+    // Tactile + audible feedback. Haptic on incorrect is heavier so a
+    // wrong answer feels like a small "thunk".
+    if (correct) {
+      HapticFeedback.lightImpact();
+      SystemSound.play(SystemSoundType.click);
+    } else {
+      HapticFeedback.heavyImpact();
+    }
+
+    messenger.hideCurrentSnackBar();
+    messenger.showSnackBar(SnackBar(
+      content: Row(
+        children: [
+          Icon(icon, color: BrutalistTheme.white, size: 18),
+          const SizedBox(width: 8),
+          Text(label,
+              style: const TextStyle(
+                color: BrutalistTheme.white,
+                fontWeight: FontWeight.w700,
+              )),
+        ],
+      ),
+      backgroundColor: color,
+      duration: const Duration(milliseconds: 1400),
+      behavior: SnackBarBehavior.floating,
+      margin: const EdgeInsets.fromLTRB(60, 0, 60, 100),
+    ));
+    _armSnackTimer(messenger, const Duration(milliseconds: 1400));
   }
 
   /// Brief, color-coded acknowledgement after a rating tap. Shorter than
@@ -719,11 +769,33 @@ class _LearningScreenState extends State<LearningScreen> {
     final cached = _exerciseCache[index];
     if (cached != null) return cached;
     final vocab = widget.vocabularies[index];
-    final type = SrsService().pickExerciseType(
+    var type = SrsService().pickExerciseType(
       vocab.word,
       hasAudio: vocab.audioLink.isNotEmpty,
       hasExample: vocab.url.isNotEmpty,
     );
+    // Quiz mode never falls back to the calm Recognize card — if the SRS
+    // picker would have done so (fresh word, mastered word), nudge into
+    // the rotation so the user actually gets quizzed.
+    if (widget.quizMode && type == ExerciseType.recognize) {
+      const rotation = [
+        ExerciseType.multipleChoice,
+        ExerciseType.firstLetter,
+        ExerciseType.anagram,
+        ExerciseType.reverseTyping,
+        ExerciseType.fillInContext,
+        ExerciseType.listenAndType,
+      ];
+      var candidate = rotation[(index + vocab.word.length) % rotation.length];
+      if (candidate == ExerciseType.listenAndType &&
+          vocab.audioLink.isEmpty) {
+        candidate = ExerciseType.firstLetter;
+      }
+      if (candidate == ExerciseType.anagram && vocab.word.length <= 2) {
+        candidate = ExerciseType.firstLetter;
+      }
+      type = candidate;
+    }
     _exerciseCache[index] = type;
     return type;
   }
@@ -754,7 +826,17 @@ class _LearningScreenState extends State<LearningScreen> {
     if (widget.vocabularies.isEmpty) return;
     final word = widget.vocabularies[_currentIndex].word;
     _sessionRatings.add(rating);
-    _flashRatingFeedback(rating);
+    // Quiz/auto-rated cards (anything that isn't a Recognize flashcard the
+    // user manually graded) get a "Chính xác / Chưa đúng" toast + haptics
+    // instead of the rating label — saying "Dễ" after the system auto-rates
+    // is confusing because the user didn't choose that word.
+    final exType = _exerciseFor(_currentIndex);
+    final autoRated = exType != ExerciseType.recognize;
+    if (autoRated) {
+      _flashAutoRatedFeedback(correct: rating == ReviewRating.good);
+    } else {
+      _flashRatingFeedback(rating);
+    }
     await SrsService().submitReview(word, rating);
     // Keep the legacy known-words store in sync so notifications + browse
     // modes still exclude what the user has already mastered.

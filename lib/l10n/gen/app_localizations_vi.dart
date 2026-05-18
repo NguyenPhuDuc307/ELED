@@ -678,7 +678,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n• Từ đến hạn ôn (đã hết khoảng cách lịch học)\n• Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Ghép cặp (4-6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây) bên dưới.';
+      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n• Từ đến hạn ôn (đã hết khoảng cách lịch học)\n• Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Quiz (mini-quiz sáu kiểu, 10 từ mỗi lượt), Ghép cặp (4-6 cặp thư thái), và Match tốc độ (đồng hồ 30 giây). Cùng bộ 3 thẻ này cũng xuất hiện ở đầu mỗi bộ sưu tập.';
 
   @override
   String get helpTopic3Title => 'Ba nút đánh giá';
@@ -720,7 +720,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic8Body =>
-      'Cài đặt → Thông báo cho phép chọn tần suất nhắc từ vựng và khung giờ hoạt động. Thông báo ưu tiên từ trong hàng đợi đến hạn, nên mỗi lần bấm là một lần ôn thực sự — không phải từ ngẫu nhiên bạn đã biết.\n\nTrên một số máy Android, bạn cần cho phép ELED chạy nền để thông báo tiếp tục hoạt động sau 1 ngày. Màn hình cài đặt sẽ nhắc bạn lần đầu.';
+      'Cài đặt → Thông báo cho bạn chọn tần suất, số lượng thông báo mỗi khung giờ (tối đa 5), và khung giờ hoạt động. Thông báo lấy từ cùng vốn từ với màn Today. Bộ lọc cấp độ + chủ đề nằm ở Cài đặt → Tuỳ chỉnh từ vựng và áp dụng cho toàn app.';
 
   @override
   String get helpTopic9Title => 'Duyệt từ điển';
@@ -1240,7 +1240,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic13Body =>
-      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy từ tiếng Anh, gõ nghĩa.\n\nMàn Today cũng có hai trò độc lập khi đủ từ mới: Ghép cặp (4–6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây).';
+      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy nghĩa tiếng Việt, gõ từ tiếng Anh.\n\nMàn Today và mỗi bộ sưu tập đều có ba hoạt động độc lập: Quiz (10 từ mỗi lượt), Ghép cặp (4-6 cặp), và Match tốc độ (đồng hồ 30 giây).';
 
   @override
   String get posFilterLabel => 'Lọc theo loại từ';
@@ -1295,4 +1295,44 @@ class AppLocalizationsVi extends AppLocalizations {
   String notificationsMaxCountValue(int count) {
     return 'Tối đa $count';
   }
+
+  @override
+  String get settingsLearningPrefs => 'Tuỳ chỉnh từ vựng';
+
+  @override
+  String get settingsLearningPrefsSubtitle => 'Cấp độ và chủ đề';
+
+  @override
+  String get learningPrefsTitle => 'Tuỳ chỉnh từ vựng';
+
+  @override
+  String get learningPrefsLevelsHeader => 'Cấp độ';
+
+  @override
+  String get learningPrefsLevelsSubtitle =>
+      'Các cấp CEFR sẽ dùng trong phiên học, game và thông báo';
+
+  @override
+  String get learningPrefsTopicsHeader => 'Chủ đề';
+
+  @override
+  String get learningPrefsTopicsSubtitle =>
+      'Giới hạn theo nhóm chủ đề cụ thể. Để trống nếu chọn tất cả.';
+
+  @override
+  String get todayQuizTitle => 'Quiz';
+
+  @override
+  String get todayQuizSubtitle => 'Sáu kiểu bài tập, không tính lịch ôn';
+
+  @override
+  String get todayQuizNotEnough =>
+      'Cần ít nhất 4 từ mới hoặc đang học để làm quiz';
+
+  @override
+  String get helpTopic14Title => 'Tuỳ chỉnh từ vựng';
+
+  @override
+  String get helpTopic14Body =>
+      'Cài đặt → Tuỳ chỉnh từ vựng điều khiển các cấp độ CEFR (A1-C1) và nhóm chủ đề mà app lấy từ. Lựa chọn này áp dụng cho mọi nơi chọn từ: phiên Today, các game, và Thông báo. Để trống Chủ đề để dùng tất cả. Cấp độ mặc định bật hết.';
 }

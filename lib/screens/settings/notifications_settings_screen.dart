@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../l10n/gen/app_localizations.dart';
-import '../../services/csv_service.dart';
 import '../../services/notification_service.dart';
 import '../../services/user_data_service.dart';
 import '../../theme/brutalist_theme.dart';
@@ -24,16 +23,11 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
   TimeOfDay _startTime = const TimeOfDay(hour: 9, minute: 0);
   TimeOfDay _endTime = const TimeOfDay(hour: 19, minute: 0);
 
-  List<String> _availableTopics = [];
-  List<String> _selectedPopularity = [];
-  List<String> _selectedTopics = [];
-
   bool _isLoading = true;
   bool _isSaving = false;
   bool _dirty = false;
   bool _batteryUnrestricted = true;
 
-  static const _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
   static const _maxCountCeiling = 5;
 
   @override
@@ -50,11 +44,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
   }
 
   Future<void> _load() async {
-    final topics = await CsvService.getAvailableTopics();
     final prefs = await SharedPreferences.getInstance();
     if (!mounted) return;
     setState(() {
-      _availableTopics = topics;
       _intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 60;
       _maxCount =
           (prefs.getInt('notificationMaxCount') ?? 5).clamp(1, _maxCountCeiling);
@@ -66,9 +58,6 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         hour: prefs.getInt('notificationEndHour') ?? 19,
         minute: prefs.getInt('notificationEndMinute') ?? 0,
       );
-      _selectedPopularity =
-          prefs.getStringList('selectedPopularity') ?? List.from(_allPopularityLevels);
-      _selectedTopics = prefs.getStringList('selectedTopics') ?? [];
       _isLoading = false;
     });
   }
@@ -87,16 +76,18 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     await prefs.setInt('notificationStartMinute', _startTime.minute);
     await prefs.setInt('notificationEndHour', _endTime.hour);
     await prefs.setInt('notificationEndMinute', _endTime.minute);
-    await prefs.setStringList('selectedPopularity', _selectedPopularity);
-    await prefs.setStringList('selectedTopics', _selectedTopics);
 
     if (_intervalMinutes > 0) {
       await NotificationService().requestPermissions();
 
-      // Use SRS-aware pool: due-soonest first, then fresh words as filler.
+      // Level + topic filters live in Vocabulary preferences now — read them
+      // through here so changing one screen takes effect across the app.
+      final popularity = prefs.getStringList('selectedPopularity') ??
+          ['A1', 'A2', 'B1', 'B2', 'C1'];
+      final topics = prefs.getStringList('selectedTopics') ?? const <String>[];
       final pool = await NotificationService.loadPool(
-        popularity: _selectedPopularity,
-        topics: _selectedTopics,
+        popularity: popularity,
+        topics: topics,
       );
 
       await NotificationService().scheduleVocabularyNotifications(
@@ -248,28 +239,6 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
                     ],
                   ),
                   const SizedBox(height: 32),
-
-                  SectionHeader(
-                    t.notificationsDifficultyLevels,
-                    subtitle: t.notificationsDifficultyLevelsSubtitle,
-                  ),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: _allPopularityLevels.map(_buildPopularityChip).toList(),
-                  ),
-                  const SizedBox(height: 32),
-
-                  SectionHeader(
-                    t.notificationsTopics,
-                    subtitle: t.notificationsTopicsSubtitle,
-                  ),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: _availableTopics.map(_buildTopicChip).toList(),
-                  ),
-                  const SizedBox(height: 32),
                 ],
               ),
             ),
@@ -294,68 +263,6 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
                     fontWeight: FontWeight.w700,
                     color: BrutalistTheme.black)),
           ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildPopularityChip(String level) {
-    final isSelected = _selectedPopularity.contains(level);
-    return FilterChip(
-      label: Text(level,
-          style: TextStyle(
-              fontWeight: FontWeight.w600,
-              color: isSelected ? BrutalistTheme.white : context.bBorder)),
-      selected: isSelected,
-      onSelected: (sel) {
-        setState(() {
-          if (sel) {
-            _selectedPopularity.add(level);
-          } else {
-            _selectedPopularity.remove(level);
-          }
-        });
-        _markDirty();
-      },
-      selectedColor: BrutalistTheme.primary,
-      backgroundColor: context.bBg,
-      showCheckmark: false,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-        side: BorderSide(
-          color: isSelected ? BrutalistTheme.primary : context.bSubtle,
-          width: 1.5,
-        ),
-      ),
-    );
-  }
-
-  Widget _buildTopicChip(String topic) {
-    final isSelected = _selectedTopics.contains(topic);
-    return FilterChip(
-      label: Text(topic.replaceAll('_', ' '),
-          style: TextStyle(
-              fontWeight: FontWeight.w600,
-              color: isSelected ? BrutalistTheme.white : context.bBorder)),
-      selected: isSelected,
-      onSelected: (sel) {
-        setState(() {
-          if (sel) {
-            _selectedTopics.add(topic);
-          } else {
-            _selectedTopics.remove(topic);
-          }
-        });
-        _markDirty();
-      },
-      selectedColor: BrutalistTheme.primary,
-      backgroundColor: context.bBg,
-      showCheckmark: false,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-        side: BorderSide(
-          color: isSelected ? BrutalistTheme.primary : context.bSubtle,
-          width: 1.5,
         ),
       ),
     );

@@ -165,6 +165,30 @@ class _TodayScreenState extends State<TodayScreen> {
     _refresh();
   }
 
+  Future<void> _startQuiz() async {
+    final pool = _gamePool();
+    if (pool.length < 4) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context).todayQuizNotEnough),
+          duration: const Duration(seconds: 3),
+        ),
+      );
+      return;
+    }
+    // Cap each quiz round at a comfortable mini-session size so the user
+    // gets a clear finish line instead of a long pile of cards.
+    const quizSize = 10;
+    final shuffled = List.of(pool)..shuffle();
+    final round = shuffled.take(quizSize).toList();
+    await Navigator.of(context).push(smoothRoute(LearningScreen(
+      day: 0,
+      vocabularies: round,
+      quizMode: true,
+    )));
+    _refresh();
+  }
+
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context);
@@ -220,6 +244,10 @@ class _TodayScreenState extends State<TodayScreen> {
                   _heading(),
                   const SizedBox(height: 20),
                   _sessionCard(),
+                  if (_gameEligibleCount >= 4) ...[
+                    const SizedBox(height: 10),
+                    _quizCta(),
+                  ],
                   if (_gameEligibleCount >= 4) ...[
                     const SizedBox(height: 10),
                     _matchGameCta(),
@@ -433,6 +461,55 @@ class _TodayScreenState extends State<TodayScreen> {
         const SizedBox(width: 12),
         Expanded(child: _statCard(t.todayStatToLearn, _freshAvailable, Icons.add_rounded)),
       ],
+    );
+  }
+
+  /// Quiz CTA — runs the user's game pool through a rotation of the six
+  /// quiz-style exercises (MC / Listen / Fill-in / Anagram / FirstLetter /
+  /// ReverseTyping). No Recognize flashcards. Distinct from Start session
+  /// because it doesn't follow the SRS schedule — just pulls from the
+  /// known + learning pool for active practice.
+  Widget _quizCta() {
+    final t = AppLocalizations.of(context);
+    const titleColor = Color(0xFF5A3A18);
+    return BrutalistCard(
+      backgroundColor: const Color(0xFFF5E4CC),
+      onTap: _startQuiz,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: titleColor.withValues(alpha: 0.14),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.quiz_rounded,
+                  color: titleColor, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t.todayQuizTitle,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: titleColor,
+                          fontSize: 15)),
+                  Text(t.todayQuizSubtitle,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: titleColor.withValues(alpha: 0.75),
+                          fontSize: 12)),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: titleColor.withValues(alpha: 0.7)),
+          ],
+        ),
+      ),
     );
   }
 

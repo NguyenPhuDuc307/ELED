@@ -32,20 +32,16 @@ class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
   String _normalise(String s) => s
       .toLowerCase()
       .trim()
-      .replaceAll(RegExp(r'[̀-ͯ]'), '') // strip diacritics-ish
       .replaceAll(RegExp(r"['\-‘’]"), '')
       .replaceAll(RegExp(r'\s+'), ' ');
 
-  /// True when the typed answer matches any of the comma/semicolon-separated
-  /// translation synonyms after light normalisation.
+  /// User sees the Vietnamese meaning, types the English word. Match is
+  /// lenient on case + stray punctuation, mirroring the listen-and-type
+  /// rules so a missing apostrophe doesn't count as wrong.
   bool _isCorrect(String typed) {
     final t = _normalise(typed);
     if (t.isEmpty) return false;
-    final candidates = widget.word.translation
-        .split(RegExp(r'[;,]'))
-        .map(_normalise)
-        .where((s) => s.isNotEmpty);
-    return candidates.contains(t);
+    return t == _normalise(widget.word.word);
   }
 
   Future<void> _submit() async {
@@ -94,12 +90,12 @@ class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
               borderRadius: BorderRadius.circular(16),
             ),
             child: Text(
-              widget.word.word,
-              style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                    fontWeight: FontWeight.w800,
+              widget.word.translation,
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    fontWeight: FontWeight.w700,
                     color: BrutalistTheme.primary,
-                    height: 1.2,
-                    fontSize: 32,
+                    height: 1.3,
+                    fontSize: 22,
                   ),
               textAlign: TextAlign.center,
             ),

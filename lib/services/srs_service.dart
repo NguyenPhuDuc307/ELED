@@ -149,11 +149,11 @@ class SrsService {
   }
 
   /// Pool of vocab eligible for the casual mini-games (Match / Speed match).
-  /// Unlike [buildTodaySession] this *does* include words the user has
-  /// marked as known — games are a light, low-stakes refresher so it's nice
-  /// to occasionally see "old friends" pop back up. Mastered words are
-  /// excluded only because their dueAtMs is years out and they'd dilute
-  /// the pool with words the user almost never touches.
+  /// Includes everything the user has interacted with at all — even words
+  /// marked as known/mastered — because games are a light refresher and
+  /// seeing "old friends" pop back up is half the fun. Tops up with fresh
+  /// words when the seen pool is thin (brand-new users) so the games are
+  /// playable from day one.
   Future<List<Vocabulary>> gamePool({
     List<String>? levelFilter,
     int limit = 30,
@@ -162,12 +162,9 @@ class SrsService {
     final all = await CsvService.loadAllVocabulary(excludeKnown: false);
     final byKey = {for (final v in all) v.word.toLowerCase(): v};
 
-    // Start with words that already have some history (due + learning +
-    // reviewing). Order: most recently/heavily seen first.
-    final now = DateTime.now().millisecondsSinceEpoch;
+    // Any word with history. Order by recency so the games feel current.
     final seen = _states.values
-        .where((s) => s.stage != SrsStage.mastered)
-        .where((s) => s.totalSeen > 0 || s.dueAtMs <= now)
+        .where((s) => s.totalSeen > 0)
         .toList()
       ..sort((a, b) => b.lastReviewedMs.compareTo(a.lastReviewedMs));
 

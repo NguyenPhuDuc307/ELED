@@ -1325,7 +1325,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpTopic2Body.
   ///
   /// In en, this message translates to:
-  /// **'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Match game (calm 4-6 pair puzzle) and Speed match (30-second arcade) cards below.'**
+  /// **'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Quiz (six-style mini-quiz, 10 words per round), Match game (calm 4-6 pair puzzle), and Speed match (30-second arcade) cards below. The same trio also surfaces on top of any collection you open.'**
   String get helpTopic2Body;
 
   /// No description provided for @helpTopic3Title.
@@ -1397,7 +1397,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpTopic8Body.
   ///
   /// In en, this message translates to:
-  /// **'Settings → Notifications lets you choose how often a vocabulary reminder fires and your active hours. The reminders pick words from your due queue first, so each tap is a real review — not a random word you already know.\n\nOn some Android phones you\'ll need to allow background activity for ELED so the reminders keep firing past a day. The settings screen prompts you the first time.'**
+  /// **'Settings → Notifications lets you choose how often a vocabulary reminder fires, how many fire in each active period (max 5), and your active hours. The reminders pick from the same word pool the Today screen uses. The level + topic filter for which words show up lives in Settings → Vocabulary preferences and is shared across the whole app.'**
   String get helpTopic8Body;
 
   /// No description provided for @helpTopic9Title.
@@ -2309,7 +2309,7 @@ abstract class AppLocalizations {
   /// No description provided for @helpTopic13Body.
   ///
   /// In en, this message translates to:
-  /// **'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer).'**
+  /// **'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the Vietnamese meaning, type the English word.\n\nThe Today screen + each collection also offer three standalone activities: Quiz (mini-quiz round of 10), Match game (4-6 calm pairs), and Speed match (30-second timer).'**
   String get helpTopic13Body;
 
   /// No description provided for @posFilterLabel.
@@ -2413,6 +2413,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Up to {count}'**
   String notificationsMaxCountValue(int count);
+
+  /// No description provided for @settingsLearningPrefs.
+  ///
+  /// In en, this message translates to:
+  /// **'Vocabulary preferences'**
+  String get settingsLearningPrefs;
+
+  /// No description provided for @settingsLearningPrefsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Levels and topics'**
+  String get settingsLearningPrefsSubtitle;
+
+  /// No description provided for @learningPrefsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Vocabulary preferences'**
+  String get learningPrefsTitle;
+
+  /// No description provided for @learningPrefsLevelsHeader.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficulty levels'**
+  String get learningPrefsLevelsHeader;
+
+  /// No description provided for @learningPrefsLevelsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Which CEFR levels to include in sessions, games, and notifications'**
+  String get learningPrefsLevelsSubtitle;
+
+  /// No description provided for @learningPrefsTopicsHeader.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics'**
+  String get learningPrefsTopicsHeader;
+
+  /// No description provided for @learningPrefsTopicsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Restrict suggestions to specific topic categories. Leave empty for all.'**
+  String get learningPrefsTopicsSubtitle;
+
+  /// No description provided for @todayQuizTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get todayQuizTitle;
+
+  /// No description provided for @todayQuizSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Six exercise styles, no scheduling'**
+  String get todayQuizSubtitle;
+
+  /// No description provided for @todayQuizNotEnough.
+  ///
+  /// In en, this message translates to:
+  /// **'Need at least 4 fresh / learning words for the quiz'**
+  String get todayQuizNotEnough;
+
+  /// No description provided for @helpTopic14Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Vocabulary preferences'**
+  String get helpTopic14Title;
+
+  /// No description provided for @helpTopic14Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings → Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set.'**
+  String get helpTopic14Body;
 }
 
 class _AppLocalizationsDelegate

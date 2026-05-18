@@ -108,10 +108,14 @@ class SrsService {
   Iterable<WordState> get all => _states.values;
 
   /// All currently due word states. Sorted by how overdue they are.
+  /// Words the user has explicitly marked as known are filtered out so
+  /// the count matches the session that will actually be built.
   List<WordState> dueStates() {
     final now = DateTime.now().millisecondsSinceEpoch;
+    final known = UserDataService().knownWords;
     final due = _states.values
         .where((s) => s.dueAtMs > 0 && s.dueAtMs <= now)
+        .where((s) => !known.contains(s.word))
         .toList();
     due.sort((a, b) => a.dueAtMs.compareTo(b.dueAtMs));
     return due;
@@ -128,10 +132,12 @@ class SrsService {
     int limit = 50,
   }) async {
     final all = await CsvService.loadAllVocabulary(excludeKnown: false);
+    final known = UserDataService().knownWords;
     final result = <Vocabulary>[];
     for (final v in all) {
       final key = v.word.toLowerCase();
       if (_states.containsKey(key)) continue;
+      if (known.contains(key)) continue;
       if (levelFilter != null && levelFilter.isNotEmpty) {
         final vLevel = v.levels.toUpperCase();
         if (!levelFilter.any((l) => vLevel.contains(l.toUpperCase()))) continue;
@@ -143,16 +149,21 @@ class SrsService {
   }
 
   /// Builds today's session: every due card + up to [_newCardsPerSession]
-  /// fresh words, capped at [_maxSessionSize] total.
+  /// fresh words, capped at [_maxSessionSize] total. Anything the user has
+  /// explicitly marked as known via the toolbar ✓ is skipped entirely —
+  /// known is treated as a permanent exclusion, not just a "review less
+  /// often" hint.
   Future<List<Vocabulary>> buildTodaySession({
     List<String>? levelFilter,
   }) async {
     await ready;
     final all = await CsvService.loadAllVocabulary(excludeKnown: false);
     final byKey = {for (final v in all) v.word.toLowerCase(): v};
+    final known = UserDataService().knownWords;
 
     final dueWords = <Vocabulary>[];
     for (final s in dueStates()) {
+      if (known.contains(s.word)) continue;
       final v = byKey[s.word];
       if (v != null) dueWords.add(v);
       if (dueWords.length >= _maxSessionSize) break;
@@ -251,14 +262,15 @@ class SrsService {
 
   /// Chooses which exercise style to use for [word] in this session.
   ///
-  /// Stage-gated so quizzes only happen during active learning:
-  /// - `fresh` (totalSeen == 0) → [ExerciseType.recognize]. User sees the
-  ///   meaning before any test.
-  /// - `learning` (rated a few times but not yet stable) → deterministic
-  ///   rotation across six exercise styles so the session stays varied.
-  /// - `reviewing` and `mastered` → [ExerciseType.recognize] only. These
-  ///   are words the user has already demonstrated they know; the daily
-  ///   re-surface is a gentle refresher, not a re-exam.
+  /// Two tiers:
+  /// - `fresh` (totalSeen == 0) → [ExerciseType.recognize]. The user sees
+  ///   the meaning before they're ever quizzed.
+  /// - Anything else → deterministic rotation across the six quiz styles
+  ///   so the session stays varied. Even `reviewing` words go through
+  ///   rotation now — sticking to Recognize once a word was "stable" made
+  ///   long-running users feel they only ever saw flashcards.
+  /// - `mastered` is the one exception: those words barely re-surface
+  ///   anyway, and when they do a calm Recognize is appropriate.
   ExerciseType pickExerciseType(
     String word, {
     bool hasAudio = true,
@@ -266,9 +278,7 @@ class SrsService {
   }) {
     final state = stateFor(word);
     if (state.totalSeen == 0) return ExerciseType.recognize;
-    if (state.stage == SrsStage.reviewing || state.stage == SrsStage.mastered) {
-      return ExerciseType.recognize;
-    }
+    if (state.stage == SrsStage.mastered) return ExerciseType.recognize;
     // Six-way rotation across all quiz styles. Fill-in stays in even when
     // [hasExample] is false because its widget now degrades to a meaning
     // prompt instead of skipping the card.

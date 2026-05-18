@@ -335,7 +335,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuCardKnownSubtitle => 'Review words you already know';
 
   @override
-  String get menuCardHistoryTitle => 'History';
+  String get menuCardHistoryTitle => 'Notifications';
 
   @override
   String get menuCardHistorySubtitle => 'Words via notifications';
@@ -362,7 +362,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeTitleKnown => 'Known words';
 
   @override
-  String get homeTitleHistory => 'History';
+  String get homeTitleHistory => 'Notifications';
 
   @override
   String get homeTitleCollection => 'Collection';

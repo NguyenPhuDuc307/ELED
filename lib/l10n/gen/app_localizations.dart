@@ -719,7 +719,7 @@ abstract class AppLocalizations {
   /// No description provided for @menuCardHistoryTitle.
   ///
   /// In en, this message translates to:
-  /// **'History'**
+  /// **'Notifications'**
   String get menuCardHistoryTitle;
 
   /// No description provided for @menuCardHistorySubtitle.
@@ -767,7 +767,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeTitleHistory.
   ///
   /// In en, this message translates to:
-  /// **'History'**
+  /// **'Notifications'**
   String get homeTitleHistory;
 
   /// No description provided for @homeTitleCollection.

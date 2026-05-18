@@ -334,7 +334,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get menuCardKnownSubtitle => 'Ôn lại những từ bạn đã thuộc';
 
   @override
-  String get menuCardHistoryTitle => 'Lịch sử';
+  String get menuCardHistoryTitle => 'Thông báo';
 
   @override
   String get menuCardHistorySubtitle => 'Từ qua thông báo';
@@ -361,7 +361,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get homeTitleKnown => 'Từ đã biết';
 
   @override
-  String get homeTitleHistory => 'Lịch sử';
+  String get homeTitleHistory => 'Thông báo';
 
   @override
   String get homeTitleCollection => 'Bộ sưu tập';

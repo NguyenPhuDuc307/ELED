@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../l10n/gen/app_localizations.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
@@ -7,8 +8,10 @@ import 'topic_screen.dart';
 import 'collections_screen.dart';
 import 'settings_screen.dart';
 import 'learning_screen.dart';
+import '../services/collection_service.dart';
 import '../services/csv_service.dart';
 import '../services/learning_state_service.dart';
+import '../services/user_data_service.dart';
 import '../main.dart';
 
 
@@ -25,6 +28,13 @@ class _MenuScreenState extends State<MenuScreen> {
   LearningContext? _continueCtx;
   bool _continueReady = false;
 
+  // Counts surfaced on each menu card. -1 = not loaded yet (don't render).
+  int _popularityCount = -1;
+  int _topicsCount = -1;
+  int _collectionsCount = -1;
+  int _knownCount = -1;
+  int _historyCount = -1;
+
   Future<void> _navigate(Widget page) async {
     if (_isNavigating) return;
     setState(() => _isNavigating = true);
@@ -32,6 +42,7 @@ class _MenuScreenState extends State<MenuScreen> {
     if (mounted) {
       setState(() => _isNavigating = false);
       _refreshQuickAccess(); // continue context may have changed while away
+      _refreshCounts(); // collection/known/history may have changed too
     }
   }
 
@@ -41,6 +52,28 @@ class _MenuScreenState extends State<MenuScreen> {
     setState(() {
       _continueCtx = ctx;
       _continueReady = true;
+    });
+  }
+
+  Future<void> _refreshCounts() async {
+    // These run in parallel — none of them depend on each other.
+    final results = await Future.wait([
+      CsvService.loadAllVocabulary(excludeKnown: false),
+      CsvService.getAvailableTopics(),
+      CollectionService.getCollections(),
+      SharedPreferences.getInstance(),
+    ]);
+    if (!mounted) return;
+    final vocab = results[0] as List;
+    final topics = results[1] as List;
+    final collections = results[2] as Map;
+    final prefs = results[3] as SharedPreferences;
+    setState(() {
+      _popularityCount = vocab.length;
+      _topicsCount = topics.length;
+      _collectionsCount = collections.length;
+      _knownCount = UserDataService().knownWords.length;
+      _historyCount = (prefs.getStringList('notificationHistory') ?? []).length;
     });
   }
 
@@ -56,7 +89,10 @@ class _MenuScreenState extends State<MenuScreen> {
     if (vocab == null || vocab.isEmpty) {
       final t = AppLocalizations.of(context);
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(t.menuCouldNotResume)),
+        SnackBar(
+          content: Text(t.menuCouldNotResume),
+          duration: const Duration(seconds: 3),
+        ),
       );
       await LearningStateService().clearContext();
       _refreshQuickAccess();
@@ -74,6 +110,7 @@ class _MenuScreenState extends State<MenuScreen> {
   void initState() {
     super.initState();
     _refreshQuickAccess();
+    _refreshCounts();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       // Handle "Known" action from notification when app was not in foreground
       if (pendingMarkKnownWord != null) {
@@ -192,8 +229,10 @@ class _MenuScreenState extends State<MenuScreen> {
     required Color titleColor,
     required IconData icon,
     required VoidCallback onTap,
+    int? count, // -1 / null = don't render a chip
     double extraBottomPad = 20,
   }) {
+    final showCount = count != null && count >= 0;
     return BrutalistCard(
       backgroundColor: color,
       onTap: onTap,
@@ -202,13 +241,37 @@ class _MenuScreenState extends State<MenuScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: titleColor.withValues(alpha: 0.12),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Icon(icon, color: titleColor, size: 22),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: titleColor.withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Icon(icon, color: titleColor, size: 22),
+                ),
+                if (showCount)
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: titleColor.withValues(alpha: 0.14),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      _formatCount(count),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w800,
+                            color: titleColor,
+                            fontSize: 11,
+                            fontFeatures: const [FontFeature.tabularFigures()],
+                          ),
+                    ),
+                  ),
+              ],
             ),
             const SizedBox(height: 14),
             Text(
@@ -231,6 +294,18 @@ class _MenuScreenState extends State<MenuScreen> {
         ),
       ),
     );
+  }
+
+  /// Compact number formatter — keeps the count chip narrow on small cards.
+  /// 1234 → "1,234", 12345 → "12.3k".
+  String _formatCount(int n) {
+    if (n < 1000) return '$n';
+    if (n < 10000) {
+      final thousands = n ~/ 1000;
+      final hundreds = (n % 1000) ~/ 100;
+      return hundreds == 0 ? '${thousands}k' : '$thousands.${hundreds}k';
+    }
+    return '${(n / 1000).round()}k';
   }
 
   @override
@@ -341,6 +416,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         color: const Color(0xFFC8DEC4),
                         titleColor: const Color(0xFF2A4A28),
                         icon: Icons.trending_up_rounded,
+                        count: _popularityCount,
                         extraBottomPad: 36,
                         onTap: () => _navigate(const HomeScreen(mode: 'POPULARITY')),
                       ),
@@ -351,6 +427,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         color: const Color(0xFFF5E4CC),
                         titleColor: const Color(0xFF5A3A18),
                         icon: Icons.bookmark_rounded,
+                        count: _collectionsCount,
                         onTap: () => _navigate(const CollectionsScreen()),
                       ),
                       _menuCardGrid(
@@ -360,6 +437,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         color: const Color(0xFFE8D4C8),
                         titleColor: const Color(0xFF5A3028),
                         icon: Icons.history_rounded,
+                        count: _historyCount,
                         onTap: () => _navigate(const HomeScreen(mode: 'HISTORY')),
                       ),
                     ],
@@ -379,6 +457,7 @@ class _MenuScreenState extends State<MenuScreen> {
                           color: const Color(0xFFF5D5CC),
                           titleColor: const Color(0xFF5A2820),
                           icon: Icons.category_rounded,
+                          count: _topicsCount,
                           extraBottomPad: 36,
                           onTap: () => _navigate(const TopicScreen()),
                         ),
@@ -389,6 +468,7 @@ class _MenuScreenState extends State<MenuScreen> {
                           color: const Color(0xFFF5C4B8),
                           titleColor: const Color(0xFF5A2818),
                           icon: Icons.check_circle_rounded,
+                          count: _knownCount,
                           onTap: () => _navigate(const HomeScreen(mode: 'KNOWN')),
                         ),
                       ],

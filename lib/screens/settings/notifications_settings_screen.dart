@@ -122,7 +122,10 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     });
     final t = AppLocalizations.of(context);
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(t.notificationsSaved)),
+      SnackBar(
+        content: Text(t.notificationsSaved),
+        duration: const Duration(seconds: 3),
+      ),
     );
   }
 

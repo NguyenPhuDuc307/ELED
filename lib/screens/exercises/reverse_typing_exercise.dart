@@ -4,38 +4,59 @@ import 'package:flutter/services.dart';
 import '../../l10n/gen/app_localizations.dart';
 import '../../models/vocabulary.dart';
 import '../../models/word_state.dart';
-import '../../services/oxford_service.dart';
 import '../../theme/brutalist_theme.dart';
 
-/// Active-recall by context: a real Oxford example sentence with the target
-/// word redacted to "______". User types the missing word. Lenient match.
-/// Falls back to skipping the card silently if no usable example exists.
-class FillInContextExercise extends StatefulWidget {
+/// Reverse direction: show the English word, the user types the Vietnamese
+/// meaning. Tests passive → active recall. Match is lenient and accepts any
+/// of the synonyms the CSV stores separated by ";" / "," (e.g. "vui; hạnh
+/// phúc").
+class ReverseTypingExercise extends StatefulWidget {
   final Vocabulary word;
   final Future<void> Function(ReviewRating rating) onAnswered;
 
-  const FillInContextExercise({
+  const ReverseTypingExercise({
     super.key,
     required this.word,
     required this.onAnswered,
   });
 
   @override
-  State<FillInContextExercise> createState() => _FillInContextExerciseState();
+  State<ReverseTypingExercise> createState() => _ReverseTypingExerciseState();
 }
 
-class _FillInContextExerciseState extends State<FillInContextExercise> {
+class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
   final _controller = TextEditingController();
   final _focusNode = FocusNode();
-  String? _sentence;        // raw example with target word still present
-  String? _redactedDisplay; // user-visible sentence with "______"
-  bool _loading = true;
   bool? _correctness;
 
-  @override
-  void initState() {
-    super.initState();
-    _loadExample();
+  String _normalise(String s) => s
+      .toLowerCase()
+      .trim()
+      .replaceAll(RegExp(r'[̀-ͯ]'), '') // strip diacritics-ish
+      .replaceAll(RegExp(r"['\-‘’]"), '')
+      .replaceAll(RegExp(r'\s+'), ' ');
+
+  /// True when the typed answer matches any of the comma/semicolon-separated
+  /// translation synonyms after light normalisation.
+  bool _isCorrect(String typed) {
+    final t = _normalise(typed);
+    if (t.isEmpty) return false;
+    final candidates = widget.word.translation
+        .split(RegExp(r'[;,]'))
+        .map(_normalise)
+        .where((s) => s.isNotEmpty);
+    return candidates.contains(t);
+  }
+
+  Future<void> _submit() async {
+    if (_correctness != null) return;
+    final typed = _controller.text;
+    if (typed.trim().isEmpty) return;
+    final correct = _isCorrect(typed);
+    setState(() => _correctness = correct);
+    await Future.delayed(const Duration(milliseconds: 1200));
+    if (!mounted) return;
+    await widget.onAnswered(correct ? ReviewRating.good : ReviewRating.again);
   }
 
   @override
@@ -45,73 +66,10 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
     super.dispose();
   }
 
-  Future<void> _loadExample() async {
-    // Custom words have no Oxford URL — go straight to the meaning-prompt
-    // fallback so the card doesn't have to round-trip through a network call.
-    if (widget.word.url.isEmpty) {
-      setState(() => _loading = false);
-      return;
-    }
-    final senses = await OxfordService.fetchDefinitions(
-        widget.word.word, widget.word.url);
-    if (!mounted) return;
-    final goodSense = senses.firstWhere(
-      (s) => s.example.trim().isNotEmpty &&
-          _containsWordIgnoringCase(s.example, widget.word.word),
-      orElse: () => senses.firstWhere((s) => s.example.trim().isNotEmpty,
-          orElse: () => const OxfordSense(number: 0, definition: '', example: '')),
-    );
-    setState(() {
-      if (goodSense.example.isNotEmpty) {
-        _sentence = goodSense.example;
-        _redactedDisplay = _redact(goodSense.example, widget.word.word);
-      }
-      // No example → leave _sentence null; the build method renders the
-      // meaning-prompt fallback instead of silently skipping the card.
-      _loading = false;
-    });
-  }
-
-  static bool _containsWordIgnoringCase(String haystack, String needle) {
-    final pattern = RegExp('\\b${RegExp.escape(needle)}\\b', caseSensitive: false);
-    return pattern.hasMatch(haystack);
-  }
-
-  static String _redact(String sentence, String word) {
-    // Replace the target word (word-boundary, case-insensitive) with a fixed
-    // blank, regardless of capitalisation in the original sentence.
-    final pattern = RegExp('\\b${RegExp.escape(word)}\\b', caseSensitive: false);
-    return sentence.replaceAll(pattern, '______');
-  }
-
-  String _normalise(String s) => s
-      .toLowerCase()
-      .trim()
-      .replaceAll(RegExp(r"['\-‘’]"), '')
-      .replaceAll(RegExp(r'\s+'), ' ');
-
-  Future<void> _submit() async {
-    if (_correctness != null) return;
-    final typed = _controller.text;
-    if (typed.trim().isEmpty) return;
-    final correct = _normalise(typed) == _normalise(widget.word.word);
-    setState(() => _correctness = correct);
-    await Future.delayed(const Duration(milliseconds: 1200));
-    await widget.onAnswered(correct ? ReviewRating.good : ReviewRating.again);
-  }
-
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context);
-    if (_loading) {
-      return Center(
-        child: CircularProgressIndicator(color: context.bBorder, strokeWidth: 4),
-      );
-    }
     final showAnswer = _correctness != null;
-    final hasSentence = _redactedDisplay != null;
-    // Same compaction strategy as ListenAndType: shrink top spacing when the
-    // keyboard is up so the action buttons stay reachable on small screens.
     final compact = MediaQuery.of(context).viewInsets.bottom > 0;
     return SingleChildScrollView(
       reverse: true,
@@ -120,7 +78,7 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            hasSentence ? t.exerciseFillInBlank : t.exerciseTypeEnglishFor,
+            t.exerciseReverseTypingTitle,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: context.bMuted,
                   fontWeight: FontWeight.w600,
@@ -130,35 +88,22 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
           ),
           SizedBox(height: compact ? 14 : 28),
           Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               color: BrutalistTheme.primaryLight,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Text(
-              hasSentence
-                  ? (_redactedDisplay ?? '')
-                  : widget.word.translation,
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
+              widget.word.word,
+              style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                    fontWeight: FontWeight.w800,
                     color: BrutalistTheme.primary,
-                    height: 1.4,
-                    fontSize: 20,
+                    height: 1.2,
+                    fontSize: 32,
                   ),
               textAlign: TextAlign.center,
             ),
           ),
-          if (hasSentence && widget.word.translation.isNotEmpty) ...[
-            const SizedBox(height: 12),
-            Text(
-              widget.word.translation,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: context.bMuted,
-                    fontStyle: FontStyle.italic,
-                  ),
-              textAlign: TextAlign.center,
-            ),
-          ],
           const SizedBox(height: 22),
           TextField(
             controller: _controller,
@@ -173,7 +118,7 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
               FilteringTextInputFormatter.deny(RegExp(r'\n')),
             ],
             style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                  fontSize: 26,
+                  fontSize: 24,
                   fontWeight: FontWeight.w700,
                   color: showAnswer
                       ? (_correctness == true
@@ -182,10 +127,10 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
                       : context.bBorder,
                 ),
             decoration: InputDecoration(
-              hintText: t.exerciseMissingWord,
+              hintText: t.exerciseReverseTypingHint,
               hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: context.bMuted,
-                    fontSize: 17,
+                    fontSize: 16,
                   ),
               filled: true,
               fillColor: context.bBg,
@@ -197,7 +142,8 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(14),
-                borderSide: const BorderSide(color: BrutalistTheme.primary, width: 2),
+                borderSide:
+                    const BorderSide(color: BrutalistTheme.primary, width: 2),
               ),
               disabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(14),
@@ -214,12 +160,12 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
           if (showAnswer && _correctness == false) ...[
             const SizedBox(height: 12),
             Text(
-              widget.word.word,
+              widget.word.translation,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.w700,
                     color: BrutalistTheme.primary,
-                    fontSize: 20,
+                    fontSize: 18,
                   ),
             ),
           ],
@@ -251,24 +197,12 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
                           borderRadius: BorderRadius.circular(12)),
                     ),
                     child: Text(t.exerciseCheck,
-                        style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w700, fontSize: 15)),
                   ),
                 ),
               ],
             ),
-          // Use the raw sentence below as a hint after revealing the answer,
-          // so the user can re-read it with the word in place.
-          if (showAnswer && _sentence != null) ...[
-            const SizedBox(height: 16),
-            Text(
-              _sentence!,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: context.bMuted,
-                    fontStyle: FontStyle.italic,
-                  ),
-              textAlign: TextAlign.center,
-            ),
-          ],
         ],
       ),
     );

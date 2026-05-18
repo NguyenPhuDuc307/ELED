@@ -81,8 +81,10 @@ class _AboutScreenState extends State<AboutScreen> {
     } catch (e) {
       if (mounted) {
         final t = AppLocalizations.of(context);
-        ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text(t.aboutDownloadFailed('$e'))));
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(t.aboutDownloadFailed('$e')),
+          duration: const Duration(seconds: 3),
+        ));
       }
     } finally {
       if (mounted) setState(() => _downloading = false);

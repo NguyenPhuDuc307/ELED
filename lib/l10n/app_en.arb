@@ -42,7 +42,7 @@
   },
   "todayStartSession": "Start session",
   "todayMatchGameTitle": "Match game",
-  "todayMatchGameSubtitle": "Pair 4 words with their meanings",
+  "todayMatchGameSubtitle": "Pair words with their meanings",
   "todayMatchGameNotEnough": "Need at least 4 new or learning words for the game",
   "todayAllCaughtUp": "All caught up",
   "todayAllCaughtUpSubtitle": "No reviews are due right now. Browse a topic or check back later.",
@@ -243,7 +243,7 @@
   "learningKnowThis": "I already know this",
   "learningAgain": "Again",
   "learningHard": "Hard",
-  "learningGood": "Good",
+  "learningGood": "Easy",
   "learningEasy": "Easy",
   "learningTapToSpeak": "Tap to hear",
   "learningTypeWhatYouHear": "Type what you hear",
@@ -363,15 +363,15 @@
   "helpTopic1Title": "How learning works",
   "helpTopic1Body": "ELED uses spaced repetition. Every time you rate a word, the app computes when you're most likely to forget it, and surfaces it again right before that — so you spend time only on what's about to slip away, not on words you've already nailed.",
   "helpTopic2Title": "What is Today's session?",
-  "helpTopic2Body": "The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin.",
-  "helpTopic3Title": "The four rating buttons",
-  "helpTopic3Body": "After every flashcard you rate how it went. The app uses that rating to schedule the word's next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Good — \"I knew it\". Standard schedule (each Good multiplies the interval).\n• Easy — \"Way too easy\". Pushes the word out further so you don't waste time on it.",
-  "helpTopic4Title": "Exercise types",
-  "helpTopic4Body": "While a word is new or you're still figuring it out, sessions mix four exercise styles to keep your brain engaged:\n\n• Recognize — classic flashcard with the four rating buttons.\n• Multiple choice — pick the right translation from 4 options.\n• Listen and type — hear the word, type it back. Lenient spelling.\n• Fill in context — a real Oxford sentence with the word blanked out.\n\nOnce you've shown you know a word, sessions ease off to the gentle Recognize card. No more guessing puzzles on words you've already mastered.",
+  "helpTopic2Body": "The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Match game (calm 4-6 pair puzzle) and Speed match (30-second arcade) cards below.",
+  "helpTopic3Title": "The three rating buttons",
+  "helpTopic3Body": "After every flashcard you rate how it went. The app uses that rating to schedule the word's next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Easy — \"I knew it\". Standard schedule (each Easy multiplies the interval).\n\nIf a word feels too easy to even bother scheduling, tap the ✓ icon on the toolbar to mark it known and skip it for a long time.",
+  "helpTopic4Title": "Many ways to study",
+  "helpTopic4Body": "Cards inside a session rotate between six exercise styles so practice never gets repetitive: Recognize, Multiple choice, Listen and type, Fill in context, Anagram, First letter, and Reverse typing. See \"Mini games & exercises\" below for what each one does.\n\nOnce you have shown you know a word, sessions ease off to the gentle Recognize card — no more guessing puzzles on words you have already mastered.",
   "helpTopic5Title": "The match game",
-  "helpTopic5Body": "A 4-pair tap-to-match mini game, shown below Start session when you have at least 4 new or learning words queued. Tap a word, then its translation; correct pairs fade green, wrong picks flash red. Your accuracy auto-rates each word in the same SRS schedule as the main flow.",
-  "helpTopic6Title": "Skip a word forever",
-  "helpTopic6Body": "On a Recognize card, tap the archive ⓘ icon at the top-right corner. Confirm Skip and the word is marked as mastered with a year-long interval — useful for words you imported as \"known\" but really don't need to study.",
+  "helpTopic5Body": "A tap-to-match mini game with up to 6 pairs (4 minimum), shown below Start session when you have at least 4 new or learning words queued. Tap a word, then its translation; correct pairs fade green, wrong picks flash red. Your accuracy auto-rates each word in the same SRS schedule as the main flow.",
+  "helpTopic6Title": "Mark a word as known",
+  "helpTopic6Body": "On any learning card, tap the ✓ icon in the top bar. The word is promoted to mastered (wont reappear in daily sessions for a long stretch) and the next card slides in. A snackbar with Undo gives you a few seconds to take it back if you tapped by mistake. Tapping ✓ again on a word thats already known removes it from the known list.",
   "helpTopic7Title": "Streak & active days",
   "helpTopic7Body": "Each day you rate at least one card counts toward your streak. The 28-day heatmap on Today shows which of the last four weeks you practised. Miss one day and the streak survives; miss two and it resets to 0.",
   "helpTopic8Title": "Notifications",
@@ -680,5 +680,35 @@
     }
   },
   "helpTopic12Title": "Import a word list",
-  "helpTopic12Body": "Open Browse → My collections → tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio."
+  "helpTopic12Body": "Open Browse → My collections → tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio.",
+  "exerciseTypeEnglishFor": "Type the English word for the meaning below",
+  "exerciseAnagramTitle": "Unscramble the word",
+  "exerciseAnagramClear": "Clear",
+  "exerciseFirstLetterTitle": "Type the rest of the word",
+  "exerciseReverseTypingTitle": "Type the meaning",
+  "exerciseReverseTypingHint": "Vietnamese meaning",
+  "speedMatchTitle": "Speed match",
+  "speedMatchSubtitle": "Match as many as you can in {seconds}s",
+  "@speedMatchSubtitle": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "speedMatchStart": "Start",
+  "speedMatchScore": "{count} matched",
+  "@speedMatchScore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "speedMatchTimeUp": "Times up",
+  "speedMatchPlayAgain": "Play again",
+  "speedMatchNeedMore": "Need at least 6 new or learning words",
+  "speedMatchToday": "Speed match",
+  "helpTopic13Title": "Mini games & exercises",
+  "helpTopic13Body": "Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer)."
 }

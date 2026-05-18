@@ -35,17 +35,17 @@ class BrutalistTheme {
         surface: surface,
         onSurface: black,
       ),
-      textTheme: GoogleFonts.poppinsTextTheme(base.textTheme).copyWith(
-        displayLarge: GoogleFonts.poppins(
+      textTheme: GoogleFonts.beVietnamProTextTheme(base.textTheme).copyWith(
+        displayLarge: GoogleFonts.beVietnamPro(
           color: black, fontSize: 40, fontWeight: FontWeight.w700,
         ),
-        headlineMedium: GoogleFonts.poppins(
+        headlineMedium: GoogleFonts.beVietnamPro(
           color: black, fontSize: 22, fontWeight: FontWeight.w600,
         ),
-        bodyLarge: GoogleFonts.poppins(
+        bodyLarge: GoogleFonts.beVietnamPro(
           color: black, fontSize: 15, fontWeight: FontWeight.w400,
         ),
-        bodyMedium: GoogleFonts.poppins(
+        bodyMedium: GoogleFonts.beVietnamPro(
           color: textMuted, fontSize: 13, fontWeight: FontWeight.w400,
         ),
       ),
@@ -59,7 +59,7 @@ class BrutalistTheme {
         shape: const Border(bottom: BorderSide(color: border, width: 1)),
         iconTheme: const IconThemeData(color: black, size: 24),
         actionsIconTheme: const IconThemeData(color: black, size: 24),
-        titleTextStyle: GoogleFonts.poppins(
+        titleTextStyle: GoogleFonts.beVietnamPro(
           color: black, fontSize: 18, fontWeight: FontWeight.w700,
         ),
       ),
@@ -70,7 +70,7 @@ class BrutalistTheme {
         selectedColor: primaryLight,
         side: const BorderSide(color: border),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        labelStyle: GoogleFonts.poppins(fontSize: 13, fontWeight: FontWeight.w500),
+        labelStyle: GoogleFonts.beVietnamPro(fontSize: 13, fontWeight: FontWeight.w500),
       ),
     );
   }
@@ -88,17 +88,17 @@ class BrutalistTheme {
         surface: Color(0xFF1E293B), // slate-800
         onSurface: Color(0xFFF1F5F9), // slate-100
       ),
-      textTheme: GoogleFonts.poppinsTextTheme(base.textTheme).copyWith(
-        displayLarge: GoogleFonts.poppins(
+      textTheme: GoogleFonts.beVietnamProTextTheme(base.textTheme).copyWith(
+        displayLarge: GoogleFonts.beVietnamPro(
           color: const Color(0xFFF1F5F9), fontSize: 40, fontWeight: FontWeight.w700,
         ),
-        headlineMedium: GoogleFonts.poppins(
+        headlineMedium: GoogleFonts.beVietnamPro(
           color: const Color(0xFFF1F5F9), fontSize: 22, fontWeight: FontWeight.w600,
         ),
-        bodyLarge: GoogleFonts.poppins(
+        bodyLarge: GoogleFonts.beVietnamPro(
           color: const Color(0xFFF1F5F9), fontSize: 15, fontWeight: FontWeight.w400,
         ),
-        bodyMedium: GoogleFonts.poppins(
+        bodyMedium: GoogleFonts.beVietnamPro(
           color: const Color(0xFF94A3B8), fontSize: 13, fontWeight: FontWeight.w400,
         ),
       ),
@@ -111,7 +111,7 @@ class BrutalistTheme {
         shape: const Border(bottom: BorderSide(color: Color(0xFF334155), width: 1)),
         iconTheme: const IconThemeData(color: Color(0xFFF1F5F9), size: 24),
         actionsIconTheme: const IconThemeData(color: Color(0xFFF1F5F9), size: 24),
-        titleTextStyle: GoogleFonts.poppins(
+        titleTextStyle: GoogleFonts.beVietnamPro(
           color: const Color(0xFFF1F5F9), fontSize: 18, fontWeight: FontWeight.w700,
         ),
       ),

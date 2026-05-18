@@ -26,7 +26,7 @@ class SrsService {
 
   static const _minEase = 1.3;
   static const _maxEase = 3.0;
-  static const _newCardsPerSession = 8;
+  static const _newCardsPerSession = 10;
   static const _maxSessionSize = 20;
 
   final _ready = Completer<void>();
@@ -254,9 +254,8 @@ class SrsService {
   /// Stage-gated so quizzes only happen during active learning:
   /// - `fresh` (totalSeen == 0) → [ExerciseType.recognize]. User sees the
   ///   meaning before any test.
-  /// - `learning` (rated a few times but not yet stable) → cycle through
-  ///   MC → Listen-and-type → Fill-in-context. This is where the user is
-  ///   actually figuring the word out and quizzes provide value.
+  /// - `learning` (rated a few times but not yet stable) → deterministic
+  ///   rotation across six exercise styles so the session stays varied.
   /// - `reviewing` and `mastered` → [ExerciseType.recognize] only. These
   ///   are words the user has already demonstrated they know; the daily
   ///   re-surface is a gentle refresher, not a re-exam.
@@ -267,30 +266,32 @@ class SrsService {
   }) {
     final state = stateFor(word);
     if (state.totalSeen == 0) return ExerciseType.recognize;
-    // Anything past the learning stage is "you already know this" and gets
-    // a flashcard refresher instead of a quiz.
     if (state.stage == SrsStage.reviewing || state.stage == SrsStage.mastered) {
       return ExerciseType.recognize;
     }
-    // Deterministic 3-way rotation inside the learning phase.
-    final basis = (state.totalSeen + word.length) % 3;
-    ExerciseType candidate;
-    switch (basis) {
-      case 0:
-        candidate = ExerciseType.multipleChoice;
-        break;
-      case 1:
-        candidate = ExerciseType.listenAndType;
-        break;
-      default:
-        candidate = ExerciseType.fillInContext;
-    }
+    // Six-way rotation across all quiz styles. Fill-in stays in even when
+    // [hasExample] is false because its widget now degrades to a meaning
+    // prompt instead of skipping the card.
+    const rotation = [
+      ExerciseType.multipleChoice,
+      ExerciseType.listenAndType,
+      ExerciseType.fillInContext,
+      ExerciseType.anagram,
+      ExerciseType.firstLetter,
+      ExerciseType.reverseTyping,
+    ];
+    final basis = (state.totalSeen + word.length) % rotation.length;
+    var candidate = rotation[basis];
     if (candidate == ExerciseType.listenAndType && !hasAudio) {
-      candidate = ExerciseType.multipleChoice;
+      // Single-letter words have no useful anagram, so when we'd swap a
+      // missing-audio card into Anagram we'd want to nudge it elsewhere.
+      candidate = ExerciseType.firstLetter;
     }
-    if (candidate == ExerciseType.fillInContext && !hasExample) {
-      candidate = ExerciseType.multipleChoice;
+    if (candidate == ExerciseType.anagram && word.length <= 2) {
+      candidate = ExerciseType.firstLetter;
     }
+    // hasExample is now informational only — fill-in has its own fallback.
+    // Leaving the param so existing callers compile without churn.
     return candidate;
   }
 

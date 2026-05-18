@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
@@ -10,9 +12,12 @@ import '../services/oxford_service.dart';
 import '../services/srs_service.dart';
 import '../services/translation_service.dart';
 import '../services/user_data_service.dart';
+import 'exercises/anagram_exercise.dart';
 import 'exercises/fill_in_context_exercise.dart';
+import 'exercises/first_letter_exercise.dart';
 import 'exercises/listen_and_type_exercise.dart';
 import 'exercises/multiple_choice_exercise.dart';
+import 'exercises/reverse_typing_exercise.dart';
 import 'session_results_screen.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
@@ -54,6 +59,11 @@ class _LearningScreenState extends State<LearningScreen> {
 
   final _audioPlayer = AudioPlayer();
   bool _playingAudio = false;
+
+  // Backup timer that explicitly hides the active snackbar after a window —
+  // works around a Flutter quirk we've seen on some Android builds where a
+  // SnackBar with a SnackBarAction doesn't honour its `duration`.
+  Timer? _snackTimer;
 
   // Pinned exercise + distractor pick per card so PageView rebuilds don't
   // swap exercise types mid-card.
@@ -116,32 +126,142 @@ class _LearningScreenState extends State<LearningScreen> {
     });
   }
 
-  Future<void> _toggleKnownWord(String word) async {
+  /// AppBar "I know this" toggle. Tapping on an unmarked word promotes it
+  /// to mastered + advances; tapping again on a marked word removes it from
+  /// the known list (without re-resetting the SRS schedule — the next
+  /// rating will adjust naturally).
+  Future<void> _markKnownAndAdvance(Vocabulary vocab) async {
+    final lower = vocab.word.toLowerCase();
+    if (_knownWords.contains(lower)) {
+      await UserDataService().removeKnownWord(vocab.word);
+      if (!mounted) return;
+      setState(() {
+        _knownWords = UserDataService().knownWords;
+      });
+      _showFeedback(AppLocalizations.of(context).learningRemovedFromKnown);
+      return;
+    }
+    await _applyMastered(vocab, advance: true);
+  }
+
+  /// Floating, 2-second snackbar without an action — used when we just need
+  /// to confirm a tap landed and don't want it lingering across page swipes.
+  void _showFeedback(String message) {
+    final messenger = ScaffoldMessenger.of(context);
+    messenger.hideCurrentSnackBar();
+    messenger.showSnackBar(SnackBar(
+      content: Text(message),
+      duration: const Duration(seconds: 2),
+      behavior: SnackBarBehavior.floating,
+    ));
+    _armSnackTimer(messenger, const Duration(seconds: 2));
+  }
+
+  /// Brief, color-coded acknowledgement after a rating tap. Shorter than
+  /// the mark-known toast (1.4s) because the card is about to swipe and we
+  /// don't want the toast bleeding into the next card.
+  void _flashRatingFeedback(ReviewRating rating) {
+    final t = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    final (label, color, icon) = switch (rating) {
+      ReviewRating.again => (
+          t.learningAgain,
+          const Color(0xFFD9534F),
+          Icons.refresh_rounded,
+        ),
+      ReviewRating.hard => (
+          t.learningHard,
+          const Color(0xFFE5874E),
+          Icons.trending_down_rounded,
+        ),
+      ReviewRating.good => (
+          t.learningGood,
+          BrutalistTheme.primary,
+          Icons.check_rounded,
+        ),
+      ReviewRating.easy => (
+          t.learningGood,
+          BrutalistTheme.primary,
+          Icons.check_rounded,
+        ),
+    };
+    messenger.hideCurrentSnackBar();
+    messenger.showSnackBar(SnackBar(
+      content: Row(
+        children: [
+          Icon(icon, color: BrutalistTheme.white, size: 18),
+          const SizedBox(width: 8),
+          Text(label,
+              style: const TextStyle(
+                color: BrutalistTheme.white,
+                fontWeight: FontWeight.w700,
+              )),
+        ],
+      ),
+      backgroundColor: color,
+      duration: const Duration(milliseconds: 1400),
+      behavior: SnackBarBehavior.floating,
+      margin: const EdgeInsets.fromLTRB(80, 0, 80, 90),
+    ));
+    _armSnackTimer(messenger, const Duration(milliseconds: 1400));
+  }
+
+  /// Schedules a hard-dismiss of the current snackbar slightly after its
+  /// nominal duration — belt-and-braces against the Android quirk where
+  /// SnackBar duration is ignored when an action is attached.
+  void _armSnackTimer(ScaffoldMessengerState messenger, Duration after) {
+    _snackTimer?.cancel();
+    _snackTimer = Timer(after + const Duration(milliseconds: 100), () {
+      if (!mounted) return;
+      messenger.hideCurrentSnackBar();
+    });
+  }
+
+  /// Shared core for "skip / mark-as-known" flows so the AppBar action, the
+  /// rating-row "I know" path, and the Recognize archive icon all behave the
+  /// same. Optionally advances to the next card.
+  Future<void> _applyMastered(Vocabulary vocab, {required bool advance}) async {
     final messenger = ScaffoldMessenger.of(context);
     final t = AppLocalizations.of(context);
-    final isAdded = !_knownWords.contains(word.toLowerCase());
-    await UserDataService().toggleKnownWord(word);
+    await SrsService().markMastered(vocab.word);
+    await UserDataService().addKnownWord(vocab.word);
+    _sessionRatings.add(ReviewRating.easy);
     if (!mounted) return;
     setState(() {
       _knownWords = UserDataService().knownWords;
     });
-    messenger.clearSnackBars();
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(isAdded ? t.learningMarkedKnown : t.learningRemovedFromKnown),
-        duration: const Duration(seconds: 4),
-        action: SnackBarAction(
-          label: t.commonUndo,
-          onPressed: () async {
-            await UserDataService().toggleKnownWord(word);
-            if (!mounted) return;
-            setState(() {
-              _knownWords = UserDataService().knownWords;
-            });
-          },
-        ),
+    messenger.hideCurrentSnackBar();
+    messenger.showSnackBar(SnackBar(
+      content: Text(t.learningMarkedKnown),
+      duration: const Duration(seconds: 2),
+      behavior: SnackBarBehavior.floating,
+      action: SnackBarAction(
+        label: t.commonUndo,
+        onPressed: () async {
+          await UserDataService().removeKnownWord(vocab.word);
+          if (!mounted) return;
+          setState(() {
+            _knownWords = UserDataService().knownWords;
+          });
+        },
       ),
-    );
+    ));
+    _armSnackTimer(messenger, const Duration(seconds: 2));
+    if (!advance || !mounted) return;
+    if (_currentIndex < widget.vocabularies.length - 1) {
+      _pageController.nextPage(
+        duration: const Duration(milliseconds: 280),
+        curve: Curves.easeOut,
+      );
+    } else {
+      widget.onCompleted?.call();
+      await Navigator.of(context).pushReplacement(smoothRoute(
+        SessionResultsScreen(
+          ratings: List.of(_sessionRatings),
+          moreDue: SrsService().dueCount() > 0,
+        ),
+      ));
+    }
   }
 
   Future<void> _playAudio(String url) async {
@@ -180,6 +300,7 @@ class _LearningScreenState extends State<LearningScreen> {
 
   @override
   void dispose() {
+    _snackTimer?.cancel();
     _pageController.dispose();
     _audioPlayer.dispose();
     super.dispose();
@@ -198,12 +319,14 @@ class _LearningScreenState extends State<LearningScreen> {
         actions: [
           if (widget.vocabularies.isNotEmpty)
             IconButton(
+              tooltip: t.learningTooltipKnown,
               icon: Icon(
                 _knownWords.contains(widget.vocabularies[_currentIndex].word.toLowerCase())
                     ? Icons.check_circle_rounded
                     : Icons.check_circle_outline_rounded,
               ),
-              onPressed: () => _toggleKnownWord(widget.vocabularies[_currentIndex].word),
+              onPressed: () =>
+                  _markKnownAndAdvance(widget.vocabularies[_currentIndex]),
             ),
           const SizedBox(width: 8),
         ],
@@ -242,43 +365,29 @@ class _LearningScreenState extends State<LearningScreen> {
                     onAnswered: (rating) => _submitRating(rating),
                   );
                 }
+                if (exType == ExerciseType.anagram) {
+                  return AnagramExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
+                if (exType == ExerciseType.firstLetter) {
+                  return FirstLetterExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
+                if (exType == ExerciseType.reverseTyping) {
+                  return ReverseTypingExercise(
+                    word: vocab,
+                    onAnswered: (rating) => _submitRating(rating),
+                  );
+                }
                 return Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: BrutalistCard(
                     backgroundColor: levelColor(vocab.levels, fallbackIndex: index),
-                    child: Stack(
-                      children: [
-                        // Small affordances: info ⓘ peeks at level/topic; archive
-                        // box lets the user permanently drop a trivial word from
-                        // the daily queue without rating it Easy multiple times.
-                        Positioned(
-                          top: 4,
-                          right: 4,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              IconButton(
-                                tooltip: t.learningTooltipKnown,
-                                icon: Icon(
-                                  Icons.archive_outlined,
-                                  color: BrutalistTheme.black.withValues(alpha: 0.45),
-                                  size: 22,
-                                ),
-                                onPressed: () => _confirmAlreadyKnown(vocab),
-                              ),
-                              IconButton(
-                                tooltip: t.learningTooltipDetails,
-                                icon: Icon(
-                                  Icons.info_outline_rounded,
-                                  color: BrutalistTheme.black.withValues(alpha: 0.45),
-                                  size: 22,
-                                ),
-                                onPressed: () => _showWordDetails(vocab),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SingleChildScrollView(
+                    child: SingleChildScrollView(
                           padding: const EdgeInsets.all(32.0),
                           child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -345,7 +454,10 @@ class _LearningScreenState extends State<LearningScreen> {
                                       final Uri url = Uri.parse(vocab.url);
                                       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
                                         if (context.mounted) {
-                                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(t.learningCouldntOpenLink)));
+                                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                            content: Text(t.learningCouldntOpenLink),
+                                            duration: const Duration(seconds: 3),
+                                          ));
                                         }
                                       }
                                     },
@@ -434,8 +546,6 @@ class _LearningScreenState extends State<LearningScreen> {
                         ],
                       ),
                     ),
-                      ],
-                    ),
                   ),
                 );
               },
@@ -493,136 +603,6 @@ class _LearningScreenState extends State<LearningScreen> {
     );
   }
 
-  /// One-tap exit for trivial words. Confirms, then hard-promotes the word
-  /// to "mastered" with a year-long interval — so it stops appearing in
-  /// daily sessions without the user having to rate Easy five times.
-  Future<void> _confirmAlreadyKnown(Vocabulary vocab) async {
-    final t = AppLocalizations.of(context);
-    final accept = await showDialog<bool>(
-      context: context,
-      builder: (dctx) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: Text(t.learningSkipTitle),
-        content: Text(
-          t.learningSkipBody(vocab.word),
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: context.bMuted),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(dctx).pop(false),
-            child: Text(t.commonCancel,
-                style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
-          ),
-          TextButton(
-            style: TextButton.styleFrom(
-              backgroundColor: BrutalistTheme.primary,
-              foregroundColor: BrutalistTheme.white,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-            ),
-            onPressed: () => Navigator.of(dctx).pop(true),
-            child: Text(t.learningSkipAction, style: const TextStyle(fontWeight: FontWeight.w600)),
-          ),
-        ],
-      ),
-    );
-    if (accept != true || !mounted) return;
-    await SrsService().markMastered(vocab.word);
-    await UserDataService().addKnownWord(vocab.word);
-    _sessionRatings.add(ReviewRating.easy);
-    if (!mounted) return;
-    if (_currentIndex < widget.vocabularies.length - 1) {
-      _pageController.nextPage(
-        duration: const Duration(milliseconds: 280),
-        curve: Curves.easeOut,
-      );
-    } else {
-      widget.onCompleted?.call();
-      await Navigator.of(context).pushReplacement(smoothRoute(
-        SessionResultsScreen(
-          ratings: List.of(_sessionRatings),
-          moreDue: SrsService().dueCount() > 0,
-        ),
-      ));
-    }
-  }
-
-  /// Bottom sheet showing level + topic for the current word. Keeps the
-  /// metadata one tap away without cluttering the reading column.
-  void _showWordDetails(Vocabulary vocab) {
-    showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: context.bBg,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      ),
-      builder: (_) => Padding(
-        padding: const EdgeInsets.fromLTRB(24, 16, 24, 32),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: Container(
-                width: 40,
-                height: 4,
-                decoration: BoxDecoration(
-                  color: context.bSubtle,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-            Text(
-              vocab.word,
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                  ),
-            ),
-            const SizedBox(height: 16),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                if (vocab.levels.isNotEmpty)
-                  _badge(
-                    context,
-                    vocab.levels.toUpperCase(),
-                    BrutalistTheme.black,
-                    BrutalistTheme.border.withValues(alpha: 0.4),
-                  ),
-                if (vocab.topic.isNotEmpty)
-                  _badge(
-                    context,
-                    vocab.topic,
-                    BrutalistTheme.accent,
-                    BrutalistTheme.accentLight,
-                  ),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _badge(BuildContext context, String label, Color textColor, Color bgColor) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 12),
-      decoration: BoxDecoration(
-        color: bgColor,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Text(
-        label,
-        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: textColor,
-              fontWeight: FontWeight.w600,
-              fontSize: 13,
-            ),
-      ),
-    );
-  }
 
   /// Replaces the old "X / Y" + "Z%" + linear progress bar. Up to 30 vocab
   /// items render as dots (current = solid primary, others = muted). Beyond
@@ -774,6 +754,7 @@ class _LearningScreenState extends State<LearningScreen> {
     if (widget.vocabularies.isEmpty) return;
     final word = widget.vocabularies[_currentIndex].word;
     _sessionRatings.add(rating);
+    _flashRatingFeedback(rating);
     await SrsService().submitReview(word, rating);
     // Keep the legacy known-words store in sync so notifications + browse
     // modes still exclude what the user has already mastered.
@@ -783,6 +764,11 @@ class _LearningScreenState extends State<LearningScreen> {
       await UserDataService().removeKnownWord(word);
     }
     if (!mounted) return;
+    // Keep the AppBar Know icon in sync with the rating just applied —
+    // otherwise the user has to leave + return to see it reflect.
+    setState(() {
+      _knownWords = UserDataService().knownWords;
+    });
     if (_currentIndex < widget.vocabularies.length - 1) {
       _pageController.nextPage(
         duration: const Duration(milliseconds: 280),
@@ -801,11 +787,18 @@ class _LearningScreenState extends State<LearningScreen> {
     }
   }
 
-  /// Row of four rating chips above the nav bar. Color encodes severity:
-  /// red Again → orange Hard → green Good → blue Easy.
+  /// Row of three rating chips above the nav bar. Each chip stacks an icon
+  /// over its label so the abstract "Again / Hard / Good" wording has a
+  /// visual anchor — easier to grok at a glance, especially on the smaller
+  /// localised translations.
   Widget _buildRatingRow() {
     final t = AppLocalizations.of(context);
-    Widget chip(String label, ReviewRating rating, Color color) {
+    Widget chip(
+      String label,
+      IconData icon,
+      ReviewRating rating,
+      Color color,
+    ) {
       return Expanded(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 4),
@@ -816,16 +809,21 @@ class _LearningScreenState extends State<LearningScreen> {
               borderRadius: BorderRadius.circular(12),
               onTap: () => _submitRating(rating),
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                child: Center(
-                  child: Text(
-                    label,
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          fontWeight: FontWeight.w700,
-                          color: color,
-                          fontSize: 13,
-                        ),
-                  ),
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(icon, color: color, size: 22),
+                    const SizedBox(height: 3),
+                    Text(
+                      label,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            fontWeight: FontWeight.w700,
+                            color: color,
+                            fontSize: 12,
+                          ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -838,10 +836,12 @@ class _LearningScreenState extends State<LearningScreen> {
       padding: const EdgeInsets.fromLTRB(12, 4, 12, 6),
       child: Row(
         children: [
-          chip(t.learningAgain, ReviewRating.again, const Color(0xFFD9534F)),
-          chip(t.learningHard, ReviewRating.hard, const Color(0xFFE5874E)),
-          chip(t.learningGood, ReviewRating.good, BrutalistTheme.primary),
-          chip(t.learningEasy, ReviewRating.easy, const Color(0xFF3E7CB1)),
+          chip(t.learningAgain, Icons.refresh_rounded,
+              ReviewRating.again, const Color(0xFFD9534F)),
+          chip(t.learningHard, Icons.trending_down_rounded,
+              ReviewRating.hard, const Color(0xFFE5874E)),
+          chip(t.learningGood, Icons.check_rounded,
+              ReviewRating.good, BrutalistTheme.primary),
         ],
       ),
     );

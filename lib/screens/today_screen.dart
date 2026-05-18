@@ -17,6 +17,7 @@ import 'match_game_screen.dart';
 import 'menu_screen.dart';
 import 'settings/about_screen.dart';
 import 'settings_screen.dart';
+import 'speed_match_screen.dart';
 
 /// New primary entry point — replaces the old "browse 5 mode cards then pick a
 /// Day" funnel. Shows the user a single ready-to-go session built from cards
@@ -126,24 +127,47 @@ class _TodayScreenState extends State<TodayScreen> {
     _refresh();
   }
 
-  Future<void> _startMatchGame() async {
-    // Game should only use words the user is actively learning. Reviewing /
-    // mastered words are "already known" and don't need a guessing puzzle —
-    // they get a gentle Recognize refresher inside Start session instead.
+  List<Vocabulary> _gamePool() {
+    // Match-style games only use words the user is actively learning.
+    // Reviewing / mastered words are "already known" and don't need a
+    // guessing puzzle — they get a gentle Recognize refresher inside Start
+    // session instead.
     final srs = SrsService();
-    final pool = _session.where((v) {
+    return _session.where((v) {
       final stage = srs.stateFor(v.word).stage;
       return stage == SrsStage.fresh || stage == SrsStage.learning;
     }).toList();
+  }
+
+  Future<void> _startMatchGame() async {
+    final pool = _gamePool();
     if (pool.length < 4) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(AppLocalizations.of(context).todayMatchGameNotEnough),
+          duration: const Duration(seconds: 3),
         ),
       );
       return;
     }
     await Navigator.of(context).push(smoothRoute(MatchGameScreen(
+      pool: pool,
+    )));
+    _refresh();
+  }
+
+  Future<void> _startSpeedMatch() async {
+    final pool = _gamePool();
+    if (pool.length < 6) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context).speedMatchNeedMore),
+          duration: const Duration(seconds: 3),
+        ),
+      );
+      return;
+    }
+    await Navigator.of(context).push(smoothRoute(SpeedMatchScreen(
       pool: pool,
     )));
     _refresh();
@@ -201,6 +225,10 @@ class _TodayScreenState extends State<TodayScreen> {
                   if (_gameEligibleCount >= 4) ...[
                     const SizedBox(height: 10),
                     _matchGameCta(),
+                  ],
+                  if (_gameEligibleCount >= 6) ...[
+                    const SizedBox(height: 10),
+                    _speedMatchCta(),
                   ],
                   const SizedBox(height: 16),
                   _statsRow(),
@@ -407,6 +435,52 @@ class _TodayScreenState extends State<TodayScreen> {
         const SizedBox(width: 12),
         Expanded(child: _statCard(t.todayStatToLearn, _freshAvailable, Icons.add_rounded)),
       ],
+    );
+  }
+
+  /// Speed-match arcade CTA — same pool as the calmer Match game, but with
+  /// a 30-second timer and auto-refilling pairs. Only shown when there are
+  /// enough fresh words to keep the board interesting for the full timer.
+  Widget _speedMatchCta() {
+    final t = AppLocalizations.of(context);
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.primaryLight,
+      onTap: _startSpeedMatch,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.primary.withValues(alpha: 0.18),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.timer_rounded,
+                  color: BrutalistTheme.primary, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t.speedMatchTitle,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: BrutalistTheme.primary,
+                          fontSize: 15)),
+                  Text(t.speedMatchSubtitle(SpeedMatchScreen.gameSeconds),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: BrutalistTheme.primary.withValues(alpha: 0.75),
+                          fontSize: 12)),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: BrutalistTheme.primary.withValues(alpha: 0.7)),
+          ],
+        ),
+      ),
     );
   }
 

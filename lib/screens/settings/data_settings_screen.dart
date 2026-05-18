@@ -36,10 +36,16 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     try {
       final user = await AuthService().signInWithGoogle();
       if (user != null) {
-        messenger.showSnackBar(SnackBar(content: Text(t.dataSignedIn)));
+        messenger.showSnackBar(SnackBar(
+          content: Text(t.dataSignedIn),
+          duration: const Duration(seconds: 3),
+        ));
       }
     } catch (e) {
-      messenger.showSnackBar(SnackBar(content: Text(t.dataSignInFailed('$e'))));
+      messenger.showSnackBar(SnackBar(
+        content: Text(t.dataSignInFailed('$e')),
+        duration: const Duration(seconds: 3),
+      ));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -50,7 +56,10 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     final t = AppLocalizations.of(context);
     await AuthService().signOut();
     if (mounted) {
-      messenger.showSnackBar(SnackBar(content: Text(t.dataSignedOut)));
+      messenger.showSnackBar(SnackBar(
+        content: Text(t.dataSignedOut),
+        duration: const Duration(seconds: 3),
+      ));
     }
   }
 
@@ -61,6 +70,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     if (!mounted) return;
     messenger.showSnackBar(SnackBar(
       content: Text(path == null ? t.dataExportFailed : t.dataBackupReady),
+      duration: const Duration(seconds: 3),
     ));
   }
 
@@ -70,12 +80,16 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     final result = await BackupService().importFromPicker();
     if (!mounted) return;
     if (result == null) {
-      messenger.showSnackBar(SnackBar(content: Text(t.dataImportCancelled)));
+      messenger.showSnackBar(SnackBar(
+        content: Text(t.dataImportCancelled),
+        duration: const Duration(seconds: 3),
+      ));
     } else {
       messenger.showSnackBar(SnackBar(
         content: Text(
           t.dataImportResult(result.knownAdded, result.collectionsAdded),
         ),
+        duration: const Duration(seconds: 3),
       ));
     }
   }

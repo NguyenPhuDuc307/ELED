@@ -59,7 +59,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get todayMatchGameTitle => 'Ghép cặp';
 
   @override
-  String get todayMatchGameSubtitle => 'Ghép 4 từ với nghĩa của chúng';
+  String get todayMatchGameSubtitle => 'Ghép từ với nghĩa';
 
   @override
   String get todayMatchGameNotEnough =>
@@ -473,7 +473,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get learningHard => 'Khó';
 
   @override
-  String get learningGood => 'Tốt';
+  String get learningGood => 'Dễ';
 
   @override
   String get learningEasy => 'Dễ';
@@ -678,35 +678,35 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'Thẻ lớn trên màn hình chính là hàng đợi của bạn cho ngày hôm nay. Nó gồm:\n• Các từ đến hạn ôn (đã hết khoảng cách)\n• Vài từ hoàn toàn mới để vốn từ tiếp tục tăng\n\nMỗi phiên có khoảng 20 từ. Bấm Bắt đầu để vào học.';
+      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n• Từ đến hạn ôn (đã hết khoảng cách lịch học)\n• Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Ghép cặp (4-6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây) bên dưới.';
 
   @override
-  String get helpTopic3Title => 'Bốn nút đánh giá';
+  String get helpTopic3Title => 'Ba nút đánh giá';
 
   @override
   String get helpTopic3Body =>
-      'Sau mỗi thẻ học, bạn tự đánh giá. Ứng dụng dùng đánh giá đó để lên lịch xuất hiện kế tiếp của từ:\n\n• Lại — \"Tôi quên rồi\". Quay lại vào ngày mai.\n• Khó — \"Nhớ được, nhưng hơi chật vật\". Khoảng cách ngắn hơn lần trước một chút.\n• Tốt — \"Tôi nhớ\". Lịch chuẩn (mỗi lần Tốt nhân khoảng cách lên).\n• Dễ — \"Quá dễ\". Đẩy từ ra xa hơn để bạn không tốn thời gian.';
+      'Sau mỗi thẻ, bạn đánh giá mức độ nắm từ. App dùng đánh giá đó để xếp lịch cho từ xuất hiện lần tiếp theo:\n\n• Lại — \"Quên rồi\". Từ quay lại vào ngày mai.\n• Khó — \"Biết, nhưng vất vả\". Khoảng cách ngắn hơn lần trước một chút.\n• Dễ — \"Biết\". Khoảng cách chuẩn (mỗi lần Dễ nhân khoảng cách lên).\n\nNếu từ quá dễ, không cần lên lịch nữa, bấm icon ✓ trên thanh trên cùng để đánh dấu đã biết và bỏ qua trong thời gian dài.';
 
   @override
-  String get helpTopic4Title => 'Các kiểu bài tập';
+  String get helpTopic4Title => 'Nhiều kiểu học';
 
   @override
   String get helpTopic4Body =>
-      'Khi từ còn mới hoặc bạn chưa thuộc, phiên học pha trộn bốn dạng bài tập để giữ não tỉnh:\n\n• Nhận diện — thẻ học cổ điển với 4 nút đánh giá.\n• Trắc nghiệm — chọn bản dịch đúng trong 4 lựa chọn.\n• Nghe và gõ — nghe từ rồi gõ lại. Chấm chính tả linh hoạt.\n• Điền vào ngữ cảnh — câu ví dụ thật từ Oxford, từ đó bị che đi.\n\nKhi đã chứng tỏ thuộc một từ, các phiên sẽ giảm áp lực và dùng thẻ Nhận diện. Không còn câu đố cho từ bạn đã thuộc.';
+      'Các thẻ trong một phiên luân phiên qua sáu kiểu bài tập để không bị nhàm chán: Nhận biết, Trắc nghiệm, Nghe và gõ, Điền vào câu, Anagram, Chữ cái đầu, và Gõ ngược. Xem \"Mini game & bài tập\" bên dưới để biết chi tiết mỗi kiểu.\n\nKhi bạn đã thuộc một từ, phiên học sẽ chuyển sang thẻ Nhận biết nhẹ nhàng — không còn câu đố trên những từ bạn đã nắm vững.';
 
   @override
   String get helpTopic5Title => 'Trò ghép cặp';
 
   @override
   String get helpTopic5Body =>
-      'Một mini game 4 cặp ghép bằng cách bấm, hiện ngay dưới Bắt đầu khi bạn có ít nhất 4 từ mới hoặc đang học trong hàng đợi. Bấm một từ, rồi bấm bản dịch của nó; cặp đúng mờ xanh, chọn sai nháy đỏ. Độ chính xác sẽ tự đánh giá mỗi từ theo cùng lịch SRS của luồng chính.';
+      'Mini game ghép cặp, tối đa 6 cặp (tối thiểu 4), hiện dưới Bắt đầu khi bạn có ít nhất 4 từ mới hoặc đang học trong hàng. Bấm vào từ rồi bấm nghĩa của nó; cặp đúng mờ xanh, sai nhấp nháy đỏ. Độ chính xác tự đánh giá mỗi từ theo cùng lịch SRS với luồng chính.';
 
   @override
-  String get helpTopic6Title => 'Bỏ qua một từ vĩnh viễn';
+  String get helpTopic6Title => 'Đánh dấu từ là đã biết';
 
   @override
   String get helpTopic6Body =>
-      'Ở thẻ Nhận diện, bấm biểu tượng lưu trữ ⓘ ở góc trên bên phải. Xác nhận Bỏ qua và từ đó được đánh dấu là đã thuộc với khoảng cách một năm — hữu ích cho từ bạn đã nhập là \"đã biết\" và thực sự không cần học.';
+      'Trên bất kỳ thẻ học nào, bấm icon ✓ ở thanh trên cùng. Từ sẽ được thăng cấp lên mức đã thuộc (không xuất hiện trong các phiên hằng ngày trong thời gian dài) và thẻ tiếp theo trượt vào. Snackbar với Hoàn tác cho bạn vài giây để rút lại nếu bấm nhầm. Bấm ✓ lần nữa trên một từ đã biết sẽ gỡ nó khỏi danh sách từ đã biết.';
 
   @override
   String get helpTopic7Title => 'Chuỗi & ngày hoạt động';
@@ -1188,4 +1188,57 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get helpTopic12Body =>
       'Mở Duyệt → Bộ sưu tập → bấm icon upload ở thanh trên. Dán danh sách (mỗi dòng một từ, hoặc cách nhau bằng dấu phẩy), chọn bộ sưu tập đích hoặc tạo mới ngay, rồi bấm Xem trước. App sẽ cho biết từ nào khớp với từ vựng có sẵn, từ nào là \"tự định nghĩa\" (sẽ tự dịch qua Google), và từ nào đã có. Xác nhận một phát là thêm hết. Từ tự định nghĩa hiển thị nhãn TỰ ĐỊNH NGHĨA nhỏ kèm nghĩa dịch — chúng không tham gia bài tập và SRS vì thiếu IPA và audio.';
+
+  @override
+  String get exerciseTypeEnglishFor => 'Gõ từ tiếng Anh cho nghĩa dưới đây';
+
+  @override
+  String get exerciseAnagramTitle => 'Sắp xếp chữ cái';
+
+  @override
+  String get exerciseAnagramClear => 'Xoá';
+
+  @override
+  String get exerciseFirstLetterTitle => 'Gõ phần còn lại của từ';
+
+  @override
+  String get exerciseReverseTypingTitle => 'Gõ nghĩa';
+
+  @override
+  String get exerciseReverseTypingHint => 'Nghĩa tiếng Việt';
+
+  @override
+  String get speedMatchTitle => 'Match tốc độ';
+
+  @override
+  String speedMatchSubtitle(int seconds) {
+    return 'Ghép càng nhiều càng tốt trong ${seconds}s';
+  }
+
+  @override
+  String get speedMatchStart => 'Bắt đầu';
+
+  @override
+  String speedMatchScore(int count) {
+    return '$count cặp đã ghép';
+  }
+
+  @override
+  String get speedMatchTimeUp => 'Hết giờ';
+
+  @override
+  String get speedMatchPlayAgain => 'Chơi lại';
+
+  @override
+  String get speedMatchNeedMore => 'Cần ít nhất 6 từ mới hoặc đang học';
+
+  @override
+  String get speedMatchToday => 'Match tốc độ';
+
+  @override
+  String get helpTopic13Title => 'Mini game & bài tập';
+
+  @override
+  String get helpTopic13Body =>
+      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Chữ cái đầu — có nghĩa + chữ đầu, gõ phần còn lại.\n• Gõ ngược — thấy từ tiếng Anh, gõ nghĩa.\n\nMàn Today cũng có hai trò độc lập khi đủ từ mới: Ghép cặp (4–6 cặp thư thái) và Match tốc độ (đồng hồ 30 giây).';
 }

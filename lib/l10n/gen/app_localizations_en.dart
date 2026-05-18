@@ -59,7 +59,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get todayMatchGameTitle => 'Match game';
 
   @override
-  String get todayMatchGameSubtitle => 'Pair 4 words with their meanings';
+  String get todayMatchGameSubtitle => 'Pair words with their meanings';
 
   @override
   String get todayMatchGameNotEnough =>
@@ -475,7 +475,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learningHard => 'Hard';
 
   @override
-  String get learningGood => 'Good';
+  String get learningGood => 'Easy';
 
   @override
   String get learningEasy => 'Easy';
@@ -680,35 +680,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin.';
+      'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Match game (calm 4-6 pair puzzle) and Speed match (30-second arcade) cards below.';
 
   @override
-  String get helpTopic3Title => 'The four rating buttons';
+  String get helpTopic3Title => 'The three rating buttons';
 
   @override
   String get helpTopic3Body =>
-      'After every flashcard you rate how it went. The app uses that rating to schedule the word\'s next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Good — \"I knew it\". Standard schedule (each Good multiplies the interval).\n• Easy — \"Way too easy\". Pushes the word out further so you don\'t waste time on it.';
+      'After every flashcard you rate how it went. The app uses that rating to schedule the word\'s next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Easy — \"I knew it\". Standard schedule (each Easy multiplies the interval).\n\nIf a word feels too easy to even bother scheduling, tap the ✓ icon on the toolbar to mark it known and skip it for a long time.';
 
   @override
-  String get helpTopic4Title => 'Exercise types';
+  String get helpTopic4Title => 'Many ways to study';
 
   @override
   String get helpTopic4Body =>
-      'While a word is new or you\'re still figuring it out, sessions mix four exercise styles to keep your brain engaged:\n\n• Recognize — classic flashcard with the four rating buttons.\n• Multiple choice — pick the right translation from 4 options.\n• Listen and type — hear the word, type it back. Lenient spelling.\n• Fill in context — a real Oxford sentence with the word blanked out.\n\nOnce you\'ve shown you know a word, sessions ease off to the gentle Recognize card. No more guessing puzzles on words you\'ve already mastered.';
+      'Cards inside a session rotate between six exercise styles so practice never gets repetitive: Recognize, Multiple choice, Listen and type, Fill in context, Anagram, First letter, and Reverse typing. See \"Mini games & exercises\" below for what each one does.\n\nOnce you have shown you know a word, sessions ease off to the gentle Recognize card — no more guessing puzzles on words you have already mastered.';
 
   @override
   String get helpTopic5Title => 'The match game';
 
   @override
   String get helpTopic5Body =>
-      'A 4-pair tap-to-match mini game, shown below Start session when you have at least 4 new or learning words queued. Tap a word, then its translation; correct pairs fade green, wrong picks flash red. Your accuracy auto-rates each word in the same SRS schedule as the main flow.';
+      'A tap-to-match mini game with up to 6 pairs (4 minimum), shown below Start session when you have at least 4 new or learning words queued. Tap a word, then its translation; correct pairs fade green, wrong picks flash red. Your accuracy auto-rates each word in the same SRS schedule as the main flow.';
 
   @override
-  String get helpTopic6Title => 'Skip a word forever';
+  String get helpTopic6Title => 'Mark a word as known';
 
   @override
   String get helpTopic6Body =>
-      'On a Recognize card, tap the archive ⓘ icon at the top-right corner. Confirm Skip and the word is marked as mastered with a year-long interval — useful for words you imported as \"known\" but really don\'t need to study.';
+      'On any learning card, tap the ✓ icon in the top bar. The word is promoted to mastered (wont reappear in daily sessions for a long stretch) and the next card slides in. A snackbar with Undo gives you a few seconds to take it back if you tapped by mistake. Tapping ✓ again on a word thats already known removes it from the known list.';
 
   @override
   String get helpTopic7Title => 'Streak & active days';
@@ -1193,4 +1193,58 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get helpTopic12Body =>
       'Open Browse → My collections → tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio.';
+
+  @override
+  String get exerciseTypeEnglishFor =>
+      'Type the English word for the meaning below';
+
+  @override
+  String get exerciseAnagramTitle => 'Unscramble the word';
+
+  @override
+  String get exerciseAnagramClear => 'Clear';
+
+  @override
+  String get exerciseFirstLetterTitle => 'Type the rest of the word';
+
+  @override
+  String get exerciseReverseTypingTitle => 'Type the meaning';
+
+  @override
+  String get exerciseReverseTypingHint => 'Vietnamese meaning';
+
+  @override
+  String get speedMatchTitle => 'Speed match';
+
+  @override
+  String speedMatchSubtitle(int seconds) {
+    return 'Match as many as you can in ${seconds}s';
+  }
+
+  @override
+  String get speedMatchStart => 'Start';
+
+  @override
+  String speedMatchScore(int count) {
+    return '$count matched';
+  }
+
+  @override
+  String get speedMatchTimeUp => 'Times up';
+
+  @override
+  String get speedMatchPlayAgain => 'Play again';
+
+  @override
+  String get speedMatchNeedMore => 'Need at least 6 new or learning words';
+
+  @override
+  String get speedMatchToday => 'Speed match';
+
+  @override
+  String get helpTopic13Title => 'Mini games & exercises';
+
+  @override
+  String get helpTopic13Body =>
+      'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer).';
 }

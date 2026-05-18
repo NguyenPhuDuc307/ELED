@@ -83,7 +83,10 @@ class _BulkImportScreenState extends State<BulkImportScreen> {
     final tokens = _tokenize(_pasteCtrl.text);
     if (tokens.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(t.bulkImportEmptyInput)),
+        SnackBar(
+          content: Text(t.bulkImportEmptyInput),
+          duration: const Duration(seconds: 3),
+        ),
       );
       return;
     }
@@ -133,7 +136,10 @@ class _BulkImportScreenState extends State<BulkImportScreen> {
       final newName = _newNameCtrl.text.trim();
       if (newName.isEmpty) {
         messenger.showSnackBar(
-          SnackBar(content: Text(t.bulkImportNeedCollection)),
+          SnackBar(
+            content: Text(t.bulkImportNeedCollection),
+            duration: const Duration(seconds: 3),
+          ),
         );
         return;
       }
@@ -168,6 +174,7 @@ class _BulkImportScreenState extends State<BulkImportScreen> {
         content: Text(
           t.bulkImportDoneToast(preview.toAdd.length, targetName),
         ),
+        duration: const Duration(seconds: 3),
       ),
     );
     navigator.pop(true);

@@ -60,38 +60,62 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
           title: Text(
             t.collectionsNewCollection,
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 18,
                 ),
           ),
           content: TextField(
             controller: controller,
             autofocus: true,
+            textCapitalization: TextCapitalization.sentences,
             style: Theme.of(context).textTheme.bodyLarge,
             decoration: InputDecoration(
               hintText: t.collectionsNamePlaceholder,
               hintStyle: TextStyle(color: context.bMuted),
-              border: UnderlineInputBorder(
+              filled: true,
+              fillColor: context.bBg,
+              contentPadding: const EdgeInsets.symmetric(
+                horizontal: 14,
+                vertical: 14,
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(color: context.bSubtle, width: 1.5),
               ),
-              enabledBorder: UnderlineInputBorder(
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
                 borderSide: BorderSide(color: context.bSubtle, width: 1.5),
               ),
-              focusedBorder: const UnderlineInputBorder(
-                borderSide: BorderSide(color: BrutalistTheme.primary, width: 2),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: const BorderSide(
+                  color: BrutalistTheme.primary,
+                  width: 2,
+                ),
               ),
             ),
           ),
+          actionsPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(),
-              child: Text(t.commonCancel, style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
-            ),
-            TextButton(
               style: TextButton.styleFrom(
+                foregroundColor: context.bMuted,
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              ),
+              child: Text(
+                t.commonCancel,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
+            ),
+            FilledButton(
+              style: FilledButton.styleFrom(
                 backgroundColor: BrutalistTheme.primary,
                 foregroundColor: BrutalistTheme.white,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
               ),
               onPressed: () async {
                 final name = controller.text.trim();
@@ -101,11 +125,50 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                   _loadCollections();
                 }
               },
-              child: Text(t.collectionsCreate, style: const TextStyle(fontWeight: FontWeight.w600)),
+              child: Text(
+                t.collectionsCreate,
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
             ),
           ],
         );
       },
+    );
+  }
+
+  /// Brutalist swipe-to-delete background — soft brick red + rounded corners
+  /// matching the surrounding card.
+  Widget _dismissBackground(AppLocalizations t) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 2, 4, 10),
+      child: Container(
+        alignment: Alignment.centerRight,
+        padding: const EdgeInsets.symmetric(horizontal: 28),
+        decoration: BoxDecoration(
+          color: const Color(0xFFD9534F),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(
+              Icons.delete_outline_rounded,
+              color: BrutalistTheme.white,
+              size: 28,
+            ),
+            const SizedBox(width: 8),
+            Text(
+              t.commonDelete,
+              style: const TextStyle(
+                color: BrutalistTheme.white,
+                fontWeight: FontWeight.w700,
+                fontSize: 15,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -176,28 +239,54 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                             return Dismissible(
                                 key: Key(name),
                                 direction: DismissDirection.endToStart,
-                                background: Container(
-                                  color: Colors.red,
-                                  alignment: Alignment.centerRight,
-                                  padding: const EdgeInsets.symmetric(horizontal: 32),
-                                  child: const Icon(Icons.delete_forever_rounded, color: Colors.white, size: 40),
-                                ),
+                                background: _dismissBackground(t),
                                 confirmDismiss: (dir) async {
-                                  return await showDialog(
+                                  return await showDialog<bool>(
                                     context: context,
                                     builder: (ctx) => AlertDialog(
                                       backgroundColor: context.bBg,
-                                      title: Text(t.collectionsDeleteTitle(name), style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
-                                      content: Text(t.collectionsDeleteBody, style: TextStyle(color: context.bBorder)),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      title: Text(
+                                        t.collectionsDeleteTitle(name),
+                                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                                              fontWeight: FontWeight.w800,
+                                              fontSize: 18,
+                                            ),
+                                      ),
+                                      content: Text(
+                                        t.collectionsDeleteBody,
+                                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                              color: context.bMuted,
+                                              height: 1.4,
+                                            ),
+                                      ),
+                                      actionsPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                                       actions: [
                                         TextButton(
                                           onPressed: () => Navigator.of(ctx).pop(false),
-                                          child: Text(t.commonCancel.toUpperCase(), style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+                                          style: TextButton.styleFrom(
+                                            foregroundColor: context.bMuted,
+                                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                                          ),
+                                          child: Text(
+                                            t.commonCancel,
+                                            style: const TextStyle(fontWeight: FontWeight.w600),
+                                          ),
                                         ),
-                                        TextButton(
-                                          style: TextButton.styleFrom(backgroundColor: BrutalistTheme.secondary),
+                                        FilledButton(
                                           onPressed: () => Navigator.of(ctx).pop(true),
-                                          child: Text(t.commonDelete.toUpperCase(), style: const TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                                          style: FilledButton.styleFrom(
+                                            backgroundColor: const Color(0xFFD9534F),
+                                            foregroundColor: BrutalistTheme.white,
+                                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                                            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                                          ),
+                                          child: Text(
+                                            t.commonDelete,
+                                            style: const TextStyle(fontWeight: FontWeight.w700),
+                                          ),
                                         ),
                                       ],
                                     ),

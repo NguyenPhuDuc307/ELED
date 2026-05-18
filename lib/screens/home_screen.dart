@@ -7,14 +7,18 @@ import 'package:just_audio/just_audio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../l10n/gen/app_localizations.dart';
 import '../models/vocabulary.dart';
+import '../models/word_state.dart';
 import '../services/auth_service.dart';
 import '../services/csv_service.dart';
 import '../services/collection_service.dart';
 import '../services/custom_word_service.dart';
+import '../services/srs_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
 import '../widgets/brutalist_card.dart';
+import 'match_game_screen.dart';
+import 'speed_match_screen.dart';
 import 'learning_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -346,7 +350,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           setState(() => _allVocabData.clear());
                           if (mounted) {
                             messenger.showSnackBar(
-                              SnackBar(content: Text(t.homeHistoryCleared)),
+                              SnackBar(
+                                content: Text(t.homeHistoryCleared),
+                                duration: const Duration(seconds: 3),
+                              ),
                             );
                           }
                         },
@@ -371,7 +378,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         final navigator = Navigator.of(searchContext);
                         final added = await CollectionService.addWord(widget.topicTitle!, vocab.word);
                         if (added && mounted) {
-                          messenger.showSnackBar(SnackBar(content: Text(t.homeWordAddedToCollection)));
+                          messenger.showSnackBar(SnackBar(
+                            content: Text(t.homeWordAddedToCollection),
+                            duration: const Duration(seconds: 3),
+                          ));
                           _loadCollectionData();
                         }
                         if (mounted) navigator.pop(); // pop search screen
@@ -467,6 +477,239 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: BrutalistTheme.primary.withValues(alpha: 0.85),
                   ),
           ),
+        ),
+      ),
+    );
+  }
+
+  /// Today-style hub injected at the top of a Collection list. Lets the
+  /// user start a learning session or fire up a mini-game on the collection
+  /// the same way Today does for the daily queue.
+  Widget _collectionHub(List<Vocabulary> pool) {
+    final t = AppLocalizations.of(context);
+    // Eligibility for the games — match the Today screen's gating so the
+    // pool is restricted to words the user hasn't fully mastered yet.
+    final srs = SrsService();
+    final gamePool = pool.where((v) {
+      final stage = srs.stateFor(v.word).stage;
+      return stage == SrsStage.fresh || stage == SrsStage.learning;
+    }).toList();
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 4, 4, 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _collectionSessionCard(t, pool),
+          if (gamePool.length >= 4) ...[
+            const SizedBox(height: 8),
+            _collectionMatchCta(t, gamePool),
+          ],
+          if (gamePool.length >= 6) ...[
+            const SizedBox(height: 8),
+            _collectionSpeedCta(t, gamePool),
+          ],
+          const SizedBox(height: 4),
+        ],
+      ),
+    );
+  }
+
+  Widget _collectionSessionCard(AppLocalizations t, List<Vocabulary> pool) {
+    final total = pool.length;
+    final label = total == 1
+        ? t.todaySessionCountSingular(total)
+        : t.todaySessionCountPlural(total);
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.primary,
+      onTap: () => Navigator.of(context).push(smoothRoute(LearningScreen(
+        day: 0,
+        vocabularies: pool,
+      ))),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.white.withValues(alpha: 0.18),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.bolt_rounded,
+                  color: BrutalistTheme.white, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t.todaySessionLabel,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: BrutalistTheme.white.withValues(alpha: 0.85),
+                            fontSize: 12,
+                            letterSpacing: 0.3,
+                          )),
+                  const SizedBox(height: 2),
+                  Text(label,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            color: BrutalistTheme.white,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 17,
+                          )),
+                ],
+              ),
+            ),
+            Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.white,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.play_arrow_rounded,
+                      color: BrutalistTheme.primary, size: 20),
+                  const SizedBox(width: 4),
+                  Text(t.todayStartSession,
+                      style: const TextStyle(
+                        color: BrutalistTheme.primary,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 13,
+                      )),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _collectionMatchCta(AppLocalizations t, List<Vocabulary> pool) {
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.accentLight,
+      onTap: () => Navigator.of(context).push(
+        smoothRoute(MatchGameScreen(pool: pool)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.accent.withValues(alpha: 0.18),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.extension_rounded,
+                  color: BrutalistTheme.accent, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t.todayMatchGameTitle,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: BrutalistTheme.accent,
+                          fontSize: 15)),
+                  Text(t.todayMatchGameSubtitle,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color:
+                              BrutalistTheme.accent.withValues(alpha: 0.75),
+                          fontSize: 12)),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: BrutalistTheme.accent.withValues(alpha: 0.7)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _collectionSpeedCta(AppLocalizations t, List<Vocabulary> pool) {
+    return BrutalistCard(
+      backgroundColor: BrutalistTheme.primaryLight,
+      onTap: () => Navigator.of(context).push(
+        smoothRoute(SpeedMatchScreen(pool: pool)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: BrutalistTheme.primary.withValues(alpha: 0.18),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.timer_rounded,
+                  color: BrutalistTheme.primary, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(t.speedMatchTitle,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: BrutalistTheme.primary,
+                          fontSize: 15)),
+                  Text(t.speedMatchSubtitle(SpeedMatchScreen.gameSeconds),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color:
+                              BrutalistTheme.primary.withValues(alpha: 0.75),
+                          fontSize: 12)),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded,
+                color: BrutalistTheme.primary.withValues(alpha: 0.7)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Brutalist-themed swipe-to-delete background — soft brick red with
+  /// rounded corners matching the surrounding card. Replaces the harsh
+  /// Material default red that clashed with the cream/pink palette.
+  Widget _dismissBackground() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 2, 4, 10),
+      child: Container(
+        alignment: Alignment.centerRight,
+        padding: const EdgeInsets.symmetric(horizontal: 28),
+        decoration: BoxDecoration(
+          color: const Color(0xFFD9534F),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(
+              Icons.delete_outline_rounded,
+              color: BrutalistTheme.white,
+              size: 28,
+            ),
+            const SizedBox(width: 8),
+            Text(
+              AppLocalizations.of(context).commonDelete,
+              style: const TextStyle(
+                color: BrutalistTheme.white,
+                fontWeight: FontWeight.w700,
+                fontSize: 15,
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -634,10 +877,16 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
+    final showCollectionHub = widget.mode == 'COLLECTION';
+    final headerCount = showCollectionHub ? 1 : 0;
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      itemCount: results.length,
-      itemBuilder: (context, index) {
+      itemCount: results.length + headerCount,
+      itemBuilder: (context, rawIndex) {
+        if (showCollectionHub && rawIndex == 0) {
+          return _collectionHub(results);
+        }
+        final index = rawIndex - headerCount;
         final vocab = results[index];
 
         Widget card = BrutalistCard(
@@ -720,12 +969,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return Dismissible(
               key: Key(vocab.word),
               direction: DismissDirection.endToStart,
-              background: Container(
-                color: Colors.red,
-                alignment: Alignment.centerRight,
-                padding: const EdgeInsets.symmetric(horizontal: 32),
-                child: const Icon(Icons.delete_forever_rounded, color: Colors.white, size: 40),
-              ),
+              background: _dismissBackground(),
               confirmDismiss: (direction) async {
                 return await showDialog<bool>(
                   context: context,
@@ -744,20 +988,31 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: context.bMuted,
                       ),
                     ),
+                    actionsPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.of(ctx).pop(false),
-                        child: Text(t.commonCancel, style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
-                      ),
-                      TextButton(
                         style: TextButton.styleFrom(
-                          backgroundColor: BrutalistTheme.secondary,
-                          foregroundColor: BrutalistTheme.white,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                          foregroundColor: context.bMuted,
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                         ),
+                        child: Text(
+                          t.commonCancel,
+                          style: const TextStyle(fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                      FilledButton(
                         onPressed: () => Navigator.of(ctx).pop(true),
-                        child: Text(t.commonRemove, style: const TextStyle(fontWeight: FontWeight.w600)),
+                        style: FilledButton.styleFrom(
+                          backgroundColor: const Color(0xFFD9534F),
+                          foregroundColor: BrutalistTheme.white,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                        ),
+                        child: Text(
+                          t.commonRemove,
+                          style: const TextStyle(fontWeight: FontWeight.w700),
+                        ),
                       ),
                     ],
                   ),
@@ -772,7 +1027,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 messenger.showSnackBar(
                   SnackBar(
                     content: Text(t.homeRemovedWord(vocab.word)),
-                    duration: const Duration(seconds: 4),
+                    duration: const Duration(seconds: 3),
                     action: SnackBarAction(
                       label: t.commonUndo,
                       onPressed: () async {

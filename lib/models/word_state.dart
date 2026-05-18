@@ -125,7 +125,7 @@ enum ReviewRating { again, hard, good, easy }
 /// [SrsService.pickExerciseType] so a session has varied feel instead of
 /// the same flashcard repeated 20 times.
 enum ExerciseType {
-  /// Classic flashcard with manual Again / Hard / Good / Easy rating.
+  /// Classic flashcard with manual Again / Hard / Good rating.
   recognize,
 
   /// 4 translation options, tap the correct one. Auto-rates Good / Again.
@@ -135,6 +135,15 @@ enum ExerciseType {
   listenAndType,
 
   /// Example sentence with the target word blanked out. User types the
-  /// missing word. Lenient match. Auto-rates Good / Again.
+  /// missing word. Falls back to a meaning-prompt when no example exists.
   fillInContext,
+
+  /// Scrambled letters of the word + meaning; tap letters in order.
+  anagram,
+
+  /// Meaning + first letter shown; type the rest of the word.
+  firstLetter,
+
+  /// English word shown; type the Vietnamese meaning. Lenient match.
+  reverseTyping,
 }

@@ -185,7 +185,7 @@ abstract class AppLocalizations {
   /// No description provided for @todayMatchGameSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Pair 4 words with their meanings'**
+  /// **'Pair words with their meanings'**
   String get todayMatchGameSubtitle;
 
   /// No description provided for @todayMatchGameNotEnough.
@@ -959,7 +959,7 @@ abstract class AppLocalizations {
   /// No description provided for @learningGood.
   ///
   /// In en, this message translates to:
-  /// **'Good'**
+  /// **'Easy'**
   String get learningGood;
 
   /// No description provided for @learningEasy.
@@ -1325,31 +1325,31 @@ abstract class AppLocalizations {
   /// No description provided for @helpTopic2Body.
   ///
   /// In en, this message translates to:
-  /// **'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin.'**
+  /// **'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Match game (calm 4-6 pair puzzle) and Speed match (30-second arcade) cards below.'**
   String get helpTopic2Body;
 
   /// No description provided for @helpTopic3Title.
   ///
   /// In en, this message translates to:
-  /// **'The four rating buttons'**
+  /// **'The three rating buttons'**
   String get helpTopic3Title;
 
   /// No description provided for @helpTopic3Body.
   ///
   /// In en, this message translates to:
-  /// **'After every flashcard you rate how it went. The app uses that rating to schedule the word\'s next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Good — \"I knew it\". Standard schedule (each Good multiplies the interval).\n• Easy — \"Way too easy\". Pushes the word out further so you don\'t waste time on it.'**
+  /// **'After every flashcard you rate how it went. The app uses that rating to schedule the word\'s next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Easy — \"I knew it\". Standard schedule (each Easy multiplies the interval).\n\nIf a word feels too easy to even bother scheduling, tap the ✓ icon on the toolbar to mark it known and skip it for a long time.'**
   String get helpTopic3Body;
 
   /// No description provided for @helpTopic4Title.
   ///
   /// In en, this message translates to:
-  /// **'Exercise types'**
+  /// **'Many ways to study'**
   String get helpTopic4Title;
 
   /// No description provided for @helpTopic4Body.
   ///
   /// In en, this message translates to:
-  /// **'While a word is new or you\'re still figuring it out, sessions mix four exercise styles to keep your brain engaged:\n\n• Recognize — classic flashcard with the four rating buttons.\n• Multiple choice — pick the right translation from 4 options.\n• Listen and type — hear the word, type it back. Lenient spelling.\n• Fill in context — a real Oxford sentence with the word blanked out.\n\nOnce you\'ve shown you know a word, sessions ease off to the gentle Recognize card. No more guessing puzzles on words you\'ve already mastered.'**
+  /// **'Cards inside a session rotate between six exercise styles so practice never gets repetitive: Recognize, Multiple choice, Listen and type, Fill in context, Anagram, First letter, and Reverse typing. See \"Mini games & exercises\" below for what each one does.\n\nOnce you have shown you know a word, sessions ease off to the gentle Recognize card — no more guessing puzzles on words you have already mastered.'**
   String get helpTopic4Body;
 
   /// No description provided for @helpTopic5Title.
@@ -1361,19 +1361,19 @@ abstract class AppLocalizations {
   /// No description provided for @helpTopic5Body.
   ///
   /// In en, this message translates to:
-  /// **'A 4-pair tap-to-match mini game, shown below Start session when you have at least 4 new or learning words queued. Tap a word, then its translation; correct pairs fade green, wrong picks flash red. Your accuracy auto-rates each word in the same SRS schedule as the main flow.'**
+  /// **'A tap-to-match mini game with up to 6 pairs (4 minimum), shown below Start session when you have at least 4 new or learning words queued. Tap a word, then its translation; correct pairs fade green, wrong picks flash red. Your accuracy auto-rates each word in the same SRS schedule as the main flow.'**
   String get helpTopic5Body;
 
   /// No description provided for @helpTopic6Title.
   ///
   /// In en, this message translates to:
-  /// **'Skip a word forever'**
+  /// **'Mark a word as known'**
   String get helpTopic6Title;
 
   /// No description provided for @helpTopic6Body.
   ///
   /// In en, this message translates to:
-  /// **'On a Recognize card, tap the archive ⓘ icon at the top-right corner. Confirm Skip and the word is marked as mastered with a year-long interval — useful for words you imported as \"known\" but really don\'t need to study.'**
+  /// **'On any learning card, tap the ✓ icon in the top bar. The word is promoted to mastered (wont reappear in daily sessions for a long stretch) and the next card slides in. A snackbar with Undo gives you a few seconds to take it back if you tapped by mistake. Tapping ✓ again on a word thats already known removes it from the known list.'**
   String get helpTopic6Body;
 
   /// No description provided for @helpTopic7Title.
@@ -2215,6 +2215,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open Browse → My collections → tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio.'**
   String get helpTopic12Body;
+
+  /// No description provided for @exerciseTypeEnglishFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Type the English word for the meaning below'**
+  String get exerciseTypeEnglishFor;
+
+  /// No description provided for @exerciseAnagramTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Unscramble the word'**
+  String get exerciseAnagramTitle;
+
+  /// No description provided for @exerciseAnagramClear.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get exerciseAnagramClear;
+
+  /// No description provided for @exerciseFirstLetterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Type the rest of the word'**
+  String get exerciseFirstLetterTitle;
+
+  /// No description provided for @exerciseReverseTypingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Type the meaning'**
+  String get exerciseReverseTypingTitle;
+
+  /// No description provided for @exerciseReverseTypingHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Vietnamese meaning'**
+  String get exerciseReverseTypingHint;
+
+  /// No description provided for @speedMatchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Speed match'**
+  String get speedMatchTitle;
+
+  /// No description provided for @speedMatchSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Match as many as you can in {seconds}s'**
+  String speedMatchSubtitle(int seconds);
+
+  /// No description provided for @speedMatchStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get speedMatchStart;
+
+  /// No description provided for @speedMatchScore.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} matched'**
+  String speedMatchScore(int count);
+
+  /// No description provided for @speedMatchTimeUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Times up'**
+  String get speedMatchTimeUp;
+
+  /// No description provided for @speedMatchPlayAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Play again'**
+  String get speedMatchPlayAgain;
+
+  /// No description provided for @speedMatchNeedMore.
+  ///
+  /// In en, this message translates to:
+  /// **'Need at least 6 new or learning words'**
+  String get speedMatchNeedMore;
+
+  /// No description provided for @speedMatchToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Speed match'**
+  String get speedMatchToday;
+
+  /// No description provided for @helpTopic13Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Mini games & exercises'**
+  String get helpTopic13Title;
+
+  /// No description provided for @helpTopic13Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• First letter — meaning + first letter, type the rest.\n• Reverse typing — see the English word, type the meaning.\n\nThe Today screen also offers two standalone games when you have enough fresh words: Match game (4–6 calm pairs) and Speed match (30-second timer).'**
+  String get helpTopic13Body;
 }
 
 class _AppLocalizationsDelegate

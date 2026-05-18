@@ -1181,4 +1181,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String searchAddCustomCta(String word) {
     return 'Dùng \"$word\" làm từ tự định nghĩa';
   }
+
+  @override
+  String get helpTopic12Title => 'Nhập danh sách từ';
+
+  @override
+  String get helpTopic12Body =>
+      'Mở Duyệt → Bộ sưu tập → bấm icon upload ở thanh trên. Dán danh sách (mỗi dòng một từ, hoặc cách nhau bằng dấu phẩy), chọn bộ sưu tập đích hoặc tạo mới ngay, rồi bấm Xem trước. App sẽ cho biết từ nào khớp với từ vựng có sẵn, từ nào là \"tự định nghĩa\" (sẽ tự dịch qua Google), và từ nào đã có. Xác nhận một phát là thêm hết. Từ tự định nghĩa hiển thị nhãn TỰ ĐỊNH NGHĨA nhỏ kèm nghĩa dịch — chúng không tham gia bài tập và SRS vì thiếu IPA và audio.';
 }

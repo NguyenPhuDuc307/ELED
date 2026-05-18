@@ -2203,6 +2203,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Use \"{word}\" as a custom word'**
   String searchAddCustomCta(String word);
+
+  /// No description provided for @helpTopic12Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Import a word list'**
+  String get helpTopic12Title;
+
+  /// No description provided for @helpTopic12Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Browse → My collections → tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio.'**
+  String get helpTopic12Body;
 }
 
 class _AppLocalizationsDelegate

@@ -135,10 +135,10 @@ extension BrutalistContext on BuildContext {
 /// Smooth fade + slide-up page transition — use instead of MaterialPageRoute.
 Route<T> smoothRoute<T>(Widget page) {
   return PageRouteBuilder<T>(
-    pageBuilder: (_, __, ___) => page,
+    pageBuilder: (_, _, _) => page,
     transitionDuration: const Duration(milliseconds: 300),
     reverseTransitionDuration: const Duration(milliseconds: 220),
-    transitionsBuilder: (_, animation, __, child) {
+    transitionsBuilder: (_, animation, _, child) {
       final curved = CurvedAnimation(parent: animation, curve: Curves.easeOutCubic);
       return FadeTransition(
         opacity: curved,

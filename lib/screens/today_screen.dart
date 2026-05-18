@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../models/vocabulary.dart';
 import '../models/word_state.dart';
 import '../services/srs_service.dart';
@@ -124,8 +125,8 @@ class _TodayScreenState extends State<TodayScreen> {
     }).toList();
     if (pool.length < 4) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Need at least 4 new or learning words for the game'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context).todayMatchGameNotEnough),
         ),
       );
       return;
@@ -138,10 +139,11 @@ class _TodayScreenState extends State<TodayScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'ELED',
+          t.appTitle,
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
                 fontSize: 24,
                 fontWeight: FontWeight.w700,
@@ -150,19 +152,19 @@ class _TodayScreenState extends State<TodayScreen> {
         ),
         actions: [
           IconButton(
-            tooltip: 'Search',
+            tooltip: t.todayTooltipSearch,
             icon: const Icon(Icons.search_rounded),
             onPressed: () => Navigator.of(context)
                 .push(smoothRoute(const HomeScreen(mode: 'SEARCH'))),
           ),
           IconButton(
-            tooltip: 'Browse',
+            tooltip: t.todayTooltipBrowse,
             icon: const Icon(Icons.apps_rounded),
             onPressed: () => Navigator.of(context)
                 .push(smoothRoute(const MenuScreen())),
           ),
           IconButton(
-            tooltip: 'Settings',
+            tooltip: t.todayTooltipSettings,
             icon: const Icon(Icons.settings_rounded),
             onPressed: () => Navigator.of(context)
                 .push(smoothRoute(const SettingsScreen())),
@@ -171,11 +173,11 @@ class _TodayScreenState extends State<TodayScreen> {
         ],
       ),
       body: _loading
-          ? Center(
-              child: CircularProgressIndicator(
-                color: context.bBorder,
-                strokeWidth: 5,
-              ))
+          ? LinearProgressIndicator(
+              minHeight: 3,
+              backgroundColor: context.bBorder.withValues(alpha: 0.08),
+              valueColor: AlwaysStoppedAnimation(context.bBorder),
+            )
           : RefreshIndicator(
               onRefresh: _refresh,
               child: ListView(
@@ -201,8 +203,8 @@ class _TodayScreenState extends State<TodayScreen> {
   }
 
   Widget _heading() {
-    final now = DateTime.now();
-    final dateLabel = _weekdayLabel(now.weekday);
+    final t = AppLocalizations.of(context);
+    final dateLabel = _weekdayLabel(t);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -215,7 +217,7 @@ class _TodayScreenState extends State<TodayScreen> {
         ),
         const SizedBox(height: 4),
         Text(
-          'Today',
+          t.today,
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
                 fontSize: 36,
                 fontWeight: FontWeight.w800,
@@ -226,11 +228,15 @@ class _TodayScreenState extends State<TodayScreen> {
   }
 
   Widget _sessionCard() {
+    final t = AppLocalizations.of(context);
     final total = _session.length;
     final freshInSession = total - _dueCount.clamp(0, total);
     if (total == 0) {
       return _emptyCard();
     }
+    final wordCountLabel = total == 1
+        ? t.todaySessionCountSingular(total)
+        : t.todaySessionCountPlural(total);
     return BrutalistCard(
       backgroundColor: BrutalistTheme.primary,
       onTap: _startSession,
@@ -256,7 +262,7 @@ class _TodayScreenState extends State<TodayScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Today\'s session',
+                        t.todaySessionLabel,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                               color:
                                   BrutalistTheme.white.withValues(alpha: 0.85),
@@ -266,7 +272,7 @@ class _TodayScreenState extends State<TodayScreen> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        '$total ${total == 1 ? "word" : "words"}',
+                        wordCountLabel,
                         style: Theme.of(context).textTheme.displayLarge?.copyWith(
                               color: BrutalistTheme.white,
                               fontSize: 30,
@@ -281,11 +287,11 @@ class _TodayScreenState extends State<TodayScreen> {
             const SizedBox(height: 20),
             Row(
               children: [
-                _pill('${_dueCount.clamp(0, total)} review',
+                _pill(t.todayPillReview(_dueCount.clamp(0, total)),
                     BrutalistTheme.white.withValues(alpha: 0.22)),
                 const SizedBox(width: 8),
                 if (freshInSession > 0)
-                  _pill('$freshInSession new',
+                  _pill(t.todayPillNew(freshInSession),
                       BrutalistTheme.white.withValues(alpha: 0.22)),
               ],
             ),
@@ -307,7 +313,7 @@ class _TodayScreenState extends State<TodayScreen> {
                             color: BrutalistTheme.primary, size: 22),
                         const SizedBox(width: 6),
                         Text(
-                          'Start session',
+                          t.todayStartSession,
                           style: Theme.of(context)
                               .textTheme
                               .bodyLarge
@@ -330,6 +336,7 @@ class _TodayScreenState extends State<TodayScreen> {
   }
 
   Widget _emptyCard() {
+    final t = AppLocalizations.of(context);
     return BrutalistCard(
       backgroundColor: BrutalistTheme.primaryLight,
       child: Padding(
@@ -340,7 +347,7 @@ class _TodayScreenState extends State<TodayScreen> {
                 color: BrutalistTheme.primary, size: 40),
             const SizedBox(height: 12),
             Text(
-              'All caught up',
+              t.todayAllCaughtUp,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.w700,
                     fontSize: 18,
@@ -349,7 +356,7 @@ class _TodayScreenState extends State<TodayScreen> {
             ),
             const SizedBox(height: 6),
             Text(
-              "No reviews are due right now. Browse a topic or check back later.",
+              t.todayAllCaughtUpSubtitle,
               style: Theme.of(context)
                   .textTheme
                   .bodyMedium
@@ -381,11 +388,12 @@ class _TodayScreenState extends State<TodayScreen> {
   }
 
   Widget _statsRow() {
+    final t = AppLocalizations.of(context);
     return Row(
       children: [
-        Expanded(child: _statCard('Known', _knownCount, Icons.check_rounded)),
+        Expanded(child: _statCard(t.todayStatKnown, _knownCount, Icons.check_rounded)),
         const SizedBox(width: 12),
-        Expanded(child: _statCard('To learn', _freshAvailable, Icons.add_rounded)),
+        Expanded(child: _statCard(t.todayStatToLearn, _freshAvailable, Icons.add_rounded)),
       ],
     );
   }
@@ -394,6 +402,7 @@ class _TodayScreenState extends State<TodayScreen> {
   /// played as a 4-pair matching mini-game instead of a flashcard rotation.
   /// Hidden when fewer than 4 cards are queued (not enough to fill the grid).
   Widget _matchGameCta() {
+    final t = AppLocalizations.of(context);
     return BrutalistCard(
       backgroundColor: BrutalistTheme.accentLight,
       onTap: _startMatchGame,
@@ -415,12 +424,12 @@ class _TodayScreenState extends State<TodayScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Match game',
+                  Text(t.todayMatchGameTitle,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontWeight: FontWeight.w700,
                           color: BrutalistTheme.accent,
                           fontSize: 15)),
-                  Text('Pair 4 words with their meanings',
+                  Text(t.todayMatchGameSubtitle,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: BrutalistTheme.accent.withValues(alpha: 0.75),
                           fontSize: 12)),
@@ -468,7 +477,7 @@ class _TodayScreenState extends State<TodayScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Streak',
+                      Text(AppLocalizations.of(context).todayStreak,
                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                 color: context.bMuted,
                                 fontSize: 12,
@@ -476,8 +485,10 @@ class _TodayScreenState extends State<TodayScreen> {
                               )),
                       Text(
                         _streak == 0
-                            ? 'Start one today'
-                            : '$_streak ${_streak == 1 ? "day" : "days"}',
+                            ? AppLocalizations.of(context).todayStreakNone
+                            : (_streak == 1
+                                ? AppLocalizations.of(context).todayStreakDaysSingular(_streak)
+                                : AppLocalizations.of(context).todayStreakDaysPlural(_streak)),
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               fontWeight: FontWeight.w800,
                               fontSize: 20,
@@ -577,17 +588,17 @@ class _TodayScreenState extends State<TodayScreen> {
     );
   }
 
-  static String _weekdayLabel(int weekday) {
-    const days = [
-      'Monday', 'Tuesday', 'Wednesday', 'Thursday',
-      'Friday', 'Saturday', 'Sunday',
-    ];
-    final dayName = days[weekday - 1];
+  static String _weekdayLabel(AppLocalizations t) {
     final dt = DateTime.now();
-    const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December',
+    final dayNames = [
+      t.weekdayMonday, t.weekdayTuesday, t.weekdayWednesday, t.weekdayThursday,
+      t.weekdayFriday, t.weekdaySaturday, t.weekdaySunday,
     ];
-    return '$dayName, ${months[dt.month - 1]} ${dt.day}';
+    final monthNames = [
+      t.monthJanuary, t.monthFebruary, t.monthMarch, t.monthApril,
+      t.monthMay, t.monthJune, t.monthJuly, t.monthAugust,
+      t.monthSeptember, t.monthOctober, t.monthNovember, t.monthDecember,
+    ];
+    return '${dayNames[dt.weekday - 1]}, ${monthNames[dt.month - 1]} ${dt.day}';
   }
 }

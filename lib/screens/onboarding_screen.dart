@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 
@@ -21,46 +22,30 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final _pageCtrl = PageController();
   int _index = 0;
 
-  static const _pages = <_OnboardPage>[
-    _OnboardPage(
+  static const _pageMeta = <_OnboardPageMeta>[
+    _OnboardPageMeta(
       icon: Icons.school_rounded,
       accent: BrutalistTheme.primary,
       accentLight: BrutalistTheme.primaryLight,
-      title: 'Learn smarter, not harder',
-      body:
-          "ELED uses spaced repetition — you see each word again right before you'd forget it. "
-          "Hundreds of words stick in your head with just a few minutes a day.",
     ),
-    _OnboardPage(
+    _OnboardPageMeta(
       icon: Icons.bolt_rounded,
       accent: BrutalistTheme.primary,
       accentLight: BrutalistTheme.primaryLight,
-      title: 'One session a day',
-      body:
-          "Each morning the app picks the words you're closest to forgetting plus a few new ones. "
-          "Tap Start session — usually ~20 words, ~5 minutes.",
     ),
-    _OnboardPage(
+    _OnboardPageMeta(
       icon: Icons.tune_rounded,
       accent: BrutalistTheme.accent,
       accentLight: BrutalistTheme.accentLight,
-      title: 'Rate as you go',
-      body:
-          "After each card tell us how it went: Again / Hard / Good / Easy. We use your rating to "
-          "decide when the word reappears — Easy disappears for a month, Again comes back tomorrow.",
     ),
-    _OnboardPage(
+    _OnboardPageMeta(
       icon: Icons.extension_rounded,
       accent: BrutalistTheme.secondary,
       accentLight: BrutalistTheme.secondaryLight,
-      title: 'Variety beats grind',
-      body:
-          "As you learn, sessions mix flashcards with multiple choice, listen-and-type, "
-          "fill-in-context, and a 4-pair match game. Same vocabulary, fresh angle every time.",
     ),
   ];
 
-  bool get _isLast => _index == _pages.length - 1;
+  bool get _isLast => _index == _pageMeta.length - 1;
 
   Future<void> _finish() async {
     final prefs = await SharedPreferences.getInstance();
@@ -74,8 +59,35 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     super.dispose();
   }
 
+  String _titleFor(AppLocalizations t, int i) {
+    switch (i) {
+      case 0:
+        return t.onboarding1Title;
+      case 1:
+        return t.onboarding2Title;
+      case 2:
+        return t.onboarding3Title;
+      default:
+        return t.onboarding4Title;
+    }
+  }
+
+  String _bodyFor(AppLocalizations t, int i) {
+    switch (i) {
+      case 0:
+        return t.onboarding1Body;
+      case 1:
+        return t.onboarding2Body;
+      case 2:
+        return t.onboarding3Body;
+      default:
+        return t.onboarding4Body;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -86,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'ELED',
+                    t.appTitle,
                     style: Theme.of(context).textTheme.displayLarge?.copyWith(
                           fontSize: 22,
                           fontWeight: FontWeight.w800,
@@ -97,7 +109,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     TextButton(
                       onPressed: _finish,
                       child: Text(
-                        'Skip',
+                        t.onboardingSkip,
                         style: TextStyle(
                           color: context.bMuted,
                           fontWeight: FontWeight.w600,
@@ -110,9 +122,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Expanded(
               child: PageView.builder(
                 controller: _pageCtrl,
-                itemCount: _pages.length,
+                itemCount: _pageMeta.length,
                 onPageChanged: (i) => setState(() => _index = i),
-                itemBuilder: (_, i) => _OnboardPageView(page: _pages[i]),
+                itemBuilder: (_, i) => _OnboardPageView(
+                  meta: _pageMeta[i],
+                  title: _titleFor(t, i),
+                  body: _bodyFor(t, i),
+                ),
               ),
             ),
             _buildDots(),
@@ -120,8 +136,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
               child: _isLast
-                  ? _primaryButton('Get started', _finish)
-                  : _primaryButton('Next', () {
+                  ? _primaryButton(t.onboardingGetStarted, _finish)
+                  : _primaryButton(t.onboardingNext, () {
                       _pageCtrl.nextPage(
                         duration: const Duration(milliseconds: 280),
                         curve: Curves.easeOut,
@@ -137,7 +153,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget _buildDots() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(_pages.length, (i) {
+      children: List.generate(_pageMeta.length, (i) {
         final active = i == _index;
         return AnimatedContainer(
           duration: const Duration(milliseconds: 220),
@@ -178,25 +194,27 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 }
 
-class _OnboardPage {
+class _OnboardPageMeta {
   final IconData icon;
   final Color accent;
   final Color accentLight;
-  final String title;
-  final String body;
 
-  const _OnboardPage({
+  const _OnboardPageMeta({
     required this.icon,
     required this.accent,
     required this.accentLight,
-    required this.title,
-    required this.body,
   });
 }
 
 class _OnboardPageView extends StatelessWidget {
-  final _OnboardPage page;
-  const _OnboardPageView({required this.page});
+  final _OnboardPageMeta meta;
+  final String title;
+  final String body;
+  const _OnboardPageView({
+    required this.meta,
+    required this.title,
+    required this.body,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -207,16 +225,16 @@ class _OnboardPageView extends StatelessWidget {
         children: [
           Center(
             child: BrutalistCard(
-              backgroundColor: page.accentLight,
+              backgroundColor: meta.accentLight,
               child: Padding(
                 padding: const EdgeInsets.all(36),
-                child: Icon(page.icon, size: 80, color: page.accent),
+                child: Icon(meta.icon, size: 80, color: meta.accent),
               ),
             ),
           ),
           const SizedBox(height: 28),
           Text(
-            page.title,
+            title,
             style: Theme.of(context).textTheme.displayLarge?.copyWith(
                   fontSize: 26,
                   fontWeight: FontWeight.w800,
@@ -226,7 +244,7 @@ class _OnboardPageView extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            page.body,
+            body,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: context.bMuted,
                   height: 1.5,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:just_audio/just_audio.dart';
 
+import '../../l10n/gen/app_localizations.dart';
 import '../../models/vocabulary.dart';
 import '../../models/word_state.dart';
 import '../../theme/brutalist_theme.dart';
@@ -89,6 +90,7 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     final showAnswer = _correctness != null;
     // Compact the layout when the keyboard is up — otherwise the audio button
     // + padding + buttons overflow a typical 5" screen.
@@ -103,7 +105,7 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'Listen and type',
+            t.exerciseListenAndType,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: context.bMuted,
                   fontWeight: FontWeight.w600,
@@ -135,7 +137,7 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
                       : context.bBorder,
                 ),
             decoration: InputDecoration(
-              hintText: 'Type the word',
+              hintText: t.exerciseTypeTheWord,
               hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: context.bMuted,
                     fontSize: 18,
@@ -188,7 +190,7 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
                       foregroundColor: context.bMuted,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
-                    child: const Text('Skip', style: TextStyle(fontWeight: FontWeight.w600)),
+                    child: Text(t.exerciseSkip, style: const TextStyle(fontWeight: FontWeight.w600)),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -204,8 +206,8 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text('Check',
-                        style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
+                    child: Text(t.exerciseCheck,
+                        style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
                   ),
                 ),
               ],

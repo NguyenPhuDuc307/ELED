@@ -2,15 +2,19 @@ import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../models/vocabulary.dart';
 import '../utils/log.dart';
 import 'csv_service.dart';
 
 /// Last position the user was at inside a Learning session. We store just
-/// enough to rebuild the screen — labels and the ordered list of word keys —
+/// enough to rebuild the screen — day index + the ordered list of word keys —
 /// so the menu's "Continue" tile can warp the user straight back in.
+///
+/// No localized strings are persisted. The display label is computed at
+/// render time via [localizedLabel] so it follows the active locale even
+/// after the user switches languages mid-session.
 class LearningContext {
-  final String label;          // e.g. "Day 3", "Topic: Animals", "Search: happy"
   final int day;               // 0 if not day-grouped
   final List<String> wordKeys; // lowercase word strings, in order
   final int currentIndex;
@@ -18,7 +22,6 @@ class LearningContext {
   final int lastOpenedMs;
 
   const LearningContext({
-    required this.label,
     required this.day,
     required this.wordKeys,
     required this.currentIndex,
@@ -27,7 +30,6 @@ class LearningContext {
   });
 
   Map<String, dynamic> toJson() => {
-        'label': label,
         'day': day,
         'wordKeys': wordKeys,
         'currentIndex': currentIndex,
@@ -36,7 +38,6 @@ class LearningContext {
       };
 
   factory LearningContext.fromJson(Map<String, dynamic> j) => LearningContext(
-        label: (j['label'] as String?) ?? '',
         day: (j['day'] as int?) ?? 0,
         wordKeys: ((j['wordKeys'] as List?) ?? const [])
             .map((e) => e.toString().toLowerCase())
@@ -51,6 +52,14 @@ class LearningContext {
   bool get isFresh =>
       DateTime.now().millisecondsSinceEpoch - lastOpenedMs <
       14 * 24 * 60 * 60 * 1000;
+
+  /// Localized display label for the menu's "Continue" tile. Derived from
+  /// session shape so it always matches the current locale.
+  String localizedLabel(AppLocalizations t) {
+    if (day > 0) return t.learningDayTitle(day);
+    if (totalCount == 1 && wordKeys.isNotEmpty) return wordKeys.first;
+    return t.learningLastSession;
+  }
 }
 
 class LearningStateService {

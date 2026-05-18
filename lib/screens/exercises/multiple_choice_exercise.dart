@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/gen/app_localizations.dart';
 import '../../models/vocabulary.dart';
 import '../../models/word_state.dart';
 import '../../theme/brutalist_theme.dart';
@@ -66,6 +67,7 @@ class _MultipleChoiceExerciseState extends State<MultipleChoiceExercise> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Padding(
       padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
       child: Column(
@@ -77,7 +79,7 @@ class _MultipleChoiceExerciseState extends State<MultipleChoiceExercise> {
               child: Column(
                 children: [
                   Text(
-                    'What does this mean?',
+                    t.exerciseWhatDoesItMean,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: BrutalistTheme.black.withValues(alpha: 0.6),
                           fontSize: 13,

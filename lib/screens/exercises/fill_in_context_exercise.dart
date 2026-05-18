@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../l10n/gen/app_localizations.dart';
 import '../../models/vocabulary.dart';
 import '../../models/word_state.dart';
 import '../../services/oxford_service.dart';
@@ -96,6 +97,7 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     if (_loading) {
       return Center(
         child: CircularProgressIndicator(color: context.bBorder, strokeWidth: 4),
@@ -112,7 +114,7 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'Fill in the blank',
+            t.exerciseFillInBlank,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: context.bMuted,
                   fontWeight: FontWeight.w600,
@@ -172,7 +174,7 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
                       : context.bBorder,
                 ),
             decoration: InputDecoration(
-              hintText: 'Missing word',
+              hintText: t.exerciseMissingWord,
               hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: context.bMuted,
                     fontSize: 17,
@@ -224,8 +226,8 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
                       foregroundColor: context.bMuted,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
-                    child: const Text('Skip',
-                        style: TextStyle(fontWeight: FontWeight.w600)),
+                    child: Text(t.exerciseSkip,
+                        style: const TextStyle(fontWeight: FontWeight.w600)),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -240,8 +242,8 @@ class _FillInContextExerciseState extends State<FillInContextExercise> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12)),
                     ),
-                    child: const Text('Check',
-                        style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
+                    child: Text(t.exerciseCheck,
+                        style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
                   ),
                 ),
               ],

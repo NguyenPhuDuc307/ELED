@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/gen/app_localizations.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'home_screen.dart';
@@ -53,8 +54,9 @@ class _MenuScreenState extends State<MenuScreen> {
     }
     setState(() => _isNavigating = false);
     if (vocab == null || vocab.isEmpty) {
+      final t = AppLocalizations.of(context);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Couldn't resume — vocabulary changed")),
+        SnackBar(content: Text(t.menuCouldNotResume)),
       );
       await LearningStateService().clearContext();
       _refreshQuickAccess();
@@ -78,9 +80,10 @@ class _MenuScreenState extends State<MenuScreen> {
         final word = pendingMarkKnownWord!;
         pendingMarkKnownWord = null;
         if (mounted) {
+          final t = AppLocalizations.of(context);
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('"${word.toLowerCase()}" added to your known words'),
+              content: Text(t.menuMarkedKnownToast(word.toLowerCase())),
               duration: const Duration(seconds: 2),
               behavior: SnackBarBehavior.floating,
             ),
@@ -112,14 +115,14 @@ class _MenuScreenState extends State<MenuScreen> {
 
   /// Top-of-menu shortcuts: pick up where the user left off, plus a one-tap
   /// review of words they've already marked as known.
-  Widget _buildQuickAccess() {
+  Widget _buildQuickAccess(AppLocalizations t) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 18),
-      child: _continueTile(_continueCtx!),
+      child: _continueTile(t, _continueCtx!),
     );
   }
 
-  Widget _continueTile(LearningContext ctx) {
+  Widget _continueTile(AppLocalizations t, LearningContext ctx) {
     final progress = ctx.totalCount == 0 ? 0.0 : (ctx.currentIndex + 1) / ctx.totalCount;
     return BrutalistCard(
       backgroundColor: BrutalistTheme.primary,
@@ -145,14 +148,14 @@ class _MenuScreenState extends State<MenuScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Continue learning',
+                      Text(t.menuContinueLearning,
                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                               color: BrutalistTheme.white.withValues(alpha: 0.85),
                               fontSize: 12,
                               letterSpacing: 0.3)),
                       const SizedBox(height: 2),
                       Text(
-                        '${ctx.label} · ${ctx.currentIndex + 1} of ${ctx.totalCount}',
+                        t.menuContinueProgress(ctx.localizedLabel(t), ctx.currentIndex + 1, ctx.totalCount),
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             color: BrutalistTheme.white,
                             fontWeight: FontWeight.w700,
@@ -232,6 +235,7 @@ class _MenuScreenState extends State<MenuScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     final canPop = Navigator.canPop(context);
     return Scaffold(
       appBar: AppBar(
@@ -245,9 +249,9 @@ class _MenuScreenState extends State<MenuScreen> {
               )
             : null,
         title: canPop
-            ? const Text('Browse')
+            ? Text(t.menuTitle)
             : Text(
-                'ELED',
+                t.appTitle,
                 style: Theme.of(context).textTheme.displayLarge?.copyWith(
                       fontSize: 28,
                       fontWeight: FontWeight.w700,
@@ -303,7 +307,7 @@ class _MenuScreenState extends State<MenuScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Choose a mode',
+                        t.menuChooseModeLabel,
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               color: context.bMuted,
                               fontWeight: FontWeight.w500,
@@ -311,7 +315,7 @@ class _MenuScreenState extends State<MenuScreen> {
                       ),
                       const SizedBox(height: 6),
                       Text(
-                        'How do you want\nto learn today?',
+                        t.menuChooseModeQuestion,
                         style: Theme.of(context).textTheme.displayLarge?.copyWith(
                               fontSize: 26,
                               height: 1.25,
@@ -321,7 +325,7 @@ class _MenuScreenState extends State<MenuScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                if (_continueReady && _continueCtx != null) _buildQuickAccess(),
+                if (_continueReady && _continueCtx != null) _buildQuickAccess(t),
             // 2-column staggered grid
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -332,8 +336,8 @@ class _MenuScreenState extends State<MenuScreen> {
                     children: [
                       _menuCardGrid(
                         context,
-                        title: 'Popularity',
-                        subtitle: 'Learn words from A1 to C1 level',
+                        title: t.menuCardPopularityTitle,
+                        subtitle: t.menuCardPopularitySubtitle,
                         color: const Color(0xFFC8DEC4),
                         titleColor: const Color(0xFF2A4A28),
                         icon: Icons.trending_up_rounded,
@@ -342,8 +346,8 @@ class _MenuScreenState extends State<MenuScreen> {
                       ),
                       _menuCardGrid(
                         context,
-                        title: 'My Collections',
-                        subtitle: 'Your custom word lists',
+                        title: t.menuCardCollectionsTitle,
+                        subtitle: t.menuCardCollectionsSubtitle,
                         color: const Color(0xFFF5E4CC),
                         titleColor: const Color(0xFF5A3A18),
                         icon: Icons.bookmark_rounded,
@@ -351,8 +355,8 @@ class _MenuScreenState extends State<MenuScreen> {
                       ),
                       _menuCardGrid(
                         context,
-                        title: 'History',
-                        subtitle: 'Words via notifications',
+                        title: t.menuCardHistoryTitle,
+                        subtitle: t.menuCardHistorySubtitle,
                         color: const Color(0xFFE8D4C8),
                         titleColor: const Color(0xFF5A3028),
                         icon: Icons.history_rounded,
@@ -370,8 +374,8 @@ class _MenuScreenState extends State<MenuScreen> {
                       children: [
                         _menuCardGrid(
                           context,
-                          title: 'Topics',
-                          subtitle: 'By category: animals, travel…',
+                          title: t.menuCardTopicsTitle,
+                          subtitle: t.menuCardTopicsSubtitle,
                           color: const Color(0xFFF5D5CC),
                           titleColor: const Color(0xFF5A2820),
                           icon: Icons.category_rounded,
@@ -380,8 +384,8 @@ class _MenuScreenState extends State<MenuScreen> {
                         ),
                         _menuCardGrid(
                           context,
-                          title: 'Known Words',
-                          subtitle: 'Review words you already know',
+                          title: t.menuCardKnownTitle,
+                          subtitle: t.menuCardKnownSubtitle,
                           color: const Color(0xFFF5C4B8),
                           titleColor: const Color(0xFF5A2818),
                           icon: Icons.check_circle_rounded,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../models/word_state.dart';
 import '../services/streak_service.dart';
 import '../theme/brutalist_theme.dart';
@@ -68,17 +69,18 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
       .where((r) => r == ReviewRating.again || r == ReviewRating.hard)
       .length;
 
-  String get _headline {
-    if (widget.ratings.isEmpty) return 'Session ended';
+  String _headlineFor(AppLocalizations t) {
+    if (widget.ratings.isEmpty) return t.resultsHeadlineEnded;
     final pct = (_correct / widget.ratings.length * 100).round();
-    if (pct >= 90) return 'Outstanding';
-    if (pct >= 70) return 'Nice work';
-    if (pct >= 40) return 'Keep going';
-    return 'Tough round — that\'s the point';
+    if (pct >= 90) return t.resultsHeadlineOutstanding;
+    if (pct >= 70) return t.resultsHeadlineNice;
+    if (pct >= 40) return t.resultsHeadlineKeepGoing;
+    return t.resultsHeadlineTough;
   }
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     final newStreak = _streakAfter > _streakBefore;
     return Scaffold(
       body: SafeArea(
@@ -109,7 +111,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                       ),
                       const SizedBox(height: 20),
                       Text(
-                        _headline,
+                        _headlineFor(t),
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.displayLarge?.copyWith(
                               fontSize: 32,
@@ -119,8 +121,10 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                       const SizedBox(height: 6),
                       Text(
                         widget.ratings.isEmpty
-                            ? 'No cards rated.'
-                            : 'You reviewed ${widget.ratings.length} ${widget.ratings.length == 1 ? "word" : "words"}.',
+                            ? t.resultsNoCardsRated
+                            : widget.ratings.length == 1
+                                ? t.resultsReviewedSingular(widget.ratings.length)
+                                : t.resultsReviewedPlural(widget.ratings.length),
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               color: context.bMuted,
@@ -130,7 +134,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                       Row(
                         children: [
                           Expanded(child: _statTile(
-                            label: 'Correct',
+                            label: t.resultsCorrect,
                             value: _correct,
                             icon: Icons.check_circle_rounded,
                             tone: BrutalistTheme.primary,
@@ -138,7 +142,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                           )),
                           const SizedBox(width: 12),
                           Expanded(child: _statTile(
-                            label: 'Struggled',
+                            label: t.resultsStruggled,
                             value: _struggled,
                             icon: Icons.refresh_rounded,
                             tone: const Color(0xFFE5874E),
@@ -147,7 +151,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                         ],
                       ),
                       const SizedBox(height: 12),
-                      _streakCard(highlight: newStreak),
+                      _streakCard(t, highlight: newStreak),
                     ],
                   ),
                 ),
@@ -155,7 +159,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
               const SizedBox(height: 12),
               if (widget.onAnotherSession != null && widget.moreDue) ...[
                 _secondaryButton(
-                  label: 'Another session',
+                  label: t.resultsAnotherSession,
                   onTap: () {
                     Navigator.of(context).pop();
                     widget.onAnotherSession?.call();
@@ -164,7 +168,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                 const SizedBox(height: 10),
               ],
               _primaryButton(
-                label: 'Back to Today',
+                label: t.resultsBackToToday,
                 onTap: () => Navigator.of(context).pop(),
               ),
             ],
@@ -216,7 +220,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
     );
   }
 
-  Widget _streakCard({required bool highlight}) {
+  Widget _streakCard(AppLocalizations t, {required bool highlight}) {
     return BrutalistCard(
       backgroundColor: highlight ? BrutalistTheme.accent : context.bBg,
       child: Padding(
@@ -243,7 +247,7 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    highlight ? 'Streak extended' : 'Streak',
+                    highlight ? t.resultsStreakExtended : t.resultsStreak,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: highlight
                               ? BrutalistTheme.white.withValues(alpha: 0.85)
@@ -254,7 +258,9 @@ class _SessionResultsScreenState extends State<SessionResultsScreen> {
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    '$_streakAfter ${_streakAfter == 1 ? "day" : "days"}',
+                    _streakAfter == 1
+                        ? t.resultsStreakDaysSingular(_streakAfter)
+                        : t.resultsStreakDaysPlural(_streakAfter),
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontWeight: FontWeight.w800,
                           fontSize: 22,

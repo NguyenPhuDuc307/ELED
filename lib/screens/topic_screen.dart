@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
 
+import '../l10n/gen/app_localizations.dart';
 import '../services/csv_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
@@ -82,8 +83,9 @@ class _TopicScreenState extends State<TopicScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Topics')),
+      appBar: AppBar(title: Text(t.topicsTitle)),
       body: Column(
         children: [
           _buildLevelSelector(),
@@ -151,6 +153,7 @@ class _TopicScreenState extends State<TopicScreen> {
   }
 
   Widget _buildEmptyState() {
+    final t = AppLocalizations.of(context);
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -168,7 +171,7 @@ class _TopicScreenState extends State<TopicScreen> {
             ),
             const SizedBox(height: 20),
             Text(
-              'No topics in the selected levels',
+              t.topicsEmptyTitle,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.w700,
                     fontSize: 18,
@@ -178,7 +181,7 @@ class _TopicScreenState extends State<TopicScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Pick more levels above to see topics.',
+              t.topicsEmptyHint,
               style: Theme.of(context)
                   .textTheme
                   .bodyMedium
@@ -192,6 +195,7 @@ class _TopicScreenState extends State<TopicScreen> {
   }
 
   Widget _buildCategoryList() {
+    final t = AppLocalizations.of(context);
     final categories = _topics.keys.toList()..sort();
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
@@ -238,7 +242,9 @@ class _TopicScreenState extends State<TopicScreen> {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${sublists.length} ${sublists.length == 1 ? "topic" : "topics"} · $wordCount words',
+                        sublists.length == 1
+                            ? t.topicsCategorySummarySingular(sublists.length, wordCount)
+                            : t.topicsCategorySummaryPlural(sublists.length, wordCount),
                         style: Theme.of(context)
                             .textTheme
                             .bodyMedium

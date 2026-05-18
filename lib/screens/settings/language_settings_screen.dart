@@ -1,72 +1,51 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../l10n/gen/app_localizations.dart';
-import '../../main.dart';
-import '../../services/user_data_service.dart';
+import '../../services/locale_service.dart';
 import '../../theme/brutalist_theme.dart';
 import '../../widgets/brutalist_card.dart';
 import '../../widgets/section_header.dart';
 
-class AppearanceSettingsScreen extends StatefulWidget {
-  const AppearanceSettingsScreen({super.key});
+class LanguageSettingsScreen extends StatefulWidget {
+  const LanguageSettingsScreen({super.key});
 
   @override
-  State<AppearanceSettingsScreen> createState() => _AppearanceSettingsScreenState();
+  State<LanguageSettingsScreen> createState() => _LanguageSettingsScreenState();
 }
 
-class _AppearanceSettingsScreenState extends State<AppearanceSettingsScreen> {
-  String _themeMode = 'system';
-
-  @override
-  void initState() {
-    super.initState();
-    _load();
-  }
-
-  Future<void> _load() async {
-    final prefs = await SharedPreferences.getInstance();
-    if (!mounted) return;
-    setState(() => _themeMode = prefs.getString('themeMode') ?? 'system');
-  }
-
-  Future<void> _select(String mode) async {
-    setState(() => _themeMode = mode);
-    EledApp.themeNotifier.value = mode == 'dark'
-        ? ThemeMode.dark
-        : mode == 'light'
-            ? ThemeMode.light
-            : ThemeMode.system;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('themeMode', mode);
-    UserDataService().uploadSettings();
+class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> {
+  Future<void> _select(Locale? locale) async {
+    await LocaleService.set(locale);
+    if (mounted) setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context);
+    final current = LocaleService.notifier.value;
+
     return Scaffold(
-      appBar: AppBar(title: Text(t.appearanceTitle)),
+      appBar: AppBar(title: Text(t.languageSettingTitle)),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SectionHeader(
-              t.appearanceTheme,
-              subtitle: t.appearanceThemeSubtitle,
+              t.languageSettingTitle,
+              subtitle: t.languageSettingSubtitle,
             ),
-            _themeTile('system', t.appearanceMatchSystem, Icons.smartphone_rounded),
-            _themeTile('light', t.themeLight, Icons.light_mode_rounded),
-            _themeTile('dark', t.themeDark, Icons.dark_mode_rounded),
+            _tile(null, t.languageSystem, Icons.smartphone_rounded, current),
+            _tile(const Locale('en'), t.languageEnglish, Icons.translate_rounded, current),
+            _tile(const Locale('vi'), t.languageVietnamese, Icons.translate_rounded, current),
           ],
         ),
       ),
     );
   }
 
-  Widget _themeTile(String value, String label, IconData icon) {
-    final selected = _themeMode == value;
+  Widget _tile(Locale? value, String label, IconData icon, Locale? current) {
+    final selected = value?.languageCode == current?.languageCode;
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: BrutalistCard(

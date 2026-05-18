@@ -6,5 +6,8 @@
       "Bash(git checkout *)",
       "Bash(git add *)"
     ]
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true
   }
 }

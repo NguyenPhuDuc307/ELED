@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import '../../l10n/gen/app_localizations.dart';
 import '../../services/auth_service.dart';
 import '../../services/backup_service.dart';
 import '../../services/review_service.dart';
@@ -30,14 +31,15 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
 
   Future<void> _signIn() async {
     final messenger = ScaffoldMessenger.of(context);
+    final t = AppLocalizations.of(context);
     setState(() => _busy = true);
     try {
       final user = await AuthService().signInWithGoogle();
       if (user != null) {
-        messenger.showSnackBar(const SnackBar(content: Text('Signed in')));
+        messenger.showSnackBar(SnackBar(content: Text(t.dataSignedIn)));
       }
     } catch (e) {
-      messenger.showSnackBar(SnackBar(content: Text('Sign-in failed: $e')));
+      messenger.showSnackBar(SnackBar(content: Text(t.dataSignInFailed('$e'))));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -45,31 +47,34 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
 
   Future<void> _signOut() async {
     final messenger = ScaffoldMessenger.of(context);
+    final t = AppLocalizations.of(context);
     await AuthService().signOut();
     if (mounted) {
-      messenger.showSnackBar(const SnackBar(content: Text('Signed out')));
+      messenger.showSnackBar(SnackBar(content: Text(t.dataSignedOut)));
     }
   }
 
   Future<void> _export() async {
     final messenger = ScaffoldMessenger.of(context);
+    final t = AppLocalizations.of(context);
     final path = await BackupService().exportToShareSheet();
     if (!mounted) return;
     messenger.showSnackBar(SnackBar(
-      content: Text(path == null ? 'Export failed' : 'Backup ready to share'),
+      content: Text(path == null ? t.dataExportFailed : t.dataBackupReady),
     ));
   }
 
   Future<void> _import() async {
     final messenger = ScaffoldMessenger.of(context);
+    final t = AppLocalizations.of(context);
     final result = await BackupService().importFromPicker();
     if (!mounted) return;
     if (result == null) {
-      messenger.showSnackBar(const SnackBar(content: Text('Import cancelled or failed')));
+      messenger.showSnackBar(SnackBar(content: Text(t.dataImportCancelled)));
     } else {
       messenger.showSnackBar(SnackBar(
         content: Text(
-          'Added ${result.knownAdded} known words and ${result.collectionsAdded} new collections',
+          t.dataImportResult(result.knownAdded, result.collectionsAdded),
         ),
       ));
     }
@@ -77,8 +82,9 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Account & data')),
+      appBar: AppBar(title: Text(t.dataScreenTitle)),
       body: _busy
           ? Center(child: CircularProgressIndicator(color: context.bBorder, strokeWidth: 5))
           : SingleChildScrollView(
@@ -86,29 +92,29 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SectionHeader(
-                    'Account',
-                    subtitle: 'Sign in to sync known words and collections across devices',
+                  SectionHeader(
+                    t.dataAccountTitle,
+                    subtitle: t.dataAccountSubtitle,
                   ),
-                  _user == null ? _signedOutCard() : _signedInCard(),
+                  _user == null ? _signedOutCard(t) : _signedInCard(t),
                   const SizedBox(height: 32),
 
-                  const SectionHeader(
-                    'Backup',
-                    subtitle: 'Save your known words and collections as a JSON file',
+                  SectionHeader(
+                    t.dataBackup,
+                    subtitle: t.dataBackupSubtitle,
                   ),
-                  _backupRow(),
+                  _backupRow(t),
                   const SizedBox(height: 32),
 
-                  const SectionHeader('Feedback'),
-                  _rateRow(),
+                  SectionHeader(t.dataFeedback),
+                  _rateRow(t),
                 ],
               ),
             ),
     );
   }
 
-  Widget _signedOutCard() {
+  Widget _signedOutCard(AppLocalizations t) {
     return BrutalistCard(
       backgroundColor: context.bBg,
       onTap: _signIn,
@@ -130,12 +136,12 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Sign in with Google',
+                  Text(t.dataSignInWithGoogle,
                       style: Theme.of(context)
                           .textTheme
                           .bodyLarge
                           ?.copyWith(fontWeight: FontWeight.w600)),
-                  Text('Sync known words, collections & history',
+                  Text(t.dataSignInWithGoogleSubtitle,
                       style: Theme.of(context)
                           .textTheme
                           .bodyMedium
@@ -150,7 +156,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     );
   }
 
-  Widget _signedInCard() {
+  Widget _signedInCard(AppLocalizations t) {
     return BrutalistCard(
       backgroundColor: BrutalistTheme.primaryLight,
       child: Padding(
@@ -171,7 +177,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(_user!.displayName ?? 'Google user',
+                  Text(_user!.displayName ?? t.dataGoogleUser,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontWeight: FontWeight.w600, color: const Color(0xFF2A4A28))),
                   Text(_user!.email ?? '',
@@ -182,7 +188,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
             ),
             IconButton(
               icon: const Icon(Icons.logout_rounded, color: Color(0xFF2A4A28)),
-              tooltip: 'Sign out',
+              tooltip: t.dataSignOut,
               onPressed: _signOut,
             ),
           ],
@@ -191,7 +197,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     );
   }
 
-  Widget _backupRow() {
+  Widget _backupRow(AppLocalizations t) {
     return BrutalistCard(
       backgroundColor: context.bBg,
       child: Padding(
@@ -201,8 +207,8 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
             Expanded(
               child: TextButton.icon(
                 icon: const Icon(Icons.upload_file_rounded, color: BrutalistTheme.primary),
-                label: const Text('Export',
-                    style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700)),
+                label: Text(t.dataExport,
+                    style: const TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700)),
                 onPressed: _export,
               ),
             ),
@@ -210,8 +216,8 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
             Expanded(
               child: TextButton.icon(
                 icon: const Icon(Icons.download_rounded, color: BrutalistTheme.primary),
-                label: const Text('Import',
-                    style: TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700)),
+                label: Text(t.dataImport,
+                    style: const TextStyle(color: BrutalistTheme.primary, fontWeight: FontWeight.w700)),
                 onPressed: _import,
               ),
             ),
@@ -221,7 +227,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
     );
   }
 
-  Widget _rateRow() {
+  Widget _rateRow(AppLocalizations t) {
     return BrutalistCard(
       backgroundColor: context.bBg,
       onTap: () => ReviewService().openStoreListing(),
@@ -240,7 +246,7 @@ class _DataSettingsScreenState extends State<DataSettingsScreen> {
             ),
             const SizedBox(width: 14),
             Expanded(
-              child: Text('Rate ELED',
+              child: Text(t.dataRateApp,
                   style: Theme.of(context)
                       .textTheme
                       .bodyLarge

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/gen/app_localizations.dart';
 import '../services/csv_service.dart';
 import '../services/vocabulary_sync_service.dart';
 import '../theme/brutalist_theme.dart';
@@ -58,6 +59,7 @@ class _SyncScreenState extends State<SyncScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final bg = isDark ? BrutalistTheme.black : BrutalistTheme.background;
     final fg = isDark ? BrutalistTheme.white : BrutalistTheme.black;
@@ -72,7 +74,7 @@ class _SyncScreenState extends State<SyncScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'ELED',
+                t.appTitle,
                 style: TextStyle(
                   fontSize: 48,
                   fontWeight: FontWeight.w900,
@@ -83,10 +85,10 @@ class _SyncScreenState extends State<SyncScreen> {
               const SizedBox(height: 8),
               Text(
                 _error
-                    ? "Couldn't load vocabulary"
+                    ? t.syncErrorTitle
                     : _progress == 0
-                        ? 'Preparing your vocabulary…'
-                        : 'Loading vocabulary…',
+                        ? t.syncPreparing
+                        : t.syncLoading,
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -130,9 +132,9 @@ class _SyncScreenState extends State<SyncScreen> {
                       color: BrutalistTheme.primary,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    child: const Text(
-                      'Try again',
-                      style: TextStyle(
+                    child: Text(
+                      t.syncTryAgain,
+                      style: const TextStyle(
                         color: BrutalistTheme.white,
                         fontWeight: FontWeight.w600,
                         fontSize: 14,

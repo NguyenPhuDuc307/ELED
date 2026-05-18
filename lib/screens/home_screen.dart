@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../l10n/gen/app_localizations.dart';
 import '../models/vocabulary.dart';
 import '../services/auth_service.dart';
 import '../services/csv_service.dart';
@@ -236,25 +237,26 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
 
-  String get _screenTitle {
+  String _screenTitle(AppLocalizations t) {
     switch (widget.mode) {
       case 'KNOWN':
-        return 'Known words';
+        return t.homeTitleKnown;
       case 'HISTORY':
-        return 'History';
+        return t.homeTitleHistory;
       case 'COLLECTION':
-        return widget.topicTitle ?? 'Collection';
+        return widget.topicTitle ?? t.homeTitleCollection;
       case 'TOPIC':
-        return widget.topicTitle ?? 'Topic';
+        return widget.topicTitle ?? t.homeTitleTopic;
       case 'SEARCH':
-        return 'Search';
+        return t.homeTitleSearch;
       default:
-        return 'Popularity';
+        return t.homeTitlePopularity;
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
         title: _isSearching
@@ -268,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
                 decoration: InputDecoration(
-                  hintText: 'Type a word or translation…',
+                  hintText: t.homeSearchFieldHint,
                   hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: context.bMuted,
                       ),
@@ -276,7 +278,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 style: Theme.of(context).textTheme.bodyLarge,
               )
-            : Text(_screenTitle),
+            : Text(_screenTitle(t)),
         actions: [
           if (widget.mode == 'HISTORY')
             IconButton(
@@ -288,13 +290,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     backgroundColor: context.bBg,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                     title: Text(
-                      'Clear history?',
+                      t.homeClearHistoryTitle,
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
                     content: Text(
-                      'This will erase all notification history. This action cannot be undone.',
+                      t.homeClearHistoryBody,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: context.bMuted,
                       ),
@@ -303,7 +305,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       TextButton(
                         onPressed: () => Navigator.of(ctx).pop(),
                         child: Text(
-                          'Cancel',
+                          t.commonCancel,
                           style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600),
                         ),
                       ),
@@ -330,11 +332,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           setState(() => _allVocabData.clear());
                           if (mounted) {
                             messenger.showSnackBar(
-                              const SnackBar(content: Text('History cleared')),
+                              SnackBar(content: Text(t.homeHistoryCleared)),
                             );
                           }
                         },
-                        child: const Text('Delete', style: TextStyle(fontWeight: FontWeight.w600)),
+                        child: Text(t.commonDelete, style: const TextStyle(fontWeight: FontWeight.w600)),
                       ),
                     ],
                   ),
@@ -348,15 +350,17 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => HomeScreen(
+                    builder: (searchContext) => HomeScreen(
                       mode: 'SEARCH',
                       onWordSelected: (vocab) async {
+                        final messenger = ScaffoldMessenger.of(searchContext);
+                        final navigator = Navigator.of(searchContext);
                         final added = await CollectionService.addWord(widget.topicTitle!, vocab.word);
                         if (added && mounted) {
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Word added to collection')));
+                          messenger.showSnackBar(SnackBar(content: Text(t.homeWordAddedToCollection)));
                           _loadCollectionData();
                         }
-                        if (mounted) Navigator.of(context).pop(); // pop search screen
+                        if (mounted) navigator.pop(); // pop search screen
                       },
                     ),
                   ),
@@ -412,10 +416,11 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildSearchPromptState() {
+    final t = AppLocalizations.of(context);
     return _emptyState(
       icon: Icons.search_rounded,
-      title: 'Search the entire vocabulary',
-      subtitle: 'Type a word or its translation to begin.',
+      title: t.homeSearchPromptTitle,
+      subtitle: t.homeSearchPromptSubtitle,
     );
   }
 
@@ -562,35 +567,37 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildEmptyState() {
+    final t = AppLocalizations.of(context);
     return _emptyState(
       icon: Icons.menu_book_rounded,
-      title: 'No words to show yet',
+      title: t.homeNoWordsTitle,
       subtitle: widget.mode == 'POPULARITY'
-          ? 'Try selecting a different level above, or come back after you sync vocabulary.'
-          : 'Try adjusting your filters or come back after the next vocabulary sync.',
+          ? t.homeNoWordsPopularitySubtitle
+          : t.homeNoWordsGenericSubtitle,
     );
   }
 
   Widget _buildFlatList(List<Vocabulary> results) {
+    final t = AppLocalizations.of(context);
     if (results.isEmpty) {
       if (widget.mode == 'COLLECTION') {
         return _emptyState(
           icon: Icons.bookmark_add_outlined,
-          title: 'This collection is empty',
-          subtitle: 'Tap the + button above to add your first word.',
+          title: t.homeEmptyCollectionTitle,
+          subtitle: t.homeEmptyCollectionSubtitle,
         );
       }
       if (widget.mode == 'HISTORY') {
         return _emptyState(
           icon: Icons.history_rounded,
-          title: 'No notification history yet',
-          subtitle: 'Words sent to you as reminders will appear here.',
+          title: t.homeEmptyHistoryTitle,
+          subtitle: t.homeEmptyHistorySubtitle,
         );
       }
       return _emptyState(
         icon: Icons.check_circle_outline_rounded,
-        title: 'No known words yet',
-        subtitle: 'Mark words as known while you study to see them here.',
+        title: t.homeEmptyKnownTitle,
+        subtitle: t.homeEmptyKnownSubtitle,
       );
     }
 
@@ -680,13 +687,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     backgroundColor: context.bBg,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                     title: Text(
-                      'Remove from collection?',
+                      t.homeRemoveFromCollectionTitle,
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
                     content: Text(
-                      'Remove "${vocab.word}" from this collection?',
+                      t.homeRemoveFromCollectionBody(vocab.word),
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: context.bMuted,
                       ),
@@ -694,7 +701,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.of(ctx).pop(false),
-                        child: Text('Cancel', style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
+                        child: Text(t.commonCancel, style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
@@ -704,7 +711,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         ),
                         onPressed: () => Navigator.of(ctx).pop(true),
-                        child: const Text('Remove', style: TextStyle(fontWeight: FontWeight.w600)),
+                        child: Text(t.commonRemove, style: const TextStyle(fontWeight: FontWeight.w600)),
                       ),
                     ],
                   ),
@@ -718,10 +725,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 setState(() { _allVocabData.remove(vocab); });
                 messenger.showSnackBar(
                   SnackBar(
-                    content: Text('Removed "${vocab.word}"'),
+                    content: Text(t.homeRemovedWord(vocab.word)),
                     duration: const Duration(seconds: 4),
                     action: SnackBarAction(
-                      label: 'Undo',
+                      label: t.commonUndo,
                       onPressed: () async {
                         await CollectionService.addWord(
                             widget.topicTitle!, vocab.word);
@@ -800,10 +807,11 @@ class _HomeScreenState extends State<HomeScreen> {
     });
 
     if (results.isEmpty) {
+      final t = AppLocalizations.of(context);
       return _emptyState(
         icon: Icons.search_off_rounded,
-        title: 'No matches',
-        subtitle: 'Try a different keyword.',
+        title: t.homeNoMatchesTitle,
+        subtitle: t.homeNoMatchesSubtitle,
       );
     }
 
@@ -916,6 +924,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildList() {
+    final t = AppLocalizations.of(context);
     final days = _vocabData.keys.toList()..sort();
 
     // Compact 2-column grid so 8-10 days fit on one screen instead of 5.
@@ -961,7 +970,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Day $day',
+                  t.homeDayLabel(day),
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: BrutalistTheme.black,
@@ -974,7 +983,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Text(
-                        '${vocabList.length} words',
+                        t.homeWordsCount(vocabList.length),
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                               color: BrutalistTheme.black.withValues(alpha: 0.55),
                               fontSize: 12,
@@ -1033,7 +1042,7 @@ class _SkeletonLoaderState extends State<_SkeletonLoader>
   Widget _block(double w, double h, {double radius = 8}) {
     return AnimatedBuilder(
       animation: _opacity,
-      builder: (_, __) => Opacity(
+      builder: (_, _) => Opacity(
         opacity: _opacity.value,
         child: Container(
           width: w,

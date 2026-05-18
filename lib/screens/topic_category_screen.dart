@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../services/csv_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
@@ -47,6 +48,7 @@ class TopicCategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     final sorted = [...sublists]
       ..sort((a, b) => a['name']!.compareTo(b['name']!));
 
@@ -95,7 +97,9 @@ class TopicCategoryScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          '${sub['count']} ${sub['count'] == '1' ? 'word' : 'words'}',
+                          sub['count'] == '1'
+                              ? t.topicCategoryWordSingular(1)
+                              : t.topicCategoryWordPlural(int.tryParse(sub['count'] ?? '0') ?? 0),
                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                 color: BrutalistTheme.black.withValues(alpha: 0.55),
                                 fontSize: 12,

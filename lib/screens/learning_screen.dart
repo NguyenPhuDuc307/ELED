@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../l10n/gen/app_localizations.dart';
 import '../models/vocabulary.dart';
 import '../models/word_state.dart';
 import '../services/learning_state_service.dart';
@@ -78,13 +79,7 @@ class _LearningScreenState extends State<LearningScreen> {
   /// jump back into this session. Called on first build + every page change.
   void _persistContext() {
     if (widget.vocabularies.isEmpty) return;
-    final label = widget.day > 0
-        ? 'Day ${widget.day}'
-        : widget.vocabularies.length == 1
-            ? widget.vocabularies.first.word
-            : 'Last session';
     LearningStateService().saveContext(LearningContext(
-      label: label,
       day: widget.day,
       wordKeys: widget.vocabularies.map((v) => v.word.toLowerCase()).toList(),
       currentIndex: _currentIndex,
@@ -124,6 +119,7 @@ class _LearningScreenState extends State<LearningScreen> {
 
   Future<void> _toggleKnownWord(String word) async {
     final messenger = ScaffoldMessenger.of(context);
+    final t = AppLocalizations.of(context);
     final isAdded = !_knownWords.contains(word.toLowerCase());
     await UserDataService().toggleKnownWord(word);
     if (!mounted) return;
@@ -133,10 +129,10 @@ class _LearningScreenState extends State<LearningScreen> {
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
-        content: Text(isAdded ? 'Marked as known' : 'Removed from known words'),
+        content: Text(isAdded ? t.learningMarkedKnown : t.learningRemovedFromKnown),
         duration: const Duration(seconds: 4),
         action: SnackBarAction(
-          label: 'Undo',
+          label: t.commonUndo,
           onPressed: () async {
             await UserDataService().toggleKnownWord(word);
             if (!mounted) return;
@@ -214,9 +210,10 @@ class _LearningScreenState extends State<LearningScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.day == 0 ? 'Search' : 'Day ${widget.day}'),
+        title: Text(widget.day == 0 ? t.learningSearchTitle : t.learningDayTitle(widget.day)),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => Navigator.of(context).pop(),
@@ -284,7 +281,7 @@ class _LearningScreenState extends State<LearningScreen> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               IconButton(
-                                tooltip: 'I already know this',
+                                tooltip: t.learningTooltipKnown,
                                 icon: Icon(
                                   Icons.archive_outlined,
                                   color: BrutalistTheme.black.withValues(alpha: 0.45),
@@ -293,7 +290,7 @@ class _LearningScreenState extends State<LearningScreen> {
                                 onPressed: () => _confirmAlreadyKnown(vocab),
                               ),
                               IconButton(
-                                tooltip: 'Word details',
+                                tooltip: t.learningTooltipDetails,
                                 icon: Icon(
                                   Icons.info_outline_rounded,
                                   color: BrutalistTheme.black.withValues(alpha: 0.45),
@@ -371,7 +368,7 @@ class _LearningScreenState extends State<LearningScreen> {
                                       final Uri url = Uri.parse(vocab.url);
                                       if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
                                         if (context.mounted) {
-                                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Couldn't open link")));
+                                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(t.learningCouldntOpenLink)));
                                         }
                                       }
                                     },
@@ -523,19 +520,20 @@ class _LearningScreenState extends State<LearningScreen> {
   /// to "mastered" with a year-long interval — so it stops appearing in
   /// daily sessions without the user having to rate Easy five times.
   Future<void> _confirmAlreadyKnown(Vocabulary vocab) async {
+    final t = AppLocalizations.of(context);
     final accept = await showDialog<bool>(
       context: context,
       builder: (dctx) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: const Text('Skip this word from now on?'),
+        title: Text(t.learningSkipTitle),
         content: Text(
-          '"${vocab.word}" will be marked as mastered and won\'t appear in your daily sessions for a long time.',
+          t.learningSkipBody(vocab.word),
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: context.bMuted),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dctx).pop(false),
-            child: Text('Cancel',
+            child: Text(t.commonCancel,
                 style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
           ),
           TextButton(
@@ -546,7 +544,7 @@ class _LearningScreenState extends State<LearningScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
             ),
             onPressed: () => Navigator.of(dctx).pop(true),
-            child: const Text('Skip', style: TextStyle(fontWeight: FontWeight.w600)),
+            child: Text(t.learningSkipAction, style: const TextStyle(fontWeight: FontWeight.w600)),
           ),
         ],
       ),
@@ -654,6 +652,7 @@ class _LearningScreenState extends State<LearningScreen> {
   /// 30 we fall back to a one-line muted caption so the dot row doesn't
   /// become an unreadable smudge.
   Widget _buildLocationIndicator() {
+    final t = AppLocalizations.of(context);
     final total = widget.vocabularies.length;
     if (total == 0) return const SizedBox(height: 16);
     if (total > 30) {
@@ -662,7 +661,7 @@ class _LearningScreenState extends State<LearningScreen> {
         child: Align(
           alignment: Alignment.centerLeft,
           child: Text(
-            'Word ${_currentIndex + 1} of $total',
+            t.learningWordOfTotal(_currentIndex + 1, total),
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: context.bMuted,
                 ),
@@ -698,6 +697,7 @@ class _LearningScreenState extends State<LearningScreen> {
   /// above so the user can tell what it's switching. Replaces a bare iOS-style
   /// switch with an "EN"/"VI" code that was easy to misread.
   Widget _buildDefinitionLanguageToggle() {
+    final t = AppLocalizations.of(context);
     Widget seg(String label, bool active, VoidCallback onTap) {
       return InkWell(
         onTap: active ? null : onTap,
@@ -724,7 +724,7 @@ class _LearningScreenState extends State<LearningScreen> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          'Definition',
+          t.learningDefinition,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: context.bMuted,
                 fontSize: 11,
@@ -741,10 +741,10 @@ class _LearningScreenState extends State<LearningScreen> {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              seg('English', !_translateDefinition, () {
+              seg(t.learningDefinitionEnglish, !_translateDefinition, () {
                 if (_translateDefinition) _toggleTranslation(_currentIndex);
               }),
-              seg('Tiếng Việt', _translateDefinition, () {
+              seg(t.learningDefinitionVietnamese, _translateDefinition, () {
                 if (!_translateDefinition) _toggleTranslation(_currentIndex);
               }),
             ],
@@ -827,6 +827,7 @@ class _LearningScreenState extends State<LearningScreen> {
   /// Row of four rating chips above the nav bar. Color encodes severity:
   /// red Again → orange Hard → green Good → blue Easy.
   Widget _buildRatingRow() {
+    final t = AppLocalizations.of(context);
     Widget chip(String label, ReviewRating rating, Color color) {
       return Expanded(
         child: Padding(
@@ -860,10 +861,10 @@ class _LearningScreenState extends State<LearningScreen> {
       padding: const EdgeInsets.fromLTRB(12, 4, 12, 6),
       child: Row(
         children: [
-          chip('Again', ReviewRating.again, const Color(0xFFD9534F)),
-          chip('Hard', ReviewRating.hard, const Color(0xFFE5874E)),
-          chip('Good', ReviewRating.good, BrutalistTheme.primary),
-          chip('Easy', ReviewRating.easy, const Color(0xFF3E7CB1)),
+          chip(t.learningAgain, ReviewRating.again, const Color(0xFFD9534F)),
+          chip(t.learningHard, ReviewRating.hard, const Color(0xFFE5874E)),
+          chip(t.learningGood, ReviewRating.good, BrutalistTheme.primary),
+          chip(t.learningEasy, ReviewRating.easy, const Color(0xFF3E7CB1)),
         ],
       ),
     );

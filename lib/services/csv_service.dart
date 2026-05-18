@@ -1,7 +1,108 @@
+import 'package:flutter/foundation.dart' show compute;
 import 'package:flutter/services.dart' show rootBundle, AssetManifest;
 import '../models/vocabulary.dart';
 import 'user_data_service.dart';
 import 'vocabulary_sync_service.dart';
+
+// ── Top-level parser helpers ───────────────────────────────────────────────
+// These live outside the class so `compute()` can hand them to a background
+// isolate. Parsing ~36K CSV rows on the UI isolate freezes the spinner on
+// TodayScreen during cold start; this is the work being moved off-thread.
+
+List<String> _parseCsvLine(String line) {
+  final fields = <String>[];
+  final current = StringBuffer();
+  bool inQuotes = false;
+
+  for (int i = 0; i < line.length; i++) {
+    final ch = line[i];
+    if (ch == '"') {
+      if (inQuotes && i + 1 < line.length && line[i + 1] == '"') {
+        current.write('"');
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (ch == ',' && !inQuotes) {
+      fields.add(current.toString().trim());
+      current.clear();
+    } else {
+      current.write(ch);
+    }
+  }
+  fields.add(current.toString().trim());
+  return fields;
+}
+
+List<Vocabulary> _parseCsvContent(String csvString, String topic) {
+  if (csvString.isEmpty) return const [];
+  final lines = csvString.split('\n');
+  if (lines.length <= 1) return const [];
+
+  final merged = <String, Vocabulary>{};
+  for (var i = 1; i < lines.length; i++) {
+    final line = lines[i].trim();
+    if (line.isEmpty) continue;
+
+    final parts = _parseCsvLine(line);
+    if (parts.length < 7) continue;
+
+    final vocab = Vocabulary.fromCsvList(parts, topic: topic);
+    final key = vocab.word.toLowerCase();
+
+    if (merged.containsKey(key)) {
+      final existing = merged[key]!;
+
+      String newPos = existing.partOfSpeech;
+      if (!newPos.toLowerCase().contains(vocab.partOfSpeech.toLowerCase())) {
+        newPos = '$newPos, ${vocab.partOfSpeech}';
+      }
+
+      String newTrans = existing.translation;
+      if (!newTrans.toLowerCase().contains(vocab.translation.toLowerCase())) {
+        newTrans = '$newTrans; ${vocab.translation}';
+      }
+
+      String newTopic = existing.topic;
+      if (newTopic.isEmpty) {
+        newTopic = topic;
+      } else if (topic.isNotEmpty &&
+          !newTopic.toLowerCase().contains(topic.toLowerCase())) {
+        newTopic = '$newTopic, $topic';
+      }
+
+      merged[key] = Vocabulary(
+        id: existing.id,
+        url: existing.url.isNotEmpty ? existing.url : vocab.url,
+        levels: existing.levels,
+        word: existing.word,
+        translation: newTrans,
+        partOfSpeech: newPos,
+        ipa: existing.ipa.isNotEmpty ? existing.ipa : vocab.ipa,
+        audioLink: existing.audioLink.isNotEmpty ? existing.audioLink : vocab.audioLink,
+        topic: newTopic,
+      );
+    } else {
+      merged[key] = vocab;
+    }
+  }
+
+  return merged.values.toList();
+}
+
+/// compute() entrypoint — parses a batch of (csvString, topic) pairs and
+/// returns one Vocabulary list per job, in the same order.
+List<List<Vocabulary>> _parseCsvBatch(List<List<String>> jobs) {
+  return jobs.map((j) => _parseCsvContent(j[0], j[1])).toList(growable: false);
+}
+
+String _topicForPath(String path) {
+  if (!path.contains('/topic/')) return '';
+  final pathParts = path.split('/');
+  return pathParts.length >= 5
+      ? '${pathParts[3]} - ${pathParts.last.replaceAll('.csv', '')}'
+      : pathParts.last.replaceAll('.csv', '');
+}
 
 class CsvService {
   // ── In-memory cache ──────────────────────────────────────────────────────
@@ -24,115 +125,30 @@ class CsvService {
     _allCacheKnownFiltered = null;
   }
 
-  // ── CSV parser ───────────────────────────────────────────────────────────
-
-  static List<String> _parseCsvLine(String line) {
-    final fields = <String>[];
-    final current = StringBuffer();
-    bool inQuotes = false;
-
-    for (int i = 0; i < line.length; i++) {
-      final ch = line[i];
-      if (ch == '"') {
-        if (inQuotes && i + 1 < line.length && line[i + 1] == '"') {
-          current.write('"');
-          i++;
-        } else {
-          inQuotes = !inQuotes;
-        }
-      } else if (ch == ',' && !inQuotes) {
-        fields.add(current.toString().trim());
-        current.clear();
-      } else {
-        current.write(ch);
-      }
-    }
-    fields.add(current.toString().trim());
-    return fields;
-  }
-
   // ── Raw loader (cached) ──────────────────────────────────────────────────
 
-  static Future<List<Vocabulary>> _loadRaw(String path) async {
-    if (_rawCache.containsKey(path)) return _rawCache[path]!;
-
+  static Future<String> _loadCsvString(String path) async {
     try {
       // "assets/data/popularity/Oxford Word A1.csv" → "popularity/Oxford Word A1.csv"
       final relative = path.startsWith('assets/data/')
           ? path.substring('assets/data/'.length)
           : null;
-
-      final String csvString;
       if (relative != null) {
-        csvString = await VocabularySyncService.readLocalFile(relative) ??
-            await rootBundle.loadString(path);
-      } else {
-        csvString = await rootBundle.loadString(path);
+        final local = await VocabularySyncService.readLocalFile(relative);
+        if (local != null) return local;
       }
+      return await rootBundle.loadString(path);
+    } catch (_) {
+      return '';
+    }
+  }
 
-      final List<String> lines = csvString.split('\n');
-      if (lines.length <= 1) {
-        _rawCache[path] = [];
-        return [];
-      }
+  static Future<List<Vocabulary>> _loadRaw(String path) async {
+    if (_rawCache.containsKey(path)) return _rawCache[path]!;
 
-      String topic = '';
-      final pathParts = path.split('/');
-      if (path.contains('/topic/')) {
-        topic = pathParts.length >= 5
-            ? '${pathParts[3]} - ${pathParts.last.replaceAll('.csv', '')}'
-            : pathParts.last.replaceAll('.csv', '');
-      }
-
-      final Map<String, Vocabulary> merged = {};
-      for (var i = 1; i < lines.length; i++) {
-        final line = lines[i].trim();
-        if (line.isEmpty) continue;
-
-        final parts = _parseCsvLine(line);
-        if (parts.length < 7) continue;
-
-        final vocab = Vocabulary.fromCsvList(parts, topic: topic);
-        final key = vocab.word.toLowerCase();
-
-        if (merged.containsKey(key)) {
-          final existing = merged[key]!;
-
-          String newPos = existing.partOfSpeech;
-          if (!newPos.toLowerCase().contains(vocab.partOfSpeech.toLowerCase())) {
-            newPos = '$newPos, ${vocab.partOfSpeech}';
-          }
-
-          String newTrans = existing.translation;
-          if (!newTrans.toLowerCase().contains(vocab.translation.toLowerCase())) {
-            newTrans = '$newTrans; ${vocab.translation}';
-          }
-
-          String newTopic = existing.topic;
-          if (newTopic.isEmpty) {
-            newTopic = topic;
-          } else if (topic.isNotEmpty &&
-              !newTopic.toLowerCase().contains(topic.toLowerCase())) {
-            newTopic = '$newTopic, $topic';
-          }
-
-          merged[key] = Vocabulary(
-            id: existing.id,
-            url: existing.url.isNotEmpty ? existing.url : vocab.url,
-            levels: existing.levels,
-            word: existing.word,
-            translation: newTrans,
-            partOfSpeech: newPos,
-            ipa: existing.ipa.isNotEmpty ? existing.ipa : vocab.ipa,
-            audioLink: existing.audioLink.isNotEmpty ? existing.audioLink : vocab.audioLink,
-            topic: newTopic,
-          );
-        } else {
-          merged[key] = vocab;
-        }
-      }
-
-      final result = merged.values.toList();
+    try {
+      final csvString = await _loadCsvString(path);
+      final result = _parseCsvContent(csvString, _topicForPath(path));
       _rawCache[path] = result;
       return result;
     } catch (e) {
@@ -224,13 +240,41 @@ class CsvService {
 
     const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
     final topicFiles = await _getTopicFiles();
+    final allPaths = <String>[
+      for (final l in levels) 'assets/data/popularity/Oxford Word $l.csv',
+      ...topicFiles,
+    ];
 
-    final results = await Future.wait([
-      ...levels.map((l) => _loadRaw('assets/data/popularity/Oxford Word $l.csv')),
-      ...topicFiles.map(_loadRaw),
-    ]);
+    // Parse the cold paths in a background isolate so the UI thread stays
+    // free to animate the spinner during cold start. Anything already cached
+    // (e.g. from a prior single-file call) is reused as-is.
+    final coldPaths =
+        allPaths.where((p) => !_rawCache.containsKey(p)).toList(growable: false);
 
-    final all = results.expand((r) => r).toList();
+    if (coldPaths.isNotEmpty) {
+      final strings = await Future.wait(coldPaths.map(_loadCsvString));
+      final jobs = <List<String>>[
+        for (var i = 0; i < coldPaths.length; i++)
+          [strings[i], _topicForPath(coldPaths[i])],
+      ];
+      List<List<Vocabulary>> parsed;
+      try {
+        parsed = await compute(_parseCsvBatch, jobs);
+      } catch (_) {
+        // Isolate spawn can fail in constrained environments (e.g. tests).
+        // Fall back to parsing on the current isolate.
+        parsed = _parseCsvBatch(jobs);
+      }
+      for (var i = 0; i < coldPaths.length; i++) {
+        _rawCache[coldPaths[i]] = parsed[i];
+      }
+    }
+
+    final all = <Vocabulary>[];
+    for (final p in allPaths) {
+      final list = _rawCache[p];
+      if (list != null) all.addAll(list);
+    }
     _allCacheUnfiltered = all;
     if (!excludeKnown) return all;
     final filtered = await _applyKnownFilter(all);

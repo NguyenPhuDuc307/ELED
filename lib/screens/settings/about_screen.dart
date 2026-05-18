@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../l10n/gen/app_localizations.dart';
 import '../../services/update_service.dart';
 import '../../theme/brutalist_theme.dart';
 import '../../widgets/brutalist_card.dart';
@@ -71,8 +72,9 @@ class _AboutScreenState extends State<AboutScreen> {
       );
     } catch (e) {
       if (mounted) {
+        final t = AppLocalizations.of(context);
         ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text('Download failed: $e')));
+            .showSnackBar(SnackBar(content: Text(t.aboutDownloadFailed('$e'))));
       }
     } finally {
       if (mounted) setState(() => _downloading = false);
@@ -81,22 +83,23 @@ class _AboutScreenState extends State<AboutScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('About')),
+      appBar: AppBar(title: Text(t.aboutTitle)),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const SectionHeader('Version'),
-            _versionCard(),
+            SectionHeader(t.aboutVersion),
+            _versionCard(t),
           ],
         ),
       ),
     );
   }
 
-  Widget _versionCard() {
+  Widget _versionCard(AppLocalizations t) {
     return BrutalistCard(
       backgroundColor: context.bBg,
       child: Padding(
@@ -120,12 +123,12 @@ class _AboutScreenState extends State<AboutScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Current version',
+                      Text(t.aboutCurrentVersion,
                           style: Theme.of(context)
                               .textTheme
                               .bodyMedium
                               ?.copyWith(color: context.bMuted)),
-                      Text('v$_currentVersion',
+                      Text(t.aboutVersionPrefix(_currentVersion),
                           style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               fontWeight: FontWeight.w700)),
                     ],
@@ -140,8 +143,8 @@ class _AboutScreenState extends State<AboutScreen> {
                       )
                     : TextButton(
                         onPressed: _check,
-                        child: const Text('Check',
-                            style: TextStyle(
+                        child: Text(t.aboutCheckButton,
+                            style: const TextStyle(
                                 color: BrutalistTheme.primary, fontWeight: FontWeight.w700)),
                       ),
               ],
@@ -150,7 +153,7 @@ class _AboutScreenState extends State<AboutScreen> {
             Row(
               children: [
                 Expanded(
-                  child: Text('Auto-check on startup',
+                  child: Text(t.aboutAutoCheckOnStartup,
                       style: Theme.of(context)
                           .textTheme
                           .bodyMedium
@@ -172,7 +175,7 @@ class _AboutScreenState extends State<AboutScreen> {
             ),
             if (_checked) ...[
               const SizedBox(height: 12),
-              if (_info != null) _newVersionBanner() else _upToDateRow(),
+              if (_info != null) _newVersionBanner(t) else _upToDateRow(t),
             ],
           ],
         ),
@@ -180,7 +183,7 @@ class _AboutScreenState extends State<AboutScreen> {
     );
   }
 
-  Widget _newVersionBanner() {
+  Widget _newVersionBanner(AppLocalizations t) {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -196,7 +199,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   color: BrutalistTheme.primary, size: 20),
               const SizedBox(width: 10),
               Expanded(
-                child: Text('v${_info!.version} available',
+                child: Text(t.aboutNewVersionAvailable(_info!.version),
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: BrutalistTheme.primary)),
@@ -210,7 +213,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               mode: LaunchMode.externalApplication);
                         },
                   child: Text(
-                    _info!.apkUrl.isNotEmpty ? 'Update now' : 'Open',
+                    _info!.apkUrl.isNotEmpty ? t.aboutUpdateNow : t.aboutOpen,
                     style: const TextStyle(
                         color: BrutalistTheme.primary, fontWeight: FontWeight.w700),
                   ),
@@ -245,13 +248,13 @@ class _AboutScreenState extends State<AboutScreen> {
     );
   }
 
-  Widget _upToDateRow() {
+  Widget _upToDateRow(AppLocalizations t) {
     return Row(
       children: [
         const Icon(Icons.check_circle_rounded,
             color: BrutalistTheme.primary, size: 20),
         const SizedBox(width: 8),
-        Text("You're up to date",
+        Text(t.aboutUpToDate,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: BrutalistTheme.primary, fontWeight: FontWeight.w600)),
       ],

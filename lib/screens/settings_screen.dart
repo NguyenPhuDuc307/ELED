@@ -2,13 +2,16 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../services/auth_service.dart';
+import '../services/locale_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import 'help_screen.dart';
 import 'settings/about_screen.dart';
 import 'settings/appearance_settings_screen.dart';
 import 'settings/data_settings_screen.dart';
+import 'settings/language_settings_screen.dart';
 import 'settings/notifications_settings_screen.dart';
 
 /// Hub screen — surfaces a list of settings categories. Each row navigates to
@@ -34,6 +37,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
       if (mounted) setState(() => _user = u);
     });
     _loadSummaries();
+    LocaleService.notifier.addListener(_onLocaleChanged);
+  }
+
+  @override
+  void dispose() {
+    LocaleService.notifier.removeListener(_onLocaleChanged);
+    super.dispose();
+  }
+
+  void _onLocaleChanged() {
+    if (mounted) setState(() {});
   }
 
   Future<void> _loadSummaries() async {
@@ -47,8 +61,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Settings')),
+      appBar: AppBar(title: Text(t.settingsTitle)),
       body: SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
         child: Column(
@@ -56,10 +71,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             _category(
               icon: Icons.notifications_active_rounded,
-              title: 'Notifications',
+              title: t.settingsNotifications,
               subtitle: _interval == 0
-                  ? 'Off'
-                  : 'Every $_interval ${_interval == 1 ? "minute" : "minutes"}',
+                  ? t.notificationsAll
+                  : t.notificationsIntervalMinutes(_interval),
               onTap: () async {
                 await Navigator.of(context).push(
                   smoothRoute(const NotificationsSettingsScreen()),
@@ -69,8 +84,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             _category(
               icon: Icons.palette_rounded,
-              title: 'Appearance',
-              subtitle: _themeLabel(_themeMode),
+              title: t.settingsAppearance,
+              subtitle: _themeLabel(_themeMode, t),
               onTap: () async {
                 await Navigator.of(context).push(
                   smoothRoute(const AppearanceSettingsScreen()),
@@ -79,27 +94,35 @@ class _SettingsScreenState extends State<SettingsScreen> {
               },
             ),
             _category(
+              icon: Icons.translate_rounded,
+              title: t.settingsLanguage,
+              subtitle: _languageLabel(t),
+              onTap: () => Navigator.of(context).push(
+                smoothRoute(const LanguageSettingsScreen()),
+              ),
+            ),
+            _category(
               icon: Icons.person_rounded,
-              title: 'Account & data',
+              title: t.settingsData,
               subtitle: _user == null
-                  ? 'Sign in, backup, share feedback'
-                  : (_user!.email ?? 'Signed in'),
+                  ? t.settingsDataSubtitle
+                  : (_user!.email ?? t.settingsData),
               onTap: () => Navigator.of(context).push(
                 smoothRoute(const DataSettingsScreen()),
               ),
             ),
             _category(
               icon: Icons.help_outline_rounded,
-              title: 'How to use',
-              subtitle: 'Ratings, exercises, streaks — explained',
+              title: t.helpTitle,
+              subtitle: t.settingsAboutSubtitle,
               onTap: () => Navigator.of(context).push(
                 smoothRoute(const HelpScreen()),
               ),
             ),
             _category(
               icon: Icons.info_outline_rounded,
-              title: 'About',
-              subtitle: 'Version and updates',
+              title: t.settingsAbout,
+              subtitle: t.settingsAboutSubtitle,
               onTap: () => Navigator.of(context).push(
                 smoothRoute(const AboutScreen()),
               ),
@@ -108,6 +131,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
       ),
     );
+  }
+
+  String _languageLabel(AppLocalizations t) {
+    final code = LocaleService.notifier.value?.languageCode;
+    if (code == 'en') return t.languageEnglish;
+    if (code == 'vi') return t.languageVietnamese;
+    return t.languageSystem;
   }
 
   Widget _category({
@@ -162,14 +192,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  String _themeLabel(String mode) {
+  String _themeLabel(String mode, AppLocalizations t) {
     switch (mode) {
       case 'light':
-        return 'Light';
+        return t.themeLight;
       case 'dark':
-        return 'Dark';
+        return t.themeDark;
       default:
-        return 'Match system';
+        return t.themeSystem;
     }
   }
 }

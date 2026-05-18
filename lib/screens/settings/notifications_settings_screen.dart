@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../l10n/gen/app_localizations.dart';
 import '../../services/csv_service.dart';
 import '../../services/notification_service.dart';
 import '../../services/user_data_service.dart';
@@ -119,28 +120,27 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
       _isSaving = false;
       _dirty = false;
     });
+    final t = AppLocalizations.of(context);
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Notification preferences saved')),
+      SnackBar(content: Text(t.notificationsSaved)),
     );
   }
 
   Future<void> _showBatteryOptPrompt() async {
+    final t = AppLocalizations.of(context);
     final accept = await showDialog<bool>(
       context: context,
       builder: (dctx) => AlertDialog(
-        title: const Text('Keep notifications running'),
-        content: const Text(
-          'Android may pause ELED notifications after a day to save battery. '
-          'Allow ELED to run unrestricted so vocabulary reminders keep firing.',
-        ),
+        title: Text(t.notificationsBatteryTitle),
+        content: Text(t.notificationsBatteryBody),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dctx).pop(false),
-            child: const Text('Not now'),
+            child: Text(t.commonNotNow),
           ),
           TextButton(
             onPressed: () => Navigator.of(dctx).pop(true),
-            child: const Text('Allow'),
+            child: Text(t.commonAllow),
           ),
         ],
       ),
@@ -184,14 +184,15 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notifications'),
+        title: Text(t.notificationsTitle),
         actions: [
           TextButton(
             onPressed: (_dirty && !_isSaving) ? _save : null,
             child: Text(
-              'Save',
+              t.commonSave,
               style: TextStyle(
                 color: (_dirty && !_isSaving) ? BrutalistTheme.primary : context.bMuted,
                 fontWeight: FontWeight.w700,
@@ -209,33 +210,33 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SectionHeader(
-                    'Frequency',
-                    subtitle: 'How often to send a new vocabulary word',
+                  SectionHeader(
+                    t.notificationsFrequency,
+                    subtitle: t.notificationsFrequencySubtitle,
                   ),
-                  _buildIntervalSelector(),
+                  _buildIntervalSelector(t),
                   if (Platform.isAndroid && !_batteryUnrestricted) ...[
                     const SizedBox(height: 16),
-                    _buildBatteryOptCard(),
+                    _buildBatteryOptCard(t),
                   ],
                   const SizedBox(height: 32),
 
-                  const SectionHeader(
-                    'Active hours',
-                    subtitle: 'Reminders only fire inside this window',
+                  SectionHeader(
+                    t.notificationsActiveHours,
+                    subtitle: t.notificationsActiveHoursSubtitle,
                   ),
                   Row(
                     children: [
-                      Expanded(child: _timeCard('From', _startTime, BrutalistTheme.accent, () => _pickTime(true))),
+                      Expanded(child: _timeCard(t.notificationsFrom, _startTime, BrutalistTheme.accent, () => _pickTime(true))),
                       const SizedBox(width: 16),
-                      Expanded(child: _timeCard('Until', _endTime, BrutalistTheme.primary, () => _pickTime(false))),
+                      Expanded(child: _timeCard(t.notificationsUntil, _endTime, BrutalistTheme.primary, () => _pickTime(false))),
                     ],
                   ),
                   const SizedBox(height: 32),
 
-                  const SectionHeader(
-                    'Difficulty levels',
-                    subtitle: 'Choose which CEFR levels to include',
+                  SectionHeader(
+                    t.notificationsDifficultyLevels,
+                    subtitle: t.notificationsDifficultyLevelsSubtitle,
                   ),
                   Wrap(
                     spacing: 8,
@@ -244,9 +245,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
                   ),
                   const SizedBox(height: 32),
 
-                  const SectionHeader(
-                    'Topics',
-                    subtitle: 'Optional — leave empty to use all topics',
+                  SectionHeader(
+                    t.notificationsTopics,
+                    subtitle: t.notificationsTopicsSubtitle,
                   ),
                   Wrap(
                     spacing: 8,
@@ -345,16 +346,16 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     );
   }
 
-  Widget _buildIntervalSelector() {
-    const options = {
-      0: 'Off',
-      1: '1 min',
-      10: '10 min',
-      15: '15 min',
-      20: '20 min',
-      25: '25 min',
-      30: '30 min',
-      60: '60 min',
+  Widget _buildIntervalSelector(AppLocalizations t) {
+    final options = <int, String>{
+      0: t.notificationsOff,
+      1: t.notificationsIntervalMinutes(1),
+      10: t.notificationsIntervalMinutes(10),
+      15: t.notificationsIntervalMinutes(15),
+      20: t.notificationsIntervalMinutes(20),
+      25: t.notificationsIntervalMinutes(25),
+      30: t.notificationsIntervalMinutes(30),
+      60: t.notificationsIntervalMinutes(60),
     };
 
     return Wrap(
@@ -400,7 +401,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     );
   }
 
-  Widget _buildBatteryOptCard() {
+  Widget _buildBatteryOptCard(AppLocalizations t) {
     return BrutalistCard(
       backgroundColor: BrutalistTheme.primaryLight,
       onTap: () async {
@@ -418,10 +419,10 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Allow background activity',
+                  Text(t.notificationsBatteryCardTitle,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontWeight: FontWeight.w700, color: BrutalistTheme.primary)),
-                  Text('Tap to keep notifications firing past 1 day',
+                  Text(t.notificationsBatteryCardSubtitle,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: BrutalistTheme.primary)),
                 ],

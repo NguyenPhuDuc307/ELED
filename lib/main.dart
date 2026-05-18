@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'l10n/gen/app_localizations.dart';
 import 'screens/onboarding_screen.dart';
 import 'screens/sync_screen.dart';
 import 'screens/today_screen.dart';
@@ -16,6 +17,7 @@ import 'theme/brutalist_theme.dart';
 import 'services/analytics_service.dart';
 import 'services/auth_service.dart';
 import 'services/csv_service.dart';
+import 'services/locale_service.dart';
 import 'services/notification_service.dart';
 import 'services/srs_service.dart';
 import 'services/streak_service.dart';
@@ -77,6 +79,8 @@ Future<void> _bootstrap() async {
   EledApp.themeNotifier.value = themeStr == 'dark'
       ? ThemeMode.dark
       : (themeStr == 'light' ? ThemeMode.light : ThemeMode.system);
+
+  await LocaleService.load();
 
   final launchDetails = await NotificationService()
       .flutterLocalNotificationsPlugin
@@ -221,23 +225,31 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ThemeMode>(
       valueListenable: EledApp.themeNotifier,
-      builder: (context, ThemeMode currentMode, child) {
-        return MaterialApp(
-          navigatorKey: globalNavigatorKey,
-          scaffoldMessengerKey: scaffoldMessengerKey,
-          navigatorObservers: [AnalyticsService().observer()],
-          title: 'ELED - English Learning',
-          theme: BrutalistTheme.lightTheme,
-          darkTheme: BrutalistTheme.darkTheme,
-          themeMode: currentMode,
-          home: widget.needsSync
-              ? const SyncScreen()
-              : _showOnboarding
-                  ? OnboardingScreen(onDone: () {
-                      setState(() => _showOnboarding = false);
-                    })
-                  : const TodayScreen(),
-          debugShowCheckedModeBanner: false,
+      builder: (context, ThemeMode currentMode, _) {
+        return ValueListenableBuilder<Locale?>(
+          valueListenable: LocaleService.notifier,
+          builder: (context, Locale? currentLocale, _) {
+            return MaterialApp(
+              navigatorKey: globalNavigatorKey,
+              scaffoldMessengerKey: scaffoldMessengerKey,
+              navigatorObservers: [AnalyticsService().observer()],
+              title: 'ELED - English Learning',
+              theme: BrutalistTheme.lightTheme,
+              darkTheme: BrutalistTheme.darkTheme,
+              themeMode: currentMode,
+              locale: currentLocale,
+              supportedLocales: LocaleService.supportedLocales,
+              localizationsDelegates: AppLocalizations.localizationsDelegates,
+              home: widget.needsSync
+                  ? const SyncScreen()
+                  : _showOnboarding
+                      ? OnboardingScreen(onDone: () {
+                          setState(() => _showOnboarding = false);
+                        })
+                      : const TodayScreen(),
+              debugShowCheckedModeBanner: false,
+            );
+          },
         );
       },
     );

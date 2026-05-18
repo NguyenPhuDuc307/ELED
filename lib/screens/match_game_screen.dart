@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../l10n/gen/app_localizations.dart';
 import '../models/vocabulary.dart';
 import '../models/word_state.dart';
 import '../services/srs_service.dart';
@@ -140,9 +141,10 @@ class _MatchGameScreenState extends State<MatchGameScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Match game'),
+        title: Text(t.matchGameTitle),
         leading: IconButton(
           icon: const Icon(Icons.close_rounded),
           onPressed: () => Navigator.of(context).pop(),
@@ -153,7 +155,7 @@ class _MatchGameScreenState extends State<MatchGameScreen> {
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
           child: Column(
             children: [
-              _progressDots(),
+              _progressDots(t),
               const SizedBox(height: 12),
               Expanded(
                 child: Row(
@@ -172,7 +174,7 @@ class _MatchGameScreenState extends State<MatchGameScreen> {
     );
   }
 
-  Widget _progressDots() {
+  Widget _progressDots(AppLocalizations t) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Row(
@@ -198,7 +200,7 @@ class _MatchGameScreenState extends State<MatchGameScreen> {
             }),
           ),
           Text(
-            '${_matchedWordIdx.length} / ${_pairs.length}',
+            t.matchGameProgress(_matchedWordIdx.length, _pairs.length),
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: context.bMuted,
                   fontWeight: FontWeight.w600,

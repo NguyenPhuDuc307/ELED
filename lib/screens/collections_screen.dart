@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/gen/app_localizations.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
 import '../services/collection_service.dart';
@@ -47,6 +48,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
   }
 
   void _showCreateCollectionDialog() {
+    final t = AppLocalizations.of(context);
     final controller = TextEditingController();
     showDialog(
       context: context,
@@ -55,7 +57,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
           backgroundColor: context.bBg,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           title: Text(
-            'New Collection',
+            t.collectionsNewCollection,
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.w700,
                 ),
@@ -65,7 +67,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
             autofocus: true,
             style: Theme.of(context).textTheme.bodyLarge,
             decoration: InputDecoration(
-              hintText: 'e.g. TOEFL Words...',
+              hintText: t.collectionsNamePlaceholder,
               hintStyle: TextStyle(color: context.bMuted),
               border: UnderlineInputBorder(
                 borderSide: BorderSide(color: context.bSubtle, width: 1.5),
@@ -81,7 +83,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(),
-              child: Text('Cancel', style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
+              child: Text(t.commonCancel, style: TextStyle(color: context.bMuted, fontWeight: FontWeight.w600)),
             ),
             TextButton(
               style: TextButton.styleFrom(
@@ -98,7 +100,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                   _loadCollections();
                 }
               },
-              child: const Text('Create', style: TextStyle(fontWeight: FontWeight.w600)),
+              child: Text(t.collectionsCreate, style: const TextStyle(fontWeight: FontWeight.w600)),
             ),
           ],
         );
@@ -108,9 +110,10 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Collections'),
+        title: Text(t.collectionsTitle),
       ),
       body: _isLoading
           ? Center(
@@ -127,7 +130,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
                       child: Center(
                         child: Text(
-                          '+ CREATE NEW',
+                          t.collectionsCreateNew,
                           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                                 color: context.bBg,
                                 fontWeight: FontWeight.w900,
@@ -141,7 +144,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                   child: _collections.isEmpty
                       ? Center(
                           child: Text(
-                            'NO COLLECTIONS YET.',
+                            t.collectionsEmptyUppercase,
                             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                                   color: context.bBorder,
                                   fontWeight: FontWeight.w900,
@@ -171,17 +174,17 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                                     context: context,
                                     builder: (ctx) => AlertDialog(
                                       backgroundColor: context.bBg,
-                                      title: Text('DELETE $name?', style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
-                                      content: Text('Are you sure you want to delete this collection?', style: TextStyle(color: context.bBorder)),
+                                      title: Text(t.collectionsDeleteTitle(name), style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+                                      content: Text(t.collectionsDeleteBody, style: TextStyle(color: context.bBorder)),
                                       actions: [
                                         TextButton(
                                           onPressed: () => Navigator.of(ctx).pop(false),
-                                          child: Text('CANCEL', style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
+                                          child: Text(t.commonCancel.toUpperCase(), style: TextStyle(color: context.bBorder, fontWeight: FontWeight.w900)),
                                         ),
                                         TextButton(
                                           style: TextButton.styleFrom(backgroundColor: BrutalistTheme.secondary),
                                           onPressed: () => Navigator.of(ctx).pop(true),
-                                          child: const Text('DELETE', style: TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
+                                          child: Text(t.commonDelete.toUpperCase(), style: const TextStyle(color: BrutalistTheme.black, fontWeight: FontWeight.w900)),
                                         ),
                                       ],
                                     ),
@@ -215,7 +218,7 @@ class _CollectionsScreenState extends State<CollectionsScreen> {
                                               ),
                                               const SizedBox(height: 2),
                                               Text(
-                                                '$wordCount words',
+                                                t.collectionsWordsCount(wordCount),
                                                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                                       color: BrutalistTheme.black.withValues(alpha: 0.55),
                                                       fontSize: 13,

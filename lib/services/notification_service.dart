@@ -316,19 +316,26 @@ class NotificationService {
     required int intervalMinutes,
     required TimeOfDay startTime,
     required TimeOfDay endTime,
+    int maxCount = 5,
   }) async {
     await cancelAllNotifications();
-    if (pool.isEmpty || intervalMinutes <= 0) return;
+    if (pool.isEmpty || intervalMinutes <= 0 || maxCount <= 0) return;
 
     AnalyticsService().logEvent('schedule_set', {
       'interval_minutes': intervalMinutes,
       'pool_size': pool.length,
+      'max_count': maxCount,
       'window_minutes':
           (endTime.hour * 60 + endTime.minute) - (startTime.hour * 60 + startTime.minute),
     });
 
     final now      = tz.TZDateTime.now(tz.local);
-    final count    = min(Platform.isAndroid ? 100 : 64, pool.length);
+    // Hard cap by user preference, then by platform queue limits, then by
+    // the available pool. The user-set [maxCount] is the dominant constraint
+    // so a setting of "3" means three notifications even if the window
+    // would otherwise allow many more.
+    final platformCap = Platform.isAndroid ? 100 : 64;
+    final count = min(min(maxCount, platformCap), pool.length);
     final shuffled = List.of(pool)..shuffle();
 
     final startMins = startTime.hour * 60 + startTime.minute;
@@ -362,6 +369,7 @@ class NotificationService {
         intervalMinutes: intervalMinutes,
         startMins: startMins,
         endMins: endMins,
+        maxCount: maxCount,
       );
 
       // Build batch for native scheduling
@@ -563,6 +571,7 @@ class NotificationService {
     required int intervalMinutes,
     required int startMins,
     required int endMins,
+    required int maxCount,
   }) async {
     final prefs = await SharedPreferences.getInstance();
     final encoded = pool.map((v) => [
@@ -579,6 +588,7 @@ class NotificationService {
     await prefs.setInt('vocabScheduleIntervalMinutes', intervalMinutes);
     await prefs.setInt('vocabScheduleStartMinutes', startMins);
     await prefs.setInt('vocabScheduleEndMinutes', endMins);
+    await prefs.setInt('vocabScheduleMaxCount', maxCount);
     // Reset fire/cursor markers for the new schedule. Native scheduleAll handler
     // will fill latestMs + poolCursor based on the actual batch it just queued.
     await prefs.remove('vocabScheduleLastFireMs');

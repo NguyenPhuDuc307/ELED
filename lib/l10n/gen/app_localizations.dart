@@ -2395,6 +2395,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Article'**
   String get posArticle;
+
+  /// No description provided for @notificationsMaxCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Max per day'**
+  String get notificationsMaxCount;
+
+  /// No description provided for @notificationsMaxCountSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How many vocab pings to fire each active period'**
+  String get notificationsMaxCountSubtitle;
+
+  /// No description provided for @notificationsMaxCountValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {count}'**
+  String notificationsMaxCountValue(int count);
 }
 
 class _AppLocalizationsDelegate

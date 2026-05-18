@@ -382,5 +382,8 @@
   "posExclamation": "Cảm thán từ",
   "posModal": "Động từ tình thái",
   "posNumber": "Số từ",
-  "posArticle": "Mạo từ"
+  "posArticle": "Mạo từ",
+  "notificationsMaxCount": "Số lượng tối đa",
+  "notificationsMaxCountSubtitle": "Bao nhiêu thông báo gửi trong mỗi khung giờ hoạt động",
+  "notificationsMaxCountValue": "Tối đa {count}"
 }

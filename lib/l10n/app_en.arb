@@ -724,5 +724,15 @@
   "posExclamation": "Exclamation",
   "posModal": "Modal verb",
   "posNumber": "Number",
-  "posArticle": "Article"
+  "posArticle": "Article",
+  "notificationsMaxCount": "Max per day",
+  "notificationsMaxCountSubtitle": "How many vocab pings to fire each active period",
+  "notificationsMaxCountValue": "Up to {count}",
+  "@notificationsMaxCountValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -1283,4 +1283,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get posArticle => 'Mạo từ';
+
+  @override
+  String get notificationsMaxCount => 'Số lượng tối đa';
+
+  @override
+  String get notificationsMaxCountSubtitle =>
+      'Bao nhiêu thông báo gửi trong mỗi khung giờ hoạt động';
+
+  @override
+  String notificationsMaxCountValue(int count) {
+    return 'Tối đa $count';
+  }
 }

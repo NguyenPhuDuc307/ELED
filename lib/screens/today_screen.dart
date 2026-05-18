@@ -35,9 +35,10 @@ class _TodayScreenState extends State<TodayScreen> {
   int _freshAvailable = 0;
   int _knownCount = 0;
   List<Vocabulary> _session = const [];
-  // Subset of _session that's in fresh/learning stage — what the match game
-  // is actually allowed to draw from. Computed in _refresh so the CTA's
-  // visibility matches what _startMatchGame would do.
+  // Pool that powers Match game + Speed match. Sourced via SrsService.gamePool
+  // which (unlike buildTodaySession) includes known words — games are a
+  // light refresher so seeing "old friends" come back is desirable.
+  List<Vocabulary> _gamePoolWords = const [];
   int _gameEligibleCount = 0;
   StreamSubscription<void>? _srsSub;
   StreamSubscription<void>? _streakSub;
@@ -98,11 +99,11 @@ class _TodayScreenState extends State<TodayScreen> {
     final levels = prefs.getStringList('selectedPopularity') ?? ['A1', 'A2', 'B1'];
     final session = await srs.buildTodaySession(levelFilter: levels);
     final fresh = await srs.freshPool(levelFilter: levels, limit: 200);
+    // Games draw from a wider pool than the daily session: known words are
+    // welcome here so the mini-games stay playable even on days where the
+    // user has already mastered most of their queue.
+    final games = await srs.gamePool(levelFilter: levels, limit: 30);
     if (!mounted) return;
-    final gameEligible = session.where((v) {
-      final stage = srs.stateFor(v.word).stage;
-      return stage == SrsStage.fresh || stage == SrsStage.learning;
-    }).length;
     setState(() {
       _dueCount = srs.dueCount();
       _freshAvailable = fresh.length;
@@ -111,7 +112,8 @@ class _TodayScreenState extends State<TodayScreen> {
               s.stage == SrsStage.reviewing || s.stage == SrsStage.mastered)
           .length;
       _session = session;
-      _gameEligibleCount = gameEligible;
+      _gamePoolWords = games;
+      _gameEligibleCount = games.length;
       _streak = StreakService().current;
       _activeDays = StreakService().activeDays;
       _loading = false;
@@ -127,17 +129,7 @@ class _TodayScreenState extends State<TodayScreen> {
     _refresh();
   }
 
-  List<Vocabulary> _gamePool() {
-    // Match-style games only use words the user is actively learning.
-    // Reviewing / mastered words are "already known" and don't need a
-    // guessing puzzle — they get a gentle Recognize refresher inside Start
-    // session instead.
-    final srs = SrsService();
-    return _session.where((v) {
-      final stage = srs.stateFor(v.word).stage;
-      return stage == SrsStage.fresh || stage == SrsStage.learning;
-    }).toList();
-  }
+  List<Vocabulary> _gamePool() => _gamePoolWords;
 
   Future<void> _startMatchGame() async {
     final pool = _gamePool();

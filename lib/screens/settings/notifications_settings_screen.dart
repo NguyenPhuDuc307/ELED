@@ -20,6 +20,7 @@ class NotificationsSettingsScreen extends StatefulWidget {
 
 class _NotificationsSettingsScreenState extends State<NotificationsSettingsScreen> {
   int _intervalMinutes = 60;
+  int _maxCount = 5;
   TimeOfDay _startTime = const TimeOfDay(hour: 9, minute: 0);
   TimeOfDay _endTime = const TimeOfDay(hour: 19, minute: 0);
 
@@ -33,6 +34,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
   bool _batteryUnrestricted = true;
 
   static const _allPopularityLevels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  static const _maxCountCeiling = 5;
 
   @override
   void initState() {
@@ -54,6 +56,8 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     setState(() {
       _availableTopics = topics;
       _intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 60;
+      _maxCount =
+          (prefs.getInt('notificationMaxCount') ?? 5).clamp(1, _maxCountCeiling);
       _startTime = TimeOfDay(
         hour: prefs.getInt('notificationStartHour') ?? 9,
         minute: prefs.getInt('notificationStartMinute') ?? 0,
@@ -78,6 +82,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
 
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('notificationIntervalMinutes', _intervalMinutes);
+    await prefs.setInt('notificationMaxCount', _maxCount);
     await prefs.setInt('notificationStartHour', _startTime.hour);
     await prefs.setInt('notificationStartMinute', _startTime.minute);
     await prefs.setInt('notificationEndHour', _endTime.hour);
@@ -99,6 +104,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         intervalMinutes: _intervalMinutes,
         startTime: _startTime,
         endTime: _endTime,
+        maxCount: _maxCount,
       );
 
       if (Platform.isAndroid) {
@@ -218,6 +224,12 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
                     subtitle: t.notificationsFrequencySubtitle,
                   ),
                   _buildIntervalSelector(t),
+                  const SizedBox(height: 24),
+                  SectionHeader(
+                    t.notificationsMaxCount,
+                    subtitle: t.notificationsMaxCountSubtitle,
+                  ),
+                  _buildMaxCountSelector(t),
                   if (Platform.isAndroid && !_batteryUnrestricted) ...[
                     const SizedBox(height: 16),
                     _buildBatteryOptCard(t),
@@ -401,6 +413,51 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
           ),
         );
       }).toList(),
+    );
+  }
+
+  Widget _buildMaxCountSelector(AppLocalizations t) {
+    return Wrap(
+      spacing: 10,
+      runSpacing: 10,
+      children: List.generate(_maxCountCeiling, (i) {
+        final value = i + 1;
+        final isSelected = _maxCount == value;
+        return GestureDetector(
+          onTap: () {
+            setState(() => _maxCount = value);
+            _markDirty();
+          },
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 120),
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 11),
+            decoration: BoxDecoration(
+              color: isSelected ? BrutalistTheme.primary : context.bBg,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: isSelected ? BrutalistTheme.primary : context.bSubtle,
+                width: 1.5,
+              ),
+              boxShadow: isSelected
+                  ? [
+                      BoxShadow(
+                        color: BrutalistTheme.primary.withValues(alpha: 0.22),
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
+                      ),
+                    ]
+                  : [],
+            ),
+            child: Text(
+              t.notificationsMaxCountValue(value),
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    fontWeight: FontWeight.w600,
+                    color: isSelected ? BrutalistTheme.white : context.bBorder,
+                  ),
+            ),
+          ),
+        );
+      }),
     );
   }
 

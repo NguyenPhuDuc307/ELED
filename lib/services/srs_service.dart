@@ -148,6 +148,52 @@ class SrsService {
     return result;
   }
 
+  /// Pool of vocab eligible for the casual mini-games (Match / Speed match).
+  /// Unlike [buildTodaySession] this *does* include words the user has
+  /// marked as known — games are a light, low-stakes refresher so it's nice
+  /// to occasionally see "old friends" pop back up. Mastered words are
+  /// excluded only because their dueAtMs is years out and they'd dilute
+  /// the pool with words the user almost never touches.
+  Future<List<Vocabulary>> gamePool({
+    List<String>? levelFilter,
+    int limit = 30,
+  }) async {
+    await ready;
+    final all = await CsvService.loadAllVocabulary(excludeKnown: false);
+    final byKey = {for (final v in all) v.word.toLowerCase(): v};
+
+    // Start with words that already have some history (due + learning +
+    // reviewing). Order: most recently/heavily seen first.
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final seen = _states.values
+        .where((s) => s.stage != SrsStage.mastered)
+        .where((s) => s.totalSeen > 0 || s.dueAtMs <= now)
+        .toList()
+      ..sort((a, b) => b.lastReviewedMs.compareTo(a.lastReviewedMs));
+
+    final result = <Vocabulary>[];
+    for (final s in seen) {
+      final v = byKey[s.word];
+      if (v == null) continue;
+      if (levelFilter != null && levelFilter.isNotEmpty) {
+        final vLevel = v.levels.toUpperCase();
+        if (!levelFilter.any((l) => vLevel.contains(l.toUpperCase()))) continue;
+      }
+      result.add(v);
+      if (result.length >= limit) break;
+    }
+
+    // Top up with fresh words if the seen pool is thin (new user case).
+    if (result.length < limit) {
+      final fresh = await freshPool(
+        levelFilter: levelFilter,
+        limit: limit - result.length,
+      );
+      result.addAll(fresh);
+    }
+    return result;
+  }
+
   /// Builds today's session: every due card + up to [_newCardsPerSession]
   /// fresh words, capped at [_maxSessionSize] total. Anything the user has
   /// explicitly marked as known via the toolbar ✓ is skipped entirely —

@@ -8,7 +8,6 @@ import 'package:home_widget/home_widget.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
-import 'package:url_launcher/url_launcher.dart';
 import '../models/vocabulary.dart';
 import '../models/word_state.dart';
 import '../services/analytics_service.dart';
@@ -17,6 +16,8 @@ import '../services/srs_service.dart';
 import '../services/update_service.dart';
 import '../services/user_data_service.dart';
 import '../screens/learning_screen.dart';
+import '../screens/settings/about_screen.dart';
+import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
 import '../main.dart';
 
@@ -120,7 +121,10 @@ class NotificationService {
         android: AndroidNotificationDetails('eled_update', 'App Updates'),
         iOS: DarwinNotificationDetails(),
       ),
-      payload: 'update:${info.apkUrl.isNotEmpty ? info.apkUrl : info.releaseUrl}',
+      // Sentinel payload — the tap handler opens the in-app About screen,
+      // which re-checks for updates and offers the in-app download. The
+      // URL is no longer baked in so we don't bypass that flow.
+      payload: 'update',
     );
   }
 
@@ -128,11 +132,15 @@ class NotificationService {
     final payload = response.payload;
     if (payload == null || payload.isEmpty) return;
 
-    // Handle update notification tap — open download URL in browser
-    if (payload.startsWith('update:')) {
-      final url = payload.substring('update:'.length);
-      if (url.isNotEmpty) {
-        await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    // Update notification → open the in-app About screen (auto-runs the
+    // update check on arrival). On cold start the navigator isn't ready,
+    // so defer via the pending-payload mechanism.
+    if (payload == 'update') {
+      final nav = globalNavigatorKey.currentState;
+      if (nav == null) {
+        pendingNotificationPayload = payload;
+      } else {
+        nav.push(smoothRoute(const AboutScreen(autoCheck: true)));
       }
       return;
     }

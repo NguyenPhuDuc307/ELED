@@ -10,10 +10,12 @@ import '../services/srs_service.dart';
 import '../services/streak_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../widgets/brutalist_card.dart';
+import '../main.dart';
 import 'home_screen.dart';
 import 'learning_screen.dart';
 import 'match_game_screen.dart';
 import 'menu_screen.dart';
+import 'settings/about_screen.dart';
 import 'settings_screen.dart';
 
 /// New primary entry point — replaces the old "browse 5 mode cards then pick a
@@ -50,6 +52,16 @@ class _TodayScreenState extends State<TodayScreen> {
     // loading indicator look frozen on slow devices. We refresh quietly now.
     _srsSub = SrsService().changes.listen((_) => _refresh(initial: false));
     _streakSub = StreakService().changes.listen((_) => _refreshStreak());
+    // Drain the cold-start "Update available" notification tap. Other
+    // payload shapes (vocab pings) are handled deeper in the Browse flow.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (pendingNotificationPayload == 'update' && mounted) {
+        pendingNotificationPayload = null;
+        Navigator.of(context).push(
+          smoothRoute(const AboutScreen(autoCheck: true)),
+        );
+      }
+    });
   }
 
   @override

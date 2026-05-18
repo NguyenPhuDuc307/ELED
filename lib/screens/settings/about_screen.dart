@@ -8,7 +8,12 @@ import '../../widgets/brutalist_card.dart';
 import '../../widgets/section_header.dart';
 
 class AboutScreen extends StatefulWidget {
-  const AboutScreen({super.key});
+  const AboutScreen({super.key, this.autoCheck = false});
+
+  /// When true, runs the update check automatically on first build — used
+  /// when the screen is opened from the "Update available" notification so
+  /// the user lands on the result instead of an idle screen.
+  final bool autoCheck;
 
   @override
   State<AboutScreen> createState() => _AboutScreenState();
@@ -27,6 +32,9 @@ class _AboutScreenState extends State<AboutScreen> {
   void initState() {
     super.initState();
     _load();
+    if (widget.autoCheck) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _check());
+    }
   }
 
   Future<void> _load() async {

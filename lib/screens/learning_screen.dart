@@ -15,7 +15,6 @@ import '../services/translation_service.dart';
 import '../services/user_data_service.dart';
 import 'exercises/anagram_exercise.dart';
 import 'exercises/fill_in_context_exercise.dart';
-import 'exercises/first_letter_exercise.dart';
 import 'exercises/listen_and_type_exercise.dart';
 import 'exercises/multiple_choice_exercise.dart';
 import 'exercises/reverse_typing_exercise.dart';
@@ -30,9 +29,12 @@ class LearningScreen extends StatefulWidget {
   final int initialIndex;
   final VoidCallback? onCompleted;
   /// When true, every card runs a quiz-style exercise (MC / Listen /
-  /// Fill-in / Anagram / FirstLetter / ReverseTyping). The Recognize
-  /// flashcard is skipped — used by the standalone Quiz CTA on Today.
+  /// Fill-in / Anagram / ReverseTyping). The Recognize flashcard is
+  /// skipped — used by the standalone Quiz CTA on Today.
   final bool quizMode;
+  /// Restricts which exercise types the quiz rotation may pick. Ignored when
+  /// [quizMode] is false. Null falls back to the full six-style rotation.
+  final Set<ExerciseType>? quizTypes;
 
   const LearningScreen({
     super.key,
@@ -41,6 +43,7 @@ class LearningScreen extends StatefulWidget {
     this.initialIndex = 0,
     this.onCompleted,
     this.quizMode = false,
+    this.quizTypes,
   });
 
   @override
@@ -421,12 +424,6 @@ class _LearningScreenState extends State<LearningScreen> {
                     onAnswered: (rating) => _submitRating(rating),
                   );
                 }
-                if (exType == ExerciseType.firstLetter) {
-                  return FirstLetterExercise(
-                    word: vocab,
-                    onAnswered: (rating) => _submitRating(rating),
-                  );
-                }
                 if (exType == ExerciseType.reverseTyping) {
                   return ReverseTypingExercise(
                     word: vocab,
@@ -774,30 +771,47 @@ class _LearningScreenState extends State<LearningScreen> {
       hasAudio: vocab.audioLink.isNotEmpty,
       hasExample: vocab.url.isNotEmpty,
     );
-    // Quiz mode never falls back to the calm Recognize card — if the SRS
-    // picker would have done so (fresh word, mastered word), nudge into
-    // the rotation so the user actually gets quizzed.
-    if (widget.quizMode && type == ExerciseType.recognize) {
-      const rotation = [
+    if (widget.quizMode) {
+      // In quiz mode, constrain to the user-picked types if provided —
+      // otherwise fall back to the full five-style rotation. Also catches
+      // the case where SRS returned Recognize (fresh/mastered word), which
+      // quiz mode never wants.
+      const defaultRotation = [
         ExerciseType.multipleChoice,
-        ExerciseType.firstLetter,
         ExerciseType.anagram,
         ExerciseType.reverseTyping,
         ExerciseType.fillInContext,
         ExerciseType.listenAndType,
       ];
-      var candidate = rotation[(index + vocab.word.length) % rotation.length];
-      if (candidate == ExerciseType.listenAndType &&
-          vocab.audioLink.isEmpty) {
-        candidate = ExerciseType.firstLetter;
+      final allowed = widget.quizTypes == null || widget.quizTypes!.isEmpty
+          ? defaultRotation
+          : defaultRotation.where(widget.quizTypes!.contains).toList();
+      if (allowed.isNotEmpty &&
+          (type == ExerciseType.recognize || !allowed.contains(type))) {
+        var candidate =
+            allowed[(index + vocab.word.length) % allowed.length];
+        // Audio/length-aware fallbacks — drop a candidate that can't render
+        // for this word and pick the next allowed type instead.
+        if (candidate == ExerciseType.listenAndType &&
+            vocab.audioLink.isEmpty) {
+          candidate = _nextAllowed(allowed, candidate);
+        }
+        if (candidate == ExerciseType.anagram && vocab.word.length <= 2) {
+          candidate = _nextAllowed(allowed, candidate);
+        }
+        type = candidate;
       }
-      if (candidate == ExerciseType.anagram && vocab.word.length <= 2) {
-        candidate = ExerciseType.firstLetter;
-      }
-      type = candidate;
     }
     _exerciseCache[index] = type;
     return type;
+  }
+
+  /// Picks the next type in [allowed] after [skip], wrapping around. Falls
+  /// back to [skip] itself if it's the only option.
+  ExerciseType _nextAllowed(List<ExerciseType> allowed, ExerciseType skip) {
+    if (allowed.length == 1) return skip;
+    final idx = allowed.indexOf(skip);
+    return allowed[(idx + 1) % allowed.length];
   }
 
   /// Picks 3 distractor words from the rest of the session for the multiple

@@ -13,6 +13,7 @@ import '../services/csv_service.dart';
 import '../services/collection_service.dart';
 import '../services/custom_word_service.dart';
 import '../services/srs_service.dart';
+import '../services/translation_service.dart';
 import '../services/user_data_service.dart';
 import '../theme/brutalist_theme.dart';
 import '../utils/log.dart';
@@ -20,6 +21,7 @@ import '../widgets/brutalist_card.dart';
 import 'match_game_screen.dart';
 import 'speed_match_screen.dart';
 import 'learning_screen.dart';
+import 'quiz_picker_sheet.dart';
 
 class HomeScreen extends StatefulWidget {
   final String mode; // 'POPULARITY', 'TOPIC', or 'SEARCH'
@@ -55,6 +57,13 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
   bool _isSearching = false;
+
+  // Search-translate cache. Holds the most-recent Google Translate result
+  // and the query it was translated from, so the result stays visible while
+  // the user reads it but resets the moment they edit the query.
+  String? _translation;
+  String _translatedQuery = '';
+  bool _translating = false;
 
   /// Active part-of-speech filter. Empty = no filter (show all). When non-
   /// empty, only words whose POS column contains *any* of the selected
@@ -289,7 +298,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 onChanged: (value) {
                   _debounceTimer?.cancel();
                   _debounceTimer = Timer(const Duration(milliseconds: 300), () {
-                    if (mounted) setState(() => _searchQuery = value);
+                    if (mounted) {
+                      setState(() {
+                        _searchQuery = value;
+                        // Editing the query invalidates any previous
+                        // Google-Translate result — user has to tap again.
+                        if (_translatedQuery != value) {
+                          _translation = null;
+                          _translatedQuery = '';
+                          _translating = false;
+                        }
+                      });
+                    }
                   });
                 },
                 decoration: InputDecoration(
@@ -792,7 +812,10 @@ class _HomeScreenState extends State<HomeScreen> {
     const titleColor = Color(0xFF5A3A18);
     return BrutalistCard(
       backgroundColor: const Color(0xFFF5E4CC),
-      onTap: () {
+      onTap: () async {
+        final picked = await showQuizPickerSheet(context);
+        if (picked == null || picked.isEmpty) return;
+        if (!mounted) return;
         // Mini-quiz round capped so the user gets a clear finish line even
         // when the collection has many words.
         const quizSize = 10;
@@ -801,6 +824,7 @@ class _HomeScreenState extends State<HomeScreen> {
           day: 0,
           vocabularies: round,
           quizMode: true,
+          quizTypes: picked,
         )));
       },
       child: Padding(
@@ -1311,6 +1335,83 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  /// Card showing the Google Translate result inside the empty search
+  /// state. Source on top, translated text below.
+  Widget _translationCard(AppLocalizations t, String query) {
+    final translation = _translation ?? '';
+    return Container(
+      margin: const EdgeInsets.only(top: 4),
+      padding: const EdgeInsets.fromLTRB(18, 14, 18, 16),
+      constraints: const BoxConstraints(maxWidth: 360),
+      decoration: BoxDecoration(
+        color: BrutalistTheme.primaryLight,
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.translate_rounded,
+                  size: 16, color: BrutalistTheme.primary),
+              const SizedBox(width: 6),
+              Text(
+                t.searchTranslationLabel,
+                style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                      color: BrutalistTheme.primary,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 0.4,
+                    ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(
+            query,
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                  color: context.bMuted,
+                  fontStyle: FontStyle.italic,
+                ),
+          ),
+          const SizedBox(height: 4),
+          if (translation.isEmpty)
+            Text(
+              t.searchTranslationError,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: const Color(0xFFD9534F),
+                  ),
+            )
+          else
+            SelectableText(
+              translation,
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    color: BrutalistTheme.primary,
+                    fontWeight: FontWeight.w700,
+                  ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  /// Calls Google Translate for the current search query. Auto-picks the
+  /// target language based on whether the query looks Vietnamese.
+  Future<void> _translateSearchQuery() async {
+    final query = _searchQuery.trim();
+    if (query.isEmpty || _translating) return;
+    setState(() => _translating = true);
+    final target =
+        TranslationService.looksVietnamese(query) ? 'en' : 'vi';
+    final result =
+        await TranslationService.translate(query, target: target);
+    if (!mounted) return;
+    setState(() {
+      _translating = false;
+      _translatedQuery = query;
+      _translation = result == query ? '' : result;
+    });
+  }
+
   Widget _buildSearchResults() {
     final String query = _searchQuery.toLowerCase().trim();
     List<Vocabulary> results = [];
@@ -1368,12 +1469,39 @@ class _HomeScreenState extends State<HomeScreen> {
       // collection, so we don't surface the CTA there.
       final cb = widget.onWordSelected;
       final canAddCustom = cb != null && query.isNotEmpty;
+      final hasTranslation = _translatedQuery == query && _translation != null;
       return _emptyState(
         icon: Icons.search_off_rounded,
         title: t.homeNoMatchesTitle,
         subtitle: t.homeNoMatchesSubtitle,
-        action: canAddCustom
-            ? FilledButton.icon(
+        action: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (query.isNotEmpty && !hasTranslation)
+              FilledButton.icon(
+                style: FilledButton.styleFrom(
+                  backgroundColor: BrutalistTheme.primary,
+                  foregroundColor: BrutalistTheme.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                ),
+                onPressed: _translating ? null : _translateSearchQuery,
+                icon: _translating
+                    ? const SizedBox(
+                        width: 16,
+                        height: 16,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: BrutalistTheme.white,
+                        ),
+                      )
+                    : const Icon(Icons.translate_rounded, size: 18),
+                label: Text(t.searchTranslateCta(query)),
+              ),
+            if (hasTranslation) _translationCard(t, query),
+            if (canAddCustom) ...[
+              const SizedBox(height: 12),
+              FilledButton.icon(
                 style: FilledButton.styleFrom(
                   backgroundColor: BrutalistTheme.primary,
                   foregroundColor: BrutalistTheme.white,
@@ -1387,8 +1515,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 icon: const Icon(Icons.add_rounded),
                 label: Text(t.searchAddCustomCta(query)),
-              )
-            : null,
+              ),
+            ],
+          ],
+        ),
       );
     }
 

@@ -34,6 +34,7 @@ class _AnagramExerciseState extends State<AnagramExercise> {
   final List<int> _picked = [];
 
   bool? _correctness;
+  bool _hintShown = false;
 
   @override
   void initState() {
@@ -139,6 +140,7 @@ class _AnagramExerciseState extends State<AnagramExercise> {
             ),
             const SizedBox(height: 12),
           ],
+          if (!showAnswer) _hintRow(t),
           if (!showAnswer)
             Row(
               children: [
@@ -169,6 +171,34 @@ class _AnagramExerciseState extends State<AnagramExercise> {
               ],
             ),
         ],
+      ),
+    );
+  }
+
+  Widget _hintRow(AppLocalizations t) {
+    final firstLetter = widget.word.word.isEmpty ? '' : widget.word.word[0];
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Align(
+        alignment: Alignment.centerRight,
+        child: _hintShown
+            ? Text(
+                t.exerciseHintStartsWith(firstLetter),
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: BrutalistTheme.primary,
+                      fontWeight: FontWeight.w700,
+                    ),
+              )
+            : TextButton.icon(
+                onPressed: () => setState(() => _hintShown = true),
+                icon: const Icon(Icons.lightbulb_outline_rounded, size: 18),
+                label: Text(t.exerciseHint),
+                style: TextButton.styleFrom(
+                  foregroundColor: BrutalistTheme.primary,
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  visualDensity: VisualDensity.compact,
+                ),
+              ),
       ),
     );
   }

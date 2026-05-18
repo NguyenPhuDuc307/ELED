@@ -322,7 +322,7 @@ class SrsService {
     final state = stateFor(word);
     if (state.totalSeen == 0) return ExerciseType.recognize;
     if (state.stage == SrsStage.mastered) return ExerciseType.recognize;
-    // Six-way rotation across all quiz styles. Fill-in stays in even when
+    // Five-way rotation across all quiz styles. Fill-in stays in even when
     // [hasExample] is false because its widget now degrades to a meaning
     // prompt instead of skipping the card.
     const rotation = [
@@ -330,18 +330,15 @@ class SrsService {
       ExerciseType.listenAndType,
       ExerciseType.fillInContext,
       ExerciseType.anagram,
-      ExerciseType.firstLetter,
       ExerciseType.reverseTyping,
     ];
     final basis = (state.totalSeen + word.length) % rotation.length;
     var candidate = rotation[basis];
     if (candidate == ExerciseType.listenAndType && !hasAudio) {
-      // Single-letter words have no useful anagram, so when we'd swap a
-      // missing-audio card into Anagram we'd want to nudge it elsewhere.
-      candidate = ExerciseType.firstLetter;
+      candidate = ExerciseType.reverseTyping;
     }
     if (candidate == ExerciseType.anagram && word.length <= 2) {
-      candidate = ExerciseType.firstLetter;
+      candidate = ExerciseType.reverseTyping;
     }
     // hasExample is now informational only — fill-in has its own fallback.
     // Leaving the param so existing callers compile without churn.

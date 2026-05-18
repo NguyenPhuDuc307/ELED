@@ -920,6 +920,24 @@ abstract class AppLocalizations {
   /// **'Try a different keyword.'**
   String get homeNoMatchesSubtitle;
 
+  /// No description provided for @searchTranslateCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate \"{query}\"'**
+  String searchTranslateCta(String query);
+
+  /// No description provided for @searchTranslationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get searchTranslationLabel;
+
+  /// No description provided for @searchTranslationError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t translate right now.'**
+  String get searchTranslationError;
+
   /// No description provided for @homeDayLabel.
   ///
   /// In en, this message translates to:
@@ -2036,23 +2054,11 @@ abstract class AppLocalizations {
   /// **'Listen and type'**
   String get exerciseListenAndType;
 
-  /// No description provided for @exerciseTypeTheWord.
-  ///
-  /// In en, this message translates to:
-  /// **'Type the word'**
-  String get exerciseTypeTheWord;
-
   /// No description provided for @exerciseFillInBlank.
   ///
   /// In en, this message translates to:
   /// **'Fill in the blank'**
   String get exerciseFillInBlank;
-
-  /// No description provided for @exerciseMissingWord.
-  ///
-  /// In en, this message translates to:
-  /// **'Missing word'**
-  String get exerciseMissingWord;
 
   /// No description provided for @exerciseSkip.
   ///
@@ -2234,23 +2240,77 @@ abstract class AppLocalizations {
   /// **'Clear'**
   String get exerciseAnagramClear;
 
-  /// No description provided for @exerciseFirstLetterTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Type the rest of the word'**
-  String get exerciseFirstLetterTitle;
-
   /// No description provided for @exerciseReverseTypingTitle.
   ///
   /// In en, this message translates to:
-  /// **'Type the meaning'**
+  /// **'Type the English word'**
   String get exerciseReverseTypingTitle;
 
-  /// No description provided for @exerciseReverseTypingHint.
+  /// No description provided for @exerciseHint.
   ///
   /// In en, this message translates to:
-  /// **'Vietnamese meaning'**
-  String get exerciseReverseTypingHint;
+  /// **'Hint'**
+  String get exerciseHint;
+
+  /// No description provided for @exerciseHintStartsWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Starts with \"{letter}\"'**
+  String exerciseHintStartsWith(String letter);
+
+  /// No description provided for @quizPickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose exercise types'**
+  String get quizPickerTitle;
+
+  /// No description provided for @quizPickerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick at least one type for this quiz round.'**
+  String get quizPickerSubtitle;
+
+  /// No description provided for @quizPickerStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get quizPickerStart;
+
+  /// No description provided for @quizPickerSelectAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get quizPickerSelectAll;
+
+  /// No description provided for @exerciseLabelMultipleChoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Multiple choice'**
+  String get exerciseLabelMultipleChoice;
+
+  /// No description provided for @exerciseLabelListenAndType.
+  ///
+  /// In en, this message translates to:
+  /// **'Listen & type'**
+  String get exerciseLabelListenAndType;
+
+  /// No description provided for @exerciseLabelFillInContext.
+  ///
+  /// In en, this message translates to:
+  /// **'Fill in the blank'**
+  String get exerciseLabelFillInContext;
+
+  /// No description provided for @exerciseLabelAnagram.
+  ///
+  /// In en, this message translates to:
+  /// **'Unscramble'**
+  String get exerciseLabelAnagram;
+
+  /// No description provided for @exerciseLabelReverseTyping.
+  ///
+  /// In en, this message translates to:
+  /// **'Type the English word'**
+  String get exerciseLabelReverseTyping;
 
   /// No description provided for @speedMatchTitle.
   ///

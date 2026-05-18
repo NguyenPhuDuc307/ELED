@@ -449,6 +449,17 @@ class AppLocalizationsVi extends AppLocalizations {
   String get homeNoMatchesSubtitle => 'Thử từ khoá khác.';
 
   @override
+  String searchTranslateCta(String query) {
+    return 'Dịch \"$query\"';
+  }
+
+  @override
+  String get searchTranslationLabel => 'Bản dịch';
+
+  @override
+  String get searchTranslationError => 'Không thể dịch lúc này.';
+
+  @override
   String homeDayLabel(int day) {
     return 'Ngày $day';
   }
@@ -1083,13 +1094,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get exerciseListenAndType => 'Nghe và gõ';
 
   @override
-  String get exerciseTypeTheWord => 'Gõ từ';
-
-  @override
   String get exerciseFillInBlank => 'Điền vào chỗ trống';
-
-  @override
-  String get exerciseMissingWord => 'Từ còn thiếu';
 
   @override
   String get exerciseSkip => 'Bỏ qua';
@@ -1199,13 +1204,42 @@ class AppLocalizationsVi extends AppLocalizations {
   String get exerciseAnagramClear => 'Xoá';
 
   @override
-  String get exerciseFirstLetterTitle => 'Gõ phần còn lại của từ';
+  String get exerciseReverseTypingTitle => 'Gõ từ tiếng Anh';
 
   @override
-  String get exerciseReverseTypingTitle => 'Gõ nghĩa';
+  String get exerciseHint => 'Gợi ý';
 
   @override
-  String get exerciseReverseTypingHint => 'Nghĩa tiếng Việt';
+  String exerciseHintStartsWith(String letter) {
+    return 'Bắt đầu bằng \"$letter\"';
+  }
+
+  @override
+  String get quizPickerTitle => 'Chọn dạng bài tập';
+
+  @override
+  String get quizPickerSubtitle => 'Chọn ít nhất 1 dạng cho phiên quiz này.';
+
+  @override
+  String get quizPickerStart => 'Bắt đầu';
+
+  @override
+  String get quizPickerSelectAll => 'Tất cả';
+
+  @override
+  String get exerciseLabelMultipleChoice => 'Trắc nghiệm';
+
+  @override
+  String get exerciseLabelListenAndType => 'Nghe và gõ';
+
+  @override
+  String get exerciseLabelFillInContext => 'Điền vào câu';
+
+  @override
+  String get exerciseLabelAnagram => 'Sắp xếp chữ';
+
+  @override
+  String get exerciseLabelReverseTyping => 'Gõ từ tiếng Anh';
 
   @override
   String get speedMatchTitle => 'Match tốc độ';

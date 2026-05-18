@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:just_audio/just_audio.dart';
 
 import '../../l10n/gen/app_localizations.dart';
@@ -7,6 +6,7 @@ import '../../models/vocabulary.dart';
 import '../../models/word_state.dart';
 import '../../theme/brutalist_theme.dart';
 import '../../utils/log.dart';
+import '../../widgets/slot_answer_field.dart';
 
 /// Active-recall exercise: play the audio, the user types the word back.
 /// Spelling is matched leniently (lowercase, trimmed, hyphens/apostrophes
@@ -32,6 +32,7 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
   bool _loadingAudio = false;
   bool _playingAudio = false;
   bool? _correctness;
+  bool _hintShown = false;
 
   @override
   void initState() {
@@ -71,11 +72,13 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
     }
   }
 
+  /// Drops case, punctuation and whitespace — slot input never contains
+  /// spaces so multi-word answers ("give birth") still compare equal to
+  /// the typed "givebirth".
   String _normalise(String s) => s
       .toLowerCase()
-      .trim()
       .replaceAll(RegExp(r"['\-‘’]"), '')
-      .replaceAll(RegExp(r'\s+'), ' ');
+      .replaceAll(RegExp(r'\s+'), '');
 
   Future<void> _submit() async {
     if (_correctness != null) return;
@@ -116,56 +119,13 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
           SizedBox(height: compact ? 12 : 28),
           Center(child: _bigAudioButton(compact: compact)),
           SizedBox(height: compact ? 14 : 28),
-          TextField(
+          SlotAnswerField(
+            template: widget.word.word,
             controller: _controller,
             focusNode: _focusNode,
             enabled: !showAnswer,
-            autocorrect: false,
-            enableSuggestions: false,
-            textCapitalization: TextCapitalization.none,
-            textAlign: TextAlign.center,
-            inputFormatters: [
-              FilteringTextInputFormatter.deny(RegExp(r'\n')),
-            ],
-            style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                  fontSize: 28,
-                  fontWeight: FontWeight.w700,
-                  color: showAnswer
-                      ? (_correctness == true
-                          ? BrutalistTheme.primary
-                          : const Color(0xFFD9534F))
-                      : context.bBorder,
-                ),
-            decoration: InputDecoration(
-              hintText: t.exerciseTypeTheWord,
-              hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: context.bMuted,
-                    fontSize: 18,
-                  ),
-              filled: true,
-              fillColor: context.bBg,
-              contentPadding:
-                  const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide(color: context.bSubtle, width: 1.5),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide:
-                    const BorderSide(color: BrutalistTheme.primary, width: 2),
-              ),
-              disabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide(
-                  color: _correctness == true
-                      ? BrutalistTheme.primary
-                      : const Color(0xFFD9534F),
-                  width: 2,
-                ),
-              ),
-            ),
-            onSubmitted: (_) => _submit(),
+            correctness: _correctness,
+            onSubmit: _submit,
           ),
           if (showAnswer && _correctness == false) ...[
             const SizedBox(height: 12),
@@ -179,6 +139,7 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
                   ),
             ),
           ],
+          if (!showAnswer) _hintRow(t),
           const SizedBox(height: 18),
           if (!showAnswer)
             Row(
@@ -213,6 +174,34 @@ class _ListenAndTypeExerciseState extends State<ListenAndTypeExercise> {
               ],
             ),
         ],
+      ),
+    );
+  }
+
+  Widget _hintRow(AppLocalizations t) {
+    final firstLetter = widget.word.word.isEmpty ? '' : widget.word.word[0];
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Align(
+        alignment: Alignment.centerRight,
+        child: _hintShown
+            ? Text(
+                t.exerciseHintStartsWith(firstLetter),
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: BrutalistTheme.primary,
+                      fontWeight: FontWeight.w700,
+                    ),
+              )
+            : TextButton.icon(
+                onPressed: () => setState(() => _hintShown = true),
+                icon: const Icon(Icons.lightbulb_outline_rounded, size: 18),
+                label: Text(t.exerciseHint),
+                style: TextButton.styleFrom(
+                  foregroundColor: BrutalistTheme.primary,
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  visualDensity: VisualDensity.compact,
+                ),
+              ),
       ),
     );
   }

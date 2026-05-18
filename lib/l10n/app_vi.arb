@@ -137,6 +137,16 @@
   "homeEmptyKnownSubtitle": "Đánh dấu từ là đã biết khi học để xem chúng ở đây.",
   "homeNoMatchesTitle": "Không tìm thấy",
   "homeNoMatchesSubtitle": "Thử từ khoá khác.",
+  "searchTranslateCta": "Dịch \"{query}\"",
+  "@searchTranslateCta": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchTranslationLabel": "Bản dịch",
+  "searchTranslationError": "Không thể dịch lúc này.",
   "homeDayLabel": "Ngày {day}",
   "homeWordsCount": "{count} từ",
   "learningProgress": "{current} / {total}",
@@ -323,9 +333,7 @@
   "exerciseAnswerLabel": "Đáp án",
   "exerciseWhatDoesItMean": "Từ này nghĩa là gì?",
   "exerciseListenAndType": "Nghe và gõ",
-  "exerciseTypeTheWord": "Gõ từ",
   "exerciseFillInBlank": "Điền vào chỗ trống",
-  "exerciseMissingWord": "Từ còn thiếu",
   "exerciseSkip": "Bỏ qua",
   "exerciseCheck": "Kiểm tra",
   "popularityLevelLabel": "Cấp {level}",
@@ -356,9 +364,25 @@
   "exerciseTypeEnglishFor": "Gõ từ tiếng Anh cho nghĩa dưới đây",
   "exerciseAnagramTitle": "Sắp xếp chữ cái",
   "exerciseAnagramClear": "Xoá",
-  "exerciseFirstLetterTitle": "Gõ phần còn lại của từ",
-  "exerciseReverseTypingTitle": "Gõ nghĩa",
-  "exerciseReverseTypingHint": "Nghĩa tiếng Việt",
+  "exerciseReverseTypingTitle": "Gõ từ tiếng Anh",
+  "exerciseHint": "Gợi ý",
+  "exerciseHintStartsWith": "Bắt đầu bằng \"{letter}\"",
+  "@exerciseHintStartsWith": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "quizPickerTitle": "Chọn dạng bài tập",
+  "quizPickerSubtitle": "Chọn ít nhất 1 dạng cho phiên quiz này.",
+  "quizPickerStart": "Bắt đầu",
+  "quizPickerSelectAll": "Tất cả",
+  "exerciseLabelMultipleChoice": "Trắc nghiệm",
+  "exerciseLabelListenAndType": "Nghe và gõ",
+  "exerciseLabelFillInContext": "Điền vào câu",
+  "exerciseLabelAnagram": "Sắp xếp chữ",
+  "exerciseLabelReverseTyping": "Gõ từ tiếng Anh",
   "speedMatchTitle": "Match tốc độ",
   "speedMatchSubtitle": "Ghép càng nhiều càng tốt trong {seconds}s",
   "speedMatchStart": "Bắt đầu",

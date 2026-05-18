@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import '../../l10n/gen/app_localizations.dart';
 import '../../models/vocabulary.dart';
 import '../../models/word_state.dart';
 import '../../theme/brutalist_theme.dart';
+import '../../widgets/slot_answer_field.dart';
 
-/// Reverse direction: show the English word, the user types the Vietnamese
-/// meaning. Tests passive → active recall. Match is lenient and accepts any
-/// of the synonyms the CSV stores separated by ";" / "," (e.g. "vui; hạnh
-/// phúc").
+/// Reverse direction: show the Vietnamese meaning, the user types the English
+/// word. Tests passive → active recall. Match is lenient on case + stray
+/// punctuation, mirroring the listen-and-type rules.
 class ReverseTypingExercise extends StatefulWidget {
   final Vocabulary word;
   final Future<void> Function(ReviewRating rating) onAnswered;
@@ -28,12 +27,14 @@ class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
   final _controller = TextEditingController();
   final _focusNode = FocusNode();
   bool? _correctness;
+  bool _hintShown = false;
 
+  /// Drops case, punctuation and whitespace so the slot input ("givebirth")
+  /// matches a multi-word answer ("give birth").
   String _normalise(String s) => s
       .toLowerCase()
-      .trim()
       .replaceAll(RegExp(r"['\-‘’]"), '')
-      .replaceAll(RegExp(r'\s+'), ' ');
+      .replaceAll(RegExp(r'\s+'), '');
 
   /// User sees the Vietnamese meaning, types the English word. Match is
   /// lenient on case + stray punctuation, mirroring the listen-and-type
@@ -42,6 +43,34 @@ class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
     final t = _normalise(typed);
     if (t.isEmpty) return false;
     return t == _normalise(widget.word.word);
+  }
+
+  Widget _hintRow(AppLocalizations t) {
+    final firstLetter = widget.word.word.isEmpty ? '' : widget.word.word[0];
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Align(
+        alignment: Alignment.centerRight,
+        child: _hintShown
+            ? Text(
+                t.exerciseHintStartsWith(firstLetter),
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: BrutalistTheme.primary,
+                      fontWeight: FontWeight.w700,
+                    ),
+              )
+            : TextButton.icon(
+                onPressed: () => setState(() => _hintShown = true),
+                icon: const Icon(Icons.lightbulb_outline_rounded, size: 18),
+                label: Text(t.exerciseHint),
+                style: TextButton.styleFrom(
+                  foregroundColor: BrutalistTheme.primary,
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  visualDensity: VisualDensity.compact,
+                ),
+              ),
+      ),
+    );
   }
 
   Future<void> _submit() async {
@@ -101,57 +130,13 @@ class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
             ),
           ),
           const SizedBox(height: 22),
-          TextField(
+          SlotAnswerField(
+            template: widget.word.word,
             controller: _controller,
             focusNode: _focusNode,
             enabled: !showAnswer,
-            autocorrect: false,
-            enableSuggestions: false,
-            textCapitalization: TextCapitalization.none,
-            textAlign: TextAlign.center,
-            autofocus: true,
-            inputFormatters: [
-              FilteringTextInputFormatter.deny(RegExp(r'\n')),
-            ],
-            style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
-                  color: showAnswer
-                      ? (_correctness == true
-                          ? BrutalistTheme.primary
-                          : const Color(0xFFD9534F))
-                      : context.bBorder,
-                ),
-            decoration: InputDecoration(
-              hintText: t.exerciseReverseTypingHint,
-              hintStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: context.bMuted,
-                    fontSize: 16,
-                  ),
-              filled: true,
-              fillColor: context.bBg,
-              contentPadding:
-                  const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide(color: context.bSubtle, width: 1.5),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide:
-                    const BorderSide(color: BrutalistTheme.primary, width: 2),
-              ),
-              disabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide(
-                  color: _correctness == true
-                      ? BrutalistTheme.primary
-                      : const Color(0xFFD9534F),
-                  width: 2,
-                ),
-              ),
-            ),
-            onSubmitted: (_) => _submit(),
+            correctness: _correctness,
+            onSubmit: _submit,
           ),
           if (showAnswer && _correctness == false) ...[
             const SizedBox(height: 12),
@@ -165,6 +150,7 @@ class _ReverseTypingExerciseState extends State<ReverseTypingExercise> {
                   ),
             ),
           ],
+          if (!showAnswer) _hintRow(t),
           const SizedBox(height: 18),
           if (!showAnswer)
             Row(

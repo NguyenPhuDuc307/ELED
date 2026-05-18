@@ -15,6 +15,7 @@ import 'home_screen.dart';
 import 'learning_screen.dart';
 import 'match_game_screen.dart';
 import 'menu_screen.dart';
+import 'quiz_picker_sheet.dart';
 import 'settings/about_screen.dart';
 import 'settings_screen.dart';
 import 'speed_match_screen.dart';
@@ -176,6 +177,9 @@ class _TodayScreenState extends State<TodayScreen> {
       );
       return;
     }
+    final picked = await showQuizPickerSheet(context);
+    if (picked == null || picked.isEmpty) return;
+    if (!mounted) return;
     // Cap each quiz round at a comfortable mini-session size so the user
     // gets a clear finish line instead of a long pile of cards.
     const quizSize = 10;
@@ -185,6 +189,7 @@ class _TodayScreenState extends State<TodayScreen> {
       day: 0,
       vocabularies: round,
       quizMode: true,
+      quizTypes: picked,
     )));
     _refresh();
   }
@@ -465,7 +470,7 @@ class _TodayScreenState extends State<TodayScreen> {
   }
 
   /// Quiz CTA — runs the user's game pool through a rotation of the six
-  /// quiz-style exercises (MC / Listen / Fill-in / Anagram / FirstLetter /
+  /// quiz-style exercises (MC / Listen / Fill-in / Anagram /
   /// ReverseTyping). No Recognize flashcards. Distinct from Start session
   /// because it doesn't follow the SRS schedule — just pulls from the
   /// known + learning pool for active practice.

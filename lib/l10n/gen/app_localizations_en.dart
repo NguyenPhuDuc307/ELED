@@ -451,6 +451,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeNoMatchesSubtitle => 'Try a different keyword.';
 
   @override
+  String searchTranslateCta(String query) {
+    return 'Translate \"$query\"';
+  }
+
+  @override
+  String get searchTranslationLabel => 'Translation';
+
+  @override
+  String get searchTranslationError => 'Couldn\'t translate right now.';
+
+  @override
   String homeDayLabel(int day) {
     return 'Day $day';
   }
@@ -1088,13 +1099,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exerciseListenAndType => 'Listen and type';
 
   @override
-  String get exerciseTypeTheWord => 'Type the word';
-
-  @override
   String get exerciseFillInBlank => 'Fill in the blank';
-
-  @override
-  String get exerciseMissingWord => 'Missing word';
 
   @override
   String get exerciseSkip => 'Skip';
@@ -1205,13 +1210,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String get exerciseAnagramClear => 'Clear';
 
   @override
-  String get exerciseFirstLetterTitle => 'Type the rest of the word';
+  String get exerciseReverseTypingTitle => 'Type the English word';
 
   @override
-  String get exerciseReverseTypingTitle => 'Type the meaning';
+  String get exerciseHint => 'Hint';
 
   @override
-  String get exerciseReverseTypingHint => 'Vietnamese meaning';
+  String exerciseHintStartsWith(String letter) {
+    return 'Starts with \"$letter\"';
+  }
+
+  @override
+  String get quizPickerTitle => 'Choose exercise types';
+
+  @override
+  String get quizPickerSubtitle =>
+      'Pick at least one type for this quiz round.';
+
+  @override
+  String get quizPickerStart => 'Start';
+
+  @override
+  String get quizPickerSelectAll => 'All';
+
+  @override
+  String get exerciseLabelMultipleChoice => 'Multiple choice';
+
+  @override
+  String get exerciseLabelListenAndType => 'Listen & type';
+
+  @override
+  String get exerciseLabelFillInContext => 'Fill in the blank';
+
+  @override
+  String get exerciseLabelAnagram => 'Unscramble';
+
+  @override
+  String get exerciseLabelReverseTyping => 'Type the English word';
 
   @override
   String get speedMatchTitle => 'Speed match';

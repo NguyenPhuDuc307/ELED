@@ -213,6 +213,16 @@
   "homeEmptyKnownSubtitle": "Mark words as known while you study to see them here.",
   "homeNoMatchesTitle": "No matches",
   "homeNoMatchesSubtitle": "Try a different keyword.",
+  "searchTranslateCta": "Translate \"{query}\"",
+  "@searchTranslateCta": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchTranslationLabel": "Translation",
+  "searchTranslationError": "Couldn't translate right now.",
   "homeDayLabel": "Day {day}",
   "@homeDayLabel": {
     "placeholders": {
@@ -592,9 +602,7 @@
   "exerciseAnswerLabel": "Answer",
   "exerciseWhatDoesItMean": "What does this mean?",
   "exerciseListenAndType": "Listen and type",
-  "exerciseTypeTheWord": "Type the word",
   "exerciseFillInBlank": "Fill in the blank",
-  "exerciseMissingWord": "Missing word",
   "exerciseSkip": "Skip",
   "exerciseCheck": "Check",
   "popularityLevelLabel": "Level {level}",
@@ -684,9 +692,25 @@
   "exerciseTypeEnglishFor": "Type the English word for the meaning below",
   "exerciseAnagramTitle": "Unscramble the word",
   "exerciseAnagramClear": "Clear",
-  "exerciseFirstLetterTitle": "Type the rest of the word",
-  "exerciseReverseTypingTitle": "Type the meaning",
-  "exerciseReverseTypingHint": "Vietnamese meaning",
+  "exerciseReverseTypingTitle": "Type the English word",
+  "exerciseHint": "Hint",
+  "exerciseHintStartsWith": "Starts with \"{letter}\"",
+  "@exerciseHintStartsWith": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "quizPickerTitle": "Choose exercise types",
+  "quizPickerSubtitle": "Pick at least one type for this quiz round.",
+  "quizPickerStart": "Start",
+  "quizPickerSelectAll": "All",
+  "exerciseLabelMultipleChoice": "Multiple choice",
+  "exerciseLabelListenAndType": "Listen & type",
+  "exerciseLabelFillInContext": "Fill in the blank",
+  "exerciseLabelAnagram": "Unscramble",
+  "exerciseLabelReverseTyping": "Type the English word",
   "speedMatchTitle": "Speed match",
   "speedMatchSubtitle": "Match as many as you can in {seconds}s",
   "@speedMatchSubtitle": {

@@ -141,9 +141,6 @@ enum ExerciseType {
   /// Scrambled letters of the word + meaning; tap letters in order.
   anagram,
 
-  /// Meaning + first letter shown; type the rest of the word.
-  firstLetter,
-
-  /// English word shown; type the Vietnamese meaning. Lenient match.
+  /// Vietnamese meaning shown; type the English word. Lenient match.
   reverseTyping,
 }

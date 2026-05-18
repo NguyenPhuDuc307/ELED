@@ -725,9 +725,9 @@
   "posModal": "Modal verb",
   "posNumber": "Number",
   "posArticle": "Article",
-  "notificationsMaxCount": "Max per day",
-  "notificationsMaxCountSubtitle": "How many vocab pings to fire each active period",
-  "notificationsMaxCountValue": "Up to {count}",
+  "notificationsMaxCount": "Words per notification",
+  "notificationsMaxCountSubtitle": "How many vocabulary words to bundle into each notification",
+  "notificationsMaxCountValue": "{count} words",
   "@notificationsMaxCountValue": {
     "placeholders": {
       "count": {

@@ -49,7 +49,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     setState(() {
       _intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 60;
       _maxCount =
-          (prefs.getInt('notificationMaxCount') ?? 5).clamp(1, _maxCountCeiling);
+          (prefs.getInt('notificationWordsPerBundle') ?? 5).clamp(1, _maxCountCeiling);
       _startTime = TimeOfDay(
         hour: prefs.getInt('notificationStartHour') ?? 9,
         minute: prefs.getInt('notificationStartMinute') ?? 0,
@@ -71,7 +71,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
 
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('notificationIntervalMinutes', _intervalMinutes);
-    await prefs.setInt('notificationMaxCount', _maxCount);
+    await prefs.setInt('notificationWordsPerBundle', _maxCount);
     await prefs.setInt('notificationStartHour', _startTime.hour);
     await prefs.setInt('notificationStartMinute', _startTime.minute);
     await prefs.setInt('notificationEndHour', _endTime.hour);
@@ -95,7 +95,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         intervalMinutes: _intervalMinutes,
         startTime: _startTime,
         endTime: _endTime,
-        maxCount: _maxCount,
+        wordsPerBundle: _maxCount,
       );
 
       if (Platform.isAndroid) {

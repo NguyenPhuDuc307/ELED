@@ -1291,15 +1291,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get posArticle => 'Article';
 
   @override
-  String get notificationsMaxCount => 'Max per day';
+  String get notificationsMaxCount => 'Words per notification';
 
   @override
   String get notificationsMaxCountSubtitle =>
-      'How many vocab pings to fire each active period';
+      'How many vocabulary words to bundle into each notification';
 
   @override
   String notificationsMaxCountValue(int count) {
-    return 'Up to $count';
+    return '$count words';
   }
 
   @override

@@ -762,20 +762,15 @@ class _LearningScreenState extends State<LearningScreen> {
   /// in [_exerciseCache] so the choice is stable across rebuilds — otherwise
   /// the SRS state could mutate mid-card and the page would re-render with a
   /// different exercise type.
+  ///
+  /// Normal learning sessions always render the Recognize flashcard — quiz-
+  /// style exercises live exclusively in the standalone Quiz flow now.
   ExerciseType _exerciseFor(int index) {
     final cached = _exerciseCache[index];
     if (cached != null) return cached;
     final vocab = widget.vocabularies[index];
-    var type = SrsService().pickExerciseType(
-      vocab.word,
-      hasAudio: vocab.audioLink.isNotEmpty,
-      hasExample: vocab.url.isNotEmpty,
-    );
+    ExerciseType type = ExerciseType.recognize;
     if (widget.quizMode) {
-      // In quiz mode, constrain to the user-picked types if provided —
-      // otherwise fall back to the full five-style rotation. Also catches
-      // the case where SRS returned Recognize (fresh/mastered word), which
-      // quiz mode never wants.
       const defaultRotation = [
         ExerciseType.multipleChoice,
         ExerciseType.anagram,
@@ -786,8 +781,7 @@ class _LearningScreenState extends State<LearningScreen> {
       final allowed = widget.quizTypes == null || widget.quizTypes!.isEmpty
           ? defaultRotation
           : defaultRotation.where(widget.quizTypes!.contains).toList();
-      if (allowed.isNotEmpty &&
-          (type == ExerciseType.recognize || !allowed.contains(type))) {
+      if (allowed.isNotEmpty) {
         var candidate =
             allowed[(index + vocab.word.length) % allowed.length];
         // Audio/length-aware fallbacks — drop a candidate that can't render

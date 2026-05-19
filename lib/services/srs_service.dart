@@ -301,50 +301,6 @@ class SrsService {
     return SrsStage.learning;
   }
 
-  // ── Exercise picker ────────────────────────────────────────────────────
-
-  /// Chooses which exercise style to use for [word] in this session.
-  ///
-  /// Two tiers:
-  /// - `fresh` (totalSeen == 0) → [ExerciseType.recognize]. The user sees
-  ///   the meaning before they're ever quizzed.
-  /// - Anything else → deterministic rotation across the six quiz styles
-  ///   so the session stays varied. Even `reviewing` words go through
-  ///   rotation now — sticking to Recognize once a word was "stable" made
-  ///   long-running users feel they only ever saw flashcards.
-  /// - `mastered` is the one exception: those words barely re-surface
-  ///   anyway, and when they do a calm Recognize is appropriate.
-  ExerciseType pickExerciseType(
-    String word, {
-    bool hasAudio = true,
-    bool hasExample = true,
-  }) {
-    final state = stateFor(word);
-    if (state.totalSeen == 0) return ExerciseType.recognize;
-    if (state.stage == SrsStage.mastered) return ExerciseType.recognize;
-    // Five-way rotation across all quiz styles. Fill-in stays in even when
-    // [hasExample] is false because its widget now degrades to a meaning
-    // prompt instead of skipping the card.
-    const rotation = [
-      ExerciseType.multipleChoice,
-      ExerciseType.listenAndType,
-      ExerciseType.fillInContext,
-      ExerciseType.anagram,
-      ExerciseType.reverseTyping,
-    ];
-    final basis = (state.totalSeen + word.length) % rotation.length;
-    var candidate = rotation[basis];
-    if (candidate == ExerciseType.listenAndType && !hasAudio) {
-      candidate = ExerciseType.reverseTyping;
-    }
-    if (candidate == ExerciseType.anagram && word.length <= 2) {
-      candidate = ExerciseType.reverseTyping;
-    }
-    // hasExample is now informational only — fill-in has its own fallback.
-    // Leaving the param so existing callers compile without churn.
-    return candidate;
-  }
-
   /// Hard-promotes a word to mastered with a year-long interval. Used by the
   /// "I already know this" shortcut so the user can permanently drop trivial
   /// words from the daily queue without having to rate Easy several times.

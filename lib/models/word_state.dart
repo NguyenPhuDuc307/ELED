@@ -121,9 +121,9 @@ class WordState {
 /// happens inside SrsService.applyReview.
 enum ReviewRating { again, hard, good, easy }
 
-/// Which interaction style a card uses inside a session. Picked per-card by
-/// [SrsService.pickExerciseType] so a session has varied feel instead of
-/// the same flashcard repeated 20 times.
+/// Which interaction style a card uses inside a session. Normal learning
+/// always uses [recognize]; the standalone Quiz flow rotates through the
+/// other styles.
 enum ExerciseType {
   /// Classic flashcard with manual Again / Hard / Good rating.
   recognize,

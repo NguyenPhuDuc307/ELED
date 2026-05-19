@@ -23,14 +23,29 @@ object ScheduleEngine {
     const val KEY_LATEST_SCHEDULED_MS = "flutter.vocabScheduleLatestMs"
     const val KEY_LAST_FIRE_MS = "flutter.vocabScheduleLastFireMs"
     const val KEY_POOL_CURSOR = "flutter.vocabSchedulePoolCursor"
+    // Mirrors Dart's `notificationWordsPerBundle` setting. After bundling
+    // was removed this is now the number of separate notifications fired
+    // per scheduled slot, staggered by [INTRA_SLOT_GAP_MS].
+    const val KEY_NOTIFS_PER_SLOT = "flutter.vocabScheduleWordsPerBundle"
+    // Position within the current slot's burst. Increments on every fire,
+    // wraps at notifsPerSlot. Lets refillAfterFire decide whether to start
+    // a new slot or just stagger the next notif into the current burst.
+    const val KEY_BURST_POSITION = "flutter.vocabScheduleBurstPosition"
 
     const val MAX_ALARMS_AHEAD = 100
     const val NOTIF_ID_MAX = 200
+    const val INTRA_SLOT_GAP_MS = 3_000L
     private const val FIELD_SEP = ""
     private const val ITEM_SEP = "\n"
 
-    data class Config(val intervalMins: Int, val startMins: Int, val endMins: Int) {
-        fun isValid(): Boolean = intervalMins > 0 && startMins in 0..1439 && endMins in 0..1440 && endMins > startMins
+    data class Config(
+        val intervalMins: Int,
+        val startMins: Int,
+        val endMins: Int,
+        val notifsPerSlot: Int,
+    ) {
+        fun isValid(): Boolean =
+            intervalMins > 0 && startMins in 0..1439 && endMins in 0..1440 && endMins > startMins && notifsPerSlot > 0
     }
 
     data class PoolItem(
@@ -52,7 +67,10 @@ object ScheduleEngine {
         val interval = p.getInt(KEY_INTERVAL, 0)
         val startMins = p.getInt(KEY_START_MINS, 0)
         val endMins = p.getInt(KEY_END_MINS, 0)
-        val cfg = Config(interval, startMins, endMins)
+        // Default to 1 for users upgrading from the bundled-pre-fix era who
+        // never re-saved their notification settings.
+        val notifsPerSlot = p.getInt(KEY_NOTIFS_PER_SLOT, 1).coerceAtLeast(1)
+        val cfg = Config(interval, startMins, endMins, notifsPerSlot)
         return if (cfg.isValid()) cfg else null
     }
 
@@ -134,8 +152,16 @@ object ScheduleEngine {
         val p = prefs(ctx)
         val now = System.currentTimeMillis()
         val latest = p.getLong(KEY_LATEST_SCHEDULED_MS, 0L).coerceAtLeast(now)
+        val burstPos = p.getInt(KEY_BURST_POSITION, 0)
 
-        val nextMs = nextSlot(latest, config)
+        // Position 0 starts a fresh slot; later positions stack onto the
+        // current burst with INTRA_SLOT_GAP_MS spacing.
+        val nextMs = if (burstPos == 0) {
+            nextSlot(latest, config)
+        } else {
+            latest + INTRA_SLOT_GAP_MS
+        }
+
         val cursor = p.getInt(KEY_POOL_CURSOR, 0)
         val item = pool[cursor % pool.size]
         // Reuse the fired ID — the slot it just released — so we stay within 0..NOTIF_ID_MAX
@@ -147,6 +173,7 @@ object ScheduleEngine {
             .putLong(KEY_LATEST_SCHEDULED_MS, nextMs)
             .putLong(KEY_LAST_FIRE_MS, now)
             .putInt(KEY_POOL_CURSOR, (cursor + 1) % maxOf(pool.size, 1))
+            .putInt(KEY_BURST_POSITION, (burstPos + 1) % config.notifsPerSlot)
             .apply()
     }
 
@@ -164,22 +191,31 @@ object ScheduleEngine {
         val p = prefs(ctx)
         val cursorStart = p.getInt(KEY_POOL_CURSOR, 0)
         val count = minOf(MAX_ALARMS_AHEAD, pool.size * 4)  // cap, but allow cycling
-        var prevMs = System.currentTimeMillis()
-        var lastScheduled = prevMs
+        var slotMs = System.currentTimeMillis()
+        var lastScheduled = slotMs
 
+        // Burst-aware schedule: for every aligned slot, fan out [notifsPerSlot]
+        // notifications separated by INTRA_SLOT_GAP_MS so the user gets a
+        // small cluster instead of a single ping.
         for (i in 0 until count) {
-            val nextMs = nextSlot(prevMs, config)
+            val burstPos = i % config.notifsPerSlot
+            val atMs = if (burstPos == 0) {
+                slotMs = nextSlot(slotMs, config)
+                slotMs
+            } else {
+                lastScheduled + INTRA_SLOT_GAP_MS
+            }
             val item = pool[(cursorStart + i) % pool.size]
             VocabNotificationReceiver.schedule(
-                ctx, i % NOTIF_ID_MAX, item.word, item.translation, item.pos, item.topic, nextMs, item.audioUrl
+                ctx, i % NOTIF_ID_MAX, item.word, item.translation, item.pos, item.topic, atMs, item.audioUrl
             )
-            prevMs = nextMs
-            lastScheduled = nextMs
+            lastScheduled = atMs
         }
 
         p.edit()
             .putLong(KEY_LATEST_SCHEDULED_MS, lastScheduled)
             .putInt(KEY_POOL_CURSOR, (cursorStart + count) % maxOf(pool.size, 1))
+            .putInt(KEY_BURST_POSITION, count % config.notifsPerSlot)
             .apply()
     }
 

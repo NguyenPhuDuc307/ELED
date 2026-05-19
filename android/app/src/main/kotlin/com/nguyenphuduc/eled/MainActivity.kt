@@ -88,12 +88,18 @@ class MainActivity : FlutterActivity() {
                             if (atMs > latestMs) latestMs = atMs
                         }
                         // Record tail of pipeline + reset pool cursor so rolling refill
-                        // picks up where Flutter left off.
+                        // picks up where Flutter left off. Burst position is reset
+                        // to align with where Flutter's per-slot fan-out ended so
+                        // the first native refill correctly starts a new slot.
+                        val notifsPerSlot = applicationContext.getSharedPreferences(
+                            "FlutterSharedPreferences", Context.MODE_PRIVATE
+                        ).getInt(ScheduleEngine.KEY_NOTIFS_PER_SLOT, 1).coerceAtLeast(1)
                         applicationContext.getSharedPreferences(
                             "FlutterSharedPreferences", Context.MODE_PRIVATE
                         ).edit()
                             .putLong(ScheduleEngine.KEY_LATEST_SCHEDULED_MS, latestMs)
                             .putInt(ScheduleEngine.KEY_POOL_CURSOR, items.size)
+                            .putInt(ScheduleEngine.KEY_BURST_POSITION, items.size % notifsPerSlot)
                             .apply()
                         WatchdogWorker.enqueuePeriodic(applicationContext)
                         // Kick off pronunciation pre-download in the background so the

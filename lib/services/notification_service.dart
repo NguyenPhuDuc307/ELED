@@ -331,14 +331,19 @@ class NotificationService {
 
     final now      = tz.TZDateTime.now(tz.local);
     final platformCap = Platform.isAndroid ? 100 : 64;
-    // [count] = number of *notifications* to schedule. Each notification
-    // bundles [wordsPerBundle] words (e.g. one notification with 5 words
-    // instead of five single-word pings). We cap by the platform queue
-    // limit and by how many bundles the pool can sustain without too much
-    // repetition.
-    final maxBundles = max(1, pool.length ~/ wordsPerBundle);
-    final count = min(platformCap, maxBundles);
+    // [slotCount] = number of *time slots* to schedule. Each slot fires
+    // [wordsPerBundle] notifications back-to-back (staggered by a few
+    // seconds) so the user gets several separate cards instead of one
+    // bundled card with many words. Total notifications = slotCount *
+    // wordsPerBundle, capped at the platform queue limit and by how many
+    // distinct words the pool can sustain.
+    final maxByPool = max(1, pool.length ~/ wordsPerBundle);
+    final maxBySlots = platformCap ~/ wordsPerBundle;
+    final slotCount = min(maxBySlots, maxByPool);
     final shuffled = List.of(pool)..shuffle();
+    // Gap between notifications fired within the same slot. 3s keeps the
+    // sounds distinct without dragging the burst out too long.
+    const intraSlotGapSec = 3;
 
     final startMins = startTime.hour * 60 + startTime.minute;
     final endMins   = endTime.hour * 60 + endTime.minute;
@@ -374,29 +379,32 @@ class NotificationService {
         wordsPerBundle: wordsPerBundle,
       );
 
-      // Build batch for native scheduling. Each notification bundles
-      // [wordsPerBundle] consecutive words from the shuffled pool — the
-      // first word fills the title slot, every word lands in the body so
-      // the user gets a small batch at once instead of single-word pings.
+      // Build batch for native scheduling. Each slot fires
+      // [wordsPerBundle] separate single-word notifications, staggered by
+      // [intraSlotGapSec] seconds so they don't collapse into a single
+      // chime.
       final items = <Map<String, dynamic>>[];
-      for (int i = 0; i < count; i++) {
-        if (i > 0) {
+      var notifId = 0;
+      for (int s = 0; s < slotCount; s++) {
+        if (s > 0) {
           next = _advance(next, intervalMinutes, startMins, endMins);
         }
-        final bundle = _bundleAt(shuffled, i, wordsPerBundle);
-        final head = bundle.first;
-        final body = _bundleBody(bundle);
-        items.add({
-          'id': i,
-          'word': head.word,
-          'translation': body,
-          'pos': head.partOfSpeech,
-          'topic': head.topic,
-          'atMs': next.millisecondsSinceEpoch,
-          'audioUrl': head.audioLink,
-        });
-        logEntries.add('${next.millisecondsSinceEpoch}|${head.word}|${head.topic}');
-        widgetEntries.add('${next.millisecondsSinceEpoch}|${head.word}|${head.translation}|${head.ipa}|${head.partOfSpeech}|${head.levels}|${head.topic}');
+        for (int j = 0; j < wordsPerBundle; j++) {
+          final word = shuffled[(s * wordsPerBundle + j) % shuffled.length];
+          final atMs = next.millisecondsSinceEpoch + (j * intraSlotGapSec * 1000);
+          items.add({
+            'id': notifId,
+            'word': word.word,
+            'translation': word.translation,
+            'pos': word.partOfSpeech,
+            'topic': word.topic,
+            'atMs': atMs,
+            'audioUrl': word.audioLink,
+          });
+          logEntries.add('$atMs|${word.word}|${word.topic}');
+          widgetEntries.add('$atMs|${word.word}|${word.translation}|${word.ipa}|${word.partOfSpeech}|${word.levels}|${word.topic}');
+          notifId++;
+        }
       }
       try {
         await _kAndroidChannel.invokeMethod('scheduleAll', {'items': items});
@@ -404,17 +412,23 @@ class NotificationService {
         logCaught(e, st, 'NotificationService.scheduleAll:nativeBatch');
       }
     } else {
-      // iOS — use flutter_local_notifications
+      // iOS — use flutter_local_notifications. Same per-slot fan-out as
+      // Android; each word becomes its own notification.
       final futures = <Future<void>>[];
-      for (int i = 0; i < count; i++) {
-        if (i > 0) {
+      var notifId = 0;
+      for (int s = 0; s < slotCount; s++) {
+        if (s > 0) {
           next = _advance(next, intervalMinutes, startMins, endMins);
         }
-        final bundle = _bundleAt(shuffled, i, wordsPerBundle);
-        futures.add(_scheduleIOS(i, bundle, next));
-        final head = bundle.first;
-        logEntries.add('${next.millisecondsSinceEpoch}|${head.word}|${head.topic}');
-        widgetEntries.add('${next.millisecondsSinceEpoch}|${head.word}|${head.translation}|${head.ipa}|${head.partOfSpeech}|${head.levels}|${head.topic}');
+        for (int j = 0; j < wordsPerBundle; j++) {
+          final word = shuffled[(s * wordsPerBundle + j) % shuffled.length];
+          final at = next.add(Duration(seconds: j * intraSlotGapSec));
+          futures.add(_scheduleIOS(notifId, word, at));
+          final atMs = at.millisecondsSinceEpoch;
+          logEntries.add('$atMs|${word.word}|${word.topic}');
+          widgetEntries.add('$atMs|${word.word}|${word.translation}|${word.ipa}|${word.partOfSpeech}|${word.levels}|${word.topic}');
+          notifId++;
+        }
       }
       await Future.wait(futures);
     }
@@ -603,41 +617,18 @@ class NotificationService {
   }
 
   Future<void> _scheduleIOS(
-      int id, List<Vocabulary> bundle, tz.TZDateTime at) async {
-    final head = bundle.first;
+      int id, Vocabulary word, tz.TZDateTime at) async {
+    final pos = word.partOfSpeech;
     await flutterLocalNotificationsPlugin.zonedSchedule(
       id: id,
-      title: bundle.length == 1
-          ? head.word.toUpperCase()
-          : '${bundle.length} từ vựng',
-      body: _bundleBody(bundle),
+      title: word.word.toUpperCase(),
+      body: pos.isEmpty
+          ? word.translation
+          : '${word.translation}  •  $pos',
       scheduledDate: at,
       notificationDetails: const NotificationDetails(iOS: _kIOSDetails),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      // Tap payload routes to the first word — opening a multi-word view
-      // would need a new screen; for now we surface the headliner.
-      payload: '${head.word}|${head.topic}',
+      payload: '${word.word}|${word.topic}',
     );
-  }
-
-  /// Picks [count] consecutive words from [pool] starting at slot [slotIndex],
-  /// wrapping if the pool is smaller than the offset. Always returns at
-  /// least one word.
-  static List<Vocabulary> _bundleAt(
-      List<Vocabulary> pool, int slotIndex, int count) {
-    if (pool.isEmpty) return const [];
-    final words = <Vocabulary>[];
-    for (int j = 0; j < count; j++) {
-      final idx = (slotIndex * count + j) % pool.length;
-      words.add(pool[idx]);
-    }
-    return words;
-  }
-
-  /// One word per line: "decoration — trang trí". Used for both Android
-  /// (translation field, which the native side renders as the body) and
-  /// iOS (notification body).
-  static String _bundleBody(List<Vocabulary> bundle) {
-    return bundle.map((v) => '${v.word} — ${v.translation}').join('\n');
   }
 }

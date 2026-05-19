@@ -1326,15 +1326,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get posArticle => 'Article';
 
   @override
-  String get notificationsMaxCount => 'Words per notification';
+  String get notificationsMaxCount => 'Notifications per slot';
 
   @override
   String get notificationsMaxCountSubtitle =>
-      'How many vocabulary words to bundle into each notification';
+      'How many separate notifications fire each time, staggered by a few seconds';
 
   @override
   String notificationsMaxCountValue(int count) {
-    return '$count words';
+    return '$count per slot';
   }
 
   @override

@@ -2459,19 +2459,19 @@ abstract class AppLocalizations {
   /// No description provided for @notificationsMaxCount.
   ///
   /// In en, this message translates to:
-  /// **'Words per notification'**
+  /// **'Notifications per slot'**
   String get notificationsMaxCount;
 
   /// No description provided for @notificationsMaxCountSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'How many vocabulary words to bundle into each notification'**
+  /// **'How many separate notifications fire each time, staggered by a few seconds'**
   String get notificationsMaxCountSubtitle;
 
   /// No description provided for @notificationsMaxCountValue.
   ///
   /// In en, this message translates to:
-  /// **'{count} words'**
+  /// **'{count} per slot'**
   String notificationsMaxCountValue(int count);
 
   /// No description provided for @settingsLearningPrefs.

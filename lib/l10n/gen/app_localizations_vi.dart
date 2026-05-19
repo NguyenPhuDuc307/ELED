@@ -1319,15 +1319,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get posArticle => 'Mạo từ';
 
   @override
-  String get notificationsMaxCount => 'Số từ mỗi thông báo';
+  String get notificationsMaxCount => 'Số thông báo mỗi lượt';
 
   @override
   String get notificationsMaxCountSubtitle =>
-      'Mỗi thông báo gói bao nhiêu từ vựng';
+      'Mỗi khung giờ gửi mấy thông báo riêng biệt, cách nhau vài giây';
 
   @override
   String notificationsMaxCountValue(int count) {
-    return '$count từ';
+    return '$count thông báo';
   }
 
   @override

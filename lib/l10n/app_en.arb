@@ -749,9 +749,9 @@
   "posModal": "Modal verb",
   "posNumber": "Number",
   "posArticle": "Article",
-  "notificationsMaxCount": "Words per notification",
-  "notificationsMaxCountSubtitle": "How many vocabulary words to bundle into each notification",
-  "notificationsMaxCountValue": "{count} words",
+  "notificationsMaxCount": "Notifications per slot",
+  "notificationsMaxCountSubtitle": "How many separate notifications fire each time, staggered by a few seconds",
+  "notificationsMaxCountValue": "{count} per slot",
   "@notificationsMaxCountValue": {
     "placeholders": {
       "count": {

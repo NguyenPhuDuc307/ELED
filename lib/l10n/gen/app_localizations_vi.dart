@@ -1369,4 +1369,200 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get helpTopic14Body =>
       'Cài đặt → Tuỳ chỉnh từ vựng điều khiển các cấp độ CEFR (A1-C1) và nhóm chủ đề mà app lấy từ. Lựa chọn này áp dụng cho mọi nơi chọn từ: phiên Today, các game, và Thông báo. Để trống Chủ đề để dùng tất cả. Cấp độ mặc định bật hết.';
+
+  @override
+  String get speakingTitle => 'Luyện Speaking';
+
+  @override
+  String get speakingAddNew => 'Thêm bài speaking';
+
+  @override
+  String get speakingEmptyTitle => 'Chưa có bài speaking';
+
+  @override
+  String get speakingEmptySubtitle =>
+      'Dán một bài Q&A kiểu IELTS để bắt đầu luyện tập.';
+
+  @override
+  String speakingItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count câu hỏi',
+      one: '1 câu hỏi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get speakingDeleteTitle => 'Xoá bài này?';
+
+  @override
+  String speakingDeleteConfirm(String topic) {
+    return '$topic sẽ bị xoá.';
+  }
+
+  @override
+  String get speakingImportTitle => 'Thêm bài speaking';
+
+  @override
+  String get speakingTopicLabel => 'Chủ đề (tuỳ chọn)';
+
+  @override
+  String get speakingTopicHint => 'ví dụ Interests / Hobbies';
+
+  @override
+  String get speakingPasteLabel => 'Dán bài speaking';
+
+  @override
+  String get speakingPasteHint =>
+      'Câu hỏi trên một dòng, sau đó đến đoạn trả lời. Lặp lại cho mỗi câu.';
+
+  @override
+  String get speakingPasteFromClipboard => 'Dán từ clipboard';
+
+  @override
+  String get speakingPreviewLabel => 'Xem trước';
+
+  @override
+  String get speakingPreviewEmpty =>
+      'Dán nội dung phía trên để xem các câu hỏi đã tách.';
+
+  @override
+  String get speakingModeShadow => 'Nhại';
+
+  @override
+  String get speakingModeRecall => 'Nhớ';
+
+  @override
+  String get speakingModeCloze => 'Điền';
+
+  @override
+  String get speakingModeRecord => 'Ghi âm';
+
+  @override
+  String get speakingPlayQuestion => 'Đọc câu hỏi';
+
+  @override
+  String get speakingPlayAll => 'Phát tất cả';
+
+  @override
+  String get speakingShadowHint =>
+      'Chạm vào câu để nghe, sau đó lặp lại theo loa.';
+
+  @override
+  String get speakingRecallHint =>
+      'Thử trả lời thành tiếng trước, rồi mở đáp án mẫu.';
+
+  @override
+  String get speakingRecallReveal => 'Mở đáp án';
+
+  @override
+  String get speakingClozeHint =>
+      'Đọc cả đoạn ra miệng; chạm vào ô trống để xem gợi ý.';
+
+  @override
+  String get speakingClozeRevealAll => 'Mở hết';
+
+  @override
+  String get speakingRecordHint =>
+      'Bấm mic, đọc đáp án, rồi bấm dừng để chấm điểm.';
+
+  @override
+  String get speakingTapToRecord => 'Chạm mic để bắt đầu';
+
+  @override
+  String get speakingTapToStop => 'Chạm dừng khi xong';
+
+  @override
+  String get speakingListening => 'ĐANG NGHE';
+
+  @override
+  String get speakingYouSaid => 'BẠN VỪA NÓI';
+
+  @override
+  String get speakingTargetAnswer => 'ĐÁP ÁN MẪU';
+
+  @override
+  String get speakingSpeed => 'Tốc độ';
+
+  @override
+  String get speakingScoreGreat => 'Tốt lắm';
+
+  @override
+  String get speakingScoreOk => 'Tạm ổn';
+
+  @override
+  String get speakingScoreTryAgain => 'Thử lại nhé';
+
+  @override
+  String speakingScoreDetail(int matched, int total) {
+    return 'Khớp $matched/$total từ';
+  }
+
+  @override
+  String get speakingLookupError => 'Không tìm được từ này.';
+
+  @override
+  String get speakingLookupTranslation => 'BẢN DỊCH';
+
+  @override
+  String get speakingLookupDefinition => 'ĐỊNH NGHĨA';
+
+  @override
+  String get speakingLookupNoDefinition =>
+      'Không tìm được định nghĩa tiếng Anh cho từ này.';
+
+  @override
+  String get speakingSttUnavailable =>
+      'Thiết bị này không hỗ trợ nhận dạng giọng nói.';
+
+  @override
+  String get speakingMicDenied => 'Cần cấp quyền micro để ghi âm.';
+
+  @override
+  String get settingsSpeakingVoice => 'Giọng đọc Speaking';
+
+  @override
+  String get settingsSpeakingVoiceSubtitle =>
+      'Chọn giọng vùng và giới tính cho TTS';
+
+  @override
+  String get speakingVoiceTitle => 'Giọng đọc';
+
+  @override
+  String get speakingVoiceAccent => 'GIỌNG VÙNG';
+
+  @override
+  String get speakingVoiceList => 'GIỌNG CÓ SẴN';
+
+  @override
+  String get speakingVoiceFemale => 'Nữ';
+
+  @override
+  String get speakingVoiceMale => 'Nam';
+
+  @override
+  String get speakingVoicePreview => 'Nghe thử';
+
+  @override
+  String get speakingVoiceLabelDefault => 'Giọng mặc định';
+
+  @override
+  String speakingVoiceLabelOffline(String letter) {
+    return 'Giọng $letter · Ngoại tuyến';
+  }
+
+  @override
+  String speakingVoiceLabelOnline(String letter) {
+    return 'Giọng $letter · Trực tuyến';
+  }
+
+  @override
+  String get speakingVoiceNoneInstalled =>
+      'Máy chưa cài giọng nào cho giọng vùng này. Mở Cài đặt TTS của máy để tải thêm giọng.';
+
+  @override
+  String get speakingVoiceFallbackNote =>
+      'Chạm vào một giọng để chọn. Bấm nghe thử. Lựa chọn được lưu riêng cho mỗi giọng vùng.';
 }

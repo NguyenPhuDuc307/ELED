@@ -421,5 +421,99 @@
   "todayQuizSubtitle": "Sáu kiểu bài tập, không tính lịch ôn",
   "todayQuizNotEnough": "Cần ít nhất 4 từ mới hoặc đang học để làm quiz",
   "helpTopic14Title": "Tuỳ chỉnh từ vựng",
-  "helpTopic14Body": "Cài đặt → Tuỳ chỉnh từ vựng điều khiển các cấp độ CEFR (A1-C1) và nhóm chủ đề mà app lấy từ. Lựa chọn này áp dụng cho mọi nơi chọn từ: phiên Today, các game, và Thông báo. Để trống Chủ đề để dùng tất cả. Cấp độ mặc định bật hết."
+  "helpTopic14Body": "Cài đặt → Tuỳ chỉnh từ vựng điều khiển các cấp độ CEFR (A1-C1) và nhóm chủ đề mà app lấy từ. Lựa chọn này áp dụng cho mọi nơi chọn từ: phiên Today, các game, và Thông báo. Để trống Chủ đề để dùng tất cả. Cấp độ mặc định bật hết.",
+  "speakingTitle": "Luyện Speaking",
+  "speakingAddNew": "Thêm bài speaking",
+  "speakingEmptyTitle": "Chưa có bài speaking",
+  "speakingEmptySubtitle": "Dán một bài Q&A kiểu IELTS để bắt đầu luyện tập.",
+  "speakingItemCount": "{count, plural, =1{1 câu hỏi} other{{count} câu hỏi}}",
+  "@speakingItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "speakingDeleteTitle": "Xoá bài này?",
+  "speakingDeleteConfirm": "{topic} sẽ bị xoá.",
+  "@speakingDeleteConfirm": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "speakingImportTitle": "Thêm bài speaking",
+  "speakingTopicLabel": "Chủ đề (tuỳ chọn)",
+  "speakingTopicHint": "ví dụ Interests / Hobbies",
+  "speakingPasteLabel": "Dán bài speaking",
+  "speakingPasteHint": "Câu hỏi trên một dòng, sau đó đến đoạn trả lời. Lặp lại cho mỗi câu.",
+  "speakingPasteFromClipboard": "Dán từ clipboard",
+  "speakingPreviewLabel": "Xem trước",
+  "speakingPreviewEmpty": "Dán nội dung phía trên để xem các câu hỏi đã tách.",
+  "speakingModeShadow": "Nhại",
+  "speakingModeRecall": "Nhớ",
+  "speakingModeCloze": "Điền",
+  "speakingModeRecord": "Ghi âm",
+  "speakingPlayQuestion": "Đọc câu hỏi",
+  "speakingPlayAll": "Phát tất cả",
+  "speakingShadowHint": "Chạm vào câu để nghe, sau đó lặp lại theo loa.",
+  "speakingRecallHint": "Thử trả lời thành tiếng trước, rồi mở đáp án mẫu.",
+  "speakingRecallReveal": "Mở đáp án",
+  "speakingClozeHint": "Đọc cả đoạn ra miệng; chạm vào ô trống để xem gợi ý.",
+  "speakingClozeRevealAll": "Mở hết",
+  "speakingRecordHint": "Bấm mic, đọc đáp án, rồi bấm dừng để chấm điểm.",
+  "speakingTapToRecord": "Chạm mic để bắt đầu",
+  "speakingTapToStop": "Chạm dừng khi xong",
+  "speakingListening": "ĐANG NGHE",
+  "speakingYouSaid": "BẠN VỪA NÓI",
+  "speakingTargetAnswer": "ĐÁP ÁN MẪU",
+  "speakingSpeed": "Tốc độ",
+  "speakingScoreGreat": "Tốt lắm",
+  "speakingScoreOk": "Tạm ổn",
+  "speakingScoreTryAgain": "Thử lại nhé",
+  "speakingScoreDetail": "Khớp {matched}/{total} từ",
+  "@speakingScoreDetail": {
+    "placeholders": {
+      "matched": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "speakingLookupError": "Không tìm được từ này.",
+  "speakingLookupTranslation": "BẢN DỊCH",
+  "speakingLookupDefinition": "ĐỊNH NGHĨA",
+  "speakingLookupNoDefinition": "Không tìm được định nghĩa tiếng Anh cho từ này.",
+  "speakingSttUnavailable": "Thiết bị này không hỗ trợ nhận dạng giọng nói.",
+  "speakingMicDenied": "Cần cấp quyền micro để ghi âm.",
+  "settingsSpeakingVoice": "Giọng đọc Speaking",
+  "settingsSpeakingVoiceSubtitle": "Chọn giọng vùng và giới tính cho TTS",
+  "speakingVoiceTitle": "Giọng đọc",
+  "speakingVoiceAccent": "GIỌNG VÙNG",
+  "speakingVoiceList": "GIỌNG CÓ SẴN",
+  "speakingVoiceFemale": "Nữ",
+  "speakingVoiceMale": "Nam",
+  "speakingVoicePreview": "Nghe thử",
+  "speakingVoiceLabelDefault": "Giọng mặc định",
+  "speakingVoiceLabelOffline": "Giọng {letter} · Ngoại tuyến",
+  "@speakingVoiceLabelOffline": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "speakingVoiceLabelOnline": "Giọng {letter} · Trực tuyến",
+  "@speakingVoiceLabelOnline": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "speakingVoiceNoneInstalled": "Máy chưa cài giọng nào cho giọng vùng này. Mở Cài đặt TTS của máy để tải thêm giọng.",
+  "speakingVoiceFallbackNote": "Chạm vào một giọng để chọn. Bấm nghe thử. Lựa chọn được lưu riêng cho mỗi giọng vùng."
 }

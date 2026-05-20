@@ -7,7 +7,10 @@ list(APPEND FLUTTER_PLUGIN_LIST
   firebase_auth
   firebase_core
   flutter_timezone
+  flutter_tts
+  permission_handler_windows
   share_plus
+  speech_to_text_windows
   url_launcher_windows
 )
 

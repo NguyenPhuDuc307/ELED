@@ -14,6 +14,7 @@ import 'settings/data_settings_screen.dart';
 import 'settings/language_settings_screen.dart';
 import 'settings/learning_prefs_settings_screen.dart';
 import 'settings/notifications_settings_screen.dart';
+import 'settings/speaking_voice_settings_screen.dart';
 
 /// Hub screen — surfaces a list of settings categories. Each row navigates to
 /// its own focused sub-screen so users can find one thing at a time instead of
@@ -108,6 +109,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
               subtitle: t.settingsLearningPrefsSubtitle,
               onTap: () => Navigator.of(context).push(
                 smoothRoute(const LearningPrefsSettingsScreen()),
+              ),
+            ),
+            _category(
+              icon: Icons.record_voice_over_rounded,
+              title: t.settingsSpeakingVoice,
+              subtitle: t.settingsSpeakingVoiceSubtitle,
+              onTap: () => Navigator.of(context).push(
+                smoothRoute(const SpeakingVoiceSettingsScreen()),
               ),
             ),
             _category(

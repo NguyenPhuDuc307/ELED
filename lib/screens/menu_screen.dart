@@ -7,6 +7,8 @@ import 'topic_screen.dart';
 import 'collections_screen.dart';
 import 'settings_screen.dart';
 import 'learning_screen.dart';
+import 'speaking_list_screen.dart';
+import '../services/speaking_service.dart';
 import '../services/collection_service.dart';
 import '../services/csv_service.dart';
 import '../services/learning_state_service.dart';
@@ -32,6 +34,7 @@ class _MenuScreenState extends State<MenuScreen> {
   int _topicsCount = -1;
   int _collectionsCount = -1;
   int _knownCount = -1;
+  int _speakingCount = -1;
 
   Future<void> _navigate(Widget page) async {
     if (_isNavigating) return;
@@ -69,6 +72,7 @@ class _MenuScreenState extends State<MenuScreen> {
       _topicsCount = topics.length;
       _collectionsCount = collections.length;
       _knownCount = UserDataService().knownWords.length;
+      _speakingCount = SpeakingService().all().length;
     });
   }
 
@@ -291,6 +295,76 @@ class _MenuScreenState extends State<MenuScreen> {
     );
   }
 
+  /// Full-width "Speaking" tile under the staggered grid. Lives on its own row
+  /// because speaking content is a separate corpus (user-pasted Q&A) rather
+  /// than another slice of the bundled vocabulary CSV.
+  Widget _speakingCardWide(AppLocalizations t) {
+    final showCount = _speakingCount >= 0;
+    return BrutalistCard(
+      backgroundColor: const Color(0xFFE8C4BC),
+      onTap: () => _navigate(const SpeakingListScreen()),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: const Color(0xFF5A2818).withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.record_voice_over_rounded,
+                  color: Color(0xFF5A2818), size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    t.speakingTitle,
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                          fontWeight: FontWeight.w700,
+                          color: const Color(0xFF5A2818),
+                          fontSize: 16,
+                        ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    t.speakingEmptySubtitle,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: const Color(0xFF5A2818).withValues(alpha: 0.65),
+                          fontSize: 12,
+                        ),
+                  ),
+                ],
+              ),
+            ),
+            if (showCount)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF5A2818).withValues(alpha: 0.14),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  _formatCount(_speakingCount),
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        fontWeight: FontWeight.w800,
+                        color: const Color(0xFF5A2818),
+                        fontSize: 11,
+                        fontFeatures: const [FontFeature.tabularFigures()],
+                      ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
   /// Compact number formatter — keeps the count chip narrow on small cards.
   /// 1234 → "1,234", 12345 → "12.3k".
   String _formatCount(int n) {
@@ -462,6 +536,8 @@ class _MenuScreenState extends State<MenuScreen> {
                 ),
               ],
             ),
+            const SizedBox(height: 4),
+            _speakingCardWide(t),
           ],
         ),
           ],

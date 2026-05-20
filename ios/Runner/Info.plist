@@ -70,6 +70,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>ELED needs microphone access so you can record speaking practice and get pronunciation feedback.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>ELED uses speech recognition to compare what you say with the model answer and score your speaking practice.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

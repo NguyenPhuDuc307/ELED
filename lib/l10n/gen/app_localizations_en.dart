@@ -1376,4 +1376,200 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get helpTopic14Body =>
       'Settings → Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set.';
+
+  @override
+  String get speakingTitle => 'Speaking';
+
+  @override
+  String get speakingAddNew => 'Add speaking set';
+
+  @override
+  String get speakingEmptyTitle => 'No speaking sets yet';
+
+  @override
+  String get speakingEmptySubtitle =>
+      'Paste an IELTS-style Q&A sample to start practising.';
+
+  @override
+  String speakingItemCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions',
+      one: '1 question',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get speakingDeleteTitle => 'Delete this set?';
+
+  @override
+  String speakingDeleteConfirm(String topic) {
+    return '$topic will be removed.';
+  }
+
+  @override
+  String get speakingImportTitle => 'Add speaking set';
+
+  @override
+  String get speakingTopicLabel => 'Topic (optional)';
+
+  @override
+  String get speakingTopicHint => 'e.g. Interests / Hobbies';
+
+  @override
+  String get speakingPasteLabel => 'Paste your speaking sample';
+
+  @override
+  String get speakingPasteHint =>
+      'Question on one line, then the answer paragraph(s). Repeat for each question.';
+
+  @override
+  String get speakingPasteFromClipboard => 'Paste from clipboard';
+
+  @override
+  String get speakingPreviewLabel => 'Preview';
+
+  @override
+  String get speakingPreviewEmpty =>
+      'Paste a sample above to see the parsed questions here.';
+
+  @override
+  String get speakingModeShadow => 'Shadow';
+
+  @override
+  String get speakingModeRecall => 'Recall';
+
+  @override
+  String get speakingModeCloze => 'Cloze';
+
+  @override
+  String get speakingModeRecord => 'Record';
+
+  @override
+  String get speakingPlayQuestion => 'Read question';
+
+  @override
+  String get speakingPlayAll => 'Play all';
+
+  @override
+  String get speakingShadowHint =>
+      'Tap a sentence to hear it, then repeat after the speaker.';
+
+  @override
+  String get speakingRecallHint =>
+      'Try to answer out loud, then reveal the model answer.';
+
+  @override
+  String get speakingRecallReveal => 'Reveal answer';
+
+  @override
+  String get speakingClozeHint => 'Speak the full answer; tap a blank to peek.';
+
+  @override
+  String get speakingClozeRevealAll => 'Reveal all';
+
+  @override
+  String get speakingRecordHint =>
+      'Press the mic, read the answer, then tap stop to score.';
+
+  @override
+  String get speakingTapToRecord => 'Tap the mic to start';
+
+  @override
+  String get speakingTapToStop => 'Tap stop when you\'re done';
+
+  @override
+  String get speakingListening => 'LISTENING';
+
+  @override
+  String get speakingYouSaid => 'YOU SAID';
+
+  @override
+  String get speakingTargetAnswer => 'MODEL ANSWER';
+
+  @override
+  String get speakingSpeed => 'Speed';
+
+  @override
+  String get speakingScoreGreat => 'Great job';
+
+  @override
+  String get speakingScoreOk => 'Getting there';
+
+  @override
+  String get speakingScoreTryAgain => 'Try again';
+
+  @override
+  String speakingScoreDetail(int matched, int total) {
+    return '$matched of $total words matched';
+  }
+
+  @override
+  String get speakingLookupError => 'Couldn\'t find this word.';
+
+  @override
+  String get speakingLookupTranslation => 'TRANSLATION';
+
+  @override
+  String get speakingLookupDefinition => 'DEFINITION';
+
+  @override
+  String get speakingLookupNoDefinition =>
+      'No English definition found for this word.';
+
+  @override
+  String get speakingSttUnavailable =>
+      'Speech recognition isn\'t available on this device.';
+
+  @override
+  String get speakingMicDenied =>
+      'Microphone permission is required to record.';
+
+  @override
+  String get settingsSpeakingVoice => 'Speaking voice';
+
+  @override
+  String get settingsSpeakingVoiceSubtitle =>
+      'Choose accent and voice for read-aloud';
+
+  @override
+  String get speakingVoiceTitle => 'Voice';
+
+  @override
+  String get speakingVoiceAccent => 'ACCENT';
+
+  @override
+  String get speakingVoiceList => 'AVAILABLE VOICES';
+
+  @override
+  String get speakingVoiceFemale => 'Female';
+
+  @override
+  String get speakingVoiceMale => 'Male';
+
+  @override
+  String get speakingVoicePreview => 'Preview';
+
+  @override
+  String get speakingVoiceLabelDefault => 'Default voice';
+
+  @override
+  String speakingVoiceLabelOffline(String letter) {
+    return 'Voice $letter · Offline';
+  }
+
+  @override
+  String speakingVoiceLabelOnline(String letter) {
+    return 'Voice $letter · Online';
+  }
+
+  @override
+  String get speakingVoiceNoneInstalled =>
+      'No voices installed for this accent. Open your device\'s TTS settings to download more voices.';
+
+  @override
+  String get speakingVoiceFallbackNote =>
+      'Tap a voice to select it. Tap the play button to hear a sample. Selection is saved per accent.';
 }

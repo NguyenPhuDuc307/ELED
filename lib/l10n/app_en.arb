@@ -770,5 +770,99 @@
   "todayQuizSubtitle": "Six exercise styles, no scheduling",
   "todayQuizNotEnough": "Need at least 4 fresh / learning words for the quiz",
   "helpTopic14Title": "Vocabulary preferences",
-  "helpTopic14Body": "Settings → Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set."
+  "helpTopic14Body": "Settings → Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set.",
+  "speakingTitle": "Speaking",
+  "speakingAddNew": "Add speaking set",
+  "speakingEmptyTitle": "No speaking sets yet",
+  "speakingEmptySubtitle": "Paste an IELTS-style Q&A sample to start practising.",
+  "speakingItemCount": "{count, plural, =1{1 question} other{{count} questions}}",
+  "@speakingItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "speakingDeleteTitle": "Delete this set?",
+  "speakingDeleteConfirm": "{topic} will be removed.",
+  "@speakingDeleteConfirm": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "speakingImportTitle": "Add speaking set",
+  "speakingTopicLabel": "Topic (optional)",
+  "speakingTopicHint": "e.g. Interests / Hobbies",
+  "speakingPasteLabel": "Paste your speaking sample",
+  "speakingPasteHint": "Question on one line, then the answer paragraph(s). Repeat for each question.",
+  "speakingPasteFromClipboard": "Paste from clipboard",
+  "speakingPreviewLabel": "Preview",
+  "speakingPreviewEmpty": "Paste a sample above to see the parsed questions here.",
+  "speakingModeShadow": "Shadow",
+  "speakingModeRecall": "Recall",
+  "speakingModeCloze": "Cloze",
+  "speakingModeRecord": "Record",
+  "speakingPlayQuestion": "Read question",
+  "speakingPlayAll": "Play all",
+  "speakingShadowHint": "Tap a sentence to hear it, then repeat after the speaker.",
+  "speakingRecallHint": "Try to answer out loud, then reveal the model answer.",
+  "speakingRecallReveal": "Reveal answer",
+  "speakingClozeHint": "Speak the full answer; tap a blank to peek.",
+  "speakingClozeRevealAll": "Reveal all",
+  "speakingRecordHint": "Press the mic, read the answer, then tap stop to score.",
+  "speakingTapToRecord": "Tap the mic to start",
+  "speakingTapToStop": "Tap stop when you're done",
+  "speakingListening": "LISTENING",
+  "speakingYouSaid": "YOU SAID",
+  "speakingTargetAnswer": "MODEL ANSWER",
+  "speakingSpeed": "Speed",
+  "speakingScoreGreat": "Great job",
+  "speakingScoreOk": "Getting there",
+  "speakingScoreTryAgain": "Try again",
+  "speakingScoreDetail": "{matched} of {total} words matched",
+  "@speakingScoreDetail": {
+    "placeholders": {
+      "matched": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "speakingLookupError": "Couldn't find this word.",
+  "speakingLookupTranslation": "TRANSLATION",
+  "speakingLookupDefinition": "DEFINITION",
+  "speakingLookupNoDefinition": "No English definition found for this word.",
+  "speakingSttUnavailable": "Speech recognition isn't available on this device.",
+  "speakingMicDenied": "Microphone permission is required to record.",
+  "settingsSpeakingVoice": "Speaking voice",
+  "settingsSpeakingVoiceSubtitle": "Choose accent and voice for read-aloud",
+  "speakingVoiceTitle": "Voice",
+  "speakingVoiceAccent": "ACCENT",
+  "speakingVoiceList": "AVAILABLE VOICES",
+  "speakingVoiceFemale": "Female",
+  "speakingVoiceMale": "Male",
+  "speakingVoicePreview": "Preview",
+  "speakingVoiceLabelDefault": "Default voice",
+  "speakingVoiceLabelOffline": "Voice {letter} · Offline",
+  "@speakingVoiceLabelOffline": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "speakingVoiceLabelOnline": "Voice {letter} · Online",
+  "@speakingVoiceLabelOnline": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "speakingVoiceNoneInstalled": "No voices installed for this accent. Open your device's TTS settings to download more voices.",
+  "speakingVoiceFallbackNote": "Tap a voice to select it. Tap the play button to hear a sample. Selection is saved per accent."
 }

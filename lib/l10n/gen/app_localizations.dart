@@ -2545,6 +2545,342 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Settings → Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set.'**
   String get helpTopic14Body;
+
+  /// No description provided for @speakingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Speaking'**
+  String get speakingTitle;
+
+  /// No description provided for @speakingAddNew.
+  ///
+  /// In en, this message translates to:
+  /// **'Add speaking set'**
+  String get speakingAddNew;
+
+  /// No description provided for @speakingEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No speaking sets yet'**
+  String get speakingEmptyTitle;
+
+  /// No description provided for @speakingEmptySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste an IELTS-style Q&A sample to start practising.'**
+  String get speakingEmptySubtitle;
+
+  /// No description provided for @speakingItemCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 question} other{{count} questions}}'**
+  String speakingItemCount(int count);
+
+  /// No description provided for @speakingDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this set?'**
+  String get speakingDeleteTitle;
+
+  /// No description provided for @speakingDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'{topic} will be removed.'**
+  String speakingDeleteConfirm(String topic);
+
+  /// No description provided for @speakingImportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Add speaking set'**
+  String get speakingImportTitle;
+
+  /// No description provided for @speakingTopicLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic (optional)'**
+  String get speakingTopicLabel;
+
+  /// No description provided for @speakingTopicHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Interests / Hobbies'**
+  String get speakingTopicHint;
+
+  /// No description provided for @speakingPasteLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste your speaking sample'**
+  String get speakingPasteLabel;
+
+  /// No description provided for @speakingPasteHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Question on one line, then the answer paragraph(s). Repeat for each question.'**
+  String get speakingPasteHint;
+
+  /// No description provided for @speakingPasteFromClipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste from clipboard'**
+  String get speakingPasteFromClipboard;
+
+  /// No description provided for @speakingPreviewLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get speakingPreviewLabel;
+
+  /// No description provided for @speakingPreviewEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste a sample above to see the parsed questions here.'**
+  String get speakingPreviewEmpty;
+
+  /// No description provided for @speakingModeShadow.
+  ///
+  /// In en, this message translates to:
+  /// **'Shadow'**
+  String get speakingModeShadow;
+
+  /// No description provided for @speakingModeRecall.
+  ///
+  /// In en, this message translates to:
+  /// **'Recall'**
+  String get speakingModeRecall;
+
+  /// No description provided for @speakingModeCloze.
+  ///
+  /// In en, this message translates to:
+  /// **'Cloze'**
+  String get speakingModeCloze;
+
+  /// No description provided for @speakingModeRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Record'**
+  String get speakingModeRecord;
+
+  /// No description provided for @speakingPlayQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Read question'**
+  String get speakingPlayQuestion;
+
+  /// No description provided for @speakingPlayAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Play all'**
+  String get speakingPlayAll;
+
+  /// No description provided for @speakingShadowHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a sentence to hear it, then repeat after the speaker.'**
+  String get speakingShadowHint;
+
+  /// No description provided for @speakingRecallHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Try to answer out loud, then reveal the model answer.'**
+  String get speakingRecallHint;
+
+  /// No description provided for @speakingRecallReveal.
+  ///
+  /// In en, this message translates to:
+  /// **'Reveal answer'**
+  String get speakingRecallReveal;
+
+  /// No description provided for @speakingClozeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Speak the full answer; tap a blank to peek.'**
+  String get speakingClozeHint;
+
+  /// No description provided for @speakingClozeRevealAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Reveal all'**
+  String get speakingClozeRevealAll;
+
+  /// No description provided for @speakingRecordHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Press the mic, read the answer, then tap stop to score.'**
+  String get speakingRecordHint;
+
+  /// No description provided for @speakingTapToRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the mic to start'**
+  String get speakingTapToRecord;
+
+  /// No description provided for @speakingTapToStop.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap stop when you\'re done'**
+  String get speakingTapToStop;
+
+  /// No description provided for @speakingListening.
+  ///
+  /// In en, this message translates to:
+  /// **'LISTENING'**
+  String get speakingListening;
+
+  /// No description provided for @speakingYouSaid.
+  ///
+  /// In en, this message translates to:
+  /// **'YOU SAID'**
+  String get speakingYouSaid;
+
+  /// No description provided for @speakingTargetAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'MODEL ANSWER'**
+  String get speakingTargetAnswer;
+
+  /// No description provided for @speakingSpeed.
+  ///
+  /// In en, this message translates to:
+  /// **'Speed'**
+  String get speakingSpeed;
+
+  /// No description provided for @speakingScoreGreat.
+  ///
+  /// In en, this message translates to:
+  /// **'Great job'**
+  String get speakingScoreGreat;
+
+  /// No description provided for @speakingScoreOk.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting there'**
+  String get speakingScoreOk;
+
+  /// No description provided for @speakingScoreTryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get speakingScoreTryAgain;
+
+  /// No description provided for @speakingScoreDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'{matched} of {total} words matched'**
+  String speakingScoreDetail(int matched, int total);
+
+  /// No description provided for @speakingLookupError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t find this word.'**
+  String get speakingLookupError;
+
+  /// No description provided for @speakingLookupTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'TRANSLATION'**
+  String get speakingLookupTranslation;
+
+  /// No description provided for @speakingLookupDefinition.
+  ///
+  /// In en, this message translates to:
+  /// **'DEFINITION'**
+  String get speakingLookupDefinition;
+
+  /// No description provided for @speakingLookupNoDefinition.
+  ///
+  /// In en, this message translates to:
+  /// **'No English definition found for this word.'**
+  String get speakingLookupNoDefinition;
+
+  /// No description provided for @speakingSttUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Speech recognition isn\'t available on this device.'**
+  String get speakingSttUnavailable;
+
+  /// No description provided for @speakingMicDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Microphone permission is required to record.'**
+  String get speakingMicDenied;
+
+  /// No description provided for @settingsSpeakingVoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Speaking voice'**
+  String get settingsSpeakingVoice;
+
+  /// No description provided for @settingsSpeakingVoiceSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose accent and voice for read-aloud'**
+  String get settingsSpeakingVoiceSubtitle;
+
+  /// No description provided for @speakingVoiceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice'**
+  String get speakingVoiceTitle;
+
+  /// No description provided for @speakingVoiceAccent.
+  ///
+  /// In en, this message translates to:
+  /// **'ACCENT'**
+  String get speakingVoiceAccent;
+
+  /// No description provided for @speakingVoiceList.
+  ///
+  /// In en, this message translates to:
+  /// **'AVAILABLE VOICES'**
+  String get speakingVoiceList;
+
+  /// No description provided for @speakingVoiceFemale.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get speakingVoiceFemale;
+
+  /// No description provided for @speakingVoiceMale.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get speakingVoiceMale;
+
+  /// No description provided for @speakingVoicePreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get speakingVoicePreview;
+
+  /// No description provided for @speakingVoiceLabelDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Default voice'**
+  String get speakingVoiceLabelDefault;
+
+  /// No description provided for @speakingVoiceLabelOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice {letter} · Offline'**
+  String speakingVoiceLabelOffline(String letter);
+
+  /// No description provided for @speakingVoiceLabelOnline.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice {letter} · Online'**
+  String speakingVoiceLabelOnline(String letter);
+
+  /// No description provided for @speakingVoiceNoneInstalled.
+  ///
+  /// In en, this message translates to:
+  /// **'No voices installed for this accent. Open your device\'s TTS settings to download more voices.'**
+  String get speakingVoiceNoneInstalled;
+
+  /// No description provided for @speakingVoiceFallbackNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a voice to select it. Tap the play button to hear a sample. Selection is saved per accent.'**
+  String get speakingVoiceFallbackNote;
 }
 
 class _AppLocalizationsDelegate

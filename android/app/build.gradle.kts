@@ -6,6 +6,17 @@ plugins {
     id("com.google.firebase.crashlytics")
 }
 
+// Pin androidx.glance to the last stable that supports compileSdk 36.
+// home_widget 0.9.0 declares `androidx.glance:glance-appwidget:1.+`, which
+// otherwise resolves to 1.3.0-alpha01 — that alpha needs compileSdk 37 + AGP
+// 9.1, breaking the build.
+configurations.all {
+    resolutionStrategy {
+        force("androidx.glance:glance-appwidget:1.1.1")
+        force("androidx.glance:glance:1.1.1")
+    }
+}
+
 android {
     namespace = "com.nguyenphuduc.eled"
     compileSdk = flutter.compileSdkVersion

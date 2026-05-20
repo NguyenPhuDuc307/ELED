@@ -691,14 +691,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'The big card on the home screen is your queue for the day. It contains:\n• Words due for review (their interval has expired)\n• A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Quiz (mini-quiz of 10 words, pick which exercise types to include before starting), Match game (calm 4-6 pair puzzle), and Speed match (30-second arcade) cards below. The same trio also surfaces on top of any collection you open.';
+      'The big card on the home screen is your queue for the day. It contains:\n- Words due for review (their interval has expired)\n- A few brand-new words to keep growing your vocabulary\n\nSessions cap around 20 words. Tap Start session to begin. When you have enough fresh / learning words you also see Quiz (mini-quiz of 10 words, pick which exercise types to include before starting), Match game (calm 4-6 pair puzzle), and Speed match (30-second arcade) cards below. The same trio also surfaces on top of any collection you open.';
 
   @override
   String get helpTopic3Title => 'The three rating buttons';
 
   @override
   String get helpTopic3Body =>
-      'After every flashcard you rate how it went. The app uses that rating to schedule the word\'s next appearance:\n\n• Again — \"I forgot\". Comes back tomorrow.\n• Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n• Easy — \"I knew it\". Standard schedule (each Easy multiplies the interval).\n\nIf a word feels too easy to even bother scheduling, tap the ✓ icon on the toolbar to mark it known and skip it for a long time.';
+      'After every flashcard you rate how it went. The app uses that rating to schedule the word\'s next appearance:\n\n- Again — \"I forgot\". Comes back tomorrow.\n- Hard — \"I knew it, but barely\". Slightly shorter interval than last time.\n- Easy — \"I knew it\". Standard schedule (each Easy multiplies the interval).\n\nIf a word feels too easy to even bother scheduling, tap the check icon on the toolbar to mark it known and skip it for a long time.';
 
   @override
   String get helpTopic4Title => 'Many ways to study';
@@ -719,7 +719,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic6Body =>
-      'On any learning card, tap the ✓ icon in the top bar. The word is promoted to mastered (wont reappear in daily sessions for a long stretch) and the next card slides in. A snackbar with Undo gives you a few seconds to take it back if you tapped by mistake. Tapping ✓ again on a word thats already known removes it from the known list.';
+      'On any learning card, tap the check icon in the top bar. The word is promoted to mastered (wont reappear in daily sessions for a long stretch) and the next card slides in. A snackbar with Undo gives you a few seconds to take it back if you tapped by mistake. Tapping it again on a word thats already known removes it from the known list.';
 
   @override
   String get helpTopic7Title => 'Streak & active days';
@@ -733,7 +733,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic8Body =>
-      'Settings → Notifications lets you choose how often a vocabulary reminder fires, how many fire in each active period (max 5), and your active hours. The reminders pick from the same word pool the Today screen uses. The level + topic filter for which words show up lives in Settings → Vocabulary preferences and is shared across the whole app.';
+      'Settings > Notifications lets you choose how often a vocabulary reminder fires, how many fire in each active period (max 5), and your active hours. The reminders pick from the same word pool the Today screen uses. The level + topic filter for which words show up lives in Settings > Vocabulary preferences and is shared across the whole app.';
 
   @override
   String get helpTopic9Title => 'Browse the dictionary';
@@ -747,14 +747,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic10Body =>
-      'The magnifier icon searches the entire vocabulary by word or translation. Use it for ad-hoc look-ups; tapping a result opens its full Recognize card with the audio, IPA, and definitions.\n\nWhen a word or sentence isn\'t in the list, a Translate button appears — tap it to call Google Translate, auto-detecting English ↔ Vietnamese. Handy for sentences or words the app doesn\'t yet cover.';
+      'The magnifier icon searches the entire vocabulary by word or translation. Use it for ad-hoc look-ups; tapping a result opens its full Recognize card with the audio, IPA, and definitions.\n\nWhen a word or sentence isn\'t in the list, a Translate button appears — tap it to call Google Translate, auto-detecting English / Vietnamese. Handy for sentences or words the app doesn\'t yet cover.';
 
   @override
   String get helpTopic11Title => 'Backup & sync';
 
   @override
   String get helpTopic11Body =>
-      'Settings → Account & data lets you Export your known words + collections to a JSON file via the system share sheet, and Import the same shape back. Sign in with Google to sync the knownWords + collections across devices automatically.';
+      'Settings > Account & data lets you Export your known words + collections to a JSON file via the system share sheet, and Import the same shape back. Sign in with Google to sync the knownWords + collections across devices automatically.';
 
   @override
   String get matchGameTitle => 'Match game';
@@ -1197,7 +1197,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic12Body =>
-      'Open Browse → My collections → tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio.';
+      'Open Browse > My collections > tap the upload icon in the top bar. Paste your list (one word per line, or comma-separated), pick a destination collection or create a new one, then Preview. The app shows which words match the bundled dictionary, which are \"custom\" (auto-translated via Google), and which already exist. Confirm and they are added in one go. Custom words show a small CUSTOM badge in the list and carry the translated meaning — they stay out of exercises and SRS since they have no IPA or audio.';
 
   @override
   String get exerciseTypeEnglishFor =>
@@ -1281,7 +1281,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic13Body =>
-      'Each card uses one of several exercise styles to keep practice varied:\n\n• Recognize — classic flashcard.\n• Multiple choice — pick the right meaning.\n• Listen and type — hear the word, type it.\n• Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n• Anagram — drag-tap the scrambled letters into order.\n• Type the English word — see the Vietnamese meaning, type the English word.\n\nAll typing exercises use an IP-address-style slot input — one box per letter, with apostrophes and hyphens shown automatically. A free Hint button is available: Multiple choice removes one wrong option; typing exercises reveal the first letter.\n\nThe Today screen + each collection also offer three standalone activities: Quiz (mini-quiz round of 10, pick exercise types before starting), Match game (4-6 calm pairs), and Speed match (30-second timer).';
+      'Each card uses one of several exercise styles to keep practice varied:\n\n- Recognize — classic flashcard.\n- Multiple choice — pick the right meaning.\n- Listen and type — hear the word, type it.\n- Fill in context — Oxford sentence with the word blanked out. If no sentence exists, youll see the meaning and type the English word.\n- Anagram — drag-tap the scrambled letters into order.\n- Type the English word — see the Vietnamese meaning, type the English word.\n\nAll typing exercises use an IP-address-style slot input — one box per letter, with apostrophes and hyphens shown automatically. A free Hint button is available: Multiple choice removes one wrong option; typing exercises reveal the first letter.\n\nThe Today screen + each collection also offer three standalone activities: Quiz (mini-quiz round of 10, pick exercise types before starting), Match game (4-6 calm pairs), and Speed match (30-second timer).';
 
   @override
   String get posFilterLabel => 'Filter by part of speech';
@@ -1375,7 +1375,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get helpTopic14Body =>
-      'Settings → Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set.';
+      'Settings > Vocabulary preferences controls which CEFR levels (A1-C1) and which topic categories the app draws from. The choices feed every word-picker: Todays session, all the games, and Notifications. Leave Topics empty to allow every category. Levels default to the full set.';
+
+  @override
+  String get helpTopic15Title => 'Speaking practice';
+
+  @override
+  String get helpTopic15Body =>
+      'Browse > Speaking opens a separate flow for IELTS-style Q&A. Tap the + button and paste a sample (question on one line, then the answer paragraph(s); repeat for each question) — the parser splits it into Q/A cards automatically.\n\nEach card has four modes:\n- Shadow — TTS reads sentence by sentence and highlights the current word so you can repeat along.\n- Recall — only the question is shown; answer out loud, then reveal the model answer to self-check.\n- Cloze — key content words are blanked out; speak the full answer and tap a blank to peek.\n- Record — press the mic, read the answer, then tap stop. Speech-to-text transcribes what you said and scores it against the model (LCS word match) — matched words turn green, missed ones red.\n\nLong-press any word to open a quick lookup with translation, IPA, audio and Oxford definition. Set the read-aloud accent and voice under Settings > Speaking voice (selection is saved per accent).';
 
   @override
   String get speakingTitle => 'Speaking';

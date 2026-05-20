@@ -24,6 +24,7 @@ class HelpScreen extends StatelessWidget {
     Icons.file_upload_outlined,
     Icons.videogame_asset_rounded,
     Icons.tune_rounded,
+    Icons.record_voice_over_rounded,
   ];
 
   List<_HelpTopic> _topics(AppLocalizations t) => [
@@ -41,6 +42,7 @@ class HelpScreen extends StatelessWidget {
         _HelpTopic(icon: _topicIcons[11], title: t.helpTopic12Title, body: t.helpTopic12Body),
         _HelpTopic(icon: _topicIcons[12], title: t.helpTopic13Title, body: t.helpTopic13Body),
         _HelpTopic(icon: _topicIcons[13], title: t.helpTopic14Title, body: t.helpTopic14Body),
+        _HelpTopic(icon: _topicIcons[14], title: t.helpTopic15Title, body: t.helpTopic15Body),
       ];
 
   @override

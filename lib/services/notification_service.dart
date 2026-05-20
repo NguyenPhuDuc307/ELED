@@ -624,7 +624,7 @@ class NotificationService {
       title: word.word.toUpperCase(),
       body: pos.isEmpty
           ? word.translation
-          : '${word.translation}  •  $pos',
+          : '${word.translation}  -  $pos',
       scheduledDate: at,
       notificationDetails: const NotificationDetails(iOS: _kIOSDetails),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,

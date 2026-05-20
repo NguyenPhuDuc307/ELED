@@ -689,14 +689,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic2Body =>
-      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n• Từ đến hạn ôn (đã hết khoảng cách lịch học)\n• Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Quiz (mini-quiz 10 từ mỗi lượt, có chọn dạng bài trước khi bắt đầu), Ghép cặp (4-6 cặp thư thái), và Match tốc độ (đồng hồ 30 giây). Cùng bộ 3 thẻ này cũng xuất hiện ở đầu mỗi bộ sưu tập.';
+      'Thẻ lớn trên màn chính là danh sách của bạn cho ngày hôm nay, gồm:\n- Từ đến hạn ôn (đã hết khoảng cách lịch học)\n- Vài từ mới hoàn toàn để mở rộng vốn từ\n\nMỗi phiên giới hạn ~20 từ. Bấm Bắt đầu để vào học. Khi đủ từ mới hoặc đang học, bạn sẽ thấy thêm thẻ Quiz (mini-quiz 10 từ mỗi lượt, có chọn dạng bài trước khi bắt đầu), Ghép cặp (4-6 cặp thư thái), và Match tốc độ (đồng hồ 30 giây). Cùng bộ 3 thẻ này cũng xuất hiện ở đầu mỗi bộ sưu tập.';
 
   @override
   String get helpTopic3Title => 'Ba nút đánh giá';
 
   @override
   String get helpTopic3Body =>
-      'Sau mỗi thẻ, bạn đánh giá mức độ nắm từ. App dùng đánh giá đó để xếp lịch cho từ xuất hiện lần tiếp theo:\n\n• Lại — \"Quên rồi\". Từ quay lại vào ngày mai.\n• Khó — \"Biết, nhưng vất vả\". Khoảng cách ngắn hơn lần trước một chút.\n• Dễ — \"Biết\". Khoảng cách chuẩn (mỗi lần Dễ nhân khoảng cách lên).\n\nNếu từ quá dễ, không cần lên lịch nữa, bấm icon ✓ trên thanh trên cùng để đánh dấu đã biết và bỏ qua trong thời gian dài.';
+      'Sau mỗi thẻ, bạn đánh giá mức độ nắm từ. App dùng đánh giá đó để xếp lịch cho từ xuất hiện lần tiếp theo:\n\n- Lại — \"Quên rồi\". Từ quay lại vào ngày mai.\n- Khó — \"Biết, nhưng vất vả\". Khoảng cách ngắn hơn lần trước một chút.\n- Dễ — \"Biết\". Khoảng cách chuẩn (mỗi lần Dễ nhân khoảng cách lên).\n\nNếu từ quá dễ, không cần lên lịch nữa, bấm icon dấu tích trên thanh trên cùng để đánh dấu đã biết và bỏ qua trong thời gian dài.';
 
   @override
   String get helpTopic4Title => 'Nhiều kiểu học';
@@ -717,7 +717,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic6Body =>
-      'Trên bất kỳ thẻ học nào, bấm icon ✓ ở thanh trên cùng. Từ sẽ được thăng cấp lên mức đã thuộc (không xuất hiện trong các phiên hằng ngày trong thời gian dài) và thẻ tiếp theo trượt vào. Snackbar với Hoàn tác cho bạn vài giây để rút lại nếu bấm nhầm. Bấm ✓ lần nữa trên một từ đã biết sẽ gỡ nó khỏi danh sách từ đã biết.';
+      'Trên bất kỳ thẻ học nào, bấm icon dấu tích ở thanh trên cùng. Từ sẽ được thăng cấp lên mức đã thuộc (không xuất hiện trong các phiên hằng ngày trong thời gian dài) và thẻ tiếp theo trượt vào. Snackbar với Hoàn tác cho bạn vài giây để rút lại nếu bấm nhầm. Bấm icon đó lần nữa trên một từ đã biết sẽ gỡ nó khỏi danh sách từ đã biết.';
 
   @override
   String get helpTopic7Title => 'Chuỗi & ngày hoạt động';
@@ -731,7 +731,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic8Body =>
-      'Cài đặt → Thông báo cho bạn chọn tần suất, số lượng thông báo mỗi khung giờ (tối đa 5), và khung giờ hoạt động. Thông báo lấy từ cùng vốn từ với màn Today. Bộ lọc cấp độ + chủ đề nằm ở Cài đặt → Tuỳ chỉnh từ vựng và áp dụng cho toàn app.';
+      'Cài đặt > Thông báo cho bạn chọn tần suất, số lượng thông báo mỗi khung giờ (tối đa 5), và khung giờ hoạt động. Thông báo lấy từ cùng vốn từ với màn Today. Bộ lọc cấp độ + chủ đề nằm ở Cài đặt > Tuỳ chỉnh từ vựng và áp dụng cho toàn app.';
 
   @override
   String get helpTopic9Title => 'Duyệt từ điển';
@@ -745,14 +745,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic10Body =>
-      'Biểu tượng kính lúp tìm trong toàn bộ từ vựng theo từ hoặc bản dịch. Dùng cho tra cứu nhanh; bấm vào kết quả mở thẻ Nhận diện đầy đủ với audio, IPA và định nghĩa.\n\nKhi từ hoặc câu không có trong danh sách, app sẽ hiện nút Dịch — bấm để gọi Google Translate, tự nhận biết tiếng Anh ↔ tiếng Việt. Hữu ích để tra nhanh câu hoặc từ chưa được app hỗ trợ.';
+      'Biểu tượng kính lúp tìm trong toàn bộ từ vựng theo từ hoặc bản dịch. Dùng cho tra cứu nhanh; bấm vào kết quả mở thẻ Nhận diện đầy đủ với audio, IPA và định nghĩa.\n\nKhi từ hoặc câu không có trong danh sách, app sẽ hiện nút Dịch — bấm để gọi Google Translate, tự nhận biết Anh / Việt. Hữu ích để tra nhanh câu hoặc từ chưa được app hỗ trợ.';
 
   @override
   String get helpTopic11Title => 'Sao lưu & đồng bộ';
 
   @override
   String get helpTopic11Body =>
-      'Cài đặt → Tài khoản & dữ liệu cho phép Xuất từ đã biết + bộ sưu tập sang tệp JSON qua bảng chia sẻ hệ thống, và Nhập lại đúng định dạng đó. Đăng nhập Google để tự động đồng bộ danh sách từ đã biết và bộ sưu tập trên các thiết bị.';
+      'Cài đặt > Tài khoản & dữ liệu cho phép Xuất từ đã biết + bộ sưu tập sang tệp JSON qua bảng chia sẻ hệ thống, và Nhập lại đúng định dạng đó. Đăng nhập Google để tự động đồng bộ danh sách từ đã biết và bộ sưu tập trên các thiết bị.';
 
   @override
   String get matchGameTitle => 'Ghép cặp';
@@ -1192,7 +1192,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic12Body =>
-      'Mở Duyệt → Bộ sưu tập → bấm icon upload ở thanh trên. Dán danh sách (mỗi dòng một từ, hoặc cách nhau bằng dấu phẩy), chọn bộ sưu tập đích hoặc tạo mới ngay, rồi bấm Xem trước. App sẽ cho biết từ nào khớp với từ vựng có sẵn, từ nào là \"tự định nghĩa\" (sẽ tự dịch qua Google), và từ nào đã có. Xác nhận một phát là thêm hết. Từ tự định nghĩa hiển thị nhãn TỰ ĐỊNH NGHĨA nhỏ kèm nghĩa dịch — chúng không tham gia bài tập và SRS vì thiếu IPA và audio.';
+      'Mở Duyệt > Bộ sưu tập > bấm icon upload ở thanh trên. Dán danh sách (mỗi dòng một từ, hoặc cách nhau bằng dấu phẩy), chọn bộ sưu tập đích hoặc tạo mới ngay, rồi bấm Xem trước. App sẽ cho biết từ nào khớp với từ vựng có sẵn, từ nào là \"tự định nghĩa\" (sẽ tự dịch qua Google), và từ nào đã có. Xác nhận một phát là thêm hết. Từ tự định nghĩa hiển thị nhãn TỰ ĐỊNH NGHĨA nhỏ kèm nghĩa dịch — chúng không tham gia bài tập và SRS vì thiếu IPA và audio.';
 
   @override
   String get exerciseTypeEnglishFor => 'Gõ từ tiếng Anh cho nghĩa dưới đây';
@@ -1274,7 +1274,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic13Body =>
-      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n• Nhận biết — flashcard cổ điển.\n• Trắc nghiệm — chọn nghĩa đúng.\n• Nghe và gõ — nghe từ, gõ lại.\n• Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n• Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n• Gõ từ tiếng Anh — thấy nghĩa tiếng Việt, gõ từ tiếng Anh.\n\nMọi dạng gõ chữ dùng ô nhập kiểu IP-address — mỗi ký tự một ô, dấu nháy/gạch nối tự hiện sẵn. Có nút Gợi ý miễn phí: với Trắc nghiệm là loại 1 đáp án sai, các dạng gõ là lộ chữ cái đầu.\n\nMàn Today và mỗi bộ sưu tập đều có ba hoạt động độc lập: Quiz (10 từ mỗi lượt, chọn dạng bài trước khi bắt đầu), Ghép cặp (4-6 cặp), và Match tốc độ (đồng hồ 30 giây).';
+      'Mỗi thẻ dùng một trong nhiều kiểu bài tập để đa dạng:\n\n- Nhận biết — flashcard cổ điển.\n- Trắc nghiệm — chọn nghĩa đúng.\n- Nghe và gõ — nghe từ, gõ lại.\n- Điền vào câu — câu Oxford có chỗ trống cho từ. Nếu không có câu, bạn sẽ thấy nghĩa và gõ từ tiếng Anh.\n- Anagram — tap chữ cái xáo trộn vào đúng thứ tự.\n- Gõ từ tiếng Anh — thấy nghĩa tiếng Việt, gõ từ tiếng Anh.\n\nMọi dạng gõ chữ dùng ô nhập kiểu IP-address — mỗi ký tự một ô, dấu nháy/gạch nối tự hiện sẵn. Có nút Gợi ý miễn phí: với Trắc nghiệm là loại 1 đáp án sai, các dạng gõ là lộ chữ cái đầu.\n\nMàn Today và mỗi bộ sưu tập đều có ba hoạt động độc lập: Quiz (10 từ mỗi lượt, chọn dạng bài trước khi bắt đầu), Ghép cặp (4-6 cặp), và Match tốc độ (đồng hồ 30 giây).';
 
   @override
   String get posFilterLabel => 'Lọc theo loại từ';
@@ -1368,7 +1368,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get helpTopic14Body =>
-      'Cài đặt → Tuỳ chỉnh từ vựng điều khiển các cấp độ CEFR (A1-C1) và nhóm chủ đề mà app lấy từ. Lựa chọn này áp dụng cho mọi nơi chọn từ: phiên Today, các game, và Thông báo. Để trống Chủ đề để dùng tất cả. Cấp độ mặc định bật hết.';
+      'Cài đặt > Tuỳ chỉnh từ vựng điều khiển các cấp độ CEFR (A1-C1) và nhóm chủ đề mà app lấy từ. Lựa chọn này áp dụng cho mọi nơi chọn từ: phiên Today, các game, và Thông báo. Để trống Chủ đề để dùng tất cả. Cấp độ mặc định bật hết.';
+
+  @override
+  String get helpTopic15Title => 'Luyện Speaking';
+
+  @override
+  String get helpTopic15Body =>
+      'Duyệt > Luyện Speaking là khu riêng dành cho dạng Q&A kiểu IELTS. Bấm dấu + và dán một bài (câu hỏi trên một dòng, rồi đến đoạn trả lời; lặp lại cho từng câu) — app tự tách thành các thẻ Q/A.\n\nMỗi thẻ có 4 chế độ:\n- Nhại — TTS đọc từng câu và bôi nền từ đang phát để bạn lặp lại theo.\n- Nhớ — chỉ hiện câu hỏi; nói đáp án thành tiếng trước, rồi mở đáp án mẫu để tự đánh giá.\n- Điền — các cụm từ khoá bị ẩn dưới dạng ô trống; đọc cả đoạn ra miệng, chạm ô trống để xem gợi ý.\n- Ghi âm — bấm mic, đọc đáp án, rồi bấm dừng. Speech-to-text sẽ phiên âm lời bạn nói và chấm điểm so với đáp án mẫu (khớp từ theo LCS) — từ khớp tô xanh, từ thiếu tô đỏ.\n\nBấm giữ một từ bất kỳ để mở popup tra cứu nhanh: bản dịch, IPA, audio và định nghĩa Oxford. Vào Cài đặt > Giọng đọc Speaking để chọn accent US/UK và giọng cụ thể (lựa chọn lưu riêng cho mỗi accent).';
 
   @override
   String get speakingTitle => 'Luyện Speaking';

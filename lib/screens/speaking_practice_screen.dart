@@ -450,6 +450,17 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   }
 
   Widget _buildModeSelector(AppLocalizations t) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    // In dark mode the previous pastel sage bg + dark sage text both sat too
+    // close to the dark slate background, leaving inactive pills barely legible.
+    // Swap to a translucent primary tint with a lighter sage fg so the labels
+    // still read at a glance.
+    final inactiveBg = isDark
+        ? BrutalistTheme.primary.withValues(alpha: 0.22)
+        : BrutalistTheme.primaryLight.withValues(alpha: 0.4);
+    final inactiveFg =
+        isDark ? const Color(0xFFA8D5A4) : BrutalistTheme.primary;
+
     Widget pill(SpeakingMode mode, IconData icon, String label) {
       final active = _mode == mode;
       return Expanded(
@@ -460,9 +471,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
             margin: const EdgeInsets.symmetric(horizontal: 3),
             padding: const EdgeInsets.symmetric(vertical: 8),
             decoration: BoxDecoration(
-              color: active
-                  ? BrutalistTheme.primary
-                  : BrutalistTheme.primaryLight.withValues(alpha: 0.4),
+              color: active ? BrutalistTheme.primary : inactiveBg,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Column(
@@ -470,18 +479,14 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
               children: [
                 Icon(icon,
                     size: 18,
-                    color: active
-                        ? BrutalistTheme.white
-                        : BrutalistTheme.primary),
+                    color: active ? BrutalistTheme.white : inactiveFg),
                 const SizedBox(height: 2),
                 Text(
                   label,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                         fontSize: 11,
-                        color: active
-                            ? BrutalistTheme.white
-                            : BrutalistTheme.primary,
+                        color: active ? BrutalistTheme.white : inactiveFg,
                       ),
                 ),
               ],

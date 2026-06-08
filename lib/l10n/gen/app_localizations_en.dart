@@ -674,6 +674,19 @@ class AppLocalizationsEn extends AppLocalizations {
       'As you learn, sessions mix flashcards with multiple choice, listen-and-type, fill-in-context, and a 4-pair match game. Same vocabulary, fresh angle every time.';
 
   @override
+  String get onboarding5Title => 'Stay on track with reminders';
+
+  @override
+  String get onboarding5Body =>
+      'Get a gentle nudge with a new word during the day so you never miss a session. You can change the frequency or turn it off anytime in Settings.';
+
+  @override
+  String get onboardingEnableNotifications => 'Turn on reminders';
+
+  @override
+  String get onboardingNotificationsEnabled => 'Reminders on';
+
+  @override
   String get helpTitle => 'Help';
 
   @override

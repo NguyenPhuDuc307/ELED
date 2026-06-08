@@ -18,8 +18,8 @@ class NotificationsSettingsScreen extends StatefulWidget {
 }
 
 class _NotificationsSettingsScreenState extends State<NotificationsSettingsScreen> {
-  int _intervalMinutes = 60;
-  int _maxCount = 5;
+  int _intervalMinutes = 0;
+  int _maxCount = 1;
   TimeOfDay _startTime = const TimeOfDay(hour: 9, minute: 0);
   TimeOfDay _endTime = const TimeOfDay(hour: 19, minute: 0);
 
@@ -47,9 +47,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     final prefs = await SharedPreferences.getInstance();
     if (!mounted) return;
     setState(() {
-      _intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 60;
+      _intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 0;
       _maxCount =
-          (prefs.getInt('notificationWordsPerBundle') ?? 5).clamp(1, _maxCountCeiling);
+          (prefs.getInt('notificationWordsPerBundle') ?? 1).clamp(1, _maxCountCeiling);
       _startTime = TimeOfDay(
         hour: prefs.getInt('notificationStartHour') ?? 9,
         minute: prefs.getInt('notificationStartMinute') ?? 0,

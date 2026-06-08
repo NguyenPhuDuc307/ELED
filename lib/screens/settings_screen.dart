@@ -28,7 +28,7 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   User? _user;
-  int _interval = 60;
+  int _interval = 0;
   String _themeMode = 'system';
 
   @override
@@ -56,7 +56,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final prefs = await SharedPreferences.getInstance();
     if (!mounted) return;
     setState(() {
-      _interval = prefs.getInt('notificationIntervalMinutes') ?? 60;
+      _interval = prefs.getInt('notificationIntervalMinutes') ?? 0;
       _themeMode = prefs.getString('themeMode') ?? 'system';
     });
   }
@@ -75,7 +75,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               icon: Icons.notifications_active_rounded,
               title: t.settingsNotifications,
               subtitle: _interval == 0
-                  ? t.notificationsAll
+                  ? t.notificationsOff
                   : t.notificationsIntervalMinutes(_interval),
               onTap: () async {
                 await Navigator.of(context).push(

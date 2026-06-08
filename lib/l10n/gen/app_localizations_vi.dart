@@ -672,6 +672,19 @@ class AppLocalizationsVi extends AppLocalizations {
       'Khi học, các phiên kết hợp thẻ học, trắc nghiệm, nghe và gõ, điền vào ngữ cảnh, cùng trò ghép 4 cặp. Cùng từ vựng, mỗi lần một góc nhìn mới.';
 
   @override
+  String get onboarding5Title => 'Nhắc nhở để học đều';
+
+  @override
+  String get onboarding5Body =>
+      'Nhận một nhắc nhẹ kèm từ mới trong ngày để không bỏ lỡ buổi học. Bạn có thể đổi tần suất hoặc tắt bất cứ lúc nào trong Cài đặt.';
+
+  @override
+  String get onboardingEnableNotifications => 'Bật nhắc nhở';
+
+  @override
+  String get onboardingNotificationsEnabled => 'Đã bật nhắc nhở';
+
+  @override
   String get helpTitle => 'Trợ giúp';
 
   @override

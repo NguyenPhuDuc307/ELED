@@ -1310,6 +1310,30 @@ abstract class AppLocalizations {
   /// **'As you learn, sessions mix flashcards with multiple choice, listen-and-type, fill-in-context, and a 4-pair match game. Same vocabulary, fresh angle every time.'**
   String get onboarding4Body;
 
+  /// No description provided for @onboarding5Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay on track with reminders'**
+  String get onboarding5Title;
+
+  /// No description provided for @onboarding5Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Get a gentle nudge with a new word during the day so you never miss a session. You can change the frequency or turn it off anytime in Settings.'**
+  String get onboarding5Body;
+
+  /// No description provided for @onboardingEnableNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on reminders'**
+  String get onboardingEnableNotifications;
+
+  /// No description provided for @onboardingNotificationsEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders on'**
+  String get onboardingNotificationsEnabled;
+
   /// No description provided for @helpTitle.
   ///
   /// In en, this message translates to:

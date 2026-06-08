@@ -174,7 +174,7 @@ Future<void> _restockNotifications() async {
     final pool       = await NotificationService.loadPool(popularity: popularity, topics: topics);
 
     if (pool.isNotEmpty) {
-      final wordsPerBundle = prefs.getInt('notificationWordsPerBundle') ?? 5;
+      final wordsPerBundle = prefs.getInt('notificationWordsPerBundle') ?? 1;
       await NotificationService().scheduleVocabularyNotifications(
         pool: pool,
         intervalMinutes: intervalMinutes,

@@ -129,7 +129,7 @@ Future<void> _autoCheckForUpdate() async {
 }
 
 // Bump this string whenever notification format changes (actions, channels, etc.)
-const _kNotificationFormatVersion = 'v4-native';
+const _kNotificationFormatVersion = 'v5-native-ipa';
 
 Future<void> _ensureNotificationVersion() async {
   try {

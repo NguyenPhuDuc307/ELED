@@ -75,6 +75,7 @@ class MainActivity : FlutterActivity() {
                             val word = (item["word"] as? String) ?: continue
                             val translation = (item["translation"] as? String) ?: ""
                             val pos = (item["pos"] as? String) ?: ""
+                            val ipa = (item["ipa"] as? String) ?: ""
                             val topic = (item["topic"] as? String) ?: ""
                             val atMs = when (val v = item["atMs"]) {
                                 is Long -> v
@@ -83,7 +84,7 @@ class MainActivity : FlutterActivity() {
                             }
                             val audioUrl = (item["audioUrl"] as? String) ?: ""
                             VocabNotificationReceiver.schedule(
-                                applicationContext, id, word, translation, pos, topic, atMs, audioUrl
+                                applicationContext, id, word, translation, pos, topic, atMs, audioUrl, ipa
                             )
                             if (atMs > latestMs) latestMs = atMs
                         }

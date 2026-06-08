@@ -166,7 +166,7 @@ object ScheduleEngine {
         val item = pool[cursor % pool.size]
         // Reuse the fired ID — the slot it just released — so we stay within 0..NOTIF_ID_MAX
         VocabNotificationReceiver.schedule(
-            ctx, firedNotifId, item.word, item.translation, item.pos, item.topic, nextMs, item.audioUrl
+            ctx, firedNotifId, item.word, item.translation, item.pos, item.topic, nextMs, item.audioUrl, item.ipa
         )
 
         p.edit()
@@ -207,7 +207,7 @@ object ScheduleEngine {
             }
             val item = pool[(cursorStart + i) % pool.size]
             VocabNotificationReceiver.schedule(
-                ctx, i % NOTIF_ID_MAX, item.word, item.translation, item.pos, item.topic, atMs, item.audioUrl
+                ctx, i % NOTIF_ID_MAX, item.word, item.translation, item.pos, item.topic, atMs, item.audioUrl, item.ipa
             )
             lastScheduled = atMs
         }

@@ -397,6 +397,7 @@ class NotificationService {
             'word': word.word,
             'translation': word.translation,
             'pos': word.partOfSpeech,
+            'ipa': word.ipa,
             'topic': word.topic,
             'atMs': atMs,
             'audioUrl': word.audioLink,
@@ -619,9 +620,12 @@ class NotificationService {
   Future<void> _scheduleIOS(
       int id, Vocabulary word, tz.TZDateTime at) async {
     final pos = word.partOfSpeech;
+    final ipa = word.ipa;
     await flutterLocalNotificationsPlugin.zonedSchedule(
       id: id,
-      title: word.word.toUpperCase(),
+      title: ipa.isEmpty
+          ? word.word.toUpperCase()
+          : '${word.word.toUpperCase()}  $ipa',
       body: pos.isEmpty
           ? word.translation
           : '${word.translation}  -  $pos',

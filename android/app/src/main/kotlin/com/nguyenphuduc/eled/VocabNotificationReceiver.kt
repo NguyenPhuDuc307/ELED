@@ -24,13 +24,15 @@ class VocabNotificationReceiver : BroadcastReceiver() {
 
         fun schedule(
             context: Context, id: Int, word: String, translation: String,
-            pos: String, topic: String, atMs: Long, audioUrl: String = ""
+            pos: String, topic: String, atMs: Long, audioUrl: String = "",
+            ipa: String = ""
         ) {
             val intent = Intent(context, VocabNotificationReceiver::class.java).apply {
                 putExtra("notif_id", id)
                 putExtra("word", word)
                 putExtra("translation", translation)
                 putExtra("pos", pos)
+                putExtra("ipa", ipa)
                 putExtra("topic", topic)
                 putExtra("audio_url", audioUrl)
             }
@@ -95,6 +97,7 @@ class VocabNotificationReceiver : BroadcastReceiver() {
         val word = intent.getStringExtra("word") ?: return
         val translation = intent.getStringExtra("translation") ?: ""
         val pos = intent.getStringExtra("pos") ?: ""
+        val ipa = intent.getStringExtra("ipa") ?: ""
         val topic = intent.getStringExtra("topic") ?: ""
         val audioUrl = intent.getStringExtra("audio_url") ?: ""
         val payload = "$word|$topic"
@@ -119,7 +122,7 @@ class VocabNotificationReceiver : BroadcastReceiver() {
 
         val notif = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.mipmap.launcher_icon)
-            .setContentTitle(word.uppercase())
+            .setContentTitle(if (ipa.isEmpty()) word.uppercase() else "${word.uppercase()}  $ipa")
             .setContentText("$translation  •  $pos")
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(openPending)

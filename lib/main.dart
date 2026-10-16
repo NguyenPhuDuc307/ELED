@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 import 'dart:ui';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -27,37 +26,52 @@ import 'services/streak_service.dart';
 import 'services/update_service.dart';
 import 'services/user_data_service.dart';
 import 'utils/log.dart';
+import 'firebase_web_options.dart';
 
-final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
-final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
+final GlobalKey<NavigatorState> globalNavigatorKey =
+    GlobalKey<NavigatorState>();
+final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey =
+    GlobalKey<ScaffoldMessengerState>();
 String? pendingNotificationPayload;
 String? pendingMarkKnownWord;
 
 void main() async {
   runZonedGuarded<Future<void>>(_bootstrap, (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack, fatal: false);
+    if (!kIsWeb) {
+      FirebaseCrashlytics.instance.recordError(error, stack, fatal: false);
+    } else {
+      debugPrint('$error\n$stack');
+    }
   });
 }
 
 Future<void> _bootstrap() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options: kIsWeb ? firebaseWebOptions : null);
 
   // Route Flutter framework errors + platform-dispatcher errors to Crashlytics.
   // Disabled in debug to keep the IDE log focused on the failing widget tree.
   FlutterError.onError = (details) {
     FlutterError.presentError(details);
-    if (!kDebugMode) FirebaseCrashlytics.instance.recordFlutterFatalError(details);
+    if (!kIsWeb && !kDebugMode) {
+      FirebaseCrashlytics.instance.recordFlutterFatalError(details);
+    }
   };
   PlatformDispatcher.instance.onError = (error, stack) {
-    if (!kDebugMode) FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    if (!kIsWeb && !kDebugMode) {
+      FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    }
     return true;
   };
-  await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
+  if (!kIsWeb) {
+    await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(
+      !kDebugMode,
+    );
+  }
   await AnalyticsService().init();
 
-  await HomeWidget.setAppGroupId('group.com.nguyenphuduc.eled');
+  if (!kIsWeb) await HomeWidget.setAppGroupId('group.com.nguyenphuduc.eled');
 
   final (prefs, _) = await (
     SharedPreferences.getInstance(),
@@ -88,34 +102,38 @@ Future<void> _bootstrap() async {
 
   await LocaleService.load();
 
-  final launchDetails = await NotificationService()
-      .flutterLocalNotificationsPlugin
-      .getNotificationAppLaunchDetails();
-  if (launchDetails?.didNotificationLaunchApp ?? false) {
-    pendingNotificationPayload = launchDetails!.notificationResponse?.payload;
-  }
+  if (!kIsWeb) {
+    final launchDetails = await NotificationService()
+        .flutterLocalNotificationsPlugin
+        .getNotificationAppLaunchDetails();
+    if (launchDetails?.didNotificationLaunchApp ?? false) {
+      pendingNotificationPayload = launchDetails!.notificationResponse?.payload;
+    }
 
-  await NotificationService.processScheduleLog();
-  _ensureNotificationVersion();
+    await NotificationService.processScheduleLog();
+    _ensureNotificationVersion();
 
-  if (Platform.isAndroid) {
-    const MethodChannel('com.nguyenphuduc.eled/knownwords')
-        .setMethodCallHandler((call) async {
-      if (call.method == 'markKnown') {
-        final word = call.arguments as String?;
-        if (word != null && word.isNotEmpty) {
-          await UserDataService().addKnownWord(word);
+    if (defaultTargetPlatform == TargetPlatform.android) {
+      const MethodChannel(
+        'com.nguyenphuduc.eled/knownwords',
+      ).setMethodCallHandler((call) async {
+        if (call.method == 'markKnown') {
+          final word = call.arguments as String?;
+          if (word != null && word.isNotEmpty) {
+            await UserDataService().addKnownWord(word);
+          }
         }
-      }
-    });
+      });
+    }
   }
 
-  final needsSync = !await VocabularySyncService.hasLocalData() ||
+  final needsSync =
+      !await VocabularySyncService.hasLocalData() ||
       await VocabularySyncService.isOutdated();
   final onboarded = prefs.getBool('onboardedV1') ?? false;
   runApp(EledApp(needsSync: needsSync, needsOnboarding: !onboarded));
 
-  _autoCheckForUpdate();
+  if (!kIsWeb) _autoCheckForUpdate();
 }
 
 Future<void> _autoCheckForUpdate() async {
@@ -134,13 +152,17 @@ const _kNotificationFormatVersion = 'v5-native-ipa';
 Future<void> _ensureNotificationVersion() async {
   try {
     final prefs = await SharedPreferences.getInstance();
-    if (prefs.getString('notification_format_version') == _kNotificationFormatVersion) {
+    if (prefs.getString('notification_format_version') ==
+        _kNotificationFormatVersion) {
       _restockNotifications();
       return;
     }
     // Format changed → cancel all and reschedule with new format
     await NotificationService().cancelAllNotifications();
-    await prefs.setString('notification_format_version', _kNotificationFormatVersion);
+    await prefs.setString(
+      'notification_format_version',
+      _kNotificationFormatVersion,
+    );
     _restockNotifications();
   } catch (e) {
     debugPrint('Failed to ensure notification version: $e');
@@ -166,12 +188,17 @@ Future<void> _restockNotifications() async {
 
     final startH = prefs.getInt('notificationStartHour') ?? 9;
     final startM = prefs.getInt('notificationStartMinute') ?? 0;
-    final endH   = prefs.getInt('notificationEndHour') ?? 19;
-    final endM   = prefs.getInt('notificationEndMinute') ?? 0;
+    final endH = prefs.getInt('notificationEndHour') ?? 19;
+    final endM = prefs.getInt('notificationEndMinute') ?? 0;
 
-    final popularity = prefs.getStringList('selectedPopularity') ?? ['A1', 'A2', 'B1', 'B2', 'C1'];
-    final topics     = prefs.getStringList('selectedTopics') ?? [];
-    final pool       = await NotificationService.loadPool(popularity: popularity, topics: topics);
+    final popularity =
+        prefs.getStringList('selectedPopularity') ??
+        ['A1', 'A2', 'B1', 'B2', 'C1'];
+    final topics = prefs.getStringList('selectedTopics') ?? [];
+    final pool = await NotificationService.loadPool(
+      popularity: popularity,
+      topics: topics,
+    );
 
     if (pool.isNotEmpty) {
       final wordsPerBundle = prefs.getInt('notificationWordsPerBundle') ?? 1;
@@ -198,8 +225,9 @@ class EledApp extends StatefulWidget {
   final bool needsSync;
   final bool needsOnboarding;
 
-  static final ValueNotifier<ThemeMode> themeNotifier =
-      ValueNotifier(ThemeMode.system);
+  static final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(
+    ThemeMode.system,
+  );
 
   @override
   State<EledApp> createState() => _EledAppState();
@@ -223,7 +251,7 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) {
+    if (!kIsWeb && state == AppLifecycleState.resumed) {
       NotificationService.processScheduleLog();
       _restockNotifications();
     }
@@ -240,7 +268,9 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
             return MaterialApp(
               navigatorKey: globalNavigatorKey,
               scaffoldMessengerKey: scaffoldMessengerKey,
-              navigatorObservers: [AnalyticsService().observer()],
+              navigatorObservers: Firebase.apps.isEmpty
+                  ? []
+                  : [AnalyticsService().observer()],
               title: 'ELED - English Learning',
               theme: BrutalistTheme.lightTheme,
               darkTheme: BrutalistTheme.darkTheme,
@@ -251,10 +281,12 @@ class _EledAppState extends State<EledApp> with WidgetsBindingObserver {
               home: widget.needsSync
                   ? const SyncScreen()
                   : _showOnboarding
-                      ? OnboardingScreen(onDone: () {
-                          setState(() => _showOnboarding = false);
-                        })
-                      : const TodayScreen(),
+                  ? OnboardingScreen(
+                      onDone: () {
+                        setState(() => _showOnboarding = false);
+                      },
+                    )
+                  : const TodayScreen(),
               debugShowCheckedModeBanner: false,
             );
           },

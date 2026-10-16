@@ -1,0 +1,30 @@
+# Add this block to the existing IoT Caddyfile, validate, then reload Caddy.
+eled.vnlab.id.vn {
+    encode gzip
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options nosniff
+        X-Frame-Options SAMEORIGIN
+        Referrer-Policy strict-origin-when-cross-origin
+        Permissions-Policy "camera=(), microphone=(self), geolocation=()"
+        -Server
+    }
+    handle /api/eled/* {
+        reverse_proxy eled-api:3200
+    }
+    # Fixed upstream and restricted dictionary paths prevent an open proxy.
+    handle /api/oxford/definition/english/* {
+        uri strip_prefix /api/oxford
+        reverse_proxy https://www.oxfordlearnersdictionaries.com {
+            header_up Host www.oxfordlearnersdictionaries.com
+            header_up -Cookie
+            header_up -Authorization
+        }
+    }
+    handle /api/* {
+        respond 404
+    }
+    handle {
+        reverse_proxy eled-web:80
+    }
+}

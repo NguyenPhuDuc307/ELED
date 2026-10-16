@@ -17,21 +17,21 @@ ACTION="${2:-}"
 
 cd "$(dirname "$0")/.."
 
-echo "▶ Build ELED ($MODE)…"
+echo "Build ELED ($MODE)…"
 flutter build ios "--$MODE"
 
-echo "▶ Cài lên iPhone ($DEVICE_ID)…"
+echo "Cài lên iPhone ($DEVICE_ID)…"
 echo "  (mở khoá máy + giữ màn hình sáng trong lúc cài)"
 flutter install "--$MODE" -d "$DEVICE_ID"
 
 if [ "$ACTION" = "run" ]; then
-  echo "▶ Thử launch…"
+  echo "Thử launch…"
   xcrun devicectl device process launch --device "$DEVICE_ID" com.nguyenphuduc.eled || true
 fi
 
 cat <<'EOF'
 
-✔ Đã cài xong.
+Đã cài xong.
 
 Nếu app báo "Untrusted Developer" / không mở được:
   1) Bật WiFi cho iPhone (bắt buộc để xác minh).

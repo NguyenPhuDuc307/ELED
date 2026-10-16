@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/gen/app_localizations.dart';
@@ -23,7 +24,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final _pageCtrl = PageController();
   int _index = 0;
 
-  static const _pageMeta = <_OnboardPageMeta>[
+  static final _pageMeta = <_OnboardPageMeta>[
     _OnboardPageMeta(
       icon: Icons.school_rounded,
       accent: BrutalistTheme.primary,
@@ -44,11 +45,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       accent: BrutalistTheme.secondary,
       accentLight: BrutalistTheme.secondaryLight,
     ),
-    _OnboardPageMeta(
-      icon: Icons.notifications_active_rounded,
-      accent: BrutalistTheme.primary,
-      accentLight: BrutalistTheme.primaryLight,
-    ),
+    if (!kIsWeb)
+      _OnboardPageMeta(
+        icon: Icons.notifications_active_rounded,
+        accent: BrutalistTheme.primary,
+        accentLight: BrutalistTheme.primaryLight,
+      ),
   ];
 
   bool get _isLast => _index == _pageMeta.length - 1;
@@ -70,7 +72,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       await prefs.setInt('notificationEndHour', 19);
       await prefs.setInt('notificationEndMinute', 0);
 
-      final popularity = prefs.getStringList('selectedPopularity') ??
+      final popularity =
+          prefs.getStringList('selectedPopularity') ??
           const ['A1', 'A2', 'B1', 'B2', 'C1'];
       final topics = prefs.getStringList('selectedTopics') ?? const <String>[];
       final pool = await NotificationService.loadPool(
@@ -149,10 +152,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   Text(
                     t.appTitle,
                     style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w800,
-                          color: BrutalistTheme.primary,
-                        ),
+                      fontSize: 22,
+                      fontWeight: FontWeight.w800,
+                      color: BrutalistTheme.primary,
+                    ),
                   ),
                   if (!_isLast)
                     TextButton(
@@ -174,7 +177,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 itemCount: _pageMeta.length,
                 onPageChanged: (i) => setState(() => _index = i),
                 itemBuilder: (_, i) {
-                  if (i == _pageMeta.length - 1) {
+                  if (!kIsWeb && i == _pageMeta.length - 1) {
                     return _OnboardNotificationsPageView(
                       meta: _pageMeta[i],
                       title: _titleFor(t, i),
@@ -244,10 +247,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           child: Text(
             label,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: BrutalistTheme.white,
-                  fontWeight: FontWeight.w700,
-                  fontSize: 16,
-                ),
+              color: BrutalistTheme.white,
+              fontWeight: FontWeight.w700,
+              fontSize: 16,
+            ),
           ),
         ),
       ),
@@ -297,20 +300,20 @@ class _OnboardPageView extends StatelessWidget {
           Text(
             title,
             style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                  height: 1.2,
-                ),
+              fontSize: 26,
+              fontWeight: FontWeight.w800,
+              height: 1.2,
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 14),
           Text(
             body,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: context.bMuted,
-                  height: 1.5,
-                  fontSize: 15,
-                ),
+              color: context.bMuted,
+              height: 1.5,
+              fontSize: 15,
+            ),
             textAlign: TextAlign.center,
           ),
         ],
@@ -358,20 +361,20 @@ class _OnboardNotificationsPageView extends StatelessWidget {
           Text(
             title,
             style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                  height: 1.2,
-                ),
+              fontSize: 26,
+              fontWeight: FontWeight.w800,
+              height: 1.2,
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 14),
           Text(
             body,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: context.bMuted,
-                  height: 1.5,
-                  fontSize: 15,
-                ),
+              color: context.bMuted,
+              height: 1.5,
+              fontSize: 15,
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 24),
@@ -429,8 +432,11 @@ class _OnboardNotificationsPageView extends StatelessWidget {
               : Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.notifications_active_rounded,
-                        color: BrutalistTheme.white, size: 20),
+                    const Icon(
+                      Icons.notifications_active_rounded,
+                      color: BrutalistTheme.white,
+                      size: 20,
+                    ),
                     const SizedBox(width: 8),
                     Text(
                       t.onboardingEnableNotifications,

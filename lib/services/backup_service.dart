@@ -1,11 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../utils/log.dart';
+import '../utils/download.dart';
 import 'analytics_service.dart';
 import 'user_data_service.dart';
 
@@ -23,31 +25,35 @@ class BackupPayload {
   });
 
   Map<String, dynamic> toJson() => {
-        'version': version,
-        'exportedAt': exportedAt.toIso8601String(),
-        'knownWords': knownWords,
-        'collections': collections,
-      };
+    'version': version,
+    'exportedAt': exportedAt.toIso8601String(),
+    'knownWords': knownWords,
+    'collections': collections,
+  };
 
   factory BackupPayload.fromJson(Map<String, dynamic> j) => BackupPayload(
-        version: (j['version'] as String?) ?? '1',
-        exportedAt: DateTime.tryParse(j['exportedAt'] as String? ?? '') ?? DateTime.now(),
-        knownWords: ((j['knownWords'] as List?) ?? const [])
-            .map((e) => e.toString().toLowerCase())
-            .toList(),
-        collections: ((j['collections'] as Map?) ?? const {}).map(
-          (k, v) => MapEntry(
-            k.toString(),
-            ((v as List?) ?? const []).map((e) => e.toString()).toList(),
-          ),
-        ),
-      );
+    version: (j['version'] as String?) ?? '1',
+    exportedAt:
+        DateTime.tryParse(j['exportedAt'] as String? ?? '') ?? DateTime.now(),
+    knownWords: ((j['knownWords'] as List?) ?? const [])
+        .map((e) => e.toString().toLowerCase())
+        .toList(),
+    collections: ((j['collections'] as Map?) ?? const {}).map(
+      (k, v) => MapEntry(
+        k.toString(),
+        ((v as List?) ?? const []).map((e) => e.toString()).toList(),
+      ),
+    ),
+  );
 }
 
 class ImportResult {
   final int knownAdded;
   final int collectionsAdded;
-  const ImportResult({required this.knownAdded, required this.collectionsAdded});
+  const ImportResult({
+    required this.knownAdded,
+    required this.collectionsAdded,
+  });
 }
 
 /// Exports the user's known-words + collections to a JSON file the user can
@@ -68,25 +74,35 @@ class BackupService {
         collections: data.collections,
       );
 
-      final dir = await getTemporaryDirectory();
-      final ts = DateTime.now().toIso8601String().replaceAll(':', '-').split('.').first;
-      final file = File('${dir.path}/eled-backup-$ts.json');
-      await file.writeAsString(
-        const JsonEncoder.withIndent('  ').convert(payload.toJson()),
-      );
-
-      await SharePlus.instance.share(
-        ShareParams(
-          files: [XFile(file.path)],
-          subject: 'ELED backup ($ts)',
+      final ts = DateTime.now()
+          .toIso8601String()
+          .replaceAll(':', '-')
+          .split('.')
+          .first;
+      final name = 'eled-backup-$ts.json';
+      final bytes = Uint8List.fromList(
+        utf8.encode(
+          const JsonEncoder.withIndent('  ').convert(payload.toJson()),
         ),
       );
+      String? exportPath;
+      if (kIsWeb) {
+        downloadJson(name, utf8.decode(bytes));
+      } else {
+        final dir = await getTemporaryDirectory();
+        final file = File('${dir.path}/$name');
+        await file.writeAsBytes(bytes);
+        exportPath = file.path;
+        await SharePlus.instance.share(
+          ShareParams(files: [XFile(file.path)], subject: 'ELED backup ($ts)'),
+        );
+      }
 
       AnalyticsService().logEvent('backup_exported', {
         'known_count': payload.knownWords.length,
         'collection_count': payload.collections.length,
       });
-      return file.path;
+      return kIsWeb ? name : exportPath;
     } catch (e, st) {
       logCaught(e, st, 'BackupService.exportToShareSheet');
       return null;
@@ -104,11 +120,15 @@ class BackupService {
       );
       if (result == null || result.files.isEmpty) return null;
       final f = result.files.single;
-      final bytes = f.bytes ?? (f.path != null ? await File(f.path!).readAsBytes() : null);
+      final bytes =
+          f.bytes ??
+          (f.path != null ? await File(f.path!).readAsBytes() : null);
       if (bytes == null) return null;
 
       final raw = utf8.decode(bytes);
-      final payload = BackupPayload.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+      final payload = BackupPayload.fromJson(
+        jsonDecode(raw) as Map<String, dynamic>,
+      );
 
       final data = UserDataService();
       int knownAdded = 0;
@@ -133,7 +153,10 @@ class BackupService {
         'known_added': knownAdded,
         'collections_added': collectionsAdded,
       });
-      return ImportResult(knownAdded: knownAdded, collectionsAdded: collectionsAdded);
+      return ImportResult(
+        knownAdded: knownAdded,
+        collectionsAdded: collectionsAdded,
+      );
     } catch (e, st) {
       logCaught(e, st, 'BackupService.importFromPicker');
       return null;

@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'dart:io';
+import 'package:http/http.dart' as http;
 
 import '../utils/log.dart';
 
@@ -23,16 +23,13 @@ class TranslationService {
     required String target,
   }) async {
     if (text.trim().isEmpty) return text;
-    HttpClient? client;
     try {
       final uri = Uri.parse(
         '$_endpoint?client=gtx&sl=$source&tl=$target&dt=t&q=${Uri.encodeComponent(text)}',
       );
-      client = HttpClient();
-      final request = await client.getUrl(uri);
-      final response = await request.close();
+      final response = await http.get(uri).timeout(const Duration(seconds: 15));
       if (response.statusCode != 200) return text;
-      final body = await response.transform(utf8.decoder).join();
+      final body = utf8.decode(response.bodyBytes);
       final json = jsonDecode(body) as List;
       final segments = json[0] as List;
       return segments
@@ -42,8 +39,6 @@ class TranslationService {
     } catch (e, st) {
       logCaught(e, st, 'TranslationService.translate');
       return text;
-    } finally {
-      client?.close();
     }
   }
 

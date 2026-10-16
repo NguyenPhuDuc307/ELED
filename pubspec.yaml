@@ -39,6 +39,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^8.0.2
   flutter_svg: ^2.2.4
+  web: ^1.1.1
+  http: ^1.6.0
   csv: ^8.0.0
   just_audio: ^0.10.5
   url_launcher: ^6.3.2

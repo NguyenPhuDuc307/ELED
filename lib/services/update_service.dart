@@ -1,14 +1,15 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UpdateInfo {
-  final String version;   // e.g. "1.0.0-alpha.6"
+  final String version; // e.g. "1.0.0-alpha.6"
   final String releaseUrl; // GitHub release page
-  final String apkUrl;    // direct APK download URL (empty if none)
+  final String apkUrl; // direct APK download URL (empty if none)
 
   const UpdateInfo({
     required this.version,
@@ -34,6 +35,7 @@ class UpdateService {
 
   /// Returns [UpdateInfo] if a newer app release exists, null otherwise.
   static Future<UpdateInfo?> checkForUpdate() async {
+    if (kIsWeb) return null;
     try {
       final info = await PackageInfo.fromPlatform();
       final currentBuild = int.tryParse(info.buildNumber) ?? 0;
@@ -61,9 +63,10 @@ class UpdateService {
         if (remoteBuild <= currentBuild) return null; // up to date
 
         final assets = r['assets'] as List? ?? [];
-        final apkAsset = assets.cast<Map>().where(
-          (a) => (a['name'] as String? ?? '').endsWith('.apk'),
-        ).firstOrNull;
+        final apkAsset = assets
+            .cast<Map>()
+            .where((a) => (a['name'] as String? ?? '').endsWith('.apk'))
+            .firstOrNull;
 
         return UpdateInfo(
           version: tag.startsWith('v') ? tag.substring(1) : tag,

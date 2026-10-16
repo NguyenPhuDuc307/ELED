@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/gen/app_localizations.dart';
@@ -71,27 +72,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            _category(
-              icon: Icons.notifications_active_rounded,
-              title: t.settingsNotifications,
-              subtitle: _interval == 0
-                  ? t.notificationsOff
-                  : t.notificationsIntervalMinutes(_interval),
-              onTap: () async {
-                await Navigator.of(context).push(
-                  smoothRoute(const NotificationsSettingsScreen()),
-                );
-                _loadSummaries();
-              },
-            ),
+            if (!kIsWeb)
+              _category(
+                icon: Icons.notifications_active_rounded,
+                title: t.settingsNotifications,
+                subtitle: _interval == 0
+                    ? t.notificationsOff
+                    : t.notificationsIntervalMinutes(_interval),
+                onTap: () async {
+                  await Navigator.of(
+                    context,
+                  ).push(smoothRoute(const NotificationsSettingsScreen()));
+                  _loadSummaries();
+                },
+              ),
             _category(
               icon: Icons.palette_rounded,
               title: t.settingsAppearance,
               subtitle: _themeLabel(_themeMode, t),
               onTap: () async {
-                await Navigator.of(context).push(
-                  smoothRoute(const AppearanceSettingsScreen()),
-                );
+                await Navigator.of(
+                  context,
+                ).push(smoothRoute(const AppearanceSettingsScreen()));
                 _loadSummaries();
               },
             ),
@@ -99,25 +101,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
               icon: Icons.translate_rounded,
               title: t.settingsLanguage,
               subtitle: _languageLabel(t),
-              onTap: () => Navigator.of(context).push(
-                smoothRoute(const LanguageSettingsScreen()),
-              ),
+              onTap: () => Navigator.of(
+                context,
+              ).push(smoothRoute(const LanguageSettingsScreen())),
             ),
             _category(
               icon: Icons.tune_rounded,
               title: t.settingsLearningPrefs,
               subtitle: t.settingsLearningPrefsSubtitle,
-              onTap: () => Navigator.of(context).push(
-                smoothRoute(const LearningPrefsSettingsScreen()),
-              ),
+              onTap: () => Navigator.of(
+                context,
+              ).push(smoothRoute(const LearningPrefsSettingsScreen())),
             ),
             _category(
               icon: Icons.record_voice_over_rounded,
               title: t.settingsSpeakingVoice,
               subtitle: t.settingsSpeakingVoiceSubtitle,
-              onTap: () => Navigator.of(context).push(
-                smoothRoute(const SpeakingVoiceSettingsScreen()),
-              ),
+              onTap: () => Navigator.of(
+                context,
+              ).push(smoothRoute(const SpeakingVoiceSettingsScreen())),
             ),
             _category(
               icon: Icons.person_rounded,
@@ -125,25 +127,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
               subtitle: _user == null
                   ? t.settingsDataSubtitle
                   : (_user!.email ?? t.settingsData),
-              onTap: () => Navigator.of(context).push(
-                smoothRoute(const DataSettingsScreen()),
-              ),
+              onTap: () => Navigator.of(
+                context,
+              ).push(smoothRoute(const DataSettingsScreen())),
             ),
             _category(
               icon: Icons.help_outline_rounded,
               title: t.helpTitle,
               subtitle: t.settingsAboutSubtitle,
-              onTap: () => Navigator.of(context).push(
-                smoothRoute(const HelpScreen()),
-              ),
+              onTap: () =>
+                  Navigator.of(context).push(smoothRoute(const HelpScreen())),
             ),
             _category(
               icon: Icons.info_outline_rounded,
               title: t.settingsAbout,
               subtitle: t.settingsAboutSubtitle,
-              onTap: () => Navigator.of(context).push(
-                smoothRoute(const AboutScreen()),
-              ),
+              onTap: () =>
+                  Navigator.of(context).push(smoothRoute(const AboutScreen())),
             ),
           ],
         ),
@@ -187,16 +187,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   Text(
                     title,
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 16,
-                        ),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                    ),
                   ),
                   const SizedBox(height: 2),
                   Text(
                     subtitle,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: context.bMuted,
-                        ),
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodyMedium?.copyWith(color: context.bMuted),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

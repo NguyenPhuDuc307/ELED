@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'package:flutter/foundation.dart';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -14,10 +14,12 @@ class NotificationsSettingsScreen extends StatefulWidget {
   const NotificationsSettingsScreen({super.key});
 
   @override
-  State<NotificationsSettingsScreen> createState() => _NotificationsSettingsScreenState();
+  State<NotificationsSettingsScreen> createState() =>
+      _NotificationsSettingsScreenState();
 }
 
-class _NotificationsSettingsScreenState extends State<NotificationsSettingsScreen> {
+class _NotificationsSettingsScreenState
+    extends State<NotificationsSettingsScreen> {
   int _intervalMinutes = 0;
   int _maxCount = 1;
   TimeOfDay _startTime = const TimeOfDay(hour: 9, minute: 0);
@@ -38,7 +40,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
   }
 
   Future<void> _refreshBatteryStatus() async {
-    if (!Platform.isAndroid) return;
+    if (kIsWeb || defaultTargetPlatform != TargetPlatform.android) return;
     final ok = await NotificationService().isIgnoringBatteryOptimizations();
     if (mounted) setState(() => _batteryUnrestricted = ok);
   }
@@ -48,8 +50,10 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
     if (!mounted) return;
     setState(() {
       _intervalMinutes = prefs.getInt('notificationIntervalMinutes') ?? 0;
-      _maxCount =
-          (prefs.getInt('notificationWordsPerBundle') ?? 1).clamp(1, _maxCountCeiling);
+      _maxCount = (prefs.getInt('notificationWordsPerBundle') ?? 1).clamp(
+        1,
+        _maxCountCeiling,
+      );
       _startTime = TimeOfDay(
         hour: prefs.getInt('notificationStartHour') ?? 9,
         minute: prefs.getInt('notificationStartMinute') ?? 0,
@@ -82,7 +86,8 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
 
       // Level + topic filters live in Vocabulary preferences now — read them
       // through here so changing one screen takes effect across the app.
-      final popularity = prefs.getStringList('selectedPopularity') ??
+      final popularity =
+          prefs.getStringList('selectedPopularity') ??
           ['A1', 'A2', 'B1', 'B2', 'C1'];
       final topics = prefs.getStringList('selectedTopics') ?? const <String>[];
       final pool = await NotificationService.loadPool(
@@ -98,7 +103,7 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         wordsPerBundle: _maxCount,
       );
 
-      if (Platform.isAndroid) {
+      if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
         final ok = await NotificationService().isIgnoringBatteryOptimizations();
         if (!ok && prefs.getBool('batteryOptPrompted') != true) {
           await prefs.setBool('batteryOptPrompted', true);
@@ -158,12 +163,14 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         final isDark = Theme.of(context).brightness == Brightness.dark;
         return Theme(
           data: (isDark ? ThemeData.dark() : ThemeData.light()).copyWith(
-            colorScheme: (isDark ? const ColorScheme.dark() : const ColorScheme.light()).copyWith(
-              primary: context.bBorder,
-              onPrimary: context.bBg,
-              onSurface: context.bBorder,
-              surface: context.bBg,
-            ),
+            colorScheme:
+                (isDark ? const ColorScheme.dark() : const ColorScheme.light())
+                    .copyWith(
+                      primary: context.bBorder,
+                      onPrimary: context.bBg,
+                      onSurface: context.bBorder,
+                      surface: context.bBg,
+                    ),
             dialogTheme: DialogThemeData(backgroundColor: context.bBg),
           ),
           child: child!,
@@ -194,7 +201,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
             child: Text(
               t.commonSave,
               style: TextStyle(
-                color: (_dirty && !_isSaving) ? BrutalistTheme.primary : context.bMuted,
+                color: (_dirty && !_isSaving)
+                    ? BrutalistTheme.primary
+                    : context.bMuted,
                 fontWeight: FontWeight.w700,
                 fontSize: 15,
               ),
@@ -204,7 +213,12 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         ],
       ),
       body: _isLoading || _isSaving
-          ? Center(child: CircularProgressIndicator(color: context.bBorder, strokeWidth: 5))
+          ? Center(
+              child: CircularProgressIndicator(
+                color: context.bBorder,
+                strokeWidth: 5,
+              ),
+            )
           : SingleChildScrollView(
               padding: const EdgeInsets.all(24),
               child: Column(
@@ -221,7 +235,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
                     subtitle: t.notificationsMaxCountSubtitle,
                   ),
                   _buildMaxCountSelector(t),
-                  if (Platform.isAndroid && !_batteryUnrestricted) ...[
+                  if ((!kIsWeb &&
+                          defaultTargetPlatform == TargetPlatform.android) &&
+                      !_batteryUnrestricted) ...[
                     const SizedBox(height: 16),
                     _buildBatteryOptCard(t),
                   ],
@@ -233,9 +249,23 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
                   ),
                   Row(
                     children: [
-                      Expanded(child: _timeCard(t.notificationsFrom, _startTime, BrutalistTheme.accent, () => _pickTime(true))),
+                      Expanded(
+                        child: _timeCard(
+                          t.notificationsFrom,
+                          _startTime,
+                          BrutalistTheme.accent,
+                          () => _pickTime(true),
+                        ),
+                      ),
                       const SizedBox(width: 16),
-                      Expanded(child: _timeCard(t.notificationsUntil, _endTime, BrutalistTheme.primary, () => _pickTime(false))),
+                      Expanded(
+                        child: _timeCard(
+                          t.notificationsUntil,
+                          _endTime,
+                          BrutalistTheme.primary,
+                          () => _pickTime(false),
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(height: 32),
@@ -253,15 +283,22 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            Text(label,
-                style: const TextStyle(
-                    fontWeight: FontWeight.w600, color: BrutalistTheme.black)),
+            Text(
+              label,
+              style: const TextStyle(
+                fontWeight: FontWeight.w600,
+                color: BrutalistTheme.black,
+              ),
+            ),
             const SizedBox(height: 4),
-            Text(time.format(context),
-                style: const TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
-                    color: BrutalistTheme.black)),
+            Text(
+              time.format(context),
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w700,
+                color: BrutalistTheme.black,
+              ),
+            ),
           ],
         ),
       ),
@@ -313,9 +350,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
             child: Text(
               entry.value,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: isSelected ? BrutalistTheme.white : context.bBorder,
-                  ),
+                fontWeight: FontWeight.w600,
+                color: isSelected ? BrutalistTheme.white : context.bBorder,
+              ),
             ),
           ),
         );
@@ -358,9 +395,9 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
             child: Text(
               t.notificationsMaxCountValue(value),
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: isSelected ? BrutalistTheme.white : context.bBorder,
-                  ),
+                fontWeight: FontWeight.w600,
+                color: isSelected ? BrutalistTheme.white : context.bBorder,
+              ),
             ),
           ),
         );
@@ -380,22 +417,36 @@ class _NotificationsSettingsScreenState extends State<NotificationsSettingsScree
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         child: Row(
           children: [
-            const Icon(Icons.battery_alert_rounded, color: BrutalistTheme.primary, size: 22),
+            const Icon(
+              Icons.battery_alert_rounded,
+              color: BrutalistTheme.primary,
+              size: 22,
+            ),
             const SizedBox(width: 14),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(t.notificationsBatteryCardTitle,
-                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          fontWeight: FontWeight.w700, color: BrutalistTheme.primary)),
-                  Text(t.notificationsBatteryCardSubtitle,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: BrutalistTheme.primary)),
+                  Text(
+                    t.notificationsBatteryCardTitle,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: BrutalistTheme.primary,
+                    ),
+                  ),
+                  Text(
+                    t.notificationsBatteryCardSubtitle,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: BrutalistTheme.primary,
+                    ),
+                  ),
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right_rounded, color: BrutalistTheme.primary),
+            const Icon(
+              Icons.chevron_right_rounded,
+              color: BrutalistTheme.primary,
+            ),
           ],
         ),
       ),

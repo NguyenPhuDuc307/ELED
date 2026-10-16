@@ -1,5 +1,6 @@
 import 'dart:convert';
-import 'dart:io';
+import 'package:http/http.dart' as http;
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class OxfordSense {
@@ -13,17 +14,13 @@ class OxfordSense {
     required this.example,
   });
 
-  Map<String, dynamic> toJson() => {
-        'n': number,
-        'd': definition,
-        'e': example,
-      };
+  Map<String, dynamic> toJson() => {'n': number, 'd': definition, 'e': example};
 
   factory OxfordSense.fromJson(Map<String, dynamic> j) => OxfordSense(
-        number: j['n'] as int,
-        definition: j['d'] as String,
-        example: j['e'] as String,
-      );
+    number: j['n'] as int,
+    definition: j['d'] as String,
+    example: j['e'] as String,
+  );
 }
 
 class OxfordService {
@@ -32,7 +29,10 @@ class OxfordService {
 
   /// Returns up to [_maxSenses] definitions for [word] fetched from [url].
   /// Results are cached in SharedPreferences forever (definitions don't change).
-  static Future<List<OxfordSense>> fetchDefinitions(String word, String url) async {
+  static Future<List<OxfordSense>> fetchDefinitions(
+    String word,
+    String url,
+  ) async {
     if (url.isEmpty) return [];
 
     final cacheKey = '$_cachePrefix${word.toLowerCase()}';
@@ -43,26 +43,29 @@ class OxfordService {
         final list = jsonDecode(cached) as List;
         // Only use cache if it has results; empty cache means a previous parse failed
         if (list.isNotEmpty) {
-          return list.map((e) => OxfordSense.fromJson(e as Map<String, dynamic>)).toList();
+          return list
+              .map((e) => OxfordSense.fromJson(e as Map<String, dynamic>))
+              .toList();
         }
       } catch (_) {}
     }
 
     try {
-      final client = HttpClient()..connectionTimeout = const Duration(seconds: 10);
-      final request = await client.getUrl(Uri.parse(url));
-      request.headers
-        ..set('User-Agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36')
-        ..set('Accept', 'text/html');
-      final response = await request.close();
+      final source = Uri.parse(url);
+      // Only the Oxford dictionary path is proxied by our web server.
+      final uri = kIsWeb
+          ? Uri.base.resolve('/api/oxford${source.path}')
+          : source;
+      final response = await http.get(uri).timeout(const Duration(seconds: 15));
       if (response.statusCode != 200) return [];
-
-      final html = await response.transform(utf8.decoder).join();
-      client.close();
+      final html = utf8.decode(response.bodyBytes);
 
       final senses = _parse(html);
       if (senses.isNotEmpty) {
-        await prefs.setString(cacheKey, jsonEncode(senses.map((s) => s.toJson()).toList()));
+        await prefs.setString(
+          cacheKey,
+          jsonEncode(senses.map((s) => s.toJson()).toList()),
+        );
       }
       return senses;
     } catch (_) {
@@ -105,7 +108,9 @@ class OxfordService {
   }
 
   static OxfordSense? _extractSense(String body, int num) {
-    final defMatch = RegExp(r'<span class="def"[^>]*>(.*?)</span>').firstMatch(body);
+    final defMatch = RegExp(
+      r'<span class="def"[^>]*>(.*?)</span>',
+    ).firstMatch(body);
     if (defMatch == null) return null;
     final definition = _stripTags(defMatch.group(1) ?? '').trim();
     if (definition.isEmpty) return null;

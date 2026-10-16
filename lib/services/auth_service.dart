@@ -13,11 +13,14 @@ class AuthService {
   Stream<User?> get userStream => _auth.authStateChanges();
 
   // Web client ID từ Firebase Console → Authentication → Google → Web SDK configuration
-  static const _webClientId = '775823694514-2l11g2mts56aq16tspa00rcog6kh6kkh.apps.googleusercontent.com';
+  static const _webClientId =
+      '775823694514-2l11g2mts56aq16tspa00rcog6kh6kkh.apps.googleusercontent.com';
 
   Future<void> initialize() async {
+    if (kIsWeb) return;
     try {
-      await GoogleSignIn.instance.initialize(serverClientId: _webClientId)
+      await GoogleSignIn.instance
+          .initialize(serverClientId: _webClientId)
           .timeout(const Duration(seconds: 5));
     } catch (e) {
       debugPrint('GoogleSignIn initialize error: $e');
@@ -26,8 +29,13 @@ class AuthService {
 
   Future<User?> signInWithGoogle() async {
     try {
+      if (kIsWeb) {
+        return (await _auth.signInWithPopup(GoogleAuthProvider())).user;
+      }
       final account = await GoogleSignIn.instance.authenticate();
-      final credential = GoogleAuthProvider.credential(idToken: account.authentication.idToken);
+      final credential = GoogleAuthProvider.credential(
+        idToken: account.authentication.idToken,
+      );
       final result = await _auth.signInWithCredential(credential);
       return result.user;
     } catch (e) {
@@ -37,7 +45,7 @@ class AuthService {
   }
 
   Future<void> signOut() async {
-    await GoogleSignIn.instance.signOut();
+    if (!kIsWeb) await GoogleSignIn.instance.signOut();
     await _auth.signOut();
   }
 }

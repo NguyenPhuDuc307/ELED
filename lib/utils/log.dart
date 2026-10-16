@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 /// underlying operation fails — but where silent failure would hide bugs.
 void logCaught(Object error, StackTrace stack, String context) {
   debugPrint('[$context] $error');
+  if (kIsWeb) return;
   try {
     FirebaseCrashlytics.instance.recordError(error, stack, reason: context, fatal: false);
   } catch (_) {

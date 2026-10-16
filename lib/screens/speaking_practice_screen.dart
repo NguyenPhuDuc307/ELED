@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 
 import 'package:flutter/gestures.dart' show LongPressGestureRecognizer;
 import 'package:flutter/material.dart';
@@ -138,8 +139,10 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
         if (v is! Map) continue;
         final m = v.map((k, value) => MapEntry(k.toString(), value.toString()));
         if (m['name'] == wantedName) {
-          await _tts.setVoice(
-              {'name': m['name']!, 'locale': m['locale'] ?? locale});
+          await _tts.setVoice({
+            'name': m['name']!,
+            'locale': m['locale'] ?? locale,
+          });
           return;
         }
       }
@@ -266,7 +269,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   /// Falls back gracefully on engines that never fire progress callbacks — the
   /// long-press still works, the highlight just stays off.
   Widget _highlightableText(String text, TextStyle? style) {
-    final isActive = _activeUtterance == text && _utteranceEnd > _utteranceStart;
+    final isActive =
+        _activeUtterance == text && _utteranceEnd > _utteranceStart;
     final hStart = isActive ? _utteranceStart.clamp(0, text.length) : 0;
     final hEnd = isActive ? _utteranceEnd.clamp(hStart, text.length) : 0;
     final hasHighlight = isActive && hEnd > hStart;
@@ -280,20 +284,23 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
     final spans = <InlineSpan>[];
     for (final tok in _tokenize(text)) {
       final slice = text.substring(tok.start, tok.end);
-      final inHighlight =
-          hasHighlight && tok.start < hEnd && tok.end > hStart;
+      final inHighlight = hasHighlight && tok.start < hEnd && tok.end > hStart;
       final tokenStyle = inHighlight ? highlightStyle : null;
       if (tok.isWord) {
-        spans.add(TextSpan(
-          text: slice,
-          style: tokenStyle,
-          recognizer: _recognizerFor(slice.toLowerCase()),
-        ));
+        spans.add(
+          TextSpan(
+            text: slice,
+            style: tokenStyle,
+            recognizer: _recognizerFor(slice.toLowerCase()),
+          ),
+        );
       } else {
         spans.add(TextSpan(text: slice, style: tokenStyle));
       }
     }
-    return RichText(text: TextSpan(style: style, children: spans));
+    return RichText(
+      text: TextSpan(style: style, children: spans),
+    );
   }
 
   Future<void> _setRate(double rate) async {
@@ -367,6 +374,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   }
 
   Future<bool> _ensureMic() async {
+    // SpeechRecognition requests browser microphone permission itself.
+    if (kIsWeb) return true;
     final status = await Permission.microphone.status;
     if (status.isGranted) return true;
     final result = await Permission.microphone.request();
@@ -376,11 +385,13 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   void _showSnack(String msg) {
     final m = ScaffoldMessenger.of(context);
     m.hideCurrentSnackBar();
-    m.showSnackBar(SnackBar(
-      content: Text(msg),
-      duration: const Duration(seconds: 3),
-      behavior: SnackBarBehavior.floating,
-    ));
+    m.showSnackBar(
+      SnackBar(
+        content: Text(msg),
+        duration: const Duration(seconds: 3),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
   }
 
   SpeakingItem? _currentItem() {
@@ -424,11 +435,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
           icon: const Icon(Icons.arrow_back_rounded),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text(
-          set.topic,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        ),
+        title: Text(set.topic, maxLines: 1, overflow: TextOverflow.ellipsis),
       ),
       body: Column(
         children: [
@@ -458,8 +465,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
     final inactiveBg = isDark
         ? BrutalistTheme.primary.withValues(alpha: 0.22)
         : BrutalistTheme.primaryLight.withValues(alpha: 0.4);
-    final inactiveFg =
-        isDark ? const Color(0xFFA8D5A4) : BrutalistTheme.primary;
+    final inactiveFg = isDark
+        ? const Color(0xFFA8D5A4)
+        : BrutalistTheme.primary;
 
     Widget pill(SpeakingMode mode, IconData icon, String label) {
       final active = _mode == mode;
@@ -477,17 +485,19 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(icon,
-                    size: 18,
-                    color: active ? BrutalistTheme.white : inactiveFg),
+                Icon(
+                  icon,
+                  size: 18,
+                  color: active ? BrutalistTheme.white : inactiveFg,
+                ),
                 const SizedBox(height: 2),
                 Text(
                   label,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 11,
-                        color: active ? BrutalistTheme.white : inactiveFg,
-                      ),
+                    fontWeight: FontWeight.w700,
+                    fontSize: 11,
+                    color: active ? BrutalistTheme.white : inactiveFg,
+                  ),
                 ),
               ],
             ),
@@ -500,9 +510,21 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
       padding: const EdgeInsets.fromLTRB(12, 12, 12, 6),
       child: Row(
         children: [
-          pill(SpeakingMode.shadow, Icons.graphic_eq_rounded, t.speakingModeShadow),
-          pill(SpeakingMode.recall, Icons.psychology_alt_rounded, t.speakingModeRecall),
-          pill(SpeakingMode.cloze, Icons.short_text_rounded, t.speakingModeCloze),
+          pill(
+            SpeakingMode.shadow,
+            Icons.graphic_eq_rounded,
+            t.speakingModeShadow,
+          ),
+          pill(
+            SpeakingMode.recall,
+            Icons.psychology_alt_rounded,
+            t.speakingModeRecall,
+          ),
+          pill(
+            SpeakingMode.cloze,
+            Icons.short_text_rounded,
+            t.speakingModeCloze,
+          ),
           pill(SpeakingMode.record, Icons.mic_rounded, t.speakingModeRecord),
         ],
       ),
@@ -547,7 +569,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 8, vertical: 4),
+                      horizontal: 8,
+                      vertical: 4,
+                    ),
                     decoration: BoxDecoration(
                       color: BrutalistTheme.primary,
                       borderRadius: BorderRadius.circular(6),
@@ -566,18 +590,20 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                     child: _highlightableText(
                       item.question,
                       Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            fontWeight: FontWeight.w700,
-                            color: BrutalistTheme.black,
-                            fontSize: 17,
-                            height: 1.3,
-                          ),
+                        fontWeight: FontWeight.w700,
+                        color: BrutalistTheme.black,
+                        fontSize: 17,
+                        height: 1.3,
+                      ),
                     ),
                   ),
                   IconButton(
                     tooltip: t.speakingPlayQuestion,
                     onPressed: () => _speak(item.question),
-                    icon: const Icon(Icons.volume_up_rounded,
-                        color: BrutalistTheme.primary),
+                    icon: const Icon(
+                      Icons.volume_up_rounded,
+                      color: BrutalistTheme.primary,
+                    ),
                   ),
                 ],
               ),
@@ -615,8 +641,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
               child: Text(
                 t.speakingShadowHint,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: BrutalistTheme.black.withValues(alpha: 0.55),
-                    ),
+                  color: BrutalistTheme.black.withValues(alpha: 0.55),
+                ),
               ),
             ),
             FilledButton.icon(
@@ -662,12 +688,12 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                         child: _highlightableText(
                           s,
                           Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                color: BrutalistTheme.black,
-                                height: 1.45,
-                                fontWeight: active
-                                    ? FontWeight.w700
-                                    : FontWeight.w500,
-                              ),
+                            color: BrutalistTheme.black,
+                            height: 1.45,
+                            fontWeight: active
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                          ),
                         ),
                       ),
                     ],
@@ -689,8 +715,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
         Text(
           t.speakingRecallHint,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: BrutalistTheme.black.withValues(alpha: 0.55),
-              ),
+            color: BrutalistTheme.black.withValues(alpha: 0.55),
+          ),
         ),
         const SizedBox(height: 14),
         if (!revealed)
@@ -701,8 +727,10 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
               label: Text(t.speakingRecallReveal),
               style: FilledButton.styleFrom(
                 backgroundColor: BrutalistTheme.primary,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 18,
+                  vertical: 12,
+                ),
               ),
             ),
           )
@@ -710,9 +738,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
           _highlightableText(
             item.answer,
             Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: BrutalistTheme.black,
-                  height: 1.5,
-                ),
+              color: BrutalistTheme.black,
+              height: 1.5,
+            ),
           ),
       ],
     );
@@ -729,8 +757,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
               child: Text(
                 t.speakingClozeHint,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: BrutalistTheme.black.withValues(alpha: 0.55),
-                    ),
+                  color: BrutalistTheme.black.withValues(alpha: 0.55),
+                ),
               ),
             ),
             TextButton.icon(
@@ -757,7 +785,10 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   }
 
   Widget _buildClozeSentence(
-      String sentence, Set<String> picks, Set<String> revealed) {
+    String sentence,
+    Set<String> picks,
+    Set<String> revealed,
+  ) {
     // Split sentence on word boundaries while keeping punctuation/whitespace
     // inline. We render either the original token, or a tappable blank with
     // the same visual width as the word.
@@ -768,39 +799,38 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
       final norm = piece.toLowerCase();
       final isWord = RegExp(r'^[A-Za-z]').hasMatch(piece);
       if (isWord && picks.contains(norm) && !revealed.contains(norm)) {
-        spans.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: GestureDetector(
-            onTap: () => setState(() => revealed.add(norm)),
-            child: Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
-              margin: const EdgeInsets.symmetric(horizontal: 1),
-              decoration: BoxDecoration(
-                color: BrutalistTheme.primary.withValues(alpha: 0.15),
-                borderRadius: BorderRadius.circular(4),
-                border: Border.all(
+        spans.add(
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: GestureDetector(
+              onTap: () => setState(() => revealed.add(norm)),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                margin: const EdgeInsets.symmetric(horizontal: 1),
+                decoration: BoxDecoration(
+                  color: BrutalistTheme.primary.withValues(alpha: 0.15),
+                  borderRadius: BorderRadius.circular(4),
+                  border: Border.all(
                     color: BrutalistTheme.primary.withValues(alpha: 0.5),
-                    width: 1),
-              ),
-              child: Text(
-                '_' * piece.length,
-                style: const TextStyle(
-                  color: BrutalistTheme.primary,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 1,
+                    width: 1,
+                  ),
+                ),
+                child: Text(
+                  '_' * piece.length,
+                  style: const TextStyle(
+                    color: BrutalistTheme.primary,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1,
+                  ),
                 ),
               ),
             ),
           ),
-        ));
+        );
       } else if (isWord) {
         // Non-blank word — long-press opens the lookup sheet so the user can
         // check meanings while filling in the gaps.
-        spans.add(TextSpan(
-          text: piece,
-          recognizer: _recognizerFor(norm),
-        ));
+        spans.add(TextSpan(text: piece, recognizer: _recognizerFor(norm)));
       } else {
         spans.add(TextSpan(text: piece));
       }
@@ -808,9 +838,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
     return RichText(
       text: TextSpan(
         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: BrutalistTheme.black,
-              height: 1.6,
-            ),
+          color: BrutalistTheme.black,
+          height: 1.6,
+        ),
         children: spans,
       ),
     );
@@ -824,8 +854,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
         Text(
           t.speakingRecordHint,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: BrutalistTheme.black.withValues(alpha: 0.55),
-              ),
+            color: BrutalistTheme.black.withValues(alpha: 0.55),
+          ),
         ),
         const SizedBox(height: 14),
         if (_sttListening || _liveTranscript.isNotEmpty || score != null) ...[
@@ -836,7 +866,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
               color: BrutalistTheme.white,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
-                  color: BrutalistTheme.primary.withValues(alpha: 0.3)),
+                color: BrutalistTheme.primary.withValues(alpha: 0.3),
+              ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -844,9 +875,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                 Row(
                   children: [
                     Icon(
-                      _sttListening
-                          ? Icons.mic_rounded
-                          : Icons.mic_off_rounded,
+                      _sttListening ? Icons.mic_rounded : Icons.mic_off_rounded,
                       size: 16,
                       color: _sttListening
                           ? const Color(0xFFD9534F)
@@ -854,27 +883,23 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                     ),
                     const SizedBox(width: 6),
                     Text(
-                      _sttListening
-                          ? t.speakingListening
-                          : t.speakingYouSaid,
+                      _sttListening ? t.speakingListening : t.speakingYouSaid,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontWeight: FontWeight.w700,
-                            color: context.bMuted,
-                            fontSize: 11,
-                            letterSpacing: 0.4,
-                          ),
+                        fontWeight: FontWeight.w700,
+                        color: context.bMuted,
+                        fontSize: 11,
+                        letterSpacing: 0.4,
+                      ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 6),
                 Text(
-                  _liveTranscript.isEmpty
-                      ? '—'
-                      : _liveTranscript,
+                  _liveTranscript.isEmpty ? '—' : _liveTranscript,
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: BrutalistTheme.black,
-                        height: 1.4,
-                      ),
+                    color: BrutalistTheme.black,
+                    height: 1.4,
+                  ),
                 ),
               ],
             ),
@@ -884,20 +909,20 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
         Text(
           t.speakingTargetAnswer,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                fontWeight: FontWeight.w700,
-                color: context.bMuted,
-                fontSize: 11,
-                letterSpacing: 0.4,
-              ),
+            fontWeight: FontWeight.w700,
+            color: context.bMuted,
+            fontSize: 11,
+            letterSpacing: 0.4,
+          ),
         ),
         const SizedBox(height: 6),
         if (score == null)
           _highlightableText(
             item.answer,
             Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: BrutalistTheme.black,
-                  height: 1.5,
-                ),
+              color: BrutalistTheme.black,
+              height: 1.5,
+            ),
           )
         else
           _buildScoredAnswer(score),
@@ -913,25 +938,27 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
     final spans = <InlineSpan>[];
     for (var i = 0; i < score.tokens.length; i++) {
       final tok = score.tokens[i];
-      spans.add(TextSpan(
-        text: tok.display,
-        style: TextStyle(
-          color: tok.matched
-              ? BrutalistTheme.primary
-              : const Color(0xFFD9534F),
-          fontWeight: tok.matched ? FontWeight.w700 : FontWeight.w500,
-          decoration: tok.matched ? null : TextDecoration.underline,
+      spans.add(
+        TextSpan(
+          text: tok.display,
+          style: TextStyle(
+            color: tok.matched
+                ? BrutalistTheme.primary
+                : const Color(0xFFD9534F),
+            fontWeight: tok.matched ? FontWeight.w700 : FontWeight.w500,
+            decoration: tok.matched ? null : TextDecoration.underline,
+          ),
+          recognizer: _recognizerFor(tok.display.toLowerCase()),
         ),
-        recognizer: _recognizerFor(tok.display.toLowerCase()),
-      ));
+      );
       if (i < score.tokens.length - 1) spans.add(const TextSpan(text: ' '));
     }
     return RichText(
       text: TextSpan(
         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: BrutalistTheme.black,
-              height: 1.5,
-            ),
+          color: BrutalistTheme.black,
+          height: 1.5,
+        ),
         children: spans,
       ),
     );
@@ -942,8 +969,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
     final (color, label) = pct >= 80
         ? (BrutalistTheme.primary, t.speakingScoreGreat)
         : pct >= 50
-            ? (const Color(0xFFE5874E), t.speakingScoreOk)
-            : (const Color(0xFFD9534F), t.speakingScoreTryAgain);
+        ? (const Color(0xFFE5874E), t.speakingScoreOk)
+        : (const Color(0xFFD9534F), t.speakingScoreTryAgain);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       decoration: BoxDecoration(
@@ -969,9 +996,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                 Text(
                   t.speakingScoreDetail(score.matched, score.total),
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: color.withValues(alpha: 0.8),
-                        fontSize: 11,
-                      ),
+                    color: color.withValues(alpha: 0.8),
+                    fontSize: 11,
+                  ),
                 ),
               ],
             ),
@@ -1003,10 +1030,10 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
           Text(
             t.speakingSpeed,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  fontWeight: FontWeight.w700,
-                  color: context.bMuted,
-                  fontSize: 11,
-                ),
+              fontWeight: FontWeight.w700,
+              color: context.bMuted,
+              fontSize: 11,
+            ),
           ),
           Expanded(
             child: Slider(
@@ -1043,12 +1070,10 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
         children: [
           Expanded(
             child: Text(
-              _sttListening
-                  ? t.speakingTapToStop
-                  : t.speakingTapToRecord,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: context.bMuted,
-                  ),
+              _sttListening ? t.speakingTapToStop : t.speakingTapToRecord,
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: context.bMuted),
             ),
           ),
           GestureDetector(
@@ -1064,10 +1089,11 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: (_sttListening
-                            ? const Color(0xFFD9534F)
-                            : BrutalistTheme.primary)
-                        .withValues(alpha: 0.4),
+                    color:
+                        (_sttListening
+                                ? const Color(0xFFD9534F)
+                                : BrutalistTheme.primary)
+                            .withValues(alpha: 0.4),
                     blurRadius: 12,
                     spreadRadius: _sttListening ? 4 : 1,
                   ),

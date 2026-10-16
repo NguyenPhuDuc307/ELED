@@ -59,7 +59,7 @@ ELED helps you build English vocabulary through **passive exposure** — notific
 - Check for new releases from Settings → App Version
 - Direct APK download link when an update is available
 
-### ☁️ Google Account Sync
+### Google Account Sync
 - Sign in with Google to sync known words, collections, and notification history across devices (Firestore)
 
 ---
@@ -146,3 +146,15 @@ python tools/scrape_audio_links.py
 ## License
 
 MIT © [Nguyen Phu Duc](https://github.com/NguyenPhuDuc307)
+
+## Self-hosted web application
+
+The production web app at **https://eled.vnlab.id.vn** now uses **React + TypeScript
++ Vite + Tailwind**, with a **NestJS + PostgreSQL** backend and **Firebase Auth** for
+Google sign-in. Vocabulary, progress, collections, settings and speaking sets are
+stored in PostgreSQL. Browser storage supports guest use and queued offline edits.
+
+Web source is in `apps/web/`, API source is in `services/api/`, and hosting,
+migration and rollback instructions are in [`deploy/README.md`](deploy/README.md).
+The Flutter mobile application remains a separate build; its existing Firestore
+sync needs a separate mobile update to use the new PostgreSQL API.

@@ -2,8 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:eled/main.dart';
 
 void main() {
-  testWidgets('App smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const EledApp());
+  testWidgets('First launch renders onboarding before starting a lesson', (tester) async {
+    await tester.pumpWidget(const EledApp(needsOnboarding: true));
+    expect(find.text('ELED'), findsOneWidget);
+    expect(tester.takeException(), isNull);
   });
 }

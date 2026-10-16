@@ -56,3 +56,14 @@ firebase-debug.*.log
 # (the canonical one lives at android/app/google-services.json)
 /google-services *.json
 /google-services.json
+
+# Generated web vocabulary bundle
+/web/vocabulary.json
+
+# React web and NestJS API build/dependency artifacts
+**/node_modules/
+apps/web/dist/
+apps/web/public/vocabulary.json
+services/api/dist/
+**/.env
+services/api/vocabulary.json

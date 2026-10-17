@@ -1,0 +1,1692 @@
+{
+  "a": {
+    "determiner": [
+      "một; một cái, một người (mạo từ bất định)"
+    ]
+  },
+  "about": {
+    "adverb": [
+      "khoảng, chừng",
+      "xung quanh"
+    ],
+    "preposition": [
+      "về, liên quan đến",
+      "khoảng, vào khoảng"
+    ]
+  },
+  "above": {
+    "adverb": [
+      "ở phía trên, bên trên"
+    ],
+    "preposition": [
+      "ở trên, cao hơn",
+      "vượt quá"
+    ]
+  },
+  "fine": {
+    "adjective": [
+      "ổn, khỏe; tốt, đẹp",
+      "mịn, nhỏ; tinh tế"
+    ],
+    "noun": [
+      "tiền phạt"
+    ],
+    "verb": [
+      "phạt tiền"
+    ]
+  },
+  "bank": {
+    "noun": [
+      "ngân hàng",
+      "bờ sông, bờ hồ"
+    ],
+    "verb": [
+      "gửi tiền vào ngân hàng",
+      "nghiêng khi vào cua (máy bay, xe)"
+    ]
+  },
+  "present": {
+    "adjective": [
+      "có mặt, hiện diện",
+      "hiện tại, hiện nay"
+    ],
+    "noun": [
+      "món quà",
+      "hiện tại"
+    ],
+    "verb": [
+      "trình bày, đưa ra",
+      "trao, tặng; giới thiệu"
+    ]
+  },
+  "light": {
+    "noun": [
+      "ánh sáng",
+      "đèn, nguồn sáng"
+    ],
+    "adjective": [
+      "nhẹ; ít",
+      "sáng, nhạt màu"
+    ],
+    "verb": [
+      "thắp, châm lửa",
+      "chiếu sáng"
+    ]
+  },
+  "right": {
+    "adjective": [
+      "đúng, chính xác",
+      "bên phải"
+    ],
+    "adverb": [
+      "đúng, chính xác",
+      "sang phải; ngay, hoàn toàn"
+    ],
+    "noun": [
+      "quyền, quyền lợi",
+      "phía bên phải"
+    ],
+    "exclamation": [
+      "được rồi, đúng vậy"
+    ]
+  },
+  "mean": {
+    "verb": [
+      "có nghĩa là",
+      "có ý định, định làm"
+    ],
+    "adjective": [
+      "keo kiệt; xấu tính",
+      "trung bình"
+    ],
+    "noun": [
+      "giá trị trung bình"
+    ]
+  },
+  "match": {
+    "noun": [
+      "trận đấu, cuộc thi đấu",
+      "que diêm; sự tương xứng"
+    ],
+    "verb": [
+      "ghép, nối cho phù hợp",
+      "hợp, tương xứng; sánh được"
+    ]
+  },
+  "can": {
+    "modal verb": [
+      "có thể, có khả năng",
+      "được phép"
+    ],
+    "verb": [
+      "đóng hộp (thực phẩm)"
+    ],
+    "noun": [
+      "lon, hộp kim loại"
+    ]
+  },
+  "like": {
+    "verb": [
+      "thích, ưa thích"
+    ],
+    "preposition": [
+      "giống, như"
+    ],
+    "conjunction": [
+      "như, giống như"
+    ],
+    "noun": [
+      "sở thích; điều ưa thích"
+    ]
+  },
+  "lie": {
+    "verb": [
+      "nằm, ở vị trí",
+      "nói dối"
+    ],
+    "noun": [
+      "lời nói dối"
+    ]
+  },
+  "lead": {
+    "verb": [
+      "dẫn đường, lãnh đạo",
+      "dẫn đến"
+    ],
+    "noun": [
+      "vị trí dẫn đầu; đầu mối",
+      "chì (kim loại)"
+    ]
+  },
+  "close": {
+    "verb": [
+      "đóng, khép",
+      "kết thúc"
+    ],
+    "adjective": [
+      "gần, sát",
+      "thân thiết"
+    ],
+    "adverb": [
+      "ở gần, sát"
+    ],
+    "noun": [
+      "sự kết thúc"
+    ]
+  },
+  "live": {
+    "verb": [
+      "sống, sinh sống"
+    ],
+    "adjective": [
+      "đang sống",
+      "trực tiếp (phát sóng, biểu diễn)"
+    ],
+    "adverb": [
+      "trực tiếp"
+    ]
+  },
+  "read": {
+    "verb": [
+      "đọc",
+      "hiểu, diễn giải"
+    ],
+    "noun": [
+      "sự đọc; cuốn sách đáng đọc"
+    ]
+  },
+  "record": {
+    "noun": [
+      "bản ghi, hồ sơ",
+      "kỷ lục"
+    ],
+    "verb": [
+      "ghi lại, ghi âm, ghi hình"
+    ]
+  },
+  "bear": {
+    "noun": [
+      "con gấu"
+    ],
+    "verb": [
+      "chịu đựng",
+      "mang, gánh; sinh con"
+    ]
+  },
+  "bark": {
+    "noun": [
+      "tiếng sủa",
+      "vỏ cây"
+    ],
+    "verb": [
+      "sủa",
+      "quát, nói cộc lốc"
+    ]
+  },
+  "bat": {
+    "noun": [
+      "con dơi",
+      "gậy đánh bóng"
+    ],
+    "verb": [
+      "đánh bóng bằng gậy"
+    ]
+  },
+  "duck": {
+    "noun": [
+      "con vịt"
+    ],
+    "verb": [
+      "cúi, né tránh",
+      "lẩn tránh"
+    ]
+  },
+  "watch": {
+    "noun": [
+      "đồng hồ đeo tay",
+      "sự canh gác"
+    ],
+    "verb": [
+      "xem, theo dõi",
+      "trông chừng, canh gác"
+    ]
+  },
+  "work": {
+    "noun": [
+      "công việc, việc làm",
+      "tác phẩm"
+    ],
+    "verb": [
+      "làm việc",
+      "hoạt động, có tác dụng"
+    ]
+  },
+  "play": {
+    "verb": [
+      "chơi, tham gia trò chơi",
+      "chơi nhạc; đóng vai"
+    ],
+    "noun": [
+      "vở kịch",
+      "sự chơi, cuộc chơi"
+    ]
+  },
+  "run": {
+    "verb": [
+      "chạy",
+      "vận hành, điều hành"
+    ],
+    "noun": [
+      "lần chạy, cuộc chạy",
+      "chuỗi, đợt liên tiếp"
+    ]
+  },
+  "set": {
+    "verb": [
+      "đặt, để; thiết lập",
+      "ấn định"
+    ],
+    "noun": [
+      "bộ, tập hợp",
+      "hiệp đấu"
+    ],
+    "adjective": [
+      "đã định, cố định",
+      "sẵn sàng"
+    ]
+  },
+  "charge": {
+    "noun": [
+      "phí, tiền phải trả",
+      "lời buộc tội; điện tích"
+    ],
+    "verb": [
+      "tính phí",
+      "buộc tội; sạc điện"
+    ]
+  },
+  "patient": {
+    "noun": [
+      "bệnh nhân"
+    ],
+    "adjective": [
+      "kiên nhẫn, nhẫn nại"
+    ]
+  },
+  "object": {
+    "noun": [
+      "đồ vật, vật thể",
+      "mục đích; tân ngữ"
+    ],
+    "verb": [
+      "phản đối"
+    ]
+  },
+  "content": {
+    "noun": [
+      "nội dung",
+      "hàm lượng"
+    ],
+    "adjective": [
+      "hài lòng, bằng lòng"
+    ],
+    "verb": [
+      "làm hài lòng; bằng lòng với"
+    ]
+  },
+  "contract": {
+    "noun": [
+      "hợp đồng"
+    ],
+    "verb": [
+      "co lại, thu hẹp",
+      "ký hợp đồng; mắc bệnh"
+    ]
+  },
+  "minute": {
+    "noun": [
+      "phút",
+      "biên bản cuộc họp"
+    ],
+    "adjective": [
+      "rất nhỏ, nhỏ bé",
+      "tỉ mỉ, chi tiết"
+    ]
+  },
+  "wind": {
+    "noun": [
+      "gió",
+      "hơi, khí"
+    ],
+    "verb": [
+      "quấn, cuốn",
+      "uốn lượn; lên dây cót"
+    ]
+  },
+  "tear": {
+    "noun": [
+      "giọt nước mắt",
+      "vết rách"
+    ],
+    "verb": [
+      "xé, làm rách",
+      "chạy, lao nhanh"
+    ]
+  },
+  "well": {
+    "adverb": [
+      "tốt, giỏi; một cách tốt đẹp",
+      "rất, khá"
+    ],
+    "adjective": [
+      "khỏe, không bị bệnh"
+    ],
+    "noun": [
+      "giếng"
+    ],
+    "exclamation": [
+      "ừm, nào, vậy thì"
+    ]
+  },
+  "fair": {
+    "adjective": [
+      "công bằng, hợp lý",
+      "khá tốt; sáng màu"
+    ],
+    "noun": [
+      "hội chợ"
+    ],
+    "adverb": [
+      "một cách công bằng"
+    ]
+  },
+  "kind": {
+    "noun": [
+      "loại, kiểu"
+    ],
+    "adjective": [
+      "tốt bụng, tử tế"
+    ]
+  },
+  "just": {
+    "adverb": [
+      "chỉ, đúng",
+      "vừa mới"
+    ],
+    "adjective": [
+      "công bằng, chính đáng"
+    ]
+  },
+  "still": {
+    "adverb": [
+      "vẫn, vẫn còn",
+      "tuy vậy"
+    ],
+    "adjective": [
+      "yên, bất động",
+      "tĩnh lặng"
+    ]
+  },
+  "book": {
+    "noun": [
+      "sách",
+      "sổ ghi chép"
+    ],
+    "verb": [
+      "đặt trước (vé, phòng)",
+      "ghi tên, ghi sổ"
+    ]
+  },
+  "order": {
+    "noun": [
+      "thứ tự, trật tự",
+      "mệnh lệnh; đơn đặt hàng"
+    ],
+    "verb": [
+      "ra lệnh",
+      "đặt mua, gọi món"
+    ]
+  },
+  "change": {
+    "verb": [
+      "thay đổi",
+      "đổi, thay thế"
+    ],
+    "noun": [
+      "sự thay đổi",
+      "tiền lẻ, tiền thừa"
+    ]
+  },
+  "fall": {
+    "verb": [
+      "rơi, ngã",
+      "giảm, hạ xuống"
+    ],
+    "noun": [
+      "sự rơi, cú ngã",
+      "mùa thu (Anh-Mỹ)"
+    ]
+  },
+  "spring": {
+    "noun": [
+      "mùa xuân",
+      "lò xo; suối"
+    ],
+    "verb": [
+      "nhảy bật lên",
+      "xuất hiện, nảy sinh"
+    ]
+  },
+  "scale": {
+    "noun": [
+      "quy mô, tỷ lệ",
+      "cái cân; vảy; thang đo"
+    ],
+    "verb": [
+      "leo, trèo",
+      "điều chỉnh quy mô"
+    ]
+  },
+  "bill": {
+    "noun": [
+      "hóa đơn",
+      "dự luật; tiền giấy; mỏ chim"
+    ],
+    "verb": [
+      "gửi hóa đơn, tính tiền"
+    ]
+  },
+  "date": {
+    "noun": [
+      "ngày, ngày tháng",
+      "cuộc hẹn; quả chà là"
+    ],
+    "verb": [
+      "hẹn hò",
+      "ghi ngày; xác định niên đại"
+    ]
+  },
+  "face": {
+    "noun": [
+      "khuôn mặt",
+      "bề mặt, mặt trước"
+    ],
+    "verb": [
+      "đối mặt, đương đầu",
+      "hướng về"
+    ]
+  },
+  "back": {
+    "noun": [
+      "lưng",
+      "phía sau"
+    ],
+    "adverb": [
+      "trở lại, quay lại",
+      "về phía sau"
+    ],
+    "adjective": [
+      "ở phía sau"
+    ],
+    "verb": [
+      "ủng hộ",
+      "lùi lại"
+    ]
+  },
+  "break": {
+    "verb": [
+      "làm vỡ, làm hỏng",
+      "phá vỡ; ngắt, dừng"
+    ],
+    "noun": [
+      "giờ nghỉ, sự gián đoạn",
+      "vết gãy, chỗ vỡ"
+    ]
+  },
+  "train": {
+    "noun": [
+      "tàu hỏa",
+      "chuỗi, đoàn"
+    ],
+    "verb": [
+      "đào tạo, huấn luyện",
+      "luyện tập"
+    ]
+  },
+  "stand": {
+    "verb": [
+      "đứng",
+      "chịu đựng; đặt ở vị trí"
+    ],
+    "noun": [
+      "quầy, sạp; giá đỡ",
+      "lập trường"
+    ]
+  },
+  "state": {
+    "noun": [
+      "trạng thái, tình trạng",
+      "nhà nước, bang"
+    ],
+    "verb": [
+      "nêu, trình bày, tuyên bố"
+    ],
+    "adjective": [
+      "thuộc nhà nước"
+    ]
+  },
+  "point": {
+    "noun": [
+      "điểm",
+      "ý, luận điểm; đầu nhọn"
+    ],
+    "verb": [
+      "chỉ, trỏ",
+      "hướng về"
+    ]
+  },
+  "interest": {
+    "noun": [
+      "sự quan tâm, hứng thú",
+      "lợi ích; tiền lãi"
+    ],
+    "verb": [
+      "làm quan tâm, gây hứng thú"
+    ]
+  },
+  "matter": {
+    "noun": [
+      "vấn đề, sự việc",
+      "vật chất"
+    ],
+    "verb": [
+      "quan trọng, có ý nghĩa"
+    ]
+  },
+  "issue": {
+    "noun": [
+      "vấn đề",
+      "số báo; sự phát hành"
+    ],
+    "verb": [
+      "phát hành, ban hành",
+      "cấp, phát"
+    ]
+  },
+  "term": {
+    "noun": [
+      "thuật ngữ, từ ngữ",
+      "kỳ, học kỳ; điều khoản"
+    ],
+    "verb": [
+      "gọi là, đặt tên là"
+    ]
+  },
+  "course": {
+    "noun": [
+      "khóa học",
+      "tiến trình; hướng đi; món ăn"
+    ],
+    "verb": [
+      "chảy, chạy nhanh qua"
+    ]
+  },
+  "cell": {
+    "noun": [
+      "tế bào",
+      "phòng giam; ô nhỏ"
+    ]
+  },
+  "letter": {
+    "noun": [
+      "chữ cái",
+      "lá thư"
+    ]
+  },
+  "current": {
+    "adjective": [
+      "hiện tại, hiện hành"
+    ],
+    "noun": [
+      "dòng chảy",
+      "dòng điện"
+    ]
+  },
+  "ground": {
+    "noun": [
+      "mặt đất",
+      "cơ sở, lý do; khu đất"
+    ],
+    "verb": [
+      "đặt trên nền tảng",
+      "cấm bay, giữ dưới đất"
+    ]
+  },
+  "capital": {
+    "noun": [
+      "thủ đô",
+      "vốn; chữ cái viết hoa"
+    ],
+    "adjective": [
+      "chính, chủ yếu",
+      "viết hoa; thuộc vốn"
+    ]
+  },
+  "left": {
+    "adjective": [
+      "bên trái",
+      "còn lại"
+    ],
+    "adverb": [
+      "về phía trái"
+    ],
+    "noun": [
+      "phía bên trái"
+    ]
+  },
+  "second": {
+    "number": [
+      "thứ hai"
+    ],
+    "noun": [
+      "giây",
+      "người, vật thứ hai"
+    ],
+    "verb": [
+      "ủng hộ một đề xuất"
+    ],
+    "adverb": [
+      "thứ hai, ở vị trí thứ hai"
+    ]
+  },
+  "sound": {
+    "noun": [
+      "âm thanh, tiếng động"
+    ],
+    "verb": [
+      "phát ra âm thanh",
+      "nghe có vẻ"
+    ],
+    "adjective": [
+      "lành lặn, vững chắc",
+      "hợp lý, đáng tin"
+    ]
+  },
+  "round": {
+    "adjective": [
+      "tròn"
+    ],
+    "adverb": [
+      "xung quanh, vòng quanh"
+    ],
+    "preposition": [
+      "quanh, xung quanh"
+    ],
+    "noun": [
+      "vòng, lượt",
+      "hiệp đấu"
+    ],
+    "verb": [
+      "làm tròn",
+      "đi vòng qua"
+    ]
+  },
+  "hard": {
+    "adjective": [
+      "cứng, rắn",
+      "khó; vất vả"
+    ],
+    "adverb": [
+      "chăm chỉ, nỗ lực",
+      "mạnh, hết sức"
+    ]
+  },
+  "fast": {
+    "adjective": [
+      "nhanh, mau",
+      "chắc, chặt"
+    ],
+    "adverb": [
+      "nhanh",
+      "chặt, chắc"
+    ],
+    "noun": [
+      "sự nhịn ăn"
+    ],
+    "verb": [
+      "nhịn ăn"
+    ]
+  },
+  "free": {
+    "adjective": [
+      "tự do; rảnh",
+      "miễn phí"
+    ],
+    "adverb": [
+      "miễn phí",
+      "tự do"
+    ],
+    "verb": [
+      "giải phóng, thả tự do"
+    ]
+  },
+  "flat": {
+    "adjective": [
+      "phẳng",
+      "xẹp; nhạt nhẽo"
+    ],
+    "noun": [
+      "căn hộ (Anh-Anh)",
+      "nốt giáng (âm nhạc)"
+    ],
+    "adverb": [
+      "bằng phẳng; hoàn toàn"
+    ]
+  },
+  "plain": {
+    "adjective": [
+      "rõ ràng, dễ hiểu",
+      "đơn giản, không trang trí"
+    ],
+    "noun": [
+      "đồng bằng"
+    ],
+    "adverb": [
+      "rõ ràng, hoàn toàn"
+    ]
+  },
+  "draw": {
+    "verb": [
+      "vẽ",
+      "kéo; thu hút; rút thăm"
+    ],
+    "noun": [
+      "trận hòa",
+      "sự rút thăm"
+    ]
+  },
+  "drive": {
+    "verb": [
+      "lái xe",
+      "thúc đẩy; đưa, chở đi"
+    ],
+    "noun": [
+      "chuyến đi xe",
+      "động lực; ổ đĩa"
+    ]
+  },
+  "leave": {
+    "verb": [
+      "rời đi, bỏ đi",
+      "để lại, bỏ lại"
+    ],
+    "noun": [
+      "sự cho phép",
+      "kỳ nghỉ phép"
+    ]
+  },
+  "hold": {
+    "verb": [
+      "cầm, nắm, giữ",
+      "tổ chức (sự kiện); chứa được"
+    ],
+    "noun": [
+      "sự nắm giữ",
+      "khoang chứa hàng"
+    ]
+  },
+  "keep": {
+    "verb": [
+      "giữ, giữ lại",
+      "tiếp tục; duy trì"
+    ]
+  },
+  "take": {
+    "verb": [
+      "lấy, cầm",
+      "đưa, mang; mất (thời gian)"
+    ],
+    "noun": [
+      "lần quay phim",
+      "cách nhìn, nhận định"
+    ]
+  },
+  "get": {
+    "verb": [
+      "nhận được, có được",
+      "lấy; trở nên; đến nơi"
+    ]
+  },
+  "make": {
+    "verb": [
+      "làm, tạo ra",
+      "khiến, làm cho"
+    ],
+    "noun": [
+      "nhãn hiệu, kiểu sản phẩm"
+    ]
+  },
+  "turn": {
+    "verb": [
+      "quay, xoay; rẽ",
+      "trở nên, biến thành"
+    ],
+    "noun": [
+      "lượt, phiên",
+      "chỗ rẽ; sự thay đổi"
+    ]
+  },
+  "put": {
+    "verb": [
+      "đặt, để",
+      "đưa vào; diễn đạt"
+    ]
+  },
+  "cut": {
+    "verb": [
+      "cắt, chặt",
+      "giảm, cắt bớt"
+    ],
+    "noun": [
+      "vết cắt",
+      "sự cắt giảm"
+    ]
+  },
+  "call": {
+    "verb": [
+      "gọi, gọi điện",
+      "gọi tên, coi là"
+    ],
+    "noun": [
+      "cuộc gọi",
+      "tiếng kêu; lời kêu gọi"
+    ]
+  },
+  "case": {
+    "noun": [
+      "trường hợp, tình huống",
+      "vụ việc, vụ án; hộp, vỏ"
+    ]
+  },
+  "deal": {
+    "noun": [
+      "thỏa thuận, giao dịch",
+      "lượng, phần"
+    ],
+    "verb": [
+      "chia bài",
+      "giao dịch, buôn bán"
+    ]
+  },
+  "general": {
+    "adjective": [
+      "chung, tổng quát",
+      "phổ biến"
+    ],
+    "noun": [
+      "tướng, vị tướng"
+    ]
+  },
+  "part": {
+    "noun": [
+      "phần, bộ phận",
+      "vai diễn"
+    ],
+    "verb": [
+      "chia tay, tách ra"
+    ]
+  },
+  "rest": {
+    "noun": [
+      "sự nghỉ ngơi",
+      "phần còn lại"
+    ],
+    "verb": [
+      "nghỉ ngơi",
+      "tựa, đặt lên"
+    ]
+  },
+  "tip": {
+    "noun": [
+      "mẹo, lời khuyên",
+      "đầu mút; tiền boa"
+    ],
+    "verb": [
+      "boa tiền",
+      "nghiêng, làm nghiêng"
+    ]
+  },
+  "waste": {
+    "noun": [
+      "rác thải, chất thải",
+      "sự lãng phí"
+    ],
+    "verb": [
+      "lãng phí, phí phạm"
+    ],
+    "adjective": [
+      "bỏ đi, phế thải"
+    ]
+  },
+  "all": {
+    "determiner": [
+      "tất cả, toàn bộ"
+    ],
+    "pronoun": [
+      "tất cả, mọi người"
+    ],
+    "adverb": [
+      "hoàn toàn"
+    ]
+  },
+  "any": {
+    "determiner": [
+      "bất kỳ; một chút, một vài (trong câu hỏi/phủ định)"
+    ],
+    "pronoun": [
+      "bất kỳ người nào, vật nào"
+    ]
+  },
+  "anything": {
+    "pronoun": [
+      "bất cứ điều gì, bất cứ thứ gì"
+    ]
+  },
+  "as": {
+    "preposition": [
+      "như, với tư cách là"
+    ],
+    "conjunction": [
+      "khi, trong lúc; bởi vì",
+      "như, theo cách"
+    ],
+    "adverb": [
+      "bằng, như (trong so sánh)"
+    ]
+  },
+  "at": {
+    "preposition": [
+      "ở, tại (địa điểm)",
+      "vào lúc (thời gian)"
+    ]
+  },
+  "august": {
+    "noun": [
+      "tháng tám"
+    ]
+  },
+  "baby": {
+    "noun": [
+      "em bé, trẻ sơ sinh"
+    ]
+  },
+  "best": {
+    "adjective": [
+      "tốt nhất, giỏi nhất"
+    ],
+    "adverb": [
+      "tốt nhất"
+    ],
+    "noun": [
+      "điều tốt nhất, người giỏi nhất"
+    ]
+  },
+  "blonde": {
+    "adjective": [
+      "có tóc vàng"
+    ],
+    "noun": [
+      "người có tóc vàng"
+    ]
+  },
+  "born": {
+    "verb": [
+      "được sinh ra (phân từ quá khứ của bear)"
+    ],
+    "adjective": [
+      "bẩm sinh"
+    ]
+  },
+  "both": {
+    "determiner": [
+      "cả hai"
+    ],
+    "pronoun": [
+      "cả hai"
+    ],
+    "adverb": [
+      "cả (trong cấu trúc both ... and)"
+    ]
+  },
+  "bye": {
+    "exclamation": [
+      "tạm biệt"
+    ]
+  },
+  "cafe": {
+    "noun": [
+      "quán cà phê"
+    ]
+  },
+  "cannot": {
+    "modal verb": [
+      "không thể; không được phép"
+    ]
+  },
+  "cd": {
+    "noun": [
+      "đĩa CD, đĩa quang"
+    ]
+  },
+  "dvd": {
+    "noun": [
+      "đĩa DVD"
+    ]
+  },
+  "each": {
+    "determiner": [
+      "mỗi, từng"
+    ],
+    "pronoun": [
+      "mỗi người, mỗi vật"
+    ],
+    "adverb": [
+      "mỗi người, mỗi cái"
+    ]
+  },
+  "eat": {
+    "verb": [
+      "ăn"
+    ]
+  },
+  "email": {
+    "noun": [
+      "thư điện tử, email"
+    ],
+    "verb": [
+      "gửi thư điện tử, gửi email"
+    ]
+  },
+  "enough": {
+    "determiner": [
+      "đủ"
+    ],
+    "pronoun": [
+      "đủ, số lượng đủ"
+    ],
+    "adverb": [
+      "đủ mức, đủ để"
+    ]
+  },
+  "every": {
+    "determiner": [
+      "mọi, mỗi, từng"
+    ]
+  },
+  "everyone": {
+    "pronoun": [
+      "mọi người"
+    ]
+  },
+  "everybody": {
+    "pronoun": [
+      "mọi người"
+    ]
+  },
+  "family": {
+    "noun": [
+      "gia đình"
+    ],
+    "adjective": [
+      "thuộc gia đình; dành cho gia đình"
+    ]
+  },
+  "few": {
+    "determiner": [
+      "ít, một vài"
+    ],
+    "pronoun": [
+      "ít người, ít thứ"
+    ]
+  },
+  "first": {
+    "determiner": [
+      "đầu tiên, thứ nhất"
+    ],
+    "number": [
+      "thứ nhất"
+    ],
+    "adverb": [
+      "trước tiên, đầu tiên"
+    ],
+    "noun": [
+      "người hoặc vật đầu tiên"
+    ]
+  },
+  "grandparent": {
+    "noun": [
+      "ông hoặc bà"
+    ]
+  },
+  "half": {
+    "determiner": [
+      "một nửa"
+    ],
+    "pronoun": [
+      "một nửa"
+    ],
+    "noun": [
+      "một nửa; hiệp đấu"
+    ],
+    "adverb": [
+      "một nửa, nửa chừng"
+    ]
+  },
+  "her": {
+    "determiner": [
+      "của cô ấy, của bà ấy"
+    ],
+    "pronoun": [
+      "cô ấy, bà ấy (dạng tân ngữ)"
+    ]
+  },
+  "him": {
+    "pronoun": [
+      "anh ấy, ông ấy (dạng tân ngữ)"
+    ]
+  },
+  "his": {
+    "determiner": [
+      "của anh ấy, của ông ấy"
+    ],
+    "pronoun": [
+      "của anh ấy, của ông ấy"
+    ]
+  },
+  "into": {
+    "preposition": [
+      "vào, vào trong",
+      "thành (chuyển đổi)"
+    ]
+  },
+  "its": {
+    "determiner": [
+      "của nó"
+    ]
+  },
+  "key": {
+    "noun": [
+      "chìa khóa",
+      "phím, nút; lời giải"
+    ],
+    "adjective": [
+      "then chốt, quan trọng"
+    ],
+    "verb": [
+      "nhập bằng bàn phím"
+    ]
+  },
+  "late": {
+    "adjective": [
+      "muộn, trễ",
+      "cuối (một khoảng thời gian)"
+    ],
+    "adverb": [
+      "muộn, trễ"
+    ]
+  },
+  "lot": {
+    "determiner": [
+      "nhiều (a lot of)"
+    ],
+    "pronoun": [
+      "nhiều người, nhiều thứ"
+    ],
+    "noun": [
+      "lô, phần; số lượng lớn"
+    ]
+  },
+  "me": {
+    "pronoun": [
+      "tôi, mình (dạng tân ngữ)"
+    ]
+  },
+  "my": {
+    "determiner": [
+      "của tôi, của mình"
+    ]
+  },
+  "no": {
+    "determiner": [
+      "không có"
+    ],
+    "exclamation": [
+      "không, không phải"
+    ],
+    "adverb": [
+      "không"
+    ]
+  },
+  "nobody": {
+    "pronoun": [
+      "không ai"
+    ]
+  },
+  "nothing": {
+    "pronoun": [
+      "không có gì"
+    ]
+  },
+  "our": {
+    "determiner": [
+      "của chúng tôi, của chúng ta"
+    ]
+  },
+  "ours": {
+    "pronoun": [
+      "của chúng tôi, của chúng ta"
+    ]
+  },
+  "some": {
+    "determiner": [
+      "một ít, một vài",
+      "một số"
+    ],
+    "pronoun": [
+      "một số người, một số thứ"
+    ],
+    "adverb": [
+      "khoảng, chừng"
+    ]
+  },
+  "somebody": {
+    "pronoun": [
+      "ai đó, một người nào đó"
+    ]
+  },
+  "someone": {
+    "pronoun": [
+      "ai đó, một người nào đó"
+    ]
+  },
+  "something": {
+    "pronoun": [
+      "điều gì đó, thứ gì đó"
+    ]
+  },
+  "their": {
+    "determiner": [
+      "của họ, của chúng"
+    ]
+  },
+  "theirs": {
+    "pronoun": [
+      "của họ, của chúng"
+    ]
+  },
+  "them": {
+    "pronoun": [
+      "họ, chúng (dạng tân ngữ)"
+    ]
+  },
+  "which": {
+    "determiner": [
+      "nào, cái nào"
+    ],
+    "pronoun": [
+      "cái nào; mà (đại từ quan hệ)"
+    ]
+  },
+  "whose": {
+    "determiner": [
+      "của ai"
+    ],
+    "pronoun": [
+      "của ai; mà ... của người đó"
+    ]
+  },
+  "your": {
+    "determiner": [
+      "của bạn, của các bạn"
+    ]
+  },
+  "yours": {
+    "pronoun": [
+      "của bạn, của các bạn"
+    ]
+  },
+  "bent": {
+    "adjective": [
+      "cong, bị uốn cong",
+      "quyết tâm (bent on)"
+    ],
+    "noun": [
+      "thiên hướng, sở trường"
+    ]
+  },
+  "cool": {
+    "adjective": [
+      "mát, mát mẻ",
+      "bình tĩnh; hay, tuyệt"
+    ],
+    "verb": [
+      "làm nguội, nguội đi"
+    ],
+    "noun": [
+      "sự mát mẻ, sự bình tĩnh"
+    ]
+  },
+  "one": {
+    "number": [
+      "một"
+    ]
+  },
+  "two": {
+    "number": [
+      "hai"
+    ]
+  },
+  "three": {
+    "number": [
+      "ba"
+    ]
+  },
+  "four": {
+    "number": [
+      "bốn"
+    ]
+  },
+  "five": {
+    "number": [
+      "năm"
+    ]
+  },
+  "six": {
+    "number": [
+      "sáu"
+    ]
+  },
+  "seven": {
+    "number": [
+      "bảy"
+    ]
+  },
+  "eight": {
+    "number": [
+      "tám"
+    ]
+  },
+  "nine": {
+    "number": [
+      "chín"
+    ]
+  },
+  "ten": {
+    "number": [
+      "mười"
+    ]
+  },
+  "eleven": {
+    "number": [
+      "mười một"
+    ]
+  },
+  "twelve": {
+    "number": [
+      "mười hai"
+    ]
+  },
+  "thirteen": {
+    "number": [
+      "mười ba"
+    ]
+  },
+  "fourteen": {
+    "number": [
+      "mười bốn"
+    ]
+  },
+  "fifteen": {
+    "number": [
+      "mười lăm"
+    ]
+  },
+  "sixteen": {
+    "number": [
+      "mười sáu"
+    ]
+  },
+  "seventeen": {
+    "number": [
+      "mười bảy"
+    ]
+  },
+  "eighteen": {
+    "number": [
+      "mười tám"
+    ]
+  },
+  "nineteen": {
+    "number": [
+      "mười chín"
+    ]
+  },
+  "twenty": {
+    "number": [
+      "hai mươi"
+    ]
+  },
+  "thirty": {
+    "number": [
+      "ba mươi"
+    ]
+  },
+  "forty": {
+    "number": [
+      "bốn mươi"
+    ]
+  },
+  "fifty": {
+    "number": [
+      "năm mươi"
+    ]
+  },
+  "sixty": {
+    "number": [
+      "sáu mươi"
+    ]
+  },
+  "seventy": {
+    "number": [
+      "bảy mươi"
+    ]
+  },
+  "eighty": {
+    "number": [
+      "tám mươi"
+    ]
+  },
+  "ninety": {
+    "number": [
+      "chín mươi"
+    ]
+  },
+  "hundred": {
+    "number": [
+      "một trăm"
+    ]
+  },
+  "thousand": {
+    "number": [
+      "một nghìn"
+    ]
+  },
+  "million": {
+    "number": [
+      "một triệu"
+    ]
+  },
+  "billion": {
+    "number": [
+      "một tỷ"
+    ]
+  },
+  "third": {
+    "number": [
+      "thứ ba"
+    ]
+  },
+  "fourth": {
+    "number": [
+      "thứ tư"
+    ]
+  },
+  "fifth": {
+    "number": [
+      "thứ năm"
+    ]
+  },
+  "close1": {
+    "verb": [
+      "đóng, khép",
+      "kết thúc"
+    ],
+    "noun": [
+      "sự kết thúc"
+    ]
+  },
+  "last1": {
+    "determiner": [
+      "cuối cùng, sau cùng",
+      "vừa qua, trước đó"
+    ]
+  },
+  "live1": {
+    "verb": [
+      "sống, sinh sống"
+    ]
+  },
+  "bid1": {
+    "noun": [
+      "giá chào, giá đấu thầu",
+      "nỗ lực nhằm đạt được điều gì"
+    ],
+    "verb": [
+      "trả giá, đấu giá",
+      "đấu thầu"
+    ]
+  },
+  "lower1": {
+    "verb": [
+      "hạ xuống, làm thấp xuống",
+      "giảm bớt"
+    ]
+  },
+  "pace1": {
+    "noun": [
+      "nhịp độ, tốc độ",
+      "bước chân"
+    ],
+    "verb": [
+      "đi đi lại lại",
+      "điều chỉnh nhịp độ"
+    ]
+  },
+  "pension1": {
+    "noun": [
+      "lương hưu, tiền hưu trí"
+    ]
+  },
+  "plus1": {
+    "adjective": [
+      "dương (số); trên mức không"
+    ],
+    "noun": [
+      "dấu cộng; điểm lợi"
+    ],
+    "conjunction": [
+      "cộng thêm; và cả"
+    ]
+  },
+  "process1": {
+    "verb": [
+      "xử lý",
+      "chế biến"
+    ]
+  },
+  "tear1": {
+    "noun": [
+      "vết rách"
+    ],
+    "verb": [
+      "xé, làm rách"
+    ]
+  },
+  "wind2": {
+    "verb": [
+      "quấn, cuốn",
+      "uốn lượn; lên dây cót"
+    ]
+  },
+  "wound1": {
+    "noun": [
+      "vết thương"
+    ],
+    "verb": [
+      "làm bị thương",
+      "làm tổn thương"
+    ]
+  },
+  "bass1": {
+    "noun": [
+      "âm trầm, giọng trầm",
+      "nhạc cụ âm trầm"
+    ]
+  },
+  "bow1": {
+    "noun": [
+      "cái cung",
+      "nơ; vĩ kéo đàn"
+    ],
+    "verb": [
+      "kéo vĩ (đàn)"
+    ]
+  },
+  "content2": {
+    "adjective": [
+      "hài lòng, bằng lòng"
+    ]
+  },
+  "contrary1": {
+    "adjective": [
+      "trái ngược, đối lập"
+    ],
+    "noun": [
+      "điều trái ngược"
+    ]
+  },
+  "grave1": {
+    "adjective": [
+      "nghiêm trọng; nghiêm nghị"
+    ],
+    "noun": [
+      "ngôi mộ"
+    ]
+  },
+  "minute2": {
+    "adjective": [
+      "rất nhỏ, nhỏ bé",
+      "tỉ mỉ, chi tiết"
+    ]
+  },
+  "recount1": {
+    "verb": [
+      "kể lại, thuật lại"
+    ]
+  },
+  "sake1": {
+    "noun": [
+      "lợi ích, mục đích (for the sake of: vì lợi ích của)"
+    ]
+  }
+}

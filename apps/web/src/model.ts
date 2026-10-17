@@ -7,6 +7,7 @@ export interface Word {
   url: string;
   levels: string[];
   topics: string[];
+  senses?: { pos: string; meanings: string[] }[];
 }
 export interface WordState {
   w: string;
@@ -93,6 +94,19 @@ export function rate(
 }
 export function localDate(date = new Date()) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}
+export function reviewOperations(profile: Profile, word: string, rating: Rating, now = Date.now()): Operation[] {
+  const key = word.toLowerCase();
+  const state = rate(profile.srs[key] ?? fresh(key), rating, now);
+  return [
+    { section: "srs", key, value: rating === "easy" ? { ...state, s: "mastered", i: 365, d: now + 365 * 86400000 } : state },
+    ...(rating === "easy" ? [{ section: "known" as const, key, value: true }] : []),
+    { section: "activity", key: localDate(new Date(now)), value: true },
+  ];
+}
+// Ease starts at 2.5 and only Easy can increase it. Recover provable past Easy choices.
+export function legacyEasyOperations(profile: Profile): Operation[] {
+  return Object.entries(profile.srs).filter(([key, s]) => s.e > 2.5 && !profile.known[key]).map(([key]) => ({ section: "known", key, value: true }));
 }
 export function streak(activity: Profile["activity"]) {
   let n = 0;

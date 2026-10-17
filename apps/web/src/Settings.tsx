@@ -17,10 +17,12 @@ import {
   Info,
   ChevronRight,
   ExternalLink,
+  Bell,
 } from "lucide-react";
+import { BrowserNotificationSettings } from "./NotificationSettings";
 import { change, downloadBackup, importBackup } from "./storage";
 import * as api from "./api";
-import { Button, Badge, useProfile, useText, go } from "./ui";
+import { Button, Badge, Choice, useProfile, useText, go } from "./ui";
 export function Settings({
   categories,
   section = "",
@@ -64,6 +66,7 @@ export function Settings({
   const topics: string[] = p.settings.topics ?? [];
   if (!section) {
     const items = [
+      { key: "notifications", icon: Bell, title: t("Thông báo", "Notifications"), subtitle: t("Nhắc học qua trình duyệt", "Browser vocabulary reminders") },
       {
         key: "appearance",
         icon: Palette,
@@ -140,6 +143,7 @@ export function Settings({
       </div>
     );
   }
+  if (section === "notifications") return <BrowserNotificationSettings />;
   if (section === "help")
     return (
       <section className="card help-page">
@@ -320,32 +324,21 @@ export function Settings({
               </label>
             ))}
           </div>
-          <label>
-            {t("Chủ đề", "Topics")}
-            <select
-              multiple
-              className="topics-select"
-              value={topics}
-              onChange={(e) =>
-                change(
-                  "settings",
-                  "topics",
-                  [...e.target.selectedOptions].map((o) => o.value),
-                )
-              }
-            >
-              {categories.map((c) => (
-                <option key={c} value={c}>
-                  {c.replaceAll("_", " ")}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div className="topic-picker-heading">
+            <h3>{t("Chủ đề", "Topics")}</h3>
+            <span aria-live="polite">{topics.length ? t(`${topics.length} đã chọn`, `${topics.length} selected`) : t("Tất cả chủ đề", "All topics")}</span>
+          </div>
+          <p className="field-hint">{t("Không chọn chủ đề nào để học từ tất cả chủ đề.", "Leave empty to learn from all topics.")}</p>
+          <div className="topic-choices">
+            {categories.map((c) => <Choice key={c} label={c.replaceAll("_", " ")}
+              checked={topics.includes(c)} onChange={() => change("settings", "topics", topics.includes(c) ? topics.filter((k) => k !== c) : [...topics, c])} />)}
+          </div>
           <button
+            type="button"
             className="text-btn"
-            onClick={() => change("settings", "topics", [])}
+            onClick={() => change("settings", "topics", [...categories])}
           >
-            {t("Tất cả chủ đề", "All topics")}
+            {t("Chọn tất cả chủ đề", "Select all topics")}
           </button>
         </article>
         <article className="card">
@@ -438,6 +431,7 @@ export function Settings({
           >
             {t("Tải ứng dụng điện thoại", "Get the mobile app")} <ExternalLink size={14} aria-hidden="true" />
           </a>
+          <p><a href="/data-sources.html" target="_blank" rel="noreferrer">{t("Nguồn nghĩa từ vựng & giấy phép", "Vocabulary sources & licenses")} <ExternalLink size={14} aria-hidden="true" /></a></p>
         </article>
       </div>
     </section>

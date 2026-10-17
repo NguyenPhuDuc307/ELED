@@ -1,7 +1,7 @@
 /* Match the Flutter screens in lib/theme and lib/screens. */
 :root {
   font-family: "Be Vietnam Pro", sans-serif;
-  --bg: #faf5f2;
+  --bg: #fff;
   --surface: #fff;
   --ink: #1a1a1a;
   --muted: #a89890;
@@ -73,6 +73,8 @@
 .original-app .topbar .icon-btn {
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
+  aspect-ratio: 1;
   color: var(--ink);
   border-radius: 24px;
 }
@@ -629,6 +631,7 @@
   background: transparent;
   border: none;
   border-radius: 0;
+  overflow: visible;
 }
 .original-app .word-row {
   border: 1px solid var(--line);
@@ -773,7 +776,7 @@
 .pronunciation-row .ipa {
   font-size: 22px;
   color: #1a1a1a;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.4;
   margin: 0;
 }
@@ -975,6 +978,7 @@
   }
   .original-app .topbar .appbar-actions .icon-btn {
     width: 44px;
+    height: 44px;
   }
 }
 .original-app .lesson {
@@ -1183,3 +1187,267 @@
 }
 .original-app .session-card .btn > svg { margin: 0; }
 .original-app .settings-grid article a { display: inline-flex; align-items: center; gap: 6px; }
+
+.original-app .matching-game {
+  max-width: 720px;
+  margin-inline: auto;
+}
+.original-app .matching-game > .muted {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 12px 0 18px;
+}
+.match-progress {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--ink);
+}
+.match-progress progress {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 6px;
+  border: none;
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--line);
+  accent-color: var(--green);
+}
+.match-progress progress::-webkit-progress-bar { background: var(--line); }
+.match-progress progress::-webkit-progress-value { background: var(--green); border-radius: 99px; }
+.match-progress progress::-moz-progress-bar { background: var(--green); border-radius: 99px; }
+.match-labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.original-app .matching-game .match-columns { gap: 12px; }
+.original-app .matching-game .match-columns > div { gap: 10px; }
+.original-app .matching-game .match-columns button {
+  min-height: 76px;
+  height: 100%;
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #b8c5b5;
+  border-radius: 12px;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  box-shadow: 0 2px 4px #00000008;
+}
+.original-app .matching-game .match-columns > div:first-child button:where(:not(.chosen, .matched, .wrong)) {
+  background: color-mix(in srgb, var(--surface) 94%, var(--green));
+}
+.original-app .matching-game .match-columns button.chosen {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  box-shadow: 0 0 0 2px var(--soft);
+}
+.original-app .matching-game .match-columns button.matched {
+  background: var(--soft);
+  border-color: var(--soft);
+  color: #365431;
+  opacity: 0.55;
+  box-shadow: none;
+}
+.original-app .matching-game .match-columns button.wrong {
+  background: #ffe4df;
+  border-color: #ba4431;
+  color: #8a2517;
+}
+
+.original-app .day-card {
+  --day-accent: #3a6b36;
+  background: #edf4ea;
+  border: 1px solid #d6e3d1;
+  border-radius: 18px;
+  aspect-ratio: auto;
+  min-height: 196px;
+  gap: 12px;
+  padding: 16px;
+  box-shadow: 0 3px 10px #28312a08;
+}
+.original-app .day-card:nth-child(4n + 2) {
+  --day-accent: #94622d;
+  background: #fbf2e5;
+  border-color: #eddfc9;
+}
+.original-app .day-card:nth-child(4n + 3) {
+  --day-accent: #426b8a;
+  background: #edf3f8;
+  border-color: #d6e3ed;
+}
+.original-app .day-card:nth-child(4n) {
+  --day-accent: #9a5e52;
+  background: #faf0ed;
+  border-color: #eedbd5;
+}
+.day-card-heading { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.day-card-heading svg { color: var(--day-accent); }
+.original-app .day-card h2 { font-size: 19px; }
+.day-preview { font-size: 12px; line-height: 1.6; color: #4c554b; margin: 0; overflow-wrap: anywhere; }
+.day-progress { margin-top: auto; display: grid; gap: 6px; font-size: 11px; color: #53604f; }
+.day-progress progress { width: 100%; height: 4px; border: none; border-radius: 99px; overflow: hidden; background: #0000000d; accent-color: var(--day-accent); }
+.day-progress progress::-webkit-progress-bar { background: #0000000d; }
+.day-progress progress::-webkit-progress-value { background: var(--day-accent); }
+.day-progress progress::-moz-progress-bar { background: var(--day-accent); }
+.original-app .day-card > .row { color: var(--day-accent); font-weight: 600; font-size: 12px; }
+.original-app .day-card:hover { border-color: var(--day-accent); }
+.dark .original-app .day-card { background: var(--surface); border-color: var(--line); --day-accent: #a4c89b; }
+.dark .day-preview, .dark .day-progress { color: var(--ink); }
+@media (min-width: 768px) { .day-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); } }
+
+/* Shared form controls: selected state, spacing and readable helper text. */
+:root { --muted: #78716c; }
+.original-app .settings-detail .settings-grid { max-width: 860px; margin-inline: auto; }
+.original-app .settings-grid article { border-radius: 18px; box-shadow: 0 3px 14px #00000006; }
+.original-app .settings-grid article > h2 { margin-bottom: 8px; font-size: 18px; }
+.original-app .settings-grid article > p { line-height: 1.65; }
+.original-app .level-options { gap: 8px; margin: 22px 0 28px; }
+.original-app .level-options label {
+  min-height: 44px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  cursor: pointer;
+}
+.original-app .level-options label:has(:checked) { background: var(--soft); border-color: var(--green); color: var(--green); }
+.original-app label > input[type="checkbox"] { margin: 0; flex: 0 0 18px; width: 18px; height: 18px; }
+.topic-picker-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.topic-picker-heading h3 { font-weight: 700; font-size: 15px; }
+.topic-picker-heading > span { color: var(--green); font-size: 12px; }
+.original-app .settings-grid article .field-hint { font-size: 12px; margin: 6px 0 14px; color: var(--muted); }
+.topic-choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.choice-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.original-app .settings-grid article label.choice-control { margin: 0; }
+.choice-control.is-selected { border-color: var(--green); background: color-mix(in srgb, var(--surface) 95%, var(--green)); }
+.choice-control:hover { border-color: var(--green); }
+.choice-control:focus-within { outline: 2px solid var(--green); outline-offset: 2px; }
+.choice-control > input[type="checkbox"] { margin: 0; flex: 0 0 18px; width: 18px; height: 18px; }
+.choice-copy { flex: 1; min-width: 0; display: grid; gap: 3px; }
+.choice-copy strong { font-size: 14px; font-weight: 600; line-height: 1.4; }
+.choice-copy small { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.choice-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--bg); color: var(--muted); flex-shrink: 0; }
+.is-selected .choice-icon { color: var(--green); background: var(--soft); }
+.quiz-choices { display: grid; gap: 8px; }
+.original-app .modal { padding: 24px; border-radius: 20px; max-width: 480px; }
+.original-app .modal > header { margin-bottom: 12px; }
+.original-app .modal > header h2 { font-size: 22px; }
+.original-app .modal > p { line-height: 1.6; margin: 0 0 18px; }
+.original-app .modal .choice-control { min-height: 68px; }
+.level-tabs, .pos-tabs { scrollbar-width: none; }
+.level-tabs::-webkit-scrollbar, .pos-tabs::-webkit-scrollbar { display: none; }
+@media (max-width: 420px) {
+  .topic-choices { grid-template-columns: 1fr; }
+  .original-app .level-options label { padding: 10px; gap: 6px; }
+  .original-app .modal { padding: 20px; }
+}
+
+.notification-settings { max-width: 860px; margin: 0 auto; display: grid; gap: 16px; }
+.notification-settings > .card { padding: 22px; border-radius: 18px; box-shadow: 0 3px 14px #00000006; }
+.notification-title { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px; }
+.notification-symbol { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border-radius: 14px; color: var(--green); background: var(--soft); }
+.notification-settings h2 { font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.notification-settings p { font-size: 13px; line-height: 1.7; }
+.notification-title p { color: var(--muted); margin-top: 5px; }
+.notification-schedule > .muted { margin: 8px 0 20px; }
+.notification-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.notification-fields label { font-weight: 600; }
+.notification-fields label > input, .notification-fields label > select { margin: 6px 0 0; min-height: 44px; font-size: 16px; font-weight: 400; }
+.notification-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.notification-note { color: var(--muted); margin-top: 16px; }
+.notification-next { color: var(--green); margin-top: 12px; font-weight: 600; }
+.notification-settings .field-hint { color: var(--muted); font-size: 12px; margin-top: 12px; }
+.notification-feedback { padding: 14px; border: 1px solid currentColor; border-radius: 12px; }
+@media (max-width: 420px) {
+  .notification-settings > .card { padding: 18px; }
+  .notification-actions .btn { width: 100%; }
+}
+
+.notification-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.notification-fields > label { min-width: 0; }
+.notification-fields input, .notification-fields select {
+  display: block;
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.notification-fields input[type="time"] { appearance: none; -webkit-appearance: none; }
+.notification-fields input[type="time"]::-webkit-date-and-time-value { min-width: 0; text-align: left; }
+.notification-fields select {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 48px;
+  padding-right: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2378716c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: right 12px center;
+}
+.notification-fields input[type="time"] { height: 48px; }
+
+/* iOS focus zoom is triggered by form text smaller than 16px. */
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .original-app :is(input:not([type="checkbox"]):not([type="radio"]), textarea, select) {
+    font-size: 16px;
+  }
+}
+
+.original-app .matching-game .match-columns > div:first-child button {
+  flex-direction: column;
+  gap: 5px;
+}
+.match-pos {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+  opacity: 0.8;
+}
+
+.meaning-groups { display: grid; gap: 14px; margin: 20px 0; }
+.meaning-groups > div { border-left: 3px solid #3a6b3640; padding-left: 12px; }
+.meaning-groups > div > span { color: #365431; font-size: 12px; font-weight: 600; }
+.meaning-groups > div > p { font-size: 18px; line-height: 1.6; color: var(--ink); margin-top: 3px; }
+.original-app .word-card.exercise-recognize .meaning-groups { order: 4; }
+
+.meaning-toggle {
+  order: 4;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+  cursor: pointer;
+}
+.lesson-word-meaning { order: 4; width: 100%; }

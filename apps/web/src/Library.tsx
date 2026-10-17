@@ -157,6 +157,7 @@ export function Library({
     <div className="day-grid">
       {Array.from({ length: Math.ceil(pool.length / 20) }, (_, i) => {
         const list = pool.slice(i * 20, i * 20 + 20);
+        const learned = list.filter((w) => p.known[w.word.toLowerCase()] || p.srs[w.word.toLowerCase()]).length;
         return (
           <button
             key={i}
@@ -165,7 +166,15 @@ export function Library({
               onLearn(list, t("Ngày " + (i + 1), "Day " + (i + 1)))
             }
           >
-            <h2>{t("Ngày " + (i + 1), "Day " + (i + 1))}</h2>
+            <div className="day-card-heading">
+              <h2>{t("Ngày " + (i + 1), "Day " + (i + 1))}</h2>
+              <BookOpen size={17} aria-hidden="true" />
+            </div>
+            <p className="day-preview">{list.slice(0, 3).map((w) => w.word).join(" · ")}</p>
+            <div className="day-progress">
+              <span>{learned ? t(`${learned}/${list.length} đã học`, `${learned}/${list.length} studied`) : t("Chưa bắt đầu", "Not started")}</span>
+              <progress value={learned} max={list.length} aria-label={t("Tiến độ ngày học", "Day progress")} />
+            </div>
             <div className="row between">
               <span>
                 {list.length} {t("từ", "words")}
@@ -499,7 +508,7 @@ export function Library({
               <div className="word-row" key={w.word}>
                 <button className="word-open" onClick={() => onLearn([w])}>
                   <strong>{w.word}</strong>
-                  <span className="muted">{w.ipa}</span>
+                  <span className="muted ipa-text">{w.ipa}</span>
                   <span>{w.translation}</span>
                 </button>
                 <div className="word-tools">

@@ -51,3 +51,19 @@ test("Speaking import and order-sensitive scoring preserve answer text", () => {
     75,
   );
 });
+
+test('Easy marks a word known and removes it from future sessions; other ratings do not', async () => {
+  const { reviewOperations, legacyEasyOperations } = await import('./model');
+  const p = emptyProfile();
+  const ops = reviewOperations(p, 'Hello', 'easy', 100);
+  for (const op of ops) (p[op.section] as any)[op.key] = op.value;
+  assert.equal(p.known.hello, true);
+  assert.equal(p.srs.hello.s, 'mastered');
+  const word: Word = { word: 'Hello', translation: 'xin chào', pos: '', ipa: '', audio: '', url: '', levels: ['A1'], topics: [] };
+  assert.deepEqual(todaySession([word], p), []);
+  assert.ok(!reviewOperations(emptyProfile(), 'hello', 'hard').some(op => op.section === 'known'));
+  const legacy = emptyProfile();
+  legacy.srs.easy = rate(fresh('easy'), 'easy');
+  legacy.srs.good = rate(fresh('good'), 'good');
+  assert.deepEqual(legacyEasyOperations(legacy).map(op => op.key), ['easy']);
+});

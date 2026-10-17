@@ -9,10 +9,10 @@
     "Segoe UI",
     sans-serif;
   color: #28312a;
-  background: #faf6f2;
+  background: #fff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --bg: #faf6f2;
+  --bg: #fff;
   --surface: #fff;
   --ink: #28312a;
   --muted: #8b8d82;
@@ -162,6 +162,7 @@ textarea:focus-visible {
   background: var(--soft);
 }
 .icon-btn {
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -169,8 +170,10 @@ textarea:focus-visible {
   justify-content: center;
   border-radius: 11px;
 }
-.icon-btn:hover {
-  background: var(--soft);
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn:hover {
+    background: var(--soft);
+  }
 }
 .icon-btn.selected {
   color: var(--green);

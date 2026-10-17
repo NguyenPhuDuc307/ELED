@@ -67,3 +67,4 @@ apps/web/public/vocabulary.json
 services/api/dist/
 **/.env
 services/api/vocabulary.json
+apps/web/public/meanings-source.json

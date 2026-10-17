@@ -6,17 +6,21 @@ import {
   CheckCheck,
   FolderPlus,
   ExternalLink,
+  Eye,
+  EyeOff,
   RotateCcw,
   Volume2,
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
+  Layers, ListChecks, Headphones, TextCursorInput, Shuffle, Pencil,
 } from "lucide-react";
-import { change, getProfile } from "./storage";
+import { apply, change, getProfile } from "./storage";
 import {
   fresh,
   localDate,
   rate,
+  reviewOperations,
   shuffle,
   type Rating,
   type Word,
@@ -24,6 +28,7 @@ import {
 import {
   Badge,
   Button,
+  Choice,
   IconButton,
   Modal,
   Sound,
@@ -46,6 +51,15 @@ const labels: Record<Kind, [string, string]> = {
   anagram: ["Sắp xếp chữ", "Anagram"],
   reverse: ["Viết từ tiếng Anh", "Reverse typing"],
 };
+const quizDetails: Record<Kind, [string, string]> = {
+  recognize: ["Xem từ và ghi nhớ nghĩa", "Review words and meanings"],
+  choice: ["Chọn đáp án đúng", "Pick the correct meaning"],
+  listen: ["Nghe phát âm, gõ lại từ", "Listen and type the word"],
+  context: ["Hoàn thành câu ví dụ", "Complete the example sentence"],
+  anagram: ["Ghép các chữ thành từ", "Put letters in the right order"],
+  reverse: ["Nhìn nghĩa, viết lại từ", "Type the word from its meaning"],
+};
+const quizIcons = { recognize: Layers, choice: ListChecks, listen: Headphones, context: TextCursorInput, anagram: Shuffle, reverse: Pencil };
 export function QuizPicker({
   onStart,
   onClose,
@@ -69,11 +83,11 @@ export function QuizPicker({
           "Choose exercise types for this session.",
         )}
       </p>
-      <div className="stack">
-        {Object.entries(labels).map(([key, label]) => (
-          <label className="check-row" key={key}>
-            <input
-              type="checkbox"
+      <div className="quiz-choices">
+        {Object.entries(labels).map(([key, label]) => {
+          const Icon = quizIcons[key as Kind];
+          return (
+          <Choice key={key} label={t(...label)} description={t(...quizDetails[key as Kind])} icon={<Icon size={20} />}
               checked={selected.includes(key as Kind)}
               onChange={() =>
                 setSelected((s) =>
@@ -83,9 +97,7 @@ export function QuizPicker({
                 )
               }
             />
-            {t(...label)}
-          </label>
-        ))}
+        );})}
       </div>
       <Button disabled={!selected.length} onClick={() => onStart(selected)}>
         {t("Bắt đầu Quiz", "Start quiz")}
@@ -119,6 +131,7 @@ export function Lesson({
     onClose();
   };
   useEffect(() => {
+    if (history.state?.eledLesson) history.replaceState({ ...history.state, eledLesson: { ...history.state.eledLesson, index } }, "");
     if (word) {
       localStorage.setItem(
         "eled.session",
@@ -134,8 +147,7 @@ export function Lesson({
   }, [index]);
   function next(rating: Rating) {
     const key = word.word.toLowerCase();
-    change("srs", key, rate(p.srs[key] ?? fresh(key), rating));
-    change("activity", localDate(), true);
+    apply(reviewOperations(getProfile(), key, rating));
     setRated((n) => n + 1);
     setIndex((i) => i + 1);
   }
@@ -252,6 +264,9 @@ function Exercise({
 }) {
   const t = useText();
   const [answer, setAnswer] = useState("");
+  const [meaningVisible, setMeaningVisible] = useState(
+    () => localStorage.getItem("eled.hide-meaning") !== "true",
+  );
   const [checked, setChecked] = useState<boolean | null>(null);
   const [defs, setDefs] = useState<{ definition: string; example: string }[]>(
     [],
@@ -365,7 +380,7 @@ function Exercise({
               <h1>{word.word}</h1>
             </div>
             <div className="pronunciation-row">
-              <p className="ipa">{word.ipa}</p>
+              <p className="ipa ipa-text">{word.ipa}</p>
               <Sound word={word} />
               {word.url && (
                 <a
@@ -412,7 +427,26 @@ function Exercise({
         )}
         {kind === "recognize" && (
           <>
-            <h2 className="meaning">{word.translation}</h2>
+            <button
+              type="button"
+              className="meaning-toggle"
+              aria-expanded={meaningVisible}
+              aria-controls="lesson-word-meaning"
+              onClick={() => {
+                setMeaningVisible(!meaningVisible);
+                localStorage.setItem("eled.hide-meaning", String(meaningVisible));
+              }}
+            >
+              {meaningVisible ? <EyeOff size={18} /> : <Eye size={18} />}
+              {meaningVisible ? t("Ẩn nghĩa", "Hide meaning") : t("Hiện nghĩa", "Show meaning")}
+            </button>
+            <div id="lesson-word-meaning" className="lesson-word-meaning" hidden={!meaningVisible}>
+            {word.senses?.length ? <div className="meaning-groups">
+              {word.senses.map(s => <div key={s.pos}>
+                <span>{s.pos}</span>
+                <p>{s.meanings.slice(0, 4).join("; ")}</p>
+              </div>)}
+            </div> : <h2 className="meaning">{word.translation}</h2>}
             {defs.length > 0 && (
               <div className="definitions">
                 {defs.map((d, i) => (
@@ -423,6 +457,7 @@ function Exercise({
                 ))}
               </div>
             )}
+            </div>
           </>
         )}
         {kind === "choice" && (
@@ -559,13 +594,7 @@ function Exercise({
           <button className="rating easy" onClick={() => onRate("easy")}>
             <Check size={18} />
             {t("Dễ", "Easy")}
-            <small>
-              {
-                rate(p.srs[word.word.toLowerCase()] ?? fresh(word.word), "easy")
-                  .i
-              }{" "}
-              {t("ngày", "days")}
-            </small>
+            <small>{t("Đã biết · không học lại", "Known · stop reviewing")}</small>
           </button>
         </div>
       )}

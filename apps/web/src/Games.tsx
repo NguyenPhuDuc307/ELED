@@ -2,6 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, Timer, Trophy } from "lucide-react";
 import { shuffle, type Word } from "./model";
 import { Button, IconButton, useText } from "./ui";
+function roundWords(words: Word[]) {
+  return shuffle(words.map(w => {
+    const sense = w.senses?.find(s => s.meanings[0] && s.meanings[0].length <= 180);
+    return sense ? { ...w, pos: sense.pos, translation: sense.meanings[0] } : w;
+  }).filter(w => w.translation && w.translation.length <= 180)).slice(0, 5);
+}
 export function MatchGame({
   words,
   speed = false,
@@ -12,18 +18,21 @@ export function MatchGame({
   onClose: () => void;
 }) {
   const t = useText();
-  const [round, setRound] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [matched, setMatched] = useState<string[]>([]);
   const [wrong, setWrong] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [seconds, setSeconds] = useState(30);
   const [finished, setFinished] = useState(false);
-  const pool = useMemo(
-    () => shuffle(words.filter((w) => w.translation)).slice(0, 5),
-    [words, round],
-  );
+  // Profile sync replaces `words`; it must never reshuffle an active round.
+  const [pool, setPool] = useState(() => roundWords(words));
   const meanings = useMemo(() => shuffle(pool), [pool]);
+  function resetRound() {
+    setPool(roundWords(words));
+    setMatched([]);
+    setSelected(null);
+    setWrong(null);
+  }
   useEffect(() => {
     if (!speed || finished) return;
     const id = setInterval(
@@ -49,8 +58,7 @@ export function MatchGame({
       if (next.length === pool.length) {
         if (speed) {
           setTimeout(() => {
-            setRound((n) => n + 1);
-            setMatched([]);
+            resetRound();
           }, 250);
         } else setFinished(true);
       }
@@ -61,7 +69,7 @@ export function MatchGame({
     }
   }
   return (
-    <section className="game">
+    <section className="game matching-game">
       <header className="lesson-header">
         <IconButton label={t("Quay lại", "Back")} onClick={onClose}>
           <ArrowLeft />
@@ -82,8 +90,7 @@ export function MatchGame({
           </p>
           <Button
             onClick={() => {
-              setRound((n) => n + 1);
-              setMatched([]);
+              resetRound();
               setScore(0);
               setSeconds(30);
               setFinished(false);
@@ -103,6 +110,15 @@ export function MatchGame({
               "Choose a word, then its matching meaning.",
             )}
           </p>
+          <div className="match-progress" aria-live="polite">
+            <span>{t("Tiến độ", "Progress")}</span>
+            <strong>{matched.length}/{pool.length} {t("cặp", "pairs")}</strong>
+            <progress value={matched.length} max={pool.length || 1} />
+          </div>
+          <div className="match-labels" aria-hidden="true">
+            <span>{t("Từ tiếng Anh", "English")}</span>
+            <span>{t("Nghĩa tiếng Việt", "Vietnamese")}</span>
+          </div>
           <div className="match-columns">
             <div>
               {pool.map((w) => (
@@ -110,9 +126,11 @@ export function MatchGame({
                   key={w.word}
                   className={`${selected === w.word ? "chosen" : ""} ${matched.includes(w.word) ? "matched" : ""}`}
                   disabled={matched.includes(w.word)}
+                  aria-pressed={selected === w.word}
                   onClick={() => setSelected(w.word)}
                 >
-                  {w.word}
+                  <span>{w.word}</span>
+                  {w.pos && <small className="match-pos">{w.pos}</small>}
                 </button>
               ))}
             </div>
@@ -129,9 +147,6 @@ export function MatchGame({
               ))}
             </div>
           </div>
-          <p className="muted">
-            {score} {t("cặp đã ghép", "pairs matched")}
-          </p>
         </>
       )}
     </section>

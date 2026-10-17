@@ -1,3 +1,22 @@
+/* Charis 7.000, SIL International, SIL Open Font License 1.1.
+   https://github.com/silnrsi/font-charis/releases/tag/v7.000 */
+@font-face {
+  font-family: "Charis IPA";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Charis-Regular-7.000.woff2) format("woff2");
+}
+
+.ipa-text {
+  font-family: "Charis IPA", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
 /* vietnamese */
 @font-face {
   font-family: "Be Vietnam Pro";

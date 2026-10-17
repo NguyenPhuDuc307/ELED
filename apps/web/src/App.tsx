@@ -33,8 +33,9 @@ import {
   Bookmark,
   Play,
 } from "lucide-react";
-import { change, read } from "./storage";
-import { localDate, shuffle, streak, todaySession, type Word } from "./model";
+import { apply, change, read } from "./storage";
+import nickJudyImage from "./assets/nick-judy.png";
+import { legacyEasyOperations, localDate, shuffle, streak, todaySession, type Word } from "./model";
 import {
   Badge,
   Button,
@@ -49,6 +50,7 @@ import {
 } from "./ui";
 import { Lesson, QuizPicker } from "./Lesson";
 import * as api from "./api";
+import { navigate, navigateBack } from "./navigation";
 const Library = lazy(() =>
   import("./Library").then((m) => ({ default: m.Library })),
 );
@@ -77,14 +79,27 @@ export default function App() {
   const [quiz, setQuiz] = useState(false);
   const [game, setGame] = useState<"match" | "speed" | null>(null);
   const [welcome, setWelcome] = useState(!p.settings.onboarded);
+  useEffect(() => {
+    const recovered = legacyEasyOperations(p);
+    if (recovered.length) apply(recovered);
+  }, [p]);
   useSyncExternalStore(
     api.subscribeAuth,
     () => `${api.user?.uid ?? ""}:${api.status}`,
   );
   useEffect(() => {
-    setSession(null);
-    setGame(null);
-  }, [path]);
+    setQuiz(path === "/quiz");
+    setGame(path === "/match" ? "match" : path === "/speed" ? "speed" : null);
+    if (path !== "/lesson") setSession(null);
+    else if (words.length) {
+      const saved = history.state?.eledLesson;
+      if (saved?.keys) {
+        const byKey = new Map(words.map(w => [w.word.toLowerCase(), w]));
+        const list = saved.keys.map((key: string) => byKey.get(key)).filter(Boolean) as Word[];
+        setSession({ words: list, title: saved.title, kinds: saved.kinds, initial: saved.index || 0 });
+      } else navigate("/", {}, true);
+    }
+  }, [path, words]);
   useEffect(() => {
     let worker = new Worker(
       new URL("./vocabulary.worker.ts", import.meta.url),
@@ -133,12 +148,14 @@ export default function App() {
   const gamePool = useMemo(() => {
     const levels: string[] = p.settings.levels ?? ["A1", "A2", "B1"];
     return words.filter(
-      (w) => !levels.length || w.levels.some((l) => levels.includes(l)),
+      (w) => !p.known[w.word.toLowerCase()] && (!levels.length || w.levels.some((l) => levels.includes(l))),
     );
-  }, [words, p.settings.levels]);
+  }, [words, p.settings.levels, p.known]);
   const start = (list: Word[], title?: string) => {
-    if (list.length) {
-      setSession({ words: list, title });
+    const eligible = list.length === 1 ? list : list.filter(w => !p.known[w.word.toLowerCase()]);
+    if (eligible.length) {
+      setSession({ words: eligible, title });
+      navigate("/lesson", { eledLesson: { keys: eligible.map(w => w.word.toLowerCase()), title, index: 0 } });
       window.scrollTo({ top: 0 });
     }
   };
@@ -155,13 +172,14 @@ export default function App() {
     "/settings/appearance": t("Giao diện", "Appearance"),
     "/settings/language": t("Ngôn ngữ", "Language"),
     "/settings/learning": t("Tuỳ chỉnh từ vựng", "Learning preferences"),
+    "/settings/notifications": t("Cài đặt thông báo", "Notification settings"),
     "/settings/voice": t("Giọng đọc Speaking", "Speaking voice"),
     "/settings/data": t("Tài khoản & dữ liệu", "Account & data"),
     "/settings/help": t("Trợ giúp", "Help"),
     "/settings/about": t("Giới thiệu", "About"),
   };
   const back = () =>
-    go(
+    navigateBack(
       path.startsWith("/settings/")
         ? "/settings"
         : [
@@ -220,7 +238,7 @@ export default function App() {
             {!path.startsWith("/settings") && (
               <IconButton
                 label={t("Cài đặt", "Settings")}
-                onClick={() => go("/settings")}
+                onClick={() => go(path === "/history" ? "/settings/notifications" : "/settings")}
               >
                 <SettingsIcon size={24} />
               </IconButton>
@@ -233,13 +251,13 @@ export default function App() {
         className={`${path === "/" ? "home-page" : "sub-page"} ${session ? "lesson-page" : ""}`}
       >
         {session ? (
-          <Lesson {...session} all={words} onClose={() => setSession(null)} />
+          <Lesson {...session} all={words} onClose={() => navigateBack("/")} />
         ) : game ? (
           <Suspense fallback={<Loading />}>
             <MatchGame
               words={gamePool}
               speed={game === "speed"}
-              onClose={() => setGame(null)}
+              onClose={() => navigateBack("/")}
             />
           </Suspense>
         ) : (
@@ -276,12 +294,14 @@ export default function App() {
                     const list = saved.words
                       .map((k: string) => byKey.get(k))
                       .filter(Boolean);
-                    if (list.length)
+                    if (list.length) {
                       setSession({
                         words: list,
                         kinds: saved.kinds,
                         initial: Math.min(saved.index, list.length - 1),
                       });
+                      navigate("/lesson", { eledLesson: { keys: saved.words, kinds: saved.kinds, index: Math.min(saved.index, list.length - 1) } });
+                    }
                   }
                 }}
               />
@@ -319,9 +339,9 @@ export default function App() {
                 words={words}
                 today={today}
                 onStart={() => start(today)}
-                onQuiz={() => setQuiz(true)}
-                onMatch={() => setGame("match")}
-                onSpeed={() => setGame("speed")}
+                onQuiz={() => go("/quiz")}
+                onMatch={() => go("/match")}
+                onSpeed={() => go("/speed")}
               />
             )}
           </Suspense>
@@ -329,10 +349,12 @@ export default function App() {
       </main>
       {quiz && (
         <QuizPicker
-          onClose={() => setQuiz(false)}
+          onClose={() => navigateBack("/")}
           onStart={(kinds) => {
             setQuiz(false);
-            setSession({ words: shuffle(gamePool).slice(0, 10), kinds });
+            const list = shuffle(gamePool.filter(w => !p.known[w.word.toLowerCase()])).slice(0, 10);
+            setSession({ words: list, kinds });
+            navigate("/lesson", { eledLesson: { keys: list.map(w => w.word.toLowerCase()), kinds, index: 0 } }, true);
           }}
         />
       )}
@@ -607,7 +629,7 @@ function Browse({ words, onResume }: { words: Word[]; onResume: () => void }) {
   );
   return (
     <section className="browse-page">
-      <img className="browse-plant" src="/home.png" alt="" />
+      <img className="browse-plant" src={nickJudyImage} alt="" decoding="async" />
       <div className="browse-heading">
         <p>{t("Chọn chế độ", "Choose a mode")}</p>
         <h1>

@@ -29,6 +29,9 @@ function fields(line) {
   return out;
 }
 const vocabulary = new Map();
+const meanings = JSON.parse(await readFile(join(root, "assets/lexicon/meanings.json"), "utf8"));
+const fallbackMeanings = new Map();
+const normalizePos = (pos) => ["indefinite article", "definite article"].includes(pos) ? "determiner" : pos === "ordinal number" ? "number" : pos;
 for (const file of await files(join(root, "assets/data"))) {
   const relative = file.slice(join(root, "assets/data").length + 1);
   const parts = relative.split("/");
@@ -44,6 +47,10 @@ for (const file of await files(join(root, "assets/data"))) {
     const r = fields(line);
     if (r.length < 7 || !r[3]) continue;
     const key = r[3].toLowerCase();
+    if (!fallbackMeanings.has(key)) fallbackMeanings.set(key, new Map());
+    for (const pos of r[5].split(/[;,]/).map(p => normalizePos(p.trim())).filter(Boolean)) {
+      if (!fallbackMeanings.get(key).has(pos)) fallbackMeanings.get(key).set(pos, r[4]);
+    }
     const existing = vocabulary.get(key);
     const levels = [...new Set(r[2].match(/[ABC][12]/g) || [])];
     if (existing) {
@@ -70,9 +77,18 @@ for (const file of await files(join(root, "assets/data"))) {
   }
 }
 const dir = resolve(import.meta.dirname, "../public");
+const shortPos = { noun: "n.", adjective: "adj.", verb: "v.", adverb: "adv.", preposition: "prep.", pronoun: "pron.", determiner: "det.", conjunction: "conj.", exclamation: "interj.", "modal verb": "modal v.", "phrasal verb": "phr. v." };
+for (const [key, row] of vocabulary) {
+  const matched = meanings[key];
+  if (!matched) continue;
+  const groups = [...fallbackMeanings.get(key)].map(([pos, old]) => [pos, matched[pos] || [old]]);
+  row[8] = groups;
+  row[1] = groups.map(([pos, glosses]) => (groups.length > 1 ? (shortPos[pos] || pos) + " " : "") + glosses[0]).join(" · ");
+}
 await mkdir(dir, { recursive: true });
 await writeFile(
   join(dir, "vocabulary.json"),
   JSON.stringify([...vocabulary.values()]),
 );
+await writeFile(join(dir, "meanings-source.json"), JSON.stringify({ source: "Vietnamese Wiktionary via Kaikki/Wiktextract", license: "CC BY-SA 4.0", modified: true, meanings }));
 console.log(`Prepared ${vocabulary.size} unique words`);

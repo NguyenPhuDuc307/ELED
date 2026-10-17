@@ -1,0 +1,13 @@
+{
+  "source": "https://kaikki.org/dictionary/downloads/vi/vi-extract.jsonl.gz",
+  "sha256": "566a1b6b941d5ec792ce5f79f1830250076a5d9d517c1f3d1aa04dd4dc02482d",
+  "total_words": 23481,
+  "matched_words": 14907,
+  "changed_rows": 23075,
+  "unmatched_words": 8933,
+  "unmatched_rows": 10152,
+  "fully_matched_words": 14529,
+  "partially_matched_words": 378,
+  "words_without_matched_meanings": 8574,
+  "changed_unique_words": 13391
+}

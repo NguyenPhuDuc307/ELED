@@ -1,7 +1,7 @@
 /// <reference lib="webworker" />
 self.onmessage = async () => {
   try {
-    const response = await fetch("/api/eled/vocabulary");
+    const response = await fetch("/api/eled/vocabulary", { cache: "no-cache" });
     if (!response.ok) throw new Error("Không tải được dữ liệu từ vựng");
     const rows = await response.json();
     self.postMessage({
@@ -14,6 +14,7 @@ self.onmessage = async () => {
         url: r[5],
         levels: r[6],
         topics: r[7],
+        senses: r[8]?.map((s: [string, string[]]) => ({ pos: s[0], meanings: s[1] })),
       })),
     });
   } catch (e) {

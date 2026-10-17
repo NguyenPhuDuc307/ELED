@@ -7,12 +7,22 @@ import {
 import { X, LoaderCircle, Volume2 } from "lucide-react";
 import { getProfile, subscribe } from "./storage";
 import type { Word } from "./model";
+import { navigate } from "./navigation";
 export function useProfile() {
   return useSyncExternalStore(subscribe, getProfile);
 }
 export function useText() {
   const p = useProfile();
   return (vi: string, en: string) => (p.settings.language === "en" ? en : vi);
+}
+export function Choice({ label, description, checked, onChange, icon }: {
+  label: string; description?: string; checked: boolean; onChange: () => void; icon?: ReactNode;
+}) {
+  return <label className={`choice-control ${checked ? "is-selected" : ""}`}>
+    {icon && <span className="choice-icon" aria-hidden="true">{icon}</span>}
+    <span className="choice-copy"><strong>{label}</strong>{description && <small>{description}</small>}</span>
+    <input type="checkbox" checked={checked} onChange={onChange} />
+  </label>;
 }
 export function Button({
   children,
@@ -42,7 +52,6 @@ export function IconButton({
       {...props}
       className={`icon-btn ${props.className ?? ""}`}
       aria-label={label}
-      title={label}
     >
       {children}
     </button>
@@ -164,11 +173,11 @@ export function useHash() {
   useEffect(() => {
     const fn = () => setPath(location.hash.slice(1) || "/");
     window.addEventListener("hashchange", fn);
-    return () => window.removeEventListener("hashchange", fn);
+    window.addEventListener("popstate", fn);
+    return () => { window.removeEventListener("hashchange", fn); window.removeEventListener("popstate", fn); };
   }, []);
   return path;
 }
 export function go(path: string) {
-  location.hash = path;
-  window.scrollTo({ top: 0 });
+  navigate(path);
 }

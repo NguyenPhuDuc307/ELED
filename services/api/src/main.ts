@@ -23,6 +23,7 @@ import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import type { Request, Response } from "express";
 import { applyOperations, emptyProfile, validateOperations } from "./profile";
+import { PushController, initPush } from "./push";
 if (
   process.env.NODE_ENV === "production" &&
   process.env.FIREBASE_AUTH_EMULATOR_HOST
@@ -133,7 +134,7 @@ class EledController {
     }
   }
 }
-@Module({ controllers: [EledController], providers: [FirebaseGuard] })
+@Module({ controllers: [EledController, PushController], providers: [FirebaseGuard] })
 class AppModule {}
 async function main() {
   await pool.query(
@@ -166,6 +167,7 @@ async function main() {
     "SELECT payload FROM eled_vocabulary ORDER BY sort_order",
   );
   vocabularyJson = JSON.stringify(dictionary.rows.map((row) => row.payload));
+  await initPush(pool, dictionary.rows.map((row) => row.payload));
   vocabularyEtag =
     '"' + createHash("sha256").update(vocabularyJson).digest("hex") + '"';
   const app = await NestFactory.create(AppModule, { bodyParser: false });

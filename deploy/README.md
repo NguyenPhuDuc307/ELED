@@ -89,3 +89,43 @@ docker compose -p eled -f compose.yaml up -d --force-recreate --wait web
 
 Retain the API and database when rolling back a UI release; the former Flutter web
 release uses its old Firestore behavior, so prefer a previous React release.
+
+## Browser vocabulary notifications
+
+Web Push uses the dedicated `eled_push_devices` PostgreSQL table. Each browser
+opts in separately and authenticates its subscription with a random 256-bit
+device secret stored locally; the server stores only its hash. No Firebase
+messaging or Firestore is used. Frequency, word count, local active hours,
+IANA timezone and vocabulary filters are stored with that device. Changing
+accounts disables the previous browser reminder registration.
+
+Before deploying this feature for the first time, run
+`ssh aws-vps 'python3 -' < deploy/setup-push.py`. It appends persistent VAPID
+keys to the VPS private `.env` without printing them; never rotate these keys
+on ordinary deploys. `VAPID_SUBJECT` is the public site URL. Back up that
+private environment file securely together with the database. The setup is
+idempotent and requires the existing API container for Node crypto.
+
+The API checks due subscriptions every 15 seconds. PostgreSQL row locks and
+advancing the next scheduled time before sending prevent duplicate sends
+across API instances or restarts. Quiet hours are evaluated again at send
+time. Missed reminders are not replayed. Device subscriptions returning
+404/410 are deleted. Other delivery errors are recorded for the settings UI;
+the next scheduled send retries normally. Delivery is best effort and can be
+delayed by the browser, OS, network or Do Not Disturb. Server acceptance is
+not a delivery receipt. Up to 200 recent deliveries per device are retained
+and merged into the local learning history on app focus. Abandoned devices
+older than 180 days are pruned on API startup.
+
+`notifications-sw.js` handles only push display and click navigation. It has
+no fetch handler and does not replace ordinary HTTP cache behavior. iOS and
+iPadOS 16.4+ require adding the site to the Home Screen before opting in.
+Permission is requested only from the enable action; denied permission must
+be changed in browser/OS settings. See the WebKit Web Push documentation:
+https://webkit.org/blog/13878/.
+
+Known-word changes send an immediate per-device `push/exclude` request,
+including when the user closes the tab right after rating Easy. The push
+worker reads current device filters again just before delivery. A notification
+already accepted by the browser's push service cannot be recalled. The web
+lesson Easy action now records Known and mastered SRS together.

@@ -10,7 +10,6 @@ import {
   EyeOff,
   RotateCcw,
   Volume2,
-  CheckCircle2,
   ChevronLeft,
   ChevronRight,
   Layers, ListChecks, Headphones, TextCursorInput, Shuffle, Pencil,
@@ -179,24 +178,6 @@ export function Lesson({
             {index + 1} / {words.length}
           </strong>
         </div>
-        <IconButton
-          label={t("Tôi đã biết từ này", "I already know this word")}
-          onClick={() => {
-            change("known", word.word.toLowerCase(), true);
-            change("srs", word.word.toLowerCase(), {
-              ...fresh(word.word),
-              s: "mastered",
-              i: 365,
-              r: 5,
-              d: Date.now() + 365 * 86400000,
-              l: Date.now(),
-              t: 1,
-            });
-            setIndex((i) => i + 1);
-          }}
-        >
-          <CheckCircle2 size={24} />
-        </IconButton>
       </header>
       <div className="progress">
         <div style={{ width: `${(index / words.length) * 100}%` }} />
@@ -273,6 +254,9 @@ function Exercise({
   );
   const [vi, setVi] = useState(false);
   const [translated, setTranslated] = useState<string[]>([]);
+  const [translating, setTranslating] = useState(false);
+  const [translationError, setTranslationError] = useState(false);
+  const [translationAttempt, setTranslationAttempt] = useState(0);
   const [letters, setLetters] = useState<number[]>([]);
   const p = useProfile();
   const choices = useMemo(
@@ -329,26 +313,33 @@ function Exercise({
   }, [word]);
   useEffect(() => {
     if (!vi || !defs.length) return;
-    let cancelled = false;
-    Promise.all(
-      defs.map(async (d) => {
-        const r = await fetch(
-          "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=" +
-            encodeURIComponent(d.definition),
-        );
-        if (!r.ok) return d.definition;
-        const j = await r.json();
-        return j[0].map((s: any[]) => s[0]).join("");
-      }),
-    )
-      .then((result) => {
-        if (!cancelled) setTranslated(result);
+    const controller = new AbortController();
+    setTranslating(true);
+    setTranslationError(false);
+    setTranslated([]);
+    fetch("/api/eled/translate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ texts: defs.map(d => d.definition) }),
+      signal: controller.signal,
+    })
+      .then(async response => {
+        if (!response.ok) throw new Error("Translation unavailable");
+        const result = await response.json();
+        if (!Array.isArray(result.translations) || result.translations.length !== defs.length ||
+          result.translations.some((text: unknown) => typeof text !== "string" || !text.trim())) {
+          throw new Error("Invalid translation");
+        }
+        if (!controller.signal.aborted) setTranslated(result.translations);
       })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [vi, defs]);
+      .catch(() => {
+        if (!controller.signal.aborted) setTranslationError(true);
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) setTranslating(false);
+      });
+    return () => controller.abort();
+  }, [vi, defs, translationAttempt]);
   const check = (value = answer) =>
     setChecked(
       value.toLowerCase().replace(/[^a-z0-9]/g, "") ===
@@ -382,6 +373,21 @@ function Exercise({
             <div className="pronunciation-row">
               <p className="ipa ipa-text">{word.ipa}</p>
               <Sound word={word} />
+              {kind === "recognize" && (
+            <button
+              type="button"
+              className="meaning-toggle"
+              aria-label={meaningVisible ? t("Ẩn nghĩa", "Hide meaning") : t("Hiện nghĩa", "Show meaning")}
+              aria-expanded={meaningVisible}
+              aria-controls="lesson-word-meaning"
+              onClick={() => {
+                setMeaningVisible(!meaningVisible);
+                localStorage.setItem("eled.hide-meaning", String(meaningVisible));
+              }}
+            >
+              {meaningVisible ? <EyeOff size={20} /> : <Eye size={20} />}
+            </button>
+              )}
               {word.url && (
                 <a
                   className="icon-btn"
@@ -427,28 +433,22 @@ function Exercise({
         )}
         {kind === "recognize" && (
           <>
-            <button
-              type="button"
-              className="meaning-toggle"
-              aria-expanded={meaningVisible}
-              aria-controls="lesson-word-meaning"
-              onClick={() => {
-                setMeaningVisible(!meaningVisible);
-                localStorage.setItem("eled.hide-meaning", String(meaningVisible));
-              }}
-            >
-              {meaningVisible ? <EyeOff size={18} /> : <Eye size={18} />}
-              {meaningVisible ? t("Ẩn nghĩa", "Hide meaning") : t("Hiện nghĩa", "Show meaning")}
-            </button>
+
             <div id="lesson-word-meaning" className="lesson-word-meaning" hidden={!meaningVisible}>
             {word.senses?.length ? <div className="meaning-groups">
               {word.senses.map(s => <div key={s.pos}>
                 <span>{s.pos}</span>
-                <p>{s.meanings.slice(0, 4).join("; ")}</p>
+                <p><span className="meaning-highlight">{s.meanings.slice(0, 4).join("; ")}</span></p>
               </div>)}
-            </div> : <h2 className="meaning">{word.translation}</h2>}
+            </div> : <h2 className="meaning"><span className="meaning-highlight">{word.translation}</span></h2>}
+            </div>
             {defs.length > 0 && (
-              <div className="definitions">
+              <div className="definitions" aria-busy={vi && translating}>
+                {vi && translating && <p role="status">{t("Đang dịch…", "Translating…")}</p>}
+                {vi && translationError && <div role="alert">
+                  <p>{t("Chưa dịch được định nghĩa. Vui lòng thử lại.", "Could not translate definitions. Please retry.")}</p>
+                  <button type="button" className="translation-retry" onClick={() => setTranslationAttempt(n => n + 1)}>{t("Thử lại", "Retry")}</button>
+                </div>}
                 {defs.map((d, i) => (
                   <div key={i}>
                     <p>{vi ? (translated[i] ?? d.definition) : d.definition}</p>
@@ -457,7 +457,6 @@ function Exercise({
                 ))}
               </div>
             )}
-            </div>
           </>
         )}
         {kind === "choice" && (

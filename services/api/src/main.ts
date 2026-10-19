@@ -24,6 +24,7 @@ import { createHash } from "node:crypto";
 import type { Request, Response } from "express";
 import { applyOperations, emptyProfile, validateOperations } from "./profile";
 import { PushController, initPush } from "./push";
+import { TranslationController } from "./translation";
 if (
   process.env.NODE_ENV === "production" &&
   process.env.FIREBASE_AUTH_EMULATOR_HOST
@@ -134,7 +135,7 @@ class EledController {
     }
   }
 }
-@Module({ controllers: [EledController, PushController], providers: [FirebaseGuard] })
+@Module({ controllers: [EledController, PushController, TranslationController], providers: [FirebaseGuard] })
 class AppModule {}
 async function main() {
   await pool.query(

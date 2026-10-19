@@ -524,7 +524,7 @@
   box-shadow: var(--shadow);
   padding: 20px;
 }
-.original-app .settings-section-data article:nth-child(1),
+.original-app .settings-section-account article:nth-child(1),
 .original-app .settings-section-data article:nth-child(5),
 .original-app .settings-section-appearance article:nth-child(2),
 .original-app .settings-section-language article:nth-child(2),
@@ -1434,20 +1434,31 @@
 .original-app .word-card.exercise-recognize .meaning-groups { order: 4; }
 
 .meaning-toggle {
-  order: 4;
-  align-self: center;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-height: 44px;
-  margin-top: 14px;
-  padding: 8px 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
   color: var(--ink);
   font-size: 14px;
   cursor: pointer;
 }
 .lesson-word-meaning { order: 4; width: 100%; }
+
+.meaning-highlight {
+  background: #e4efd9;
+  color: #254820;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 4px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.lesson-word-meaning .meaning-groups p { line-height: 1.85; }
+.dark .meaning-highlight { background: #32452d; color: #e0efd5; }

@@ -174,7 +174,8 @@ export default function App() {
     "/settings/learning": t("Tuỳ chỉnh từ vựng", "Learning preferences"),
     "/settings/notifications": t("Cài đặt thông báo", "Notification settings"),
     "/settings/voice": t("Giọng đọc Speaking", "Speaking voice"),
-    "/settings/data": t("Tài khoản & dữ liệu", "Account & data"),
+    "/settings/account": t("Tài khoản", "Account"),
+    "/settings/data": t("Dữ liệu", "Data"),
     "/settings/help": t("Trợ giúp", "Help"),
     "/settings/about": t("Giới thiệu", "About"),
   };

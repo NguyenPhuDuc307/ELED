@@ -155,6 +155,7 @@ export function Library({
   }
   const dayGrid = (pool: Word[]) => (
     <div className="day-grid">
+      {!pool.length && <Empty>{t("Không có từ cần học ở cấp độ này.", "No words to study at this level.")}</Empty>}
       {Array.from({ length: Math.ceil(pool.length / 20) }, (_, i) => {
         const list = pool.slice(i * 20, i * 20 + 20);
         const learned = list.filter((w) => p.known[w.word.toLowerCase()] || p.srs[w.word.toLowerCase()]).length;
@@ -229,6 +230,17 @@ export function Library({
       </section>
     );
   }
+  const topicWords = words.filter(w => !level || w.levels.includes(level));
+  const topicLevelFilter = (
+    <div className="level-tabs" role="group" aria-label={t("Lọc cấp độ", "Filter by level")}>
+      {["", "A1", "A2", "B1", "B2", "C1"].map(value => (
+        <button key={value} className={level === value ? "active" : ""}
+          aria-pressed={level === value} onClick={() => setLevel(value)}>
+          {value || t("Tất cả", "All")}
+        </button>
+      ))}
+    </div>
+  );
   if (view === "topics" && topic) {
     const leaves = [
       ...new Set(
@@ -240,6 +252,7 @@ export function Library({
     if (!subtopic)
       return (
         <section>
+          {topicLevelFilter}
           <button className="text-btn" onClick={() => setTopic("")}>
             ‹ {topic.replaceAll("_", " ")}
           </button>
@@ -256,7 +269,7 @@ export function Library({
                   {leaf.split(" - ").slice(1).join(" - ").replaceAll("_", " ")}
                 </h2>
                 <p>
-                  {words.filter((w) => w.topics.includes(leaf)).length}{" "}
+                  {topicWords.filter((w) => w.topics.includes(leaf)).length}{" "}
                   {t("từ", "words")}
                 </p>
               </button>
@@ -266,11 +279,12 @@ export function Library({
       );
     return (
       <section>
+        {topicLevelFilter}
         <button className="text-btn" onClick={() => setSubtopic("")}>
           ‹ {subtopic.split(" - ").slice(1).join(" - ").replaceAll("_", " ")}
         </button>
         {dayGrid(
-          words.filter(
+          topicWords.filter(
             (w) =>
               w.topics.includes(subtopic) && !p.known[w.word.toLowerCase()],
           ),
@@ -280,6 +294,8 @@ export function Library({
   }
   if (view === "topics" && !topic)
     return (
+      <section>
+      {topicLevelFilter}
       <div className="topic-grid">
         {categories.map((c, i) => (
           <button
@@ -290,7 +306,7 @@ export function Library({
             <h2>{c.replaceAll("_", " ")}</h2>
             <p>
               {
-                words.filter((w) =>
+                topicWords.filter((w) =>
                   w.topics.some((t) => t.startsWith(c + " - ")),
                 ).length
               }{" "}
@@ -299,6 +315,7 @@ export function Library({
           </button>
         ))}
       </div>
+      </section>
     );
   return (
     <section

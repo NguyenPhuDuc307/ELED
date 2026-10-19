@@ -13,6 +13,7 @@ import {
   Settings2,
   AudioLines,
   User,
+  Database,
   HelpCircle,
   Info,
   ChevronRight,
@@ -62,10 +63,17 @@ export function Settings({
       setBusy(false);
     }
   }
+  useEffect(() => { setError(""); setMessage(""); }, [section]);
   const levels: string[] = p.settings.levels ?? ["A1", "A2", "B1"];
   const topics: string[] = p.settings.topics ?? [];
   if (!section) {
     const items = [
+      {
+        key: "account",
+        icon: User,
+        title: t("Tài khoản", "Account"),
+        subtitle: api.user?.email ?? t("Đăng nhập và đồng bộ tiến độ", "Sign in and sync progress"),
+      },
       { key: "notifications", icon: Bell, title: t("Thông báo", "Notifications"), subtitle: t("Nhắc học qua trình duyệt", "Browser vocabulary reminders") },
       {
         key: "appearance",
@@ -104,10 +112,9 @@ export function Settings({
       },
       {
         key: "data",
-        icon: User,
+        icon: Database,
         title: t("Dữ liệu", "Data"),
-        subtitle:
-          api.user?.email ?? t("Sao lưu và đặt lại", "Backup and restore"),
+        subtitle: t("Sao lưu và khôi phục", "Backup and restore"),
       },
       {
         key: "help",
@@ -260,16 +267,6 @@ export function Settings({
                 )}
               </p>
             </>
-          )}
-          {error && (
-            <p role="alert" className="error">
-              {error}
-            </p>
-          )}
-          {message && (
-            <p role="status" className="success-text">
-              {message}
-            </p>
           )}
         </article>
         <article className="card">
@@ -434,6 +431,16 @@ export function Settings({
           <p><a href="/data-sources.html" target="_blank" rel="noreferrer">{t("Nguồn nghĩa từ vựng & giấy phép", "Vocabulary sources & licenses")} <ExternalLink size={14} aria-hidden="true" /></a></p>
         </article>
       </div>
+          {error && (
+            <p role="alert" className="error">
+              {error}
+            </p>
+          )}
+          {message && (
+            <p role="status" className="success-text">
+              {message}
+            </p>
+          )}
     </section>
   );
 }

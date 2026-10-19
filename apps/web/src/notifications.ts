@@ -63,7 +63,7 @@ export async function saveNotifications(s: NotificationSettings, askPermission =
     try {
       subscription = await registration.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: key });
     } catch {
-      throw new Error("Không đăng ký được Web Push. Hãy kiểm tra quyền thông báo của trình duyệt/hệ điều hành rồi thử lại. Trên iPhone/iPad, mở ELED từ Màn hình chính. / Could not register Web Push. Check browser and OS permissions, then retry.");
+      throw new Error("Không đăng ký được Web Push. Hãy kiểm tra quyền thông báo của trình duyệt/hệ điều hành rồi thử lại. Trên iPhone/iPad, mở English Learning từ Màn hình chính. / Could not register Web Push. Check browser and OS permissions, then retry.");
     }
   }
   const result = await request("subscription", "POST", { subscription: subscription.toJSON(), settings: schedulePayload(s) });

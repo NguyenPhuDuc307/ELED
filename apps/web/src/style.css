@@ -17,12 +17,12 @@
   --ink: #28312a;
   --muted: #8b8d82;
   --line: #e9e4dc;
-  --green: #396b35;
-  --soft: #e9f0e4;
+  --green: #b512ce;
+  --soft: #faeefb;
   --shadow: 0 5px 22px #52492f08;
   --salmon: #f4c6ba;
   --sand: #f5e4c7;
-  --sage: #d2e4c9;
+  --sage: #f3d6f6;
 }
 .dark {
   color-scheme: dark;
@@ -31,12 +31,12 @@
   --ink: #edf3e9;
   --muted: #a9b3a5;
   --line: #344038;
-  --green: #a3cf93;
-  --soft: #293f2b;
+  --green: #e08aea;
+  --soft: #3d2741;
   --shadow: none;
   --salmon: #623f37;
   --sand: #574b32;
-  --sage: #354e35;
+  --sage: #4c3350;
 }
 * {
   box-sizing: border-box;
@@ -110,7 +110,7 @@ a:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid #82b876;
+  outline: 3px solid #b371bd;
   outline-offset: 3px;
 }
 .muted {
@@ -216,7 +216,7 @@ textarea:focus-visible {
   margin-top: 12px;
 }
 .heading-dot {
-  color: #7da66c;
+  color: #a168aa;
 }
 .app-shell {
   min-height: 100dvh;
@@ -352,7 +352,7 @@ main {
   gap: 22px;
 }
 .session-card {
-  background: #396b35;
+  background: #b512ce;
   color: #fff;
   position: relative;
   padding: 30px;
@@ -360,7 +360,7 @@ main {
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 17px 18px;
-  box-shadow: 0 8px 20px #396b3519;
+  box-shadow: 0 8px 20px #b512ce19;
   overflow: hidden;
 }
 .session-card:after {
@@ -412,7 +412,7 @@ main {
 .session-card .btn {
   grid-column: 1/-1;
   background: #fff;
-  color: #396b35;
+  color: #b512ce;
   margin-top: 12px;
   position: relative;
   z-index: 1;
@@ -462,7 +462,7 @@ main {
 }
 .speed {
   background: var(--sage);
-  color: #426b38;
+  color: #67346f;
 }
 .dark .game-card {
   color: var(--ink);
@@ -501,7 +501,7 @@ main {
 }
 .stat-icon.green {
   background: var(--sage);
-  color: #527349;
+  color: #704676;
 }
 .stat strong {
   font-size: 26px;
@@ -526,7 +526,7 @@ main {
   background: var(--soft);
 }
 .activity-days .done {
-  background: #6c9b59;
+  background: #9654a0;
 }
 .activity p {
   font-size: 11px;
@@ -1011,7 +1011,7 @@ label > select {
 }
 .easy {
   background: var(--sage);
-  color: #416e36;
+  color: #6a3272;
 }
 .dark .rating {
   color: var(--ink);
@@ -1044,8 +1044,8 @@ label > select {
 }
 .choice.correct {
   background: var(--sage);
-  color: #396b35;
-  border-color: #82ad70;
+  color: #b512ce;
+  border-color: #a86bb2;
   opacity: 1;
 }
 .choice.incorrect {
@@ -1183,7 +1183,7 @@ label > select {
 }
 .match-columns button.matched {
   background: var(--soft);
-  border-color: #93ba83;
+  border-color: #b67fbe;
   opacity: 0.4;
 }
 .match-columns button.wrong {

@@ -47,7 +47,7 @@ export function BrowserNotificationSettings() {
         icon={enabled ? <Bell size={20} /> : <BellOff size={20} />} checked={enabled && permission === "granted"}
         onChange={() => { if (!busy && supported) void (enabled ? disable() : enableOrSave()); }} />
       {!supported && <p className="notification-note" role="status">{t("Trình duyệt này chưa hỗ trợ Web Push. Hãy dùng trình duyệt hỗ trợ thông báo trên HTTPS.", "Web Push is unavailable. Use a supported browser over HTTPS.")}</p>}
-      {needsHomeScreen() && <p className="notification-note">{t("Trên iPhone/iPad: mở ELED bằng Safari, chọn Chia sẻ → Thêm vào Màn hình chính. Mở ELED từ biểu tượng đó rồi bật thông báo (iOS/iPadOS 16.4 trở lên).", "On iPhone/iPad: open ELED in Safari, choose Share → Add to Home Screen, then open its icon to enable notifications (iOS/iPadOS 16.4 or later).")}</p>}
+      {needsHomeScreen() && <p className="notification-note">{t("Trên iPhone/iPad: mở English Learning bằng Safari, chọn Chia sẻ → Thêm vào Màn hình chính. Mở English Learning từ biểu tượng đó rồi bật thông báo (iOS/iPadOS 16.4 trở lên).", "On iPhone/iPad: open English Learning in Safari, choose Share → Add to Home Screen, then open its icon to enable notifications (iOS/iPadOS 16.4 or later).")}</p>}
       {permission === "denied" && <p className="notification-note">{t("Bạn đã chặn quyền thông báo. Mở cài đặt quyền của trang eled.vnlab.id.vn trong trình duyệt để cho phép lại, rồi bật thông báo tại đây.", "Notifications are blocked. Allow them in the browser permissions for eled.vnlab.id.vn, then enable here.")}</p>}
     </article>
     <article className="card notification-schedule">

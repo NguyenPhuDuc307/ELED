@@ -5,9 +5,9 @@ self.addEventListener('push', event => {
   event.waitUntil((async () => {
     let payload;
     try { payload = event.data?.json(); } catch { /* Always show a visible notification. */ }
-    payload ||= { title: 'ELED', body: 'Đến giờ học từ vựng. / Time to learn vocabulary.' };
-    await self.registration.showNotification(payload.title || 'ELED', {
-      body: payload.body, icon: '/icon.png', badge: '/icon.png', tag: payload.tag || 'eled-vocabulary',
+    payload ||= { title: 'English Learning', body: 'Đến giờ học từ vựng. / Time to learn vocabulary.' };
+    await self.registration.showNotification(payload.title || 'English Learning', {
+      body: payload.body, icon: '/icon-192.png', badge: '/icon-192.png', tag: payload.tag || 'eled-vocabulary',
       data: { url: '/#/history' },
     });
     const tabs = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });

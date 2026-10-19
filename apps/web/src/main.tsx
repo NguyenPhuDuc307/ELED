@@ -28,7 +28,7 @@ class AppBoundary extends React.Component<
   render() {
     return this.state.failed ? (
       <div className="initial-loading">
-        <h1>ELED</h1>
+        <h1>English Learning</h1>
         <p>Không tải được trang. Vui lòng thử lại. / Please reload the page.</p>
         <button className="btn" onClick={() => location.reload()}>
           Tải lại / Reload

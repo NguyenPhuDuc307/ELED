@@ -154,10 +154,10 @@ export function Settings({
   if (section === "help")
     return (
       <section className="card help-page">
-        <h2>{t("Học cùng ELED", "Learning with ELED")}</h2>
+        <h2>{t("Học cùng English Learning", "Learning with English Learning")}</h2>
         <p>
           {t(
-            "Bắt đầu phiên học mỗi ngày. Chọn Lại, Khó hoặc Dễ để ELED điều chỉnh lịch ôn cho bạn.",
+            "Bắt đầu phiên học mỗi ngày. Chọn Lại, Khó hoặc Dễ để English Learning điều chỉnh lịch ôn cho bạn.",
             "Start a daily session. Choose Again, Hard or Easy to adjust your review schedule.",
           )}
         </p>
@@ -410,8 +410,8 @@ export function Settings({
           />
         </article>
         <article className="card">
-          <h2>ELED</h2>
-          <Badge>English Learning Every Day</Badge>
+          <h2>VNLab English Learning</h2>
+          <Badge>{t("Trước đây là ELED", "Formerly ELED")}</Badge>
           <p>
             {t("Một ít tiếng Anh, mỗi ngày.", "A little English, every day.")}
           </p>

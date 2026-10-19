@@ -329,7 +329,7 @@ export function Library({
     >
       <div className="page-heading">
         <div>
-          <span className="eyebrow">ELED LIBRARY</span>
+          <span className="eyebrow">ENGLISH LEARNING LIBRARY</span>
           <h1>{title}</h1>
           {(level || topic) && (
             <button

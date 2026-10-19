@@ -204,11 +204,13 @@ export default function App() {
               </IconButton>
             )}
             {path === "/" ? (
-              <a href="#/" className="brand">
-                ELED
+              <a href="#/" className="brand" aria-label="VNLab English Learning">
+                <img src="/logo.svg" alt="" className="brand-logo brand-logo-light" />
+                <img src="/logo-dark.svg" alt="" className="brand-logo brand-logo-dark" />
+                <span>English Learning</span>
               </a>
             ) : (
-              <h1>{titles[path] ?? "ELED"}</h1>
+              <h1>{titles[path] ?? "English Learning"}</h1>
             )}
           </div>
           <div className="appbar-actions">
@@ -361,7 +363,7 @@ export default function App() {
       )}
       {welcome && (
         <Modal
-          title={t("Chào mừng đến ELED", "Welcome to ELED")}
+          title={t("Chào mừng đến English Learning", "Welcome to English Learning")}
           onClose={() => {
             setWelcome(false);
             change("settings", "onboarded", true);
@@ -375,8 +377,8 @@ export default function App() {
           </h2>
           <p>
             {t(
-              "ELED sử dụng phương pháp lặp lại ngắt quãng — bạn sẽ thấy lại mỗi từ ngay trước khi quên. Hàng trăm từ sẽ nhớ được chỉ với vài phút mỗi ngày.",
-              "ELED uses spaced repetition — you see each word again just before you forget it. Remember hundreds of words with a few minutes a day.",
+              "English Learning sử dụng phương pháp lặp lại ngắt quãng — bạn sẽ thấy lại mỗi từ ngay trước khi quên. Hàng trăm từ sẽ nhớ được chỉ với vài phút mỗi ngày.",
+              "English Learning uses spaced repetition — you see each word again just before you forget it. Remember hundreds of words with a few minutes a day.",
             )}
           </p>
           <Button

@@ -8,6 +8,7 @@ import {
   Trash2,
   X,
   ChevronRight,
+  Languages,
 } from "lucide-react";
 import { change, getProfile, apply } from "./storage";
 import type { Word } from "./model";
@@ -444,9 +445,17 @@ export function Library({
                   "Search words or meanings…",
                 )}
                 value={query}
+                enterKeyHint="search"
                 onChange={(e) => {
                   setQuery(e.target.value);
                   setLimit(60);
+                }}
+                onKeyDown={(e) => {
+                  // Không có trong từ điển: Enter mở thẳng Google Dịch (trong thao tác người dùng nên không bị chặn popup).
+                  if (e.key === "Enter" && query.trim() && !filtered.length) {
+                    e.preventDefault();
+                    window.open(googleTranslateUrl(query), "_blank", "noopener");
+                  }
                 }}
               />
               {query && (
@@ -586,6 +595,12 @@ export function Library({
           {!filtered.length && (
             <Empty>
               {t("Không tìm thấy từ phù hợp.", "No matching words.")}
+              {query.trim() && (
+                <a className="btn translate-fallback" href={googleTranslateUrl(query)} target="_blank" rel="noopener noreferrer">
+                  <Languages size={17} />
+                  {t(`Dịch “${query.trim()}” bằng Google Dịch`, `Translate “${query.trim()}” with Google Translate`)}
+                </a>
+              )}
             </Empty>
           )}
         </>
@@ -655,4 +670,11 @@ export function Library({
       )}
     </section>
   );
+}
+
+/** Có dấu tiếng Việt thì dịch sang tiếng Anh, còn lại dịch sang tiếng Việt. */
+function googleTranslateUrl(text: string) {
+  const q = text.trim();
+  const vi = /[ăâđêôơưàáạảãằắặẳẵầấậẩẫèéẹẻẽềếệểễìíịỉĩòóọỏõồốộổỗờớợởỡùúụủũừứựửữỳýỵỷỹ]/i.test(q);
+  return `https://translate.google.com/?sl=${vi ? "vi" : "en"}&tl=${vi ? "en" : "vi"}&text=${encodeURIComponent(q)}&op=translate`;
 }

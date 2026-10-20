@@ -194,7 +194,8 @@ export default function App() {
           : "/",
     );
   return (
-    <div className="app-shell original-app">
+    <div className={`app-shell original-app eled-layout ${session || game ? "eled-focus" : ""}`}>
+      {!session && !game && <EledNav path={path} t={t} />}
       {!session && !game && (
         <header className="topbar">
           <div className="appbar-title">
@@ -214,32 +215,10 @@ export default function App() {
             )}
           </div>
           <div className="appbar-actions">
-            {path === "/" && (
-              <IconButton
-                label={t("Thông báo", "Notifications")}
-                onClick={() => go("/history")}
-              >
-                <Bell size={23} />
-              </IconButton>
-            )}
+            {/* Điều hướng chính nằm ở sidebar (màn rộng) và thanh tab dưới (điện thoại), như VNLab Stock. */}
             {!path.startsWith("/settings") && (
               <IconButton
-                label={t("Tìm kiếm", "Search")}
-                onClick={() => go("/library")}
-              >
-                <Search size={24} />
-              </IconButton>
-            )}
-            {path === "/" && (
-              <IconButton
-                label={t("Duyệt", "Browse")}
-                onClick={() => go("/browse")}
-              >
-                <Grip size={24} />
-              </IconButton>
-            )}
-            {!path.startsWith("/settings") && (
-              <IconButton
+                className="topbar-settings"
                 label={t("Cài đặt", "Settings")}
                 onClick={() => go(path === "/history" ? "/settings/notifications" : "/settings")}
               >
@@ -676,4 +655,44 @@ function Browse({ words, onResume }: { words: Word[]; onResume: () => void }) {
 }
 function PlusSymbol() {
   return <span style={{ fontSize: 25, lineHeight: 1 }}>+</span>;
+}
+
+// Điều hướng chính, cùng bố cục với VNLab Stock: sidebar navy ở màn rộng, thanh tab
+// kính mờ ở đáy trên điện thoại. Ẩn khi đang học / chơi để tập trung.
+const NAV_ITEMS = [
+  { to: "/", vi: "Hôm nay", en: "Today", icon: Home, also: [] as string[] },
+  { to: "/library", vi: "Tìm kiếm", en: "Search", icon: Search, also: [] },
+  { to: "/browse", vi: "Duyệt", en: "Browse", icon: Grip, also: ["/levels", "/topics", "/known", "/collections"] },
+  { to: "/speaking", vi: "Speaking", en: "Speaking", icon: Mic, also: [] },
+  { to: "/history", vi: "Thông báo", en: "Notifications", icon: Bell, also: [] },
+];
+function EledNav({ path, t }: { path: string; t: (vi: string, en: string) => string }) {
+  const active = (i: (typeof NAV_ITEMS)[number]) => path === i.to || i.also.includes(path);
+  return (
+    <>
+      <aside className="eled-side">
+        <a href="#/" className="eled-side-brand" aria-label="VNLab English Learning">
+          <img src="/logo-dark.svg" alt="" />
+          <span><small>VNLAB</small>English Learning</span>
+        </a>
+        <nav>
+          {NAV_ITEMS.map((i) => (
+            <button key={i.to} type="button" className={`eled-side-link ${active(i) ? "active" : ""}`} onClick={() => go(i.to)}>
+              <i.icon size={18} />{t(i.vi, i.en)}
+            </button>
+          ))}
+        </nav>
+        <button type="button" className={`eled-side-link eled-side-settings ${path.startsWith("/settings") ? "active" : ""}`} onClick={() => go("/settings")}>
+          <SettingsIcon size={18} />{t("Cài đặt", "Settings")}
+        </button>
+      </aside>
+      <nav className="eled-tabs" aria-label={t("Điều hướng chính", "Main navigation")}>
+        {NAV_ITEMS.map((i) => (
+          <button key={i.to} type="button" className={`eled-tab ${active(i) ? "active" : ""}`} onClick={() => go(i.to)} aria-current={active(i) ? "page" : undefined}>
+            <i.icon size={20} strokeWidth={active(i) ? 2.4 : 1.9} />{t(i.vi, i.en)}
+          </button>
+        ))}
+      </nav>
+    </>
+  );
 }

@@ -1476,3 +1476,164 @@
 }
 .lesson-word-meaning .meaning-groups p { line-height: 1.85; }
 .dark .meaning-highlight { background: #432b47; color: #edd3f1; }
+
+/* ---- Bố cục chung với VNLab Stock: sidebar navy (màn rộng), thanh tab kính mờ (điện thoại) ---- */
+.eled-side {
+  display: none;
+}
+.eled-tabs {
+  position: fixed;
+  left: 50%;
+  bottom: calc(8px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  z-index: 40;
+  display: flex;
+  gap: 2px;
+  padding: 6px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+  border: 1px solid rgba(20, 43, 70, 0.14);
+  box-shadow: 0 16px 42px rgba(13, 18, 32, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.48);
+  -webkit-backdrop-filter: blur(24px) saturate(175%);
+  backdrop-filter: blur(24px) saturate(175%);
+}
+.dark .eled-tabs {
+  border-color: rgba(237, 242, 247, 0.2);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.eled-tab {
+  display: flex;
+  min-width: 60px;
+  height: 46px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 0 4px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.eled-tab.active {
+  color: var(--green);
+}
+/* Chừa chỗ cho thanh tab, kẻo che nội dung cuối trang. */
+.eled-layout:not(.eled-focus) main {
+  padding-bottom: calc(96px + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 1024px) {
+  .eled-layout:not(.eled-focus) {
+    padding-left: 224px;
+  }
+  .eled-layout:not(.eled-focus) main {
+    padding-bottom: 32px;
+  }
+  .eled-tabs,
+  .eled-layout .topbar-settings {
+    display: none;
+  }
+  .eled-side {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 40;
+    display: flex;
+    width: 224px;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 8px 8px;
+    background: linear-gradient(180deg, #142b46 0%, #0f2136 100%);
+    color: #e9f1fa;
+  }
+  .eled-side nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .eled-side-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 12px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .eled-side-brand img {
+    height: 28px;
+    width: auto;
+  }
+  .eled-side-brand span {
+    line-height: 1.2;
+  }
+  .eled-side-brand small {
+    display: block;
+    color: rgba(233, 241, 250, 0.55);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+  .eled-side-link {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border: 0;
+    border-radius: 8px;
+    background: none;
+    color: rgba(233, 241, 250, 0.78);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+  }
+  .eled-side-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+  .eled-side-link.active {
+    background: rgba(240, 177, 245, 0.14);
+    color: #fff;
+  }
+  .eled-side-link.active::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 0;
+    width: 3px;
+    border-radius: 3px;
+    background: #f0b1f5;
+  }
+  .eled-side-link.active svg {
+    color: #f0b1f5;
+  }
+  .eled-side-settings {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 8px 8px;
+    padding-top: 14px;
+  }
+  /* Màn rộng đã có sidebar: thanh trên cùng ở trang chủ chỉ cần tiêu đề. */
+  .eled-layout .appbar-title .brand {
+    display: none;
+  }
+}
+
+/* Tìm không thấy từ: nút chuyển sang Google Dịch. */
+.translate-fallback {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  text-decoration: none;
+}

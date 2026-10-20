@@ -5,6 +5,7 @@ import { initNotifications } from "./notifications";
 import "./style.css";
 import "./fonts.css";
 import "./original.css";
+import { PullToRefresh } from "./PullToRefresh";
 // Retire the former Flutter cache while retaining every localStorage data key.
 if ("serviceWorker" in navigator)
   navigator.serviceWorker
@@ -41,6 +42,7 @@ class AppBoundary extends React.Component<
 }
 createRoot(document.getElementById("root")!).render(
   <AppBoundary>
+    <PullToRefresh accent="#b512ce" standaloneOnly />
     <App />
   </AppBoundary>,
 );

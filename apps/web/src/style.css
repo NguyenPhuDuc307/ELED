@@ -1532,3 +1532,10 @@ label > select {
     animation: none !important;
   }
 }
+
+/* Tắt kéo-để-tải-lại có sẵn của Safari: app dùng PullToRefresh riêng, giống mọi app VNLab,
+   chạy được cả trong tab lẫn khi mở từ màn hình chính. */
+html,
+body {
+  overscroll-behavior-y: none;
+}

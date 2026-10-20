@@ -1623,8 +1623,8 @@
     border-radius: 0 0 8px 8px;
     padding-top: 14px;
   }
-  /* Màn rộng đã có sidebar: thanh trên cùng ở trang chủ chỉ cần tiêu đề. */
-  .eled-layout .appbar-title .brand {
+  /* Màn rộng đã có sidebar (logo + Cài đặt): thanh trên cùng ở trang chủ không còn gì để hiện. */
+  .eled-layout .home-topbar {
     display: none;
   }
 }

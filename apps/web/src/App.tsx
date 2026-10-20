@@ -197,7 +197,7 @@ export default function App() {
     <div className={`app-shell original-app eled-layout ${session || game ? "eled-focus" : ""}`}>
       {!session && !game && <EledNav path={path} t={t} />}
       {!session && !game && (
-        <header className="topbar">
+        <header className={`topbar ${path === "/" ? "home-topbar" : ""}`}>
           <div className="appbar-title">
             {path !== "/" && (
               <IconButton label={t("Quay lại", "Back")} onClick={back}>

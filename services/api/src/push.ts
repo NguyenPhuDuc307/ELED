@@ -142,5 +142,12 @@ export async function initPush(pool: Pool, words: any[][]) {
     setInterval(() => runPushTick().catch(() => console.error("Push scheduler failed")), 15000).unref();
     // Expired or abandoned device subscriptions do not remain indefinitely.
     await db.query("DELETE FROM eled_push_devices WHERE updated_at < now() - interval '180 days'");
+    // Schedules saved before reminders were aligned to the clock grid drifted (09:59…); realign them.
+    const now = new Date();
+    for (const row of (await db.query("SELECT device_id,settings,next_at FROM eled_push_devices")).rows) {
+      const aligned = nextReminder(new Date(Math.max(now.getTime(), new Date(row.next_at).getTime()) - 60000), row.settings);
+      if (aligned.getTime() !== new Date(row.next_at).getTime())
+        await db.query("UPDATE eled_push_devices SET next_at=$2 WHERE device_id=$1", [row.device_id, aligned]);
+    }
   }
 }

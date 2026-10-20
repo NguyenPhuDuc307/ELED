@@ -25,17 +25,33 @@ export function validateReminder(value: any): ReminderSettings {
   return { interval: value.interval, count: value.count, start: value.start, end: value.end, timezone: value.timezone,
     levels: value.levels, topics: value.topics, excluded: value.excluded, language: value.language === "en" ? "en" : "vi" };
 }
+const clocks = new Map<string, Intl.DateTimeFormat>();
+/** "HH:MM" on the device's local clock (formatter cached: nextReminder calls this per minute walked). */
+function localTime(date: Date, timeZone: string): string {
+  let f = clocks.get(timeZone);
+  if (!f) clocks.set(timeZone, (f = new Intl.DateTimeFormat("en-GB", { timeZone, hour: "2-digit", minute: "2-digit", hourCycle: "h23" })));
+  return f.format(date);
+}
+const minutesOf = (hhmm: string) => Number(hhmm.slice(0, 2)) * 60 + Number(hhmm.slice(3, 5));
 export function inActiveHours(date: Date, s: ReminderSettings): boolean {
-  const local = new Intl.DateTimeFormat("en-GB", { timeZone: s.timezone, hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(date);
+  const local = localTime(date, s.timezone);
   return s.start < s.end ? local >= s.start && local < s.end : local >= s.start || local < s.end;
 }
+/**
+ * Reminders land on the local clock grid start + k·interval (start 09:00, every 60 min ->
+ * 09:00, 10:00…), not "last send + interval": the scheduler ticks every 15 s, so adding the
+ * interval to the actual send time drifted to 09:59, 10:59… Walks real minutes, so DST is safe.
+ */
 export function nextReminder(now: Date, s: ReminderSettings): Date {
-  let next = new Date(now.getTime() + s.interval * 60000);
-  if (inActiveHours(next, s)) return next;
-  next.setUTCSeconds(0, 0);
-  // Walk real minutes, including DST changes, until this device's local active window.
-  for (let i = 0; i < 48 * 60 && !inActiveHours(next, s); i++) next = new Date(next.getTime() + 60000);
-  return next;
+  const start = minutesOf(s.start);
+  let t = new Date(now.getTime());
+  t.setUTCSeconds(0, 0);
+  for (let i = 0; i < 3 * 24 * 60; i++) {
+    t = new Date(t.getTime() + 60000);
+    if (!inActiveHours(t, s)) continue;
+    if ((minutesOf(localTime(t, s.timezone)) - start + 1440) % 1440 % s.interval === 0) return t;
+  }
+  return t;
 }
 export function validatePushSubscription(value: any) {
   if (!value || typeof value.endpoint !== "string" || value.endpoint.length > 4096) throw new Error("Invalid subscription");

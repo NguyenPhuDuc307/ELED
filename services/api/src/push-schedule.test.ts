@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { inActiveHours, nextReminder, reminderPayload, selectReminderWords, validatePushSubscription, validateReminder, type ReminderSettings } from './push-schedule';
 const settings: ReminderSettings = { interval: 30, count: 2, start: '09:00', end: '19:00', timezone: 'Asia/Ho_Chi_Minh', levels: ['A1'], topics: [], excluded: [], language: 'vi' };
 test('Respects active hours in device timezone and full interval, including after server restarts', () => {
-  assert.equal(nextReminder(new Date('2026-10-16T02:00:45Z'), settings).toISOString(), '2026-10-16T02:30:45.000Z');
+  assert.equal(nextReminder(new Date('2026-10-16T02:00:45Z'), settings).toISOString(), '2026-10-16T02:30:00.000Z');
   assert.equal(nextReminder(new Date('2026-10-16T11:50:00Z'), settings).toISOString(), '2026-10-17T02:00:00.000Z');
   assert.equal(inActiveHours(new Date('2026-10-16T12:00:00Z'), settings), false);
   assert.equal(inActiveHours(new Date('2026-10-16T01:59:00Z'), settings), false);
@@ -44,4 +44,16 @@ test('Uses vocabulary filters, excludes known words, rotates and includes IPA in
   assert.ok(payload.body.includes('mèo'));
   assert.deepEqual(payload.words, ['cat']);
   assert.deepEqual(selectReminderWords([], settings, 0), []);
+});
+test('Reminders stay on the clock grid from the window start instead of drifting', () => {
+  const hourly = { ...settings, interval: 60 };
+  // Sent a few seconds late (15 s scheduler tick): the next one is still exactly 10:00, not 09:59 or 10:00:12.
+  assert.equal(nextReminder(new Date('2026-10-16T02:00:12Z'), hourly).toISOString(), '2026-10-16T03:00:00.000Z');
+  assert.equal(nextReminder(new Date('2026-10-16T02:59:40Z'), hourly).toISOString(), '2026-10-16T03:00:00.000Z');
+  // Odd intervals count from the window start: 09:00, 09:25, 09:50…
+  assert.equal(nextReminder(new Date('2026-10-16T02:00:05Z'), { ...settings, interval: 25 }).toISOString(), '2026-10-16T02:25:00.000Z');
+  // Window starting off the hour keeps its own grid: 08:15, 09:15…
+  assert.equal(nextReminder(new Date('2026-10-16T01:20:00Z'), { ...hourly, start: '08:15' }).toISOString(), '2026-10-16T02:15:00.000Z');
+  // Overnight window wraps past midnight on the same grid.
+  assert.equal(nextReminder(new Date('2026-10-16T17:00:30Z'), { ...hourly, start: '22:00', end: '06:00' }).toISOString(), '2026-10-16T18:00:00.000Z');
 });

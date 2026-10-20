@@ -352,7 +352,7 @@ main {
   gap: 22px;
 }
 .session-card {
-  background: #b512ce;
+  background: var(--hero);
   color: #fff;
   position: relative;
   padding: 30px;
@@ -412,7 +412,7 @@ main {
 .session-card .btn {
   grid-column: 1/-1;
   background: #fff;
-  color: #b512ce;
+  color: var(--green);
   margin-top: 12px;
   position: relative;
   z-index: 1;
@@ -1044,7 +1044,7 @@ label > select {
 }
 .choice.correct {
   background: var(--sage);
-  color: #b512ce;
+  color: var(--green);
   border-color: #a86bb2;
   opacity: 1;
 }

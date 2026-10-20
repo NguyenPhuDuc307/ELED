@@ -1,30 +1,44 @@
-/* Match the Flutter screens in lib/theme and lib/screens. */
+/* Soft pastel pink palette for longer reading sessions. */
 :root {
   font-family: "Be Vietnam Pro", sans-serif;
-  --bg: #fff;
-  --surface: #fff;
-  --ink: #1a1a1a;
-  --muted: #a89890;
-  --line: #ede0d8;
-  --green: #b512ce;
-  --soft: #f3d6f6;
-  --sage: #f3d6f6;
-  --salmon: #f5c4b8;
-  --sand: #f5e4cc;
-  --shadow: 0 6px 20px #7a5c4a1a, 0 2px 6px #7a5c4a0d;
+  color-scheme: light;
+  --bg: #f6f1f2;
+  --surface: #fcf8f9;
+  --ink: #3b3036;
+  --muted: #786b73;
+  --line: #e6d9df;
+  --green: #95556c;
+  --soft: #f2dfe6;
+  --sage: #f2dfe6;
+  --salmon: #ecd9d2;
+  --sand: #ebe1ce;
+  --blush: #eaddd7;
+  --coral-deep: #dfcbc5;
+  --hero: #f1d8e0;
+  --hero-ink: #643d4c;
+  --hero-button: #92566e;
+  --hero-button-ink: #fff8fa;
+  --shadow: 0 4px 16px #30263708;
 }
 .dark {
-  --bg: #0f172a;
-  --surface: #1e293b;
-  --ink: #f1f5f9;
-  --muted: #64748b;
-  --line: #334155;
-  --green: #b512ce;
-  --soft: #f3d6f6;
-  --sage: #f3d6f6;
-  --salmon: #f5c4b8;
-  --sand: #f5e4cc;
-  --shadow: 0 4px 16px #00000040;
+  color-scheme: dark;
+  --bg: #151820;
+  --surface: #1e222c;
+  --ink: #dce0e8;
+  --muted: #a0a6b3;
+  --line: #363944;
+  --green: #dbabc0;
+  --soft: #362a32;
+  --sage: #362a32;
+  --salmon: #392c2d;
+  --sand: #353025;
+  --blush: #352c2e;
+  --coral-deep: #3c3031;
+  --hero: #402c36;
+  --hero-ink: #f3dce5;
+  --hero-button: #583a49;
+  --hero-button-ink: #f3dce5;
+  --shadow: 0 4px 16px #00000020;
 }
 .original-app {
   min-height: 100dvh;
@@ -137,10 +151,10 @@
   grid-template-columns: 46px 1fr;
   column-gap: 14px;
   row-gap: 0;
-  background: #b512ce;
+  background: var(--hero);
   padding: 22px 24px;
   margin: 2px 4px 20px;
-  border: 1px solid #ede0d8cc;
+  border: 1px solid var(--line);
   border-radius: 20px;
   color: #fff;
   box-shadow: var(--shadow);
@@ -183,8 +197,8 @@
 .original-app .session-card .btn {
   margin-top: 18px;
   min-height: 46px;
-  background: #fff;
-  color: #b512ce;
+  background: var(--hero-button);
+  color: var(--hero-button-ink);
   font-size: 15px;
   font-weight: 700;
   padding: 12px 18px;
@@ -205,7 +219,7 @@
   padding: 14px 20px;
   gap: 14px;
   min-height: 0;
-  border: 1px solid #ede0d8cc;
+  border: 1px solid var(--line);
   border-radius: 20px;
   box-shadow: var(--shadow);
 }
@@ -247,16 +261,16 @@
   opacity: 0.75;
 }
 .original-app .quiz {
-  background: #f5e4cc;
+  background: var(--sand);
   color: #5a3a18;
 }
 .original-app .match {
-  background: #f5c4b8;
+  background: var(--salmon);
   color: #7a5c4a;
 }
 .original-app .speed {
-  background: #f3d6f6;
-  color: #b512ce;
+  background: var(--soft);
+  color: var(--green);
 }
 .original-app .stats-grid {
   display: grid;
@@ -275,7 +289,7 @@
 .original-app .stat-icon {
   width: 36px;
   height: 36px;
-  background: #f5c4b8;
+  background: var(--salmon);
   color: #7a5c4a;
   border-radius: 10px;
   grid-row: span 2;
@@ -319,10 +333,10 @@
   height: 28px;
   max-width: 28px;
   border-radius: 5px;
-  background: #b512ce1a;
+  background: color-mix(in srgb, var(--green) 12%, transparent);
 }
 .original-app .activity-days .done {
-  background: #b512ce;
+  background: var(--green);
 }
 .original-app .activity-days {
   justify-items: stretch;
@@ -426,19 +440,19 @@
   min-height: 168px;
 }
 .original-app .sage {
-  background: #f3d6f6;
+  background: var(--soft);
   color: #47254d;
 }
 .original-app .sand {
-  background: #f5e4cc;
+  background: var(--sand);
   color: #5a3a18;
 }
 .original-app .blush {
-  background: #f5d5cc;
+  background: var(--blush);
   color: #5a2820;
 }
 .original-app .coral {
-  background: #f5c4b8;
+  background: var(--salmon);
   color: #5a2818;
 }
 .original-app .speaking-link {
@@ -470,7 +484,7 @@
 }
 .original-app .browse-page .resume {
   position: relative;
-  background: #b512ce;
+  background: var(--green);
   color: #fff;
   margin: 0 4px 18px;
   width: calc(100% - 8px);
@@ -499,8 +513,8 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: #f3d6f6;
-  color: #b512ce;
+  background: var(--soft);
+  color: var(--green);
   border-radius: 12px;
   flex-shrink: 0;
 }
@@ -608,19 +622,19 @@
   opacity: 0.7;
 }
 .level-A1 {
-  background-color: #f3d6f6;
+  background-color: var(--soft);
 }
 .level-A2 {
-  background-color: #f5d5cc;
+  background-color: var(--blush);
 }
 .level-B1 {
-  background-color: #f5e4cc;
+  background-color: var(--sand);
 }
 .level-B2 {
-  background-color: #f5c4b8;
+  background-color: var(--salmon);
 }
 .level-C1 {
-  background-color: #e8c4bc;
+  background-color: var(--coral-deep);
 }
 .original-app .library-page > .page-heading {
   justify-content: flex-end;
@@ -795,8 +809,8 @@
   margin: 0;
 }
 .pronunciation-row .icon-btn {
-  background: #f3d6f6;
-  color: #b512ce;
+  background: var(--soft);
+  color: var(--green);
   width: 42px;
   height: 42px;
   border-radius: 24px;
@@ -853,16 +867,16 @@
   font-size: 10px;
 }
 .original-app .again {
-  background: #f5c4b8;
+  background: var(--salmon);
   color: #7a5c4a;
 }
 .original-app .hard {
-  background: #f5e4cc;
+  background: var(--sand);
   color: #7a5c4a;
 }
 .original-app .easy {
-  background: #f3d6f6;
-  color: #b512ce;
+  background: var(--soft);
+  color: var(--green);
 }
 .original-app .known-shortcut {
   margin: 12px auto 0;
@@ -1047,7 +1061,7 @@
 .original-app .word-card.exercise-recognize .word-badges .icon-btn {
   width: 30px;
   height: 30px;
-  color: #b512ce;
+  color: var(--green);
 }
 .original-app .ratings {
   margin-top: 4px;
@@ -1119,8 +1133,8 @@
   color: var(--muted);
 }
 .level-tabs button.active {
-  background: #b512ce;
-  border-color: #b512ce;
+  background: var(--green);
+  border-color: var(--green);
   color: white;
 }
 .pos-tabs {
@@ -1138,8 +1152,8 @@
   font-size: 12px;
 }
 .pos-tabs button.active {
-  background: #f3d6f6;
-  color: #b512ce;
+  background: var(--soft);
+  color: var(--green);
 }
 .day-grid {
   display: grid;
@@ -1269,7 +1283,7 @@
 .original-app .matching-game .match-columns button.matched {
   background: var(--soft);
   border-color: var(--soft);
-  color: #512e57;
+  color: #704454;
   opacity: 0.55;
   box-shadow: none;
 }
@@ -1280,7 +1294,7 @@
 }
 
 .original-app .day-card {
-  --day-accent: #b512ce;
+  --day-accent: var(--green);
   background: #edf4ea;
   border: 1px solid #d6e3d1;
   border-radius: 18px;
@@ -1316,7 +1330,7 @@
 .day-progress progress::-moz-progress-bar { background: var(--day-accent); }
 .original-app .day-card > .row { color: var(--day-accent); font-weight: 600; font-size: 12px; }
 .original-app .day-card:hover { border-color: var(--day-accent); }
-.dark .original-app .day-card { background: var(--surface); border-color: var(--line); --day-accent: #c498cb; }
+.dark .original-app .day-card { background: var(--surface); border-color: var(--line); --day-accent: #dbabc0; }
 .dark .day-preview, .dark .day-progress { color: var(--ink); }
 @media (min-width: 768px) { .day-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); } }
 
@@ -1442,8 +1456,8 @@
 }
 
 .meaning-groups { display: grid; gap: 14px; margin: 20px 0; }
-.meaning-groups > div { border-left: 3px solid #b512ce40; padding-left: 12px; }
-.meaning-groups > div > span { color: #512e57; font-size: 12px; font-weight: 600; }
+.meaning-groups > div { border-left: 3px solid var(--green)40; padding-left: 12px; }
+.meaning-groups > div > span { color: #704454; font-size: 12px; font-weight: 600; }
 .meaning-groups > div > p { font-size: 18px; line-height: 1.6; color: var(--ink); margin-top: 3px; }
 .original-app .word-card.exercise-recognize .meaning-groups { order: 4; }
 
@@ -1467,7 +1481,7 @@
 
 .meaning-highlight {
   background: #e4efd9;
-  color: #451d4b;
+  color: #643d4c;
   font-weight: 600;
   padding: 2px 5px;
   border-radius: 4px;
@@ -1475,7 +1489,7 @@
   box-decoration-break: clone;
 }
 .lesson-word-meaning .meaning-groups p { line-height: 1.85; }
-.dark .meaning-highlight { background: #432b47; color: #edd3f1; }
+.dark .meaning-highlight { background: #402c36; color: #f3dce5; }
 
 /* ---- Bố cục chung với VNLab Stock: sidebar navy (màn rộng), thanh tab kính mờ (điện thoại) ---- */
 .eled-side {
@@ -1484,7 +1498,7 @@
 .eled-tabs {
   position: fixed;
   left: 50%;
-  bottom: calc(8px + env(safe-area-inset-bottom));
+  bottom: calc(18px + env(safe-area-inset-bottom));
   transform: translateX(-50%);
   z-index: 40;
   display: flex;
@@ -1503,7 +1517,7 @@
 }
 .eled-tab {
   display: flex;
-  min-width: 60px;
+  min-width: 48px;
   height: 46px;
   flex-direction: column;
   align-items: center;
@@ -1612,10 +1626,10 @@
     left: 0;
     width: 3px;
     border-radius: 3px;
-    background: #f0b1f5;
+    background: #e6b8cb;
   }
   .eled-side-link.active svg {
-    color: #f0b1f5;
+    color: #e6b8cb;
   }
   .eled-side-settings {
     margin-top: auto;
@@ -1636,4 +1650,27 @@
   gap: 8px;
   margin-top: 14px;
   text-decoration: none;
+}
+
+html { background: var(--bg); color: var(--ink); }
+.dark .original-app :is(.quiz, .match, .speed, .sage, .sand, .blush, .coral, .stat-icon) {
+  color: var(--ink);
+}
+.dark .original-app .today-heading .eyebrow,
+.dark .original-app .stat > span:last-child {
+  color: var(--muted);
+}
+
+.search-translation { margin-top: 16px; text-align: left; }
+.search-translation strong { display: block; margin-bottom: 6px; }
+.search-translation p { color: var(--ink); white-space: pre-wrap; }
+
+.original-app .session-card,
+.original-app .session-copy > span,
+.original-app .session-badges .badge {
+  color: var(--hero-ink);
+}
+.original-app .session-icon,
+.original-app .session-badges .badge {
+  background: color-mix(in srgb, var(--hero-ink) 9%, transparent);
 }

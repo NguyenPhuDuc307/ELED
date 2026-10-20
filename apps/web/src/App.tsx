@@ -129,6 +129,9 @@ export default function App() {
         p.settings.theme === "dark" ||
           ((p.settings.theme ?? "system") === "system" && media.matches),
       );
+      const dark = document.documentElement.classList.contains("dark");
+      document.documentElement.style.colorScheme = dark ? "dark" : "light";
+      document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#151820" : "#f6f1f2");
       document.documentElement.lang = p.settings.language ?? "vi";
     };
     update();
@@ -688,8 +691,8 @@ function EledNav({ path, t }: { path: string; t: (vi: string, en: string) => str
       </aside>
       <nav className="eled-tabs" aria-label={t("Điều hướng chính", "Main navigation")}>
         {NAV_ITEMS.map((i) => (
-          <button key={i.to} type="button" className={`eled-tab ${active(i) ? "active" : ""}`} onClick={() => go(i.to)} aria-current={active(i) ? "page" : undefined}>
-            <i.icon size={20} strokeWidth={active(i) ? 2.4 : 1.9} />{t(i.vi, i.en)}
+          <button key={i.to} type="button" className={`eled-tab ${active(i) ? "active" : ""}`} aria-label={t(i.vi, i.en)} title={t(i.vi, i.en)} onClick={() => go(i.to)} aria-current={active(i) ? "page" : undefined}>
+            <i.icon size={22} strokeWidth={active(i) ? 2.4 : 1.9} />
           </button>
         ))}
       </nav>

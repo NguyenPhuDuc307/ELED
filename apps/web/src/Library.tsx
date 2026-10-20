@@ -1,4 +1,4 @@
-import { useDeferredValue, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   BookOpen,
   Check,
@@ -36,6 +36,46 @@ export function Library({
   const p = useProfile();
   const t = useText();
   const [query, setQuery] = useState("");
+  const [translation, setTranslation] = useState("");
+  const [translationBusy, setTranslationBusy] = useState(false);
+  const [translationError, setTranslationError] = useState("");
+  const translationRequest = useRef<AbortController | null>(null);
+  useEffect(() => {
+    translationRequest.current?.abort();
+    setTranslation("");
+    setTranslationError("");
+    setTranslationBusy(false);
+    return () => translationRequest.current?.abort();
+  }, [query]);
+  async function translateQuery() {
+    const text = query.trim();
+    if (!text || text.length > 2000) {
+      setTranslationError(t("Nhập tối đa 2.000 ký tự để dịch.", "Enter up to 2,000 characters to translate."));
+      return;
+    }
+    translationRequest.current?.abort();
+    const controller = new AbortController();
+    translationRequest.current = controller;
+    setTranslationBusy(true);
+    setTranslationError("");
+    setTranslation("");
+    try {
+      const response = await fetch("/api/eled/translate", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ texts: [text], target: hasVietnamese(text) ? "en" : "vi" }),
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error("Translation unavailable");
+      const data = await response.json();
+      if (typeof data.translations?.[0] !== "string" || !data.translations[0].trim()) throw new Error("Empty translation");
+      if (!controller.signal.aborted) setTranslation(data.translations[0]);
+    } catch {
+      if (!controller.signal.aborted) setTranslationError(t("Chưa dịch được. Kiểm tra kết nối rồi thử lại.", "Translation unavailable. Check your connection and retry."));
+    } finally {
+      if (!controller.signal.aborted) setTranslationBusy(false);
+    }
+  }
+
   const deferred = useDeferredValue(query);
   const [level, setLevel] = useState("");
   const [selectedLevels, setSelectedLevels] = useState(["A1"]);
@@ -451,10 +491,9 @@ export function Library({
                   setLimit(60);
                 }}
                 onKeyDown={(e) => {
-                  // Không có trong từ điển: Enter mở thẳng Google Dịch (trong thao tác người dùng nên không bị chặn popup).
                   if (e.key === "Enter" && query.trim() && !filtered.length) {
                     e.preventDefault();
-                    window.open(googleTranslateUrl(query), "_blank", "noopener");
+                    void translateQuery();
                   }
                 }}
               />
@@ -596,10 +635,14 @@ export function Library({
             <Empty>
               {t("Không tìm thấy từ phù hợp.", "No matching words.")}
               {query.trim() && (
-                <a className="btn translate-fallback" href={googleTranslateUrl(query)} target="_blank" rel="noopener noreferrer">
-                  <Languages size={17} />
-                  {t(`Dịch “${query.trim()}” bằng Google Dịch`, `Translate “${query.trim()}” with Google Translate`)}
-                </a>
+                <div>
+                  <Button className="translate-fallback" disabled={translationBusy} onClick={() => void translateQuery()}>
+                    <Languages size={17} />
+                    {translationBusy ? t("Đang dịch…", "Translating…") : t(`Dịch “${query.trim()}”`, `Translate “${query.trim()}”`)}
+                  </Button>
+                  {translationError && <p role="alert">{translationError}</p>}
+                  {translation && <div className="card search-translation" role="status"><strong>{t("Bản dịch · Google Translate", "Translation · Google Translate")}</strong><p>{translation}</p></div>}
+                </div>
               )}
             </Empty>
           )}
@@ -672,9 +715,7 @@ export function Library({
   );
 }
 
-/** Có dấu tiếng Việt thì dịch sang tiếng Anh, còn lại dịch sang tiếng Việt. */
-function googleTranslateUrl(text: string) {
-  const q = text.trim();
-  const vi = /[ăâđêôơưàáạảãằắặẳẵầấậẩẫèéẹẻẽềếệểễìíịỉĩòóọỏõồốộổỗờớợởỡùúụủũừứựửữỳýỵỷỹ]/i.test(q);
-  return `https://translate.google.com/?sl=${vi ? "vi" : "en"}&tl=${vi ? "en" : "vi"}&text=${encodeURIComponent(q)}&op=translate`;
+/** Vietnamese text is translated to English; other input is translated to Vietnamese. */
+function hasVietnamese(text: string) {
+  return /[ăâđêôơưàáạảãằắặẳẵầấậẩẫèéẹẻẽềếệểễìíịỉĩòóọỏõồốộổỗờớợởỡùúụủũừứựửữỳýỵỷỹ]/i.test(text);
 }

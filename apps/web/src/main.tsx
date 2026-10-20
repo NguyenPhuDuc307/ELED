@@ -42,7 +42,7 @@ class AppBoundary extends React.Component<
 }
 createRoot(document.getElementById("root")!).render(
   <AppBoundary>
-    <PullToRefresh accent="#b512ce" />
+    <PullToRefresh accent="var(--green)" />
     <App />
   </AppBoundary>,
 );

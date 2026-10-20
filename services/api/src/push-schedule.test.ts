@@ -40,8 +40,12 @@ test('Uses vocabulary filters, excludes known words, rotates and includes IPA in
   assert.equal(words[0][0], 'cat');
   assert.equal(selectReminderWords(vocabulary, { ...settings, count: 1 }, 1)[0][0], 'dog');
   const payload = reminderPayload(words, 'vi');
-  assert.ok(payload.body.includes('/kæt/'));
-  assert.ok(payload.body.includes('mèo'));
+  // Một từ: tiêu đề là chính từ + phiên âm, thân là nghĩa.
+  assert.equal(payload.title, 'cat /kæt/');
+  assert.equal(payload.body, 'mèo');
+  const many = reminderPayload(vocabulary.slice(0, 2), 'vi');
+  assert.equal(many.title, 'cat · dog');
+  assert.equal(many.body, 'cat: mèo\ndog: chó');
   assert.deepEqual(payload.words, ['cat']);
   assert.deepEqual(selectReminderWords([], settings, 0), []);
 });

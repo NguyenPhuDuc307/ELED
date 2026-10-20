@@ -72,10 +72,17 @@ export function selectReminderWords(vocabulary: any[][], s: ReminderSettings, of
   return Array.from({ length: Math.min(s.count, words.length) }, (_, i) => words[(offset + i) % words.length]);
 }
 export function reminderPayload(words: any[][], language: string, test = false) {
-  const body = test ? (language === "en" ? "Browser notifications are working. Your learning reminders are ready." : "Thông báo trình duyệt đã sẵn sàng. ELED sẽ nhắc bạn học theo lịch đã đặt.") :
-    words.map(w => `${w[0]} ${w[3] || ""}\n${reminderMeaning(w)}`).join("\n\n");
-  return { title: test ? "ELED · " + (language === "en" ? "Test notification" : "Thông báo thử") : "ELED · " + (language === "en" ? "Vocabulary reminder" : "Nhắc học từ vựng"),
-    body: body.slice(0, 1200), url: "/#/history", tag: test ? "eled-test" : "eled-vocabulary", words: words.map(w => String(w[0]).toLowerCase()), sentAt: Date.now() };
+  const en = language === "en";
+  if (test) {
+    return { title: "English Learning · " + (en ? "Test notification" : "Thông báo thử"),
+      body: en ? "Browser notifications are working. Your learning reminders are ready." : "Thông báo trình duyệt đã sẵn sàng. English Learning sẽ nhắc bạn học theo lịch đã đặt.",
+      url: "/#/history", tag: "eled-test", words: [], sentAt: Date.now() };
+  }
+  // Tiêu đề là chính từ cần nhớ (một từ thì kèm phiên âm), thân là nghĩa gọn — liếc qua là học được.
+  const title = words.length === 1 ? `${words[0][0]}${words[0][3] ? ` ${words[0][3]}` : ""}` : words.map(w => w[0]).join(" · ");
+  const body = words.length === 1 ? reminderMeaning(words[0]) : words.map(w => `${w[0]}: ${reminderMeaning(w)}`).join("\n");
+  return { title: title.slice(0, 120) || (en ? "Vocabulary reminder" : "Nhắc học từ vựng"), body: body.slice(0, 1200), url: "/#/history", tag: "eled-vocabulary",
+    words: words.map(w => String(w[0]).toLowerCase()), sentAt: Date.now() };
 }
 
 // Thông báo chỉ có vài dòng: mỗi từ loại một nghĩa cốt lõi (trước ";", tối đa 3 cách nói),

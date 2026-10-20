@@ -11,7 +11,7 @@ import {
   Languages,
 } from "lucide-react";
 import { change, getProfile, apply } from "./storage";
-import type { Word } from "./model";
+import { shortMeaning, type Word } from "./model";
 import {
   Badge,
   Button,
@@ -535,7 +535,7 @@ export function Library({
                 <button className="word-open" onClick={() => onLearn([w])}>
                   <strong>{w.word}</strong>
                   <span className="muted ipa-text">{w.ipa}</span>
-                  <span>{w.translation}</span>
+                  <span>{shortMeaning(w)}</span>
                 </button>
                 <div className="word-tools">
                   {w.levels[0] && <Badge>{w.levels[0]}</Badge>}

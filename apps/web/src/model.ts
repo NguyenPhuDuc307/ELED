@@ -202,3 +202,40 @@ export function speakingScore(target: string, spoken: string) {
           : Math.max(dp[i - 1][j], dp[i][j - 1]);
   return a.length ? Math.round((dp[a.length][b.length] / a.length) * 100) : 0;
 }
+
+// ---- Nghĩa gọn -----------------------------------------------------------
+// Nguồn (Wiktionary) gom nhiều cách nói và cả câu giải thích vào một nghĩa:
+// "đu đưa, đong đưa, đung đưa, lúc lắc, vung vẩy; lắc, lay, khuấy, đi…". Từ loại
+// đã hiện riêng nên chỉ cần phần cốt lõi: trước dấu ";" và tối đa vài cách nói.
+const POS_ABBR: Record<string, string> = {
+  noun: "n.", verb: "v.", adjective: "adj.", adverb: "adv.", preposition: "prep.", pronoun: "pron.",
+  conjunction: "conj.", determiner: "det.", interjection: "interj.", "modal verb": "modal", "auxiliary verb": "aux.",
+  number: "num.", exclamation: "exclam.",
+};
+export const posAbbr = (pos: string) => POS_ABBR[pos] ?? `${pos}.`;
+
+/** Một nghĩa, bỏ phần sau ";" và giữ tối đa `max` cách nói cách nhau bằng dấu phẩy (không cắt trong ngoặc). */
+export function conciseSense(text: string, max = 3): string {
+  const head = text.split(/\s*;\s*/)[0].trim();
+  const parts: string[] = [];
+  let depth = 0, cur = "";
+  for (const ch of head) {
+    if (ch === "(" || ch === "[") depth++;
+    if (ch === ")" || ch === "]") depth = Math.max(0, depth - 1);
+    if (ch === "," && depth === 0) { parts.push(cur.trim()); cur = ""; } else cur += ch;
+  }
+  if (cur.trim()) parts.push(cur.trim());
+  return parts.slice(0, max).join(", ") || text;
+}
+
+/**
+ * Nghĩa ngắn cho quiz, danh sách, đáp án: mỗi từ loại một nghĩa chính đã rút gọn;
+ * có `pos` thì chỉ lấy đúng từ loại đó. Từ tự thêm (không có senses) giữ nguyên.
+ */
+export function shortMeaning(w: Pick<Word, "translation" | "senses">, pos?: string): string {
+  const senses = w.senses?.filter((s) => s.meanings.length) ?? [];
+  if (!senses.length) return w.translation;
+  const pick = pos ? senses.filter((s) => s.pos === pos) : senses;
+  const list = pick.length ? pick : senses;
+  return list.map((s) => `${list.length > 1 ? `${posAbbr(s.pos)} ` : ""}${conciseSense(s.meanings[0])}`).join(" · ");
+}

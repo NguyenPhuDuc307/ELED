@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { inActiveHours, nextReminder, reminderPayload, selectReminderWords, validatePushSubscription, validateReminder, type ReminderSettings } from './push-schedule';
+import { inActiveHours, nextReminder, reminderMeaning, reminderPayload, selectReminderWords, validatePushSubscription, validateReminder, type ReminderSettings } from './push-schedule';
 const settings: ReminderSettings = { interval: 30, count: 2, start: '09:00', end: '19:00', timezone: 'Asia/Ho_Chi_Minh', levels: ['A1'], topics: [], excluded: [], language: 'vi' };
 test('Respects active hours in device timezone and full interval, including after server restarts', () => {
   assert.equal(nextReminder(new Date('2026-10-16T02:00:45Z'), settings).toISOString(), '2026-10-16T02:30:00.000Z');
@@ -56,4 +56,10 @@ test('Reminders stay on the clock grid from the window start instead of drifting
   assert.equal(nextReminder(new Date('2026-10-16T01:20:00Z'), { ...hourly, start: '08:15' }).toISOString(), '2026-10-16T02:15:00.000Z');
   // Overnight window wraps past midnight on the same grid.
   assert.equal(nextReminder(new Date('2026-10-16T17:00:30Z'), { ...hourly, start: '22:00', end: '06:00' }).toISOString(), '2026-10-16T18:00:00.000Z');
+});
+test('Notification meanings keep only the core sense of each part of speech', () => {
+  const swing = ['swing', 'v. đu đưa… · n. sự đu đưa…', 'verb; noun', '', '', '', ['B1'], [],
+    [['verb', ['đu đưa, đong đưa, đung đưa, lúc lắc, vung vẩy; lắc, lay']], ['noun', ['sự đu đưa, sự lúc lắc; độ đu đưa']]]];
+  assert.equal(reminderMeaning(swing), 'v. đu đưa, đong đưa, đung đưa · n. sự đu đưa, sự lúc lắc');
+  assert.equal(reminderMeaning(['cat', 'mèo', 'noun']), 'mèo');
 });

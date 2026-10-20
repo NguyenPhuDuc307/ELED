@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
+  conciseSense,
   emptyProfile,
   fresh,
   localDate,
@@ -9,6 +10,7 @@ import {
   speakingScore,
   todaySession,
   type Word,
+  shortMeaning,
 } from "./model";
 test("SRS matches the existing mobile schedule and retains lapse history", () => {
   const first = rate(fresh("Hello"), "easy", 100);
@@ -66,4 +68,22 @@ test('Easy marks a word known and removes it from future sessions; other ratings
   legacy.srs.easy = rate(fresh('easy'), 'easy');
   legacy.srs.good = rate(fresh('good'), 'good');
   assert.deepEqual(legacyEasyOperations(legacy).map(op => op.key), ['easy']);
+});
+
+test("Meanings are trimmed to the core sense per part of speech", () => {
+  assert.equal(conciseSense("đu đưa, đong đưa, đung đưa, lúc lắc, vung vẩy; lắc, lay, khuấy"), "đu đưa, đong đưa, đung đưa");
+  assert.equal(conciseSense("một; một cái, một người (mạo từ bất định)"), "một");
+  // Dấu phẩy trong ngoặc không bị cắt.
+  assert.equal(conciseSense("mùi (hương, vị), hơi"), "mùi (hương, vị), hơi");
+  const swing = {
+    translation: "v. đu đưa, đong đưa… · n. sự đu đưa…",
+    senses: [
+      { pos: "verb", meanings: ["đu đưa, đong đưa, đung đưa, lúc lắc, vung vẩy; lắc, lay", "vung"] },
+      { pos: "noun", meanings: ["sự đu đưa, sự lúc lắc; độ đu đưa, độ lắc"] },
+    ],
+  };
+  assert.equal(shortMeaning(swing), "v. đu đưa, đong đưa, đung đưa · n. sự đu đưa, sự lúc lắc");
+  assert.equal(shortMeaning(swing, "noun"), "sự đu đưa, sự lúc lắc");
+  // Từ tự thêm không có senses: giữ nguyên nghĩa người dùng nhập.
+  assert.equal(shortMeaning({ translation: "nghĩa của tôi, rất dài; giữ nguyên" }), "nghĩa của tôi, rất dài; giữ nguyên");
 });

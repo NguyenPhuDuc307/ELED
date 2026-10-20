@@ -23,6 +23,8 @@ import {
   shuffle,
   type Rating,
   type Word,
+  conciseSense,
+  shortMeaning,
 } from "./model";
 import {
   Badge,
@@ -422,7 +424,7 @@ function Exercise({
                     ),
                     "_____",
                   )
-                : word.translation}
+                : shortMeaning(word)}
             </h2>
             {kind === "context" && (
               <p className="muted">
@@ -438,7 +440,8 @@ function Exercise({
             {word.senses?.length ? <div className="meaning-groups">
               {word.senses.map(s => <div key={s.pos}>
                 <span>{s.pos}</span>
-                <p><span className="meaning-highlight">{s.meanings.slice(0, 4).join("; ")}</span></p>
+                {/* Tối đa 2 nghĩa cho mỗi từ loại, mỗi nghĩa chỉ phần cốt lõi (conciseSense). */}
+                <p><span className="meaning-highlight">{s.meanings.slice(0, 2).map((m) => conciseSense(m)).join("; ")}</span></p>
               </div>)}
             </div> : <h2 className="meaning"><span className="meaning-highlight">{word.translation}</span></h2>}
             </div>
@@ -471,7 +474,7 @@ function Exercise({
                   setChecked(w.word === word.word);
                 }}
               >
-                {w.translation}
+                {shortMeaning(w)}
               </button>
             ))}
           </div>
@@ -555,7 +558,7 @@ function Exercise({
                 ? t("Chính xác!", "Correct!")
                 : t("Đáp án đúng: ", "Correct answer: ") + word.word}
             </strong>
-            <p>{word.translation}</p>
+            <p>{shortMeaning(word)}</p>
             <Button onClick={() => onRate(checked ? "good" : "again")}>
               {t("Tiếp tục", "Continue")}
               <ArrowRight size={16} />

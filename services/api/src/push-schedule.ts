@@ -73,7 +73,27 @@ export function selectReminderWords(vocabulary: any[][], s: ReminderSettings, of
 }
 export function reminderPayload(words: any[][], language: string, test = false) {
   const body = test ? (language === "en" ? "Browser notifications are working. Your learning reminders are ready." : "Thông báo trình duyệt đã sẵn sàng. ELED sẽ nhắc bạn học theo lịch đã đặt.") :
-    words.map(w => `${w[0]} ${w[3] || ""}\n${w[1]}`).join("\n\n");
+    words.map(w => `${w[0]} ${w[3] || ""}\n${reminderMeaning(w)}`).join("\n\n");
   return { title: test ? "ELED · " + (language === "en" ? "Test notification" : "Thông báo thử") : "ELED · " + (language === "en" ? "Vocabulary reminder" : "Nhắc học từ vựng"),
     body: body.slice(0, 1200), url: "/#/history", tag: test ? "eled-test" : "eled-vocabulary", words: words.map(w => String(w[0]).toLowerCase()), sentAt: Date.now() };
+}
+
+// Thông báo chỉ có vài dòng: mỗi từ loại một nghĩa cốt lõi (trước ";", tối đa 3 cách nói),
+// cùng quy tắc với shortMeaning() ở apps/web/src/model.ts. Không có senses thì giữ w[1].
+const POS_ABBR: Record<string, string> = { noun: "n.", verb: "v.", adjective: "adj.", adverb: "adv.", preposition: "prep.", pronoun: "pron.", conjunction: "conj.", determiner: "det." };
+function conciseSense(text: string) {
+  const parts: string[] = [];
+  let depth = 0, cur = "";
+  for (const ch of String(text).split(/\s*;\s*/)[0]) {
+    if (ch === "(" || ch === "[") depth++;
+    if (ch === ")" || ch === "]") depth = Math.max(0, depth - 1);
+    if (ch === "," && depth === 0) { parts.push(cur.trim()); cur = ""; } else cur += ch;
+  }
+  if (cur.trim()) parts.push(cur.trim());
+  return parts.slice(0, 3).join(", ") || String(text);
+}
+export function reminderMeaning(w: any[]): string {
+  const senses = (Array.isArray(w[8]) ? w[8] : []).filter((s: any) => Array.isArray(s?.[1]) && s[1].length);
+  if (!senses.length) return String(w[1] ?? "");
+  return senses.map((s: any) => `${senses.length > 1 ? `${POS_ABBR[s[0]] ?? `${s[0]}.`} ` : ""}${conciseSense(s[1][0])}`).join(" · ");
 }

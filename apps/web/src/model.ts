@@ -119,6 +119,23 @@ export function streak(activity: Profile["activity"]) {
   return n;
 }
 export function todaySession(words: Word[], profile: Profile) {
+  return todayPlan(words, profile).words;
+}
+const levelOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const levelRank = (w: Word) =>
+  Math.min(...w.levels.map((l) => levelOrder.indexOf(l)).filter((n) => n >= 0), levelOrder.length);
+/** "Animals - Pets" → ["Animals", "Pets"]; tên thư mục dùng "_" thay dấu cách. */
+export function topicParts(topic: string): [string, string] {
+  const [group, ...rest] = topic.split(" - ");
+  return [group.replaceAll("_", " "), rest.join(" - ").replaceAll("_", " ")];
+}
+/**
+ * Phiên hôm nay: từ đến hạn ôn trước, rồi từ mới gom theo chủ đề.
+ * Thứ tự chủ đề cố định (nhóm dễ trước, trong nhóm chủ đề dễ trước) nên học hết
+ * một chủ đề mới sang chủ đề kế, không nhảy lung tung giữa các lần mở app.
+ * Từ không thuộc chủ đề nào (a, about, the…) vẫn cần học: chen vài từ mỗi phiên.
+ */
+export function todayPlan(words: Word[], profile: Profile): { words: Word[]; topic?: string } {
   const levels: string[] = profile.settings.levels ?? ["A1", "A2", "B1"];
   const topics: string[] = profile.settings.topics ?? [];
   const eligible = words.filter(
@@ -139,12 +156,48 @@ export function todaySession(words: Word[], profile: Profile) {
         profile.srs[b.word.toLowerCase()].d,
     )
     .slice(0, 20);
-  return [
-    ...due,
-    ...eligible
-      .filter((w) => !profile.srs[w.word.toLowerCase()])
-      .slice(0, Math.min(10, 20 - due.length)),
-  ];
+  const limit = Math.min(10, 20 - due.length);
+  const isNew = (w: Word) => !profile.srs[w.word.toLowerCase()];
+  const unseen = eligible.filter(isNew);
+  if (limit <= 0 || !unseen.length) return { words: due };
+
+  // Thứ tự chủ đề tính trên mọi từ đủ điều kiện (không chỉ từ chưa học) để không đổi theo tiến độ.
+  const average = (list: Word[]) => list.reduce((s, w) => s + levelRank(w), 0) / list.length;
+  const byTopic = new Map<string, Word[]>();
+  for (const w of eligible)
+    for (const t of w.topics) {
+      if (topics.length && !topics.some((p) => t.startsWith(p))) continue;
+      byTopic.set(t, [...(byTopic.get(t) ?? []), w]);
+    }
+  const byGroup = new Map<string, string[]>();
+  for (const t of byTopic.keys()) {
+    const g = topicParts(t)[0];
+    byGroup.set(g, [...(byGroup.get(g) ?? []), t]);
+  }
+  const groupLevel = new Map([...byGroup].map(([g, ts]) => [g, average(ts.flatMap((t) => byTopic.get(t)!))]));
+  const topicLevel = new Map([...byTopic].map(([t, ws]) => [t, average(ws)]));
+  const order = [...byGroup.keys()]
+    .sort((a, b) => groupLevel.get(a)! - groupLevel.get(b)! || a.localeCompare(b))
+    .flatMap((g) => byGroup.get(g)!.sort((a, b) => topicLevel.get(a)! - topicLevel.get(b)! || a.localeCompare(b)));
+
+  const easiest = (list: Word[]) => [...list].sort((a, b) => levelRank(a) - levelRank(b));
+  const common = easiest(unseen.filter((w) => !w.topics.length));
+  const picked = new Set<Word>();
+  // Dành tối đa 2 chỗ cho từ thông dụng không chủ đề; phần còn lại theo chủ đề.
+  const topicSlots = limit - Math.min(2, common.length);
+  let topic: string | undefined;
+  for (const t of order) {
+    if (picked.size >= topicSlots) break;
+    const fresh = easiest(byTopic.get(t)!.filter((w) => isNew(w) && !picked.has(w)));
+    if (!fresh.length) continue;
+    topic ??= t;
+    for (const w of fresh.slice(0, topicSlots - picked.size)) picked.add(w);
+  }
+  for (const w of [...common, ...easiest(unseen)]) {
+    if (picked.size >= limit) break;
+    picked.add(w);
+  }
+  return { words: [...due, ...picked], topic };
 }
 export function shuffle<T>(list: T[]): T[] {
   return [...list].sort(() => Math.random() - 0.5);

@@ -87,3 +87,18 @@ test("Meanings are trimmed to the core sense per part of speech", () => {
   // Từ tự thêm không có senses: giữ nguyên nghĩa người dùng nhập.
   assert.equal(shortMeaning({ translation: "nghĩa của tôi, rất dài; giữ nguyên" }), "nghĩa của tôi, rất dài; giữ nguyên");
 });
+
+test("New words come from one topic at a time, easiest group first, plus a couple of common words", async () => {
+  const { todayPlan } = await import("./model");
+  const w = (word: string, level: string, topics: string[]): Word =>
+    ({ word, translation: "", pos: "", ipa: "", audio: "", url: "", levels: [level], topics });
+  const words = [
+    ...Array.from({ length: 12 }, (_, i) => w("job" + i, "B1", ["Work - Jobs"])),
+    ...Array.from({ length: 5 }, (_, i) => w("pet" + i, "A1", ["Animals - Pets"])),
+    ...Array.from({ length: 5 }, (_, i) => w("bird" + i, "A2", ["Animals - Birds"])),
+    w("the", "A1", []), w("a", "A1", []), w("about", "A1", []),
+  ];
+  const plan = todayPlan(words, emptyProfile());
+  assert.equal(plan.topic, "Animals - Pets");
+  assert.deepEqual(plan.words.map((x) => x.word), ["pet0", "pet1", "pet2", "pet3", "pet4", "bird0", "bird1", "bird2", "the", "a"]);
+});

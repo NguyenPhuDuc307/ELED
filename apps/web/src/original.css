@@ -1976,3 +1976,11 @@ html { background: var(--bg); color: var(--ink); }
   .flashcard-meaning,
   .flashcard-reveal { max-width: 640px; margin-left: auto; margin-right: auto; }
 }
+.original-app .session-copy .session-topic {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+.original-app .session-copy .session-topic strong { font-weight: 700; }

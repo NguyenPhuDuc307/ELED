@@ -35,7 +35,7 @@ import {
 } from "lucide-react";
 import { apply, change, read } from "./storage";
 import nickJudyImage from "./assets/nick-judy.png";
-import { legacyEasyOperations, localDate, shuffle, streak, todaySession, type Word } from "./model";
+import { legacyEasyOperations, localDate, shuffle, streak, todayPlan, topicParts, type Word } from "./model";
 import {
   Badge,
   Button,
@@ -147,7 +147,9 @@ export default function App() {
       ].sort(),
     [words],
   );
-  const today = useMemo(() => todaySession(words, p), [words, p]);
+  const plan = useMemo(() => todayPlan(words, p), [words, p]);
+  const today = plan.words;
+  const todayTopic = plan.topic ? topicParts(plan.topic) : undefined;
   const gamePool = useMemo(() => {
     const levels: string[] = p.settings.levels ?? ["A1", "A2", "B1"];
     return words.filter(
@@ -323,7 +325,8 @@ export default function App() {
               <HomeView
                 words={words}
                 today={today}
-                onStart={() => start(today)}
+                topic={todayTopic}
+                onStart={() => start(today, todayTopic ? todayTopic[1] || todayTopic[0] : undefined)}
                 onQuiz={() => go("/quiz")}
                 onMatch={() => go("/match")}
                 onSpeed={() => go("/speed")}
@@ -379,6 +382,7 @@ export default function App() {
 function HomeView({
   words,
   today,
+  topic,
   onStart,
   onQuiz,
   onMatch,
@@ -386,6 +390,7 @@ function HomeView({
 }: {
   words: Word[];
   today: Word[];
+  topic?: [string, string];
   onStart: () => void;
   onQuiz: () => void;
   onMatch: () => void;
@@ -447,6 +452,11 @@ function HomeView({
           <h2>
             {today.length} {t("từ", "words")}
           </h2>
+          {topic && today.length - reviewed > 0 && (
+            <small className="session-topic">
+              {t("Chủ đề", "Topic")}: {topic[0]}{topic[1] && <> › <strong>{topic[1]}</strong></>}
+            </small>
+          )}
         </div>
         <div className="session-badges">
           <Badge>

@@ -140,6 +140,7 @@ export function Lesson({
           words: words.map((w) => w.word.toLowerCase()),
           index,
           kinds,
+          title,
           time: Date.now(),
         }),
       );
@@ -175,7 +176,7 @@ export function Lesson({
           <ArrowLeft />
         </IconButton>
         <div>
-          <h1>{title ?? t("Tìm kiếm", "Search")}</h1>
+          <h1>{title ?? (kinds.some((k) => k !== "recognize") ? "Quiz" : t("Học từ", "Study"))}</h1>
           <strong>
             {index + 1} / {words.length}
           </strong>
@@ -260,7 +261,28 @@ function Exercise({
   const [translationError, setTranslationError] = useState(false);
   const [translationAttempt, setTranslationAttempt] = useState(0);
   const [letters, setLetters] = useState<number[]>([]);
+  // Khi đang "luôn ẩn nghĩa", mỗi thẻ được lật riêng mà không đổi lựa chọn chung.
+  const [revealed, setRevealed] = useState(false);
+  const shown = meaningVisible || revealed;
   const p = useProfile();
+  const hardDays = rate(p.srs[word.word.toLowerCase()] ?? fresh(word.word), "hard").i;
+  useEffect(() => {
+    if (kind !== "recognize") return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey || e.repeat) return;
+      if (e.target instanceof Element && e.target.closest("input, textarea, select, [contenteditable], .modal")) return;
+      if (e.key === " " && !shown) setRevealed(true);
+      else if (e.key === "1") onRate("again");
+      else if (e.key === "2") onRate("hard");
+      else if (e.key === "3") onRate("easy");
+      else if (e.key === "ArrowLeft" && onPrevious) onPrevious();
+      else if (e.key === "ArrowRight") onNext();
+      else return;
+      e.preventDefault();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [kind, shown, onRate, onPrevious, onNext]);
   const choices = useMemo(
     () =>
       shuffle([
@@ -279,6 +301,7 @@ function Exercise({
   );
   useEffect(() => {
     const c = new AbortController();
+    setDefs([]);
     const key = "eled.def." + word.word;
     const cached = localStorage.getItem(key);
     if (cached) {
@@ -355,7 +378,7 @@ function Exercise({
       <article
         className={`word-card card exercise-${kind} level-${word.levels[0] ?? "A1"}`}
       >
-        <div className="word-badges">
+        {kind !== "recognize" && <div className="word-badges">
           {word.levels.map((l) => (
             <Badge key={l}>{l}</Badge>
           ))}
@@ -366,8 +389,64 @@ function Exercise({
           >
             <FolderPlus size={18} />
           </IconButton>
-        </div>
-        {kind === "recognize" || kind === "choice" ? (
+        </div>}
+        {kind === "recognize" ? (
+          <>
+            <div className="flashcard-top">
+              <div className="flashcard-tags">
+                {word.levels.map((l) => (
+                  <Badge key={l}>{l}</Badge>
+                ))}
+                {word.pos && <span>{word.pos}</span>}
+              </div>
+              <div className="flashcard-tools">
+                <IconButton
+                  label={t("Thêm vào bộ sưu tập", "Add to collection")}
+                  onClick={onCollection}
+                >
+                  <FolderPlus size={18} />
+                </IconButton>
+                <button
+                  type="button"
+                  className="icon-btn"
+                  aria-label={meaningVisible ? t("Luôn ẩn nghĩa", "Always hide meaning") : t("Luôn hiện nghĩa", "Always show meaning")}
+                  title={meaningVisible ? t("Luôn ẩn nghĩa", "Always hide meaning") : t("Luôn hiện nghĩa", "Always show meaning")}
+                  aria-pressed={!meaningVisible}
+                  onClick={() => {
+                    setMeaningVisible(!meaningVisible);
+                    setRevealed(false);
+                    localStorage.setItem("eled.hide-meaning", String(meaningVisible));
+                  }}
+                >
+                  {meaningVisible ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+                {word.url && (
+                  <a
+                    className="icon-btn"
+                    href={word.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Oxford Learner’s Dictionaries"
+                  >
+                    <ExternalLink size={18} />
+                  </a>
+                )}
+              </div>
+            </div>
+            <div className="flashcard-head">
+              <h1>{word.word}</h1>
+              <button
+                type="button"
+                className="flashcard-sound"
+                aria-label={t("Nghe phát âm", "Play pronunciation")}
+                onClick={() => speak(word.word, word)}
+              >
+                <Volume2 size={18} />
+                {word.ipa && <span className="ipa-text">{word.ipa}</span>}
+              </button>
+            </div>
+          </>
+        ) : kind === "choice" ? (
           <>
             <div className="word-title">
               <h1>{word.word}</h1>
@@ -375,21 +454,6 @@ function Exercise({
             <div className="pronunciation-row">
               <p className="ipa ipa-text">{word.ipa}</p>
               <Sound word={word} />
-              {kind === "recognize" && (
-            <button
-              type="button"
-              className="meaning-toggle"
-              aria-label={meaningVisible ? t("Ẩn nghĩa", "Hide meaning") : t("Hiện nghĩa", "Show meaning")}
-              aria-expanded={meaningVisible}
-              aria-controls="lesson-word-meaning"
-              onClick={() => {
-                setMeaningVisible(!meaningVisible);
-                localStorage.setItem("eled.hide-meaning", String(meaningVisible));
-              }}
-            >
-              {meaningVisible ? <EyeOff size={20} /> : <Eye size={20} />}
-            </button>
-              )}
               {word.url && (
                 <a
                   className="icon-btn"
@@ -433,20 +497,36 @@ function Exercise({
             )}
           </>
         )}
-        {kind === "recognize" && (
-          <>
-
-            <div id="lesson-word-meaning" className="lesson-word-meaning" hidden={!meaningVisible}>
-            {word.senses?.length ? <div className="meaning-groups">
+        {kind === "recognize" && !shown && (
+          <button type="button" className="flashcard-reveal" onClick={() => setRevealed(true)}>
+            <Eye size={20} />
+            <span>{t("Chạm để xem nghĩa", "Tap to reveal meaning")}</span>
+            <kbd>Space</kbd>
+          </button>
+        )}
+        {kind === "recognize" && shown && (
+          <div className="flashcard-meaning">
+            {word.senses?.length ? <div className="flashcard-senses">
               {word.senses.map(s => <div key={s.pos}>
                 <span>{s.pos}</span>
-                {/* Tối đa 2 nghĩa cho mỗi từ loại, mỗi nghĩa chỉ phần cốt lõi (conciseSense). */}
-                <p><span className="meaning-highlight">{s.meanings.slice(0, 2).map((m) => conciseSense(m)).join("; ")}</span></p>
+                <p>{conciseSense(s.meanings[0] ?? "", 1)}</p>
               </div>)}
-            </div> : <h2 className="meaning"><span className="meaning-highlight">{word.translation}</span></h2>}
-            </div>
+            </div> : <p className="flashcard-translation">{word.translation}</p>}
+            <details className="meaning-details" key={word.word}>
+              <summary>{t("Nghĩa đầy đủ và ví dụ", "All meanings and examples")}</summary>
+              {word.senses?.length ? <div className="meaning-groups">
+                {word.senses.map(s => <div key={s.pos}>
+                  <span>{s.pos}</span>
+                  {s.meanings.map((meaning, i) => <p key={i}>{meaning}</p>)}
+                </div>)}
+              </div> : null}
             {defs.length > 0 && (
               <div className="definitions" aria-busy={vi && translating}>
+                <div className="definition-lang" role="group" aria-label={t("Ngôn ngữ định nghĩa", "Definition language")}>
+                  <span>Oxford</span>
+                  <button type="button" aria-pressed={!vi} onClick={() => setVi(false)}>English</button>
+                  <button type="button" aria-pressed={vi} onClick={() => setVi(true)}>Tiếng Việt</button>
+                </div>
                 {vi && translating && <p role="status">{t("Đang dịch…", "Translating…")}</p>}
                 {vi && translationError && <div role="alert">
                   <p>{t("Chưa dịch được định nghĩa. Vui lòng thử lại.", "Could not translate definitions. Please retry.")}</p>
@@ -460,7 +540,8 @@ function Exercise({
                 ))}
               </div>
             )}
-          </>
+            </details>
+          </div>
         )}
         {kind === "choice" && (
           <div className="choices">
@@ -579,52 +660,33 @@ function Exercise({
       {kind === "recognize" && (
         <div className="ratings">
           <button className="rating again" onClick={() => onRate("again")}>
-            <RotateCcw size={18} />
-            {t("Lại", "Again")}
+            <span><RotateCcw size={16} />{t("Lại", "Again")}</span>
             <small>1 {t("ngày", "day")}</small>
+            <kbd>1</kbd>
           </button>
           <button className="rating hard" onClick={() => onRate("hard")}>
-            {t("Khó", "Hard")}
-            <small>
-              {
-                rate(p.srs[word.word.toLowerCase()] ?? fresh(word.word), "hard")
-                  .i
-              }{" "}
-              {t("ngày", "days")}
-            </small>
+            <span>{t("Khó", "Hard")}</span>
+            <small>{hardDays} {t("ngày", "days")}</small>
+            <kbd>2</kbd>
           </button>
           <button className="rating easy" onClick={() => onRate("easy")}>
-            <Check size={18} />
-            {t("Dễ", "Easy")}
-            <small>{t("Đã biết · không học lại", "Known · stop reviewing")}</small>
+            <span><Check size={16} />{t("Dễ", "Easy")}</span>
+            <small>{t("Đã thuộc", "Known")}</small>
+            <kbd>3</kbd>
           </button>
         </div>
       )}
       {kind === "recognize" && (
-        <div className="definition-controls">
-          <IconButton
-            label={t("Từ trước", "Previous word")}
-            disabled={!onPrevious}
-            onClick={onPrevious}
-          >
-            <ChevronLeft size={20} />
-          </IconButton>
-          <div>
-            <span>{t("Định nghĩa", "Definitions")}</span>
-            <button
-              className={!vi ? "active" : ""}
-              onClick={() => setVi(false)}
-            >
-              English
-            </button>
-            <button className={vi ? "active" : ""} onClick={() => setVi(true)}>
-              Tiếng Việt
-            </button>
-          </div>
-          <IconButton label={t("Từ tiếp theo", "Next word")} onClick={onNext}>
-            <ChevronRight size={20} />
-          </IconButton>
-        </div>
+        <nav className="flashcard-nav" aria-label={t("Chuyển từ", "Word navigation")}>
+          <button type="button" disabled={!onPrevious} onClick={onPrevious}>
+            <ChevronLeft size={18} />
+            {t("Từ trước", "Previous")}
+          </button>
+          <button type="button" onClick={onNext}>
+            {t("Bỏ qua", "Skip")}
+            <ChevronRight size={18} />
+          </button>
+        </nav>
       )}
     </>
   );

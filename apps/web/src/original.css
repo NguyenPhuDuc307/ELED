@@ -1,44 +1,46 @@
-/* Soft pastel pink palette for longer reading sessions. */
+/* Default English palette: white, sage accents and slate dark surfaces. */
 :root {
   font-family: "Be Vietnam Pro", sans-serif;
   color-scheme: light;
-  --bg: #f6f1f2;
-  --surface: #fcf8f9;
-  --ink: #3b3036;
-  --muted: #786b73;
-  --line: #e6d9df;
-  --green: #95556c;
-  --soft: #f2dfe6;
-  --sage: #f2dfe6;
-  --salmon: #ecd9d2;
-  --sand: #ebe1ce;
-  --blush: #eaddd7;
-  --coral-deep: #dfcbc5;
-  --hero: #f1d8e0;
-  --hero-ink: #643d4c;
-  --hero-button: #92566e;
-  --hero-button-ink: #fff8fa;
-  --shadow: 0 4px 16px #30263708;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #786b63;
+  --line: #ede0d8;
+  --green: #3a6b36;
+  --on-accent: #ffffff;
+  --soft: #c8dec4;
+  --sage: #c8dec4;
+  --salmon: #f5c4b8;
+  --sand: #f5e4cc;
+  --blush: #f5d5cc;
+  --coral-deep: #e8c4bc;
+  --hero: #c8dec4;
+  --hero-ink: #244522;
+  --hero-button: #3a6b36;
+  --hero-button-ink: #ffffff;
+  --shadow: 0 6px 20px #7a5c4a1a, 0 2px 6px #7a5c4a0d;
 }
 .dark {
   color-scheme: dark;
-  --bg: #151820;
-  --surface: #1e222c;
-  --ink: #dce0e8;
-  --muted: #a0a6b3;
-  --line: #363944;
-  --green: #dbabc0;
-  --soft: #362a32;
-  --sage: #362a32;
-  --salmon: #392c2d;
-  --sand: #353025;
-  --blush: #352c2e;
-  --coral-deep: #3c3031;
-  --hero: #402c36;
-  --hero-ink: #f3dce5;
-  --hero-button: #583a49;
-  --hero-button-ink: #f3dce5;
-  --shadow: 0 4px 16px #00000020;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --ink: #f1f5f9;
+  --muted: #94a3b8;
+  --line: #334155;
+  --green: #a6cda0;
+  --on-accent: #182b16;
+  --soft: #2d3e35;
+  --sage: #2d3e35;
+  --salmon: #1e293b;
+  --sand: #1e293b;
+  --blush: #1e293b;
+  --coral-deep: #1e293b;
+  --hero: #263c30;
+  --hero-ink: #f1f5f9;
+  --hero-button: #a6cda0;
+  --hero-button-ink: #182b16;
+  --shadow: 0 4px 16px #00000040;
 }
 .original-app {
   min-height: 100dvh;
@@ -400,7 +402,7 @@
   margin: 2px 4px 0;
   padding: 20px 18px;
   text-align: left;
-  color: #47254d;
+  color: #254d35;
   min-height: 184px;
 }
 .browse-card .row {
@@ -441,7 +443,7 @@
 }
 .original-app .sage {
   background: var(--soft);
-  color: #47254d;
+  color: #254d35;
 }
 .original-app .sand {
   background: var(--sand);
@@ -595,7 +597,7 @@
   align-items: flex-start;
   gap: 12px;
   padding: 24px;
-  color: #1a1a1a;
+  color: var(--ink);
 }
 .level-card > strong {
   font-size: 36px;
@@ -606,12 +608,12 @@
 }
 .level-card .badge {
   background: #ffffff60;
-  color: #1a1a1a;
+  color: var(--ink);
 }
 .original-app .topic-grid > .card {
   text-align: left;
   padding: 20px;
-  color: #1a1a1a;
+  color: var(--ink);
 }
 .original-app .topic-grid h2 {
   font-size: 16px;
@@ -761,7 +763,7 @@
   border-radius: 20px;
 }
 .original-app .word-card.exercise-recognize {
-  color: #1a1a1a;
+  color: var(--ink);
   min-height: 380px;
   display: flex;
   flex-direction: column;
@@ -775,10 +777,10 @@
 }
 .original-app .word-card.exercise-recognize .word-badges .badge {
   background: #ffffff50;
-  color: #1a1a1a;
+  color: var(--ink);
 }
 .original-app .word-card.exercise-recognize .word-badges .muted {
-  color: #1a1a1ab3;
+  color: var(--muted);
   font-size: 13px;
 }
 .original-app .word-card.exercise-recognize .word-title {
@@ -803,7 +805,7 @@
 }
 .pronunciation-row .ipa {
   font-size: 22px;
-  color: #1a1a1a;
+  color: var(--ink);
   font-style: normal;
   line-height: 1.4;
   margin: 0;
@@ -834,17 +836,17 @@
 }
 .original-app .word-card.exercise-recognize .definitions h3 {
   font-size: 12px;
-  color: #1a1a1aa6;
+  color: var(--muted);
 }
 .original-app .word-card.exercise-recognize .definitions p {
-  color: #1a1a1a;
+  color: var(--ink);
   font-size: 14px;
   line-height: 1.6;
 }
 .original-app .word-card.exercise-recognize .definitions blockquote {
-  color: #1a1a1aa6;
+  color: var(--muted);
   font-size: 12px;
-  border-left: 1px solid #1a1a1a33;
+  border-left: 1px solid var(--line);
 }
 .original-app .word-card.exercise-recognize .dictionary {
   display: none;
@@ -1169,7 +1171,7 @@
   padding: 14px 16px;
   text-align: left;
   box-shadow: var(--shadow);
-  color: #1a1a1a;
+  color: var(--ink);
 }
 .day-card h2 {
   font-size: 20px;
@@ -1177,7 +1179,7 @@
 }
 .day-card > .row {
   font-size: 12px;
-  color: #1a1a1a8c;
+  color: var(--muted);
 }
 .original-app .topic-grid {
   margin-top: 12px;
@@ -1283,7 +1285,7 @@
 .original-app .matching-game .match-columns button.matched {
   background: var(--soft);
   border-color: var(--soft);
-  color: #704454;
+  color: #326445;
   opacity: 0.55;
   box-shadow: none;
 }
@@ -1330,12 +1332,12 @@
 .day-progress progress::-moz-progress-bar { background: var(--day-accent); }
 .original-app .day-card > .row { color: var(--day-accent); font-weight: 600; font-size: 12px; }
 .original-app .day-card:hover { border-color: var(--day-accent); }
-.dark .original-app .day-card { background: var(--surface); border-color: var(--line); --day-accent: #dbabc0; }
+.dark .original-app .day-card { background: var(--surface); border-color: var(--line); --day-accent: #8acb9b; }
 .dark .day-preview, .dark .day-progress { color: var(--ink); }
 @media (min-width: 768px) { .day-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); } }
 
 /* Shared form controls: selected state, spacing and readable helper text. */
-:root { --muted: #78716c; }
+
 .original-app .settings-detail .settings-grid { max-width: 860px; margin-inline: auto; }
 .original-app .settings-grid article { border-radius: 18px; box-shadow: 0 3px 14px #00000006; }
 .original-app .settings-grid article > h2 { margin-bottom: 8px; font-size: 18px; }
@@ -1457,7 +1459,7 @@
 
 .meaning-groups { display: grid; gap: 14px; margin: 20px 0; }
 .meaning-groups > div { border-left: 3px solid var(--green)40; padding-left: 12px; }
-.meaning-groups > div > span { color: #704454; font-size: 12px; font-weight: 600; }
+.meaning-groups > div > span { color: #326445; font-size: 12px; font-weight: 600; }
 .meaning-groups > div > p { font-size: 18px; line-height: 1.6; color: var(--ink); margin-top: 3px; }
 .original-app .word-card.exercise-recognize .meaning-groups { order: 4; }
 
@@ -1481,7 +1483,7 @@
 
 .meaning-highlight {
   background: #e4efd9;
-  color: #643d4c;
+  color: #234f36;
   font-weight: 600;
   padding: 2px 5px;
   border-radius: 4px;
@@ -1489,7 +1491,7 @@
   box-decoration-break: clone;
 }
 .lesson-word-meaning .meaning-groups p { line-height: 1.85; }
-.dark .meaning-highlight { background: #402c36; color: #f3dce5; }
+.dark .meaning-highlight { background: var(--soft); color: var(--ink); }
 
 /* ---- Bố cục chung với VNLab Stock: sidebar navy (màn rộng), thanh tab kính mờ (điện thoại) ---- */
 .eled-side {
@@ -1615,7 +1617,7 @@
     color: #fff;
   }
   .eled-side-link.active {
-    background: rgba(240, 177, 245, 0.14);
+    background: rgba(160, 214, 172, 0.14);
     color: #fff;
   }
   .eled-side-link.active::before {
@@ -1626,10 +1628,10 @@
     left: 0;
     width: 3px;
     border-radius: 3px;
-    background: #e6b8cb;
+    background: #a0d6ac;
   }
   .eled-side-link.active svg {
-    color: #e6b8cb;
+    color: #a0d6ac;
   }
   .eled-side-settings {
     margin-top: auto;
@@ -1637,10 +1639,7 @@
     border-radius: 0 0 8px 8px;
     padding-top: 14px;
   }
-  /* Màn rộng đã có sidebar (logo + Cài đặt): thanh trên cùng ở trang chủ không còn gì để hiện. */
-  .eled-layout .home-topbar {
-    display: none;
-  }
+
 }
 
 /* Tìm không thấy từ: nút chuyển sang Google Dịch. */
@@ -1673,4 +1672,307 @@ html { background: var(--bg); color: var(--ink); }
 .original-app .session-icon,
 .original-app .session-badges .badge {
   background: color-mix(in srgb, var(--hero-ink) 9%, transparent);
+}
+
+/* Keep text readable on filled green controls in both themes. */
+.original-app .browse-page .resume,
+.level-tabs button.active,
+.original-app .matching-game .match-columns button.chosen { color: var(--on-accent); }
+
+/* Dark surfaces need their own readable foregrounds, including exercise details. */
+.dark .original-app :is(.browse-card, .level-card, .topic-grid > .card, .day-card, .speaking-link .tile-icon),
+.dark .meaning-groups > div > span { color: var(--ink); }
+.dark .original-app :is(.game-card p, .stat > span:last-child, .rating small, .browse-card > p) {
+  color: var(--muted);
+  opacity: 1;
+}
+.dark .original-app :is(.level-card .badge, .word-card.exercise-recognize .word-badges .badge) {
+  background: var(--soft);
+  color: var(--ink);
+}
+.dark .original-app .matching-game .match-columns button.matched {
+  color: var(--ink);
+  border-color: var(--line);
+  opacity: 1;
+}
+.dark .search-prompt > svg { color: var(--muted); }
+.dark .rating small { opacity: 1; }
+
+/* Quiet dark surfaces; use green for actions rather than coloring every card. */
+.dark .original-app .topbar { background: var(--bg); border-color: var(--line); }
+.dark .appbar-title .brand { color: var(--ink); }
+.dark .original-app .card { box-shadow: none; border-radius: 16px; }
+.dark .original-app .session-card { border-radius: 20px; border-color: var(--line); padding: 20px; }
+.dark .original-app .session-card .btn { min-height: 44px; border-radius: 12px; }
+.dark .original-app .game-grid { gap: 12px; }
+.dark .original-app .game-card { background: var(--surface); color: var(--ink); padding: 16px; border-color: var(--line); }
+.dark .original-app .game-card p { color: var(--muted); opacity: 1; }
+.dark .original-app :is(.game-card .tile-icon, .stat-icon, .speaking-link .tile-icon) {
+  color: var(--green); background: var(--soft);
+}
+.dark .original-app .game-card .tile-icon:before { display: none; }
+.dark .original-app .game-card > svg:last-child { color: var(--muted); }
+.dark .original-app .stats-grid { gap: 12px; margin-top: 20px; }
+.dark .original-app .stat { background: var(--surface); padding: 16px; border-color: var(--line); }
+.dark .original-app :is(.again, .hard) { color: var(--ink); border: 1px solid var(--line); }
+.dark .original-app .easy { color: var(--green); border: 1px solid var(--line); }
+.dark .original-app .rating small { color: var(--muted); opacity: 1; }
+.dark .eled-tabs { background: #1e293bf5; border-color: var(--line); }
+.dark .eled-tabs button { color: var(--muted); }
+.dark .eled-tabs button.active { color: var(--green); }
+
+.original-app .topbar .topbar-search.active { color: var(--green); background: var(--soft); }
+
+/* Keep the core meaning prominent; dictionary detail is optional. */
+.meaning-details { margin-top: 20px; text-align: left; }
+.meaning-details > summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 8px 0; }
+.meaning-details > summary:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+.meaning-details .meaning-groups p { font-size: 15px; line-height: 1.6; font-weight: 400; }
+
+/* ---- Thẻ học từ (Flashcard): đầu thẻ gọn, lật nghĩa, phím tắt ---- */
+.original-app .word-card.exercise-recognize {
+  padding: 16px 20px 24px;
+  gap: 0;
+}
+.flashcard-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 36px;
+}
+.flashcard-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.flashcard-tags > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.original-app .flashcard-tags .badge {
+  background: #ffffff80;
+  color: var(--ink);
+  font-weight: 700;
+}
+.flashcard-tools {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.original-app .flashcard-tools .icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--green);
+  background: transparent;
+}
+.original-app .flashcard-tools .icon-btn[aria-pressed="true"] {
+  background: #ffffff80;
+}
+.flashcard-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 0 24px;
+  border-bottom: 1px dashed color-mix(in srgb, var(--green) 30%, transparent);
+}
+.flashcard-head h1 {
+  font-size: clamp(38px, 11vw, 56px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.flashcard-sound {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 6px 16px 6px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff80;
+  color: var(--green);
+  font: inherit;
+  cursor: pointer;
+}
+.flashcard-sound .ipa-text {
+  font-size: 18px;
+  color: var(--ink);
+}
+.flashcard-sound:hover { background: #ffffffb3; }
+.flashcard-sound:focus-visible,
+.flashcard-reveal:focus-visible,
+.flashcard-nav button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+.flashcard-reveal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 140px;
+  margin-top: 20px;
+  border: 1.5px dashed color-mix(in srgb, var(--green) 40%, transparent);
+  border-radius: 16px;
+  background: #ffffff40;
+  color: var(--green);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.flashcard-reveal:hover { background: #ffffff70; }
+.flashcard-meaning {
+  width: 100%;
+  padding-top: 20px;
+  animation: flashcard-in 0.18s ease-out;
+}
+@keyframes flashcard-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flashcard-meaning { animation: none; }
+}
+.flashcard-senses {
+  display: grid;
+  gap: 14px;
+}
+.flashcard-senses > div > span {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.flashcard-senses > div > p,
+.flashcard-translation {
+  margin: 2px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.original-app .word-card.exercise-recognize .meaning-details {
+  margin-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--green) 18%, transparent);
+}
+.original-app .word-card.exercise-recognize .meaning-details > summary {
+  padding: 12px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green);
+}
+.original-app .word-card.exercise-recognize .meaning-details .meaning-groups {
+  margin: 12px 0 16px;
+}
+.definition-lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.definition-lang > span { margin-right: 6px; font-weight: 600; }
+.definition-lang button {
+  padding: 4px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+.definition-lang button[aria-pressed="true"] {
+  background: #ffffff90;
+  color: var(--green);
+  font-weight: 700;
+}
+.original-app .rating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 60px;
+  padding: 8px;
+  font-weight: 700;
+}
+.original-app .rating > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+.original-app .rating small {
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.original-app .rating:active { transform: scale(0.97); }
+.flashcard-reveal kbd,
+.original-app .rating kbd {
+  display: none;
+  font: 600 10px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  padding: 3px 5px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+.original-app .rating kbd {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
+@media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+  .flashcard-reveal kbd,
+  .original-app .rating kbd { display: inline-block; }
+}
+.flashcard-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin: 0 4px;
+}
+.flashcard-nav button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.flashcard-nav button:hover:not(:disabled) { background: var(--surface); color: var(--ink); }
+.flashcard-nav button:disabled { opacity: 0.35; cursor: default; }
+.original-app .lesson .progress > div { background: var(--green); }
+.dark :is(.original-app .flashcard-tags .badge, .flashcard-sound, .definition-lang button[aria-pressed="true"], .original-app .flashcard-tools .icon-btn[aria-pressed="true"]) {
+  background: #ffffff14;
+}
+.dark .flashcard-reveal { background: #ffffff08; }
+.dark .flashcard-reveal:hover, .dark .flashcard-sound:hover { background: #ffffff1f; }
+@media (min-width: 761px) {
+  .flashcard-meaning,
+  .flashcard-reveal { max-width: 640px; margin-left: auto; margin-right: auto; }
 }

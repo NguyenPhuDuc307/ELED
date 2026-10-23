@@ -82,8 +82,8 @@ test("Meanings are trimmed to the core sense per part of speech", () => {
       { pos: "noun", meanings: ["sự đu đưa, sự lúc lắc; độ đu đưa, độ lắc"] },
     ],
   };
-  assert.equal(shortMeaning(swing), "v. đu đưa, đong đưa, đung đưa · n. sự đu đưa, sự lúc lắc");
-  assert.equal(shortMeaning(swing, "noun"), "sự đu đưa, sự lúc lắc");
+  assert.equal(shortMeaning(swing), "v. đu đưa · n. sự đu đưa");
+  assert.equal(shortMeaning(swing, "noun"), "sự đu đưa");
   // Từ tự thêm không có senses: giữ nguyên nghĩa người dùng nhập.
   assert.equal(shortMeaning({ translation: "nghĩa của tôi, rất dài; giữ nguyên" }), "nghĩa của tôi, rất dài; giữ nguyên");
 });

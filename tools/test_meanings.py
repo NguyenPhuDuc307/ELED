@@ -1,7 +1,29 @@
 import csv, io, json, re, tarfile, unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+GOOGLE_PATH=ROOT/'assets/lexicon/google-translations.json'
+GOOGLE=json.loads(GOOGLE_PATH.read_text()) if GOOGLE_PATH.exists() else None
 class MeaningsTest(unittest.TestCase):
+    @unittest.skipUnless(GOOGLE is not None, 'Google snapshot has not been applied')
+    def test_google_snapshot_is_used_without_old_dictionary_senses(self):
+        rows=json.loads((ROOT/'apps/web/public/vocabulary.json').read_text())
+        self.assertEqual(len(rows),23481)
+        self.assertEqual(len({r[0].lower() for r in rows}),23481)
+        for row in rows:
+            key=row[0].lower()
+            if key.startswith(('http://','https://')): continue
+            self.assertIn(key,GOOGLE)
+            self.assertTrue(GOOGLE[key].strip())
+            self.assertEqual(row[1],GOOGLE[key],key)
+            self.assertEqual(row[8],[],key)
+        source=json.loads((ROOT/'apps/web/public/meanings-source.json').read_text())
+        self.assertEqual(source['source'],'Google Translate')
+        self.assertNotIn('CC BY-SA',source.get('license',''))
+        for word, expected in {
+            'plane':'máy bay', 'player':'người chơi', 'popular':'phổ biến',
+            'nurse':'y tá', 'clock':'đồng hồ', 'sweater':'áo len', 'could':'có thể',
+        }.items():
+            self.assertIn(expected,GOOGLE[word].lower(),word)
     def test_keys_and_non_translation_fields_unchanged(self):
         backup=Path('/tmp/eled-data-before-meanings.tgz')
         if not backup.exists(): self.skipTest('Original local snapshot is unavailable')
@@ -34,8 +56,9 @@ class MeaningsTest(unittest.TestCase):
         for word,pos,expected in [('plane','noun','máy bay'),('meal','noun','bữa ăn'),('summer','noun','mùa hè'),('abandon','verb','từ bỏ; bỏ rơi, ruồng bỏ')]:
             self.assertEqual(meanings[word][pos][0],expected)
             self.assertEqual(reviewed[word][pos][0],expected)
-            self.assertEqual(dict(built[word][8])[pos][0],expected)
-            self.assertIn(expected,built[word][1])
+            if GOOGLE is None:
+                self.assertEqual(dict(built[word][8])[pos][0],expected)
+                self.assertIn(expected,built[word][1])
         for word,groups in reviewed.items():
             if word not in built: continue
             senses=dict(built[word][8]) if len(built[word])>8 else {}
@@ -72,8 +95,10 @@ class MeaningsTest(unittest.TestCase):
             'test':('noun','bài kiểm tra'), 'heart':('noun','tim'),
         }
         for word,(pos,meaning) in expected.items():
-            self.assertIn(meaning,dict(built[word][8])[pos][0],word)
+            if GOOGLE is None:
+                self.assertIn(meaning,dict(built[word][8])[pos][0],word)
 
+    @unittest.skipIf(GOOGLE is not None, 'Replaced by Google snapshot checks')
     def test_built_vocabulary_has_same_keys_and_accurate_ambiguous_meanings(self):
         rows=json.loads((ROOT/'apps/web/public/vocabulary.json').read_text())
         self.assertEqual(len(rows),23481)

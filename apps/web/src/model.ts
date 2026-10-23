@@ -317,5 +317,5 @@ export function shortMeaning(w: Pick<Word, "translation" | "senses">, pos?: stri
   if (!senses.length) return w.translation;
   const pick = pos ? senses.filter((s) => s.pos === pos) : senses;
   const list = pick.length ? pick : senses;
-  return list.map((s) => `${list.length > 1 ? `${posAbbr(s.pos)} ` : ""}${conciseSense(s.meanings[0])}`).join(" · ");
+  return list.map((s) => `${list.length > 1 ? `${posAbbr(s.pos)} ` : ""}${conciseSense(s.meanings[0], 1)}`).join(" · ");
 }

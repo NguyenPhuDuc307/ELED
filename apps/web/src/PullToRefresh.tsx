@@ -95,8 +95,8 @@ export function PullToRefresh({ onRefresh = () => location.reload(), accent = '#
       aria-hidden={!busy}
       role="status"
       style={{
-        position: 'fixed', top: 'env(safe-area-inset-top)', left: '50%', zIndex: 60, pointerEvents: 'none',
-        transform: `translate(-50%, ${busy ? 14 : Math.min(pull, MAX) - 36}px)`,
+        position: 'fixed', top: 'env(safe-area-inset-top)', left: 0, right: 0, display: 'flex', justifyContent: 'center', zIndex: 60, pointerEvents: 'none',
+        transform: `translateY(${busy ? 14 : Math.min(pull, MAX) - 36}px)`,
         opacity: busy || pull > 4 ? 1 : 0,
         transition: pull ? 'none' : 'transform .25s ease, opacity .2s ease',
       }}
@@ -107,7 +107,7 @@ export function PullToRefresh({ onRefresh = () => location.reload(), accent = '#
         background: 'Canvas', color: ready || busy ? accent : 'GrayText', boxShadow: '0 6px 18px rgba(0,0,0,.18)', border: '1px solid rgba(127,127,127,.2)',
       }}>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-          style={busy ? { animation: 'ptr-spin .8s linear infinite' } : { transform: `rotate(${ready ? 180 : (pull / TRIGGER) * 180}deg)`, transition: 'transform .1s' }}>
+          style={busy ? { transformOrigin: '50% 50%', animation: 'ptr-spin .8s linear infinite' } : { transform: `rotate(${ready ? 180 : (pull / TRIGGER) * 180}deg)`, transition: 'transform .1s' }}>
           {busy ? <path d="M21 12a9 9 0 1 1-6.2-8.56" /> : <><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></>}
         </svg>
       </div>

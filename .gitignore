@@ -74,3 +74,4 @@ apps/web/public/meanings-source.json
 
 # Original FVDP download and isolated review database
 /output/fvdp/
+/output/google/

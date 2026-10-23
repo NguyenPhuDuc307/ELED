@@ -133,7 +133,7 @@ export default function App() {
       );
       const dark = document.documentElement.classList.contains("dark");
       document.documentElement.style.colorScheme = dark ? "dark" : "light";
-      document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#151820" : "#f6f1f2");
+      document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#0f172a" : "#ffffff");
       document.documentElement.lang = p.settings.language ?? "vi";
     };
     update();
@@ -221,6 +221,14 @@ export default function App() {
             )}
           </div>
           <div className="appbar-actions">
+            <IconButton
+              className={`topbar-search ${path === "/library" ? "active" : ""}`}
+              label={t("Tìm kiếm", "Search")}
+              aria-current={path === "/library" ? "page" : undefined}
+              onClick={() => go("/library")}
+            >
+              <Search size={24} />
+            </IconButton>
             {/* Điều hướng chính nằm ở sidebar (màn rộng) và thanh tab dưới (điện thoại), như VNLab Stock. */}
             {!path.startsWith("/settings") && (
               <IconButton
@@ -681,7 +689,6 @@ function PlusSymbol() {
 // kính mờ ở đáy trên điện thoại. Ẩn khi đang học / chơi để tập trung.
 const NAV_ITEMS = [
   { to: "/", vi: "Hôm nay", en: "Today", icon: Home, also: [] as string[] },
-  { to: "/library", vi: "Tìm kiếm", en: "Search", icon: Search, also: [] },
   { to: "/browse", vi: "Duyệt", en: "Browse", icon: Grip, also: ["/levels", "/topics", "/known", "/collections"] },
   { to: "/speaking", vi: "Speaking", en: "Speaking", icon: Mic, also: [] },
   { to: "/history", vi: "Thông báo", en: "Notifications", icon: Bell, also: [] },

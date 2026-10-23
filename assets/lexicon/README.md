@@ -51,3 +51,17 @@ extraction during both data preparation and lexicon rebuilding.
 The quality tests require all emitted parts of speech of the basic set to use
 the curated layer and include regressions for common homograph failures such
 as could/can, nurse, clock, elephant, player and popular.
+
+## Google Translate refresh (23 October 2026)
+
+At the owner's request, the active web meanings now use automatic Google
+Translate headword translations in `google-translations.json`. The earlier
+Wiktionary and curated files remain archived here, but no longer override a
+Google-translated word during web data preparation. Its sense array is empty,
+so lessons and games use the complete Google translation without truncating a
+former dictionary sense. These translations are not POS-specific.
+
+CSV translation fields are updated by `tools/google_translate_vocabulary.py
+--apply`; all other CSV fields and learning identifiers are retained. The old
+CC BY-SA attribution above describes the old Wiktionary-derived material only.
+See `tools/GOOGLE_TRANSLATE.md` for checkpointing and deployment instructions.

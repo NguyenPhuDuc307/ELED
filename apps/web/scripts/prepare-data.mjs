@@ -29,6 +29,13 @@ function fields(line) {
   return out;
 }
 const vocabulary = new Map();
+// Only the completed, explicitly applied Google snapshot is used by builds.
+let google = null;
+try {
+  google = JSON.parse(await readFile(join(root, "assets/lexicon/google-translations.json"), "utf8"));
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
 const meanings = JSON.parse(await readFile(join(root, "assets/lexicon/meanings.json"), "utf8"));
 // Editorial meanings must win even when the raw dictionary is regenerated.
 const reviewed = JSON.parse(await readFile(join(root, "assets/lexicon/reviewed.json"), "utf8"));
@@ -84,6 +91,13 @@ for (const file of await files(join(root, "assets/data"))) {
 const dir = resolve(import.meta.dirname, "../public");
 const shortPos = { noun: "n.", adjective: "adj.", verb: "v.", adverb: "adv.", preposition: "prep.", pronoun: "pron.", determiner: "det.", conjunction: "conj.", exclamation: "interj.", "modal verb": "modal v.", "phrasal verb": "phr. v." };
 for (const [key, row] of vocabulary) {
+  if (google && typeof google[key] === "string" && google[key].trim()) {
+    row[1] = google[key];
+    // A headword translation is not a set of POS-specific dictionary senses.
+    // Do not let the former dictionary overwrite it in lessons or games.
+    row[8] = [];
+    continue;
+  }
   const matched = meanings[key];
   if (!matched) continue;
   const groups = [...fallbackMeanings.get(key)].map(([pos, old]) => [pos, matched[pos] || [old]]);
@@ -95,5 +109,7 @@ await writeFile(
   join(dir, "vocabulary.json"),
   JSON.stringify([...vocabulary.values()]),
 );
-await writeFile(join(dir, "meanings-source.json"), JSON.stringify({ source: "Vietnamese Wiktionary via Kaikki/Wiktextract", license: "CC BY-SA 4.0", modified: true, meanings }));
+await writeFile(join(dir, "meanings-source.json"), JSON.stringify(google
+  ? { source: "Google Translate", sourceLanguage: "en", targetLanguage: "vi", method: "automatic headword translation", translations: google }
+  : { source: "Vietnamese Wiktionary via Kaikki/Wiktextract", license: "CC BY-SA 4.0", modified: true, meanings }));
 console.log(`Prepared ${vocabulary.size} unique words`);

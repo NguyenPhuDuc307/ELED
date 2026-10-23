@@ -1,5 +1,5 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
-capital,https://www.oxfordlearnersdictionaries.com/definition/english/capital_2,C1,capital,"chính, chủ yếu",adjective,/ˈkæpɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/capit/capital__gb_1.mp3
+capital,https://www.oxfordlearnersdictionaries.com/definition/english/capital_2,C1,capital,thuộc thủ đô,adjective,/ˈkæpɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cap/capit/capital__gb_1.mp3
 caution,https://www.oxfordlearnersdictionaries.com/definition/english/caution_1,C2,caution,"sự thận trọng, sự cẩn thận",noun,/ˈkɔːʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cau/cauti/caution__gb_2.mp3
 banishment,https://www.oxfordlearnersdictionaries.com/definition/english/banishment,C2,banishment,"sự đày, sự trục xuất",noun,/ˈbænɪʃmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ban/banis/banishment__gb_2.mp3
 committal,https://www.oxfordlearnersdictionaries.com/definition/english/committal,C2,committal,"sự giao phó, sự uỷ thác",noun,/kəˈmɪtl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/com/commi/committal__gb_1.mp3
@@ -66,6 +66,6 @@ restorative_justice,https://www.oxfordlearnersdictionaries.com/definition/englis
 suspended_sentence,https://www.oxfordlearnersdictionaries.com/definition/english/suspended-sentence,C1,suspended sentence,án treo,noun,/səˌspendɪd ˈsentəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sus/suspe/suspended_sentence_1_gb_1.mp3
 solitary_confinement,https://www.oxfordlearnersdictionaries.com/definition/english/solitary-confinement,C2,solitary confinement,biệt giam,noun,/ˌsɒlətri kənˈfaɪnmənt/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sol/solit/solitary_confinement_1_gb_1.mp3
 sentence,https://www.oxfordlearnersdictionaries.com/definition/english/sentence_2,B2,sentence,"kết án, tuyên án",verb,/ˈsentəns/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/sen/sente/sentence__gb_2.mp3
-term,https://www.oxfordlearnersdictionaries.com/definition/english/term_1,B2,term,"thuật ngữ, từ ngữ",noun,/tɜːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/term_/term__gb_3.mp3
+term,https://www.oxfordlearnersdictionaries.com/definition/english/term_1,B2,term,thuật ngữ,noun,/tɜːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/ter/term_/term__gb_3.mp3
 walk_free,https://www.oxfordlearnersdictionaries.com/definition/english/walk_1,C2,walk free,đi bộ miễn phí,verb,/wɔːk/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/wal/walk_/walk__gb_1.mp3
 youth_custody,https://www.oxfordlearnersdictionaries.com/definition/english/youth-custody,C2,youth custody,quyền giám hộ thanh thiếu niên,noun,/ˌjuːθ ˈkʌstədi/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/y/you/youth/youth_custody_1_gb_1.mp3

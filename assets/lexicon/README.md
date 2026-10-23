@@ -30,3 +30,24 @@ PostgreSQL without changing profile data or word keys. `audit.json` records
 coverage; `changes.json` preserves before/after row changes from the original
 CSV snapshot for this update. Source/credit details and downloadable processed
 meanings are exposed at `/data-sources.html`.
+
+## Basic learner meanings (23 October 2026)
+
+The primary meanings for 1,678 valid A1/A2 headwords have been checked for
+learner relevance. `reviewed.json` now also covers every part of speech emitted
+for these words. Misleading homographs and obsolete or specialist lead senses
+have been replaced with everyday meanings. Previously uncurated secondary
+Wiktionary glosses are not presented as reviewed learner meanings for this set;
+reviewed common alternatives are retained. This is a review of primary learner
+meanings, not a certification of every specialist word in the 23,481-word pool.
+
+`core-review.json` records the scope, before/after meanings and two malformed
+source headwords discovered during the pass. Their identifiers are retained in
+this update so existing learning records are not silently reassigned. They are
+not included in the 1,678 valid English headwords. Word IDs, levels, IPA, audio,
+links and user progress are unchanged. Curated meanings always override raw
+extraction during both data preparation and lexicon rebuilding.
+
+The quality tests require all emitted parts of speech of the basic set to use
+the curated layer and include regressions for common homograph failures such
+as could/can, nurse, clock, elephant, player and popular.

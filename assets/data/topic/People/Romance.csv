@@ -1,7 +1,7 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
 bench,https://www.oxfordlearnersdictionaries.com/definition/english/bench_2,C2,bench,"trưng bày, triển lãm (chó)",verb,/bentʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/ben/bench/bench__gb_5.mp3
 care,https://www.oxfordlearnersdictionaries.com/definition/english/care_2,A2,care,"trông nom, chăm sóc, nuôi nấng",verb,/keə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/care_/care__gb_1.mp3
-boyfriend,https://www.oxfordlearnersdictionaries.com/definition/english/boyfriend,A1,boyfriend,"bạn trai (đi lại thường xuyên với một cô gái, một chị phụ nữ)",noun,/ˈbɔɪfrend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boy/boyfr/boyfriend__gb_1.mp3
+boyfriend,https://www.oxfordlearnersdictionaries.com/definition/english/boyfriend,A1,boyfriend,bạn trai; người yêu nam,noun,/ˈbɔɪfrend/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/boy/boyfr/boyfriend__gb_1.mp3
 bf,https://www.oxfordlearnersdictionaries.com/definition/english/bf,C2,BF,bạn trai,abbreviation,/ˌbiː ˈef/,
 cherish,https://www.oxfordlearnersdictionaries.com/definition/english/cherish,C2,cherish,"yêu mến, yêu thương, yêu dấu",verb,/ˈtʃerɪʃ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/che/cheri/cherish__gb_1.mp3
 caress,https://www.oxfordlearnersdictionaries.com/definition/english/caress_1,C2,caress,"vuốt ve, mơn trớn, âu yếm",verb,/kəˈres/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/cares/caress__gb_1.mp3
@@ -58,7 +58,7 @@ matchmaker,https://www.oxfordlearnersdictionaries.com/definition/english/matchma
 mistress,https://www.oxfordlearnersdictionaries.com/definition/english/mistress,C2,mistress,bà chủ nhà,noun,/ˈmɪstrəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mis/mistr/mistress__gb_1.mp3
 lust,https://www.oxfordlearnersdictionaries.com/definition/english/lust_1,C2,lust,dục vọng,noun,/lʌst/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/l/lus/lust_/lust__gb_1.mp3
 make_out,https://www.oxfordlearnersdictionaries.com/definition/english/make-out,C2,make out,làm ra,phrasal verb,,
-partner,https://www.oxfordlearnersdictionaries.com/definition/english/partner_1,A2,partner,người cùng chung phần; người cùng công ty,noun,/ˈpɑːtnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/partn/partner__gb_2.mp3
+partner,https://www.oxfordlearnersdictionaries.com/definition/english/partner_1,A2,partner,đối tác,noun,/ˈpɑːtnə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/par/partn/partner__gb_2.mp3
 passionate,https://www.oxfordlearnersdictionaries.com/definition/english/passionate,B2,passionate,"sôi nổi, say sưa, say đắm, nồng nàn, nồng nhiệt, thiết tha",adjective,/ˈpæʃənət/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passi/passionate__gb_1.mp3
 passion,https://www.oxfordlearnersdictionaries.com/definition/english/passion,B1,passion,"cảm xúc mạnh mẽ, tình cảm nồng nàn, đam mê",noun,/ˈpæʃn/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/p/pas/passi/passion__gb_1.mp3
 pick_up,https://www.oxfordlearnersdictionaries.com/definition/english/pick-up,C2,pick up,nhặt lên,phrasal verb,,

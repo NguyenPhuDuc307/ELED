@@ -1,4 +1,4 @@
-import csv, io, json, tarfile, unittest
+import csv, io, json, re, tarfile, unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 class MeaningsTest(unittest.TestCase):
@@ -41,6 +41,39 @@ class MeaningsTest(unittest.TestCase):
             senses=dict(built[word][8]) if len(built[word])>8 else {}
             for pos,values in groups.items():
                 if pos in senses:self.assertEqual(senses[pos],values,(word,pos))
+    def test_basic_learner_dataset_is_curated_and_keeps_every_emitted_pos(self):
+        reviewed=json.loads((ROOT/'assets/lexicon/reviewed.json').read_text())
+        audit=json.loads((ROOT/'assets/lexicon/core-review.json').read_text())
+        built={r[0].lower():r for r in json.loads((ROOT/'apps/web/public/vocabulary.json').read_text())}
+        source_words=set()
+        for level in ('A1','A2'):
+            with (ROOT/f'assets/data/popularity/Oxford Word {level}.csv').open(encoding='utf-8-sig',newline='') as file:
+                for row in csv.DictReader(file):
+                    word=row['word'].lower()
+                    if re.fullmatch(r"[a-z][a-z0-9 '\-]*",word):source_words.add(word)
+        self.assertEqual(set(audit['core_words']),source_words)
+        self.assertEqual(audit['core_headwords'],len(source_words))
+        for word in audit['core_words']:
+            self.assertIn(word,reviewed)
+            self.assertGreater(len(built[word]),8,word)
+            for pos,values in built[word][8]:
+                self.assertEqual(values,reviewed[word][pos],(word,pos))
+                self.assertTrue(values[0].strip(),(word,pos))
+                self.assertNotIn('((',values[0],(word,pos))
+                self.assertFalse(values[0].startswith((',', '+')),(word,pos))
+        expected={
+            'player':('noun','người chơi (trò chơi, thể thao)'),
+            'popular':('adjective','được nhiều người yêu thích'),
+            'could':('modal verb','có thể'), 'clock':('noun','đồng hồ'),
+            'nurse':('noun','y tá'), 'sweater':('noun','áo len'),
+            'office':('noun','văn phòng'), 'elephant':('noun','con voi'),
+            'beach':('noun','bãi biển'), 'classroom':('noun','phòng học'),
+            'bird':('noun','con chim'), 'brother':('noun','anh trai'),
+            'test':('noun','bài kiểm tra'), 'heart':('noun','tim'),
+        }
+        for word,(pos,meaning) in expected.items():
+            self.assertIn(meaning,dict(built[word][8])[pos][0],word)
+
     def test_built_vocabulary_has_same_keys_and_accurate_ambiguous_meanings(self):
         rows=json.loads((ROOT/'apps/web/public/vocabulary.json').read_text())
         self.assertEqual(len(rows),23481)

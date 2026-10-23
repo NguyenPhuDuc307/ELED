@@ -425,6 +425,9 @@
     "adjective": [
       "yên, bất động",
       "tĩnh lặng"
+    ],
+    "noun": [
+      "sự yên lặng, sự yên tĩnh, sự tĩnh mịch"
     ]
   },
   "book": {
@@ -443,8 +446,9 @@
       "mệnh lệnh; đơn đặt hàng"
     ],
     "verb": [
+      "đặt hàng, gọi món",
       "ra lệnh",
-      "đặt mua, gọi món"
+      "sắp xếp"
     ]
   },
   "change": {
@@ -615,8 +619,9 @@
   },
   "term": {
     "noun": [
-      "thuật ngữ, từ ngữ",
-      "kỳ, học kỳ; điều khoản"
+      "thuật ngữ",
+      "học kỳ",
+      "thời hạn"
     ],
     "verb": [
       "gọi là, đặt tên là"
@@ -639,8 +644,8 @@
   },
   "letter": {
     "noun": [
-      "chữ cái",
-      "lá thư"
+      "lá thư",
+      "chữ cái"
     ]
   },
   "current": {
@@ -668,8 +673,8 @@
       "vốn; chữ cái viết hoa"
     ],
     "adjective": [
-      "chính, chủ yếu",
-      "viết hoa; thuộc vốn"
+      "thuộc thủ đô",
+      "viết hoa (chữ cái)"
     ]
   },
   "left": {
@@ -697,6 +702,9 @@
     ],
     "adverb": [
       "thứ hai, ở vị trí thứ hai"
+    ],
+    "determiner": [
+      "thứ hai"
     ]
   },
   "sound": {
@@ -733,8 +741,9 @@
   },
   "hard": {
     "adjective": [
-      "cứng, rắn",
-      "khó; vất vả"
+      "khó",
+      "cứng",
+      "chăm chỉ"
     ],
     "adverb": [
       "chăm chỉ, nỗ lực",
@@ -821,8 +830,8 @@
       "để lại, bỏ lại"
     ],
     "noun": [
-      "sự cho phép",
-      "kỳ nghỉ phép"
+      "kỳ nghỉ phép",
+      "sự cho phép"
     ]
   },
   "hold": {
@@ -853,8 +862,9 @@
   },
   "get": {
     "verb": [
-      "nhận được, có được",
-      "lấy; trở nên; đến nơi"
+      "nhận, lấy được",
+      "trở nên",
+      "đến nơi"
     ]
   },
   "make": {
@@ -914,8 +924,8 @@
       "lượng, phần"
     ],
     "verb": [
-      "chia bài",
-      "giao dịch, buôn bán"
+      "giải quyết, xử lý (deal with)",
+      "chia bài"
     ]
   },
   "general": {
@@ -985,6 +995,9 @@
     ],
     "pronoun": [
       "bất kỳ người nào, vật nào"
+    ],
+    "adverb": [
+      "một, chút nào, một tí nào (trong câu phủ định, câu hỏi dạng so sánh)"
     ]
   },
   "anything": {
@@ -1029,6 +1042,9 @@
     ],
     "noun": [
       "điều tốt nhất, người giỏi nhất"
+    ],
+    "verb": [
+      "tốt nhất"
     ]
   },
   "blonde": {
@@ -1147,6 +1163,9 @@
     ],
     "pronoun": [
       "ít người, ít thứ"
+    ],
+    "adjective": [
+      "ít vài"
     ]
   },
   "first": {
@@ -1244,6 +1263,9 @@
     ],
     "noun": [
       "lô, phần; số lượng lớn"
+    ],
+    "adverb": [
+      "nhiều, vô số"
     ]
   },
   "me": {
@@ -1265,6 +1287,9 @@
     ],
     "adverb": [
       "không"
+    ],
+    "noun": [
+      "lời từ chối, lời nói \"không\"; không"
     ]
   },
   "nobody": {
@@ -1379,6 +1404,12 @@
   "one": {
     "number": [
       "một"
+    ],
+    "determiner": [
+      "một"
+    ],
+    "pronoun": [
+      "người ta, ai"
     ]
   },
   "two": {
@@ -1534,6 +1565,9 @@
   "third": {
     "number": [
       "thứ ba"
+    ],
+    "noun": [
+      "một phần ba"
     ]
   },
   "fourth": {
@@ -1752,6 +1786,9625 @@
     ],
     "verb": [
       "nhắn tin"
+    ]
+  },
+  "ability": {
+    "noun": [
+      "khả năng, năng lực"
+    ]
+  },
+  "able": {
+    "adjective": [
+      "có khả năng, có thể"
+    ]
+  },
+  "abroad": {
+    "adverb": [
+      "ở nước ngoài, ra nước ngoài"
+    ]
+  },
+  "accept": {
+    "verb": [
+      "nhận, chấp nhận, chấp thuận"
+    ]
+  },
+  "accident": {
+    "noun": [
+      "tai nạn; sự cố"
+    ]
+  },
+  "according to": {
+    "preposition": [
+      "theo"
+    ]
+  },
+  "achieve": {
+    "verb": [
+      "đạt được, giành được"
+    ]
+  },
+  "across": {
+    "adverb": [
+      "ngang qua; sang phía bên kia"
+    ],
+    "preposition": [
+      "ở bên kia, ở phía bên kia"
+    ]
+  },
+  "act": {
+    "abbreviation": [
+      "HÀNH ĐỘNG"
+    ],
+    "noun": [
+      "hành động, việc làm, cử chỉ, hành vi"
+    ],
+    "verb": [
+      "hành động; diễn xuất"
+    ]
+  },
+  "action": {
+    "noun": [
+      "hành động, hành vi; hoạt động; công việc, việc làm"
+    ]
+  },
+  "active": {
+    "adjective": [
+      "tích cực, hoạt động; nhanh nhẹn, linh lợi"
+    ],
+    "noun": [
+      "tích cực"
+    ]
+  },
+  "activity": {
+    "noun": [
+      "hoạt động"
+    ]
+  },
+  "actor": {
+    "noun": [
+      "diễn viên"
+    ]
+  },
+  "actress": {
+    "noun": [
+      "nữ diễn viên"
+    ]
+  },
+  "actually": {
+    "adverb": [
+      "thực sự, thật ra, quả thật, đúng, quả là"
+    ]
+  },
+  "add": {
+    "abbreviation": [
+      "THÊM VÀO"
+    ],
+    "verb": [
+      "thêm vào; cộng"
+    ]
+  },
+  "address": {
+    "noun": [
+      "địa chỉ"
+    ],
+    "verb": [
+      "ghi địa chỉ",
+      "giải quyết (vấn đề); phát biểu với"
+    ]
+  },
+  "adult": {
+    "adjective": [
+      "trưởng thành"
+    ],
+    "noun": [
+      "người lớn, người đã trưởng thành"
+    ]
+  },
+  "advantage": {
+    "noun": [
+      "sự thuận lợi, hoàn cảnh thuận lợi; mối lợi"
+    ],
+    "verb": [
+      "đem lợi ích cho, có lợi cho, mang thuận lợi cho"
+    ]
+  },
+  "adventure": {
+    "noun": [
+      "sự phiêu lưu, sự mạo hiểm; việc làm mạo hiểm, việc làm táo bạo"
+    ]
+  },
+  "advertise": {
+    "verb": [
+      "quảng cáo"
+    ]
+  },
+  "advertisement": {
+    "noun": [
+      "quảng cáo, mẫu quảng cáo"
+    ]
+  },
+  "advertising": {
+    "noun": [
+      "hoạt động quảng cáo"
+    ]
+  },
+  "advice": {
+    "noun": [
+      "lời khuyên, lời chỉ bảo"
+    ]
+  },
+  "affect": {
+    "verb": [
+      "làm ảnh hưởng đến, làm tác động đến; chạm đến"
+    ]
+  },
+  "afraid": {
+    "adjective": [
+      "sợ, hãi, hoảng, hoảng sợ"
+    ]
+  },
+  "after": {
+    "adverb": [
+      "sau, đằng sau"
+    ],
+    "conjunction": [
+      "sau đó"
+    ],
+    "preposition": [
+      "ở đằng sau, phía sau, đứng sau, liền sau"
+    ]
+  },
+  "afternoon": {
+    "noun": [
+      "buổi chiều"
+    ]
+  },
+  "again": {
+    "adverb": [
+      "lại, lần nữa, nữa"
+    ]
+  },
+  "against": {
+    "preposition": [
+      "chống lại, ngược lại, phản đối"
+    ]
+  },
+  "age": {
+    "noun": [
+      "tuổi; độ tuổi"
+    ],
+    "verb": [
+      "tuổi"
+    ]
+  },
+  "ago": {
+    "adverb": [
+      "trước đây, về trước"
+    ]
+  },
+  "agree": {
+    "verb": [
+      "đồng ý, tán thành, bằng lòng, thoả thuận"
+    ]
+  },
+  "ah": {
+    "abbreviation": [
+      "AH"
+    ],
+    "exclamation": [
+      "a!, chà!, chao!, ôi chao!"
+    ]
+  },
+  "air": {
+    "noun": [
+      "không khí, bầu không khí; không gian, không trung"
+    ],
+    "verb": [
+      "phơi, hong",
+      "phát sóng"
+    ]
+  },
+  "airline": {
+    "noun": [
+      "công ty hàng không"
+    ]
+  },
+  "airport": {
+    "noun": [
+      "sân bay, phi trường"
+    ]
+  },
+  "alive": {
+    "adjective": [
+      "sống, còn sống, đang sống"
+    ]
+  },
+  "allow": {
+    "verb": [
+      "cho phép, để cho"
+    ]
+  },
+  "almost": {
+    "adverb": [
+      "gần như; suýt"
+    ]
+  },
+  "alone": {
+    "adjective": [
+      "một mình, trơ trọi, cô độc, đơn độc"
+    ],
+    "adverb": [
+      "một mình"
+    ]
+  },
+  "along": {
+    "adverb": [
+      "theo chiều dài, suốt theo"
+    ],
+    "preposition": [
+      "dọc theo, theo"
+    ]
+  },
+  "already": {
+    "adverb": [
+      "đã, rồi; đã... rồi"
+    ]
+  },
+  "also": {
+    "adverb": [
+      "cũng"
+    ]
+  },
+  "alternative": {
+    "adjective": [
+      "thay thế; khác để lựa chọn"
+    ],
+    "noun": [
+      "lựa chọn khác; phương án thay thế"
+    ]
+  },
+  "although": {
+    "conjunction": [
+      "dẫu cho, mặc dù"
+    ]
+  },
+  "always": {
+    "adverb": [
+      "luôn luôn, lúc nào cũng, bao giờ cũng, mãi mãi, hoài"
+    ]
+  },
+  "amazing": {
+    "adjective": [
+      "tuyệt vời, đáng kinh ngạc"
+    ]
+  },
+  "among": {
+    "preposition": [
+      "giữa, ở giữa"
+    ]
+  },
+  "amount": {
+    "noun": [
+      "số lượng, số nhiều"
+    ],
+    "verb": [
+      "lên đến, lên tới (tiền)"
+    ]
+  },
+  "ancient": {
+    "adjective": [
+      "cổ đại"
+    ]
+  },
+  "and": {
+    "conjunction": [
+      "và, cùng, với"
+    ]
+  },
+  "angry": {
+    "adjective": [
+      "giận, tức giận, cáu"
+    ]
+  },
+  "animal": {
+    "noun": [
+      "động vật, thú vật"
+    ]
+  },
+  "ankle": {
+    "noun": [
+      "mắt cá chân"
+    ]
+  },
+  "another": {
+    "determiner": [
+      "người khác, cái khác; người kia, cái kia"
+    ],
+    "pronoun": [
+      "người khác, cái khác",
+      "thêm một người, thêm một cái"
+    ]
+  },
+  "answer": {
+    "noun": [
+      "sự trả lời; câu trả lời; thư trả lời; lời đối đáp"
+    ],
+    "verb": [
+      "trả lời, đáp lại; thưa"
+    ]
+  },
+  "anybody": {
+    "pronoun": [
+      "người nào, ai"
+    ]
+  },
+  "anyone": {
+    "pronoun": [
+      "người nào, ai"
+    ]
+  },
+  "anyway": {
+    "adverb": [
+      "thế nào cũng được, cách nào cũng được"
+    ]
+  },
+  "anywhere": {
+    "adverb": [
+      "bất kỳ chỗ nào, bất cứ nơi đâu"
+    ],
+    "pronoun": [
+      "bất cứ nơi nào"
+    ]
+  },
+  "apartment": {
+    "noun": [
+      "căn hộ"
+    ]
+  },
+  "app": {
+    "noun": [
+      "ứng dụng"
+    ]
+  },
+  "appear": {
+    "verb": [
+      "xuất hiện",
+      "có vẻ, dường như"
+    ]
+  },
+  "appearance": {
+    "noun": [
+      "ngoại hình, vẻ bề ngoài",
+      "sự xuất hiện"
+    ]
+  },
+  "apply": {
+    "verb": [
+      "nộp đơn, ứng tuyển",
+      "áp dụng",
+      "bôi, thoa"
+    ]
+  },
+  "april": {
+    "noun": [
+      "tháng tư"
+    ]
+  },
+  "architect": {
+    "noun": [
+      "kiến trúc sư"
+    ],
+    "verb": [
+      "kiến trúc sư"
+    ]
+  },
+  "architecture": {
+    "noun": [
+      "kiến trúc"
+    ]
+  },
+  "area": {
+    "noun": [
+      "khu vực",
+      "diện tích"
+    ]
+  },
+  "argue": {
+    "verb": [
+      "tranh cãi",
+      "lập luận"
+    ]
+  },
+  "argument": {
+    "noun": [
+      "cuộc tranh cãi",
+      "lý lẽ, lập luận"
+    ]
+  },
+  "arm": {
+    "noun": [
+      "cánh tay"
+    ],
+    "verb": [
+      "vũ trang"
+    ]
+  },
+  "army": {
+    "noun": [
+      "quân đội"
+    ]
+  },
+  "around": {
+    "adverb": [
+      "vòng quanh"
+    ],
+    "preposition": [
+      "xung quanh, vòng quanh"
+    ]
+  },
+  "arrange": {
+    "verb": [
+      "sắp xếp, sắp đặt, sửa soạn"
+    ]
+  },
+  "arrangement": {
+    "noun": [
+      "sự sắp xếp, sự sắp đặt, cái được sắp xếp, cái được sắp đặt"
+    ]
+  },
+  "arrive": {
+    "verb": [
+      "đến, tới nơi; xảy đến"
+    ]
+  },
+  "art": {
+    "noun": [
+      "nghệ thuật; mỹ thuật"
+    ]
+  },
+  "article": {
+    "noun": [
+      "bài báo"
+    ]
+  },
+  "artist": {
+    "noun": [
+      "nghệ sĩ"
+    ]
+  },
+  "ask": {
+    "verb": [
+      "hỏi"
+    ]
+  },
+  "asleep": {
+    "adjective": [
+      "ngủ"
+    ]
+  },
+  "assistant": {
+    "adjective": [
+      "giúp đỡ, phụ, phó"
+    ],
+    "noun": [
+      "trợ lý; người phụ giúp"
+    ]
+  },
+  "athlete": {
+    "noun": [
+      "vận động viên"
+    ]
+  },
+  "attack": {
+    "noun": [
+      "sự tấn công, sự công kích"
+    ],
+    "verb": [
+      "tấn công, công kích"
+    ]
+  },
+  "attend": {
+    "verb": [
+      "dự, có mặt"
+    ]
+  },
+  "attention": {
+    "exclamation": [
+      "chú ý"
+    ],
+    "noun": [
+      "sự chú ý"
+    ]
+  },
+  "attractive": {
+    "adjective": [
+      "hấp dẫn, thu hút"
+    ]
+  },
+  "audience": {
+    "noun": [
+      "những người nghe, thính giả; người xem, khán giả; bạn đọc, độc giả"
+    ]
+  },
+  "aunt": {
+    "noun": [
+      "cô, dì, thím, mợ, bác gái"
+    ]
+  },
+  "author": {
+    "noun": [
+      "tác giả"
+    ],
+    "verb": [
+      "tạo ra, sáng tạo, sáng tác"
+    ]
+  },
+  "autumn": {
+    "noun": [
+      "mùa thu"
+    ]
+  },
+  "available": {
+    "adjective": [
+      "có sẵn; có thể sử dụng",
+      "rảnh, có thời gian"
+    ]
+  },
+  "average": {
+    "adjective": [
+      "trung bình"
+    ],
+    "noun": [
+      "số trung bình, mức trung bình; sự ước lượng trung bình"
+    ],
+    "verb": [
+      "tính trung bình; đạt trung bình là, trung bình là"
+    ]
+  },
+  "avoid": {
+    "verb": [
+      "tránh, tránh xa"
+    ]
+  },
+  "award": {
+    "noun": [
+      "giải thưởng"
+    ],
+    "verb": [
+      "tặng, tặng thưởng, trao tặng"
+    ]
+  },
+  "away": {
+    "adjective": [
+      "xa"
+    ],
+    "adverb": [
+      "xa, xa cách, rời xa, xa ra, đi (xa)"
+    ]
+  },
+  "awful": {
+    "adjective": [
+      "rất tệ; kinh khủng"
+    ]
+  },
+  "background": {
+    "noun": [
+      "bối cảnh; nền",
+      "hoàn cảnh xuất thân"
+    ]
+  },
+  "bad": {
+    "adjective": [
+      "xấu"
+    ]
+  },
+  "badly": {
+    "adverb": [
+      "xấu, tồi, dở, bậy"
+    ]
+  },
+  "bag": {
+    "noun": [
+      "bao, túi, bị, xắc, cặp"
+    ],
+    "verb": [
+      "bỏ vào túi, bỏ vào bao"
+    ]
+  },
+  "ball": {
+    "noun": [
+      "quả bóng"
+    ]
+  },
+  "banana": {
+    "noun": [
+      "quả chuối",
+      "cây chuối"
+    ]
+  },
+  "band": {
+    "noun": [
+      "ban nhạc",
+      "dải, băng"
+    ]
+  },
+  "bar": {
+    "noun": [
+      "quán bar, quầy rượu",
+      "thanh, thỏi"
+    ],
+    "verb": [
+      "cài, then (cửa)"
+    ]
+  },
+  "baseball": {
+    "noun": [
+      "bóng chày"
+    ]
+  },
+  "based": {
+    "adjective": [
+      "dựa trên"
+    ]
+  },
+  "basketball": {
+    "noun": [
+      "bóng rổ"
+    ]
+  },
+  "bath": {
+    "noun": [
+      "việc tắm; bồn tắm"
+    ]
+  },
+  "bathroom": {
+    "noun": [
+      "buồng tắm, phòng tắm, nhà vệ sinh"
+    ]
+  },
+  "be": {
+    "auxiliary verb": [
+      "trợ động từ dùng trong thì tiếp diễn và câu bị động"
+    ],
+    "verb": [
+      "là; thì; ở"
+    ]
+  },
+  "beach": {
+    "noun": [
+      "bãi biển"
+    ]
+  },
+  "bean": {
+    "noun": [
+      "đậu"
+    ]
+  },
+  "beat": {
+    "noun": [
+      "sự đập; tiếng đập"
+    ],
+    "verb": [
+      "đánh bại",
+      "đánh, đập"
+    ]
+  },
+  "beautiful": {
+    "adjective": [
+      "đẹp; hay"
+    ]
+  },
+  "because": {
+    "conjunction": [
+      "vì, bởi vì"
+    ]
+  },
+  "become": {
+    "verb": [
+      "trở nên, trở thành"
+    ]
+  },
+  "bed": {
+    "noun": [
+      "giường"
+    ]
+  },
+  "bedroom": {
+    "noun": [
+      "buồng ngủ"
+    ]
+  },
+  "beef": {
+    "noun": [
+      "thịt bò"
+    ]
+  },
+  "beer": {
+    "noun": [
+      "bia"
+    ]
+  },
+  "before": {
+    "adverb": [
+      "trước, đằng trước"
+    ],
+    "conjunction": [
+      "trước khi"
+    ],
+    "preposition": [
+      "trước, trước mắt, trước mặt"
+    ]
+  },
+  "begin": {
+    "verb": [
+      "bắt đầu, khởi đầu, mở đầu"
+    ]
+  },
+  "beginning": {
+    "noun": [
+      "phần đầu; lúc bắt đầu, lúc khởi đầu"
+    ]
+  },
+  "behave": {
+    "verb": [
+      "ăn ở, đối xử, cư xử"
+    ]
+  },
+  "behaviour": {
+    "noun": [
+      "thái độ, cách đối xử; cách cư xử, cách ăn ở; tư cách đạo đức"
+    ]
+  },
+  "behind": {
+    "adverb": [
+      "sau, ở đằng sau"
+    ],
+    "preposition": [
+      "sau, ở đằng sau"
+    ]
+  },
+  "believe": {
+    "verb": [
+      "tin, tin tưởng"
+    ]
+  },
+  "belong": {
+    "verb": [
+      "thuộc về, của, thuộc quyền sở hữu"
+    ]
+  },
+  "below": {
+    "adverb": [
+      "ở hoặc tới một mức, vị trí hoặc nơi thấp hơn"
+    ],
+    "preposition": [
+      "ở hoặc tới một mức, vị trí thấp hơn ai/cái gì; dưới"
+    ]
+  },
+  "belt": {
+    "noun": [
+      "dây lưng, thắt lưng"
+    ]
+  },
+  "benefit": {
+    "noun": [
+      "lợi, lợi ích"
+    ],
+    "verb": [
+      "giúp ích cho, làm lợi cho"
+    ]
+  },
+  "better": {
+    "adjective": [
+      "hơn, tốt hơn, khá hơn, hay hơn, đẹp hơn"
+    ],
+    "adverb": [
+      "hơn, tốt hơn, hay hơn"
+    ],
+    "noun": [
+      "người trên, người hơn (tuổi, địa vị, tài năng)"
+    ]
+  },
+  "between": {
+    "adverb": [
+      "ở giữa"
+    ],
+    "preposition": [
+      "giữa, ở giữa"
+    ]
+  },
+  "bicycle": {
+    "noun": [
+      "xe đạp"
+    ],
+    "verb": [
+      "đi xe đạp"
+    ]
+  },
+  "big": {
+    "adjective": [
+      "to, lớn"
+    ]
+  },
+  "bike": {
+    "noun": [
+      "xe đạp",
+      "xe máy (cách gọi thân mật)"
+    ],
+    "verb": [
+      "đi xe đạp"
+    ]
+  },
+  "bin": {
+    "noun": [
+      "thùng rác; thùng chứa"
+    ]
+  },
+  "biology": {
+    "noun": [
+      "sinh học"
+    ]
+  },
+  "bird": {
+    "noun": [
+      "con chim"
+    ]
+  },
+  "birth": {
+    "noun": [
+      "sự ra đời; việc sinh con"
+    ]
+  },
+  "birthday": {
+    "noun": [
+      "ngày sinh; lễ sinh nhật"
+    ]
+  },
+  "biscuit": {
+    "noun": [
+      "bánh quy, bích quy"
+    ]
+  },
+  "bit": {
+    "noun": [
+      "miếng (thức ăn...); mảnh mẫu"
+    ]
+  },
+  "black": {
+    "adjective": [
+      "đen"
+    ],
+    "noun": [
+      "màu đen"
+    ]
+  },
+  "blank": {
+    "adjective": [
+      "để trống, để trắng (tờ giấy...)"
+    ],
+    "noun": [
+      "chỗ để trống, khoảng trống, gạch để trống"
+    ]
+  },
+  "blog": {
+    "noun": [
+      "nhật ký trên Internet"
+    ],
+    "verb": [
+      "blog"
+    ]
+  },
+  "blood": {
+    "noun": [
+      "máu, huyết"
+    ]
+  },
+  "blow": {
+    "noun": [
+      "cú đánh đòn"
+    ],
+    "verb": [
+      "thổi",
+      "nổ tung"
+    ]
+  },
+  "blue": {
+    "adjective": [
+      "màu xanh dương",
+      "buồn (nghĩa bóng)"
+    ],
+    "noun": [
+      "màu xanh, màu lam"
+    ]
+  },
+  "board": {
+    "noun": [
+      "tấm bảng; tấm ván",
+      "hội đồng, ban quản trị"
+    ],
+    "verb": [
+      "lên tàu, lên xe, lên máy bay"
+    ]
+  },
+  "boat": {
+    "noun": [
+      "thuyền"
+    ]
+  },
+  "body": {
+    "noun": [
+      "thân thể, thể xác"
+    ]
+  },
+  "boil": {
+    "verb": [
+      "sôi"
+    ]
+  },
+  "bone": {
+    "noun": [
+      "xương"
+    ]
+  },
+  "boot": {
+    "noun": [
+      "giày ống"
+    ],
+    "verb": [
+      "đi giày ống cho"
+    ]
+  },
+  "bored": {
+    "adjective": [
+      "cảm thấy chán"
+    ]
+  },
+  "boring": {
+    "adjective": [
+      "buồn tẻ, nhàm chán, nhạt nhẽo"
+    ]
+  },
+  "borrow": {
+    "verb": [
+      "vay, mượn"
+    ]
+  },
+  "boss": {
+    "noun": [
+      "ông chủ, thủ trưởng"
+    ],
+    "verb": [
+      "chỉ huy, điều khiển"
+    ]
+  },
+  "bottle": {
+    "noun": [
+      "chai, lọ"
+    ]
+  },
+  "bottom": {
+    "adjective": [
+      "cuối, cuối cùng, thấp nhất"
+    ],
+    "noun": [
+      "phần dưới cùng; đáy"
+    ]
+  },
+  "bowl": {
+    "noun": [
+      "cái bát"
+    ]
+  },
+  "box": {
+    "noun": [
+      "hộp, thùng, tráp, bao"
+    ],
+    "verb": [
+      "bỏ vào hộp"
+    ]
+  },
+  "boy": {
+    "noun": [
+      "con trai, thiếu niên; con trai (con đẻ ra)"
+    ]
+  },
+  "boyfriend": {
+    "noun": [
+      "bạn trai; người yêu nam"
+    ]
+  },
+  "brain": {
+    "noun": [
+      "óc, não"
+    ]
+  },
+  "bread": {
+    "noun": [
+      "bánh mì"
+    ]
+  },
+  "breakfast": {
+    "noun": [
+      "bữa ăn sáng, bữa điểm tâm"
+    ]
+  },
+  "bridge": {
+    "noun": [
+      "cái cầu"
+    ]
+  },
+  "bright": {
+    "adjective": [
+      "sáng, sáng chói"
+    ]
+  },
+  "brilliant": {
+    "adjective": [
+      "xuất sắc, rất giỏi",
+      "rực rỡ"
+    ]
+  },
+  "bring": {
+    "verb": [
+      "mang đến; đem lại"
+    ]
+  },
+  "broken": {
+    "adjective": [
+      "bị hỏng; bị vỡ, gãy"
+    ]
+  },
+  "brother": {
+    "noun": [
+      "anh trai, em trai"
+    ]
+  },
+  "brown": {
+    "adjective": [
+      "nâu"
+    ],
+    "noun": [
+      "màu nâu"
+    ]
+  },
+  "brush": {
+    "noun": [
+      "bàn chải"
+    ],
+    "verb": [
+      "chải, quét"
+    ]
+  },
+  "build": {
+    "verb": [
+      "xây, xây dựng, xây cất; dựng nên, lập nên, làm nên"
+    ]
+  },
+  "building": {
+    "noun": [
+      "tòa nhà",
+      "việc xây dựng"
+    ]
+  },
+  "burn": {
+    "noun": [
+      "đốt cháy"
+    ],
+    "verb": [
+      "cháy; đốt cháy",
+      "làm bỏng"
+    ]
+  },
+  "bus": {
+    "noun": [
+      "xe buýt"
+    ]
+  },
+  "business": {
+    "noun": [
+      "việc buôn bán, việc kinh doanh, việc thương mại"
+    ]
+  },
+  "businessman": {
+    "noun": [
+      "nhà kinh doanh, thương gia"
+    ]
+  },
+  "busy": {
+    "adjective": [
+      "bận rộn, bận; có lắm việc"
+    ]
+  },
+  "but": {
+    "conjunction": [
+      "nhưng, nhưng mà"
+    ],
+    "noun": [
+      "cái \"nhưng mà\"; điều phản đối, điều trái lại"
+    ],
+    "preposition": [
+      "trừ ra, ngoài ra"
+    ]
+  },
+  "butter": {
+    "noun": [
+      "bơ"
+    ]
+  },
+  "button": {
+    "noun": [
+      "cái khuy, cái cúc (áo)"
+    ]
+  },
+  "buy": {
+    "verb": [
+      "mua"
+    ]
+  },
+  "by": {
+    "adverb": [
+      "gần"
+    ],
+    "preposition": [
+      "bởi, do",
+      "bằng (phương tiện)",
+      "bên cạnh",
+      "trước hoặc vào (hạn chót)"
+    ]
+  },
+  "cake": {
+    "noun": [
+      "bánh ngọt, bánh ga tô, bánh kem"
+    ]
+  },
+  "camera": {
+    "noun": [
+      "máy ảnh, máy chụp hình, máy hình"
+    ]
+  },
+  "camp": {
+    "noun": [
+      "trại, chỗ cắm trại, hạ trại"
+    ],
+    "verb": [
+      "đóng trại, cắm trại, hạ trại"
+    ]
+  },
+  "camping": {
+    "noun": [
+      "sự cắm trại"
+    ]
+  },
+  "car": {
+    "noun": [
+      "xe ô tô; xe"
+    ]
+  },
+  "card": {
+    "noun": [
+      "thẻ; thiệp",
+      "lá bài"
+    ],
+    "verb": [
+      "chải (len...)"
+    ]
+  },
+  "care": {
+    "noun": [
+      "sự chăm sóc, sự chăm nom, sự giữ gìn, sự bảo dưỡng"
+    ],
+    "verb": [
+      "trông nom, chăm sóc, nuôi nấng"
+    ]
+  },
+  "career": {
+    "noun": [
+      "nghề, nghề nghiệp"
+    ],
+    "verb": [
+      "chạy nhanh, lao nhanh"
+    ]
+  },
+  "careful": {
+    "adjective": [
+      "cẩn thận, thận trọng, biết giữ gìn, biết lưu ý"
+    ]
+  },
+  "carefully": {
+    "adverb": [
+      "cẩn thận, chu đáo"
+    ]
+  },
+  "carpet": {
+    "noun": [
+      "tấm thảm"
+    ]
+  },
+  "carrot": {
+    "noun": [
+      "cây cà rốt; củ cà rốt"
+    ]
+  },
+  "carry": {
+    "verb": [
+      "mang, vác, khuân, chở; ẵm"
+    ]
+  },
+  "cartoon": {
+    "noun": [
+      "phim hoạt hình",
+      "tranh biếm họa"
+    ]
+  },
+  "cash": {
+    "noun": [
+      "tiền, tiền mặt"
+    ],
+    "verb": [
+      "trả tiền mặt, lĩnh tiền mặt"
+    ]
+  },
+  "castle": {
+    "noun": [
+      "lâu đài"
+    ]
+  },
+  "cat": {
+    "noun": [
+      "con mèo"
+    ]
+  },
+  "catch": {
+    "noun": [
+      "sự bắt, sự nắm lấy; cái bắt, cái vồ, cái chộp"
+    ],
+    "verb": [
+      "bắt lấy, nắm lấy, tóm lấy, chộp lấy"
+    ]
+  },
+  "cause": {
+    "noun": [
+      "nguyên nhân, nguyên do, căn nguyên"
+    ],
+    "verb": [
+      "gây ra, gây nên, sinh ra, làm ra, tạo ra"
+    ]
+  },
+  "celebrate": {
+    "verb": [
+      "ăn mừng; kỷ niệm"
+    ]
+  },
+  "celebrity": {
+    "noun": [
+      "người nổi tiếng"
+    ]
+  },
+  "cent": {
+    "noun": [
+      "đồng xu (bằng 1/100 đô la)"
+    ]
+  },
+  "centre": {
+    "noun": [
+      "điểm giữa, tâm; trung tâm; trung khu; trung ương"
+    ],
+    "verb": [
+      "đặt vào giữa, để vào giữa, tập trung vào, xoáy quanh"
+    ]
+  },
+  "century": {
+    "noun": [
+      "trăm năm, thế kỷ"
+    ]
+  },
+  "certain": {
+    "adjective": [
+      "chắc, chắc chắn"
+    ]
+  },
+  "certainly": {
+    "adverb": [
+      "chắc, nhất định"
+    ]
+  },
+  "chair": {
+    "noun": [
+      "ghế"
+    ],
+    "verb": [
+      "cử làm chủ tịch, chọn làm chủ tịch"
+    ]
+  },
+  "chance": {
+    "noun": [
+      "cơ hội",
+      "khả năng xảy ra",
+      "sự tình cờ"
+    ]
+  },
+  "character": {
+    "noun": [
+      "nhân vật",
+      "tính cách",
+      "ký tự"
+    ]
+  },
+  "charity": {
+    "noun": [
+      "tổ chức từ thiện",
+      "việc làm từ thiện"
+    ]
+  },
+  "chart": {
+    "noun": [
+      "biểu đồ; bảng số liệu"
+    ],
+    "verb": [
+      "lập biểu đồ; ghi lại diễn biến"
+    ]
+  },
+  "chat": {
+    "noun": [
+      "hội thoại, trò chuyện thân mật"
+    ],
+    "verb": [
+      "bàn chuyện, tán gẫu, trò chuyện"
+    ]
+  },
+  "cheap": {
+    "adjective": [
+      "rẻ, rẻ tiền; đi tàu xe hạng ít tiền"
+    ],
+    "adverb": [
+      "rẻ, rẻ mạt; hạ, hạ giá"
+    ]
+  },
+  "check": {
+    "exclamation": [
+      "kiểm tra"
+    ],
+    "noun": [
+      "sự kiểm tra",
+      "dấu tích"
+    ],
+    "verb": [
+      "kiểm tra"
+    ]
+  },
+  "cheese": {
+    "noun": [
+      "phô mai"
+    ]
+  },
+  "chef": {
+    "noun": [
+      "đầu bếp"
+    ]
+  },
+  "chemistry": {
+    "noun": [
+      "ngành hoá học; môn hoá học, hoá học"
+    ]
+  },
+  "chicken": {
+    "adjective": [
+      "thịt gà"
+    ],
+    "noun": [
+      "con gà",
+      "thịt gà"
+    ]
+  },
+  "child": {
+    "noun": [
+      "đứa bé, đứa trẻ"
+    ]
+  },
+  "chip": {
+    "noun": [
+      "khoai tây chiên",
+      "vi mạch, chip",
+      "mảnh nhỏ"
+    ],
+    "verb": [
+      "đẽo, bào"
+    ]
+  },
+  "chocolate": {
+    "noun": [
+      "sôcôla"
+    ]
+  },
+  "choice": {
+    "noun": [
+      "sự lựa, sự chọn, sự lựa chọn"
+    ]
+  },
+  "choose": {
+    "verb": [
+      "chọn, lựa chọn, kén chọn"
+    ]
+  },
+  "church": {
+    "noun": [
+      "nhà thờ"
+    ]
+  },
+  "cigarette": {
+    "noun": [
+      "điếu thuốc lá"
+    ]
+  },
+  "cinema": {
+    "noun": [
+      "rạp chiếu phim",
+      "điện ảnh"
+    ]
+  },
+  "circle": {
+    "noun": [
+      "đường tròn, vòng tròn"
+    ],
+    "verb": [
+      "đi chung quanh, xoay quanh"
+    ]
+  },
+  "city": {
+    "noun": [
+      "thành phố, thành thị, đô thị"
+    ]
+  },
+  "class": {
+    "noun": [
+      "lớp học; buổi học",
+      "loại, nhóm",
+      "giai cấp"
+    ],
+    "verb": [
+      "lớp học"
+    ]
+  },
+  "classical": {
+    "adjective": [
+      "cổ điển"
+    ]
+  },
+  "classroom": {
+    "noun": [
+      "phòng học"
+    ]
+  },
+  "clean": {
+    "adjective": [
+      "sạch, sạch sẽ"
+    ],
+    "verb": [
+      "lau chùi, rửa sạch, cạo sạch, đánh sạch, tẩy sạch, vét sạch, quét sạch"
+    ]
+  },
+  "clear": {
+    "adjective": [
+      "rõ ràng",
+      "trong suốt"
+    ],
+    "verb": [
+      "dọn sạch",
+      "làm rõ"
+    ]
+  },
+  "clearly": {
+    "adverb": [
+      "rõ ràng, sáng sủa, sáng tỏ"
+    ]
+  },
+  "clever": {
+    "adjective": [
+      "lanh lợi, thông minh, khôn khéo, khôn ngoan"
+    ]
+  },
+  "climate": {
+    "noun": [
+      "khí hậu, thời tiết"
+    ]
+  },
+  "climb": {
+    "noun": [
+      "sự leo trèo"
+    ],
+    "verb": [
+      "leo, trèo, leo trèo"
+    ]
+  },
+  "clock": {
+    "noun": [
+      "đồng hồ treo tường, đồng hồ để bàn"
+    ],
+    "verb": [
+      "bấm giờ (trong một cuộc chạy đua)"
+    ]
+  },
+  "closed": {
+    "adjective": [
+      "đóng, đóng cửa"
+    ]
+  },
+  "clothes": {
+    "noun": [
+      "quần áo"
+    ]
+  },
+  "clothing": {
+    "noun": [
+      "quần áo, y phục"
+    ]
+  },
+  "cloud": {
+    "noun": [
+      "mây, đám mây"
+    ],
+    "verb": [
+      "che phủ",
+      "làm mờ"
+    ]
+  },
+  "club": {
+    "noun": [
+      "câu lạc bộ",
+      "cây gậy"
+    ]
+  },
+  "coach": {
+    "noun": [
+      "huấn luyện viên",
+      "xe khách đường dài"
+    ],
+    "verb": [
+      "huấn luyện; hướng dẫn"
+    ]
+  },
+  "coast": {
+    "noun": [
+      "bờ biển"
+    ],
+    "verb": [
+      "đi men bờ biển (tàu bè)"
+    ]
+  },
+  "coat": {
+    "noun": [
+      "áo khoác",
+      "lớp phủ"
+    ]
+  },
+  "code": {
+    "noun": [
+      "mã; mật mã",
+      "bộ quy tắc"
+    ],
+    "verb": [
+      "viết bằng mã, viết bằng mật mã (bức điện)"
+    ]
+  },
+  "coffee": {
+    "noun": [
+      "cà phê"
+    ]
+  },
+  "cold": {
+    "adjective": [
+      "lạnh, lạnh lẽo, nguội"
+    ],
+    "noun": [
+      "bệnh cảm lạnh",
+      "cái lạnh"
+    ]
+  },
+  "colleague": {
+    "noun": [
+      "bạn đồng nghiệp, bạn đồng sự"
+    ]
+  },
+  "collect": {
+    "verb": [
+      "thu thập; sưu tầm",
+      "đón, lấy"
+    ]
+  },
+  "college": {
+    "noun": [
+      "trường cao đẳng; trường đại học"
+    ]
+  },
+  "colour": {
+    "noun": [
+      "màu, sắc, màu sắc"
+    ],
+    "verb": [
+      "tô màu"
+    ]
+  },
+  "column": {
+    "noun": [
+      "cột",
+      "chuyên mục (báo chí)"
+    ]
+  },
+  "come": {
+    "verb": [
+      "đến, tới, đi đến, đi tới, đi lại"
+    ]
+  },
+  "comedy": {
+    "noun": [
+      "kịch vui, hài kịch"
+    ]
+  },
+  "comfortable": {
+    "adjective": [
+      "thoải mái, dễ chịu"
+    ]
+  },
+  "comment": {
+    "noun": [
+      "lời bình luận"
+    ],
+    "verb": [
+      "bình luận"
+    ]
+  },
+  "common": {
+    "adjective": [
+      "phổ biến, thường gặp",
+      "chung"
+    ]
+  },
+  "communicate": {
+    "verb": [
+      "giao tiếp",
+      "truyền đạt"
+    ]
+  },
+  "community": {
+    "noun": [
+      "cộng đồng"
+    ]
+  },
+  "company": {
+    "noun": [
+      "công ty",
+      "sự bầu bạn"
+    ]
+  },
+  "compare": {
+    "verb": [
+      "so sánh"
+    ]
+  },
+  "compete": {
+    "verb": [
+      "đua tranh, ganh đua, cạnh tranh, tranh tài"
+    ]
+  },
+  "competition": {
+    "noun": [
+      "cuộc thi",
+      "sự cạnh tranh"
+    ]
+  },
+  "complain": {
+    "verb": [
+      "kêu ca, kêu, phàn nàn, than phiền; oán trách"
+    ]
+  },
+  "complete": {
+    "adjective": [
+      "đầy đủ, trọn vẹn, hoàn toàn"
+    ],
+    "verb": [
+      "hoàn thành, làm xong"
+    ]
+  },
+  "completely": {
+    "adverb": [
+      "hoàn toàn, đầy đủ, trọn vẹn"
+    ]
+  },
+  "computer": {
+    "noun": [
+      "máy tính, máy vi tính, máy điện toán, máy tính điện tử"
+    ]
+  },
+  "concert": {
+    "noun": [
+      "buổi hòa nhạc"
+    ]
+  },
+  "condition": {
+    "noun": [
+      "điều kiện"
+    ],
+    "verb": [
+      "ước định, quy định"
+    ]
+  },
+  "conference": {
+    "noun": [
+      "hội nghị"
+    ]
+  },
+  "connect": {
+    "verb": [
+      "nối, nối lại, chấp nối, câu thông"
+    ]
+  },
+  "connected": {
+    "adjective": [
+      "được kết nối; có liên quan"
+    ]
+  },
+  "consider": {
+    "verb": [
+      "cân nhắc, xem xét, suy xét, suy nghĩ"
+    ]
+  },
+  "contain": {
+    "verb": [
+      "chứa đựng, bao hàm, gồm có, bao gồm"
+    ]
+  },
+  "context": {
+    "noun": [
+      "văn cảnh, ngữ cảnh, mạch văn"
+    ]
+  },
+  "continent": {
+    "noun": [
+      "lục địa, đại lục, châu lục"
+    ]
+  },
+  "continue": {
+    "verb": [
+      "tiếp tục, làm tiếp"
+    ]
+  },
+  "control": {
+    "noun": [
+      "sự kiểm soát; quyền điều khiển"
+    ],
+    "verb": [
+      "kiểm soát; điều khiển"
+    ]
+  },
+  "conversation": {
+    "noun": [
+      "sự nói chuyện; cuộc nói chuyện, cuộc chuyện trò, cuộc đàm luận"
+    ]
+  },
+  "cook": {
+    "noun": [
+      "đầu bếp, cấp dưỡng, anh nuôi"
+    ],
+    "verb": [
+      "nấu, nấu chín"
+    ]
+  },
+  "cooker": {
+    "noun": [
+      "lò, bếp, nồi nấu"
+    ]
+  },
+  "cooking": {
+    "noun": [
+      "sự nấu; cách nấu ăn"
+    ]
+  },
+  "copy": {
+    "noun": [
+      "bản sao, bản chép lại"
+    ],
+    "verb": [
+      "(ngoại động từ) Sao lại, chép lại; bắt chước, phỏng theo, mô phỏng"
+    ]
+  },
+  "corner": {
+    "noun": [
+      "góc (tường, nhà, phố...)"
+    ]
+  },
+  "correct": {
+    "adjective": [
+      "đúng, chính xác"
+    ],
+    "verb": [
+      "sửa, sửa chữa, sửa chữa đúng, hiệu chỉnh"
+    ]
+  },
+  "correctly": {
+    "adverb": [
+      "đúng cách thức, phù hợp"
+    ]
+  },
+  "cost": {
+    "noun": [
+      "giá"
+    ],
+    "verb": [
+      "trị giá; phải trả"
+    ]
+  },
+  "could": {
+    "modal verb": [
+      "có thể (khả năng trong quá khứ)",
+      "có thể (khả năng hoặc lời đề nghị lịch sự)"
+    ]
+  },
+  "count": {
+    "noun": [
+      "việc đếm; tổng số",
+      "bá tước (tước vị)"
+    ],
+    "verb": [
+      "đếm; tính"
+    ]
+  },
+  "country": {
+    "noun": [
+      "nước, quốc gia"
+    ]
+  },
+  "couple": {
+    "noun": [
+      "đôi, cặp"
+    ]
+  },
+  "cousin": {
+    "noun": [
+      "anh, chị, em họ"
+    ]
+  },
+  "cover": {
+    "noun": [
+      "vỏ, vỏ bọc, cái bọc ngoài; bìa sách; phong bì"
+    ],
+    "verb": [
+      "che, phủ, bao phủ, bao trùm, bao bọc"
+    ]
+  },
+  "cow": {
+    "noun": [
+      "bò cái"
+    ]
+  },
+  "crazy": {
+    "adjective": [
+      "điên rồ",
+      "rất say mê"
+    ]
+  },
+  "cream": {
+    "adjective": [
+      "kem"
+    ],
+    "noun": [
+      "kem (lấy từ sữa)"
+    ]
+  },
+  "create": {
+    "verb": [
+      "tạo, tạo nên, tạo ra, tạo thành, sáng tạo"
+    ]
+  },
+  "creative": {
+    "adjective": [
+      "sáng tạo"
+    ]
+  },
+  "credit": {
+    "noun": [
+      "sự cho vay, cho thiếu, cho chịu"
+    ],
+    "verb": [
+      "công nhận, cho là"
+    ]
+  },
+  "crime": {
+    "noun": [
+      "một hành vi phạm pháp"
+    ]
+  },
+  "criminal": {
+    "adjective": [
+      "có tội, phạm tội, tội ác"
+    ],
+    "noun": [
+      "kẻ phạm tội, tội phạm"
+    ]
+  },
+  "cross": {
+    "adjective": [
+      "chéo nhau, vắt ngang"
+    ],
+    "noun": [
+      "dấu chữ thập",
+      "cây thánh giá"
+    ],
+    "verb": [
+      "qua, đi qua, vượt, đi ngang qua; đưa (ai cái gì...) đi ngang qua"
+    ]
+  },
+  "crowd": {
+    "noun": [
+      "đám đông"
+    ]
+  },
+  "crowded": {
+    "adjective": [
+      "đông đúc"
+    ]
+  },
+  "cry": {
+    "noun": [
+      "tiếng khóc",
+      "tiếng kêu"
+    ],
+    "verb": [
+      "khóc",
+      "kêu, la"
+    ]
+  },
+  "culture": {
+    "noun": [
+      "văn hóa",
+      "sự nuôi cấy (sinh học)"
+    ]
+  },
+  "cup": {
+    "noun": [
+      "tách, chén"
+    ]
+  },
+  "cupboard": {
+    "noun": [
+      "tủ (có ngăn), tủ búp phê"
+    ]
+  },
+  "curly": {
+    "adjective": [
+      "quăn, xoắn"
+    ]
+  },
+  "customer": {
+    "noun": [
+      "khách hàng"
+    ]
+  },
+  "cycle": {
+    "noun": [
+      "chu kỳ, chu trình"
+    ],
+    "verb": [
+      "đi xe đạp",
+      "diễn ra theo chu kỳ"
+    ]
+  },
+  "dad": {
+    "noun": [
+      "ba, cha, bố, thầy"
+    ]
+  },
+  "daily": {
+    "adjective": [
+      "hằng ngày"
+    ],
+    "adverb": [
+      "hằng ngày"
+    ],
+    "noun": [
+      "báo hàng ngày"
+    ]
+  },
+  "dance": {
+    "noun": [
+      "sự nhảy múa; sự khiêu vũ"
+    ],
+    "verb": [
+      "nhảy múa, khiêu vũ"
+    ]
+  },
+  "dancer": {
+    "noun": [
+      "người nhảy múa, diễn viên múa, vũ nữ"
+    ]
+  },
+  "dancing": {
+    "noun": [
+      "sự nhảy múa, sự khiêu vũ"
+    ]
+  },
+  "danger": {
+    "noun": [
+      "sự nguy hiểm, mối hiểm nghèo"
+    ]
+  },
+  "dangerous": {
+    "adjective": [
+      "nguy hiểm; hiểm nghèo, nguy ngập, nguy cấp (bệnh)"
+    ]
+  },
+  "dark": {
+    "adjective": [
+      "tối, tối tăm, tối mò; mù mịt, u ám"
+    ],
+    "noun": [
+      "bóng tối, chỗ tối; lúc đêm tối, lúc trời tối"
+    ]
+  },
+  "data": {
+    "noun": [
+      "dữ liệu"
+    ]
+  },
+  "daughter": {
+    "noun": [
+      "con gái"
+    ]
+  },
+  "day": {
+    "noun": [
+      "ngày",
+      "ban ngày"
+    ]
+  },
+  "dead": {
+    "adjective": [
+      "chết (người, vật, cây cối)"
+    ]
+  },
+  "dear": {
+    "adjective": [
+      "thân, thân yêu, thân mến, yêu quý"
+    ],
+    "exclamation": [
+      "trời ơi; ôi chao"
+    ],
+    "noun": [
+      "người thân mến, người yêu quý"
+    ]
+  },
+  "death": {
+    "noun": [
+      "sự chết; cái chết"
+    ]
+  },
+  "december": {
+    "noun": [
+      "tháng mười hai, tháng chạp"
+    ]
+  },
+  "decide": {
+    "verb": [
+      "quyết định"
+    ]
+  },
+  "decision": {
+    "noun": [
+      "quyết định; sự lựa chọn"
+    ]
+  },
+  "deep": {
+    "adjective": [
+      "sâu"
+    ],
+    "adverb": [
+      "sâu"
+    ]
+  },
+  "definitely": {
+    "adverb": [
+      "chắc chắn, nhất định"
+    ]
+  },
+  "degree": {
+    "noun": [
+      "mức độ, trình độ"
+    ]
+  },
+  "delicious": {
+    "adjective": [
+      "ngon"
+    ]
+  },
+  "dentist": {
+    "noun": [
+      "nha sĩ, thầy thuốc chữa răng"
+    ]
+  },
+  "department": {
+    "noun": [
+      "phòng, ban; khoa",
+      "bộ phận"
+    ]
+  },
+  "depend": {
+    "verb": [
+      "phụ thuộc, tuỳ thuộc, tuỳ thuộc"
+    ]
+  },
+  "describe": {
+    "verb": [
+      "tả, diễn tả, mô tả, miêu tả"
+    ]
+  },
+  "description": {
+    "noun": [
+      "sự tả, sự diễn tả, sự mô tả, sự miêu tả"
+    ]
+  },
+  "desert": {
+    "noun": [
+      "sa mạc"
+    ],
+    "verb": [
+      "rời đi, bỏ đi, bỏ trốn, trốn khỏi"
+    ]
+  },
+  "designer": {
+    "adjective": [
+      "nhà thiết kế"
+    ],
+    "noun": [
+      "nhà thiết kế"
+    ]
+  },
+  "destroy": {
+    "verb": [
+      "phá, phá hoại, phá huỷ, tàn phá, tiêu diệt"
+    ]
+  },
+  "detail": {
+    "noun": [
+      "chi tiết, tiểu tiết; điều tỉ mỉ, điều vụn vặt"
+    ],
+    "verb": [
+      "kể chi tiết, trình bày tỉ mỉ"
+    ]
+  },
+  "detective": {
+    "noun": [
+      "thám tử trinh thám"
+    ]
+  },
+  "develop": {
+    "verb": [
+      "phát triển",
+      "xây dựng, tạo ra"
+    ]
+  },
+  "device": {
+    "noun": [
+      "thiết bị, dụng cụ"
+    ]
+  },
+  "dialogue": {
+    "noun": [
+      "cuộc đối thoại"
+    ]
+  },
+  "diary": {
+    "noun": [
+      "sổ nhật ký"
+    ]
+  },
+  "dictionary": {
+    "noun": [
+      "từ điển"
+    ]
+  },
+  "die": {
+    "verb": [
+      "chết, mất, từ trần; băng hà (vua); tịch; hy sinh"
+    ]
+  },
+  "diet": {
+    "noun": [
+      "chế độ ăn uống",
+      "chế độ ăn kiêng"
+    ],
+    "verb": [
+      "bắt ăn uống theo chế độ; bắt ăn kiêng"
+    ]
+  },
+  "difference": {
+    "noun": [
+      "sự khác nhau, tình trạng khác nhau; tính khác nhau; sự chênh lệch"
+    ]
+  },
+  "different": {
+    "adjective": [
+      "khác, khác biệt, khác nhau"
+    ]
+  },
+  "differently": {
+    "adverb": [
+      "khác, khác nhau, khác biệt"
+    ]
+  },
+  "difficult": {
+    "adjective": [
+      "khó, khó khăn, gay go"
+    ]
+  },
+  "digital": {
+    "adjective": [
+      "kỹ thuật số"
+    ]
+  },
+  "dinner": {
+    "noun": [
+      "bữa tối",
+      "bữa ăn chính trong ngày"
+    ]
+  },
+  "direct": {
+    "adjective": [
+      "trực tiếp",
+      "thẳng"
+    ],
+    "adverb": [
+      "thẳng, ngay; lập tức"
+    ],
+    "verb": [
+      "chỉ đạo, hướng dẫn",
+      "đạo diễn"
+    ]
+  },
+  "direction": {
+    "noun": [
+      "hướng, phương hướng",
+      "chỉ dẫn"
+    ]
+  },
+  "director": {
+    "noun": [
+      "giám đốc",
+      "đạo diễn"
+    ]
+  },
+  "dirty": {
+    "adjective": [
+      "bẩn thỉu, dơ bẩn, dơ dáy; cáu ghét, cáu bẩn, đầy bùn bẩn"
+    ]
+  },
+  "disagree": {
+    "verb": [
+      "không đồng ý; bất đồng"
+    ]
+  },
+  "disappear": {
+    "verb": [
+      "biến đi, biến mất"
+    ]
+  },
+  "disaster": {
+    "noun": [
+      "tai hoạ, thảm hoạ, tai ách"
+    ]
+  },
+  "discover": {
+    "verb": [
+      "khám phá ra, tìm ra, phát hiện ra, nhận ra"
+    ]
+  },
+  "discovery": {
+    "noun": [
+      "sự khám phá ra, sự tìm ra, sự phát hiện ra"
+    ]
+  },
+  "discuss": {
+    "verb": [
+      "thảo luận, bàn cãi, tranh luận (một vấn đề gì); nói đến (ai)"
+    ]
+  },
+  "discussion": {
+    "noun": [
+      "cuộc thảo luận; sự thảo luận"
+    ]
+  },
+  "disease": {
+    "noun": [
+      "bệnh, bệnh tật"
+    ]
+  },
+  "dish": {
+    "noun": [
+      "món ăn",
+      "đĩa đựng thức ăn"
+    ]
+  },
+  "distance": {
+    "noun": [
+      "khoảng cách, tầm xa"
+    ]
+  },
+  "divorced": {
+    "adjective": [
+      "đã ly dị"
+    ]
+  },
+  "do": {
+    "auxiliary verb": [
+      "trợ động từ dùng để hỏi, phủ định hoặc nhấn mạnh"
+    ],
+    "verb": [
+      "làm, thực hiện"
+    ]
+  },
+  "doctor": {
+    "noun": [
+      "bác sĩ y khoa"
+    ]
+  },
+  "document": {
+    "noun": [
+      "văn kiện; tài liệu, tư liệu"
+    ],
+    "verb": [
+      "chứng minh bằng tư liệu; dẫn chứng bằng tư liệu"
+    ]
+  },
+  "dog": {
+    "noun": [
+      "chó"
+    ],
+    "verb": [
+      "theo nhùng nhằng, theo sát gót, bám sát (ai)"
+    ]
+  },
+  "dollar": {
+    "noun": [
+      "đồng đô la (Mỹ)"
+    ]
+  },
+  "door": {
+    "noun": [
+      "cửa, cửa ra vào (nhà, xe ô tô...)"
+    ]
+  },
+  "double": {
+    "adjective": [
+      "đôi, hai, kép"
+    ],
+    "adverb": [
+      "đôi, gấp đôi, gấp hai"
+    ],
+    "determiner": [
+      "gấp đôi"
+    ],
+    "noun": [
+      "cái gấp đôi, lượng gấp đôi"
+    ],
+    "pronoun": [
+      "gấp đôi"
+    ],
+    "verb": [
+      "làm gấp đôi, tăng gấp đôi, nhân gấp đôi"
+    ]
+  },
+  "down": {
+    "adjective": [
+      "xuống, xuôi"
+    ],
+    "adverb": [
+      "xuống"
+    ],
+    "noun": [
+      "cảnh sa sút, vận xuống dốc"
+    ],
+    "preposition": [
+      "xuống, xuôi, xuôi dọc theo"
+    ],
+    "verb": [
+      "đặt xuống, hạ xuống, bỏ xuống"
+    ]
+  },
+  "download": {
+    "noun": [
+      "việc tải xuống; nội dung tải xuống"
+    ],
+    "verb": [
+      "tải xuống"
+    ]
+  },
+  "downstairs": {
+    "adjective": [
+      "ở tầng dưới"
+    ],
+    "adverb": [
+      "xuống cầu thang, xuống gác"
+    ],
+    "noun": [
+      "tầng dưới (của một toà nhà)"
+    ]
+  },
+  "drama": {
+    "noun": [
+      "kịch; tuồng (cổ)"
+    ]
+  },
+  "drawing": {
+    "noun": [
+      "bức vẽ",
+      "việc vẽ"
+    ]
+  },
+  "dream": {
+    "noun": [
+      "giấc mơ, giấc mộng"
+    ],
+    "verb": [
+      "mơ, nằm mơ thấy"
+    ]
+  },
+  "dress": {
+    "noun": [
+      "váy liền",
+      "trang phục"
+    ],
+    "verb": [
+      "mặc (quần áo...), ăn mặc"
+    ]
+  },
+  "drink": {
+    "noun": [
+      "đồ uống, thức uống"
+    ],
+    "verb": [
+      "uống (rượu, nước...)"
+    ]
+  },
+  "driver": {
+    "noun": [
+      "người lái xe ô tô, xe buýt hay các xe có động cơ"
+    ]
+  },
+  "driving": {
+    "adjective": [
+      "lái xe"
+    ],
+    "noun": [
+      "lái xe"
+    ]
+  },
+  "drop": {
+    "noun": [
+      "giọt (nước, máu, thuốc...)"
+    ],
+    "verb": [
+      "làm rơi; rơi xuống",
+      "giảm"
+    ]
+  },
+  "drug": {
+    "noun": [
+      "thuốc",
+      "ma túy"
+    ]
+  },
+  "dry": {
+    "adjective": [
+      "khô, cạn, ráo"
+    ],
+    "verb": [
+      "làm khô, phơi khô, sấy khô, lau khô; làm cạn, làm khô cạn"
+    ]
+  },
+  "during": {
+    "preposition": [
+      "trải qua, trong lúc, trong thời gian"
+    ]
+  },
+  "ear": {
+    "noun": [
+      "tai",
+      "bông lúa, bắp ngô"
+    ]
+  },
+  "early": {
+    "adjective": [
+      "sớm, ban đầu, đầu mùa"
+    ],
+    "adverb": [
+      "sớm, ở lúc ban đầu, ở đầu mùa"
+    ]
+  },
+  "earn": {
+    "verb": [
+      "kiếm được (tiền...); giành được (phần thưởng, sự khen ngợi...)"
+    ]
+  },
+  "earth": {
+    "noun": [
+      "Trái Đất",
+      "đất, mặt đất"
+    ],
+    "verb": [
+      "vun (cây); lấp đất (hạt giống)"
+    ]
+  },
+  "easily": {
+    "adverb": [
+      "một cách dễ dàng"
+    ]
+  },
+  "east": {
+    "adjective": [
+      "đông"
+    ],
+    "adverb": [
+      "về hướng đông; ở phía đông"
+    ],
+    "noun": [
+      "hướng đông, phương đông, phía đông"
+    ]
+  },
+  "easy": {
+    "adjective": [
+      "dễ, dễ dàng",
+      "thoải mái"
+    ]
+  },
+  "education": {
+    "noun": [
+      "sự giáo dục, sự cho ăn học"
+    ]
+  },
+  "effect": {
+    "noun": [
+      "tác động, ảnh hưởng",
+      "hiệu quả"
+    ],
+    "verb": [
+      "thực hiện"
+    ]
+  },
+  "egg": {
+    "noun": [
+      "trứng"
+    ]
+  },
+  "either": {
+    "adverb": [
+      "cũng (trong câu phủ định)"
+    ],
+    "determiner": [
+      "hoặc"
+    ],
+    "pronoun": [
+      "hoặc"
+    ]
+  },
+  "electric": {
+    "adjective": [
+      "điện, có điện, phát điện"
+    ],
+    "noun": [
+      "điện"
+    ]
+  },
+  "electrical": {
+    "adjective": [
+      "điện"
+    ]
+  },
+  "electricity": {
+    "noun": [
+      "điện, điện lực"
+    ]
+  },
+  "electronic": {
+    "adjective": [
+      "điện tử"
+    ]
+  },
+  "elephant": {
+    "noun": [
+      "con voi"
+    ]
+  },
+  "else": {
+    "adverb": [
+      "khác, cách khác"
+    ]
+  },
+  "employ": {
+    "verb": [
+      "thuê, tuyển dụng",
+      "sử dụng"
+    ]
+  },
+  "employee": {
+    "noun": [
+      "người làm, người làm công"
+    ]
+  },
+  "employer": {
+    "noun": [
+      "người sử dụng lao động; chủ lao động"
+    ]
+  },
+  "empty": {
+    "adjective": [
+      "trống, rỗng, trống không, không"
+    ],
+    "verb": [
+      "đổ, dốc (chai...); làm cạn, uống cạn (cốc...)"
+    ]
+  },
+  "end": {
+    "noun": [
+      "sự kết thúc"
+    ],
+    "verb": [
+      "kết thúc"
+    ]
+  },
+  "ending": {
+    "noun": [
+      "sự kết thúc, sự chấm dứt"
+    ]
+  },
+  "energy": {
+    "noun": [
+      "năng lượng",
+      "sức lực"
+    ]
+  },
+  "engine": {
+    "noun": [
+      "máy động cơ"
+    ]
+  },
+  "engineer": {
+    "noun": [
+      "kỹ sư, công trình sư"
+    ],
+    "verb": [
+      "nghĩ ra, bày ra, vạch ra, bố trí, sắp đặt (mưu kế...)"
+    ]
+  },
+  "enjoy": {
+    "verb": [
+      "thích thú, khoái (cái gì)"
+    ]
+  },
+  "enormous": {
+    "adjective": [
+      "to lớn, khổng lồ"
+    ]
+  },
+  "enter": {
+    "verb": [
+      "đi vào"
+    ]
+  },
+  "environment": {
+    "noun": [
+      "môi trường, hoàn cảnh, những vật xung quanh"
+    ]
+  },
+  "equipment": {
+    "noun": [
+      "thiết bị, dụng cụ"
+    ]
+  },
+  "error": {
+    "noun": [
+      "sự sai lầm, sự sai sót, lỗi; ý kiến sai lầm; tình trạng sai lầm"
+    ]
+  },
+  "especially": {
+    "adverb": [
+      "đặc biệt là, nhất là"
+    ]
+  },
+  "essay": {
+    "noun": [
+      "bài luận"
+    ]
+  },
+  "euro": {
+    "noun": [
+      "đồng euro"
+    ]
+  },
+  "even": {
+    "adjective": [
+      "bằng phẳng"
+    ],
+    "adverb": [
+      "ngay cả, ngay, thậm chí"
+    ]
+  },
+  "evening": {
+    "noun": [
+      "buổi tối"
+    ]
+  },
+  "event": {
+    "noun": [
+      "sự việc, sự kiện"
+    ]
+  },
+  "ever": {
+    "adverb": [
+      "bao giờ; từ trước đến giờ; hàng, từng"
+    ]
+  },
+  "everyday": {
+    "adjective": [
+      "hằng ngày, dùng hàng ngày"
+    ]
+  },
+  "everything": {
+    "pronoun": [
+      "mọi vật, tất cả, mọi cái, tất cả mọi thứ"
+    ]
+  },
+  "everywhere": {
+    "adverb": [
+      "ở mọi nơi, khắp nơi, khắp chốn"
+    ],
+    "conjunction": [
+      "ở mọi nơi, khắp nơi, khắp chốn"
+    ],
+    "pronoun": [
+      "ở mọi nơi, khắp nơi, khắp chốn"
+    ]
+  },
+  "evidence": {
+    "noun": [
+      "bằng chứng, chứng cứ"
+    ]
+  },
+  "exact": {
+    "adjective": [
+      "chính xác, đúng, đúng đắn"
+    ]
+  },
+  "exactly": {
+    "adverb": [
+      "chính xác, đúng đắn"
+    ]
+  },
+  "exam": {
+    "noun": [
+      "kỳ thi; bài thi"
+    ]
+  },
+  "example": {
+    "noun": [
+      "thí dụ, ví dụ"
+    ]
+  },
+  "excellent": {
+    "adjective": [
+      "hơn hẳn, trội hơn; rất tốt, thượng hạng, xuất sắc, ưu tú"
+    ]
+  },
+  "except": {
+    "conjunction": [
+      "trừ phi"
+    ],
+    "preposition": [
+      "trừ, trừ ra, không kể"
+    ]
+  },
+  "excited": {
+    "adjective": [
+      "hào hứng, phấn khích"
+    ]
+  },
+  "exciting": {
+    "adjective": [
+      "thú vị, hào hứng, gây phấn khích"
+    ]
+  },
+  "exercise": {
+    "noun": [
+      "bài tập",
+      "việc tập thể dục"
+    ],
+    "verb": [
+      "tập thể dục"
+    ]
+  },
+  "exist": {
+    "verb": [
+      "tồn tại, sống"
+    ]
+  },
+  "expect": {
+    "verb": [
+      "mong chờ, chờ đợi, ngóng chờ, trông mong"
+    ]
+  },
+  "expensive": {
+    "adjective": [
+      "đắt tiền"
+    ]
+  },
+  "experience": {
+    "noun": [
+      "kinh nghiệm"
+    ],
+    "verb": [
+      "trải nghiệm"
+    ]
+  },
+  "experiment": {
+    "noun": [
+      "cuộc thí nghiệm"
+    ],
+    "verb": [
+      "thí nghiệm, thử"
+    ]
+  },
+  "expert": {
+    "adjective": [
+      "chuyên môn, thành thạo, thông thạo, lão luyện"
+    ],
+    "noun": [
+      "nhà chuyên môn, chuyên gia, chuyên viên"
+    ]
+  },
+  "explain": {
+    "verb": [
+      "giảng, giảng giải, giải nghĩa"
+    ]
+  },
+  "explanation": {
+    "noun": [
+      "sự giảng, sự giảng giải, sự giải nghĩa, lời giảng, lời giải nghĩa"
+    ]
+  },
+  "express": {
+    "noun": [
+      "dịch vụ chuyển phát nhanh; tàu tốc hành"
+    ],
+    "verb": [
+      "bày tỏ, diễn đạt",
+      "vắt, ép"
+    ]
+  },
+  "expression": {
+    "noun": [
+      "cách diễn đạt; thành ngữ",
+      "nét mặt; sự biểu lộ"
+    ]
+  },
+  "extra": {
+    "adjective": [
+      "thêm, phụ, ngoại"
+    ],
+    "adverb": [
+      "thêm, phụ, ngoại"
+    ],
+    "noun": [
+      "cái phụ, cái thêm; món phải trả thêm"
+    ]
+  },
+  "extreme": {
+    "adjective": [
+      "cực độ, rất lớn",
+      "cực đoan"
+    ],
+    "noun": [
+      "giới hạn tuyệt đối"
+    ]
+  },
+  "extremely": {
+    "adverb": [
+      "vô cùng, tột bực, tột bậc, tột cùng, rất đỗi, hết sức, cực độ"
+    ]
+  },
+  "eye": {
+    "noun": [
+      "mắt: cơ quan thị giác của con người hoặc con vật"
+    ]
+  },
+  "fact": {
+    "noun": [
+      "việc, sự việc"
+    ]
+  },
+  "factor": {
+    "noun": [
+      "nhân tố"
+    ]
+  },
+  "factory": {
+    "noun": [
+      "nhà máy, xí nghiệp, xưởng"
+    ]
+  },
+  "fail": {
+    "noun": [
+      "sự hỏng thi"
+    ],
+    "verb": [
+      "thất bại",
+      "trượt, không đỗ"
+    ]
+  },
+  "famous": {
+    "adjective": [
+      "nổi tiếng, nổi danh, trứ danh"
+    ]
+  },
+  "fan": {
+    "noun": [
+      "người hâm mộ, người say mê"
+    ]
+  },
+  "fantastic": {
+    "adjective": [
+      "tuyệt vời",
+      "kỳ lạ, khó tin"
+    ]
+  },
+  "far": {
+    "adjective": [
+      "xa, xa xôi, xa xăm"
+    ],
+    "adverb": [
+      "xa",
+      "rất, nhiều (nhấn mạnh mức độ)"
+    ]
+  },
+  "farm": {
+    "noun": [
+      "trại, trang trại, đồn điền"
+    ],
+    "verb": [
+      "cày cấy, trồng trọt"
+    ]
+  },
+  "farmer": {
+    "noun": [
+      "nông dân"
+    ]
+  },
+  "farming": {
+    "noun": [
+      "công việc đồng áng, công việc trồng trọt"
+    ]
+  },
+  "fashion": {
+    "noun": [
+      "thời trang",
+      "kiểu, cách"
+    ]
+  },
+  "fat": {
+    "adjective": [
+      "béo, mập"
+    ],
+    "noun": [
+      "mập"
+    ]
+  },
+  "father": {
+    "noun": [
+      "cha, bố"
+    ]
+  },
+  "favourite": {
+    "adjective": [
+      "được mến chuộng, được ưa thích"
+    ],
+    "noun": [
+      "người hoặc thứ được yêu thích nhất"
+    ]
+  },
+  "fear": {
+    "noun": [
+      "sự sợ, sự sợ hãi"
+    ],
+    "verb": [
+      "sợ"
+    ]
+  },
+  "feature": {
+    "noun": [
+      "nét đặc biệt, điểm đặc trưng, đặc điểm"
+    ],
+    "verb": [
+      "là nét đặc biệt của"
+    ]
+  },
+  "february": {
+    "noun": [
+      "tháng hai"
+    ]
+  },
+  "feed": {
+    "noun": [
+      "sự ăn, sự cho ăn"
+    ],
+    "verb": [
+      "cho ăn (người, súc vật)"
+    ]
+  },
+  "feel": {
+    "noun": [
+      "cảm giác; cảm nhận"
+    ],
+    "verb": [
+      "cảm thấy; cảm nhận",
+      "sờ, chạm"
+    ]
+  },
+  "feeling": {
+    "noun": [
+      "cảm giác, cảm xúc"
+    ]
+  },
+  "female": {
+    "adjective": [
+      "thuộc nữ giới; giống cái"
+    ],
+    "noun": [
+      "phụ nữ; con cái (động vật)"
+    ]
+  },
+  "festival": {
+    "noun": [
+      "ngày hội; đại hội liên hoan; hội diễn"
+    ]
+  },
+  "fiction": {
+    "noun": [
+      "văn học hư cấu",
+      "chuyện hư cấu"
+    ]
+  },
+  "field": {
+    "noun": [
+      "đồng ruộng, cánh đồng"
+    ],
+    "verb": [
+      "chặn và ném trả lại (bóng crickê)"
+    ]
+  },
+  "fight": {
+    "noun": [
+      "sự đấu tranh, sự chiến đấu; trận đánh, cuộc chiến đấu"
+    ],
+    "verb": [
+      "đấu tranh, chiến đấu, đánh nhau"
+    ]
+  },
+  "figure": {
+    "noun": [
+      "con số",
+      "hình dáng; nhân vật"
+    ],
+    "verb": [
+      "hình dung, miêu tả (bằng sơ đồ, bằng nét vẽ); mường tượng, tưởng tượng"
+    ]
+  },
+  "fill": {
+    "verb": [
+      "làm đầy, chứa đầy, đổ đầy; đắp đầy, rót đầy"
+    ]
+  },
+  "film": {
+    "noun": [
+      "bộ phim",
+      "phim chụp ảnh"
+    ],
+    "verb": [
+      "quay phim"
+    ]
+  },
+  "final": {
+    "adjective": [
+      "cuối cùng"
+    ],
+    "noun": [
+      "trận chung kết",
+      "kỳ thi cuối kỳ"
+    ]
+  },
+  "finally": {
+    "adverb": [
+      "cuối cùng, sau cùng"
+    ]
+  },
+  "find": {
+    "verb": [
+      "tìm, tìm thấy, tìm ra, bắt được"
+    ]
+  },
+  "finger": {
+    "noun": [
+      "ngón tay"
+    ]
+  },
+  "finish": {
+    "noun": [
+      "sự kết thúc, sự kết liễu; phần cuối, phần kết thúc, đoạn kết thúc"
+    ],
+    "verb": [
+      "hoàn thành, kết thúc, làm xong"
+    ]
+  },
+  "fire": {
+    "noun": [
+      "lửa, ánh lửa"
+    ],
+    "verb": [
+      "đốt cháy, đốt (lò...)"
+    ]
+  },
+  "firstly": {
+    "adverb": [
+      "thứ nhất, đầu tiên là"
+    ]
+  },
+  "fish": {
+    "noun": [
+      "cá"
+    ],
+    "verb": [
+      "đánh cá, câu cá, bắt cá"
+    ]
+  },
+  "fishing": {
+    "noun": [
+      "sự đánh cá, sự câu cá"
+    ]
+  },
+  "fit": {
+    "adjective": [
+      "khỏe mạnh",
+      "phù hợp, vừa vặn"
+    ],
+    "noun": [
+      "cơn, đợt (ho, tức giận)"
+    ],
+    "verb": [
+      "hợp, vừa"
+    ]
+  },
+  "fix": {
+    "noun": [
+      "cách sửa chữa (cái gì)"
+    ],
+    "verb": [
+      "sửa chữa",
+      "cố định, gắn"
+    ]
+  },
+  "flight": {
+    "noun": [
+      "chuyến bay",
+      "việc bay"
+    ]
+  },
+  "floor": {
+    "noun": [
+      "sàn (nhà, cầu...)"
+    ],
+    "verb": [
+      "làm sàn, lát sàn"
+    ]
+  },
+  "flower": {
+    "noun": [
+      "hoa, bông hoa, đoá hoa"
+    ],
+    "verb": [
+      "làm nở hoa, cho ra hoa"
+    ]
+  },
+  "flu": {
+    "noun": [
+      "bệnh cúm"
+    ]
+  },
+  "fly": {
+    "noun": [
+      "con ruồi"
+    ],
+    "verb": [
+      "bay",
+      "đi máy bay"
+    ]
+  },
+  "flying": {
+    "adjective": [
+      "đang bay; dùng để bay"
+    ],
+    "noun": [
+      "sự bay"
+    ]
+  },
+  "focus": {
+    "noun": [
+      "sự tập trung; trọng tâm",
+      "tiêu điểm"
+    ],
+    "verb": [
+      "tập trung",
+      "lấy nét"
+    ]
+  },
+  "follow": {
+    "verb": [
+      "đi theo sau"
+    ]
+  },
+  "following": {
+    "adjective": [
+      "tiếp theo, theo sau, sau đây"
+    ],
+    "noun": [
+      "sự theo, sự noi theo"
+    ],
+    "preposition": [
+      "tiếp theo"
+    ]
+  },
+  "food": {
+    "noun": [
+      "đồ ăn, thức ăn, món ăn"
+    ]
+  },
+  "foot": {
+    "noun": [
+      "bàn chân",
+      "foot (đơn vị chiều dài)"
+    ]
+  },
+  "football": {
+    "noun": [
+      "bóng đá",
+      "quả bóng đá"
+    ]
+  },
+  "for": {
+    "preposition": [
+      "cho; dành cho",
+      "vì",
+      "trong (khoảng thời gian)"
+    ]
+  },
+  "foreign": {
+    "adjective": [
+      "(thuộc) Nước ngoài, từ nước ngoài, ở nước ngoài, ngoại quốc"
+    ]
+  },
+  "forest": {
+    "noun": [
+      "rừng"
+    ]
+  },
+  "forget": {
+    "verb": [
+      "quên, không nhớ đến"
+    ]
+  },
+  "fork": {
+    "noun": [
+      "cái nĩa, cái xiên (để xiên thức ăn)"
+    ],
+    "verb": [
+      "đào bằng chĩa, gảy bằng chĩa (rơm, rạ...)"
+    ]
+  },
+  "form": {
+    "noun": [
+      "biểu mẫu",
+      "hình thức, hình dạng"
+    ],
+    "verb": [
+      "làm thành, tạo thành, nặn thành"
+    ]
+  },
+  "formal": {
+    "adjective": [
+      "trang trọng",
+      "chính thức"
+    ]
+  },
+  "fortunately": {
+    "adverb": [
+      "may mắn, may thay"
+    ]
+  },
+  "forward": {
+    "adjective": [
+      "ở trước, phía trước, tiến lên, tiến về phía trước"
+    ],
+    "adverb": [
+      "về phía trước",
+      "từ nay về sau"
+    ],
+    "noun": [
+      "tiền đạo (bóng đá)"
+    ],
+    "verb": [
+      "xúc tiến, đẩy mạnh"
+    ]
+  },
+  "fresh": {
+    "adjective": [
+      "tươi (hoa, trứng, sữa, cá, thịt...)"
+    ]
+  },
+  "friday": {
+    "noun": [
+      "ngày thứ sáu"
+    ]
+  },
+  "fridge": {
+    "noun": [
+      "tủ lạnh"
+    ]
+  },
+  "friend": {
+    "noun": [
+      "người bạn"
+    ],
+    "verb": [
+      "giúp đỡ"
+    ]
+  },
+  "friendly": {
+    "adjective": [
+      "thân mật, thân thiết, thân thiện"
+    ],
+    "noun": [
+      "thân thiện"
+    ]
+  },
+  "frog": {
+    "noun": [
+      "con ếch, con nhái, con ngoé"
+    ]
+  },
+  "from": {
+    "preposition": [
+      "từ"
+    ]
+  },
+  "front": {
+    "adjective": [
+      "đằng trước, về phía trước, ở phía trước"
+    ],
+    "noun": [
+      "phía trước; mặt trước"
+    ]
+  },
+  "fruit": {
+    "noun": [
+      "trái cây; quả"
+    ]
+  },
+  "full": {
+    "adjective": [
+      "đầy, đầy đủ, nhiều, tràn trề, tràn ngập, chan chứa"
+    ]
+  },
+  "fun": {
+    "adjective": [
+      "thú vị, thích thú, vui"
+    ],
+    "noun": [
+      "sự vui đùa, sự vui thích; trò vui đùa"
+    ]
+  },
+  "funny": {
+    "adjective": [
+      "buồn cười, ngồ ngộ, khôi hài"
+    ]
+  },
+  "furniture": {
+    "noun": [
+      "đồ nội thất"
+    ]
+  },
+  "further": {
+    "adjective": [
+      "xa hơn nữa, bên kia"
+    ],
+    "adverb": [
+      "xa hơn nữa"
+    ],
+    "verb": [
+      "đẩy mạnh, xúc tiến; giúp cho"
+    ]
+  },
+  "future": {
+    "adjective": [
+      "tương lai"
+    ],
+    "noun": [
+      "tương lai"
+    ]
+  },
+  "gallery": {
+    "noun": [
+      "phòng trưng bày tranh tượng"
+    ]
+  },
+  "game": {
+    "adjective": [
+      "có nghị lực"
+    ],
+    "noun": [
+      "trò chơi (như bóng đá, quần vợt, bài lá...)"
+    ]
+  },
+  "gap": {
+    "noun": [
+      "lỗ hổng, kẽ hở"
+    ]
+  },
+  "garden": {
+    "noun": [
+      "vườn"
+    ],
+    "verb": [
+      "làm vườn"
+    ]
+  },
+  "gas": {
+    "noun": [
+      "khí"
+    ]
+  },
+  "gate": {
+    "noun": [
+      "cổng"
+    ]
+  },
+  "geography": {
+    "noun": [
+      "khoa địa lý; địa lý học"
+    ]
+  },
+  "gift": {
+    "noun": [
+      "món quà",
+      "tài năng"
+    ]
+  },
+  "girl": {
+    "noun": [
+      "con gái"
+    ]
+  },
+  "girlfriend": {
+    "noun": [
+      "bạn gái"
+    ]
+  },
+  "give": {
+    "verb": [
+      "cho, biếu, tặng, ban"
+    ]
+  },
+  "glass": {
+    "noun": [
+      "thủy tinh",
+      "cốc, ly",
+      "kính (glasses)"
+    ]
+  },
+  "go": {
+    "noun": [
+      "sự đi"
+    ],
+    "verb": [
+      "đi, đi đến, đi tới"
+    ]
+  },
+  "goal": {
+    "noun": [
+      "mục tiêu",
+      "bàn thắng",
+      "khung thành"
+    ]
+  },
+  "god": {
+    "noun": [
+      "Chúa",
+      "thần"
+    ]
+  },
+  "gold": {
+    "adjective": [
+      "bằng vàng"
+    ],
+    "noun": [
+      "vàng"
+    ]
+  },
+  "golf": {
+    "noun": [
+      "môn đánh gôn"
+    ]
+  },
+  "good": {
+    "adjective": [
+      "tốt, hay, tuyệt"
+    ],
+    "noun": [
+      "điều thiện, điều tốt, điều lành"
+    ]
+  },
+  "goodbye": {
+    "exclamation": [
+      "nói lời chào tạm biệt khi chia tay một ai đó"
+    ],
+    "noun": [
+      "lời chào tạm biệt"
+    ]
+  },
+  "government": {
+    "noun": [
+      "chính phủ",
+      "việc quản lý, cai trị"
+    ]
+  },
+  "grandfather": {
+    "noun": [
+      "ông"
+    ]
+  },
+  "grandmother": {
+    "noun": [
+      "bà"
+    ]
+  },
+  "grass": {
+    "noun": [
+      "cỏ"
+    ],
+    "verb": [
+      "để cỏ mọc; trồng cỏ"
+    ]
+  },
+  "great": {
+    "adjective": [
+      "tuyệt vời",
+      "lớn, vĩ đại"
+    ],
+    "noun": [
+      "người xuất chúng"
+    ]
+  },
+  "green": {
+    "adjective": [
+      "xanh lá cây, (màu) lục"
+    ],
+    "noun": [
+      "màu xanh lá cây, màu xanh lục"
+    ],
+    "verb": [
+      "trở nên xanh lá cây, hoá thành màu lục"
+    ]
+  },
+  "greet": {
+    "verb": [
+      "chào, chào hỏi, đón chào"
+    ]
+  },
+  "grey": {
+    "adjective": [
+      "xám"
+    ],
+    "noun": [
+      "màu xám"
+    ],
+    "verb": [
+      "tô màu xám, quét màu xám"
+    ]
+  },
+  "group": {
+    "noun": [
+      "nhóm"
+    ]
+  },
+  "grow": {
+    "verb": [
+      "mọc, mọc lên (cây cối); mọc mầm, đâm chồi nẩy nở"
+    ]
+  },
+  "guess": {
+    "noun": [
+      "sự đoán, sự ước chừng"
+    ],
+    "verb": [
+      "đoán, phỏng đoán, ước chừng"
+    ]
+  },
+  "guest": {
+    "noun": [
+      "khách"
+    ]
+  },
+  "guide": {
+    "noun": [
+      "người chỉ dẫn; người chỉ đường, người hướng dẫn (cho khách du lịch)"
+    ],
+    "verb": [
+      "dẫn đường, chỉ đường, dắt, dẫn, hướng dẫn; chỉ đạo"
+    ]
+  },
+  "guitar": {
+    "noun": [
+      "đàn ghita"
+    ]
+  },
+  "gun": {
+    "noun": [
+      "súng"
+    ],
+    "verb": [
+      "săn lùng, truy nã"
+    ]
+  },
+  "guy": {
+    "noun": [
+      "anh chàng; người (cách gọi thân mật)"
+    ]
+  },
+  "gym": {
+    "noun": [
+      "phòng tập thể dục; phòng tập gym"
+    ]
+  },
+  "habit": {
+    "noun": [
+      "thói quen, tập quán"
+    ]
+  },
+  "hair": {
+    "noun": [
+      "tóc, lông (người, thú, cây...); bộ lông (thú)"
+    ]
+  },
+  "hall": {
+    "noun": [
+      "phòng lớn, đại sảnh (trong các lâu đài)"
+    ]
+  },
+  "hand": {
+    "noun": [
+      "tay, bàn tay (người); bàn chân trước (loài vật bốn chân)"
+    ],
+    "verb": [
+      "đưa, trao tay, chuyển giao; truyền cho"
+    ]
+  },
+  "happen": {
+    "verb": [
+      "xảy đến, xảy ra; ngẫu nhiên xảy ra, tình cờ xảy ra"
+    ]
+  },
+  "happily": {
+    "adverb": [
+      "sung sướng, hạnh phúc"
+    ]
+  },
+  "happy": {
+    "adjective": [
+      "vui vẻ, hạnh phúc"
+    ]
+  },
+  "hat": {
+    "noun": [
+      "mũ"
+    ]
+  },
+  "hate": {
+    "noun": [
+      "lòng căm thù; sự căm hờn, sự căm ghét"
+    ],
+    "verb": [
+      "căm thù, căm hờn, căm ghét, thù hận"
+    ]
+  },
+  "have": {
+    "auxiliary verb": [
+      "có"
+    ],
+    "verb": [
+      "có"
+    ]
+  },
+  "he": {
+    "pronoun": [
+      "anh ấy; ông ấy; cậu ấy"
+    ]
+  },
+  "head": {
+    "noun": [
+      "cái đầu (người, thú vật)"
+    ],
+    "verb": [
+      "đứng đầu, lãnh đạo",
+      "đi về phía"
+    ]
+  },
+  "headache": {
+    "noun": [
+      "chứng nhức đầu"
+    ]
+  },
+  "health": {
+    "noun": [
+      "sức khoẻ"
+    ]
+  },
+  "healthy": {
+    "adjective": [
+      "khỏe mạnh",
+      "có lợi cho sức khỏe"
+    ]
+  },
+  "hear": {
+    "verb": [
+      "nghe, nghe thấy"
+    ]
+  },
+  "heart": {
+    "noun": [
+      "tim, trái tim",
+      "tấm lòng"
+    ],
+    "verb": [
+      "trái tim"
+    ]
+  },
+  "heat": {
+    "noun": [
+      "hơi nóng, sức nóng; sự nóng"
+    ],
+    "verb": [
+      "đốt nóng, nung nóng; làm nóng, làm bừng bừng"
+    ]
+  },
+  "heavy": {
+    "adjective": [
+      "nặng",
+      "nhiều, lớn (mức độ)"
+    ]
+  },
+  "height": {
+    "noun": [
+      "chiều cao, bề cao; độ cao"
+    ]
+  },
+  "hello": {
+    "exclamation": [
+      "chào anh!, chào chị!"
+    ],
+    "noun": [
+      "tiếng chào"
+    ]
+  },
+  "help": {
+    "noun": [
+      "sự giúp đỡ, sự cứu giúp, sự giúp ích"
+    ],
+    "verb": [
+      "giúp đỡ, cứu giúp"
+    ]
+  },
+  "helpful": {
+    "adjective": [
+      "giúp đỡ; giúp ích; có ích"
+    ]
+  },
+  "here": {
+    "adverb": [
+      "đây, ở đây, ở chỗ này"
+    ]
+  },
+  "hero": {
+    "noun": [
+      "người anh hùng"
+    ]
+  },
+  "hers": {
+    "pronoun": [
+      "của cô ấy"
+    ]
+  },
+  "herself": {
+    "pronoun": [
+      "bản thân cô ấy"
+    ]
+  },
+  "hey": {
+    "exclamation": [
+      "ô!, ơ! (ngạc nhiên)"
+    ]
+  },
+  "hi": {
+    "exclamation": [
+      "này!, ê! (gọi, chào)"
+    ]
+  },
+  "hide": {
+    "noun": [
+      "da sống (chưa thuộc, mới chỉ cạo và rửa)"
+    ],
+    "verb": [
+      "giấu; ẩn nấp"
+    ]
+  },
+  "high": {
+    "adjective": [
+      "cao",
+      "lớn (mức độ, số lượng)"
+    ],
+    "adverb": [
+      "cao, ở mức độ cao"
+    ],
+    "noun": [
+      "độ cao; điểm cao"
+    ]
+  },
+  "hill": {
+    "noun": [
+      "đồi"
+    ]
+  },
+  "himself": {
+    "pronoun": [
+      "bản thân anh ấy"
+    ]
+  },
+  "history": {
+    "noun": [
+      "sử, sử học, lịch sử"
+    ]
+  },
+  "hit": {
+    "noun": [
+      "đòn, cú đánh trúng (đấm, bắn, ném)"
+    ],
+    "verb": [
+      "đánh, đấm trúng, bắn trúng, ném trúng"
+    ]
+  },
+  "hobby": {
+    "noun": [
+      "sở thích"
+    ]
+  },
+  "hockey": {
+    "noun": [
+      "môn bóng gậy cong, khúc côn cầu"
+    ]
+  },
+  "hole": {
+    "noun": [
+      "lỗ, lỗ thủng; lỗ trống; lỗ khoan"
+    ]
+  },
+  "holiday": {
+    "noun": [
+      "ngày lễ, ngày nghỉ"
+    ]
+  },
+  "home": {
+    "adjective": [
+      "gia đình, ở gia đình, ở nhà"
+    ],
+    "adverb": [
+      "về nhà, trở về nhà, đến nhà, ở nhà"
+    ],
+    "noun": [
+      "nhà, chỗ ở"
+    ]
+  },
+  "homework": {
+    "noun": [
+      "bài tập về nhà (cho học sinh)"
+    ]
+  },
+  "hope": {
+    "noun": [
+      "hy vọng"
+    ],
+    "verb": [
+      "hy vọng"
+    ]
+  },
+  "horse": {
+    "noun": [
+      "ngựa"
+    ]
+  },
+  "hospital": {
+    "noun": [
+      "bệnh viện, nhà thương"
+    ]
+  },
+  "hot": {
+    "adjective": [
+      "nóng, nóng bức"
+    ]
+  },
+  "hotel": {
+    "noun": [
+      "khách sạn"
+    ]
+  },
+  "hour": {
+    "noun": [
+      "giờ, tiếng (đồng hồ)"
+    ]
+  },
+  "house": {
+    "noun": [
+      "nhà ở, căn nhà, tòa nhà"
+    ],
+    "verb": [
+      "đón tiếp (ai) ở nhà; cho ở, cho trọ, chứa (ai...) trong nhà"
+    ]
+  },
+  "how": {
+    "adverb": [
+      "thế nào, như thế nào; sao, ra sao, làm sao"
+    ]
+  },
+  "however": {
+    "adverb": [
+      "tuy nhiên",
+      "dù thế nào"
+    ]
+  },
+  "huge": {
+    "adjective": [
+      "to lớn, đồ sộ, khổng lồ"
+    ]
+  },
+  "human": {
+    "adjective": [
+      "con người, (thuộc) loài người"
+    ],
+    "noun": [
+      "con người"
+    ]
+  },
+  "hungry": {
+    "adjective": [
+      "đói, cảm thấy đói, ra vẻ đói ăn"
+    ]
+  },
+  "hurt": {
+    "adjective": [
+      "đau"
+    ],
+    "noun": [
+      "vết thương, chỗ bị đau"
+    ],
+    "verb": [
+      "làm bị thương, làm đau"
+    ]
+  },
+  "husband": {
+    "noun": [
+      "người chồng"
+    ]
+  },
+  "i": {
+    "pronoun": [
+      "tôi; mình"
+    ]
+  },
+  "ice": {
+    "noun": [
+      "băng nước đá"
+    ],
+    "verb": [
+      "làm đóng băng, làm đông lại"
+    ]
+  },
+  "idea": {
+    "noun": [
+      "quan niệm, tư tưởng, ý tưởng, ý nghĩ, ý kiến"
+    ]
+  },
+  "ideal": {
+    "adjective": [
+      "lý tưởng; phù hợp nhất"
+    ],
+    "noun": [
+      "lý tưởng"
+    ]
+  },
+  "identify": {
+    "verb": [
+      "nhận ra; xác định"
+    ]
+  },
+  "if": {
+    "conjunction": [
+      "nếu, nếu như"
+    ],
+    "noun": [
+      "điều kiện; điều giả định"
+    ]
+  },
+  "ill": {
+    "adjective": [
+      "đau yếu, ốm"
+    ]
+  },
+  "illness": {
+    "noun": [
+      "sự đau yếu, sự ốm"
+    ]
+  },
+  "image": {
+    "noun": [
+      "hình, hình ảnh, ảnh (trong gương...)"
+    ]
+  },
+  "imagine": {
+    "verb": [
+      "tưởng tượng, hình dung"
+    ]
+  },
+  "immediately": {
+    "adverb": [
+      "ngay lập tức, tức thì"
+    ]
+  },
+  "important": {
+    "adjective": [
+      "quan trọng, trọng đại, trọng yếu, hệ trọng"
+    ]
+  },
+  "impossible": {
+    "adjective": [
+      "không thể làm được"
+    ]
+  },
+  "improve": {
+    "verb": [
+      "cải tiến, cải thiện, cải tạo, trau dồi (tư tưởng), mở mang (kiến thức...)"
+    ]
+  },
+  "in": {
+    "adjective": [
+      "trong, nội"
+    ],
+    "adverb": [
+      "vào"
+    ],
+    "preposition": [
+      "ở, tại, trong (nơi chốn, không gian...)"
+    ]
+  },
+  "include": {
+    "verb": [
+      "bao gồm, gồm có"
+    ]
+  },
+  "included": {
+    "adjective": [
+      "bao gồm cả, kể cả"
+    ]
+  },
+  "including": {
+    "preposition": [
+      "bao gồm"
+    ]
+  },
+  "increase": {
+    "noun": [
+      "sự tăng, sự tăng thêm"
+    ],
+    "verb": [
+      "tăng lên, tăng thêm, lớn thêm"
+    ]
+  },
+  "incredible": {
+    "adjective": [
+      "không thể tin được"
+    ]
+  },
+  "independent": {
+    "adjective": [
+      "độc lập"
+    ],
+    "noun": [
+      "người không phụ thuộc; vật không phụ thuộc"
+    ]
+  },
+  "individual": {
+    "adjective": [
+      "riêng, riêng lẻ, cá nhân"
+    ],
+    "noun": [
+      "cá nhân; người"
+    ]
+  },
+  "informal": {
+    "adjective": [
+      "không theo thủ tục quy định, không chính thức, không chính quy"
+    ]
+  },
+  "information": {
+    "noun": [
+      "thông tin"
+    ]
+  },
+  "injury": {
+    "noun": [
+      "chấn thương; vết thương"
+    ]
+  },
+  "insect": {
+    "noun": [
+      "sâu bọ, côn trùng"
+    ]
+  },
+  "inside": {
+    "adjective": [
+      "ở trong, từ trong, nội bộ"
+    ],
+    "adverb": [
+      "bên trong"
+    ],
+    "noun": [
+      "mặt trong, phía trong, phần trong, bên trong"
+    ],
+    "preposition": [
+      "ở phía trong; vào trong"
+    ]
+  },
+  "instead": {
+    "adverb": [
+      "để thay vào, để thế cho; đáng lẽ là; thay vì"
+    ]
+  },
+  "instruction": {
+    "noun": [
+      "chỉ dẫn, hướng dẫn",
+      "việc giảng dạy"
+    ]
+  },
+  "instructor": {
+    "noun": [
+      "người dạy, thầy giáo"
+    ]
+  },
+  "instrument": {
+    "noun": [
+      "nhạc cụ",
+      "dụng cụ, thiết bị"
+    ]
+  },
+  "intelligent": {
+    "adjective": [
+      "thông minh, sáng dạ"
+    ]
+  },
+  "interested": {
+    "adjective": [
+      "có quan tâm, thích thú, có chú ý"
+    ]
+  },
+  "interesting": {
+    "adjective": [
+      "làm quan tâm, làm chú ý, thú vị, hấp dẫn"
+    ]
+  },
+  "international": {
+    "adjective": [
+      "quốc tế"
+    ]
+  },
+  "internet": {
+    "noun": [
+      "Internet; mạng Internet"
+    ]
+  },
+  "interview": {
+    "noun": [
+      "cuộc phỏng vấn"
+    ],
+    "verb": [
+      "phỏng vấn"
+    ]
+  },
+  "introduce": {
+    "verb": [
+      "giới thiệu"
+    ]
+  },
+  "introduction": {
+    "noun": [
+      "sự giới thiệu, lời giới thiệu"
+    ]
+  },
+  "invent": {
+    "verb": [
+      "phát minh, sáng chế"
+    ]
+  },
+  "invention": {
+    "noun": [
+      "sự phát minh, sự sáng chế; vật phát minh, vật sáng chế; sáng kiến"
+    ]
+  },
+  "invitation": {
+    "noun": [
+      "lời mời"
+    ]
+  },
+  "invite": {
+    "verb": [
+      "mời"
+    ]
+  },
+  "involve": {
+    "verb": [
+      "bao gồm; liên quan đến",
+      "làm tham gia"
+    ]
+  },
+  "island": {
+    "noun": [
+      "hòn đảo"
+    ]
+  },
+  "it": {
+    "noun": [
+      "người đuổi bắt (trong trò chơi)"
+    ],
+    "pronoun": [
+      "cái đó, điều đó, con vật đó"
+    ]
+  },
+  "item": {
+    "noun": [
+      "mục; món; đồ vật"
+    ]
+  },
+  "itself": {
+    "pronoun": [
+      "tự bản thân nó"
+    ]
+  },
+  "jacket": {
+    "noun": [
+      "áo khoác"
+    ]
+  },
+  "jam": {
+    "noun": [
+      "mứt lỏng"
+    ],
+    "verb": [
+      "ép chặt, kẹp chặt"
+    ]
+  },
+  "january": {
+    "noun": [
+      "tháng giêng"
+    ]
+  },
+  "jazz": {
+    "noun": [
+      "nhạc jazz"
+    ]
+  },
+  "jeans": {
+    "noun": [
+      "quần bò, quần jeans"
+    ]
+  },
+  "jewellery": {
+    "noun": [
+      "đồ châu báu; đồ nữ trang, đồ kim hoàn (nói chung)"
+    ]
+  },
+  "job": {
+    "noun": [
+      "việc, việc làm, công việc; việc làm thuê, việc làm khoán"
+    ]
+  },
+  "join": {
+    "verb": [
+      "tham gia",
+      "nối, kết nối"
+    ]
+  },
+  "joke": {
+    "noun": [
+      "lời nói đùa, câu nói đùa"
+    ],
+    "verb": [
+      "nói đùa"
+    ]
+  },
+  "journalist": {
+    "noun": [
+      "nhà báo"
+    ]
+  },
+  "journey": {
+    "noun": [
+      "chuyến đi; hành trình"
+    ]
+  },
+  "juice": {
+    "noun": [
+      "nước ép; nước trái cây"
+    ]
+  },
+  "july": {
+    "noun": [
+      "tháng bảy"
+    ]
+  },
+  "jump": {
+    "noun": [
+      "sự nhảy, bước nhảy"
+    ],
+    "verb": [
+      "nhảy"
+    ]
+  },
+  "june": {
+    "noun": [
+      "tháng sáu"
+    ]
+  },
+  "kid": {
+    "adjective": [
+      "đứa trẻ"
+    ],
+    "noun": [
+      "đứa trẻ",
+      "dê con"
+    ],
+    "verb": [
+      "nói đùa, trêu"
+    ]
+  },
+  "kill": {
+    "verb": [
+      "giết; làm chết"
+    ]
+  },
+  "kilometre": {
+    "noun": [
+      "kilômet"
+    ]
+  },
+  "king": {
+    "noun": [
+      "vua, quốc vương"
+    ]
+  },
+  "kitchen": {
+    "noun": [
+      "phòng bếp, nhà bếp"
+    ]
+  },
+  "knee": {
+    "noun": [
+      "đầu gối"
+    ]
+  },
+  "knife": {
+    "noun": [
+      "dao"
+    ]
+  },
+  "knock": {
+    "noun": [
+      "cú đánh, cú va chạm"
+    ],
+    "verb": [
+      "gõ",
+      "va, đập"
+    ]
+  },
+  "know": {
+    "verb": [
+      "biết; hiểu biết"
+    ]
+  },
+  "knowledge": {
+    "noun": [
+      "kiến thức; sự hiểu biết"
+    ]
+  },
+  "lab": {
+    "noun": [
+      "phòng thí nghiệm; phòng pha chế"
+    ]
+  },
+  "lady": {
+    "noun": [
+      "quý bà; người phụ nữ"
+    ]
+  },
+  "lake": {
+    "noun": [
+      "hồ"
+    ]
+  },
+  "lamp": {
+    "noun": [
+      "đèn"
+    ]
+  },
+  "land": {
+    "noun": [
+      "đất; đất liền"
+    ],
+    "verb": [
+      "hạ cánh",
+      "cập bến, lên bờ"
+    ]
+  },
+  "language": {
+    "noun": [
+      "tiếng, ngôn ngữ"
+    ]
+  },
+  "laptop": {
+    "noun": [
+      "máy tính laptop, máy tính xách tay"
+    ]
+  },
+  "large": {
+    "adjective": [
+      "rộng, lớn, to"
+    ]
+  },
+  "last": {
+    "adverb": [
+      "cuối cùng, sau cùng, lần cuối"
+    ],
+    "determiner": [
+      "cuối cùng"
+    ],
+    "noun": [
+      "khuôn giày (nghĩa chuyên dùng)"
+    ],
+    "verb": [
+      "tồn tại, kéo dài; giữ lâu bền, để lâu; đủ cho dùng"
+    ]
+  },
+  "later": {
+    "adjective": [
+      "muộn hơn; sau"
+    ],
+    "adverb": [
+      "về sau"
+    ]
+  },
+  "laugh": {
+    "noun": [
+      "tiếng cười"
+    ],
+    "verb": [
+      "cười, cười vui, cười cợt"
+    ]
+  },
+  "laughter": {
+    "noun": [
+      "sự cười, tiếng cười"
+    ]
+  },
+  "law": {
+    "noun": [
+      "luật; quy luật, định luật; điều lệ, phép tắc"
+    ]
+  },
+  "lawyer": {
+    "noun": [
+      "luật sư"
+    ]
+  },
+  "lazy": {
+    "adjective": [
+      "lười biếng, biếng nhác"
+    ]
+  },
+  "leader": {
+    "noun": [
+      "lãnh tụ, người lãnh đạo, người chỉ huy, người hướng dẫn, người chỉ đạo"
+    ]
+  },
+  "learn": {
+    "verb": [
+      "học, học tập, nghiên cứu, tìm hiểu"
+    ]
+  },
+  "learning": {
+    "noun": [
+      "sự học"
+    ]
+  },
+  "least": {
+    "adverb": [
+      "tối thiểu, ít nhất"
+    ],
+    "determiner": [
+      "ít nhất"
+    ],
+    "pronoun": [
+      "ít nhất"
+    ]
+  },
+  "lecture": {
+    "noun": [
+      "bài diễn thuyết; bài lên lớp; bài thuyết trình; bài nói chuyện"
+    ],
+    "verb": [
+      "diễn thuyết, thuyết trình, dạy"
+    ]
+  },
+  "leg": {
+    "noun": [
+      "chân, cẳng (người, thú...)"
+    ]
+  },
+  "lemon": {
+    "adjective": [
+      "chanh vàng"
+    ],
+    "noun": [
+      "quả chanh vàng"
+    ]
+  },
+  "lend": {
+    "verb": [
+      "cho vay, cho mượn"
+    ]
+  },
+  "less": {
+    "adverb": [
+      "nhỏ hơn, bé hơn, ít hơn, không bằng, kém"
+    ],
+    "determiner": [
+      "ít hơn"
+    ],
+    "pronoun": [
+      "ít hơn"
+    ]
+  },
+  "lesson": {
+    "noun": [
+      "bài học"
+    ]
+  },
+  "let": {
+    "noun": [
+      "việc cho thuê",
+      "lượt đánh lại (quần vợt)"
+    ],
+    "verb": [
+      "để cho, cho phép"
+    ]
+  },
+  "level": {
+    "adjective": [
+      "phẳng, bằng"
+    ],
+    "noun": [
+      "mức độ, cấp độ",
+      "tầng; độ cao"
+    ],
+    "verb": [
+      "san phẳng, san bằng"
+    ]
+  },
+  "library": {
+    "noun": [
+      "thư viện, phòng đọc sách"
+    ]
+  },
+  "life": {
+    "noun": [
+      "sự sống"
+    ]
+  },
+  "lifestyle": {
+    "noun": [
+      "lối sống"
+    ]
+  },
+  "lift": {
+    "noun": [
+      "thang máy",
+      "việc nâng lên",
+      "chuyến đi nhờ xe"
+    ],
+    "verb": [
+      "nâng, nhấc lên"
+    ]
+  },
+  "likely": {
+    "adjective": [
+      "chắc đúng, có lẽ đúng, có lẽ thật"
+    ]
+  },
+  "line": {
+    "noun": [
+      "dòng, đường kẻ",
+      "hàng người",
+      "dây"
+    ],
+    "verb": [
+      "vạch, kẻ thành dòng"
+    ]
+  },
+  "link": {
+    "noun": [
+      "liên kết; mối liên hệ"
+    ],
+    "verb": [
+      "liên kết, kết nối"
+    ]
+  },
+  "lion": {
+    "noun": [
+      "con sư tử"
+    ]
+  },
+  "list": {
+    "noun": [
+      "danh sách"
+    ],
+    "verb": [
+      "liệt kê"
+    ]
+  },
+  "listen": {
+    "verb": [
+      "nghe, lắng nghe"
+    ]
+  },
+  "listener": {
+    "noun": [
+      "người nghe, thính giả"
+    ]
+  },
+  "little": {
+    "adjective": [
+      "nhỏ bé, bé bỏng"
+    ],
+    "adverb": [
+      "ít, một chút"
+    ],
+    "determiner": [
+      "ít ỏi"
+    ],
+    "pronoun": [
+      "ít ỏi"
+    ]
+  },
+  "local": {
+    "adjective": [
+      "địa phương"
+    ],
+    "noun": [
+      "người dân địa phương"
+    ]
+  },
+  "lock": {
+    "noun": [
+      "khóa, ổ khóa"
+    ],
+    "verb": [
+      "khóa (cửa tủ...)"
+    ]
+  },
+  "long": {
+    "adjective": [
+      "dài, xa (không gian), lâu (thời gian)"
+    ],
+    "adverb": [
+      "lâu, trong một thời gian dài"
+    ]
+  },
+  "look": {
+    "noun": [
+      "cái nhìn, cái ngó, cái dòm"
+    ],
+    "verb": [
+      "nhìn, xem, ngó, để ý, chú ý"
+    ]
+  },
+  "lorry": {
+    "noun": [
+      "xe tải"
+    ]
+  },
+  "lose": {
+    "verb": [
+      "mất không còn nữa"
+    ]
+  },
+  "lost": {
+    "adjective": [
+      "bị lạc",
+      "bị mất"
+    ]
+  },
+  "loud": {
+    "adjective": [
+      "to, lớn (âm thanh)"
+    ],
+    "adverb": [
+      "to, lớn (nói)"
+    ]
+  },
+  "loudly": {
+    "adverb": [
+      "ầm ĩ, inh ỏi"
+    ]
+  },
+  "love": {
+    "noun": [
+      "lòng yêu, tình thương"
+    ],
+    "verb": [
+      "yêu, thương, yêu mến"
+    ]
+  },
+  "lovely": {
+    "adjective": [
+      "đẹp đẽ, xinh, đáng yêu, dễ thương, có duyên, yêu kiều"
+    ]
+  },
+  "low": {
+    "adjective": [
+      "thấp, bé, lùn"
+    ],
+    "adverb": [
+      "thấp"
+    ],
+    "noun": [
+      "tiếng rống (trâu bò)"
+    ]
+  },
+  "luck": {
+    "noun": [
+      "sự may mắn; vận may"
+    ]
+  },
+  "lucky": {
+    "adjective": [
+      "đỏ, gặp may, may mắn, gặp vận may, hạnh phúc"
+    ]
+  },
+  "lunch": {
+    "noun": [
+      "bữa ăn trưa"
+    ],
+    "verb": [
+      "ăn trưa"
+    ]
+  },
+  "machine": {
+    "noun": [
+      "máy móc"
+    ],
+    "verb": [
+      "máy móc"
+    ]
+  },
+  "magazine": {
+    "noun": [
+      "tạp chí"
+    ]
+  },
+  "mail": {
+    "noun": [
+      "thư, bưu phẩm",
+      "thư điện tử"
+    ],
+    "verb": [
+      "gửi thư; gửi bưu phẩm"
+    ]
+  },
+  "main": {
+    "adjective": [
+      "chính, chủ yếu, quan trọng nhất"
+    ],
+    "noun": [
+      "đường ống chính (điện, nước)"
+    ]
+  },
+  "major": {
+    "adjective": [
+      "lớn (hơn), nhiều (hơn), trọng đại, chủ yếu"
+    ],
+    "noun": [
+      "chuyên ngành",
+      "thiếu tá"
+    ]
+  },
+  "male": {
+    "adjective": [
+      "trai, đực, trống"
+    ],
+    "noun": [
+      "con trai, đàn ông; con đực, con trống"
+    ]
+  },
+  "man": {
+    "noun": [
+      "đàn ông",
+      "con người"
+    ]
+  },
+  "manage": {
+    "verb": [
+      "quản lý, trông nom"
+    ]
+  },
+  "manager": {
+    "noun": [
+      "người quản lý, quản đốc, giám đốc; người trông nom; người nội trợ"
+    ]
+  },
+  "manner": {
+    "noun": [
+      "cách, lối, kiểu"
+    ]
+  },
+  "many": {
+    "determiner": [
+      "nhiều"
+    ],
+    "pronoun": [
+      "nhiều"
+    ]
+  },
+  "map": {
+    "noun": [
+      "bản đồ, địa đồ"
+    ],
+    "verb": [
+      "vẽ lên bản đồ"
+    ]
+  },
+  "march": {
+    "noun": [
+      "tháng ba"
+    ],
+    "verb": [
+      "trường chinh, viễn chinh, diễn hành"
+    ]
+  },
+  "mark": {
+    "noun": [
+      "dấu, nhãn, nhãn hiệu"
+    ],
+    "verb": [
+      "đánh dấu, ghi dấu"
+    ]
+  },
+  "market": {
+    "noun": [
+      "chợ"
+    ],
+    "verb": [
+      "bán ở chợ, bán ở thị trường"
+    ]
+  },
+  "married": {
+    "adjective": [
+      "đã kết hôn"
+    ]
+  },
+  "marry": {
+    "verb": [
+      "cưới (vợ), lấy (chồng)"
+    ]
+  },
+  "material": {
+    "adjective": [
+      "vật chất"
+    ],
+    "noun": [
+      "chất, nguyên liệu, vật liệu, tài liệu"
+    ]
+  },
+  "mathematics": {
+    "noun": [
+      "môn toán, toán học"
+    ]
+  },
+  "maths": {
+    "noun": [
+      "môn toán, toán học"
+    ]
+  },
+  "may": {
+    "modal verb": [
+      "có thể, có lẽ"
+    ],
+    "noun": [
+      "tháng Năm"
+    ]
+  },
+  "maybe": {
+    "adverb": [
+      "có thể, có lẽ"
+    ]
+  },
+  "meaning": {
+    "noun": [
+      "nghĩa, ý nghĩa"
+    ]
+  },
+  "meat": {
+    "noun": [
+      "thịt"
+    ]
+  },
+  "media": {
+    "noun": [
+      "các phương tiện truyền thông"
+    ]
+  },
+  "medical": {
+    "adjective": [
+      "y, y học"
+    ],
+    "noun": [
+      "học sinh trường y"
+    ]
+  },
+  "medicine": {
+    "noun": [
+      "thuốc",
+      "y học"
+    ]
+  },
+  "meet": {
+    "noun": [
+      "cuộc gặp; cuộc thi đấu"
+    ],
+    "verb": [
+      "gặp, gặp gỡ"
+    ]
+  },
+  "meeting": {
+    "noun": [
+      "cuộc họp",
+      "cuộc gặp"
+    ]
+  },
+  "member": {
+    "noun": [
+      "thành viên"
+    ]
+  },
+  "memory": {
+    "noun": [
+      "sự nhớ, trí nhớ, ký ức"
+    ]
+  },
+  "mention": {
+    "noun": [
+      "sự kể ra, sự nói đến, sự đề cập"
+    ],
+    "verb": [
+      "kể ra, nói đến, đề cập"
+    ]
+  },
+  "menu": {
+    "noun": [
+      "thực đơn"
+    ]
+  },
+  "message": {
+    "noun": [
+      "tin nhắn, thư tín, điện, thông báo, thông điệp"
+    ],
+    "verb": [
+      "nhắn tin"
+    ]
+  },
+  "metal": {
+    "noun": [
+      "kim loại"
+    ]
+  },
+  "method": {
+    "noun": [
+      "phương pháp, cách thức"
+    ]
+  },
+  "metre": {
+    "noun": [
+      "mét (đơn vị chiều dài)"
+    ]
+  },
+  "middle": {
+    "adjective": [
+      "ở giữa, trung"
+    ],
+    "noun": [
+      "giữa"
+    ]
+  },
+  "midnight": {
+    "noun": [
+      "nửa đêm, mười hai giờ đêm"
+    ]
+  },
+  "might": {
+    "modal verb": [
+      "có thể; có lẽ"
+    ]
+  },
+  "mile": {
+    "noun": [
+      "dặm, lý"
+    ]
+  },
+  "milk": {
+    "noun": [
+      "sữa"
+    ],
+    "verb": [
+      "vắt sữa"
+    ]
+  },
+  "mind": {
+    "noun": [
+      "tâm, tâm trí, tinh thần"
+    ],
+    "verb": [
+      "chú ý, lưu ý, để ý, lưu tâm"
+    ]
+  },
+  "mine": {
+    "noun": [
+      "mỏ"
+    ],
+    "pronoun": [
+      "của tôi"
+    ]
+  },
+  "mirror": {
+    "noun": [
+      "gương"
+    ]
+  },
+  "miss": {
+    "verb": [
+      "nhớ, mong nhớ",
+      "bỏ lỡ",
+      "trượt, không trúng"
+    ]
+  },
+  "missing": {
+    "adjective": [
+      "vắng, thiếu, khuyết, mất tích, thất lạc"
+    ]
+  },
+  "mistake": {
+    "noun": [
+      "lỗi, sai lầm, lỗi lầm"
+    ],
+    "verb": [
+      "phạm sai lầm, phạm lỗi"
+    ]
+  },
+  "mobile": {
+    "adjective": [
+      "di động; có thể di chuyển"
+    ],
+    "noun": [
+      "di động"
+    ]
+  },
+  "model": {
+    "noun": [
+      "mô hình; kiểu mẫu",
+      "người mẫu"
+    ],
+    "verb": [
+      "làm mẫu, nặn kiểu, vẽ kiểu, làm mô hình, đắp khuôn"
+    ]
+  },
+  "modern": {
+    "adjective": [
+      "hiện đại"
+    ]
+  },
+  "moment": {
+    "noun": [
+      "chốc, lúc, lát"
+    ]
+  },
+  "monday": {
+    "noun": [
+      "ngày thứ hai"
+    ]
+  },
+  "money": {
+    "noun": [
+      "tiền, tiền tệ"
+    ]
+  },
+  "monkey": {
+    "noun": [
+      "con khỉ"
+    ]
+  },
+  "month": {
+    "noun": [
+      "tháng"
+    ]
+  },
+  "moon": {
+    "noun": [
+      "mặt trăng"
+    ]
+  },
+  "more": {
+    "adverb": [
+      "hơn, nhiều hơn"
+    ],
+    "determiner": [
+      "hơn"
+    ],
+    "pronoun": [
+      "hơn"
+    ]
+  },
+  "morning": {
+    "noun": [
+      "buổi sáng"
+    ]
+  },
+  "most": {
+    "adverb": [
+      "nhất, hơn cả"
+    ],
+    "determiner": [
+      "hầu hết"
+    ],
+    "pronoun": [
+      "hầu hết"
+    ]
+  },
+  "mostly": {
+    "adverb": [
+      "hầu hết, phần lớn; thường là, chủ yếu là"
+    ]
+  },
+  "mother": {
+    "noun": [
+      "mẹ, mẹ đẻ"
+    ]
+  },
+  "motorcycle": {
+    "noun": [
+      "xe gắn máy"
+    ]
+  },
+  "mountain": {
+    "noun": [
+      "núi"
+    ]
+  },
+  "mouse": {
+    "noun": [
+      "con chuột",
+      "chuột máy tính"
+    ]
+  },
+  "mouth": {
+    "noun": [
+      "mồm, miệng, mõm"
+    ]
+  },
+  "move": {
+    "noun": [
+      "sự chuyển động, sự di chuyển, sự xê dịch"
+    ],
+    "verb": [
+      "chuyển, di chuyển, chuyển dịch, xê dịch, đổi chỗ, dời chỗ"
+    ]
+  },
+  "movement": {
+    "noun": [
+      "sự chuyển động, sự vận động, sự cử động, sự hoạt động"
+    ]
+  },
+  "movie": {
+    "noun": [
+      "bộ phim"
+    ]
+  },
+  "much": {
+    "adverb": [
+      "nhiều, lắm"
+    ],
+    "determiner": [
+      "nhiều"
+    ],
+    "pronoun": [
+      "nhiều"
+    ]
+  },
+  "mum": {
+    "noun": [
+      "mẹ"
+    ]
+  },
+  "museum": {
+    "noun": [
+      "viện bảo tàng, nhà bảo tàng"
+    ]
+  },
+  "music": {
+    "noun": [
+      "âm nhạc"
+    ]
+  },
+  "musical": {
+    "adjective": [
+      "(thuộc) Nhạc, (thuộc) âm nhạc"
+    ],
+    "noun": [
+      "vở nhạc kịch"
+    ]
+  },
+  "musician": {
+    "noun": [
+      "nhạc sĩ"
+    ]
+  },
+  "must": {
+    "modal verb": [
+      "phải, cần phải, nên"
+    ]
+  },
+  "myself": {
+    "pronoun": [
+      "tự tôi"
+    ]
+  },
+  "name": {
+    "noun": [
+      "tên, danh"
+    ],
+    "verb": [
+      "đặt tên; gọi tên"
+    ]
+  },
+  "narrow": {
+    "adjective": [
+      "hẹp, chật hẹp, eo hẹp"
+    ],
+    "verb": [
+      "thu hẹp, làm hẹp lại, co lại, rút lại, thành hẹp hòi"
+    ]
+  },
+  "national": {
+    "adjective": [
+      "thuộc quốc gia; toàn quốc"
+    ],
+    "noun": [
+      "công dân của một nước"
+    ]
+  },
+  "natural": {
+    "adjective": [
+      "tự nhiên, (thuộc) thiên nhiên"
+    ]
+  },
+  "nature": {
+    "noun": [
+      "tự nhiên, thiên nhiên, tạo hóa"
+    ]
+  },
+  "near": {
+    "adjective": [
+      "gần, cận"
+    ],
+    "adverb": [
+      "gần, ở gần; sắp tới, không xa"
+    ],
+    "preposition": [
+      "gần, ở gần"
+    ]
+  },
+  "nearly": {
+    "adverb": [
+      "gần, sắp, suýt"
+    ]
+  },
+  "necessary": {
+    "adjective": [
+      "cần, cần thiết, thiết yếu"
+    ]
+  },
+  "neck": {
+    "noun": [
+      "cổ (người, súc vật; chai, lọ)"
+    ]
+  },
+  "need": {
+    "modal verb": [
+      "cần, đòi hỏi"
+    ],
+    "noun": [
+      "sự cần"
+    ],
+    "verb": [
+      "cần, đòi hỏi"
+    ]
+  },
+  "negative": {
+    "adjective": [
+      "không; phủ định, phủ nhận, cự tuyệt, phản đối, từ chối; cấm đoán"
+    ],
+    "noun": [
+      "lời từ chối, lời cự tuyệt"
+    ],
+    "verb": [
+      "phủ nhận; phủ định, cự tuyệt, bác bỏ"
+    ]
+  },
+  "neighbour": {
+    "noun": [
+      "người hàng xóm, người láng giềng, người ở bên cạnh; vật ở cạnh"
+    ]
+  },
+  "neither": {
+    "adverb": [
+      "không... mà cũng không"
+    ],
+    "determiner": [
+      "không; không... này mà cũng không... kia"
+    ],
+    "pronoun": [
+      "không người nào hoặc cái nào trong hai"
+    ]
+  },
+  "nervous": {
+    "adjective": [
+      "lo lắng, hồi hộp",
+      "thuộc thần kinh"
+    ]
+  },
+  "network": {
+    "noun": [
+      "mạng lưới; mạng máy tính"
+    ],
+    "verb": [
+      "mạng"
+    ]
+  },
+  "never": {
+    "adverb": [
+      "không bao giờ, không khi nào"
+    ]
+  },
+  "new": {
+    "adjective": [
+      "mới"
+    ]
+  },
+  "news": {
+    "noun": [
+      "tin, tin tức"
+    ]
+  },
+  "newspaper": {
+    "noun": [
+      "tờ báo; báo chí"
+    ]
+  },
+  "next": {
+    "adjective": [
+      "tiếp theo, kế tiếp",
+      "gần nhất"
+    ],
+    "adverb": [
+      "sau, lần sau, tiếp sau, nữa"
+    ],
+    "noun": [
+      "người tiếp theo; thứ tiếp theo"
+    ]
+  },
+  "nice": {
+    "adjective": [
+      "thú vị, dễ chịu; tốt, hấp dẫn"
+    ]
+  },
+  "night": {
+    "noun": [
+      "đêm, tối, cảnh tối tăm"
+    ]
+  },
+  "noise": {
+    "noun": [
+      "tiếng; tiếng ồn, tiếng om sòm, tiếng huyên náo"
+    ]
+  },
+  "noisy": {
+    "adjective": [
+      "ồn ào, om sòm, huyên náo"
+    ]
+  },
+  "none": {
+    "pronoun": [
+      "không có"
+    ]
+  },
+  "normal": {
+    "adjective": [
+      "bình thường"
+    ],
+    "noun": [
+      "tình trạng bình thường, mức bình thường"
+    ]
+  },
+  "normally": {
+    "adverb": [
+      "thông thường, như thường lệ"
+    ]
+  },
+  "north": {
+    "adjective": [
+      "bắc, bấc"
+    ],
+    "adverb": [
+      "về hướng bắc, ở phía bắc"
+    ],
+    "noun": [
+      "hướng bắc, phương bắc, phía bắc"
+    ]
+  },
+  "nose": {
+    "noun": [
+      "mũi (người); mõm (súc vật)"
+    ]
+  },
+  "not": {
+    "adverb": [
+      "không"
+    ]
+  },
+  "note": {
+    "noun": [
+      "lời ghi, lời ghi chép"
+    ],
+    "verb": [
+      "ghi nhớ, chú ý, lưu ý, nhận thấy"
+    ]
+  },
+  "notice": {
+    "noun": [
+      "thông báo",
+      "sự chú ý"
+    ],
+    "verb": [
+      "chú ý, để ý, nhận biết"
+    ]
+  },
+  "novel": {
+    "adjective": [
+      "mới, mới lạ, lạ thường"
+    ],
+    "noun": [
+      "tiểu thuyết, truyện"
+    ]
+  },
+  "november": {
+    "noun": [
+      "tháng mười một"
+    ]
+  },
+  "now": {
+    "adverb": [
+      "bây giờ, lúc này, giờ đây, hiện nay, ngày nay"
+    ],
+    "conjunction": [
+      "now (that) thấy rằng, xét thấy, vì, vì chưng, bởi chưng"
+    ]
+  },
+  "nowhere": {
+    "adverb": [
+      "không nơi nào, không ở đâu"
+    ]
+  },
+  "number": {
+    "noun": [
+      "số"
+    ],
+    "verb": [
+      "đếm"
+    ]
+  },
+  "nurse": {
+    "noun": [
+      "y tá, điều dưỡng"
+    ]
+  },
+  "nut": {
+    "noun": [
+      "hạt có vỏ cứng",
+      "đai ốc"
+    ]
+  },
+  "ocean": {
+    "noun": [
+      "đại dương, biển"
+    ]
+  },
+  "october": {
+    "noun": [
+      "tháng mười"
+    ]
+  },
+  "of": {
+    "preposition": [
+      "của"
+    ]
+  },
+  "off": {
+    "adverb": [
+      "tắt"
+    ],
+    "preposition": [
+      "rời khỏi; cách khỏi"
+    ]
+  },
+  "offer": {
+    "noun": [
+      "đề nghị"
+    ],
+    "verb": [
+      "đưa ra đề nghị"
+    ]
+  },
+  "office": {
+    "noun": [
+      "văn phòng",
+      "cơ quan",
+      "chức vụ"
+    ]
+  },
+  "officer": {
+    "noun": [
+      "sĩ quan"
+    ]
+  },
+  "often": {
+    "adverb": [
+      "thường, hay, luôn, năng"
+    ]
+  },
+  "oh": {
+    "exclamation": [
+      "chao, ôi chao, chà, ô"
+    ]
+  },
+  "oil": {
+    "noun": [
+      "dầu"
+    ]
+  },
+  "ok": {
+    "adjective": [
+      "ĐƯỢC RỒI"
+    ],
+    "adverb": [
+      "ĐƯỢC RỒI"
+    ],
+    "exclamation": [
+      "ĐƯỢC RỒI"
+    ],
+    "verb": [
+      "ĐƯỢC RỒI"
+    ]
+  },
+  "old": {
+    "adjective": [
+      "cũ",
+      "già; lớn tuổi"
+    ]
+  },
+  "on": {
+    "adverb": [
+      "đang bật",
+      "tiếp tục"
+    ],
+    "preposition": [
+      "trên, ở trên"
+    ]
+  },
+  "once": {
+    "adverb": [
+      "một lần"
+    ],
+    "conjunction": [
+      "khi mà, ngay khi, một khi"
+    ]
+  },
+  "onion": {
+    "noun": [
+      "củ hành"
+    ]
+  },
+  "online": {
+    "adjective": [
+      "trực tuyến"
+    ],
+    "adverb": [
+      "trực tuyến"
+    ]
+  },
+  "only": {
+    "adjective": [
+      "chỉ có một, duy nhất"
+    ],
+    "adverb": [
+      "chỉ, mới"
+    ]
+  },
+  "onto": {
+    "preposition": [
+      "về phía trên, lên trên"
+    ]
+  },
+  "open": {
+    "adjective": [
+      "mở, ngỏ"
+    ],
+    "verb": [
+      "mở, bắt đầu, khai mạc"
+    ]
+  },
+  "opinion": {
+    "noun": [
+      "ý kiến, quan điểm"
+    ]
+  },
+  "opportunity": {
+    "noun": [
+      "cơ hội, thời cơ"
+    ]
+  },
+  "opposite": {
+    "adjective": [
+      "đối nhau, ngược nhau"
+    ],
+    "adverb": [
+      "trước mặt, đối diện"
+    ],
+    "noun": [
+      "điều trái lại, điều ngược lại"
+    ],
+    "preposition": [
+      "trước mặt, đối diện"
+    ]
+  },
+  "option": {
+    "noun": [
+      "sự chọn lựa, quyền lựa chọn"
+    ]
+  },
+  "or": {
+    "conjunction": [
+      "hoặc, hay là; hoặc... hoặc"
+    ]
+  },
+  "orange": {
+    "adjective": [
+      "có màu da cam"
+    ],
+    "noun": [
+      "quả cam"
+    ]
+  },
+  "ordinary": {
+    "adjective": [
+      "thường, thông thường, bình thường, tầm thường"
+    ]
+  },
+  "organization": {
+    "noun": [
+      "tổ chức",
+      "việc tổ chức"
+    ]
+  },
+  "organize": {
+    "verb": [
+      "tổ chức, cấu tạo, thiết lập"
+    ]
+  },
+  "original": {
+    "adjective": [
+      "gốc, (thuộc) nguồn gốc, (thuộc) căn nguyên, đầu tiên"
+    ],
+    "noun": [
+      "nguyên bản"
+    ]
+  },
+  "other": {
+    "adjective": [
+      "khác"
+    ],
+    "pronoun": [
+      "khác"
+    ],
+    "verb": [
+      "khác"
+    ]
+  },
+  "ourselves": {
+    "pronoun": [
+      "chính chúng ta"
+    ]
+  },
+  "out": {
+    "adjective": [
+      "ở ngoài, ở xa"
+    ],
+    "adverb": [
+      "ngoài, ở ngoài, ra ngoài"
+    ],
+    "preposition": [
+      "từ ở... ra, từ... ra"
+    ]
+  },
+  "outside": {
+    "adjective": [
+      "ở ngoài, ở gần phía ngoài"
+    ],
+    "adverb": [
+      "ở phía ngoài; ở ngoài trời; ở ngoài biển khơi"
+    ],
+    "noun": [
+      "bề ngoài, bên ngoài"
+    ],
+    "preposition": [
+      "ngoài, ra ngoài"
+    ]
+  },
+  "oven": {
+    "noun": [
+      "lò nướng"
+    ]
+  },
+  "over": {
+    "adverb": [
+      "qua; sang phía bên kia",
+      "xong, kết thúc",
+      "hơn, quá"
+    ],
+    "noun": [
+      "trên; ở trên"
+    ],
+    "preposition": [
+      "ở trên",
+      "qua, ngang qua",
+      "hơn, quá"
+    ]
+  },
+  "own": {
+    "adjective": [
+      "của chính mình, của riêng mình"
+    ],
+    "pronoun": [
+      "của chính mình, của riêng mình"
+    ],
+    "verb": [
+      "có, là chủ của"
+    ]
+  },
+  "owner": {
+    "noun": [
+      "người chủ, chủ nhân"
+    ]
+  },
+  "pack": {
+    "noun": [
+      "bó, gói; ba lô (quần áo)"
+    ],
+    "verb": [
+      "gói, bọc lại, buộc lại; đóng gói, đóng hộp, đóng kiện"
+    ]
+  },
+  "page": {
+    "noun": [
+      "trang (sách...); (nghĩa bóng) trang sử"
+    ],
+    "verb": [
+      "đánh số trang"
+    ]
+  },
+  "pain": {
+    "noun": [
+      "sự đau đớn, sự đau khổ (thể chất, tinh thần)"
+    ]
+  },
+  "paint": {
+    "noun": [
+      "sơn"
+    ],
+    "verb": [
+      "sơn, quét sơn"
+    ]
+  },
+  "painter": {
+    "noun": [
+      "thợ sơn, hoạ sĩ"
+    ]
+  },
+  "painting": {
+    "noun": [
+      "bức tranh",
+      "việc vẽ tranh",
+      "việc sơn"
+    ]
+  },
+  "pair": {
+    "noun": [
+      "đôi, cặp"
+    ]
+  },
+  "palace": {
+    "noun": [
+      "cung điện, lâu đài"
+    ]
+  },
+  "pants": {
+    "noun": [
+      "quần dài (Anh-Mỹ)",
+      "quần lót (Anh-Anh)"
+    ]
+  },
+  "paper": {
+    "noun": [
+      "giấy"
+    ]
+  },
+  "paragraph": {
+    "noun": [
+      "đoạn văn"
+    ]
+  },
+  "parent": {
+    "noun": [
+      "cha; mẹ"
+    ],
+    "verb": [
+      "cha mẹ"
+    ]
+  },
+  "park": {
+    "noun": [
+      "vườn hoa, công viên"
+    ],
+    "verb": [
+      "đỗ xe"
+    ]
+  },
+  "parking": {
+    "noun": [
+      "sự đỗ xe"
+    ]
+  },
+  "particular": {
+    "adjective": [
+      "đặc biệt, đặc thù; cá biệt, riêng biệt"
+    ]
+  },
+  "partner": {
+    "noun": [
+      "đối tác",
+      "bạn đồng hành; người cùng cặp"
+    ]
+  },
+  "party": {
+    "noun": [
+      "tiệc, buổi liên hoan"
+    ]
+  },
+  "pass": {
+    "noun": [
+      "sự thi đỗ; sự trúng tuyển hạng thứ (ở trường đại học)"
+    ],
+    "verb": [
+      "đi, đi lên; đi qua, đi ngang qua"
+    ]
+  },
+  "passenger": {
+    "noun": [
+      "hành khách (đi tàu xe...)"
+    ]
+  },
+  "passport": {
+    "noun": [
+      "hộ chiếu"
+    ]
+  },
+  "past": {
+    "adjective": [
+      "quá khứ, đã qua, (thuộc) dĩ vãng"
+    ],
+    "adverb": [
+      "quá"
+    ],
+    "noun": [
+      "quá khứ, dĩ vãng; quá khứ không hay ho gì"
+    ],
+    "preposition": [
+      "quá, vượt, quá, hơn"
+    ]
+  },
+  "pattern": {
+    "noun": [
+      "họa tiết",
+      "mẫu, kiểu",
+      "quy luật"
+    ]
+  },
+  "pay": {
+    "noun": [
+      "chi trả"
+    ],
+    "verb": [
+      "trả (tiền lương...); nộp, thanh toán"
+    ]
+  },
+  "peace": {
+    "noun": [
+      "hoà bình, thái bình, sự hoà thuận"
+    ]
+  },
+  "pen": {
+    "noun": [
+      "bút",
+      "chuồng, khu quây giữ vật nuôi"
+    ],
+    "verb": [
+      "viết, sáng tác"
+    ]
+  },
+  "pencil": {
+    "noun": [
+      "bút chì"
+    ]
+  },
+  "penny": {
+    "noun": [
+      "đồng xu penny (Anh: 1/100 bảng)"
+    ]
+  },
+  "people": {
+    "noun": [
+      "mọi người; người",
+      "dân tộc"
+    ]
+  },
+  "pepper": {
+    "noun": [
+      "hạt tiêu, hồ tiêu"
+    ]
+  },
+  "per": {
+    "preposition": [
+      "mỗi"
+    ]
+  },
+  "perfect": {
+    "adjective": [
+      "hoàn hảo, hoàn toàn"
+    ],
+    "noun": [
+      "thời hoàn thành"
+    ],
+    "verb": [
+      "hoàn thành, làm hoàn hảo, làm hoàn toàn"
+    ]
+  },
+  "perform": {
+    "verb": [
+      "biểu diễn",
+      "thực hiện"
+    ]
+  },
+  "perhaps": {
+    "adverb": [
+      "có lẽ, có thể"
+    ]
+  },
+  "period": {
+    "adjective": [
+      "thuộc một thời kỳ trong quá khứ"
+    ],
+    "noun": [
+      "kỷ, kỳ, thời kỳ, giai đoạn, thời gian"
+    ]
+  },
+  "permission": {
+    "noun": [
+      "sự cho phép, sự chấp nhận"
+    ]
+  },
+  "person": {
+    "noun": [
+      "con người, người"
+    ]
+  },
+  "personal": {
+    "adjective": [
+      "cá nhân, tư, riêng"
+    ]
+  },
+  "personality": {
+    "noun": [
+      "nhân cách, tính cách"
+    ]
+  },
+  "pet": {
+    "noun": [
+      "thú cưng, vật nuôi"
+    ]
+  },
+  "petrol": {
+    "noun": [
+      "dầu xăng"
+    ]
+  },
+  "phone": {
+    "noun": [
+      "điện thoại, máy điện thoại, dây nói, phôn"
+    ],
+    "verb": [
+      "gọi điện thoại; nói chuyện bằng dây nói"
+    ]
+  },
+  "photo": {
+    "noun": [
+      "bức ảnh"
+    ]
+  },
+  "photograph": {
+    "noun": [
+      "ảnh, bức ảnh"
+    ],
+    "verb": [
+      "chụp ảnh (ai, cái gì)"
+    ]
+  },
+  "phrase": {
+    "noun": [
+      "cụm từ",
+      "cách diễn đạt"
+    ]
+  },
+  "physical": {
+    "adjective": [
+      "thuộc cơ thể; thể chất",
+      "vật chất"
+    ]
+  },
+  "physics": {
+    "noun": [
+      "vật lý học"
+    ]
+  },
+  "piano": {
+    "noun": [
+      "pianô"
+    ]
+  },
+  "pick": {
+    "noun": [
+      "sự chọn lọc, sự chọn lựa"
+    ],
+    "verb": [
+      "chọn",
+      "hái, nhặt"
+    ]
+  },
+  "picture": {
+    "noun": [
+      "bức tranh, bức ảnh, bức vẽ"
+    ],
+    "verb": [
+      "hình dung",
+      "miêu tả"
+    ]
+  },
+  "piece": {
+    "noun": [
+      "mảnh, mẩu, miếng, viên, cục, khúc"
+    ]
+  },
+  "pig": {
+    "noun": [
+      "lợn, heo"
+    ],
+    "verb": [
+      "đẻ (lợn)"
+    ]
+  },
+  "pilot": {
+    "noun": [
+      "phi công",
+      "hoa tiêu"
+    ]
+  },
+  "pink": {
+    "adjective": [
+      "hồng"
+    ],
+    "noun": [
+      "màu hồng"
+    ]
+  },
+  "place": {
+    "noun": [
+      "nơi, chỗ, địa điểm, địa phương (thành phố, tỉnh, làng...)"
+    ],
+    "verb": [
+      "để, đặt"
+    ]
+  },
+  "plan": {
+    "noun": [
+      "kế hoạch",
+      "sơ đồ"
+    ],
+    "verb": [
+      "lập kế hoạch; dự định"
+    ]
+  },
+  "planet": {
+    "noun": [
+      "hành tinh"
+    ]
+  },
+  "plastic": {
+    "adjective": [
+      "bằng nhựa",
+      "có thể tạo hình"
+    ],
+    "noun": [
+      "nhựa; chất dẻo"
+    ]
+  },
+  "plate": {
+    "noun": [
+      "đĩa đựng thức ăn",
+      "tấm, bản"
+    ],
+    "verb": [
+      "bọc sắt, bọc kim loại"
+    ]
+  },
+  "platform": {
+    "noun": [
+      "nền, bục, bệ"
+    ]
+  },
+  "player": {
+    "noun": [
+      "người chơi (trò chơi, thể thao)",
+      "cầu thủ",
+      "người chơi nhạc cụ",
+      "thiết bị phát nhạc, video"
+    ]
+  },
+  "please": {
+    "exclamation": [
+      "làm ơn; xin vui lòng"
+    ],
+    "verb": [
+      "làm vui lòng, làm hài lòng, làm vừa lòng, làm vừa ý; làm thích, làm vui"
+    ]
+  },
+  "pleased": {
+    "adjective": [
+      "hài lòng (thể hiện sự thoả mãn về ai/cái gì)"
+    ]
+  },
+  "pocket": {
+    "noun": [
+      "túi (quần áo)"
+    ]
+  },
+  "police": {
+    "noun": [
+      "cảnh sát, công an (lực lượng, tổ chức...)"
+    ],
+    "verb": [
+      "khống chế (kiểm soát) (một vùng...) bằng lực lượng cảnh sát (công an)"
+    ]
+  },
+  "policeman": {
+    "noun": [
+      "cảnh sát, công an"
+    ]
+  },
+  "polite": {
+    "adjective": [
+      "lễ phép, có lễ độ; lịch sự, lịch thiệp"
+    ]
+  },
+  "pollution": {
+    "noun": [
+      "sự ô nhiễm"
+    ]
+  },
+  "pool": {
+    "noun": [
+      "bể bơi; hồ bơi",
+      "vũng nước"
+    ]
+  },
+  "poor": {
+    "adjective": [
+      "nghèo, bần cùng"
+    ]
+  },
+  "pop": {
+    "adjective": [
+      "nhạc pop"
+    ],
+    "noun": [
+      "nhạc pop",
+      "tiếng nổ bốp"
+    ],
+    "verb": [
+      "nổ bốp"
+    ]
+  },
+  "popular": {
+    "adjective": [
+      "được nhiều người yêu thích",
+      "phổ biến, thịnh hành"
+    ]
+  },
+  "population": {
+    "noun": [
+      "số dân, dân số"
+    ]
+  },
+  "position": {
+    "noun": [
+      "vị trí, chỗ (của một vật gì)"
+    ],
+    "verb": [
+      "đặt vào vị trí"
+    ]
+  },
+  "positive": {
+    "adjective": [
+      "tích cực",
+      "chắc chắn",
+      "dương tính"
+    ],
+    "noun": [
+      "điều xác thực, điều có thực"
+    ]
+  },
+  "possession": {
+    "noun": [
+      "quyền sở hữu; sự chiếm hữu"
+    ]
+  },
+  "possibility": {
+    "noun": [
+      "sự có thể, tình trạng có thể, khả năng"
+    ]
+  },
+  "possible": {
+    "adjective": [
+      "có thể, có thể được, có thể làm được, có thể xảy ra"
+    ]
+  },
+  "post": {
+    "noun": [
+      "bưu điện; thư từ",
+      "bài đăng",
+      "cột trụ"
+    ],
+    "verb": [
+      "gửi thư",
+      "đăng bài",
+      "niêm yết"
+    ]
+  },
+  "poster": {
+    "noun": [
+      "áp phích; quảng cáo"
+    ]
+  },
+  "potato": {
+    "noun": [
+      "khoai tây"
+    ]
+  },
+  "pound": {
+    "noun": [
+      "bảng Anh",
+      "pao (đơn vị khối lượng)"
+    ]
+  },
+  "power": {
+    "noun": [
+      "sức mạnh; năng lượng",
+      "quyền lực"
+    ],
+    "verb": [
+      "cung cấp lực (cho máy...)"
+    ]
+  },
+  "practice": {
+    "noun": [
+      "việc luyện tập; thực hành",
+      "thói quen"
+    ]
+  },
+  "practise": {
+    "verb": [
+      "thực hành, đem thực hành"
+    ]
+  },
+  "predict": {
+    "verb": [
+      "nói trước; đoán trước, dự đoán, tiên tri"
+    ]
+  },
+  "prefer": {
+    "verb": [
+      "thích hơn, ưa hơn"
+    ]
+  },
+  "prepare": {
+    "verb": [
+      "sửa soạn sắm sửa, chuẩn bị, dự bị"
+    ]
+  },
+  "president": {
+    "noun": [
+      "tổng thống",
+      "chủ tịch"
+    ]
+  },
+  "pretty": {
+    "adjective": [
+      "xinh, xinh xinh, xinh xắn, xinh đẹp"
+    ],
+    "adverb": [
+      "khá, kha khá"
+    ]
+  },
+  "prevent": {
+    "verb": [
+      "ngăn ngừa; ngăn trở, ngăn ngừa"
+    ]
+  },
+  "price": {
+    "noun": [
+      "giá cả, cái phải trả để đổi lại một thứ gì đó"
+    ],
+    "verb": [
+      "giá"
+    ]
+  },
+  "print": {
+    "noun": [
+      "chữ in"
+    ],
+    "verb": [
+      "in xuất bản, đăng báo, viết vào sách"
+    ]
+  },
+  "printer": {
+    "noun": [
+      "máy in",
+      "thợ in"
+    ]
+  },
+  "prison": {
+    "noun": [
+      "nhà tù, nhà lao, nhà giam"
+    ]
+  },
+  "prize": {
+    "noun": [
+      "giải thưởng, phần thưởng"
+    ]
+  },
+  "probably": {
+    "adverb": [
+      "hầu như chắc chắn"
+    ]
+  },
+  "problem": {
+    "noun": [
+      "vấn đề"
+    ]
+  },
+  "process": {
+    "noun": [
+      "quá trình, sự tiến triển"
+    ],
+    "verb": [
+      "xử lý, giải quyết"
+    ]
+  },
+  "produce": {
+    "noun": [
+      "nông sản"
+    ],
+    "verb": [
+      "sản xuất; tạo ra",
+      "trình ra"
+    ]
+  },
+  "product": {
+    "noun": [
+      "sản vật, sản phẩm, vật phẩm"
+    ]
+  },
+  "professional": {
+    "adjective": [
+      "chuyên nghiệp",
+      "thuộc nghề nghiệp"
+    ],
+    "noun": [
+      "chuyên gia, người chuyên nghiệp"
+    ]
+  },
+  "professor": {
+    "noun": [
+      "giáo sư (đại học)"
+    ]
+  },
+  "profile": {
+    "noun": [
+      "hồ sơ, thông tin cá nhân",
+      "nét mặt nhìn nghiêng"
+    ]
+  },
+  "program": {
+    "noun": [
+      "chương trình (công tác, biểu diễn văn nghệ...)"
+    ],
+    "verb": [
+      "đặt chương trình, lập chương trình"
+    ]
+  },
+  "programme": {
+    "noun": [
+      "chương trình (công tác, biểu diễn văn nghệ...)"
+    ]
+  },
+  "progress": {
+    "noun": [
+      "sự tiến tới, sự tiến bộ; sự tiến triển, sự phát triển"
+    ],
+    "verb": [
+      "tiến tới; tiến bộ; tiến triển, phát triển"
+    ]
+  },
+  "project": {
+    "noun": [
+      "kế hoạch, đề án, dự án"
+    ],
+    "verb": [
+      "phóng; chiếu ra"
+    ]
+  },
+  "promise": {
+    "noun": [
+      "lời hứa, điều hứa, điều hẹn ước; sự hứa hẹn"
+    ],
+    "verb": [
+      "hứa, hứa hẹn, hẹn ước"
+    ]
+  },
+  "pronounce": {
+    "verb": [
+      "phát âm",
+      "tuyên bố"
+    ]
+  },
+  "protect": {
+    "verb": [
+      "bảo vệ, bảo hộ, che chở"
+    ]
+  },
+  "provide": {
+    "verb": [
+      "cung cấp"
+    ]
+  },
+  "pub": {
+    "noun": [
+      "quán rượu, tiệm rượu"
+    ]
+  },
+  "public": {
+    "adjective": [
+      "chung, công, công cộng"
+    ],
+    "noun": [
+      "công chúng, quần chúng"
+    ]
+  },
+  "publish": {
+    "verb": [
+      "xuất bản",
+      "công bố"
+    ]
+  },
+  "pull": {
+    "noun": [
+      "sự lôi, sự kéo, sự giật; cái kéo, cái giật"
+    ],
+    "verb": [
+      "lôi, kéo, giật"
+    ]
+  },
+  "purple": {
+    "adjective": [
+      "màu tím"
+    ],
+    "noun": [
+      "màu tím"
+    ]
+  },
+  "purpose": {
+    "noun": [
+      "mục đích, ý định"
+    ]
+  },
+  "push": {
+    "noun": [
+      "sự xô, sự đẩy; cú đẩy"
+    ],
+    "verb": [
+      "xô, đẩy"
+    ]
+  },
+  "quality": {
+    "noun": [
+      "chất, chất lượng, phẩm chất"
+    ]
+  },
+  "quantity": {
+    "noun": [
+      "lượng, số lượng, đại lượng"
+    ]
+  },
+  "quarter": {
+    "noun": [
+      "một phần tư"
+    ]
+  },
+  "queen": {
+    "noun": [
+      "nữ hoàng",
+      "quân hậu (cờ vua)"
+    ]
+  },
+  "question": {
+    "noun": [
+      "câu hỏi"
+    ],
+    "verb": [
+      "hỏi, hỏi cung"
+    ]
+  },
+  "quick": {
+    "adjective": [
+      "nhanh, nhanh chóng"
+    ]
+  },
+  "quickly": {
+    "adverb": [
+      "nhanh, nhanh chóng"
+    ]
+  },
+  "quiet": {
+    "adjective": [
+      "lặng, lặng lẽ, yên lặng, yên tĩnh, trật tự, im lặng"
+    ]
+  },
+  "quietly": {
+    "adverb": [
+      "yên lặng, yên tĩnh, êm ả"
+    ]
+  },
+  "quite": {
+    "adverb": [
+      "khá, tương đối",
+      "hoàn toàn"
+    ]
+  },
+  "race": {
+    "noun": [
+      "cuộc đua",
+      "chủng tộc"
+    ],
+    "verb": [
+      "chạy đua với, chạy thi với (ai)"
+    ]
+  },
+  "radio": {
+    "noun": [
+      "radio, ra-đi-ô, truyền thanh, truyền thanh vô tuyến"
+    ]
+  },
+  "railway": {
+    "noun": [
+      "đường sắt, đường xe lửa, đường ray"
+    ]
+  },
+  "rain": {
+    "noun": [
+      "mưa"
+    ],
+    "verb": [
+      "mưa; có mưa"
+    ]
+  },
+  "raise": {
+    "noun": [
+      "sự nâng lên; sự tăng lên"
+    ],
+    "verb": [
+      "nâng lên, đỡ dậy; giơ lên, đưa lên, kéo lên; ngước lên, ngẩng lên"
+    ]
+  },
+  "rate": {
+    "noun": [
+      "tỷ lệ"
+    ],
+    "verb": [
+      "đánh gia, ước lượng, ước tính; định giá"
+    ]
+  },
+  "rather": {
+    "adverb": [
+      "khá, hơi",
+      "đúng hơn; thay vì"
+    ],
+    "exclamation": [
+      "hơn là"
+    ]
+  },
+  "reach": {
+    "noun": [
+      "tầm với; phạm vi ảnh hưởng"
+    ],
+    "verb": [
+      "đến, tới",
+      "đạt được",
+      "với tay"
+    ]
+  },
+  "react": {
+    "verb": [
+      "tác động trở lại, ảnh hưởng trở lại, phản ứng lại"
+    ]
+  },
+  "reader": {
+    "noun": [
+      "người đọc, độc giả"
+    ]
+  },
+  "reading": {
+    "noun": [
+      "sự đọc, sự xem (sách, báo...)"
+    ]
+  },
+  "ready": {
+    "adjective": [
+      "sẵn sàng"
+    ]
+  },
+  "real": {
+    "adjective": [
+      "thực, thực tế, có thực"
+    ]
+  },
+  "realize": {
+    "verb": [
+      "nhận ra",
+      "thực hiện, biến thành hiện thực"
+    ]
+  },
+  "really": {
+    "adverb": [
+      "thực, thật, thực ra"
+    ]
+  },
+  "reason": {
+    "noun": [
+      "lý do, lẽ"
+    ]
+  },
+  "receive": {
+    "verb": [
+      "nhận, lĩnh, thu"
+    ]
+  },
+  "recent": {
+    "adjective": [
+      "gần đây, xảy ra gần đây, mới đây, mới xảy ra"
+    ]
+  },
+  "recently": {
+    "adverb": [
+      "gần đây, mới đây"
+    ]
+  },
+  "reception": {
+    "noun": [
+      "quầy lễ tân",
+      "sự đón tiếp",
+      "buổi tiếp tân"
+    ]
+  },
+  "recipe": {
+    "noun": [
+      "công thức (bánh, món ăn, thuốc pha chế)"
+    ]
+  },
+  "recognize": {
+    "verb": [
+      "nhận ra",
+      "công nhận"
+    ]
+  },
+  "recommend": {
+    "verb": [
+      "giới thiệu, tiến cử (người, vật...)"
+    ]
+  },
+  "recording": {
+    "noun": [
+      "bản ghi âm, bản ghi hình",
+      "việc ghi âm"
+    ]
+  },
+  "recycle": {
+    "verb": [
+      "tái chế"
+    ]
+  },
+  "red": {
+    "adjective": [
+      "đỏ"
+    ],
+    "noun": [
+      "màu đỏ"
+    ]
+  },
+  "reduce": {
+    "verb": [
+      "giảm, giảm bớt, hạ"
+    ]
+  },
+  "refer": {
+    "verb": [
+      "đề cập, nhắc đến",
+      "tham khảo",
+      "giới thiệu, chuyển đến"
+    ]
+  },
+  "refuse": {
+    "verb": [
+      "từ chối, khước từ, cự tuyệt"
+    ]
+  },
+  "region": {
+    "noun": [
+      "vùng, miền"
+    ]
+  },
+  "regular": {
+    "adjective": [
+      "đều đều, không thay đổi; thường lệ"
+    ],
+    "noun": [
+      "quân chính quy"
+    ]
+  },
+  "relationship": {
+    "noun": [
+      "mối quan hệ, mối liên hệ"
+    ]
+  },
+  "relax": {
+    "verb": [
+      "thư giãn",
+      "nới lỏng"
+    ]
+  },
+  "remember": {
+    "verb": [
+      "nhớ; nhớ lại, ghi nhớ"
+    ]
+  },
+  "remove": {
+    "verb": [
+      "loại bỏ; lấy ra; tháo ra"
+    ]
+  },
+  "repair": {
+    "noun": [
+      "sự sửa chữa, sự tu sửa"
+    ],
+    "verb": [
+      "sửa chữa (máy móc), tu sửa (nhà cửa); vá (quần áo)"
+    ]
+  },
+  "repeat": {
+    "noun": [
+      "sự nhắc lại, sự lặp lại; cái lặp lại"
+    ],
+    "verb": [
+      "nhắc lại, lặp lại"
+    ]
+  },
+  "replace": {
+    "verb": [
+      "thay thế"
+    ]
+  },
+  "reply": {
+    "noun": [
+      "câu trả lời, lời đáp"
+    ],
+    "verb": [
+      "trả lời, đáp lại"
+    ]
+  },
+  "report": {
+    "noun": [
+      "bản báo cáo; biên bản"
+    ],
+    "verb": [
+      "báo cáo",
+      "đưa tin"
+    ]
+  },
+  "reporter": {
+    "noun": [
+      "phóng viên"
+    ]
+  },
+  "request": {
+    "noun": [
+      "lời thỉnh cầu, lời yêu cầu, lời đề nghị"
+    ],
+    "verb": [
+      "thỉnh cầu, yêu cầu, đề nghị"
+    ]
+  },
+  "research": {
+    "noun": [
+      "sự nghiên cứu"
+    ],
+    "verb": [
+      "nghiên cứu"
+    ]
+  },
+  "researcher": {
+    "noun": [
+      "nhà nghiên cứu"
+    ]
+  },
+  "respond": {
+    "verb": [
+      "trả lời, đáp lại",
+      "phản ứng"
+    ]
+  },
+  "response": {
+    "noun": [
+      "sự trả lời"
+    ]
+  },
+  "restaurant": {
+    "noun": [
+      "quán ăn, tiệm ăn"
+    ]
+  },
+  "result": {
+    "noun": [
+      "kết quả"
+    ],
+    "verb": [
+      "do bởi, do mà ra"
+    ]
+  },
+  "return": {
+    "noun": [
+      "sự trở lại, sự trở về, sự quay trở lại"
+    ],
+    "verb": [
+      "trở lại, trở về"
+    ]
+  },
+  "review": {
+    "noun": [
+      "bài đánh giá",
+      "việc xem lại; ôn tập"
+    ],
+    "verb": [
+      "đánh giá",
+      "xem lại; ôn tập"
+    ]
+  },
+  "rice": {
+    "noun": [
+      "lúa; gạo; cơm"
+    ]
+  },
+  "rich": {
+    "adjective": [
+      "giàu, giàu có"
+    ]
+  },
+  "ride": {
+    "noun": [
+      "sự đi chơi, cuộc đi chơi (bằng ngựa, xe đạp, xe ô tô, xe buýt, xe lửa...)"
+    ],
+    "verb": [
+      "đi xe đạp, xe máy",
+      "cưỡi ngựa"
+    ]
+  },
+  "ring": {
+    "noun": [
+      "cái nhẫn"
+    ],
+    "verb": [
+      "reo, đổ chuông",
+      "gọi điện"
+    ]
+  },
+  "rise": {
+    "noun": [
+      "sự lên, sự đưa lên, sự kéo lên, sự dâng; lên, sự tăng lên"
+    ],
+    "verb": [
+      "dậy, trở dậy, đứng dậy, đứng lên"
+    ]
+  },
+  "river": {
+    "noun": [
+      "dòng sông"
+    ]
+  },
+  "road": {
+    "noun": [
+      "con đường"
+    ]
+  },
+  "rock": {
+    "noun": [
+      "đá"
+    ],
+    "verb": [
+      "đu đưa, lúc lắc"
+    ]
+  },
+  "role": {
+    "noun": [
+      "vai, vai trò"
+    ]
+  },
+  "roof": {
+    "noun": [
+      "mái nhà, nóc"
+    ]
+  },
+  "room": {
+    "noun": [
+      "buồng, phòng"
+    ]
+  },
+  "route": {
+    "noun": [
+      "tuyến đường, đường đi"
+    ]
+  },
+  "routine": {
+    "adjective": [
+      "lịch trình"
+    ],
+    "noun": [
+      "thói quen; công việc thường ngày"
+    ]
+  },
+  "rubbish": {
+    "noun": [
+      "vật bỏ đi, rác rưởi"
+    ]
+  },
+  "rude": {
+    "adjective": [
+      "khiếm nhã, bất lịch sự, vô lễ, láo xược; thô lỗ"
+    ]
+  },
+  "rule": {
+    "noun": [
+      "phép tắc, quy tắc, nguyên tắc; quy luật; điều lệ, luật lệ"
+    ],
+    "verb": [
+      "cai trị, trị vì, thống trị; chỉ huy, điều khiển"
+    ]
+  },
+  "runner": {
+    "noun": [
+      "người chạy; vận động viên chạy"
+    ]
+  },
+  "running": {
+    "noun": [
+      "việc chạy bộ",
+      "hoạt động vận hành"
+    ]
+  },
+  "sad": {
+    "abbreviation": [
+      "BUỒN"
+    ],
+    "adjective": [
+      "buồn rầu, buồn bã"
+    ]
+  },
+  "sadly": {
+    "adverb": [
+      "buồn bã, buồn rầu, âu sầu"
+    ]
+  },
+  "safe": {
+    "adjective": [
+      "an toàn, chắc chắn"
+    ],
+    "noun": [
+      "két sắt"
+    ]
+  },
+  "sail": {
+    "noun": [
+      "buồm"
+    ],
+    "verb": [
+      "đi thuyền; điều khiển thuyền",
+      "ra khơi"
+    ]
+  },
+  "sailing": {
+    "noun": [
+      "sự đi thuyền"
+    ]
+  },
+  "salad": {
+    "noun": [
+      "món rau trộn; salad"
+    ]
+  },
+  "salary": {
+    "noun": [
+      "tiền lương"
+    ]
+  },
+  "sale": {
+    "noun": [
+      "việc bán",
+      "đợt giảm giá"
+    ]
+  },
+  "salt": {
+    "noun": [
+      "muối"
+    ]
+  },
+  "same": {
+    "adjective": [
+      "cùng một"
+    ],
+    "adverb": [
+      "cùng, cùng với, cùng nhau"
+    ],
+    "pronoun": [
+      "cùng một điều ấy, cùng một vật ấy, vật như thế, điều như thế, việc như thế"
+    ]
+  },
+  "sandwich": {
+    "noun": [
+      "bánh xăng-đuých"
+    ]
+  },
+  "saturday": {
+    "noun": [
+      "ngày thứ bảy"
+    ]
+  },
+  "sauce": {
+    "noun": [
+      "nước xốt"
+    ]
+  },
+  "save": {
+    "noun": [
+      "sự phá bóng cứu nguy (chặn không cho đối phương ghi bàn) (bóng đá)"
+    ],
+    "verb": [
+      "cứu nguy"
+    ]
+  },
+  "say": {
+    "exclamation": [
+      "nói"
+    ],
+    "noun": [
+      "lời nói; quyền tham gia quyết định"
+    ],
+    "verb": [
+      "nói",
+      "cho biết"
+    ]
+  },
+  "scared": {
+    "adjective": [
+      "bị hoảng sợ"
+    ]
+  },
+  "scary": {
+    "adjective": [
+      "làm sợ hãi, làm kinh hãi, làm khiếp sợ, nhát như cáy"
+    ]
+  },
+  "scene": {
+    "noun": [
+      "cảnh (trong phim, kịch)",
+      "hiện trường"
+    ]
+  },
+  "schedule": {
+    "noun": [
+      "lịch trình; thời gian biểu"
+    ],
+    "verb": [
+      "lên lịch; sắp xếp thời gian"
+    ]
+  },
+  "school": {
+    "noun": [
+      "trường học, học đường"
+    ]
+  },
+  "science": {
+    "noun": [
+      "khoa học"
+    ]
+  },
+  "scientist": {
+    "noun": [
+      "nhà khoa học; người giỏi về khoa học tự nhiên"
+    ]
+  },
+  "score": {
+    "noun": [
+      "số điểm, số bàn thắng"
+    ],
+    "verb": [
+      "ghi điểm thắng, trúng điểm"
+    ]
+  },
+  "screen": {
+    "noun": [
+      "màn hình",
+      "màn che"
+    ],
+    "verb": [
+      "che chở, che giấu"
+    ]
+  },
+  "sea": {
+    "noun": [
+      "biển"
+    ]
+  },
+  "search": {
+    "noun": [
+      "việc tìm kiếm"
+    ],
+    "verb": [
+      "tìm kiếm"
+    ]
+  },
+  "season": {
+    "noun": [
+      "mùa (trong năm)"
+    ],
+    "verb": [
+      "nêm gia vị"
+    ]
+  },
+  "seat": {
+    "noun": [
+      "ghế; vé chỗ ngồi, chỗ ngồi"
+    ],
+    "verb": [
+      "để ngồi, đặt ngồi"
+    ]
+  },
+  "secondly": {
+    "adverb": [
+      "hai là"
+    ]
+  },
+  "secret": {
+    "adjective": [
+      "kín đáo, thầm kín, bí mật; riêng tư"
+    ],
+    "noun": [
+      "điều bí mật"
+    ]
+  },
+  "secretary": {
+    "noun": [
+      "thư ký, bí thư"
+    ]
+  },
+  "section": {
+    "noun": [
+      "phần, mục",
+      "khu vực"
+    ],
+    "verb": [
+      "chia thành phần; chia thành nhóm"
+    ]
+  },
+  "see": {
+    "verb": [
+      "thấy, trông thấy, nhìn thấy; xem, quan sát, xem xét"
+    ]
+  },
+  "seem": {
+    "linking verb": [
+      "có vẻ, dường như"
+    ]
+  },
+  "sell": {
+    "verb": [
+      "bán"
+    ]
+  },
+  "sense": {
+    "noun": [
+      "giác quan"
+    ],
+    "verb": [
+      "thấy, cảm thấy, có cảm giác, có cảm tưởng"
+    ]
+  },
+  "sentence": {
+    "noun": [
+      "câu"
+    ],
+    "verb": [
+      "kết án, tuyên án"
+    ]
+  },
+  "separate": {
+    "adjective": [
+      "riêng rẽ, rời, không dính với nhau"
+    ],
+    "verb": [
+      "làm rời ra, phân ra, chia ra"
+    ]
+  },
+  "september": {
+    "noun": [
+      "tháng chín"
+    ]
+  },
+  "series": {
+    "noun": [
+      "loạt, dãy, chuỗi, đợt"
+    ]
+  },
+  "serious": {
+    "adjective": [
+      "nghiêm trọng",
+      "nghiêm túc"
+    ]
+  },
+  "serve": {
+    "noun": [
+      "cú giao bóng; lượt giao bóng (quần vợt...)"
+    ],
+    "verb": [
+      "phục vụ, phụng sự"
+    ]
+  },
+  "service": {
+    "noun": [
+      "dịch vụ",
+      "sự phục vụ"
+    ],
+    "verb": [
+      "bảo quản và sửa chữa (xe ô tô)"
+    ]
+  },
+  "several": {
+    "determiner": [
+      "một số"
+    ],
+    "pronoun": [
+      "một số"
+    ]
+  },
+  "shake": {
+    "noun": [
+      "sự rung, sự lắc, sự giũ"
+    ],
+    "verb": [
+      "rung, lắc, làm rung, lúc lắc, lung lay, lay động; giũ"
+    ]
+  },
+  "shall": {
+    "modal verb": [
+      "sẽ"
+    ]
+  },
+  "shape": {
+    "noun": [
+      "hình, hình dạng, hình thù"
+    ],
+    "verb": [
+      "nặn, đẽo, gọt, tạo thành hình"
+    ]
+  },
+  "share": {
+    "noun": [
+      "phần; cổ phần"
+    ],
+    "verb": [
+      "chia, chia sẻ, sẻ chia, phân chia, phân phối, phân cho"
+    ]
+  },
+  "she": {
+    "pronoun": [
+      "cô ấy; chị ấy; bà ấy"
+    ]
+  },
+  "sheep": {
+    "noun": [
+      "con cừu"
+    ]
+  },
+  "sheet": {
+    "noun": [
+      "tờ giấy",
+      "ga trải giường"
+    ]
+  },
+  "ship": {
+    "noun": [
+      "tàu thuỷ, tàu"
+    ],
+    "verb": [
+      "xếp (hàng) xuống tàu, cho (hành khách, thuỷ thủ) xuống tàu"
+    ]
+  },
+  "shirt": {
+    "noun": [
+      "áo sơ mi"
+    ]
+  },
+  "shoe": {
+    "noun": [
+      "giày"
+    ]
+  },
+  "shop": {
+    "noun": [
+      "cửa hàng, cửa hiệu"
+    ],
+    "verb": [
+      "đi mua hàng, đi chợ; (từ Mỹ, nghĩa Mỹ) đi khảo giá"
+    ]
+  },
+  "shopping": {
+    "noun": [
+      "sự đi mua hàng"
+    ]
+  },
+  "short": {
+    "adjective": [
+      "ngắn, cụt"
+    ],
+    "noun": [
+      "nguyên âm ngắn; âm tiết ngắn"
+    ]
+  },
+  "should": {
+    "modal verb": [
+      "nên"
+    ]
+  },
+  "shoulder": {
+    "noun": [
+      "vai"
+    ]
+  },
+  "shout": {
+    "noun": [
+      "tiếng kêu; sự la hét, sự hò hét"
+    ],
+    "verb": [
+      "la hét, hò hét, reo hò"
+    ]
+  },
+  "show": {
+    "noun": [
+      "chương trình; buổi biểu diễn",
+      "sự thể hiện"
+    ],
+    "verb": [
+      "cho xem, cho thấy, trưng bày, đưa cho xem; tỏ ra"
+    ]
+  },
+  "shower": {
+    "noun": [
+      "vòi hoa sen; việc tắm vòi sen",
+      "trận mưa rào"
+    ]
+  },
+  "shut": {
+    "adjective": [
+      "đóng lại"
+    ],
+    "verb": [
+      "đóng, khép, đậy, nút, nhắm, gập, ngậm"
+    ]
+  },
+  "sick": {
+    "adjective": [
+      "ốm, bị bệnh",
+      "buồn nôn"
+    ]
+  },
+  "side": {
+    "noun": [
+      "mặt, bên"
+    ]
+  },
+  "sign": {
+    "noun": [
+      "dấu, dấu hiệu, ký hiệu; mật hiệu"
+    ],
+    "verb": [
+      "ký tên",
+      "ra hiệu"
+    ]
+  },
+  "silver": {
+    "adjective": [
+      "bằng bạc"
+    ],
+    "noun": [
+      "bạc"
+    ]
+  },
+  "similar": {
+    "adjective": [
+      "giống nhau, như nhau, tương tự"
+    ]
+  },
+  "simple": {
+    "adjective": [
+      "đơn, đơn giản"
+    ]
+  },
+  "since": {
+    "adverb": [
+      "từ lâu; từ đó"
+    ],
+    "conjunction": [
+      "từ khi, từ lúc, kể từ"
+    ],
+    "preposition": [
+      "từ, từ khi"
+    ]
+  },
+  "singer": {
+    "noun": [
+      "người hát, ca sĩ"
+    ]
+  },
+  "singing": {
+    "noun": [
+      "việc ca hát"
+    ]
+  },
+  "single": {
+    "adjective": [
+      "đơn, một",
+      "độc thân"
+    ],
+    "noun": [
+      "vé một chiều",
+      "đĩa đơn; bài hát phát hành riêng"
+    ]
+  },
+  "sir": {
+    "noun": [
+      "thưa ông, thưa ngài, thưa tiên sinh; (quân sự) thưa thủ trưởng"
+    ]
+  },
+  "sister": {
+    "noun": [
+      "chị, em gái"
+    ]
+  },
+  "sit": {
+    "verb": [
+      "ngồi"
+    ]
+  },
+  "site": {
+    "noun": [
+      "nơi, chỗ, vị trí"
+    ]
+  },
+  "situation": {
+    "noun": [
+      "tình huống; hoàn cảnh"
+    ]
+  },
+  "size": {
+    "noun": [
+      "kích thước, độ lớn"
+    ]
+  },
+  "ski": {
+    "adjective": [
+      "trượt tuyết"
+    ],
+    "noun": [
+      "ván trượt tuyết"
+    ],
+    "verb": [
+      "trượt tuyết; đi xki"
+    ]
+  },
+  "skiing": {
+    "noun": [
+      "môn trượt tuyết"
+    ]
+  },
+  "skill": {
+    "noun": [
+      "kỹ năng"
+    ]
+  },
+  "skin": {
+    "noun": [
+      "da, bì"
+    ]
+  },
+  "skirt": {
+    "noun": [
+      "chân váy"
+    ]
+  },
+  "sky": {
+    "noun": [
+      "trời, bầu trời"
+    ]
+  },
+  "sleep": {
+    "noun": [
+      "giấc ngủ; sự ngủ"
+    ],
+    "verb": [
+      "ngủ"
+    ]
+  },
+  "slow": {
+    "adjective": [
+      "chậm, chậm chạp"
+    ],
+    "verb": [
+      "làm chậm lại, làm trì hoãn"
+    ]
+  },
+  "slowly": {
+    "adverb": [
+      "chậm, chầm chậm, từ từ"
+    ]
+  },
+  "small": {
+    "adjective": [
+      "nhỏ, bé, chật"
+    ],
+    "noun": [
+      "phần nhỏ nhất, quãng bé nhất (của vật gì)"
+    ]
+  },
+  "smartphone": {
+    "noun": [
+      "điện thoại thông minh"
+    ]
+  },
+  "smell": {
+    "noun": [
+      "mùi"
+    ],
+    "verb": [
+      "ngửi; có mùi"
+    ]
+  },
+  "smile": {
+    "noun": [
+      "nụ cười; vẻ mặt tươi cười"
+    ],
+    "verb": [
+      "mỉm cười, cười tủm tỉm; cười"
+    ]
+  },
+  "smoke": {
+    "noun": [
+      "khói"
+    ],
+    "verb": [
+      "hút thuốc",
+      "bốc khói"
+    ]
+  },
+  "smoking": {
+    "noun": [
+      "việc hút thuốc"
+    ]
+  },
+  "snake": {
+    "noun": [
+      "con rắn"
+    ]
+  },
+  "snow": {
+    "noun": [
+      "tuyết"
+    ],
+    "verb": [
+      "tuyết rơi"
+    ]
+  },
+  "so": {
+    "adverb": [
+      "cũng thế, cũng vậy"
+    ],
+    "conjunction": [
+      "vì thế, vì vậy, vì thế cho nên, vì lẽ đó"
+    ]
+  },
+  "soap": {
+    "noun": [
+      "xà phòng"
+    ]
+  },
+  "soccer": {
+    "noun": [
+      "môn bóng đá"
+    ]
+  },
+  "social": {
+    "adjective": [
+      "thuộc xã hội",
+      "liên quan đến giao tiếp, gặp gỡ"
+    ],
+    "noun": [
+      "buổi họp mặt (liên hoan, giải trí); buổi dạ hội"
+    ]
+  },
+  "society": {
+    "noun": [
+      "xã hội"
+    ]
+  },
+  "sock": {
+    "noun": [
+      "bít tất ngắn cổ"
+    ]
+  },
+  "soft": {
+    "adjective": [
+      "mềm, dẻo, dễ uốn, dễ cắt"
+    ]
+  },
+  "soldier": {
+    "noun": [
+      "lính, quân lính, binh sĩ, quân nhân"
+    ]
+  },
+  "solution": {
+    "noun": [
+      "giải pháp; lời giải",
+      "dung dịch"
+    ]
+  },
+  "solve": {
+    "verb": [
+      "giải quyết (một vấn đề)"
+    ]
+  },
+  "sometimes": {
+    "adverb": [
+      "đôi khi, đôi lúc, lắm lúc, lúc thì"
+    ]
+  },
+  "somewhere": {
+    "adverb": [
+      "ở một nơi nào đó"
+    ],
+    "pronoun": [
+      "ở đâu đó"
+    ]
+  },
+  "son": {
+    "noun": [
+      "con trai"
+    ]
+  },
+  "song": {
+    "noun": [
+      "bài hát",
+      "tiếng hót"
+    ]
+  },
+  "soon": {
+    "adverb": [
+      "chẳng bao lâu nữa, chẳng mấy chốc, một ngày gần đây; ngay"
+    ]
+  },
+  "sorry": {
+    "adjective": [
+      "lấy làm buồn, lấy làm tiếc, lấy làm phiền"
+    ],
+    "exclamation": [
+      "xin lỗi"
+    ]
+  },
+  "sort": {
+    "noun": [
+      "thứ, loại, hạng"
+    ],
+    "verb": [
+      "lựa chọn, sắp xếp, phân loại"
+    ]
+  },
+  "soup": {
+    "noun": [
+      "xúp, canh; cháo"
+    ]
+  },
+  "source": {
+    "noun": [
+      "nguồn; nguồn gốc"
+    ]
+  },
+  "south": {
+    "adjective": [
+      "phía nam"
+    ],
+    "adverb": [
+      "về hướng nam; ở phía nam"
+    ],
+    "noun": [
+      "hướng nam, phương nam, phía nam"
+    ]
+  },
+  "space": {
+    "noun": [
+      "không gian; khoảng trống",
+      "vũ trụ"
+    ]
+  },
+  "speak": {
+    "verb": [
+      "nói"
+    ]
+  },
+  "speaker": {
+    "noun": [
+      "người nói; diễn giả",
+      "loa"
+    ]
+  },
+  "special": {
+    "adjective": [
+      "đặc biệt, riêng biệt"
+    ],
+    "noun": [
+      "món đặc biệt",
+      "chương trình đặc biệt"
+    ]
+  },
+  "specific": {
+    "adjective": [
+      "dứt khoát, rành mạch, rõ ràng, cụ thể"
+    ]
+  },
+  "speech": {
+    "noun": [
+      "bài phát biểu",
+      "lời nói; khả năng nói"
+    ]
+  },
+  "speed": {
+    "noun": [
+      "sự mau lẹ; tốc độ, tốc lực"
+    ],
+    "verb": [
+      "làm cho đi mau, tăng tốc độ; xúc tiến, đẩy mạnh"
+    ]
+  },
+  "spell": {
+    "noun": [
+      "lời thần chú"
+    ],
+    "verb": [
+      "viết vần, đánh vần; viết theo chính tả"
+    ]
+  },
+  "spelling": {
+    "noun": [
+      "chính tả; cách đánh vần"
+    ]
+  },
+  "spend": {
+    "verb": [
+      "tiêu, chi (tiền)",
+      "dành (thời gian)"
+    ]
+  },
+  "spider": {
+    "noun": [
+      "con nhện"
+    ]
+  },
+  "spoon": {
+    "noun": [
+      "cái thìa"
+    ]
+  },
+  "sport": {
+    "noun": [
+      "thể thao"
+    ]
+  },
+  "square": {
+    "adjective": [
+      "vuông"
+    ],
+    "noun": [
+      "hình vuông"
+    ],
+    "verb": [
+      "làm cho vuông, đẽo cho vuông"
+    ]
+  },
+  "stage": {
+    "noun": [
+      "sân khấu",
+      "giai đoạn"
+    ],
+    "verb": [
+      "đưa (vở kịch) lên sân khấu"
+    ]
+  },
+  "stair": {
+    "noun": [
+      "bậc thang"
+    ]
+  },
+  "stamp": {
+    "noun": [
+      "tem thư",
+      "con dấu"
+    ]
+  },
+  "star": {
+    "noun": [
+      "sao, ngôi sao, tinh tú"
+    ],
+    "verb": [
+      "dán sao, trang trí bằng hình ngôi sao"
+    ]
+  },
+  "start": {
+    "noun": [
+      "lúc bắt đầu, buổi đầu"
+    ],
+    "verb": [
+      "bắt đầu (đi, làm việc...)"
+    ]
+  },
+  "statement": {
+    "noun": [
+      "sự bày tỏ, sự trình bày, sự phát biểu"
+    ]
+  },
+  "station": {
+    "noun": [
+      "nhà ga; trạm"
+    ],
+    "verb": [
+      "đặt vào vị trí, để vào vị trí; đóng (quân) ở một vị trí"
+    ]
+  },
+  "stay": {
+    "noun": [
+      "kỳ ở lại; thời gian lưu trú"
+    ],
+    "verb": [
+      "ở lại; lưu trú"
+    ]
+  },
+  "steal": {
+    "verb": [
+      "ăn cắp, ăn trộm"
+    ]
+  },
+  "step": {
+    "noun": [
+      "bước, bước đi; bước khiêu vũ"
+    ],
+    "verb": [
+      "bước, bước đi"
+    ]
+  },
+  "stomach": {
+    "noun": [
+      "dạ dày"
+    ]
+  },
+  "stone": {
+    "noun": [
+      "đá"
+    ]
+  },
+  "stop": {
+    "noun": [
+      "sự ngừng lại, sư dừng, sự đỗ lại"
+    ],
+    "verb": [
+      "ngừng, nghỉ, thôi"
+    ]
+  },
+  "store": {
+    "noun": [
+      "cửa hàng",
+      "kho dự trữ"
+    ],
+    "verb": [
+      "tích trữ, để dành"
+    ]
+  },
+  "storm": {
+    "noun": [
+      "dông tố, cơn bão"
+    ],
+    "verb": [
+      "xông vào; xông ra",
+      "nổi giận dữ dội"
+    ]
+  },
+  "story": {
+    "noun": [
+      "chuyện, câu chuyện"
+    ]
+  },
+  "straight": {
+    "adjective": [
+      "thẳng"
+    ],
+    "adverb": [
+      "thẳng, suốt"
+    ]
+  },
+  "strange": {
+    "adjective": [
+      "lạ, xa lạ, không quen biết"
+    ]
+  },
+  "strategy": {
+    "noun": [
+      "chiến lược"
+    ]
+  },
+  "street": {
+    "noun": [
+      "phố, đường phố"
+    ]
+  },
+  "stress": {
+    "noun": [
+      "sự căng thẳng"
+    ],
+    "verb": [
+      "nhấn mạnh (một âm, một điểm...)"
+    ]
+  },
+  "strong": {
+    "adjective": [
+      "mạnh, khỏe",
+      "chắc chắn"
+    ]
+  },
+  "structure": {
+    "noun": [
+      "kết cấu, cấu trúc"
+    ],
+    "verb": [
+      "cấu trúc hóa"
+    ]
+  },
+  "student": {
+    "noun": [
+      "học sinh; sinh viên"
+    ]
+  },
+  "study": {
+    "noun": [
+      "sự học tập; sự nghiên cứu"
+    ],
+    "verb": [
+      "học; nghiên cứu"
+    ]
+  },
+  "stupid": {
+    "adjective": [
+      "ngu dại, ngu đần, đần độn, ngớ ngẩn"
+    ]
+  },
+  "style": {
+    "noun": [
+      "phong cách; kiểu dáng"
+    ]
+  },
+  "subject": {
+    "adjective": [
+      "lệ thuộc, không độc lập, ở dưới quyền, bị chinh phục"
+    ],
+    "noun": [
+      "môn học",
+      "chủ đề",
+      "đối tượng"
+    ]
+  },
+  "succeed": {
+    "verb": [
+      "thành công",
+      "kế tiếp, kế nhiệm"
+    ]
+  },
+  "success": {
+    "noun": [
+      "sự thành công, sự thắng lợi"
+    ]
+  },
+  "successful": {
+    "adjective": [
+      "có kết quả, thành công, thắng lợi, thành đạt"
+    ]
+  },
+  "such": {
+    "determiner": [
+      "như là"
+    ],
+    "pronoun": [
+      "như là"
+    ]
+  },
+  "suddenly": {
+    "adverb": [
+      "thình lình, đột nhiên, đột ngột, bỗng, chợt"
+    ]
+  },
+  "sugar": {
+    "noun": [
+      "đường"
+    ]
+  },
+  "suggest": {
+    "verb": [
+      "đề nghị, gợi ý"
+    ]
+  },
+  "suggestion": {
+    "noun": [
+      "sự gợi ý"
+    ]
+  },
+  "suit": {
+    "noun": [
+      "bộ com lê, bộ quần áo (đàn ông)"
+    ],
+    "verb": [
+      "làm cho phù hợp"
+    ]
+  },
+  "sun": {
+    "noun": [
+      "mặt trời, vừng thái dương"
+    ]
+  },
+  "sunday": {
+    "noun": [
+      "ngày chủ nhật"
+    ]
+  },
+  "supermarket": {
+    "noun": [
+      "siêu thị"
+    ]
+  },
+  "support": {
+    "noun": [
+      "sự ủng hộ"
+    ],
+    "verb": [
+      "hỗ trợ, ủng hộ",
+      "chống đỡ"
+    ]
+  },
+  "suppose": {
+    "verb": [
+      "giả sử, giả thiết, giả định"
+    ]
+  },
+  "sure": {
+    "adjective": [
+      "chắc chắn"
+    ],
+    "adverb": [
+      "chắc chắn"
+    ]
+  },
+  "surprise": {
+    "noun": [
+      "sự ngạc nhiên"
+    ],
+    "verb": [
+      "làm ngạc nhiên, làm kinh ngạc"
+    ]
+  },
+  "surprised": {
+    "adjective": [
+      "ngạc nhiên"
+    ]
+  },
+  "surprising": {
+    "adjective": [
+      "làm ngạc nhiên, làm kinh ngạc"
+    ]
+  },
+  "survey": {
+    "noun": [
+      "cuộc khảo sát; cuộc điều tra"
+    ],
+    "verb": [
+      "khảo sát"
+    ]
+  },
+  "sweater": {
+    "noun": [
+      "áo len"
+    ]
+  },
+  "sweet": {
+    "adjective": [
+      "ngọt",
+      "dễ thương, tốt bụng"
+    ],
+    "noun": [
+      "kẹo; đồ ngọt"
+    ]
+  },
+  "swim": {
+    "noun": [
+      "sự bơi lội"
+    ],
+    "verb": [
+      "bơi"
+    ]
+  },
+  "swimming": {
+    "noun": [
+      "sự bơi"
+    ]
+  },
+  "symbol": {
+    "noun": [
+      "biểu tượng; ký hiệu"
+    ]
+  },
+  "system": {
+    "noun": [
+      "hệ thống; chế độ"
+    ]
+  },
+  "table": {
+    "noun": [
+      "bàn"
+    ],
+    "verb": [
+      "bàn"
+    ]
+  },
+  "tablet": {
+    "noun": [
+      "máy tính bảng",
+      "viên thuốc"
+    ]
+  },
+  "talk": {
+    "noun": [
+      "cuộc trò chuyện",
+      "bài nói chuyện"
+    ],
+    "verb": [
+      "nói"
+    ]
+  },
+  "tall": {
+    "adjective": [
+      "cao (người, vật)"
+    ]
+  },
+  "target": {
+    "noun": [
+      "mục tiêu",
+      "bia để bắn"
+    ],
+    "verb": [
+      "nhắm, chĩa, dùng làm bia"
+    ]
+  },
+  "task": {
+    "noun": [
+      "nhiệm vụ, nghĩa vụ, phận sự"
+    ]
+  },
+  "taste": {
+    "noun": [
+      "vị"
+    ],
+    "verb": [
+      "nếm"
+    ]
+  },
+  "taxi": {
+    "noun": [
+      "xe tắc xi"
+    ],
+    "verb": [
+      "đi tắc xi"
+    ]
+  },
+  "tea": {
+    "noun": [
+      "trà, chè",
+      "cây chè"
+    ]
+  },
+  "teach": {
+    "verb": [
+      "dạy, dạy học; dạy bảo, dạy dỗ"
+    ]
+  },
+  "teacher": {
+    "noun": [
+      "giáo viên, cán bộ giảng dạy"
+    ]
+  },
+  "teaching": {
+    "noun": [
+      "sự dạy, sự giảng dạy; sự dạy bảo"
+    ]
+  },
+  "team": {
+    "noun": [
+      "đội, nhóm"
+    ]
+  },
+  "technology": {
+    "noun": [
+      "công nghệ"
+    ]
+  },
+  "teenage": {
+    "adjective": [
+      "thiếu niên"
+    ]
+  },
+  "teenager": {
+    "noun": [
+      "người ở tuổi thiếu niên (13–19 tuổi)"
+    ]
+  },
+  "telephone": {
+    "noun": [
+      "dây nói, điện thoại"
+    ],
+    "verb": [
+      "gọi điện, nói chuyện bằng điện thoại"
+    ]
+  },
+  "television": {
+    "noun": [
+      "tivi",
+      "truyền hình"
+    ]
+  },
+  "tell": {
+    "verb": [
+      "nói, nói với, nói lên, nói ra"
+    ]
+  },
+  "temperature": {
+    "noun": [
+      "nhiệt độ"
+    ]
+  },
+  "tennis": {
+    "noun": [
+      "quần vợt"
+    ]
+  },
+  "terrible": {
+    "adjective": [
+      "dễ sợ, ghê gớm, khủng khiếp"
+    ]
+  },
+  "test": {
+    "noun": [
+      "bài kiểm tra; kỳ thi",
+      "phép thử"
+    ],
+    "verb": [
+      "kiểm tra; thử nghiệm"
+    ]
+  },
+  "than": {
+    "conjunction": [
+      "hơn; so với (dùng trong so sánh)"
+    ],
+    "preposition": [
+      "xuất hiện trong so sánh tiếng Anh, đi cùng với more, less, và fewer"
+    ]
+  },
+  "thank": {
+    "verb": [
+      "cám ơn, biết ơn"
+    ]
+  },
+  "thanks": {
+    "exclamation": [
+      "Cảm ơn"
+    ],
+    "noun": [
+      "lời cảm ơn"
+    ]
+  },
+  "that": {
+    "adverb": [
+      "đến nỗi"
+    ],
+    "conjunction": [
+      "rằng, là"
+    ],
+    "determiner": [
+      "ấy, đó, kia"
+    ],
+    "pronoun": [
+      "người ấy, vật ấy, cái ấy, điều ấy; người đó, vật đó, cái đó, điều đó"
+    ]
+  },
+  "the": {
+    "determiner": [
+      "mạo từ xác định, chỉ người hoặc vật đã được xác định"
+    ]
+  },
+  "theatre": {
+    "noun": [
+      "rạp hát, nhà hát"
+    ]
+  },
+  "themselves": {
+    "pronoun": [
+      "chính họ"
+    ]
+  },
+  "then": {
+    "adverb": [
+      "lúc đó, hồi ấy, khi ấy"
+    ]
+  },
+  "there": {
+    "adverb": [
+      "ở đó, tại đó, chỗ đó, chỗ ấy, đấy"
+    ]
+  },
+  "they": {
+    "pronoun": [
+      "chúng nó, chúng, họ"
+    ]
+  },
+  "thick": {
+    "adjective": [
+      "dày"
+    ]
+  },
+  "thief": {
+    "noun": [
+      "kẻ trộm, kẻ cắp"
+    ]
+  },
+  "thin": {
+    "adjective": [
+      "mỏng, mảnh"
+    ]
+  },
+  "thing": {
+    "noun": [
+      "cái, đồ, vật, thứ, thức, điều, sự, việc, món"
+    ]
+  },
+  "think": {
+    "verb": [
+      "nghĩ, suy nghĩ, ngẫm nghĩ"
+    ]
+  },
+  "thinking": {
+    "noun": [
+      "sự suy nghĩ, sự nghĩ ngợi, sự trầm tư"
+    ]
+  },
+  "thirsty": {
+    "adjective": [
+      "khát; làm cho khát"
+    ]
+  },
+  "this": {
+    "adverb": [
+      "đến mức này; như thế này"
+    ],
+    "determiner": [
+      "này"
+    ],
+    "pronoun": [
+      "cái này"
+    ]
+  },
+  "thought": {
+    "noun": [
+      "ý nghĩ"
+    ]
+  },
+  "through": {
+    "adjective": [
+      "suốt, thẳng"
+    ],
+    "adverb": [
+      "qua, xuyên qua, suốt, từ đầu đến cuối"
+    ],
+    "preposition": [
+      "qua, xuyên qua, suốt"
+    ]
+  },
+  "throw": {
+    "verb": [
+      "ném, vứt, quăng, quẳng, liệng, lao"
+    ]
+  },
+  "thursday": {
+    "noun": [
+      "ngày thứ năm (trong tuần lễ)"
+    ]
+  },
+  "ticket": {
+    "noun": [
+      "vé"
+    ]
+  },
+  "tidy": {
+    "adjective": [
+      "sạch sẽ, ngăn nắp, gọn gàng"
+    ],
+    "verb": [
+      "dọn dẹp, sắp xếp gọn gàng"
+    ]
+  },
+  "tie": {
+    "noun": [
+      "cà vạt",
+      "dây buộc",
+      "trận hòa"
+    ],
+    "verb": [
+      "buộc, cột, trói"
+    ]
+  },
+  "time": {
+    "noun": [
+      "thời gian, thì giờ"
+    ],
+    "verb": [
+      "chọn thời gian, tính toán thì giờ, sắp xếp thời gian"
+    ]
+  },
+  "tired": {
+    "adjective": [
+      "mệt, mệt mỏi, nhọc"
+    ]
+  },
+  "title": {
+    "noun": [
+      "tựa đề, tiêu đề"
+    ],
+    "verb": [
+      "tiêu đề"
+    ]
+  },
+  "to": {
+    "infinitive marker": [
+      "đến"
+    ],
+    "preposition": [
+      "đến, tới, về"
+    ]
+  },
+  "today": {
+    "adverb": [
+      "vào ngày này"
+    ],
+    "noun": [
+      "hôm nay, ngày này, ngày hôm nay"
+    ]
+  },
+  "together": {
+    "adjective": [
+      "cùng nhau"
+    ],
+    "adverb": [
+      "cùng, cùng với, cùng nhau"
+    ]
+  },
+  "toilet": {
+    "noun": [
+      "nhà vệ sinh; bồn cầu"
+    ]
+  },
+  "tomato": {
+    "noun": [
+      "quả cà chua",
+      "cây cà chua"
+    ]
+  },
+  "tomorrow": {
+    "adverb": [
+      "mai, ngày mai"
+    ],
+    "noun": [
+      "Ngày mai"
+    ]
+  },
+  "tonight": {
+    "adverb": [
+      "đêm nay, tối nay"
+    ],
+    "noun": [
+      "tối nay"
+    ]
+  },
+  "too": {
+    "adverb": [
+      "cũng",
+      "quá"
+    ]
+  },
+  "tool": {
+    "noun": [
+      "dụng cụ, đồ dùng"
+    ]
+  },
+  "tooth": {
+    "noun": [
+      "răng"
+    ]
+  },
+  "top": {
+    "adjective": [
+      "đứng đầu"
+    ],
+    "noun": [
+      "đỉnh, mặt trên cùng, chỗ cao nhất"
+    ],
+    "verb": [
+      "đứng đầu"
+    ]
+  },
+  "topic": {
+    "noun": [
+      "đề tài, chủ đề"
+    ]
+  },
+  "touch": {
+    "noun": [
+      "sự sờ, sự mó, sự đụng, sự chạm"
+    ],
+    "verb": [
+      "chạm, đụng, sờ, mó"
+    ]
+  },
+  "tour": {
+    "noun": [
+      "cuộc đi, cuộc đi du lịch"
+    ],
+    "verb": [
+      "đi, đi du lịch"
+    ]
+  },
+  "tourism": {
+    "noun": [
+      "du lịch; ngành du lịch"
+    ]
+  },
+  "tourist": {
+    "noun": [
+      "khách du lịch"
+    ]
+  },
+  "towards": {
+    "preposition": [
+      "về phía",
+      "đối với"
+    ]
+  },
+  "towel": {
+    "noun": [
+      "khăn lau; khăn tắm"
+    ]
+  },
+  "tower": {
+    "noun": [
+      "tháp"
+    ]
+  },
+  "town": {
+    "noun": [
+      "thành phố, thị xã"
+    ]
+  },
+  "toy": {
+    "adjective": [
+      "đồ chơi"
+    ],
+    "noun": [
+      "đồ chơi (của trẻ con)"
+    ]
+  },
+  "track": {
+    "noun": [
+      "dấu, vết"
+    ],
+    "verb": [
+      "theo vết, theo dõi, đi tìm, lùng bắt, truy nã"
+    ]
+  },
+  "tradition": {
+    "noun": [
+      "truyền thống"
+    ]
+  },
+  "traditional": {
+    "adjective": [
+      "truyền thống, theo truyền thống"
+    ]
+  },
+  "traffic": {
+    "noun": [
+      "giao thông; xe cộ"
+    ],
+    "verb": [
+      "buôn bán"
+    ]
+  },
+  "trainer": {
+    "noun": [
+      "huấn luyện viên",
+      "giày thể thao (trainers, Anh-Anh)"
+    ]
+  },
+  "training": {
+    "noun": [
+      "sự dạy dỗ, sự rèn luyện; sự đào tạo"
+    ]
+  },
+  "transport": {
+    "noun": [
+      "sự chuyên chở, sự vận tải"
+    ],
+    "verb": [
+      "chuyên chở, vận tải"
+    ]
+  },
+  "travel": {
+    "noun": [
+      "sự đi du lịch; cuộc du hành, cuộc lữ hành"
+    ],
+    "verb": [
+      "đi du lịch; du hành, lữ hành"
+    ]
+  },
+  "traveller": {
+    "noun": [
+      "người đi du lịch, người du hành"
+    ]
+  },
+  "tree": {
+    "noun": [
+      "cây"
+    ]
+  },
+  "trip": {
+    "noun": [
+      "cuộc đi chơi, cuộc dạo chơi, cuộc du ngoạn"
+    ],
+    "verb": [
+      "bước nhẹ, đi nhẹ bước, nhảy múa nhẹ nhàng"
+    ]
+  },
+  "trouble": {
+    "noun": [
+      "rắc rối; khó khăn"
+    ],
+    "verb": [
+      "làm phiền; khiến lo lắng"
+    ]
+  },
+  "trousers": {
+    "noun": [
+      "quần Âu"
+    ]
+  },
+  "truck": {
+    "noun": [
+      "xe tải"
+    ],
+    "verb": [
+      "chở bằng xe tải"
+    ]
+  },
+  "try": {
+    "noun": [
+      "sự thử, sự làm thử"
+    ],
+    "verb": [
+      "thử, thử xem, làm thử"
+    ]
+  },
+  "tuesday": {
+    "noun": [
+      "ngày thứ ba (trong tuần)"
+    ]
+  },
+  "tv": {
+    "noun": [
+      "bộ tivi, máy vô tuyến truyền hình"
+    ]
+  },
+  "twice": {
+    "adverb": [
+      "hai lần"
+    ]
+  },
+  "twin": {
+    "adjective": [
+      "sinh đôi"
+    ],
+    "noun": [
+      "trẻ sinh đôi"
+    ]
+  },
+  "type": {
+    "noun": [
+      "loại, kiểu"
+    ],
+    "verb": [
+      "đánh máy"
+    ]
+  },
+  "typical": {
+    "adjective": [
+      "điển hình; tiêu biểu"
+    ]
+  },
+  "umbrella": {
+    "noun": [
+      "ô, dù; lọng"
+    ]
+  },
+  "uncle": {
+    "noun": [
+      "chú; bác; cậu; dượng"
+    ]
+  },
+  "under": {
+    "adverb": [
+      "dưới"
+    ],
+    "preposition": [
+      "dưới, ở dưới"
+    ]
+  },
+  "underground": {
+    "adjective": [
+      "dưới đất, ngầm"
+    ],
+    "adverb": [
+      "dưới đất, ngầm"
+    ],
+    "noun": [
+      "tàu điện ngầm",
+      "lòng đất"
+    ]
+  },
+  "understand": {
+    "verb": [
+      "hiểu, nắm được ý, biết"
+    ]
+  },
+  "understanding": {
+    "adjective": [
+      "hiểu biết"
+    ],
+    "noun": [
+      "sự hiểu biết, sự am hiểu"
+    ]
+  },
+  "unfortunately": {
+    "adverb": [
+      "một cách đáng tiếc, không may"
+    ]
+  },
+  "unhappy": {
+    "adjective": [
+      "không có hạnh phúc, khổ sở, khốn khổ"
+    ]
+  },
+  "uniform": {
+    "noun": [
+      "đồng phục; (quân) quân phục"
+    ]
+  },
+  "unit": {
+    "noun": [
+      "đơn vị",
+      "bài, phần (trong giáo trình)"
+    ]
+  },
+  "united": {
+    "adjective": [
+      "đoàn kết; thống nhất"
+    ]
+  },
+  "university": {
+    "noun": [
+      "trường đại học"
+    ]
+  },
+  "until": {
+    "conjunction": [
+      "cho đến khi, cho tới, tới tận"
+    ],
+    "preposition": [
+      "cho đến khi, cho tới, tới tận"
+    ]
+  },
+  "unusual": {
+    "adjective": [
+      "không thường, không thông thường, không thường dùng, không quen"
+    ]
+  },
+  "up": {
+    "adjective": [
+      "lên (đi về một thành phố lớn hay thủ đô), ngược (đi về hướng bắc)"
+    ],
+    "adverb": [
+      "ở trên, lên trên, lên"
+    ],
+    "preposition": [
+      "lên, ngược lên; ở trên"
+    ]
+  },
+  "upstairs": {
+    "adjective": [
+      "tầng trên; ở trên gác, ở tầng trên"
+    ],
+    "adverb": [
+      "ở trên gác, ở tầng trên"
+    ],
+    "noun": [
+      "trên lầu"
+    ]
+  },
+  "us": {
+    "pronoun": [
+      "chúng tôi, chúng ta, chúng mình"
+    ]
+  },
+  "use": {
+    "noun": [
+      "sự dùng; cách dùng"
+    ],
+    "verb": [
+      "dùng, sử dụng"
+    ]
+  },
+  "useful": {
+    "adjective": [
+      "có ích, dùng được"
+    ]
+  },
+  "user": {
+    "noun": [
+      "người dùng, người hay dùng"
+    ]
+  },
+  "usual": {
+    "adjective": [
+      "thường, thông thường, thường lệ, thường dùng, dùng quen"
+    ]
+  },
+  "usually": {
+    "adverb": [
+      "thường thường, thường lệ"
+    ]
+  },
+  "vacation": {
+    "noun": [
+      "kỳ nghỉ"
+    ]
+  },
+  "valley": {
+    "noun": [
+      "thung lũng"
+    ]
+  },
+  "van": {
+    "noun": [
+      "xe tải nhỏ; xe van"
+    ]
+  },
+  "variety": {
+    "noun": [
+      "sự đa dạng",
+      "loại, chủng loại"
+    ]
+  },
+  "vegetable": {
+    "noun": [
+      "rau, rau củ"
+    ]
+  },
+  "vehicle": {
+    "noun": [
+      "xe, xe cộ"
+    ]
+  },
+  "very": {
+    "adjective": [
+      "thực, thực sự"
+    ],
+    "adverb": [
+      "rất, lắm, hơn hết"
+    ]
+  },
+  "video": {
+    "noun": [
+      "video; đoạn phim"
+    ]
+  },
+  "view": {
+    "noun": [
+      "sự nhìn, sự thấy, tầm nhìn, tầm mắt"
+    ],
+    "verb": [
+      "thấy, nhìn, xem, quan sát"
+    ]
+  },
+  "village": {
+    "noun": [
+      "làng, xã"
+    ]
+  },
+  "virus": {
+    "noun": [
+      "vi-rút",
+      "vi-rút máy tính"
+    ]
+  },
+  "visit": {
+    "noun": [
+      "sự đi thăm, sự thăm hỏi, sự thăm viếng"
+    ],
+    "verb": [
+      "đi thăm hỏi"
+    ]
+  },
+  "visitor": {
+    "noun": [
+      "khách, người đến thăm"
+    ]
+  },
+  "voice": {
+    "noun": [
+      "giọng nói; tiếng nói"
+    ],
+    "verb": [
+      "bày tỏ, nói lên"
+    ]
+  },
+  "wait": {
+    "noun": [
+      "sự chờ đợi; thời gian chờ đợi"
+    ],
+    "verb": [
+      "chờ, đợi"
+    ]
+  },
+  "waiter": {
+    "noun": [
+      "người hầu bàn"
+    ]
+  },
+  "wake": {
+    "noun": [
+      "vệt nước phía sau tàu",
+      "buổi canh thức bên người qua đời"
+    ],
+    "verb": [
+      "thức giấc, thức dậy, tỉnh dậy"
+    ]
+  },
+  "walk": {
+    "noun": [
+      "sự đi bộ; sự bước"
+    ],
+    "verb": [
+      "đi, đi bộ"
+    ]
+  },
+  "wall": {
+    "noun": [
+      "tường, vách"
+    ]
+  },
+  "want": {
+    "verb": [
+      "muốn; cần"
+    ]
+  },
+  "war": {
+    "noun": [
+      "chiến tranh"
+    ]
+  },
+  "warm": {
+    "adjective": [
+      "ấm áp"
+    ],
+    "verb": [
+      "ấm"
+    ]
+  },
+  "wash": {
+    "noun": [
+      "sự tắm rửa, sự tắm gội, sự rửa ráy"
+    ],
+    "verb": [
+      "rửa"
+    ]
+  },
+  "washing": {
+    "noun": [
+      "sự tắm rửa, sự tắm gội, sự rửa ráy"
+    ]
+  },
+  "water": {
+    "noun": [
+      "nước"
+    ],
+    "verb": [
+      "tưới nước",
+      "cho uống nước"
+    ]
+  },
+  "wave": {
+    "noun": [
+      "sóng; làn sóng"
+    ],
+    "verb": [
+      "vẫy tay",
+      "gợn sóng"
+    ]
+  },
+  "way": {
+    "adverb": [
+      "đường"
+    ],
+    "noun": [
+      "đường, đường đi, lối đi"
+    ]
+  },
+  "we": {
+    "pronoun": [
+      "chúng tôi, chúng ta"
+    ]
+  },
+  "weak": {
+    "adjective": [
+      "yếu, yếu ớt"
+    ]
+  },
+  "wear": {
+    "noun": [
+      "sự mang; sự dùng; sự mặc"
+    ],
+    "verb": [
+      "mang, đeo; mặc; để (râu, tóc); đội (mũ)"
+    ]
+  },
+  "weather": {
+    "noun": [
+      "thời tiết, tiết trời"
+    ],
+    "verb": [
+      "dầm mưa dãi gió; để nắng mưa làm hỏng; phơi nắng phơi sương"
+    ]
+  },
+  "web": {
+    "noun": [
+      "mạng nhện",
+      "mạng Web"
+    ]
+  },
+  "website": {
+    "noun": [
+      "trang web, trang mạng"
+    ]
+  },
+  "wedding": {
+    "noun": [
+      "lễ cưới"
+    ]
+  },
+  "wednesday": {
+    "noun": [
+      "ngày thứ tư (trong tuần lễ)"
+    ]
+  },
+  "week": {
+    "noun": [
+      "tuần"
+    ]
+  },
+  "weekend": {
+    "noun": [
+      "cuối tuần (thứ bảy và chủ nhật)"
+    ]
+  },
+  "weight": {
+    "noun": [
+      "trọng lượng, sức nặng"
+    ]
+  },
+  "welcome": {
+    "adjective": [
+      "được chào đón"
+    ],
+    "exclamation": [
+      "hoan nghênh!"
+    ],
+    "noun": [
+      "sự chào đón"
+    ],
+    "verb": [
+      "chào đón"
+    ]
+  },
+  "west": {
+    "adjective": [
+      "tây"
+    ],
+    "adverb": [
+      "về hướng tây; ở phía tây"
+    ],
+    "noun": [
+      "hướng tây, phương tây, phía tây"
+    ]
+  },
+  "wet": {
+    "adjective": [
+      "ẩm ướt, thấm nước, đẫm nước, đầm đìa"
+    ]
+  },
+  "what": {
+    "determiner": [
+      "nào?, gì?"
+    ],
+    "pronoun": [
+      "cái mà, điều mà, người mà, cái gì"
+    ]
+  },
+  "wheel": {
+    "noun": [
+      "bánh xe"
+    ]
+  },
+  "when": {
+    "adverb": [
+      "khi nào, hồi nào, lúc nào, bao giờ"
+    ],
+    "conjunction": [
+      "khi, lúc, hồi"
+    ],
+    "pronoun": [
+      "khi (lúc, hồi) mà, mà"
+    ]
+  },
+  "where": {
+    "adverb": [
+      "đâu, ở đâu, ở nơi nào, ở chỗ nào, ở phía nào, ở mặt nào, ở ni nào"
+    ],
+    "conjunction": [
+      "Ở đâu"
+    ]
+  },
+  "while": {
+    "conjunction": [
+      "trong lúc, trong khi, đang khi, đang lúc"
+    ],
+    "noun": [
+      "lúc, chốc, lát"
+    ]
+  },
+  "white": {
+    "adjective": [
+      "màu trắng"
+    ],
+    "noun": [
+      "màu trắng"
+    ]
+  },
+  "who": {
+    "pronoun": [
+      "Ai"
+    ]
+  },
+  "whole": {
+    "adjective": [
+      "toàn bộ; nguyên vẹn"
+    ],
+    "noun": [
+      "toàn bộ, tất cả, toàn thể"
+    ]
+  },
+  "why": {
+    "adverb": [
+      "tại sao, vì sao"
+    ]
+  },
+  "wide": {
+    "adjective": [
+      "rộng, rộng lớn"
+    ]
+  },
+  "wife": {
+    "noun": [
+      "vợ"
+    ]
+  },
+  "wild": {
+    "adjective": [
+      "dại, hoang (ở) rừng"
+    ]
+  },
+  "will": {
+    "modal verb": [
+      "sẽ",
+      "sẵn lòng, muốn (diễn đạt ý định)"
+    ],
+    "noun": [
+      "ý chí, chí, ý định, lòng"
+    ]
+  },
+  "win": {
+    "noun": [
+      "sự thắng cuộc"
+    ],
+    "verb": [
+      "thắng, chiến thắng",
+      "giành được"
+    ]
+  },
+  "window": {
+    "noun": [
+      "cửa sổ"
+    ]
+  },
+  "wine": {
+    "noun": [
+      "rượu vang; rượu"
+    ]
+  },
+  "winner": {
+    "noun": [
+      "người chiến thắng"
+    ]
+  },
+  "winter": {
+    "noun": [
+      "mùa đông"
+    ]
+  },
+  "wish": {
+    "noun": [
+      "lòng mong muốn, lòng ao ước; lòng thèm muốn"
+    ],
+    "verb": [
+      "muốn, mong, hy vọng"
+    ]
+  },
+  "with": {
+    "preposition": [
+      "với, cùng, cùng với"
+    ]
+  },
+  "without": {
+    "preposition": [
+      "không, không có"
+    ]
+  },
+  "woman": {
+    "noun": [
+      "đàn bà, phụ nữ"
+    ]
+  },
+  "wonderful": {
+    "adjective": [
+      "tuyệt vời"
+    ]
+  },
+  "wood": {
+    "noun": [
+      "gỗ"
+    ]
+  },
+  "wooden": {
+    "adjective": [
+      "bằng gỗ"
+    ]
+  },
+  "word": {
+    "noun": [
+      "từ"
+    ]
+  },
+  "worker": {
+    "noun": [
+      "người lao động, người làm việc"
+    ]
+  },
+  "working": {
+    "adjective": [
+      "đang làm việc",
+      "hoạt động được"
+    ]
+  },
+  "world": {
+    "noun": [
+      "thế giới, hoàn cầu, địa cầu"
+    ]
+  },
+  "worried": {
+    "adjective": [
+      "bồn chồn, lo nghĩ, cảm thấy lo lắng, tỏ ra lo lắng"
+    ]
+  },
+  "worry": {
+    "noun": [
+      "sự lo lắng; điều lo nghĩ"
+    ],
+    "verb": [
+      "lo lắng",
+      "làm lo lắng"
+    ]
+  },
+  "worse": {
+    "adjective": [
+      "xấu hơn, tồi hơn, dở hơn"
+    ],
+    "adverb": [
+      "xấu hơn, kém hơn"
+    ],
+    "noun": [
+      "cái xấu hơn, cái tệ hơn, cái tồi hơn"
+    ]
+  },
+  "worst": {
+    "adjective": [
+      "xấu nhất, tồi nhất, tệ nhất"
+    ],
+    "adverb": [
+      "xấu nhất, tồi nhất, tệ nhất"
+    ],
+    "noun": [
+      "cái xấu nhất, cái tồi nhất, cái tệ nhất"
+    ],
+    "verb": [
+      "đánh bại, hơn"
+    ]
+  },
+  "would": {
+    "modal verb": [
+      "sẽ (trong tình huống giả định)",
+      "muốn (dùng trong lời đề nghị lịch sự)"
+    ]
+  },
+  "wow": {
+    "exclamation": [
+      "ôi chao!, ái chà!, chà!"
+    ],
+    "noun": [
+      "thành công lớn (cách nói thân mật)"
+    ]
+  },
+  "write": {
+    "verb": [
+      "viết"
+    ]
+  },
+  "writer": {
+    "noun": [
+      "nhà văn; tác giả; tác gia"
+    ]
+  },
+  "writing": {
+    "noun": [
+      "sự viết, sự viết tay, sự viết lách"
+    ]
+  },
+  "wrong": {
+    "adjective": [
+      "sai, không đúng"
+    ],
+    "adverb": [
+      "sai, không đúng, không đáng, bậy"
+    ],
+    "noun": [
+      "điều sai trái"
+    ]
+  },
+  "yeah": {
+    "exclamation": [
+      "vâng"
+    ]
+  },
+  "year": {
+    "noun": [
+      "năm"
+    ]
+  },
+  "yellow": {
+    "adjective": [
+      "vàng"
+    ],
+    "noun": [
+      "màu vàng"
+    ]
+  },
+  "yes": {
+    "exclamation": [
+      "vâng; có; đúng vậy"
+    ],
+    "noun": [
+      "lời đồng ý; tiếng vâng"
+    ]
+  },
+  "yesterday": {
+    "adverb": [
+      "hôm qua"
+    ],
+    "noun": [
+      "Hôm qua"
+    ]
+  },
+  "yet": {
+    "adverb": [
+      "chưa (trong câu phủ định)",
+      "đã (trong câu hỏi)"
+    ],
+    "conjunction": [
+      "nhưng mà, song, ấy vậy mà, tuy thế, tuy nhiên"
+    ]
+  },
+  "you": {
+    "pronoun": [
+      "bạn; các bạn",
+      "anh, chị, ông, bà (tùy ngữ cảnh)"
+    ]
+  },
+  "young": {
+    "adjective": [
+      "trẻ, trẻ tuổi, thiếu niên, thanh niên"
+    ],
+    "noun": [
+      "thú con, chim con (mới đẻ)"
+    ]
+  },
+  "yourself": {
+    "pronoun": [
+      "bản thân bạn"
+    ]
+  },
+  "zero": {
+    "number": [
+      "không"
+    ]
+  },
+  "frame": {
+    "noun": [
+      "khung"
+    ]
+  },
+  "sharp": {
+    "adjective": [
+      "sắc, nhọn",
+      "rõ rệt, đột ngột"
     ]
   }
 }

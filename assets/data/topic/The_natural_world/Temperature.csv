@@ -1,6 +1,6 @@
 id,url,levels,word,translation,part_of_speech,ipa,audio_link
 celsius,https://www.oxfordlearnersdictionaries.com/definition/english/celsius_1,B2,Celsius,thuộc về độ bách phân,adjective,/ˈselsiəs/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cel/celsi/celsius_1_gb_1.mp3
-cold,https://www.oxfordlearnersdictionaries.com/definition/english/cold_2,B1,cold,"sự lạnh nhạt, sự lạnh lẽo",noun,/kəʊld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/cold_/cold__gb_3.mp3
+cold,https://www.oxfordlearnersdictionaries.com/definition/english/cold_2,B1,cold,bệnh cảm lạnh,noun,/kəʊld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/cold_/cold__gb_3.mp3
 centigrade,https://www.oxfordlearnersdictionaries.com/definition/english/centigrade_1,C1,centigrade,độ C,noun,/ˈsentɪɡreɪd/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/cen/centi/centigrade__gb_1.mp3
 cold,https://www.oxfordlearnersdictionaries.com/definition/english/cold_1,A1,cold,"lạnh, lạnh lẽo, nguội",adjective,/kəʊld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/col/cold_/cold__gb_3.mp3
 cool,https://www.oxfordlearnersdictionaries.com/definition/english/cool_1,A1,cool,"mát, mát mẻ",adjective,/kuːl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/coo/cool_/cool__gb_2.mp3
@@ -21,7 +21,7 @@ muggy,https://www.oxfordlearnersdictionaries.com/definition/english/muggy,C2,mug
 mild,https://www.oxfordlearnersdictionaries.com/definition/english/mild_1,B1,mild,nhẹ,adjective,/maɪld/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/mil/mild_/mild__gb_1.mp3
 warmth,https://www.oxfordlearnersdictionaries.com/definition/english/warmth,C1,warmth,"hơi nóng (lửa, mặt trời), nhiệt; sự ấm áp",noun,/wɔːmθ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warmt/warmth__gb_1.mp3
 temperature,https://www.oxfordlearnersdictionaries.com/definition/english/temperature,A2,temperature,nhiệt độ,noun,/ˈtemprətʃə(r)/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/tem/tempe/temperature__gb_1.mp3
-warm,https://www.oxfordlearnersdictionaries.com/definition/english/warm_1,A1,warm,nóng: có nhiệt độ cao,adjective,/wɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warm_/warm__gb_1.mp3
+warm,https://www.oxfordlearnersdictionaries.com/definition/english/warm_1,A1,warm,ấm áp,adjective,/wɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warm_/warm__gb_1.mp3
 wind_chill,https://www.oxfordlearnersdictionaries.com/definition/english/wind-chill,C2,wind chill,gió lạnh,noun,/ˈwɪnd tʃɪl/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/win/wind_/wind_chill_1_gb_1.mp3
 sweltering,https://www.oxfordlearnersdictionaries.com/definition/english/sweltering,C2,sweltering,"oi ả, nóng ngột ngạt",adjective,/ˈsweltərɪŋ/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/s/swe/swelt/sweltering__gb_1.mp3
 warm,https://www.oxfordlearnersdictionaries.com/definition/english/warm_2,B1,warm,ấm,verb,/wɔːm/,https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/w/war/warm_/warm__gb_1.mp3

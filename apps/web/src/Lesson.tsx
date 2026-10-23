@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -23,6 +23,7 @@ import {
   shuffle,
   type Rating,
   type Word,
+  type WordState,
   conciseSense,
   shortMeaning,
 } from "./model";
@@ -61,6 +62,12 @@ const quizDetails: Record<Kind, [string, string]> = {
   reverse: ["Nhìn nghĩa, viết lại từ", "Type the word from its meaning"],
 };
 const quizIcons = { recognize: Layers, choice: ListChecks, listen: Headphones, context: TextCursorInput, anagram: Shuffle, reverse: Pencil };
+const levelOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
+/** ["A1","C1","B1"] → "A1–C1": một nhãn gọn thay vì cả dãy cấp độ tràn hàng. */
+function levelRange(levels: string[]) {
+  const sorted = [...new Set(levels)].sort((a, b) => levelOrder.indexOf(a) - levelOrder.indexOf(b));
+  return sorted.length > 1 ? `${sorted[0]}–${sorted.at(-1)}` : sorted[0] ?? "A1";
+}
 export function QuizPicker({
   onStart,
   onClose,
@@ -147,11 +154,28 @@ export function Lesson({
       change("history", word.word.toLowerCase(), Date.now());
     }
   }, [index]);
+  // Trạng thái trước khi chấm của từng thẻ trong phiên, để "Từ trước" hoàn tác lần chấm
+  // thay vì chấm chồng lên (Đã thuộc rồi Nhớ mang máng từng ra "ôn lại sau 438 ngày").
+  const undo = useRef(new Map<number, { key: string; srs: WordState | null; known: boolean | null }>());
   function next(rating: Rating) {
     const key = word.word.toLowerCase();
-    apply(reviewOperations(getProfile(), key, rating));
+    const current = getProfile();
+    undo.current.set(index, { key, srs: current.srs[key] ?? null, known: current.known[key] ?? null });
+    apply(reviewOperations(current, key, rating));
     setRated((n) => n + 1);
     setIndex((i) => i + 1);
+  }
+  function previous() {
+    const before = undo.current.get(index - 1);
+    if (before) {
+      undo.current.delete(index - 1);
+      apply([
+        { section: "srs", key: before.key, value: before.srs },
+        { section: "known", key: before.key, value: before.known },
+      ]);
+      setRated((n) => n - 1);
+    }
+    setIndex((i) => i - 1);
   }
   if (!word)
     return (
@@ -191,7 +215,7 @@ export function Lesson({
         all={all}
         kind={kinds[index % kinds.length]}
         onRate={next}
-        onPrevious={index > 0 ? () => setIndex((i) => i - 1) : undefined}
+        onPrevious={index > 0 ? previous : undefined}
         onNext={
           index < words.length - 1 ? () => setIndex((i) => i + 1) : finish
         }
@@ -394,9 +418,7 @@ function Exercise({
           <>
             <div className="flashcard-top">
               <div className="flashcard-tags">
-                {word.levels.map((l) => (
-                  <Badge key={l}>{l}</Badge>
-                ))}
+                <Badge>{levelRange(word.levels)}</Badge>
                 {word.pos && <span>{word.pos}</span>}
               </div>
               <div className="flashcard-tools">

@@ -20,6 +20,7 @@ import {
   Home,
   Layers,
   Mic,
+  GraduationCap,
   Search,
   Settings as SettingsIcon,
   Sparkles,
@@ -58,6 +59,9 @@ const Library = lazy(() =>
 );
 const Settings = lazy(() =>
   import("./Settings").then((m) => ({ default: m.Settings })),
+);
+const Grammar = lazy(() =>
+  import("./GrammarPage").then((m) => ({ default: m.Grammar })),
 );
 const Speaking = lazy(() =>
   import("./Speaking").then((m) => ({ default: m.Speaking })),
@@ -185,10 +189,14 @@ export default function App() {
     "/settings/help": t("Trợ giúp", "Help"),
     "/settings/about": t("Giới thiệu", "About"),
   };
+  // Màn luyện tập ngữ pháp chiếm toàn màn hình như phiên học từ.
+  const focus = !!session || !!game || /^\/grammar\/[^/]+\/practice$/.test(path);
   const back = () =>
     navigateBack(
       path.startsWith("/settings/")
         ? "/settings"
+        : path.startsWith("/grammar/")
+          ? "/grammar"
         : [
               "/levels",
               "/topics",
@@ -200,9 +208,9 @@ export default function App() {
           : "/",
     );
   return (
-    <div className={`app-shell original-app eled-layout ${session || game ? "eled-focus" : ""}`}>
-      {!session && !game && <EledNav path={path} t={t} />}
-      {!session && !game && (
+    <div className={`app-shell original-app eled-layout ${focus ? "eled-focus" : ""}`}>
+      {!focus && <EledNav path={path} t={t} />}
+      {!focus && (
         <header className={`topbar ${path === "/" ? "home-topbar" : ""}`}>
           <div className="appbar-title">
             {path !== "/" && (
@@ -217,7 +225,7 @@ export default function App() {
                 <span>English Learning</span>
               </a>
             ) : (
-              <h1>{titles[path] ?? "English Learning"}</h1>
+              <h1>{titles[path] ?? (path.startsWith("/grammar") ? t("Ngữ pháp", "Grammar") : "English Learning")}</h1>
             )}
           </div>
           <div className="appbar-actions">
@@ -265,6 +273,8 @@ export default function App() {
               />
             ) : path === "/speaking" ? (
               <Speaking />
+            ) : path === "/grammar" || path.startsWith("/grammar/") ? (
+              <Grammar path={path} />
             ) : !words.length ? (
               <div className="initial-loading">
                 {error ? (
@@ -690,11 +700,13 @@ function PlusSymbol() {
 const NAV_ITEMS = [
   { to: "/", vi: "Hôm nay", en: "Today", icon: Home, also: [] as string[] },
   { to: "/browse", vi: "Duyệt", en: "Browse", icon: Grip, also: ["/levels", "/topics", "/known", "/collections"] },
+  { to: "/grammar", vi: "Ngữ pháp", en: "Grammar", icon: GraduationCap, also: [] },
   { to: "/speaking", vi: "Speaking", en: "Speaking", icon: Mic, also: [] },
   { to: "/history", vi: "Thông báo", en: "Notifications", icon: Bell, also: [] },
 ];
 function EledNav({ path, t }: { path: string; t: (vi: string, en: string) => string }) {
-  const active = (i: (typeof NAV_ITEMS)[number]) => path === i.to || i.also.includes(path);
+  const active = (i: (typeof NAV_ITEMS)[number]) =>
+    path === i.to || i.also.includes(path) || (i.to !== "/" && path.startsWith(i.to + "/"));
   return (
     <>
       <aside className="eled-side">

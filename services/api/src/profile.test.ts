@@ -30,3 +30,9 @@ test("the web app's chosen topic setting is accepted", () => {
   assert.doesNotThrow(() => validateOperations([{ section: "settings", key: "focusTopic", value: null }]));
   assert.throws(() => validateOperations([{ section: "settings", key: "focusTopic", value: 3 }]));
 });
+
+test("grammar scores are a validated profile section", () => {
+  const next = applyOperations(emptyProfile(), validateOperations([{ section: "grammar", key: "conditionals", value: { b: 8, n: 10, t: 1 } }]));
+  assert.deepEqual(next.grammar, { conditionals: { b: 8, n: 10, t: 1 } });
+  assert.throws(() => validateOperations([{ section: "grammar", key: "conditionals", value: { b: -1, n: 10, t: 1 } }]));
+});

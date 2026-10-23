@@ -36,6 +36,13 @@ export interface Profile {
   custom: Record<string, string>;
   history: Record<string, number>;
   activity: Record<string, boolean>;
+  /** Điểm cao nhất của từng bài ngữ pháp: b câu đúng / n câu, t = lúc làm. */
+  grammar: Record<string, GrammarScore>;
+}
+export interface GrammarScore {
+  b: number;
+  n: number;
+  t: number;
 }
 export type Operation = { section: keyof Profile; key: string; value: any };
 export const emptyProfile = (): Profile => ({
@@ -47,6 +54,7 @@ export const emptyProfile = (): Profile => ({
   custom: {},
   history: {},
   activity: {},
+  grammar: {},
 });
 export function fresh(word: string): WordState {
   return {

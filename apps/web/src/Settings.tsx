@@ -24,6 +24,7 @@ import { BrowserNotificationSettings } from "./NotificationSettings";
 import { change, downloadBackup, importBackup } from "./storage";
 import * as api from "./api";
 import { Button, Badge, Choice, useProfile, useText, go } from "./ui";
+import { topicGroupLabel } from "./topics";
 export function Settings({
   categories,
   section = "",
@@ -327,7 +328,7 @@ export function Settings({
           </div>
           <p className="field-hint">{t("Không chọn chủ đề nào để học từ tất cả chủ đề.", "Leave empty to learn from all topics.")}</p>
           <div className="topic-choices">
-            {categories.map((c) => <Choice key={c} label={c.replaceAll("_", " ")}
+            {categories.map((c) => <Choice key={c} label={topicGroupLabel(c, p.settings.language !== "en")}
               checked={topics.includes(c)} onChange={() => change("settings", "topics", topics.includes(c) ? topics.filter((k) => k !== c) : [...topics, c])} />)}
           </div>
           <button

@@ -124,27 +124,72 @@ export function todaySession(words: Word[], profile: Profile) {
 const levelOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const levelRank = (w: Word) =>
   Math.min(...w.levels.map((l) => levelOrder.indexOf(l)).filter((n) => n >= 0), levelOrder.length);
-/** "Animals - Pets" → ["Animals", "Pets"]; tên thư mục dùng "_" thay dấu cách. */
-export function topicParts(topic: string): [string, string] {
-  const [group, ...rest] = topic.split(" - ");
-  return [group.replaceAll("_", " "), rest.join(" - ").replaceAll("_", " ")];
+export interface TopicInfo {
+  topic: string;
+  group: string;
+  total: number;
+  remaining: number;
 }
-/**
- * Phiên hôm nay: từ đến hạn ôn trước, rồi từ mới gom theo chủ đề.
- * Thứ tự chủ đề cố định (nhóm dễ trước, trong nhóm chủ đề dễ trước) nên học hết
- * một chủ đề mới sang chủ đề kế, không nhảy lung tung giữa các lần mở app.
- * Từ không thuộc chủ đề nào (a, about, the…) vẫn cần học: chen vài từ mỗi phiên.
- */
-export function todayPlan(words: Word[], profile: Profile): { words: Word[]; topic?: string } {
+function eligibleWords(words: Word[], profile: Profile) {
   const levels: string[] = profile.settings.levels ?? ["A1", "A2", "B1"];
   const topics: string[] = profile.settings.topics ?? [];
-  const eligible = words.filter(
+  return words.filter(
     (w) =>
       !profile.known[w.word.toLowerCase()] &&
       (!levels.length || w.levels.some((l) => levels.includes(l))) &&
       (!topics.length ||
         w.topics.some((t) => topics.some((p) => t.startsWith(p)))),
   );
+}
+/**
+ * Thứ tự học các chủ đề: nhóm dễ trước, trong nhóm chủ đề dễ trước. Tính trên mọi từ
+ * đủ điều kiện (không chỉ từ chưa học) để thứ tự không đổi theo tiến độ. Chủ đề người
+ * dùng chọn (`settings.focusTopic`) được đưa lên đầu, kéo theo cả nhóm của nó.
+ */
+function topicOrder(eligible: Word[], profile: Profile) {
+  const topics: string[] = profile.settings.topics ?? [];
+  const focus: string | undefined = profile.settings.focusTopic;
+  const average = (list: Word[]) => list.reduce((s, w) => s + levelRank(w), 0) / list.length;
+  const byTopic = new Map<string, Word[]>();
+  for (const w of eligible)
+    for (const t of w.topics) {
+      if (topics.length && !topics.some((p) => t.startsWith(p))) continue;
+      byTopic.set(t, [...(byTopic.get(t) ?? []), w]);
+    }
+  const byGroup = new Map<string, string[]>();
+  for (const t of byTopic.keys()) {
+    const g = t.split(" - ")[0];
+    byGroup.set(g, [...(byGroup.get(g) ?? []), t]);
+  }
+  const groupLevel = new Map([...byGroup].map(([g, ts]) => [g, average(ts.flatMap((t) => byTopic.get(t)!))]));
+  const topicLevel = new Map([...byTopic].map(([t, ws]) => [t, average(ws)]));
+  const first = (a: boolean, b: boolean) => Number(b) - Number(a);
+  const focusGroup = focus && byTopic.has(focus) ? focus.split(" - ")[0] : undefined;
+  const order = [...byGroup.keys()]
+    .sort((a, b) => first(a === focusGroup, b === focusGroup) || groupLevel.get(a)! - groupLevel.get(b)! || a.localeCompare(b))
+    .flatMap((g) => byGroup.get(g)!.sort((a, b) => first(a === focus, b === focus) || topicLevel.get(a)! - topicLevel.get(b)! || a.localeCompare(b)));
+  return { order, byTopic };
+}
+/** Các chủ đề theo thứ tự học, kèm số từ chưa học, cho màn chọn chủ đề. */
+export function topicList(words: Word[], profile: Profile): TopicInfo[] {
+  const { order, byTopic } = topicOrder(eligibleWords(words, profile), profile);
+  return order.map((topic) => {
+    const list = byTopic.get(topic)!;
+    return {
+      topic,
+      group: topic.split(" - ")[0],
+      total: list.length,
+      remaining: list.filter((w) => !profile.srs[w.word.toLowerCase()]).length,
+    };
+  });
+}
+/**
+ * Phiên hôm nay: từ đến hạn ôn trước, rồi từ mới gom theo chủ đề (xem topicOrder):
+ * học hết một chủ đề mới sang chủ đề kế, không nhảy lung tung giữa các lần mở app.
+ * Từ không thuộc chủ đề nào (a, about, the…) vẫn cần học: chen vài từ mỗi phiên.
+ */
+export function todayPlan(words: Word[], profile: Profile): { words: Word[]; topic?: string } {
+  const eligible = eligibleWords(words, profile);
   const due = eligible
     .filter((w) => {
       const s = profile.srs[w.word.toLowerCase()];
@@ -161,25 +206,7 @@ export function todayPlan(words: Word[], profile: Profile): { words: Word[]; top
   const unseen = eligible.filter(isNew);
   if (limit <= 0 || !unseen.length) return { words: due };
 
-  // Thứ tự chủ đề tính trên mọi từ đủ điều kiện (không chỉ từ chưa học) để không đổi theo tiến độ.
-  const average = (list: Word[]) => list.reduce((s, w) => s + levelRank(w), 0) / list.length;
-  const byTopic = new Map<string, Word[]>();
-  for (const w of eligible)
-    for (const t of w.topics) {
-      if (topics.length && !topics.some((p) => t.startsWith(p))) continue;
-      byTopic.set(t, [...(byTopic.get(t) ?? []), w]);
-    }
-  const byGroup = new Map<string, string[]>();
-  for (const t of byTopic.keys()) {
-    const g = topicParts(t)[0];
-    byGroup.set(g, [...(byGroup.get(g) ?? []), t]);
-  }
-  const groupLevel = new Map([...byGroup].map(([g, ts]) => [g, average(ts.flatMap((t) => byTopic.get(t)!))]));
-  const topicLevel = new Map([...byTopic].map(([t, ws]) => [t, average(ws)]));
-  const order = [...byGroup.keys()]
-    .sort((a, b) => groupLevel.get(a)! - groupLevel.get(b)! || a.localeCompare(b))
-    .flatMap((g) => byGroup.get(g)!.sort((a, b) => topicLevel.get(a)! - topicLevel.get(b)! || a.localeCompare(b)));
-
+  const { order, byTopic } = topicOrder(eligible, profile);
   const easiest = (list: Word[]) => [...list].sort((a, b) => levelRank(a) - levelRank(b));
   const common = easiest(unseen.filter((w) => !w.topics.length));
   const picked = new Set<Word>();

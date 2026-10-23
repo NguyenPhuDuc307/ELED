@@ -102,3 +102,22 @@ test("New words come from one topic at a time, easiest group first, plus a coupl
   assert.equal(plan.topic, "Animals - Pets");
   assert.deepEqual(plan.words.map((x) => x.word), ["pet0", "pet1", "pet2", "pet3", "pet4", "bird0", "bird1", "bird2", "the", "a"]);
 });
+
+test("A chosen topic goes first, then the rest of its group", async () => {
+  const { todayPlan, topicList } = await import("./model");
+  const w = (word: string, level: string, topics: string[]): Word =>
+    ({ word, translation: "", pos: "", ipa: "", audio: "", url: "", levels: [level], topics });
+  const words = [
+    ...Array.from({ length: 4 }, (_, i) => w("pet" + i, "A1", ["Animals - Pets"])),
+    ...Array.from({ length: 4 }, (_, i) => w("job" + i, "B1", ["Work - Jobs"])),
+    ...Array.from({ length: 8 }, (_, i) => w("pay" + i, "B1", ["Work - Pay"])),
+  ];
+  const p = emptyProfile();
+  p.settings.focusTopic = "Work - Jobs";
+  const plan = todayPlan(words, p);
+  assert.equal(plan.topic, "Work - Jobs");
+  assert.deepEqual(plan.words.map((x) => x.word).slice(0, 5), ["job0", "job1", "job2", "job3", "pay0"]);
+  p.srs.pet0 = fresh("pet0");
+  const pets = topicList(words, p).find((x) => x.topic === "Animals - Pets")!;
+  assert.deepEqual([pets.total, pets.remaining], [4, 3]);
+});

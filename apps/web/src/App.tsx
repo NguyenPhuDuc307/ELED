@@ -35,7 +35,9 @@ import {
 } from "lucide-react";
 import { apply, change, read } from "./storage";
 import nickJudyImage from "./assets/nick-judy.png";
-import { legacyEasyOperations, localDate, shuffle, streak, todayPlan, topicParts, type Word } from "./model";
+import { legacyEasyOperations, localDate, shuffle, streak, todayPlan, type Word } from "./model";
+import { topicLabel } from "./topics";
+import { TopicPicker } from "./TopicPicker";
 import {
   Badge,
   Button,
@@ -149,7 +151,6 @@ export default function App() {
   );
   const plan = useMemo(() => todayPlan(words, p), [words, p]);
   const today = plan.words;
-  const todayTopic = plan.topic ? topicParts(plan.topic) : undefined;
   const gamePool = useMemo(() => {
     const levels: string[] = p.settings.levels ?? ["A1", "A2", "B1"];
     return words.filter(
@@ -325,8 +326,8 @@ export default function App() {
               <HomeView
                 words={words}
                 today={today}
-                topic={todayTopic}
-                onStart={() => start(today, todayTopic ? todayTopic[1] || todayTopic[0] : undefined)}
+                topic={plan.topic}
+                onStart={() => start(today, plan.topic ? topicLabel(plan.topic, p.settings.language !== "en")[1] : undefined)}
                 onQuiz={() => go("/quiz")}
                 onMatch={() => go("/match")}
                 onSpeed={() => go("/speed")}
@@ -390,7 +391,7 @@ function HomeView({
 }: {
   words: Word[];
   today: Word[];
-  topic?: [string, string];
+  topic?: string;
   onStart: () => void;
   onQuiz: () => void;
   onMatch: () => void;
@@ -401,6 +402,7 @@ function HomeView({
   const active = Object.keys(p.activity).length > 0;
   const days = streak(p.activity);
   const reviewed = today.filter((w) => !!p.srs[w.word.toLowerCase()]).length;
+  const [picker, setPicker] = useState(false);
   const games = [
     {
       title: "Quiz",
@@ -452,11 +454,15 @@ function HomeView({
           <h2>
             {today.length} {t("từ", "words")}
           </h2>
-          {topic && today.length - reviewed > 0 && (
-            <small className="session-topic">
-              {t("Chủ đề", "Topic")}: {topic[0]}{topic[1] && <> › <strong>{topic[1]}</strong></>}
-            </small>
-          )}
+          {topic && today.length - reviewed > 0 && (() => {
+            const [group, name] = topicLabel(topic, p.settings.language !== "en");
+            return (
+              <button type="button" className="session-topic" onClick={() => setPicker(true)}>
+                <span>{group} › <strong>{name}</strong></span>
+                <span className="session-topic-change">{t("Đổi", "Change")}</span>
+              </button>
+            );
+          })()}
         </div>
         <div className="session-badges">
           <Badge>
@@ -475,6 +481,7 @@ function HomeView({
             : t("Đã hoàn thành hôm nay", "All caught up today")}
         </Button>
       </section>
+      {picker && <TopicPicker words={words} current={topic} onClose={() => setPicker(false)} />}
       <div className="game-grid">
         {games.map((g) => (
           <button

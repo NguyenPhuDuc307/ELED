@@ -39,8 +39,7 @@ export const grammarGroups: { id: GrammarGroup; band: string; vi: string; en: st
 
 export const grammarUnits: GrammarUnit[] = [...foundation, ...complex, ...task1, ...advanced];
 
-/** Đạt từ 80% trở lên thì coi như đã nắm bài. */
-export const PASS_RATIO = 0.8;
+export * from "./plan";
 
 export function normalizeAnswer(text: string) {
   return text

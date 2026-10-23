@@ -190,7 +190,7 @@ export default function App() {
     "/settings/about": t("Giới thiệu", "About"),
   };
   // Màn luyện tập ngữ pháp chiếm toàn màn hình như phiên học từ.
-  const focus = !!session || !!game || /^\/grammar\/[^/]+\/practice$/.test(path);
+  const focus = !!session || !!game || /^\/grammar\/([^/]+\/practice|test|review|mixed)$/.test(path);
   const back = () =>
     navigateBack(
       path.startsWith("/settings/")

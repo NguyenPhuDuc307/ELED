@@ -8,6 +8,7 @@ export const sections = [
   "history",
   "activity",
   "grammar",
+  "grammarReview",
 ] as const;
 export type Section = (typeof sections)[number];
 export type Profile = Record<Section, Record<string, unknown>>;
@@ -74,6 +75,18 @@ export function validateOperations(input: unknown): Operation[] {
           )
         )
           throw new Error("Invalid grammar score");
+        break;
+      case "grammarReview":
+        if (
+          typeof op.value !== "object" ||
+          ["d", "s"].some(
+            (k) =>
+              typeof (op.value as any)[k] !== "number" ||
+              !Number.isFinite((op.value as any)[k]) ||
+              (op.value as any)[k] < 0,
+          )
+        )
+          throw new Error("Invalid grammar review");
         break;
       case "history":
         if (typeof op.value !== "number" || !Number.isFinite(op.value))

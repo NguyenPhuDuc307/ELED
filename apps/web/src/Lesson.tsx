@@ -62,6 +62,7 @@ const quizDetails: Record<Kind, [string, string]> = {
   reverse: ["Nhìn nghĩa, viết lại từ", "Type the word from its meaning"],
 };
 const quizIcons = { recognize: Layers, choice: ListChecks, listen: Headphones, context: TextCursorInput, anagram: Shuffle, reverse: Pencil };
+const quizKinds: Kind[] = ["choice", "listen", "anagram", "reverse"];
 const levelOrder = ["A1", "A2", "B1", "B2", "C1", "C2"];
 /** ["A1","C1","B1"] → "A1–C1": một nhãn gọn thay vì cả dãy cấp độ tràn hàng. */
 function levelRange(levels: string[]) {
@@ -76,13 +77,7 @@ export function QuizPicker({
   onClose: () => void;
 }) {
   const t = useText();
-  const [selected, setSelected] = useState<Kind[]>([
-    "choice",
-    "listen",
-    "context",
-    "anagram",
-    "reverse",
-  ]);
+  const [selected, setSelected] = useState<Kind[]>(quizKinds);
   return (
     <Modal title="Quiz" onClose={onClose}>
       <p className="muted">
@@ -92,7 +87,8 @@ export function QuizPicker({
         )}
       </p>
       <div className="quiz-choices">
-        {Object.entries(labels).map(([key, label]) => {
+        {quizKinds.map((key) => {
+          const label = labels[key];
           const Icon = quizIcons[key as Kind];
           return (
           <Choice key={key} label={t(...label)} description={t(...quizDetails[key as Kind])} icon={<Icon size={20} />}

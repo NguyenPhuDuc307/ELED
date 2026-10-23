@@ -36,3 +36,8 @@ test("grammar scores are a validated profile section", () => {
   assert.deepEqual(next.grammar, { conditionals: { b: 8, n: 10, t: 1 } });
   assert.throws(() => validateOperations([{ section: "grammar", key: "conditionals", value: { b: -1, n: 10, t: 1 } }]));
 });
+
+test("grammar review items are validated", () => {
+  assert.doesNotThrow(() => validateOperations([{ section: "grammarReview", key: "conditionals:3", value: { d: 1, s: 0 } }]));
+  assert.throws(() => validateOperations([{ section: "grammarReview", key: "conditionals:3", value: { d: "soon", s: 0 } }]));
+});

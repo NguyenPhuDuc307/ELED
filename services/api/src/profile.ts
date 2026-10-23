@@ -98,6 +98,7 @@ export function validateOperations(input: unknown): Operation[] {
             "onboarded",
             "firebaseImported",
             "flutterImported",
+            "focusTopic",
           ].includes(op.key)
         )
           throw new Error("Invalid setting");
@@ -114,6 +115,8 @@ export function validateOperations(input: unknown): Operation[] {
           throw new Error("Invalid theme");
         if (op.key === "language" && !["vi", "en"].includes(op.value))
           throw new Error("Invalid language");
+        if (op.key === "focusTopic" && (typeof op.value !== "string" || op.value.length > 512))
+          throw new Error("Invalid topic");
         break;
     }
     if (JSON.stringify(op.value).length > 2000000)

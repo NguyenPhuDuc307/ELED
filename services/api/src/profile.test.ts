@@ -24,3 +24,9 @@ test("Rejects prototype keys, invalid SRS and unknown sections", () => {
   ])
     assert.throws(() => validateOperations([op]));
 });
+
+test("the web app's chosen topic setting is accepted", () => {
+  assert.doesNotThrow(() => validateOperations([{ section: "settings", key: "focusTopic", value: "Animals - Pets" }]));
+  assert.doesNotThrow(() => validateOperations([{ section: "settings", key: "focusTopic", value: null }]));
+  assert.throws(() => validateOperations([{ section: "settings", key: "focusTopic", value: 3 }]));
+});

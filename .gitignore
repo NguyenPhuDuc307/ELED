@@ -68,3 +68,6 @@ services/api/dist/
 **/.env
 services/api/vocabulary.json
 apps/web/public/meanings-source.json
+
+# Staged Cambridge downloads and raw HTML (not application vocabulary)
+/output/cambridge/

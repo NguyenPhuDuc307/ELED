@@ -510,16 +510,12 @@ function Exercise({
               {word.senses.map(s => <div key={s.pos}>
                 <span>{s.pos}</span>
                 <p>{conciseSense(s.meanings[0] ?? "", 1)}</p>
+                {/* Nghĩa đầy đủ hiện luôn, ngay dưới nghĩa cốt lõi. */}
+                {s.meanings
+                  .filter((meaning, i) => i > 0 || meaning !== conciseSense(meaning, 1))
+                  .map((meaning, i) => <small key={i}>{meaning}</small>)}
               </div>)}
             </div> : <p className="flashcard-translation">{word.translation}</p>}
-            <details className="meaning-details" key={word.word}>
-              <summary>{t("Nghĩa đầy đủ và ví dụ", "All meanings and examples")}</summary>
-              {word.senses?.length ? <div className="meaning-groups">
-                {word.senses.map(s => <div key={s.pos}>
-                  <span>{s.pos}</span>
-                  {s.meanings.map((meaning, i) => <p key={i}>{meaning}</p>)}
-                </div>)}
-              </div> : null}
             {defs.length > 0 && (
               <div className="definitions" aria-busy={vi && translating}>
                 <div className="definition-lang" role="group" aria-label={t("Ngôn ngữ định nghĩa", "Definition language")}>
@@ -540,7 +536,6 @@ function Exercise({
                 ))}
               </div>
             )}
-            </details>
           </div>
         )}
         {kind === "choice" && (
@@ -658,22 +653,25 @@ function Exercise({
         )}
       </article>
       {kind === "recognize" && (
-        <div className="ratings">
-          <button className="rating again" onClick={() => onRate("again")}>
-            <span><RotateCcw size={16} />{t("Lại", "Again")}</span>
-            <small>1 {t("ngày", "day")}</small>
-            <kbd>1</kbd>
-          </button>
-          <button className="rating hard" onClick={() => onRate("hard")}>
-            <span>{t("Khó", "Hard")}</span>
-            <small>{hardDays} {t("ngày", "days")}</small>
-            <kbd>2</kbd>
-          </button>
-          <button className="rating easy" onClick={() => onRate("easy")}>
-            <span><Check size={16} />{t("Dễ", "Easy")}</span>
-            <small>{t("Đã thuộc", "Known")}</small>
-            <kbd>3</kbd>
-          </button>
+        <div className="ratings-block">
+          <p className="ratings-question" id="ratings-question">{t("Bạn nhớ từ này đến đâu?", "How well do you know this word?")}</p>
+          <div className="ratings" role="group" aria-labelledby="ratings-question">
+            <button className="rating again" onClick={() => onRate("again")}>
+              <span>{t("Chưa nhớ", "Forgot")}</span>
+              <small>{t("Ôn lại ngày mai", "Review tomorrow")}</small>
+              <kbd>1</kbd>
+            </button>
+            <button className="rating hard" onClick={() => onRate("hard")}>
+              <span>{t("Nhớ mang máng", "Vaguely")}</span>
+              <small>{hardDays <= 1 ? t("Ôn lại ngày mai", "Review tomorrow") : t(`Ôn lại sau ${hardDays} ngày`, `Review in ${hardDays} days`)}</small>
+              <kbd>2</kbd>
+            </button>
+            <button className="rating easy" onClick={() => onRate("easy")}>
+              <span>{t("Đã thuộc", "Know it")}</span>
+              <small>{t("Không ôn nữa", "Stop reviewing")}</small>
+              <kbd>3</kbd>
+            </button>
+          </div>
         </div>
       )}
       {kind === "recognize" && (

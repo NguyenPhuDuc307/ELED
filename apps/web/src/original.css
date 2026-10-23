@@ -1723,11 +1723,6 @@ html { background: var(--bg); color: var(--ink); }
 
 .original-app .topbar .topbar-search.active { color: var(--green); background: var(--soft); }
 
-/* Keep the core meaning prominent; dictionary detail is optional. */
-.meaning-details { margin-top: 20px; text-align: left; }
-.meaning-details > summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 8px 0; }
-.meaning-details > summary:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
-.meaning-details .meaning-groups p { font-size: 15px; line-height: 1.6; font-weight: 400; }
 
 /* ---- Thẻ học từ (Flashcard): đầu thẻ gọn, lật nghĩa, phím tắt ---- */
 .original-app .word-card.exercise-recognize {
@@ -1867,18 +1862,17 @@ html { background: var(--bg); color: var(--ink); }
   line-height: 1.35;
   color: var(--ink);
 }
-.original-app .word-card.exercise-recognize .meaning-details {
-  margin-top: 20px;
-  border-top: 1px solid color-mix(in srgb, var(--green) 18%, transparent);
-}
-.original-app .word-card.exercise-recognize .meaning-details > summary {
-  padding: 12px 0 4px;
+.flashcard-senses > div > small {
+  display: block;
+  margin-top: 2px;
   font-size: 14px;
-  font-weight: 600;
-  color: var(--green);
+  line-height: 1.5;
+  color: var(--muted);
 }
-.original-app .word-card.exercise-recognize .meaning-details .meaning-groups {
-  margin: 12px 0 16px;
+.original-app .word-card.exercise-recognize .flashcard-meaning .definitions {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid color-mix(in srgb, var(--green) 18%, transparent);
 }
 .definition-lang {
   display: flex;
@@ -2078,3 +2072,14 @@ html { background: var(--bg); color: var(--ink); }
 }
 .topic-meter > span { display: block; height: 100%; background: var(--green); }
 .topic-row small b { color: var(--green); font-weight: 700; }
+.ratings-block { flex-shrink: 0; }
+.ratings-question {
+  margin: 2px 4px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+.original-app .rating { min-width: 0; }
+.original-app .rating > span { font-size: 15px; line-height: 1.2; text-align: center; }
+.original-app .rating small { line-height: 1.25; text-align: center; }

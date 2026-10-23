@@ -1688,5 +1688,70 @@
     "noun": [
       "lợi ích, mục đích (for the sake of: vì lợi ích của)"
     ]
+  },
+  "plane": {
+    "noun": [
+      "máy bay",
+      "mặt phẳng",
+      "cái bào",
+      "cây tiêu huyền (plane tree)"
+    ]
+  },
+  "meal": {
+    "noun": [
+      "bữa ăn",
+      "bột ngũ cốc xay thô"
+    ]
+  },
+  "summer": {
+    "noun": [
+      "mùa hè"
+    ]
+  },
+  "abandon": {
+    "verb": [
+      "từ bỏ; bỏ rơi, ruồng bỏ"
+    ]
+  },
+  "apple": {
+    "noun": [
+      "quả táo"
+    ]
+  },
+  "desk": {
+    "noun": [
+      "bàn làm việc, bàn học"
+    ]
+  },
+  "plant": {
+    "noun": [
+      "cây, thực vật",
+      "nhà máy"
+    ],
+    "verb": [
+      "trồng"
+    ]
+  },
+  "design": {
+    "noun": [
+      "thiết kế, bản thiết kế"
+    ],
+    "verb": [
+      "thiết kế"
+    ]
+  },
+  "send": {
+    "verb": [
+      "gửi, chuyển"
+    ]
+  },
+  "text": {
+    "noun": [
+      "văn bản, bài đọc",
+      "tin nhắn"
+    ],
+    "verb": [
+      "nhắn tin"
+    ]
   }
 }

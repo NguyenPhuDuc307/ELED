@@ -30,6 +30,11 @@ function fields(line) {
 }
 const vocabulary = new Map();
 const meanings = JSON.parse(await readFile(join(root, "assets/lexicon/meanings.json"), "utf8"));
+// Editorial meanings must win even when the raw dictionary is regenerated.
+const reviewed = JSON.parse(await readFile(join(root, "assets/lexicon/reviewed.json"), "utf8"));
+for (const [word, groups] of Object.entries(reviewed)) {
+  meanings[word] = { ...(meanings[word] || {}), ...groups };
+}
 const fallbackMeanings = new Map();
 const normalizePos = (pos) => ["indefinite article", "definite article"].includes(pos) ? "determiner" : pos === "ordinal number" ? "number" : pos;
 for (const file of await files(join(root, "assets/data"))) {

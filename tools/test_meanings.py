@@ -27,6 +27,20 @@ class MeaningsTest(unittest.TestCase):
                 self.assertTrue(glosses,word)
                 self.assertTrue(all(isinstance(g,str) and g.strip() for g in glosses),word)
                 self.assertEqual(len(glosses),len(set(glosses)),word)
+    def test_common_senses_precede_rare_homographs(self):
+        meanings=json.loads((ROOT/'assets/lexicon/meanings.json').read_text())
+        reviewed=json.loads((ROOT/'assets/lexicon/reviewed.json').read_text())
+        built={r[0].lower():r for r in json.loads((ROOT/'apps/web/public/vocabulary.json').read_text())}
+        for word,pos,expected in [('plane','noun','máy bay'),('meal','noun','bữa ăn'),('summer','noun','mùa hè'),('abandon','verb','từ bỏ; bỏ rơi, ruồng bỏ')]:
+            self.assertEqual(meanings[word][pos][0],expected)
+            self.assertEqual(reviewed[word][pos][0],expected)
+            self.assertEqual(dict(built[word][8])[pos][0],expected)
+            self.assertIn(expected,built[word][1])
+        for word,groups in reviewed.items():
+            if word not in built: continue
+            senses=dict(built[word][8]) if len(built[word])>8 else {}
+            for pos,values in groups.items():
+                if pos in senses:self.assertEqual(senses[pos],values,(word,pos))
     def test_built_vocabulary_has_same_keys_and_accurate_ambiguous_meanings(self):
         rows=json.loads((ROOT/'apps/web/public/vocabulary.json').read_text())
         self.assertEqual(len(rows),23481)
